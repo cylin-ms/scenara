@@ -1,0 +1,315 @@
+{
+  "timestamp": "2025-10-22T03:39:17.109855",
+  "user_email": "cyl@microsoft.com",
+  "user_context": {
+    "company": "Microsoft",
+    "domain": "microsoft.com",
+    "username": "cyl",
+    "likely_roles": [
+      "Senior Engineer",
+      "Product Manager",
+      "Researcher",
+      "Technical Lead"
+    ],
+    "common_projects": [
+      "Office 365",
+      "Microsoft Graph",
+      "Azure",
+      "Teams",
+      "Copilot"
+    ],
+    "likely_collaborators": [
+      "Sarah Chen",
+      "Mike Johnson",
+      "David Park",
+      "Lisa Rodriguez",
+      "Alex Kim",
+      "Maria Garcia",
+      "James Wilson",
+      "Emily Zhang"
+    ],
+    "microsoft_teams": [
+      "Graph API team",
+      "Office Platform team",
+      "AI Research team",
+      "Productivity team",
+      "Security team",
+      "Data Platform team"
+    ]
+  },
+  "notes": [
+    {
+      "note": "Leading Priority Calendar project with advanced meeting intelligence at Microsoft",
+      "category": "WORK_RELATED",
+      "title": "Priority Calendar Project Leadership",
+      "temporal_durability": "TEMPORAL_MEDIUM_LIVED",
+      "timestamp": "2025-10-21T03:39:17.109810",
+      "confidence": 0.9,
+      "source": "Teams/Outlook",
+      "metadata": {
+        "project": "Priority Calendar",
+        "company": "Microsoft"
+      }
+    },
+    {
+      "note": "Collaborating with Graph API team on calendar API enhancements",
+      "category": "WORK_RELATED",
+      "title": "Graph API team Collaboration",
+      "temporal_durability": "TEMPORAL_SHORT_LIVED",
+      "timestamp": "2025-10-19T03:39:17.109810",
+      "confidence": 0.9,
+      "source": "Teams/Outlook",
+      "metadata": {
+        "project": "Priority Calendar",
+        "company": "Microsoft"
+      }
+    },
+    {
+      "note": "Developing meeting intelligence frameworks for enterprise customers",
+      "category": "WORK_RELATED",
+      "title": "Meeting Intelligence Development",
+      "temporal_durability": "TEMPORAL_MEDIUM_LIVED",
+      "timestamp": "2025-10-17T03:39:17.109810",
+      "confidence": 0.9,
+      "source": "Teams/Outlook",
+      "metadata": {
+        "project": "Priority Calendar",
+        "company": "Microsoft"
+      }
+    },
+    {
+      "note": "Research on AI-powered productivity optimization for Office 365",
+      "category": "WORK_RELATED",
+      "title": "AI Productivity Research",
+      "temporal_durability": "TEMPORAL_LONG_LIVED",
+      "timestamp": "2025-10-15T03:39:17.109810",
+      "confidence": 0.9,
+      "source": "Teams/Outlook",
+      "metadata": {
+        "project": "Priority Calendar",
+        "company": "Microsoft"
+      }
+    },
+    {
+      "note": "Integration work with Microsoft Graph APIs for calendar intelligence",
+      "category": "WORK_RELATED",
+      "title": "Graph API Integration",
+      "temporal_durability": "TEMPORAL_MEDIUM_LIVED",
+      "timestamp": "2025-10-12T03:39:17.109810",
+      "confidence": 0.9,
+      "source": "Teams/Outlook",
+      "metadata": {
+        "project": "Priority Calendar",
+        "company": "Microsoft"
+      }
+    },
+    {
+      "note": "Expert in calendar intelligence and meeting optimization algorithms",
+      "category": "EXPERTISE",
+      "title": "Calendar Intelligence Expertise",
+      "temporal_durability": "TEMPORAL_LONG_LIVED",
+      "timestamp": "2025-10-20T03:39:17.109810",
+      "confidence": 0.95,
+      "source": "Performance Reviews/Feedback",
+      "metadata": {
+        "skill_level": "Expert",
+        "domain": "Microsoft"
+      }
+    },
+    {
+      "note": "Deep knowledge of Microsoft APIs and enterprise integrations",
+      "category": "EXPERTISE",
+      "title": "Microsoft API Expertise",
+      "temporal_durability": "TEMPORAL_LONG_LIVED",
+      "timestamp": "2025-10-18T03:39:17.109810",
+      "confidence": 0.95,
+      "source": "Performance Reviews/Feedback",
+      "metadata": {
+        "skill_level": "Expert",
+        "domain": "Microsoft"
+      }
+    },
+    {
+      "note": "Specialist in AI/ML integration for productivity solutions",
+      "category": "EXPERTISE",
+      "title": "AI/ML Integration Specialist",
+      "temporal_durability": "TEMPORAL_LONG_LIVED",
+      "timestamp": "2025-10-16T03:39:17.109810",
+      "confidence": 0.95,
+      "source": "Performance Reviews/Feedback",
+      "metadata": {
+        "skill_level": "Expert",
+        "domain": "Microsoft"
+      }
+    },
+    {
+      "note": "Proficient in enterprise software development and system architecture",
+      "category": "EXPERTISE",
+      "title": "Enterprise Development Expert",
+      "temporal_durability": "TEMPORAL_LONG_LIVED",
+      "timestamp": "2025-10-14T03:39:17.109810",
+      "confidence": 0.95,
+      "source": "Performance Reviews/Feedback",
+      "metadata": {
+        "skill_level": "Expert",
+        "domain": "Microsoft"
+      }
+    },
+    {
+      "note": "Prefers morning meetings for strategic discussions and technical planning",
+      "category": "BEHAVIORAL_PATTERN",
+      "title": "Morning Strategic Preference",
+      "temporal_durability": "TEMPORAL_LONG_LIVED",
+      "timestamp": "2025-10-10T03:39:17.109810",
+      "confidence": 0.85,
+      "source": "Meeting Transcripts/Behavioral Analysis",
+      "metadata": {
+        "pattern_strength": "Strong",
+        "context": "Technical Leadership"
+      }
+    },
+    {
+      "note": "Systematically analyzes technical options before implementation decisions",
+      "category": "BEHAVIORAL_PATTERN",
+      "title": "Analytical Technical Approach",
+      "temporal_durability": "TEMPORAL_LONG_LIVED",
+      "timestamp": "2025-10-07T03:39:17.109810",
+      "confidence": 0.85,
+      "source": "Meeting Transcripts/Behavioral Analysis",
+      "metadata": {
+        "pattern_strength": "Strong",
+        "context": "Technical Leadership"
+      }
+    },
+    {
+      "note": "Values thorough documentation and preparation for technical reviews",
+      "category": "BEHAVIORAL_PATTERN",
+      "title": "Documentation-Focused Approach",
+      "temporal_durability": "TEMPORAL_LONG_LIVED",
+      "timestamp": "2025-10-04T03:39:17.109810",
+      "confidence": 0.85,
+      "source": "Meeting Transcripts/Behavioral Analysis",
+      "metadata": {
+        "pattern_strength": "Strong",
+        "context": "Technical Leadership"
+      }
+    },
+    {
+      "note": "Collaborates effectively across teams and technical disciplines",
+      "category": "BEHAVIORAL_PATTERN",
+      "title": "Cross-team Collaboration Style",
+      "temporal_durability": "TEMPORAL_LONG_LIVED",
+      "timestamp": "2025-10-02T03:39:17.109810",
+      "confidence": 0.85,
+      "source": "Meeting Transcripts/Behavioral Analysis",
+      "metadata": {
+        "pattern_strength": "Strong",
+        "context": "Technical Leadership"
+      }
+    },
+    {
+      "note": "Passionate about AI integration in productivity tools and Office ecosystem",
+      "category": "INTERESTS",
+      "title": "AI Productivity Integration Interest",
+      "temporal_durability": "TEMPORAL_LONG_LIVED",
+      "timestamp": "2025-10-08T03:39:17.109810",
+      "confidence": 0.8,
+      "source": "Search History/Document Access",
+      "metadata": {
+        "interest_level": "High",
+        "domain": "Microsoft"
+      }
+    },
+    {
+      "note": "Interested in Microsoft Graph capabilities and developer ecosystem",
+      "category": "INTERESTS",
+      "title": "Graph Ecosystem Interest",
+      "temporal_durability": "TEMPORAL_MEDIUM_LIVED",
+      "timestamp": "2025-10-06T03:39:17.109810",
+      "confidence": 0.8,
+      "source": "Search History/Document Access",
+      "metadata": {
+        "interest_level": "High",
+        "domain": "Microsoft"
+      }
+    },
+    {
+      "note": "Follows developments in meeting intelligence and smart calendar technology",
+      "category": "INTERESTS",
+      "title": "Meeting Intelligence Interest",
+      "temporal_durability": "TEMPORAL_LONG_LIVED",
+      "timestamp": "2025-09-30T03:39:17.109810",
+      "confidence": 0.8,
+      "source": "Search History/Document Access",
+      "metadata": {
+        "interest_level": "High",
+        "domain": "Microsoft"
+      }
+    },
+    {
+      "note": "Enjoys learning about enterprise AI applications and automation frameworks",
+      "category": "INTERESTS",
+      "title": "Enterprise AI Interest",
+      "temporal_durability": "TEMPORAL_MEDIUM_LIVED",
+      "timestamp": "2025-09-27T03:39:17.109810",
+      "confidence": 0.8,
+      "source": "Search History/Document Access",
+      "metadata": {
+        "interest_level": "High",
+        "domain": "Microsoft"
+      }
+    },
+    {
+      "note": "Recent technical discussion with Sarah Chen about Priority Calendar architecture",
+      "category": "FOLLOW_UPS",
+      "title": "Sarah Chen Follow-up",
+      "temporal_durability": "TEMPORAL_SHORT_LIVED",
+      "timestamp": "2025-10-20T03:39:17.109810",
+      "confidence": 0.9,
+      "source": "Email/Teams Messages",
+      "metadata": {
+        "urgency": "Medium",
+        "context": "Microsoft"
+      }
+    },
+    {
+      "note": "Action item: Review integration proposal with Graph API team by end of week",
+      "category": "FOLLOW_UPS",
+      "title": "Graph API team Review Action",
+      "temporal_durability": "TEMPORAL_SHORT_LIVED",
+      "timestamp": "2025-10-18T03:39:17.109810",
+      "confidence": 0.9,
+      "source": "Email/Teams Messages",
+      "metadata": {
+        "urgency": "Medium",
+        "context": "Microsoft"
+      }
+    },
+    {
+      "note": "Follow up with Mike Johnson on calendar enhancement specifications",
+      "category": "FOLLOW_UPS",
+      "title": "Mike Johnson Technical Follow-up",
+      "temporal_durability": "TEMPORAL_SHORT_LIVED",
+      "timestamp": "2025-10-16T03:39:17.109810",
+      "confidence": 0.9,
+      "source": "Email/Teams Messages",
+      "metadata": {
+        "urgency": "Medium",
+        "context": "Microsoft"
+      }
+    },
+    {
+      "note": "Pending response from Office Platform team on meeting intelligence framework documentation",
+      "category": "FOLLOW_UPS",
+      "title": "Office Platform team Documentation Review",
+      "temporal_durability": "TEMPORAL_SHORT_LIVED",
+      "timestamp": "2025-10-14T03:39:17.109810",
+      "confidence": 0.9,
+      "source": "Email/Teams Messages",
+      "metadata": {
+        "urgency": "Medium",
+        "context": "Microsoft"
+      }
+    }
+  ]
+}

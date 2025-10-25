@@ -1,0 +1,82 @@
+{
+  "timestamp": "2025-10-22T02:52:56.388470",
+  "operating_system": {
+    "system": "Darwin",
+    "release": "25.0.0",
+    "version": "Darwin Kernel Version 25.0.0: Wed Sep 17 21:41:45 PDT 2025; root:xnu-12377.1.9~141/RELEASE_ARM64_T6000",
+    "machine": "arm64",
+    "processor": "arm"
+  },
+  "python_environment": {
+    "python_version": "3.12.4",
+    "python_executable": "/Users/cyl/projects/Scenara/venv/bin/python",
+    "venv_exists": true,
+    "venv_path": "/Users/cyl/projects/Scenara/venv",
+    "conda_env": "base",
+    "virtual_env": "/Users/cyl/projects/Scenara/venv",
+    "active_env": "venv"
+  },
+  "editor_environment": {
+    "detected_editors": [
+      "vscode"
+    ],
+    "term_program": "vscode",
+    "term": "xterm-256color",
+    "shell": "/bin/zsh"
+  },
+  "ai_assistant": {
+    "detected_assistants": [
+      "cursor_ai",
+      "github_copilot"
+    ],
+    "cursorrules_exists": true,
+    "copilot_instructions_exists": true,
+    "primary_assistant": "github_copilot"
+  },
+  "project_context": {
+    "project_name": "Scenara",
+    "project_path": "/Users/cyl/projects/Scenara",
+    "cursorrules_exists": true,
+    "cursorrules_size": 3773,
+    "has_requirements_txt": true,
+    "has_meeting_prep_requirements": true,
+    "has_venv": true,
+    "tools_directory": true
+  },
+  "recommended_tools": {
+    "cursor_ai": [
+      "Use .cursorrules as primary configuration",
+      "Task management with [X] and [ ] markers",
+      "Real-time lesson learning integration",
+      "Scratchpad functionality for planning",
+      "Automatic project context awareness"
+    ],
+    "github_copilot": [
+      "Read .cursorrules file first (mandatory)",
+      "Follow .github/copilot-instructions.md workflow",
+      "Respect completed/pending task states",
+      "Apply lessons learned automatically",
+      "Use established coding patterns"
+    ],
+    "python_development": [
+      "Use ./venv Python environment",
+      "Install from requirements_meeting_prep.txt",
+      "Configure Python environment before tool usage",
+      "Use tools/llm_api.py for LLM integration",
+      "Follow timezone handling best practices"
+    ],
+    "meeting_intelligence": [
+      "tools/meeting_extractor.py - Comprehensive meeting data",
+      "daily_meeting_viewer.py - Beautiful formatted output",
+      "tools/web_scraper.py - Research capabilities",
+      "Graph Explorer - Microsoft calendar access",
+      "tools/screenshot_utils.py - UI verification"
+    ],
+    "darwin_specific": [
+      "Use zsh shell (default)",
+      "Microsoft Edge for Graph API authentication",
+      "AppleScript for automation when needed",
+      "Avoid Windows-specific tools (SilverFlow)"
+    ]
+  }
+}

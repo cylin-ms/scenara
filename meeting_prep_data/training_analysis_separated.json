@@ -1,0 +1,83 @@
+{
+  "separation_summary": {
+    "real_data_count": 49,
+    "synthetic_data_count": 180,
+    "total_count": 229,
+    "real_percentage": 21.397379912663755,
+    "synthetic_percentage": 78.60262008733623
+  },
+  "real_data_analysis": {
+    "total_scenarios": 49,
+    "sources": {
+      "microsoft_calendar_manual": 49
+    },
+    "meeting_types": {
+      "General Business Meeting": 32,
+      "Project Status Update": 7,
+      "Performance Review": 5,
+      "Training Session": 1,
+      "Customer Discovery Call": 1,
+      "Product Strategy Session": 2,
+      "Vendor Evaluation": 1
+    },
+    "complexity_distribution": {
+      "low": 5,
+      "medium": 15,
+      "critical": 26,
+      "high": 3
+    },
+    "quality_scores": {
+      "average": 9.771428571428572,
+      "min": 9.1,
+      "max": 10.0,
+      "high_quality": 49
+    }
+  },
+  "synthetic_data_analysis": {
+    "total_scenarios": 180,
+    "sources": {
+      "microsoft_calendar_contextflow": 49,
+      "generated_sample": 131
+    },
+    "meeting_types": {
+      "One-on-One Meeting (Internal Recurring (Cadence))": 2,
+      "Team Status Update/Standup (Internal Recurring (Cadence))": 3,
+      "Progress Review Meeting (Internal Recurring (Cadence))": 5,
+      "Project Planning Meeting (Strategic Planning & Decision)": 6,
+      "Webinar/Presentation (Informational & Broadcast)": 8,
+      "Team-Building Activity (Team-Building & Culture)": 1,
+      "Training Session (Informational & Broadcast)": 4,
+      "Workshop/Design Session (Strategic Planning & Decision)": 3,
+      "Problem-Solving Meeting (Strategic Planning & Decision)": 1,
+      "All-Hands/Town Hall (Informational & Broadcast)": 6,
+      "Decision-Making Meeting (Strategic Planning & Decision)": 1,
+      "Product Demo (Informational & Broadcast)": 1,
+      "Vendor/Supplier Meeting (External & Client-Facing)": 1,
+      "Knowledge Sharing Session (Informational & Broadcast)": 2,
+      "Recognition/Celebration Event (Team-Building & Culture)": 5,
+      "Customer Discovery Call": 20,
+      "Training Session": 15,
+      "Cross-team Collaboration": 10,
+      "Project Status Update": 23,
+      "Product Strategy Session": 8,
+      "Budget Planning Meeting": 19,
+      "Team Retrospective": 8,
+      "Technical Design Review": 8,
+      "Performance Review": 11,
+      "Vendor Evaluation": 9
+    },
+    "complexity_distribution": {
+      "low": 43,
+      "medium": 67,
+      "high": 39,
+      "critical": 31
+    },
+    "quality_scores": {
+      "average": 8.278555555555556,
+      "min": 3.8200000000000003,
+      "max": 10.0,
+      "high_quality": 129
+    }
+  },
+  "generated_at": "2025-10-09T18:54:59.329607"
+}

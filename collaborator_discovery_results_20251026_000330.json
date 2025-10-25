@@ -1,0 +1,160 @@
+{
+  "analysis_timestamp": "2025-10-26T00:03:30.460008",
+  "graph_api_integrated": true,
+  "teams_chat_integrated": true,
+  "algorithm_version": "7.0_teams_chat_integrated",
+  "user_name": "Chin-Yew Lin",
+  "total_collaborators_found": 1,
+  "data_source": "SilverFlow/data/out/graph_meetings.json",
+  "data_sources": {
+    "calendar": "SilverFlow/data/out/graph_meetings.json",
+    "graph_api": "data/evaluation_results/graph_collaboration_analysis_*.json",
+    "teams_chat": "data/evaluation_results/teams_chat_analysis_*.json"
+  },
+  "ranking_criteria": {
+    "importance_calculation": "collaboration(25%) + quality(20%) + confidence(20%) + graph_api(15%) + temporal_recency(15%) + documents(3%) + teams_chat(5%)",
+    "filtering_requirements": [
+      "Has genuine collaboration evidence",
+      "Not a system account",
+      "Final score > 15",
+      "Confidence > 60%",
+      "Genuine collaboration ratio > 30%",
+      "Email list ratio < 70%"
+    ],
+    "new_in_v7": [
+      "Teams chat collaboration integration",
+      "Chat frequency and recency scoring",
+      "Ad hoc chat-only collaborator detection",
+      "1:1 vs group chat differentiation",
+      "Chat temporal weighting (7/30/90 days)"
+    ]
+  },
+  "collaborators": [
+    {
+      "name": "Unknown",
+      "importance_score": 545.97,
+      "final_score": 791.1,
+      "confidence": 1.0,
+      "genuine_collaboration_meetings": 38,
+      "informational_meetings": 3,
+      "broadcast_meetings": 1,
+      "email_list_meetings": 0,
+      "genuine_ratio": 0.567,
+      "informational_ratio": 0.045,
+      "email_list_ratio": 0.0,
+      "one_on_one": 0,
+      "organized_by_me": 1,
+      "small_working_meetings": 37,
+      "attended_their_meetings": 0,
+      "time_periods": 4,
+      "total_meetings": 67,
+      "collaboration_evidence": [
+        "Meeting you organized together",
+        "Small collaborative working session",
+        "Small internal recurring meeting"
+      ],
+      "information_evidence": [
+        "Informational briefing attendance",
+        "Broadcast/webinar attendance"
+      ],
+      "meeting_details": [
+        {
+          "date": "2026-01-19T14:05:00",
+          "size": 1,
+          "subject": "bi-weekly dki lt meeting",
+          "organizer": "Dongmei Zhang",
+          "meeting_type": "small_internal_recurring",
+          "taxonomy_category": "Internal Recurring - Team Status Update Meetings",
+          "has_email_list": false,
+          "base_score": 8,
+          "collaboration_evidence": [
+            "Small internal recurring meeting"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2026-01-20T12:35:00",
+          "size": 1,
+          "subject": "meeting prep stca sync",
+          "organizer": "Mark Grimaldi",
+          "meeting_type": "small_collaborative_working",
+          "taxonomy_category": "Strategic Planning & Decision - Planning/Workshop Sessions",
+          "has_email_list": false,
+          "base_score": 15,
+          "collaboration_evidence": [
+            "Small collaborative working session"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2026-01-21T13:35:00",
+          "size": 1,
+          "subject": "bi-weekly 1:1 chin-yew | dongmei",
+          "organizer": "Dongmei Zhang",
+          "meeting_type": "small_internal_recurring",
+          "taxonomy_category": "Internal Recurring - Team Status Update Meetings",
+          "has_email_list": false,
+          "base_score": 8,
+          "collaboration_evidence": [
+            "Small internal recurring meeting"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2026-01-23T10:35:00",
+          "size": 1,
+          "subject": "stca monthly extended plt + managers ",
+          "organizer": "Effie Liu",
+          "meeting_type": "small_internal_recurring",
+          "taxonomy_category": "Internal Recurring - Team Status Update Meetings",
+          "has_email_list": false,
+          "base_score": 8,
+          "collaboration_evidence": [
+            "Small internal recurring meeting"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2026-01-23T11:05:00",
+          "size": 1,
+          "subject": "silverflow+topiclens project weekly review",
+          "organizer": "Dongmei Zhang",
+          "meeting_type": "small_collaborative_working",
+          "taxonomy_category": "Strategic Planning & Decision - Planning/Workshop Sessions",
+          "has_email_list": false,
+          "base_score": 15,
+          "collaboration_evidence": [
+            "Small collaborative working session"
+          ],
+          "information_evidence": []
+        }
+      ],
+      "graph_api_rank": null,
+      "graph_api_relevance": null,
+      "graph_api_verified": false,
+      "verified_name": null,
+      "job_title": null,
+      "shared_documents": 0,
+      "document_collaboration_score": 0,
+      "recency_data": {
+        "last_7_days": 67,
+        "last_30_days": 67,
+        "last_90_days": 67,
+        "recent_important_meetings": 37,
+        "most_recent_meeting": "2026-01-23T11:05:00",
+        "days_since_last_meeting": -90
+      },
+      "temporal_recency_score": 326.85,
+      "chat_count": 0,
+      "chat_message_count": 0,
+      "days_since_last_chat": null,
+      "chat_recency_score": 0,
+      "is_recent_chat": false,
+      "is_frequent_chat": false,
+      "chat_type": null,
+      "chat_only_collaborator": false,
+      "chat_collaboration_score": 0,
+      "algorithm_version": "7.0_teams_chat_integrated"
+    }
+  ]
+}

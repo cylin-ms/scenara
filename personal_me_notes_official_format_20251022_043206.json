@@ -1,0 +1,39 @@
+{
+  "user": "cyl@microsoft.com",
+  "generated_at": "2025-10-22T04:32:06.942735",
+  "total_notes": 3,
+  "source": "Personal Calendar Analysis (Scenara)",
+  "format": "Official Me Notes Structure",
+  "notes": [
+    {
+      "note": "Real integration ready: Microsoft Graph API client configured for production deployment",
+      "category": "WORK_RELATED",
+      "title": "Real integration ready:",
+      "temporal_durability": "LONG_TERM",
+      "source": "Real Me Notes Integration",
+      "confidence": 0.95,
+      "timestamp": "2025-10-21T18:39:01.959549",
+      "user": "cyl@microsoft.com"
+    },
+    {
+      "note": "API capabilities: Can fetch user insights, activities, calendar events, and email patterns",
+      "category": "EXPERTISE",
+      "title": "API capabilities: Can",
+      "temporal_durability": "LONG_TERM",
+      "source": "Real Me Notes Integration",
+      "confidence": 0.9,
+      "timestamp": "2025-10-21T18:39:01.959559",
+      "user": "cyl@microsoft.com"
+    },
+    {
+      "note": "Authentication: MSAL integration with Microsoft 365 tenant authentication configured",
+      "category": "WORK_RELATED",
+      "title": "Authentication: MSAL integration",
+      "temporal_durability": "MEDIUM_TERM",
+      "source": "Real Me Notes Integration",
+      "confidence": 0.88,
+      "timestamp": "2025-10-21T18:39:01.959562",
+      "user": "cyl@microsoft.com"
+    }
+  ]
+}

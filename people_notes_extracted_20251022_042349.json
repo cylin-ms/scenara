@@ -1,0 +1,71 @@
+[
+  {
+    "source": "script_tag",
+    "content": "\n(typeof markPerfStage === 'function' && markPerfStage('executionScriptStart'));//<!--\n\n(function(global){\n                var correlationId=\"5bddd1a1-b0b2-0000-12e2-b09e5ac16c9c\",\n                    handleFailure=function(errorInformation) {    global.location.href = \"https:\\u002f\\u002fmicrosoft.sharepoint-df.com\\u002fsites\\u002fpersonalization\\u002f_layouts\\u002f15\\u002ferror.aspx?ErrorCorrelationId=\" + correlationId + \"&ErrorText=\" + encodeURIComponent(errorInformation.message) + \"&ErrorDeta..."
+  },
+  {
+    "source": "html_element",
+    "tag": "div",
+    "content": "People Notes"
+  },
+  {
+    "source": "html_element",
+    "tag": "div",
+    "content": "People Notes"
+  },
+  {
+    "source": "html_element",
+    "tag": "p",
+    "content": "Visit \"aka.ms/pintfeedbackportal\" to see your own people notes. Smart Notes (representation of People Notes in LPC) is available for MSIT users (see screenshot to the right)."
+  },
+  {
+    "source": "html_element",
+    "tag": "p",
+    "content": "people_notes_agent.docx"
+  },
+  {
+    "source": "html_element",
+    "tag": "p",
+    "content": "Here is how we envision People Notes:"
+  },
+  {
+    "source": "html_element",
+    "tag": "span",
+    "content": "Why People Notes?"
+  },
+  {
+    "source": "html_element",
+    "tag": "p",
+    "content": "The People Notes effort created a foundation for personalization and a new breed of AI-first people experiences, introducing LLM enabled short-term and long-term memory capabilities in the Microsoft People Graph. This information is persistent, managed, condensable, searchable, and can be recalled by partners.\u00a0Here are some user job examples leveraging people notes:"
+  },
+  {
+    "source": "html_element",
+    "tag": "span",
+    "content": "The People Notes effort created a foundation for personalization and a new breed of AI-first people experiences, introducing LLM enabled short-term and long-term memory capabilities in the Microsoft People Graph. This information is persistent, managed, condensable, searchable, and can be recalled by partners.\u00a0Here are some user job examples leveraging people notes:"
+  },
+  {
+    "source": "html_element",
+    "tag": "span",
+    "content": "People notes components"
+  },
+  {
+    "source": "html_element",
+    "tag": "p",
+    "content": "People notes are extracted from raw data and stored in a storage for consumption. While the architecture for supporting such extract and storage can be implemented in many different ways (ranging from a long text, a blob or a document, or as annotation in a graph), the general components that can be considered for People Notes can be still discussed. Here is a high-level view of the components:"
+  },
+  {
+    "source": "html_element",
+    "tag": "span",
+    "content": "People notes are extracted from raw data and stored in a storage for consumption. While the architecture for supporting such extract and storage can be implemented in many different ways (ranging from a long text, a blob or a document, or as annotation in a graph), the general components that can be considered for People Notes can be still discussed. Here is a high-level view of the components:"
+  },
+  {
+    "source": "html_element",
+    "tag": "p",
+    "content": "There are 6Rs that establish People Notes pipeline:"
+  },
+  {
+    "source": "html_element",
+    "tag": "p",
+    "content": "What are notes and other relevant documents:"
+  }
+]

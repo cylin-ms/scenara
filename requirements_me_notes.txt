@@ -1,0 +1,35 @@
+# Me Notes Viewer Tool Requirements
+# Core dependencies for the Me Notes Viewer
+
+# Standard library modules used:
+# - json (built-in)
+# - requests (for future API integration)
+# - logging (built-in)
+# - datetime (built-in)
+# - typing (built-in)
+# - dataclasses (built-in)
+# - pathlib (built-in)
+# - argparse (built-in)
+# - sys (built-in)
+# - enum (built-in)
+# - subprocess (built-in)
+# - webbrowser (built-in)
+
+# External dependencies
+requests>=2.31.0  # For HTTP API calls to Microsoft Graph/Me Notes APIs
+
+# Optional dependencies for enhanced functionality
+beautifulsoup4>=4.12.0  # For HTML parsing if needed
+jinja2>=3.1.0  # For advanced HTML templating
+pygments>=2.15.0  # For syntax highlighting in reports
+markdown>=3.4.0  # For advanced markdown processing
+
+# Development dependencies (optional)
+pytest>=7.4.0  # For unit testing
+pytest-cov>=4.1.0  # For coverage testing
+black>=23.0.0  # For code formatting
+flake8>=6.0.0  # For linting
+
+# Note: This tool is designed to work with minimal dependencies
+# Most functionality uses Python standard library only
+# External packages are mainly for future API integration

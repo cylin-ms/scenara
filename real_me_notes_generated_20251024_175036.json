@@ -1,0 +1,177 @@
+{
+  "generation_metadata": {
+    "generated_at": "2025-10-24T17:50:37.003467",
+    "method": "real_data_analysis",
+    "data_sources": {
+      "microsoft_graph": 1,
+      "calendar_events": 50,
+      "real_data_files": 3
+    },
+    "total_notes": 17,
+    "user_email": "cyl@microsoft.com",
+    "user_name": "Chin-Yew Lin"
+  },
+  "notes": [
+    {
+      "category": "CONTACT_INFO",
+      "title": "Primary Business Phone",
+      "note": "Business phone number: +86 (10) 59173481",
+      "confidence": 1.0,
+      "source": "microsoft_graph_profile",
+      "timestamp": "20251024_175036"
+    },
+    {
+      "category": "ORGANIZATIONAL",
+      "title": "Manager Contact Information",
+      "note": "Direct manager phone: +86 (10) 59175248",
+      "confidence": 0.95,
+      "source": "microsoft_graph_manager",
+      "timestamp": "20251024_175036"
+    },
+    {
+      "category": "ORGANIZATIONAL",
+      "title": "Individual Contributor Role",
+      "note": "Currently in individual contributor role with no direct reports",
+      "confidence": 1.0,
+      "source": "microsoft_graph_direct_reports",
+      "timestamp": "20251024_175036"
+    },
+    {
+      "category": "IDENTITY",
+      "title": "Verified Microsoft Identity",
+      "note": "Confirmed identity: Chin-Yew Lin (cyl@microsoft.com)",
+      "confidence": 1.0,
+      "source": "microsoft_graph_files",
+      "timestamp": "20251024_175036"
+    },
+    {
+      "category": "WORK_ORGANIZATION",
+      "title": "Email Organization System",
+      "note": "Uses structured email organization with dedicated project folders",
+      "confidence": 0.9,
+      "source": "microsoft_graph_mail",
+      "timestamp": "20251024_175036"
+    },
+    {
+      "category": "MEETING_PATTERNS",
+      "title": "Calendar Activity Analysis",
+      "note": "Recent calendar analysis: 50 meetings, 41 online (82.0%), organized 3 meetings",
+      "confidence": 1.0,
+      "source": "real_calendar_data",
+      "timestamp": "20251024_175036"
+    },
+    {
+      "category": "MEETING_TOPICS",
+      "title": "Common Meeting Themes",
+      "note": "Frequent meeting topics include: sync, and, discuss, meeting, ai",
+      "confidence": 0.8,
+      "source": "calendar_analysis",
+      "timestamp": "20251024_175036"
+    },
+    {
+      "category": "COLLABORATION",
+      "title": "Genuine Meeting Collaborators",
+      "note": "Enhanced algorithm identified collaborators with direct interaction evidence: Haidong Zhang, Balaji Shyamkumar, Jason Virtue, Alex Blanton, Pratibha Permandla",
+      "confidence": 0.99,
+      "source": "enhanced_collaboration_analysis",
+      "timestamp": "20251024_175036",
+      "algorithm_notes": "Enhanced algorithm: requires direct communication evidence (1:1 meetings, organizing together, mutual meetings) + filters system accounts",
+      "detailed_analysis": [
+        "Haidong Zhang (score: 145.0, 13s/5m/0l meetings, 7 their meetings, avg size: 10.0)",
+        "Balaji Shyamkumar (score: 53.3, 3s/4m/3l meetings, 3 their meetings, avg size: 66.9)",
+        "Jason Virtue (score: 45.1, 3s/0m/1l meetings, 3 their meetings, avg size: 134.0)",
+        "Alex Blanton (score: 40.1, 4s/0m/1l meetings, 2 their meetings, avg size: 108.2)",
+        "Pratibha Permandla (score: 39.2, 1s/2m/2l meetings, 3 their meetings, avg size: 44.6)"
+      ]
+    },
+    {
+      "category": "MEETING_PREPARATION",
+      "title": "Complex Meeting Management",
+      "note": "Manages 3 high-complexity meetings requiring detailed preparation",
+      "confidence": 1.0,
+      "source": "meeting_complexity_analysis",
+      "timestamp": "20251024_175036"
+    },
+    {
+      "category": "WORK_PATTERNS",
+      "title": "Meeting Time Preferences",
+      "note": "Meeting schedule shows preference for morning meetings (average start: 8.7:00)",
+      "confidence": 0.8,
+      "source": "meeting_timing_analysis",
+      "timestamp": "20251024_175036"
+    },
+    {
+      "category": "COMMUNICATION_TOOLS",
+      "title": "Microsoft Teams Usage",
+      "note": "Heavy Microsoft Teams user with 11 Teams meetings in recent data",
+      "confidence": 1.0,
+      "source": "meeting_descriptions",
+      "timestamp": "20251024_175036"
+    },
+    {
+      "category": "PROJECT_MANAGEMENT",
+      "title": "Project Coordination Activities",
+      "note": "Active in project coordination with 10 sync/review meetings",
+      "confidence": 0.9,
+      "source": "meeting_content_analysis",
+      "timestamp": "20251024_175036"
+    },
+    {
+      "category": "EXPERTISE",
+      "title": "Data Science Experience",
+      "note": "Demonstrated expertise in Data Science through 16 related meetings/activities",
+      "confidence": 0.8,
+      "source": "meeting_expertise_analysis",
+      "timestamp": "20251024_175036"
+    },
+    {
+      "category": "EXPERTISE",
+      "title": "Meeting Intelligence Experience",
+      "note": "Demonstrated expertise in Meeting Intelligence through 8 related meetings/activities",
+      "confidence": 0.8,
+      "source": "meeting_expertise_analysis",
+      "timestamp": "20251024_175036"
+    },
+    {
+      "category": "EXPERTISE",
+      "title": "Microsoft Graph Experience",
+      "note": "Demonstrated expertise in Microsoft Graph through 1 related meetings/activities",
+      "confidence": 0.8,
+      "source": "meeting_expertise_analysis",
+      "timestamp": "20251024_175036"
+    },
+    {
+      "category": "METADATA",
+      "title": "Real Data Integration Status",
+      "note": "Me Notes generated from real Microsoft Graph data and 50 actual calendar events",
+      "confidence": 1.0,
+      "source": "data_generation_metadata",
+      "timestamp": "20251024_175036"
+    },
+    {
+      "category": "METADATA",
+      "title": "Data Sources Summary",
+      "note": "Generated from 5 real data sources: Microsoft Graph profile, calendar events, organizational data",
+      "confidence": 1.0,
+      "source": "data_sources_metadata",
+      "timestamp": "20251024_175036"
+    }
+  ],
+  "data_summary": {
+    "calendar_events_analyzed": 50,
+    "graph_data_sources": [
+      "mygraph_raw_data_20251024_170412.json"
+    ],
+    "real_data_files": [
+      "real_me_notes_data.json",
+      "meeting_prep_data/real_data_analysis.json",
+      "me_notes_from_graph_profile_20251022_043709.json"
+    ],
+    "confidence_distribution": {
+      "high_confidence": 12,
+      "medium_confidence": 5,
+      "low_confidence": 0,
+      "average_confidence": 0.9258823529411765
+    }
+  }
+}

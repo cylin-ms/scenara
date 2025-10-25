@@ -1,0 +1,3136 @@
+{
+  "analysis_timestamp": "2025-10-26T00:11:49.280091",
+  "graph_api_integrated": true,
+  "teams_chat_integrated": true,
+  "algorithm_version": "7.0_teams_chat_integrated",
+  "user_name": "Chin-Yew Lin",
+  "total_collaborators_found": 25,
+  "data_source": "SilverFlow/data/out/graph_meetings.json",
+  "data_sources": {
+    "calendar": "SilverFlow/data/out/graph_meetings.json",
+    "graph_api": "data/evaluation_results/graph_collaboration_analysis_*.json",
+    "teams_chat": "data/evaluation_results/teams_chat_analysis_*.json"
+  },
+  "ranking_criteria": {
+    "importance_calculation": "collaboration(25%) + quality(20%) + confidence(20%) + graph_api(15%) + temporal_recency(15%) + documents(3%) + teams_chat(5%)",
+    "filtering_requirements": [
+      "Has genuine collaboration evidence",
+      "Not a system account",
+      "Final score > 15",
+      "Confidence > 60%",
+      "Genuine collaboration ratio > 30%",
+      "Email list ratio < 70%"
+    ],
+    "new_in_v7": [
+      "Teams chat collaboration integration",
+      "Chat frequency and recency scoring",
+      "Ad hoc chat-only collaborator detection",
+      "1:1 vs group chat differentiation",
+      "Chat temporal weighting (7/30/90 days)"
+    ]
+  },
+  "collaborators": [
+    {
+      "name": "Haidong Zhang",
+      "importance_score": 443.11,
+      "final_score": 581.5,
+      "confidence": 1.0,
+      "genuine_collaboration_meetings": 35,
+      "informational_meetings": 7,
+      "broadcast_meetings": 5,
+      "email_list_meetings": 0,
+      "genuine_ratio": 0.66,
+      "informational_ratio": 0.132,
+      "email_list_ratio": 0.0,
+      "one_on_one": 0,
+      "organized_by_me": 0,
+      "small_working_meetings": 26,
+      "attended_their_meetings": 0,
+      "time_periods": 4,
+      "total_meetings": 53,
+      "collaboration_evidence": [
+        "Small internal recurring meeting",
+        "Small collaborative working session",
+        "Planning/decision meeting participation"
+      ],
+      "information_evidence": [
+        "Informational briefing attendance",
+        "Broadcast/webinar attendance"
+      ],
+      "meeting_details": [
+        {
+          "date": "2026-01-16T11:05:00",
+          "size": 9,
+          "subject": "silverflow+topiclens project weekly review",
+          "organizer": "Dongmei Zhang",
+          "meeting_type": "small_collaborative_working",
+          "taxonomy_category": "Strategic Planning & Decision - Planning/Workshop Sessions",
+          "has_email_list": false,
+          "base_score": 15,
+          "collaboration_evidence": [
+            "Small collaborative working session"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2026-01-19T14:05:00",
+          "size": 5,
+          "subject": "bi-weekly dki lt meeting",
+          "organizer": "Dongmei Zhang",
+          "meeting_type": "small_internal_recurring",
+          "taxonomy_category": "Internal Recurring - Team Status Update Meetings",
+          "has_email_list": false,
+          "base_score": 8,
+          "collaboration_evidence": [
+            "Small internal recurring meeting"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2026-01-20T12:35:00",
+          "size": 9,
+          "subject": "meeting prep stca sync",
+          "organizer": "Mark Grimaldi",
+          "meeting_type": "small_collaborative_working",
+          "taxonomy_category": "Strategic Planning & Decision - Planning/Workshop Sessions",
+          "has_email_list": false,
+          "base_score": 15,
+          "collaboration_evidence": [
+            "Small collaborative working session"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2026-01-23T10:35:00",
+          "size": 176,
+          "subject": "stca monthly extended plt + managers ",
+          "organizer": "Effie Liu",
+          "meeting_type": "broadcast_webinar",
+          "taxonomy_category": "Informational & Broadcast - Webinars and Broadcasts",
+          "has_email_list": false,
+          "base_score": 0.1,
+          "collaboration_evidence": [],
+          "information_evidence": [
+            "Broadcast/webinar attendance"
+          ]
+        },
+        {
+          "date": "2026-01-23T11:05:00",
+          "size": 9,
+          "subject": "silverflow+topiclens project weekly review",
+          "organizer": "Dongmei Zhang",
+          "meeting_type": "small_collaborative_working",
+          "taxonomy_category": "Strategic Planning & Decision - Planning/Workshop Sessions",
+          "has_email_list": false,
+          "base_score": 15,
+          "collaboration_evidence": [
+            "Small collaborative working session"
+          ],
+          "information_evidence": []
+        }
+      ],
+      "graph_api_rank": 2,
+      "graph_api_relevance": 0,
+      "graph_api_verified": true,
+      "verified_name": "Haidong Zhang",
+      "job_title": "PRINCIPAL ARCHITECT",
+      "shared_documents": 2,
+      "document_collaboration_score": 10,
+      "recency_data": {
+        "last_7_days": 53,
+        "last_30_days": 53,
+        "last_90_days": 53,
+        "recent_important_meetings": 35,
+        "most_recent_meeting": "2026-01-23T11:05:00",
+        "days_since_last_meeting": -90
+      },
+      "temporal_recency_score": 267.15,
+      "chat_count": 4,
+      "chat_message_count": 4,
+      "days_since_last_chat": 0,
+      "chat_recency_score": 2.0,
+      "is_recent_chat": true,
+      "is_frequent_chat": false,
+      "chat_type": "oneOnOne",
+      "chat_only_collaborator": false,
+      "chat_collaboration_score": 24.0,
+      "algorithm_version": "7.0_teams_chat_integrated"
+    },
+    {
+      "name": "Zhitao Hou",
+      "importance_score": 332.08,
+      "final_score": 437.3,
+      "confidence": 1.0,
+      "genuine_collaboration_meetings": 29,
+      "informational_meetings": 6,
+      "broadcast_meetings": 3,
+      "email_list_meetings": 0,
+      "genuine_ratio": 0.763,
+      "informational_ratio": 0.158,
+      "email_list_ratio": 0.0,
+      "one_on_one": 0,
+      "organized_by_me": 0,
+      "small_working_meetings": 26,
+      "attended_their_meetings": 0,
+      "time_periods": 4,
+      "total_meetings": 38,
+      "collaboration_evidence": [
+        "Planning/decision meeting participation",
+        "Small collaborative working session"
+      ],
+      "information_evidence": [
+        "Broadcast/webinar attendance",
+        "Informational briefing attendance",
+        "Attended their informational meeting"
+      ],
+      "meeting_details": [
+        {
+          "date": "2026-01-15T02:05:00",
+          "size": 23,
+          "subject": "hive | t+p meeting prep monthly sync",
+          "organizer": "Drew Brough",
+          "meeting_type": "planning_decision_meetings",
+          "taxonomy_category": "Strategic Planning & Decision - Planning Sessions",
+          "has_email_list": false,
+          "base_score": 12,
+          "collaboration_evidence": [
+            "Planning/decision meeting participation"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2026-01-16T11:05:00",
+          "size": 9,
+          "subject": "silverflow+topiclens project weekly review",
+          "organizer": "Dongmei Zhang",
+          "meeting_type": "small_collaborative_working",
+          "taxonomy_category": "Strategic Planning & Decision - Planning/Workshop Sessions",
+          "has_email_list": false,
+          "base_score": 15,
+          "collaboration_evidence": [
+            "Small collaborative working session"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2026-01-20T12:35:00",
+          "size": 9,
+          "subject": "meeting prep stca sync",
+          "organizer": "Mark Grimaldi",
+          "meeting_type": "small_collaborative_working",
+          "taxonomy_category": "Strategic Planning & Decision - Planning/Workshop Sessions",
+          "has_email_list": false,
+          "base_score": 15,
+          "collaboration_evidence": [
+            "Small collaborative working session"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2026-01-23T10:35:00",
+          "size": 176,
+          "subject": "stca monthly extended plt + managers ",
+          "organizer": "Effie Liu",
+          "meeting_type": "broadcast_webinar",
+          "taxonomy_category": "Informational & Broadcast - Webinars and Broadcasts",
+          "has_email_list": false,
+          "base_score": 0.1,
+          "collaboration_evidence": [],
+          "information_evidence": [
+            "Broadcast/webinar attendance"
+          ]
+        },
+        {
+          "date": "2026-01-23T11:05:00",
+          "size": 9,
+          "subject": "silverflow+topiclens project weekly review",
+          "organizer": "Dongmei Zhang",
+          "meeting_type": "small_collaborative_working",
+          "taxonomy_category": "Strategic Planning & Decision - Planning/Workshop Sessions",
+          "has_email_list": false,
+          "base_score": 15,
+          "collaboration_evidence": [
+            "Small collaborative working session"
+          ],
+          "information_evidence": []
+        }
+      ],
+      "graph_api_rank": null,
+      "graph_api_relevance": null,
+      "graph_api_verified": false,
+      "verified_name": null,
+      "job_title": null,
+      "shared_documents": 1,
+      "document_collaboration_score": 5,
+      "recency_data": {
+        "last_7_days": 38,
+        "last_30_days": 38,
+        "last_90_days": 38,
+        "recent_important_meetings": 29,
+        "most_recent_meeting": "2026-01-23T11:05:00",
+        "days_since_last_meeting": -90
+      },
+      "temporal_recency_score": 197.4,
+      "chat_count": 0,
+      "chat_message_count": 0,
+      "days_since_last_chat": null,
+      "chat_recency_score": 0,
+      "is_recent_chat": false,
+      "is_frequent_chat": false,
+      "chat_type": null,
+      "chat_only_collaborator": false,
+      "chat_collaboration_score": 0,
+      "algorithm_version": "7.0_teams_chat_integrated"
+    },
+    {
+      "name": "Dongmei Zhang",
+      "importance_score": 327.5,
+      "final_score": 597,
+      "confidence": 1.0,
+      "genuine_collaboration_meetings": 28,
+      "informational_meetings": 6,
+      "broadcast_meetings": 0,
+      "email_list_meetings": 0,
+      "genuine_ratio": 0.875,
+      "informational_ratio": 0.188,
+      "email_list_ratio": 0.0,
+      "one_on_one": 0,
+      "organized_by_me": 1,
+      "small_working_meetings": 14,
+      "attended_their_meetings": 13,
+      "time_periods": 4,
+      "total_meetings": 32,
+      "collaboration_evidence": [
+        "Small internal recurring meeting",
+        "Attended their working meeting",
+        "Small collaborative working session",
+        "Meeting you organized together"
+      ],
+      "information_evidence": [
+        "Informational briefing attendance",
+        "Attended their informational meeting"
+      ],
+      "meeting_details": [
+        {
+          "date": "2026-01-13T12:05:00",
+          "size": 17,
+          "subject": "join us for our bi-weekly coffee, lunch & tech chat!",
+          "organizer": "Zhitao Hou",
+          "meeting_type": "informational_briefing",
+          "taxonomy_category": "Internal Recurring - Progress Review Meetings",
+          "has_email_list": false,
+          "base_score": 1,
+          "collaboration_evidence": [],
+          "information_evidence": [
+            "Informational briefing attendance"
+          ]
+        },
+        {
+          "date": "2026-01-16T11:05:00",
+          "size": 9,
+          "subject": "silverflow+topiclens project weekly review",
+          "organizer": "Dongmei Zhang",
+          "meeting_type": "small_collaborative_working",
+          "taxonomy_category": "Strategic Planning & Decision - Planning/Workshop Sessions",
+          "has_email_list": false,
+          "base_score": 35,
+          "collaboration_evidence": [
+            "Small collaborative working session",
+            "Attended their working meeting"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2026-01-19T14:05:00",
+          "size": 5,
+          "subject": "bi-weekly dki lt meeting",
+          "organizer": "Dongmei Zhang",
+          "meeting_type": "small_internal_recurring",
+          "taxonomy_category": "Internal Recurring - Team Status Update Meetings",
+          "has_email_list": false,
+          "base_score": 8,
+          "collaboration_evidence": [
+            "Small internal recurring meeting"
+          ],
+          "information_evidence": [
+            "Attended their informational meeting"
+          ]
+        },
+        {
+          "date": "2026-01-21T13:35:00",
+          "size": 1,
+          "subject": "bi-weekly 1:1 chin-yew | dongmei",
+          "organizer": "Dongmei Zhang",
+          "meeting_type": "small_internal_recurring",
+          "taxonomy_category": "Internal Recurring - Team Status Update Meetings",
+          "has_email_list": false,
+          "base_score": 8,
+          "collaboration_evidence": [
+            "Small internal recurring meeting"
+          ],
+          "information_evidence": [
+            "Attended their informational meeting"
+          ]
+        },
+        {
+          "date": "2026-01-23T11:05:00",
+          "size": 9,
+          "subject": "silverflow+topiclens project weekly review",
+          "organizer": "Dongmei Zhang",
+          "meeting_type": "small_collaborative_working",
+          "taxonomy_category": "Strategic Planning & Decision - Planning/Workshop Sessions",
+          "has_email_list": false,
+          "base_score": 35,
+          "collaboration_evidence": [
+            "Small collaborative working session",
+            "Attended their working meeting"
+          ],
+          "information_evidence": []
+        }
+      ],
+      "graph_api_rank": null,
+      "graph_api_relevance": null,
+      "graph_api_verified": false,
+      "verified_name": null,
+      "job_title": null,
+      "shared_documents": 0,
+      "document_collaboration_score": 0,
+      "recency_data": {
+        "last_7_days": 32,
+        "last_30_days": 32,
+        "last_90_days": 32,
+        "recent_important_meetings": 14,
+        "most_recent_meeting": "2026-01-23T11:05:00",
+        "days_since_last_meeting": -90
+      },
+      "temporal_recency_score": 150.6,
+      "chat_count": 1,
+      "chat_message_count": 1,
+      "days_since_last_chat": 0,
+      "chat_recency_score": 2.0,
+      "is_recent_chat": true,
+      "is_frequent_chat": false,
+      "chat_type": "group",
+      "chat_only_collaborator": false,
+      "chat_collaboration_score": 3.0,
+      "algorithm_version": "7.0_teams_chat_integrated"
+    },
+    {
+      "name": "Mark Grimaldi",
+      "importance_score": 313.3,
+      "final_score": 564.2,
+      "confidence": 1.0,
+      "genuine_collaboration_meetings": 35,
+      "informational_meetings": 1,
+      "broadcast_meetings": 2,
+      "email_list_meetings": 0,
+      "genuine_ratio": 1.4,
+      "informational_ratio": 0.04,
+      "email_list_ratio": 0.0,
+      "one_on_one": 0,
+      "organized_by_me": 0,
+      "small_working_meetings": 13,
+      "attended_their_meetings": 13,
+      "time_periods": 4,
+      "total_meetings": 25,
+      "collaboration_evidence": [
+        "Planning/decision meeting participation",
+        "Attended their working meeting",
+        "Small collaborative working session"
+      ],
+      "information_evidence": [
+        "Informational briefing attendance",
+        "Broadcast/webinar attendance"
+      ],
+      "meeting_details": [
+        {
+          "date": "2026-01-09T02:05:00",
+          "size": 64,
+          "subject": "research updates | time + places",
+          "organizer": "Pratibha Permandla",
+          "meeting_type": "broadcast_webinar",
+          "taxonomy_category": "Informational & Broadcast - Webinars and Broadcasts",
+          "has_email_list": false,
+          "base_score": 0.1,
+          "collaboration_evidence": [],
+          "information_evidence": [
+            "Broadcast/webinar attendance"
+          ]
+        },
+        {
+          "date": "2026-01-13T12:35:00",
+          "size": 9,
+          "subject": "meeting prep stca sync",
+          "organizer": "Mark Grimaldi",
+          "meeting_type": "small_collaborative_working",
+          "taxonomy_category": "Strategic Planning & Decision - Planning/Workshop Sessions",
+          "has_email_list": false,
+          "base_score": 35,
+          "collaboration_evidence": [
+            "Small collaborative working session",
+            "Attended their working meeting"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2026-01-15T02:05:00",
+          "size": 23,
+          "subject": "hive | t+p meeting prep monthly sync",
+          "organizer": "Drew Brough",
+          "meeting_type": "planning_decision_meetings",
+          "taxonomy_category": "Strategic Planning & Decision - Planning Sessions",
+          "has_email_list": false,
+          "base_score": 12,
+          "collaboration_evidence": [
+            "Planning/decision meeting participation"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2026-01-15T05:05:00",
+          "size": 32,
+          "subject": "prepare.ai status review",
+          "organizer": "Drew Brough",
+          "meeting_type": "planning_decision_meetings",
+          "taxonomy_category": "Strategic Planning & Decision - Planning Sessions",
+          "has_email_list": false,
+          "base_score": 12,
+          "collaboration_evidence": [
+            "Planning/decision meeting participation"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2026-01-20T12:35:00",
+          "size": 9,
+          "subject": "meeting prep stca sync",
+          "organizer": "Mark Grimaldi",
+          "meeting_type": "small_collaborative_working",
+          "taxonomy_category": "Strategic Planning & Decision - Planning/Workshop Sessions",
+          "has_email_list": false,
+          "base_score": 35,
+          "collaboration_evidence": [
+            "Small collaborative working session",
+            "Attended their working meeting"
+          ],
+          "information_evidence": []
+        }
+      ],
+      "graph_api_rank": null,
+      "graph_api_relevance": null,
+      "graph_api_verified": false,
+      "verified_name": null,
+      "job_title": null,
+      "shared_documents": 0,
+      "document_collaboration_score": 0,
+      "recency_data": {
+        "last_7_days": 25,
+        "last_30_days": 25,
+        "last_90_days": 25,
+        "recent_important_meetings": 22,
+        "most_recent_meeting": "2026-01-20T12:35:00",
+        "days_since_last_meeting": -87
+      },
+      "temporal_recency_score": 134.25,
+      "chat_count": 0,
+      "chat_message_count": 0,
+      "days_since_last_chat": null,
+      "chat_recency_score": 0,
+      "is_recent_chat": false,
+      "is_frequent_chat": false,
+      "chat_type": null,
+      "chat_only_collaborator": false,
+      "chat_collaboration_score": 0,
+      "algorithm_version": "7.0_teams_chat_integrated"
+    },
+    {
+      "name": "Drew Brough",
+      "importance_score": 286.83,
+      "final_score": 483.2,
+      "confidence": 1.0,
+      "genuine_collaboration_meetings": 31,
+      "informational_meetings": 0,
+      "broadcast_meetings": 2,
+      "email_list_meetings": 0,
+      "genuine_ratio": 1.292,
+      "informational_ratio": 0.0,
+      "email_list_ratio": 0.0,
+      "one_on_one": 0,
+      "organized_by_me": 0,
+      "small_working_meetings": 13,
+      "attended_their_meetings": 9,
+      "time_periods": 4,
+      "total_meetings": 24,
+      "collaboration_evidence": [
+        "Planning/decision meeting participation",
+        "Attended their working meeting",
+        "Small collaborative working session"
+      ],
+      "information_evidence": [
+        "Broadcast/webinar attendance"
+      ],
+      "meeting_details": [
+        {
+          "date": "2026-01-09T02:05:00",
+          "size": 64,
+          "subject": "research updates | time + places",
+          "organizer": "Pratibha Permandla",
+          "meeting_type": "broadcast_webinar",
+          "taxonomy_category": "Informational & Broadcast - Webinars and Broadcasts",
+          "has_email_list": false,
+          "base_score": 0.1,
+          "collaboration_evidence": [],
+          "information_evidence": [
+            "Broadcast/webinar attendance"
+          ]
+        },
+        {
+          "date": "2026-01-13T12:35:00",
+          "size": 9,
+          "subject": "meeting prep stca sync",
+          "organizer": "Mark Grimaldi",
+          "meeting_type": "small_collaborative_working",
+          "taxonomy_category": "Strategic Planning & Decision - Planning/Workshop Sessions",
+          "has_email_list": false,
+          "base_score": 15,
+          "collaboration_evidence": [
+            "Small collaborative working session"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2026-01-15T02:05:00",
+          "size": 23,
+          "subject": "hive | t+p meeting prep monthly sync",
+          "organizer": "Drew Brough",
+          "meeting_type": "planning_decision_meetings",
+          "taxonomy_category": "Strategic Planning & Decision - Planning Sessions",
+          "has_email_list": false,
+          "base_score": 32,
+          "collaboration_evidence": [
+            "Planning/decision meeting participation",
+            "Attended their working meeting"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2026-01-15T05:05:00",
+          "size": 32,
+          "subject": "prepare.ai status review",
+          "organizer": "Drew Brough",
+          "meeting_type": "planning_decision_meetings",
+          "taxonomy_category": "Strategic Planning & Decision - Planning Sessions",
+          "has_email_list": false,
+          "base_score": 32,
+          "collaboration_evidence": [
+            "Planning/decision meeting participation",
+            "Attended their working meeting"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2026-01-20T12:35:00",
+          "size": 9,
+          "subject": "meeting prep stca sync",
+          "organizer": "Mark Grimaldi",
+          "meeting_type": "small_collaborative_working",
+          "taxonomy_category": "Strategic Planning & Decision - Planning/Workshop Sessions",
+          "has_email_list": false,
+          "base_score": 15,
+          "collaboration_evidence": [
+            "Small collaborative working session"
+          ],
+          "information_evidence": []
+        }
+      ],
+      "graph_api_rank": null,
+      "graph_api_relevance": null,
+      "graph_api_verified": false,
+      "verified_name": null,
+      "job_title": null,
+      "shared_documents": 0,
+      "document_collaboration_score": 0,
+      "recency_data": {
+        "last_7_days": 24,
+        "last_30_days": 24,
+        "last_90_days": 24,
+        "recent_important_meetings": 22,
+        "most_recent_meeting": "2026-01-20T12:35:00",
+        "days_since_last_meeting": -87
+      },
+      "temporal_recency_score": 130.2,
+      "chat_count": 0,
+      "chat_message_count": 0,
+      "days_since_last_chat": null,
+      "chat_recency_score": 0,
+      "is_recent_chat": false,
+      "is_frequent_chat": false,
+      "chat_type": null,
+      "chat_only_collaborator": false,
+      "chat_collaboration_score": 0,
+      "algorithm_version": "7.0_teams_chat_integrated"
+    },
+    {
+      "name": "Balaji Shyamkumar",
+      "importance_score": 232.92,
+      "final_score": 309,
+      "confidence": 1.0,
+      "genuine_collaboration_meetings": 22,
+      "informational_meetings": 1,
+      "broadcast_meetings": 0,
+      "email_list_meetings": 0,
+      "genuine_ratio": 0.957,
+      "informational_ratio": 0.043,
+      "email_list_ratio": 0.0,
+      "one_on_one": 0,
+      "organized_by_me": 0,
+      "small_working_meetings": 13,
+      "attended_their_meetings": 0,
+      "time_periods": 4,
+      "total_meetings": 23,
+      "collaboration_evidence": [
+        "Planning/decision meeting participation",
+        "Small collaborative working session"
+      ],
+      "information_evidence": [
+        "Informational briefing attendance",
+        "Attended their informational meeting"
+      ],
+      "meeting_details": [
+        {
+          "date": "2026-01-06T12:35:00",
+          "size": 9,
+          "subject": "meeting prep stca sync",
+          "organizer": "Mark Grimaldi",
+          "meeting_type": "small_collaborative_working",
+          "taxonomy_category": "Strategic Planning & Decision - Planning/Workshop Sessions",
+          "has_email_list": false,
+          "base_score": 15,
+          "collaboration_evidence": [
+            "Small collaborative working session"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2026-01-13T12:35:00",
+          "size": 9,
+          "subject": "meeting prep stca sync",
+          "organizer": "Mark Grimaldi",
+          "meeting_type": "small_collaborative_working",
+          "taxonomy_category": "Strategic Planning & Decision - Planning/Workshop Sessions",
+          "has_email_list": false,
+          "base_score": 15,
+          "collaboration_evidence": [
+            "Small collaborative working session"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2026-01-15T02:05:00",
+          "size": 23,
+          "subject": "hive | t+p meeting prep monthly sync",
+          "organizer": "Drew Brough",
+          "meeting_type": "planning_decision_meetings",
+          "taxonomy_category": "Strategic Planning & Decision - Planning Sessions",
+          "has_email_list": false,
+          "base_score": 12,
+          "collaboration_evidence": [
+            "Planning/decision meeting participation"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2026-01-15T05:05:00",
+          "size": 32,
+          "subject": "prepare.ai status review",
+          "organizer": "Drew Brough",
+          "meeting_type": "planning_decision_meetings",
+          "taxonomy_category": "Strategic Planning & Decision - Planning Sessions",
+          "has_email_list": false,
+          "base_score": 12,
+          "collaboration_evidence": [
+            "Planning/decision meeting participation"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2026-01-20T12:35:00",
+          "size": 9,
+          "subject": "meeting prep stca sync",
+          "organizer": "Mark Grimaldi",
+          "meeting_type": "small_collaborative_working",
+          "taxonomy_category": "Strategic Planning & Decision - Planning/Workshop Sessions",
+          "has_email_list": false,
+          "base_score": 15,
+          "collaboration_evidence": [
+            "Small collaborative working session"
+          ],
+          "information_evidence": []
+        }
+      ],
+      "graph_api_rank": null,
+      "graph_api_relevance": null,
+      "graph_api_verified": false,
+      "verified_name": null,
+      "job_title": null,
+      "shared_documents": 1,
+      "document_collaboration_score": 5,
+      "recency_data": {
+        "last_7_days": 23,
+        "last_30_days": 23,
+        "last_90_days": 23,
+        "recent_important_meetings": 22,
+        "most_recent_meeting": "2026-01-20T12:35:00",
+        "days_since_last_meeting": -87
+      },
+      "temporal_recency_score": 126.15,
+      "chat_count": 2,
+      "chat_message_count": 2,
+      "days_since_last_chat": 0,
+      "chat_recency_score": 2.0,
+      "is_recent_chat": true,
+      "is_frequent_chat": false,
+      "chat_type": "meeting",
+      "chat_only_collaborator": false,
+      "chat_collaboration_score": 6.0,
+      "algorithm_version": "7.0_teams_chat_integrated"
+    },
+    {
+      "name": "Caroline Mao",
+      "importance_score": 231.88,
+      "final_score": 304,
+      "confidence": 1.0,
+      "genuine_collaboration_meetings": 22,
+      "informational_meetings": 1,
+      "broadcast_meetings": 0,
+      "email_list_meetings": 0,
+      "genuine_ratio": 0.957,
+      "informational_ratio": 0.043,
+      "email_list_ratio": 0.0,
+      "one_on_one": 0,
+      "organized_by_me": 0,
+      "small_working_meetings": 13,
+      "attended_their_meetings": 0,
+      "time_periods": 4,
+      "total_meetings": 23,
+      "collaboration_evidence": [
+        "Planning/decision meeting participation",
+        "Small collaborative working session"
+      ],
+      "information_evidence": [
+        "Informational briefing attendance"
+      ],
+      "meeting_details": [
+        {
+          "date": "2026-01-06T12:35:00",
+          "size": 9,
+          "subject": "meeting prep stca sync",
+          "organizer": "Mark Grimaldi",
+          "meeting_type": "small_collaborative_working",
+          "taxonomy_category": "Strategic Planning & Decision - Planning/Workshop Sessions",
+          "has_email_list": false,
+          "base_score": 15,
+          "collaboration_evidence": [
+            "Small collaborative working session"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2026-01-13T12:35:00",
+          "size": 9,
+          "subject": "meeting prep stca sync",
+          "organizer": "Mark Grimaldi",
+          "meeting_type": "small_collaborative_working",
+          "taxonomy_category": "Strategic Planning & Decision - Planning/Workshop Sessions",
+          "has_email_list": false,
+          "base_score": 15,
+          "collaboration_evidence": [
+            "Small collaborative working session"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2026-01-15T02:05:00",
+          "size": 23,
+          "subject": "hive | t+p meeting prep monthly sync",
+          "organizer": "Drew Brough",
+          "meeting_type": "planning_decision_meetings",
+          "taxonomy_category": "Strategic Planning & Decision - Planning Sessions",
+          "has_email_list": false,
+          "base_score": 12,
+          "collaboration_evidence": [
+            "Planning/decision meeting participation"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2026-01-15T05:05:00",
+          "size": 32,
+          "subject": "prepare.ai status review",
+          "organizer": "Drew Brough",
+          "meeting_type": "planning_decision_meetings",
+          "taxonomy_category": "Strategic Planning & Decision - Planning Sessions",
+          "has_email_list": false,
+          "base_score": 12,
+          "collaboration_evidence": [
+            "Planning/decision meeting participation"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2026-01-20T12:35:00",
+          "size": 9,
+          "subject": "meeting prep stca sync",
+          "organizer": "Mark Grimaldi",
+          "meeting_type": "small_collaborative_working",
+          "taxonomy_category": "Strategic Planning & Decision - Planning/Workshop Sessions",
+          "has_email_list": false,
+          "base_score": 15,
+          "collaboration_evidence": [
+            "Small collaborative working session"
+          ],
+          "information_evidence": []
+        }
+      ],
+      "graph_api_rank": null,
+      "graph_api_relevance": null,
+      "graph_api_verified": false,
+      "verified_name": null,
+      "job_title": null,
+      "shared_documents": 0,
+      "document_collaboration_score": 0,
+      "recency_data": {
+        "last_7_days": 23,
+        "last_30_days": 23,
+        "last_90_days": 23,
+        "recent_important_meetings": 22,
+        "most_recent_meeting": "2026-01-20T12:35:00",
+        "days_since_last_meeting": -87
+      },
+      "temporal_recency_score": 126.15,
+      "chat_count": 4,
+      "chat_message_count": 4,
+      "days_since_last_chat": 0,
+      "chat_recency_score": 2.0,
+      "is_recent_chat": true,
+      "is_frequent_chat": false,
+      "chat_type": "meeting",
+      "chat_only_collaborator": false,
+      "chat_collaboration_score": 12.0,
+      "algorithm_version": "7.0_teams_chat_integrated"
+    },
+    {
+      "name": "Sathish Venkat Rangam",
+      "importance_score": 227.85,
+      "final_score": 303,
+      "confidence": 1.0,
+      "genuine_collaboration_meetings": 22,
+      "informational_meetings": 0,
+      "broadcast_meetings": 0,
+      "email_list_meetings": 0,
+      "genuine_ratio": 1.0,
+      "informational_ratio": 0.0,
+      "email_list_ratio": 0.0,
+      "one_on_one": 0,
+      "organized_by_me": 0,
+      "small_working_meetings": 13,
+      "attended_their_meetings": 0,
+      "time_periods": 4,
+      "total_meetings": 22,
+      "collaboration_evidence": [
+        "Planning/decision meeting participation",
+        "Small collaborative working session"
+      ],
+      "information_evidence": [],
+      "meeting_details": [
+        {
+          "date": "2026-01-06T12:35:00",
+          "size": 9,
+          "subject": "meeting prep stca sync",
+          "organizer": "Mark Grimaldi",
+          "meeting_type": "small_collaborative_working",
+          "taxonomy_category": "Strategic Planning & Decision - Planning/Workshop Sessions",
+          "has_email_list": false,
+          "base_score": 15,
+          "collaboration_evidence": [
+            "Small collaborative working session"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2026-01-13T12:35:00",
+          "size": 9,
+          "subject": "meeting prep stca sync",
+          "organizer": "Mark Grimaldi",
+          "meeting_type": "small_collaborative_working",
+          "taxonomy_category": "Strategic Planning & Decision - Planning/Workshop Sessions",
+          "has_email_list": false,
+          "base_score": 15,
+          "collaboration_evidence": [
+            "Small collaborative working session"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2026-01-15T02:05:00",
+          "size": 23,
+          "subject": "hive | t+p meeting prep monthly sync",
+          "organizer": "Drew Brough",
+          "meeting_type": "planning_decision_meetings",
+          "taxonomy_category": "Strategic Planning & Decision - Planning Sessions",
+          "has_email_list": false,
+          "base_score": 12,
+          "collaboration_evidence": [
+            "Planning/decision meeting participation"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2026-01-15T05:05:00",
+          "size": 32,
+          "subject": "prepare.ai status review",
+          "organizer": "Drew Brough",
+          "meeting_type": "planning_decision_meetings",
+          "taxonomy_category": "Strategic Planning & Decision - Planning Sessions",
+          "has_email_list": false,
+          "base_score": 12,
+          "collaboration_evidence": [
+            "Planning/decision meeting participation"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2026-01-20T12:35:00",
+          "size": 9,
+          "subject": "meeting prep stca sync",
+          "organizer": "Mark Grimaldi",
+          "meeting_type": "small_collaborative_working",
+          "taxonomy_category": "Strategic Planning & Decision - Planning/Workshop Sessions",
+          "has_email_list": false,
+          "base_score": 15,
+          "collaboration_evidence": [
+            "Small collaborative working session"
+          ],
+          "information_evidence": []
+        }
+      ],
+      "graph_api_rank": null,
+      "graph_api_relevance": null,
+      "graph_api_verified": false,
+      "verified_name": null,
+      "job_title": null,
+      "shared_documents": 0,
+      "document_collaboration_score": 0,
+      "recency_data": {
+        "last_7_days": 22,
+        "last_30_days": 22,
+        "last_90_days": 22,
+        "recent_important_meetings": 22,
+        "most_recent_meeting": "2026-01-20T12:35:00",
+        "days_since_last_meeting": -87
+      },
+      "temporal_recency_score": 122.1,
+      "chat_count": 0,
+      "chat_message_count": 0,
+      "days_since_last_chat": null,
+      "chat_recency_score": 0,
+      "is_recent_chat": false,
+      "is_frequent_chat": false,
+      "chat_type": null,
+      "chat_only_collaborator": false,
+      "chat_collaboration_score": 0,
+      "algorithm_version": "7.0_teams_chat_integrated"
+    },
+    {
+      "name": "Deniz Cakirkaya",
+      "importance_score": 227.85,
+      "final_score": 303,
+      "confidence": 1.0,
+      "genuine_collaboration_meetings": 22,
+      "informational_meetings": 0,
+      "broadcast_meetings": 0,
+      "email_list_meetings": 0,
+      "genuine_ratio": 1.0,
+      "informational_ratio": 0.0,
+      "email_list_ratio": 0.0,
+      "one_on_one": 0,
+      "organized_by_me": 0,
+      "small_working_meetings": 13,
+      "attended_their_meetings": 0,
+      "time_periods": 4,
+      "total_meetings": 22,
+      "collaboration_evidence": [
+        "Planning/decision meeting participation",
+        "Small collaborative working session"
+      ],
+      "information_evidence": [],
+      "meeting_details": [
+        {
+          "date": "2026-01-06T12:35:00",
+          "size": 9,
+          "subject": "meeting prep stca sync",
+          "organizer": "Mark Grimaldi",
+          "meeting_type": "small_collaborative_working",
+          "taxonomy_category": "Strategic Planning & Decision - Planning/Workshop Sessions",
+          "has_email_list": false,
+          "base_score": 15,
+          "collaboration_evidence": [
+            "Small collaborative working session"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2026-01-13T12:35:00",
+          "size": 9,
+          "subject": "meeting prep stca sync",
+          "organizer": "Mark Grimaldi",
+          "meeting_type": "small_collaborative_working",
+          "taxonomy_category": "Strategic Planning & Decision - Planning/Workshop Sessions",
+          "has_email_list": false,
+          "base_score": 15,
+          "collaboration_evidence": [
+            "Small collaborative working session"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2026-01-15T02:05:00",
+          "size": 23,
+          "subject": "hive | t+p meeting prep monthly sync",
+          "organizer": "Drew Brough",
+          "meeting_type": "planning_decision_meetings",
+          "taxonomy_category": "Strategic Planning & Decision - Planning Sessions",
+          "has_email_list": false,
+          "base_score": 12,
+          "collaboration_evidence": [
+            "Planning/decision meeting participation"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2026-01-15T05:05:00",
+          "size": 32,
+          "subject": "prepare.ai status review",
+          "organizer": "Drew Brough",
+          "meeting_type": "planning_decision_meetings",
+          "taxonomy_category": "Strategic Planning & Decision - Planning Sessions",
+          "has_email_list": false,
+          "base_score": 12,
+          "collaboration_evidence": [
+            "Planning/decision meeting participation"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2026-01-20T12:35:00",
+          "size": 9,
+          "subject": "meeting prep stca sync",
+          "organizer": "Mark Grimaldi",
+          "meeting_type": "small_collaborative_working",
+          "taxonomy_category": "Strategic Planning & Decision - Planning/Workshop Sessions",
+          "has_email_list": false,
+          "base_score": 15,
+          "collaboration_evidence": [
+            "Small collaborative working session"
+          ],
+          "information_evidence": []
+        }
+      ],
+      "graph_api_rank": null,
+      "graph_api_relevance": null,
+      "graph_api_verified": false,
+      "verified_name": null,
+      "job_title": null,
+      "shared_documents": 0,
+      "document_collaboration_score": 0,
+      "recency_data": {
+        "last_7_days": 22,
+        "last_30_days": 22,
+        "last_90_days": 22,
+        "recent_important_meetings": 22,
+        "most_recent_meeting": "2026-01-20T12:35:00",
+        "days_since_last_meeting": -87
+      },
+      "temporal_recency_score": 122.1,
+      "chat_count": 0,
+      "chat_message_count": 0,
+      "days_since_last_chat": null,
+      "chat_recency_score": 0,
+      "is_recent_chat": false,
+      "is_frequent_chat": false,
+      "chat_type": null,
+      "chat_only_collaborator": false,
+      "chat_collaboration_score": 0,
+      "algorithm_version": "7.0_teams_chat_integrated"
+    },
+    {
+      "name": "Qingwei Lin",
+      "importance_score": 208.02,
+      "final_score": 283.3,
+      "confidence": 1.0,
+      "genuine_collaboration_meetings": 15,
+      "informational_meetings": 0,
+      "broadcast_meetings": 3,
+      "email_list_meetings": 0,
+      "genuine_ratio": 0.652,
+      "informational_ratio": 0.0,
+      "email_list_ratio": 0.0,
+      "one_on_one": 0,
+      "organized_by_me": 1,
+      "small_working_meetings": 14,
+      "attended_their_meetings": 0,
+      "time_periods": 4,
+      "total_meetings": 23,
+      "collaboration_evidence": [
+        "Small internal recurring meeting",
+        "Small collaborative working session",
+        "Meeting you organized together"
+      ],
+      "information_evidence": [
+        "Broadcast/webinar attendance"
+      ],
+      "meeting_details": [
+        {
+          "date": "2026-01-09T11:05:00",
+          "size": 9,
+          "subject": "silverflow+topiclens project weekly review",
+          "organizer": "Dongmei Zhang",
+          "meeting_type": "small_collaborative_working",
+          "taxonomy_category": "Strategic Planning & Decision - Planning/Workshop Sessions",
+          "has_email_list": false,
+          "base_score": 15,
+          "collaboration_evidence": [
+            "Small collaborative working session"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2026-01-16T11:05:00",
+          "size": 9,
+          "subject": "silverflow+topiclens project weekly review",
+          "organizer": "Dongmei Zhang",
+          "meeting_type": "small_collaborative_working",
+          "taxonomy_category": "Strategic Planning & Decision - Planning/Workshop Sessions",
+          "has_email_list": false,
+          "base_score": 15,
+          "collaboration_evidence": [
+            "Small collaborative working session"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2026-01-19T14:05:00",
+          "size": 5,
+          "subject": "bi-weekly dki lt meeting",
+          "organizer": "Dongmei Zhang",
+          "meeting_type": "small_internal_recurring",
+          "taxonomy_category": "Internal Recurring - Team Status Update Meetings",
+          "has_email_list": false,
+          "base_score": 8,
+          "collaboration_evidence": [
+            "Small internal recurring meeting"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2026-01-23T10:35:00",
+          "size": 176,
+          "subject": "stca monthly extended plt + managers ",
+          "organizer": "Effie Liu",
+          "meeting_type": "broadcast_webinar",
+          "taxonomy_category": "Informational & Broadcast - Webinars and Broadcasts",
+          "has_email_list": false,
+          "base_score": 0.1,
+          "collaboration_evidence": [],
+          "information_evidence": [
+            "Broadcast/webinar attendance"
+          ]
+        },
+        {
+          "date": "2026-01-23T11:05:00",
+          "size": 9,
+          "subject": "silverflow+topiclens project weekly review",
+          "organizer": "Dongmei Zhang",
+          "meeting_type": "small_collaborative_working",
+          "taxonomy_category": "Strategic Planning & Decision - Planning/Workshop Sessions",
+          "has_email_list": false,
+          "base_score": 15,
+          "collaboration_evidence": [
+            "Small collaborative working session"
+          ],
+          "information_evidence": []
+        }
+      ],
+      "graph_api_rank": null,
+      "graph_api_relevance": null,
+      "graph_api_verified": false,
+      "verified_name": null,
+      "job_title": null,
+      "shared_documents": 0,
+      "document_collaboration_score": 0,
+      "recency_data": {
+        "last_7_days": 23,
+        "last_30_days": 23,
+        "last_90_days": 23,
+        "recent_important_meetings": 14,
+        "most_recent_meeting": "2026-01-23T11:05:00",
+        "days_since_last_meeting": -90
+      },
+      "temporal_recency_score": 114.15,
+      "chat_count": 0,
+      "chat_message_count": 0,
+      "days_since_last_chat": null,
+      "chat_recency_score": 0,
+      "is_recent_chat": false,
+      "is_frequent_chat": false,
+      "chat_type": null,
+      "chat_only_collaborator": false,
+      "chat_collaboration_score": 0,
+      "algorithm_version": "7.0_teams_chat_integrated"
+    },
+    {
+      "name": "Xiaoting Qin",
+      "importance_score": 170.38,
+      "final_score": 201,
+      "confidence": 1.0,
+      "genuine_collaboration_meetings": 13,
+      "informational_meetings": 6,
+      "broadcast_meetings": 0,
+      "email_list_meetings": 0,
+      "genuine_ratio": 0.684,
+      "informational_ratio": 0.316,
+      "email_list_ratio": 0.0,
+      "one_on_one": 0,
+      "organized_by_me": 0,
+      "small_working_meetings": 13,
+      "attended_their_meetings": 0,
+      "time_periods": 4,
+      "total_meetings": 19,
+      "collaboration_evidence": [
+        "Small collaborative working session"
+      ],
+      "information_evidence": [
+        "Informational briefing attendance"
+      ],
+      "meeting_details": [
+        {
+          "date": "2026-01-02T11:05:00",
+          "size": 9,
+          "subject": "silverflow+topiclens project weekly review",
+          "organizer": "Dongmei Zhang",
+          "meeting_type": "small_collaborative_working",
+          "taxonomy_category": "Strategic Planning & Decision - Planning/Workshop Sessions",
+          "has_email_list": false,
+          "base_score": 15,
+          "collaboration_evidence": [
+            "Small collaborative working session"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2026-01-09T11:05:00",
+          "size": 9,
+          "subject": "silverflow+topiclens project weekly review",
+          "organizer": "Dongmei Zhang",
+          "meeting_type": "small_collaborative_working",
+          "taxonomy_category": "Strategic Planning & Decision - Planning/Workshop Sessions",
+          "has_email_list": false,
+          "base_score": 15,
+          "collaboration_evidence": [
+            "Small collaborative working session"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2026-01-13T12:05:00",
+          "size": 17,
+          "subject": "join us for our bi-weekly coffee, lunch & tech chat!",
+          "organizer": "Zhitao Hou",
+          "meeting_type": "informational_briefing",
+          "taxonomy_category": "Internal Recurring - Progress Review Meetings",
+          "has_email_list": false,
+          "base_score": 1,
+          "collaboration_evidence": [],
+          "information_evidence": [
+            "Informational briefing attendance"
+          ]
+        },
+        {
+          "date": "2026-01-16T11:05:00",
+          "size": 9,
+          "subject": "silverflow+topiclens project weekly review",
+          "organizer": "Dongmei Zhang",
+          "meeting_type": "small_collaborative_working",
+          "taxonomy_category": "Strategic Planning & Decision - Planning/Workshop Sessions",
+          "has_email_list": false,
+          "base_score": 15,
+          "collaboration_evidence": [
+            "Small collaborative working session"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2026-01-23T11:05:00",
+          "size": 9,
+          "subject": "silverflow+topiclens project weekly review",
+          "organizer": "Dongmei Zhang",
+          "meeting_type": "small_collaborative_working",
+          "taxonomy_category": "Strategic Planning & Decision - Planning/Workshop Sessions",
+          "has_email_list": false,
+          "base_score": 15,
+          "collaboration_evidence": [
+            "Small collaborative working session"
+          ],
+          "information_evidence": []
+        }
+      ],
+      "graph_api_rank": null,
+      "graph_api_relevance": null,
+      "graph_api_verified": false,
+      "verified_name": null,
+      "job_title": null,
+      "shared_documents": 0,
+      "document_collaboration_score": 0,
+      "recency_data": {
+        "last_7_days": 19,
+        "last_30_days": 19,
+        "last_90_days": 19,
+        "recent_important_meetings": 13,
+        "most_recent_meeting": "2026-01-23T11:05:00",
+        "days_since_last_meeting": -90
+      },
+      "temporal_recency_score": 96.45,
+      "chat_count": 0,
+      "chat_message_count": 0,
+      "days_since_last_chat": null,
+      "chat_recency_score": 0,
+      "is_recent_chat": false,
+      "is_frequent_chat": false,
+      "chat_type": null,
+      "chat_only_collaborator": false,
+      "chat_collaboration_score": 0,
+      "algorithm_version": "7.0_teams_chat_integrated"
+    },
+    {
+      "name": "Conf Rm BJW 2/12478(12P)",
+      "importance_score": 167.88,
+      "final_score": 235,
+      "confidence": 1.0,
+      "genuine_collaboration_meetings": 15,
+      "informational_meetings": 0,
+      "broadcast_meetings": 0,
+      "email_list_meetings": 0,
+      "genuine_ratio": 1.071,
+      "informational_ratio": 0.0,
+      "email_list_ratio": 0.0,
+      "one_on_one": 0,
+      "organized_by_me": 1,
+      "small_working_meetings": 14,
+      "attended_their_meetings": 0,
+      "time_periods": 4,
+      "total_meetings": 14,
+      "collaboration_evidence": [
+        "Small collaborative working session",
+        "Meeting you organized together"
+      ],
+      "information_evidence": [],
+      "meeting_details": [
+        {
+          "date": "2025-12-26T11:05:00",
+          "size": 9,
+          "subject": "silverflow+topiclens project weekly review",
+          "organizer": "Dongmei Zhang",
+          "meeting_type": "small_collaborative_working",
+          "taxonomy_category": "Strategic Planning & Decision - Planning/Workshop Sessions",
+          "has_email_list": false,
+          "base_score": 15,
+          "collaboration_evidence": [
+            "Small collaborative working session"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2026-01-02T11:05:00",
+          "size": 9,
+          "subject": "silverflow+topiclens project weekly review",
+          "organizer": "Dongmei Zhang",
+          "meeting_type": "small_collaborative_working",
+          "taxonomy_category": "Strategic Planning & Decision - Planning/Workshop Sessions",
+          "has_email_list": false,
+          "base_score": 15,
+          "collaboration_evidence": [
+            "Small collaborative working session"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2026-01-09T11:05:00",
+          "size": 9,
+          "subject": "silverflow+topiclens project weekly review",
+          "organizer": "Dongmei Zhang",
+          "meeting_type": "small_collaborative_working",
+          "taxonomy_category": "Strategic Planning & Decision - Planning/Workshop Sessions",
+          "has_email_list": false,
+          "base_score": 15,
+          "collaboration_evidence": [
+            "Small collaborative working session"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2026-01-16T11:05:00",
+          "size": 9,
+          "subject": "silverflow+topiclens project weekly review",
+          "organizer": "Dongmei Zhang",
+          "meeting_type": "small_collaborative_working",
+          "taxonomy_category": "Strategic Planning & Decision - Planning/Workshop Sessions",
+          "has_email_list": false,
+          "base_score": 15,
+          "collaboration_evidence": [
+            "Small collaborative working session"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2026-01-23T11:05:00",
+          "size": 9,
+          "subject": "silverflow+topiclens project weekly review",
+          "organizer": "Dongmei Zhang",
+          "meeting_type": "small_collaborative_working",
+          "taxonomy_category": "Strategic Planning & Decision - Planning/Workshop Sessions",
+          "has_email_list": false,
+          "base_score": 15,
+          "collaboration_evidence": [
+            "Small collaborative working session"
+          ],
+          "information_evidence": []
+        }
+      ],
+      "graph_api_rank": null,
+      "graph_api_relevance": null,
+      "graph_api_verified": false,
+      "verified_name": null,
+      "job_title": null,
+      "shared_documents": 0,
+      "document_collaboration_score": 0,
+      "recency_data": {
+        "last_7_days": 14,
+        "last_30_days": 14,
+        "last_90_days": 14,
+        "recent_important_meetings": 14,
+        "most_recent_meeting": "2026-01-23T11:05:00",
+        "days_since_last_meeting": -90
+      },
+      "temporal_recency_score": 77.7,
+      "chat_count": 0,
+      "chat_message_count": 0,
+      "days_since_last_chat": null,
+      "chat_recency_score": 0,
+      "is_recent_chat": false,
+      "is_frequent_chat": false,
+      "chat_type": null,
+      "chat_only_collaborator": false,
+      "chat_collaboration_score": 0,
+      "algorithm_version": "7.0_teams_chat_integrated"
+    },
+    {
+      "name": "Ray Huang",
+      "importance_score": 159.38,
+      "final_score": 195.3,
+      "confidence": 1.0,
+      "genuine_collaboration_meetings": 13,
+      "informational_meetings": 0,
+      "broadcast_meetings": 3,
+      "email_list_meetings": 0,
+      "genuine_ratio": 0.812,
+      "informational_ratio": 0.0,
+      "email_list_ratio": 0.0,
+      "one_on_one": 0,
+      "organized_by_me": 0,
+      "small_working_meetings": 13,
+      "attended_their_meetings": 0,
+      "time_periods": 4,
+      "total_meetings": 16,
+      "collaboration_evidence": [
+        "Small collaborative working session"
+      ],
+      "information_evidence": [
+        "Broadcast/webinar attendance"
+      ],
+      "meeting_details": [
+        {
+          "date": "2026-01-02T11:05:00",
+          "size": 9,
+          "subject": "silverflow+topiclens project weekly review",
+          "organizer": "Dongmei Zhang",
+          "meeting_type": "small_collaborative_working",
+          "taxonomy_category": "Strategic Planning & Decision - Planning/Workshop Sessions",
+          "has_email_list": false,
+          "base_score": 15,
+          "collaboration_evidence": [
+            "Small collaborative working session"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2026-01-09T11:05:00",
+          "size": 9,
+          "subject": "silverflow+topiclens project weekly review",
+          "organizer": "Dongmei Zhang",
+          "meeting_type": "small_collaborative_working",
+          "taxonomy_category": "Strategic Planning & Decision - Planning/Workshop Sessions",
+          "has_email_list": false,
+          "base_score": 15,
+          "collaboration_evidence": [
+            "Small collaborative working session"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2026-01-16T11:05:00",
+          "size": 9,
+          "subject": "silverflow+topiclens project weekly review",
+          "organizer": "Dongmei Zhang",
+          "meeting_type": "small_collaborative_working",
+          "taxonomy_category": "Strategic Planning & Decision - Planning/Workshop Sessions",
+          "has_email_list": false,
+          "base_score": 15,
+          "collaboration_evidence": [
+            "Small collaborative working session"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2026-01-23T10:35:00",
+          "size": 176,
+          "subject": "stca monthly extended plt + managers ",
+          "organizer": "Effie Liu",
+          "meeting_type": "broadcast_webinar",
+          "taxonomy_category": "Informational & Broadcast - Webinars and Broadcasts",
+          "has_email_list": false,
+          "base_score": 0.1,
+          "collaboration_evidence": [],
+          "information_evidence": [
+            "Broadcast/webinar attendance"
+          ]
+        },
+        {
+          "date": "2026-01-23T11:05:00",
+          "size": 9,
+          "subject": "silverflow+topiclens project weekly review",
+          "organizer": "Dongmei Zhang",
+          "meeting_type": "small_collaborative_working",
+          "taxonomy_category": "Strategic Planning & Decision - Planning/Workshop Sessions",
+          "has_email_list": false,
+          "base_score": 15,
+          "collaboration_evidence": [
+            "Small collaborative working session"
+          ],
+          "information_evidence": []
+        }
+      ],
+      "graph_api_rank": null,
+      "graph_api_relevance": null,
+      "graph_api_verified": false,
+      "verified_name": null,
+      "job_title": null,
+      "shared_documents": 0,
+      "document_collaboration_score": 0,
+      "recency_data": {
+        "last_7_days": 16,
+        "last_30_days": 16,
+        "last_90_days": 16,
+        "recent_important_meetings": 13,
+        "most_recent_meeting": "2026-01-23T11:05:00",
+        "days_since_last_meeting": -90
+      },
+      "temporal_recency_score": 84.3,
+      "chat_count": 0,
+      "chat_message_count": 0,
+      "days_since_last_chat": null,
+      "chat_recency_score": 0,
+      "is_recent_chat": false,
+      "is_frequent_chat": false,
+      "chat_type": null,
+      "chat_only_collaborator": false,
+      "chat_collaboration_score": 0,
+      "algorithm_version": "7.0_teams_chat_integrated"
+    },
+    {
+      "name": "Song Ge",
+      "importance_score": 159.38,
+      "final_score": 195.3,
+      "confidence": 1.0,
+      "genuine_collaboration_meetings": 13,
+      "informational_meetings": 0,
+      "broadcast_meetings": 3,
+      "email_list_meetings": 0,
+      "genuine_ratio": 0.812,
+      "informational_ratio": 0.0,
+      "email_list_ratio": 0.0,
+      "one_on_one": 0,
+      "organized_by_me": 0,
+      "small_working_meetings": 13,
+      "attended_their_meetings": 0,
+      "time_periods": 4,
+      "total_meetings": 16,
+      "collaboration_evidence": [
+        "Small collaborative working session"
+      ],
+      "information_evidence": [
+        "Broadcast/webinar attendance"
+      ],
+      "meeting_details": [
+        {
+          "date": "2026-01-02T11:05:00",
+          "size": 9,
+          "subject": "silverflow+topiclens project weekly review",
+          "organizer": "Dongmei Zhang",
+          "meeting_type": "small_collaborative_working",
+          "taxonomy_category": "Strategic Planning & Decision - Planning/Workshop Sessions",
+          "has_email_list": false,
+          "base_score": 15,
+          "collaboration_evidence": [
+            "Small collaborative working session"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2026-01-09T11:05:00",
+          "size": 9,
+          "subject": "silverflow+topiclens project weekly review",
+          "organizer": "Dongmei Zhang",
+          "meeting_type": "small_collaborative_working",
+          "taxonomy_category": "Strategic Planning & Decision - Planning/Workshop Sessions",
+          "has_email_list": false,
+          "base_score": 15,
+          "collaboration_evidence": [
+            "Small collaborative working session"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2026-01-16T11:05:00",
+          "size": 9,
+          "subject": "silverflow+topiclens project weekly review",
+          "organizer": "Dongmei Zhang",
+          "meeting_type": "small_collaborative_working",
+          "taxonomy_category": "Strategic Planning & Decision - Planning/Workshop Sessions",
+          "has_email_list": false,
+          "base_score": 15,
+          "collaboration_evidence": [
+            "Small collaborative working session"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2026-01-23T10:35:00",
+          "size": 176,
+          "subject": "stca monthly extended plt + managers ",
+          "organizer": "Effie Liu",
+          "meeting_type": "broadcast_webinar",
+          "taxonomy_category": "Informational & Broadcast - Webinars and Broadcasts",
+          "has_email_list": false,
+          "base_score": 0.1,
+          "collaboration_evidence": [],
+          "information_evidence": [
+            "Broadcast/webinar attendance"
+          ]
+        },
+        {
+          "date": "2026-01-23T11:05:00",
+          "size": 9,
+          "subject": "silverflow+topiclens project weekly review",
+          "organizer": "Dongmei Zhang",
+          "meeting_type": "small_collaborative_working",
+          "taxonomy_category": "Strategic Planning & Decision - Planning/Workshop Sessions",
+          "has_email_list": false,
+          "base_score": 15,
+          "collaboration_evidence": [
+            "Small collaborative working session"
+          ],
+          "information_evidence": []
+        }
+      ],
+      "graph_api_rank": null,
+      "graph_api_relevance": null,
+      "graph_api_verified": false,
+      "verified_name": null,
+      "job_title": null,
+      "shared_documents": 0,
+      "document_collaboration_score": 0,
+      "recency_data": {
+        "last_7_days": 16,
+        "last_30_days": 16,
+        "last_90_days": 16,
+        "recent_important_meetings": 13,
+        "most_recent_meeting": "2026-01-23T11:05:00",
+        "days_since_last_meeting": -90
+      },
+      "temporal_recency_score": 84.3,
+      "chat_count": 0,
+      "chat_message_count": 0,
+      "days_since_last_chat": null,
+      "chat_recency_score": 0,
+      "is_recent_chat": false,
+      "is_frequent_chat": false,
+      "chat_type": null,
+      "chat_only_collaborator": false,
+      "chat_collaboration_score": 0,
+      "algorithm_version": "7.0_teams_chat_integrated"
+    },
+    {
+      "name": "Rakesh Ranjan Singh",
+      "importance_score": 150.9,
+      "final_score": 195,
+      "confidence": 1.0,
+      "genuine_collaboration_meetings": 13,
+      "informational_meetings": 0,
+      "broadcast_meetings": 0,
+      "email_list_meetings": 0,
+      "genuine_ratio": 1.0,
+      "informational_ratio": 0.0,
+      "email_list_ratio": 0.0,
+      "one_on_one": 0,
+      "organized_by_me": 0,
+      "small_working_meetings": 13,
+      "attended_their_meetings": 0,
+      "time_periods": 4,
+      "total_meetings": 13,
+      "collaboration_evidence": [
+        "Small collaborative working session"
+      ],
+      "information_evidence": [],
+      "meeting_details": [
+        {
+          "date": "2025-12-23T12:35:00",
+          "size": 9,
+          "subject": "meeting prep stca sync",
+          "organizer": "Mark Grimaldi",
+          "meeting_type": "small_collaborative_working",
+          "taxonomy_category": "Strategic Planning & Decision - Planning/Workshop Sessions",
+          "has_email_list": false,
+          "base_score": 15,
+          "collaboration_evidence": [
+            "Small collaborative working session"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2025-12-30T12:35:00",
+          "size": 9,
+          "subject": "meeting prep stca sync",
+          "organizer": "Mark Grimaldi",
+          "meeting_type": "small_collaborative_working",
+          "taxonomy_category": "Strategic Planning & Decision - Planning/Workshop Sessions",
+          "has_email_list": false,
+          "base_score": 15,
+          "collaboration_evidence": [
+            "Small collaborative working session"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2026-01-06T12:35:00",
+          "size": 9,
+          "subject": "meeting prep stca sync",
+          "organizer": "Mark Grimaldi",
+          "meeting_type": "small_collaborative_working",
+          "taxonomy_category": "Strategic Planning & Decision - Planning/Workshop Sessions",
+          "has_email_list": false,
+          "base_score": 15,
+          "collaboration_evidence": [
+            "Small collaborative working session"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2026-01-13T12:35:00",
+          "size": 9,
+          "subject": "meeting prep stca sync",
+          "organizer": "Mark Grimaldi",
+          "meeting_type": "small_collaborative_working",
+          "taxonomy_category": "Strategic Planning & Decision - Planning/Workshop Sessions",
+          "has_email_list": false,
+          "base_score": 15,
+          "collaboration_evidence": [
+            "Small collaborative working session"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2026-01-20T12:35:00",
+          "size": 9,
+          "subject": "meeting prep stca sync",
+          "organizer": "Mark Grimaldi",
+          "meeting_type": "small_collaborative_working",
+          "taxonomy_category": "Strategic Planning & Decision - Planning/Workshop Sessions",
+          "has_email_list": false,
+          "base_score": 15,
+          "collaboration_evidence": [
+            "Small collaborative working session"
+          ],
+          "information_evidence": []
+        }
+      ],
+      "graph_api_rank": null,
+      "graph_api_relevance": null,
+      "graph_api_verified": false,
+      "verified_name": null,
+      "job_title": null,
+      "shared_documents": 0,
+      "document_collaboration_score": 0,
+      "recency_data": {
+        "last_7_days": 13,
+        "last_30_days": 13,
+        "last_90_days": 13,
+        "recent_important_meetings": 13,
+        "most_recent_meeting": "2026-01-20T12:35:00",
+        "days_since_last_meeting": -87
+      },
+      "temporal_recency_score": 72.15,
+      "chat_count": 0,
+      "chat_message_count": 0,
+      "days_since_last_chat": null,
+      "chat_recency_score": 0,
+      "is_recent_chat": false,
+      "is_frequent_chat": false,
+      "chat_type": null,
+      "chat_only_collaborator": false,
+      "chat_collaboration_score": 0,
+      "algorithm_version": "7.0_teams_chat_integrated"
+    },
+    {
+      "name": "Yong Xu",
+      "importance_score": 150.9,
+      "final_score": 195,
+      "confidence": 1.0,
+      "genuine_collaboration_meetings": 13,
+      "informational_meetings": 0,
+      "broadcast_meetings": 0,
+      "email_list_meetings": 0,
+      "genuine_ratio": 1.0,
+      "informational_ratio": 0.0,
+      "email_list_ratio": 0.0,
+      "one_on_one": 0,
+      "organized_by_me": 0,
+      "small_working_meetings": 13,
+      "attended_their_meetings": 0,
+      "time_periods": 4,
+      "total_meetings": 13,
+      "collaboration_evidence": [
+        "Small collaborative working session"
+      ],
+      "information_evidence": [],
+      "meeting_details": [
+        {
+          "date": "2025-12-26T11:05:00",
+          "size": 9,
+          "subject": "silverflow+topiclens project weekly review",
+          "organizer": "Dongmei Zhang",
+          "meeting_type": "small_collaborative_working",
+          "taxonomy_category": "Strategic Planning & Decision - Planning/Workshop Sessions",
+          "has_email_list": false,
+          "base_score": 15,
+          "collaboration_evidence": [
+            "Small collaborative working session"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2026-01-02T11:05:00",
+          "size": 9,
+          "subject": "silverflow+topiclens project weekly review",
+          "organizer": "Dongmei Zhang",
+          "meeting_type": "small_collaborative_working",
+          "taxonomy_category": "Strategic Planning & Decision - Planning/Workshop Sessions",
+          "has_email_list": false,
+          "base_score": 15,
+          "collaboration_evidence": [
+            "Small collaborative working session"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2026-01-09T11:05:00",
+          "size": 9,
+          "subject": "silverflow+topiclens project weekly review",
+          "organizer": "Dongmei Zhang",
+          "meeting_type": "small_collaborative_working",
+          "taxonomy_category": "Strategic Planning & Decision - Planning/Workshop Sessions",
+          "has_email_list": false,
+          "base_score": 15,
+          "collaboration_evidence": [
+            "Small collaborative working session"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2026-01-16T11:05:00",
+          "size": 9,
+          "subject": "silverflow+topiclens project weekly review",
+          "organizer": "Dongmei Zhang",
+          "meeting_type": "small_collaborative_working",
+          "taxonomy_category": "Strategic Planning & Decision - Planning/Workshop Sessions",
+          "has_email_list": false,
+          "base_score": 15,
+          "collaboration_evidence": [
+            "Small collaborative working session"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2026-01-23T11:05:00",
+          "size": 9,
+          "subject": "silverflow+topiclens project weekly review",
+          "organizer": "Dongmei Zhang",
+          "meeting_type": "small_collaborative_working",
+          "taxonomy_category": "Strategic Planning & Decision - Planning/Workshop Sessions",
+          "has_email_list": false,
+          "base_score": 15,
+          "collaboration_evidence": [
+            "Small collaborative working session"
+          ],
+          "information_evidence": []
+        }
+      ],
+      "graph_api_rank": null,
+      "graph_api_relevance": null,
+      "graph_api_verified": false,
+      "verified_name": null,
+      "job_title": null,
+      "shared_documents": 0,
+      "document_collaboration_score": 0,
+      "recency_data": {
+        "last_7_days": 13,
+        "last_30_days": 13,
+        "last_90_days": 13,
+        "recent_important_meetings": 13,
+        "most_recent_meeting": "2026-01-23T11:05:00",
+        "days_since_last_meeting": -90
+      },
+      "temporal_recency_score": 72.15,
+      "chat_count": 0,
+      "chat_message_count": 0,
+      "days_since_last_chat": null,
+      "chat_recency_score": 0,
+      "is_recent_chat": false,
+      "is_frequent_chat": false,
+      "chat_type": null,
+      "chat_only_collaborator": false,
+      "chat_collaboration_score": 0,
+      "algorithm_version": "7.0_teams_chat_integrated"
+    },
+    {
+      "name": "Charlie Chung",
+      "importance_score": 111.7,
+      "final_score": 109.2,
+      "confidence": 0.7,
+      "genuine_collaboration_meetings": 9,
+      "informational_meetings": 1,
+      "broadcast_meetings": 2,
+      "email_list_meetings": 0,
+      "genuine_ratio": 0.75,
+      "informational_ratio": 0.083,
+      "email_list_ratio": 0.0,
+      "one_on_one": 0,
+      "organized_by_me": 0,
+      "small_working_meetings": 0,
+      "attended_their_meetings": 0,
+      "time_periods": 4,
+      "total_meetings": 12,
+      "collaboration_evidence": [
+        "Planning/decision meeting participation"
+      ],
+      "information_evidence": [
+        "Informational briefing attendance",
+        "Broadcast/webinar attendance"
+      ],
+      "meeting_details": [
+        {
+          "date": "2025-12-18T05:05:00",
+          "size": 32,
+          "subject": "prepare.ai status review",
+          "organizer": "Drew Brough",
+          "meeting_type": "planning_decision_meetings",
+          "taxonomy_category": "Strategic Planning & Decision - Planning Sessions",
+          "has_email_list": false,
+          "base_score": 12,
+          "collaboration_evidence": [
+            "Planning/decision meeting participation"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2026-01-01T05:05:00",
+          "size": 32,
+          "subject": "prepare.ai status review",
+          "organizer": "Drew Brough",
+          "meeting_type": "planning_decision_meetings",
+          "taxonomy_category": "Strategic Planning & Decision - Planning Sessions",
+          "has_email_list": false,
+          "base_score": 12,
+          "collaboration_evidence": [
+            "Planning/decision meeting participation"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2026-01-09T02:05:00",
+          "size": 64,
+          "subject": "research updates | time + places",
+          "organizer": "Pratibha Permandla",
+          "meeting_type": "broadcast_webinar",
+          "taxonomy_category": "Informational & Broadcast - Webinars and Broadcasts",
+          "has_email_list": false,
+          "base_score": 0.1,
+          "collaboration_evidence": [],
+          "information_evidence": [
+            "Broadcast/webinar attendance"
+          ]
+        },
+        {
+          "date": "2026-01-15T02:05:00",
+          "size": 23,
+          "subject": "hive | t+p meeting prep monthly sync",
+          "organizer": "Drew Brough",
+          "meeting_type": "planning_decision_meetings",
+          "taxonomy_category": "Strategic Planning & Decision - Planning Sessions",
+          "has_email_list": false,
+          "base_score": 12,
+          "collaboration_evidence": [
+            "Planning/decision meeting participation"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2026-01-15T05:05:00",
+          "size": 32,
+          "subject": "prepare.ai status review",
+          "organizer": "Drew Brough",
+          "meeting_type": "planning_decision_meetings",
+          "taxonomy_category": "Strategic Planning & Decision - Planning Sessions",
+          "has_email_list": false,
+          "base_score": 12,
+          "collaboration_evidence": [
+            "Planning/decision meeting participation"
+          ],
+          "information_evidence": []
+        }
+      ],
+      "graph_api_rank": null,
+      "graph_api_relevance": null,
+      "graph_api_verified": false,
+      "verified_name": null,
+      "job_title": null,
+      "shared_documents": 0,
+      "document_collaboration_score": 0,
+      "recency_data": {
+        "last_7_days": 12,
+        "last_30_days": 12,
+        "last_90_days": 12,
+        "recent_important_meetings": 9,
+        "most_recent_meeting": "2026-01-15T05:05:00",
+        "days_since_last_meeting": -82
+      },
+      "temporal_recency_score": 62.1,
+      "chat_count": 1,
+      "chat_message_count": 1,
+      "days_since_last_chat": 0,
+      "chat_recency_score": 2.0,
+      "is_recent_chat": true,
+      "is_frequent_chat": false,
+      "chat_type": "oneOnOne",
+      "chat_only_collaborator": false,
+      "chat_collaboration_score": 6.0,
+      "algorithm_version": "7.0_teams_chat_integrated"
+    },
+    {
+      "name": "Ravi Jaiswal",
+      "importance_score": 111.55,
+      "final_score": 109.2,
+      "confidence": 0.7,
+      "genuine_collaboration_meetings": 9,
+      "informational_meetings": 1,
+      "broadcast_meetings": 2,
+      "email_list_meetings": 0,
+      "genuine_ratio": 0.75,
+      "informational_ratio": 0.083,
+      "email_list_ratio": 0.0,
+      "one_on_one": 0,
+      "organized_by_me": 0,
+      "small_working_meetings": 0,
+      "attended_their_meetings": 0,
+      "time_periods": 4,
+      "total_meetings": 12,
+      "collaboration_evidence": [
+        "Planning/decision meeting participation"
+      ],
+      "information_evidence": [
+        "Informational briefing attendance",
+        "Broadcast/webinar attendance"
+      ],
+      "meeting_details": [
+        {
+          "date": "2025-12-18T05:05:00",
+          "size": 32,
+          "subject": "prepare.ai status review",
+          "organizer": "Drew Brough",
+          "meeting_type": "planning_decision_meetings",
+          "taxonomy_category": "Strategic Planning & Decision - Planning Sessions",
+          "has_email_list": false,
+          "base_score": 12,
+          "collaboration_evidence": [
+            "Planning/decision meeting participation"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2026-01-01T05:05:00",
+          "size": 32,
+          "subject": "prepare.ai status review",
+          "organizer": "Drew Brough",
+          "meeting_type": "planning_decision_meetings",
+          "taxonomy_category": "Strategic Planning & Decision - Planning Sessions",
+          "has_email_list": false,
+          "base_score": 12,
+          "collaboration_evidence": [
+            "Planning/decision meeting participation"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2026-01-09T02:05:00",
+          "size": 64,
+          "subject": "research updates | time + places",
+          "organizer": "Pratibha Permandla",
+          "meeting_type": "broadcast_webinar",
+          "taxonomy_category": "Informational & Broadcast - Webinars and Broadcasts",
+          "has_email_list": false,
+          "base_score": 0.1,
+          "collaboration_evidence": [],
+          "information_evidence": [
+            "Broadcast/webinar attendance"
+          ]
+        },
+        {
+          "date": "2026-01-15T02:05:00",
+          "size": 23,
+          "subject": "hive | t+p meeting prep monthly sync",
+          "organizer": "Drew Brough",
+          "meeting_type": "planning_decision_meetings",
+          "taxonomy_category": "Strategic Planning & Decision - Planning Sessions",
+          "has_email_list": false,
+          "base_score": 12,
+          "collaboration_evidence": [
+            "Planning/decision meeting participation"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2026-01-15T05:05:00",
+          "size": 32,
+          "subject": "prepare.ai status review",
+          "organizer": "Drew Brough",
+          "meeting_type": "planning_decision_meetings",
+          "taxonomy_category": "Strategic Planning & Decision - Planning Sessions",
+          "has_email_list": false,
+          "base_score": 12,
+          "collaboration_evidence": [
+            "Planning/decision meeting participation"
+          ],
+          "information_evidence": []
+        }
+      ],
+      "graph_api_rank": null,
+      "graph_api_relevance": null,
+      "graph_api_verified": false,
+      "verified_name": null,
+      "job_title": null,
+      "shared_documents": 0,
+      "document_collaboration_score": 0,
+      "recency_data": {
+        "last_7_days": 12,
+        "last_30_days": 12,
+        "last_90_days": 12,
+        "recent_important_meetings": 9,
+        "most_recent_meeting": "2026-01-15T05:05:00",
+        "days_since_last_meeting": -82
+      },
+      "temporal_recency_score": 62.1,
+      "chat_count": 1,
+      "chat_message_count": 1,
+      "days_since_last_chat": 0,
+      "chat_recency_score": 2.0,
+      "is_recent_chat": true,
+      "is_frequent_chat": false,
+      "chat_type": "meeting",
+      "chat_only_collaborator": false,
+      "chat_collaboration_score": 3.0,
+      "algorithm_version": "7.0_teams_chat_integrated"
+    },
+    {
+      "name": "Santhosh Raman",
+      "importance_score": 111.4,
+      "final_score": 109.2,
+      "confidence": 0.7,
+      "genuine_collaboration_meetings": 9,
+      "informational_meetings": 1,
+      "broadcast_meetings": 2,
+      "email_list_meetings": 0,
+      "genuine_ratio": 0.75,
+      "informational_ratio": 0.083,
+      "email_list_ratio": 0.0,
+      "one_on_one": 0,
+      "organized_by_me": 0,
+      "small_working_meetings": 0,
+      "attended_their_meetings": 0,
+      "time_periods": 4,
+      "total_meetings": 12,
+      "collaboration_evidence": [
+        "Planning/decision meeting participation"
+      ],
+      "information_evidence": [
+        "Informational briefing attendance",
+        "Broadcast/webinar attendance"
+      ],
+      "meeting_details": [
+        {
+          "date": "2025-12-18T05:05:00",
+          "size": 32,
+          "subject": "prepare.ai status review",
+          "organizer": "Drew Brough",
+          "meeting_type": "planning_decision_meetings",
+          "taxonomy_category": "Strategic Planning & Decision - Planning Sessions",
+          "has_email_list": false,
+          "base_score": 12,
+          "collaboration_evidence": [
+            "Planning/decision meeting participation"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2026-01-01T05:05:00",
+          "size": 32,
+          "subject": "prepare.ai status review",
+          "organizer": "Drew Brough",
+          "meeting_type": "planning_decision_meetings",
+          "taxonomy_category": "Strategic Planning & Decision - Planning Sessions",
+          "has_email_list": false,
+          "base_score": 12,
+          "collaboration_evidence": [
+            "Planning/decision meeting participation"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2026-01-09T02:05:00",
+          "size": 64,
+          "subject": "research updates | time + places",
+          "organizer": "Pratibha Permandla",
+          "meeting_type": "broadcast_webinar",
+          "taxonomy_category": "Informational & Broadcast - Webinars and Broadcasts",
+          "has_email_list": false,
+          "base_score": 0.1,
+          "collaboration_evidence": [],
+          "information_evidence": [
+            "Broadcast/webinar attendance"
+          ]
+        },
+        {
+          "date": "2026-01-15T02:05:00",
+          "size": 23,
+          "subject": "hive | t+p meeting prep monthly sync",
+          "organizer": "Drew Brough",
+          "meeting_type": "planning_decision_meetings",
+          "taxonomy_category": "Strategic Planning & Decision - Planning Sessions",
+          "has_email_list": false,
+          "base_score": 12,
+          "collaboration_evidence": [
+            "Planning/decision meeting participation"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2026-01-15T05:05:00",
+          "size": 32,
+          "subject": "prepare.ai status review",
+          "organizer": "Drew Brough",
+          "meeting_type": "planning_decision_meetings",
+          "taxonomy_category": "Strategic Planning & Decision - Planning Sessions",
+          "has_email_list": false,
+          "base_score": 12,
+          "collaboration_evidence": [
+            "Planning/decision meeting participation"
+          ],
+          "information_evidence": []
+        }
+      ],
+      "graph_api_rank": null,
+      "graph_api_relevance": null,
+      "graph_api_verified": false,
+      "verified_name": null,
+      "job_title": null,
+      "shared_documents": 0,
+      "document_collaboration_score": 0,
+      "recency_data": {
+        "last_7_days": 12,
+        "last_30_days": 12,
+        "last_90_days": 12,
+        "recent_important_meetings": 9,
+        "most_recent_meeting": "2026-01-15T05:05:00",
+        "days_since_last_meeting": -82
+      },
+      "temporal_recency_score": 62.1,
+      "chat_count": 0,
+      "chat_message_count": 0,
+      "days_since_last_chat": null,
+      "chat_recency_score": 0,
+      "is_recent_chat": false,
+      "is_frequent_chat": false,
+      "chat_type": null,
+      "chat_only_collaborator": false,
+      "chat_collaboration_score": 0,
+      "algorithm_version": "7.0_teams_chat_integrated"
+    },
+    {
+      "name": "Vani Soff",
+      "importance_score": 111.4,
+      "final_score": 109.2,
+      "confidence": 0.7,
+      "genuine_collaboration_meetings": 9,
+      "informational_meetings": 1,
+      "broadcast_meetings": 2,
+      "email_list_meetings": 0,
+      "genuine_ratio": 0.75,
+      "informational_ratio": 0.083,
+      "email_list_ratio": 0.0,
+      "one_on_one": 0,
+      "organized_by_me": 0,
+      "small_working_meetings": 0,
+      "attended_their_meetings": 0,
+      "time_periods": 4,
+      "total_meetings": 12,
+      "collaboration_evidence": [
+        "Planning/decision meeting participation"
+      ],
+      "information_evidence": [
+        "Informational briefing attendance",
+        "Broadcast/webinar attendance"
+      ],
+      "meeting_details": [
+        {
+          "date": "2025-12-18T05:05:00",
+          "size": 32,
+          "subject": "prepare.ai status review",
+          "organizer": "Drew Brough",
+          "meeting_type": "planning_decision_meetings",
+          "taxonomy_category": "Strategic Planning & Decision - Planning Sessions",
+          "has_email_list": false,
+          "base_score": 12,
+          "collaboration_evidence": [
+            "Planning/decision meeting participation"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2026-01-01T05:05:00",
+          "size": 32,
+          "subject": "prepare.ai status review",
+          "organizer": "Drew Brough",
+          "meeting_type": "planning_decision_meetings",
+          "taxonomy_category": "Strategic Planning & Decision - Planning Sessions",
+          "has_email_list": false,
+          "base_score": 12,
+          "collaboration_evidence": [
+            "Planning/decision meeting participation"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2026-01-09T02:05:00",
+          "size": 64,
+          "subject": "research updates | time + places",
+          "organizer": "Pratibha Permandla",
+          "meeting_type": "broadcast_webinar",
+          "taxonomy_category": "Informational & Broadcast - Webinars and Broadcasts",
+          "has_email_list": false,
+          "base_score": 0.1,
+          "collaboration_evidence": [],
+          "information_evidence": [
+            "Broadcast/webinar attendance"
+          ]
+        },
+        {
+          "date": "2026-01-15T02:05:00",
+          "size": 23,
+          "subject": "hive | t+p meeting prep monthly sync",
+          "organizer": "Drew Brough",
+          "meeting_type": "planning_decision_meetings",
+          "taxonomy_category": "Strategic Planning & Decision - Planning Sessions",
+          "has_email_list": false,
+          "base_score": 12,
+          "collaboration_evidence": [
+            "Planning/decision meeting participation"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2026-01-15T05:05:00",
+          "size": 32,
+          "subject": "prepare.ai status review",
+          "organizer": "Drew Brough",
+          "meeting_type": "planning_decision_meetings",
+          "taxonomy_category": "Strategic Planning & Decision - Planning Sessions",
+          "has_email_list": false,
+          "base_score": 12,
+          "collaboration_evidence": [
+            "Planning/decision meeting participation"
+          ],
+          "information_evidence": []
+        }
+      ],
+      "graph_api_rank": null,
+      "graph_api_relevance": null,
+      "graph_api_verified": false,
+      "verified_name": null,
+      "job_title": null,
+      "shared_documents": 0,
+      "document_collaboration_score": 0,
+      "recency_data": {
+        "last_7_days": 12,
+        "last_30_days": 12,
+        "last_90_days": 12,
+        "recent_important_meetings": 9,
+        "most_recent_meeting": "2026-01-15T05:05:00",
+        "days_since_last_meeting": -82
+      },
+      "temporal_recency_score": 62.1,
+      "chat_count": 0,
+      "chat_message_count": 0,
+      "days_since_last_chat": null,
+      "chat_recency_score": 0,
+      "is_recent_chat": false,
+      "is_frequent_chat": false,
+      "chat_type": null,
+      "chat_only_collaborator": false,
+      "chat_collaboration_score": 0,
+      "algorithm_version": "7.0_teams_chat_integrated"
+    },
+    {
+      "name": "Selva Nalliah",
+      "importance_score": 111.4,
+      "final_score": 109.2,
+      "confidence": 0.7,
+      "genuine_collaboration_meetings": 9,
+      "informational_meetings": 1,
+      "broadcast_meetings": 2,
+      "email_list_meetings": 0,
+      "genuine_ratio": 0.75,
+      "informational_ratio": 0.083,
+      "email_list_ratio": 0.0,
+      "one_on_one": 0,
+      "organized_by_me": 0,
+      "small_working_meetings": 0,
+      "attended_their_meetings": 0,
+      "time_periods": 4,
+      "total_meetings": 12,
+      "collaboration_evidence": [
+        "Planning/decision meeting participation"
+      ],
+      "information_evidence": [
+        "Informational briefing attendance",
+        "Broadcast/webinar attendance"
+      ],
+      "meeting_details": [
+        {
+          "date": "2025-12-18T05:05:00",
+          "size": 32,
+          "subject": "prepare.ai status review",
+          "organizer": "Drew Brough",
+          "meeting_type": "planning_decision_meetings",
+          "taxonomy_category": "Strategic Planning & Decision - Planning Sessions",
+          "has_email_list": false,
+          "base_score": 12,
+          "collaboration_evidence": [
+            "Planning/decision meeting participation"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2026-01-01T05:05:00",
+          "size": 32,
+          "subject": "prepare.ai status review",
+          "organizer": "Drew Brough",
+          "meeting_type": "planning_decision_meetings",
+          "taxonomy_category": "Strategic Planning & Decision - Planning Sessions",
+          "has_email_list": false,
+          "base_score": 12,
+          "collaboration_evidence": [
+            "Planning/decision meeting participation"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2026-01-09T02:05:00",
+          "size": 64,
+          "subject": "research updates | time + places",
+          "organizer": "Pratibha Permandla",
+          "meeting_type": "broadcast_webinar",
+          "taxonomy_category": "Informational & Broadcast - Webinars and Broadcasts",
+          "has_email_list": false,
+          "base_score": 0.1,
+          "collaboration_evidence": [],
+          "information_evidence": [
+            "Broadcast/webinar attendance"
+          ]
+        },
+        {
+          "date": "2026-01-15T02:05:00",
+          "size": 23,
+          "subject": "hive | t+p meeting prep monthly sync",
+          "organizer": "Drew Brough",
+          "meeting_type": "planning_decision_meetings",
+          "taxonomy_category": "Strategic Planning & Decision - Planning Sessions",
+          "has_email_list": false,
+          "base_score": 12,
+          "collaboration_evidence": [
+            "Planning/decision meeting participation"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2026-01-15T05:05:00",
+          "size": 32,
+          "subject": "prepare.ai status review",
+          "organizer": "Drew Brough",
+          "meeting_type": "planning_decision_meetings",
+          "taxonomy_category": "Strategic Planning & Decision - Planning Sessions",
+          "has_email_list": false,
+          "base_score": 12,
+          "collaboration_evidence": [
+            "Planning/decision meeting participation"
+          ],
+          "information_evidence": []
+        }
+      ],
+      "graph_api_rank": null,
+      "graph_api_relevance": null,
+      "graph_api_verified": false,
+      "verified_name": null,
+      "job_title": null,
+      "shared_documents": 0,
+      "document_collaboration_score": 0,
+      "recency_data": {
+        "last_7_days": 12,
+        "last_30_days": 12,
+        "last_90_days": 12,
+        "recent_important_meetings": 9,
+        "most_recent_meeting": "2026-01-15T05:05:00",
+        "days_since_last_meeting": -82
+      },
+      "temporal_recency_score": 62.1,
+      "chat_count": 0,
+      "chat_message_count": 0,
+      "days_since_last_chat": null,
+      "chat_recency_score": 0,
+      "is_recent_chat": false,
+      "is_frequent_chat": false,
+      "chat_type": null,
+      "chat_only_collaborator": false,
+      "chat_collaboration_score": 0,
+      "algorithm_version": "7.0_teams_chat_integrated"
+    },
+    {
+      "name": "Nichol Viton",
+      "importance_score": 111.4,
+      "final_score": 109.2,
+      "confidence": 0.7,
+      "genuine_collaboration_meetings": 9,
+      "informational_meetings": 1,
+      "broadcast_meetings": 2,
+      "email_list_meetings": 0,
+      "genuine_ratio": 0.75,
+      "informational_ratio": 0.083,
+      "email_list_ratio": 0.0,
+      "one_on_one": 0,
+      "organized_by_me": 0,
+      "small_working_meetings": 0,
+      "attended_their_meetings": 0,
+      "time_periods": 4,
+      "total_meetings": 12,
+      "collaboration_evidence": [
+        "Planning/decision meeting participation"
+      ],
+      "information_evidence": [
+        "Informational briefing attendance",
+        "Broadcast/webinar attendance"
+      ],
+      "meeting_details": [
+        {
+          "date": "2025-12-18T05:05:00",
+          "size": 32,
+          "subject": "prepare.ai status review",
+          "organizer": "Drew Brough",
+          "meeting_type": "planning_decision_meetings",
+          "taxonomy_category": "Strategic Planning & Decision - Planning Sessions",
+          "has_email_list": false,
+          "base_score": 12,
+          "collaboration_evidence": [
+            "Planning/decision meeting participation"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2026-01-01T05:05:00",
+          "size": 32,
+          "subject": "prepare.ai status review",
+          "organizer": "Drew Brough",
+          "meeting_type": "planning_decision_meetings",
+          "taxonomy_category": "Strategic Planning & Decision - Planning Sessions",
+          "has_email_list": false,
+          "base_score": 12,
+          "collaboration_evidence": [
+            "Planning/decision meeting participation"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2026-01-09T02:05:00",
+          "size": 64,
+          "subject": "research updates | time + places",
+          "organizer": "Pratibha Permandla",
+          "meeting_type": "broadcast_webinar",
+          "taxonomy_category": "Informational & Broadcast - Webinars and Broadcasts",
+          "has_email_list": false,
+          "base_score": 0.1,
+          "collaboration_evidence": [],
+          "information_evidence": [
+            "Broadcast/webinar attendance"
+          ]
+        },
+        {
+          "date": "2026-01-15T02:05:00",
+          "size": 23,
+          "subject": "hive | t+p meeting prep monthly sync",
+          "organizer": "Drew Brough",
+          "meeting_type": "planning_decision_meetings",
+          "taxonomy_category": "Strategic Planning & Decision - Planning Sessions",
+          "has_email_list": false,
+          "base_score": 12,
+          "collaboration_evidence": [
+            "Planning/decision meeting participation"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2026-01-15T05:05:00",
+          "size": 32,
+          "subject": "prepare.ai status review",
+          "organizer": "Drew Brough",
+          "meeting_type": "planning_decision_meetings",
+          "taxonomy_category": "Strategic Planning & Decision - Planning Sessions",
+          "has_email_list": false,
+          "base_score": 12,
+          "collaboration_evidence": [
+            "Planning/decision meeting participation"
+          ],
+          "information_evidence": []
+        }
+      ],
+      "graph_api_rank": null,
+      "graph_api_relevance": null,
+      "graph_api_verified": false,
+      "verified_name": null,
+      "job_title": null,
+      "shared_documents": 0,
+      "document_collaboration_score": 0,
+      "recency_data": {
+        "last_7_days": 12,
+        "last_30_days": 12,
+        "last_90_days": 12,
+        "recent_important_meetings": 9,
+        "most_recent_meeting": "2026-01-15T05:05:00",
+        "days_since_last_meeting": -82
+      },
+      "temporal_recency_score": 62.1,
+      "chat_count": 0,
+      "chat_message_count": 0,
+      "days_since_last_chat": null,
+      "chat_recency_score": 0,
+      "is_recent_chat": false,
+      "is_frequent_chat": false,
+      "chat_type": null,
+      "chat_only_collaborator": false,
+      "chat_collaboration_score": 0,
+      "algorithm_version": "7.0_teams_chat_integrated"
+    },
+    {
+      "name": "Anuj Bahl",
+      "importance_score": 106.03,
+      "final_score": 108.1,
+      "confidence": 0.7,
+      "genuine_collaboration_meetings": 9,
+      "informational_meetings": 0,
+      "broadcast_meetings": 1,
+      "email_list_meetings": 0,
+      "genuine_ratio": 0.9,
+      "informational_ratio": 0.0,
+      "email_list_ratio": 0.0,
+      "one_on_one": 0,
+      "organized_by_me": 0,
+      "small_working_meetings": 0,
+      "attended_their_meetings": 0,
+      "time_periods": 4,
+      "total_meetings": 10,
+      "collaboration_evidence": [
+        "Planning/decision meeting participation"
+      ],
+      "information_evidence": [
+        "Broadcast/webinar attendance"
+      ],
+      "meeting_details": [
+        {
+          "date": "2025-12-11T02:05:00",
+          "size": 23,
+          "subject": "hive | t+p meeting prep monthly sync",
+          "organizer": "Drew Brough",
+          "meeting_type": "planning_decision_meetings",
+          "taxonomy_category": "Strategic Planning & Decision - Planning Sessions",
+          "has_email_list": false,
+          "base_score": 12,
+          "collaboration_evidence": [
+            "Planning/decision meeting participation"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2025-12-18T05:05:00",
+          "size": 32,
+          "subject": "prepare.ai status review",
+          "organizer": "Drew Brough",
+          "meeting_type": "planning_decision_meetings",
+          "taxonomy_category": "Strategic Planning & Decision - Planning Sessions",
+          "has_email_list": false,
+          "base_score": 12,
+          "collaboration_evidence": [
+            "Planning/decision meeting participation"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2026-01-01T05:05:00",
+          "size": 32,
+          "subject": "prepare.ai status review",
+          "organizer": "Drew Brough",
+          "meeting_type": "planning_decision_meetings",
+          "taxonomy_category": "Strategic Planning & Decision - Planning Sessions",
+          "has_email_list": false,
+          "base_score": 12,
+          "collaboration_evidence": [
+            "Planning/decision meeting participation"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2026-01-15T02:05:00",
+          "size": 23,
+          "subject": "hive | t+p meeting prep monthly sync",
+          "organizer": "Drew Brough",
+          "meeting_type": "planning_decision_meetings",
+          "taxonomy_category": "Strategic Planning & Decision - Planning Sessions",
+          "has_email_list": false,
+          "base_score": 12,
+          "collaboration_evidence": [
+            "Planning/decision meeting participation"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2026-01-15T05:05:00",
+          "size": 32,
+          "subject": "prepare.ai status review",
+          "organizer": "Drew Brough",
+          "meeting_type": "planning_decision_meetings",
+          "taxonomy_category": "Strategic Planning & Decision - Planning Sessions",
+          "has_email_list": false,
+          "base_score": 12,
+          "collaboration_evidence": [
+            "Planning/decision meeting participation"
+          ],
+          "information_evidence": []
+        }
+      ],
+      "graph_api_rank": null,
+      "graph_api_relevance": null,
+      "graph_api_verified": false,
+      "verified_name": null,
+      "job_title": null,
+      "shared_documents": 0,
+      "document_collaboration_score": 0,
+      "recency_data": {
+        "last_7_days": 10,
+        "last_30_days": 10,
+        "last_90_days": 10,
+        "recent_important_meetings": 9,
+        "most_recent_meeting": "2026-01-15T05:05:00",
+        "days_since_last_meeting": -82
+      },
+      "temporal_recency_score": 54.0,
+      "chat_count": 0,
+      "chat_message_count": 0,
+      "days_since_last_chat": null,
+      "chat_recency_score": 0,
+      "is_recent_chat": false,
+      "is_frequent_chat": false,
+      "chat_type": null,
+      "chat_only_collaborator": false,
+      "chat_collaboration_score": 0,
+      "algorithm_version": "7.0_teams_chat_integrated"
+    },
+    {
+      "name": "Kelsey Merlo",
+      "importance_score": 81.45,
+      "final_score": 72.2,
+      "confidence": 0.7,
+      "genuine_collaboration_meetings": 6,
+      "informational_meetings": 0,
+      "broadcast_meetings": 2,
+      "email_list_meetings": 0,
+      "genuine_ratio": 0.75,
+      "informational_ratio": 0.0,
+      "email_list_ratio": 0.0,
+      "one_on_one": 0,
+      "organized_by_me": 0,
+      "small_working_meetings": 0,
+      "attended_their_meetings": 0,
+      "time_periods": 3,
+      "total_meetings": 8,
+      "collaboration_evidence": [
+        "Planning/decision meeting participation"
+      ],
+      "information_evidence": [
+        "Broadcast/webinar attendance"
+      ],
+      "meeting_details": [
+        {
+          "date": "2025-12-04T05:05:00",
+          "size": 32,
+          "subject": "prepare.ai status review",
+          "organizer": "Drew Brough",
+          "meeting_type": "planning_decision_meetings",
+          "taxonomy_category": "Strategic Planning & Decision - Planning Sessions",
+          "has_email_list": false,
+          "base_score": 12,
+          "collaboration_evidence": [
+            "Planning/decision meeting participation"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2025-12-18T05:05:00",
+          "size": 32,
+          "subject": "prepare.ai status review",
+          "organizer": "Drew Brough",
+          "meeting_type": "planning_decision_meetings",
+          "taxonomy_category": "Strategic Planning & Decision - Planning Sessions",
+          "has_email_list": false,
+          "base_score": 12,
+          "collaboration_evidence": [
+            "Planning/decision meeting participation"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2026-01-01T05:05:00",
+          "size": 32,
+          "subject": "prepare.ai status review",
+          "organizer": "Drew Brough",
+          "meeting_type": "planning_decision_meetings",
+          "taxonomy_category": "Strategic Planning & Decision - Planning Sessions",
+          "has_email_list": false,
+          "base_score": 12,
+          "collaboration_evidence": [
+            "Planning/decision meeting participation"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2026-01-09T02:05:00",
+          "size": 64,
+          "subject": "research updates | time + places",
+          "organizer": "Pratibha Permandla",
+          "meeting_type": "broadcast_webinar",
+          "taxonomy_category": "Informational & Broadcast - Webinars and Broadcasts",
+          "has_email_list": false,
+          "base_score": 0.1,
+          "collaboration_evidence": [],
+          "information_evidence": [
+            "Broadcast/webinar attendance"
+          ]
+        },
+        {
+          "date": "2026-01-15T05:05:00",
+          "size": 32,
+          "subject": "prepare.ai status review",
+          "organizer": "Drew Brough",
+          "meeting_type": "planning_decision_meetings",
+          "taxonomy_category": "Strategic Planning & Decision - Planning Sessions",
+          "has_email_list": false,
+          "base_score": 12,
+          "collaboration_evidence": [
+            "Planning/decision meeting participation"
+          ],
+          "information_evidence": []
+        }
+      ],
+      "graph_api_rank": null,
+      "graph_api_relevance": null,
+      "graph_api_verified": false,
+      "verified_name": null,
+      "job_title": null,
+      "shared_documents": 0,
+      "document_collaboration_score": 0,
+      "recency_data": {
+        "last_7_days": 8,
+        "last_30_days": 8,
+        "last_90_days": 8,
+        "recent_important_meetings": 6,
+        "most_recent_meeting": "2026-01-15T05:05:00",
+        "days_since_last_meeting": -82
+      },
+      "temporal_recency_score": 41.4,
+      "chat_count": 0,
+      "chat_message_count": 0,
+      "days_since_last_chat": null,
+      "chat_recency_score": 0,
+      "is_recent_chat": false,
+      "is_frequent_chat": false,
+      "chat_type": null,
+      "chat_only_collaborator": false,
+      "chat_collaboration_score": 0,
+      "algorithm_version": "7.0_teams_chat_integrated"
+    },
+    {
+      "name": "Senja Filipi",
+      "importance_score": 78.3,
+      "final_score": 72,
+      "confidence": 0.7,
+      "genuine_collaboration_meetings": 6,
+      "informational_meetings": 0,
+      "broadcast_meetings": 0,
+      "email_list_meetings": 0,
+      "genuine_ratio": 1.0,
+      "informational_ratio": 0.0,
+      "email_list_ratio": 0.0,
+      "one_on_one": 0,
+      "organized_by_me": 0,
+      "small_working_meetings": 0,
+      "attended_their_meetings": 0,
+      "time_periods": 3,
+      "total_meetings": 6,
+      "collaboration_evidence": [
+        "Planning/decision meeting participation"
+      ],
+      "information_evidence": [],
+      "meeting_details": [
+        {
+          "date": "2025-11-20T05:05:00",
+          "size": 32,
+          "subject": "prepare.ai status review",
+          "organizer": "Drew Brough",
+          "meeting_type": "planning_decision_meetings",
+          "taxonomy_category": "Strategic Planning & Decision - Planning Sessions",
+          "has_email_list": false,
+          "base_score": 12,
+          "collaboration_evidence": [
+            "Planning/decision meeting participation"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2025-12-04T05:05:00",
+          "size": 32,
+          "subject": "prepare.ai status review",
+          "organizer": "Drew Brough",
+          "meeting_type": "planning_decision_meetings",
+          "taxonomy_category": "Strategic Planning & Decision - Planning Sessions",
+          "has_email_list": false,
+          "base_score": 12,
+          "collaboration_evidence": [
+            "Planning/decision meeting participation"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2025-12-18T05:05:00",
+          "size": 32,
+          "subject": "prepare.ai status review",
+          "organizer": "Drew Brough",
+          "meeting_type": "planning_decision_meetings",
+          "taxonomy_category": "Strategic Planning & Decision - Planning Sessions",
+          "has_email_list": false,
+          "base_score": 12,
+          "collaboration_evidence": [
+            "Planning/decision meeting participation"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2026-01-01T05:05:00",
+          "size": 32,
+          "subject": "prepare.ai status review",
+          "organizer": "Drew Brough",
+          "meeting_type": "planning_decision_meetings",
+          "taxonomy_category": "Strategic Planning & Decision - Planning Sessions",
+          "has_email_list": false,
+          "base_score": 12,
+          "collaboration_evidence": [
+            "Planning/decision meeting participation"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2026-01-15T05:05:00",
+          "size": 32,
+          "subject": "prepare.ai status review",
+          "organizer": "Drew Brough",
+          "meeting_type": "planning_decision_meetings",
+          "taxonomy_category": "Strategic Planning & Decision - Planning Sessions",
+          "has_email_list": false,
+          "base_score": 12,
+          "collaboration_evidence": [
+            "Planning/decision meeting participation"
+          ],
+          "information_evidence": []
+        }
+      ],
+      "graph_api_rank": null,
+      "graph_api_relevance": null,
+      "graph_api_verified": false,
+      "verified_name": null,
+      "job_title": null,
+      "shared_documents": 0,
+      "document_collaboration_score": 0,
+      "recency_data": {
+        "last_7_days": 6,
+        "last_30_days": 6,
+        "last_90_days": 6,
+        "recent_important_meetings": 6,
+        "most_recent_meeting": "2026-01-15T05:05:00",
+        "days_since_last_meeting": -82
+      },
+      "temporal_recency_score": 33.3,
+      "chat_count": 0,
+      "chat_message_count": 0,
+      "days_since_last_chat": null,
+      "chat_recency_score": 0,
+      "is_recent_chat": false,
+      "is_frequent_chat": false,
+      "chat_type": null,
+      "chat_only_collaborator": false,
+      "chat_collaboration_score": 0,
+      "algorithm_version": "7.0_teams_chat_integrated"
+    }
+  ]
+}

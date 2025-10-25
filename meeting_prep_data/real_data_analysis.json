@@ -1,0 +1,31 @@
+{
+  "total_scenarios": 50,
+  "data_source": "real_calendar_only",
+  "meeting_types": {
+    "General Business Meeting": 32,
+    "Project Status Update": 8,
+    "Performance Review": 5,
+    "Training Session": 1,
+    "Customer Discovery Call": 1,
+    "Product Strategy Session": 2,
+    "Vendor Evaluation": 1
+  },
+  "complexity_distribution": {
+    "low": 5,
+    "medium": 16,
+    "critical": 26,
+    "high": 3
+  },
+  "quality_scores": {
+    "average": 9.767999999999999,
+    "min": 9.1,
+    "max": 10.0,
+    "high_quality": 50
+  },
+  "temporal_patterns": {},
+  "meeting_insights": {
+    "avg_duration": 438.5,
+    "avg_attendees": 82.56,
+    "total_meeting_hours": 365.4166666666667
+  }
+}

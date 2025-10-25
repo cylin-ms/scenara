@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Me Notes Report - cyl@microsoft.com</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 15px;
+        }
+        
+        .summary {
+            background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin: 30px 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        
+        .summary-item {
+            text-align: center;
+        }
+        
+        .summary-number {
+            font-size: 2em;
+            font-weight: bold;
+            display: block;
+        }
+        
+        .category {
+            margin: 40px 0;
+            border: 1px solid #e0e0e0;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+        
+        .category-header {
+            background: linear-gradient(135deg, #55a3ff 0%, #003d82 100%);
+            color: white;
+            padding: 20px;
+            font-size: 1.3em;
+            font-weight: bold;
+        }
+        
+        .note {
+            padding: 25px;
+            border-bottom: 1px solid #f0f0f0;
+            transition: background-color 0.3s;
+        }
+        
+        .note:hover {
+            background-color: #f8f9ff;
+        }
+        
+        .note:last-child {
+            border-bottom: none;
+        }
+        
+        .note-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .note-content {
+            color: #5a6c7d;
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+        
+        .note-details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 10px;
+            font-size: 0.9em;
+        }
+        
+        .detail-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .confidence-high { color: #27ae60; }
+        .confidence-medium { color: #f39c12; }
+        .confidence-low { color: #e74c3c; }
+        
+        .insights {
+            background: linear-gradient(135deg, #a8e6cf 0%, #56ab2f 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin: 40px 0;
+        }
+        
+        .insights h3 {
+            color: white;
+            margin-top: 0;
+        }
+        
+        .insights ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        .insights li {
+            background: rgba(255,255,255,0.1);
+            margin: 10px 0;
+            padding: 10px 15px;
+            border-radius: 8px;
+            border-left: 4px solid rgba(255,255,255,0.3);
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #7f8c8d;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🧠 Me Notes Report</h1>
+        <p style="text-align: center; color: #7f8c8d; font-size: 1.1em;">
+            Generated for <strong>cyl@microsoft.com</strong> on October 22, 2025 at 03:39 AM
+        </p>
+        
+        <div class="summary">
+            <div class="summary-item">
+                <span class="summary-number">21</span>
+                <span>Total Notes</span>
+            </div>
+            <div class="summary-item">
+                <span class="summary-number">5</span>
+                <span>Categories</span>
+            </div>
+            <div class="summary-item">
+                <span class="summary-number">88%</span>
+                <span>Avg Confidence</span>
+            </div>
+            <div class="summary-item">
+                <span class="summary-number">10</span>
+                <span>Recent Notes</span>
+            </div>
+        </div>
+
+        <div class="category">
+            <div class="category-header">
+                💼 Work Related (5 insights)
+            </div>
+
+            <div class="note">
+                <div class="note-title">Priority Calendar Project Leadership</div>
+                <div class="note-content">Leading Priority Calendar project with advanced meeting intelligence at Microsoft</div>
+                <div class="note-details">
+                    <div class="detail-item">
+                        📅 <strong>Durability:</strong> Medium Lived
+                    </div>
+                    <div class="detail-item">
+                        <span class="confidence-high">🟢 <strong>Confidence:</strong> 90.0%</span>
+                    </div>
+                    <div class="detail-item">
+                        📅 <strong>Date:</strong> October 21, 2025
+                    </div>
+                    <div class="detail-item">
+                        📡 <strong>Source:</strong> Teams/Outlook
+                    </div>
+                </div>
+            </div>
+
+            <div class="note">
+                <div class="note-title">Graph API team Collaboration</div>
+                <div class="note-content">Collaborating with Graph API team on calendar API enhancements</div>
+                <div class="note-details">
+                    <div class="detail-item">
+                        ⏰ <strong>Durability:</strong> Short Lived
+                    </div>
+                    <div class="detail-item">
+                        <span class="confidence-high">🟢 <strong>Confidence:</strong> 90.0%</span>
+                    </div>
+                    <div class="detail-item">
+                        📅 <strong>Date:</strong> October 19, 2025
+                    </div>
+                    <div class="detail-item">
+                        📡 <strong>Source:</strong> Teams/Outlook
+                    </div>
+                </div>
+            </div>
+
+            <div class="note">
+                <div class="note-title">Meeting Intelligence Development</div>
+                <div class="note-content">Developing meeting intelligence frameworks for enterprise customers</div>
+                <div class="note-details">
+                    <div class="detail-item">
+                        📅 <strong>Durability:</strong> Medium Lived
+                    </div>
+                    <div class="detail-item">
+                        <span class="confidence-high">🟢 <strong>Confidence:</strong> 90.0%</span>
+                    </div>
+                    <div class="detail-item">
+                        📅 <strong>Date:</strong> October 17, 2025
+                    </div>
+                    <div class="detail-item">
+                        📡 <strong>Source:</strong> Teams/Outlook
+                    </div>
+                </div>
+            </div>
+
+            <div class="note">
+                <div class="note-title">AI Productivity Research</div>
+                <div class="note-content">Research on AI-powered productivity optimization for Office 365</div>
+                <div class="note-details">
+                    <div class="detail-item">
+                        📆 <strong>Durability:</strong> Long Lived
+                    </div>
+                    <div class="detail-item">
+                        <span class="confidence-high">🟢 <strong>Confidence:</strong> 90.0%</span>
+                    </div>
+                    <div class="detail-item">
+                        📅 <strong>Date:</strong> October 15, 2025
+                    </div>
+                    <div class="detail-item">
+                        📡 <strong>Source:</strong> Teams/Outlook
+                    </div>
+                </div>
+            </div>
+
+            <div class="note">
+                <div class="note-title">Graph API Integration</div>
+                <div class="note-content">Integration work with Microsoft Graph APIs for calendar intelligence</div>
+                <div class="note-details">
+                    <div class="detail-item">
+                        📅 <strong>Durability:</strong> Medium Lived
+                    </div>
+                    <div class="detail-item">
+                        <span class="confidence-high">🟢 <strong>Confidence:</strong> 90.0%</span>
+                    </div>
+                    <div class="detail-item">
+                        📅 <strong>Date:</strong> October 12, 2025
+                    </div>
+                    <div class="detail-item">
+                        📡 <strong>Source:</strong> Teams/Outlook
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="category">
+            <div class="category-header">
+                🎯 Expertise (4 insights)
+            </div>
+
+            <div class="note">
+                <div class="note-title">Calendar Intelligence Expertise</div>
+                <div class="note-content">Expert in calendar intelligence and meeting optimization algorithms</div>
+                <div class="note-details">
+                    <div class="detail-item">
+                        📆 <strong>Durability:</strong> Long Lived
+                    </div>
+                    <div class="detail-item">
+                        <span class="confidence-high">🟢 <strong>Confidence:</strong> 95.0%</span>
+                    </div>
+                    <div class="detail-item">
+                        📅 <strong>Date:</strong> October 20, 2025
+                    </div>
+                    <div class="detail-item">
+                        📡 <strong>Source:</strong> Performance Reviews/Feedback
+                    </div>
+                </div>
+            </div>
+
+            <div class="note">
+                <div class="note-title">Microsoft API Expertise</div>
+                <div class="note-content">Deep knowledge of Microsoft APIs and enterprise integrations</div>
+                <div class="note-details">
+                    <div class="detail-item">
+                        📆 <strong>Durability:</strong> Long Lived
+                    </div>
+                    <div class="detail-item">
+                        <span class="confidence-high">🟢 <strong>Confidence:</strong> 95.0%</span>
+                    </div>
+                    <div class="detail-item">
+                        📅 <strong>Date:</strong> October 18, 2025
+                    </div>
+                    <div class="detail-item">
+                        📡 <strong>Source:</strong> Performance Reviews/Feedback
+                    </div>
+                </div>
+            </div>
+
+            <div class="note">
+                <div class="note-title">AI/ML Integration Specialist</div>
+                <div class="note-content">Specialist in AI/ML integration for productivity solutions</div>
+                <div class="note-details">
+                    <div class="detail-item">
+                        📆 <strong>Durability:</strong> Long Lived
+                    </div>
+                    <div class="detail-item">
+                        <span class="confidence-high">🟢 <strong>Confidence:</strong> 95.0%</span>
+                    </div>
+                    <div class="detail-item">
+                        📅 <strong>Date:</strong> October 16, 2025
+                    </div>
+                    <div class="detail-item">
+                        📡 <strong>Source:</strong> Performance Reviews/Feedback
+                    </div>
+                </div>
+            </div>
+
+            <div class="note">
+                <div class="note-title">Enterprise Development Expert</div>
+                <div class="note-content">Proficient in enterprise software development and system architecture</div>
+                <div class="note-details">
+                    <div class="detail-item">
+                        📆 <strong>Durability:</strong> Long Lived
+                    </div>
+                    <div class="detail-item">
+                        <span class="confidence-high">🟢 <strong>Confidence:</strong> 95.0%</span>
+                    </div>
+                    <div class="detail-item">
+                        📅 <strong>Date:</strong> October 14, 2025
+                    </div>
+                    <div class="detail-item">
+                        📡 <strong>Source:</strong> Performance Reviews/Feedback
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="category">
+            <div class="category-header">
+                🧭 Behavioral Pattern (4 insights)
+            </div>
+
+            <div class="note">
+                <div class="note-title">Morning Strategic Preference</div>
+                <div class="note-content">Prefers morning meetings for strategic discussions and technical planning</div>
+                <div class="note-details">
+                    <div class="detail-item">
+                        📆 <strong>Durability:</strong> Long Lived
+                    </div>
+                    <div class="detail-item">
+                        <span class="confidence-medium">🟡 <strong>Confidence:</strong> 85.0%</span>
+                    </div>
+                    <div class="detail-item">
+                        📅 <strong>Date:</strong> October 10, 2025
+                    </div>
+                    <div class="detail-item">
+                        📡 <strong>Source:</strong> Meeting Transcripts/Behavioral Analysis
+                    </div>
+                </div>
+            </div>
+
+            <div class="note">
+                <div class="note-title">Analytical Technical Approach</div>
+                <div class="note-content">Systematically analyzes technical options before implementation decisions</div>
+                <div class="note-details">
+                    <div class="detail-item">
+                        📆 <strong>Durability:</strong> Long Lived
+                    </div>
+                    <div class="detail-item">
+                        <span class="confidence-medium">🟡 <strong>Confidence:</strong> 85.0%</span>
+                    </div>
+                    <div class="detail-item">
+                        📅 <strong>Date:</strong> October 07, 2025
+                    </div>
+                    <div class="detail-item">
+                        📡 <strong>Source:</strong> Meeting Transcripts/Behavioral Analysis
+                    </div>
+                </div>
+            </div>
+
+            <div class="note">
+                <div class="note-title">Documentation-Focused Approach</div>
+                <div class="note-content">Values thorough documentation and preparation for technical reviews</div>
+                <div class="note-details">
+                    <div class="detail-item">
+                        📆 <strong>Durability:</strong> Long Lived
+                    </div>
+                    <div class="detail-item">
+                        <span class="confidence-medium">🟡 <strong>Confidence:</strong> 85.0%</span>
+                    </div>
+                    <div class="detail-item">
+                        📅 <strong>Date:</strong> October 04, 2025
+                    </div>
+                    <div class="detail-item">
+                        📡 <strong>Source:</strong> Meeting Transcripts/Behavioral Analysis
+                    </div>
+                </div>
+            </div>
+
+            <div class="note">
+                <div class="note-title">Cross-team Collaboration Style</div>
+                <div class="note-content">Collaborates effectively across teams and technical disciplines</div>
+                <div class="note-details">
+                    <div class="detail-item">
+                        📆 <strong>Durability:</strong> Long Lived
+                    </div>
+                    <div class="detail-item">
+                        <span class="confidence-medium">🟡 <strong>Confidence:</strong> 85.0%</span>
+                    </div>
+                    <div class="detail-item">
+                        📅 <strong>Date:</strong> October 02, 2025
+                    </div>
+                    <div class="detail-item">
+                        📡 <strong>Source:</strong> Meeting Transcripts/Behavioral Analysis
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="category">
+            <div class="category-header">
+                💡 Interests (4 insights)
+            </div>
+
+            <div class="note">
+                <div class="note-title">AI Productivity Integration Interest</div>
+                <div class="note-content">Passionate about AI integration in productivity tools and Office ecosystem</div>
+                <div class="note-details">
+                    <div class="detail-item">
+                        📆 <strong>Durability:</strong> Long Lived
+                    </div>
+                    <div class="detail-item">
+                        <span class="confidence-medium">🟡 <strong>Confidence:</strong> 80.0%</span>
+                    </div>
+                    <div class="detail-item">
+                        📅 <strong>Date:</strong> October 08, 2025
+                    </div>
+                    <div class="detail-item">
+                        📡 <strong>Source:</strong> Search History/Document Access
+                    </div>
+                </div>
+            </div>
+
+            <div class="note">
+                <div class="note-title">Graph Ecosystem Interest</div>
+                <div class="note-content">Interested in Microsoft Graph capabilities and developer ecosystem</div>
+                <div class="note-details">
+                    <div class="detail-item">
+                        📅 <strong>Durability:</strong> Medium Lived
+                    </div>
+                    <div class="detail-item">
+                        <span class="confidence-medium">🟡 <strong>Confidence:</strong> 80.0%</span>
+                    </div>
+                    <div class="detail-item">
+                        📅 <strong>Date:</strong> October 06, 2025
+                    </div>
+                    <div class="detail-item">
+                        📡 <strong>Source:</strong> Search History/Document Access
+                    </div>
+                </div>
+            </div>
+
+            <div class="note">
+                <div class="note-title">Meeting Intelligence Interest</div>
+                <div class="note-content">Follows developments in meeting intelligence and smart calendar technology</div>
+                <div class="note-details">
+                    <div class="detail-item">
+                        📆 <strong>Durability:</strong> Long Lived
+                    </div>
+                    <div class="detail-item">
+                        <span class="confidence-medium">🟡 <strong>Confidence:</strong> 80.0%</span>
+                    </div>
+                    <div class="detail-item">
+                        📅 <strong>Date:</strong> September 30, 2025
+                    </div>
+                    <div class="detail-item">
+                        📡 <strong>Source:</strong> Search History/Document Access
+                    </div>
+                </div>
+            </div>
+
+            <div class="note">
+                <div class="note-title">Enterprise AI Interest</div>
+                <div class="note-content">Enjoys learning about enterprise AI applications and automation frameworks</div>
+                <div class="note-details">
+                    <div class="detail-item">
+                        📅 <strong>Durability:</strong> Medium Lived
+                    </div>
+                    <div class="detail-item">
+                        <span class="confidence-medium">🟡 <strong>Confidence:</strong> 80.0%</span>
+                    </div>
+                    <div class="detail-item">
+                        📅 <strong>Date:</strong> September 27, 2025
+                    </div>
+                    <div class="detail-item">
+                        📡 <strong>Source:</strong> Search History/Document Access
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="category">
+            <div class="category-header">
+                📋 Follow Ups (4 insights)
+            </div>
+
+            <div class="note">
+                <div class="note-title">Sarah Chen Follow-up</div>
+                <div class="note-content">Recent technical discussion with Sarah Chen about Priority Calendar architecture</div>
+                <div class="note-details">
+                    <div class="detail-item">
+                        ⏰ <strong>Durability:</strong> Short Lived
+                    </div>
+                    <div class="detail-item">
+                        <span class="confidence-high">🟢 <strong>Confidence:</strong> 90.0%</span>
+                    </div>
+                    <div class="detail-item">
+                        📅 <strong>Date:</strong> October 20, 2025
+                    </div>
+                    <div class="detail-item">
+                        📡 <strong>Source:</strong> Email/Teams Messages
+                    </div>
+                </div>
+            </div>
+
+            <div class="note">
+                <div class="note-title">Graph API team Review Action</div>
+                <div class="note-content">Action item: Review integration proposal with Graph API team by end of week</div>
+                <div class="note-details">
+                    <div class="detail-item">
+                        ⏰ <strong>Durability:</strong> Short Lived
+                    </div>
+                    <div class="detail-item">
+                        <span class="confidence-high">🟢 <strong>Confidence:</strong> 90.0%</span>
+                    </div>
+                    <div class="detail-item">
+                        📅 <strong>Date:</strong> October 18, 2025
+                    </div>
+                    <div class="detail-item">
+                        📡 <strong>Source:</strong> Email/Teams Messages
+                    </div>
+                </div>
+            </div>
+
+            <div class="note">
+                <div class="note-title">Mike Johnson Technical Follow-up</div>
+                <div class="note-content">Follow up with Mike Johnson on calendar enhancement specifications</div>
+                <div class="note-details">
+                    <div class="detail-item">
+                        ⏰ <strong>Durability:</strong> Short Lived
+                    </div>
+                    <div class="detail-item">
+                        <span class="confidence-high">🟢 <strong>Confidence:</strong> 90.0%</span>
+                    </div>
+                    <div class="detail-item">
+                        📅 <strong>Date:</strong> October 16, 2025
+                    </div>
+                    <div class="detail-item">
+                        📡 <strong>Source:</strong> Email/Teams Messages
+                    </div>
+                </div>
+            </div>
+
+            <div class="note">
+                <div class="note-title">Office Platform team Documentation Review</div>
+                <div class="note-content">Pending response from Office Platform team on meeting intelligence framework documentation</div>
+                <div class="note-details">
+                    <div class="detail-item">
+                        ⏰ <strong>Durability:</strong> Short Lived
+                    </div>
+                    <div class="detail-item">
+                        <span class="confidence-high">🟢 <strong>Confidence:</strong> 90.0%</span>
+                    </div>
+                    <div class="detail-item">
+                        📅 <strong>Date:</strong> October 14, 2025
+                    </div>
+                    <div class="detail-item">
+                        📡 <strong>Source:</strong> Email/Teams Messages
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="insights">
+            <h3>🎯 Key Insights</h3>
+            <ul>
+                <li><strong>Active Projects:</strong> Priority Calendar, AI/LLM Integration, Microsoft Graph</li>
+                <li><strong>Core Expertise:</strong> Calendar Intelligence, Graph API, AI/ML Integration</li>
+                <li><strong>Work Style:</strong> Morning strategic meetings, collaborative approach, detail-oriented</li>
+                <li><strong>Current Focus:</strong> 5 work items, 4 pending follow-ups</li>
+                <li><strong>Engagement Level:</strong> 13 high-confidence insights</li>
+            </ul>
+        </div>
+        
+        <div class="footer">
+            📝 Generated by Me Notes Viewer Tool<br>
+            🔄 Refresh by running: <code>python me_notes_viewer.py --user cyl@microsoft.com</code>
+        </div>
+    </div>
+</body>
+</html>

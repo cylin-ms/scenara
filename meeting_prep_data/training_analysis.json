@@ -1,0 +1,48 @@
+{
+  "total_scenarios": 242,
+  "sources": {
+    "microsoft_calendar_contextflow": 50,
+    "generated_sample": 142,
+    "microsoft_calendar_manual": 50
+  },
+  "meeting_types": {
+    "One-on-One Meeting (Internal Recurring (Cadence))": 2,
+    "Team Status Update/Standup (Internal Recurring (Cadence))": 4,
+    "Progress Review Meeting (Internal Recurring (Cadence))": 5,
+    "Project Planning Meeting (Strategic Planning & Decision)": 6,
+    "Webinar/Presentation (Informational & Broadcast)": 8,
+    "Team-Building Activity (Team-Building & Culture)": 1,
+    "Training Session (Informational & Broadcast)": 4,
+    "Workshop/Design Session (Strategic Planning & Decision)": 3,
+    "Problem-Solving Meeting (Strategic Planning & Decision)": 1,
+    "All-Hands/Town Hall (Informational & Broadcast)": 6,
+    "Decision-Making Meeting (Strategic Planning & Decision)": 1,
+    "Product Demo (Informational & Broadcast)": 1,
+    "Vendor/Supplier Meeting (External & Client-Facing)": 1,
+    "Knowledge Sharing Session (Informational & Broadcast)": 2,
+    "Recognition/Celebration Event (Team-Building & Culture)": 5,
+    "Customer Discovery Call": 21,
+    "Training Session": 16,
+    "Cross-team Collaboration": 10,
+    "Project Status Update": 31,
+    "Product Strategy Session": 16,
+    "Budget Planning Meeting": 19,
+    "Team Retrospective": 9,
+    "Technical Design Review": 12,
+    "Performance Review": 16,
+    "Vendor Evaluation": 10,
+    "General Business Meeting": 32
+  },
+  "complexity_distribution": {
+    "low": 54,
+    "medium": 86,
+    "high": 44,
+    "critical": 58
+  },
+  "quality_scores": {
+    "average": 8.581322314049586,
+    "min": 3.8200000000000003,
+    "max": 10.0,
+    "high_quality": 187
+  }
+}

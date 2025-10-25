@@ -1,0 +1,183 @@
+{
+  "algorithm_version": "4.1_final",
+  "enhancements": [
+    "Temporal weighting with recency boost",
+    "Meeting context importance classification",
+    "Multi-factor confidence calculation",
+    "Enhanced system account detection",
+    "Consistency scoring across time periods",
+    "Optimized scoring thresholds"
+  ],
+  "collaborators": [
+    {
+      "name": "Haidong Zhang",
+      "final_score": 235.6,
+      "base_score": 204.6,
+      "context_bonus": 8,
+      "recency_bonus": 21.0,
+      "consistency_bonus": 2,
+      "confidence_level": 1.0,
+      "evidence_summary": {
+        "one_on_one": 0,
+        "organized_by_me": 0,
+        "attended_their_meetings": 7,
+        "small_meetings": 13,
+        "medium_meetings": 5,
+        "large_meetings": 0,
+        "time_periods": 2,
+        "total_meetings": 18
+      },
+      "collaboration_strength": "very_strong",
+      "algorithm_version": "4.1_final"
+    },
+    {
+      "name": "Balaji Shyamkumar",
+      "final_score": 110.02,
+      "base_score": 84.52,
+      "context_bonus": 10,
+      "recency_bonus": 13.5,
+      "consistency_bonus": 2,
+      "confidence_level": 1.0,
+      "evidence_summary": {
+        "one_on_one": 0,
+        "organized_by_me": 0,
+        "attended_their_meetings": 3,
+        "small_meetings": 3,
+        "medium_meetings": 4,
+        "large_meetings": 3,
+        "time_periods": 2,
+        "total_meetings": 10
+      },
+      "collaboration_strength": "very_strong",
+      "algorithm_version": "4.1_final"
+    },
+    {
+      "name": "Pratibha Permandla",
+      "final_score": 82.54,
+      "base_score": 65.54,
+      "context_bonus": 6,
+      "recency_bonus": 6.0,
+      "consistency_bonus": 5,
+      "confidence_level": 1.0,
+      "evidence_summary": {
+        "one_on_one": 0,
+        "organized_by_me": 0,
+        "attended_their_meetings": 3,
+        "small_meetings": 1,
+        "medium_meetings": 2,
+        "large_meetings": 2,
+        "time_periods": 3,
+        "total_meetings": 5
+      },
+      "collaboration_strength": "very_strong",
+      "algorithm_version": "4.1_final"
+    },
+    {
+      "name": "Charlie Chung",
+      "final_score": 79.58,
+      "base_score": 52.58,
+      "context_bonus": 10,
+      "recency_bonus": 12.0,
+      "consistency_bonus": 5,
+      "confidence_level": 1.0,
+      "evidence_summary": {
+        "one_on_one": 0,
+        "organized_by_me": 1,
+        "attended_their_meetings": 0,
+        "small_meetings": 2,
+        "medium_meetings": 5,
+        "large_meetings": 2,
+        "time_periods": 3,
+        "total_meetings": 9
+      },
+      "collaboration_strength": "strong",
+      "algorithm_version": "4.1_final"
+    },
+    {
+      "name": "Jason Virtue",
+      "final_score": 72.92,
+      "base_score": 64.92,
+      "context_bonus": 0,
+      "recency_bonus": 6.0,
+      "consistency_bonus": 2,
+      "confidence_level": 1.0,
+      "evidence_summary": {
+        "one_on_one": 0,
+        "organized_by_me": 0,
+        "attended_their_meetings": 3,
+        "small_meetings": 3,
+        "medium_meetings": 0,
+        "large_meetings": 1,
+        "time_periods": 2,
+        "total_meetings": 4
+      },
+      "collaboration_strength": "strong",
+      "algorithm_version": "4.1_final"
+    },
+    {
+      "name": "Alex Blanton",
+      "final_score": 67.22,
+      "base_score": 57.72,
+      "context_bonus": 0,
+      "recency_bonus": 7.5,
+      "consistency_bonus": 2,
+      "confidence_level": 1.0,
+      "evidence_summary": {
+        "one_on_one": 0,
+        "organized_by_me": 0,
+        "attended_their_meetings": 2,
+        "small_meetings": 4,
+        "medium_meetings": 0,
+        "large_meetings": 1,
+        "time_periods": 2,
+        "total_meetings": 5
+      },
+      "collaboration_strength": "strong",
+      "algorithm_version": "4.1_final"
+    },
+    {
+      "name": "Drew Brough",
+      "final_score": 64.0,
+      "base_score": 52.0,
+      "context_bonus": 4,
+      "recency_bonus": 6.0,
+      "consistency_bonus": 2,
+      "confidence_level": 0.9,
+      "evidence_summary": {
+        "one_on_one": 0,
+        "organized_by_me": 0,
+        "attended_their_meetings": 2,
+        "small_meetings": 2,
+        "medium_meetings": 2,
+        "large_meetings": 1,
+        "time_periods": 2,
+        "total_meetings": 5
+      },
+      "collaboration_strength": "strong",
+      "algorithm_version": "4.1_final"
+    },
+    {
+      "name": "Caroline Mao",
+      "final_score": 61.26,
+      "base_score": 42.76,
+      "context_bonus": 6,
+      "recency_bonus": 10.5,
+      "consistency_bonus": 2,
+      "confidence_level": 1.0,
+      "evidence_summary": {
+        "one_on_one": 0,
+        "organized_by_me": 0,
+        "attended_their_meetings": 1,
+        "small_meetings": 3,
+        "medium_meetings": 3,
+        "large_meetings": 2,
+        "time_periods": 2,
+        "total_meetings": 8
+      },
+      "collaboration_strength": "strong",
+      "algorithm_version": "4.1_final"
+    }
+  ],
+  "test_timestamp": "20251025_001400",
+  "total_found": 8
+}

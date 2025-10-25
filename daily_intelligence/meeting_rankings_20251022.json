@@ -1,0 +1,130 @@
+{
+  "timestamp": "2025-10-21T17:48:27.059273",
+  "total_meetings": 5,
+  "ranking_summary": {
+    "critical": 3,
+    "important": 0,
+    "standard": 1,
+    "optional": 1
+  },
+  "ranked_meetings": [
+    {
+      "meeting_id": "20251022_meeting_3",
+      "subject": "URGENT: Production Issue Review",
+      "rank": 1,
+      "priority_score": 13.0,
+      "criticality_score": 10,
+      "engagement_level": "Drive",
+      "preparation_level": "Intensive",
+      "timing_optimization": "Peak Hours",
+      "reasoning": "This meeting is ranked as critical due to its urgent nature and the involvement of key personnel.  The \"URGENT\" label, combined with the presence of both the organizer and direct reports, strongly suggests a time-sensitive issue requiring immediate attention and collaborative problem-solving.",
+      "signals_detected": [
+        "user_organizer (3.0)",
+        "manager_chain (3.0)",
+        "urgent_last_minute (3.0)",
+        "required_attendee (2.0)",
+        "small_group (2.0)"
+      ],
+      "recommendations": {
+        "action": "auto_accept",
+        "prep_time": "2-3 hours",
+        "buffer_time": "15 minutes before, 10 minutes after",
+        "focus_protection": "Block 30 minutes before for preparation"
+      },
+      "confidence": "High"
+    },
+    {
+      "meeting_id": "20251022_meeting_1",
+      "subject": "1:1 with Manager - Q4 Planning",
+      "rank": 2,
+      "priority_score": 12.0,
+      "criticality_score": 10,
+      "engagement_level": "Participate",
+      "preparation_level": "Minimal",
+      "timing_optimization": "Peak Hours",
+      "reasoning": "This meeting receives a high priority due to its nature as a one-on-one with your manager focused on Q4 planning, indicating a strategic and personal appointment.  The required attendance and involvement of your manager further solidify its critical importance for your work and company objectives.",
+      "signals_detected": [
+        "manager_chain (3.0)",
+        "personal_appointment (3.0)",
+        "required_attendee (2.0)",
+        "small_group (2.0)",
+        "historical_importance (2.0)"
+      ],
+      "recommendations": {
+        "action": "auto_accept",
+        "prep_time": "5-15 minutes",
+        "buffer_time": "15 minutes before, 10 minutes after",
+        "focus_protection": "Block 30 minutes before for preparation"
+      },
+      "confidence": "High"
+    },
+    {
+      "meeting_id": "20251022_meeting_2",
+      "subject": "Team Standup - Engineering",
+      "rank": 3,
+      "priority_score": 8.0,
+      "criticality_score": 8,
+      "engagement_level": "Participate",
+      "preparation_level": "Minimal",
+      "timing_optimization": "Peak Hours",
+      "reasoning": "This meeting receives a high priority score due to its mandatory attendance requirement and involvement of managers or direct reports, signaling importance for team alignment and progress updates.  The small group size further contributes to efficient communication and focused discussion.",
+      "signals_detected": [
+        "manager_chain (3.0)",
+        "required_attendee (2.0)",
+        "small_group (2.0)",
+        "team_meeting (1.0)"
+      ],
+      "recommendations": {
+        "action": "auto_accept",
+        "prep_time": "5-15 minutes",
+        "buffer_time": "15 minutes before, 10 minutes after",
+        "focus_protection": "Block 30 minutes before for preparation"
+      },
+      "confidence": "High"
+    },
+    {
+      "meeting_id": "20251022_meeting_5",
+      "subject": "Coffee Chat with New Team Member",
+      "rank": 4,
+      "priority_score": 4.5,
+      "criticality_score": 4,
+      "engagement_level": "Monitor",
+      "preparation_level": "Minimal",
+      "timing_optimization": "Peak Hours",
+      "reasoning": "This meeting receives a low priority score due to its small size and optional nature. While onboarding new team members is important, the informal \"coffee chat\" format suggests it's primarily social and not critical for immediate project work or decision-making.",
+      "signals_detected": [
+        "small_group (2.0)",
+        "team_meeting (1.0)",
+        "social_event (1.0)",
+        "optional_status (0.5)"
+      ],
+      "recommendations": {
+        "action": "consider_decline",
+        "prep_time": "5-15 minutes",
+        "buffer_time": "5 minutes before"
+      },
+      "confidence": "High"
+    },
+    {
+      "meeting_id": "20251022_meeting_4",
+      "subject": "Company All-Hands Meeting",
+      "rank": 5,
+      "priority_score": 1.0,
+      "criticality_score": 1,
+      "engagement_level": "Skip",
+      "preparation_level": "None",
+      "timing_optimization": "Peak Hours",
+      "reasoning": "This all-hands meeting receives a low priority score due to its optional nature and broad audience.  While information sharing is a factor, the \"tentative\" attendance status suggests it's not time-sensitive or crucial for individual contributions.",
+      "signals_detected": [
+        "information_sharing (0.5)",
+        "optional_status (0.5)"
+      ],
+      "recommendations": {
+        "action": "consider_decline",
+        "prep_time": "No preparation needed",
+        "buffer_time": "5 minutes before"
+      },
+      "confidence": "High"
+    }
+  ]
+}

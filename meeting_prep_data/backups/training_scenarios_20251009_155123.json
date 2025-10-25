@@ -1,0 +1,3889 @@
+[
+  {
+    "id": "generated_001",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Customer Discovery Call - Session 1",
+      "description": "Business meeting focused on customer discovery call with 2 attendees",
+      "attendees": [
+        "Manager",
+        "Individual Contributor"
+      ],
+      "attendee_count": 2,
+      "duration_minutes": 90,
+      "start_time": "2024-08-25T11:00:00",
+      "is_online_meeting": true,
+      "importance": "high",
+      "meeting_provider": "Zoom"
+    },
+    "meeting_type": "Customer Discovery Call",
+    "preparation_requirements": [
+      "Review agenda and objectives"
+    ],
+    "complexity": "high",
+    "quality_score": 9.2,
+    "last_updated": "2025-10-09T15:17:58.944679"
+  },
+  {
+    "id": "generated_002",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Training Session - Session 2",
+      "description": "Business meeting focused on training session with 3 attendees",
+      "attendees": [
+        "Customer Success",
+        "Product Team",
+        "Engineering"
+      ],
+      "attendee_count": 3,
+      "duration_minutes": 90,
+      "start_time": "2024-08-21T12:00:00",
+      "is_online_meeting": false,
+      "importance": "normal",
+      "meeting_provider": ""
+    },
+    "meeting_type": "Training Session",
+    "preparation_requirements": [
+      "Review agenda and objectives"
+    ],
+    "complexity": "low",
+    "quality_score": 8.8,
+    "last_updated": "2025-10-09T15:17:58.944687"
+  },
+  {
+    "id": "generated_003",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Cross-team Collaboration - Session 3",
+      "description": "Business meeting focused on cross-team collaboration with 4 attendees",
+      "attendees": [
+        "Team Lead A",
+        "Team Lead B",
+        "Architect",
+        "PM"
+      ],
+      "attendee_count": 4,
+      "duration_minutes": 120,
+      "start_time": "2024-07-24T13:00:00",
+      "is_online_meeting": false,
+      "importance": "normal",
+      "meeting_provider": "Zoom"
+    },
+    "meeting_type": "Cross-team Collaboration",
+    "preparation_requirements": [
+      "Review agenda and objectives",
+      "Prepare detailed presentation"
+    ],
+    "complexity": "high",
+    "quality_score": 9.4,
+    "last_updated": "2025-10-09T15:17:58.944691"
+  },
+  {
+    "id": "generated_004",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Customer Discovery Call - Session 4",
+      "description": "Business meeting focused on customer discovery call with 4 attendees",
+      "attendees": [
+        "Procurement",
+        "Engineering",
+        "Legal",
+        "Vendor Rep"
+      ],
+      "attendee_count": 4,
+      "duration_minutes": 90,
+      "start_time": "2024-08-14T10:00:00",
+      "is_online_meeting": true,
+      "importance": "normal",
+      "meeting_provider": "Microsoft Teams"
+    },
+    "meeting_type": "Customer Discovery Call",
+    "preparation_requirements": [
+      "Review agenda and objectives"
+    ],
+    "complexity": "low",
+    "quality_score": 8.3,
+    "last_updated": "2025-10-09T15:17:58.944694"
+  },
+  {
+    "id": "generated_005",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Training Session - Session 5",
+      "description": "Business meeting focused on training session with 4 attendees",
+      "attendees": [
+        "Team Lead A",
+        "Team Lead B",
+        "Architect",
+        "PM"
+      ],
+      "attendee_count": 4,
+      "duration_minutes": 30,
+      "start_time": "2024-09-20T14:00:00",
+      "is_online_meeting": false,
+      "importance": "high",
+      "meeting_provider": "Google Meet"
+    },
+    "meeting_type": "Training Session",
+    "preparation_requirements": [
+      "Review agenda and objectives"
+    ],
+    "complexity": "critical",
+    "quality_score": 8.9,
+    "last_updated": "2025-10-09T15:17:58.944697"
+  },
+  {
+    "id": "generated_006",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Project Status Update - Session 6",
+      "description": "Business meeting focused on project status update with 3 attendees",
+      "attendees": [
+        "HR Lead",
+        "Manager",
+        "Team Members"
+      ],
+      "attendee_count": 3,
+      "duration_minutes": 120,
+      "start_time": "2024-10-22T10:00:00",
+      "is_online_meeting": false,
+      "importance": "normal",
+      "meeting_provider": ""
+    },
+    "meeting_type": "Project Status Update",
+    "preparation_requirements": [
+      "Review agenda and objectives",
+      "Prepare detailed presentation"
+    ],
+    "complexity": "medium",
+    "quality_score": 7.8,
+    "last_updated": "2025-10-09T15:17:58.944700"
+  },
+  {
+    "id": "generated_007",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Q3 Product Roadmap Planning",
+      "description": "Business meeting focused on product strategy session with 3 attendees",
+      "attendees": [
+        "Scrum Master",
+        "Development Team",
+        "QA Lead"
+      ],
+      "attendee_count": 3,
+      "duration_minutes": 90,
+      "start_time": "2024-09-13T10:00:00",
+      "is_online_meeting": true,
+      "importance": "normal",
+      "meeting_provider": "Zoom"
+    },
+    "meeting_type": "Product Strategy Session",
+    "preparation_requirements": [
+      "Review agenda and objectives",
+      "Research market trends",
+      "Prepare competitive analysis",
+      "Review customer feedback"
+    ],
+    "complexity": "high",
+    "quality_score": 8.9,
+    "last_updated": "2025-10-09T15:17:58.944703"
+  },
+  {
+    "id": "generated_008",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Project Status Update - Session 8",
+      "description": "Business meeting focused on project status update with 3 attendees",
+      "attendees": [
+        "HR Lead",
+        "Manager",
+        "Team Members"
+      ],
+      "attendee_count": 3,
+      "duration_minutes": 90,
+      "start_time": "2024-10-23T09:00:00",
+      "is_online_meeting": true,
+      "importance": "high",
+      "meeting_provider": ""
+    },
+    "meeting_type": "Project Status Update",
+    "preparation_requirements": [
+      "Review agenda and objectives"
+    ],
+    "complexity": "low",
+    "quality_score": 8.0,
+    "last_updated": "2025-10-09T15:17:58.944706"
+  },
+  {
+    "id": "generated_009",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Budget Planning Meeting - Session 9",
+      "description": "Business meeting focused on budget planning meeting with 4 attendees",
+      "attendees": [
+        "Procurement",
+        "Engineering",
+        "Legal",
+        "Vendor Rep"
+      ],
+      "attendee_count": 4,
+      "duration_minutes": 90,
+      "start_time": "2024-10-18T15:00:00",
+      "is_online_meeting": true,
+      "importance": "normal",
+      "meeting_provider": "Zoom"
+    },
+    "meeting_type": "Budget Planning Meeting",
+    "preparation_requirements": [
+      "Review agenda and objectives",
+      "Gather financial reports",
+      "Prepare budget analysis",
+      "Review department expenses"
+    ],
+    "complexity": "critical",
+    "quality_score": 8.1,
+    "last_updated": "2025-10-09T15:17:58.944708"
+  },
+  {
+    "id": "generated_010",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Cross-team Collaboration - Session 10",
+      "description": "Business meeting focused on cross-team collaboration with 3 attendees",
+      "attendees": [
+        "Product Manager",
+        "Engineering Lead",
+        "Designer"
+      ],
+      "attendee_count": 3,
+      "duration_minutes": 120,
+      "start_time": "2024-09-02T10:00:00",
+      "is_online_meeting": false,
+      "importance": "high",
+      "meeting_provider": ""
+    },
+    "meeting_type": "Cross-team Collaboration",
+    "preparation_requirements": [
+      "Review agenda and objectives",
+      "Prepare detailed presentation"
+    ],
+    "complexity": "critical",
+    "quality_score": 9.7,
+    "last_updated": "2025-10-09T15:17:58.944711"
+  },
+  {
+    "id": "generated_011",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Project A Lessons Learned",
+      "description": "Business meeting focused on team retrospective with 3 attendees",
+      "attendees": [
+        "Product Manager",
+        "Engineering Lead",
+        "Designer"
+      ],
+      "attendee_count": 3,
+      "duration_minutes": 30,
+      "start_time": "2024-10-03T09:00:00",
+      "is_online_meeting": true,
+      "importance": "high",
+      "meeting_provider": "Google Meet"
+    },
+    "meeting_type": "Team Retrospective",
+    "preparation_requirements": [
+      "Review agenda and objectives"
+    ],
+    "complexity": "critical",
+    "quality_score": 8.3,
+    "last_updated": "2025-10-09T15:17:58.944714"
+  },
+  {
+    "id": "generated_012",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Technical Debt Assessment - Frontend",
+      "description": "Business meeting focused on technical design review with 3 attendees",
+      "attendees": [
+        "Customer Success",
+        "Product Team",
+        "Engineering"
+      ],
+      "attendee_count": 3,
+      "duration_minutes": 60,
+      "start_time": "2024-08-13T13:00:00",
+      "is_online_meeting": false,
+      "importance": "high",
+      "meeting_provider": ""
+    },
+    "meeting_type": "Technical Design Review",
+    "preparation_requirements": [
+      "Review agenda and objectives",
+      "Review technical documentation",
+      "Prepare system diagrams",
+      "Analyze performance metrics"
+    ],
+    "complexity": "critical",
+    "quality_score": 8.9,
+    "last_updated": "2025-10-09T15:17:58.944716"
+  },
+  {
+    "id": "generated_013",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Customer Discovery Call - Session 13",
+      "description": "Business meeting focused on customer discovery call with 3 attendees",
+      "attendees": [
+        "HR Lead",
+        "Manager",
+        "Team Members"
+      ],
+      "attendee_count": 3,
+      "duration_minutes": 60,
+      "start_time": "2024-09-21T09:00:00",
+      "is_online_meeting": true,
+      "importance": "normal",
+      "meeting_provider": ""
+    },
+    "meeting_type": "Customer Discovery Call",
+    "preparation_requirements": [
+      "Review agenda and objectives"
+    ],
+    "complexity": "critical",
+    "quality_score": 9.3,
+    "last_updated": "2025-10-09T15:17:58.944719"
+  },
+  {
+    "id": "generated_014",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Project Status Update - Session 14",
+      "description": "Business meeting focused on project status update with 3 attendees",
+      "attendees": [
+        "Customer Success",
+        "Product Team",
+        "Engineering"
+      ],
+      "attendee_count": 3,
+      "duration_minutes": 90,
+      "start_time": "2024-07-19T13:00:00",
+      "is_online_meeting": false,
+      "importance": "high",
+      "meeting_provider": "Zoom"
+    },
+    "meeting_type": "Project Status Update",
+    "preparation_requirements": [
+      "Review agenda and objectives"
+    ],
+    "complexity": "low",
+    "quality_score": 8.8,
+    "last_updated": "2025-10-09T15:17:58.944722"
+  },
+  {
+    "id": "generated_015",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Feature Prioritization - Security",
+      "description": "Business meeting focused on product strategy session with 3 attendees",
+      "attendees": [
+        "Finance Director",
+        "Department Heads",
+        "Project Managers"
+      ],
+      "attendee_count": 3,
+      "duration_minutes": 60,
+      "start_time": "2024-09-19T17:00:00",
+      "is_online_meeting": false,
+      "importance": "normal",
+      "meeting_provider": "Google Meet"
+    },
+    "meeting_type": "Product Strategy Session",
+    "preparation_requirements": [
+      "Review agenda and objectives",
+      "Research market trends",
+      "Prepare competitive analysis",
+      "Review customer feedback"
+    ],
+    "complexity": "critical",
+    "quality_score": 9.0,
+    "last_updated": "2025-10-09T15:17:58.944724"
+  },
+  {
+    "id": "generated_016",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Performance Review - Session 16",
+      "description": "Business meeting focused on performance review with 3 attendees",
+      "attendees": [
+        "HR Lead",
+        "Manager",
+        "Team Members"
+      ],
+      "attendee_count": 3,
+      "duration_minutes": 120,
+      "start_time": "2024-08-05T10:00:00",
+      "is_online_meeting": false,
+      "importance": "high",
+      "meeting_provider": ""
+    },
+    "meeting_type": "Performance Review",
+    "preparation_requirements": [
+      "Review agenda and objectives",
+      "Prepare detailed presentation"
+    ],
+    "complexity": "low",
+    "quality_score": 8.5,
+    "last_updated": "2025-10-09T15:17:58.944727"
+  },
+  {
+    "id": "generated_017",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Performance Review - Session 17",
+      "description": "Business meeting focused on performance review with 2 attendees",
+      "attendees": [
+        "Manager",
+        "Individual Contributor"
+      ],
+      "attendee_count": 2,
+      "duration_minutes": 90,
+      "start_time": "2024-10-17T09:00:00",
+      "is_online_meeting": true,
+      "importance": "high",
+      "meeting_provider": "Zoom"
+    },
+    "meeting_type": "Performance Review",
+    "preparation_requirements": [
+      "Review agenda and objectives"
+    ],
+    "complexity": "medium",
+    "quality_score": 8.8,
+    "last_updated": "2025-10-09T15:17:58.944730"
+  },
+  {
+    "id": "generated_018",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Training Session - Session 18",
+      "description": "Business meeting focused on training session with 4 attendees",
+      "attendees": [
+        "Team Lead A",
+        "Team Lead B",
+        "Architect",
+        "PM"
+      ],
+      "attendee_count": 4,
+      "duration_minutes": 120,
+      "start_time": "2024-09-04T12:00:00",
+      "is_online_meeting": false,
+      "importance": "normal",
+      "meeting_provider": ""
+    },
+    "meeting_type": "Training Session",
+    "preparation_requirements": [
+      "Review agenda and objectives",
+      "Prepare detailed presentation"
+    ],
+    "complexity": "high",
+    "quality_score": 8.2,
+    "last_updated": "2025-10-09T15:17:58.944732"
+  },
+  {
+    "id": "generated_019",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Cross-team Collaboration - Session 19",
+      "description": "Business meeting focused on cross-team collaboration with 3 attendees",
+      "attendees": [
+        "Scrum Master",
+        "Development Team",
+        "QA Lead"
+      ],
+      "attendee_count": 3,
+      "duration_minutes": 120,
+      "start_time": "2024-07-09T17:00:00",
+      "is_online_meeting": true,
+      "importance": "high",
+      "meeting_provider": "Microsoft Teams"
+    },
+    "meeting_type": "Cross-team Collaboration",
+    "preparation_requirements": [
+      "Review agenda and objectives",
+      "Prepare detailed presentation"
+    ],
+    "complexity": "critical",
+    "quality_score": 10.0,
+    "last_updated": "2025-10-09T15:17:58.944735"
+  },
+  {
+    "id": "generated_020",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Cross-team Collaboration - Session 20",
+      "description": "Business meeting focused on cross-team collaboration with 3 attendees",
+      "attendees": [
+        "Customer Success",
+        "Product Team",
+        "Engineering"
+      ],
+      "attendee_count": 3,
+      "duration_minutes": 120,
+      "start_time": "2024-07-26T15:00:00",
+      "is_online_meeting": false,
+      "importance": "high",
+      "meeting_provider": "Microsoft Teams"
+    },
+    "meeting_type": "Cross-team Collaboration",
+    "preparation_requirements": [
+      "Review agenda and objectives",
+      "Prepare detailed presentation"
+    ],
+    "complexity": "medium",
+    "quality_score": 8.0,
+    "last_updated": "2025-10-09T15:17:58.944737"
+  },
+  {
+    "id": "generated_021",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Training Session - Session 21",
+      "description": "Business meeting focused on training session with 4 attendees",
+      "attendees": [
+        "Procurement",
+        "Engineering",
+        "Legal",
+        "Vendor Rep"
+      ],
+      "attendee_count": 4,
+      "duration_minutes": 90,
+      "start_time": "2024-08-02T17:00:00",
+      "is_online_meeting": true,
+      "importance": "high",
+      "meeting_provider": "Google Meet"
+    },
+    "meeting_type": "Training Session",
+    "preparation_requirements": [
+      "Review agenda and objectives"
+    ],
+    "complexity": "low",
+    "quality_score": 8.8,
+    "last_updated": "2025-10-09T15:17:58.944740"
+  },
+  {
+    "id": "generated_023",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Project Status Update - Session 23",
+      "description": "Business meeting focused on project status update with 4 attendees",
+      "attendees": [
+        "Team Lead A",
+        "Team Lead B",
+        "Architect",
+        "PM"
+      ],
+      "attendee_count": 4,
+      "duration_minutes": 30,
+      "start_time": "2024-07-03T16:00:00",
+      "is_online_meeting": false,
+      "importance": "normal",
+      "meeting_provider": ""
+    },
+    "meeting_type": "Project Status Update",
+    "preparation_requirements": [
+      "Review agenda and objectives"
+    ],
+    "complexity": "medium",
+    "quality_score": 7.4,
+    "last_updated": "2025-10-09T15:17:58.944745"
+  },
+  {
+    "id": "generated_024",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Performance Review - Session 24",
+      "description": "Business meeting focused on performance review with 2 attendees",
+      "attendees": [
+        "Manager",
+        "Individual Contributor"
+      ],
+      "attendee_count": 2,
+      "duration_minutes": 60,
+      "start_time": "2024-07-28T14:00:00",
+      "is_online_meeting": false,
+      "importance": "high",
+      "meeting_provider": ""
+    },
+    "meeting_type": "Performance Review",
+    "preparation_requirements": [
+      "Review agenda and objectives"
+    ],
+    "complexity": "medium",
+    "quality_score": 8.4,
+    "last_updated": "2025-10-09T15:17:58.944748"
+  },
+  {
+    "id": "generated_025",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Vendor Evaluation - Session 25",
+      "description": "Business meeting focused on vendor evaluation with 3 attendees",
+      "attendees": [
+        "Customer Success",
+        "Product Team",
+        "Engineering"
+      ],
+      "attendee_count": 3,
+      "duration_minutes": 120,
+      "start_time": "2024-09-15T13:00:00",
+      "is_online_meeting": true,
+      "importance": "normal",
+      "meeting_provider": ""
+    },
+    "meeting_type": "Vendor Evaluation",
+    "preparation_requirements": [
+      "Review agenda and objectives",
+      "Prepare detailed presentation"
+    ],
+    "complexity": "critical",
+    "quality_score": 9.4,
+    "last_updated": "2025-10-09T15:17:58.944750"
+  },
+  {
+    "id": "generated_026",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Customer Discovery Call - Session 26",
+      "description": "Business meeting focused on customer discovery call with 2 attendees",
+      "attendees": [
+        "Manager",
+        "Individual Contributor"
+      ],
+      "attendee_count": 2,
+      "duration_minutes": 90,
+      "start_time": "2024-10-10T13:00:00",
+      "is_online_meeting": false,
+      "importance": "high",
+      "meeting_provider": ""
+    },
+    "meeting_type": "Customer Discovery Call",
+    "preparation_requirements": [
+      "Review agenda and objectives"
+    ],
+    "complexity": "high",
+    "quality_score": 9.3,
+    "last_updated": "2025-10-09T15:17:58.944753"
+  },
+  {
+    "id": "generated_027",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Budget Planning Meeting - Session 27",
+      "description": "Business meeting focused on budget planning meeting with 4 attendees",
+      "attendees": [
+        "Procurement",
+        "Engineering",
+        "Legal",
+        "Vendor Rep"
+      ],
+      "attendee_count": 4,
+      "duration_minutes": 90,
+      "start_time": "2024-10-13T15:00:00",
+      "is_online_meeting": false,
+      "importance": "normal",
+      "meeting_provider": "Google Meet"
+    },
+    "meeting_type": "Budget Planning Meeting",
+    "preparation_requirements": [
+      "Review agenda and objectives",
+      "Gather financial reports",
+      "Prepare budget analysis",
+      "Review department expenses"
+    ],
+    "complexity": "critical",
+    "quality_score": 8.2,
+    "last_updated": "2025-10-09T15:17:58.944756"
+  },
+  {
+    "id": "generated_028",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Customer Discovery Call - Session 28",
+      "description": "Business meeting focused on customer discovery call with 4 attendees",
+      "attendees": [
+        "Procurement",
+        "Engineering",
+        "Legal",
+        "Vendor Rep"
+      ],
+      "attendee_count": 4,
+      "duration_minutes": 120,
+      "start_time": "2024-09-21T09:00:00",
+      "is_online_meeting": true,
+      "importance": "high",
+      "meeting_provider": "Microsoft Teams"
+    },
+    "meeting_type": "Customer Discovery Call",
+    "preparation_requirements": [
+      "Review agenda and objectives",
+      "Prepare detailed presentation"
+    ],
+    "complexity": "medium",
+    "quality_score": 8.5,
+    "last_updated": "2025-10-09T15:17:58.944758"
+  },
+  {
+    "id": "generated_029",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Customer Discovery Call - Session 29",
+      "description": "Business meeting focused on customer discovery call with 3 attendees",
+      "attendees": [
+        "Customer Success",
+        "Product Team",
+        "Engineering"
+      ],
+      "attendee_count": 3,
+      "duration_minutes": 90,
+      "start_time": "2024-10-05T12:00:00",
+      "is_online_meeting": true,
+      "importance": "high",
+      "meeting_provider": "Google Meet"
+    },
+    "meeting_type": "Customer Discovery Call",
+    "preparation_requirements": [
+      "Review agenda and objectives"
+    ],
+    "complexity": "high",
+    "quality_score": 9.3,
+    "last_updated": "2025-10-09T15:17:58.944761"
+  },
+  {
+    "id": "generated_030",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Customer Discovery Call - Session 30",
+      "description": "Business meeting focused on customer discovery call with 4 attendees",
+      "attendees": [
+        "Team Lead A",
+        "Team Lead B",
+        "Architect",
+        "PM"
+      ],
+      "attendee_count": 4,
+      "duration_minutes": 30,
+      "start_time": "2024-10-27T13:00:00",
+      "is_online_meeting": false,
+      "importance": "high",
+      "meeting_provider": "Microsoft Teams"
+    },
+    "meeting_type": "Customer Discovery Call",
+    "preparation_requirements": [
+      "Review agenda and objectives"
+    ],
+    "complexity": "low",
+    "quality_score": 8.7,
+    "last_updated": "2025-10-09T15:17:58.944763"
+  },
+  {
+    "id": "generated_031",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Q2 Product Roadmap Planning",
+      "description": "Business meeting focused on product strategy session with 3 attendees",
+      "attendees": [
+        "Project Manager",
+        "Stakeholders",
+        "Team Leads"
+      ],
+      "attendee_count": 3,
+      "duration_minutes": 30,
+      "start_time": "2024-07-20T09:00:00",
+      "is_online_meeting": false,
+      "importance": "high",
+      "meeting_provider": ""
+    },
+    "meeting_type": "Product Strategy Session",
+    "preparation_requirements": [
+      "Review agenda and objectives",
+      "Research market trends",
+      "Prepare competitive analysis",
+      "Review customer feedback"
+    ],
+    "complexity": "medium",
+    "quality_score": 7.8,
+    "last_updated": "2025-10-09T15:17:58.944766"
+  },
+  {
+    "id": "generated_032",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Vendor Evaluation - Session 32",
+      "description": "Business meeting focused on vendor evaluation with 3 attendees",
+      "attendees": [
+        "Customer Success",
+        "Product Team",
+        "Engineering"
+      ],
+      "attendee_count": 3,
+      "duration_minutes": 90,
+      "start_time": "2024-09-12T10:00:00",
+      "is_online_meeting": false,
+      "importance": "normal",
+      "meeting_provider": ""
+    },
+    "meeting_type": "Vendor Evaluation",
+    "preparation_requirements": [
+      "Review agenda and objectives"
+    ],
+    "complexity": "medium",
+    "quality_score": 8.3,
+    "last_updated": "2025-10-09T15:17:58.944768"
+  },
+  {
+    "id": "generated_033",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Budget Planning Meeting - Session 33",
+      "description": "Business meeting focused on budget planning meeting with 3 attendees",
+      "attendees": [
+        "Finance Director",
+        "Department Heads",
+        "Project Managers"
+      ],
+      "attendee_count": 3,
+      "duration_minutes": 60,
+      "start_time": "2024-07-26T10:00:00",
+      "is_online_meeting": false,
+      "importance": "high",
+      "meeting_provider": "Microsoft Teams"
+    },
+    "meeting_type": "Budget Planning Meeting",
+    "preparation_requirements": [
+      "Review agenda and objectives",
+      "Gather financial reports",
+      "Prepare budget analysis",
+      "Review department expenses"
+    ],
+    "complexity": "critical",
+    "quality_score": 9.6,
+    "last_updated": "2025-10-09T15:17:58.944771"
+  },
+  {
+    "id": "generated_034",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Cross-team Collaboration - Session 34",
+      "description": "Business meeting focused on cross-team collaboration with 4 attendees",
+      "attendees": [
+        "Team Lead A",
+        "Team Lead B",
+        "Architect",
+        "PM"
+      ],
+      "attendee_count": 4,
+      "duration_minutes": 60,
+      "start_time": "2024-07-08T13:00:00",
+      "is_online_meeting": false,
+      "importance": "high",
+      "meeting_provider": "Zoom"
+    },
+    "meeting_type": "Cross-team Collaboration",
+    "preparation_requirements": [
+      "Review agenda and objectives"
+    ],
+    "complexity": "high",
+    "quality_score": 8.7,
+    "last_updated": "2025-10-09T15:17:58.944773"
+  },
+  {
+    "id": "generated_035",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Cross-team Collaboration - Session 35",
+      "description": "Business meeting focused on cross-team collaboration with 4 attendees",
+      "attendees": [
+        "Procurement",
+        "Engineering",
+        "Legal",
+        "Vendor Rep"
+      ],
+      "attendee_count": 4,
+      "duration_minutes": 60,
+      "start_time": "2024-09-01T13:00:00",
+      "is_online_meeting": true,
+      "importance": "high",
+      "meeting_provider": ""
+    },
+    "meeting_type": "Cross-team Collaboration",
+    "preparation_requirements": [
+      "Review agenda and objectives"
+    ],
+    "complexity": "critical",
+    "quality_score": 9.2,
+    "last_updated": "2025-10-09T15:17:58.944776"
+  },
+  {
+    "id": "generated_036",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Customer Discovery Call - Session 36",
+      "description": "Business meeting focused on customer discovery call with 2 attendees",
+      "attendees": [
+        "Manager",
+        "Individual Contributor"
+      ],
+      "attendee_count": 2,
+      "duration_minutes": 60,
+      "start_time": "2024-07-23T15:00:00",
+      "is_online_meeting": true,
+      "importance": "normal",
+      "meeting_provider": ""
+    },
+    "meeting_type": "Customer Discovery Call",
+    "preparation_requirements": [
+      "Review agenda and objectives"
+    ],
+    "complexity": "low",
+    "quality_score": 7.7,
+    "last_updated": "2025-10-09T15:17:58.944779"
+  },
+  {
+    "id": "generated_037",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Performance Review - Session 37",
+      "description": "Business meeting focused on performance review with 4 attendees",
+      "attendees": [
+        "CEO",
+        "VP Engineering",
+        "VP Marketing",
+        "Head of Sales"
+      ],
+      "attendee_count": 4,
+      "duration_minutes": 30,
+      "start_time": "2024-10-09T13:00:00",
+      "is_online_meeting": true,
+      "importance": "high",
+      "meeting_provider": "Microsoft Teams"
+    },
+    "meeting_type": "Performance Review",
+    "preparation_requirements": [
+      "Review agenda and objectives"
+    ],
+    "complexity": "high",
+    "quality_score": 8.5,
+    "last_updated": "2025-10-09T15:17:58.944781"
+  },
+  {
+    "id": "generated_038",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Project Status Update - Session 38",
+      "description": "Business meeting focused on project status update with 3 attendees",
+      "attendees": [
+        "Project Manager",
+        "Stakeholders",
+        "Team Leads"
+      ],
+      "attendee_count": 3,
+      "duration_minutes": 90,
+      "start_time": "2024-10-11T11:00:00",
+      "is_online_meeting": true,
+      "importance": "high",
+      "meeting_provider": "Zoom"
+    },
+    "meeting_type": "Project Status Update",
+    "preparation_requirements": [
+      "Review agenda and objectives"
+    ],
+    "complexity": "low",
+    "quality_score": 9.2,
+    "last_updated": "2025-10-09T15:17:58.944784"
+  },
+  {
+    "id": "generated_039",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Project Status Update - Session 39",
+      "description": "Business meeting focused on project status update with 4 attendees",
+      "attendees": [
+        "CEO",
+        "VP Engineering",
+        "VP Marketing",
+        "Head of Sales"
+      ],
+      "attendee_count": 4,
+      "duration_minutes": 30,
+      "start_time": "2024-08-22T15:00:00",
+      "is_online_meeting": false,
+      "importance": "high",
+      "meeting_provider": ""
+    },
+    "meeting_type": "Project Status Update",
+    "preparation_requirements": [
+      "Review agenda and objectives"
+    ],
+    "complexity": "medium",
+    "quality_score": 8.9,
+    "last_updated": "2025-10-09T15:17:58.944792"
+  },
+  {
+    "id": "generated_040",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Q2 Team Retrospective",
+      "description": "Business meeting focused on team retrospective with 3 attendees",
+      "attendees": [
+        "HR Lead",
+        "Manager",
+        "Team Members"
+      ],
+      "attendee_count": 3,
+      "duration_minutes": 30,
+      "start_time": "2024-09-08T10:00:00",
+      "is_online_meeting": false,
+      "importance": "high",
+      "meeting_provider": "Zoom"
+    },
+    "meeting_type": "Team Retrospective",
+    "preparation_requirements": [
+      "Review agenda and objectives"
+    ],
+    "complexity": "high",
+    "quality_score": 8.3,
+    "last_updated": "2025-10-09T15:17:58.944794"
+  },
+  {
+    "id": "generated_041",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Customer Discovery Call - Session 41",
+      "description": "Business meeting focused on customer discovery call with 3 attendees",
+      "attendees": [
+        "Customer Success",
+        "Product Team",
+        "Engineering"
+      ],
+      "attendee_count": 3,
+      "duration_minutes": 120,
+      "start_time": "2024-09-22T16:00:00",
+      "is_online_meeting": true,
+      "importance": "high",
+      "meeting_provider": "Microsoft Teams"
+    },
+    "meeting_type": "Customer Discovery Call",
+    "preparation_requirements": [
+      "Review agenda and objectives",
+      "Prepare detailed presentation"
+    ],
+    "complexity": "medium",
+    "quality_score": 8.5,
+    "last_updated": "2025-10-09T15:17:58.944797"
+  },
+  {
+    "id": "generated_042",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Project Status Update - Session 42",
+      "description": "Business meeting focused on project status update with 4 attendees",
+      "attendees": [
+        "CEO",
+        "VP Engineering",
+        "VP Marketing",
+        "Head of Sales"
+      ],
+      "attendee_count": 4,
+      "duration_minutes": 60,
+      "start_time": "2024-09-24T17:00:00",
+      "is_online_meeting": false,
+      "importance": "normal",
+      "meeting_provider": ""
+    },
+    "meeting_type": "Project Status Update",
+    "preparation_requirements": [
+      "Review agenda and objectives"
+    ],
+    "complexity": "low",
+    "quality_score": 8.5,
+    "last_updated": "2025-10-09T15:17:58.944801"
+  },
+  {
+    "id": "generated_043",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Customer Discovery Call - Session 43",
+      "description": "Business meeting focused on customer discovery call with 3 attendees",
+      "attendees": [
+        "Finance Director",
+        "Department Heads",
+        "Project Managers"
+      ],
+      "attendee_count": 3,
+      "duration_minutes": 60,
+      "start_time": "2024-07-03T15:00:00",
+      "is_online_meeting": false,
+      "importance": "high",
+      "meeting_provider": ""
+    },
+    "meeting_type": "Customer Discovery Call",
+    "preparation_requirements": [
+      "Review agenda and objectives"
+    ],
+    "complexity": "medium",
+    "quality_score": 8.8,
+    "last_updated": "2025-10-09T15:17:58.944804"
+  },
+  {
+    "id": "generated_044",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Q3 Product Roadmap Planning",
+      "description": "Business meeting focused on product strategy session with 2 attendees",
+      "attendees": [
+        "Manager",
+        "Individual Contributor"
+      ],
+      "attendee_count": 2,
+      "duration_minutes": 120,
+      "start_time": "2024-07-05T16:00:00",
+      "is_online_meeting": false,
+      "importance": "high",
+      "meeting_provider": ""
+    },
+    "meeting_type": "Product Strategy Session",
+    "preparation_requirements": [
+      "Review agenda and objectives",
+      "Research market trends",
+      "Prepare competitive analysis",
+      "Review customer feedback",
+      "Prepare detailed presentation"
+    ],
+    "complexity": "low",
+    "quality_score": 7.7,
+    "last_updated": "2025-10-09T15:17:58.944806"
+  },
+  {
+    "id": "generated_045",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Budget Planning Meeting - Session 45",
+      "description": "Business meeting focused on budget planning meeting with 3 attendees",
+      "attendees": [
+        "Finance Director",
+        "Department Heads",
+        "Project Managers"
+      ],
+      "attendee_count": 3,
+      "duration_minutes": 60,
+      "start_time": "2024-08-19T11:00:00",
+      "is_online_meeting": false,
+      "importance": "high",
+      "meeting_provider": "Google Meet"
+    },
+    "meeting_type": "Budget Planning Meeting",
+    "preparation_requirements": [
+      "Review agenda and objectives",
+      "Gather financial reports",
+      "Prepare budget analysis",
+      "Review department expenses"
+    ],
+    "complexity": "critical",
+    "quality_score": 8.8,
+    "last_updated": "2025-10-09T15:17:58.944809"
+  },
+  {
+    "id": "generated_046",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Training Session - Session 46",
+      "description": "Business meeting focused on training session with 4 attendees",
+      "attendees": [
+        "Team Lead A",
+        "Team Lead B",
+        "Architect",
+        "PM"
+      ],
+      "attendee_count": 4,
+      "duration_minutes": 30,
+      "start_time": "2024-08-24T15:00:00",
+      "is_online_meeting": true,
+      "importance": "normal",
+      "meeting_provider": "Microsoft Teams"
+    },
+    "meeting_type": "Training Session",
+    "preparation_requirements": [
+      "Review agenda and objectives"
+    ],
+    "complexity": "high",
+    "quality_score": 7.6,
+    "last_updated": "2025-10-09T15:17:58.944811"
+  },
+  {
+    "id": "generated_047",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Performance Review - Session 47",
+      "description": "Business meeting focused on performance review with 3 attendees",
+      "attendees": [
+        "HR Lead",
+        "Manager",
+        "Team Members"
+      ],
+      "attendee_count": 3,
+      "duration_minutes": 90,
+      "start_time": "2024-08-04T11:00:00",
+      "is_online_meeting": true,
+      "importance": "high",
+      "meeting_provider": ""
+    },
+    "meeting_type": "Performance Review",
+    "preparation_requirements": [
+      "Review agenda and objectives"
+    ],
+    "complexity": "high",
+    "quality_score": 9.2,
+    "last_updated": "2025-10-09T15:17:58.944814"
+  },
+  {
+    "id": "generated_048",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Training Session - Session 48",
+      "description": "Business meeting focused on training session with 3 attendees",
+      "attendees": [
+        "Product Manager",
+        "Engineering Lead",
+        "Designer"
+      ],
+      "attendee_count": 3,
+      "duration_minutes": 120,
+      "start_time": "2024-07-21T11:00:00",
+      "is_online_meeting": true,
+      "importance": "high",
+      "meeting_provider": "Microsoft Teams"
+    },
+    "meeting_type": "Training Session",
+    "preparation_requirements": [
+      "Review agenda and objectives",
+      "Prepare detailed presentation"
+    ],
+    "complexity": "low",
+    "quality_score": 8.3,
+    "last_updated": "2025-10-09T15:17:58.944817"
+  },
+  {
+    "id": "generated_049",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Customer Discovery Call - Session 49",
+      "description": "Business meeting focused on customer discovery call with 4 attendees",
+      "attendees": [
+        "CEO",
+        "VP Engineering",
+        "VP Marketing",
+        "Head of Sales"
+      ],
+      "attendee_count": 4,
+      "duration_minutes": 90,
+      "start_time": "2024-10-02T17:00:00",
+      "is_online_meeting": false,
+      "importance": "high",
+      "meeting_provider": ""
+    },
+    "meeting_type": "Customer Discovery Call",
+    "preparation_requirements": [
+      "Review agenda and objectives"
+    ],
+    "complexity": "high",
+    "quality_score": 9.0,
+    "last_updated": "2025-10-09T15:17:58.944819"
+  },
+  {
+    "id": "generated_050",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Competitive Analysis - Market Position",
+      "description": "Business meeting focused on product strategy session with 3 attendees",
+      "attendees": [
+        "Customer Success",
+        "Product Team",
+        "Engineering"
+      ],
+      "attendee_count": 3,
+      "duration_minutes": 30,
+      "start_time": "2024-07-11T12:00:00",
+      "is_online_meeting": true,
+      "importance": "high",
+      "meeting_provider": ""
+    },
+    "meeting_type": "Product Strategy Session",
+    "preparation_requirements": [
+      "Review agenda and objectives",
+      "Research market trends",
+      "Prepare competitive analysis",
+      "Review customer feedback"
+    ],
+    "complexity": "low",
+    "quality_score": 7.7,
+    "last_updated": "2025-10-09T15:17:58.944822"
+  },
+  {
+    "id": "generated_051",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Customer Discovery Call - Session 51",
+      "description": "Business meeting focused on customer discovery call with 3 attendees",
+      "attendees": [
+        "Finance Director",
+        "Department Heads",
+        "Project Managers"
+      ],
+      "attendee_count": 3,
+      "duration_minutes": 30,
+      "start_time": "2024-09-22T11:00:00",
+      "is_online_meeting": false,
+      "importance": "high",
+      "meeting_provider": ""
+    },
+    "meeting_type": "Customer Discovery Call",
+    "preparation_requirements": [
+      "Review agenda and objectives"
+    ],
+    "complexity": "low",
+    "quality_score": 8.5,
+    "last_updated": "2025-10-09T15:17:58.944824"
+  },
+  {
+    "id": "generated_052",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Project Status Update - Session 52",
+      "description": "Business meeting focused on project status update with 3 attendees",
+      "attendees": [
+        "Finance Director",
+        "Department Heads",
+        "Project Managers"
+      ],
+      "attendee_count": 3,
+      "duration_minutes": 60,
+      "start_time": "2024-10-04T10:00:00",
+      "is_online_meeting": false,
+      "importance": "normal",
+      "meeting_provider": "Google Meet"
+    },
+    "meeting_type": "Project Status Update",
+    "preparation_requirements": [
+      "Review agenda and objectives"
+    ],
+    "complexity": "high",
+    "quality_score": 9.4,
+    "last_updated": "2025-10-09T15:17:58.944827"
+  },
+  {
+    "id": "generated_053",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Budget Planning Meeting - Session 53",
+      "description": "Business meeting focused on budget planning meeting with 4 attendees",
+      "attendees": [
+        "Team Lead A",
+        "Team Lead B",
+        "Architect",
+        "PM"
+      ],
+      "attendee_count": 4,
+      "duration_minutes": 30,
+      "start_time": "2024-09-16T10:00:00",
+      "is_online_meeting": true,
+      "importance": "normal",
+      "meeting_provider": ""
+    },
+    "meeting_type": "Budget Planning Meeting",
+    "preparation_requirements": [
+      "Review agenda and objectives",
+      "Gather financial reports",
+      "Prepare budget analysis",
+      "Review department expenses"
+    ],
+    "complexity": "high",
+    "quality_score": 8.0,
+    "last_updated": "2025-10-09T15:17:58.944829"
+  },
+  {
+    "id": "generated_054",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Customer Discovery Call - Session 54",
+      "description": "Business meeting focused on customer discovery call with 3 attendees",
+      "attendees": [
+        "Project Manager",
+        "Stakeholders",
+        "Team Leads"
+      ],
+      "attendee_count": 3,
+      "duration_minutes": 120,
+      "start_time": "2024-08-05T17:00:00",
+      "is_online_meeting": true,
+      "importance": "high",
+      "meeting_provider": ""
+    },
+    "meeting_type": "Customer Discovery Call",
+    "preparation_requirements": [
+      "Review agenda and objectives",
+      "Prepare detailed presentation"
+    ],
+    "complexity": "low",
+    "quality_score": 8.2,
+    "last_updated": "2025-10-09T15:17:58.944832"
+  },
+  {
+    "id": "generated_055",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Training Session - Session 55",
+      "description": "Business meeting focused on training session with 4 attendees",
+      "attendees": [
+        "Team Lead A",
+        "Team Lead B",
+        "Architect",
+        "PM"
+      ],
+      "attendee_count": 4,
+      "duration_minutes": 30,
+      "start_time": "2024-10-25T11:00:00",
+      "is_online_meeting": true,
+      "importance": "normal",
+      "meeting_provider": ""
+    },
+    "meeting_type": "Training Session",
+    "preparation_requirements": [
+      "Review agenda and objectives"
+    ],
+    "complexity": "critical",
+    "quality_score": 7.7,
+    "last_updated": "2025-10-09T15:17:58.944835"
+  },
+  {
+    "id": "generated_056",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Q2 Architecture Review - System B",
+      "description": "Business meeting focused on technical design review with 4 attendees",
+      "attendees": [
+        "CEO",
+        "VP Engineering",
+        "VP Marketing",
+        "Head of Sales"
+      ],
+      "attendee_count": 4,
+      "duration_minutes": 90,
+      "start_time": "2024-08-23T15:00:00",
+      "is_online_meeting": false,
+      "importance": "normal",
+      "meeting_provider": ""
+    },
+    "meeting_type": "Technical Design Review",
+    "preparation_requirements": [
+      "Review agenda and objectives",
+      "Review technical documentation",
+      "Prepare system diagrams",
+      "Analyze performance metrics"
+    ],
+    "complexity": "low",
+    "quality_score": 8.7,
+    "last_updated": "2025-10-09T15:17:58.944837"
+  },
+  {
+    "id": "generated_057",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Vendor Evaluation - Session 57",
+      "description": "Business meeting focused on vendor evaluation with 2 attendees",
+      "attendees": [
+        "Manager",
+        "Individual Contributor"
+      ],
+      "attendee_count": 2,
+      "duration_minutes": 30,
+      "start_time": "2024-07-25T09:00:00",
+      "is_online_meeting": false,
+      "importance": "high",
+      "meeting_provider": "Microsoft Teams"
+    },
+    "meeting_type": "Vendor Evaluation",
+    "preparation_requirements": [
+      "Review agenda and objectives"
+    ],
+    "complexity": "medium",
+    "quality_score": 7.2,
+    "last_updated": "2025-10-09T15:17:58.944840"
+  },
+  {
+    "id": "generated_058",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Cross-team Collaboration - Session 58",
+      "description": "Business meeting focused on cross-team collaboration with 3 attendees",
+      "attendees": [
+        "HR Lead",
+        "Manager",
+        "Team Members"
+      ],
+      "attendee_count": 3,
+      "duration_minutes": 120,
+      "start_time": "2024-07-19T15:00:00",
+      "is_online_meeting": true,
+      "importance": "high",
+      "meeting_provider": ""
+    },
+    "meeting_type": "Cross-team Collaboration",
+    "preparation_requirements": [
+      "Review agenda and objectives",
+      "Prepare detailed presentation"
+    ],
+    "complexity": "critical",
+    "quality_score": 9.6,
+    "last_updated": "2025-10-09T15:17:58.944843"
+  },
+  {
+    "id": "generated_059",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Customer Discovery Call - Session 59",
+      "description": "Business meeting focused on customer discovery call with 4 attendees",
+      "attendees": [
+        "Team Lead A",
+        "Team Lead B",
+        "Architect",
+        "PM"
+      ],
+      "attendee_count": 4,
+      "duration_minutes": 90,
+      "start_time": "2024-08-24T14:00:00",
+      "is_online_meeting": true,
+      "importance": "normal",
+      "meeting_provider": "Google Meet"
+    },
+    "meeting_type": "Customer Discovery Call",
+    "preparation_requirements": [
+      "Review agenda and objectives"
+    ],
+    "complexity": "medium",
+    "quality_score": 8.2,
+    "last_updated": "2025-10-09T15:17:58.944845"
+  },
+  {
+    "id": "generated_060",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Budget Planning Meeting - Session 60",
+      "description": "Business meeting focused on budget planning meeting with 3 attendees",
+      "attendees": [
+        "Finance Director",
+        "Department Heads",
+        "Project Managers"
+      ],
+      "attendee_count": 3,
+      "duration_minutes": 90,
+      "start_time": "2024-07-12T15:00:00",
+      "is_online_meeting": true,
+      "importance": "high",
+      "meeting_provider": "Microsoft Teams"
+    },
+    "meeting_type": "Budget Planning Meeting",
+    "preparation_requirements": [
+      "Review agenda and objectives",
+      "Gather financial reports",
+      "Prepare budget analysis",
+      "Review department expenses"
+    ],
+    "complexity": "medium",
+    "quality_score": 8.7,
+    "last_updated": "2025-10-09T15:17:58.944848"
+  },
+  {
+    "id": "generated_061",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Project Status Update - Session 61",
+      "description": "Business meeting focused on project status update with 3 attendees",
+      "attendees": [
+        "HR Lead",
+        "Manager",
+        "Team Members"
+      ],
+      "attendee_count": 3,
+      "duration_minutes": 120,
+      "start_time": "2024-10-06T09:00:00",
+      "is_online_meeting": false,
+      "importance": "normal",
+      "meeting_provider": "Google Meet"
+    },
+    "meeting_type": "Project Status Update",
+    "preparation_requirements": [
+      "Review agenda and objectives",
+      "Prepare detailed presentation"
+    ],
+    "complexity": "low",
+    "quality_score": 8.5,
+    "last_updated": "2025-10-09T15:17:58.944850"
+  },
+  {
+    "id": "generated_062",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Sprint 20 Retrospective",
+      "description": "Business meeting focused on team retrospective with 4 attendees",
+      "attendees": [
+        "Team Lead A",
+        "Team Lead B",
+        "Architect",
+        "PM"
+      ],
+      "attendee_count": 4,
+      "duration_minutes": 120,
+      "start_time": "2024-08-19T10:00:00",
+      "is_online_meeting": false,
+      "importance": "normal",
+      "meeting_provider": ""
+    },
+    "meeting_type": "Team Retrospective",
+    "preparation_requirements": [
+      "Review agenda and objectives",
+      "Prepare detailed presentation"
+    ],
+    "complexity": "high",
+    "quality_score": 8.5,
+    "last_updated": "2025-10-09T15:17:58.944853"
+  },
+  {
+    "id": "generated_063",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Budget Planning Meeting - Session 63",
+      "description": "Business meeting focused on budget planning meeting with 3 attendees",
+      "attendees": [
+        "Finance Director",
+        "Department Heads",
+        "Project Managers"
+      ],
+      "attendee_count": 3,
+      "duration_minutes": 90,
+      "start_time": "2024-08-26T11:00:00",
+      "is_online_meeting": false,
+      "importance": "normal",
+      "meeting_provider": "Zoom"
+    },
+    "meeting_type": "Budget Planning Meeting",
+    "preparation_requirements": [
+      "Review agenda and objectives",
+      "Gather financial reports",
+      "Prepare budget analysis",
+      "Review department expenses"
+    ],
+    "complexity": "critical",
+    "quality_score": 9.1,
+    "last_updated": "2025-10-09T15:17:58.944855"
+  },
+  {
+    "id": "generated_064",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Project Status Update - Session 64",
+      "description": "Business meeting focused on project status update with 3 attendees",
+      "attendees": [
+        "Project Manager",
+        "Stakeholders",
+        "Team Leads"
+      ],
+      "attendee_count": 3,
+      "duration_minutes": 60,
+      "start_time": "2024-09-26T17:00:00",
+      "is_online_meeting": false,
+      "importance": "normal",
+      "meeting_provider": ""
+    },
+    "meeting_type": "Project Status Update",
+    "preparation_requirements": [
+      "Review agenda and objectives"
+    ],
+    "complexity": "high",
+    "quality_score": 8.8,
+    "last_updated": "2025-10-09T15:17:58.944858"
+  },
+  {
+    "id": "generated_065",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Project Status Update - Session 65",
+      "description": "Business meeting focused on project status update with 3 attendees",
+      "attendees": [
+        "Project Manager",
+        "Stakeholders",
+        "Team Leads"
+      ],
+      "attendee_count": 3,
+      "duration_minutes": 90,
+      "start_time": "2024-08-09T09:00:00",
+      "is_online_meeting": true,
+      "importance": "normal",
+      "meeting_provider": "Zoom"
+    },
+    "meeting_type": "Project Status Update",
+    "preparation_requirements": [
+      "Review agenda and objectives"
+    ],
+    "complexity": "medium",
+    "quality_score": 8.8,
+    "last_updated": "2025-10-09T15:17:58.944861"
+  },
+  {
+    "id": "generated_066",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Vendor Evaluation - Session 66",
+      "description": "Business meeting focused on vendor evaluation with 2 attendees",
+      "attendees": [
+        "Manager",
+        "Individual Contributor"
+      ],
+      "attendee_count": 2,
+      "duration_minutes": 60,
+      "start_time": "2024-07-14T13:00:00",
+      "is_online_meeting": true,
+      "importance": "high",
+      "meeting_provider": "Google Meet"
+    },
+    "meeting_type": "Vendor Evaluation",
+    "preparation_requirements": [
+      "Review agenda and objectives"
+    ],
+    "complexity": "low",
+    "quality_score": 8.3,
+    "last_updated": "2025-10-09T15:17:58.944864"
+  },
+  {
+    "id": "generated_067",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Project Status Update - Session 67",
+      "description": "Business meeting focused on project status update with 3 attendees",
+      "attendees": [
+        "Project Manager",
+        "Stakeholders",
+        "Team Leads"
+      ],
+      "attendee_count": 3,
+      "duration_minutes": 60,
+      "start_time": "2024-09-10T13:00:00",
+      "is_online_meeting": true,
+      "importance": "normal",
+      "meeting_provider": ""
+    },
+    "meeting_type": "Project Status Update",
+    "preparation_requirements": [
+      "Review agenda and objectives"
+    ],
+    "complexity": "low",
+    "quality_score": 8.0,
+    "last_updated": "2025-10-09T15:17:58.944866"
+  },
+  {
+    "id": "generated_068",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Project Status Update - Session 68",
+      "description": "Business meeting focused on project status update with 3 attendees",
+      "attendees": [
+        "HR Lead",
+        "Manager",
+        "Team Members"
+      ],
+      "attendee_count": 3,
+      "duration_minutes": 120,
+      "start_time": "2024-08-14T17:00:00",
+      "is_online_meeting": true,
+      "importance": "high",
+      "meeting_provider": ""
+    },
+    "meeting_type": "Project Status Update",
+    "preparation_requirements": [
+      "Review agenda and objectives",
+      "Prepare detailed presentation"
+    ],
+    "complexity": "critical",
+    "quality_score": 9.8,
+    "last_updated": "2025-10-09T15:17:58.944869"
+  },
+  {
+    "id": "generated_069",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Q2 Product Roadmap Planning",
+      "description": "Business meeting focused on product strategy session with 2 attendees",
+      "attendees": [
+        "Manager",
+        "Individual Contributor"
+      ],
+      "attendee_count": 2,
+      "duration_minutes": 30,
+      "start_time": "2024-08-02T16:00:00",
+      "is_online_meeting": true,
+      "importance": "high",
+      "meeting_provider": ""
+    },
+    "meeting_type": "Product Strategy Session",
+    "preparation_requirements": [
+      "Review agenda and objectives",
+      "Research market trends",
+      "Prepare competitive analysis",
+      "Review customer feedback"
+    ],
+    "complexity": "medium",
+    "quality_score": 8.1,
+    "last_updated": "2025-10-09T15:17:58.944871"
+  },
+  {
+    "id": "generated_070",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Cross-team Collaboration - Session 70",
+      "description": "Business meeting focused on cross-team collaboration with 3 attendees",
+      "attendees": [
+        "HR Lead",
+        "Manager",
+        "Team Members"
+      ],
+      "attendee_count": 3,
+      "duration_minutes": 30,
+      "start_time": "2024-10-07T09:00:00",
+      "is_online_meeting": false,
+      "importance": "high",
+      "meeting_provider": ""
+    },
+    "meeting_type": "Cross-team Collaboration",
+    "preparation_requirements": [
+      "Review agenda and objectives"
+    ],
+    "complexity": "high",
+    "quality_score": 8.8,
+    "last_updated": "2025-10-09T15:17:58.944874"
+  },
+  {
+    "id": "generated_071",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Customer Discovery Call - Session 71",
+      "description": "Business meeting focused on customer discovery call with 4 attendees",
+      "attendees": [
+        "CEO",
+        "VP Engineering",
+        "VP Marketing",
+        "Head of Sales"
+      ],
+      "attendee_count": 4,
+      "duration_minutes": 60,
+      "start_time": "2024-07-28T10:00:00",
+      "is_online_meeting": true,
+      "importance": "high",
+      "meeting_provider": "Zoom"
+    },
+    "meeting_type": "Customer Discovery Call",
+    "preparation_requirements": [
+      "Review agenda and objectives"
+    ],
+    "complexity": "low",
+    "quality_score": 8.3,
+    "last_updated": "2025-10-09T15:17:58.944877"
+  },
+  {
+    "id": "generated_072",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Training Session - Session 72",
+      "description": "Business meeting focused on training session with 3 attendees",
+      "attendees": [
+        "Customer Success",
+        "Product Team",
+        "Engineering"
+      ],
+      "attendee_count": 3,
+      "duration_minutes": 120,
+      "start_time": "2024-09-09T12:00:00",
+      "is_online_meeting": false,
+      "importance": "high",
+      "meeting_provider": ""
+    },
+    "meeting_type": "Training Session",
+    "preparation_requirements": [
+      "Review agenda and objectives",
+      "Prepare detailed presentation"
+    ],
+    "complexity": "critical",
+    "quality_score": 9.7,
+    "last_updated": "2025-10-09T15:17:58.944879"
+  },
+  {
+    "id": "generated_073",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Budget Planning Meeting - Session 73",
+      "description": "Business meeting focused on budget planning meeting with 3 attendees",
+      "attendees": [
+        "Product Manager",
+        "Engineering Lead",
+        "Designer"
+      ],
+      "attendee_count": 3,
+      "duration_minutes": 120,
+      "start_time": "2024-07-26T14:00:00",
+      "is_online_meeting": false,
+      "importance": "high",
+      "meeting_provider": ""
+    },
+    "meeting_type": "Budget Planning Meeting",
+    "preparation_requirements": [
+      "Review agenda and objectives",
+      "Gather financial reports",
+      "Prepare budget analysis",
+      "Review department expenses",
+      "Prepare detailed presentation"
+    ],
+    "complexity": "critical",
+    "quality_score": 9.8,
+    "last_updated": "2025-10-09T15:17:58.944882"
+  },
+  {
+    "id": "generated_075",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Project Status Update - Session 75",
+      "description": "Business meeting focused on project status update with 3 attendees",
+      "attendees": [
+        "Project Manager",
+        "Stakeholders",
+        "Team Leads"
+      ],
+      "attendee_count": 3,
+      "duration_minutes": 60,
+      "start_time": "2024-09-26T13:00:00",
+      "is_online_meeting": true,
+      "importance": "high",
+      "meeting_provider": "Zoom"
+    },
+    "meeting_type": "Project Status Update",
+    "preparation_requirements": [
+      "Review agenda and objectives"
+    ],
+    "complexity": "low",
+    "quality_score": 9.4,
+    "last_updated": "2025-10-09T15:17:58.944887"
+  },
+  {
+    "id": "generated_076",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Q4 Team Retrospective",
+      "description": "Business meeting focused on team retrospective with 3 attendees",
+      "attendees": [
+        "Scrum Master",
+        "Development Team",
+        "QA Lead"
+      ],
+      "attendee_count": 3,
+      "duration_minutes": 60,
+      "start_time": "2024-07-12T15:00:00",
+      "is_online_meeting": true,
+      "importance": "normal",
+      "meeting_provider": "Zoom"
+    },
+    "meeting_type": "Team Retrospective",
+    "preparation_requirements": [
+      "Review agenda and objectives"
+    ],
+    "complexity": "low",
+    "quality_score": 8.3,
+    "last_updated": "2025-10-09T15:17:58.944890"
+  },
+  {
+    "id": "generated_077",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Budget Planning Meeting - Session 77",
+      "description": "Business meeting focused on budget planning meeting with 3 attendees",
+      "attendees": [
+        "Customer Success",
+        "Product Team",
+        "Engineering"
+      ],
+      "attendee_count": 3,
+      "duration_minutes": 60,
+      "start_time": "2024-10-05T10:00:00",
+      "is_online_meeting": true,
+      "importance": "normal",
+      "meeting_provider": "Microsoft Teams"
+    },
+    "meeting_type": "Budget Planning Meeting",
+    "preparation_requirements": [
+      "Review agenda and objectives",
+      "Gather financial reports",
+      "Prepare budget analysis",
+      "Review department expenses"
+    ],
+    "complexity": "critical",
+    "quality_score": 8.9,
+    "last_updated": "2025-10-09T15:17:58.944892"
+  },
+  {
+    "id": "generated_078",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Project Status Update - Session 78",
+      "description": "Business meeting focused on project status update with 3 attendees",
+      "attendees": [
+        "Customer Success",
+        "Product Team",
+        "Engineering"
+      ],
+      "attendee_count": 3,
+      "duration_minutes": 30,
+      "start_time": "2024-07-22T15:00:00",
+      "is_online_meeting": false,
+      "importance": "normal",
+      "meeting_provider": ""
+    },
+    "meeting_type": "Project Status Update",
+    "preparation_requirements": [
+      "Review agenda and objectives"
+    ],
+    "complexity": "high",
+    "quality_score": 9.0,
+    "last_updated": "2025-10-09T15:17:58.944895"
+  },
+  {
+    "id": "generated_079",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Cross-team Collaboration - Session 79",
+      "description": "Business meeting focused on cross-team collaboration with 3 attendees",
+      "attendees": [
+        "HR Lead",
+        "Manager",
+        "Team Members"
+      ],
+      "attendee_count": 3,
+      "duration_minutes": 120,
+      "start_time": "2024-10-19T11:00:00",
+      "is_online_meeting": false,
+      "importance": "normal",
+      "meeting_provider": "Microsoft Teams"
+    },
+    "meeting_type": "Cross-team Collaboration",
+    "preparation_requirements": [
+      "Review agenda and objectives",
+      "Prepare detailed presentation"
+    ],
+    "complexity": "critical",
+    "quality_score": 8.1,
+    "last_updated": "2025-10-09T15:17:58.944898"
+  },
+  {
+    "id": "generated_080",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Technical Debt Assessment - Database",
+      "description": "Business meeting focused on technical design review with 3 attendees",
+      "attendees": [
+        "Product Manager",
+        "Engineering Lead",
+        "Designer"
+      ],
+      "attendee_count": 3,
+      "duration_minutes": 90,
+      "start_time": "2024-08-05T15:00:00",
+      "is_online_meeting": false,
+      "importance": "normal",
+      "meeting_provider": "Zoom"
+    },
+    "meeting_type": "Technical Design Review",
+    "preparation_requirements": [
+      "Review agenda and objectives",
+      "Review technical documentation",
+      "Prepare system diagrams",
+      "Analyze performance metrics"
+    ],
+    "complexity": "critical",
+    "quality_score": 8.1,
+    "last_updated": "2025-10-09T15:17:58.944901"
+  },
+  {
+    "id": "generated_081",
+    "source": "generated_sample",
+    "context": {
+      "subject": "API Design Session - Integration",
+      "description": "Business meeting focused on technical design review with 3 attendees",
+      "attendees": [
+        "Project Manager",
+        "Stakeholders",
+        "Team Leads"
+      ],
+      "attendee_count": 3,
+      "duration_minutes": 30,
+      "start_time": "2024-10-18T14:00:00",
+      "is_online_meeting": true,
+      "importance": "high",
+      "meeting_provider": "Microsoft Teams"
+    },
+    "meeting_type": "Technical Design Review",
+    "preparation_requirements": [
+      "Review agenda and objectives",
+      "Review technical documentation",
+      "Prepare system diagrams",
+      "Analyze performance metrics"
+    ],
+    "complexity": "medium",
+    "quality_score": 8.8,
+    "last_updated": "2025-10-09T15:17:58.944903"
+  },
+  {
+    "id": "generated_082",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Technical Debt Assessment - Backend",
+      "description": "Business meeting focused on technical design review with 2 attendees",
+      "attendees": [
+        "Manager",
+        "Individual Contributor"
+      ],
+      "attendee_count": 2,
+      "duration_minutes": 60,
+      "start_time": "2024-10-08T09:00:00",
+      "is_online_meeting": true,
+      "importance": "high",
+      "meeting_provider": ""
+    },
+    "meeting_type": "Technical Design Review",
+    "preparation_requirements": [
+      "Review agenda and objectives",
+      "Review technical documentation",
+      "Prepare system diagrams",
+      "Analyze performance metrics"
+    ],
+    "complexity": "critical",
+    "quality_score": 9.0,
+    "last_updated": "2025-10-09T15:17:58.944906"
+  },
+  {
+    "id": "generated_083",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Project Status Update - Session 83",
+      "description": "Business meeting focused on project status update with 3 attendees",
+      "attendees": [
+        "HR Lead",
+        "Manager",
+        "Team Members"
+      ],
+      "attendee_count": 3,
+      "duration_minutes": 60,
+      "start_time": "2024-07-21T14:00:00",
+      "is_online_meeting": true,
+      "importance": "normal",
+      "meeting_provider": ""
+    },
+    "meeting_type": "Project Status Update",
+    "preparation_requirements": [
+      "Review agenda and objectives"
+    ],
+    "complexity": "low",
+    "quality_score": 8.4,
+    "last_updated": "2025-10-09T15:17:58.944908"
+  },
+  {
+    "id": "generated_084",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Training Session - Session 84",
+      "description": "Business meeting focused on training session with 3 attendees",
+      "attendees": [
+        "Project Manager",
+        "Stakeholders",
+        "Team Leads"
+      ],
+      "attendee_count": 3,
+      "duration_minutes": 60,
+      "start_time": "2024-10-06T09:00:00",
+      "is_online_meeting": true,
+      "importance": "high",
+      "meeting_provider": ""
+    },
+    "meeting_type": "Training Session",
+    "preparation_requirements": [
+      "Review agenda and objectives"
+    ],
+    "complexity": "medium",
+    "quality_score": 8.6,
+    "last_updated": "2025-10-09T15:17:58.944911"
+  },
+  {
+    "id": "generated_085",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Budget Planning Meeting - Session 85",
+      "description": "Business meeting focused on budget planning meeting with 3 attendees",
+      "attendees": [
+        "HR Lead",
+        "Manager",
+        "Team Members"
+      ],
+      "attendee_count": 3,
+      "duration_minutes": 60,
+      "start_time": "2024-07-04T16:00:00",
+      "is_online_meeting": true,
+      "importance": "normal",
+      "meeting_provider": ""
+    },
+    "meeting_type": "Budget Planning Meeting",
+    "preparation_requirements": [
+      "Review agenda and objectives",
+      "Gather financial reports",
+      "Prepare budget analysis",
+      "Review department expenses"
+    ],
+    "complexity": "critical",
+    "quality_score": 9.0,
+    "last_updated": "2025-10-09T15:17:58.944914"
+  },
+  {
+    "id": "generated_086",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Budget Planning Meeting - Session 86",
+      "description": "Business meeting focused on budget planning meeting with 3 attendees",
+      "attendees": [
+        "Project Manager",
+        "Stakeholders",
+        "Team Leads"
+      ],
+      "attendee_count": 3,
+      "duration_minutes": 60,
+      "start_time": "2024-08-14T13:00:00",
+      "is_online_meeting": true,
+      "importance": "normal",
+      "meeting_provider": ""
+    },
+    "meeting_type": "Budget Planning Meeting",
+    "preparation_requirements": [
+      "Review agenda and objectives",
+      "Gather financial reports",
+      "Prepare budget analysis",
+      "Review department expenses"
+    ],
+    "complexity": "high",
+    "quality_score": 8.3,
+    "last_updated": "2025-10-09T15:17:58.944916"
+  },
+  {
+    "id": "generated_087",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Technical Debt Assessment - Backend",
+      "description": "Business meeting focused on technical design review with 3 attendees",
+      "attendees": [
+        "Finance Director",
+        "Department Heads",
+        "Project Managers"
+      ],
+      "attendee_count": 3,
+      "duration_minutes": 90,
+      "start_time": "2024-09-07T11:00:00",
+      "is_online_meeting": true,
+      "importance": "high",
+      "meeting_provider": ""
+    },
+    "meeting_type": "Technical Design Review",
+    "preparation_requirements": [
+      "Review agenda and objectives",
+      "Review technical documentation",
+      "Prepare system diagrams",
+      "Analyze performance metrics"
+    ],
+    "complexity": "low",
+    "quality_score": 8.1,
+    "last_updated": "2025-10-09T15:17:58.944919"
+  },
+  {
+    "id": "generated_088",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Competitive Analysis - Feature Gap",
+      "description": "Business meeting focused on product strategy session with 4 attendees",
+      "attendees": [
+        "Procurement",
+        "Engineering",
+        "Legal",
+        "Vendor Rep"
+      ],
+      "attendee_count": 4,
+      "duration_minutes": 60,
+      "start_time": "2024-10-04T12:00:00",
+      "is_online_meeting": true,
+      "importance": "normal",
+      "meeting_provider": ""
+    },
+    "meeting_type": "Product Strategy Session",
+    "preparation_requirements": [
+      "Review agenda and objectives",
+      "Research market trends",
+      "Prepare competitive analysis",
+      "Review customer feedback"
+    ],
+    "complexity": "low",
+    "quality_score": 7.6,
+    "last_updated": "2025-10-09T15:17:58.944921"
+  },
+  {
+    "id": "generated_090",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Budget Planning Meeting - Session 90",
+      "description": "Business meeting focused on budget planning meeting with 4 attendees",
+      "attendees": [
+        "CEO",
+        "VP Engineering",
+        "VP Marketing",
+        "Head of Sales"
+      ],
+      "attendee_count": 4,
+      "duration_minutes": 90,
+      "start_time": "2024-10-06T13:00:00",
+      "is_online_meeting": false,
+      "importance": "normal",
+      "meeting_provider": "Google Meet"
+    },
+    "meeting_type": "Budget Planning Meeting",
+    "preparation_requirements": [
+      "Review agenda and objectives",
+      "Gather financial reports",
+      "Prepare budget analysis",
+      "Review department expenses"
+    ],
+    "complexity": "medium",
+    "quality_score": 7.9,
+    "last_updated": "2025-10-09T15:17:58.944926"
+  },
+  {
+    "id": "generated_091",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Customer Discovery Call - Session 91",
+      "description": "Business meeting focused on customer discovery call with 4 attendees",
+      "attendees": [
+        "Procurement",
+        "Engineering",
+        "Legal",
+        "Vendor Rep"
+      ],
+      "attendee_count": 4,
+      "duration_minutes": 90,
+      "start_time": "2024-08-18T17:00:00",
+      "is_online_meeting": true,
+      "importance": "high",
+      "meeting_provider": "Microsoft Teams"
+    },
+    "meeting_type": "Customer Discovery Call",
+    "preparation_requirements": [
+      "Review agenda and objectives"
+    ],
+    "complexity": "low",
+    "quality_score": 9.1,
+    "last_updated": "2025-10-09T15:17:58.944929"
+  },
+  {
+    "id": "generated_092",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Vendor Evaluation - Session 92",
+      "description": "Business meeting focused on vendor evaluation with 3 attendees",
+      "attendees": [
+        "Scrum Master",
+        "Development Team",
+        "QA Lead"
+      ],
+      "attendee_count": 3,
+      "duration_minutes": 120,
+      "start_time": "2024-08-04T13:00:00",
+      "is_online_meeting": false,
+      "importance": "normal",
+      "meeting_provider": ""
+    },
+    "meeting_type": "Vendor Evaluation",
+    "preparation_requirements": [
+      "Review agenda and objectives",
+      "Prepare detailed presentation"
+    ],
+    "complexity": "medium",
+    "quality_score": 7.8,
+    "last_updated": "2025-10-09T15:17:58.944932"
+  },
+  {
+    "id": "generated_093",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Q4 Team Retrospective",
+      "description": "Business meeting focused on team retrospective with 4 attendees",
+      "attendees": [
+        "CEO",
+        "VP Engineering",
+        "VP Marketing",
+        "Head of Sales"
+      ],
+      "attendee_count": 4,
+      "duration_minutes": 30,
+      "start_time": "2024-08-16T15:00:00",
+      "is_online_meeting": false,
+      "importance": "normal",
+      "meeting_provider": ""
+    },
+    "meeting_type": "Team Retrospective",
+    "preparation_requirements": [
+      "Review agenda and objectives"
+    ],
+    "complexity": "low",
+    "quality_score": 7.4,
+    "last_updated": "2025-10-09T15:17:58.944934"
+  },
+  {
+    "id": "generated_094",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Q1 Team Retrospective",
+      "description": "Business meeting focused on team retrospective with 3 attendees",
+      "attendees": [
+        "HR Lead",
+        "Manager",
+        "Team Members"
+      ],
+      "attendee_count": 3,
+      "duration_minutes": 90,
+      "start_time": "2024-09-15T14:00:00",
+      "is_online_meeting": false,
+      "importance": "high",
+      "meeting_provider": "Google Meet"
+    },
+    "meeting_type": "Team Retrospective",
+    "preparation_requirements": [
+      "Review agenda and objectives"
+    ],
+    "complexity": "high",
+    "quality_score": 9.2,
+    "last_updated": "2025-10-09T15:17:58.944937"
+  },
+  {
+    "id": "generated_095",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Customer Discovery Call - Session 95",
+      "description": "Business meeting focused on customer discovery call with 3 attendees",
+      "attendees": [
+        "Customer Success",
+        "Product Team",
+        "Engineering"
+      ],
+      "attendee_count": 3,
+      "duration_minutes": 120,
+      "start_time": "2024-08-28T15:00:00",
+      "is_online_meeting": false,
+      "importance": "high",
+      "meeting_provider": "Microsoft Teams"
+    },
+    "meeting_type": "Customer Discovery Call",
+    "preparation_requirements": [
+      "Review agenda and objectives",
+      "Prepare detailed presentation"
+    ],
+    "complexity": "high",
+    "quality_score": 8.7,
+    "last_updated": "2025-10-09T15:17:58.944940"
+  },
+  {
+    "id": "generated_096",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Customer Discovery Call - Session 96",
+      "description": "Business meeting focused on customer discovery call with 3 attendees",
+      "attendees": [
+        "Scrum Master",
+        "Development Team",
+        "QA Lead"
+      ],
+      "attendee_count": 3,
+      "duration_minutes": 30,
+      "start_time": "2024-10-03T09:00:00",
+      "is_online_meeting": true,
+      "importance": "normal",
+      "meeting_provider": "Microsoft Teams"
+    },
+    "meeting_type": "Customer Discovery Call",
+    "preparation_requirements": [
+      "Review agenda and objectives"
+    ],
+    "complexity": "low",
+    "quality_score": 7.8,
+    "last_updated": "2025-10-09T15:17:58.944942"
+  },
+  {
+    "id": "generated_097",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Project Status Update - Session 97",
+      "description": "Business meeting focused on project status update with 3 attendees",
+      "attendees": [
+        "Customer Success",
+        "Product Team",
+        "Engineering"
+      ],
+      "attendee_count": 3,
+      "duration_minutes": 120,
+      "start_time": "2024-10-09T16:00:00",
+      "is_online_meeting": false,
+      "importance": "high",
+      "meeting_provider": ""
+    },
+    "meeting_type": "Project Status Update",
+    "preparation_requirements": [
+      "Review agenda and objectives",
+      "Prepare detailed presentation"
+    ],
+    "complexity": "high",
+    "quality_score": 9.9,
+    "last_updated": "2025-10-09T15:17:58.944945"
+  },
+  {
+    "id": "generated_098",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Budget Planning Meeting - Session 98",
+      "description": "Business meeting focused on budget planning meeting with 3 attendees",
+      "attendees": [
+        "Project Manager",
+        "Stakeholders",
+        "Team Leads"
+      ],
+      "attendee_count": 3,
+      "duration_minutes": 60,
+      "start_time": "2024-09-23T13:00:00",
+      "is_online_meeting": true,
+      "importance": "normal",
+      "meeting_provider": ""
+    },
+    "meeting_type": "Budget Planning Meeting",
+    "preparation_requirements": [
+      "Review agenda and objectives",
+      "Gather financial reports",
+      "Prepare budget analysis",
+      "Review department expenses"
+    ],
+    "complexity": "low",
+    "quality_score": 8.0,
+    "last_updated": "2025-10-09T15:17:58.944948"
+  },
+  {
+    "id": "generated_099",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Q1 Product Roadmap Planning",
+      "description": "Business meeting focused on product strategy session with 4 attendees",
+      "attendees": [
+        "CEO",
+        "VP Engineering",
+        "VP Marketing",
+        "Head of Sales"
+      ],
+      "attendee_count": 4,
+      "duration_minutes": 30,
+      "start_time": "2024-07-24T15:00:00",
+      "is_online_meeting": false,
+      "importance": "high",
+      "meeting_provider": "Microsoft Teams"
+    },
+    "meeting_type": "Product Strategy Session",
+    "preparation_requirements": [
+      "Review agenda and objectives",
+      "Research market trends",
+      "Prepare competitive analysis",
+      "Review customer feedback"
+    ],
+    "complexity": "critical",
+    "quality_score": 9.0,
+    "last_updated": "2025-10-09T15:17:58.944950"
+  },
+  {
+    "id": "generated_100",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Training Session - Session 100",
+      "description": "Business meeting focused on training session with 3 attendees",
+      "attendees": [
+        "Finance Director",
+        "Department Heads",
+        "Project Managers"
+      ],
+      "attendee_count": 3,
+      "duration_minutes": 120,
+      "start_time": "2024-10-06T15:00:00",
+      "is_online_meeting": true,
+      "importance": "high",
+      "meeting_provider": ""
+    },
+    "meeting_type": "Training Session",
+    "preparation_requirements": [
+      "Review agenda and objectives",
+      "Prepare detailed presentation"
+    ],
+    "complexity": "medium",
+    "quality_score": 9.5,
+    "last_updated": "2025-10-09T15:17:58.944953"
+  },
+  {
+    "id": "generated_101",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Competitive Analysis - Market Position",
+      "description": "Business meeting focused on product strategy session with 4 attendees",
+      "attendees": [
+        "CEO",
+        "VP Engineering",
+        "VP Marketing",
+        "Head of Sales"
+      ],
+      "attendee_count": 4,
+      "duration_minutes": 30,
+      "start_time": "2024-09-07T14:00:00",
+      "is_online_meeting": false,
+      "importance": "high",
+      "meeting_provider": ""
+    },
+    "meeting_type": "Product Strategy Session",
+    "preparation_requirements": [
+      "Review agenda and objectives",
+      "Research market trends",
+      "Prepare competitive analysis",
+      "Review customer feedback"
+    ],
+    "complexity": "high",
+    "quality_score": 8.7,
+    "last_updated": "2025-10-09T15:17:58.944955"
+  },
+  {
+    "id": "generated_102",
+    "source": "generated_sample",
+    "context": {
+      "subject": "API Design Session - Integration",
+      "description": "Business meeting focused on technical design review with 4 attendees",
+      "attendees": [
+        "Team Lead A",
+        "Team Lead B",
+        "Architect",
+        "PM"
+      ],
+      "attendee_count": 4,
+      "duration_minutes": 90,
+      "start_time": "2024-07-09T11:00:00",
+      "is_online_meeting": false,
+      "importance": "normal",
+      "meeting_provider": ""
+    },
+    "meeting_type": "Technical Design Review",
+    "preparation_requirements": [
+      "Review agenda and objectives",
+      "Review technical documentation",
+      "Prepare system diagrams",
+      "Analyze performance metrics"
+    ],
+    "complexity": "medium",
+    "quality_score": 8.1,
+    "last_updated": "2025-10-09T15:17:58.944958"
+  },
+  {
+    "id": "generated_103",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Budget Planning Meeting - Session 103",
+      "description": "Business meeting focused on budget planning meeting with 3 attendees",
+      "attendees": [
+        "Project Manager",
+        "Stakeholders",
+        "Team Leads"
+      ],
+      "attendee_count": 3,
+      "duration_minutes": 120,
+      "start_time": "2024-10-10T10:00:00",
+      "is_online_meeting": true,
+      "importance": "high",
+      "meeting_provider": ""
+    },
+    "meeting_type": "Budget Planning Meeting",
+    "preparation_requirements": [
+      "Review agenda and objectives",
+      "Gather financial reports",
+      "Prepare budget analysis",
+      "Review department expenses",
+      "Prepare detailed presentation"
+    ],
+    "complexity": "low",
+    "quality_score": 8.5,
+    "last_updated": "2025-10-09T15:17:58.944960"
+  },
+  {
+    "id": "generated_104",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Project Status Update - Session 104",
+      "description": "Business meeting focused on project status update with 3 attendees",
+      "attendees": [
+        "Finance Director",
+        "Department Heads",
+        "Project Managers"
+      ],
+      "attendee_count": 3,
+      "duration_minutes": 60,
+      "start_time": "2024-08-24T17:00:00",
+      "is_online_meeting": true,
+      "importance": "high",
+      "meeting_provider": "Google Meet"
+    },
+    "meeting_type": "Project Status Update",
+    "preparation_requirements": [
+      "Review agenda and objectives"
+    ],
+    "complexity": "medium",
+    "quality_score": 8.1,
+    "last_updated": "2025-10-09T15:17:58.944963"
+  },
+  {
+    "id": "generated_105",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Project Status Update - Session 105",
+      "description": "Business meeting focused on project status update with 3 attendees",
+      "attendees": [
+        "Finance Director",
+        "Department Heads",
+        "Project Managers"
+      ],
+      "attendee_count": 3,
+      "duration_minutes": 30,
+      "start_time": "2024-10-05T10:00:00",
+      "is_online_meeting": false,
+      "importance": "high",
+      "meeting_provider": ""
+    },
+    "meeting_type": "Project Status Update",
+    "preparation_requirements": [
+      "Review agenda and objectives"
+    ],
+    "complexity": "medium",
+    "quality_score": 7.8,
+    "last_updated": "2025-10-09T15:17:58.944966"
+  },
+  {
+    "id": "generated_106",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Vendor Evaluation - Session 106",
+      "description": "Business meeting focused on vendor evaluation with 3 attendees",
+      "attendees": [
+        "Scrum Master",
+        "Development Team",
+        "QA Lead"
+      ],
+      "attendee_count": 3,
+      "duration_minutes": 30,
+      "start_time": "2024-10-10T17:00:00",
+      "is_online_meeting": true,
+      "importance": "normal",
+      "meeting_provider": "Microsoft Teams"
+    },
+    "meeting_type": "Vendor Evaluation",
+    "preparation_requirements": [
+      "Review agenda and objectives"
+    ],
+    "complexity": "low",
+    "quality_score": 8.2,
+    "last_updated": "2025-10-09T15:17:58.944968"
+  },
+  {
+    "id": "generated_108",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Vendor Evaluation - Session 108",
+      "description": "Business meeting focused on vendor evaluation with 3 attendees",
+      "attendees": [
+        "Customer Success",
+        "Product Team",
+        "Engineering"
+      ],
+      "attendee_count": 3,
+      "duration_minutes": 30,
+      "start_time": "2024-07-19T09:00:00",
+      "is_online_meeting": false,
+      "importance": "high",
+      "meeting_provider": ""
+    },
+    "meeting_type": "Vendor Evaluation",
+    "preparation_requirements": [
+      "Review agenda and objectives"
+    ],
+    "complexity": "critical",
+    "quality_score": 9.5,
+    "last_updated": "2025-10-09T15:17:58.944973"
+  },
+  {
+    "id": "generated_109",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Performance Review - Session 109",
+      "description": "Business meeting focused on performance review with 2 attendees",
+      "attendees": [
+        "Manager",
+        "Individual Contributor"
+      ],
+      "attendee_count": 2,
+      "duration_minutes": 60,
+      "start_time": "2024-10-08T12:00:00",
+      "is_online_meeting": false,
+      "importance": "high",
+      "meeting_provider": ""
+    },
+    "meeting_type": "Performance Review",
+    "preparation_requirements": [
+      "Review agenda and objectives"
+    ],
+    "complexity": "critical",
+    "quality_score": 8.1,
+    "last_updated": "2025-10-09T15:17:58.944976"
+  },
+  {
+    "id": "generated_110",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Vendor Evaluation - Session 110",
+      "description": "Business meeting focused on vendor evaluation with 3 attendees",
+      "attendees": [
+        "Project Manager",
+        "Stakeholders",
+        "Team Leads"
+      ],
+      "attendee_count": 3,
+      "duration_minutes": 90,
+      "start_time": "2024-09-05T13:00:00",
+      "is_online_meeting": true,
+      "importance": "high",
+      "meeting_provider": "Google Meet"
+    },
+    "meeting_type": "Vendor Evaluation",
+    "preparation_requirements": [
+      "Review agenda and objectives"
+    ],
+    "complexity": "high",
+    "quality_score": 9.4,
+    "last_updated": "2025-10-09T15:17:58.944979"
+  },
+  {
+    "id": "generated_111",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Budget Planning Meeting - Session 111",
+      "description": "Business meeting focused on budget planning meeting with 2 attendees",
+      "attendees": [
+        "Manager",
+        "Individual Contributor"
+      ],
+      "attendee_count": 2,
+      "duration_minutes": 90,
+      "start_time": "2024-08-14T10:00:00",
+      "is_online_meeting": true,
+      "importance": "normal",
+      "meeting_provider": ""
+    },
+    "meeting_type": "Budget Planning Meeting",
+    "preparation_requirements": [
+      "Review agenda and objectives",
+      "Gather financial reports",
+      "Prepare budget analysis",
+      "Review department expenses"
+    ],
+    "complexity": "low",
+    "quality_score": 8.2,
+    "last_updated": "2025-10-09T15:17:58.944981"
+  },
+  {
+    "id": "generated_112",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Q2 Architecture Review - System A",
+      "description": "Business meeting focused on technical design review with 3 attendees",
+      "attendees": [
+        "Scrum Master",
+        "Development Team",
+        "QA Lead"
+      ],
+      "attendee_count": 3,
+      "duration_minutes": 30,
+      "start_time": "2024-07-25T09:00:00",
+      "is_online_meeting": false,
+      "importance": "normal",
+      "meeting_provider": ""
+    },
+    "meeting_type": "Technical Design Review",
+    "preparation_requirements": [
+      "Review agenda and objectives",
+      "Review technical documentation",
+      "Prepare system diagrams",
+      "Analyze performance metrics"
+    ],
+    "complexity": "high",
+    "quality_score": 8.3,
+    "last_updated": "2025-10-09T15:17:58.944984"
+  },
+  {
+    "id": "generated_113",
+    "source": "generated_sample",
+    "context": {
+      "subject": "API Design Session - Data Layer",
+      "description": "Business meeting focused on technical design review with 3 attendees",
+      "attendees": [
+        "Customer Success",
+        "Product Team",
+        "Engineering"
+      ],
+      "attendee_count": 3,
+      "duration_minutes": 90,
+      "start_time": "2024-08-04T12:00:00",
+      "is_online_meeting": false,
+      "importance": "high",
+      "meeting_provider": "Zoom"
+    },
+    "meeting_type": "Technical Design Review",
+    "preparation_requirements": [
+      "Review agenda and objectives",
+      "Review technical documentation",
+      "Prepare system diagrams",
+      "Analyze performance metrics"
+    ],
+    "complexity": "high",
+    "quality_score": 9.0,
+    "last_updated": "2025-10-09T15:17:58.944986"
+  },
+  {
+    "id": "generated_114",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Customer Discovery Call - Session 114",
+      "description": "Business meeting focused on customer discovery call with 3 attendees",
+      "attendees": [
+        "Customer Success",
+        "Product Team",
+        "Engineering"
+      ],
+      "attendee_count": 3,
+      "duration_minutes": 30,
+      "start_time": "2024-09-12T16:00:00",
+      "is_online_meeting": false,
+      "importance": "high",
+      "meeting_provider": ""
+    },
+    "meeting_type": "Customer Discovery Call",
+    "preparation_requirements": [
+      "Review agenda and objectives"
+    ],
+    "complexity": "high",
+    "quality_score": 8.7,
+    "last_updated": "2025-10-09T15:17:58.944989"
+  },
+  {
+    "id": "generated_115",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Performance Review - Session 115",
+      "description": "Business meeting focused on performance review with 3 attendees",
+      "attendees": [
+        "HR Lead",
+        "Manager",
+        "Team Members"
+      ],
+      "attendee_count": 3,
+      "duration_minutes": 120,
+      "start_time": "2024-09-17T10:00:00",
+      "is_online_meeting": false,
+      "importance": "normal",
+      "meeting_provider": "Microsoft Teams"
+    },
+    "meeting_type": "Performance Review",
+    "preparation_requirements": [
+      "Review agenda and objectives",
+      "Prepare detailed presentation"
+    ],
+    "complexity": "high",
+    "quality_score": 8.3,
+    "last_updated": "2025-10-09T15:17:58.944992"
+  },
+  {
+    "id": "generated_116",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Project Status Update - Session 116",
+      "description": "Business meeting focused on project status update with 4 attendees",
+      "attendees": [
+        "CEO",
+        "VP Engineering",
+        "VP Marketing",
+        "Head of Sales"
+      ],
+      "attendee_count": 4,
+      "duration_minutes": 120,
+      "start_time": "2024-07-23T16:00:00",
+      "is_online_meeting": false,
+      "importance": "high",
+      "meeting_provider": ""
+    },
+    "meeting_type": "Project Status Update",
+    "preparation_requirements": [
+      "Review agenda and objectives",
+      "Prepare detailed presentation"
+    ],
+    "complexity": "low",
+    "quality_score": 9.5,
+    "last_updated": "2025-10-09T15:17:58.944994"
+  },
+  {
+    "id": "generated_117",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Sprint 25 Retrospective",
+      "description": "Business meeting focused on team retrospective with 3 attendees",
+      "attendees": [
+        "Finance Director",
+        "Department Heads",
+        "Project Managers"
+      ],
+      "attendee_count": 3,
+      "duration_minutes": 120,
+      "start_time": "2024-09-23T17:00:00",
+      "is_online_meeting": true,
+      "importance": "normal",
+      "meeting_provider": "Google Meet"
+    },
+    "meeting_type": "Team Retrospective",
+    "preparation_requirements": [
+      "Review agenda and objectives",
+      "Prepare detailed presentation"
+    ],
+    "complexity": "medium",
+    "quality_score": 8.4,
+    "last_updated": "2025-10-09T15:17:58.944997"
+  },
+  {
+    "id": "generated_119",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Project Status Update - Session 119",
+      "description": "Business meeting focused on project status update with 3 attendees",
+      "attendees": [
+        "Project Manager",
+        "Stakeholders",
+        "Team Leads"
+      ],
+      "attendee_count": 3,
+      "duration_minutes": 30,
+      "start_time": "2024-07-05T11:00:00",
+      "is_online_meeting": true,
+      "importance": "high",
+      "meeting_provider": "Google Meet"
+    },
+    "meeting_type": "Project Status Update",
+    "preparation_requirements": [
+      "Review agenda and objectives"
+    ],
+    "complexity": "critical",
+    "quality_score": 8.8,
+    "last_updated": "2025-10-09T15:17:58.945002"
+  },
+  {
+    "id": "generated_120",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Training Session - Session 120",
+      "description": "Business meeting focused on training session with 3 attendees",
+      "attendees": [
+        "Scrum Master",
+        "Development Team",
+        "QA Lead"
+      ],
+      "attendee_count": 3,
+      "duration_minutes": 120,
+      "start_time": "2024-08-10T09:00:00",
+      "is_online_meeting": true,
+      "importance": "normal",
+      "meeting_provider": ""
+    },
+    "meeting_type": "Training Session",
+    "preparation_requirements": [
+      "Review agenda and objectives",
+      "Prepare detailed presentation"
+    ],
+    "complexity": "critical",
+    "quality_score": 9.2,
+    "last_updated": "2025-10-09T15:17:58.945005"
+  },
+  {
+    "id": "generated_121",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Training Session - Session 121",
+      "description": "Business meeting focused on training session with 3 attendees",
+      "attendees": [
+        "Project Manager",
+        "Stakeholders",
+        "Team Leads"
+      ],
+      "attendee_count": 3,
+      "duration_minutes": 60,
+      "start_time": "2024-08-07T17:00:00",
+      "is_online_meeting": true,
+      "importance": "high",
+      "meeting_provider": ""
+    },
+    "meeting_type": "Training Session",
+    "preparation_requirements": [
+      "Review agenda and objectives"
+    ],
+    "complexity": "low",
+    "quality_score": 8.7,
+    "last_updated": "2025-10-09T15:17:58.945007"
+  },
+  {
+    "id": "generated_122",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Vendor Evaluation - Session 122",
+      "description": "Business meeting focused on vendor evaluation with 3 attendees",
+      "attendees": [
+        "Customer Success",
+        "Product Team",
+        "Engineering"
+      ],
+      "attendee_count": 3,
+      "duration_minutes": 60,
+      "start_time": "2024-08-03T15:00:00",
+      "is_online_meeting": true,
+      "importance": "normal",
+      "meeting_provider": "Microsoft Teams"
+    },
+    "meeting_type": "Vendor Evaluation",
+    "preparation_requirements": [
+      "Review agenda and objectives"
+    ],
+    "complexity": "medium",
+    "quality_score": 8.6,
+    "last_updated": "2025-10-09T15:17:58.945010"
+  },
+  {
+    "id": "generated_123",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Project C Lessons Learned",
+      "description": "Business meeting focused on team retrospective with 3 attendees",
+      "attendees": [
+        "Finance Director",
+        "Department Heads",
+        "Project Managers"
+      ],
+      "attendee_count": 3,
+      "duration_minutes": 120,
+      "start_time": "2024-07-24T14:00:00",
+      "is_online_meeting": false,
+      "importance": "high",
+      "meeting_provider": "Google Meet"
+    },
+    "meeting_type": "Team Retrospective",
+    "preparation_requirements": [
+      "Review agenda and objectives",
+      "Prepare detailed presentation"
+    ],
+    "complexity": "high",
+    "quality_score": 8.7,
+    "last_updated": "2025-10-09T15:17:58.945012"
+  },
+  {
+    "id": "generated_124",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Project Status Update - Session 124",
+      "description": "Business meeting focused on project status update with 4 attendees",
+      "attendees": [
+        "Procurement",
+        "Engineering",
+        "Legal",
+        "Vendor Rep"
+      ],
+      "attendee_count": 4,
+      "duration_minutes": 30,
+      "start_time": "2024-10-23T16:00:00",
+      "is_online_meeting": false,
+      "importance": "normal",
+      "meeting_provider": "Google Meet"
+    },
+    "meeting_type": "Project Status Update",
+    "preparation_requirements": [
+      "Review agenda and objectives"
+    ],
+    "complexity": "high",
+    "quality_score": 7.8,
+    "last_updated": "2025-10-09T15:17:58.945015"
+  },
+  {
+    "id": "generated_125",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Feature Prioritization - User Experience",
+      "description": "Business meeting focused on product strategy session with 3 attendees",
+      "attendees": [
+        "HR Lead",
+        "Manager",
+        "Team Members"
+      ],
+      "attendee_count": 3,
+      "duration_minutes": 90,
+      "start_time": "2024-08-11T17:00:00",
+      "is_online_meeting": false,
+      "importance": "high",
+      "meeting_provider": "Microsoft Teams"
+    },
+    "meeting_type": "Product Strategy Session",
+    "preparation_requirements": [
+      "Review agenda and objectives",
+      "Research market trends",
+      "Prepare competitive analysis",
+      "Review customer feedback"
+    ],
+    "complexity": "medium",
+    "quality_score": 9.1,
+    "last_updated": "2025-10-09T15:17:58.945017"
+  },
+  {
+    "id": "generated_126",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Training Session - Session 126",
+      "description": "Business meeting focused on training session with 4 attendees",
+      "attendees": [
+        "Team Lead A",
+        "Team Lead B",
+        "Architect",
+        "PM"
+      ],
+      "attendee_count": 4,
+      "duration_minutes": 90,
+      "start_time": "2024-07-02T16:00:00",
+      "is_online_meeting": false,
+      "importance": "normal",
+      "meeting_provider": "Zoom"
+    },
+    "meeting_type": "Training Session",
+    "preparation_requirements": [
+      "Review agenda and objectives"
+    ],
+    "complexity": "low",
+    "quality_score": 8.9,
+    "last_updated": "2025-10-09T15:17:58.945020"
+  },
+  {
+    "id": "generated_127",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Feature Prioritization - User Experience",
+      "description": "Business meeting focused on product strategy session with 4 attendees",
+      "attendees": [
+        "Procurement",
+        "Engineering",
+        "Legal",
+        "Vendor Rep"
+      ],
+      "attendee_count": 4,
+      "duration_minutes": 120,
+      "start_time": "2024-10-06T15:00:00",
+      "is_online_meeting": true,
+      "importance": "high",
+      "meeting_provider": ""
+    },
+    "meeting_type": "Product Strategy Session",
+    "preparation_requirements": [
+      "Review agenda and objectives",
+      "Research market trends",
+      "Prepare competitive analysis",
+      "Review customer feedback",
+      "Prepare detailed presentation"
+    ],
+    "complexity": "low",
+    "quality_score": 9.5,
+    "last_updated": "2025-10-09T15:17:58.945022"
+  },
+  {
+    "id": "generated_128",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Customer Discovery Call - Session 128",
+      "description": "Business meeting focused on customer discovery call with 4 attendees",
+      "attendees": [
+        "CEO",
+        "VP Engineering",
+        "VP Marketing",
+        "Head of Sales"
+      ],
+      "attendee_count": 4,
+      "duration_minutes": 90,
+      "start_time": "2024-10-24T12:00:00",
+      "is_online_meeting": true,
+      "importance": "normal",
+      "meeting_provider": ""
+    },
+    "meeting_type": "Customer Discovery Call",
+    "preparation_requirements": [
+      "Review agenda and objectives"
+    ],
+    "complexity": "medium",
+    "quality_score": 8.2,
+    "last_updated": "2025-10-09T15:17:58.945025"
+  },
+  {
+    "id": "generated_129",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Competitive Analysis - Market Position",
+      "description": "Business meeting focused on product strategy session with 2 attendees",
+      "attendees": [
+        "Manager",
+        "Individual Contributor"
+      ],
+      "attendee_count": 2,
+      "duration_minutes": 60,
+      "start_time": "2024-07-12T11:00:00",
+      "is_online_meeting": true,
+      "importance": "high",
+      "meeting_provider": ""
+    },
+    "meeting_type": "Product Strategy Session",
+    "preparation_requirements": [
+      "Review agenda and objectives",
+      "Research market trends",
+      "Prepare competitive analysis",
+      "Review customer feedback"
+    ],
+    "complexity": "low",
+    "quality_score": 8.3,
+    "last_updated": "2025-10-09T15:17:58.945028"
+  },
+  {
+    "id": "generated_130",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Sprint 17 Retrospective",
+      "description": "Business meeting focused on team retrospective with 3 attendees",
+      "attendees": [
+        "Scrum Master",
+        "Development Team",
+        "QA Lead"
+      ],
+      "attendee_count": 3,
+      "duration_minutes": 60,
+      "start_time": "2024-09-10T09:00:00",
+      "is_online_meeting": true,
+      "importance": "high",
+      "meeting_provider": ""
+    },
+    "meeting_type": "Team Retrospective",
+    "preparation_requirements": [
+      "Review agenda and objectives"
+    ],
+    "complexity": "medium",
+    "quality_score": 9.1,
+    "last_updated": "2025-10-09T15:17:58.945030"
+  },
+  {
+    "id": "generated_131",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Budget Planning Meeting - Session 131",
+      "description": "Business meeting focused on budget planning meeting with 3 attendees",
+      "attendees": [
+        "Customer Success",
+        "Product Team",
+        "Engineering"
+      ],
+      "attendee_count": 3,
+      "duration_minutes": 90,
+      "start_time": "2024-08-09T14:00:00",
+      "is_online_meeting": false,
+      "importance": "high",
+      "meeting_provider": "Zoom"
+    },
+    "meeting_type": "Budget Planning Meeting",
+    "preparation_requirements": [
+      "Review agenda and objectives",
+      "Gather financial reports",
+      "Prepare budget analysis",
+      "Review department expenses"
+    ],
+    "complexity": "high",
+    "quality_score": 8.5,
+    "last_updated": "2025-10-09T15:17:58.945033"
+  },
+  {
+    "id": "generated_132",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Training Session - Session 132",
+      "description": "Business meeting focused on training session with 4 attendees",
+      "attendees": [
+        "Procurement",
+        "Engineering",
+        "Legal",
+        "Vendor Rep"
+      ],
+      "attendee_count": 4,
+      "duration_minutes": 90,
+      "start_time": "2024-09-04T13:00:00",
+      "is_online_meeting": true,
+      "importance": "normal",
+      "meeting_provider": ""
+    },
+    "meeting_type": "Training Session",
+    "preparation_requirements": [
+      "Review agenda and objectives"
+    ],
+    "complexity": "medium",
+    "quality_score": 8.4,
+    "last_updated": "2025-10-09T15:17:58.945036"
+  },
+  {
+    "id": "generated_133",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Budget Planning Meeting - Session 133",
+      "description": "Business meeting focused on budget planning meeting with 4 attendees",
+      "attendees": [
+        "Procurement",
+        "Engineering",
+        "Legal",
+        "Vendor Rep"
+      ],
+      "attendee_count": 4,
+      "duration_minutes": 30,
+      "start_time": "2024-10-02T17:00:00",
+      "is_online_meeting": false,
+      "importance": "high",
+      "meeting_provider": ""
+    },
+    "meeting_type": "Budget Planning Meeting",
+    "preparation_requirements": [
+      "Review agenda and objectives",
+      "Gather financial reports",
+      "Prepare budget analysis",
+      "Review department expenses"
+    ],
+    "complexity": "low",
+    "quality_score": 8.5,
+    "last_updated": "2025-10-09T15:17:58.945038"
+  },
+  {
+    "id": "generated_135",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Cross-team Collaboration - Session 135",
+      "description": "Business meeting focused on cross-team collaboration with 3 attendees",
+      "attendees": [
+        "Scrum Master",
+        "Development Team",
+        "QA Lead"
+      ],
+      "attendee_count": 3,
+      "duration_minutes": 90,
+      "start_time": "2024-10-13T10:00:00",
+      "is_online_meeting": true,
+      "importance": "normal",
+      "meeting_provider": "Microsoft Teams"
+    },
+    "meeting_type": "Cross-team Collaboration",
+    "preparation_requirements": [
+      "Review agenda and objectives"
+    ],
+    "complexity": "low",
+    "quality_score": 8.3,
+    "last_updated": "2025-10-09T15:17:58.945043"
+  },
+  {
+    "id": "generated_136",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Performance Review - Session 136",
+      "description": "Business meeting focused on performance review with 3 attendees",
+      "attendees": [
+        "HR Lead",
+        "Manager",
+        "Team Members"
+      ],
+      "attendee_count": 3,
+      "duration_minutes": 30,
+      "start_time": "2024-08-18T13:00:00",
+      "is_online_meeting": true,
+      "importance": "high",
+      "meeting_provider": ""
+    },
+    "meeting_type": "Performance Review",
+    "preparation_requirements": [
+      "Review agenda and objectives"
+    ],
+    "complexity": "critical",
+    "quality_score": 9.3,
+    "last_updated": "2025-10-09T15:17:58.945046"
+  },
+  {
+    "id": "generated_137",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Performance Review - Session 137",
+      "description": "Business meeting focused on performance review with 3 attendees",
+      "attendees": [
+        "Project Manager",
+        "Stakeholders",
+        "Team Leads"
+      ],
+      "attendee_count": 3,
+      "duration_minutes": 30,
+      "start_time": "2024-10-10T13:00:00",
+      "is_online_meeting": true,
+      "importance": "normal",
+      "meeting_provider": ""
+    },
+    "meeting_type": "Performance Review",
+    "preparation_requirements": [
+      "Review agenda and objectives"
+    ],
+    "complexity": "high",
+    "quality_score": 8.9,
+    "last_updated": "2025-10-09T15:17:58.945048"
+  },
+  {
+    "id": "generated_138",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Budget Planning Meeting - Session 138",
+      "description": "Business meeting focused on budget planning meeting with 2 attendees",
+      "attendees": [
+        "Manager",
+        "Individual Contributor"
+      ],
+      "attendee_count": 2,
+      "duration_minutes": 120,
+      "start_time": "2024-08-10T13:00:00",
+      "is_online_meeting": true,
+      "importance": "high",
+      "meeting_provider": ""
+    },
+    "meeting_type": "Budget Planning Meeting",
+    "preparation_requirements": [
+      "Review agenda and objectives",
+      "Gather financial reports",
+      "Prepare budget analysis",
+      "Review department expenses",
+      "Prepare detailed presentation"
+    ],
+    "complexity": "medium",
+    "quality_score": 8.6,
+    "last_updated": "2025-10-09T15:17:58.945051"
+  },
+  {
+    "id": "generated_139",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Performance Review - Session 139",
+      "description": "Business meeting focused on performance review with 4 attendees",
+      "attendees": [
+        "CEO",
+        "VP Engineering",
+        "VP Marketing",
+        "Head of Sales"
+      ],
+      "attendee_count": 4,
+      "duration_minutes": 90,
+      "start_time": "2024-09-25T14:00:00",
+      "is_online_meeting": false,
+      "importance": "normal",
+      "meeting_provider": "Google Meet"
+    },
+    "meeting_type": "Performance Review",
+    "preparation_requirements": [
+      "Review agenda and objectives"
+    ],
+    "complexity": "high",
+    "quality_score": 8.8,
+    "last_updated": "2025-10-09T15:17:58.945053"
+  },
+  {
+    "id": "generated_141",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Training Session - Session 141",
+      "description": "Business meeting focused on training session with 3 attendees",
+      "attendees": [
+        "Scrum Master",
+        "Development Team",
+        "QA Lead"
+      ],
+      "attendee_count": 3,
+      "duration_minutes": 60,
+      "start_time": "2024-07-21T09:00:00",
+      "is_online_meeting": false,
+      "importance": "high",
+      "meeting_provider": ""
+    },
+    "meeting_type": "Training Session",
+    "preparation_requirements": [
+      "Review agenda and objectives"
+    ],
+    "complexity": "high",
+    "quality_score": 8.5,
+    "last_updated": "2025-10-09T15:17:58.945059"
+  },
+  {
+    "id": "generated_142",
+    "source": "generated_sample",
+    "context": {
+      "subject": "API Design Session - Authentication",
+      "description": "Business meeting focused on technical design review with 3 attendees",
+      "attendees": [
+        "Finance Director",
+        "Department Heads",
+        "Project Managers"
+      ],
+      "attendee_count": 3,
+      "duration_minutes": 90,
+      "start_time": "2024-08-13T12:00:00",
+      "is_online_meeting": false,
+      "importance": "high",
+      "meeting_provider": ""
+    },
+    "meeting_type": "Technical Design Review",
+    "preparation_requirements": [
+      "Review agenda and objectives",
+      "Review technical documentation",
+      "Prepare system diagrams",
+      "Analyze performance metrics"
+    ],
+    "complexity": "high",
+    "quality_score": 9.7,
+    "last_updated": "2025-10-09T15:17:58.945061"
+  },
+  {
+    "id": "generated_143",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Budget Planning Meeting - Session 143",
+      "description": "Business meeting focused on budget planning meeting with 3 attendees",
+      "attendees": [
+        "Product Manager",
+        "Engineering Lead",
+        "Designer"
+      ],
+      "attendee_count": 3,
+      "duration_minutes": 90,
+      "start_time": "2024-10-26T11:00:00",
+      "is_online_meeting": true,
+      "importance": "high",
+      "meeting_provider": "Google Meet"
+    },
+    "meeting_type": "Budget Planning Meeting",
+    "preparation_requirements": [
+      "Review agenda and objectives",
+      "Gather financial reports",
+      "Prepare budget analysis",
+      "Review department expenses"
+    ],
+    "complexity": "critical",
+    "quality_score": 9.2,
+    "last_updated": "2025-10-09T15:17:58.945064"
+  },
+  {
+    "id": "generated_144",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Q3 Product Roadmap Planning",
+      "description": "Business meeting focused on product strategy session with 4 attendees",
+      "attendees": [
+        "Procurement",
+        "Engineering",
+        "Legal",
+        "Vendor Rep"
+      ],
+      "attendee_count": 4,
+      "duration_minutes": 30,
+      "start_time": "2024-09-15T11:00:00",
+      "is_online_meeting": true,
+      "importance": "high",
+      "meeting_provider": ""
+    },
+    "meeting_type": "Product Strategy Session",
+    "preparation_requirements": [
+      "Review agenda and objectives",
+      "Research market trends",
+      "Prepare competitive analysis",
+      "Review customer feedback"
+    ],
+    "complexity": "critical",
+    "quality_score": 8.1,
+    "last_updated": "2025-10-09T15:17:58.945066"
+  },
+  {
+    "id": "generated_145",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Performance Review - Session 145",
+      "description": "Business meeting focused on performance review with 3 attendees",
+      "attendees": [
+        "Project Manager",
+        "Stakeholders",
+        "Team Leads"
+      ],
+      "attendee_count": 3,
+      "duration_minutes": 90,
+      "start_time": "2024-10-17T09:00:00",
+      "is_online_meeting": true,
+      "importance": "high",
+      "meeting_provider": ""
+    },
+    "meeting_type": "Performance Review",
+    "preparation_requirements": [
+      "Review agenda and objectives"
+    ],
+    "complexity": "low",
+    "quality_score": 9.2,
+    "last_updated": "2025-10-09T15:17:58.945069"
+  },
+  {
+    "id": "generated_146",
+    "source": "generated_sample",
+    "context": {
+      "subject": "API Design Session - Data Layer",
+      "description": "Business meeting focused on technical design review with 4 attendees",
+      "attendees": [
+        "Procurement",
+        "Engineering",
+        "Legal",
+        "Vendor Rep"
+      ],
+      "attendee_count": 4,
+      "duration_minutes": 90,
+      "start_time": "2024-10-02T17:00:00",
+      "is_online_meeting": true,
+      "importance": "normal",
+      "meeting_provider": "Microsoft Teams"
+    },
+    "meeting_type": "Technical Design Review",
+    "preparation_requirements": [
+      "Review agenda and objectives",
+      "Review technical documentation",
+      "Prepare system diagrams",
+      "Analyze performance metrics"
+    ],
+    "complexity": "medium",
+    "quality_score": 7.6,
+    "last_updated": "2025-10-09T15:17:58.945071"
+  },
+  {
+    "id": "generated_148",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Project Status Update - Session 148",
+      "description": "Business meeting focused on project status update with 3 attendees",
+      "attendees": [
+        "Scrum Master",
+        "Development Team",
+        "QA Lead"
+      ],
+      "attendee_count": 3,
+      "duration_minutes": 90,
+      "start_time": "2024-07-03T09:00:00",
+      "is_online_meeting": false,
+      "importance": "normal",
+      "meeting_provider": ""
+    },
+    "meeting_type": "Project Status Update",
+    "preparation_requirements": [
+      "Review agenda and objectives"
+    ],
+    "complexity": "low",
+    "quality_score": 8.8,
+    "last_updated": "2025-10-09T15:17:58.945076"
+  },
+  {
+    "id": "generated_149",
+    "source": "generated_sample",
+    "context": {
+      "subject": "Q4 Product Roadmap Planning",
+      "description": "Business meeting focused on product strategy session with 3 attendees",
+      "attendees": [
+        "Finance Director",
+        "Department Heads",
+        "Project Managers"
+      ],
+      "attendee_count": 3,
+      "duration_minutes": 120,
+      "start_time": "2024-09-01T16:00:00",
+      "is_online_meeting": false,
+      "importance": "normal",
+      "meeting_provider": ""
+    },
+    "meeting_type": "Product Strategy Session",
+    "preparation_requirements": [
+      "Review agenda and objectives",
+      "Research market trends",
+      "Prepare competitive analysis",
+      "Review customer feedback",
+      "Prepare detailed presentation"
+    ],
+    "complexity": "high",
+    "quality_score": 8.4,
+    "last_updated": "2025-10-09T15:17:58.945079"
+  },
+  {
+    "id": "generated_150",
+    "source": "generated_sample",
+    "context": {
+      "subject": "API Design Session - Authentication",
+      "description": "Business meeting focused on technical design review with 4 attendees",
+      "attendees": [
+        "Team Lead A",
+        "Team Lead B",
+        "Architect",
+        "PM"
+      ],
+      "attendee_count": 4,
+      "duration_minutes": 90,
+      "start_time": "2024-09-01T17:00:00",
+      "is_online_meeting": false,
+      "importance": "normal",
+      "meeting_provider": ""
+    },
+    "meeting_type": "Technical Design Review",
+    "preparation_requirements": [
+      "Review agenda and objectives",
+      "Review technical documentation",
+      "Prepare system diagrams",
+      "Analyze performance metrics"
+    ],
+    "complexity": "high",
+    "quality_score": 9.0,
+    "last_updated": "2025-10-09T15:17:58.945081"
+  }
+]

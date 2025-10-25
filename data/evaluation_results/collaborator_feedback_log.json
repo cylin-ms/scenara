@@ -1,0 +1,111 @@
+{
+  "last_updated": "2025-10-25T23:47:45.217540",
+  "total_feedback_entries": 3,
+  "total_data_gaps": 0,
+  "feedback_entries": [
+    {
+      "timestamp": "2025-10-25T04:36:34.710813",
+      "collaborator_name": "Xiaodong Liu",
+      "expected_rank": 5,
+      "actual_rank": null,
+      "user_comment": "We just recently co-organized a Workshop on Agentic Memory. I also have regular 1:1 meetings with him and ad hoc meetings.",
+      "system_analysis": {
+        "discrepancy_type": "not_found",
+        "severity": "critical",
+        "likely_cause": [
+          "User mentions 1:1s but none found in calendar data",
+          "Co-organization mentioned but not reflected in meeting data",
+          "Recent collaboration mentioned - calendar data may be outdated"
+        ],
+        "system_perspective": "No collaboration evidence found for Xiaodong Liu",
+        "user_perspective": "We just recently co-organized a Workshop on Agentic Memory. I also have regular 1:1 meetings with him and ad hoc meetings."
+      },
+      "data_gaps_identified": [
+        "Calendar data incomplete - missing recent meetings",
+        "Meeting co-organization not fully captured in calendar data"
+      ],
+      "action_items": [
+        "\u2713 Re-run Graph API extractor to get fresh calendar events",
+        "\u2713 Verify Meeting.Read.All permission includes organizer data",
+        "\u2713 Check calendar event organizer field parsing",
+        "\u2713 Log this feedback for algorithm training and improvement"
+      ],
+      "learning_points": [
+        "COVERAGE GAP: User collaborates via workshop co-organization, ad hoc meetings which are not fully captured in current data sources.",
+        "TEMPORAL: Recent collaboration is important to users. Ensure data sources are refreshed regularly.",
+        "DATA PRIORITY: Missing 2 data sources. Multi-source fusion is critical for accuracy."
+      ]
+    },
+    {
+      "timestamp": "2025-10-25T04:36:45.731305",
+      "collaborator_name": "Vani Soff",
+      "expected_rank": 8,
+      "actual_rank": 12,
+      "user_comment": "I have meetings with Vani and also we have chatted in Teams most recently and I have shared docs with her",
+      "system_analysis": {
+        "discrepancy_type": "ranked_too_low",
+        "severity": "medium",
+        "likely_cause": [
+          "Teams chat collaboration mentioned but not captured (need Chat.Read)",
+          "Document sharing mentioned but not detected",
+          "Recent collaboration mentioned - calendar data may be outdated"
+        ],
+        "system_perspective": "Ranked at #12 based on available data",
+        "user_perspective": "I have meetings with Vani and also we have chatted in Teams most recently and I have shared docs with her"
+      },
+      "data_gaps_identified": [
+        "Teams chat data not captured - need Chat.Read permission",
+        "Document sharing incomplete - may need additional Graph API scopes"
+      ],
+      "action_items": [
+        "\u2713 Request Chat.Read permission in Graph Explorer",
+        "\u2713 Add Teams chat analysis to extraction pipeline",
+        "\u2713 Verify Files.Read.All scope in Graph API permissions",
+        "\u2713 Check shared documents query is working correctly",
+        "\u2713 Log this feedback for algorithm training and improvement"
+      ],
+      "learning_points": [
+        "PATTERN: Broadcast-only attendance may indicate data gap, not absence of collaboration. Check for: missing 1:1s, recent meetings, chat history.",
+        "COVERAGE GAP: User collaborates via Teams chat which are not fully captured in current data sources.",
+        "TEMPORAL: Recent collaboration is important to users. Ensure data sources are refreshed regularly.",
+        "DATA PRIORITY: Missing 2 data sources. Multi-source fusion is critical for accuracy."
+      ]
+    },
+    {
+      "timestamp": "2025-10-25T23:47:45.217529",
+      "collaborator_name": "Xiaodong Liu",
+      "expected_rank": 3,
+      "actual_rank": null,
+      "user_comment": "Should rank MUCH higher - we have regular 1:1 meetings and co-organized the Agentic Memory Workshop together. The workshop appears in Teams chat but not calendar data. This is a significant data gap affecting ranking accuracy.",
+      "system_analysis": {
+        "discrepancy_type": "not_found",
+        "severity": "critical",
+        "likely_cause": [
+          "User mentions 1:1s but none found in calendar data",
+          "Teams chat collaboration mentioned but not captured (need Chat.Read)",
+          "Co-organization mentioned but not reflected in meeting data"
+        ],
+        "system_perspective": "No collaboration evidence found for Xiaodong Liu",
+        "user_perspective": "Should rank MUCH higher - we have regular 1:1 meetings and co-organized the Agentic Memory Workshop together. The workshop appears in Teams chat but not calendar data. This is a significant data gap affecting ranking accuracy."
+      },
+      "data_gaps_identified": [
+        "Calendar data incomplete - missing recent meetings",
+        "Teams chat data not captured - need Chat.Read permission",
+        "Meeting co-organization not fully captured in calendar data"
+      ],
+      "action_items": [
+        "\u2713 Re-run Graph API extractor to get fresh calendar events",
+        "\u2713 Request Chat.Read permission in Graph Explorer",
+        "\u2713 Add Teams chat analysis to extraction pipeline",
+        "\u2713 Verify Meeting.Read.All permission includes organizer data",
+        "\u2713 Check calendar event organizer field parsing",
+        "\u2713 Log this feedback for algorithm training and improvement"
+      ],
+      "learning_points": [
+        "COVERAGE GAP: User collaborates via Teams chat, workshop co-organization which are not fully captured in current data sources.",
+        "DATA PRIORITY: Missing 3 data sources. Multi-source fusion is critical for accuracy."
+      ]
+    }
+  ],
+  "data_gaps": []
+}

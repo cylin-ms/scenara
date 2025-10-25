@@ -1,0 +1,110 @@
+{
+  "timestamp": "2025-10-21T18:10:31.388232",
+  "user_email": "expert.user@company.com",
+  "notes": [
+    {
+      "note": "Expert in calendar intelligence and meeting optimization algorithms",
+      "category": "EXPERTISE",
+      "title": "Calendar Intelligence Expertise",
+      "temporal_durability": "TEMPORAL_LONG_LIVED",
+      "timestamp": "2025-10-19T18:10:31.388023",
+      "confidence": 0.95,
+      "source": "Performance Reviews/Feedback",
+      "metadata": {
+        "skill_level": "Expert",
+        "years_experience": "5+"
+      }
+    },
+    {
+      "note": "Deep knowledge of Microsoft Graph API and Office 365 integrations",
+      "category": "EXPERTISE",
+      "title": "Graph API Expertise",
+      "temporal_durability": "TEMPORAL_LONG_LIVED",
+      "timestamp": "2025-10-17T18:10:31.388023",
+      "confidence": 0.95,
+      "source": "Performance Reviews/Feedback",
+      "metadata": {
+        "skill_level": "Expert",
+        "years_experience": "5+"
+      }
+    },
+    {
+      "note": "Specialist in AI/ML integration for enterprise productivity solutions",
+      "category": "EXPERTISE",
+      "title": "AI/ML Integration Specialist",
+      "temporal_durability": "TEMPORAL_LONG_LIVED",
+      "timestamp": "2025-10-15T18:10:31.388023",
+      "confidence": 0.95,
+      "source": "Performance Reviews/Feedback",
+      "metadata": {
+        "skill_level": "Expert",
+        "years_experience": "5+"
+      }
+    },
+    {
+      "note": "Proficient in Python development and LLM framework integration",
+      "category": "EXPERTISE",
+      "title": "Python & LLM Development",
+      "temporal_durability": "TEMPORAL_LONG_LIVED",
+      "timestamp": "2025-10-13T18:10:31.388023",
+      "confidence": 0.95,
+      "source": "Performance Reviews/Feedback",
+      "metadata": {
+        "skill_level": "Expert",
+        "years_experience": "5+"
+      }
+    },
+    {
+      "note": "Prefers morning meetings for strategic discussions and decision-making",
+      "category": "BEHAVIORAL_PATTERN",
+      "title": "Morning Strategic Preference",
+      "temporal_durability": "TEMPORAL_LONG_LIVED",
+      "timestamp": "2025-10-09T18:10:31.388023",
+      "confidence": 0.85,
+      "source": "Meeting Transcripts/Behavioral Analysis",
+      "metadata": {
+        "pattern_strength": "Strong",
+        "frequency": "Consistent"
+      }
+    },
+    {
+      "note": "Carefully analyzes options before making critical decisions",
+      "category": "BEHAVIORAL_PATTERN",
+      "title": "Analytical Decision Style",
+      "temporal_durability": "TEMPORAL_LONG_LIVED",
+      "timestamp": "2025-10-06T18:10:31.388023",
+      "confidence": 0.85,
+      "source": "Meeting Transcripts/Behavioral Analysis",
+      "metadata": {
+        "pattern_strength": "Strong",
+        "frequency": "Consistent"
+      }
+    },
+    {
+      "note": "Values detailed preparation for important meetings",
+      "category": "BEHAVIORAL_PATTERN",
+      "title": "Preparation-Focused Approach",
+      "temporal_durability": "TEMPORAL_LONG_LIVED",
+      "timestamp": "2025-10-03T18:10:31.388023",
+      "confidence": 0.85,
+      "source": "Meeting Transcripts/Behavioral Analysis",
+      "metadata": {
+        "pattern_strength": "Strong",
+        "frequency": "Consistent"
+      }
+    },
+    {
+      "note": "Prefers collaborative problem-solving over individual work",
+      "category": "BEHAVIORAL_PATTERN",
+      "title": "Collaborative Work Style",
+      "temporal_durability": "TEMPORAL_LONG_LIVED",
+      "timestamp": "2025-10-01T18:10:31.388023",
+      "confidence": 0.85,
+      "source": "Meeting Transcripts/Behavioral Analysis",
+      "metadata": {
+        "pattern_strength": "Strong",
+        "frequency": "Consistent"
+      }
+    }
+  ]
+}

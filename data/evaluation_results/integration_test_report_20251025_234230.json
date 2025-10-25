@@ -1,0 +1,29 @@
+{
+  "test_metadata": {
+    "test_name": "Teams Chat Integration End-to-End Test",
+    "test_timestamp": "20251025_234230",
+    "test_date": "2025-10-25T23:42:43.528148",
+    "test_version": "1.0",
+    "algorithm_version": "7.0_teams_chat_integrated"
+  },
+  "test_results": {
+    "baseline_collected": true,
+    "chat_data_collected": true,
+    "enhanced_analysis_run": true
+  },
+  "baseline_summary": {
+    "total_collaborators": 15,
+    "algorithm_version": "7.0_teams_chat_integrated",
+    "teams_chat_integrated": false
+  },
+  "enhanced_summary": {
+    "total_collaborators": 15,
+    "algorithm_version": "7.0_teams_chat_integrated",
+    "teams_chat_integrated": true
+  },
+  "chat_data_summary": {
+    "total_chats": 100,
+    "collaborators_identified": 58,
+    "generated_at": "2025-10-25T15:42:43.058964+00:00"
+  }
+}

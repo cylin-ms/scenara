@@ -1,0 +1,304 @@
+{
+  "analysis_timestamp": "2025-10-25T00:40:30.281023",
+  "algorithm_version": "4.2_enterprise_taxonomy_corrected",
+  "total_genuine_collaborators": 11,
+  "collaborators": [
+    {
+      "name": "Drew Brough",
+      "final_score": 94.1,
+      "confidence": 0.7,
+      "genuine_collaboration_meetings": 6,
+      "informational_meetings": 0,
+      "broadcast_meetings": 1,
+      "email_list_meetings": 0,
+      "genuine_ratio": 1.2,
+      "informational_ratio": 0.0,
+      "email_list_ratio": 0.0,
+      "one_on_one": 0,
+      "organized_by_me": 0,
+      "small_working_meetings": 2,
+      "time_periods": 2,
+      "total_meetings": 5,
+      "collaboration_evidence": [
+        "Small collaborative working session",
+        "Attended their working meeting",
+        "Planning/decision meeting participation"
+      ],
+      "information_evidence": [
+        "Broadcast/webinar attendance"
+      ],
+      "algorithm_version": "4.2_enterprise_taxonomy"
+    },
+    {
+      "name": "Sathish Venkat Rangam",
+      "final_score": 54,
+      "confidence": 0.7,
+      "genuine_collaboration_meetings": 4,
+      "informational_meetings": 0,
+      "broadcast_meetings": 0,
+      "email_list_meetings": 0,
+      "genuine_ratio": 1.0,
+      "informational_ratio": 0.0,
+      "email_list_ratio": 0.0,
+      "one_on_one": 0,
+      "organized_by_me": 0,
+      "small_working_meetings": 2,
+      "time_periods": 2,
+      "total_meetings": 4,
+      "collaboration_evidence": [
+        "Small collaborative working session",
+        "Planning/decision meeting participation"
+      ],
+      "information_evidence": [],
+      "algorithm_version": "4.2_enterprise_taxonomy"
+    },
+    {
+      "name": "Dongmei Zhang",
+      "final_score": 48,
+      "confidence": 0.7,
+      "genuine_collaboration_meetings": 3,
+      "informational_meetings": 1,
+      "broadcast_meetings": 0,
+      "email_list_meetings": 0,
+      "genuine_ratio": 1.0,
+      "informational_ratio": 0.333,
+      "email_list_ratio": 0.0,
+      "one_on_one": 0,
+      "organized_by_me": 0,
+      "small_working_meetings": 1,
+      "time_periods": 1,
+      "total_meetings": 3,
+      "collaboration_evidence": [
+        "Small collaborative working session",
+        "Attended their working meeting",
+        "Planning/decision meeting participation"
+      ],
+      "information_evidence": [
+        "Attended their informational meeting",
+        "Informational briefing attendance"
+      ],
+      "algorithm_version": "4.2_enterprise_taxonomy"
+    },
+    {
+      "name": "Deniz Cakirkaya",
+      "final_score": 39,
+      "confidence": 0.7,
+      "genuine_collaboration_meetings": 3,
+      "informational_meetings": 0,
+      "broadcast_meetings": 0,
+      "email_list_meetings": 0,
+      "genuine_ratio": 1.0,
+      "informational_ratio": 0.0,
+      "email_list_ratio": 0.0,
+      "one_on_one": 0,
+      "organized_by_me": 0,
+      "small_working_meetings": 1,
+      "time_periods": 2,
+      "total_meetings": 3,
+      "collaboration_evidence": [
+        "Small collaborative working session",
+        "Planning/decision meeting participation"
+      ],
+      "information_evidence": [],
+      "algorithm_version": "4.2_enterprise_taxonomy"
+    },
+    {
+      "name": "Mark Grimaldi",
+      "final_score": 75.1,
+      "confidence": 0.7,
+      "genuine_collaboration_meetings": 5,
+      "informational_meetings": 1,
+      "broadcast_meetings": 1,
+      "email_list_meetings": 0,
+      "genuine_ratio": 0.833,
+      "informational_ratio": 0.167,
+      "email_list_ratio": 0.0,
+      "one_on_one": 0,
+      "organized_by_me": 0,
+      "small_working_meetings": 2,
+      "time_periods": 2,
+      "total_meetings": 6,
+      "collaboration_evidence": [
+        "Small collaborative working session",
+        "Attended their working meeting",
+        "Planning/decision meeting participation"
+      ],
+      "information_evidence": [
+        "Broadcast/webinar attendance",
+        "Informational briefing attendance"
+      ],
+      "algorithm_version": "4.2_enterprise_taxonomy"
+    },
+    {
+      "name": "Balaji Shyamkumar",
+      "final_score": 122.3,
+      "confidence": 0.7,
+      "genuine_collaboration_meetings": 8,
+      "informational_meetings": 1,
+      "broadcast_meetings": 3,
+      "email_list_meetings": 0,
+      "genuine_ratio": 0.8,
+      "informational_ratio": 0.1,
+      "email_list_ratio": 0.0,
+      "one_on_one": 0,
+      "organized_by_me": 0,
+      "small_working_meetings": 3,
+      "time_periods": 2,
+      "total_meetings": 10,
+      "collaboration_evidence": [
+        "Small collaborative working session",
+        "Attended their working meeting",
+        "Planning/decision meeting participation"
+      ],
+      "information_evidence": [
+        "Attended their informational meeting",
+        "Broadcast/webinar attendance",
+        "Informational briefing attendance"
+      ],
+      "algorithm_version": "4.2_enterprise_taxonomy"
+    },
+    {
+      "name": "Caroline Mao",
+      "final_score": 90.2,
+      "confidence": 0.7,
+      "genuine_collaboration_meetings": 6,
+      "informational_meetings": 1,
+      "broadcast_meetings": 2,
+      "email_list_meetings": 0,
+      "genuine_ratio": 0.75,
+      "informational_ratio": 0.125,
+      "email_list_ratio": 0.0,
+      "one_on_one": 0,
+      "organized_by_me": 0,
+      "small_working_meetings": 3,
+      "time_periods": 2,
+      "total_meetings": 8,
+      "collaboration_evidence": [
+        "Small collaborative working session",
+        "Attended their working meeting",
+        "Planning/decision meeting participation"
+      ],
+      "information_evidence": [
+        "Broadcast/webinar attendance",
+        "Informational briefing attendance"
+      ],
+      "algorithm_version": "4.2_enterprise_taxonomy"
+    },
+    {
+      "name": "Haidong Zhang",
+      "final_score": 231,
+      "confidence": 0.7,
+      "genuine_collaboration_meetings": 12,
+      "informational_meetings": 2,
+      "broadcast_meetings": 0,
+      "email_list_meetings": 0,
+      "genuine_ratio": 0.667,
+      "informational_ratio": 0.111,
+      "email_list_ratio": 0.0,
+      "one_on_one": 0,
+      "organized_by_me": 0,
+      "small_working_meetings": 7,
+      "time_periods": 2,
+      "total_meetings": 18,
+      "collaboration_evidence": [
+        "Small collaborative working session",
+        "Attended their working meeting",
+        "Planning/decision meeting participation",
+        "Small internal recurring meeting"
+      ],
+      "information_evidence": [
+        "Attended their informational meeting",
+        "Informational briefing attendance"
+      ],
+      "algorithm_version": "4.2_enterprise_taxonomy"
+    },
+    {
+      "name": "Charlie Chung",
+      "final_score": 97.2,
+      "confidence": 1.0,
+      "genuine_collaboration_meetings": 6,
+      "informational_meetings": 1,
+      "broadcast_meetings": 2,
+      "email_list_meetings": 0,
+      "genuine_ratio": 0.667,
+      "informational_ratio": 0.111,
+      "email_list_ratio": 0.0,
+      "one_on_one": 0,
+      "organized_by_me": 1,
+      "small_working_meetings": 1,
+      "time_periods": 3,
+      "total_meetings": 9,
+      "collaboration_evidence": [
+        "Meeting you organized together",
+        "Planning/decision meeting participation",
+        "Small internal recurring meeting",
+        "Small collaborative working session"
+      ],
+      "information_evidence": [
+        "Broadcast/webinar attendance",
+        "Informational briefing attendance"
+      ],
+      "algorithm_version": "4.2_enterprise_taxonomy"
+    },
+    {
+      "name": "Santhosh Raman",
+      "final_score": 52.2,
+      "confidence": 0.7,
+      "genuine_collaboration_meetings": 4,
+      "informational_meetings": 1,
+      "broadcast_meetings": 2,
+      "email_list_meetings": 0,
+      "genuine_ratio": 0.571,
+      "informational_ratio": 0.143,
+      "email_list_ratio": 0.0,
+      "one_on_one": 0,
+      "organized_by_me": 0,
+      "small_working_meetings": 1,
+      "time_periods": 3,
+      "total_meetings": 7,
+      "collaboration_evidence": [
+        "Small collaborative working session",
+        "Planning/decision meeting participation"
+      ],
+      "information_evidence": [
+        "Broadcast/webinar attendance",
+        "Informational briefing attendance"
+      ],
+      "algorithm_version": "4.2_enterprise_taxonomy"
+    },
+    {
+      "name": "Vani Soff",
+      "final_score": 52.2,
+      "confidence": 0.7,
+      "genuine_collaboration_meetings": 4,
+      "informational_meetings": 1,
+      "broadcast_meetings": 2,
+      "email_list_meetings": 0,
+      "genuine_ratio": 0.571,
+      "informational_ratio": 0.143,
+      "email_list_ratio": 0.0,
+      "one_on_one": 0,
+      "organized_by_me": 0,
+      "small_working_meetings": 1,
+      "time_periods": 3,
+      "total_meetings": 7,
+      "collaboration_evidence": [
+        "Small collaborative working session",
+        "Planning/decision meeting participation"
+      ],
+      "information_evidence": [
+        "Broadcast/webinar attendance",
+        "Informational briefing attendance"
+      ],
+      "algorithm_version": "4.2_enterprise_taxonomy"
+    }
+  ],
+  "jason_virtue_filtered": true,
+  "algorithm_improvements": [
+    "Integrated Enterprise Meeting Taxonomy classification",
+    "Distinguished genuine collaboration from information consumption",
+    "Added email list detection and penalty",
+    "Enhanced evidence requirements for genuine collaboration",
+    "Improved confidence calculation based on collaboration quality"
+  ]
+}

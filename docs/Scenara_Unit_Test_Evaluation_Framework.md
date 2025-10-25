@@ -1,0 +1,105 @@
+Scenara: Unit Test Evaluation Framework for AI-Native Apps
+
+Chin-Yew Lin, Haidong Zhang, and Researcher
+
+Modern AI-native applications – from coding copilots and autonomous agents to generative assistants – are redefining software value but also introducing new challenges in how we measure quality and success1 2. Unlike traditional apps, these AI-driven products produce non-deterministic outputs, evolve through learning, and must earn user trust in every interaction3 4. This document augments our proposal (“Scenara: AI-Native Unit Test Generator & Evaluator”) with a comprehensive introduction to evaluating AI-native apps, services, and products. It outlines key evaluation dimensions, challenges in AI-native product development, and shows how our proposed framework addresses these challenges. We also include industry examples and competitive benchmarks to strengthen this pitch, ensuring alignment with Microsoft’s AI strategy and terminology.
+
+The metrics above underscore both the promise and the trust gap in AI-native solutions. Nearly every enterprise is experimenting with AI, but fewer than one-third of initiatives become production services, often due to concerns around reliability, safety, and scalability5. Furthermore, a majority of users remain hesitant to fully trust AI outputs6. These figures highlight why a robust evaluation framework is essential: to increase success rates of AI deployments and build user and stakeholder confidence in AI-driven products.
+
+Holistic Evaluation Dimensions for AI-Native Products
+
+Evaluating AI-native apps requires a holistic approach that goes beyond traditional performance metrics. We propose focusing on three primary dimensions – Technical Performance, User Experience (UX), and Responsible AI compliance – each with specific criteria and metrics:
+
+• Technical Performance: Measures the system’s accuracy, efficiency, and reliability on its intended tasks. Even though AI outputs are probabilistic, we need metrics for quality (correctness of responses, relevance, factual accuracy), robustness (handling of edge cases or ambiguous inputs), and efficiency (latency, scalability under load). For example, an AI coding assistant might track task success rate (e.g. how often generated code passes tests), error rates, or latency per request. In our framework, rubric-based scoring of outputs against expected criteria provides a quantitative handle on technical quality7 8. Each test scenario yields scores on dimensions like Accuracy (“Are facts and references correct?”) and Coverage (“Does the AI output include all required elements?”)9.
+
+• User Experience (UX): Assesses how the AI product feels to users – usefulness, usability, and trustworthiness of its outputs. This includes user satisfaction ratings, adoption and engagement metrics, and qualitative feedback on how well the AI assists in real scenarios. Traditional UX metrics (e.g. Net Promoter Score, task completion time) still apply, but new ones are emerging for AI. For instance, Microsoft’s design teams track User Experience Quality (UXQ) benchmarks, such as the percentage of users who feel confident in the AI’s results10. In one internal benchmark, only 60% of users initially felt confident in an AI feature’s output, leading the team to iterate until 85–90% of users reported “green” (positive) sentiment11. Response usefulness (can the user directly use the AI’s answer or do they need to heavily edit it?) is another key metric—captured in our rubric as Usability scoring12. Essentially, UX evaluation ensures the AI isn’t just technically correct but truly helpful and delightful in context.
+
+• Responsible AI (RAI) and Safety: Ensures the AI system adheres to ethical and compliance standards – a critical requirement for enterprise and society. Key aspects include fairness (no unintended bias across user groups), transparency (explainable and provides reasoning or sources when appropriate), privacy (doesn’t leak sensitive data), and safety (avoids toxic or harmful outputs). We incorporate explicit checks for these. For example, our evaluation rubric has a dedicated “Leakage & RAI” dimension to flag any confidential info leaks or violations of Responsible AI principles like fairness and safety13 14. Metrics here might include zero tolerance checks (e.g. did the AI avoid disallowed content), bias evaluations (parity of outcomes for different demographics), and compliance checklists (adherence to Microsoft’s AI Standard and Human AI guidelines). This RAI evaluation is not a one-time audit but continuous – we build it into each test case and scenario. For instance, if an AI assistant is summarizing emails, the test cases will include scenarios to verify it redacts personal data and handles sensitive content appropriately (ensuring compliance with privacy and security policies).
+
+Table 1: Key Evaluation Dimensions and Example Metrics
+
+Why all three matter: A high-performing model that is fast and accurate means little if users don’t trust it or can’t use it effectively; conversely, a charming UX is dangerous if the underlying system is unreliable or non-compliant. By evaluating across technical, UX, and RAI dimensions together, we ensure AI-native products reach enterprise-grade quality – i.e. they solve real problems (effectiveness), delight users (experience), and uphold our standards and values (ethics).
+
+Challenges in Evaluating AI-Native Products
+
+Delivering AI-native services at scale comes with distinct challenges that traditional software teams have not faced all at once. Below we identify the major challenges and pain points, with context on why existing approaches often fall short:
+
+1. Lack of Determinism – Unpredictable Outputs: AI systems (like large language models) can respond in surprising ways. The same prompt may yield different answers, and there isn’t always a clear “right or wrong” output. This makes defining pass/fail criteria hard19 20. Traditional software testing relies on deterministic assertions (“function X returns Y for input Z”), but AI requires evaluating quality along a spectrum. Challenge: How do we verify an AI’s behavior is acceptable every time when its responses vary? This unpredictability demands scenario-based evaluations and robust criteria (as our proposal provides with rubrics and multiple test variants).
+
+2. Dynamic “Real-World” Scenarios: AI products often perform complex, open-ended tasks (e.g. “plan my day” or “summarize this document and give recommendations”). These scenarios involve dynamic contexts, multi-step reasoning, and user-specific data21. It’s infeasible to manually script tests for every possible scenario. Challenge: Ensuring coverage of the long tail of scenarios – including rare edge cases and adversarial inputs – to avoid blind spots. Many organizations lack a systematic way to do this, leading to blind trust or very limited spot testing.
+
+3. Evolving Models and Data Drift: AI models improve continuously (or can regress with new data). Model updates, prompt tweaks, or shifts in user input patterns can change the behavior. Challenge: Evaluation can’t be one-and-done; it must be continuous and automated. We need infrastructure to continuously re-run evaluations and catch “evaluation drift” (when performance or user satisfaction degrades over time)22 23. Without automation, teams struggle to keep up with model changes, risking that issues go unnoticed until users report them.
+
+4. User Trust and Adoption Hurdles: As noted earlier, 61% of people are wary of trusting AI outputs24. If an AI agent occasionally produces incorrect or inappropriate results, user trust can be lost quickly. Unlike a bug in a static UI that might annoy users, a flaw in an AI’s behavior can erode confidence or even cause harm (e.g., biased advice, wrong decision support). Challenge: How to demonstrate reliability and safety convincingly to users, customers, and stakeholders? This ties directly to evaluation – we need evidence (metrics, scores, benchmarks) to prove an AI system meets a high quality bar. Many companies find it difficult to define “what good looks like” for AI behavior, leading to either releasing models without clear quality guarantees or holding back promising features out of caution.
+
+5. Responsible AI & Compliance Risks: AI-native products open new risk fronts – generating content that might be biased, offensive, or leak sensitive data. Enterprises face regulatory and brand risks if these are not managed. Challenge: Incorporating RAI checks deeply into the eval process. This can be labor-intensive (requiring expert reviews, red-teaming). Without a structured approach, teams might do a one-time ethical review but miss ongoing issues. Ensuring adherence to evolving AI regulations and internal policies is difficult without automated tests for each principle (fairness, privacy, etc.). It’s a challenge to simulate and test all the “what if the user asks X” edge cases that probe the AI’s guardrails.
+
+6. Scaling Testing Effort: Traditional software testing scales with code complexity; AI testing scales with scenario complexity and model behavior space, which is potentially infinite. Add to that the interdisciplinary nature – product managers, designers, engineers, and data scientists all need to collaborate on evaluation criteria25 26. Challenge: The organizational alignment needed to evaluate AI products. Often, different teams might each test a piece (e.g. data scientists test model accuracy on static datasets, UX researchers gather user feedback qualitatively, etc.) – but no single framework ties it all together, and important gaps remain. This siloed approach can hurt internal buy-in; without a unified evaluation framework, it’s hard for leadership to gauge readiness or for engineering teams to iterate efficiently towards a shared quality goal27 28.
+
+These challenges have real consequences. As our internal analysis noted, without robust scenario-driven testing, AI models may produce inaccurate, biased, or non-compliant results, leading to user dissatisfaction, reputational risk, and regulatory concerns29. The industry has already seen high-profile instances of AI failures (from chatbots going off the rails to biased recruiting algorithms), underlining the need for a better approach.
+
+In summary, the core difficulty is that AI-native apps blur the line between code and behavior – they are adaptive, data-driven, and non-deterministic. We need to evaluate not just “Did I build it right?” but “Is it behaving correctly in the myriad ways it will be used?” This requires new testing paradigms, automated eval pipelines, and cross-disciplinary collaboration on quality30 31.
+
+Proposed Solution: “Scenara” Framework Overview
+
+To directly address these challenges, we propose Scenara, an AI-Native Unit Test Generator & Evaluator framework (the core concept of our original proposal). Scenara is designed as a future-looking, scenario-centered evaluation framework for AI-native apps and services32 33. It brings the rigor of software testing into the AI era by automatically generating complex test scenarios and systematically measuring AI behavior against defined success criteria.
+
+🔷 What is Scenara? At its heart, Scenara turns user scenarios into a suite of “AI unit tests.” Instead of unit-testing a small code function, we are unit-testing an AI agent on realistic tasks. It works by:
+
+Decomposing user scenarios into sub-tasks, using domain taxonomies and heuristics34. (For example, a scenario “Help me prepare for a customer meeting” might decompose into sub-tasks: gather pre-reading materials, compile attendee dossiers, and highlight important notes35.)
+
+Generating multiple test cases (variants) for each scenario, including edge cases36 37. For instance, it might vary the customer meeting scenario to test: well-prepared user vs. user with missing info, urgent last-minute request vs. long lead time, etc., to see how the AI copes with each.
+
+Executing the AI through those test cases and capturing its outputs38.
+
+Applying a rubric-based evaluation to each output, scoring it on the dimensions discussed (coverage of requirements, accuracy, contextual relevance, etc.)39 40, and verifying task completion (did the AI actually accomplish what the scenario asked?).
+
+Logging results and identifying failures or gaps, and then feeding that back for improvement41 42. If certain sub-tasks consistently fail or a particular edge case always trips the AI, those insights lead to refining the AI (adjusting prompts, model parameters, or providing more training examples) and/or expanding the test coverage.
+
+Graphically, we can imagine Scenara as an automated test pipeline:
+
+Scenario Intake ➜ Decomposition: Take any complex request and break it into testable pieces (much as a QA engineer would outline test scenarios)43.
+
+Variant Generation: Create many versions of the scenario (normal and edge cases)44.
+
+Test Execution: Run the AI system on each variant, capturing outputs.
+
+Scoring & Verification: Score outputs with a rubric and check whether all sub-tasks were successfully completed45 46.
+
+Report & Learn: Produce an evaluation report with scores, and automatically suggest improvements or adjust prompts for any low-scoring areas (closing the loop)47.
+
+This approach repurposes the best practices of software testing (automation, repeatability, pass/fail criteria) for AI scenarios, with adjustments for AI’s uncertainty. Notably, Scenara introduces several innovations tailored to AI:
+
+Taxonomy-Driven Scenario Analysis: By leveraging a predefined taxonomy of scenario types, it can identify patterns and required steps. For example, knowing what a “customer meeting prep” scenario generally entails (reading materials, dossiers, etc.) lets the system anticipate what the AI’s output should include48 49. This provides ground truth structure in an otherwise open-ended task.
+
+Test Tenant Orchestration: For realistic testing, Scenara can set up a test environment with synthetic or real data50. If an AI needs to fetch info from a knowledge base, the test harness ensures the needed data is present (or simulates it). This is analogous to setting up a sandbox for software tests, ensuring consistent conditions for evaluation.
+
+Rubric & Checklist Evaluation: We don’t rely on a single metric; instead a combination of quantitative scores and qualitative checks form the evaluation. The rubric dimensions were shown in Table 1 and an example rubric snippet shows how we score each aspect 1–551 52. Additionally, a checklist verification ensures binary requirements are met (e.g. “Did the AI provide an answer for each question asked in the prompt?” – yes/no). This mix yields a comprehensive picture of success or failure for each test case.
+
+Continuous Improvement Loop: Scenara is not just a testing tool but a learning system. It can feed the results back into prompt engineering – for example, if the AI consistently misses a step, Scenara could flag that and suggest adding a system message or example to cover it53 54. Over time, this creates a virtuous cycle of prompt refinement and model tuning driven by eval results.
+
+Competitive Advantage: The Scenara framework positions Microsoft at the forefront of tackling AI quality. To our knowledge, few if any industry solutions offer this level of scenario automation and integrated RAI compliance in testing. OpenAI has released OpenAI Evals, an open-source tool to evaluate LLMs with community-contributed tests55, which indicates even AI model makers see the need for standardized benchmarks. Scenara is aligned with that trend but goes further in enterprise integration: it’s built to handle our proprietary Copilot scenarios and enterprise data contexts. By developing this in-house, Microsoft can lead in AI-native engineering assurance, offering not just AI features but the confidence and governance that enterprises demand56.
+
+We also see peers focusing on this problem, validating our approach. Google’s Cloud team recently introduced a Gen AI Evaluation Service for Vertex AI, which allows businesses to evaluate LLM outputs with both automated metrics and human rater loops, and to monitor models in production continuously57 58. This underscores that continuous evaluation is becoming a key part of AI product offerings. Scenara would give Microsoft a robust answer in this space, tailored to our ecosystem. It can become part of our AI platform story – complementing Azure AI’s model hosting and content safety with an evaluation toolkit for ensuring quality and compliance (similar to how Azure offers security compliance tools for regular software).
+
+Industry Example: As an illustration, OpenAI has begun publishing a “model behavior specification” for GPT-4 – essentially a public document on how the AI should behave in various situations59. This can be seen as a form of “AI contract” with users. Scenara enables us to enforce our AI’s behavior spec via testing. Likewise, Anthropic’s Claude model is known for extensive safety testing before release60. With Scenara, we institutionalize such testing, making it repeatable for every build and scenario. The framework could also be extended to incorporate external benchmarks; e.g., we could plug in standard tests from academic benchmarks like Stanford’s HELM (Holistic Evaluation of Language Models) or use Scenara to validate against regulatory standards as they emerge.
+
+How Scenara Addresses the Challenges
+
+Crucially, our proposal’s value lies in directly mitigating the earlier challenges with a cohesive solution. The table below summarizes how Scenara tackles each major challenge:
+
+Table 2: Challenges vs. Scenara Solutions
+
+As shown above, each key challenge is met with a concrete mechanism in our proposal. This tight mapping between pain-points and features gives our pitch compelling narrative: it’s not innovation for its own sake, but a solution explicitly built to solve the known blockers in AI-native development.
+
+Notably, adopting Scenara would allow Microsoft to set a high bar for AI product quality in the industry. We wouldn’t just be addressing these challenges internally; we could turn this capability outward as a competitive advantage. For example, we could offer scenario testing as part of Azure’s AI services – imagine customers being able to test their own AI apps with a version of Scenara, much like they use Azure for deployment and monitoring. This would tie them more deeply to our ecosystem and standards.
+
+Conclusion and Next Steps
+
+In summary, by introducing a comprehensive evaluation framework for AI-native applications, we strengthen our overall proposal and make it far more persuasive for a CVP-level audience. We have outlined how Technical Performance, User Experience, and Responsible AI form the three pillars of AI product evaluation, and how our Scenara framework addresses each through automated, scalable testing of AI scenarios. We’ve highlighted the challenges organizations face (from unpredictable outputs to user trust gaps) and shown how our proposal directly mitigates them – ultimately enabling faster market adoption, greater scalability, improved trust & safety, and smoother internal alignment for AI initiatives.
+
+Scenara aligns tightly with Microsoft’s internal strategy of building AI-first products with confidence and accountability. It embodies the shift to “evaluation-driven development” that leaders across Microsoft are advocating68 69. By investing in this framework, we position Microsoft as a leader in not only creating powerful AI solutions, but doing so in a responsible, enterprise-ready way. This is a message any CVP will appreciate: it’s about innovation with rigor – delivering the next wave of AI capabilities while managing risk and quality proactively.
+
+Next Steps: We propose to pilot Scenara internally on a few high-impact AI-native products (for example, M365 Copilot scenarios or a GitHub Copilot feature update) to demonstrate its value. Early internal pilots will help refine the taxonomy and rubric library for various domains70. As we gather results, we can prepare a compelling case study (e.g. “Copilot Scenario X: before Scenara vs. after Scenara, and how reliability scores improved from 70% to 90%”). The goal would be to showcase these successes at an upcoming executive review.
+
+From there, we can consider scaling the framework across teams and eventually externalizing parts of it. The vision is that down the line, every AI-native app or service we build has an accompanying “evaluation dashboard” powered by Scenara – a living assurance that for any scenario or any improvement we ship, we have the data to back it up. This will not only impress our customers and executives, but truly raise the industry standard for AI product excellence.

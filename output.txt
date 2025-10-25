@@ -1,0 +1,187 @@
+================================================================================
+TOP 20 COLLABORATORS - Fast Keyword-Based Classification
+================================================================================
+
+Initializing Collaborator Discovery Tool...
+Using keyword-based classification (fast, no rate limits)
+Γ£à Using GPT-4.1 (dev-gpt-41-shortco-2025-04-14) for meeting classification [DEFAULT]
+
+Running discovery with Keyword-based...
+--------------------------------------------------------------------------------
+Γ£à Detected Scenara format (50 events)
+≡ƒôà Analyzing calendar collaboration patterns...
+≡ƒôè Loading Graph API data from: graph_collaboration_analysis_20251025_043301.json
+Γ£à Enriching with 10 Graph API People rankings
+Γ£à Analyzing 50 shared document collaborations
+  ≡ƒôä Haidong Zhang: 2 shared documents (+10 points)
+  ≡ƒôä Balaji Shyamkumar: 1 shared documents (+5 points)
+  ≡ƒôä Zhitao Hou: 1 shared documents (+5 points)
+  ≡ƒôä APRD Learning Community: 11 shared documents (+55 points)
+  ≡ƒôä Ivana Jovanovic: 1 shared documents (+5 points)
+  ≡ƒôä Chiquita Kerur: 1 shared documents (+5 points)
+  ≡ƒôä Juan Rosas: 1 shared documents (+5 points)
+  ≡ƒôä MSChina: 1 shared documents (+5 points)
+≡ƒÆ¼ Loading Teams chat data from: teams_chat_analysis_20251026_002211.json
+≡ƒÆ¼ Enriching with 58 Teams chat collaborators
+  ≡ƒÆ¼ Chin-Yew Lin: Chat-only collaborator (16 chats, type=oneOnOne, +96.0 points)
+  ≡ƒÆ¼ Boxuan Chen: 1 chats, recency=2.0x (+3.0 points)
+  ≡ƒÆ¼ Hongye Sun: 1 chats, recency=2.0x (+3.0 points)
+  ≡ƒÆ¼ MM Friday Workshop: Chat-only collaborator (1 chats, type=meeting, +3.0 points)
+  ≡ƒÆ¼ Caroline Mao: 4 chats, recency=2.0x (+12.0 points)
+  ≡ƒÆ¼ Xiaodong Liu: Chat-only collaborator (2 chats, type=oneOnOne, +12.0 points)
+  ≡ƒÆ¼ Haidong Zhang: 4 chats, recency=2.0x (+24.0 points)
+  ≡ƒÆ¼ Dongmei Zhang: 1 chats, recency=2.0x (+3.0 points)
+  ≡ƒÆ¼ Yan Xia: 1 chats, recency=2.0x (+6.0 points)
+  ≡ƒÆ¼ STCA Monthly Extended PLT + Managers : Chat-only collaborator (1 chats, type=meeting, +3.0 points)
+  ≡ƒÆ¼ Evals sync: Chat-only collaborator (1 chats, type=meeting, +3.0 points)
+  ≡ƒÆ¼ Kening Ren: 2 chats, recency=2.0x (+6.0 points)
+  ≡ƒÆ¼ Craig McIntyre: Chat-only collaborator (1 chats, type=meeting, +3.0 points)
+  ≡ƒÆ¼ Organize & Collaborate Golden Prompt DS status: Chat-only collaborator (1 chats, type=meeting, +3.0 points)
+  ≡ƒÆ¼ Coco Li (RANDSTAD NORTH AMERICA INC): Chat-only collaborator (2 chats, type=oneOnOne, +12.0 points)
+  ≡ƒÆ¼ Saulo Veronesi: Chat-only collaborator (1 chats, type=group, +3.0 points)
+  ≡ƒÆ¼ Benjamin Chrepta: Chat-only collaborator (1 chats, type=oneOnOne, +6.0 points)
+  ≡ƒÆ¼ Hans Endresen: Chat-only collaborator (1 chats, type=meeting, +3.0 points)
+  ≡ƒÆ¼ Darrin Eide: Chat-only collaborator (1 chats, type=group, +3.0 points)
+  ≡ƒÆ¼ Balaji Shyamkumar: 2 chats, recency=2.0x (+6.0 points)
+  ≡ƒÆ¼ Evals sync: 1 chats, recency=2.0x (+3.0 points)
+  ≡ƒÆ¼ Biao Cheng: Chat-only collaborator (1 chats, type=oneOnOne, +6.0 points)
+  ≡ƒÆ¼ Prepare.AI Status Review: Chat-only collaborator (1 chats, type=meeting, +3.0 points)
+  ≡ƒÆ¼ Copilot Offline Eval ΓÇô Platform update and Customer feedback: Chat-only collaborator (1 chats, type=meeting, +3.0 points)
+  ≡ƒÆ¼ Agentic Memory Collaboration with MSR Jianfeng: Chat-only collaborator (1 chats, type=meeting, +3.0 points)
+  ≡ƒÆ¼ AI Roadmap for T+P: Chat-only collaborator (1 chats, type=group, +3.0 points)
+  ≡ƒÆ¼ C.AI Organize + Collaborate | Pillar Review: Chat-only collaborator (1 chats, type=meeting, +3.0 points)
+  ≡ƒÆ¼ Kathy Liu: 1 chats, recency=2.0x (+6.0 points)
+  ≡ƒÆ¼ Jue Zhang: 1 chats, recency=2.0x (+3.0 points)
+  ≡ƒÆ¼ Yide Tu: Chat-only collaborator (1 chats, type=oneOnOne, +6.0 points)
+  ≡ƒÆ¼ Weiwei Cui: 1 chats, recency=2.0x (+3.0 points)
+  ≡ƒÆ¼ Meeting Prep STCA Sync: Chat-only collaborator (1 chats, type=meeting, +3.0 points)
+  ≡ƒÆ¼ Jason Cordero: Chat-only collaborator (1 chats, type=meeting, +3.0 points)
+  ≡ƒÆ¼ Pratibha Permandla: 1 chats, recency=2.0x (+3.0 points)
+  ≡ƒÆ¼ Izabela Witoszko: Chat-only collaborator (1 chats, type=meeting, +3.0 points)
+  ≡ƒÆ¼ Cindy Kwan: 1 chats, recency=2.0x (+6.0 points)
+  ≡ƒÆ¼ Ricardo Rosales Guerrero: 1 chats, recency=2.0x (+3.0 points)
+  ≡ƒÆ¼ Legend Zhu: Chat-only collaborator (1 chats, type=meeting, +3.0 points)
+  ≡ƒÆ¼ M365 Chat Responding/Synthesis Office Hours (EAST) [Mainline & DAs]: Chat-only collaborator (1 chats, type=meeting, +3.0 points)
+  ≡ƒÆ¼ Data Director Hiring Discussion: Chat-only collaborator (1 chats, type=group, +3.0 points)
+  ≡ƒÆ¼ discuss evals approach: Chat-only collaborator (1 chats, type=meeting, +3.0 points)
+  ≡ƒÆ¼ Ian Liu (M365): 2 chats, recency=2.0x (+6.0 points)
+  ≡ƒÆ¼ Mahmoud Adada: Chat-only collaborator (1 chats, type=meeting, +3.0 points)
+  ≡ƒÆ¼ 1-1 syn with CY on Agent: Chat-only collaborator (1 chats, type=meeting, +3.0 points)
+  ≡ƒÆ¼ Charlie Chung: 1 chats, recency=2.0x (+6.0 points)
+  ≡ƒÆ¼ Xin Ma: Chat-only collaborator (1 chats, type=oneOnOne, +6.0 points)
+  ≡ƒÆ¼ 1-1 with CY on meeting prep: Chat-only collaborator (1 chats, type=meeting, +3.0 points)
+  ≡ƒÆ¼ Anson Ho: Chat-only collaborator (1 chats, type=meeting, +3.0 points)
+  ≡ƒÆ¼ Allan Howard: Chat-only collaborator (1 chats, type=group, +3.0 points)
+  ≡ƒÆ¼ Yinzhe Zhang (RANDSTAD NORTH AMERICA INC): Chat-only collaborator (1 chats, type=oneOnOne, +6.0 points)
+  ≡ƒÆ¼ discuss priority calendar/user priorities: Chat-only collaborator (1 chats, type=meeting, +3.0 points)
+  ≡ƒÆ¼ Copilot Offline Eval - Platform update and Customer feedback: Chat-only collaborator (1 chats, type=meeting, +3.0 points)
+  ≡ƒÆ¼ Naifei Pan: Chat-only collaborator (1 chats, type=oneOnOne, +6.0 points)
+  ≡ƒÆ¼ Ali Niknejad: 1 chats, recency=2.0x (+6.0 points)
+  ≡ƒÆ¼ Ben Carter: 1 chats, recency=2.0x (+3.0 points)
+  ≡ƒÆ¼ BizChat Monthly Service Review: Chat-only collaborator (1 chats, type=meeting, +3.0 points)
+  ≡ƒÆ¼ Ravi Jaiswal: 1 chats, recency=2.0x (+3.0 points)
+  ≡ƒÆ¼ Serene Zhuo: Chat-only collaborator (1 chats, type=group, +3.0 points)
+Γ£¿ Discovered 38 ad hoc chat-only collaborators (no calendar meetings)
+≡ƒôä Loading document collaboration data from: document_collaboration_analysis_20251026_014224.json
+≡ƒôä Enriching with 5 document sharing collaborators
+  ≡ƒôä Haidong Zhang: OneDrive(0/0), Chat(1/7), 5 days, last=3d (+103 points)
+  ≡ƒôä Zhitao Hou: OneDrive(0/0), Chat(0/7), 4 days, last=16d (+81 points)
+  ≡ƒôä Vani Soff: OneDrive(0/0), Chat(4/0), 2 days, last=3d (+73 points)
+  ≡ƒôä Qiang Huo: OneDrive(0/0), Chat(1/0), 1 days, last=27d (+27 points)
+  ≡ƒôä Danqing Huang: Document-only collaborator (OneDrive: 0/1, Chat: 0/0, +10 points)
+Γ£¿ Discovered 1 document-only collaborators (no calendar meetings or chats)
+≡ƒÄ» Ranking collaborators with multi-source data fusion...
+
+   DEBUG no_evidence for Eran Yariv:
+     chat_only_flag=False, doc_only_flag=False, graph_verified=False
+     1:1=0, organized=0, small=0, genuine=1
+
+   DEBUG no_evidence for Danny Avigdor:
+     chat_only_flag=False, doc_only_flag=False, graph_verified=False
+     1:1=0, organized=0, small=0, genuine=1
+
+   DEBUG no_evidence for Nir Amar:
+     chat_only_flag=False, doc_only_flag=False, graph_verified=False
+     1:1=0, organized=0, small=0, genuine=1
+
+   DEBUG chat-only: Chin-Yew Lin
+     chat_only_flag=True, has_genuine_collab=None
+     has_genuine_collaboration=True
+
+   === CHIN-YEW LIN DEBUG ===
+   has_calendar_evidence=False, has_chat_evidence=True
+   is_multi_source_only=True
+   has_genuine_collaboration=True
+   is_system_account=False
+   final_score=0
+   confidence=0.4
+   passes_filter=False
+   === END DEBUG ===
+
+
+   DEBUG chat-only: MM Friday Workshop
+     chat_only_flag=True, has_genuine_collab=None
+     has_genuine_collaboration=True
+
+   DEBUG chat-only: Xiaodong Liu
+     chat_only_flag=True, has_genuine_collab=None
+     has_genuine_collaboration=True
+     has_genuine_collaboration=True
+     has_genuine_collaboration=True
+     has_genuine_collaboration=True
+     has_genuine_collaboration=True
+     has_genuine_collaboration=True
+     has_genuine_collaboration=True
+     has_genuine_collaboration=True
+     has_genuine_collaboration=True
+     has_genuine_collaboration=True
+     has_genuine_collaboration=True
+     has_genuine_collaboration=True
+     has_genuine_collaboration=True
+     has_genuine_collaboration=True
+     has_genuine_collaboration=True
+     has_genuine_collaboration=True
+     has_genuine_collaboration=True
+     has_genuine_collaboration=True
+     has_genuine_collaboration=True
+     has_genuine_collaboration=True
+     has_genuine_collaboration=True
+     has_genuine_collaboration=True
+     has_genuine_collaboration=True
+     has_genuine_collaboration=True
+     has_genuine_collaboration=True
+     has_genuine_collaboration=True
+     has_genuine_collaboration=True
+     has_genuine_collaboration=True
+     has_genuine_collaboration=True
+     has_genuine_collaboration=True
+     has_genuine_collaboration=True
+     has_genuine_collaboration=True
+     has_genuine_collaboration=True
+     has_genuine_collaboration=True
+     has_genuine_collaboration=True
+     has_genuine_collaboration=True
+
+ΓÜá∩╕Å Filtered 2431 potential collaborators:
+   - too_few_meetings: 1546
+   - no_evidence: 833
+   - system_account: 3
+   - low_score: 37
+   - low_confidence: 9
+   - chat_only_processed: 3
+
+================================================================================
+TOP 20 COLLABORATORS (out of 0 total)
+================================================================================
+
+
+================================================================================
+SUMMARY STATISTICS
+================================================================================
+Total Collaborators Found: 0
+Classification Method: Keyword-based (70-80% accuracy)
+Note: LLM classification would provide 95-99% accuracy but hits rate limits
+
+Detailed results saved to: top_20_collaborators_keyword.json
+================================================================================
+

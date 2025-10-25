@@ -1,0 +1,279 @@
+{
+  "timestamp": "2025-10-21T18:10:31.383352",
+  "user_email": "john.doe@company.com",
+  "notes": [
+    {
+      "note": "Working on Priority Calendar project with advanced meeting intelligence",
+      "category": "WORK_RELATED",
+      "title": "Priority Calendar Project Progress",
+      "temporal_durability": "TEMPORAL_MEDIUM_LIVED",
+      "timestamp": "2025-10-20T18:10:31.383283",
+      "confidence": 0.9,
+      "source": "Teams/Outlook",
+      "metadata": {
+        "project": "Priority Calendar",
+        "team": "Productivity AI"
+      }
+    },
+    {
+      "note": "Leading LLM integration initiative for enterprise productivity tools",
+      "category": "WORK_RELATED",
+      "title": "LLM Integration Leadership",
+      "temporal_durability": "TEMPORAL_LONG_LIVED",
+      "timestamp": "2025-10-18T18:10:31.383283",
+      "confidence": 0.9,
+      "source": "Teams/Outlook",
+      "metadata": {
+        "project": "Priority Calendar",
+        "team": "Productivity AI"
+      }
+    },
+    {
+      "note": "Collaborating with Microsoft Graph team on calendar API enhancements",
+      "category": "WORK_RELATED",
+      "title": "Graph API Collaboration",
+      "temporal_durability": "TEMPORAL_SHORT_LIVED",
+      "timestamp": "2025-10-16T18:10:31.383283",
+      "confidence": 0.9,
+      "source": "Teams/Outlook",
+      "metadata": {
+        "project": "Priority Calendar",
+        "team": "Productivity AI"
+      }
+    },
+    {
+      "note": "Developing meeting intelligence frameworks for large organizations",
+      "category": "WORK_RELATED",
+      "title": "Meeting Intelligence Development",
+      "temporal_durability": "TEMPORAL_MEDIUM_LIVED",
+      "timestamp": "2025-10-14T18:10:31.383283",
+      "confidence": 0.9,
+      "source": "Teams/Outlook",
+      "metadata": {
+        "project": "Priority Calendar",
+        "team": "Productivity AI"
+      }
+    },
+    {
+      "note": "Researching AI-powered productivity optimization solutions",
+      "category": "WORK_RELATED",
+      "title": "AI Productivity Research",
+      "temporal_durability": "TEMPORAL_LONG_LIVED",
+      "timestamp": "2025-10-11T18:10:31.383283",
+      "confidence": 0.9,
+      "source": "Teams/Outlook",
+      "metadata": {
+        "project": "Priority Calendar",
+        "team": "Productivity AI"
+      }
+    },
+    {
+      "note": "Expert in calendar intelligence and meeting optimization algorithms",
+      "category": "EXPERTISE",
+      "title": "Calendar Intelligence Expertise",
+      "temporal_durability": "TEMPORAL_LONG_LIVED",
+      "timestamp": "2025-10-19T18:10:31.383283",
+      "confidence": 0.95,
+      "source": "Performance Reviews/Feedback",
+      "metadata": {
+        "skill_level": "Expert",
+        "years_experience": "5+"
+      }
+    },
+    {
+      "note": "Deep knowledge of Microsoft Graph API and Office 365 integrations",
+      "category": "EXPERTISE",
+      "title": "Graph API Expertise",
+      "temporal_durability": "TEMPORAL_LONG_LIVED",
+      "timestamp": "2025-10-17T18:10:31.383283",
+      "confidence": 0.95,
+      "source": "Performance Reviews/Feedback",
+      "metadata": {
+        "skill_level": "Expert",
+        "years_experience": "5+"
+      }
+    },
+    {
+      "note": "Specialist in AI/ML integration for enterprise productivity solutions",
+      "category": "EXPERTISE",
+      "title": "AI/ML Integration Specialist",
+      "temporal_durability": "TEMPORAL_LONG_LIVED",
+      "timestamp": "2025-10-15T18:10:31.383283",
+      "confidence": 0.95,
+      "source": "Performance Reviews/Feedback",
+      "metadata": {
+        "skill_level": "Expert",
+        "years_experience": "5+"
+      }
+    },
+    {
+      "note": "Proficient in Python development and LLM framework integration",
+      "category": "EXPERTISE",
+      "title": "Python & LLM Development",
+      "temporal_durability": "TEMPORAL_LONG_LIVED",
+      "timestamp": "2025-10-13T18:10:31.383283",
+      "confidence": 0.95,
+      "source": "Performance Reviews/Feedback",
+      "metadata": {
+        "skill_level": "Expert",
+        "years_experience": "5+"
+      }
+    },
+    {
+      "note": "Prefers morning meetings for strategic discussions and decision-making",
+      "category": "BEHAVIORAL_PATTERN",
+      "title": "Morning Strategic Preference",
+      "temporal_durability": "TEMPORAL_LONG_LIVED",
+      "timestamp": "2025-10-09T18:10:31.383283",
+      "confidence": 0.85,
+      "source": "Meeting Transcripts/Behavioral Analysis",
+      "metadata": {
+        "pattern_strength": "Strong",
+        "frequency": "Consistent"
+      }
+    },
+    {
+      "note": "Carefully analyzes options before making critical decisions",
+      "category": "BEHAVIORAL_PATTERN",
+      "title": "Analytical Decision Style",
+      "temporal_durability": "TEMPORAL_LONG_LIVED",
+      "timestamp": "2025-10-06T18:10:31.383283",
+      "confidence": 0.85,
+      "source": "Meeting Transcripts/Behavioral Analysis",
+      "metadata": {
+        "pattern_strength": "Strong",
+        "frequency": "Consistent"
+      }
+    },
+    {
+      "note": "Values detailed preparation for important meetings",
+      "category": "BEHAVIORAL_PATTERN",
+      "title": "Preparation-Focused Approach",
+      "temporal_durability": "TEMPORAL_LONG_LIVED",
+      "timestamp": "2025-10-03T18:10:31.383283",
+      "confidence": 0.85,
+      "source": "Meeting Transcripts/Behavioral Analysis",
+      "metadata": {
+        "pattern_strength": "Strong",
+        "frequency": "Consistent"
+      }
+    },
+    {
+      "note": "Prefers collaborative problem-solving over individual work",
+      "category": "BEHAVIORAL_PATTERN",
+      "title": "Collaborative Work Style",
+      "temporal_durability": "TEMPORAL_LONG_LIVED",
+      "timestamp": "2025-10-01T18:10:31.383283",
+      "confidence": 0.85,
+      "source": "Meeting Transcripts/Behavioral Analysis",
+      "metadata": {
+        "pattern_strength": "Strong",
+        "frequency": "Consistent"
+      }
+    },
+    {
+      "note": "Passionate about productivity optimization and time management",
+      "category": "INTERESTS",
+      "title": "Productivity Optimization Interest",
+      "temporal_durability": "TEMPORAL_LONG_LIVED",
+      "timestamp": "2025-10-07T18:10:31.383283",
+      "confidence": 0.8,
+      "source": "Search History/Document Access",
+      "metadata": {
+        "interest_level": "High",
+        "engagement": "Active"
+      }
+    },
+    {
+      "note": "Interested in enterprise AI applications and automation",
+      "category": "INTERESTS",
+      "title": "Enterprise AI Interest",
+      "temporal_durability": "TEMPORAL_MEDIUM_LIVED",
+      "timestamp": "2025-10-05T18:10:31.383283",
+      "confidence": 0.8,
+      "source": "Search History/Document Access",
+      "metadata": {
+        "interest_level": "High",
+        "engagement": "Active"
+      }
+    },
+    {
+      "note": "Follows developments in calendar intelligence and smart scheduling",
+      "category": "INTERESTS",
+      "title": "Calendar Intelligence Interest",
+      "temporal_durability": "TEMPORAL_LONG_LIVED",
+      "timestamp": "2025-09-29T18:10:31.383283",
+      "confidence": 0.8,
+      "source": "Search History/Document Access",
+      "metadata": {
+        "interest_level": "High",
+        "engagement": "Active"
+      }
+    },
+    {
+      "note": "Enjoys learning about Microsoft Graph ecosystem and APIs",
+      "category": "INTERESTS",
+      "title": "Graph Ecosystem Interest",
+      "temporal_durability": "TEMPORAL_MEDIUM_LIVED",
+      "timestamp": "2025-09-26T18:10:31.383283",
+      "confidence": 0.8,
+      "source": "Search History/Document Access",
+      "metadata": {
+        "interest_level": "High",
+        "engagement": "Active"
+      }
+    },
+    {
+      "note": "Recent discussion with Jane Smith about Priority Calendar integration timeline",
+      "category": "FOLLOW_UPS",
+      "title": "Jane Smith Follow-up",
+      "temporal_durability": "TEMPORAL_SHORT_LIVED",
+      "timestamp": "2025-10-19T18:10:31.383283",
+      "confidence": 0.9,
+      "source": "Email/Teams Messages",
+      "metadata": {
+        "urgency": "Medium",
+        "status": "Pending"
+      }
+    },
+    {
+      "note": "Action item: Review LLM integration proposal with AI team by Friday",
+      "category": "FOLLOW_UPS",
+      "title": "AI Team Review Action",
+      "temporal_durability": "TEMPORAL_SHORT_LIVED",
+      "timestamp": "2025-10-17T18:10:31.383283",
+      "confidence": 0.9,
+      "source": "Email/Teams Messages",
+      "metadata": {
+        "urgency": "Medium",
+        "status": "Pending"
+      }
+    },
+    {
+      "note": "Follow up with Graph API team on calendar enhancement specifications",
+      "category": "FOLLOW_UPS",
+      "title": "Graph Team Follow-up",
+      "temporal_durability": "TEMPORAL_SHORT_LIVED",
+      "timestamp": "2025-10-15T18:10:31.383283",
+      "confidence": 0.9,
+      "source": "Email/Teams Messages",
+      "metadata": {
+        "urgency": "Medium",
+        "status": "Pending"
+      }
+    },
+    {
+      "note": "Pending response to meeting intelligence framework documentation review",
+      "category": "FOLLOW_UPS",
+      "title": "Documentation Review Pending",
+      "temporal_durability": "TEMPORAL_SHORT_LIVED",
+      "timestamp": "2025-10-13T18:10:31.383283",
+      "confidence": 0.9,
+      "source": "Email/Teams Messages",
+      "metadata": {
+        "urgency": "Medium",
+        "status": "Pending"
+      }
+    }
+  ]
+}

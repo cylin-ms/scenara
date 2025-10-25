@@ -1,0 +1,2587 @@
+{
+  "generatedAt": "2025-10-25T20:29:12Z",
+  "startUtc": "2025-04-01T00:00:00+00:00",
+  "endUtc": "2025-10-26T00:00:00+00:00",
+  "timeZone": "Asia/Shanghai",
+  "mailbox": null,
+  "top": 50,
+  "totalEvents": 92,
+  "events": [
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAHnNco/Q==\"",
+      "id": "AAkBOQAICN1wsCVewAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAAB6VysXsAABA=",
+      "subject": "BizChat Exp Scrum - Part I",
+      "bodyPreview": "",
+      "seriesMasterId": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHpXKxewAA",
+      "showAs": "busy",
+      "type": "exception",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkBOQAICN1wsCVewAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAAB6VysXsAABA%3D&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "notResponded",
+        "time": "0001-01-01T00:00:00Z"
+      },
+      "start": {
+        "dateTime": "2025-04-01T14:35:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-04-01T15:05:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Xiuge Cheng",
+          "address": "xiugecheng@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAHpEnZlw==\"",
+      "id": "AAkBOQAICN1wsCVewAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAAB2OoHJsAABA=",
+      "subject": "Zhouyu 1-1",
+      "bodyPreview": "Hi Zhuoyu,\r\n\r\n\r\n\r\nLet's use this time to have our weekly 1-1.\r\n\r\n\r\n\r\nBest,\r\n\r\n\r\n\r\nCY\r\n\r\n\r\n\r\n________________________________________________________________________________\r\nMicrosoft Teams meeting Need help?\r\nJoin: https://teams.microsoft.com/meet/266679",
+      "seriesMasterId": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHY6gcmwAA",
+      "showAs": "busy",
+      "type": "occurrence",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkBOQAICN1wsCVewAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAAB2OoHJsAABA%3D&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "organizer",
+        "time": "0001-01-01T00:00:00Z"
+      },
+      "start": {
+        "dateTime": "2025-04-01T15:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-04-01T15:30:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Chin-Yew Lin",
+          "address": "cyl@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAHciMSyQ==\"",
+      "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHepbd_wAA",
+      "subject": "Discuss New Project Proposal",
+      "bodyPreview": "Hi leaders,\r\n\r\n\r\n\r\nWe need to nail down what we want to propose. Please make your time to join this meeting.\r\n\r\n\r\n\r\nFor having a more meaningful discussion, please share your ideas in the Teams channel so we don't need to start from scratch.\r\n\r\n\r\n\r\nBest,",
+      "seriesMasterId": null,
+      "showAs": "busy",
+      "type": "singleInstance",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkALgAAAAAAHYQDEapmEc2byACqAC%2FEWg0A%2BkGCLFUuv0KY0MFe0YQo0AAHepbd%2BwAA&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "organizer",
+        "time": "0001-01-01T00:00:00Z"
+      },
+      "start": {
+        "dateTime": "2025-04-01T16:30:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-04-01T17:30:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Chin-Yew Lin",
+          "address": "cyl@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAHfi9aAQ==\"",
+      "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHepeW_wAA",
+      "subject": "Urgent PR process change",
+      "bodyPreview": "@Haidong and @Chin-Yew, please attend this important meeting. Thanks.\r\n\r\n-----Original Appointment-----\r\nFrom: Ian Liu (M365) <ianyiqunliu@microsoft.com>\r\nSent: Tuesday, April 1, 2025 11:59 PM\r\nTo: Ian Liu (M365); Bin Fang; Charles Zhu; Daniel Chu; Oliver",
+      "seriesMasterId": null,
+      "showAs": "busy",
+      "type": "singleInstance",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkALgAAAAAAHYQDEapmEc2byACqAC%2FEWg0A%2BkGCLFUuv0KY0MFe0YQo0AAHepeW%2BwAA&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "accepted",
+        "time": "2025-04-02T09:01:07.5873546+08:00"
+      },
+      "start": {
+        "dateTime": "2025-04-02T11:05:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-04-02T11:30:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Ian Liu (M365)",
+          "address": "ianyiqunliu@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAHciMMjg==\"",
+      "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHepXnXQAA",
+      "subject": "Brownbag for MAI-A on SWE agents",
+      "bodyPreview": "Description:\r\n\r\nThe MAI-A Code Agent V-team is spearheading an effort to integrate and adopt AI code agents into our daily development workflow to boost productivity. During this presentation, we will share the latest progress on adoption, delve into the ",
+      "seriesMasterId": null,
+      "showAs": "busy",
+      "type": "singleInstance",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkALgAAAAAAHYQDEapmEc2byACqAC%2FEWg0A%2BkGCLFUuv0KY0MFe0YQo0AAHepXnXQAA&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "accepted",
+        "time": "2025-03-31T13:26:46.2193364+08:00"
+      },
+      "start": {
+        "dateTime": "2025-04-02T14:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-04-02T15:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Qi Zhang",
+          "address": "Zhang.Qi@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAH9U28wQ==\"",
+      "id": "AAkBOQAICN1xeU-IgAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAAB3qV9VcAABA=",
+      "subject": "Bi-weekly 1:1 Chin-Yew | Dongmei",
+      "bodyPreview": "________________________________________________________________________________\r\nMicrosoft Teams meeting Need help?\r\nJoin: https://teams.microsoft.com/meet/237238978168?p=eERBJWMerZVWyY3spF\r\nMeeting ID: 237 238 978 168\r\nPasscode: 7YZ64LW3\r\n____________",
+      "seriesMasterId": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHepX1VwAA",
+      "showAs": "busy",
+      "type": "exception",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkBOQAICN1xeU%2FIgAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAAB3qV9VcAABA%3D&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "accepted",
+        "time": "2025-03-31T17:57:08.0090093+08:00"
+      },
+      "start": {
+        "dateTime": "2025-04-02T15:05:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-04-02T15:30:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Dongmei Zhang",
+          "address": "dongmeiz@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAHciOlFw==\"",
+      "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHepgLygAA",
+      "subject": "1-1 Quick Sync on DevUI",
+      "bodyPreview": "Zili,\r\n\r\nLet me know if this time works for you.\r\n\r\nCY\r\n\r\n________________________________________________________________________________\r\nMicrosoft Teams meeting Need help?\r\nJoin: https://teams.microsoft.com/meet/427092427137?p=Ecu5PHBEWgsN0Yi7UF\r\nMeeti",
+      "seriesMasterId": null,
+      "showAs": "busy",
+      "type": "singleInstance",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkALgAAAAAAHYQDEapmEc2byACqAC%2FEWg0A%2BkGCLFUuv0KY0MFe0YQo0AAHepgLygAA&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "organizer",
+        "time": "0001-01-01T00:00:00Z"
+      },
+      "start": {
+        "dateTime": "2025-04-02T18:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-04-02T18:30:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Chin-Yew Lin",
+          "address": "cyl@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAHdRQlKQ==\"",
+      "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHeXbgvwAA",
+      "subject": "Follow up on the AI agent review",
+      "bodyPreview": "________________________________________________________________________________\r\nMicrosoft Teams meeting Need help?\r\nJoin: https://teams.microsoft.com/meet/24603073684?p=zZ1QpFSVPC77ESVHSn\r\nMeeting ID: 246 030 736 84\r\nPasscode: hm38ot72\r\n______________",
+      "seriesMasterId": null,
+      "showAs": "busy",
+      "type": "singleInstance",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkALgAAAAAAHYQDEapmEc2byACqAC%2FEWg0A%2BkGCLFUuv0KY0MFe0YQo0AAHeXbgvwAA&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "accepted",
+        "time": "2025-04-02T16:22:56.2752316+08:00"
+      },
+      "start": {
+        "dateTime": "2025-04-03T16:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-04-03T16:30:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Xiuge Cheng",
+          "address": "xiugecheng@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAHdhf7eA==\"",
+      "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHUW44dQAA",
+      "subject": "50th Anniversary Employee Celebration",
+      "bodyPreview": "Join Satya and surprise guests as we celebrate 50 bold, groundbreaking, and unforgettable years—and the changemakers who don’t just dream about the future but build it.\r\n\r\nAs part of the festivities, you’ll hear from Microsoft leaders, past and present. M",
+      "seriesMasterId": null,
+      "showAs": "busy",
+      "type": "singleInstance",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkALgAAAAAAHYQDEapmEc2byACqAC%2FEWg0A%2BkGCLFUuv0KY0MFe0YQo0AAHUW44dQAA&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "accepted",
+        "time": "2025-03-15T08:03:30.2984366+08:00"
+      },
+      "start": {
+        "dateTime": "2025-04-05T00:30:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-04-05T02:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Employee News & Events",
+          "address": "employee@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAHpEnZlw==\"",
+      "id": "AAkBOQAICN12ME5DAAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAAB2OoHJsAABA=",
+      "subject": "Zhouyu 1-1",
+      "bodyPreview": "Hi Zhuoyu,\r\n\r\n\r\n\r\nLet's use this time to have our weekly 1-1.\r\n\r\n\r\n\r\nBest,\r\n\r\n\r\n\r\nCY\r\n\r\n\r\n\r\n________________________________________________________________________________\r\nMicrosoft Teams meeting Need help?\r\nJoin: https://teams.microsoft.com/meet/266679",
+      "seriesMasterId": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHY6gcmwAA",
+      "showAs": "busy",
+      "type": "occurrence",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkBOQAICN12ME5DAAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAAB2OoHJsAABA%3D&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "organizer",
+        "time": "0001-01-01T00:00:00Z"
+      },
+      "start": {
+        "dateTime": "2025-04-08T15:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-04-08T15:30:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Chin-Yew Lin",
+          "address": "cyl@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAHeI6Shg==\"",
+      "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHgCmbqQAA",
+      "subject": "Discuss on proposals",
+      "bodyPreview": "________________________________________________________________________________\r\nMicrosoft Teams meeting Need help?\r\nJoin: https://teams.microsoft.com/meet/2358074121457?p=wD1aoAbVp8r1RilJXW\r\nMeeting ID: 235 807 412 145 7\r\nPasscode: 2Rh6c6u6\r\n_____",
+      "seriesMasterId": null,
+      "showAs": "busy",
+      "type": "singleInstance",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkALgAAAAAAHYQDEapmEc2byACqAC%2FEWg0A%2BkGCLFUuv0KY0MFe0YQo0AAHgCmbqQAA&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "accepted",
+        "time": "2025-04-08T14:05:51.7138266+08:00"
+      },
+      "start": {
+        "dateTime": "2025-04-08T16:05:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-04-08T16:30:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Sally Xiong",
+          "address": "sallyxiong@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAHeQX4sg==\"",
+      "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHIOF0FAAA",
+      "subject": "ERG Engage",
+      "bodyPreview": "ERG Engage—the companywide voluntary experience for all of us at Microsoft to engage with our Employee Resource Groups (ERGs) and learn more about how we can include, innovate, and act —returns April 9, 2025!\r\n\r\nJoin us and the extraordinary lineup of ind",
+      "seriesMasterId": null,
+      "showAs": "busy",
+      "type": "singleInstance",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkALgAAAAAAHYQDEapmEc2byACqAC%2FEWg0A%2BkGCLFUuv0KY0MFe0YQo0AAHIOF0FAAA&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "accepted",
+        "time": "2025-04-09T00:06:40.5878713+08:00"
+      },
+      "start": {
+        "dateTime": "2025-04-09T23:15:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-04-10T07:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Employee News & Events",
+          "address": "employee@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAHemQwtg==\"",
+      "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHUW40OwAA",
+      "subject": "ERG Engage – replay option 1",
+      "bodyPreview": "If you miss any sessions, don't worry! You can catch up by watching the replay.\r\n\r\nThis online event is designed to deepen awareness and foster engagement around diversity and inclusion, where you'll have the opportunity to connect with the nine companywi",
+      "seriesMasterId": null,
+      "showAs": "busy",
+      "type": "singleInstance",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkALgAAAAAAHYQDEapmEc2byACqAC%2FEWg0A%2BkGCLFUuv0KY0MFe0YQo0AAHUW40OwAA&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "accepted",
+        "time": "2025-04-09T00:11:52.8708317+08:00"
+      },
+      "start": {
+        "dateTime": "2025-04-10T15:15:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-04-10T22:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Employee News & Events",
+          "address": "employee@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAHemQwUA==\"",
+      "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHUW40VAAA",
+      "subject": "ERG Engage – replay option 2",
+      "bodyPreview": "Ensure you don't miss out on any valuable insights by rewatching the sessions you couldn't attend at ERG Engage.\r\n\r\n This online event is designed to deepen awareness and foster engagement around diversity and inclusion, where you'll have the opportunity ",
+      "seriesMasterId": null,
+      "showAs": "busy",
+      "type": "singleInstance",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkALgAAAAAAHYQDEapmEc2byACqAC%2FEWg0A%2BkGCLFUuv0KY0MFe0YQo0AAHUW40VAAA&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "accepted",
+        "time": "2025-04-09T00:12:57.3809946+08:00"
+      },
+      "start": {
+        "dateTime": "2025-04-11T08:15:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-04-11T15:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Employee News & Events",
+          "address": "employee@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAHfJCnpw==\"",
+      "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHgQdXqAAA",
+      "subject": "Follow up on the AI agent review deck",
+      "bodyPreview": "________________________________________________________________________________\r\nMicrosoft Teams meeting Need help?\r\nJoin: https://teams.microsoft.com/meet/2843423190736?p=EGCGU2VxrEDHiSBHQv\r\nMeeting ID: 284 342 319 073 6\r\nPasscode: rR7Ty7Lb\r\n_________",
+      "seriesMasterId": null,
+      "showAs": "busy",
+      "type": "singleInstance",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkALgAAAAAAHYQDEapmEc2byACqAC%2FEWg0A%2BkGCLFUuv0KY0MFe0YQo0AAHgQdXqAAA&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "accepted",
+        "time": "2025-04-12T18:11:02.5224629+08:00"
+      },
+      "start": {
+        "dateTime": "2025-04-14T10:15:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-04-14T10:55:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Xiuge Cheng",
+          "address": "xiugecheng@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAHpEnZlw==\"",
+      "id": "AAkBOQAICN17sHcnQAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAAB2OoHJsAABA=",
+      "subject": "Zhouyu 1-1",
+      "bodyPreview": "Hi Zhuoyu,\r\n\r\n\r\n\r\nLet's use this time to have our weekly 1-1.\r\n\r\n\r\n\r\nBest,\r\n\r\n\r\n\r\nCY\r\n\r\n\r\n\r\n________________________________________________________________________________\r\nMicrosoft Teams meeting Need help?\r\nJoin: https://teams.microsoft.com/meet/266679",
+      "seriesMasterId": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHY6gcmwAA",
+      "showAs": "busy",
+      "type": "occurrence",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkBOQAICN17sHcnQAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAAB2OoHJsAABA%3D&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "organizer",
+        "time": "0001-01-01T00:00:00Z"
+      },
+      "start": {
+        "dateTime": "2025-04-15T15:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-04-15T15:30:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Chin-Yew Lin",
+          "address": "cyl@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAHfQK0Tg==\"",
+      "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHhYHbzwAA",
+      "subject": "DKI LT sync up",
+      "bodyPreview": "Update the meeting room as 13158.\r\n\r\nSetup this meeting for 4/16 11:05 @ 13158 meeting room\r\nLet Xin know if need any change.\r\nBr, Xin\r\n________________________________________________________________________________\r\nMicrosoft Teams Need help?\r\nJoin the ",
+      "seriesMasterId": null,
+      "showAs": "busy",
+      "type": "singleInstance",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkALgAAAAAAHYQDEapmEc2byACqAC%2FEWg0A%2BkGCLFUuv0KY0MFe0YQo0AAHhYHbzwAA&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "accepted",
+        "time": "2025-04-15T16:54:05.8587634+08:00"
+      },
+      "start": {
+        "dateTime": "2025-04-16T11:05:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-04-16T12:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Dongmei Zhang",
+          "address": "dongmeiz@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAHfw6oiw==\"",
+      "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHhYH_-gAA",
+      "subject": "Productivity meeting (talk about the AI-powered productivity KRs and initiatives)",
+      "bodyPreview": "Setup this meeting per Dongmei’s suggestion, let’s “make it 90 mins and each LT member will have 5 minutes to talk about the AI-powered productivity KRs and initiatives.”\r\nLet Xin Feng know if need any change.\r\nBr, Xin\r\n___________________________________",
+      "seriesMasterId": null,
+      "showAs": "busy",
+      "type": "singleInstance",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkALgAAAAAAHYQDEapmEc2byACqAC%2FEWg0A%2BkGCLFUuv0KY0MFe0YQo0AAHhYH%2B%2FgAA&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "accepted",
+        "time": "2025-04-15T16:53:59.8524791+08:00"
+      },
+      "start": {
+        "dateTime": "2025-04-17T15:05:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-04-17T16:30:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Dongmei Zhang",
+          "address": "dongmeiz@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAHfw6pVQ==\"",
+      "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHhq916AAA",
+      "subject": "Learn from you about quality improvement for content generation",
+      "bodyPreview": "Hi @Chin-Yew, our team is working on Excel Copilot start to generate table using LLM. We're seeking good ways/solutions to improve the table generation quality. Do you have some free time today when I want to have a quick sync up to learn from your sugges",
+      "seriesMasterId": null,
+      "showAs": "busy",
+      "type": "singleInstance",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkALgAAAAAAHYQDEapmEc2byACqAC%2FEWg0A%2BkGCLFUuv0KY0MFe0YQo0AAHhq916AAA&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "accepted",
+        "time": "2025-04-17T10:47:08.8131184+08:00"
+      },
+      "start": {
+        "dateTime": "2025-04-18T10:05:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-04-18T10:30:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Gideon Huang",
+          "address": "gihuang@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAH8M75aA==\"",
+      "id": "AAkBOQAICN1_C-ZkgAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAABvGXHCwAABA=",
+      "subject": "Bing Experiences Monthly Team Meeting",
+      "bodyPreview": "View presentations from previous months here:  Cerebro Past Presentations\r\n\r\nJoin us for a monthly Team Meeting with a rotating agenda of the following as applicable:\r\n\r\n  *   Share business updates\r\n  *   Joint Learning (take required trainings together)",
+      "seriesMasterId": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAG8ZccLAAA",
+      "showAs": "busy",
+      "type": "exception",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkBOQAICN1%2BC%2FZkgAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAABvGXHCwAABA%3D&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "notResponded",
+        "time": "0001-01-01T00:00:00Z"
+      },
+      "start": {
+        "dateTime": "2025-04-19T01:05:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-04-19T02:30:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Elbio Abib",
+          "address": "Elbio.Abib@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAH9R/tng==\"",
+      "id": "AAkBOQAICN1_C-ZkgAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAAByDiOskAABA=",
+      "subject": "Chin-Yew <> Xiaodong 1:1",
+      "bodyPreview": "Hi Chin-Yew,\r\n\r\nHappy New Year!\r\n\r\nHow about we restore our frequent catchup?  If the schedule doesn’t work for you, please feel free to suggest an alternative. If you visit Seattle, please let me know 😊.\r\nThanks,\r\nxiaodong\r\n_____________________________",
+      "seriesMasterId": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHIOI6yQAA",
+      "showAs": "busy",
+      "type": "occurrence",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkBOQAICN1%2BC%2FZkgAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAAByDiOskAABA%3D&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "accepted",
+        "time": "2025-01-12T19:32:46.9394248+08:00"
+      },
+      "start": {
+        "dateTime": "2025-04-19T09:30:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-04-19T10:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Xiaodong Liu",
+          "address": "xiaodl@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAHfw8y2A==\"",
+      "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHh47miwAA",
+      "subject": "Discussion on Multi-Agent Proposal & Integration with Agent Platform",
+      "bodyPreview": "Hi Qingwei, Chin-Yew\r\nWe are currently working on a proposal exploring how to combine multi-agent system design with existing technologies such as UFO, and apply them within the newly envisioned Agent Platform in Sydney.\r\n\r\nSally, Si, Liqun, and I have ",
+      "seriesMasterId": null,
+      "showAs": "busy",
+      "type": "singleInstance",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkALgAAAAAAHYQDEapmEc2byACqAC%2FEWg0A%2BkGCLFUuv0KY0MFe0YQo0AAHh47miwAA&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "accepted",
+        "time": "2025-04-21T12:05:20.8554916+08:00"
+      },
+      "start": {
+        "dateTime": "2025-04-21T14:30:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-04-21T15:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Xiaojie Zhou",
+          "address": "xiaojiezhou@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAHpEnZlw==\"",
+      "id": "AAkBOQAICN2BMKALgAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAAB2OoHJsAABA=",
+      "subject": "Zhouyu 1-1",
+      "bodyPreview": "Hi Zhuoyu,\r\n\r\n\r\n\r\nLet's use this time to have our weekly 1-1.\r\n\r\n\r\n\r\nBest,\r\n\r\n\r\n\r\nCY\r\n\r\n\r\n\r\n________________________________________________________________________________\r\nMicrosoft Teams meeting Need help?\r\nJoin: https://teams.microsoft.com/meet/266679",
+      "seriesMasterId": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHY6gcmwAA",
+      "showAs": "busy",
+      "type": "occurrence",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkBOQAICN2BMKALgAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAAB2OoHJsAABA%3D&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "organizer",
+        "time": "0001-01-01T00:00:00Z"
+      },
+      "start": {
+        "dateTime": "2025-04-22T15:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-04-22T15:30:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Chin-Yew Lin",
+          "address": "cyl@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAHnNco/Q==\"",
+      "id": "AAkBOQAICN2BMKALgAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAAB6VysXsAABA=",
+      "subject": "BizChat Exp Scrum - Part I",
+      "bodyPreview": "",
+      "seriesMasterId": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHpXKxewAA",
+      "showAs": "busy",
+      "type": "exception",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkBOQAICN2BMKALgAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAAB6VysXsAABA%3D&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "notResponded",
+        "time": "0001-01-01T00:00:00Z"
+      },
+      "start": {
+        "dateTime": "2025-04-22T15:15:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-04-22T15:45:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Xiuge Cheng",
+          "address": "xiugecheng@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAHg3Z7cA==\"",
+      "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHhq_B8QAA",
+      "subject": "DKI PM Workshop - Revolutionizing My Workflow",
+      "bodyPreview": "Revolutionizing My Workflow: Leveraging AI for Daily Productivity Boosts and Opportunities with Microsoft M365\r\n\r\n________________________________________________________________________________\r\nMicrosoft Teams meeting Need help?\r\nJoin: https://teams.mic",
+      "seriesMasterId": null,
+      "showAs": "busy",
+      "type": "singleInstance",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkALgAAAAAAHYQDEapmEc2byACqAC%2FEWg0A%2BkGCLFUuv0KY0MFe0YQo0AAHhq%2BB8QAA&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "accepted",
+        "time": "2025-04-17T10:42:19.9954178+08:00"
+      },
+      "start": {
+        "dateTime": "2025-04-24T14:30:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-04-24T17:30:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Xiuge Cheng",
+          "address": "xiugecheng@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAHg9M6zQ==\"",
+      "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHh41d7wAA",
+      "subject": "Sync up meeting (in person)",
+      "bodyPreview": "Updated the location to Yongdong’s conference room.\r\n\r\n---------------------------------------------------------------------\r\nUpdate the meeting room as BJW2/4F/RiTan. Br, Xin\r\n-----\r\nHi, all\r\nPls kindly be invited to join this meeting in person. (Below T",
+      "seriesMasterId": null,
+      "showAs": "busy",
+      "type": "singleInstance",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkALgAAAAAAHYQDEapmEc2byACqAC%2FEWg0A%2BkGCLFUuv0KY0MFe0YQo0AAHh41d7wAA&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "accepted",
+        "time": "2025-04-21T12:08:24.4152893+08:00"
+      },
+      "start": {
+        "dateTime": "2025-04-25T11:30:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-04-25T12:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Dongmei Zhang",
+          "address": "dongmeiz@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAHg9OOJA==\"",
+      "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHi-i2ygAA",
+      "subject": "Finalize Nitin's review topic",
+      "bodyPreview": "Moved to 5PM as Chin-Yew could be still out at 4:30.\r\n\r\nSorry for the inconvenience.\r\n\r\nThanks\r\nQingwei\r\n________________________________________________________________________________\r\nMicrosoft Teams meeting Need help?\r\nJoin: https://teams.microsoft.co",
+      "seriesMasterId": null,
+      "showAs": "busy",
+      "type": "singleInstance",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkALgAAAAAAHYQDEapmEc2byACqAC%2FEWg0A%2BkGCLFUuv0KY0MFe0YQo0AAHi%2Fi2ygAA&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "accepted",
+        "time": "2025-04-25T16:48:08.0824418+08:00"
+      },
+      "start": {
+        "dateTime": "2025-04-25T17:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-04-25T17:30:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Qingwei Lin",
+          "address": "qlin@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAHhfYorw==\"",
+      "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHi0JrEgAA",
+      "subject": "早9:00请在BJW2大堂外集合，大巴车将于9:10准时发车，过时不候",
+      "bodyPreview": "车上将备有足量的矿泉水和少许零食\r\n如果有晕车的同学，请提前告知Xin，Xin会备有少量的晕车贴。\r\n车程约2小时\r\n\r\n车辆车牌号：京B27093\r\n司机电话及姓名：王志强18610492408",
+      "seriesMasterId": null,
+      "showAs": "busy",
+      "type": "singleInstance",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkALgAAAAAAHYQDEapmEc2byACqAC%2FEWg0A%2BkGCLFUuv0KY0MFe0YQo0AAHi0JrEgAA&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "accepted",
+        "time": "2025-04-25T07:09:04.1936941+08:00"
+      },
+      "start": {
+        "dateTime": "2025-04-28T08:30:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-04-28T09:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Xin Feng",
+          "address": "Xin.Feng@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAHuxeKJQ==\"",
+      "id": "AAkBOQAICN2F556GAAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAAB2bSiPAAABA=",
+      "subject": "BizChat PM-all (monthly)",
+      "bodyPreview": "________________________________\r\nFrom: A.J. Brush <ajbrush@microsoft.com>\r\nSent: Wednesday, February 26, 2025 8:55:10 AM (UTC+08:00) Beijing, Chongqing, Hong Kong, Urumqi\r\nTo: A.J. Brush <ajbrush@microsoft.com>; BizChat PM <bizchatPM@microsoft.com>\r\nCc",
+      "seriesMasterId": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHZtKI8AAA",
+      "showAs": "busy",
+      "type": "exception",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkBOQAICN2F556GAAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAAB2bSiPAAABA%3D&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "accepted",
+        "time": "2025-02-28T09:58:56.9503468+08:00"
+      },
+      "start": {
+        "dateTime": "2025-04-29T00:05:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-04-29T00:30:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "A.J. Brush",
+          "address": "ajbrush@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAHpEnZlw==\"",
+      "id": "AAkBOQAICN2GsMjvwAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAAB2OoHJsAABA=",
+      "subject": "Zhouyu 1-1",
+      "bodyPreview": "Hi Zhuoyu,\r\n\r\n\r\n\r\nLet's use this time to have our weekly 1-1.\r\n\r\n\r\n\r\nBest,\r\n\r\n\r\n\r\nCY\r\n\r\n\r\n\r\n________________________________________________________________________________\r\nMicrosoft Teams meeting Need help?\r\nJoin: https://teams.microsoft.com/meet/266679",
+      "seriesMasterId": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHY6gcmwAA",
+      "showAs": "busy",
+      "type": "occurrence",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkBOQAICN2GsMjvwAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAAB2OoHJsAABA%3D&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "organizer",
+        "time": "0001-01-01T00:00:00Z"
+      },
+      "start": {
+        "dateTime": "2025-04-29T15:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-04-29T15:30:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Chin-Yew Lin",
+          "address": "cyl@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAHpEnZlw==\"",
+      "id": "AAkBOQAICN2MMPHUAAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAAB2OoHJsAABA=",
+      "subject": "Zhouyu 1-1",
+      "bodyPreview": "Hi Zhuoyu,\r\n\r\n\r\n\r\nLet's use this time to have our weekly 1-1.\r\n\r\n\r\n\r\nBest,\r\n\r\n\r\n\r\nCY\r\n\r\n\r\n\r\n________________________________________________________________________________\r\nMicrosoft Teams meeting Need help?\r\nJoin: https://teams.microsoft.com/meet/266679",
+      "seriesMasterId": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHY6gcmwAA",
+      "showAs": "busy",
+      "type": "occurrence",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkBOQAICN2MMPHUAAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAAB2OoHJsAABA%3D&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "organizer",
+        "time": "0001-01-01T00:00:00Z"
+      },
+      "start": {
+        "dateTime": "2025-05-06T15:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-05-06T15:30:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Chin-Yew Lin",
+          "address": "cyl@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAHiy4TiA==\"",
+      "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHk5Q9SQAA",
+      "subject": "Sync on multi agent chat with Balinder",
+      "bodyPreview": "有很多有意思的收获，所以约个时间快速聊下。\r\n\r\n  *\r\nmulti agent的responsibility可能会有些变化，有可能不在nitin ved这里做了\r\n  *\r\n他提到了google a2a很可能要被提上议程做，如果我们想参与，可以看下google a2a有什么没有的东西，在那基础上写个proposal给nitin ved/sitaram\r\n  *\r\n他强调了scenario的重要行，举了deep research agent的例子；他觉得在platform 做agentic workfl",
+      "seriesMasterId": null,
+      "showAs": "busy",
+      "type": "singleInstance",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkALgAAAAAAHYQDEapmEc2byACqAC%2FEWg0A%2BkGCLFUuv0KY0MFe0YQo0AAHk5Q9SQAA&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "accepted",
+        "time": "2025-05-06T14:56:16.664264+08:00"
+      },
+      "start": {
+        "dateTime": "2025-05-06T17:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-05-06T17:30:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Sally Xiong",
+          "address": "sallyxiong@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAHi8MnRw==\"",
+      "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHk7tCTAAA",
+      "subject": "Discuss on Nitin's deck",
+      "bodyPreview": "Discussed with Chin-Yew, how about using this time slot for a quick discussion and go-through on the decks, before Dongmei’s dry-run tomorrow?\r\nWould this time slot work for you?\r\n\r\nThanks\r\nQingwei\r\n________________________________________________________",
+      "seriesMasterId": null,
+      "showAs": "busy",
+      "type": "singleInstance",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkALgAAAAAAHYQDEapmEc2byACqAC%2FEWg0A%2BkGCLFUuv0KY0MFe0YQo0AAHk7tCTAAA&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "accepted",
+        "time": "2025-05-07T11:37:59.8425599+08:00"
+      },
+      "start": {
+        "dateTime": "2025-05-07T15:05:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-05-07T16:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Qingwei Lin",
+          "address": "qlin@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAHjELY4w==\"",
+      "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHkExxLwAA",
+      "subject": "Manager Readiness | FY25 Performance, Connects and Rewards Readiness - Asia Option 2 (English session)",
+      "bodyPreview": "FY25 Performance, Connects and Rewards Readiness\r\n\r\nThis is a calendar invite for an upcoming FY25 Performance, Connects, and Rewards Readiness Session.\r\nImportant: Register in advance of this time slot to receive the meeting link.\r\n\r\nRegion\r\nDate\r\nRegist",
+      "seriesMasterId": null,
+      "showAs": "busy",
+      "type": "singleInstance",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkALgAAAAAAHYQDEapmEc2byACqAC%2FEWg0A%2BkGCLFUuv0KY0MFe0YQo0AAHkExxLwAA&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "accepted",
+        "time": "2025-05-07T16:02:27.806854+08:00"
+      },
+      "start": {
+        "dateTime": "2025-05-08T12:30:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-05-08T13:30:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Asia- Performance and Development",
+          "address": "Perfdevasia@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAHi8N+yw==\"",
+      "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHk5SYfgAA",
+      "subject": "Manager Readiness: FY25 Performance, Connects & Rewards (Virtual)",
+      "bodyPreview": "VIRTUAL-COURSE S9299940 4/4/2025 03:56 AM Asia/Urumqi  -  Manager Readiness: FY25 Performance, Connects & Rewards (Virtual)  -  Time Slot 1  -  Manager Readiness: FY25 Performance, Connects & Rewards (Virtual)\r\n\r\nVirtual Classroom Asia\r\n ASIA\r\n\r\n\r\n\r\nFor a",
+      "seriesMasterId": null,
+      "showAs": "busy",
+      "type": "singleInstance",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkALgAAAAAAHYQDEapmEc2byACqAC%2FEWg0A%2BkGCLFUuv0KY0MFe0YQo0AAHk5SYfgAA&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "accepted",
+        "time": "2025-05-08T08:39:14.8571422+08:00"
+      },
+      "start": {
+        "dateTime": "2025-05-08T12:30:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-05-08T13:30:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": " mylearn@messages.microsoft.com",
+          "address": " mylearn@messages.microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAHjK4qyQ==\"",
+      "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHjnyvNQAA",
+      "subject": "[Virtual] MSAI AMA: Option 2 (Q4)",
+      "bodyPreview": "Please join Nitin and the LT for our MSAI Q4 AMA. If you'd like to submit questions anonymously in advance, you can do so here: https://forms.office.com/r/Rg9CkP1sxi. We look forward to seeing you online.\r\n_________________________________________________",
+      "seriesMasterId": null,
+      "showAs": "busy",
+      "type": "singleInstance",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkALgAAAAAAHYQDEapmEc2byACqAC%2FEWg0A%2BkGCLFUuv0KY0MFe0YQo0AAHjnyvNQAA&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "accepted",
+        "time": "2025-05-09T10:07:42.5676382+08:00"
+      },
+      "start": {
+        "dateTime": "2025-05-09T10:05:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-05-09T11:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Nitin Agrawal (MSAI)",
+          "address": "nitina@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAHj4UFIw==\"",
+      "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHk7tB2gAA",
+      "subject": "Nitin review dry-run",
+      "bodyPreview": "Setup this meeting per Qingwei’s email. @Qingwei Lin pls feel free to forward as your needs.\r\nBr, Xin\r\n________________________________________________________________________________\r\nMicrosoft Teams meeting Need help?\r\nJoin: https://teams.microsoft.com/",
+      "seriesMasterId": null,
+      "showAs": "busy",
+      "type": "singleInstance",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkALgAAAAAAHYQDEapmEc2byACqAC%2FEWg0A%2BkGCLFUuv0KY0MFe0YQo0AAHk7tB2gAA&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "accepted",
+        "time": "2025-05-09T10:57:42.4661098+08:00"
+      },
+      "start": {
+        "dateTime": "2025-05-12T10:05:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-05-12T11:30:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Dongmei Zhang",
+          "address": "dongmeiz@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAHj4TVtQ==\"",
+      "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHlTyfRgAA",
+      "subject": "Lunch together",
+      "bodyPreview": "See you on Monday\r\n\r\n\r\n________________________________________________________________________________\r\nMicrosoft Teams meeting Need help?\r\nJoin: https://teams.microsoft.com/meet/2617318461832?p=Zj3uvVsXE94oaJ0SaP\r\nMeeting ID: 261 731 846 183 2\r\nPasscode",
+      "seriesMasterId": null,
+      "showAs": "busy",
+      "type": "singleInstance",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkALgAAAAAAHYQDEapmEc2byACqAC%2FEWg0A%2BkGCLFUuv0KY0MFe0YQo0AAHlTyfRgAA&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "organizer",
+        "time": "0001-01-01T00:00:00Z"
+      },
+      "start": {
+        "dateTime": "2025-05-12T11:30:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-05-12T12:30:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Chin-Yew Lin",
+          "address": "cyl@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAHpEnZlw==\"",
+      "id": "AAkBOQAICN2RsRq4QAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAAB2OoHJsAABA=",
+      "subject": "Zhouyu 1-1",
+      "bodyPreview": "Hi Zhuoyu,\r\n\r\n\r\n\r\nLet's use this time to have our weekly 1-1.\r\n\r\n\r\n\r\nBest,\r\n\r\n\r\n\r\nCY\r\n\r\n\r\n\r\n________________________________________________________________________________\r\nMicrosoft Teams meeting Need help?\r\nJoin: https://teams.microsoft.com/meet/266679",
+      "seriesMasterId": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHY6gcmwAA",
+      "showAs": "busy",
+      "type": "occurrence",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkBOQAICN2RsRq4QAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAAB2OoHJsAABA%3D&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "organizer",
+        "time": "0001-01-01T00:00:00Z"
+      },
+      "start": {
+        "dateTime": "2025-05-13T15:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-05-13T15:30:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Chin-Yew Lin",
+          "address": "cyl@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAHj4W0dg==\"",
+      "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHlNGSxQAA",
+      "subject": "MSAI Incident Managers (China team) Q&A",
+      "bodyPreview": "Booked a meeting room. Feel free to join from the meeting room or online.\r\n\r\n--------------------------------------\r\n\r\nHi all,\r\nWelcome to the MSAI Incident Managers group (China team)! This is booking your time for the Q&A session to understand the IM ro",
+      "seriesMasterId": null,
+      "showAs": "busy",
+      "type": "singleInstance",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkALgAAAAAAHYQDEapmEc2byACqAC%2FEWg0A%2BkGCLFUuv0KY0MFe0YQo0AAHlNGSxQAA&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "accepted",
+        "time": "2025-05-13T13:16:42.0049433+08:00"
+      },
+      "start": {
+        "dateTime": "2025-05-13T16:05:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-05-13T16:30:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Zhe Geng",
+          "address": "zhegeng@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAHj4Z4Tg==\"",
+      "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHk7pj4wAA",
+      "subject": "Sightseeing and dinner with Nitin [In-person]",
+      "bodyPreview": "Hi all,\r\nWe are delighted to invite you to a special evening of the sightseeing tour at Summer Palace and dinner at Villa Castanea with Nitin.\r\n🎯 Agenda\r\nContent\r\nTime\r\nRemarks\r\nTransportation [Office-Summer Palace]\r\n3:30-4:00pm\r\nSelf arrange transportat",
+      "seriesMasterId": null,
+      "showAs": "busy",
+      "type": "singleInstance",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkALgAAAAAAHYQDEapmEc2byACqAC%2FEWg0A%2BkGCLFUuv0KY0MFe0YQo0AAHk7pj4wAA&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "accepted",
+        "time": "2025-05-07T11:47:44.7030636+08:00"
+      },
+      "start": {
+        "dateTime": "2025-05-14T15:30:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-05-14T20:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Haoyong Zhang",
+          "address": "haoyongz@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAHj4cVsA==\"",
+      "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHlTyTFwAA",
+      "subject": "How-to Navigate M365 Pulse: A 101 Beginner’s Guide",
+      "bodyPreview": "________________________________\r\nFrom: Mahima Srinivasan <mahima.srinivasan@microsoft.com>\r\nSent: 08 May 2025 17:33\r\nTo: M365 Core All <M365CoreFTE@microsoft.com>; M365 Core <perryc_org_fte@microsoft.com>\r\nCc: ENGAGE_M365Core <ENGAGEM365Core@microsoft.",
+      "seriesMasterId": null,
+      "showAs": "busy",
+      "type": "singleInstance",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkALgAAAAAAHYQDEapmEc2byACqAC%2FEWg0A%2BkGCLFUuv0KY0MFe0YQo0AAHlTyTFwAA&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "accepted",
+        "time": "2025-05-09T11:04:52.1789408+08:00"
+      },
+      "start": {
+        "dateTime": "2025-05-15T07:05:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-05-15T08:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Mahima Srinivasan",
+          "address": "mahima.srinivasan@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAHj4cVuQ==\"",
+      "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHlFECuAAA",
+      "subject": "Review with Dongmei's team",
+      "bodyPreview": "Update meeting room as Conf Room Beijing-BJW-1/6.1A,thanks.\r\n--------------------------------------------------------------------------------------------------------------------------------------------\r\nHi all,\r\nThis is blocking your time to review with D",
+      "seriesMasterId": null,
+      "showAs": "busy",
+      "type": "singleInstance",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkALgAAAAAAHYQDEapmEc2byACqAC%2FEWg0A%2BkGCLFUuv0KY0MFe0YQo0AAHlFECuAAA&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "accepted",
+        "time": "2025-05-09T14:11:05.5468154+08:00"
+      },
+      "start": {
+        "dateTime": "2025-05-15T09:05:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-05-15T10:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Haoyong Zhang",
+          "address": "haoyongz@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAHkZcNJw==\"",
+      "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHlFCyIAAA",
+      "subject": "MSAI China All Hands",
+      "bodyPreview": "Dear All,\r\nPlease join Nitin for this all-hands session, highly encouraged to join in person in Beijing-BJW 1/1F DongZhiMen.\r\nLooking forward to seeing you there, we have limited seats ,first come first serve, thanks.\r\n\r\n\r\n\r\n______________________________",
+      "seriesMasterId": null,
+      "showAs": "busy",
+      "type": "singleInstance",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkALgAAAAAAHYQDEapmEc2byACqAC%2FEWg0A%2BkGCLFUuv0KY0MFe0YQo0AAHlFCyIAAA&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "accepted",
+        "time": "2025-05-08T09:44:32.8691546+08:00"
+      },
+      "start": {
+        "dateTime": "2025-05-15T16:05:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-05-15T17:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Haoyong Zhang",
+          "address": "haoyongz@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAHkZcLug==\"",
+      "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHmBjK2QAA",
+      "subject": "Chin-Yew / xiaodong ",
+      "bodyPreview": "Hi Chin-Yew,\r\nPlease let me know if you like to change the time.\r\n\r\nThanks,\r\n\r\nXiaodong\r\n________________________________________________________________________________\r\nMicrosoft Teams meeting Need help?\r\nJoin: https://teams.microsoft.com/meet/275731945",
+      "seriesMasterId": null,
+      "showAs": "busy",
+      "type": "singleInstance",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkALgAAAAAAHYQDEapmEc2byACqAC%2FEWg0A%2BkGCLFUuv0KY0MFe0YQo0AAHmBjK2QAA&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "accepted",
+        "time": "2025-05-15T12:24:21.9953606+08:00"
+      },
+      "start": {
+        "dateTime": "2025-05-16T09:30:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-05-16T10:15:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Xiaodong Liu",
+          "address": "xiaodl@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAHk9Pe+Q==\"",
+      "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHbyPO5QAA",
+      "subject": "Microsoft Build opening keynote",
+      "bodyPreview": "Microsoft Build opening keynote\r\n\r\nMonday, May 19\r\n\r\n\r\n\r\nGet ahead of our latest AI innovations and news announcements by joining Microsoft Build.\r\n\r\nWatch the opening keynote live as Satya and members of the senior leadership team reveal the newest AI so",
+      "seriesMasterId": null,
+      "showAs": "busy",
+      "type": "singleInstance",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkALgAAAAAAHYQDEapmEc2byACqAC%2FEWg0A%2BkGCLFUuv0KY0MFe0YQo0AAHbyPO5QAA&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "accepted",
+        "time": "2025-05-15T07:07:15.4739504+08:00"
+      },
+      "start": {
+        "dateTime": "2025-05-20T00:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-05-20T02:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Employee News & Events",
+          "address": "employee@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAHpEnZlw==\"",
+      "id": "AAkBOQAICN2XMUOcgAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAAB2OoHJsAABA=",
+      "subject": "Zhouyu 1-1",
+      "bodyPreview": "Hi Zhuoyu,\r\n\r\n\r\n\r\nLet's use this time to have our weekly 1-1.\r\n\r\n\r\n\r\nBest,\r\n\r\n\r\n\r\nCY\r\n\r\n\r\n\r\n________________________________________________________________________________\r\nMicrosoft Teams meeting Need help?\r\nJoin: https://teams.microsoft.com/meet/266679",
+      "seriesMasterId": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHY6gcmwAA",
+      "showAs": "busy",
+      "type": "occurrence",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkBOQAICN2XMUOcgAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAAB2OoHJsAABA%3D&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "organizer",
+        "time": "0001-01-01T00:00:00Z"
+      },
+      "start": {
+        "dateTime": "2025-05-20T15:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-05-20T15:30:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Chin-Yew Lin",
+          "address": "cyl@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAH9R/tng==\"",
+      "id": "AAkBOQAICN2Vnu7JAAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAAByDiOskAABA=",
+      "subject": "Chin-Yew <> Xiaodong 1:1",
+      "bodyPreview": "[Please let me know it works for you]\r\n\r\nHi Chin-Yew,\r\n\r\nHappy New Year!\r\n\r\nHow about we restore our frequent catchup?  If the schedule doesn’t work for you, please feel free to suggest an alternative. If you visit Seattle, please let me know 😊.\r\nThanks,",
+      "seriesMasterId": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHIOI6yQAA",
+      "showAs": "busy",
+      "type": "exception",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkBOQAICN2Vnu7JAAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAAByDiOskAABA%3D&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "accepted",
+        "time": "2025-05-20T16:01:24.398744+08:00"
+      },
+      "start": {
+        "dateTime": "2025-05-21T10:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-05-21T10:30:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Xiaodong Liu",
+          "address": "xiaodl@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAHlMt/Nw==\"",
+      "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHnWJDtQAA",
+      "subject": "Yongdong/DKI leads - lunch",
+      "bodyPreview": "",
+      "seriesMasterId": null,
+      "showAs": "busy",
+      "type": "singleInstance",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkALgAAAAAAHYQDEapmEc2byACqAC%2FEWg0A%2BkGCLFUuv0KY0MFe0YQo0AAHnWJDtQAA&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "accepted",
+        "time": "2025-05-21T10:37:41.213994+08:00"
+      },
+      "start": {
+        "dateTime": "2025-05-21T12:05:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-05-21T13:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Yongdong Wang",
+          "address": "yongwang@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAHlMyz8Q==\"",
+      "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHnSeBlQAA",
+      "subject": "1-1 Connect",
+      "bodyPreview": "Hi Ling,\r\n\r\nLet's use this time to go over the Connect. We will use Teams.\r\n\r\nBest,\r\n\r\nCY\r\n\r\n________________________________________________________________________________\r\nMicrosoft Teams meeting Need help?\r\nJoin: https://teams.microsoft.com/meet/21049",
+      "seriesMasterId": null,
+      "showAs": "busy",
+      "type": "singleInstance",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkALgAAAAAAHYQDEapmEc2byACqAC%2FEWg0A%2BkGCLFUuv0KY0MFe0YQo0AAHnSeBlQAA&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "organizer",
+        "time": "0001-01-01T00:00:00Z"
+      },
+      "start": {
+        "dateTime": "2025-05-22T14:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-05-22T14:30:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Chin-Yew Lin",
+          "address": "cyl@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAH8M75aA==\"",
+      "id": "AAkBOQAICN2UDJn1gAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAABvGXHCwAABA=",
+      "subject": "Bing Experiences Team Meeting - Quarterly STCA",
+      "bodyPreview": "View presentations from previous months here:  Cerebro Past Presentations\r\n\r\nJoin us for a monthly Team Meeting with a rotating agenda of the following as applicable:\r\n\r\n  *   Share business updates\r\n  *   Joint Learning (take required trainings together)",
+      "seriesMasterId": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAG8ZccLAAA",
+      "showAs": "busy",
+      "type": "exception",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkBOQAICN2UDJn1gAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAABvGXHCwAABA%3D&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "notResponded",
+        "time": "0001-01-01T00:00:00Z"
+      },
+      "start": {
+        "dateTime": "2025-05-23T07:15:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-05-23T08:30:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Elbio Abib",
+          "address": "Elbio.Abib@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAH+ebK/w==\"",
+      "id": "AAkBOQAICN2ZjMLZwAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAABX2-2yAAABA=",
+      "subject": "STCA Monthly Extended PLT + Managers ",
+      "bodyPreview": "forwarding the series again in case it fell off your calendar.\r\n\r\n________________________________\r\nFrom: Effie Liu <efliu@microsoft.com>\r\nSent: Wednesday, February 1, 2023 1:53:53 PM (UTC+08:00) Beijing, Chongqing, Hong Kong, Urumqi\r\nTo: Effie Liu <efliu",
+      "seriesMasterId": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAFfb-bIAAA",
+      "showAs": "busy",
+      "type": "occurrence",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkBOQAICN2ZjMLZwAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAABX2%2F2yAAABA%3D&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "accepted",
+        "time": "2025-06-16T23:54:38.0226721+08:00"
+      },
+      "start": {
+        "dateTime": "2025-05-23T10:35:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-05-23T12:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Effie Liu",
+          "address": "efliu@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAHlM/puA==\"",
+      "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHnGkg_AAA",
+      "subject": "team lunch",
+      "bodyPreview": "Hi, Folks in Beijing team\r\n\r\nLet’s take a break from the daily pressures and enjoy lunch and a causal chat with team members at a nice restaurant recommended by @Ailsa",
+      "seriesMasterId": null,
+      "showAs": "busy",
+      "type": "singleInstance",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkALgAAAAAAHYQDEapmEc2byACqAC%2FEWg0A%2BkGCLFUuv0KY0MFe0YQo0AAHnGkg%2BAAA&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "accepted",
+        "time": "2025-05-19T20:51:52.1942762+08:00"
+      },
+      "start": {
+        "dateTime": "2025-05-23T12:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-05-23T14:30:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Haidong Zhang",
+          "address": "haidong.zhang@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAHpEnZlw==\"",
+      "id": "AAkBOQAICN2csWyAwAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAAB2OoHJsAABA=",
+      "subject": "Zhouyu 1-1",
+      "bodyPreview": "Hi Zhuoyu,\r\n\r\n\r\n\r\nLet's use this time to have our weekly 1-1.\r\n\r\n\r\n\r\nBest,\r\n\r\n\r\n\r\nCY\r\n\r\n\r\n\r\n________________________________________________________________________________\r\nMicrosoft Teams meeting Need help?\r\nJoin: https://teams.microsoft.com/meet/266679",
+      "seriesMasterId": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHY6gcmwAA",
+      "showAs": "busy",
+      "type": "occurrence",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkBOQAICN2csWyAwAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAAB2OoHJsAABA%3D&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "organizer",
+        "time": "0001-01-01T00:00:00Z"
+      },
+      "start": {
+        "dateTime": "2025-05-27T15:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-05-27T15:30:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Chin-Yew Lin",
+          "address": "cyl@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAH9U28wQ==\"",
+      "id": "AAkBOQAICN2depbqgAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAAB3qV9VcAABA=",
+      "subject": "Bi-weekly 1:1 Chin-Yew | Dongmei",
+      "bodyPreview": "________________________________________________________________________________\r\nMicrosoft Teams meeting Need help?\r\nJoin: https://teams.microsoft.com/meet/237238978168?p=eERBJWMerZVWyY3spF\r\nMeeting ID: 237 238 978 168\r\nPasscode: 7YZ64LW3\r\n____________",
+      "seriesMasterId": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHepX1VwAA",
+      "showAs": "busy",
+      "type": "occurrence",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkBOQAICN2depbqgAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAAB3qV9VcAABA%3D&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "accepted",
+        "time": "2025-03-31T17:57:11.9155508+08:00"
+      },
+      "start": {
+        "dateTime": "2025-05-28T13:35:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-05-28T14:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Dongmei Zhang",
+          "address": "dongmeiz@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAHma4G0Q==\"",
+      "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHh4_BSQAA",
+      "subject": "People Discussion for Dongmei's team - Session 1",
+      "bodyPreview": "Given that Dongmei will need to join another meeting 11:00-12:00 on 5/29, so would like to update the people discussion meeting as shown below:\r\nPeople discission Session 1: 9:30 – 11am\r\nPeople discission Session 2: 12:30pm – 5pm (Lunch box and coffee wil",
+      "seriesMasterId": null,
+      "showAs": "busy",
+      "type": "singleInstance",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkALgAAAAAAHYQDEapmEc2byACqAC%2FEWg0A%2BkGCLFUuv0KY0MFe0YQo0AAHh4%2BBSQAA&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "accepted",
+        "time": "2025-05-27T11:28:04.9199833+08:00"
+      },
+      "start": {
+        "dateTime": "2025-05-29T09:30:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-05-29T11:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Dongmei Zhang",
+          "address": "dongmeiz@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAHmbXAjA==\"",
+      "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHoEE9QQAA",
+      "subject": "People Discussion for Dongmei's team - Session 2",
+      "bodyPreview": "Given that Dongmei will need to join another meeting 11:00-12:00 on 5/29, so would like to update the people discussion meeting as shown below:\r\nPeople discission Session 1: 9:30 – 11am\r\nPeople discission Session 2: 12:30pm – 5pm (Lunch box and coffee wil",
+      "seriesMasterId": null,
+      "showAs": "busy",
+      "type": "singleInstance",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkALgAAAAAAHYQDEapmEc2byACqAC%2FEWg0A%2BkGCLFUuv0KY0MFe0YQo0AAHoEE9QQAA&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "accepted",
+        "time": "2025-05-27T11:24:22.0546851+08:00"
+      },
+      "start": {
+        "dateTime": "2025-05-29T12:30:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-05-29T17:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Dongmei Zhang",
+          "address": "dongmeiz@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAHmbXfbw==\"",
+      "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHgYDHugAA",
+      "subject": "Employee Town Hall",
+      "bodyPreview": "Join us for our May Employee Town Hall! This is an opportunity for you to hear directly from the senior leadership team and Satya about what is top of mind. Stream the LIVE virtual broadcast on Thursday, May 29 at 10:00am PST. Don’t miss this opportunity ",
+      "seriesMasterId": null,
+      "showAs": "busy",
+      "type": "singleInstance",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkALgAAAAAAHYQDEapmEc2byACqAC%2FEWg0A%2BkGCLFUuv0KY0MFe0YQo0AAHgYDHugAA&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "accepted",
+        "time": "2025-04-10T23:36:53.4236214+08:00"
+      },
+      "start": {
+        "dateTime": "2025-05-30T01:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-05-30T01:45:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Employee News & Events",
+          "address": "employee@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAHmbZv3w==\"",
+      "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHolLvhgAA",
+      "subject": "Discuss of Qi's Reflection Highlight, Lowlight and Lesson Learned",
+      "bodyPreview": "_From: Chin-Yew Lin <cyl@microsoft.com>\r\nDate: Friday, May 30, 2025 at 10:14 AM\r\nTo: Dongmei Zhang <dongmeiz@microsoft.com>, Qingwei Lin <qlin@microsoft.com>\r\nSubject: Re: highlight, lowlight, learnings reflections for E+D\r\n\r\nSure, will do.\r\n\r\nBest,",
+      "seriesMasterId": null,
+      "showAs": "busy",
+      "type": "singleInstance",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkALgAAAAAAHYQDEapmEc2byACqAC%2FEWg0A%2BkGCLFUuv0KY0MFe0YQo0AAHolLvhgAA&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "organizer",
+        "time": "0001-01-01T00:00:00Z"
+      },
+      "start": {
+        "dateTime": "2025-05-30T14:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-05-30T14:30:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Chin-Yew Lin",
+          "address": "cyl@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAHuxeKJQ==\"",
+      "id": "AAkBOQAICN2b6EIXAAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAAB2bSiPAAABA=",
+      "subject": "BizChat PM-all (monthly)",
+      "bodyPreview": "________________________________\r\nFrom: A.J. Brush <ajbrush@microsoft.com>\r\nSent: Wednesday, February 26, 2025 8:55:10 AM (UTC+08:00) Beijing, Chongqing, Hong Kong, Urumqi\r\nTo: A.J. Brush <ajbrush@microsoft.com>; BizChat PM <bizchatPM@microsoft.com>\r\nCc",
+      "seriesMasterId": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHZtKI8AAA",
+      "showAs": "busy",
+      "type": "exception",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkBOQAICN2b6EIXAAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAAB2bSiPAAABA%3D&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "accepted",
+        "time": "2025-02-28T09:58:56.9503468+08:00"
+      },
+      "start": {
+        "dateTime": "2025-06-03T00:05:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-06-03T00:30:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "A.J. Brush",
+          "address": "ajbrush@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAHnM9h2A==\"",
+      "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHpW0xlgAA",
+      "subject": "Quick Sync-up on Monthly Story",
+      "bodyPreview": "________________________________________________________________________________\r\nMicrosoft Teams 会议 是否需要帮助?\r\n加入: https://teams.microsoft.com/meet/2986212677400?p=dnovPEly8vWmdOlrDX\r\n会议 ID: 298 621 267 740 0\r\n密码: 9zg7BY3i\r\n______________________________",
+      "seriesMasterId": null,
+      "showAs": "busy",
+      "type": "singleInstance",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkALgAAAAAAHYQDEapmEc2byACqAC%2FEWg0A%2BkGCLFUuv0KY0MFe0YQo0AAHpW0xlgAA&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "accepted",
+        "time": "2025-06-03T13:15:26.9830526+08:00"
+      },
+      "start": {
+        "dateTime": "2025-06-03T13:30:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-06-03T14:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Xiaojie Zhou",
+          "address": "xiaojiezhou@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAHpEnZlw==\"",
+      "id": "AAkBOQAICN2iMZVlAAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAAB2OoHJsAABA=",
+      "subject": "Zhouyu 1-1",
+      "bodyPreview": "Hi Zhuoyu,\r\n\r\n\r\n\r\nLet's use this time to have our weekly 1-1.\r\n\r\n\r\n\r\nBest,\r\n\r\n\r\n\r\nCY\r\n\r\n\r\n\r\n________________________________________________________________________________\r\nMicrosoft Teams meeting Need help?\r\nJoin: https://teams.microsoft.com/meet/266679",
+      "seriesMasterId": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHY6gcmwAA",
+      "showAs": "busy",
+      "type": "occurrence",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkBOQAICN2iMZVlAAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAAB2OoHJsAABA%3D&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "organizer",
+        "time": "0001-01-01T00:00:00Z"
+      },
+      "start": {
+        "dateTime": "2025-06-03T15:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-06-03T15:30:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Chin-Yew Lin",
+          "address": "cyl@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAHnNGrtA==\"",
+      "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHpW_nqAAA",
+      "subject": null,
+      "bodyPreview": "________________________________________________________________________________\r\nMicrosoft Teams meeting Need help?\r\nJoin: https://teams.microsoft.com/meet/2856871713611?p=n6Rl42tNmGpXpyN21E\r\nMeeting ID: 285 687 171 361 1\r\nPasscode: n6mj6bC9\r\n_________",
+      "seriesMasterId": null,
+      "showAs": "busy",
+      "type": "singleInstance",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkALgAAAAAAHYQDEapmEc2byACqAC%2FEWg0A%2BkGCLFUuv0KY0MFe0YQo0AAHpW%2BnqAAA&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "organizer",
+        "time": "0001-01-01T00:00:00Z"
+      },
+      "start": {
+        "dateTime": "2025-06-05T18:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-06-05T18:30:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Chin-Yew Lin",
+          "address": "cyl@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAHnNILcg==\"",
+      "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHmBb1QwAA",
+      "subject": "IcM Oncall Backup",
+      "bodyPreview": "",
+      "seriesMasterId": null,
+      "showAs": "busy",
+      "type": "singleInstance",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkALgAAAAAAHYQDEapmEc2byACqAC%2FEWg0A%2BkGCLFUuv0KY0MFe0YQo0AAHmBb1QwAA&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "organizer",
+        "time": "0001-01-01T00:00:00Z"
+      },
+      "start": {
+        "dateTime": "2025-06-06T09:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-06-06T17:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Chin-Yew Lin",
+          "address": "cyl@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAHnNJXnw==\"",
+      "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHpW13cAAA",
+      "subject": "AI Design Sharing Session: Illustration Layout Generation for Slides",
+      "bodyPreview": "📣 Sharing Topic: Illustration Layout Generation for Slides\r\n🧭 What’s This About?\r\nJoin us for a special AI Design Sharing Session on how we generate slide illustration layouts using diffusion-based optimization. It’s part of our AI Design Weekly track, ",
+      "seriesMasterId": null,
+      "showAs": "busy",
+      "type": "singleInstance",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkALgAAAAAAHYQDEapmEc2byACqAC%2FEWg0A%2BkGCLFUuv0KY0MFe0YQo0AAHpW13cAAA&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "accepted",
+        "time": "2025-06-03T14:48:21.6994171+08:00"
+      },
+      "start": {
+        "dateTime": "2025-06-06T13:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-06-06T13:50:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Shakie Liu",
+          "address": "shakieliu@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAHnNK69w==\"",
+      "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHpW2HtQAA",
+      "subject": "1:1 for Dongmei | Chin-Yew",
+      "bodyPreview": "________________________________________________________________________________\r\nMicrosoft Teams meeting Need help?\r\nJoin: https://teams.microsoft.com/meet/2579760928232?p=Ufwz9Ij2YQqGL9ZG1T\r\nMeeting ID: 257 976 092 823 2\r\nPasscode: uT6Hd24x\r\n_________",
+      "seriesMasterId": null,
+      "showAs": "busy",
+      "type": "singleInstance",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkALgAAAAAAHYQDEapmEc2byACqAC%2FEWg0A%2BkGCLFUuv0KY0MFe0YQo0AAHpW2HtQAA&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "accepted",
+        "time": "2025-06-05T10:16:47.1328242+08:00"
+      },
+      "start": {
+        "dateTime": "2025-06-06T14:05:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-06-06T14:30:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Dongmei Zhang",
+          "address": "dongmeiz@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAHnNK9dw==\"",
+      "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHpXA7-QAA",
+      "subject": "DKI",
+      "bodyPreview": "Let’s meet at Conference room 2/4F Qianmen.\r\n\r\n________________________________________________________________________________\r\nMicrosoft Teams meeting Need help?\r\nJoin: https://teams.microsoft.com/meet/2694237711389?p=JKesvLHoCqvKVOcx0v\r\nMeeting ID: 269",
+      "seriesMasterId": null,
+      "showAs": "busy",
+      "type": "singleInstance",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkALgAAAAAAHYQDEapmEc2byACqAC%2FEWg0A%2BkGCLFUuv0KY0MFe0YQo0AAHpXA7%2FQAA&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "accepted",
+        "time": "2025-06-06T13:12:54.6786451+08:00"
+      },
+      "start": {
+        "dateTime": "2025-06-06T15:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-06-06T15:30:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Qingwei Lin",
+          "address": "qlin@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAHnNK/xA==\"",
+      "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHpXBPsAAA",
+      "subject": "PM Team Meeting",
+      "bodyPreview": "Dear Team,\r\n\r\nLet's start at 3:35. Please join me for a Team meeting this afternoon via team.\r\n\r\nBest,\r\n\r\nCY\r\n\r\n________________________________________________________________________________\r\nMicrosoft Teams meeting Need help?\r\nJoin: https://teams.micro",
+      "seriesMasterId": null,
+      "showAs": "busy",
+      "type": "singleInstance",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkALgAAAAAAHYQDEapmEc2byACqAC%2FEWg0A%2BkGCLFUuv0KY0MFe0YQo0AAHpXBPsAAA&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "organizer",
+        "time": "0001-01-01T00:00:00Z"
+      },
+      "start": {
+        "dateTime": "2025-06-06T15:35:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-06-06T16:05:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Chin-Yew Lin",
+          "address": "cyl@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAHnNNINw==\"",
+      "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHmBb1SwAA",
+      "subject": "IcM Oncall Backup",
+      "bodyPreview": "",
+      "seriesMasterId": null,
+      "showAs": "busy",
+      "type": "singleInstance",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkALgAAAAAAHYQDEapmEc2byACqAC%2FEWg0A%2BkGCLFUuv0KY0MFe0YQo0AAHmBb1SwAA&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "organizer",
+        "time": "0001-01-01T00:00:00Z"
+      },
+      "start": {
+        "dateTime": "2025-06-07T09:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-06-07T17:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Chin-Yew Lin",
+          "address": "cyl@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAHnNSLww==\"",
+      "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHmBbxHAAA",
+      "subject": "IcM OnCall Manager",
+      "bodyPreview": "",
+      "seriesMasterId": null,
+      "showAs": "busy",
+      "type": "singleInstance",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkALgAAAAAAHYQDEapmEc2byACqAC%2FEWg0A%2BkGCLFUuv0KY0MFe0YQo0AAHmBbxHAAA&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "organizer",
+        "time": "0001-01-01T00:00:00Z"
+      },
+      "start": {
+        "dateTime": "2025-06-08T08:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-06-08T16:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Chin-Yew Lin",
+          "address": "cyl@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAHnNSLtA==\"",
+      "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHmBb1CQAA",
+      "subject": "IcM Oncall Manager",
+      "bodyPreview": "",
+      "seriesMasterId": null,
+      "showAs": "busy",
+      "type": "singleInstance",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkALgAAAAAAHYQDEapmEc2byACqAC%2FEWg0A%2BkGCLFUuv0KY0MFe0YQo0AAHmBb1CQAA&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "organizer",
+        "time": "0001-01-01T00:00:00Z"
+      },
+      "start": {
+        "dateTime": "2025-06-09T08:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-06-09T16:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Chin-Yew Lin",
+          "address": "cyl@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAHnNTy0w==\"",
+      "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHpXD65AAA",
+      "subject": "Lunch together",
+      "bodyPreview": "________________________________________________________________________________\r\nMicrosoft Teams meeting Need help?\r\nJoin: https://teams.microsoft.com/meet/2772555091776?p=bBmAX0iLNZr6ueI8zj\r\nMeeting ID: 277 255 509 177 6\r\nPasscode: w6KG7wf7\r\n_____",
+      "seriesMasterId": null,
+      "showAs": "busy",
+      "type": "singleInstance",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkALgAAAAAAHYQDEapmEc2byACqAC%2FEWg0A%2BkGCLFUuv0KY0MFe0YQo0AAHpXD65AAA&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "organizer",
+        "time": "0001-01-01T00:00:00Z"
+      },
+      "start": {
+        "dateTime": "2025-06-09T11:30:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-06-09T12:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Chin-Yew Lin",
+          "address": "cyl@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAHnNVkdg==\"",
+      "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHpXHPLwAA",
+      "subject": "1-1 with Naifei",
+      "bodyPreview": "________________________________________________________________________________\r\nMicrosoft Teams meeting Need help?\r\nJoin: https://teams.microsoft.com/meet/2567610955492?p=ZrFlrs3F8D5KtGOjte\r\nMeeting ID: 256 761 095 549 2\r\nPasscode: Cr2gE6Hx\r\n_________",
+      "seriesMasterId": null,
+      "showAs": "busy",
+      "type": "singleInstance",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkALgAAAAAAHYQDEapmEc2byACqAC%2FEWg0A%2BkGCLFUuv0KY0MFe0YQo0AAHpXHPLwAA&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "accepted",
+        "time": "2025-06-09T10:06:57.5880865+08:00"
+      },
+      "start": {
+        "dateTime": "2025-06-09T14:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-06-09T14:30:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Naifei Pan",
+          "address": "naifeipan@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAHnNUWoQ==\"",
+      "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHpXHOfgAA",
+      "subject": "DKI All Hands",
+      "bodyPreview": "Dear all,\r\n\r\nCan you please forward the S+ to your team and ask them to attend in person as much as possible? Yongdong will attend in person and I’ll join online.\r\n\r\nThanks,\r\n\r\nDongmei\r\n\r\n-----Original Appointment-----\r\nFrom: Dongmei Zhang\r\nSent: Sunday, ",
+      "seriesMasterId": null,
+      "showAs": "busy",
+      "type": "singleInstance",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkALgAAAAAAHYQDEapmEc2byACqAC%2FEWg0A%2BkGCLFUuv0KY0MFe0YQo0AAHpXHOfgAA&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "accepted",
+        "time": "2025-06-09T09:54:26.0976444+08:00"
+      },
+      "start": {
+        "dateTime": "2025-06-09T14:30:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-06-09T14:55:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Dongmei Zhang",
+          "address": "dongmeiz@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAHnNZZfg==\"",
+      "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHpXD7KgAA",
+      "subject": "DKI PM reunion",
+      "bodyPreview": "Hi Team,\r\n\r\nLet’s meet at the 1st floor lobby at 11:15 and leave for the venue.\r\n\r\nMy car can take 3 more people so we will need another car.\r\n\r\nSee you on Tuesday if not earlier.\r\n\r\nBest,\r\n\r\nCY\r\n\r\n_______________________________________________________",
+      "seriesMasterId": null,
+      "showAs": "busy",
+      "type": "singleInstance",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkALgAAAAAAHYQDEapmEc2byACqAC%2FEWg0A%2BkGCLFUuv0KY0MFe0YQo0AAHpXD7KgAA&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "organizer",
+        "time": "0001-01-01T00:00:00Z"
+      },
+      "start": {
+        "dateTime": "2025-06-10T11:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-06-10T14:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Chin-Yew Lin",
+          "address": "cyl@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAHnNcbpw==\"",
+      "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHpXI5MQAA",
+      "subject": "Sync-up",
+      "bodyPreview": "________________________________________________________________________________\r\nMicrosoft Teams meeting Need help?<https://aka.ms/JoinTeamsMeeting?omkt=en-US>\r\nJoin: https://teams.microsoft.com/meet/2234384104567?p=PBMbv4OabfUOnxOs1C  <https://teams.m",
+      "seriesMasterId": null,
+      "showAs": "busy",
+      "type": "singleInstance",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkALgAAAAAAHYQDEapmEc2byACqAC%2FEWg0A%2BkGCLFUuv0KY0MFe0YQo0AAHpXI5MQAA&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "accepted",
+        "time": "2025-06-10T06:22:57.6526205+08:00"
+      },
+      "start": {
+        "dateTime": "2025-06-10T13:05:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-06-10T13:30:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Dongmei Zhang",
+          "address": "dongmeiz@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAHpEnZlw==\"",
+      "id": "AAkBOQAICN2nsb5JQAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAAB2OoHJsAABA=",
+      "subject": "Zhouyu 1-1",
+      "bodyPreview": "Hi Zhuoyu,\r\n\r\n\r\n\r\nLet's use this time to have our weekly 1-1.\r\n\r\n\r\n\r\nBest,\r\n\r\n\r\n\r\nCY\r\n\r\n\r\n\r\n________________________________________________________________________________\r\nMicrosoft Teams meeting Need help?\r\nJoin: https://teams.microsoft.com/meet/266679",
+      "seriesMasterId": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHY6gcmwAA",
+      "showAs": "busy",
+      "type": "occurrence",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkBOQAICN2nsb5JQAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAAB2OoHJsAABA%3D&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "organizer",
+        "time": "0001-01-01T00:00:00Z"
+      },
+      "start": {
+        "dateTime": "2025-06-10T15:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-06-10T15:30:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Chin-Yew Lin",
+          "address": "cyl@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAHog/jIw==\"",
+      "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHpXBmbAAA",
+      "subject": "dinner",
+      "bodyPreview": "那家小馆 （中关村店）\r\nVery close to our building (BJW 2)\r\n\r\n北京那家小馆(中关村店)攻略,那家小馆(中关村店)特色菜推荐/菜单/人均消费/电话/地址/菜系/点评/营业时间【携程美食】\r\n\r\n===\r\n\r\nXiuge in Beijing.",
+      "seriesMasterId": null,
+      "showAs": "busy",
+      "type": "singleInstance",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkALgAAAAAAHYQDEapmEc2byACqAC%2FEWg0A%2BkGCLFUuv0KY0MFe0YQo0AAHpXBmbAAA&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "accepted",
+        "time": "2025-06-07T08:28:19.9624294+08:00"
+      },
+      "start": {
+        "dateTime": "2025-06-10T18:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-06-10T20:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Haidong Zhang",
+          "address": "haidong.zhang@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAHohAfSw==\"",
+      "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHpXF5KAAA",
+      "subject": "Chin-Yew / xiaodong Agent workshop discussion",
+      "bodyPreview": "[Updated]\r\nHi Chin-Yew,\r\n\r\nPlease let me know if this slot works for you.\r\n\r\nThanks,\r\nXiaodong\r\n________________________________________________________________________________\r\nMicrosoft Teams meeting Need help?\r\nJoin: https://teams.microsoft.com/meet/24",
+      "seriesMasterId": null,
+      "showAs": "busy",
+      "type": "singleInstance",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkALgAAAAAAHYQDEapmEc2byACqAC%2FEWg0A%2BkGCLFUuv0KY0MFe0YQo0AAHpXF5KAAA&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "accepted",
+        "time": "2025-06-09T23:48:16.2683861+08:00"
+      },
+      "start": {
+        "dateTime": "2025-06-11T10:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-06-11T10:45:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Xiaodong Liu",
+          "address": "xiaodl@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAHog/4ew==\"",
+      "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHpXKhdwAA",
+      "subject": "1:1 Chin-Yew/Albert Chen",
+      "bodyPreview": "________________________________________________________________________________\r\nMicrosoft Teams meeting Need help?\r\nJoin: https://teams.microsoft.com/meet/2210431527948?p=ZMsmGRSjlo4pZ2YIYx\r\nMeeting ID: 221 043 152 794 8\r\nPasscode: nK6pt2wx\r\n_______",
+      "seriesMasterId": null,
+      "showAs": "busy",
+      "type": "singleInstance",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkALgAAAAAAHYQDEapmEc2byACqAC%2FEWg0A%2BkGCLFUuv0KY0MFe0YQo0AAHpXKhdwAA&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "accepted",
+        "time": "2025-06-10T21:04:18.0940635+08:00"
+      },
+      "start": {
+        "dateTime": "2025-06-11T14:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-06-11T14:30:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Albert Chen",
+          "address": "chen.albert@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAH3C0KSQ==\"",
+      "id": "AAkBOQAICN2saLzDwAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAAB9GzeiAAABA=",
+      "subject": "STCA DS Followups",
+      "bodyPreview": "________________________________\r\nFrom: Shilpha Parakala <sparakala@microsoft.com>\r\nSent: Saturday, June 14, 2025 4:00:43 AM (UTC+08:00) Beijing, Chongqing, Hong Kong, Urumqi\r\nTo: Shilpha Parakala <sparakala@microsoft.com>; Chao Pan <chaopan@microsoft.c",
+      "seriesMasterId": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAH0bN6IAAA",
+      "showAs": "busy",
+      "type": "exception",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkBOQAICN2saLzDwAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAAB9GzeiAAABA%3D&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "accepted",
+        "time": "2025-08-12T13:07:55.7172465+08:00"
+      },
+      "start": {
+        "dateTime": "2025-06-17T09:05:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-06-17T09:30:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Shilpha Parakala",
+          "address": "sparakala@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAHpEsrjQ==\"",
+      "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHqq2YOQAA",
+      "subject": "Detecting AI-Generated Media",
+      "bodyPreview": "Alex Blanton, Alexandra Savelieva, Jason Virtue and Mark Tabladillo invited you to:\r\nDetecting AI-Generated Media\r\nSpeaker\r\nThomas Roca (CELA)\r\nTue, Jun 17\r\n09:00 AM - 10:00 AM\r\nPacific Daylight Time\r\nView on Outlook Events\r\n\r\nThe past three years, the AI",
+      "seriesMasterId": null,
+      "showAs": "busy",
+      "type": "singleInstance",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkALgAAAAAAHYQDEapmEc2byACqAC%2FEWg0A%2BkGCLFUuv0KY0MFe0YQo0AAHqq2YOQAA&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "accepted",
+        "time": "2025-06-12T11:27:49.023108+08:00"
+      },
+      "start": {
+        "dateTime": "2025-06-18T00:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-06-18T01:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Detecting AI-Generated Media",
+          "address": "87376c2d-1343-4d56-b039-886c4ad8ec5c@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAHqWpWyg==\"",
+      "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHrOu_twAA",
+      "subject": "DKI LT meeting",
+      "bodyPreview": "Setting up time for DKI LT meeting. Lmk if you have hard conflicts.\r\n\r\nThanks,\r\nMelissa\r\n\r\n________________________________________________________________________________\r\nMicrosoft Teams meeting Need help?\r\nJoin: https://teams.microsoft.com/meet/2150719",
+      "seriesMasterId": null,
+      "showAs": "busy",
+      "type": "singleInstance",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkALgAAAAAAHYQDEapmEc2byACqAC%2FEWg0A%2BkGCLFUuv0KY0MFe0YQo0AAHrOu%2BtwAA&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "accepted",
+        "time": "2025-06-16T14:59:26.2644274+08:00"
+      },
+      "start": {
+        "dateTime": "2025-06-18T16:05:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-06-18T16:50:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Dongmei Zhang",
+          "address": "dongmeiz@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAH9R/tng==\"",
+      "id": "AAkBOQAICN2t_xGXQAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAAByDiOskAABA=",
+      "subject": "Chin-Yew <> Xiaodong 1:1",
+      "bodyPreview": "Hi Chin-Yew,\r\n\r\nHappy New Year!\r\n\r\nHow about we restore our frequent catchup?  If the schedule doesn’t work for you, please feel free to suggest an alternative. If you visit Seattle, please let me know 😊.\r\nThanks,\r\nxiaodong\r\n_____________________________",
+      "seriesMasterId": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHIOI6yQAA",
+      "showAs": "busy",
+      "type": "exception",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkBOQAICN2t%2BxGXQAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAAByDiOskAABA%3D&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "accepted",
+        "time": "2025-06-17T12:43:06.9264609+08:00"
+      },
+      "start": {
+        "dateTime": "2025-06-19T08:30:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-06-19T09:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Xiaodong Liu",
+          "address": "xiaodl@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAHqYA3Bw==\"",
+      "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHrO0xfQAA",
+      "subject": "STCA Extended XLT Meeting (Bi-weekly)",
+      "bodyPreview": "Today?s topic is about Fine-tuning, Bojia will be the presenter.\r\nCan attend if you feel interested.\r\n\r\nThanks\r\nQingwei\r\n\r\n\r\n-----Original Appointment-----\r\nFrom: Effie Liu <efliu@microsoft.com>\r\nSent: Thursday, June 27, 2024 1:28 PM\r\nTo: Effie Liu; STCA ",
+      "seriesMasterId": null,
+      "showAs": "busy",
+      "type": "singleInstance",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkALgAAAAAAHYQDEapmEc2byACqAC%2FEWg0A%2BkGCLFUuv0KY0MFe0YQo0AAHrO0xfQAA&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "accepted",
+        "time": "2025-06-22T09:45:08.8472168+08:00"
+      },
+      "start": {
+        "dateTime": "2025-06-19T12:05:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-06-19T13:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Effie Liu",
+          "address": "efliu@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAHqh+87Q==\"",
+      "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHqq4ytQAA",
+      "subject": "STCA Employee Townhall",
+      "bodyPreview": "-----Original Appointment-----\r\nFrom: Yongdong Wang <yongwang@microsoft.com>\r\nSent: Wednesday, June 11, 2025 7:18 PM\r\nTo: Yongdong Wang; STCA FTE; STCA HR; Dongmei Zhang; Leo Zhang (HR)\r\nSubject: STCA Employee Townhall\r\nWhen: Monday, June 23, 2025 1:0",
+      "seriesMasterId": null,
+      "showAs": "busy",
+      "type": "singleInstance",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkALgAAAAAAHYQDEapmEc2byACqAC%2FEWg0A%2BkGCLFUuv0KY0MFe0YQo0AAHqq4ytQAA&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "accepted",
+        "time": "2025-06-12T11:28:52.7437868+08:00"
+      },
+      "start": {
+        "dateTime": "2025-06-23T13:05:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-06-23T13:50:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Yongdong Wang",
+          "address": "yongwang@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAHqinvJw==\"",
+      "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHsZKQLwAA",
+      "subject": "Post-mortem ",
+      "bodyPreview": "Hi,\r\n\r\nBook a time with you to share with some info after the reorg. Please join me for a quick post-mortem section on Monday. Have a great Sunday!\r\n\r\nBest,\r\n\r\nCY\r\n\r\n________________________________________________________________________________\r\nMicroso",
+      "seriesMasterId": null,
+      "showAs": "busy",
+      "type": "singleInstance",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkALgAAAAAAHYQDEapmEc2byACqAC%2FEWg0A%2BkGCLFUuv0KY0MFe0YQo0AAHsZKQLwAA&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "organizer",
+        "time": "0001-01-01T00:00:00Z"
+      },
+      "start": {
+        "dateTime": "2025-06-23T15:30:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-06-23T16:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Chin-Yew Lin",
+          "address": "cyl@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAH3C0KSQ==\"",
+      "id": "AAkBOQAICN2x6OWoAAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAAB9GzeiAAABA=",
+      "subject": "STCA DS Followups",
+      "bodyPreview": "________________________________\r\nFrom: Shilpha Parakala <sparakala@microsoft.com>\r\nSent: Saturday, June 14, 2025 4:00:43 AM (UTC+08:00) Beijing, Chongqing, Hong Kong, Urumqi\r\nTo: Shilpha Parakala <sparakala@microsoft.com>; Chao Pan <chaopan@microsoft.c",
+      "seriesMasterId": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAH0bN6IAAA",
+      "showAs": "busy",
+      "type": "exception",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkBOQAICN2x6OWoAAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAAB9GzeiAAABA%3D&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "accepted",
+        "time": "2025-08-12T13:07:55.7172465+08:00"
+      },
+      "start": {
+        "dateTime": "2025-06-24T09:05:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-06-24T09:30:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Shilpha Parakala",
+          "address": "sparakala@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAHqzWRBg==\"",
+      "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHqq4zCgAA",
+      "subject": "Microsoft AI Asia All Hands Meeting",
+      "bodyPreview": "                                      Got a question?                                                                                                  Join Teams Town hall\r\nDear all,\r\n\r\nJoin us in celebrating the momentum of our FY25 journey! From stand",
+      "seriesMasterId": null,
+      "showAs": "busy",
+      "type": "singleInstance",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkALgAAAAAAHYQDEapmEc2byACqAC%2FEWg0A%2BkGCLFUuv0KY0MFe0YQo0AAHqq4zCgAA&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "accepted",
+        "time": "2025-06-12T11:29:37.1327503+08:00"
+      },
+      "start": {
+        "dateTime": "2025-06-25T13:30:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-06-25T15:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Qi Zhang",
+          "address": "Zhang.Qi@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAHtEdyzg==\"",
+      "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHss3b3gAA",
+      "subject": "Sync up PM AI learning",
+      "bodyPreview": "________________________________________________________________________________\r\nMicrosoft Teams meeting Need help?\r\nJoin: https://teams.microsoft.com/meet/2758728528001?p=GQULPmmJcuYeBCPo9K\r\nMeeting ID: 275 872 852 800 1\r\nPasscode: fh9TB9eh\r\n_________",
+      "seriesMasterId": null,
+      "showAs": "busy",
+      "type": "singleInstance",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkALgAAAAAAHYQDEapmEc2byACqAC%2FEWg0A%2BkGCLFUuv0KY0MFe0YQo0AAHss3b3gAA&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "accepted",
+        "time": "2025-06-24T10:59:28.00122+08:00"
+      },
+      "start": {
+        "dateTime": "2025-06-25T15:30:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-06-25T16:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Kathy Liu",
+          "address": "kathyl@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAHq+S0uA==\"",
+      "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHss2cawAA",
+      "subject": "Agent workshop discussion",
+      "bodyPreview": "Hi Chin-Yew and Jianfeng,\r\n\r\nI book this slot to discuss the agent workshop and gain a broad overview of agent products and research at MS. Please let me know if you’d like to change time.\r\nHere is the doc for the workshop:  Agent WS.docx\r\n\r\n\r\nThanks,",
+      "seriesMasterId": null,
+      "showAs": "busy",
+      "type": "singleInstance",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkALgAAAAAAHYQDEapmEc2byACqAC%2FEWg0A%2BkGCLFUuv0KY0MFe0YQo0AAHss2cawAA&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "accepted",
+        "time": "2025-06-25T22:37:57.9283504+08:00"
+      },
+      "start": {
+        "dateTime": "2025-06-26T09:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-06-26T09:30:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Xiaodong Liu",
+          "address": "xiaodl@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAH+ebK/w==\"",
+      "id": "AAkBOQAICN21DY9PAAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAABX2-2yAAABA=",
+      "subject": "STCA Monthly Extended PLT + Managers ",
+      "bodyPreview": "forwarding the series again in case it fell off your calendar.\r\n\r\n________________________________\r\nFrom: Effie Liu <efliu@microsoft.com>\r\nSent: Wednesday, February 1, 2023 1:53:53 PM (UTC+08:00) Beijing, Chongqing, Hong Kong, Urumqi\r\nTo: Effie Liu <efliu",
+      "seriesMasterId": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAFfb-bIAAA",
+      "showAs": "busy",
+      "type": "exception",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkBOQAICN21DY9PAAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAABX2%2F2yAAABA%3D&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "accepted",
+        "time": "2025-06-16T23:54:38.0226721+08:00"
+      },
+      "start": {
+        "dateTime": "2025-06-27T10:35:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-06-27T12:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Effie Liu",
+          "address": "efliu@microsoft.com"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "user_id": "cyl@microsoft.com",
+  "generated_at": "2025-10-22T04:42:29.461660",
+  "source": "Microsoft Graph Beta API",
+  "api_endpoint": "https://graph.microsoft.com/beta/me",
+  "me_notes": [
+    {
+      "note": "I am Chin-Yew Lin (Chin-Yew Lin), working as SR PRINCIPAL RESEARCH MANAGER at MICROSOFT CHINA CO LTD",
+      "category": "professional_identity",
+      "title": "Current Professional Role",
+      "temporal_durability": "stable"
+    },
+    {
+      "note": "I work in the Time and Places - China 1107 department, with employee ID 296668",
+      "category": "professional_context",
+      "title": "Organizational Position",
+      "temporal_durability": "stable"
+    },
+    {
+      "note": "I am based in Beijing, office location BEIJING-BJW-2/13463",
+      "category": "location_preferences",
+      "title": "Primary Work Location",
+      "temporal_durability": "stable"
+    },
+    {
+      "note": "I can be reached via email at cyl@microsoft.com, phone at +86 (10) 59173481, IM at cyl@microsoft.com",
+      "category": "communication_style",
+      "title": "Preferred Contact Methods",
+      "temporal_durability": "stable"
+    },
+    {
+      "note": "I actively use Microsoft collaboration tools including MicrosoftCommunicationsOnline, SharePoint, TeamspaceAPI, exchange",
+      "category": "technology_preferences",
+      "title": "Collaboration Platform Usage",
+      "temporal_durability": "stable"
+    },
+    {
+      "note": "I work with Microsoft productivity suite including MicrosoftOffice, PowerAppsService",
+      "category": "technology_preferences",
+      "title": "Productivity Tool Preferences",
+      "temporal_durability": "stable"
+    },
+    {
+      "note": "I use 2 registered devices for secure authentication and access",
+      "category": "technology_preferences",
+      "title": "Multi-Device Security Setup",
+      "temporal_durability": "dynamic"
+    },
+    {
+      "note": "I maintain an active Microsoft corporate identity with username cyl",
+      "category": "professional_identity",
+      "title": "Corporate Identity Status",
+      "temporal_durability": "stable"
+    },
+    {
+      "note": "My regional preferences are set to usage location CN, preferred data region APC",
+      "category": "location_preferences",
+      "title": "Regional and Data Preferences",
+      "temporal_durability": "stable"
+    },
+    {
+      "note": "My account follows DisablePasswordExpiration security policy",
+      "category": "security_preferences",
+      "title": "Account Security Configuration",
+      "temporal_durability": "stable"
+    },
+    {
+      "note": "I report to Dongmei Zhang (DONGMEIZ)",
+      "category": "professional_context",
+      "title": "Reporting Relationship",
+      "temporal_durability": "stable"
+    },
+    {
+      "note": "I am organizationally assigned to cost center 21009085, company code 1107",
+      "category": "professional_context",
+      "title": "Organizational Assignment",
+      "temporal_durability": "stable"
+    },
+    {
+      "note": "My office is located at BEIJING-BJW-2, Building 1, No.5 DanLing Street, Haidian Dst",
+      "category": "location_preferences",
+      "title": "Detailed Office Location",
+      "temporal_durability": "stable"
+    }
+  ],
+  "summary": {
+    "total_notes": 13,
+    "categories": [
+      "security_preferences",
+      "professional_context",
+      "technology_preferences",
+      "location_preferences",
+      "communication_style",
+      "professional_identity"
+    ],
+    "profile_completeness": "comprehensive",
+    "data_richness": "high"
+  }
+}

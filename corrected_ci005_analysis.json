@@ -1,0 +1,63 @@
+{
+  "meetings": [
+    {
+      "time": "2:00 AM PDT",
+      "title": "APAC Engineering Standup",
+      "duration": "30 min",
+      "conflict_status": "NO CONFLICT"
+    },
+    {
+      "time": "6:00 AM PDT",
+      "title": "Product Strategy Review",
+      "duration": "60 min",
+      "conflict_status": "NO CONFLICT"
+    },
+    {
+      "time": "8:30 AM PDT",
+      "title": "Cross-team Collaboration Meeting",
+      "duration": "45 min",
+      "conflict_status": "NO CONFLICT"
+    },
+    {
+      "time": "10:00 AM PDT",
+      "title": "Executive Briefing",
+      "duration": "90 min",
+      "conflict_status": "NO CONFLICT"
+    }
+  ],
+  "travel_info": {
+    "airport_arrival": "2:25 PM PDT (2 hours before 4:25 PM departure)",
+    "latest_departure_from_office": "1:30 PM PDT (allowing 1 hour travel to LAX)",
+    "all_morning_meetings": "FEASIBLE - All meetings end by 11:30 AM PDT",
+    "buffer_time": "2+ hours between last meeting and recommended office departure"
+  },
+  "analysis": {
+    "flight_details": {
+      "flight": "CI005 China Airlines",
+      "route": "LAX \u2192 TPE",
+      "departure_local": "4:25 PM PDT",
+      "departure_utc": "11:25 PM UTC",
+      "arrival_local": "9:30 PM CST+1 (next day)",
+      "duration": "13h 58m",
+      "aircraft": "Airbus A350-900"
+    },
+    "meeting_conflict_analysis": {
+      "total_meetings": 4,
+      "conflicted_meetings": 0,
+      "feasible_meetings": 4,
+      "status": "ALL MEETINGS FEASIBLE"
+    },
+    "key_insights": [
+      "Flight departs at 4:25 PM PDT, NOT early morning as initially assumed",
+      "All morning meetings (2 AM - 11:30 AM) occur well before flight departure",
+      "Ample time for post-meeting work and travel to airport",
+      "No scheduling conflicts - optimal travel day arrangement"
+    ],
+    "revised_recommendations": [
+      "Attend all scheduled meetings - no conflicts with flight",
+      "Plan to leave office by 1:30 PM PDT for airport travel",
+      "Arrive at LAX by 2:25 PM PDT for 4:25 PM departure",
+      "Consider scheduling final office tasks before 1:00 PM PDT"
+    ]
+  }
+}

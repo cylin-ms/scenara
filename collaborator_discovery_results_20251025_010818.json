@@ -1,0 +1,1063 @@
+{
+  "analysis_timestamp": "2025-10-25T01:08:18.313917",
+  "algorithm_version": "4.2_enterprise_taxonomy_corrected",
+  "user_name": "Chin-Yew Lin",
+  "total_collaborators_found": 11,
+  "data_source": "meeting_prep_data/real_calendar_scenarios.json",
+  "ranking_criteria": {
+    "importance_calculation": "final_score * 0.4 + genuine_ratio * 100 * 0.3 + confidence * 50 * 0.2 + time_periods * 5 * 0.1",
+    "filtering_requirements": [
+      "Has genuine collaboration evidence",
+      "Not a system account",
+      "Final score > 15",
+      "Confidence > 60%",
+      "Genuine collaboration ratio > 30%",
+      "Email list ratio < 70%"
+    ]
+  },
+  "collaborators": [
+    {
+      "name": "Haidong Zhang",
+      "importance_score": 120.4,
+      "final_score": 231,
+      "confidence": 0.7,
+      "genuine_collaboration_meetings": 12,
+      "informational_meetings": 2,
+      "broadcast_meetings": 0,
+      "email_list_meetings": 0,
+      "genuine_ratio": 0.667,
+      "informational_ratio": 0.111,
+      "email_list_ratio": 0.0,
+      "one_on_one": 0,
+      "organized_by_me": 0,
+      "small_working_meetings": 7,
+      "attended_their_meetings": 2,
+      "time_periods": 2,
+      "total_meetings": 18,
+      "collaboration_evidence": [
+        "Planning/decision meeting participation",
+        "Small collaborative working session",
+        "Small internal recurring meeting",
+        "Attended their working meeting"
+      ],
+      "information_evidence": [
+        "Attended their informational meeting",
+        "Informational briefing attendance"
+      ],
+      "meeting_details": [
+        {
+          "date": "2025-09-23T08:35:00",
+          "size": 5,
+          "subject": "haidong/chin-yew/dongmei sync",
+          "organizer": "Dongmei Zhang",
+          "meeting_type": "small_collaborative_working",
+          "taxonomy_category": "Strategic Planning & Decision - Planning/Workshop Sessions",
+          "has_email_list": false,
+          "base_score": 15,
+          "collaboration_evidence": [
+            "Small collaborative working session"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2025-09-23T02:05:00",
+          "size": 6,
+          "subject": "sync on meeting prep golden prompt eval",
+          "organizer": "Caroline Mao",
+          "meeting_type": "small_collaborative_working",
+          "taxonomy_category": "Strategic Planning & Decision - Planning/Workshop Sessions",
+          "has_email_list": false,
+          "base_score": 15,
+          "collaboration_evidence": [
+            "Small collaborative working session"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2025-09-23T05:00:00",
+          "size": 4,
+          "subject": "planning work for golden prompts",
+          "organizer": "Balaji Shyamkumar",
+          "meeting_type": "small_collaborative_working",
+          "taxonomy_category": "Strategic Planning & Decision - Planning/Workshop Sessions",
+          "has_email_list": false,
+          "base_score": 15,
+          "collaboration_evidence": [
+            "Small collaborative working session"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2025-09-26T06:05:00",
+          "size": 25,
+          "subject": "dki team meeting",
+          "organizer": "Dongmei Zhang",
+          "meeting_type": "informational_briefing",
+          "taxonomy_category": "Internal Recurring - Progress Review Meetings",
+          "has_email_list": false,
+          "base_score": 1,
+          "collaboration_evidence": [],
+          "information_evidence": [
+            "Informational briefing attendance"
+          ]
+        },
+        {
+          "date": "2025-09-19T06:00:00",
+          "size": 6,
+          "subject": "sync and discuss",
+          "organizer": "Haidong Zhang",
+          "meeting_type": "small_collaborative_working",
+          "taxonomy_category": "Strategic Planning & Decision - Planning/Workshop Sessions",
+          "has_email_list": false,
+          "base_score": 35,
+          "collaboration_evidence": [
+            "Small collaborative working session",
+            "Attended their working meeting"
+          ],
+          "information_evidence": []
+        }
+      ],
+      "algorithm_version": "4.2_enterprise_taxonomy_corrected"
+    },
+    {
+      "name": "Drew Brough",
+      "importance_score": 81.64,
+      "final_score": 94.1,
+      "confidence": 0.7,
+      "genuine_collaboration_meetings": 6,
+      "informational_meetings": 0,
+      "broadcast_meetings": 1,
+      "email_list_meetings": 0,
+      "genuine_ratio": 1.2,
+      "informational_ratio": 0.0,
+      "email_list_ratio": 0.0,
+      "one_on_one": 0,
+      "organized_by_me": 0,
+      "small_working_meetings": 2,
+      "attended_their_meetings": 2,
+      "time_periods": 2,
+      "total_meetings": 5,
+      "collaboration_evidence": [
+        "Planning/decision meeting participation",
+        "Small collaborative working session",
+        "Attended their working meeting"
+      ],
+      "information_evidence": [
+        "Broadcast/webinar attendance"
+      ],
+      "meeting_details": [
+        {
+          "date": "2025-10-08T17:05:00",
+          "size": 23,
+          "subject": "hive | t+p meeting prep monthly sync",
+          "organizer": "Drew Brough",
+          "meeting_type": "planning_decision_meetings",
+          "taxonomy_category": "Strategic Planning & Decision - Planning Sessions",
+          "has_email_list": false,
+          "base_score": 32,
+          "collaboration_evidence": [
+            "Planning/decision meeting participation",
+            "Attended their working meeting"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2025-10-08T20:05:00",
+          "size": 29,
+          "subject": "prepare.ai status review",
+          "organizer": "Drew Brough",
+          "meeting_type": "planning_decision_meetings",
+          "taxonomy_category": "Strategic Planning & Decision - Planning Sessions",
+          "has_email_list": false,
+          "base_score": 32,
+          "collaboration_evidence": [
+            "Planning/decision meeting participation",
+            "Attended their working meeting"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2025-09-30T03:35:00",
+          "size": 10,
+          "subject": "meeting prep stca sync",
+          "organizer": "Mark Grimaldi",
+          "meeting_type": "small_collaborative_working",
+          "taxonomy_category": "Strategic Planning & Decision - Planning/Workshop Sessions",
+          "has_email_list": false,
+          "base_score": 15,
+          "collaboration_evidence": [
+            "Small collaborative working session"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2025-10-13T16:35:00",
+          "size": 64,
+          "subject": "calendar.ai | pillar review",
+          "organizer": "Pratibha Permandla",
+          "meeting_type": "broadcast_webinar",
+          "taxonomy_category": "Informational & Broadcast - Webinars and Broadcasts",
+          "has_email_list": false,
+          "base_score": 0.1,
+          "collaboration_evidence": [],
+          "information_evidence": [
+            "Broadcast/webinar attendance"
+          ]
+        },
+        {
+          "date": "2025-09-23T02:05:00",
+          "size": 6,
+          "subject": "sync on meeting prep golden prompt eval",
+          "organizer": "Caroline Mao",
+          "meeting_type": "small_collaborative_working",
+          "taxonomy_category": "Strategic Planning & Decision - Planning/Workshop Sessions",
+          "has_email_list": false,
+          "base_score": 15,
+          "collaboration_evidence": [
+            "Small collaborative working session"
+          ],
+          "information_evidence": []
+        }
+      ],
+      "algorithm_version": "4.2_enterprise_taxonomy_corrected"
+    },
+    {
+      "name": "Balaji Shyamkumar",
+      "importance_score": 80.92,
+      "final_score": 122.3,
+      "confidence": 0.7,
+      "genuine_collaboration_meetings": 8,
+      "informational_meetings": 1,
+      "broadcast_meetings": 3,
+      "email_list_meetings": 0,
+      "genuine_ratio": 0.8,
+      "informational_ratio": 0.1,
+      "email_list_ratio": 0.0,
+      "one_on_one": 0,
+      "organized_by_me": 0,
+      "small_working_meetings": 3,
+      "attended_their_meetings": 2,
+      "time_periods": 2,
+      "total_meetings": 10,
+      "collaboration_evidence": [
+        "Planning/decision meeting participation",
+        "Small collaborative working session",
+        "Attended their working meeting"
+      ],
+      "information_evidence": [
+        "Attended their informational meeting",
+        "Broadcast/webinar attendance",
+        "Informational briefing attendance"
+      ],
+      "meeting_details": [
+        {
+          "date": "2025-09-26T04:05:00",
+          "size": 15,
+          "subject": "organize & collaborate golden prompt ds status",
+          "organizer": "Balaji Shyamkumar",
+          "meeting_type": "informational_briefing",
+          "taxonomy_category": "Internal Recurring - Progress Review Meetings",
+          "has_email_list": false,
+          "base_score": 1,
+          "collaboration_evidence": [],
+          "information_evidence": [
+            "Informational briefing attendance",
+            "Attended their informational meeting"
+          ]
+        },
+        {
+          "date": "2025-09-25T00:05:00",
+          "size": 18,
+          "subject": "organize and collaborate relevance metrics review",
+          "organizer": "Pratibha Permandla",
+          "meeting_type": "planning_decision_meetings",
+          "taxonomy_category": "Strategic Planning & Decision - Planning Sessions",
+          "has_email_list": false,
+          "base_score": 12,
+          "collaboration_evidence": [
+            "Planning/decision meeting participation"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2025-09-24T04:40:00",
+          "size": 8,
+          "subject": "continue review of the gp as prd approach and plan",
+          "organizer": "Balaji Shyamkumar",
+          "meeting_type": "small_collaborative_working",
+          "taxonomy_category": "Strategic Planning & Decision - Planning/Workshop Sessions",
+          "has_email_list": false,
+          "base_score": 35,
+          "collaboration_evidence": [
+            "Small collaborative working session",
+            "Attended their working meeting"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2025-10-03T00:05:00",
+          "size": 110,
+          "subject": "copilot offline eval - platform update and customer feedback",
+          "organizer": "Suma SaganeGowda",
+          "meeting_type": "broadcast_webinar",
+          "taxonomy_category": "Informational & Broadcast - Webinars and Broadcasts",
+          "has_email_list": false,
+          "base_score": 0.1,
+          "collaboration_evidence": [],
+          "information_evidence": [
+            "Broadcast/webinar attendance"
+          ]
+        },
+        {
+          "date": "2025-09-23T05:00:00",
+          "size": 4,
+          "subject": "planning work for golden prompts",
+          "organizer": "Balaji Shyamkumar",
+          "meeting_type": "small_collaborative_working",
+          "taxonomy_category": "Strategic Planning & Decision - Planning/Workshop Sessions",
+          "has_email_list": false,
+          "base_score": 35,
+          "collaboration_evidence": [
+            "Small collaborative working session",
+            "Attended their working meeting"
+          ],
+          "information_evidence": []
+        }
+      ],
+      "algorithm_version": "4.2_enterprise_taxonomy_corrected"
+    },
+    {
+      "name": "Charlie Chung",
+      "importance_score": 70.38,
+      "final_score": 97.2,
+      "confidence": 1.0,
+      "genuine_collaboration_meetings": 6,
+      "informational_meetings": 1,
+      "broadcast_meetings": 2,
+      "email_list_meetings": 0,
+      "genuine_ratio": 0.667,
+      "informational_ratio": 0.111,
+      "email_list_ratio": 0.0,
+      "one_on_one": 0,
+      "organized_by_me": 1,
+      "small_working_meetings": 1,
+      "attended_their_meetings": 0,
+      "time_periods": 3,
+      "total_meetings": 9,
+      "collaboration_evidence": [
+        "Small internal recurring meeting",
+        "Meeting you organized together",
+        "Small collaborative working session",
+        "Planning/decision meeting participation"
+      ],
+      "information_evidence": [
+        "Broadcast/webinar attendance",
+        "Informational briefing attendance"
+      ],
+      "meeting_details": [
+        {
+          "date": "2025-06-02T21:05:00",
+          "size": 105,
+          "subject": "outlook <> bizchat  (weekly)",
+          "organizer": "Gaurav Sareen",
+          "meeting_type": "broadcast_webinar",
+          "taxonomy_category": "Informational & Broadcast - Webinars and Broadcasts",
+          "has_email_list": false,
+          "base_score": 0.1,
+          "collaboration_evidence": [],
+          "information_evidence": [
+            "Broadcast/webinar attendance"
+          ]
+        },
+        {
+          "date": "2025-09-25T23:15:00",
+          "size": 29,
+          "subject": "gxp product review | outlook + digits - cos/rocksteady",
+          "organizer": "GXP Product Reviews",
+          "meeting_type": "planning_decision_meetings",
+          "taxonomy_category": "Strategic Planning & Decision - Planning Sessions",
+          "has_email_list": false,
+          "base_score": 12,
+          "collaboration_evidence": [
+            "Planning/decision meeting participation"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2025-09-26T04:05:00",
+          "size": 15,
+          "subject": "organize & collaborate golden prompt ds status",
+          "organizer": "Balaji Shyamkumar",
+          "meeting_type": "informational_briefing",
+          "taxonomy_category": "Internal Recurring - Progress Review Meetings",
+          "has_email_list": false,
+          "base_score": 1,
+          "collaboration_evidence": [],
+          "information_evidence": [
+            "Informational briefing attendance"
+          ]
+        },
+        {
+          "date": "2025-09-25T00:05:00",
+          "size": 18,
+          "subject": "organize and collaborate relevance metrics review",
+          "organizer": "Pratibha Permandla",
+          "meeting_type": "planning_decision_meetings",
+          "taxonomy_category": "Strategic Planning & Decision - Planning Sessions",
+          "has_email_list": false,
+          "base_score": 12,
+          "collaboration_evidence": [
+            "Planning/decision meeting participation"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2025-09-24T04:40:00",
+          "size": 8,
+          "subject": "continue review of the gp as prd approach and plan",
+          "organizer": "Balaji Shyamkumar",
+          "meeting_type": "small_collaborative_working",
+          "taxonomy_category": "Strategic Planning & Decision - Planning/Workshop Sessions",
+          "has_email_list": false,
+          "base_score": 15,
+          "collaboration_evidence": [
+            "Small collaborative working session"
+          ],
+          "information_evidence": []
+        }
+      ],
+      "algorithm_version": "4.2_enterprise_taxonomy_corrected"
+    },
+    {
+      "name": "Caroline Mao",
+      "importance_score": 66.58,
+      "final_score": 90.2,
+      "confidence": 0.7,
+      "genuine_collaboration_meetings": 6,
+      "informational_meetings": 1,
+      "broadcast_meetings": 2,
+      "email_list_meetings": 0,
+      "genuine_ratio": 0.75,
+      "informational_ratio": 0.125,
+      "email_list_ratio": 0.0,
+      "one_on_one": 0,
+      "organized_by_me": 0,
+      "small_working_meetings": 3,
+      "attended_their_meetings": 1,
+      "time_periods": 2,
+      "total_meetings": 8,
+      "collaboration_evidence": [
+        "Planning/decision meeting participation",
+        "Small collaborative working session",
+        "Attended their working meeting"
+      ],
+      "information_evidence": [
+        "Broadcast/webinar attendance",
+        "Informational briefing attendance"
+      ],
+      "meeting_details": [
+        {
+          "date": "2025-10-13T16:35:00",
+          "size": 64,
+          "subject": "calendar.ai | pillar review",
+          "organizer": "Pratibha Permandla",
+          "meeting_type": "broadcast_webinar",
+          "taxonomy_category": "Informational & Broadcast - Webinars and Broadcasts",
+          "has_email_list": false,
+          "base_score": 0.1,
+          "collaboration_evidence": [],
+          "information_evidence": [
+            "Broadcast/webinar attendance"
+          ]
+        },
+        {
+          "date": "2025-09-26T04:05:00",
+          "size": 15,
+          "subject": "organize & collaborate golden prompt ds status",
+          "organizer": "Balaji Shyamkumar",
+          "meeting_type": "informational_briefing",
+          "taxonomy_category": "Internal Recurring - Progress Review Meetings",
+          "has_email_list": false,
+          "base_score": 1,
+          "collaboration_evidence": [],
+          "information_evidence": [
+            "Informational briefing attendance"
+          ]
+        },
+        {
+          "date": "2025-09-24T04:40:00",
+          "size": 8,
+          "subject": "continue review of the gp as prd approach and plan",
+          "organizer": "Balaji Shyamkumar",
+          "meeting_type": "small_collaborative_working",
+          "taxonomy_category": "Strategic Planning & Decision - Planning/Workshop Sessions",
+          "has_email_list": false,
+          "base_score": 15,
+          "collaboration_evidence": [
+            "Small collaborative working session"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2025-09-23T02:05:00",
+          "size": 6,
+          "subject": "sync on meeting prep golden prompt eval",
+          "organizer": "Caroline Mao",
+          "meeting_type": "small_collaborative_working",
+          "taxonomy_category": "Strategic Planning & Decision - Planning/Workshop Sessions",
+          "has_email_list": false,
+          "base_score": 35,
+          "collaboration_evidence": [
+            "Small collaborative working session",
+            "Attended their working meeting"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2025-10-03T00:05:00",
+          "size": 110,
+          "subject": "copilot offline eval - platform update and customer feedback",
+          "organizer": "Suma SaganeGowda",
+          "meeting_type": "broadcast_webinar",
+          "taxonomy_category": "Informational & Broadcast - Webinars and Broadcasts",
+          "has_email_list": false,
+          "base_score": 0.1,
+          "collaboration_evidence": [],
+          "information_evidence": [
+            "Broadcast/webinar attendance"
+          ]
+        }
+      ],
+      "algorithm_version": "4.2_enterprise_taxonomy_corrected"
+    },
+    {
+      "name": "Mark Grimaldi",
+      "importance_score": 63.04,
+      "final_score": 75.1,
+      "confidence": 0.7,
+      "genuine_collaboration_meetings": 5,
+      "informational_meetings": 1,
+      "broadcast_meetings": 1,
+      "email_list_meetings": 0,
+      "genuine_ratio": 0.833,
+      "informational_ratio": 0.167,
+      "email_list_ratio": 0.0,
+      "one_on_one": 0,
+      "organized_by_me": 0,
+      "small_working_meetings": 2,
+      "attended_their_meetings": 1,
+      "time_periods": 2,
+      "total_meetings": 6,
+      "collaboration_evidence": [
+        "Planning/decision meeting participation",
+        "Small collaborative working session",
+        "Attended their working meeting"
+      ],
+      "information_evidence": [
+        "Broadcast/webinar attendance",
+        "Informational briefing attendance"
+      ],
+      "meeting_details": [
+        {
+          "date": "2025-10-08T20:05:00",
+          "size": 29,
+          "subject": "prepare.ai status review",
+          "organizer": "Drew Brough",
+          "meeting_type": "planning_decision_meetings",
+          "taxonomy_category": "Strategic Planning & Decision - Planning Sessions",
+          "has_email_list": false,
+          "base_score": 12,
+          "collaboration_evidence": [
+            "Planning/decision meeting participation"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2025-09-30T03:35:00",
+          "size": 10,
+          "subject": "meeting prep stca sync",
+          "organizer": "Mark Grimaldi",
+          "meeting_type": "small_collaborative_working",
+          "taxonomy_category": "Strategic Planning & Decision - Planning/Workshop Sessions",
+          "has_email_list": false,
+          "base_score": 35,
+          "collaboration_evidence": [
+            "Small collaborative working session",
+            "Attended their working meeting"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2025-10-13T16:35:00",
+          "size": 64,
+          "subject": "calendar.ai | pillar review",
+          "organizer": "Pratibha Permandla",
+          "meeting_type": "broadcast_webinar",
+          "taxonomy_category": "Informational & Broadcast - Webinars and Broadcasts",
+          "has_email_list": false,
+          "base_score": 0.1,
+          "collaboration_evidence": [],
+          "information_evidence": [
+            "Broadcast/webinar attendance"
+          ]
+        },
+        {
+          "date": "2025-09-26T04:05:00",
+          "size": 15,
+          "subject": "organize & collaborate golden prompt ds status",
+          "organizer": "Balaji Shyamkumar",
+          "meeting_type": "informational_briefing",
+          "taxonomy_category": "Internal Recurring - Progress Review Meetings",
+          "has_email_list": false,
+          "base_score": 1,
+          "collaboration_evidence": [],
+          "information_evidence": [
+            "Informational briefing attendance"
+          ]
+        },
+        {
+          "date": "2025-09-23T02:05:00",
+          "size": 6,
+          "subject": "sync on meeting prep golden prompt eval",
+          "organizer": "Caroline Mao",
+          "meeting_type": "small_collaborative_working",
+          "taxonomy_category": "Strategic Planning & Decision - Planning/Workshop Sessions",
+          "has_email_list": false,
+          "base_score": 15,
+          "collaboration_evidence": [
+            "Small collaborative working session"
+          ],
+          "information_evidence": []
+        }
+      ],
+      "algorithm_version": "4.2_enterprise_taxonomy_corrected"
+    },
+    {
+      "name": "Sathish Venkat Rangam",
+      "importance_score": 59.6,
+      "final_score": 54,
+      "confidence": 0.7,
+      "genuine_collaboration_meetings": 4,
+      "informational_meetings": 0,
+      "broadcast_meetings": 0,
+      "email_list_meetings": 0,
+      "genuine_ratio": 1.0,
+      "informational_ratio": 0.0,
+      "email_list_ratio": 0.0,
+      "one_on_one": 0,
+      "organized_by_me": 0,
+      "small_working_meetings": 2,
+      "attended_their_meetings": 0,
+      "time_periods": 2,
+      "total_meetings": 4,
+      "collaboration_evidence": [
+        "Planning/decision meeting participation",
+        "Small collaborative working session"
+      ],
+      "information_evidence": [],
+      "meeting_details": [
+        {
+          "date": "2025-10-08T17:05:00",
+          "size": 23,
+          "subject": "hive | t+p meeting prep monthly sync",
+          "organizer": "Drew Brough",
+          "meeting_type": "planning_decision_meetings",
+          "taxonomy_category": "Strategic Planning & Decision - Planning Sessions",
+          "has_email_list": false,
+          "base_score": 12,
+          "collaboration_evidence": [
+            "Planning/decision meeting participation"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2025-10-08T20:05:00",
+          "size": 29,
+          "subject": "prepare.ai status review",
+          "organizer": "Drew Brough",
+          "meeting_type": "planning_decision_meetings",
+          "taxonomy_category": "Strategic Planning & Decision - Planning Sessions",
+          "has_email_list": false,
+          "base_score": 12,
+          "collaboration_evidence": [
+            "Planning/decision meeting participation"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2025-09-30T03:35:00",
+          "size": 10,
+          "subject": "meeting prep stca sync",
+          "organizer": "Mark Grimaldi",
+          "meeting_type": "small_collaborative_working",
+          "taxonomy_category": "Strategic Planning & Decision - Planning/Workshop Sessions",
+          "has_email_list": false,
+          "base_score": 15,
+          "collaboration_evidence": [
+            "Small collaborative working session"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2025-09-23T02:05:00",
+          "size": 6,
+          "subject": "sync on meeting prep golden prompt eval",
+          "organizer": "Caroline Mao",
+          "meeting_type": "small_collaborative_working",
+          "taxonomy_category": "Strategic Planning & Decision - Planning/Workshop Sessions",
+          "has_email_list": false,
+          "base_score": 15,
+          "collaboration_evidence": [
+            "Small collaborative working session"
+          ],
+          "information_evidence": []
+        }
+      ],
+      "algorithm_version": "4.2_enterprise_taxonomy_corrected"
+    },
+    {
+      "name": "Dongmei Zhang",
+      "importance_score": 56.7,
+      "final_score": 48,
+      "confidence": 0.7,
+      "genuine_collaboration_meetings": 3,
+      "informational_meetings": 1,
+      "broadcast_meetings": 0,
+      "email_list_meetings": 0,
+      "genuine_ratio": 1.0,
+      "informational_ratio": 0.333,
+      "email_list_ratio": 0.0,
+      "one_on_one": 0,
+      "organized_by_me": 0,
+      "small_working_meetings": 1,
+      "attended_their_meetings": 1,
+      "time_periods": 1,
+      "total_meetings": 3,
+      "collaboration_evidence": [
+        "Planning/decision meeting participation",
+        "Small collaborative working session",
+        "Attended their working meeting"
+      ],
+      "information_evidence": [
+        "Attended their informational meeting",
+        "Informational briefing attendance"
+      ],
+      "meeting_details": [
+        {
+          "date": "2025-09-25T00:05:00",
+          "size": 18,
+          "subject": "organize and collaborate relevance metrics review",
+          "organizer": "Pratibha Permandla",
+          "meeting_type": "planning_decision_meetings",
+          "taxonomy_category": "Strategic Planning & Decision - Planning Sessions",
+          "has_email_list": false,
+          "base_score": 12,
+          "collaboration_evidence": [
+            "Planning/decision meeting participation"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2025-09-23T08:35:00",
+          "size": 5,
+          "subject": "haidong/chin-yew/dongmei sync",
+          "organizer": "Dongmei Zhang",
+          "meeting_type": "small_collaborative_working",
+          "taxonomy_category": "Strategic Planning & Decision - Planning/Workshop Sessions",
+          "has_email_list": false,
+          "base_score": 35,
+          "collaboration_evidence": [
+            "Small collaborative working session",
+            "Attended their working meeting"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2025-09-26T06:05:00",
+          "size": 25,
+          "subject": "dki team meeting",
+          "organizer": "Dongmei Zhang",
+          "meeting_type": "informational_briefing",
+          "taxonomy_category": "Internal Recurring - Progress Review Meetings",
+          "has_email_list": false,
+          "base_score": 1,
+          "collaboration_evidence": [],
+          "information_evidence": [
+            "Informational briefing attendance",
+            "Attended their informational meeting"
+          ]
+        }
+      ],
+      "algorithm_version": "4.2_enterprise_taxonomy_corrected"
+    },
+    {
+      "name": "Deniz Cakirkaya",
+      "importance_score": 53.6,
+      "final_score": 39,
+      "confidence": 0.7,
+      "genuine_collaboration_meetings": 3,
+      "informational_meetings": 0,
+      "broadcast_meetings": 0,
+      "email_list_meetings": 0,
+      "genuine_ratio": 1.0,
+      "informational_ratio": 0.0,
+      "email_list_ratio": 0.0,
+      "one_on_one": 0,
+      "organized_by_me": 0,
+      "small_working_meetings": 1,
+      "attended_their_meetings": 0,
+      "time_periods": 2,
+      "total_meetings": 3,
+      "collaboration_evidence": [
+        "Planning/decision meeting participation",
+        "Small collaborative working session"
+      ],
+      "information_evidence": [],
+      "meeting_details": [
+        {
+          "date": "2025-10-08T17:05:00",
+          "size": 23,
+          "subject": "hive | t+p meeting prep monthly sync",
+          "organizer": "Drew Brough",
+          "meeting_type": "planning_decision_meetings",
+          "taxonomy_category": "Strategic Planning & Decision - Planning Sessions",
+          "has_email_list": false,
+          "base_score": 12,
+          "collaboration_evidence": [
+            "Planning/decision meeting participation"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2025-10-08T20:05:00",
+          "size": 29,
+          "subject": "prepare.ai status review",
+          "organizer": "Drew Brough",
+          "meeting_type": "planning_decision_meetings",
+          "taxonomy_category": "Strategic Planning & Decision - Planning Sessions",
+          "has_email_list": false,
+          "base_score": 12,
+          "collaboration_evidence": [
+            "Planning/decision meeting participation"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2025-09-30T03:35:00",
+          "size": 10,
+          "subject": "meeting prep stca sync",
+          "organizer": "Mark Grimaldi",
+          "meeting_type": "small_collaborative_working",
+          "taxonomy_category": "Strategic Planning & Decision - Planning/Workshop Sessions",
+          "has_email_list": false,
+          "base_score": 15,
+          "collaboration_evidence": [
+            "Small collaborative working session"
+          ],
+          "information_evidence": []
+        }
+      ],
+      "algorithm_version": "4.2_enterprise_taxonomy_corrected"
+    },
+    {
+      "name": "Santhosh Raman",
+      "importance_score": 46.52,
+      "final_score": 52.2,
+      "confidence": 0.7,
+      "genuine_collaboration_meetings": 4,
+      "informational_meetings": 1,
+      "broadcast_meetings": 2,
+      "email_list_meetings": 0,
+      "genuine_ratio": 0.571,
+      "informational_ratio": 0.143,
+      "email_list_ratio": 0.0,
+      "one_on_one": 0,
+      "organized_by_me": 0,
+      "small_working_meetings": 1,
+      "attended_their_meetings": 0,
+      "time_periods": 3,
+      "total_meetings": 7,
+      "collaboration_evidence": [
+        "Planning/decision meeting participation",
+        "Small collaborative working session"
+      ],
+      "information_evidence": [
+        "Broadcast/webinar attendance",
+        "Informational briefing attendance"
+      ],
+      "meeting_details": [
+        {
+          "date": "2025-10-13T16:35:00",
+          "size": 64,
+          "subject": "calendar.ai | pillar review",
+          "organizer": "Pratibha Permandla",
+          "meeting_type": "broadcast_webinar",
+          "taxonomy_category": "Informational & Broadcast - Webinars and Broadcasts",
+          "has_email_list": false,
+          "base_score": 0.1,
+          "collaboration_evidence": [],
+          "information_evidence": [
+            "Broadcast/webinar attendance"
+          ]
+        },
+        {
+          "date": "2025-06-02T21:05:00",
+          "size": 105,
+          "subject": "outlook <> bizchat  (weekly)",
+          "organizer": "Gaurav Sareen",
+          "meeting_type": "broadcast_webinar",
+          "taxonomy_category": "Informational & Broadcast - Webinars and Broadcasts",
+          "has_email_list": false,
+          "base_score": 0.1,
+          "collaboration_evidence": [],
+          "information_evidence": [
+            "Broadcast/webinar attendance"
+          ]
+        },
+        {
+          "date": "2025-09-26T04:05:00",
+          "size": 15,
+          "subject": "organize & collaborate golden prompt ds status",
+          "organizer": "Balaji Shyamkumar",
+          "meeting_type": "informational_briefing",
+          "taxonomy_category": "Internal Recurring - Progress Review Meetings",
+          "has_email_list": false,
+          "base_score": 1,
+          "collaboration_evidence": [],
+          "information_evidence": [
+            "Informational briefing attendance"
+          ]
+        },
+        {
+          "date": "2025-09-25T00:05:00",
+          "size": 18,
+          "subject": "organize and collaborate relevance metrics review",
+          "organizer": "Pratibha Permandla",
+          "meeting_type": "planning_decision_meetings",
+          "taxonomy_category": "Strategic Planning & Decision - Planning Sessions",
+          "has_email_list": false,
+          "base_score": 12,
+          "collaboration_evidence": [
+            "Planning/decision meeting participation"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2025-09-24T04:40:00",
+          "size": 8,
+          "subject": "continue review of the gp as prd approach and plan",
+          "organizer": "Balaji Shyamkumar",
+          "meeting_type": "small_collaborative_working",
+          "taxonomy_category": "Strategic Planning & Decision - Planning/Workshop Sessions",
+          "has_email_list": false,
+          "base_score": 15,
+          "collaboration_evidence": [
+            "Small collaborative working session"
+          ],
+          "information_evidence": []
+        }
+      ],
+      "algorithm_version": "4.2_enterprise_taxonomy_corrected"
+    },
+    {
+      "name": "Vani Soff",
+      "importance_score": 46.52,
+      "final_score": 52.2,
+      "confidence": 0.7,
+      "genuine_collaboration_meetings": 4,
+      "informational_meetings": 1,
+      "broadcast_meetings": 2,
+      "email_list_meetings": 0,
+      "genuine_ratio": 0.571,
+      "informational_ratio": 0.143,
+      "email_list_ratio": 0.0,
+      "one_on_one": 0,
+      "organized_by_me": 0,
+      "small_working_meetings": 1,
+      "attended_their_meetings": 0,
+      "time_periods": 3,
+      "total_meetings": 7,
+      "collaboration_evidence": [
+        "Planning/decision meeting participation",
+        "Small collaborative working session"
+      ],
+      "information_evidence": [
+        "Broadcast/webinar attendance",
+        "Informational briefing attendance"
+      ],
+      "meeting_details": [
+        {
+          "date": "2025-10-13T16:35:00",
+          "size": 64,
+          "subject": "calendar.ai | pillar review",
+          "organizer": "Pratibha Permandla",
+          "meeting_type": "broadcast_webinar",
+          "taxonomy_category": "Informational & Broadcast - Webinars and Broadcasts",
+          "has_email_list": false,
+          "base_score": 0.1,
+          "collaboration_evidence": [],
+          "information_evidence": [
+            "Broadcast/webinar attendance"
+          ]
+        },
+        {
+          "date": "2025-06-02T21:05:00",
+          "size": 105,
+          "subject": "outlook <> bizchat  (weekly)",
+          "organizer": "Gaurav Sareen",
+          "meeting_type": "broadcast_webinar",
+          "taxonomy_category": "Informational & Broadcast - Webinars and Broadcasts",
+          "has_email_list": false,
+          "base_score": 0.1,
+          "collaboration_evidence": [],
+          "information_evidence": [
+            "Broadcast/webinar attendance"
+          ]
+        },
+        {
+          "date": "2025-09-26T04:05:00",
+          "size": 15,
+          "subject": "organize & collaborate golden prompt ds status",
+          "organizer": "Balaji Shyamkumar",
+          "meeting_type": "informational_briefing",
+          "taxonomy_category": "Internal Recurring - Progress Review Meetings",
+          "has_email_list": false,
+          "base_score": 1,
+          "collaboration_evidence": [],
+          "information_evidence": [
+            "Informational briefing attendance"
+          ]
+        },
+        {
+          "date": "2025-09-25T00:05:00",
+          "size": 18,
+          "subject": "organize and collaborate relevance metrics review",
+          "organizer": "Pratibha Permandla",
+          "meeting_type": "planning_decision_meetings",
+          "taxonomy_category": "Strategic Planning & Decision - Planning Sessions",
+          "has_email_list": false,
+          "base_score": 12,
+          "collaboration_evidence": [
+            "Planning/decision meeting participation"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2025-09-24T04:40:00",
+          "size": 8,
+          "subject": "continue review of the gp as prd approach and plan",
+          "organizer": "Balaji Shyamkumar",
+          "meeting_type": "small_collaborative_working",
+          "taxonomy_category": "Strategic Planning & Decision - Planning/Workshop Sessions",
+          "has_email_list": false,
+          "base_score": 15,
+          "collaboration_evidence": [
+            "Small collaborative working session"
+          ],
+          "information_evidence": []
+        }
+      ],
+      "algorithm_version": "4.2_enterprise_taxonomy_corrected"
+    }
+  ]
+}

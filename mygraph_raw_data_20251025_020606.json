@@ -1,0 +1,55 @@
+{
+  "profile": [
+    "+86 (10) 59173481"
+  ],
+  "manager": [
+    "+86 (10) 59175248"
+  ],
+  "direct_reports": {
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#directoryObjects",
+    "value": []
+  },
+  "calendar_events": {
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('88573e4b-a91e-4334-89c2-a61178320813')/calendarView",
+    "value": [
+      "AAMkAGIyM2ZkOGQ0LWEyYzQtNDdmZS1hZTE0LTU0MGU0YWIwZDVjYwBGAAAAAAB_4OkZ0z0mT6yoBB3L8TLRBwAI5eKVcQQJTq1DS1QLuzO8AAABMI6-AAD6QYIsVS6-QpjQwV7RhCjQAAgCq6fKAA"
+    ],
+    "@odata.etag": "W/\\\"+kGCLFUuv0KY0MFe0YQo0AAH+eVD1g==\\\"",
+    "createdDateTime": "2025-10-24T04:07:44.2430533Z",
+    "lastModifiedDateTime": "2025-10-24T04:52:10.0292893Z",
+    "changeKey": "+kGCLFUuv0KY0MFe0YQo0AAH+eVD1g=="
+  },
+  "recent_files": {
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.driveItem)",
+    "value": [],
+    "createdDateTime": "2023-05-08T19:29:33Z",
+    "id": "01LNZJOXSKRPY5536ABBDLQNTB4PF7RWCT",
+    "name": "Sparks of AGI (FHL052COR)-20230508_100549-Meeting Recording.mp4",
+    "size": 457935717,
+    "webUrl": "\"https://microsoft.sharepoint.com/teams/M365CoreFHLpresentations/Shared%20Documents/Older%20Recordings-%20M365%20Core%20FHL/2023%20FHL/",
+    "createdBy": "{"
+  },
+  "mail_folders": {
+    "@odata.nextLink": "https://graph.microsoft.com/v1.0/me/mailFolders?%24skip=10"
+  },
+  "groups": {
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#directoryObjects",
+    "@odata.nextLink": "\"https://graph.microsoft.com/v1.0/me/memberOf?",
+    "value": [],
+    "@odata.type": "#microsoft.graph.group",
+    "id": "330aa9bb-4c01-43dd-9c02-f85763d7f061",
+    "deletedDateTime": null,
+    "classification": null
+  },
+  "contacts": {
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('88573e4b-a91e-4334-89c2-a61178320813')/contacts",
+    "value": [
+      "AAMkAGIyM2ZkOGQ0LWEyYzQtNDdmZS1hZTE0LTU0MGU0YWIwZDVjYwBGAAAAAAB_4OkZ0z0mT6yoBB3L8TLRBwAI5eKVcQQJTq1DS1QLuzO8AAABMI7AAAD6QYIsVS6-QpjQwV7RhCjQAAfk8w1iAA"
+    ],
+    "@odata.etag": "W/\\\"EQAAABYAAAD6QYIsVS6/QpjQwV7RhCjQAAfcLIsK\\\"",
+    "createdDateTime": "2025-09-16T01:30:03Z",
+    "lastModifiedDateTime": "2025-09-16T01:30:03Z",
+    "changeKey": "EQAAABYAAAD6QYIsVS6/QpjQwV7RhCjQAAfcLIsK",
+    "categories": []
+  }
+}

@@ -1,0 +1,63 @@
+===============================================================================
+TRANSFER CHECKLIST - macOS to Windows DevBox
+===============================================================================
+
+📦 ESSENTIAL FILES TO COPY:
+
+Core Algorithm & Tools:
+  ☐ tools/collaborator_discovery.py
+  ☐ tools/collaborator_feedback_learning.py  
+  ☐ tools/direct_graph_api_extractor.py
+
+Data Files:
+  ☐ data/evaluation_results/graph_collaboration_analysis_20251025_043301.json
+  ☐ collaborator_discovery_results_20251025_044815.json
+  ☐ meeting_prep_data/real_calendar_scenarios.json
+
+Documentation:
+  ☐ .cursorrules
+  ☐ docs/graph_api_chat_permission_request.md
+  ☐ docs/register_custom_graph_app.md
+  ☐ docs/collaborator_discovery_enhancement_session_summary.md
+  ☐ docs/ai_native_feedback_quickstart.md
+  ☐ CHECKPOINT_TEAMS_CHAT_INTEGRATION.md
+
+===============================================================================
+📋 DEVBOX SETUP STEPS:
+===============================================================================
+
+1. Install Python packages:
+   pip install msal requests
+
+2. Run Teams chat data collection:
+   python tools/direct_graph_api_extractor.py
+   
+   Expected: Device code prompt (no Error 530033 on DevBox!)
+
+3. Test current algorithm:
+   python tools/collaborator_discovery.py --limit 15
+
+4. Integrate Teams chat (see CHECKPOINT file for details)
+
+5. Validate results:
+   python tools/collaborator_discovery.py --explain "Vani Soff"
+
+===============================================================================
+🎯 SUCCESS CRITERIA:
+===============================================================================
+
+✅ Teams chat data collected without Error 530033
+✅ Vani Soff ranking improved with chat evidence  
+✅ Algorithm v6.1 documented in .cursorrules
+✅ All top collaborators showing complete data (meetings + chat + docs)
+
+===============================================================================
+📍 CURRENT STATUS:
+===============================================================================
+
+Algorithm v6.0: ✅ COMPLETE (temporal recency working)
+Teams Chat Prep: ✅ READY (extractor configured)
+macOS Blocker: ⚠️ Error 530033 (device compliance)
+DevBox Ready: 🚀 CONTINUE HERE
+
+===============================================================================

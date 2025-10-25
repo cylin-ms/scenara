@@ -1,0 +1,456 @@
+================================================================================
+TOP 20 COLLABORATORS - Fast Keyword-Based Classification
+================================================================================
+
+Initializing Collaborator Discovery Tool...
+Using keyword-based classification (fast, no rate limits)
+Γ£à Using GPT-4.1 (dev-gpt-41-shortco-2025-04-14) for meeting classification [DEFAULT]
+
+Running discovery with Keyword-based...
+--------------------------------------------------------------------------------
+≡ƒöì Validating data sources...
+   Calendar: my_calendar_events_200.json
+   Events: 37
+   ΓÜá∩╕Å Calendar data has only 37 events - may miss important collaborations
+   ≡ƒÆí Consider using my_calendar_events.json (full dataset) instead of my_calendar_events_50.json (sample)
+
+Γ£à Detected SilverFlow format (37 events)
+   Generated: 2025-10-25T19:45:09Z
+   Time range: 2025-10-25T19:44:52.908410+00:00 to 2026-04-23T19:44:52.908410+00:00
+Γ£à Converted 36 SilverFlow events to Scenara format
+   ≡ƒÄ» DEBUG: Found 1 events with Xiaodong Liu
+      ΓÇó Chin-Yew <> Xiaodong 1:1: ['Xiaodong Liu']
+≡ƒôà Analyzing calendar collaboration patterns...
+≡ƒôè Loading Graph API data from: graph_collaboration_analysis_20251025_043301.json
+Γ£à Enriching with 10 Graph API People rankings
+Γ£à Analyzing 50 shared document collaborations
+  ≡ƒôä Balaji Shyamkumar: 1 shared documents (+5 points)
+  ≡ƒôä Zhitao Hou: 1 shared documents (+5 points)
+≡ƒÆ¼ Loading Teams chat data from: teams_chat_analysis_20251026_002211.json
+≡ƒÆ¼ Enriching with 58 Teams chat collaborators
+  ≡ƒÆ¼ Chin-Yew Lin: Chat-only collaborator (16 chats, type=oneOnOne, +96.0 points)
+  ≡ƒÆ¼ Boxuan Chen: Chat-only collaborator (1 chats, type=meeting, +3.0 points)
+  ≡ƒÆ¼ Hongye Sun: Chat-only collaborator (1 chats, type=group, +3.0 points)
+  ≡ƒÆ¼ MM Friday Workshop: Chat-only collaborator (1 chats, type=meeting, +3.0 points)
+  ≡ƒÆ¼ Caroline Mao: Chat-only collaborator (4 chats, type=meeting, +12.0 points)
+  ≡ƒÆ¼ Xiaodong Liu: 2 chats, recency=2.0x (+12.0 points)
+  ≡ƒÆ¼ Haidong Zhang: Chat-only collaborator (4 chats, type=oneOnOne, +24.0 points)
+  ≡ƒÆ¼ Dongmei Zhang: 1 chats, recency=2.0x (+3.0 points)
+  ≡ƒÆ¼ Yan Xiao: Chat-only collaborator (1 chats, type=oneOnOne, +6.0 points)
+  ≡ƒÆ¼ STCA Monthly Extended PLT + Managers : Chat-only collaborator (1 chats, type=meeting, +3.0 points)
+  ≡ƒÆ¼ Evals sync: Chat-only collaborator (1 chats, type=meeting, +3.0 points)
+  ≡ƒÆ¼ Kening Ren: Chat-only collaborator (2 chats, type=meeting, +6.0 points)
+  ≡ƒÆ¼ Craig McIntyre: Chat-only collaborator (1 chats, type=meeting, +3.0 points)
+  ≡ƒÆ¼ Organize & Collaborate Golden Prompt DS status: Chat-only collaborator (1 chats, type=meeting, +3.0 points)
+  ≡ƒÆ¼ Coco Li (RANDSTAD NORTH AMERICA INC): Chat-only collaborator (2 chats, type=oneOnOne, +12.0 points)
+  ≡ƒÆ¼ Saulo Veronesi: Chat-only collaborator (1 chats, type=group, +3.0 points)
+  ≡ƒÆ¼ Benjamin Chrepta: Chat-only collaborator (1 chats, type=oneOnOne, +6.0 points)
+  ≡ƒÆ¼ Hans Endresen: Chat-only collaborator (1 chats, type=meeting, +3.0 points)
+  ≡ƒÆ¼ Darrin Eide: Chat-only collaborator (1 chats, type=group, +3.0 points)
+  ≡ƒÆ¼ Balaji Shyamkumar: 2 chats, recency=2.0x (+6.0 points)
+  ≡ƒÆ¼ Evals sync: 1 chats, recency=2.0x (+3.0 points)
+  ≡ƒÆ¼ Biao Cheng: 1 chats, recency=2.0x (+6.0 points)
+  ≡ƒÆ¼ Prepare.AI Status Review: Chat-only collaborator (1 chats, type=meeting, +3.0 points)
+  ≡ƒÆ¼ Copilot Offline Eval ΓÇô Platform update and Customer feedback: Chat-only collaborator (1 chats, type=meeting, +3.0 points)
+  ≡ƒÆ¼ Agentic Memory Collaboration with MSR Jianfeng: Chat-only collaborator (1 chats, type=meeting, +3.0 points)
+  ≡ƒÆ¼ AI Roadmap for T+P: Chat-only collaborator (1 chats, type=group, +3.0 points)
+  ≡ƒÆ¼ C.AI Organize + Collaborate | Pillar Review: Chat-only collaborator (1 chats, type=meeting, +3.0 points)
+  ≡ƒÆ¼ Kathy Liu: Chat-only collaborator (1 chats, type=oneOnOne, +6.0 points)
+  ≡ƒÆ¼ Jue Zhang: Chat-only collaborator (1 chats, type=meeting, +3.0 points)
+  ≡ƒÆ¼ Yide Tu: Chat-only collaborator (1 chats, type=oneOnOne, +6.0 points)
+  ≡ƒÆ¼ Weiwei Cui: Chat-only collaborator (1 chats, type=group, +3.0 points)
+  ≡ƒÆ¼ Meeting Prep STCA Sync: Chat-only collaborator (1 chats, type=meeting, +3.0 points)
+  ≡ƒÆ¼ Jason Cordero: Chat-only collaborator (1 chats, type=meeting, +3.0 points)
+  ≡ƒÆ¼ Pratibha Permandla: 1 chats, recency=2.0x (+3.0 points)
+  ≡ƒÆ¼ Izabela Witoszko: Chat-only collaborator (1 chats, type=meeting, +3.0 points)
+  ≡ƒÆ¼ Cindy Kwan: Chat-only collaborator (1 chats, type=oneOnOne, +6.0 points)
+  ≡ƒÆ¼ Ricardo Rosales Guerrero: Chat-only collaborator (1 chats, type=group, +3.0 points)
+  ≡ƒÆ¼ Legend Zhu: Chat-only collaborator (1 chats, type=meeting, +3.0 points)
+  ≡ƒÆ¼ M365 Chat Responding/Synthesis Office Hours (EAST) [Mainline & DAs]: Chat-only collaborator (1 chats, type=meeting, +3.0 points)
+  ≡ƒÆ¼ Data Director Hiring Discussion: Chat-only collaborator (1 chats, type=group, +3.0 points)
+  ≡ƒÆ¼ discuss evals approach: Chat-only collaborator (1 chats, type=meeting, +3.0 points)
+  ≡ƒÆ¼ Ian Liu (M365): Chat-only collaborator (2 chats, type=meeting, +6.0 points)
+  ≡ƒÆ¼ Mahmoud Adada: Chat-only collaborator (1 chats, type=meeting, +3.0 points)
+  ≡ƒÆ¼ 1-1 syn with CY on Agent: Chat-only collaborator (1 chats, type=meeting, +3.0 points)
+  ≡ƒÆ¼ Charlie Chung: Chat-only collaborator (1 chats, type=oneOnOne, +6.0 points)
+  ≡ƒÆ¼ Xin Ma: Chat-only collaborator (1 chats, type=oneOnOne, +6.0 points)
+  ≡ƒÆ¼ 1-1 with CY on meeting prep: Chat-only collaborator (1 chats, type=meeting, +3.0 points)
+  ≡ƒÆ¼ Anson Ho: Chat-only collaborator (1 chats, type=meeting, +3.0 points)
+  ≡ƒÆ¼ Allan Howard: Chat-only collaborator (1 chats, type=group, +3.0 points)
+  ≡ƒÆ¼ Yinzhe Zhang (RANDSTAD NORTH AMERICA INC): Chat-only collaborator (1 chats, type=oneOnOne, +6.0 points)
+  ≡ƒÆ¼ discuss priority calendar/user priorities: Chat-only collaborator (1 chats, type=meeting, +3.0 points)
+  ≡ƒÆ¼ Copilot Offline Eval - Platform update and Customer feedback: Chat-only collaborator (1 chats, type=meeting, +3.0 points)
+  ≡ƒÆ¼ Naifei Pan: Chat-only collaborator (1 chats, type=oneOnOne, +6.0 points)
+  ≡ƒÆ¼ Ali Niknejad: Chat-only collaborator (1 chats, type=oneOnOne, +6.0 points)
+  ≡ƒÆ¼ Ben Carter: Chat-only collaborator (1 chats, type=meeting, +3.0 points)
+  ≡ƒÆ¼ BizChat Monthly Service Review: Chat-only collaborator (1 chats, type=meeting, +3.0 points)
+  ≡ƒÆ¼ Ravi Jaiswal: Chat-only collaborator (1 chats, type=meeting, +3.0 points)
+  ≡ƒÆ¼ Serene Zhuo: Chat-only collaborator (1 chats, type=group, +3.0 points)
+Γ£¿ Discovered 52 ad hoc chat-only collaborators (no calendar meetings)
+≡ƒôä Loading document collaboration data from: document_collaboration_analysis_20251026_014224.json
+≡ƒôä Enriching with 5 document sharing collaborators
+  ≡ƒôä Haidong Zhang: OneDrive(0/0), Chat(1/7), 5 days, last=3d (+103 points)
+  ≡ƒôä Zhitao Hou: OneDrive(0/0), Chat(0/7), 4 days, last=16d (+81 points)
+  ≡ƒôä Vani Soff: Document-only collaborator (OneDrive: 0/0, Chat: 4/0, +73 points)
+  ≡ƒôä Qiang Huo: Document-only collaborator (OneDrive: 0/0, Chat: 1/0, +27 points)
+  ≡ƒôä Danqing Huang: Document-only collaborator (OneDrive: 0/1, Chat: 0/0, +10 points)
+Γ£¿ Discovered 3 document-only collaborators (no calendar meetings or chats)
+≡ƒÄ» Ranking collaborators with multi-source data fusion...
+Γ£à Adding Dongmei Zhang to results (final_score=258.0, confidence=1.00)
+Γ£à Adding Mark Grimaldi to results (final_score=245.0, confidence=1.00)
+Γ£à Adding Drew Brough to results (final_score=175.0, confidence=1.00)
+Γ£à Adding Caroline Mao to results (final_score=8.4, confidence=0.40)
+Γ£à Adding Haidong Zhang to results (final_score=119.8, confidence=0.65)
+Γ£à Adding Coco Li (RANDSTAD NORTH AMERICA INC) to results (final_score=8.4, confidence=0.40)
+Γ£à Adding Vani Soff to results (final_score=116.8, confidence=0.65)
+Γ£à Adding Qiang Huo to results (final_score=43.2, confidence=0.55)
+Γ£à Adding Danqing Huang to results (final_score=16.0, confidence=0.55)
+
+ΓÜá∩╕Å Filtered 58 potential collaborators:
+   - too_few_meetings: 7
+   - no_evidence: 2
+   - system_account: 2
+   - low_score: 46
+   - self_user: 1
+
+================================================================================
+TOP 20 COLLABORATORS (out of 9 total)
+================================================================================
+
+
+################################################################################
+RANK #1: Dongmei Zhang
+################################################################################
+
+≡ƒôè SCORES:
+   Importance Score: 152.70
+   Final Score: 258.0
+   Confidence: 1.00
+
+≡ƒôê COLLABORATION METRICS:
+   Total Meetings: 12
+   Genuine Collaboration: 12
+   One-on-One Meetings: 0
+   Teams Chats: 1
+   Shared Documents: 0
+
+≡ƒôï MEETING EVIDENCE (5 meetings):
+
+   [1] bi-weekly 1:1 chin-yew | dongmei
+       Date: 2025-11-26T13:35:00
+       Type: small_internal_recurring
+       Category: Internal Recurring - Team Status Update Meetings
+       Attendees: 1 people
+       Score: +8 points
+       Evidence: Small internal recurring meeting
+
+   [2] silverflow+topiclens project weekly review
+       Date: 2025-11-28T11:05:00
+       Type: small_collaborative_working
+       Category: Strategic Planning & Decision - Planning/Workshop Sessions
+       Attendees: 1 people
+       Score: +35 points
+       Evidence: Small collaborative working session, Attended their working meeting
+
+   [3] silverflow+topiclens project weekly review
+       Date: 2025-12-05T11:05:00
+       Type: small_collaborative_working
+       Category: Strategic Planning & Decision - Planning/Workshop Sessions
+       Attendees: 1 people
+       Score: +35 points
+       Evidence: Small collaborative working session, Attended their working meeting
+
+   [4] bi-weekly dki lt meeting
+       Date: 2025-12-08T14:05:00
+       Type: small_internal_recurring
+       Category: Internal Recurring - Team Status Update Meetings
+       Attendees: 1 people
+       Score: +8 points
+       Evidence: Small internal recurring meeting
+
+   [5] bi-weekly 1:1 chin-yew | dongmei
+       Date: 2025-12-10T13:35:00
+       Type: small_internal_recurring
+       Category: Internal Recurring - Team Status Update Meetings
+       Attendees: 1 people
+       Score: +8 points
+       Evidence: Small internal recurring meeting
+
+≡ƒÆ¼ TEAMS CHAT:
+   Chat Count: 1
+   Chat Type: group
+   Last Chat: 0 days ago
+
+--------------------------------------------------------------------------------
+
+################################################################################
+RANK #2: Mark Grimaldi
+################################################################################
+
+≡ƒôè SCORES:
+   Importance Score: 150.10
+   Final Score: 245.0
+   Confidence: 1.00
+
+≡ƒôê COLLABORATION METRICS:
+   Total Meetings: 7
+   Genuine Collaboration: 14
+   One-on-One Meetings: 0
+   Teams Chats: 0
+   Shared Documents: 0
+
+≡ƒôï MEETING EVIDENCE (5 meetings):
+
+   [1] meeting prep stca sync
+       Date: 2025-11-11T12:35:00
+       Type: small_collaborative_working
+       Category: Strategic Planning & Decision - Planning/Workshop Sessions
+       Attendees: 1 people
+       Score: +35 points
+       Evidence: Small collaborative working session, Attended their working meeting
+
+   [2] meeting prep stca sync
+       Date: 2025-11-18T12:35:00
+       Type: small_collaborative_working
+       Category: Strategic Planning & Decision - Planning/Workshop Sessions
+       Attendees: 1 people
+       Score: +35 points
+       Evidence: Small collaborative working session, Attended their working meeting
+
+   [3] meeting prep stca sync
+       Date: 2025-11-25T12:35:00
+       Type: small_collaborative_working
+       Category: Strategic Planning & Decision - Planning/Workshop Sessions
+       Attendees: 1 people
+       Score: +35 points
+       Evidence: Small collaborative working session, Attended their working meeting
+
+   [4] meeting prep stca sync
+       Date: 2025-12-02T12:35:00
+       Type: small_collaborative_working
+       Category: Strategic Planning & Decision - Planning/Workshop Sessions
+       Attendees: 1 people
+       Score: +35 points
+       Evidence: Small collaborative working session, Attended their working meeting
+
+   [5] meeting prep stca sync
+       Date: 2025-12-09T12:35:00
+       Type: small_collaborative_working
+       Category: Strategic Planning & Decision - Planning/Workshop Sessions
+       Attendees: 1 people
+       Score: +35 points
+       Evidence: Small collaborative working session, Attended their working meeting
+
+--------------------------------------------------------------------------------
+
+################################################################################
+RANK #3: Drew Brough
+################################################################################
+
+≡ƒôè SCORES:
+   Importance Score: 121.50
+   Final Score: 175.0
+   Confidence: 1.00
+
+≡ƒôê COLLABORATION METRICS:
+   Total Meetings: 5
+   Genuine Collaboration: 10
+   One-on-One Meetings: 0
+   Teams Chats: 0
+   Shared Documents: 0
+
+≡ƒôï MEETING EVIDENCE (5 meetings):
+
+   [1] prepare.ai status review
+       Date: 2025-11-06T05:05:00
+       Type: small_collaborative_working
+       Category: Strategic Planning & Decision - Planning/Workshop Sessions
+       Attendees: 1 people
+       Score: +35 points
+       Evidence: Small collaborative working session, Attended their working meeting
+
+   [2] hive | t+p meeting prep monthly sync
+       Date: 2025-11-13T02:05:00
+       Type: small_collaborative_working
+       Category: Strategic Planning & Decision - Planning/Workshop Sessions
+       Attendees: 1 people
+       Score: +35 points
+       Evidence: Small collaborative working session, Attended their working meeting
+
+   [3] prepare.ai status review
+       Date: 2025-11-20T05:05:00
+       Type: small_collaborative_working
+       Category: Strategic Planning & Decision - Planning/Workshop Sessions
+       Attendees: 1 people
+       Score: +35 points
+       Evidence: Small collaborative working session, Attended their working meeting
+
+   [4] prepare.ai status review
+       Date: 2025-12-04T05:05:00
+       Type: small_collaborative_working
+       Category: Strategic Planning & Decision - Planning/Workshop Sessions
+       Attendees: 1 people
+       Score: +35 points
+       Evidence: Small collaborative working session, Attended their working meeting
+
+   [5] hive | t+p meeting prep monthly sync
+       Date: 2025-12-11T02:05:00
+       Type: small_collaborative_working
+       Category: Strategic Planning & Decision - Planning/Workshop Sessions
+       Attendees: 1 people
+       Score: +35 points
+       Evidence: Small collaborative working session, Attended their working meeting
+
+--------------------------------------------------------------------------------
+
+################################################################################
+RANK #4: Haidong Zhang
+################################################################################
+
+≡ƒôè SCORES:
+   Importance Score: 66.40
+   Final Score: 119.8
+   Confidence: 0.65
+
+≡ƒôê COLLABORATION METRICS:
+   Total Meetings: 0
+   Genuine Collaboration: 0
+   One-on-One Meetings: 0
+   Teams Chats: 4
+   Shared Documents: 0
+   ≡ƒÆ¼ Chat-Only Collaborator (no calendar meetings)
+
+≡ƒôï MEETING EVIDENCE (0 meetings):
+
+≡ƒÆ¼ TEAMS CHAT:
+   Chat Count: 4
+   Chat Type: oneOnOne
+   Last Chat: 0 days ago
+
+--------------------------------------------------------------------------------
+
+################################################################################
+RANK #5: Vani Soff
+################################################################################
+
+≡ƒôè SCORES:
+   Importance Score: 59.35
+   Final Score: 116.8
+   Confidence: 0.65
+
+≡ƒôê COLLABORATION METRICS:
+   Total Meetings: 0
+   Genuine Collaboration: 0
+   One-on-One Meetings: 0
+   Teams Chats: 0
+   Shared Documents: 0
+   ≡ƒôä Document-Only Collaborator (no meetings/chats)
+
+≡ƒôï MEETING EVIDENCE (0 meetings):
+
+--------------------------------------------------------------------------------
+
+################################################################################
+RANK #6: Qiang Huo
+################################################################################
+
+≡ƒôè SCORES:
+   Importance Score: 37.65
+   Final Score: 43.2
+   Confidence: 0.55
+
+≡ƒôê COLLABORATION METRICS:
+   Total Meetings: 0
+   Genuine Collaboration: 0
+   One-on-One Meetings: 0
+   Teams Chats: 0
+   Shared Documents: 0
+   ≡ƒôä Document-Only Collaborator (no meetings/chats)
+
+≡ƒôï MEETING EVIDENCE (0 meetings):
+
+--------------------------------------------------------------------------------
+
+################################################################################
+RANK #7: Danqing Huang
+################################################################################
+
+≡ƒôè SCORES:
+   Importance Score: 30.00
+   Final Score: 16.0
+   Confidence: 0.55
+
+≡ƒôê COLLABORATION METRICS:
+   Total Meetings: 0
+   Genuine Collaboration: 0
+   One-on-One Meetings: 0
+   Teams Chats: 0
+   Shared Documents: 0
+   ≡ƒôä Document-Only Collaborator (no meetings/chats)
+
+≡ƒôï MEETING EVIDENCE (0 meetings):
+
+--------------------------------------------------------------------------------
+
+################################################################################
+RANK #8: Caroline Mao
+################################################################################
+
+≡ƒôè SCORES:
+   Importance Score: 28.50
+   Final Score: 8.4
+   Confidence: 0.40
+
+≡ƒôê COLLABORATION METRICS:
+   Total Meetings: 0
+   Genuine Collaboration: 0
+   One-on-One Meetings: 0
+   Teams Chats: 4
+   Shared Documents: 0
+   ≡ƒÆ¼ Chat-Only Collaborator (no calendar meetings)
+
+≡ƒôï MEETING EVIDENCE (0 meetings):
+
+≡ƒÆ¼ TEAMS CHAT:
+   Chat Count: 4
+   Chat Type: meeting
+   Last Chat: 0 days ago
+
+--------------------------------------------------------------------------------
+
+################################################################################
+RANK #9: Coco Li (RANDSTAD NORTH AMERICA INC)
+################################################################################
+
+≡ƒôè SCORES:
+   Importance Score: 28.50
+   Final Score: 8.4
+   Confidence: 0.40
+
+≡ƒôê COLLABORATION METRICS:
+   Total Meetings: 0
+   Genuine Collaboration: 0
+   One-on-One Meetings: 0
+   Teams Chats: 2
+   Shared Documents: 0
+   ≡ƒÆ¼ Chat-Only Collaborator (no calendar meetings)
+
+≡ƒôï MEETING EVIDENCE (0 meetings):
+
+≡ƒÆ¼ TEAMS CHAT:
+   Chat Count: 2
+   Chat Type: oneOnOne
+   Last Chat: 0 days ago
+
+--------------------------------------------------------------------------------
+
+================================================================================
+SUMMARY STATISTICS
+================================================================================
+Total Collaborators Found: 9
+Classification Method: Keyword-based (70-80% accuracy)
+Note: LLM classification would provide 95-99% accuracy but hits rate limits
+
+Detailed results saved to: top_20_collaborators_keyword.json
+================================================================================
+

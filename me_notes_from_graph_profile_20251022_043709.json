@@ -1,0 +1,24 @@
+{
+  "user": "cyl@microsoft.com",
+  "source": "Microsoft Graph Profile API",
+  "generated_at": "2025-10-22T04:37:09.576293",
+  "total_notes": 2,
+  "notes": [
+    {
+      "note": "I am a Senior Principal Research Manager at Microsoft",
+      "category": "WORK_RELATED",
+      "title": "Professional Role",
+      "temporal_durability": "LONG_TERM",
+      "source": "Microsoft Graph Profile",
+      "confidence": 1.0
+    },
+    {
+      "note": "I work in the Beijing office (BJW-2/13463) and can be reached at +86 (10) 59173481",
+      "category": "WORK_RELATED",
+      "title": "Work Location & Contact",
+      "temporal_durability": "LONG_TERM",
+      "source": "Microsoft Graph Profile",
+      "confidence": 1.0
+    }
+  ]
+}

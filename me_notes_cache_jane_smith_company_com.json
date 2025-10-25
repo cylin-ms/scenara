@@ -1,0 +1,123 @@
+{
+  "timestamp": "2025-10-21T18:10:31.386948",
+  "user_email": "jane.smith@company.com",
+  "notes": [
+    {
+      "note": "Working on Priority Calendar project with advanced meeting intelligence",
+      "category": "WORK_RELATED",
+      "title": "Priority Calendar Project Progress",
+      "temporal_durability": "TEMPORAL_MEDIUM_LIVED",
+      "timestamp": "2025-10-20T18:10:31.386912",
+      "confidence": 0.9,
+      "source": "Teams/Outlook",
+      "metadata": {
+        "project": "Priority Calendar",
+        "team": "Productivity AI"
+      }
+    },
+    {
+      "note": "Leading LLM integration initiative for enterprise productivity tools",
+      "category": "WORK_RELATED",
+      "title": "LLM Integration Leadership",
+      "temporal_durability": "TEMPORAL_LONG_LIVED",
+      "timestamp": "2025-10-18T18:10:31.386912",
+      "confidence": 0.9,
+      "source": "Teams/Outlook",
+      "metadata": {
+        "project": "Priority Calendar",
+        "team": "Productivity AI"
+      }
+    },
+    {
+      "note": "Collaborating with Microsoft Graph team on calendar API enhancements",
+      "category": "WORK_RELATED",
+      "title": "Graph API Collaboration",
+      "temporal_durability": "TEMPORAL_SHORT_LIVED",
+      "timestamp": "2025-10-16T18:10:31.386912",
+      "confidence": 0.9,
+      "source": "Teams/Outlook",
+      "metadata": {
+        "project": "Priority Calendar",
+        "team": "Productivity AI"
+      }
+    },
+    {
+      "note": "Developing meeting intelligence frameworks for large organizations",
+      "category": "WORK_RELATED",
+      "title": "Meeting Intelligence Development",
+      "temporal_durability": "TEMPORAL_MEDIUM_LIVED",
+      "timestamp": "2025-10-14T18:10:31.386912",
+      "confidence": 0.9,
+      "source": "Teams/Outlook",
+      "metadata": {
+        "project": "Priority Calendar",
+        "team": "Productivity AI"
+      }
+    },
+    {
+      "note": "Researching AI-powered productivity optimization solutions",
+      "category": "WORK_RELATED",
+      "title": "AI Productivity Research",
+      "temporal_durability": "TEMPORAL_LONG_LIVED",
+      "timestamp": "2025-10-11T18:10:31.386912",
+      "confidence": 0.9,
+      "source": "Teams/Outlook",
+      "metadata": {
+        "project": "Priority Calendar",
+        "team": "Productivity AI"
+      }
+    },
+    {
+      "note": "Recent discussion with Jane Smith about Priority Calendar integration timeline",
+      "category": "FOLLOW_UPS",
+      "title": "Jane Smith Follow-up",
+      "temporal_durability": "TEMPORAL_SHORT_LIVED",
+      "timestamp": "2025-10-19T18:10:31.386912",
+      "confidence": 0.9,
+      "source": "Email/Teams Messages",
+      "metadata": {
+        "urgency": "Medium",
+        "status": "Pending"
+      }
+    },
+    {
+      "note": "Action item: Review LLM integration proposal with AI team by Friday",
+      "category": "FOLLOW_UPS",
+      "title": "AI Team Review Action",
+      "temporal_durability": "TEMPORAL_SHORT_LIVED",
+      "timestamp": "2025-10-17T18:10:31.386912",
+      "confidence": 0.9,
+      "source": "Email/Teams Messages",
+      "metadata": {
+        "urgency": "Medium",
+        "status": "Pending"
+      }
+    },
+    {
+      "note": "Follow up with Graph API team on calendar enhancement specifications",
+      "category": "FOLLOW_UPS",
+      "title": "Graph Team Follow-up",
+      "temporal_durability": "TEMPORAL_SHORT_LIVED",
+      "timestamp": "2025-10-15T18:10:31.386912",
+      "confidence": 0.9,
+      "source": "Email/Teams Messages",
+      "metadata": {
+        "urgency": "Medium",
+        "status": "Pending"
+      }
+    },
+    {
+      "note": "Pending response to meeting intelligence framework documentation review",
+      "category": "FOLLOW_UPS",
+      "title": "Documentation Review Pending",
+      "temporal_durability": "TEMPORAL_SHORT_LIVED",
+      "timestamp": "2025-10-13T18:10:31.386912",
+      "confidence": 0.9,
+      "source": "Email/Teams Messages",
+      "metadata": {
+        "urgency": "Medium",
+        "status": "Pending"
+      }
+    }
+  ]
+}

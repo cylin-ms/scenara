@@ -1,0 +1,13 @@
+{
+  "timestamp": "20251025_022102",
+  "method": "auto_trigger_graph_extraction",
+  "authentication": "automatic_trigger",
+  "queries_executed": 4,
+  "successful_queries": 0,
+  "raw_responses": {
+    "people_api": null,
+    "calendar_meetings": null,
+    "recent_emails": null,
+    "teams_chats": null
+  }
+}

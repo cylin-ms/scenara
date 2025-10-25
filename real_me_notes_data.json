@@ -1,0 +1,54 @@
+[
+  {
+    "id": "demo_real_integration_1",
+    "note": "Real integration ready: Microsoft Graph API client configured for production deployment",
+    "category": "WORK_RELATED",
+    "confidence": 0.95,
+    "source": "Real Me Notes Integration",
+    "timestamp": "2025-10-21T18:39:01.959549",
+    "temporal_durability": "LONG_TERM",
+    "metadata": {
+      "integration_status": "ready",
+      "api_type": "microsoft_graph"
+    },
+    "raw_data": {
+      "demo": true
+    }
+  },
+  {
+    "id": "demo_real_integration_2",
+    "note": "API capabilities: Can fetch user insights, activities, calendar events, and email patterns",
+    "category": "EXPERTISE",
+    "confidence": 0.9,
+    "source": "Real Me Notes Integration",
+    "timestamp": "2025-10-21T18:39:01.959559",
+    "temporal_durability": "LONG_TERM",
+    "metadata": {
+      "capabilities": [
+        "insights",
+        "activities",
+        "calendar",
+        "email"
+      ]
+    },
+    "raw_data": {
+      "demo": true
+    }
+  },
+  {
+    "id": "demo_real_integration_3",
+    "note": "Authentication: MSAL integration with Microsoft 365 tenant authentication configured",
+    "category": "SKILLS",
+    "confidence": 0.88,
+    "source": "Real Me Notes Integration",
+    "timestamp": "2025-10-21T18:39:01.959562",
+    "temporal_durability": "MEDIUM_TERM",
+    "metadata": {
+      "auth_method": "msal",
+      "tenant_support": true
+    },
+    "raw_data": {
+      "demo": true
+    }
+  }
+]

@@ -1,0 +1,1158 @@
+================================================================================
+TOP 20 COLLABORATORS - Fast Keyword-Based Classification
+================================================================================
+
+Initializing Collaborator Discovery Tool...
+Using keyword-based classification (fast, no rate limits)
+Γ£à Using GPT-4.1 (dev-gpt-41-shortco-2025-04-14) for meeting classification [DEFAULT]
+
+Running discovery with Keyword-based...
+--------------------------------------------------------------------------------
+≡ƒöì Validating data sources...
+   Calendar: my_calendar_events_full.json
+   Events: 88
+   ΓÜá∩╕Å Calendar data has only 88 events - may miss important collaborations
+   ≡ƒÆí Consider using my_calendar_events.json (full dataset) instead of my_calendar_events_50.json (sample)
+
+Γ£à Detected SilverFlow format (88 events)
+   Generated: 2025-10-25T20:03:48Z
+   Time range: 2025-04-28T00:00:00+00:00 to 2025-10-25T00:00:00+00:00
+Γ£à Converted 82 SilverFlow events to Scenara format
+   ≡ƒÄ» DEBUG: Found 7 events with Xiaodong Liu
+      ΓÇó Chin-Yew / xiaodong : ['Xiaodong Liu']
+      ΓÇó Chin-Yew <> Xiaodong 1:1: ['Xiaodong Liu']
+      ΓÇó Chin-Yew / xiaodong Agent workshop discussion: ['Xiaodong Liu']
+      ΓÇó Chin-Yew <> Xiaodong 1:1: ['Xiaodong Liu']
+      ΓÇó Agent workshop discussion: ['Xiaodong Liu', 'Jianfeng Gao']
+      ΓÇó Chin-Yew | xiaodong : ['Xiaodong Liu']
+      ΓÇó Chin-Yew <> Xiaodong 1:1: ['Xiaodong Liu']
+≡ƒôà Analyzing calendar collaboration patterns...
+≡ƒôè Loading Graph API data from: graph_collaboration_analysis_20251025_043301.json
+Γ£à Enriching with 10 Graph API People rankings
+Γ£à Analyzing 50 shared document collaborations
+  ≡ƒôä Haidong Zhang: 2 shared documents (+10 points)
+  ≡ƒôä Zhitao Hou: 1 shared documents (+5 points)
+  ≡ƒôä Balaji Shyamkumar: 1 shared documents (+5 points)
+≡ƒÆ¼ Loading Teams chat data from: teams_chat_analysis_20251026_002211.json
+≡ƒÆ¼ Enriching with 58 Teams chat collaborators
+  ≡ƒÆ¼ Chin-Yew Lin: Chat-only collaborator (16 chats, type=oneOnOne, +96.0 points)
+  ≡ƒÆ¼ Boxuan Chen: Chat-only collaborator (1 chats, type=meeting, +3.0 points)
+  ≡ƒÆ¼ Hongye Sun: Chat-only collaborator (1 chats, type=group, +3.0 points)
+  ≡ƒÆ¼ MM Friday Workshop: Chat-only collaborator (1 chats, type=meeting, +3.0 points)
+  ≡ƒÆ¼ Caroline Mao: Chat-only collaborator (4 chats, type=meeting, +12.0 points)
+  ≡ƒÆ¼ Xiaodong Liu: 2 chats, recency=2.0x (+12.0 points)
+  ≡ƒÆ¼ Haidong Zhang: 4 chats, recency=2.0x (+24.0 points)
+  ≡ƒÆ¼ Dongmei Zhang: 1 chats, recency=2.0x (+3.0 points)
+  ≡ƒÆ¼ Yan Xiao: 1 chats, recency=2.0x (+6.0 points)
+  ≡ƒÆ¼ STCA Monthly Extended PLT + Managers : Chat-only collaborator (1 chats, type=meeting, +3.0 points)
+  ≡ƒÆ¼ Evals sync: Chat-only collaborator (1 chats, type=meeting, +3.0 points)
+  ≡ƒÆ¼ Kening Ren: 2 chats, recency=2.0x (+6.0 points)
+  ≡ƒÆ¼ Craig McIntyre: Chat-only collaborator (1 chats, type=meeting, +3.0 points)
+  ≡ƒÆ¼ Organize & Collaborate Golden Prompt DS status: Chat-only collaborator (1 chats, type=meeting, +3.0 points)
+  ≡ƒÆ¼ Coco Li (RANDSTAD NORTH AMERICA INC): Chat-only collaborator (2 chats, type=oneOnOne, +12.0 points)
+  ≡ƒÆ¼ Saulo Veronesi: Chat-only collaborator (1 chats, type=group, +3.0 points)
+  ≡ƒÆ¼ Benjamin Chrepta: Chat-only collaborator (1 chats, type=oneOnOne, +6.0 points)
+  ≡ƒÆ¼ Hans Endresen: 1 chats, recency=2.0x (+3.0 points)
+  ≡ƒÆ¼ Darrin Eide: Chat-only collaborator (1 chats, type=group, +3.0 points)
+  ≡ƒÆ¼ Balaji Shyamkumar: 2 chats, recency=2.0x (+6.0 points)
+  ≡ƒÆ¼ Evals sync: 1 chats, recency=2.0x (+3.0 points)
+  ≡ƒÆ¼ Biao Cheng: 1 chats, recency=2.0x (+6.0 points)
+  ≡ƒÆ¼ Prepare.AI Status Review: Chat-only collaborator (1 chats, type=meeting, +3.0 points)
+  ≡ƒÆ¼ Copilot Offline Eval ΓÇô Platform update and Customer feedback: Chat-only collaborator (1 chats, type=meeting, +3.0 points)
+  ≡ƒÆ¼ Agentic Memory Collaboration with MSR Jianfeng: Chat-only collaborator (1 chats, type=meeting, +3.0 points)
+  ≡ƒÆ¼ AI Roadmap for T+P: Chat-only collaborator (1 chats, type=group, +3.0 points)
+  ≡ƒÆ¼ C.AI Organize + Collaborate | Pillar Review: Chat-only collaborator (1 chats, type=meeting, +3.0 points)
+  ≡ƒÆ¼ Kathy Liu: 1 chats, recency=2.0x (+6.0 points)
+  ≡ƒÆ¼ Jue Zhang: 1 chats, recency=2.0x (+3.0 points)
+  ≡ƒÆ¼ Yide Tu: 1 chats, recency=2.0x (+6.0 points)
+  ≡ƒÆ¼ Weiwei Cui: 1 chats, recency=2.0x (+3.0 points)
+  ≡ƒÆ¼ Meeting Prep STCA Sync: Chat-only collaborator (1 chats, type=meeting, +3.0 points)
+  ≡ƒÆ¼ Jason Cordero: Chat-only collaborator (1 chats, type=meeting, +3.0 points)
+  ≡ƒÆ¼ Pratibha Permandla: Chat-only collaborator (1 chats, type=meeting, +3.0 points)
+  ≡ƒÆ¼ Izabela Witoszko: 1 chats, recency=2.0x (+3.0 points)
+  ≡ƒÆ¼ Cindy Kwan: Chat-only collaborator (1 chats, type=oneOnOne, +6.0 points)
+  ≡ƒÆ¼ Ricardo Rosales Guerrero: Chat-only collaborator (1 chats, type=group, +3.0 points)
+  ≡ƒÆ¼ Legend Zhu: Chat-only collaborator (1 chats, type=meeting, +3.0 points)
+  ≡ƒÆ¼ M365 Chat Responding/Synthesis Office Hours (EAST) [Mainline & DAs]: Chat-only collaborator (1 chats, type=meeting, +3.0 points)
+  ≡ƒÆ¼ Data Director Hiring Discussion: Chat-only collaborator (1 chats, type=group, +3.0 points)
+  ≡ƒÆ¼ discuss evals approach: Chat-only collaborator (1 chats, type=meeting, +3.0 points)
+  ≡ƒÆ¼ Ian Liu (M365): 2 chats, recency=2.0x (+6.0 points)
+  ≡ƒÆ¼ Mahmoud Adada: Chat-only collaborator (1 chats, type=meeting, +3.0 points)
+  ≡ƒÆ¼ 1-1 syn with CY on Agent: Chat-only collaborator (1 chats, type=meeting, +3.0 points)
+  ≡ƒÆ¼ Charlie Chung: Chat-only collaborator (1 chats, type=oneOnOne, +6.0 points)
+  ≡ƒÆ¼ Xin Ma: Chat-only collaborator (1 chats, type=oneOnOne, +6.0 points)
+  ≡ƒÆ¼ 1-1 with CY on meeting prep: Chat-only collaborator (1 chats, type=meeting, +3.0 points)
+  ≡ƒÆ¼ Anson Ho: Chat-only collaborator (1 chats, type=meeting, +3.0 points)
+  ≡ƒÆ¼ Allan Howard: Chat-only collaborator (1 chats, type=group, +3.0 points)
+  ≡ƒÆ¼ He Zhang: 1 chats, recency=2.0x (+6.0 points)
+  ≡ƒÆ¼ discuss priority calendar/user priorities: Chat-only collaborator (1 chats, type=meeting, +3.0 points)
+  ≡ƒÆ¼ Copilot Offline Eval - Platform update and Customer feedback: Chat-only collaborator (1 chats, type=meeting, +3.0 points)
+  ≡ƒÆ¼ Naifei Pan: 1 chats, recency=2.0x (+6.0 points)
+  ≡ƒÆ¼ Ali Niknejad: Chat-only collaborator (1 chats, type=oneOnOne, +6.0 points)
+  ≡ƒÆ¼ Ben Carter: Chat-only collaborator (1 chats, type=meeting, +3.0 points)
+  ≡ƒÆ¼ BizChat Monthly Service Review: Chat-only collaborator (1 chats, type=meeting, +3.0 points)
+  ≡ƒÆ¼ Ravi Jaiswal: Chat-only collaborator (1 chats, type=meeting, +3.0 points)
+  ≡ƒÆ¼ Serene Zhuo: Chat-only collaborator (1 chats, type=group, +3.0 points)
+Γ£¿ Discovered 41 ad hoc chat-only collaborators (no calendar meetings)
+≡ƒôä Loading document collaboration data from: document_collaboration_analysis_20251026_014224.json
+≡ƒôä Enriching with 5 document sharing collaborators
+  ≡ƒôä Haidong Zhang: OneDrive(0/0), Chat(1/7), 5 days, last=3d (+103 points)
+  ≡ƒôä Zhitao Hou: OneDrive(0/0), Chat(0/7), 4 days, last=16d (+81 points)
+  ≡ƒôä Vani Soff: OneDrive(0/0), Chat(4/0), 2 days, last=3d (+73 points)
+  ≡ƒôä Qiang Huo: Document-only collaborator (OneDrive: 0/0, Chat: 1/0, +27 points)
+  ≡ƒôä Danqing Huang: Document-only collaborator (OneDrive: 0/1, Chat: 0/0, +10 points)
+Γ£¿ Discovered 2 document-only collaborators (no calendar meetings or chats)
+≡ƒÄ» Ranking collaborators with multi-source data fusion...
+Γ£à Adding Qiang Fu to results (final_score=79.0, confidence=0.90)
+Γ£à Adding Ailsa Zhong to results (final_score=115.2, confidence=0.60)
+Γ£à Adding Xiuge Cheng to results (final_score=107.2, confidence=0.60)
+Γ£à Adding Naifei Pan to results (final_score=74.2, confidence=0.60)
+Γ£à Adding Steven Zeng to results (final_score=154.2, confidence=1.00)
+Γ£à Adding Zili Qu to results (final_score=154.2, confidence=1.00)
+Γ£à Adding Xiaojie Zhou to results (final_score=149.2, confidence=1.00)
+Γ£à Adding Ling Chen to results (final_score=132.2, confidence=0.80)
+Γ£à Adding Zhuoyu Zhang (FESCO Adecco Human Resources) to results (final_score=243.0, confidence=0.80)
+Γ£à Adding Sally Xiong to results (final_score=51.1, confidence=0.70)
+Γ£à Adding Haidong Zhang to results (final_score=368.2, confidence=1.00)
+Γ£à Adding Xiaodong Liu to results (final_score=105.0, confidence=0.90)
+Γ£à Adding Lianbin Chi to results (final_score=33.2, confidence=0.60)
+Γ£à Adding Bin Zhu to results (final_score=67.3, confidence=0.60)
+Γ£à Adding Peng Zhang to results (final_score=47.0, confidence=0.70)
+Γ£à Adding Yan Xiao to results (final_score=34.0, confidence=0.60)
+Γ£à Adding Balaji Shyamkumar to results (final_score=37.0, confidence=0.35)
+Γ£à Adding Kathy Liu to results (final_score=61.1, confidence=0.60)
+Γ£à Adding Wenjun Gong to results (final_score=31.1, confidence=0.60)
+Γ£à Adding Caroline Mao to results (final_score=8.4, confidence=0.40)
+Γ£à Adding Coco Li (RANDSTAD NORTH AMERICA INC) to results (final_score=8.4, confidence=0.40)
+Γ£à Adding Qiang Huo to results (final_score=43.2, confidence=0.55)
+Γ£à Adding Danqing Huang to results (final_score=16.0, confidence=0.55)
+
+ΓÜá∩╕Å Filtered 1714 potential collaborators:
+   - too_few_meetings: 1344
+   - no_evidence: 320
+   - system_account: 2
+   - low_score: 38
+   - low_confidence: 9
+   - self_user: 1
+
+================================================================================
+TOP 20 COLLABORATORS (out of 23 total)
+================================================================================
+
+
+################################################################################
+RANK #1: Haidong Zhang
+################################################################################
+
+≡ƒôè SCORES:
+   Importance Score: 122.62
+   Final Score: 368.2
+   Confidence: 1.00
+
+≡ƒôê COLLABORATION METRICS:
+   Total Meetings: 26
+   Genuine Collaboration: 6
+   One-on-One Meetings: 1
+   Teams Chats: 4
+   Shared Documents: 2
+
+≡ƒôï MEETING EVIDENCE (5 meetings):
+
+   [1] stca ds followups
+       Date: 2025-07-15T09:05:00
+       Type: small_internal_recurring
+       Category: Internal Recurring - Team Status Update Meetings
+       Attendees: 8 people
+       Score: +8 points
+       Evidence: Small internal recurring meeting
+
+   [2] bi-weekly dki lt meeting
+       Date: 2025-07-21T14:05:00
+       Type: small_internal_recurring
+       Category: Internal Recurring - Team Status Update Meetings
+       Attendees: 5 people
+       Score: +8 points
+       Evidence: Small internal recurring meeting
+
+   [3] meet-up
+       Date: 2025-07-22T15:35:00
+       Type: informational_briefing
+       Category: Internal Recurring - Progress Review Meetings
+       Attendees: 12 people
+       Score: +1 points
+
+   [4] follow up on t&p (dki)
+       Date: 2025-07-23T15:00:00
+       Type: small_internal_recurring
+       Category: Internal Recurring - Team Status Update Meetings
+       Attendees: 3 people
+       Score: +33 points
+       Evidence: Small internal recurring meeting, Meeting you organized together
+
+   [5] [t+p] discussion on ramp-up and focus areas
+       Date: 2025-07-24T16:35:00
+       Type: small_internal_recurring
+       Category: Internal Recurring - Team Status Update Meetings
+       Attendees: 6 people
+       Score: +8 points
+       Evidence: Small internal recurring meeting
+
+≡ƒöì GRAPH API DATA:
+   Verified Name: Haidong Zhang
+   Graph Rank: #2
+   Job Title: PRINCIPAL ARCHITECT
+
+≡ƒôä DOCUMENT SHARING:
+   Total Shares: 2
+   Collaboration Score: 103
+   Last Share: 3d ago
+
+≡ƒÆ¼ TEAMS CHAT:
+   Chat Count: 4
+   Chat Type: oneOnOne
+   Last Chat: 0 days ago
+
+--------------------------------------------------------------------------------
+
+################################################################################
+RANK #2: Zhuoyu Zhang (FESCO Adecco Human Resources)
+################################################################################
+
+≡ƒôè SCORES:
+   Importance Score: 88.75
+   Final Score: 243.0
+   Confidence: 0.80
+
+≡ƒôê COLLABORATION METRICS:
+   Total Meetings: 8
+   Genuine Collaboration: 8
+   One-on-One Meetings: 0
+   Teams Chats: 0
+   Shared Documents: 0
+
+≡ƒôï MEETING EVIDENCE (5 meetings):
+
+   [1] zhouyu 1-1
+       Date: 2025-05-20T15:00:00
+       Type: small_internal_recurring
+       Category: Internal Recurring - Team Status Update Meetings
+       Attendees: 1 people
+       Score: +33 points
+       Evidence: Small internal recurring meeting, Meeting you organized together
+
+   [2] zhouyu 1-1
+       Date: 2025-05-27T15:00:00
+       Type: small_internal_recurring
+       Category: Internal Recurring - Team Status Update Meetings
+       Attendees: 1 people
+       Score: +33 points
+       Evidence: Small internal recurring meeting, Meeting you organized together
+
+   [3] zhouyu 1-1
+       Date: 2025-06-03T15:00:00
+       Type: small_internal_recurring
+       Category: Internal Recurring - Team Status Update Meetings
+       Attendees: 1 people
+       Score: +33 points
+       Evidence: Small internal recurring meeting, Meeting you organized together
+
+   [4] ai design sharing session: illustration layout generation for slides
+       Date: 2025-06-06T13:00:00
+       Type: planning_decision_meetings
+       Category: Strategic Planning & Decision - Planning Sessions
+       Attendees: 45 people
+       Score: +12 points
+       Evidence: Planning/decision meeting participation
+
+   [5] zhouyu 1-1
+       Date: 2025-06-10T15:00:00
+       Type: small_internal_recurring
+       Category: Internal Recurring - Team Status Update Meetings
+       Attendees: 1 people
+       Score: +33 points
+       Evidence: Small internal recurring meeting, Meeting you organized together
+
+--------------------------------------------------------------------------------
+
+################################################################################
+RANK #3: Steven Zeng
+################################################################################
+
+≡ƒôè SCORES:
+   Importance Score: 65.22
+   Final Score: 154.2
+   Confidence: 1.00
+
+≡ƒôê COLLABORATION METRICS:
+   Total Meetings: 6
+   Genuine Collaboration: 5
+   One-on-One Meetings: 1
+   Teams Chats: 0
+   Shared Documents: 0
+
+≡ƒôï MEETING EVIDENCE (5 meetings):
+
+   [1] bizchat pm-all (monthly)
+       Date: 2025-06-03T00:05:00
+       Type: broadcast_webinar
+       Category: Informational & Broadcast - Webinars and Broadcasts
+       Attendees: 69 people
+       Score: +0.1 points
+
+   [2] pm team meeting
+       Date: 2025-06-06T15:35:00
+       Type: small_internal_recurring
+       Category: Internal Recurring - Team Status Update Meetings
+       Attendees: 7 people
+       Score: +33 points
+       Evidence: Small internal recurring meeting, Meeting you organized together
+
+   [3] lunch together
+       Date: 2025-06-09T11:30:00
+       Type: one_on_one
+       Category: Internal Recurring - One-on-One Meetings
+       Attendees: 2 people
+       Score: +55 points
+       Evidence: 1:1 meeting - direct collaboration, Meeting you organized together
+
+   [4] dki pm reunion
+       Date: 2025-06-10T11:00:00
+       Type: small_internal_recurring
+       Category: Internal Recurring - Team Status Update Meetings
+       Attendees: 6 people
+       Score: +33 points
+       Evidence: Small internal recurring meeting, Meeting you organized together
+
+   [5] post-mortem 
+       Date: 2025-06-23T15:30:00
+       Type: small_internal_recurring
+       Category: Internal Recurring - Team Status Update Meetings
+       Attendees: 7 people
+       Score: +33 points
+       Evidence: Small internal recurring meeting, Meeting you organized together
+
+--------------------------------------------------------------------------------
+
+################################################################################
+RANK #4: Zili Qu
+################################################################################
+
+≡ƒôè SCORES:
+   Importance Score: 65.22
+   Final Score: 154.2
+   Confidence: 1.00
+
+≡ƒôê COLLABORATION METRICS:
+   Total Meetings: 6
+   Genuine Collaboration: 5
+   One-on-One Meetings: 1
+   Teams Chats: 0
+   Shared Documents: 0
+
+≡ƒôï MEETING EVIDENCE (5 meetings):
+
+   [1] bizchat pm-all (monthly)
+       Date: 2025-06-03T00:05:00
+       Type: broadcast_webinar
+       Category: Informational & Broadcast - Webinars and Broadcasts
+       Attendees: 69 people
+       Score: +0.1 points
+
+   [2] pm team meeting
+       Date: 2025-06-06T15:35:00
+       Type: small_internal_recurring
+       Category: Internal Recurring - Team Status Update Meetings
+       Attendees: 7 people
+       Score: +33 points
+       Evidence: Small internal recurring meeting, Meeting you organized together
+
+   [3] lunch together
+       Date: 2025-06-09T11:30:00
+       Type: one_on_one
+       Category: Internal Recurring - One-on-One Meetings
+       Attendees: 2 people
+       Score: +55 points
+       Evidence: 1:1 meeting - direct collaboration, Meeting you organized together
+
+   [4] dki pm reunion
+       Date: 2025-06-10T11:00:00
+       Type: small_internal_recurring
+       Category: Internal Recurring - Team Status Update Meetings
+       Attendees: 6 people
+       Score: +33 points
+       Evidence: Small internal recurring meeting, Meeting you organized together
+
+   [5] post-mortem 
+       Date: 2025-06-23T15:30:00
+       Type: small_internal_recurring
+       Category: Internal Recurring - Team Status Update Meetings
+       Attendees: 7 people
+       Score: +33 points
+       Evidence: Small internal recurring meeting, Meeting you organized together
+
+--------------------------------------------------------------------------------
+
+################################################################################
+RANK #5: Xiaojie Zhou
+################################################################################
+
+≡ƒôè SCORES:
+   Importance Score: 64.44
+   Final Score: 149.2
+   Confidence: 1.00
+
+≡ƒôê COLLABORATION METRICS:
+   Total Meetings: 7
+   Genuine Collaboration: 6
+   One-on-One Meetings: 0
+   Teams Chats: 0
+   Shared Documents: 0
+
+≡ƒôï MEETING EVIDENCE (5 meetings):
+
+   [1] bizchat pm-all (monthly)
+       Date: 2025-06-03T00:05:00
+       Type: broadcast_webinar
+       Category: Informational & Broadcast - Webinars and Broadcasts
+       Attendees: 69 people
+       Score: +0.1 points
+
+   [2] quick sync-up on monthly story
+       Date: 2025-06-03T13:30:00
+       Type: small_collaborative_working
+       Category: Strategic Planning & Decision - Planning/Workshop Sessions
+       Attendees: 3 people
+       Score: +35 points
+       Evidence: Small collaborative working session, Attended their working meeting
+
+   [3] pm team meeting
+       Date: 2025-06-06T15:35:00
+       Type: small_internal_recurring
+       Category: Internal Recurring - Team Status Update Meetings
+       Attendees: 7 people
+       Score: +33 points
+       Evidence: Small internal recurring meeting, Meeting you organized together
+
+   [4] dki pm reunion
+       Date: 2025-06-10T11:00:00
+       Type: small_internal_recurring
+       Category: Internal Recurring - Team Status Update Meetings
+       Attendees: 6 people
+       Score: +33 points
+       Evidence: Small internal recurring meeting, Meeting you organized together
+
+   [5] post-mortem 
+       Date: 2025-06-23T15:30:00
+       Type: small_internal_recurring
+       Category: Internal Recurring - Team Status Update Meetings
+       Attendees: 7 people
+       Score: +33 points
+       Evidence: Small internal recurring meeting, Meeting you organized together
+
+--------------------------------------------------------------------------------
+
+################################################################################
+RANK #6: Ling Chen
+################################################################################
+
+≡ƒôè SCORES:
+   Importance Score: 54.38
+   Final Score: 132.2
+   Confidence: 0.80
+
+≡ƒôê COLLABORATION METRICS:
+   Total Meetings: 6
+   Genuine Collaboration: 4
+   One-on-One Meetings: 0
+   Teams Chats: 0
+   Shared Documents: 0
+
+≡ƒôï MEETING EVIDENCE (5 meetings):
+
+   [1] 1-1 connect
+       Date: 2025-05-22T14:00:00
+       Type: small_internal_recurring
+       Category: Internal Recurring - Team Status Update Meetings
+       Attendees: 1 people
+       Score: +33 points
+       Evidence: Small internal recurring meeting, Meeting you organized together
+
+   [2] bizchat pm-all (monthly)
+       Date: 2025-06-03T00:05:00
+       Type: broadcast_webinar
+       Category: Informational & Broadcast - Webinars and Broadcasts
+       Attendees: 69 people
+       Score: +0.1 points
+
+   [3] pm team meeting
+       Date: 2025-06-06T15:35:00
+       Type: small_internal_recurring
+       Category: Internal Recurring - Team Status Update Meetings
+       Attendees: 7 people
+       Score: +33 points
+       Evidence: Small internal recurring meeting, Meeting you organized together
+
+   [4] dki pm reunion
+       Date: 2025-06-10T11:00:00
+       Type: small_internal_recurring
+       Category: Internal Recurring - Team Status Update Meetings
+       Attendees: 6 people
+       Score: +33 points
+       Evidence: Small internal recurring meeting, Meeting you organized together
+
+   [5] post-mortem 
+       Date: 2025-06-23T15:30:00
+       Type: small_internal_recurring
+       Category: Internal Recurring - Team Status Update Meetings
+       Attendees: 7 people
+       Score: +33 points
+       Evidence: Small internal recurring meeting, Meeting you organized together
+
+--------------------------------------------------------------------------------
+
+################################################################################
+RANK #7: Peng Zhang
+################################################################################
+
+≡ƒôè SCORES:
+   Importance Score: 48.75
+   Final Score: 47.0
+   Confidence: 0.70
+
+≡ƒôê COLLABORATION METRICS:
+   Total Meetings: 2
+   Genuine Collaboration: 3
+   One-on-One Meetings: 0
+   Teams Chats: 0
+   Shared Documents: 0
+
+≡ƒôï MEETING EVIDENCE (2 meetings):
+
+   [1] ai design sharing session: illustration layout generation for slides
+       Date: 2025-06-06T13:00:00
+       Type: planning_decision_meetings
+       Category: Strategic Planning & Decision - Planning Sessions
+       Attendees: 45 people
+       Score: +12 points
+       Evidence: Planning/decision meeting participation
+
+   [2] chin-yew/peng sync
+       Date: 2025-07-01T16:30:00
+       Type: small_collaborative_working
+       Category: Strategic Planning & Decision - Planning/Workshop Sessions
+       Attendees: 1 people
+       Score: +35 points
+       Evidence: Small collaborative working session, Attended their working meeting
+
+--------------------------------------------------------------------------------
+
+################################################################################
+RANK #8: Xiaodong Liu
+################################################################################
+
+≡ƒôè SCORES:
+   Importance Score: 46.22
+   Final Score: 105.0
+   Confidence: 0.90
+
+≡ƒôê COLLABORATION METRICS:
+   Total Meetings: 7
+   Genuine Collaboration: 3
+   One-on-One Meetings: 1
+   Teams Chats: 2
+   Shared Documents: 0
+
+≡ƒôï MEETING EVIDENCE (5 meetings):
+
+   [1] chin-yew / xiaodong agent workshop discussion
+       Date: 2025-06-11T10:00:00
+       Type: small_collaborative_working
+       Category: Strategic Planning & Decision - Planning/Workshop Sessions
+       Attendees: 1 people
+       Score: +35 points
+       Evidence: Small collaborative working session, Attended their working meeting
+
+   [2] chin-yew <> xiaodong 1:1
+       Date: 2025-06-19T08:30:00
+       Type: small_internal_recurring
+       Category: Internal Recurring - Team Status Update Meetings
+       Attendees: 1 people
+       Score: +8 points
+       Evidence: Small internal recurring meeting
+
+   [3] agent workshop discussion
+       Date: 2025-06-26T09:00:00
+       Type: one_on_one
+       Category: Internal Recurring - One-on-One Meetings
+       Attendees: 2 people
+       Score: +30 points
+       Evidence: 1:1 meeting - direct collaboration
+
+   [4] chin-yew | xiaodong 
+       Date: 2025-07-11T09:30:00
+       Type: small_internal_recurring
+       Category: Internal Recurring - Team Status Update Meetings
+       Attendees: 1 people
+       Score: +8 points
+       Evidence: Small internal recurring meeting
+
+   [5] chin-yew <> xiaodong 1:1
+       Date: 2025-07-19T09:30:00
+       Type: small_internal_recurring
+       Category: Internal Recurring - Team Status Update Meetings
+       Attendees: 1 people
+       Score: +8 points
+       Evidence: Small internal recurring meeting
+
+≡ƒÆ¼ TEAMS CHAT:
+   Chat Count: 2
+   Chat Type: oneOnOne
+   Last Chat: 0 days ago
+
+--------------------------------------------------------------------------------
+
+################################################################################
+RANK #9: Ailsa Zhong
+################################################################################
+
+≡ƒôè SCORES:
+   Importance Score: 43.37
+   Final Score: 115.2
+   Confidence: 0.60
+
+≡ƒôê COLLABORATION METRICS:
+   Total Meetings: 7
+   Genuine Collaboration: 3
+   One-on-One Meetings: 0
+   Teams Chats: 0
+   Shared Documents: 0
+
+≡ƒôï MEETING EVIDENCE (5 meetings):
+
+   [1] bizchat pm-all (monthly)
+       Date: 2025-06-03T00:05:00
+       Type: broadcast_webinar
+       Category: Informational & Broadcast - Webinars and Broadcasts
+       Attendees: 69 people
+       Score: +0.1 points
+
+   [2] pm team meeting
+       Date: 2025-06-06T15:35:00
+       Type: small_internal_recurring
+       Category: Internal Recurring - Team Status Update Meetings
+       Attendees: 7 people
+       Score: +33 points
+       Evidence: Small internal recurring meeting, Meeting you organized together
+
+   [3] dki pm reunion
+       Date: 2025-06-10T11:00:00
+       Type: small_internal_recurring
+       Category: Internal Recurring - Team Status Update Meetings
+       Attendees: 6 people
+       Score: +33 points
+       Evidence: Small internal recurring meeting, Meeting you organized together
+
+   [4] dinner
+       Date: 2025-06-10T18:00:00
+       Type: small_internal_recurring
+       Category: Internal Recurring - Team Status Update Meetings
+       Attendees: 7 people
+       Score: +8 points
+       Evidence: Small internal recurring meeting
+
+   [5] post-mortem 
+       Date: 2025-06-23T15:30:00
+       Type: small_internal_recurring
+       Category: Internal Recurring - Team Status Update Meetings
+       Attendees: 7 people
+       Score: +33 points
+       Evidence: Small internal recurring meeting, Meeting you organized together
+
+--------------------------------------------------------------------------------
+
+################################################################################
+RANK #10: Xiuge Cheng
+################################################################################
+
+≡ƒôè SCORES:
+   Importance Score: 42.80
+   Final Score: 107.2
+   Confidence: 0.60
+
+≡ƒôê COLLABORATION METRICS:
+   Total Meetings: 6
+   Genuine Collaboration: 3
+   One-on-One Meetings: 0
+   Teams Chats: 0
+   Shared Documents: 0
+
+≡ƒôï MEETING EVIDENCE (5 meetings):
+
+   [1] bizchat pm-all (monthly)
+       Date: 2025-06-03T00:05:00
+       Type: broadcast_webinar
+       Category: Informational & Broadcast - Webinars and Broadcasts
+       Attendees: 69 people
+       Score: +0.1 points
+
+   [2] pm team meeting
+       Date: 2025-06-06T15:35:00
+       Type: small_internal_recurring
+       Category: Internal Recurring - Team Status Update Meetings
+       Attendees: 7 people
+       Score: +33 points
+       Evidence: Small internal recurring meeting, Meeting you organized together
+
+   [3] dki pm reunion
+       Date: 2025-06-10T11:00:00
+       Type: small_internal_recurring
+       Category: Internal Recurring - Team Status Update Meetings
+       Attendees: 6 people
+       Score: +33 points
+       Evidence: Small internal recurring meeting, Meeting you organized together
+
+   [4] dinner
+       Date: 2025-06-10T18:00:00
+       Type: small_internal_recurring
+       Category: Internal Recurring - Team Status Update Meetings
+       Attendees: 7 people
+       Score: +8 points
+       Evidence: Small internal recurring meeting
+
+   [5] post-mortem 
+       Date: 2025-06-23T15:30:00
+       Type: small_internal_recurring
+       Category: Internal Recurring - Team Status Update Meetings
+       Attendees: 7 people
+       Score: +33 points
+       Evidence: Small internal recurring meeting, Meeting you organized together
+
+--------------------------------------------------------------------------------
+
+################################################################################
+RANK #11: Qiang Huo
+################################################################################
+
+≡ƒôè SCORES:
+   Importance Score: 37.65
+   Final Score: 43.2
+   Confidence: 0.55
+
+≡ƒôê COLLABORATION METRICS:
+   Total Meetings: 0
+   Genuine Collaboration: 0
+   One-on-One Meetings: 0
+   Teams Chats: 0
+   Shared Documents: 0
+   ≡ƒôä Document-Only Collaborator (no meetings/chats)
+
+≡ƒôï MEETING EVIDENCE (0 meetings):
+
+--------------------------------------------------------------------------------
+
+################################################################################
+RANK #12: Qiang Fu
+################################################################################
+
+≡ƒôè SCORES:
+   Importance Score: 36.25
+   Final Score: 79.0
+   Confidence: 0.90
+
+≡ƒôê COLLABORATION METRICS:
+   Total Meetings: 8
+   Genuine Collaboration: 3
+   One-on-One Meetings: 0
+   Teams Chats: 0
+   Shared Documents: 0
+
+≡ƒôï MEETING EVIDENCE (5 meetings):
+
+   [1] review with dongmei's team
+       Date: 2025-05-15T09:05:00
+       Type: planning_decision_meetings
+       Category: Strategic Planning & Decision - Planning Sessions
+       Attendees: 13 people
+       Score: +12 points
+       Evidence: Planning/decision meeting participation
+
+   [2] yongdong/dki leads - lunch
+       Date: 2025-05-21T12:05:00
+       Type: small_internal_recurring
+       Category: Internal Recurring - Team Status Update Meetings
+       Attendees: 7 people
+       Score: +8 points
+       Evidence: Small internal recurring meeting
+
+   [3] people discussion for dongmei's team - session 1
+       Date: 2025-05-29T09:30:00
+       Type: informational_briefing
+       Category: Internal Recurring - Progress Review Meetings
+       Attendees: 15 people
+       Score: +1 points
+
+   [4] people discussion for dongmei's team - session 2
+       Date: 2025-05-29T12:30:00
+       Type: informational_briefing
+       Category: Internal Recurring - Progress Review Meetings
+       Attendees: 15 people
+       Score: +1 points
+
+   [5] discuss of qi's reflection highlight, lowlight and lesson learned
+       Date: 2025-05-30T14:00:00
+       Type: small_internal_recurring
+       Category: Internal Recurring - Team Status Update Meetings
+       Attendees: 4 people
+       Score: +33 points
+       Evidence: Small internal recurring meeting, Meeting you organized together
+
+--------------------------------------------------------------------------------
+
+################################################################################
+RANK #13: Sally Xiong
+################################################################################
+
+≡ƒôè SCORES:
+   Importance Score: 34.77
+   Final Score: 51.1
+   Confidence: 0.70
+
+≡ƒôê COLLABORATION METRICS:
+   Total Meetings: 4
+   Genuine Collaboration: 3
+   One-on-One Meetings: 0
+   Teams Chats: 0
+   Shared Documents: 0
+
+≡ƒôï MEETING EVIDENCE (4 meetings):
+
+   [1] sync on multi agent chat with balinder
+       Date: 2025-05-06T17:00:00
+       Type: small_collaborative_working
+       Category: Strategic Planning & Decision - Planning/Workshop Sessions
+       Attendees: 3 people
+       Score: +35 points
+       Evidence: Small collaborative working session, Attended their working meeting
+
+   [2] how-to navigate m365 pulse: a 101 beginnerΓÇÖs guide
+       Date: 2025-05-15T07:05:00
+       Type: broadcast_webinar
+       Category: Informational & Broadcast - Webinars and Broadcasts
+       Attendees: 373 people
+       Score: +0.1 points
+
+   [3] quick sync-up on monthly story
+       Date: 2025-06-03T13:30:00
+       Type: small_collaborative_working
+       Category: Strategic Planning & Decision - Planning/Workshop Sessions
+       Attendees: 3 people
+       Score: +15 points
+       Evidence: Small collaborative working session
+
+   [4] bizchat metrics in comet office hours (stca timezone)
+       Date: 2025-07-22T17:30:00
+       Type: informational_briefing
+       Category: Internal Recurring - Progress Review Meetings
+       Attendees: 22 people
+       Score: +1 points
+
+--------------------------------------------------------------------------------
+
+################################################################################
+RANK #14: Naifei Pan
+################################################################################
+
+≡ƒôè SCORES:
+   Importance Score: 33.75
+   Final Score: 74.2
+   Confidence: 0.60
+
+≡ƒôê COLLABORATION METRICS:
+   Total Meetings: 5
+   Genuine Collaboration: 2
+   One-on-One Meetings: 0
+   Teams Chats: 1
+   Shared Documents: 0
+
+≡ƒôï MEETING EVIDENCE (5 meetings):
+
+   [1] bizchat pm-all (monthly)
+       Date: 2025-04-29T00:05:00
+       Type: broadcast_webinar
+       Category: Informational & Broadcast - Webinars and Broadcasts
+       Attendees: 69 people
+       Score: +0.1 points
+
+   [2] bizchat pm-all (monthly)
+       Date: 2025-06-03T00:05:00
+       Type: broadcast_webinar
+       Category: Informational & Broadcast - Webinars and Broadcasts
+       Attendees: 69 people
+       Score: +0.1 points
+
+   [3] pm team meeting
+       Date: 2025-06-06T15:35:00
+       Type: small_internal_recurring
+       Category: Internal Recurring - Team Status Update Meetings
+       Attendees: 7 people
+       Score: +33 points
+       Evidence: Small internal recurring meeting, Meeting you organized together
+
+   [4] 1-1 with naifei
+       Date: 2025-06-09T14:00:00
+       Type: small_internal_recurring
+       Category: Internal Recurring - Team Status Update Meetings
+       Attendees: 1 people
+       Score: +8 points
+       Evidence: Small internal recurring meeting
+
+   [5] post-mortem 
+       Date: 2025-06-23T15:30:00
+       Type: small_internal_recurring
+       Category: Internal Recurring - Team Status Update Meetings
+       Attendees: 7 people
+       Score: +33 points
+       Evidence: Small internal recurring meeting, Meeting you organized together
+
+≡ƒÆ¼ TEAMS CHAT:
+   Chat Count: 1
+   Chat Type: oneOnOne
+   Last Chat: 0 days ago
+
+--------------------------------------------------------------------------------
+
+################################################################################
+RANK #15: Kathy Liu
+################################################################################
+
+≡ƒôè SCORES:
+   Importance Score: 32.48
+   Final Score: 61.1
+   Confidence: 0.60
+
+≡ƒôê COLLABORATION METRICS:
+   Total Meetings: 4
+   Genuine Collaboration: 2
+   One-on-One Meetings: 2
+   Teams Chats: 1
+   Shared Documents: 0
+
+≡ƒôï MEETING EVIDENCE (4 meetings):
+
+   [1] sync up pm ai learning
+       Date: 2025-06-25T15:30:00
+       Type: one_on_one
+       Category: Internal Recurring - One-on-One Meetings
+       Attendees: 2 people
+       Score: +30 points
+       Evidence: 1:1 meeting - direct collaboration
+
+   [2] sync up - ai boot camp for pm
+       Date: 2025-07-09T16:35:00
+       Type: one_on_one
+       Category: Internal Recurring - One-on-One Meetings
+       Attendees: 2 people
+       Score: +30 points
+       Evidence: 1:1 meeting - direct collaboration
+
+   [3] kickoff for the speakers for ai boot camp (for pms)
+       Date: 2025-07-15T16:05:00
+       Type: broadcast_webinar
+       Category: Informational & Broadcast - Webinars and Broadcasts
+       Attendees: 12 people
+       Score: +0.1 points
+
+   [4] ai pm boot camp #1
+       Date: 2025-07-21T14:05:00
+       Type: informational_briefing
+       Category: Internal Recurring - Progress Review Meetings
+       Attendees: 16 people
+       Score: +1 points
+
+≡ƒÆ¼ TEAMS CHAT:
+   Chat Count: 1
+   Chat Type: oneOnOne
+   Last Chat: 0 days ago
+
+--------------------------------------------------------------------------------
+
+################################################################################
+RANK #16: Danqing Huang
+################################################################################
+
+≡ƒôè SCORES:
+   Importance Score: 30.00
+   Final Score: 16.0
+   Confidence: 0.55
+
+≡ƒôê COLLABORATION METRICS:
+   Total Meetings: 0
+   Genuine Collaboration: 0
+   One-on-One Meetings: 0
+   Teams Chats: 0
+   Shared Documents: 0
+   ≡ƒôä Document-Only Collaborator (no meetings/chats)
+
+≡ƒôï MEETING EVIDENCE (0 meetings):
+
+--------------------------------------------------------------------------------
+
+################################################################################
+RANK #17: Bin Zhu
+################################################################################
+
+≡ƒôè SCORES:
+   Importance Score: 29.49
+   Final Score: 67.3
+   Confidence: 0.60
+
+≡ƒôê COLLABORATION METRICS:
+   Total Meetings: 6
+   Genuine Collaboration: 2
+   One-on-One Meetings: 0
+   Teams Chats: 0
+   Shared Documents: 0
+
+≡ƒôï MEETING EVIDENCE (5 meetings):
+
+   [1] dki
+       Date: 2025-06-06T15:00:00
+       Type: informational_briefing
+       Category: Internal Recurring - Progress Review Meetings
+       Attendees: 28 people
+       Score: +1 points
+
+   [2] stca monthly extended plt + managers 
+       Date: 2025-06-27T10:35:00
+       Type: broadcast_webinar
+       Category: Informational & Broadcast - Webinars and Broadcasts
+       Attendees: 179 people
+       Score: +0.1 points
+
+   [3] context engineering
+       Date: 2025-07-14T15:00:00
+       Type: small_internal_recurring
+       Category: Internal Recurring - Team Status Update Meetings
+       Attendees: 1 people
+       Score: +33 points
+       Evidence: Small internal recurring meeting, Meeting you organized together
+
+   [4] context engineering
+       Date: 2025-07-14T15:00:00
+       Type: small_internal_recurring
+       Category: Internal Recurring - Team Status Update Meetings
+       Attendees: 1 people
+       Score: +33 points
+       Evidence: Small internal recurring meeting, Meeting you organized together
+
+   [5] kickoff for the speakers for ai boot camp (for pms)
+       Date: 2025-07-15T16:05:00
+       Type: broadcast_webinar
+       Category: Informational & Broadcast - Webinars and Broadcasts
+       Attendees: 12 people
+       Score: +0.1 points
+
+--------------------------------------------------------------------------------
+
+################################################################################
+RANK #18: Caroline Mao
+################################################################################
+
+≡ƒôè SCORES:
+   Importance Score: 28.50
+   Final Score: 8.4
+   Confidence: 0.40
+
+≡ƒôê COLLABORATION METRICS:
+   Total Meetings: 0
+   Genuine Collaboration: 0
+   One-on-One Meetings: 0
+   Teams Chats: 4
+   Shared Documents: 0
+   ≡ƒÆ¼ Chat-Only Collaborator (no calendar meetings)
+
+≡ƒôï MEETING EVIDENCE (0 meetings):
+
+≡ƒÆ¼ TEAMS CHAT:
+   Chat Count: 4
+   Chat Type: meeting
+   Last Chat: 0 days ago
+
+--------------------------------------------------------------------------------
+
+################################################################################
+RANK #19: Coco Li (RANDSTAD NORTH AMERICA INC)
+################################################################################
+
+≡ƒôè SCORES:
+   Importance Score: 28.50
+   Final Score: 8.4
+   Confidence: 0.40
+
+≡ƒôê COLLABORATION METRICS:
+   Total Meetings: 0
+   Genuine Collaboration: 0
+   One-on-One Meetings: 0
+   Teams Chats: 2
+   Shared Documents: 0
+   ≡ƒÆ¼ Chat-Only Collaborator (no calendar meetings)
+
+≡ƒôï MEETING EVIDENCE (0 meetings):
+
+≡ƒÆ¼ TEAMS CHAT:
+   Chat Count: 2
+   Chat Type: oneOnOne
+   Last Chat: 0 days ago
+
+--------------------------------------------------------------------------------
+
+################################################################################
+RANK #20: Yan Xiao
+################################################################################
+
+≡ƒôè SCORES:
+   Importance Score: 25.70
+   Final Score: 34.0
+   Confidence: 0.60
+
+≡ƒôê COLLABORATION METRICS:
+   Total Meetings: 2
+   Genuine Collaboration: 1
+   One-on-One Meetings: 0
+   Teams Chats: 1
+   Shared Documents: 0
+
+≡ƒôï MEETING EVIDENCE (2 meetings):
+
+   [1] dki
+       Date: 2025-06-06T15:00:00
+       Type: informational_briefing
+       Category: Internal Recurring - Progress Review Meetings
+       Attendees: 28 people
+       Score: +1 points
+
+   [2] dki - ai productivity initiative
+       Date: 2025-07-18T11:00:00
+       Type: small_internal_recurring
+       Category: Internal Recurring - Team Status Update Meetings
+       Attendees: 4 people
+       Score: +33 points
+       Evidence: Small internal recurring meeting, Meeting you organized together
+
+≡ƒÆ¼ TEAMS CHAT:
+   Chat Count: 1
+   Chat Type: oneOnOne
+   Last Chat: 0 days ago
+
+--------------------------------------------------------------------------------
+
+================================================================================
+SUMMARY STATISTICS
+================================================================================
+Total Collaborators Found: 23
+Classification Method: Keyword-based (70-80% accuracy)
+Note: LLM classification would provide 95-99% accuracy but hits rate limits
+
+Detailed results saved to: top_20_collaborators_keyword.json
+================================================================================
+

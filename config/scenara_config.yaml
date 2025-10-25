@@ -1,0 +1,43 @@
+# Scenara 2.0 Configuration
+
+project:
+  name: "Scenara 2.0"
+  description: "Enterprise Meeting Intelligence System"
+  version: "2.0.0"
+
+# LLM Configuration
+llm:
+  primary:
+    provider: "ollama"
+    model: "gpt-oss:20b"
+    temperature: 0.3
+  
+  fallbacks:
+    - provider: "openai"
+      model: "gpt-4o"
+      temperature: 0.3
+    - provider: "anthropic" 
+      model: "claude-3-sonnet-20240229"
+      temperature: 0.3
+
+# Meeting Intelligence
+meeting_intelligence:
+  classification_types: 31
+  accuracy_target: 0.97
+  
+  data_architecture:
+    real_data_ratio: 0.2
+    synthetic_data_ratio: 0.8
+    quality_threshold: 8.0
+
+# GUTT Framework
+gutt:
+  version: "4.0"
+  scoring_method: "multiplicative"
+  target_score: 3.0
+  
+# Platform Detection
+platform:
+  auto_detect: true
+  supported_editors: ["cursor", "vscode", "pycharm", "jupyter"]
+  supported_os: ["darwin", "windows", "linux"]
