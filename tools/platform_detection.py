@@ -237,6 +237,17 @@ class PlatformDetector:
                 "Graph Explorer - Microsoft calendar access",
                 "tools/screenshot_utils.py - UI verification"
             ],
+            "platform_strategy": [
+                "🪟 DevBox Windows: Data extraction + MSAL authentication",
+                "   → Use SilverFlow for Microsoft Graph API access",
+                "   → GPT-4.1/GPT-5 for enterprise LLM processing",
+                "   → Extract calendar/teams/documents data",
+                "🍎 macOS: Data processing + Local LLM",
+                "   → Use Ollama (gpt-oss:20b) for LLM processing",
+                "   → Process DevBox-extracted data files",
+                "   → Generate collaboration intelligence",
+                "💡 HYBRID WORKFLOW: DevBox extract → Transfer → macOS process"
+            ],
             f"{os_system.lower()}_specific": self._get_os_specific_tools(os_system)
         }
         
@@ -247,20 +258,25 @@ class PlatformDetector:
         if os_system.lower() == "darwin":  # macOS
             return [
                 "Use zsh shell (default)",
+                "Ollama (gpt-oss:20b) for local LLM processing",
+                "Process DevBox-extracted JSON files",
+                "Command: python tools/collaborator_discovery.py --calendar-data <file>",
                 "Microsoft Edge for Graph API authentication",
-                "AppleScript for automation when needed",
-                "Avoid Windows-specific tools (SilverFlow)"
+                "AppleScript for automation when needed"
             ]
         elif os_system.lower() == "windows":
             return [
                 "PowerShell for script execution",
                 "Windows Authentication Manager (WAM) support",
-                "SilverFlow patterns available",
+                "SilverFlow MSAL patterns for Graph API",
+                "GPT-4.1/GPT-5 enterprise LLM access",
+                "Command: python tools/graph_data_extractor.py",
                 "Edge WebDriver for automation"
             ]
         elif os_system.lower() == "linux":
             return [
                 "Bash/zsh shell support",
+                "Ollama for local LLM processing",
                 "X11/Wayland display protocols",
                 "Package manager integration",
                 "Container deployment options"
@@ -322,12 +338,18 @@ class PlatformDetector:
         if "meeting_intelligence" in platform_tools:
             for tool in platform_tools["meeting_intelligence"]:
                 recommendations.append(f"   • {tool}")
-        
+
+        # Platform Strategy
+        if "platform_strategy" in platform_tools:
+            recommendations.append("\n🖥️  PLATFORM-SPECIFIC STRATEGY:")
+            for strategy in platform_tools["platform_strategy"]:
+                recommendations.append(f"   {strategy}")
+
         # OS-Specific Tools
         os_system = info["operating_system"]["system"].lower()
         os_key = f"{os_system}_specific"
         if os_key in platform_tools:
-            recommendations.append(f"\n🖥️  {os_system.upper()}-SPECIFIC TOOLS:")
+            recommendations.append(f"\n🎯 {os_system.upper()}-SPECIFIC RECOMMENDATIONS:")
             for tool in platform_tools[os_key]:
                 recommendations.append(f"   • {tool}")
         

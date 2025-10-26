@@ -1,0 +1,1426 @@
+{
+  "analysis_timestamp": "2025-10-26T06:09:14.798086",
+  "graph_api_integrated": true,
+  "teams_chat_integrated": true,
+  "document_sharing_integrated": true,
+  "algorithm_version": "8.0_document_sharing_enhanced",
+  "user_name": "Chin-Yew Lin",
+  "total_collaborators_found": 10,
+  "data_source": "my_calendar_events_complete_attendees.json",
+  "data_sources": {
+    "calendar": "my_calendar_events_complete_attendees.json",
+    "graph_api": "data/evaluation_results/graph_collaboration_analysis_*.json",
+    "teams_chat": "data/evaluation_results/teams_chat_analysis_*.json",
+    "document_sharing": "data/evaluation_results/document_collaboration_analysis_*.json"
+  },
+  "ranking_criteria": {
+    "importance_calculation": "collaboration(25%) + quality(20%) + confidence(20%) + graph_api(15%) + temporal_recency(15%) + documents_enhanced(5%) + teams_chat(5%)",
+    "filtering_requirements": [
+      "Has genuine collaboration evidence",
+      "Not a system account",
+      "Final score > 15",
+      "Confidence > 60%",
+      "Genuine collaboration ratio > 30%",
+      "Email list ratio < 70%"
+    ],
+    "new_in_v8": [
+      "Enhanced document collaboration tracking (OneDrive + Teams chat attachments)",
+      "Document sharing temporal analysis (recency + continuity)",
+      "Separate OneDrive vs Teams chat attachment tracking",
+      "Document-only collaborator detection",
+      "Sharing frequency and pattern analysis"
+    ],
+    "maintained_from_v7": [
+      "Teams chat collaboration integration",
+      "Chat frequency and recency scoring",
+      "Ad hoc chat-only collaborator detection",
+      "1:1 vs group chat differentiation",
+      "Chat temporal weighting (7/30/90 days)"
+    ]
+  },
+  "collaborators": [
+    {
+      "name": "Haidong Zhang",
+      "importance_score": 569.83,
+      "final_score": 1697.6,
+      "confidence": 1.0,
+      "genuine_collaboration_meetings": 64,
+      "informational_meetings": 18,
+      "broadcast_meetings": 6,
+      "email_list_meetings": 0,
+      "genuine_ratio": 0.604,
+      "informational_ratio": 0.17,
+      "email_list_ratio": 0.0,
+      "one_on_one": 13,
+      "organized_by_me": 8,
+      "small_working_meetings": 28,
+      "attended_their_meetings": 10,
+      "time_periods": 7,
+      "total_meetings": 106,
+      "collaboration_evidence": [
+        "Attended their working meeting",
+        "Meeting you organized together",
+        "Planning/decision meeting participation",
+        "Small collaborative working session",
+        "Small internal recurring meeting",
+        "1:1 meeting - direct collaboration"
+      ],
+      "information_evidence": [
+        "Broadcast/webinar attendance",
+        "Attended their informational meeting",
+        "Informational briefing attendance"
+      ],
+      "meeting_details": [
+        {
+          "date": "2025-10-23T04:05:00",
+          "size": 31,
+          "subject": "prepare.ai status review",
+          "organizer": "Drew Brough",
+          "meeting_type": "planning_decision_meetings",
+          "taxonomy_category": "Strategic Planning & Decision - Planning Sessions",
+          "has_email_list": false,
+          "base_score": 12,
+          "collaboration_evidence": [
+            "Planning/decision meeting participation"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2025-10-24T10:35:00",
+          "size": 181,
+          "subject": "stca monthly extended plt + managers ",
+          "organizer": "Effie Liu",
+          "meeting_type": "broadcast_webinar",
+          "taxonomy_category": "Informational & Broadcast - Webinars and Broadcasts",
+          "has_email_list": false,
+          "base_score": 0.1,
+          "collaboration_evidence": [],
+          "information_evidence": [
+            "Broadcast/webinar attendance"
+          ]
+        },
+        {
+          "date": "2025-10-24T12:05:00",
+          "size": 14,
+          "subject": "organize & collaborate golden prompt ds status",
+          "organizer": "Balaji Shyamkumar",
+          "meeting_type": "informational_briefing",
+          "taxonomy_category": "Internal Recurring - Progress Review Meetings",
+          "has_email_list": false,
+          "base_score": 1,
+          "collaboration_evidence": [],
+          "information_evidence": [
+            "Informational briefing attendance"
+          ]
+        },
+        {
+          "date": "2025-10-24T13:05:00",
+          "size": 8,
+          "subject": "silverflow+topiclens project weekly review",
+          "organizer": "Dongmei Zhang",
+          "meeting_type": "small_collaborative_working",
+          "taxonomy_category": "Strategic Planning & Decision - Planning/Workshop Sessions",
+          "has_email_list": false,
+          "base_score": 15,
+          "collaboration_evidence": [
+            "Small collaborative working session"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2025-10-24T14:10:00",
+          "size": 3,
+          "subject": "evals sync",
+          "organizer": "Haidong Zhang",
+          "meeting_type": "small_collaborative_working",
+          "taxonomy_category": "Strategic Planning & Decision - Planning/Workshop Sessions",
+          "has_email_list": false,
+          "base_score": 35,
+          "collaboration_evidence": [
+            "Small collaborative working session",
+            "Attended their working meeting"
+          ],
+          "information_evidence": []
+        }
+      ],
+      "graph_api_rank": 2,
+      "graph_api_relevance": 0,
+      "graph_api_verified": true,
+      "verified_name": "Haidong Zhang",
+      "job_title": "PRINCIPAL ARCHITECT",
+      "shared_documents": 2,
+      "document_collaboration_score": 103,
+      "onedrive_direct_shares": 0,
+      "onedrive_group_shares": 0,
+      "teams_direct_attachments": 1,
+      "teams_group_attachments": 7,
+      "total_document_shares": 8,
+      "sharing_days": 5,
+      "last_share_date": "2025-10-21T19:00:59.997Z",
+      "document_recency_label": "3d",
+      "document_only_collaborator": false,
+      "recency_data": {
+        "last_7_days": 8,
+        "last_30_days": 21,
+        "last_90_days": 72,
+        "recent_important_meetings": 14,
+        "most_recent_meeting": "2025-10-24T14:10:00",
+        "days_since_last_meeting": 1
+      },
+      "temporal_recency_score": 107.4,
+      "chat_count": 4,
+      "chat_message_count": 4,
+      "days_since_last_chat": 0,
+      "chat_recency_score": 2.0,
+      "is_recent_chat": true,
+      "is_frequent_chat": false,
+      "chat_type": "oneOnOne",
+      "chat_only_collaborator": false,
+      "chat_collaboration_score": 24.0,
+      "algorithm_version": "8.1_multi_source_support"
+    },
+    {
+      "name": "Zhitao Hou",
+      "importance_score": 247.25,
+      "final_score": 704.7,
+      "confidence": 1.0,
+      "genuine_collaboration_meetings": 24,
+      "informational_meetings": 13,
+      "broadcast_meetings": 7,
+      "email_list_meetings": 0,
+      "genuine_ratio": 0.436,
+      "informational_ratio": 0.236,
+      "email_list_ratio": 0.0,
+      "one_on_one": 5,
+      "organized_by_me": 5,
+      "small_working_meetings": 13,
+      "attended_their_meetings": 0,
+      "time_periods": 7,
+      "total_meetings": 55,
+      "collaboration_evidence": [
+        "Meeting you organized together",
+        "Planning/decision meeting participation",
+        "Small collaborative working session",
+        "Small internal recurring meeting",
+        "1:1 meeting - direct collaboration"
+      ],
+      "information_evidence": [
+        "Broadcast/webinar attendance",
+        "Attended their informational meeting",
+        "Informational briefing attendance"
+      ],
+      "meeting_details": [
+        {
+          "date": "2025-10-17T11:05:00",
+          "size": 8,
+          "subject": "silverflow+topiclens project weekly review",
+          "organizer": "Dongmei Zhang",
+          "meeting_type": "small_collaborative_working",
+          "taxonomy_category": "Strategic Planning & Decision - Planning/Workshop Sessions",
+          "has_email_list": false,
+          "base_score": 15,
+          "collaboration_evidence": [
+            "Small collaborative working session"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2025-10-21T11:35:00",
+          "size": 9,
+          "subject": "meeting prep stca sync",
+          "organizer": "Mark Grimaldi",
+          "meeting_type": "small_collaborative_working",
+          "taxonomy_category": "Strategic Planning & Decision - Planning/Workshop Sessions",
+          "has_email_list": false,
+          "base_score": 15,
+          "collaboration_evidence": [
+            "Small collaborative working session"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2025-10-21T12:05:00",
+          "size": 16,
+          "subject": "join us for our bi-weekly coffee, lunch & tech chat!",
+          "organizer": "Zhitao Hou",
+          "meeting_type": "informational_briefing",
+          "taxonomy_category": "Internal Recurring - Progress Review Meetings",
+          "has_email_list": false,
+          "base_score": 1,
+          "collaboration_evidence": [],
+          "information_evidence": [
+            "Informational briefing attendance",
+            "Attended their informational meeting"
+          ]
+        },
+        {
+          "date": "2025-10-24T10:35:00",
+          "size": 181,
+          "subject": "stca monthly extended plt + managers ",
+          "organizer": "Effie Liu",
+          "meeting_type": "broadcast_webinar",
+          "taxonomy_category": "Informational & Broadcast - Webinars and Broadcasts",
+          "has_email_list": false,
+          "base_score": 0.1,
+          "collaboration_evidence": [],
+          "information_evidence": [
+            "Broadcast/webinar attendance"
+          ]
+        },
+        {
+          "date": "2025-10-24T13:05:00",
+          "size": 8,
+          "subject": "silverflow+topiclens project weekly review",
+          "organizer": "Dongmei Zhang",
+          "meeting_type": "small_collaborative_working",
+          "taxonomy_category": "Strategic Planning & Decision - Planning/Workshop Sessions",
+          "has_email_list": false,
+          "base_score": 15,
+          "collaboration_evidence": [
+            "Small collaborative working session"
+          ],
+          "information_evidence": []
+        }
+      ],
+      "graph_api_rank": null,
+      "graph_api_relevance": null,
+      "graph_api_verified": false,
+      "verified_name": null,
+      "job_title": null,
+      "shared_documents": 1,
+      "document_collaboration_score": 81,
+      "onedrive_direct_shares": 0,
+      "onedrive_group_shares": 0,
+      "teams_direct_attachments": 0,
+      "teams_group_attachments": 7,
+      "total_document_shares": 7,
+      "sharing_days": 4,
+      "last_share_date": "2025-10-09T07:22:54.727Z",
+      "document_recency_label": "16d",
+      "document_only_collaborator": false,
+      "recency_data": {
+        "last_7_days": 4,
+        "last_30_days": 8,
+        "last_90_days": 37,
+        "recent_important_meetings": 5,
+        "most_recent_meeting": "2025-10-24T13:05:00",
+        "days_since_last_meeting": 1
+      },
+      "temporal_recency_score": 48.3,
+      "chat_count": 0,
+      "chat_message_count": 0,
+      "days_since_last_chat": null,
+      "chat_recency_score": 0,
+      "is_recent_chat": false,
+      "is_frequent_chat": false,
+      "chat_type": null,
+      "chat_only_collaborator": false,
+      "chat_collaboration_score": 0,
+      "algorithm_version": "8.1_multi_source_support"
+    },
+    {
+      "name": "Dongmei Zhang",
+      "importance_score": 235.62,
+      "final_score": 691.2,
+      "confidence": 1.0,
+      "genuine_collaboration_meetings": 24,
+      "informational_meetings": 16,
+      "broadcast_meetings": 2,
+      "email_list_meetings": 0,
+      "genuine_ratio": 0.421,
+      "informational_ratio": 0.281,
+      "email_list_ratio": 0.0,
+      "one_on_one": 5,
+      "organized_by_me": 1,
+      "small_working_meetings": 9,
+      "attended_their_meetings": 8,
+      "time_periods": 7,
+      "total_meetings": 57,
+      "collaboration_evidence": [
+        "Attended their working meeting",
+        "Meeting you organized together",
+        "Planning/decision meeting participation",
+        "Small collaborative working session",
+        "Small internal recurring meeting",
+        "1:1 meeting - direct collaboration"
+      ],
+      "information_evidence": [
+        "Attended their informational meeting",
+        "Broadcast/webinar attendance",
+        "Informational briefing attendance",
+        "Training/education session attendance"
+      ],
+      "meeting_details": [
+        {
+          "date": "2025-10-17T14:00:00",
+          "size": 2,
+          "subject": "discuss priority calendar/user priorities",
+          "organizer": "Haidong Zhang",
+          "meeting_type": "one_on_one",
+          "taxonomy_category": "Internal Recurring - One-on-One Meetings",
+          "has_email_list": false,
+          "base_score": 30,
+          "collaboration_evidence": [
+            "1:1 meeting - direct collaboration"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2025-10-21T02:35:00",
+          "size": 13,
+          "subject": "priority calendar deep dive",
+          "organizer": "Pratibha Permandla",
+          "meeting_type": "informational_briefing",
+          "taxonomy_category": "Internal Recurring - Progress Review Meetings",
+          "has_email_list": false,
+          "base_score": 1,
+          "collaboration_evidence": [],
+          "information_evidence": [
+            "Informational briefing attendance"
+          ]
+        },
+        {
+          "date": "2025-10-21T12:05:00",
+          "size": 16,
+          "subject": "join us for our bi-weekly coffee, lunch & tech chat!",
+          "organizer": "Zhitao Hou",
+          "meeting_type": "informational_briefing",
+          "taxonomy_category": "Internal Recurring - Progress Review Meetings",
+          "has_email_list": false,
+          "base_score": 1,
+          "collaboration_evidence": [],
+          "information_evidence": [
+            "Informational briefing attendance"
+          ]
+        },
+        {
+          "date": "2025-10-22T14:00:00",
+          "size": 2,
+          "subject": "agentic memory collaboration with msr jianfeng",
+          "organizer": "Chin-Yew Lin",
+          "meeting_type": "one_on_one",
+          "taxonomy_category": "Internal Recurring - One-on-One Meetings",
+          "has_email_list": false,
+          "base_score": 55,
+          "collaboration_evidence": [
+            "1:1 meeting - direct collaboration",
+            "Meeting you organized together"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2025-10-24T13:05:00",
+          "size": 8,
+          "subject": "silverflow+topiclens project weekly review",
+          "organizer": "Dongmei Zhang",
+          "meeting_type": "small_collaborative_working",
+          "taxonomy_category": "Strategic Planning & Decision - Planning/Workshop Sessions",
+          "has_email_list": false,
+          "base_score": 35,
+          "collaboration_evidence": [
+            "Small collaborative working session",
+            "Attended their working meeting"
+          ],
+          "information_evidence": []
+        }
+      ],
+      "graph_api_rank": null,
+      "graph_api_relevance": null,
+      "graph_api_verified": false,
+      "verified_name": null,
+      "job_title": null,
+      "shared_documents": 0,
+      "document_collaboration_score": 0,
+      "onedrive_direct_shares": 0,
+      "onedrive_group_shares": 0,
+      "teams_direct_attachments": 0,
+      "teams_group_attachments": 0,
+      "total_document_shares": 0,
+      "sharing_days": 0,
+      "last_share_date": null,
+      "document_recency_label": "N/A",
+      "document_only_collaborator": false,
+      "recency_data": {
+        "last_7_days": 4,
+        "last_30_days": 9,
+        "last_90_days": 30,
+        "recent_important_meetings": 4,
+        "most_recent_meeting": "2025-10-24T13:05:00",
+        "days_since_last_meeting": 1
+      },
+      "temporal_recency_score": 43.8,
+      "chat_count": 1,
+      "chat_message_count": 1,
+      "days_since_last_chat": 0,
+      "chat_recency_score": 2.0,
+      "is_recent_chat": true,
+      "is_frequent_chat": false,
+      "chat_type": "group",
+      "chat_only_collaborator": false,
+      "chat_collaboration_score": 3.0,
+      "algorithm_version": "8.1_multi_source_support"
+    },
+    {
+      "name": "Qingwei Lin",
+      "importance_score": 159.99,
+      "final_score": 448.6,
+      "confidence": 1.0,
+      "genuine_collaboration_meetings": 17,
+      "informational_meetings": 10,
+      "broadcast_meetings": 6,
+      "email_list_meetings": 0,
+      "genuine_ratio": 0.37,
+      "informational_ratio": 0.217,
+      "email_list_ratio": 0.0,
+      "one_on_one": 1,
+      "organized_by_me": 3,
+      "small_working_meetings": 11,
+      "attended_their_meetings": 1,
+      "time_periods": 7,
+      "total_meetings": 46,
+      "collaboration_evidence": [
+        "Attended their working meeting",
+        "Meeting you organized together",
+        "Planning/decision meeting participation",
+        "Small collaborative working session",
+        "Small internal recurring meeting",
+        "1:1 meeting - direct collaboration"
+      ],
+      "information_evidence": [
+        "Attended their informational meeting",
+        "Broadcast/webinar attendance",
+        "Informational briefing attendance"
+      ],
+      "meeting_details": [
+        {
+          "date": "2025-10-16T07:00:00",
+          "size": 153,
+          "subject": "agentic memory workshop \u2013 modular, portable memory for human-agent interactions",
+          "organizer": "Doug Burger (HE\\/HIM)",
+          "meeting_type": "broadcast_webinar",
+          "taxonomy_category": "Informational & Broadcast - Webinars and Broadcasts",
+          "has_email_list": false,
+          "base_score": 0.1,
+          "collaboration_evidence": [],
+          "information_evidence": [
+            "Broadcast/webinar attendance"
+          ]
+        },
+        {
+          "date": "2025-10-17T11:05:00",
+          "size": 8,
+          "subject": "silverflow+topiclens project weekly review",
+          "organizer": "Dongmei Zhang",
+          "meeting_type": "small_collaborative_working",
+          "taxonomy_category": "Strategic Planning & Decision - Planning/Workshop Sessions",
+          "has_email_list": false,
+          "base_score": 15,
+          "collaboration_evidence": [
+            "Small collaborative working session"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2025-10-22T14:00:00",
+          "size": 2,
+          "subject": "agentic memory collaboration with msr jianfeng",
+          "organizer": "Chin-Yew Lin",
+          "meeting_type": "one_on_one",
+          "taxonomy_category": "Internal Recurring - One-on-One Meetings",
+          "has_email_list": false,
+          "base_score": 55,
+          "collaboration_evidence": [
+            "1:1 meeting - direct collaboration",
+            "Meeting you organized together"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2025-10-24T10:35:00",
+          "size": 181,
+          "subject": "stca monthly extended plt + managers ",
+          "organizer": "Effie Liu",
+          "meeting_type": "broadcast_webinar",
+          "taxonomy_category": "Informational & Broadcast - Webinars and Broadcasts",
+          "has_email_list": false,
+          "base_score": 0.1,
+          "collaboration_evidence": [],
+          "information_evidence": [
+            "Broadcast/webinar attendance"
+          ]
+        },
+        {
+          "date": "2025-10-24T13:05:00",
+          "size": 8,
+          "subject": "silverflow+topiclens project weekly review",
+          "organizer": "Dongmei Zhang",
+          "meeting_type": "small_collaborative_working",
+          "taxonomy_category": "Strategic Planning & Decision - Planning/Workshop Sessions",
+          "has_email_list": false,
+          "base_score": 15,
+          "collaboration_evidence": [
+            "Small collaborative working session"
+          ],
+          "information_evidence": []
+        }
+      ],
+      "graph_api_rank": null,
+      "graph_api_relevance": null,
+      "graph_api_verified": false,
+      "verified_name": null,
+      "job_title": null,
+      "shared_documents": 0,
+      "document_collaboration_score": 0,
+      "onedrive_direct_shares": 0,
+      "onedrive_group_shares": 0,
+      "teams_direct_attachments": 0,
+      "teams_group_attachments": 0,
+      "total_document_shares": 0,
+      "sharing_days": 0,
+      "last_share_date": null,
+      "document_recency_label": "N/A",
+      "document_only_collaborator": false,
+      "recency_data": {
+        "last_7_days": 3,
+        "last_30_days": 6,
+        "last_90_days": 20,
+        "recent_important_meetings": 3,
+        "most_recent_meeting": "2025-10-24T13:05:00",
+        "days_since_last_meeting": 1
+      },
+      "temporal_recency_score": 30.45,
+      "chat_count": 0,
+      "chat_message_count": 0,
+      "days_since_last_chat": null,
+      "chat_recency_score": 0,
+      "is_recent_chat": false,
+      "is_frequent_chat": false,
+      "chat_type": null,
+      "chat_only_collaborator": false,
+      "chat_collaboration_score": 0,
+      "algorithm_version": "8.1_multi_source_support"
+    },
+    {
+      "name": "Balaji Shyamkumar",
+      "importance_score": 145.64,
+      "final_score": 317.1,
+      "confidence": 1.0,
+      "genuine_collaboration_meetings": 15,
+      "informational_meetings": 4,
+      "broadcast_meetings": 1,
+      "email_list_meetings": 0,
+      "genuine_ratio": 0.556,
+      "informational_ratio": 0.148,
+      "email_list_ratio": 0.0,
+      "one_on_one": 0,
+      "organized_by_me": 0,
+      "small_working_meetings": 8,
+      "attended_their_meetings": 3,
+      "time_periods": 5,
+      "total_meetings": 27,
+      "collaboration_evidence": [
+        "Planning/decision meeting participation",
+        "Small collaborative working session",
+        "Small internal recurring meeting",
+        "Attended their working meeting"
+      ],
+      "information_evidence": [
+        "Broadcast/webinar attendance",
+        "Attended their informational meeting",
+        "Informational briefing attendance"
+      ],
+      "meeting_details": [
+        {
+          "date": "2025-10-17T12:05:00",
+          "size": 14,
+          "subject": "organize & collaborate golden prompt ds status",
+          "organizer": "Balaji Shyamkumar",
+          "meeting_type": "informational_briefing",
+          "taxonomy_category": "Internal Recurring - Progress Review Meetings",
+          "has_email_list": false,
+          "base_score": 1,
+          "collaboration_evidence": [],
+          "information_evidence": [
+            "Informational briefing attendance",
+            "Attended their informational meeting"
+          ]
+        },
+        {
+          "date": "2025-10-21T02:35:00",
+          "size": 13,
+          "subject": "priority calendar deep dive",
+          "organizer": "Pratibha Permandla",
+          "meeting_type": "informational_briefing",
+          "taxonomy_category": "Internal Recurring - Progress Review Meetings",
+          "has_email_list": false,
+          "base_score": 1,
+          "collaboration_evidence": [],
+          "information_evidence": [
+            "Informational briefing attendance"
+          ]
+        },
+        {
+          "date": "2025-10-21T11:35:00",
+          "size": 9,
+          "subject": "meeting prep stca sync",
+          "organizer": "Mark Grimaldi",
+          "meeting_type": "small_collaborative_working",
+          "taxonomy_category": "Strategic Planning & Decision - Planning/Workshop Sessions",
+          "has_email_list": false,
+          "base_score": 15,
+          "collaboration_evidence": [
+            "Small collaborative working session"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2025-10-23T04:05:00",
+          "size": 31,
+          "subject": "prepare.ai status review",
+          "organizer": "Drew Brough",
+          "meeting_type": "planning_decision_meetings",
+          "taxonomy_category": "Strategic Planning & Decision - Planning Sessions",
+          "has_email_list": false,
+          "base_score": 12,
+          "collaboration_evidence": [
+            "Planning/decision meeting participation"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2025-10-24T12:05:00",
+          "size": 14,
+          "subject": "organize & collaborate golden prompt ds status",
+          "organizer": "Balaji Shyamkumar",
+          "meeting_type": "informational_briefing",
+          "taxonomy_category": "Internal Recurring - Progress Review Meetings",
+          "has_email_list": false,
+          "base_score": 1,
+          "collaboration_evidence": [],
+          "information_evidence": [
+            "Informational briefing attendance",
+            "Attended their informational meeting"
+          ]
+        }
+      ],
+      "graph_api_rank": null,
+      "graph_api_relevance": null,
+      "graph_api_verified": false,
+      "verified_name": null,
+      "job_title": null,
+      "shared_documents": 1,
+      "document_collaboration_score": 5,
+      "onedrive_direct_shares": 0,
+      "onedrive_group_shares": 0,
+      "teams_direct_attachments": 0,
+      "teams_group_attachments": 0,
+      "total_document_shares": 0,
+      "sharing_days": 0,
+      "last_share_date": null,
+      "document_recency_label": "N/A",
+      "document_only_collaborator": false,
+      "recency_data": {
+        "last_7_days": 4,
+        "last_30_days": 10,
+        "last_90_days": 23,
+        "recent_important_meetings": 6,
+        "most_recent_meeting": "2025-10-24T12:05:00",
+        "days_since_last_meeting": 1
+      },
+      "temporal_recency_score": 43.8,
+      "chat_count": 2,
+      "chat_message_count": 2,
+      "days_since_last_chat": 0,
+      "chat_recency_score": 2.0,
+      "is_recent_chat": true,
+      "is_frequent_chat": false,
+      "chat_type": "meeting",
+      "chat_only_collaborator": false,
+      "chat_collaboration_score": 6.0,
+      "algorithm_version": "8.1_multi_source_support"
+    },
+    {
+      "name": "Caroline Mao",
+      "importance_score": 132.43,
+      "final_score": 247,
+      "confidence": 1.0,
+      "genuine_collaboration_meetings": 13,
+      "informational_meetings": 3,
+      "broadcast_meetings": 0,
+      "email_list_meetings": 0,
+      "genuine_ratio": 0.867,
+      "informational_ratio": 0.2,
+      "email_list_ratio": 0.0,
+      "one_on_one": 1,
+      "organized_by_me": 3,
+      "small_working_meetings": 5,
+      "attended_their_meetings": 0,
+      "time_periods": 3,
+      "total_meetings": 15,
+      "collaboration_evidence": [
+        "Meeting you organized together",
+        "Planning/decision meeting participation",
+        "Small collaborative working session",
+        "Small internal recurring meeting",
+        "1:1 meeting - direct collaboration"
+      ],
+      "information_evidence": [
+        "Attended their informational meeting",
+        "Informational briefing attendance"
+      ],
+      "meeting_details": [
+        {
+          "date": "2025-10-17T12:05:00",
+          "size": 14,
+          "subject": "organize & collaborate golden prompt ds status",
+          "organizer": "Balaji Shyamkumar",
+          "meeting_type": "informational_briefing",
+          "taxonomy_category": "Internal Recurring - Progress Review Meetings",
+          "has_email_list": false,
+          "base_score": 1,
+          "collaboration_evidence": [],
+          "information_evidence": [
+            "Informational briefing attendance"
+          ]
+        },
+        {
+          "date": "2025-10-17T23:30:00",
+          "size": 1,
+          "subject": "1-1 with cy on meeting prep",
+          "organizer": "Chin-Yew Lin",
+          "meeting_type": "small_internal_recurring",
+          "taxonomy_category": "Internal Recurring - Team Status Update Meetings",
+          "has_email_list": false,
+          "base_score": 33,
+          "collaboration_evidence": [
+            "Small internal recurring meeting",
+            "Meeting you organized together"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2025-10-21T11:35:00",
+          "size": 9,
+          "subject": "meeting prep stca sync",
+          "organizer": "Mark Grimaldi",
+          "meeting_type": "small_collaborative_working",
+          "taxonomy_category": "Strategic Planning & Decision - Planning/Workshop Sessions",
+          "has_email_list": false,
+          "base_score": 15,
+          "collaboration_evidence": [
+            "Small collaborative working session"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2025-10-23T04:05:00",
+          "size": 31,
+          "subject": "prepare.ai status review",
+          "organizer": "Drew Brough",
+          "meeting_type": "planning_decision_meetings",
+          "taxonomy_category": "Strategic Planning & Decision - Planning Sessions",
+          "has_email_list": false,
+          "base_score": 12,
+          "collaboration_evidence": [
+            "Planning/decision meeting participation"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2025-10-24T12:05:00",
+          "size": 14,
+          "subject": "organize & collaborate golden prompt ds status",
+          "organizer": "Balaji Shyamkumar",
+          "meeting_type": "informational_briefing",
+          "taxonomy_category": "Internal Recurring - Progress Review Meetings",
+          "has_email_list": false,
+          "base_score": 1,
+          "collaboration_evidence": [],
+          "information_evidence": [
+            "Informational briefing attendance"
+          ]
+        }
+      ],
+      "graph_api_rank": null,
+      "graph_api_relevance": null,
+      "graph_api_verified": false,
+      "verified_name": null,
+      "job_title": null,
+      "shared_documents": 0,
+      "document_collaboration_score": 0,
+      "onedrive_direct_shares": 0,
+      "onedrive_group_shares": 0,
+      "teams_direct_attachments": 0,
+      "teams_group_attachments": 0,
+      "total_document_shares": 0,
+      "sharing_days": 0,
+      "last_share_date": null,
+      "document_recency_label": "N/A",
+      "document_only_collaborator": false,
+      "recency_data": {
+        "last_7_days": 3,
+        "last_30_days": 11,
+        "last_90_days": 15,
+        "recent_important_meetings": 8,
+        "most_recent_meeting": "2025-10-24T12:05:00",
+        "days_since_last_meeting": 1
+      },
+      "temporal_recency_score": 40.95,
+      "chat_count": 4,
+      "chat_message_count": 4,
+      "days_since_last_chat": 0,
+      "chat_recency_score": 2.0,
+      "is_recent_chat": true,
+      "is_frequent_chat": false,
+      "chat_type": "meeting",
+      "chat_only_collaborator": false,
+      "chat_collaboration_score": 12.0,
+      "algorithm_version": "8.1_multi_source_support"
+    },
+    {
+      "name": "Mark Grimaldi",
+      "importance_score": 125.64,
+      "final_score": 239,
+      "confidence": 1.0,
+      "genuine_collaboration_meetings": 14,
+      "informational_meetings": 3,
+      "broadcast_meetings": 0,
+      "email_list_meetings": 0,
+      "genuine_ratio": 1.077,
+      "informational_ratio": 0.231,
+      "email_list_ratio": 0.0,
+      "one_on_one": 0,
+      "organized_by_me": 1,
+      "small_working_meetings": 5,
+      "attended_their_meetings": 4,
+      "time_periods": 3,
+      "total_meetings": 13,
+      "collaboration_evidence": [
+        "Attended their working meeting",
+        "Meeting you organized together",
+        "Planning/decision meeting participation",
+        "Small collaborative working session",
+        "Small internal recurring meeting"
+      ],
+      "information_evidence": [
+        "Attended their informational meeting",
+        "Informational briefing attendance"
+      ],
+      "meeting_details": [
+        {
+          "date": "2025-10-17T03:05:00",
+          "size": 28,
+          "subject": "hive | t+p meeting prep monthly sync",
+          "organizer": "Drew Brough",
+          "meeting_type": "planning_decision_meetings",
+          "taxonomy_category": "Strategic Planning & Decision - Planning Sessions",
+          "has_email_list": false,
+          "base_score": 12,
+          "collaboration_evidence": [
+            "Planning/decision meeting participation"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2025-10-17T12:05:00",
+          "size": 14,
+          "subject": "organize & collaborate golden prompt ds status",
+          "organizer": "Balaji Shyamkumar",
+          "meeting_type": "informational_briefing",
+          "taxonomy_category": "Internal Recurring - Progress Review Meetings",
+          "has_email_list": false,
+          "base_score": 1,
+          "collaboration_evidence": [],
+          "information_evidence": [
+            "Informational briefing attendance"
+          ]
+        },
+        {
+          "date": "2025-10-21T11:35:00",
+          "size": 9,
+          "subject": "meeting prep stca sync",
+          "organizer": "Mark Grimaldi",
+          "meeting_type": "small_collaborative_working",
+          "taxonomy_category": "Strategic Planning & Decision - Planning/Workshop Sessions",
+          "has_email_list": false,
+          "base_score": 35,
+          "collaboration_evidence": [
+            "Small collaborative working session",
+            "Attended their working meeting"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2025-10-23T04:05:00",
+          "size": 31,
+          "subject": "prepare.ai status review",
+          "organizer": "Drew Brough",
+          "meeting_type": "planning_decision_meetings",
+          "taxonomy_category": "Strategic Planning & Decision - Planning Sessions",
+          "has_email_list": false,
+          "base_score": 12,
+          "collaboration_evidence": [
+            "Planning/decision meeting participation"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2025-10-24T12:05:00",
+          "size": 14,
+          "subject": "organize & collaborate golden prompt ds status",
+          "organizer": "Balaji Shyamkumar",
+          "meeting_type": "informational_briefing",
+          "taxonomy_category": "Internal Recurring - Progress Review Meetings",
+          "has_email_list": false,
+          "base_score": 1,
+          "collaboration_evidence": [],
+          "information_evidence": [
+            "Informational briefing attendance"
+          ]
+        }
+      ],
+      "graph_api_rank": null,
+      "graph_api_relevance": null,
+      "graph_api_verified": false,
+      "verified_name": null,
+      "job_title": null,
+      "shared_documents": 0,
+      "document_collaboration_score": 0,
+      "onedrive_direct_shares": 0,
+      "onedrive_group_shares": 0,
+      "teams_direct_attachments": 0,
+      "teams_group_attachments": 0,
+      "total_document_shares": 0,
+      "sharing_days": 0,
+      "last_share_date": null,
+      "document_recency_label": "N/A",
+      "document_only_collaborator": false,
+      "recency_data": {
+        "last_7_days": 3,
+        "last_30_days": 9,
+        "last_90_days": 13,
+        "recent_important_meetings": 6,
+        "most_recent_meeting": "2025-10-24T12:05:00",
+        "days_since_last_meeting": 1
+      },
+      "temporal_recency_score": 34.35,
+      "chat_count": 0,
+      "chat_message_count": 0,
+      "days_since_last_chat": null,
+      "chat_recency_score": 0,
+      "is_recent_chat": false,
+      "is_frequent_chat": false,
+      "chat_type": null,
+      "chat_only_collaborator": false,
+      "chat_collaboration_score": 0,
+      "algorithm_version": "8.1_multi_source_support"
+    },
+    {
+      "name": "Zhuoyu Zhang (FESCO Adecco Human Resources)",
+      "importance_score": 121.75,
+      "final_score": 375,
+      "confidence": 0.8,
+      "genuine_collaboration_meetings": 12,
+      "informational_meetings": 0,
+      "broadcast_meetings": 0,
+      "email_list_meetings": 0,
+      "genuine_ratio": 1.0,
+      "informational_ratio": 0.0,
+      "email_list_ratio": 0.0,
+      "one_on_one": 0,
+      "organized_by_me": 11,
+      "small_working_meetings": 0,
+      "attended_their_meetings": 0,
+      "time_periods": 3,
+      "total_meetings": 12,
+      "collaboration_evidence": [
+        "Planning/decision meeting participation",
+        "Small internal recurring meeting",
+        "Meeting you organized together"
+      ],
+      "information_evidence": [],
+      "meeting_details": [
+        {
+          "date": "2025-05-20T15:00:00",
+          "size": 1,
+          "subject": "zhouyu 1-1",
+          "organizer": "Chin-Yew Lin",
+          "meeting_type": "small_internal_recurring",
+          "taxonomy_category": "Internal Recurring - Team Status Update Meetings",
+          "has_email_list": false,
+          "base_score": 33,
+          "collaboration_evidence": [
+            "Small internal recurring meeting",
+            "Meeting you organized together"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2025-05-27T15:00:00",
+          "size": 1,
+          "subject": "zhouyu 1-1",
+          "organizer": "Chin-Yew Lin",
+          "meeting_type": "small_internal_recurring",
+          "taxonomy_category": "Internal Recurring - Team Status Update Meetings",
+          "has_email_list": false,
+          "base_score": 33,
+          "collaboration_evidence": [
+            "Small internal recurring meeting",
+            "Meeting you organized together"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2025-06-03T15:00:00",
+          "size": 1,
+          "subject": "zhouyu 1-1",
+          "organizer": "Chin-Yew Lin",
+          "meeting_type": "small_internal_recurring",
+          "taxonomy_category": "Internal Recurring - Team Status Update Meetings",
+          "has_email_list": false,
+          "base_score": 33,
+          "collaboration_evidence": [
+            "Small internal recurring meeting",
+            "Meeting you organized together"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2025-06-06T13:00:00",
+          "size": 45,
+          "subject": "ai design sharing session: illustration layout generation for slides",
+          "organizer": "Shakie Liu",
+          "meeting_type": "planning_decision_meetings",
+          "taxonomy_category": "Strategic Planning & Decision - Planning Sessions",
+          "has_email_list": false,
+          "base_score": 12,
+          "collaboration_evidence": [
+            "Planning/decision meeting participation"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2025-06-10T15:00:00",
+          "size": 1,
+          "subject": "zhouyu 1-1",
+          "organizer": "Chin-Yew Lin",
+          "meeting_type": "small_internal_recurring",
+          "taxonomy_category": "Internal Recurring - Team Status Update Meetings",
+          "has_email_list": false,
+          "base_score": 33,
+          "collaboration_evidence": [
+            "Small internal recurring meeting",
+            "Meeting you organized together"
+          ],
+          "information_evidence": []
+        }
+      ],
+      "graph_api_rank": null,
+      "graph_api_relevance": null,
+      "graph_api_verified": false,
+      "verified_name": null,
+      "job_title": null,
+      "shared_documents": 0,
+      "document_collaboration_score": 0,
+      "onedrive_direct_shares": 0,
+      "onedrive_group_shares": 0,
+      "teams_direct_attachments": 0,
+      "teams_group_attachments": 0,
+      "total_document_shares": 0,
+      "sharing_days": 0,
+      "last_share_date": null,
+      "document_recency_label": "N/A",
+      "document_only_collaborator": false,
+      "recency_data": {
+        "last_7_days": 0,
+        "last_30_days": 0,
+        "last_90_days": 0,
+        "recent_important_meetings": 0,
+        "most_recent_meeting": "2025-06-10T15:00:00",
+        "days_since_last_meeting": 137
+      },
+      "temporal_recency_score": 0.0,
+      "chat_count": 0,
+      "chat_message_count": 0,
+      "days_since_last_chat": null,
+      "chat_recency_score": 0,
+      "is_recent_chat": false,
+      "is_frequent_chat": false,
+      "chat_type": null,
+      "chat_only_collaborator": false,
+      "chat_collaboration_score": 0,
+      "algorithm_version": "8.1_multi_source_support"
+    },
+    {
+      "name": "Weiwei Cui",
+      "importance_score": 117.31,
+      "final_score": 258.5,
+      "confidence": 1.0,
+      "genuine_collaboration_meetings": 12,
+      "informational_meetings": 3,
+      "broadcast_meetings": 5,
+      "email_list_meetings": 0,
+      "genuine_ratio": 0.522,
+      "informational_ratio": 0.13,
+      "email_list_ratio": 0.0,
+      "one_on_one": 1,
+      "organized_by_me": 2,
+      "small_working_meetings": 9,
+      "attended_their_meetings": 0,
+      "time_periods": 6,
+      "total_meetings": 23,
+      "collaboration_evidence": [
+        "Small collaborative working session",
+        "Small internal recurring meeting",
+        "1:1 meeting - direct collaboration",
+        "Meeting you organized together"
+      ],
+      "information_evidence": [
+        "Broadcast/webinar attendance",
+        "Informational briefing attendance"
+      ],
+      "meeting_details": [
+        {
+          "date": "2025-10-14T10:30:00",
+          "size": 2,
+          "subject": "sync",
+          "organizer": "Haidong Zhang",
+          "meeting_type": "one_on_one",
+          "taxonomy_category": "Internal Recurring - One-on-One Meetings",
+          "has_email_list": false,
+          "base_score": 30,
+          "collaboration_evidence": [
+            "1:1 meeting - direct collaboration"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2025-10-15T10:30:00",
+          "size": 4,
+          "subject": "sync and discuss on evals",
+          "organizer": "Haidong Zhang",
+          "meeting_type": "small_collaborative_working",
+          "taxonomy_category": "Strategic Planning & Decision - Planning/Workshop Sessions",
+          "has_email_list": false,
+          "base_score": 15,
+          "collaboration_evidence": [
+            "Small collaborative working session"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2025-10-22T13:00:00",
+          "size": 3,
+          "subject": "meeting prep evals sync up",
+          "organizer": "Haidong Zhang",
+          "meeting_type": "small_collaborative_working",
+          "taxonomy_category": "Strategic Planning & Decision - Planning/Workshop Sessions",
+          "has_email_list": false,
+          "base_score": 15,
+          "collaboration_evidence": [
+            "Small collaborative working session"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2025-10-24T10:35:00",
+          "size": 181,
+          "subject": "stca monthly extended plt + managers ",
+          "organizer": "Effie Liu",
+          "meeting_type": "broadcast_webinar",
+          "taxonomy_category": "Informational & Broadcast - Webinars and Broadcasts",
+          "has_email_list": false,
+          "base_score": 0.1,
+          "collaboration_evidence": [],
+          "information_evidence": [
+            "Broadcast/webinar attendance"
+          ]
+        },
+        {
+          "date": "2025-10-24T14:10:00",
+          "size": 3,
+          "subject": "evals sync",
+          "organizer": "Haidong Zhang",
+          "meeting_type": "small_collaborative_working",
+          "taxonomy_category": "Strategic Planning & Decision - Planning/Workshop Sessions",
+          "has_email_list": false,
+          "base_score": 15,
+          "collaboration_evidence": [
+            "Small collaborative working session"
+          ],
+          "information_evidence": []
+        }
+      ],
+      "graph_api_rank": null,
+      "graph_api_relevance": null,
+      "graph_api_verified": false,
+      "verified_name": null,
+      "job_title": null,
+      "shared_documents": 0,
+      "document_collaboration_score": 0,
+      "onedrive_direct_shares": 0,
+      "onedrive_group_shares": 0,
+      "teams_direct_attachments": 0,
+      "teams_group_attachments": 0,
+      "total_document_shares": 0,
+      "sharing_days": 0,
+      "last_share_date": null,
+      "document_recency_label": "N/A",
+      "document_only_collaborator": false,
+      "recency_data": {
+        "last_7_days": 3,
+        "last_30_days": 6,
+        "last_90_days": 17,
+        "recent_important_meetings": 5,
+        "most_recent_meeting": "2025-10-24T14:10:00",
+        "days_since_last_meeting": 1
+      },
+      "temporal_recency_score": 31.65,
+      "chat_count": 1,
+      "chat_message_count": 1,
+      "days_since_last_chat": 0,
+      "chat_recency_score": 2.0,
+      "is_recent_chat": true,
+      "is_frequent_chat": false,
+      "chat_type": "group",
+      "chat_only_collaborator": false,
+      "chat_collaboration_score": 3.0,
+      "algorithm_version": "8.1_multi_source_support"
+    },
+    {
+      "name": "Vani Soff",
+      "importance_score": 114.07,
+      "final_score": 252,
+      "confidence": 1.0,
+      "genuine_collaboration_meetings": 6,
+      "informational_meetings": 4,
+      "broadcast_meetings": 0,
+      "email_list_meetings": 0,
+      "genuine_ratio": 0.333,
+      "informational_ratio": 0.222,
+      "email_list_ratio": 0.0,
+      "one_on_one": 1,
+      "organized_by_me": 1,
+      "small_working_meetings": 0,
+      "attended_their_meetings": 0,
+      "time_periods": 5,
+      "total_meetings": 18,
+      "collaboration_evidence": [
+        "Planning/decision meeting participation",
+        "Small internal recurring meeting",
+        "1:1 meeting - direct collaboration",
+        "Meeting you organized together"
+      ],
+      "information_evidence": [
+        "Informational briefing attendance"
+      ],
+      "meeting_details": [
+        {
+          "date": "2025-10-17T03:05:00",
+          "size": 28,
+          "subject": "hive | t+p meeting prep monthly sync",
+          "organizer": "Drew Brough",
+          "meeting_type": "planning_decision_meetings",
+          "taxonomy_category": "Strategic Planning & Decision - Planning Sessions",
+          "has_email_list": false,
+          "base_score": 12,
+          "collaboration_evidence": [
+            "Planning/decision meeting participation"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2025-10-17T12:05:00",
+          "size": 14,
+          "subject": "organize & collaborate golden prompt ds status",
+          "organizer": "Balaji Shyamkumar",
+          "meeting_type": "informational_briefing",
+          "taxonomy_category": "Internal Recurring - Progress Review Meetings",
+          "has_email_list": false,
+          "base_score": 1,
+          "collaboration_evidence": [],
+          "information_evidence": [
+            "Informational briefing attendance"
+          ]
+        },
+        {
+          "date": "2025-10-21T02:35:00",
+          "size": 13,
+          "subject": "priority calendar deep dive",
+          "organizer": "Pratibha Permandla",
+          "meeting_type": "informational_briefing",
+          "taxonomy_category": "Internal Recurring - Progress Review Meetings",
+          "has_email_list": false,
+          "base_score": 1,
+          "collaboration_evidence": [],
+          "information_evidence": [
+            "Informational briefing attendance"
+          ]
+        },
+        {
+          "date": "2025-10-23T04:05:00",
+          "size": 31,
+          "subject": "prepare.ai status review",
+          "organizer": "Drew Brough",
+          "meeting_type": "planning_decision_meetings",
+          "taxonomy_category": "Strategic Planning & Decision - Planning Sessions",
+          "has_email_list": false,
+          "base_score": 12,
+          "collaboration_evidence": [
+            "Planning/decision meeting participation"
+          ],
+          "information_evidence": []
+        },
+        {
+          "date": "2025-10-24T12:05:00",
+          "size": 14,
+          "subject": "organize & collaborate golden prompt ds status",
+          "organizer": "Balaji Shyamkumar",
+          "meeting_type": "informational_briefing",
+          "taxonomy_category": "Internal Recurring - Progress Review Meetings",
+          "has_email_list": false,
+          "base_score": 1,
+          "collaboration_evidence": [],
+          "information_evidence": [
+            "Informational briefing attendance"
+          ]
+        }
+      ],
+      "graph_api_rank": null,
+      "graph_api_relevance": null,
+      "graph_api_verified": false,
+      "verified_name": null,
+      "job_title": null,
+      "shared_documents": 0,
+      "document_collaboration_score": 73,
+      "onedrive_direct_shares": 0,
+      "onedrive_group_shares": 0,
+      "teams_direct_attachments": 4,
+      "teams_group_attachments": 0,
+      "total_document_shares": 4,
+      "sharing_days": 2,
+      "last_share_date": "2025-10-22T02:05:22.336Z",
+      "document_recency_label": "3d",
+      "document_only_collaborator": false,
+      "recency_data": {
+        "last_7_days": 3,
+        "last_30_days": 8,
+        "last_90_days": 14,
+        "recent_important_meetings": 4,
+        "most_recent_meeting": "2025-10-24T12:05:00",
+        "days_since_last_meeting": 1
+      },
+      "temporal_recency_score": 30.75,
+      "chat_count": 0,
+      "chat_message_count": 0,
+      "days_since_last_chat": null,
+      "chat_recency_score": 0,
+      "is_recent_chat": false,
+      "is_frequent_chat": false,
+      "chat_type": null,
+      "chat_only_collaborator": false,
+      "chat_collaboration_score": 0,
+      "algorithm_version": "8.1_multi_source_support"
+    }
+  ]
+}

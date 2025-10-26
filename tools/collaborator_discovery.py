@@ -103,12 +103,19 @@ GPT-5 Classification Benefits:
 
 import json
 import sys
+import platform
 from datetime import datetime, timedelta
 from collections import defaultdict
 from pathlib import Path
 from typing import Dict, List, Tuple, Optional, Any
 import argparse
 import glob
+
+# Platform detection for LLM strategy
+CURRENT_PLATFORM = platform.system()
+IS_WINDOWS = CURRENT_PLATFORM == "Windows"
+IS_MACOS = CURRENT_PLATFORM == "Darwin"
+IS_LINUX = CURRENT_PLATFORM == "Linux"
 
 # Import feedback learning system
 try:
@@ -146,84 +153,52 @@ except ImportError:
     except ImportError:
         GPT4oMeetingClassifier = None
 
+# Import Ollama Meeting Classifier
+try:
+    from tools.meeting_classifier import OllamaLLMMeetingClassifier
+except ImportError:
+    try:
+        from meeting_classifier import OllamaLLMMeetingClassifier
+    except ImportError:
+        OllamaLLMMeetingClassifier = None
+
 class CollaboratorDiscoveryTool:
     """
     Advanced collaborator discovery and ranking system based on
     Enterprise Meeting Taxonomy and genuine collaboration evidence.
     """
     
-    def __init__(self, calendar_data_file: str = None, output_format: str = "json", preferred_model: str = "gpt-4.1"):
+    def __init__(self, calendar_data_file: str = None, output_format: str = "json", preferred_model: str = "auto"):
         self.calendar_data_file = calendar_data_file or "meeting_prep_data/real_calendar_scenarios.json"
         self.output_format = output_format
         self.user_name = "Chin-Yew Lin"  # Default, can be overridden
         self.user_id = "88573e4b-a91e-4334-89c2-a61178320813"  # Chin-Yew Lin's user ID for self-exclusion
         
-        # Initialize LLM Meeting Classifiers
-        # Default priority: GPT-4.1 > GPT-4o > GPT-5 > Keyword
-        # (GPT-5 throttled, use only when explicitly specified)
+        # Platform-aware LLM strategy
+        # DevBox Windows: GPT-4.1 > GPT-5 > GPT-4o > Keyword (MSAL-based, enterprise data extraction)
+        # macOS: Ollama > GPT-4o > Keyword (local LLM, data processing)
+        # Linux: Ollama > GPT-4o > Keyword (local LLM, similar to macOS)
         self.meeting_classifier = None
         self.use_llm_classifier = False
         self.llm_classifier_type = "None"
         
-        # If GPT-5 explicitly requested, try it first
-        if preferred_model.lower() == "gpt-5" and GPT5MeetingClassifier:
-            try:
-                gpt5_classifier = GPT5MeetingClassifier()
-                if gpt5_classifier.test_model_availability():
-                    self.meeting_classifier = gpt5_classifier
-                    self.use_llm_classifier = True
-                    self.llm_classifier_type = "GPT-5"
-                    print("✅ Using GPT-5 (dev-gpt-5-chat-jj) for meeting classification [EXPLICITLY REQUESTED]")
-                else:
-                    print("⚠️ GPT-5 not available (requested but unavailable)")
-            except Exception as e:
-                print(f"⚠️ GPT-5 initialization failed: {e}")
+        # Auto-select platform-appropriate model if not specified
+        if preferred_model == "auto":
+            if IS_WINDOWS:
+                preferred_model = "gpt-4.1"  # DevBox: Use enterprise MSAL-based LLMs
+                print(f"🪟 Windows DevBox detected - Using enterprise LLM strategy")
+            elif IS_MACOS:
+                preferred_model = "ollama"  # macOS: Use local Ollama for LLM processing
+                print(f"🍎 macOS detected - Using local Ollama strategy")
+            elif IS_LINUX:
+                preferred_model = "ollama"  # Linux: Similar to macOS, prefer local
+                print(f"🐧 Linux detected - Using local Ollama strategy")
+            else:
+                preferred_model = "keyword"  # Unknown platform: fallback to keywords
+                print(f"❓ Unknown platform detected - Using keyword fallback")
         
-        # Try GPT-4.1 first (default - working great with 98-99% accuracy, no throttling)
-        if not self.use_llm_classifier and GPT41MeetingClassifier:
-            try:
-                gpt41_classifier = GPT41MeetingClassifier()
-                if gpt41_classifier.test_model_availability():
-                    self.meeting_classifier = gpt41_classifier
-                    self.use_llm_classifier = True
-                    self.llm_classifier_type = "GPT-4.1"
-                    print("✅ Using GPT-4.1 (dev-gpt-41-shortco-2025-04-14) for meeting classification [DEFAULT]")
-                else:
-                    print("⚠️ GPT-4.1 not available")
-            except Exception as e:
-                print(f"⚠️ GPT-4.1 initialization failed: {e}")
-        
-        # Fall back to GPT-4o if GPT-4.1 not available (requires OpenAI API key)
-        if not self.use_llm_classifier and GPT4oMeetingClassifier:
-            try:
-                gpt4o_classifier = GPT4oMeetingClassifier()
-                if gpt4o_classifier.test_model_availability():
-                    self.meeting_classifier = gpt4o_classifier
-                    self.use_llm_classifier = True
-                    self.llm_classifier_type = "GPT-4o"
-                    print("✅ Using GPT-4o (OpenAI) for meeting classification")
-                else:
-                    print("⚠️ GPT-4o not available")
-            except Exception as e:
-                print(f"⚠️ GPT-4o initialization failed: {e}")
-        
-        # Fall back to GPT-5 if explicitly not requested but nothing else works
-        if not self.use_llm_classifier and preferred_model.lower() != "gpt-5" and GPT5MeetingClassifier:
-            try:
-                gpt5_classifier = GPT5MeetingClassifier()
-                if gpt5_classifier.test_model_availability():
-                    self.meeting_classifier = gpt5_classifier
-                    self.use_llm_classifier = True
-                    self.llm_classifier_type = "GPT-5"
-                    print("✅ Using GPT-5 (dev-gpt-5-chat-jj) for meeting classification [FALLBACK]")
-                else:
-                    print("⚠️ GPT-5 not available")
-            except Exception as e:
-                print(f"⚠️ GPT-5 initialization failed: {e}")
-        
-        # Final fallback message
-        if not self.use_llm_classifier:
-            print("ℹ️ Using keyword-based classification (LLM classifiers not available)")
+        # Initialize based on platform and preference
+        self._initialize_llm_classifier(preferred_model)
         
         # Initialize feedback learning system if available
         self.feedback_system = None
@@ -276,6 +251,112 @@ class CollaboratorDiscoveryTool:
             'launch', 'kickoff', 'intro'
         ]
     
+    def _initialize_llm_classifier(self, preferred_model: str):
+        """Initialize LLM classifier based on platform and preference"""
+        
+        print(f"🔧 Initializing LLM classifier: {preferred_model} on {CURRENT_PLATFORM}")
+        
+        # Strategy 1: Try preferred model first
+        if preferred_model.lower() in ["ollama", "gpt-oss"] and OllamaLLMMeetingClassifier:
+            if self._try_ollama_classifier():
+                return
+        
+        if preferred_model.lower() == "gpt-5" and GPT5MeetingClassifier:
+            if self._try_gpt5_classifier():
+                return
+                
+        if preferred_model.lower() in ["gpt-4.1", "gpt41"] and GPT41MeetingClassifier:
+            if self._try_gpt41_classifier():
+                return
+                
+        if preferred_model.lower() in ["gpt-4o", "gpt4o"] and GPT4oMeetingClassifier:
+            if self._try_gpt4o_classifier():
+                return
+        
+        # Strategy 2: Platform-specific fallback cascade
+        if IS_WINDOWS:
+            # DevBox Windows: MSAL-based LLMs preferred
+            self._try_gpt41_classifier() or self._try_gpt5_classifier() or self._try_gpt4o_classifier() or self._try_ollama_classifier()
+        else:
+            # macOS/Linux: Local LLMs preferred
+            self._try_ollama_classifier() or self._try_gpt4o_classifier()
+        
+        # Final fallback message
+        if not self.use_llm_classifier:
+            print("ℹ️ Using keyword-based classification (LLM classifiers not available)")
+    
+    def _try_ollama_classifier(self) -> bool:
+        """Try to initialize Ollama classifier"""
+        if not OllamaLLMMeetingClassifier:
+            return False
+        try:
+            ollama_classifier = OllamaLLMMeetingClassifier()
+            if ollama_classifier.test_model_availability():
+                self.meeting_classifier = ollama_classifier
+                self.use_llm_classifier = True
+                self.llm_classifier_type = "Ollama"
+                print("✅ Using Ollama (gpt-oss:20b) for meeting classification")
+                return True
+            else:
+                print("⚠️ Ollama not available (model gpt-oss:20b not found)")
+        except Exception as e:
+            print(f"⚠️ Ollama initialization failed: {e}")
+        return False
+    
+    def _try_gpt41_classifier(self) -> bool:
+        """Try to initialize GPT-4.1 classifier (DevBox MSAL)"""
+        if not GPT41MeetingClassifier or not IS_WINDOWS:
+            return False
+        try:
+            gpt41_classifier = GPT41MeetingClassifier()
+            if gpt41_classifier.test_model_availability():
+                self.meeting_classifier = gpt41_classifier
+                self.use_llm_classifier = True
+                self.llm_classifier_type = "GPT-4.1"
+                print("✅ Using GPT-4.1 (dev-gpt-41-shortco-2025-04-14) for meeting classification [DevBox]")
+                return True
+            else:
+                print("⚠️ GPT-4.1 not available")
+        except Exception as e:
+            print(f"⚠️ GPT-4.1 initialization failed: {e}")
+        return False
+    
+    def _try_gpt5_classifier(self) -> bool:
+        """Try to initialize GPT-5 classifier (DevBox MSAL)"""
+        if not GPT5MeetingClassifier:
+            return False
+        try:
+            gpt5_classifier = GPT5MeetingClassifier()
+            if gpt5_classifier.test_model_availability():
+                self.meeting_classifier = gpt5_classifier
+                self.use_llm_classifier = True
+                self.llm_classifier_type = "GPT-5"
+                print("✅ Using GPT-5 (dev-gpt-5-chat-jj) for meeting classification")
+                return True
+            else:
+                print("⚠️ GPT-5 not available")
+        except Exception as e:
+            print(f"⚠️ GPT-5 initialization failed: {e}")
+        return False
+    
+    def _try_gpt4o_classifier(self) -> bool:
+        """Try to initialize GPT-4o classifier (OpenAI API)"""
+        if not GPT4oMeetingClassifier:
+            return False
+        try:
+            gpt4o_classifier = GPT4oMeetingClassifier()
+            if gpt4o_classifier.test_model_availability():
+                self.meeting_classifier = gpt4o_classifier
+                self.use_llm_classifier = True
+                self.llm_classifier_type = "GPT-4o"
+                print("✅ Using GPT-4o (OpenAI) for meeting classification")
+                return True
+            else:
+                print("⚠️ GPT-4o not available")
+        except Exception as e:
+            print(f"⚠️ GPT-4o initialization failed: {e}")
+        return False
+    
     def classify_meeting_type(self, subject: str, attendee_count: int, organizer: str, has_email_list: bool, 
                              description: str = "", attendees: List[str] = None, duration_minutes: int = 60) -> Tuple[str, str]:
         """
@@ -293,16 +374,25 @@ class CollaboratorDiscoveryTool:
         Returns: (meeting_type, taxonomy_category)
         """
         
-        # Try GPT-5 LLM classification first
+        # Try LLM classification first
         if self.use_llm_classifier and self.meeting_classifier:
             try:
-                result = self.meeting_classifier.classify_meeting(
-                    subject=subject,
-                    description=description,
-                    attendees=attendees if attendees else [],
-                    duration_minutes=duration_minutes,
-                    use_llm=True
-                )
+                # Use the appropriate method based on classifier type
+                if self.llm_classifier_type == "Ollama":
+                    result = self.meeting_classifier.classify_meeting_with_llm(
+                        subject=subject,
+                        description=description,
+                        attendees=attendees if attendees else [],
+                        duration_minutes=duration_minutes
+                    )
+                else:
+                    # For GPT-5, GPT-4.1, GPT-4o classifiers
+                    result = self.meeting_classifier.classify_meeting(
+                        subject=subject,
+                        description=description,
+                        attendees=attendees if attendees else [],
+                        duration_minutes=duration_minutes
+                    )
                 
                 # Map LLM classification to our meeting types
                 llm_type = result.get('specific_type', '')

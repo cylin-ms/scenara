@@ -71,6 +71,19 @@ class OllamaLLMMeetingClassifier:
                 self.all_meeting_types.append(f"{meeting_type} ({category})")
     
     def classify_meeting_with_llm(self, subject: str, description: str = "", attendees: List[str] = None, duration_minutes: int = 60) -> Dict[str, Any]:
+        """
+        Classify a meeting using the LLM and return structured results
+        """
+        # Also provide alias for backward compatibility
+        return self._classify_meeting_internal(subject, description, attendees, duration_minutes)
+
+    def classify_meeting(self, subject: str, description: str = "", attendees: List[str] = None, duration_minutes: int = 60) -> Dict[str, Any]:
+        """
+        Alias for classify_meeting_with_llm for backward compatibility
+        """
+        return self.classify_meeting_with_llm(subject, description, attendees, duration_minutes)
+    
+    def _classify_meeting_internal(self, subject: str, description: str = "", attendees: List[str] = None, duration_minutes: int = 60) -> Dict[str, Any]:
         """Classify meeting using LLM with contextual information"""
         
         # Prepare context for LLM
@@ -110,6 +123,12 @@ class OllamaLLMMeetingClassifier:
             logging.error(f"LLM classification failed: {e}")
             # Fallback to simple keyword classification
             return self._fallback_classification(subject, description)
+    
+    def classify_meeting(self, subject: str, description: str = "", attendees: List[str] = None, duration_minutes: int = 60) -> Dict[str, Any]:
+        """
+        Alias for classify_meeting_with_llm for cross-platform compatibility
+        """
+        return self.classify_meeting_with_llm(subject, description, attendees, duration_minutes)
     
     def _prepare_meeting_context(self, subject: str, description: str, attendees: List[str], duration_minutes: int) -> str:
         """Prepare comprehensive meeting context for LLM analysis"""

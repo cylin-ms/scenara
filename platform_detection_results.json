@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-10-22T02:52:56.388470",
+  "timestamp": "2025-10-26T06:15:39.230377",
   "operating_system": {
     "system": "Darwin",
     "release": "25.0.0",
@@ -9,12 +9,12 @@
   },
   "python_environment": {
     "python_version": "3.12.4",
-    "python_executable": "/Users/cyl/projects/Scenara/venv/bin/python",
-    "venv_exists": true,
-    "venv_path": "/Users/cyl/projects/Scenara/venv",
+    "python_executable": "/Users/cyl/miniconda3/bin/python",
+    "venv_exists": false,
+    "venv_path": null,
     "conda_env": "base",
-    "virtual_env": "/Users/cyl/projects/Scenara/venv",
-    "active_env": "venv"
+    "virtual_env": null,
+    "active_env": "conda:base"
   },
   "editor_environment": {
     "detected_editors": [
@@ -34,13 +34,13 @@
     "primary_assistant": "github_copilot"
   },
   "project_context": {
-    "project_name": "Scenara",
-    "project_path": "/Users/cyl/projects/Scenara",
+    "project_name": "scenara",
+    "project_path": "/Users/cyl/projects/scenara",
     "cursorrules_exists": true,
-    "cursorrules_size": 3773,
+    "cursorrules_size": 83073,
     "has_requirements_txt": true,
     "has_meeting_prep_requirements": true,
-    "has_venv": true,
+    "has_venv": false,
     "tools_directory": true
   },
   "recommended_tools": {
@@ -72,11 +72,24 @@
       "Graph Explorer - Microsoft calendar access",
       "tools/screenshot_utils.py - UI verification"
     ],
+    "platform_strategy": [
+      "🪟 DevBox Windows: Data extraction + MSAL authentication",
+      "   → Use SilverFlow for Microsoft Graph API access",
+      "   → GPT-4.1/GPT-5 for enterprise LLM processing",
+      "   → Extract calendar/teams/documents data",
+      "🍎 macOS: Data processing + Local LLM",
+      "   → Use Ollama (gpt-oss:20b) for LLM processing",
+      "   → Process DevBox-extracted data files",
+      "   → Generate collaboration intelligence",
+      "💡 HYBRID WORKFLOW: DevBox extract → Transfer → macOS process"
+    ],
     "darwin_specific": [
       "Use zsh shell (default)",
+      "Ollama (gpt-oss:20b) for local LLM processing",
+      "Process DevBox-extracted JSON files",
+      "Command: python tools/collaborator_discovery.py --calendar-data <file>",
       "Microsoft Edge for Graph API authentication",
-      "AppleScript for automation when needed",
-      "Avoid Windows-specific tools (SilverFlow)"
+      "AppleScript for automation when needed"
     ]
   }
 }
