@@ -1,0 +1,57 @@
+{
+  "metadata": {
+    "created": "2025-10-28T17:07:15.988900",
+    "total_examples": 2,
+    "purpose": "Evaluation data for measuring model accuracy",
+    "split": "evaluation (20%)"
+  },
+  "examples": [
+    {
+      "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAH-ejN_wAA",
+      "date": "2025-10-28",
+      "features": {
+        "subject": "SynthetIQ: Turning Data Scarcity into Competitive Velocity",
+        "body_preview": "Jorge Garcia Ximenez, Alex Blanton, Alexandra Savelieva, Jason Virtue, and Mark Tabladillo invite you to: SynthetIQ: Turning Data Scarcity into Competitive Velocity\r\nSpeakers\r\n\r\nAparana Gupta\r\nAnurup ",
+        "attendee_count": 9,
+        "duration_minutes": 60.0,
+        "keywords": []
+      },
+      "ground_truth": {
+        "specific_type": null,
+        "primary_category": null,
+        "difficulty": "easy",
+        "notes": ""
+      },
+      "validation_metadata": {
+        "timestamp": "2025-10-28T16:54:22.390607",
+        "gpt5_correct": true,
+        "copilot_correct": true
+      }
+    },
+    {
+      "id": "AAkBOQAICN4VtPAeQAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAACASVlm8AABA=",
+      "date": "2025-10-28",
+      "features": {
+        "subject": "BizChat Weekly Flight Review",
+        "body_preview": "*New series meeting invite*\r\n\r\n\r\nGoal: Learn about customer impact of experiments to inform ship decisions\r\nAgenda: Review each flight with a doc ready for review at https://aka.ms/BizChatFlights\r\n\r\nF",
+        "attendee_count": 5,
+        "duration_minutes": 55.0,
+        "keywords": [
+          "review",
+          "weekly"
+        ]
+      },
+      "ground_truth": {
+        "specific_type": null,
+        "primary_category": null,
+        "difficulty": "easy",
+        "notes": ""
+      },
+      "validation_metadata": {
+        "timestamp": "2025-10-28T16:54:38.978796",
+        "gpt5_correct": true,
+        "copilot_correct": true
+      }
+    }
+  ]
+}

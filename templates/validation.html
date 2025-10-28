@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meeting Classification Validation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .header {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            color: #666;
+            font-size: 14px;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .stat-card h3 {
+            color: #666;
+            font-size: 14px;
+            font-weight: normal;
+            margin-bottom: 10px;
+        }
+
+        .stat-card .value {
+            color: #667eea;
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        .meeting-card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            transition: transform 0.2s;
+        }
+
+        .meeting-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+
+        .meeting-card.validated {
+            border-left: 5px solid #10b981;
+        }
+
+        .meeting-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #f3f4f6;
+        }
+
+        .meeting-title {
+            flex: 1;
+        }
+
+        .meeting-title h2 {
+            color: #333;
+            font-size: 20px;
+            margin-bottom: 8px;
+        }
+
+        .meeting-meta {
+            color: #666;
+            font-size: 13px;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .meeting-meta span {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .badge-validated {
+            background: #d1fae5;
+            color: #065f46;
+        }
+
+        .badge-pending {
+            background: #fef3c7;
+            color: #92400e;
+        }
+
+        .meeting-body {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: #f9fafb;
+            border-radius: 5px;
+            color: #555;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .classifications {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .classification {
+            padding: 15px;
+            border-radius: 8px;
+            border: 2px solid #e5e7eb;
+        }
+
+        .classification.gpt5 {
+            border-color: #8b5cf6;
+            background: #f5f3ff;
+        }
+
+        .classification.copilot {
+            border-color: #3b82f6;
+            background: #eff6ff;
+        }
+
+        .classification h3 {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .classification .type {
+            color: #333;
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .classification .category {
+            color: #666;
+            font-size: 13px;
+            margin-bottom: 8px;
+        }
+
+        .classification .confidence {
+            display: inline-block;
+            padding: 3px 10px;
+            background: white;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .confidence.high {
+            color: #065f46;
+            background: #d1fae5;
+        }
+
+        .confidence.medium {
+            color: #92400e;
+            background: #fef3c7;
+        }
+
+        .confidence.low {
+            color: #991b1b;
+            background: #fee2e2;
+        }
+
+        .validation-panel {
+            background: #f9fafb;
+            padding: 20px;
+            border-radius: 8px;
+            border: 2px dashed #d1d5db;
+        }
+
+        .validation-section {
+            margin-bottom: 20px;
+        }
+
+        .validation-section:last-child {
+            margin-bottom: 0;
+        }
+
+        .validation-section h4 {
+            color: #333;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border: 2px solid;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            background: white;
+        }
+
+        .btn:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .btn-correct {
+            border-color: #10b981;
+            color: #10b981;
+        }
+
+        .btn-correct:hover, .btn-correct.active {
+            background: #10b981;
+            color: white;
+        }
+
+        .btn-incorrect {
+            border-color: #ef4444;
+            color: #ef4444;
+        }
+
+        .btn-incorrect:hover, .btn-incorrect.active {
+            background: #ef4444;
+            color: white;
+        }
+
+        .btn-primary {
+            background: #667eea;
+            border-color: #667eea;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #5568d3;
+        }
+
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #d1d5db;
+            border-radius: 6px;
+            font-size: 14px;
+            margin-bottom: 10px;
+            background: white;
+        }
+
+        select:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #d1d5db;
+            border-radius: 6px;
+            font-size: 14px;
+            resize: vertical;
+            min-height: 80px;
+            font-family: inherit;
+        }
+
+        textarea:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .progress-bar {
+            height: 8px;
+            background: #e5e7eb;
+            border-radius: 4px;
+            overflow: hidden;
+            margin-top: 10px;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+            transition: width 0.3s;
+        }
+
+        .export-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: white;
+            color: #667eea;
+            border: none;
+            padding: 15px 25px;
+            border-radius: 50px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            transition: all 0.2s;
+        }
+
+        .export-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+        }
+
+        .icon {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            vertical-align: middle;
+        }
+
+        @media (max-width: 768px) {
+            .classifications {
+                grid-template-columns: 1fr;
+            }
+
+            .meeting-meta {
+                flex-direction: column;
+                gap: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎯 Meeting Classification Validation</h1>
+            <p>Review AI classifications and provide your expert assessment</p>
+            <p style="margin-top: 5px; color: #999; font-size: 12px;">October 28, 2025 • Today's Meetings</p>
+        </div>
+
+        <div class="stats">
+            <div class="stat-card">
+                <h3>Total Meetings</h3>
+                <div class="value" id="stat-total">{{ validation_stats.total }}</div>
+            </div>
+            <div class="stat-card">
+                <h3>Validated</h3>
+                <div class="value" id="stat-validated">{{ validation_stats.validated }}</div>
+            </div>
+            <div class="stat-card">
+                <h3>GPT-5 Accuracy</h3>
+                <div class="value" id="stat-gpt5">-</div>
+            </div>
+            <div class="stat-card">
+                <h3>Copilot Accuracy</h3>
+                <div class="value" id="stat-copilot">-</div>
+            </div>
+        </div>
+
+        {% for meeting in meetings %}
+        <div class="meeting-card {% if meeting.validation %}validated{% endif %}" id="meeting-{{ loop.index }}">
+            <div class="meeting-header">
+                <div class="meeting-title">
+                    <h2>{{ loop.index }}. {{ meeting.subject }}</h2>
+                    <div class="meeting-meta">
+                        <span>⏰ {{ meeting.start[11:16] }} - {{ meeting.end[11:16] }}</span>
+                        <span>👥 {{ meeting.attendees }} attendees</span>
+                        <span>📅 {{ meeting.start[:10] }}</span>
+                    </div>
+                </div>
+                <span class="badge {% if meeting.validation %}badge-validated{% else %}badge-pending{% endif %}">
+                    {% if meeting.validation %}✓ Validated{% else %}Pending{% endif %}
+                </span>
+            </div>
+
+            <div class="meeting-body">
+                {{ meeting.bodyPreview[:300] }}{% if meeting.bodyPreview|length > 300 %}...{% endif %}
+            </div>
+
+            <div class="classifications">
+                <div class="classification gpt5">
+                    <h3>🤖 GPT-5 Classification</h3>
+                    <div class="type">{{ meeting.gpt5.specific_type }}</div>
+                    <div class="category">{{ meeting.gpt5.primary_category }}</div>
+                    <span class="confidence {% if meeting.gpt5.confidence > 0.9 %}high{% elif meeting.gpt5.confidence > 0.8 %}medium{% else %}low{% endif %}">
+                        {{ (meeting.gpt5.confidence * 100)|int }}% confidence
+                    </span>
+                </div>
+
+                <div class="classification copilot">
+                    <h3>🤖 GitHub Copilot Classification</h3>
+                    <div class="type">{{ meeting.copilot.specific_type }}</div>
+                    <div class="category">{{ meeting.copilot.primary_category }}</div>
+                    <span class="confidence {% if meeting.copilot.confidence > 0.9 %}high{% elif meeting.copilot.confidence > 0.8 %}medium{% else %}low{% endif %}">
+                        {{ (meeting.copilot.confidence * 100)|int }}% confidence
+                    </span>
+                </div>
+            </div>
+
+            <div class="validation-panel">
+                <div class="validation-section">
+                    <h4>Is GPT-5 classification correct?</h4>
+                    <div class="button-group">
+                        <button class="btn btn-correct" onclick="markCorrect('{{ meeting.id }}', 'gpt5', true, {{ loop.index }})">
+                            ✓ Correct
+                        </button>
+                        <button class="btn btn-incorrect" onclick="markCorrect('{{ meeting.id }}', 'gpt5', false, {{ loop.index }})">
+                            ✗ Incorrect
+                        </button>
+                    </div>
+                </div>
+
+                <div class="validation-section">
+                    <h4>Is GitHub Copilot classification correct?</h4>
+                    <div class="button-group">
+                        <button class="btn btn-correct" onclick="markCorrect('{{ meeting.id }}', 'copilot', true, {{ loop.index }})">
+                            ✓ Correct
+                        </button>
+                        <button class="btn btn-incorrect" onclick="markCorrect('{{ meeting.id }}', 'copilot', false, {{ loop.index }})">
+                            ✗ Incorrect
+                        </button>
+                    </div>
+                </div>
+
+                <div class="validation-section hidden" id="correct-type-{{ meeting.id }}">
+                    <h4>What is the correct classification?</h4>
+                    <select id="category-{{ meeting.id }}" onchange="updateTypes('{{ meeting.id }}')">
+                        <option value="">Select category...</option>
+                        {% for category in taxonomy.keys() %}
+                        <option value="{{ category }}">{{ category }}</option>
+                        {% endfor %}
+                    </select>
+                    <select id="type-{{ meeting.id }}">
+                        <option value="">Select type...</option>
+                    </select>
+                </div>
+
+                <div class="validation-section">
+                    <h4>Notes (optional)</h4>
+                    <textarea id="notes-{{ meeting.id }}" placeholder="Add any observations, reasoning, or comments..."></textarea>
+                </div>
+
+                <div class="validation-section">
+                    <h4>Difficulty to classify</h4>
+                    <div class="button-group">
+                        <button class="btn" onclick="setDifficulty('{{ meeting.id }}', 'easy', {{ loop.index }})">😊 Easy</button>
+                        <button class="btn" onclick="setDifficulty('{{ meeting.id }}', 'medium', {{ loop.index }})">🤔 Medium</button>
+                        <button class="btn" onclick="setDifficulty('{{ meeting.id }}', 'hard', {{ loop.index }})">😰 Hard</button>
+                    </div>
+                </div>
+
+                <button class="btn btn-primary" onclick="saveValidation('{{ meeting.id }}', {{ loop.index }})">
+                    💾 Save Validation
+                </button>
+            </div>
+        </div>
+        {% endfor %}
+
+        <button class="export-btn" onclick="exportResults()">
+            📊 Export Results
+        </button>
+    </div>
+
+    <script>
+        const taxonomy = {{ taxonomy|tojson }};
+        const validations = {};
+
+        function updateTypes(meetingId) {
+            const category = document.getElementById(`category-${meetingId}`).value;
+            const typeSelect = document.getElementById(`type-${meetingId}`);
+            
+            typeSelect.innerHTML = '<option value="">Select type...</option>';
+            
+            if (category && taxonomy[category]) {
+                taxonomy[category].forEach(type => {
+                    const option = document.createElement('option');
+                    option.value = type;
+                    option.textContent = type;
+                    typeSelect.appendChild(option);
+                });
+            }
+        }
+
+        function markCorrect(meetingId, model, isCorrect, index) {
+            if (!validations[meetingId]) {
+                validations[meetingId] = {};
+            }
+            validations[meetingId][`${model}_correct`] = isCorrect;
+
+            // Update button states
+            const card = document.getElementById(`meeting-${index}`);
+            const buttons = card.querySelectorAll(`.validation-section:nth-child(${model === 'gpt5' ? 1 : 2}) .btn`);
+            buttons.forEach(btn => btn.classList.remove('active'));
+            buttons[isCorrect ? 0 : 1].classList.add('active');
+
+            // Show correct type selector if either model is incorrect
+            const showCorrectType = validations[meetingId].gpt5_correct === false || 
+                                   validations[meetingId].copilot_correct === false;
+            const correctTypePanel = document.getElementById(`correct-type-${meetingId}`);
+            if (showCorrectType) {
+                correctTypePanel.classList.remove('hidden');
+            } else {
+                correctTypePanel.classList.add('hidden');
+            }
+        }
+
+        function setDifficulty(meetingId, difficulty, index) {
+            if (!validations[meetingId]) {
+                validations[meetingId] = {};
+            }
+            validations[meetingId].difficulty = difficulty;
+
+            // Update button states
+            const card = document.getElementById(`meeting-${index}`);
+            const buttons = card.querySelectorAll('.validation-section:last-of-type .btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+            
+            const diffMap = {easy: 0, medium: 1, hard: 2};
+            buttons[diffMap[difficulty]].classList.add('active');
+        }
+
+        async function saveValidation(meetingId, index) {
+            const validation = validations[meetingId];
+            
+            if (!validation || validation.gpt5_correct === undefined || validation.copilot_correct === undefined) {
+                alert('Please mark both GPT-5 and Copilot classifications as correct or incorrect');
+                return;
+            }
+
+            // Get correct type if needed
+            if (validation.gpt5_correct === false || validation.copilot_correct === false) {
+                const category = document.getElementById(`category-${meetingId}`).value;
+                const type = document.getElementById(`type-${meetingId}`).value;
+                
+                if (!category || !type) {
+                    alert('Please select the correct category and type');
+                    return;
+                }
+                
+                validation.correct_category = category;
+                validation.correct_type = type;
+            }
+
+            // Get notes
+            validation.notes = document.getElementById(`notes-${meetingId}`).value;
+            
+            // Default difficulty
+            if (!validation.difficulty) {
+                validation.difficulty = 'medium';
+            }
+
+            // Save to backend
+            try {
+                const response = await fetch('/api/validate', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        meeting_id: meetingId,
+                        total_meetings: {{ validation_stats.total }},
+                        ...validation
+                    })
+                });
+
+                const result = await response.json();
+                
+                if (result.success) {
+                    // Update UI
+                    const card = document.getElementById(`meeting-${index}`);
+                    card.classList.add('validated');
+                    const badge = card.querySelector('.badge');
+                    badge.className = 'badge badge-validated';
+                    badge.textContent = '✓ Validated';
+                    
+                    // Update stats
+                    updateStats();
+                    
+                    // Scroll to next meeting
+                    const nextCard = document.getElementById(`meeting-${index + 1}`);
+                    if (nextCard) {
+                        nextCard.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                }
+            } catch (error) {
+                console.error('Error saving validation:', error);
+                alert('Error saving validation. Please try again.');
+            }
+        }
+
+        async function updateStats() {
+            try {
+                const response = await fetch('/api/stats');
+                const stats = await response.json();
+                
+                document.getElementById('stat-validated').textContent = stats.validated;
+                document.getElementById('stat-gpt5').textContent = stats.gpt5_accuracy + '%';
+                document.getElementById('stat-copilot').textContent = stats.copilot_accuracy + '%';
+            } catch (error) {
+                console.error('Error updating stats:', error);
+            }
+        }
+
+        function exportResults() {
+            window.location.href = '/api/export';
+        }
+
+        // Load initial stats
+        updateStats();
+    </script>
+</body>
+</html>

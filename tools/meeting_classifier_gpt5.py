@@ -2,6 +2,9 @@
 """
 GPT5-Based Meeting Classifier using SilverFlow LLM API
 Enterprise meeting classification with dev-gpt-5-chat-jj model
+
+Uses standardized prompt from prompts/meeting_classification_prompt.md
+based on official Enterprise Meeting Taxonomy (Chin-Yew Lin).
 """
 
 from __future__ import annotations
@@ -15,6 +18,13 @@ import uuid
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, Dict, List, Optional
+
+# Import standardized prompt
+from prompts import (
+    create_classification_prompt,
+    get_prompt_metadata,
+    get_system_message
+)
 
 try:
     import msal
@@ -523,49 +533,21 @@ class GPT5MeetingClassifier:
         return "\n".join(context_parts)
     
     def _create_classification_prompt(self, meeting_context: str) -> str:
-        """Create classification prompt for LLM"""
+        """
+        Create classification prompt using standardized prompt from prompts/.
         
-        prompt = f"""Classify the following meeting according to the Enterprise Meeting Taxonomy.
-
-MEETING INFORMATION:
-{meeting_context}
-
-ENTERPRISE MEETING TAXONOMY (5 categories, 31+ types):
-
-1. Strategic Planning & Decision
-   - Strategic Planning Session, Decision-Making Meeting, Problem-Solving Meeting
-   - Brainstorming Session, Workshop/Design Session, Budget Planning Meeting
-   - Project Planning Meeting, Risk Assessment Meeting
-
-2. Internal Recurring (Cadence)
-   - Team Status Update/Standup, Progress Review Meeting, One-on-One Meeting
-   - Team Retrospective, Governance/Leadership Meeting, Performance Review
-   - Weekly/Monthly Check-in
-
-3. External & Client-Facing
-   - Sales & Client Meeting, Vendor/Supplier Meeting, Partnership Meeting
-   - Interview Meeting, Client Training/Onboarding, Customer Discovery Call
-   - Contract Negotiation
-
-4. Informational & Broadcast
-   - All-Hands/Town Hall, Informational Briefing, Training Session
-   - Webinar/Presentation, Knowledge Sharing Session, Product Demo
-   - Announcement Meeting
-
-5. Team-Building & Culture
-   - Team-Building Activity, Recognition/Celebration Event, Social/Networking Event
-   - Community Meeting, Offsite/Retreat, Welcome/Farewell Event
-
-TASK:
-Analyze the meeting information and provide classification in this EXACT JSON format:
-{{
-    "specific_type": "exact meeting type from taxonomy above",
-    "primary_category": "one of the 5 main categories",
-    "confidence": 0.95,
-    "reasoning": "brief explanation (1-2 sentences)"
-}}
-
-Return ONLY valid JSON, no additional text."""
+        This ensures consistency with official Enterprise Meeting Taxonomy
+        and allows prompt updates without modifying classifier code.
+        
+        Args:
+            meeting_context: Formatted meeting information
+            
+        Returns:
+            str: Complete classification prompt
+        """
+        # Use standardized prompt from prompts module
+        # This loads the official taxonomy and guidelines
+        return create_classification_prompt(meeting_context, style="detailed")
 
         return prompt
     

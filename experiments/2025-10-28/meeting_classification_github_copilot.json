@@ -1,0 +1,272 @@
+{
+  "experiment": {
+    "experiment_id": "meeting_classification_20251028_004",
+    "experiment_type": "meeting_classification",
+    "run_date": "2025-10-28T14:35:00.000000",
+    "platform": "Windows DevBox",
+    "description": "Meeting classification using GitHub Copilot LLM with centralized Enterprise Meeting Taxonomy prompt"
+  },
+  "metadata": {
+    "extraction_date": "2025-10-28T13:25:00.089925",
+    "classification_date": "2025-10-28T14:35:00.000000",
+    "target_date": "2025-10-28",
+    "total_meetings": 8,
+    "classifier": {
+      "name": "GitHub Copilot",
+      "model": "GPT-4 Turbo",
+      "model_version": "gpt-4-1106-preview (estimated)",
+      "provider": "Microsoft Azure OpenAI",
+      "endpoint": "GitHub Copilot Chat API",
+      "authentication": "GitHub account",
+      "capabilities": [
+        "Code-aware classification",
+        "Context-rich analysis",
+        "Detailed reasoning with key indicators",
+        "High confidence scoring"
+      ],
+      "prompt_version": "1.0",
+      "taxonomy_source": "prompts/meeting_classification_prompt.md",
+      "note": "GitHub Copilot uses Azure OpenAI GPT-4 Turbo with access to full workspace context including official Enterprise Meeting Taxonomy"
+    },
+    "classification_method": "LLM-powered semantic analysis with centralized Enterprise Meeting Taxonomy (Chin-Yew Lin)",
+    "taxonomy_version": "Enterprise Meeting Taxonomy v1.0",
+    "input_source": "data/meetings/meetings_2025-10-28.json"
+  },
+  "summary": {
+    "total_meetings": 8,
+    "average_confidence": 0.905,
+    "classification_distribution": {
+      "by_category": {
+        "Strategic Planning & Decision Meetings": 3,
+        "Internal Recurring Meetings (Cadence)": 2,
+        "Informational & Broadcast Meetings": 2,
+        "External & Client-Facing Meetings": 1
+      },
+      "by_specific_type": {
+        "Planning Sessions": 3,
+        "Informational Briefings": 2,
+        "Team Status Update Meetings": 1,
+        "Progress Review Meetings": 1,
+        "Interviews and Recruiting Meetings": 1
+      }
+    }
+  },
+  "meetings": [
+    {
+      "meeting_number": 1,
+      "subject": "Update Copilot Agility BPR [Async Task]",
+      "start": {
+        "dateTime": "2025-10-28T07:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-10-28T08:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "duration_minutes": 60,
+      "classification": {
+        "specific_type": "Team Status Update Meetings",
+        "primary_category": "Internal Recurring Meetings (Cadence)",
+        "confidence": 0.82,
+        "reasoning": "Labeled as '[Async Task]' for document updates with recurring team (distribution list 'cp-agility-dri'). This is routine maintenance work for a BPR document, indicating regular status tracking rather than a formal briefing. The async nature and 10+ attendees suggest a standing team update meeting.",
+        "key_indicators": [
+          "[Async Task] label indicates routine work",
+          "Multiple DRIs and team members (10+ attendees)",
+          "Document update/maintenance focus",
+          "Service account organizers suggest automated recurring meeting"
+        ],
+        "classification_method": "GitHub Copilot LLM",
+        "taxonomy_alignment": "Centralized prompt version 1.0"
+      }
+    },
+    {
+      "meeting_number": 2,
+      "subject": "Virtual Interview for Senior Applied Scientist(LLM) (1864549)",
+      "start": {
+        "dateTime": "2025-10-28T09:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-10-28T10:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "duration_minutes": 60,
+      "classification": {
+        "specific_type": "Interviews and Recruiting Meetings",
+        "primary_category": "External & Client-Facing Meetings",
+        "confidence": 0.99,
+        "reasoning": "Explicitly labeled 'Virtual Interview' with candidate number (1864549), indicating a formal recruiting interview. This is clearly an evaluation meeting for a Senior Applied Scientist position focused on LLM expertise.",
+        "key_indicators": [
+          "'Virtual Interview' explicitly in title",
+          "Candidate ID number (1864549)",
+          "Senior Applied Scientist role",
+          "External candidate involvement"
+        ],
+        "classification_method": "GitHub Copilot LLM",
+        "taxonomy_alignment": "Centralized prompt version 1.0"
+      }
+    },
+    {
+      "meeting_number": 3,
+      "subject": "Meeting Prep STCA Sync",
+      "start": {
+        "dateTime": "2025-10-28T11:35:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-10-28T12:35:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "duration_minutes": 60,
+      "classification": {
+        "specific_type": "Planning Sessions",
+        "primary_category": "Strategic Planning & Decision Meetings",
+        "confidence": 0.88,
+        "reasoning": "'Meeting Prep' indicates planning for an upcoming meeting. 'STCA Sync' suggests cross-team coordination preparation. This is ad-hoc planning work to prepare for a future synchronization meeting, not the sync itself.",
+        "key_indicators": [
+          "'Meeting Prep' indicates planning activity",
+          "STCA suggests cross-team coordination",
+          "Preparing for future meeting",
+          "60-minute planning session"
+        ],
+        "classification_method": "GitHub Copilot LLM",
+        "taxonomy_alignment": "Centralized prompt version 1.0"
+      }
+    },
+    {
+      "meeting_number": 4,
+      "subject": "Discuss Meeting Prep Bizchat Eval and Scorecard",
+      "start": {
+        "dateTime": "2025-10-28T14:05:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-10-28T15:05:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "duration_minutes": 60,
+      "classification": {
+        "specific_type": "Planning Sessions",
+        "primary_category": "Strategic Planning & Decision Meetings",
+        "confidence": 0.90,
+        "reasoning": "'Discuss Meeting Prep' combined with 'Eval and Scorecard' indicates planning and preparation for evaluation criteria. This is strategic planning to define how BizChat will be evaluated, not the evaluation itself.",
+        "key_indicators": [
+          "'Meeting Prep' in title indicates planning",
+          "Evaluation and scorecard development",
+          "BizChat assessment preparation",
+          "Strategic planning for metrics"
+        ],
+        "classification_method": "GitHub Copilot LLM",
+        "taxonomy_alignment": "Centralized prompt version 1.0"
+      }
+    },
+    {
+      "meeting_number": 5,
+      "subject": "meeting prep evals sync and discussion",
+      "start": {
+        "dateTime": "2025-10-28T15:30:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-10-28T16:30:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "duration_minutes": 60,
+      "classification": {
+        "specific_type": "Planning Sessions",
+        "primary_category": "Strategic Planning & Decision Meetings",
+        "confidence": 0.85,
+        "reasoning": "Similar to Meeting 4, 'meeting prep evals' indicates preparation for evaluation activities. The 'sync and discussion' suggests alignment on evaluation approach. This is planning coordination, not execution.",
+        "key_indicators": [
+          "'meeting prep' indicates planning phase",
+          "Evals coordination and alignment",
+          "Sync suggests cross-team planning",
+          "Discussion of future evaluation work"
+        ],
+        "classification_method": "GitHub Copilot LLM",
+        "taxonomy_alignment": "Centralized prompt version 1.0"
+      }
+    },
+    {
+      "meeting_number": 6,
+      "subject": "Copilot Insight Engine Office Hour (Asia & EU)",
+      "start": {
+        "dateTime": "2025-10-28T16:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-10-28T17:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "duration_minutes": 60,
+      "classification": {
+        "specific_type": "Informational Briefings",
+        "primary_category": "Informational & Broadcast Meetings",
+        "confidence": 0.92,
+        "reasoning": "'Office Hour' format for '(Asia & EU)' regions suggests an open Q&A or informational session where the Copilot Insight Engine team provides updates and answers questions. The regional scope indicates a broadcast-style meeting.",
+        "key_indicators": [
+          "'Office Hour' format indicates open Q&A session",
+          "Regional scope (Asia & EU)",
+          "Insight Engine team hosting",
+          "Likely larger audience for information sharing"
+        ],
+        "classification_method": "GitHub Copilot LLM",
+        "taxonomy_alignment": "Centralized prompt version 1.0"
+      }
+    },
+    {
+      "meeting_number": 7,
+      "subject": "SynthetIQ: Turning Data Scarcity into Competitive Velocity",
+      "start": {
+        "dateTime": "2025-10-28T23:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-10-29T00:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "duration_minutes": 60,
+      "classification": {
+        "specific_type": "Informational Briefings",
+        "primary_category": "Informational & Broadcast Meetings",
+        "confidence": 0.94,
+        "reasoning": "The formal presentation title with colon and compelling value proposition ('Turning Data Scarcity into Competitive Velocity') indicates a prepared briefing or presentation. This is information dissemination about SynthetIQ capabilities.",
+        "key_indicators": [
+          "Formal presentation-style title",
+          "Value proposition messaging",
+          "Product/capability briefing",
+          "Likely webinar or demo format"
+        ],
+        "classification_method": "GitHub Copilot LLM",
+        "taxonomy_alignment": "Centralized prompt version 1.0"
+      }
+    },
+    {
+      "meeting_number": 8,
+      "subject": "BizChat Weekly Flight Review",
+      "start": {
+        "dateTime": "2025-10-28T23:05:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-10-29T00:05:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "duration_minutes": 60,
+      "classification": {
+        "specific_type": "Progress Review Meetings",
+        "primary_category": "Internal Recurring Meetings (Cadence)",
+        "confidence": 0.96,
+        "reasoning": "'Weekly Flight Review' explicitly indicates a recurring cadence meeting to review BizChat progress and metrics. 'Flight' terminology in Microsoft refers to staged releases, making this a formal weekly status review of deployment progress.",
+        "key_indicators": [
+          "'Weekly' indicates recurring cadence",
+          "'Flight Review' is formal release review",
+          "BizChat product progress tracking",
+          "Regular milestone and metrics assessment"
+        ],
+        "classification_method": "GitHub Copilot LLM",
+        "taxonomy_alignment": "Centralized prompt version 1.0"
+      }
+    }
+  ]
+}

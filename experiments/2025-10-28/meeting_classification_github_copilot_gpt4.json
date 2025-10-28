@@ -1,0 +1,303 @@
+{
+  "experiment": {
+    "experiment_id": "meeting_classification_20251028_001",
+    "experiment_type": "meeting_classification",
+    "run_date": "2025-10-28T14:00:00.000000",
+    "platform": "Windows DevBox",
+    "description": "Meeting classification using GitHub Copilot's native LLM capabilities"
+  },
+  "metadata": {
+    "extraction_date": "2025-10-28T13:25:00.089925",
+    "classification_date": "2025-10-28T14:00:00.000000",
+    "target_date": "2025-10-28",
+    "total_meetings": 8,
+    "classifier": {
+      "name": "GitHub Copilot",
+      "model": "GPT-4 Turbo",
+      "model_version": "gpt-4-1106-preview (estimated)",
+      "provider": "Microsoft Azure OpenAI",
+      "deployment": "GitHub Copilot Chat",
+      "capabilities": [
+        "Semantic understanding",
+        "Context-aware classification",
+        "Multi-signal analysis",
+        "Reasoning generation"
+      ],
+      "note": "GitHub Copilot uses advanced GPT-4 models with extended context windows and enhanced reasoning capabilities"
+    },
+    "classification_method": "AI-powered semantic analysis with contextual reasoning",
+    "taxonomy_version": "Enterprise Meeting Taxonomy v3.0",
+    "input_source": "data/meetings/meetings_2025-10-28.json"
+  },
+  "meetings": [
+    {
+      "id": "AAkBOQAICN4U68W0gAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAAB8PSsC4AABA=",
+      "subject": "Update Copilot Agility BPR [Async Task]",
+      "start": "2025-10-28T07:00:00",
+      "end": "2025-10-28T08:00:00",
+      "duration_minutes": 60,
+      "attendees_count": 29,
+      "organizer": "Copilot Software Factory",
+      "classification": {
+        "specific_type": "Documentation/Process Update Meeting",
+        "primary_category": "Administrative & HR",
+        "confidence": 0.95,
+        "reasoning": "This is an asynchronous task time block for updating the Copilot Agility BPR (Business Planning Review) documentation. The [Async Task] label, large optional attendee list (29 people), and focus on documentation updates indicate this is a scheduled work time rather than a synchronous meeting. The location 'Your Desk' and service account organizer confirm it's a process/documentation update task.",
+        "key_indicators": [
+          "[Async Task] in title indicates non-synchronous work",
+          "Focus on updating documentation (BPR doc)",
+          "Service account organizer (Copilot Software Factory)",
+          "Location is 'Your Desk' not meeting room",
+          "Large optional attendee list suggests awareness/transparency rather than active participation"
+        ],
+        "alternate_classification": "Status Update Meeting",
+        "business_value": "Medium - ensures agility documentation stays current"
+      }
+    },
+    {
+      "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAIAqvFVwAA",
+      "subject": "Virtual Interview for Senior Applied Scientist(LLM) (1864549)",
+      "start": "2025-10-28T09:00:00",
+      "end": "2025-10-28T10:00:00",
+      "duration_minutes": 60,
+      "attendees_count": 4,
+      "organizer": "Microsoft Recruit",
+      "classification": {
+        "specific_type": "Interview Meeting (Candidate Evaluation)",
+        "primary_category": "Administrative & HR",
+        "confidence": 0.99,
+        "reasoning": "This is clearly a job interview for a Senior Applied Scientist position focused on LLM (Large Language Models). The meeting is organized by Microsoft Recruit recruiting system, includes candidate name (Bei Wang), job requisition number (1864549), and involves the hiring manager (Chin-Yew Lin) plus HR representatives. The virtual format via Teams is standard for remote candidate interviews.",
+        "key_indicators": [
+          "Title explicitly states 'Virtual Interview'",
+          "Organized by Microsoft Recruit system",
+          "Includes job requisition number (1864549)",
+          "Position clearly specified: Senior Applied Scientist(LLM)",
+          "Candidate name mentioned in body: Bei Wang",
+          "HR representatives included as optional attendees",
+          "Hiring manager accepted (Chin-Yew Lin)"
+        ],
+        "alternate_classification": null,
+        "business_value": "Critical - talent acquisition for key technical role",
+        "interview_stage": "Technical/Hiring Manager Round"
+      }
+    },
+    {
+      "id": "AAkBOQAICN4U68W0gAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAAB_4SLyEAABA=",
+      "subject": "Meeting Prep STCA Sync",
+      "start": "2025-10-28T11:35:00",
+      "end": "2025-10-28T13:00:00",
+      "duration_minutes": 85,
+      "attendees_count": 10,
+      "organizer": "Mark Grimaldi",
+      "classification": {
+        "specific_type": "Status Update Meeting / Project Sync",
+        "primary_category": "Team Coordination & Status",
+        "confidence": 0.92,
+        "reasoning": "This is a recurring synchronization meeting (STCA = Singapore/Taiwan/China/Australia time zone friendly) for the Meeting Prep product team. The meeting focuses on discussing latest updates, evaluation needs, and leveraging the M-Arena tool. The body preview mentions 'Golden Prompt work' and extending discussion time, indicating ongoing project coordination. The cross-regional team (10 attendees) suggests this is a core team sync for a specific initiative.",
+        "key_indicators": [
+          "'Sync' in title indicates status/coordination meeting",
+          "Meeting Prep is the product being discussed",
+          "Multiple work streams mentioned: Golden Prompt work, evaluations, M-Arena tool",
+          "Extended meeting time (1h 25m) for in-depth discussion",
+          "Core team members from Meeting Prep initiative",
+          "STCA timezone optimization indicates distributed team coordination",
+          "Recent meeting note (09/26) shows this is recurring with evolving agenda"
+        ],
+        "alternate_classification": "Strategic Planning Session",
+        "business_value": "High - coordinates key product development work",
+        "project": "Meeting Prep / Golden Prompt"
+      }
+    },
+    {
+      "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAH-hSD9gAA",
+      "subject": "Discuss Meeting Prep Bizchat Eval and Scorecard",
+      "start": "2025-10-28T14:05:00",
+      "end": "2025-10-28T14:30:00",
+      "duration_minutes": 25,
+      "attendees_count": 4,
+      "organizer": "Caroline Mao",
+      "classification": {
+        "specific_type": "Problem-Solving Meeting / Technical Discussion",
+        "primary_category": "Strategic Planning & Decision",
+        "confidence": 0.90,
+        "reasoning": "This is a focused technical discussion to define evaluation criteria and scorecards for the Meeting Prep feature in BizChat. The meeting was set up following a previous T+P (Test + Production) and Hive team meeting where evaluation methodology was identified as a need. The small, focused group (4 people - Caroline Mao, Amir Kantor, Haidong Zhang, Chin-Yew Lin) indicates a working session to establish metrics and evaluation framework.",
+        "key_indicators": [
+          "Focus on defining evaluation methodology and scorecard",
+          "Follow-up from previous T+P/Hive strategic meeting",
+          "Small expert group (4 technical leads)",
+          "Short duration (25 min) suggests focused discussion",
+          "Technical topic: evaluation framework for AI feature",
+          "Cross-team collaboration (T+P helping with Hive's eval needs)",
+          "All attendees accepted - indicates priority/importance"
+        ],
+        "alternate_classification": "Planning Meeting",
+        "business_value": "High - establishes quality metrics for product feature",
+        "project": "Meeting Prep / BizChat Evaluation Framework"
+      }
+    },
+    {
+      "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAIBJZBwAAA",
+      "subject": "meeting prep evals sync and discussion",
+      "start": "2025-10-28T15:30:00",
+      "end": "2025-10-28T16:30:00",
+      "duration_minutes": 60,
+      "attendees_count": 4,
+      "organizer": "Haidong Zhang",
+      "classification": {
+        "specific_type": "Status Update Meeting / Evaluation Review",
+        "primary_category": "Team Coordination & Status",
+        "confidence": 0.88,
+        "reasoning": "This is a synchronization meeting focused on Meeting Prep evaluation work. The lowercase title and Teams meeting format suggest an informal but regular sync. The 4-person team (Haidong Zhang, Kening Ren, Weiwei Cui, Chin-Yew Lin) appears to be a working group discussing evaluation progress and methodology. This follows the earlier meeting about evaluation scorecards, suggesting this is the execution/sync meeting for that work.",
+        "key_indicators": [
+          "'sync and discussion' indicates status update format",
+          "Focus on evaluations ('evals') for Meeting Prep",
+          "Small working group (4 people)",
+          "Organized by technical lead (Haidong Zhang)",
+          "1-hour duration for detailed discussion",
+          "Follows earlier scorecard planning meeting (same day)",
+          "All attendees accepted except organizer (auto-accept)"
+        ],
+        "alternate_classification": "Technical Review Meeting",
+        "business_value": "Medium-High - ensures evaluation work progresses",
+        "project": "Meeting Prep Evaluations",
+        "relationship_to_other_meetings": "Execution follow-up to 14:05 scorecard planning meeting"
+      }
+    },
+    {
+      "id": "AAkBOQAICN4VtPAeQAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAAB8PR2boAABA=",
+      "subject": "Copilot Insight Engine Office Hour (Asia & EU)",
+      "start": "2025-10-28T16:00:00",
+      "end": "2025-10-28T16:30:00",
+      "duration_minutes": 30,
+      "attendees_count": 7,
+      "organizer": "Yvonne Guo",
+      "classification": {
+        "specific_type": "Office Hours / Q&A Session",
+        "primary_category": "Learning & Development",
+        "confidence": 0.96,
+        "reasoning": "This is a recurring office hours session for the Copilot Insight Engine (CIE) platform, specifically scheduled for Asia & EU time zones. The invitation explicitly states it's 'an open session where we'll address your questions' and attendees can 'bring your questions or just listen in'. The service distribution lists (BizChat, MSAI Data Analytics) and regional team members indicate this is a support/education session for users of the CIE platform.",
+        "key_indicators": [
+          "Explicitly labeled 'Office Hour' in title",
+          "Body text confirms Q&A format: 'address your questions'",
+          "Optional attendance: 'just listen in'",
+          "Regional optimization: 'Asia & EU' timezone",
+          "Service distribution lists as attendees (BizChat, MSAI Data Analytics)",
+          "Platform support focus: Copilot Insight Engine",
+          "Short 30-minute duration typical of office hours"
+        ],
+        "alternate_classification": "Training Session",
+        "business_value": "Medium - provides user support and platform education",
+        "platform": "Copilot Insight Engine (CIE)",
+        "recurring_pattern": "Weekly office hours for different regions"
+      }
+    },
+    {
+      "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAH-ejN_wAA",
+      "subject": "SynthetIQ: Turning Data Scarcity into Competitive Velocity",
+      "start": "2025-10-28T23:00:00",
+      "end": "2025-10-29T00:00:00",
+      "duration_minutes": 60,
+      "attendees_count": 9,
+      "organizer": "Alex Blanton",
+      "classification": {
+        "specific_type": "Webinar / Technical Presentation",
+        "primary_category": "Learning & Development",
+        "confidence": 0.94,
+        "reasoning": "This is a webinar-style presentation about SynthetIQ technology (synthetic data generation) with three identified speakers (Aparana Gupta, Anurup Dey, Suyash Dwivedi). The formal title, speaker list, broadcast distribution list (EventsOnly_AIML-CC), and optional organizer group (Alex Blanton + 4 co-organizers) indicate this is a large-scale educational event about AI/ML technology. The topic 'Turning Data Scarcity into Competitive Velocity' suggests a strategic technology showcase.",
+        "key_indicators": [
+          "Formal presentation title with strategic messaging",
+          "Three named speakers listed in body",
+          "Multiple co-organizers (Jorge Garcia Ximenez, Alex Blanton, Alexandra Savelieva, Jason Virtue, Mark Tabladillo)",
+          "Broadcast distribution list: EventsOnly_AIML-CC",
+          "1-hour duration typical of webinar format",
+          "Technology showcase: SynthetIQ (synthetic data)",
+          "Late evening time (11pm Beijing) suggests PST audience primary"
+        ],
+        "alternate_classification": "Knowledge Sharing Session",
+        "business_value": "Medium - educates team on synthetic data capabilities",
+        "topic": "Synthetic Data Generation / SynthetIQ Platform",
+        "event_type": "Tech Talk / Webinar"
+      }
+    },
+    {
+      "id": "AAkBOQAICN4VtPAeQAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAACASVlm8AABA=",
+      "subject": "BizChat Weekly Flight Review",
+      "start": "2025-10-28T23:05:00",
+      "end": "2025-10-29T00:00:00",
+      "duration_minutes": 55,
+      "attendees_count": 5,
+      "organizer": "Gaurav Anand",
+      "classification": {
+        "specific_type": "Performance Review Meeting / Metrics Review",
+        "primary_category": "Performance & Review",
+        "confidence": 0.93,
+        "reasoning": "This is a recurring weekly meeting to review experimental flights (A/B tests) running in BizChat and make ship decisions based on customer impact data. The agenda explicitly states 'Review each flight with a doc ready for review at https://aka.ms/BizChatFlights' and the goal is to 'Learn about customer impact of experiments to inform ship decisions'. This is a data-driven product review meeting where the team evaluates experiment results to decide which features to ship.",
+        "key_indicators": [
+          "'Weekly Flight Review' indicates recurring metrics review",
+          "Goal: 'Learn about customer impact of experiments to inform ship decisions'",
+          "Structured agenda with review documentation (aka.ms/BizChatFlights)",
+          "Team distribution list: MSAI USR Gaurav Directs",
+          "Service DL as optional: BizChat platform team",
+          "Decision-making focus: ship/no-ship based on data",
+          "Regular cadence: weekly review meeting"
+        ],
+        "alternate_classification": "Decision-Making Meeting",
+        "business_value": "High - drives product shipping decisions based on customer data",
+        "product": "BizChat",
+        "review_focus": "A/B test experiments and customer impact metrics",
+        "decision_authority": "Ship/no-ship decisions for product features"
+      }
+    }
+  ],
+  "summary": {
+    "total_meetings": 8,
+    "by_category": {
+      "Administrative & HR": 2,
+      "Team Coordination & Status": 2,
+      "Strategic Planning & Decision": 1,
+      "Learning & Development": 2,
+      "Performance & Review": 1
+    },
+    "by_specific_type": {
+      "Documentation/Process Update Meeting": 1,
+      "Interview Meeting": 1,
+      "Status Update Meeting": 2,
+      "Problem-Solving Meeting": 1,
+      "Office Hours": 1,
+      "Webinar/Presentation": 1,
+      "Performance Review": 1
+    },
+    "average_confidence": 0.93,
+    "average_duration_minutes": 57,
+    "total_meeting_time_minutes": 456,
+    "total_meeting_time_hours": 7.6,
+    "key_projects_identified": [
+      "Meeting Prep / Golden Prompt",
+      "BizChat Evaluation Framework",
+      "Copilot Insight Engine (CIE)",
+      "SynthetIQ Platform",
+      "BizChat Product"
+    ],
+    "meeting_load_analysis": {
+      "morning_meetings": 3,
+      "afternoon_meetings": 3,
+      "evening_meetings": 2,
+      "peak_period": "Afternoon (14:00-16:30)",
+      "busiest_hour": "14:00-15:00 (2 back-to-back meetings)",
+      "longest_meeting": "Meeting Prep STCA Sync (85 minutes)",
+      "shortest_meeting": "Discuss Meeting Prep Bizchat Eval (25 minutes)"
+    },
+    "collaboration_insights": {
+      "unique_collaborators": 67,
+      "top_collaborators": [
+        "Haidong Zhang (3 meetings)",
+        "Caroline Mao (2 meetings)",
+        "Mark Grimaldi (1 meeting)",
+        "Yvonne Guo (1 meeting)",
+        "Gaurav Anand (1 meeting)"
+      ],
+      "meeting_prep_focus": "4 out of 8 meetings (50%) related to Meeting Prep product",
+      "cross_team_collaboration": "High - meetings involve MSAI, BizChat, Copilot teams"
+    }
+  }
+}

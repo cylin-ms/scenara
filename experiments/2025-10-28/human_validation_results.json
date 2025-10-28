@@ -1,0 +1,80 @@
+{
+  "validation_date": "2025-10-28T16:49:03.207481",
+  "validator": "Human Expert",
+  "total_meetings": 8,
+  "validated_count": 8,
+  "validations": {
+    "AAkBOQAICN4U68W0gAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAAB8PSsC4AABA=": {
+      "timestamp": "2025-10-28T16:49:03.207493",
+      "gpt5_correct": false,
+      "copilot_correct": true,
+      "correct_type": "Team Status Update Meetings",
+      "correct_category": "Internal Recurring Meetings (Cadence)",
+      "notes": "",
+      "difficulty": "easy"
+    },
+    "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAIAqvFVwAA": {
+      "timestamp": "2025-10-28T16:49:34.483344",
+      "gpt5_correct": true,
+      "copilot_correct": true,
+      "correct_type": null,
+      "correct_category": null,
+      "notes": "",
+      "difficulty": "easy"
+    },
+    "AAkBOQAICN4U68W0gAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAAB_4SLyEAABA=": {
+      "timestamp": "2025-10-28T16:50:06.652793",
+      "gpt5_correct": true,
+      "copilot_correct": false,
+      "correct_type": "Team Status Update Meetings",
+      "correct_category": "Internal Recurring Meetings (Cadence)",
+      "notes": "",
+      "difficulty": "easy"
+    },
+    "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAH-hSD9gAA": {
+      "timestamp": "2025-10-28T16:50:49.228688",
+      "gpt5_correct": true,
+      "copilot_correct": true,
+      "correct_type": null,
+      "correct_category": null,
+      "notes": "",
+      "difficulty": "easy"
+    },
+    "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAIBJZBwAAA": {
+      "timestamp": "2025-10-28T16:51:38.214378",
+      "gpt5_correct": false,
+      "copilot_correct": false,
+      "correct_type": "Team Status Update Meetings",
+      "correct_category": "Internal Recurring Meetings (Cadence)",
+      "notes": "",
+      "difficulty": "easy"
+    },
+    "AAkBOQAICN4VtPAeQAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAAB8PR2boAABA=": {
+      "timestamp": "2025-10-28T16:53:48.690233",
+      "gpt5_correct": true,
+      "copilot_correct": true,
+      "correct_type": null,
+      "correct_category": null,
+      "notes": "",
+      "difficulty": "medium"
+    },
+    "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAH-ejN_wAA": {
+      "timestamp": "2025-10-28T16:54:22.390607",
+      "gpt5_correct": true,
+      "copilot_correct": true,
+      "correct_type": null,
+      "correct_category": null,
+      "notes": "",
+      "difficulty": "easy"
+    },
+    "AAkBOQAICN4VtPAeQAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAACASVlm8AABA=": {
+      "timestamp": "2025-10-28T16:54:38.978796",
+      "gpt5_correct": true,
+      "copilot_correct": true,
+      "correct_type": null,
+      "correct_category": null,
+      "notes": "",
+      "difficulty": "easy"
+    }
+  }
+}

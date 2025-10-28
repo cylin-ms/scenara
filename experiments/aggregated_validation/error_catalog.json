@@ -1,0 +1,56 @@
+{
+  "metadata": {
+    "created": "2025-10-28T17:07:15.994718",
+    "total_errors": 2,
+    "unique_patterns": 2
+  },
+  "error_patterns": {
+    "Informational Briefings \u2192 Team Status Update Meetings": 1,
+    "Planning Session \u2192 Team Status Update Meetings": 1
+  },
+  "errors": [
+    {
+      "id": "AAkBOQAICN4U68W0gAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAAB8PSsC4AABA=",
+      "date": "2025-10-28",
+      "model": "gpt5",
+      "meeting_subject": "Update Copilot Agility BPR [Async Task]",
+      "keywords": [
+        "[async task]"
+      ],
+      "ai_classification": {
+        "specific_type": "Informational Briefings",
+        "primary_category": "Informational & Broadcast Meetings",
+        "confidence": 0.78
+      },
+      "correct_classification": {
+        "specific_type": "Team Status Update Meetings",
+        "primary_category": "Internal Recurring Meetings (Cadence)"
+      },
+      "error_pattern": "Informational Briefings \u2192 Team Status Update Meetings",
+      "difficulty": "easy",
+      "notes": ""
+    },
+    {
+      "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAIBJZBwAAA",
+      "date": "2025-10-28",
+      "model": "gpt5",
+      "meeting_subject": "meeting prep evals sync and discussion",
+      "keywords": [
+        "meeting prep",
+        "sync"
+      ],
+      "ai_classification": {
+        "specific_type": "Planning Session",
+        "primary_category": "Strategic Planning & Decision Meetings",
+        "confidence": 0.87
+      },
+      "correct_classification": {
+        "specific_type": "Team Status Update Meetings",
+        "primary_category": "Internal Recurring Meetings (Cadence)"
+      },
+      "error_pattern": "Planning Session \u2192 Team Status Update Meetings",
+      "difficulty": "easy",
+      "notes": ""
+    }
+  ]
+}

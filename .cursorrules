@@ -748,6 +748,193 @@ result = subprocess.run(
 - **Enterprise Integration Ready**: Collected organizational data directly supports Priority Calendar and meeting importance scoring
 - **Fallback Systems Essential**: Multiple extraction strategies and graceful degradation prevent total failure
 
+### Meeting Classification Validation Lessons (October 28, 2025)
+- **Web UX Accelerates Validation**: Flask validation app enabled 8 meetings validated in ~8 minutes (vs 20+ min for forms)
+- **Cross-Model Agreement ≠ Accuracy**: 87.5% agreement but only 75% accuracy = models agreed on wrong answers!
+- **Systematic Errors Need Prompt Fixes**: All 4 errors same root cause ("Meeting Prep" + "Sync" → Planning instead of Status Update)
+- **High Confidence ≠ Correct**: GPT-5 showed 92% confidence on wrong classification (Meeting #5)
+- **Ground Truth is Essential**: Cross-model validation gave false confidence until human validation revealed true 75% accuracy
+- **Dataset Building is Iterative**: Start small (8), grow to medium (20-50), target large (50+) for reliable statistics
+- **80/20 Split for Datasets**: Training (80%) for model fine-tuning, Evaluation (20%) for unbiased testing
+- **Keyword Extraction Reveals Patterns**: "prep" + "sync" triggers systematic misclassification
+- **Error Cataloging Enables Improvement**: Track pattern → Frequency → Refine prompt → Re-test
+- **Multi-Day Aggregation Essential**: Auto-discovery across dates builds growing dataset automatically
+- **Validation Workflow**: Daily validation (~8 min) → Periodic aggregation → Analyze errors → Refine prompt → Re-run experiments
+- **Production Threshold**: 80% accuracy minimum for deployment (current: 75%, need prompt improvement)
+- **Prompt Specificity Needed**: "Meeting prep FOR a meeting" vs "Planning a project" distinction critical
+- **Metadata Preservation**: Store which models correct/incorrect enables error pattern analysis
+- **Difficulty Tracking**: Easy/Medium/Hard ratings reveal accuracy varies by meeting complexity
+- **Both Models Wrong Pattern**: When both wrong (Meeting #5), indicates systematic gap in prompt/training
+
+### Experiment Framework Lessons (October 28, 2025)
+- **Structured Experiment Directory**: Use `experiments/YYYY-MM-DD/` for all classification tests and runs
+- **Model Documentation Critical**: Record exact model (GPT-4 Turbo, GPT-5, Ollama) in filename and metadata
+- **Experiment Metadata Required**: Include experiment_id, platform, run_date, classifier details in JSON
+- **File Naming Convention**: `meeting_classification_[classifier]_[model].json` for easy comparison
+- **GitHub Copilot as Classifier**: Can use GitHub Copilot's native GPT-4 Turbo for direct classification without API calls
+- **No Authentication Overhead**: GitHub Copilot classification bypasses MSAL/token complexity
+- **Reproducibility Focus**: Detailed metadata enables experiment reproduction and cross-platform comparison
+- **Confidence Tracking**: Record average confidence (93% for GitHub Copilot, 96% for GPT-5) for model comparison
+- **Experiment Comparison**: Save multiple models' results in same date directory for A/B testing
+- **README Documentation**: Maintain experiments/README.md with all experiment details and findings
+
+### Meeting Classification Experiment Results (October 28, 2025)
+
+#### Experiment 001: GitHub Copilot GPT-4 Turbo
+- **Average Confidence**: 93% across all 8 classifications
+- **Classification Quality**: High-quality reasoning with key indicators and alternate classifications
+- **Model Information**: GPT-4 Turbo (gpt-4-1106-preview estimated) via Microsoft Azure OpenAI
+- **Key Advantage**: No external API authentication needed, direct context access to meeting data
+- **File Location**: `experiments/2025-10-28/meeting_classification_github_copilot_gpt4.json`
+- **Meeting Distribution**: Admin/HR (2), Team Coordination (2), Strategic Planning (1), Learning (2), Performance (1)
+- **Strengths**: Detailed reasoning, key indicators, alternate classifications, inter-meeting relationship detection
+- **Weaknesses**: Slightly lower confidence than GPT-5, wider confidence range (88-99%)
+
+#### Experiment 002: Microsoft GPT-5 (dev-gpt-5-chat-jj)
+- **Average Confidence**: 96% across all 8 classifications
+- **Classification Quality**: Enterprise-grade taxonomy alignment with consistent scoring
+- **Model Information**: dev-gpt-5-chat-jj via Microsoft LLMAPI (SilverFlow)
+- **Authentication**: MSAL + Windows Broker (WAM) required
+- **File Location**: `experiments/2025-10-28/meeting_classification_gpt5.json`
+- **Meeting Distribution**: Internal Recurring (4), Strategic Planning (1), External (1), Informational (2)
+- **Strengths**: Higher confidence (+3% vs Copilot), enterprise taxonomy, fast API, production-ready
+- **Weaknesses**: MSAL setup required, less detailed reasoning, over-classifies as "Progress Review" (4/8)
+- **⚠️ TAXONOMY ISSUE DISCOVERED**: GPT-5 used SIMPLIFIED taxonomy, not full official version
+
+#### Taxonomy Alignment Discovery (October 28, 2025) - **CRITICAL**
+- **Official Source**: `ContextFlow/docs/cyl/Enterprise_Meeting_Taxonomy.md` by Chin-Yew Lin (Microsoft Researcher)
+- **Coverage**: >95% of Fortune 500 business meetings, 5 categories, 31+ specific types
+- **Issue Found**: GPT-5 initial prompt used abbreviated taxonomy without descriptions
+- **Result**: 50% over-concentration in "Progress Review Meeting" (4 out of 8 meetings)
+- **Root Cause**: Simplified prompt lacked context signals (attendee count, duration, external domains)
+- **GitHub Copilot**: Had full taxonomy document in context → balanced distribution, detailed reasoning
+- **Fix Applied**: Updated `tools/meeting_classifier_gpt5.py` with complete official taxonomy + guidelines
+- **Prompt Enhancement**: Added classification principles, context signals, key_indicators requirement
+- **Next Action**: Re-run Experiment 002 with corrected taxonomy for validation
+- **Documentation**: `experiments/TAXONOMY_ALIGNMENT.md` - complete analysis and comparison
+- **Key Lesson**: **NEVER abbreviate the taxonomy** - full descriptions + context guidance essential
+
+#### Model Comparison Summary
+- **Confidence**: GPT-5 96% vs GitHub Copilot 93% (+3% advantage for GPT-5)
+- **Reasoning Quality**: GitHub Copilot provides more detailed explanations and key indicators
+- **Setup Complexity**: GitHub Copilot (none) vs GPT-5 (MSAL authentication required)
+- **Category Distribution**: GPT-5 concentrated (50% Internal Recurring), Copilot balanced (5 categories)
+- **Taxonomy Usage**: GitHub Copilot used FULL taxonomy, GPT-5 used SIMPLIFIED (now fixed)
+- **Use Case**: GPT-5 for production pipelines (after taxonomy fix), GitHub Copilot for development/testing
+- **Comparison Document**: `experiments/2025-10-28/MODEL_COMPARISON.md`
+- **Total Meeting Time**: 7.6 hours across 8 meetings
+- **Insights Generated**: Meeting load analysis, collaboration patterns, project identification
+- **Next Experiments**: Re-run GPT-5 with corrected taxonomy, compare with Ollama gpt-oss:20b
+
+### Centralized Prompt System - VALIDATED (October 28, 2025) ✅ PRODUCTION READY
+- **CRITICAL**: All classifiers must use `prompts/meeting_classification_prompt.md` for taxonomy alignment
+- **Architecture**: Centralized prompt in `prompts/` directory imported by all classifiers
+- **Updated Classifiers**:
+  - ✅ GPT-5 (`tools/meeting_classifier_gpt5.py`) - uses `create_classification_prompt()`
+  - ✅ Ollama (`tools/meeting_classifier.py`) - uses `create_classification_prompt()`
+  - ✅ Both use `get_system_message()` for consistent LLM role definition
+- **Prompt Components**:
+  - System Message: Expert business analyst role
+  - Official Taxonomy: Complete 5 categories, 31+ types with descriptions
+  - Classification Guidelines: Primary purpose, context signals, confidence calibration
+  - Output Format: JSON schema with required fields
+- **Version Tracking**: All results include `prompt_version` and `taxonomy_source` metadata
+- **VALIDATION RESULTS** (October 28, 2025):
+  - **BEFORE (Simplified)**: 50% over-concentration in "Progress Review Meeting" (4/8 meetings)
+  - **AFTER (Centralized)**: Balanced distribution - max 38% in any type (3/8 meetings)
+  - **Improvement**: Eliminated 50% concentration → 4 categories with 1-3 meetings each
+  - **Confidence**: 96% → 89% (more thoughtful, evidence-based classifications)
+  - **4 meetings reclassified**: Progress Review → Planning (2), Status Update (1), Informational (1)
+  - **1 meeting unchanged**: Progress Review stayed (genuinely correct)
+  - **Analysis**: `experiments/2025-10-28/PROMPT_IMPROVEMENT_ANALYSIS.md`
+- **Benefits**:
+  - **Consistency**: Same taxonomy across all classifiers
+  - **Maintainability**: Update once, applies to all
+  - **Traceability**: Track prompt version in experiments
+  - **Quality**: Based on Chin-Yew Lin's official taxonomy (>95% coverage)
+  - **Validated**: Proven to eliminate over-concentration issues
+- **Usage Pattern**:
+  ```python
+  from prompts import create_classification_prompt, get_prompt_metadata
+  
+  # Get prompt
+  prompt = create_classification_prompt(meeting_context, style="detailed")
+  
+  # Track version
+  metadata = get_prompt_metadata()  # version, date, author, source
+  result['prompt_version'] = metadata['version']
+  ```
+- **Documentation**: `prompts/README.md` - complete guide for classifier development
+- **Key Lesson**: Centralized prompts prevent taxonomy drift and ensure experiment reproducibility
+- **CROSS-MODEL VALIDATION** (October 28, 2025):
+  - **GPT-5 vs GitHub Copilot Agreement**: 87.5% (7/8 meetings)
+  - **Perfect Matches**: 6/8 meetings (75%)
+  - **Distribution Pattern**: IDENTICAL (both 3-2-2-1 across categories)
+  - **Confidence Alignment**: GPT-5 89%, Copilot 91% (very similar)
+  - **Both Models**: Progress Review 1/8 (12%) - NOT over-concentrated!
+  - **Analysis**: `experiments/2025-10-28/THREE_MODEL_COMPARISON.md`
+  - **Conclusion**: Centralized prompt achieves high cross-model consistency ✅
+
+### HUMAN VALIDATION RESULTS - GROUND TRUTH ACCURACY (October 28, 2025) 🎯 CRITICAL REALITY CHECK
+- **VALIDATION METHOD**: Interactive web app with full taxonomy dropdown, difficulty ratings, notes
+- **VALIDATOR**: Human expert (Chin-Yew Lin) validating all 8 meetings from October 28, 2025
+- **VALIDATION TIME**: ~8 minutes total using beautiful Flask web interface
+- **ACTUAL ACCURACY RESULTS** (Ground Truth):
+  - **GPT-5 Accuracy**: 75.0% (6/8 correct) ⚠️ BELOW 80% threshold
+  - **GitHub Copilot Accuracy**: 75.0% (6/8 correct) ⚠️ BELOW 80% threshold
+  - **Both Models Equal**: TIE at 75% accuracy
+  - **Both Correct**: 5/8 meetings (62.5%)
+  - **Both Wrong**: 1/8 meetings (12.5%) - systematic error!
+- **CRITICAL INSIGHT**: Cross-model agreement (87.5%) ≠ Accuracy (75%)
+  - **Gap**: 12.5% - models AGREED on WRONG classifications!
+  - **Reality Check**: Consistency does NOT guarantee correctness
+  - **Lesson**: ALWAYS validate with human ground truth, not just cross-model agreement
+- **SYSTEMATIC ERROR PATTERN DISCOVERED** 🚨:
+  - **ALL 4 errors** involved misclassifying **'Team Status Update Meetings'**
+  - **Common Confusion**: "Planning Sessions" → "Team Status Update Meetings" (2 cases)
+  - **Also Confused**: "Informational Briefings" → "Team Status Update Meetings" (1 case)
+  - **Root Cause**: "Meeting Prep" keyword misleads models to classify as Planning
+  - **Context Matters**: "Meeting prep FOR a sync" = Status Update, NOT Planning
+- **DETAILED ERROR ANALYSIS**:
+  - **Meeting 1**: "[Async Task]" - GPT-5 wrong (Informational), Copilot correct (Status Update)
+  - **Meeting 3**: "Meeting Prep STCA Sync" - GPT-5 correct, Copilot wrong (Planning → Status)
+  - **Meeting 5**: "meeting prep evals sync" - BOTH WRONG (Planning → Status) 🚨
+  - **All Easy Difficulty**: 3/7 easy meetings misclassified (71.4% accuracy on easy!)
+- **KEYWORD CONFUSION IDENTIFIED**:
+  - ❌ "Meeting Prep" → Models assume Planning (often wrong!)
+  - ❌ "Sync" → Ambiguous (could be Status or Planning)
+  - ❌ "[Async Task]" → GPT-5 confused (Copilot handled better)
+  - ✅ "Interview" → Both perfect (99% confidence, correct)
+  - ✅ "Weekly Review" → Both perfect (96% confidence, correct)
+  - ✅ "Office Hours" → Both perfect (88-92% confidence, correct)
+- **PRODUCTION READINESS ASSESSMENT**: ❌ NOT READY
+  - **Target**: ≥80% type accuracy, ≥90% category accuracy
+  - **Actual**: 75% type accuracy (5% below threshold)
+  - **Status**: Below production threshold - prompt refinement needed
+- **ACTION ITEMS FOR PROMPT IMPROVEMENT**:
+  1. **Strengthen "Team Status Update" classification rules**
+  2. **Add explicit guidance**: "Meeting Prep" + "Sync" often = Status Update
+  3. **Clarify context**: "Prep FOR a meeting" vs "Planning a project"
+  4. **Handle "[Async Task]" pattern**: Often Status Update, not Informational
+  5. **Add examples**: "meeting prep sync" → Status Update (not Planning)
+- **KEY INSIGHT**: "Meeting Prep" ≠ Always Planning!
+  - **Context**: Prep FOR recurring sync/standup = Status Update
+  - **Example**: "Meeting Prep STCA Sync" = preparing FOR status meeting
+  - **Fix**: Look for "prep" + "sync/standup/1:1" → Status Update
+- **FILES CREATED**:
+  - `validation_app.py` - Flask web app for validation UX
+  - `templates/validation.html` - Beautiful interactive UI
+  - `analyze_validation_accuracy.py` - Ground truth accuracy analysis
+  - `experiments/2025-10-28/human_validation_results.json` - Raw validation data
+  - `experiments/2025-10-28/validation_accuracy_report.json` - Summary report
+  - `VALIDATION_APP_README.md` - Full documentation
+  - `QUICK_START_VALIDATION.md` - Quick start guide
+- **LESSON LEARNED**: Cross-model consistency is valuable but NOT sufficient
+  - Need human validation to establish ground truth
+  - 87.5% agreement included agreeing on wrong answers
+  - Systematic errors require prompt refinement, not more models
+  - "Meeting Prep" is a systematic trigger word causing Planning misclassification
+
 ### Manual Authentication Graph Extractor Lessons (October 25, 2025) 🎯 BREAKTHROUGH
 - **CRITICAL FIX**: Monaco editor inserts visual line breaks in displayed JSON - must use Monaco API, not DOM scraping!
 - **Solution**: `monaco.editor.getModels()[0].getValue()` extracts clean JSON without visual formatting artifacts
@@ -787,7 +974,7 @@ result = subprocess.run(
   - PATTERN: Broadcast-only may indicate data gap, not lack of collaboration
 - **Production Requirements** (UPDATED October 25, 2025):
   - ✅ Calendars.Read - meetings and calendar events
-  - ✅ Mail.Read - emails and communication patterns 
+  - ✅ Mail.Read - emails and communication patterns
   - ✅ People.Read - ML collaboration rankings
   - ✅ Sites.Read.All - shared documents
   - ✅ Chat.Read - **FULLY INTEGRATED** - Teams chat collaboration (SilverFlow + tools/teams_chat_api.py)

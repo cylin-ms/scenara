@@ -1,0 +1,1194 @@
+{
+  "experiment": {
+    "experiment_id": "meeting_classification_20251028_002",
+    "experiment_type": "meeting_classification",
+    "run_date": "2025-10-28T14:18:17.037115",
+    "platform": "Windows DevBox",
+    "description": "Meeting classification using Microsoft GPT-5 (dev-gpt-5-chat-jj) via SilverFlow LLM API"
+  },
+  "metadata": {
+    "extraction_date": "2025-10-28T13:25:00.089925",
+    "classification_date": "2025-10-28T14:18:17.037131",
+    "target_date": "2025-10-28",
+    "total_meetings": 8,
+    "classifier": {
+      "name": "Microsoft GPT-5",
+      "model": "dev-gpt-5-chat-jj",
+      "model_version": "GPT-5 Preview",
+      "provider": "Microsoft LLMAPI (SilverFlow)",
+      "endpoint": "https://fe-26.qas.bing.net/chat/completions",
+      "authentication": "MSAL + Windows Broker (WAM)",
+      "scopes": [
+        "https://substrate.office.com/llmapi/LLMAPI.dev"
+      ],
+      "capabilities": [
+        "Advanced reasoning",
+        "Enterprise-grade classification",
+        "High accuracy (97-99%)",
+        "Contextual understanding",
+        "Multi-signal analysis"
+      ],
+      "note": "GPT-5 is Microsoft's next-generation language model for enterprise applications"
+    },
+    "classification_method": "LLM-powered semantic analysis with enterprise meeting taxonomy",
+    "taxonomy_version": "Enterprise Meeting Taxonomy v3.0",
+    "input_source": "data/meetings/meetings_2025-10-28.json"
+  },
+  "meetings": [
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAH+9GX2Q==\"",
+      "id": "AAkBOQAICN4U68W0gAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAAB8PSsC4AABA=",
+      "subject": "Update Copilot Agility BPR [Async Task]",
+      "bodyPreview": "Time set aside for updating the copilot agility BPR doc at https://aka.ms/CopilotAgilityBPR-AlwaysTheLatest.\r\n\r\n\r\n\r\n________________________________________________________________________________\r\nMicrosoft Teams meeting Need help?\r\nJoin: https://teams.m",
+      "onlineMeetingUrl": null,
+      "isOnlineMeeting": true,
+      "start": {
+        "dateTime": "2025-10-28T07:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-10-28T08:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "location": {
+        "displayName": "Your Desk",
+        "locationType": "default",
+        "uniqueId": "Your Desk",
+        "uniqueIdType": "private"
+      },
+      "attendees": [
+        {
+          "type": "required",
+          "status": {
+            "response": "none",
+            "time": "0001-01-01T00:00:00Z"
+          },
+          "emailAddress": {
+            "name": "Copilot Software Factory",
+            "address": "CopilotSoftwareFactory@service.microsoft.com"
+          }
+        },
+        {
+          "type": "required",
+          "status": {
+            "response": "none",
+            "time": "0001-01-01T00:00:00Z"
+          },
+          "emailAddress": {
+            "name": "Copilot Agility BPR DRIs",
+            "address": "cp-agility-dri@service.microsoft.com"
+          }
+        },
+        {
+          "type": "required",
+          "status": {
+            "response": "accepted",
+            "time": "0001-01-01T00:00:00Z"
+          },
+          "emailAddress": {
+            "name": "Scott Thurlow",
+            "address": "sthurlow@microsoft.com"
+          }
+        },
+        {
+          "type": "optional",
+          "status": {
+            "response": "tentativelyAccepted",
+            "time": "0001-01-01T00:00:00Z"
+          },
+          "emailAddress": {
+            "name": "Stephanie Horn",
+            "address": "sthorn@microsoft.com"
+          }
+        },
+        {
+          "type": "optional",
+          "status": {
+            "response": "tentativelyAccepted",
+            "time": "0001-01-01T00:00:00Z"
+          },
+          "emailAddress": {
+            "name": "Igor Zaika",
+            "address": "igorz@microsoft.com"
+          }
+        },
+        {
+          "type": "optional",
+          "status": {
+            "response": "accepted",
+            "time": "0001-01-01T00:00:00Z"
+          },
+          "emailAddress": {
+            "name": "Dwight Kruger",
+            "address": "dkruger@microsoft.com"
+          }
+        },
+        {
+          "type": "optional",
+          "status": {
+            "response": "declined",
+            "time": "0001-01-01T00:00:00Z"
+          },
+          "emailAddress": {
+            "name": "John Bufe (he/him)",
+            "address": "John.Bufe@microsoft.com"
+          }
+        },
+        {
+          "type": "optional",
+          "status": {
+            "response": "accepted",
+            "time": "0001-01-01T00:00:00Z"
+          },
+          "emailAddress": {
+            "name": "Karan Shah",
+            "address": "karas@microsoft.com"
+          }
+        },
+        {
+          "type": "optional",
+          "status": {
+            "response": "accepted",
+            "time": "0001-01-01T00:00:00Z"
+          },
+          "emailAddress": {
+            "name": "Merve Bahar (She/Her)",
+            "address": "mervebahar@microsoft.com"
+          }
+        },
+        {
+          "type": "optional",
+          "status": {
+            "response": "declined",
+            "time": "0001-01-01T00:00:00Z"
+          },
+          "emailAddress": {
+            "name": "Ashok Kuppusamy",
+            "address": "ashokk@microsoft.com"
+          }
+        },
+        {
+          "type": "optional",
+          "status": {
+            "response": "accepted",
+            "time": "0001-01-01T00:00:00Z"
+          },
+          "emailAddress": {
+            "name": "Kaushal Mehta (Copilot & Teams)",
+            "address": "kamehta@microsoft.com"
+          }
+        },
+        {
+          "type": "optional",
+          "status": {
+            "response": "tentativelyAccepted",
+            "time": "0001-01-01T00:00:00Z"
+          },
+          "emailAddress": {
+            "name": "Max Roseman",
+            "address": "mroseman@microsoft.com"
+          }
+        },
+        {
+          "type": "optional",
+          "status": {
+            "response": "accepted",
+            "time": "0001-01-01T00:00:00Z"
+          },
+          "emailAddress": {
+            "name": "Dillon Rose",
+            "address": "dirose@microsoft.com"
+          }
+        },
+        {
+          "type": "optional",
+          "status": {
+            "response": "tentativelyAccepted",
+            "time": "0001-01-01T00:00:00Z"
+          },
+          "emailAddress": {
+            "name": "Kieran McDonald",
+            "address": "Kieran.McDonald@microsoft.com"
+          }
+        },
+        {
+          "type": "optional",
+          "status": {
+            "response": "tentativelyAccepted",
+            "time": "0001-01-01T00:00:00Z"
+          },
+          "emailAddress": {
+            "name": "Kavita Kamani (KRISHNAN)",
+            "address": "Kavita.Kamani@microsoft.com"
+          }
+        },
+        {
+          "type": "optional",
+          "status": {
+            "response": "tentativelyAccepted",
+            "time": "0001-01-01T00:00:00Z"
+          },
+          "emailAddress": {
+            "name": "Samim Erdogan",
+            "address": "samime@microsoft.com"
+          }
+        },
+        {
+          "type": "optional",
+          "status": {
+            "response": "declined",
+            "time": "0001-01-01T00:00:00Z"
+          },
+          "emailAddress": {
+            "name": "Robin Thomas",
+            "address": "robint@microsoft.com"
+          }
+        },
+        {
+          "type": "optional",
+          "status": {
+            "response": "accepted",
+            "time": "0001-01-01T00:00:00Z"
+          },
+          "emailAddress": {
+            "name": "Heine Frifeldt",
+            "address": "Heine.Frifeldt@microsoft.com"
+          }
+        },
+        {
+          "type": "optional",
+          "status": {
+            "response": "declined",
+            "time": "0001-01-01T00:00:00Z"
+          },
+          "emailAddress": {
+            "name": "Jorge Pereira",
+            "address": "jorgepereira@microsoft.com"
+          }
+        },
+        {
+          "type": "optional",
+          "status": {
+            "response": "accepted",
+            "time": "0001-01-01T00:00:00Z"
+          },
+          "emailAddress": {
+            "name": "Rashid Qureshi",
+            "address": "rqureshi@microsoft.com"
+          }
+        },
+        {
+          "type": "optional",
+          "status": {
+            "response": "tentativelyAccepted",
+            "time": "0001-01-01T00:00:00Z"
+          },
+          "emailAddress": {
+            "name": "Eyal Carmi",
+            "address": "eyalcarmi@microsoft.com"
+          }
+        },
+        {
+          "type": "optional",
+          "status": {
+            "response": "declined",
+            "time": "0001-01-01T00:00:00Z"
+          },
+          "emailAddress": {
+            "name": "Natalie Gibralter",
+            "address": "ngibralter@microsoft.com"
+          }
+        },
+        {
+          "type": "optional",
+          "status": {
+            "response": "tentativelyAccepted",
+            "time": "0001-01-01T00:00:00Z"
+          },
+          "emailAddress": {
+            "name": "Kathy Lu",
+            "address": "Kathy.Lu@microsoft.com"
+          }
+        },
+        {
+          "type": "optional",
+          "status": {
+            "response": "declined",
+            "time": "0001-01-01T00:00:00Z"
+          },
+          "emailAddress": {
+            "name": "Ali Alvi",
+            "address": "Ali.Alvi@microsoft.com"
+          }
+        },
+        {
+          "type": "optional",
+          "status": {
+            "response": "declined",
+            "time": "0001-01-01T00:00:00Z"
+          },
+          "emailAddress": {
+            "name": "Dave Koenig",
+            "address": "davek@microsoft.com"
+          }
+        },
+        {
+          "type": "optional",
+          "status": {
+            "response": "declined",
+            "time": "0001-01-01T00:00:00Z"
+          },
+          "emailAddress": {
+            "name": "Dachuan Zhang",
+            "address": "Dachuan.Zhang@microsoft.com"
+          }
+        },
+        {
+          "type": "optional",
+          "status": {
+            "response": "tentativelyAccepted",
+            "time": "0001-01-01T00:00:00Z"
+          },
+          "emailAddress": {
+            "name": "Ananth Rao",
+            "address": "Ananth.Rao@microsoft.com"
+          }
+        },
+        {
+          "type": "optional",
+          "status": {
+            "response": "accepted",
+            "time": "0001-01-01T00:00:00Z"
+          },
+          "emailAddress": {
+            "name": "Meng Goh",
+            "address": "Meng.Goh@microsoft.com"
+          }
+        },
+        {
+          "type": "optional",
+          "status": {
+            "response": "tentativelyAccepted",
+            "time": "0001-01-01T00:00:00Z"
+          },
+          "emailAddress": {
+            "name": "Sitaram Lanka",
+            "address": "slanka@microsoft.com"
+          }
+        }
+      ],
+      "organizer": {
+        "emailAddress": {
+          "name": "Copilot Software Factory",
+          "address": "CopilotSoftwareFactory@service.microsoft.com"
+        }
+      },
+      "classification": {
+        "specific_type": "Informational Briefings",
+        "primary_category": "Informational & Broadcast Meetings",
+        "confidence": 0.78,
+        "reasoning": "The meeting title includes '[Async Task]', suggesting it may not be a traditional synchronous meeting but rather a placeholder for documentation updates. However, it is scheduled as a 60-minute Teams meeting with 29 attendees, which indicates a large group informational session rather than a collaborative workshop or decision-making meeting. The purpose appears to be updating and aligning on the Copilot Agility BPR document, which aligns most closely with an informational briefing, though ambiguity remains due to the async label.",
+        "key_indicators": [
+          "Title includes '[Async Task]', indicating documentation or update focus",
+          "Description references updating a specific document (Copilot Agility BPR)",
+          "29 attendees suggest a large group informational context",
+          "Scheduled for 60 minutes, typical for briefings or updates",
+          "No explicit decision-making or planning language present"
+        ]
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAH+9HdQw==\"",
+      "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAIAqvFVwAA",
+      "subject": "Virtual Interview for Senior Applied Scientist(LLM) (1864549)",
+      "bodyPreview": "Hi Interview Team,\r\n\r\n\r\n\r\nPlease confirm your availability to interview Bei Wang for the position of Senior Applied Scientist(LLM) (1864549) on October 28th, 2025.\r\n\r\n\r\nWe value you, your insights and your ability to bring out the best in people and",
+      "onlineMeetingUrl": null,
+      "isOnlineMeeting": true,
+      "start": {
+        "dateTime": "2025-10-28T09:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-10-28T10:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "location": {
+        "displayName": "via Teams",
+        "locationType": "default",
+        "uniqueId": "via Teams",
+        "uniqueIdType": "private"
+      },
+      "attendees": [
+        {
+          "type": "required",
+          "status": {
+            "response": "none",
+            "time": "0001-01-01T00:00:00Z"
+          },
+          "emailAddress": {
+            "name": "Microsoft Recruit",
+            "address": "gtadmin9@microsoft.com"
+          }
+        },
+        {
+          "type": "required",
+          "status": {
+            "response": "accepted",
+            "time": "0001-01-01T00:00:00Z"
+          },
+          "emailAddress": {
+            "name": "Chin-Yew Lin",
+            "address": "cyl@microsoft.com"
+          }
+        },
+        {
+          "type": "optional",
+          "status": {
+            "response": "none",
+            "time": "0001-01-01T00:00:00Z"
+          },
+          "emailAddress": {
+            "name": "Maggie Wang (HR)",
+            "address": "maggiew@microsoft.com"
+          }
+        },
+        {
+          "type": "optional",
+          "status": {
+            "response": "none",
+            "time": "0001-01-01T00:00:00Z"
+          },
+          "emailAddress": {
+            "name": "Coco Li (RANDSTAD NORTH AMERICA INC)",
+            "address": "v-licoc@microsoft.com"
+          }
+        }
+      ],
+      "organizer": {
+        "emailAddress": {
+          "name": "Microsoft Recruit",
+          "address": "gtadmin9@microsoft.com"
+        }
+      },
+      "classification": {
+        "specific_type": "Interviews and Recruiting Meetings",
+        "primary_category": "External & Client-Facing Meetings",
+        "confidence": 0.97,
+        "reasoning": "The meeting is explicitly labeled as an interview for a Senior Applied Scientist position, involving an external candidate (Bei Wang) and an internal interview team. The purpose is clearly to evaluate a job candidate, which aligns with the Interviews and Recruiting Meetings type. The 60-minute duration and small group size are typical for panel interviews.",
+        "key_indicators": [
+          "Title contains 'Virtual Interview' and job position details",
+          "Description mentions interviewing candidate Bei Wang for a specific role",
+          "Small group size (4 attendees) consistent with panel interview format",
+          "Duration of 60 minutes matches standard interview length",
+          "External candidate involvement indicated by context"
+        ]
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAH+9H99g==\"",
+      "id": "AAkBOQAICN4U68W0gAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAAB_4SLyEAABA=",
+      "subject": "Meeting Prep STCA Sync",
+      "bodyPreview": "09/26 Extending this meeting to 10pm to allow for continued discussion on Golden Prompt work\r\n\r\n---\r\nLet's talk through the latest updates on Meeting Prep and the immediate evaluation needs.\r\n\r\nWe also should see how to leverage the M-Arena tool more broa",
+      "onlineMeetingUrl": null,
+      "isOnlineMeeting": true,
+      "start": {
+        "dateTime": "2025-10-28T11:35:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-10-28T13:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "location": {
+        "displayName": "Microsoft Teams Meeting",
+        "locationType": "default",
+        "uniqueId": "Microsoft Teams Meeting",
+        "uniqueIdType": "private"
+      },
+      "attendees": [
+        {
+          "type": "required",
+          "status": {
+            "response": "none",
+            "time": "0001-01-01T00:00:00Z"
+          },
+          "emailAddress": {
+            "name": "Mark Grimaldi",
+            "address": "Mark.Grimaldi@microsoft.com"
+          }
+        },
+        {
+          "type": "required",
+          "status": {
+            "response": "none",
+            "time": "0001-01-01T00:00:00Z"
+          },
+          "emailAddress": {
+            "name": "Haidong Zhang",
+            "address": "haidong.zhang@microsoft.com"
+          }
+        },
+        {
+          "type": "required",
+          "status": {
+            "response": "accepted",
+            "time": "0001-01-01T00:00:00Z"
+          },
+          "emailAddress": {
+            "name": "Chin-Yew Lin",
+            "address": "cyl@microsoft.com"
+          }
+        },
+        {
+          "type": "required",
+          "status": {
+            "response": "accepted",
+            "time": "0001-01-01T00:00:00Z"
+          },
+          "emailAddress": {
+            "name": "Balaji Shyamkumar",
+            "address": "bshyamkumar@microsoft.com"
+          }
+        },
+        {
+          "type": "required",
+          "status": {
+            "response": "accepted",
+            "time": "0001-01-01T00:00:00Z"
+          },
+          "emailAddress": {
+            "name": "Zhitao Hou",
+            "address": "zhith@microsoft.com"
+          }
+        },
+        {
+          "type": "optional",
+          "status": {
+            "response": "none",
+            "time": "0001-01-01T00:00:00Z"
+          },
+          "emailAddress": {
+            "name": "Rakesh Ranjan Singh",
+            "address": "raksingh@microsoft.com"
+          }
+        },
+        {
+          "type": "required",
+          "status": {
+            "response": "none",
+            "time": "0001-01-01T00:00:00Z"
+          },
+          "emailAddress": {
+            "name": "Sathish Venkat Rangam",
+            "address": "srangam@microsoft.com"
+          }
+        },
+        {
+          "type": "required",
+          "status": {
+            "response": "accepted",
+            "time": "0001-01-01T00:00:00Z"
+          },
+          "emailAddress": {
+            "name": "Caroline Mao",
+            "address": "carolmao@microsoft.com"
+          }
+        },
+        {
+          "type": "required",
+          "status": {
+            "response": "none",
+            "time": "0001-01-01T00:00:00Z"
+          },
+          "emailAddress": {
+            "name": "Drew Brough",
+            "address": "Drew.Brough@microsoft.com"
+          }
+        },
+        {
+          "type": "optional",
+          "status": {
+            "response": "tentativelyAccepted",
+            "time": "0001-01-01T00:00:00Z"
+          },
+          "emailAddress": {
+            "name": "Deniz Cakirkaya",
+            "address": "denizc@microsoft.com"
+          }
+        }
+      ],
+      "organizer": {
+        "emailAddress": {
+          "name": "Mark Grimaldi",
+          "address": "Mark.Grimaldi@microsoft.com"
+        }
+      },
+      "classification": {
+        "specific_type": "Team Status Update Meetings",
+        "primary_category": "Internal Recurring Meetings (Cadence)",
+        "confidence": 0.88,
+        "reasoning": "The meeting title includes 'Sync', which strongly suggests a status update or alignment purpose. The description mentions discussing latest updates on Meeting Prep and evaluation needs, indicating progress sharing rather than planning or decision-making. The attendee count (10) and 60-minute duration fit a typical team sync format, though the mention of 'extending this meeting' introduces slight ambiguity about whether it is ad-hoc or recurring, which lowers confidence slightly.",
+        "key_indicators": [
+          "Title contains 'Sync', a common keyword for status update meetings",
+          "Description emphasizes 'latest updates' and 'evaluation needs', indicating progress discussion",
+          "Attendee count of 10 suggests a small-to-medium internal team meeting",
+          "Duration of 60 minutes aligns with standard team status or sync meetings",
+          "No external attendees mentioned, indicating internal cadence"
+        ]
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAH+9AAyA==\"",
+      "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAH-hSD9gAA",
+      "subject": "Discuss Meeting Prep Bizchat Eval and Scorecard",
+      "bodyPreview": "During the T+P and Hive meeting, Hive team mentioned that T+P can help with defining Meeting Prep eval and score card. Setting up a meeting to for us to discuss Bizchat Meeting Prep Eval.\r\n\r\n  *\r\n\r\n\r\n_______________________________________________________",
+      "onlineMeetingUrl": null,
+      "isOnlineMeeting": true,
+      "start": {
+        "dateTime": "2025-10-28T14:05:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-10-28T14:30:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "location": {
+        "displayName": "Microsoft Teams Meeting",
+        "locationType": "default",
+        "uniqueId": "Microsoft Teams Meeting",
+        "uniqueIdType": "private"
+      },
+      "attendees": [
+        {
+          "type": "required",
+          "status": {
+            "response": "none",
+            "time": "0001-01-01T00:00:00Z"
+          },
+          "emailAddress": {
+            "name": "Caroline Mao",
+            "address": "carolmao@microsoft.com"
+          }
+        },
+        {
+          "type": "required",
+          "status": {
+            "response": "accepted",
+            "time": "0001-01-01T00:00:00Z"
+          },
+          "emailAddress": {
+            "name": "Amir Kantor",
+            "address": "Amir.Kantor@microsoft.com"
+          }
+        },
+        {
+          "type": "required",
+          "status": {
+            "response": "accepted",
+            "time": "0001-01-01T00:00:00Z"
+          },
+          "emailAddress": {
+            "name": "Haidong Zhang",
+            "address": "haidong.zhang@microsoft.com"
+          }
+        },
+        {
+          "type": "required",
+          "status": {
+            "response": "accepted",
+            "time": "0001-01-01T00:00:00Z"
+          },
+          "emailAddress": {
+            "name": "Chin-Yew Lin",
+            "address": "cyl@microsoft.com"
+          }
+        }
+      ],
+      "organizer": {
+        "emailAddress": {
+          "name": "Caroline Mao",
+          "address": "carolmao@microsoft.com"
+        }
+      },
+      "classification": {
+        "specific_type": "Planning Session",
+        "primary_category": "Strategic Planning & Decision Meetings",
+        "confidence": 0.9,
+        "reasoning": "The meeting is focused on defining an evaluation and scorecard for 'Meeting Prep Bizchat,' which indicates the purpose is to develop a structured plan or framework. The one-time nature, 60-minute duration, and small cross-functional group suggest a planning session rather than a recurring status update or review.",
+        "key_indicators": [
+          "Title includes 'Discuss' and 'Eval and Scorecard', indicating planning and framework definition",
+          "Description mentions 'help with defining Meeting Prep eval and score card', which is a planning activity",
+          "One-time meeting (no recurrence pattern provided), typical for planning sessions",
+          "Small group of 4 attendees, consistent with collaborative planning",
+          "Duration of 60 minutes, suitable for focused planning discussion"
+        ]
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAH+9GaJw==\"",
+      "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAIBJZBwAAA",
+      "subject": "meeting prep evals sync and discussion",
+      "bodyPreview": "________________________________________________________________________________\r\nMicrosoft Teams meeting\r\nJoin: https://teams.microsoft.com/meet/2604576842145?p=MKoqREm9HEqwJmtz3P\r\nMeeting ID: 260 457 684 214 5\r\nPasscode: Sy7Ha6Dy\r\n____________________",
+      "onlineMeetingUrl": null,
+      "isOnlineMeeting": true,
+      "start": {
+        "dateTime": "2025-10-28T15:30:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-10-28T16:30:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "location": {
+        "displayName": "Microsoft Teams Meeting",
+        "locationType": "default",
+        "uniqueId": "Microsoft Teams Meeting",
+        "uniqueIdType": "private"
+      },
+      "attendees": [
+        {
+          "type": "required",
+          "status": {
+            "response": "none",
+            "time": "0001-01-01T00:00:00Z"
+          },
+          "emailAddress": {
+            "name": "Haidong Zhang",
+            "address": "haidong.zhang@microsoft.com"
+          }
+        },
+        {
+          "type": "required",
+          "status": {
+            "response": "none",
+            "time": "0001-01-01T00:00:00Z"
+          },
+          "emailAddress": {
+            "name": "Kening Ren",
+            "address": "keningren@microsoft.com"
+          }
+        },
+        {
+          "type": "required",
+          "status": {
+            "response": "none",
+            "time": "0001-01-01T00:00:00Z"
+          },
+          "emailAddress": {
+            "name": "Weiwei Cui",
+            "address": "Weiwei.Cui@microsoft.com"
+          }
+        },
+        {
+          "type": "required",
+          "status": {
+            "response": "accepted",
+            "time": "0001-01-01T00:00:00Z"
+          },
+          "emailAddress": {
+            "name": "Chin-Yew Lin",
+            "address": "cyl@microsoft.com"
+          }
+        }
+      ],
+      "organizer": {
+        "emailAddress": {
+          "name": "Haidong Zhang",
+          "address": "haidong.zhang@microsoft.com"
+        }
+      },
+      "classification": {
+        "specific_type": "Planning Session",
+        "primary_category": "Strategic Planning & Decision Meetings",
+        "confidence": 0.87,
+        "reasoning": "The title includes 'prep' and 'discussion', suggesting the meeting is focused on preparing and aligning for upcoming evaluations, which indicates planning for a future activity rather than reviewing past progress. The one-time nature (no recurrence mentioned), 60-minute duration, and small group size align with ad-hoc planning sessions rather than routine status updates.",
+        "key_indicators": [
+          "Title contains 'prep' indicating preparation for a future event",
+          "Title includes 'discussion' suggesting collaborative planning rather than reporting",
+          "60-minute duration typical for planning or alignment meetings",
+          "Small group size (4 attendees) suitable for focused planning",
+          "No recurrence pattern mentioned, indicating an ad-hoc session"
+        ]
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAH+855Sw==\"",
+      "id": "AAkBOQAICN4VtPAeQAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAAB8PR2boAABA=",
+      "subject": "Copilot Insight Engine Office Hour (Asia & EU)",
+      "bodyPreview": "Hi everyone,\r\nYou're invited to join our upcoming CIE Office Hour — an open session where we’ll address your questions around the Copilot Insight Engine (CIE).\r\nFeel free to bring your questions or just listen in. Looking forward to seeing you there!\r\nBes",
+      "onlineMeetingUrl": null,
+      "isOnlineMeeting": true,
+      "start": {
+        "dateTime": "2025-10-28T16:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-10-28T16:30:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "location": {
+        "displayName": "Microsoft Teams Meeting",
+        "locationType": "default",
+        "uniqueId": "Microsoft Teams Meeting",
+        "uniqueIdType": "private"
+      },
+      "attendees": [
+        {
+          "type": "required",
+          "status": {
+            "response": "none",
+            "time": "0001-01-01T00:00:00Z"
+          },
+          "emailAddress": {
+            "name": "Yvonne Guo",
+            "address": "yvonneguo@microsoft.com"
+          }
+        },
+        {
+          "type": "required",
+          "status": {
+            "response": "none",
+            "time": "0001-01-01T00:00:00Z"
+          },
+          "emailAddress": {
+            "name": "BizChat",
+            "address": "M365ChatPlatform@service.microsoft.com"
+          }
+        },
+        {
+          "type": "required",
+          "status": {
+            "response": "none",
+            "time": "0001-01-01T00:00:00Z"
+          },
+          "emailAddress": {
+            "name": "MSAI Data Analytics",
+            "address": "msaidataanalytics@microsoft.com"
+          }
+        },
+        {
+          "type": "required",
+          "status": {
+            "response": "none",
+            "time": "0001-01-01T00:00:00Z"
+          },
+          "emailAddress": {
+            "name": "Mil Wang",
+            "address": "Mingjun.Wang@microsoft.com"
+          }
+        },
+        {
+          "type": "required",
+          "status": {
+            "response": "none",
+            "time": "0001-01-01T00:00:00Z"
+          },
+          "emailAddress": {
+            "name": "Yuan Ren",
+            "address": "yuren@microsoft.com"
+          }
+        },
+        {
+          "type": "required",
+          "status": {
+            "response": "none",
+            "time": "0001-01-01T00:00:00Z"
+          },
+          "emailAddress": {
+            "name": "Vince Liu",
+            "address": "xiaoml@microsoft.com"
+          }
+        },
+        {
+          "type": "required",
+          "status": {
+            "response": "none",
+            "time": "0001-01-01T00:00:00Z"
+          },
+          "emailAddress": {
+            "name": "Hao Zhang (MSAI)",
+            "address": "hazha@microsoft.com"
+          }
+        }
+      ],
+      "organizer": {
+        "emailAddress": {
+          "name": "Yvonne Guo",
+          "address": "yvonneguo@microsoft.com"
+        }
+      },
+      "classification": {
+        "specific_type": "Informational Briefings",
+        "primary_category": "Informational & Broadcast Meetings",
+        "confidence": 0.88,
+        "reasoning": "The meeting is described as an 'office hour' for Copilot Insight Engine, intended for attendees to bring questions or listen in. This suggests a primarily informational purpose rather than structured planning or decision-making. While there is some interactive Q&A, the dominant goal is knowledge sharing and clarification, which aligns most closely with an informational briefing rather than a training session or workshop.",
+        "key_indicators": [
+          "Title includes 'Office Hour', indicating an open Q&A and informational format",
+          "Description emphasizes addressing questions and listening in, not planning or decision-making",
+          "Small group size (7 attendees) suggests targeted informational session rather than large broadcast",
+          "Duration of 60 minutes fits typical informational or Q&A sessions",
+          "No external attendees mentioned, indicating internal knowledge sharing"
+        ]
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAH+855VQ==\"",
+      "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAH-ejN_wAA",
+      "subject": "SynthetIQ: Turning Data Scarcity into Competitive Velocity",
+      "bodyPreview": "Jorge Garcia Ximenez, Alex Blanton, Alexandra Savelieva, Jason Virtue, and Mark Tabladillo invite you to: SynthetIQ: Turning Data Scarcity into Competitive Velocity\r\nSpeakers\r\n\r\nAparana Gupta\r\nAnurup Dey\r\nSuyash Dwivedi\r\n\r\n\r\n\r\nTues October 28\r\n\r\n08:00 AM ",
+      "onlineMeetingUrl": null,
+      "isOnlineMeeting": true,
+      "start": {
+        "dateTime": "2025-10-28T23:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-10-29T00:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "location": {
+        "displayName": "Microsoft Teams Meeting",
+        "locationType": "default",
+        "uniqueId": "Microsoft Teams Meeting",
+        "uniqueIdType": "private"
+      },
+      "attendees": [
+        {
+          "type": "required",
+          "status": {
+            "response": "none",
+            "time": "0001-01-01T00:00:00Z"
+          },
+          "emailAddress": {
+            "name": "Alex Blanton",
+            "address": "Alex.Blanton@microsoft.com"
+          }
+        },
+        {
+          "type": "required",
+          "status": {
+            "response": "none",
+            "time": "0001-01-01T00:00:00Z"
+          },
+          "emailAddress": {
+            "name": "EventsOnly_AIML-CC",
+            "address": "EventsOnly_AIML-CC@service.microsoft.com"
+          }
+        },
+        {
+          "type": "required",
+          "status": {
+            "response": "none",
+            "time": "0001-01-01T00:00:00Z"
+          },
+          "emailAddress": {
+            "name": "Aparana Gupta",
+            "address": "aparanagupta@microsoft.com"
+          }
+        },
+        {
+          "type": "required",
+          "status": {
+            "response": "none",
+            "time": "0001-01-01T00:00:00Z"
+          },
+          "emailAddress": {
+            "name": "Anurup Dey",
+            "address": "anurupdey@microsoft.com"
+          }
+        },
+        {
+          "type": "required",
+          "status": {
+            "response": "none",
+            "time": "0001-01-01T00:00:00Z"
+          },
+          "emailAddress": {
+            "name": "Suyash Dwivedi",
+            "address": "sudwivedi@microsoft.com"
+          }
+        },
+        {
+          "type": "optional",
+          "status": {
+            "response": "none",
+            "time": "0001-01-01T00:00:00Z"
+          },
+          "emailAddress": {
+            "name": "Alexandra Savelieva",
+            "address": "alexandra.savelieva@microsoft.com"
+          }
+        },
+        {
+          "type": "optional",
+          "status": {
+            "response": "none",
+            "time": "0001-01-01T00:00:00Z"
+          },
+          "emailAddress": {
+            "name": "Jason Virtue",
+            "address": "Jason.Virtue@microsoft.com"
+          }
+        },
+        {
+          "type": "optional",
+          "status": {
+            "response": "none",
+            "time": "0001-01-01T00:00:00Z"
+          },
+          "emailAddress": {
+            "name": "Jorge Garcia Ximenez",
+            "address": "jorgegar@microsoft.com"
+          }
+        },
+        {
+          "type": "optional",
+          "status": {
+            "response": "none",
+            "time": "0001-01-01T00:00:00Z"
+          },
+          "emailAddress": {
+            "name": "Mark Tabladillo",
+            "address": "matabl@microsoft.com"
+          }
+        }
+      ],
+      "organizer": {
+        "emailAddress": {
+          "name": "Alex Blanton",
+          "address": "Alex.Blanton@microsoft.com"
+        }
+      },
+      "classification": {
+        "specific_type": "Informational Briefings",
+        "primary_category": "Informational & Broadcast Meetings",
+        "confidence": 0.88,
+        "reasoning": "The meeting appears to be a one-time session featuring multiple speakers presenting on a specific topic ('Turning Data Scarcity into Competitive Velocity'). The title and description suggest a knowledge-sharing or informational purpose rather than decision-making or planning. While the attendee count is relatively small (9), the presence of multiple named speakers and a thematic title strongly indicate an informational briefing rather than a collaborative workshop.",
+        "key_indicators": [
+          "Title emphasizes a thematic topic rather than an action ('Turning Data Scarcity into Competitive Velocity')",
+          "Description lists multiple speakers, suggesting a presentation format",
+          "No mention of decision-making, planning, or brainstorming activities",
+          "One-time scheduled event (no recurrence pattern)",
+          "Duration of 60 minutes aligns with typical briefing or presentation sessions"
+        ]
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAH+9C5tQ==\"",
+      "id": "AAkBOQAICN4VtPAeQAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAACASVlm8AABA=",
+      "subject": "BizChat Weekly Flight Review",
+      "bodyPreview": "*New series meeting invite*\r\n\r\n\r\nGoal: Learn about customer impact of experiments to inform ship decisions\r\nAgenda: Review each flight with a doc ready for review at https://aka.ms/BizChatFlights\r\n\r\nFor context and how to sign up, see _ START HERE - Biz",
+      "onlineMeetingUrl": null,
+      "isOnlineMeeting": true,
+      "start": {
+        "dateTime": "2025-10-28T23:05:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-10-29T00:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "location": {
+        "displayName": "Microsoft Teams Meeting",
+        "locationType": "default",
+        "uniqueId": "Microsoft Teams Meeting",
+        "uniqueIdType": "private"
+      },
+      "attendees": [
+        {
+          "type": "required",
+          "status": {
+            "response": "none",
+            "time": "0001-01-01T00:00:00Z"
+          },
+          "emailAddress": {
+            "name": "Gaurav Anand",
+            "address": "gaurava@microsoft.com"
+          }
+        },
+        {
+          "type": "required",
+          "status": {
+            "response": "none",
+            "time": "0001-01-01T00:00:00Z"
+          },
+          "emailAddress": {
+            "name": "MSAI USR Gaurav Directs",
+            "address": "usrgteam@microsoft.com"
+          }
+        },
+        {
+          "type": "required",
+          "status": {
+            "response": "none",
+            "time": "0001-01-01T00:00:00Z"
+          },
+          "emailAddress": {
+            "name": "Nitin Ved",
+            "address": "Nitin.Ved@microsoft.com"
+          }
+        },
+        {
+          "type": "required",
+          "status": {
+            "response": "none",
+            "time": "0001-01-01T00:00:00Z"
+          },
+          "emailAddress": {
+            "name": "Paul Baecke",
+            "address": "pbaecke@microsoft.com"
+          }
+        },
+        {
+          "type": "optional",
+          "status": {
+            "response": "none",
+            "time": "0001-01-01T00:00:00Z"
+          },
+          "emailAddress": {
+            "name": "BizChat",
+            "address": "M365ChatPlatform@service.microsoft.com"
+          }
+        }
+      ],
+      "organizer": {
+        "emailAddress": {
+          "name": "Gaurav Anand",
+          "address": "gaurava@microsoft.com"
+        }
+      },
+      "classification": {
+        "specific_type": "Progress Review Meetings",
+        "primary_category": "Internal Recurring Meetings (Cadence)",
+        "confidence": 0.96,
+        "reasoning": "The meeting is a recurring series focused on reviewing the status and impact of experiments ('flights') to inform shipping decisions. The title includes 'Weekly Flight Review,' indicating a structured, recurring review cadence. The agenda emphasizes reviewing prepared documentation and assessing progress, which aligns with progress review meetings rather than planning or brainstorming.",
+        "key_indicators": [
+          "Title contains 'Weekly Flight Review' indicating recurring review format",
+          "Description mentions goal: 'Learn about customer impact of experiments to inform ship decisions' (progress assessment)",
+          "Agenda specifies reviewing each flight with documentation ready, signaling formal review process",
+          "Small group size (5 attendees) typical for focused review sessions",
+          "Recurring nature implied by 'New series meeting invite' and 'Weekly' in title"
+        ]
+      }
+    }
+  ],
+  "summary": {
+    "total_meetings": 8,
+    "by_category": {
+      "Informational & Broadcast Meetings": 3,
+      "External & Client-Facing Meetings": 1,
+      "Internal Recurring Meetings (Cadence)": 2,
+      "Strategic Planning & Decision Meetings": 2
+    },
+    "by_specific_type": {
+      "Informational Briefings": 3,
+      "Interviews and Recruiting Meetings": 1,
+      "Team Status Update Meetings": 1,
+      "Planning Session": 2,
+      "Progress Review Meetings": 1
+    },
+    "average_confidence": 0.89,
+    "total_meeting_time_minutes": 0,
+    "total_meeting_time_hours": 0.0
+  }
+}

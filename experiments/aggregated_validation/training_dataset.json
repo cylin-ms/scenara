@@ -1,0 +1,156 @@
+{
+  "metadata": {
+    "created": "2025-10-28T17:07:15.987125",
+    "total_examples": 6,
+    "purpose": "Training data for meeting classification model fine-tuning",
+    "split": "training (80%)"
+  },
+  "examples": [
+    {
+      "id": "AAkBOQAICN4U68W0gAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAAB8PSsC4AABA=",
+      "date": "2025-10-28",
+      "features": {
+        "subject": "Update Copilot Agility BPR [Async Task]",
+        "body_preview": "Time set aside for updating the copilot agility BPR doc at https://aka.ms/CopilotAgilityBPR-AlwaysTheLatest.\r\n\r\n\r\n\r\n________________________________________________________________________________\r\nMi",
+        "attendee_count": 29,
+        "duration_minutes": 60.0,
+        "keywords": [
+          "[async task]"
+        ]
+      },
+      "ground_truth": {
+        "specific_type": "Team Status Update Meetings",
+        "primary_category": "Internal Recurring Meetings (Cadence)",
+        "difficulty": "easy",
+        "notes": ""
+      },
+      "validation_metadata": {
+        "timestamp": "2025-10-28T16:49:03.207493",
+        "gpt5_correct": false,
+        "copilot_correct": true
+      }
+    },
+    {
+      "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAIAqvFVwAA",
+      "date": "2025-10-28",
+      "features": {
+        "subject": "Virtual Interview for Senior Applied Scientist(LLM) (1864549)",
+        "body_preview": "Hi Interview Team,\r\n\r\n\r\n\r\nPlease confirm your availability to interview Bei Wang for the position of Senior Applied Scientist(LLM) (1864549) on October 28th, 2025.\r\n\r\n\r\nWe value you, your insights and",
+        "attendee_count": 4,
+        "duration_minutes": 60.0,
+        "keywords": [
+          "interview"
+        ]
+      },
+      "ground_truth": {
+        "specific_type": null,
+        "primary_category": null,
+        "difficulty": "easy",
+        "notes": ""
+      },
+      "validation_metadata": {
+        "timestamp": "2025-10-28T16:49:34.483344",
+        "gpt5_correct": true,
+        "copilot_correct": true
+      }
+    },
+    {
+      "id": "AAkBOQAICN4U68W0gAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAAB_4SLyEAABA=",
+      "date": "2025-10-28",
+      "features": {
+        "subject": "Meeting Prep STCA Sync",
+        "body_preview": "09/26 Extending this meeting to 10pm to allow for continued discussion on Golden Prompt work\r\n\r\n---\r\nLet's talk through the latest updates on Meeting Prep and the immediate evaluation needs.\r\n\r\nWe als",
+        "attendee_count": 10,
+        "duration_minutes": 85.0,
+        "keywords": [
+          "meeting prep",
+          "sync"
+        ]
+      },
+      "ground_truth": {
+        "specific_type": "Team Status Update Meetings",
+        "primary_category": "Internal Recurring Meetings (Cadence)",
+        "difficulty": "easy",
+        "notes": ""
+      },
+      "validation_metadata": {
+        "timestamp": "2025-10-28T16:50:06.652793",
+        "gpt5_correct": true,
+        "copilot_correct": false
+      }
+    },
+    {
+      "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAH-hSD9gAA",
+      "date": "2025-10-28",
+      "features": {
+        "subject": "Discuss Meeting Prep Bizchat Eval and Scorecard",
+        "body_preview": "During the T+P and Hive meeting, Hive team mentioned that T+P can help with defining Meeting Prep eval and score card. Setting up a meeting to for us to discuss Bizchat Meeting Prep Eval.\r\n\r\n  *\r\n\r\n\r\n",
+        "attendee_count": 4,
+        "duration_minutes": 25.0,
+        "keywords": [
+          "meeting prep"
+        ]
+      },
+      "ground_truth": {
+        "specific_type": null,
+        "primary_category": null,
+        "difficulty": "easy",
+        "notes": ""
+      },
+      "validation_metadata": {
+        "timestamp": "2025-10-28T16:50:49.228688",
+        "gpt5_correct": true,
+        "copilot_correct": true
+      }
+    },
+    {
+      "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAIBJZBwAAA",
+      "date": "2025-10-28",
+      "features": {
+        "subject": "meeting prep evals sync and discussion",
+        "body_preview": "________________________________________________________________________________\r\nMicrosoft Teams meeting\r\nJoin: https://teams.microsoft.com/meet/2604576842145?p=MKoqREm9HEqwJmtz3P\r\nMeeting ID: 260 45",
+        "attendee_count": 4,
+        "duration_minutes": 60.0,
+        "keywords": [
+          "meeting prep",
+          "sync"
+        ]
+      },
+      "ground_truth": {
+        "specific_type": "Team Status Update Meetings",
+        "primary_category": "Internal Recurring Meetings (Cadence)",
+        "difficulty": "easy",
+        "notes": ""
+      },
+      "validation_metadata": {
+        "timestamp": "2025-10-28T16:51:38.214378",
+        "gpt5_correct": false,
+        "copilot_correct": false
+      }
+    },
+    {
+      "id": "AAkBOQAICN4VtPAeQAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAAB8PR2boAABA=",
+      "date": "2025-10-28",
+      "features": {
+        "subject": "Copilot Insight Engine Office Hour (Asia & EU)",
+        "body_preview": "Hi everyone,\r\nYou're invited to join our upcoming CIE Office Hour \u2014 an open session where we\u2019ll address your questions around the Copilot Insight Engine (CIE).\r\nFeel free to bring your questions or ju",
+        "attendee_count": 7,
+        "duration_minutes": 30.0,
+        "keywords": [
+          "office hour"
+        ]
+      },
+      "ground_truth": {
+        "specific_type": null,
+        "primary_category": null,
+        "difficulty": "medium",
+        "notes": ""
+      },
+      "validation_metadata": {
+        "timestamp": "2025-10-28T16:53:48.690233",
+        "gpt5_correct": true,
+        "copilot_correct": true
+      }
+    }
+  ]
+}

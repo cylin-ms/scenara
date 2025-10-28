@@ -2,6 +2,9 @@
 """
 LLM-Based Meeting Classifier using Ollama
 Enhanced meeting classification with gpt-oss:20b model
+
+Uses standardized prompt from prompts/meeting_classification_prompt.md
+based on official Enterprise Meeting Taxonomy (Chin-Yew Lin).
 """
 
 import ollama
@@ -10,65 +13,21 @@ import re
 from typing import Dict, Any, List, Optional
 import logging
 
+# Import standardized prompt
+from prompts import (
+    create_classification_prompt,
+    get_prompt_metadata,
+    get_system_message
+)
+
 class OllamaLLMMeetingClassifier:
     def __init__(self, model_name: str = "gpt-oss:20b"):
         self.model_name = model_name
         self.client = ollama.Client()
         
-        # Enterprise Meeting Taxonomy - updated with more specific categories
-        self.enterprise_taxonomy = {
-            "Strategic Planning & Decision": [
-                "Strategic Planning Session",
-                "Decision-Making Meeting", 
-                "Problem-Solving Meeting",
-                "Brainstorming Session",
-                "Workshop/Design Session",
-                "Budget Planning Meeting",
-                "Project Planning Meeting",
-                "Risk Assessment Meeting"
-            ],
-            "Internal Recurring (Cadence)": [
-                "Team Status Update/Standup",
-                "Progress Review Meeting",
-                "One-on-One Meeting",
-                "Team Retrospective",
-                "Governance/Leadership Meeting",
-                "Performance Review",
-                "Weekly/Monthly Check-in"
-            ],
-            "External & Client-Facing": [
-                "Sales & Client Meeting",
-                "Vendor/Supplier Meeting", 
-                "Partnership Meeting",
-                "Interview Meeting",
-                "Client Training/Onboarding",
-                "Customer Discovery Call",
-                "Contract Negotiation"
-            ],
-            "Informational & Broadcast": [
-                "All-Hands/Town Hall",
-                "Informational Briefing",
-                "Training Session",
-                "Webinar/Presentation",
-                "Knowledge Sharing Session",
-                "Product Demo",
-                "Announcement Meeting"
-            ],
-            "Team-Building & Culture": [
-                "Team-Building Activity",
-                "Recognition/Celebration Event",
-                "Social/Networking Event",
-                "Community Meeting",
-                "Offsite/Retreat",
-                "Welcome/Farewell Event"
-            ]
-        }
-        
-        # Flattened list for LLM prompt
-        self.all_meeting_types = []
-        for category, types in self.enterprise_taxonomy.items():
-            for meeting_type in types:
-                self.all_meeting_types.append(f"{meeting_type} ({category})")
+        # Get prompt metadata for tracking
+        self.prompt_metadata = get_prompt_metadata()
+        logging.info(f"Initialized Ollama classifier with prompt version {self.prompt_metadata['version']}")
     
     def classify_meeting_with_llm(self, subject: str, description: str = "", attendees: List[str] = None, duration_minutes: int = 60) -> Dict[str, Any]:
         """
@@ -89,17 +48,20 @@ class OllamaLLMMeetingClassifier:
         # Prepare context for LLM
         meeting_context = self._prepare_meeting_context(subject, description, attendees, duration_minutes)
         
-        # Create prompt for LLM
+        # Create prompt for LLM (uses standardized prompt from prompts/)
         prompt = self._create_classification_prompt(meeting_context)
         
         try:
+            # Get standardized system message
+            system_msg = get_system_message()
+            
             # Call Ollama LLM
             response = self.client.chat(
                 model=self.model_name,
                 messages=[
                     {
                         "role": "system",
-                        "content": "You are an expert business analyst specializing in meeting classification. You analyze meeting information and classify them according to enterprise meeting taxonomy with high accuracy."
+                        "content": system_msg
                     },
                     {
                         "role": "user", 
@@ -109,13 +71,17 @@ class OllamaLLMMeetingClassifier:
                 options={
                     "temperature": 0.1,  # Low temperature for consistent classification
                     "top_p": 0.9,
-                    "num_ctx": 4096
+                    "num_ctx": 8192  # Increased for longer prompt
                 }
             )
             
             # Parse LLM response
             llm_output = response['message']['content']
             classification = self._parse_llm_response(llm_output)
+            
+            # Add prompt metadata to result
+            classification['prompt_version'] = self.prompt_metadata['version']
+            classification['taxonomy_source'] = self.prompt_metadata['taxonomy_source']
             
             return classification
             
@@ -174,38 +140,21 @@ class OllamaLLMMeetingClassifier:
         return "\n".join(context_parts)
     
     def _create_classification_prompt(self, meeting_context: str) -> str:
-        """Create detailed classification prompt for LLM"""
+        """
+        Create classification prompt using standardized prompt from prompts/.
         
-        meeting_types_text = "\n".join([f"- {mt}" for mt in self.all_meeting_types])
+        This ensures consistency with official Enterprise Meeting Taxonomy
+        and allows prompt updates without modifying classifier code.
         
-        prompt = f"""
-Please analyze the following meeting information and classify it according to the Enterprise Meeting Taxonomy.
-
-MEETING INFORMATION:
-{meeting_context}
-
-AVAILABLE MEETING TYPES:
-{meeting_types_text}
-
-CLASSIFICATION REQUIREMENTS:
-1. Select the most appropriate meeting type from the list above
-2. Provide the primary category (e.g., "Strategic Planning & Decision")
-3. Provide the specific meeting type (e.g., "Budget Planning Meeting")
-4. Assign a confidence score from 0.0 to 1.0
-5. Provide a brief reasoning for your classification
-
-RESPONSE FORMAT (JSON):
-{{
-    "primary_category": "Category Name",
-    "specific_type": "Specific Meeting Type",
-    "confidence": 0.95,
-    "reasoning": "Brief explanation of why this classification was chosen",
-    "alternative_matches": ["Alternative Type 1", "Alternative Type 2"]
-}}
-
-Analyze the meeting information and provide your classification:"""
-        
-        return prompt
+        Args:
+            meeting_context: Formatted meeting information
+            
+        Returns:
+            str: Complete classification prompt
+        """
+        # Use standardized prompt from prompts module
+        # This loads the official taxonomy and guidelines
+        return create_classification_prompt(meeting_context, style="detailed")
     
     def _parse_llm_response(self, llm_output: str) -> Dict[str, Any]:
         """Parse LLM response and extract classification"""

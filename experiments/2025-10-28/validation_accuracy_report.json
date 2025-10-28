@@ -1,0 +1,70 @@
+{
+  "validation_date": "2025-10-28T16:49:03.207481",
+  "total_meetings": 8,
+  "accuracy": {
+    "gpt5": {
+      "correct": 6,
+      "total": 8,
+      "percentage": 75.0
+    },
+    "copilot": {
+      "correct": 6,
+      "total": 8,
+      "percentage": 75.0
+    }
+  },
+  "agreement": {
+    "both_correct": 5,
+    "both_wrong": 1,
+    "cross_model_agreement": 87.5
+  },
+  "errors": {
+    "gpt5": [
+      {
+        "meeting": "Update Copilot Agility BPR [Async Task]",
+        "ai_type": "Informational Briefings",
+        "correct_type": "Team Status Update Meetings",
+        "confidence": 0.78
+      },
+      {
+        "meeting": "meeting prep evals sync and discussion",
+        "ai_type": "Planning Session",
+        "correct_type": "Team Status Update Meetings",
+        "confidence": 0.87
+      }
+    ],
+    "copilot": [
+      {
+        "meeting": "Meeting Prep STCA Sync",
+        "ai_type": "Planning Sessions",
+        "correct_type": "Team Status Update Meetings",
+        "confidence": 0.88
+      },
+      {
+        "meeting": "meeting prep evals sync and discussion",
+        "ai_type": "Planning Sessions",
+        "correct_type": "Team Status Update Meetings",
+        "confidence": 0.85
+      }
+    ]
+  },
+  "difficulty_breakdown": {
+    "easy": {
+      "total": 7,
+      "gpt5_correct": 5,
+      "copilot_correct": 5
+    },
+    "medium": {
+      "total": 1,
+      "gpt5_correct": 1,
+      "copilot_correct": 1
+    },
+    "hard": {
+      "total": 0,
+      "gpt5_correct": 0,
+      "copilot_correct": 0
+    }
+  },
+  "winner": "TIE",
+  "production_ready": false
+}
