@@ -224,14 +224,21 @@ Scenara 2.0 is an enterprise meeting intelligence system that evolved from the P
 - [ ] Extract reusable authentication and API patterns from SilverFlow
 
 ### �💤 Daily Status Update (October 28, 2025)
-**Status**: ACTIVE - Repository setup and cross-platform workflow deployment
+**Status**: ACTIVE - Meeting extraction fixed, ready for macOS deployment
 **Today's Accomplishments**:
 - ✅ **GitHub Repository Created**: https://github.com/cylin-ms/scenara (950 files, 653K lines)
-- ✅ **Meeting Extraction Workflow**: Daily meeting extraction with automatic fallback
-- ✅ **Classification Pipeline**: LLM-based meeting type classification (31+ types)
+- ✅ **Meeting Extraction Fixed**: Subprocess path bug resolved, extracts 8 meetings for today
+- ✅ **SilverFlow Graph API Integration**: Proper ISO datetime format usage documented
+- ✅ **Classification Pipeline**: LLM-based meeting type classification (31+ types) ready
 - ✅ **Cross-Platform Documentation**: Complete guides for Windows/macOS/Linux
 - ✅ **Git Cleanup**: Removed 185 Mac resource fork files, fixed git index errors
-- ✅ **Production Ready**: All code pushed to master, ready for macOS testing
+- ✅ **.cursorrules Updated**: New Graph API lessons, macOS deployment notes added
+
+**Today's Meeting Data** (October 28, 2025):
+- ✅ **Extracted**: 8 meetings (was reporting 0 due to outdated cache)
+- 📅 **Range**: 7:00 AM - 11:05 PM Beijing time
+- 📁 **Saved to**: `data/meetings/meetings_2025-10-28.json`
+- 🎯 **Ready for**: Classification and cross-platform testing
 
 **Recent Accomplishments** (October 22-26, 2025):
 - ✅ **SilverFlow Integration**: 92.6% confidence scoring, 8 organizational insights
@@ -241,13 +248,22 @@ Scenara 2.0 is an enterprise meeting intelligence system that evolved from the P
 - ✅ **Algorithm Documentation**: COLLABORATOR_DETECTION_ALGORITHM.md (500+ lines)
 - ✅ **Daily Logging System**: 5 sessions logged, 26 accomplishments tracked
 
-**Next Focus**: 
-- Test meeting extraction and classification on macOS branch
-- Compare classification results across platforms
-- Validate LLM integration on different environments
-- Document platform-specific differences
-- Integrate meeting classifications into collaborator discovery
-- Consider fresh calendar extraction for post-October 24 data
+**Next Focus - macOS Branch**: 
+- [ ] Pull latest changes from https://github.com/cylin-ms/scenara
+- [ ] Run `python3 get_todays_meetings.py` to verify extraction works on macOS
+- [ ] Test MSAL authentication (may require device code flow without Windows Broker)
+- [ ] Run `python3 classify_todays_meetings.py` for LLM classification
+- [ ] Compare classification results (Windows GPT-4o vs macOS Ollama gpt-oss:20b)
+- [ ] Document any platform-specific authentication differences
+- [ ] Validate SilverFlow Graph API script works on macOS
+- [ ] Test full workflow: Extract → Classify → Analyze
+
+**SilverFlow Graph API Integration Notes for macOS**:
+- Script: `SilverFlow/data/graph_get_meetings.py`
+- Authentication: MSAL (Windows Broker on Windows, likely device code on macOS)
+- ISO datetime format: `"2025-10-28T00:00:00" "2025-10-29T00:00:00"` (works cross-platform)
+- Output: `SilverFlow/data/out/graph_meetings.json` (same on all platforms)
+- Fields: Subject, start, end, attendees, organizer, body preview, online meeting status
 
 ## Tools Available
 
@@ -369,6 +385,62 @@ Platform detection identifies:
 - ✅ **Path handling**: Uses `pathlib.Path()` for cross-platform compatibility
 - ✅ **Line endings**: Configured `core.autocrlf false`
 
+**Meeting Extraction Fix - October 28, 2025**:
+- ❌ **Initial Issue**: `get_todays_meetings.py` reported 0 meetings (cached data outdated)
+- 🔍 **Root Cause**: Cached calendar data ended Oct 24, but today is Oct 28
+- ✅ **Solution**: Use SilverFlow Graph API with proper ISO datetime format
+- 📊 **Result**: Found **8 meetings** for today (was reporting 0)
+
+**SilverFlow Graph API Integration** (`SilverFlow/data/graph_get_meetings.py`):
+- 📍 **Script Location**: `SilverFlow/data/graph_get_meetings.py`
+- 🔐 **Authentication**: MSAL with Windows Broker (WAM) - automatic single sign-on
+- ⏰ **Date Range Formats**:
+  - **Days forward**: `python graph_get_meetings.py 0` (today only)
+  - **Days range**: `python graph_get_meetings.py -7 7` (7 days back + 7 forward)
+  - **ISO datetime**: `python graph_get_meetings.py "2025-10-28T00:00:00" "2025-10-29T00:00:00"`
+- 📤 **Output**: `SilverFlow/data/out/graph_meetings.json` + `graph_meetings.md`
+- 🎯 **Field Selection**: `--select "subject,start,end,location,attendees,organizer,bodyPreview,isOnlineMeeting"`
+- 🔢 **Max Events**: `--max-events 100` (default: 5000)
+
+**Correct Usage Examples**:
+```bash
+# Today only (0 days forward from now)
+cd SilverFlow/data
+python graph_get_meetings.py 0 --select "subject,start,end,attendees,organizer" --max-events 50
+
+# Specific date range (ISO format) - MOST RELIABLE
+python graph_get_meetings.py "2025-10-28T00:00:00" "2025-10-29T00:00:00" --select "subject,start,end,attendees" --max-events 100
+
+# 7 days back to 7 days forward
+python graph_get_meetings.py -7 7 --max-events 200
+```
+
+**get_todays_meetings.py Subprocess Fix**:
+```python
+# CORRECT approach - relative path with correct working directory
+result = subprocess.run(
+    [sys.executable, "graph_get_meetings.py", "0", "--select", "...", "--max-events", "50"],
+    cwd="SilverFlow/data",  # Set working directory first
+    capture_output=True,
+    text=True
+)
+# Output appears in: SilverFlow/data/out/graph_meetings.json
+```
+
+**Key Learnings**:
+- ✅ ISO datetime format is most reliable: `"2025-10-28T00:00:00" "2025-10-29T00:00:00"`
+- ✅ Always use relative path ("graph_get_meetings.py") when setting `cwd` parameter
+- ✅ Default date range (0 days forward) may include late-night meetings from next day
+- ✅ Graph API returns meetings in UTC, script converts to user's timezone (Asia/Shanghai)
+- ✅ Authentication is automatic via Windows Broker - no credentials needed
+- ✅ Output includes both JSON and Markdown formats for easy viewing
+
+**Today's Meeting Data** (October 28, 2025):
+- ✅ **Total**: 8 meetings extracted successfully
+- 📊 **Range**: 7:00 AM - 11:05 PM (Beijing time)
+- 📁 **Saved to**: `data/meetings/meetings_2025-10-28.json`
+- 🎯 **Ready for**: Classification and analysis
+
 **Next Steps - macOS Branch**:
 - [ ] Clone/pull repository on macOS system
 - [ ] Run `python3 get_todays_meetings.py` to extract meetings
@@ -377,7 +449,7 @@ Platform detection identifies:
 - [ ] Document any platform-specific differences
 - [ ] Test LLM integration (Ollama vs cloud providers)
 - [ ] Validate meeting type accuracy across platforms
-- ✅ "check the return result's type from its json field to see if there are more reliable detection method"
+- [ ] Verify SilverFlow Graph API works on macOS (MSAL authentication)
 
 **Algorithm Documentation Created**:
 - 📋 **COLLABORATOR_DETECTION_ALGORITHM.md** - Comprehensive technical summary (500+ lines)
@@ -972,6 +1044,134 @@ Platform detection identifies:
 - **Continuity Value**: Daily logs provide context for next session, prevent re-explaining previous work
 - **Timezone Note**: Logger uses UTC, so Oct 26 local may be Oct 25 UTC in filenames
 - **Session Tracking**: Each session gets unique ID, duration is automatically calculated
+
+### SilverFlow Graph API Meeting Extraction Lessons (October 28, 2025) 📅 PRODUCTION DEPLOYMENT
+
+**Context**: User reported 0 meetings extracted on macOS, but had 5 meetings scheduled today
+
+**PROBLEM DIAGNOSIS**:
+1. **Cached Data Outdated**: `my_calendar_events_complete_attendees.json` ended Oct 24, today was Oct 28 (4-day gap)
+2. **Fallback Limitation**: Script fell back to cache when Graph API method failed
+3. **User Expectation**: "I should have 5 meetings today" - needed fresh real-time extraction
+
+**ROOT CAUSE - Subprocess Path Bug**:
+```python
+# ❌ WRONG - Nested path error
+silverflow_script = Path("SilverFlow/data/graph_get_meetings.py")
+result = subprocess.run(
+    [sys.executable, str(silverflow_script), "0"],  # Absolute path
+    cwd=str(silverflow_script.parent),  # Sets working directory
+    ...
+)
+# Error: Can't open 'SilverFlow/data/SilverFlow/data/graph_get_meetings.py'
+# Reason: When cwd is set, script path becomes relative and doubles!
+```
+
+**SOLUTION - Relative Path with Correct CWD**:
+```python
+# ✅ CORRECT - Use relative path when setting cwd
+result = subprocess.run(
+    [sys.executable, "graph_get_meetings.py", "0"],  # Relative to cwd
+    cwd="SilverFlow/data",  # Working directory
+    capture_output=True,
+    text=True
+)
+# Works! Output appears in: SilverFlow/data/out/graph_meetings.json
+```
+
+**GRAPH API SCRIPT USAGE** (`SilverFlow/data/graph_get_meetings.py`):
+- **Authentication**: MSAL with Windows Broker (WAM) - automatic Microsoft SSO
+- **Date Ranges**:
+  - Days forward: `python graph_get_meetings.py 0` (today only)
+  - Days back/forward: `python graph_get_meetings.py -7 7` (7 days each direction)
+  - **ISO datetime (MOST RELIABLE)**: `python graph_get_meetings.py "2025-10-28T00:00:00" "2025-10-29T00:00:00"`
+- **Field Selection**: `--select "subject,start,end,location,attendees,organizer,bodyPreview,isOnlineMeeting"`
+- **Max Events**: `--max-events 100` (default: 5000)
+- **Output**: `SilverFlow/data/out/graph_meetings.json` + `graph_meetings.md`
+
+**BEST PRACTICES**:
+```bash
+# Navigate to correct directory
+cd SilverFlow/data
+
+# Today only (may include late-night meetings from next day due to UTC)
+python graph_get_meetings.py 0 --select "subject,start,end,attendees" --max-events 50
+
+# Specific date (most reliable for exact day)
+python graph_get_meetings.py "2025-10-28T00:00:00" "2025-10-29T00:00:00" --select "subject,start,end,attendees" --max-events 100
+
+# Week range
+python graph_get_meetings.py -7 7 --max-events 200
+```
+
+**PYTHON SUBPROCESS INTEGRATION**:
+```python
+import subprocess
+from pathlib import Path
+
+# Method 1: Relative path with cwd (RECOMMENDED)
+result = subprocess.run(
+    [sys.executable, "graph_get_meetings.py", "0", 
+     "--select", "subject,start,end,attendees,organizer,bodyPreview,isOnlineMeeting",
+     "--max-events", "50"],
+    cwd="SilverFlow/data",
+    capture_output=True,
+    text=True
+)
+
+# Method 2: Absolute path without cwd
+script_path = Path("SilverFlow/data/graph_get_meetings.py").resolve()
+result = subprocess.run(
+    [sys.executable, str(script_path), "0", "--select", "...", "--max-events", "50"],
+    capture_output=True,
+    text=True
+)
+
+# Parse output
+output_file = Path("SilverFlow/data/out/graph_meetings.json")
+with open(output_file) as f:
+    data = json.load(f)
+```
+
+**ACTUAL RESULTS** (October 28, 2025):
+- ✅ **Found 8 meetings** (not 5 - user had 3 more late-evening meetings)
+- **Morning**: Update Copilot BPR (7am), Interview (9am), Meeting Prep Sync (11:35am)
+- **Afternoon**: BizChat Eval (2:05pm), Evals Sync (3:30pm), Office Hours (4pm)
+- **Evening**: SynthetIQ (11pm), Flight Review (11:05pm)
+- **Data Quality**: Complete attendee lists (4-29 people), all metadata fields
+- **Performance**: Sub-second extraction for single day
+
+**KEY LEARNINGS**:
+- ✅ **ISO Datetime Most Reliable**: Exact date boundaries vs relative day counts
+- ✅ **Timezone Awareness**: Graph returns UTC, script converts to Asia/Shanghai
+- ✅ **Late-Night Meetings**: Events after 11pm may span into next day
+- ✅ **Subprocess CWD**: Use relative paths when setting working directory
+- ✅ **Authentication Seamless**: Windows Broker enables zero-config Graph access
+- ✅ **Complete Metadata**: Full attendee lists, organizer, body preview essential
+- ✅ **Output Format**: Both JSON (machine) and Markdown (human) generated
+- ✅ **Data Freshness Critical**: Real-time Graph API > cached data for current day
+- ✅ **User Count Accuracy**: Always verify - user may have forgotten evening meetings
+
+**INTEGRATION SUCCESS**:
+- `get_todays_meetings.py` now works correctly with SilverFlow subprocess
+- Extracts fresh meeting data daily from Microsoft Graph API
+- Saves to `data/meetings/meetings_YYYY-MM-DD.json` with metadata
+- Ready for classification pipeline (`classify_todays_meetings.py`)
+- Supports cross-platform deployment (Windows subprocess tested, macOS next)
+
+**macOS DEPLOYMENT NOTES**:
+- Authentication may differ (no Windows Broker on macOS)
+- Script should use device code flow or interactive browser auth
+- Same ISO datetime format works across platforms
+- Same JSON output format for classification pipeline
+- Test MSAL authentication on macOS before full deployment
+
+**FILES CREATED/MODIFIED**:
+- `get_todays_meetings.py` - Fixed subprocess path issue (line ~65-85)
+- `data/meetings/meetings_2025-10-28.json` - Today's 8 meetings extracted
+- `SilverFlow/data/graph_get_meetings.py` - Used for Graph API extraction
+
+**LESSON**: When integrating Graph API scripts via subprocess, always use relative paths with explicit working directory, prefer ISO datetime for exact date ranges, and verify user's actual meeting count (they may forget some!).
 - **Tomorrow's Priorities**: Setting priorities at end of session helps plan next day's work
 - **LESSON**: Daily logging is a project management requirement, not optional - maintains progress visibility
 
