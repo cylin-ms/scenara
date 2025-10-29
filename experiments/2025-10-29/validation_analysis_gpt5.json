@@ -1,0 +1,69 @@
+{
+  "summary": {
+    "model": "gpt5",
+    "model_display_name": "GPT-5",
+    "validation_date": "2025-10-29T21:29:02.881702",
+    "target_date": null,
+    "total_meetings": 8,
+    "validated_count": 8,
+    "correct_count": 6,
+    "incorrect_count": 2,
+    "accuracy": 75.0,
+    "error_rate": 25.0
+  },
+  "difficulty_breakdown": {
+    "easy": {
+      "total": 2,
+      "correct": 2,
+      "accuracy": 100.0
+    },
+    "medium": {
+      "total": 6,
+      "correct": 4,
+      "accuracy": 66.7
+    }
+  },
+  "errors": [
+    {
+      "meeting_number": 3,
+      "subject": "Online A/B experimentation office hours",
+      "ai_type": "Communities of Practice & Networking Meets",
+      "ai_category": "Team-Building & Culture Meetings",
+      "correct_type": "Informational Briefings",
+      "correct_category": "Informational & Broadcast Meetings",
+      "confidence": 0.88,
+      "difficulty": "medium",
+      "notes": "This is \"office hours\" which is a feature team or a feature crew reserved a time in their calendar to block the time for internal customer service or information sharing.",
+      "reasoning": "The meeting is labeled as 'office hours' for A/B experimentation, which suggests an open, voluntary session for knowledge sharing and Q&A rather than a structured status update or planning session. It is recurring and focused on a specialized topic (online A/B experiments), indicating a community-of-practice style forum where practitioners can connect and exchange expertise."
+    },
+    {
+      "meeting_number": 5,
+      "subject": "Sync-up",
+      "ai_type": "Team Status Update Meetings",
+      "ai_category": "Internal Recurring Meetings (Cadence)",
+      "correct_type": "Brainstorming / Innovation Meetings",
+      "correct_category": "Strategic Planning & Decision Meetings",
+      "confidence": 0.82,
+      "difficulty": "medium",
+      "notes": "This is an adhoc meeting but involved all senior leaders in Dongmei's team",
+      "reasoning": "The title 'Sync-up' strongly suggests a coordination or status meeting. The attendee list includes multiple internal participants, indicating a small team discussion. However, there is no explicit recurrence pattern provided, and the duration of 60 minutes is slightly longer than typical status updates, which introduces some ambiguity."
+    }
+  ],
+  "category_errors": {
+    "Team-Building & Culture Meetings": {
+      "misclassified_as": "Team-Building & Culture Meetings",
+      "should_be": [
+        "Informational & Broadcast Meetings"
+      ],
+      "count": 1
+    },
+    "Internal Recurring Meetings (Cadence)": {
+      "misclassified_as": "Internal Recurring Meetings (Cadence)",
+      "should_be": [
+        "Strategic Planning & Decision Meetings"
+      ],
+      "count": 1
+    }
+  },
+  "validator": "Human Expert"
+}

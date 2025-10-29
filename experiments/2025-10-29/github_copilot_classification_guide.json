@@ -1,0 +1,94 @@
+{
+  "instructions": "Classify each meeting using GitHub Copilot Chat",
+  "prompt_template": "Classify this meeting according to Enterprise Meeting Taxonomy:\n\nMeeting: {subject}\nDescription: {body_preview}\nAttendees: {attendee_count} people\nDuration: {duration} minutes\n\nReturn JSON with:\n- specific_type (exact type from taxonomy)\n- primary_category (one of 5 categories)\n- confidence (0.0-1.0)\n- reasoning (2-3 sentences)\n- key_indicators (list of signals)\n",
+  "meetings": [
+    {
+      "meeting_number": 1,
+      "subject": "Calendar.AI Schedule | Pillar Review",
+      "body_preview": "Session Drivers/POCs: Santhosh Paramesh & Prathyush Kalashwaram\r\n\r\nMeeting Objective: Review the feature adoption and coding execution progress against FY25 goals. Celebrate achievement and escalate i",
+      "start_time": {
+        "dateTime": "2025-10-29T00:05:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "duration_minutes": 60,
+      "prompt": "Classify this meeting according to Enterprise Meeting Taxonomy:\n\nMeeting: Calendar.AI Schedule | Pillar Review\nDescription: Session Drivers/POCs: Santhosh Paramesh & Prathyush Kalashwaram\r\n\r\nMeeting Objective: Review the feature adoption and coding execution progress against FY25 goals. Celebrate achievement and escalate i\nAttendees: Unknown people\nDuration: 60 minutes\n\nReturn JSON with:\n- specific_type (exact type from taxonomy)\n- primary_category (one of 5 categories)\n- confidence (0.0-1.0)\n- reasoning (2-3 sentences)\n- key_indicators (list of signals)\n"
+    },
+    {
+      "meeting_number": 2,
+      "subject": "How-to Get Started with XAM: Essentials and Insights",
+      "body_preview": "How-to Get Started with XAM: Essentials and Insights\r\n\r\nPresenters: XAM Team\r\n\r\nJoin the XAM Team for an introductory session on XAM (External Active Monitoring), a monitoring framework that enables t",
+      "start_time": {
+        "dateTime": "2025-10-29T00:05:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "duration_minutes": 60,
+      "prompt": "Classify this meeting according to Enterprise Meeting Taxonomy:\n\nMeeting: How-to Get Started with XAM: Essentials and Insights\nDescription: How-to Get Started with XAM: Essentials and Insights\r\n\r\nPresenters: XAM Team\r\n\r\nJoin the XAM Team for an introductory session on XAM (External Active Monitoring), a monitoring framework that enables t\nAttendees: Unknown people\nDuration: 60 minutes\n\nReturn JSON with:\n- specific_type (exact type from taxonomy)\n- primary_category (one of 5 categories)\n- confidence (0.0-1.0)\n- reasoning (2-3 sentences)\n- key_indicators (list of signals)\n"
+    },
+    {
+      "meeting_number": 3,
+      "subject": "Online A/B experimentation office hours",
+      "body_preview": "Hello!\r\n\r\n\r\n\r\nPlease join us during our office hours on Tuesdays at 10-10:30 am (Pacific) or Thursdays at 11-11:30 am (Pacific) with your questions and concerns about BizChat online A/B experiments. S",
+      "start_time": {
+        "dateTime": "2025-10-29T01:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "duration_minutes": 60,
+      "prompt": "Classify this meeting according to Enterprise Meeting Taxonomy:\n\nMeeting: Online A/B experimentation office hours\nDescription: Hello!\r\n\r\n\r\n\r\nPlease join us during our office hours on Tuesdays at 10-10:30 am (Pacific) or Thursdays at 11-11:30 am (Pacific) with your questions and concerns about BizChat online A/B experiments. S\nAttendees: Unknown people\nDuration: 60 minutes\n\nReturn JSON with:\n- specific_type (exact type from taxonomy)\n- primary_category (one of 5 categories)\n- confidence (0.0-1.0)\n- reasoning (2-3 sentences)\n- key_indicators (list of signals)\n"
+    },
+    {
+      "meeting_number": 4,
+      "subject": "[US] Copilot Evaluation Platform Office Hour",
+      "body_preview": "Hi,\r\n\r\n\r\nThis Office Hour is used to answer your questions about the Copilot Evaluation Platform. If you have any questions for SEVAL, we're here to help!\r\n\r\nResources:\r\nSEVAL Manual Book | Substrate ",
+      "start_time": {
+        "dateTime": "2025-10-29T08:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "duration_minutes": 60,
+      "prompt": "Classify this meeting according to Enterprise Meeting Taxonomy:\n\nMeeting: [US] Copilot Evaluation Platform Office Hour\nDescription: Hi,\r\n\r\n\r\nThis Office Hour is used to answer your questions about the Copilot Evaluation Platform. If you have any questions for SEVAL, we're here to help!\r\n\r\nResources:\r\nSEVAL Manual Book | Substrate \nAttendees: Unknown people\nDuration: 60 minutes\n\nReturn JSON with:\n- specific_type (exact type from taxonomy)\n- primary_category (one of 5 categories)\n- confidence (0.0-1.0)\n- reasoning (2-3 sentences)\n- key_indicators (list of signals)\n"
+    },
+    {
+      "meeting_number": 5,
+      "subject": "Sync-up",
+      "body_preview": "Hi @Qingwei, @Shi, @Chin-Yew, and @Haidong,",
+      "start_time": {
+        "dateTime": "2025-10-29T14:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "duration_minutes": 60,
+      "prompt": "Classify this meeting according to Enterprise Meeting Taxonomy:\n\nMeeting: Sync-up\nDescription: Hi @Qingwei, @Shi, @Chin-Yew, and @Haidong,\nAttendees: Unknown people\nDuration: 60 minutes\n\nReturn JSON with:\n- specific_type (exact type from taxonomy)\n- primary_category (one of 5 categories)\n- confidence (0.0-1.0)\n- reasoning (2-3 sentences)\n- key_indicators (list of signals)\n"
+    },
+    {
+      "meeting_number": 6,
+      "subject": "[EU & Asia] Copilot Evaluation Platform Office Hour",
+      "body_preview": "Hi,\r\n\r\nThis Office Hour is used to answer your questions about the Copilot Evaluation Platform. If you have any questions for SEVAL, we're here to help!\r\n\r\nResources:\r\nSEVAL Manual Book | Substrate De",
+      "start_time": {
+        "dateTime": "2025-10-29T16:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "duration_minutes": 60,
+      "prompt": "Classify this meeting according to Enterprise Meeting Taxonomy:\n\nMeeting: [EU & Asia] Copilot Evaluation Platform Office Hour\nDescription: Hi,\r\n\r\nThis Office Hour is used to answer your questions about the Copilot Evaluation Platform. If you have any questions for SEVAL, we're here to help!\r\n\r\nResources:\r\nSEVAL Manual Book | Substrate De\nAttendees: Unknown people\nDuration: 60 minutes\n\nReturn JSON with:\n- specific_type (exact type from taxonomy)\n- primary_category (one of 5 categories)\n- confidence (0.0-1.0)\n- reasoning (2-3 sentences)\n- key_indicators (list of signals)\n"
+    },
+    {
+      "meeting_number": 7,
+      "subject": "Prompt Publishing and Promotion - Office Hours (STCA/I)",
+      "body_preview": "Hi All,\r\n\r\nWith the recent re-org and ownership changes, the prompt publishing and promotion pipeline has got transitioned to our team (MSAI USR India Prompt Assistance team). While we are working on ",
+      "start_time": {
+        "dateTime": "2025-10-29T16:35:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "duration_minutes": 60,
+      "prompt": "Classify this meeting according to Enterprise Meeting Taxonomy:\n\nMeeting: Prompt Publishing and Promotion - Office Hours (STCA/I)\nDescription: Hi All,\r\n\r\nWith the recent re-org and ownership changes, the prompt publishing and promotion pipeline has got transitioned to our team (MSAI USR India Prompt Assistance team). While we are working on \nAttendees: Unknown people\nDuration: 60 minutes\n\nReturn JSON with:\n- specific_type (exact type from taxonomy)\n- primary_category (one of 5 categories)\n- confidence (0.0-1.0)\n- reasoning (2-3 sentences)\n- key_indicators (list of signals)\n"
+    },
+    {
+      "meeting_number": 8,
+      "subject": "Prompt Publishing and Promotion - Office Hours (PST)",
+      "body_preview": "Hi All,\r\n\r\nWith the recent re-org and ownership changes, the prompt publishing and promotion pipeline has got transitioned to our team (MSAI USR India Prompt Assistance team). While we are working on ",
+      "start_time": {
+        "dateTime": "2025-10-29T23:35:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "duration_minutes": 60,
+      "prompt": "Classify this meeting according to Enterprise Meeting Taxonomy:\n\nMeeting: Prompt Publishing and Promotion - Office Hours (PST)\nDescription: Hi All,\r\n\r\nWith the recent re-org and ownership changes, the prompt publishing and promotion pipeline has got transitioned to our team (MSAI USR India Prompt Assistance team). While we are working on \nAttendees: Unknown people\nDuration: 60 minutes\n\nReturn JSON with:\n- specific_type (exact type from taxonomy)\n- primary_category (one of 5 categories)\n- confidence (0.0-1.0)\n- reasoning (2-3 sentences)\n- key_indicators (list of signals)\n"
+    }
+  ]
+}

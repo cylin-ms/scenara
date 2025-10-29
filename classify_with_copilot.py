@@ -14,8 +14,11 @@ def main():
     print("         GitHub Copilot Meeting Classification Experiment")
     print("=" * 75 + "\n")
     
+    # Get today's date
+    today = datetime.now().strftime('%Y-%m-%d')
+    
     # Load meetings from today's extraction
-    meetings_file = "data/meetings/meetings_2025-10-28.json"
+    meetings_file = f"data/meetings/meetings_{today}.json"
     
     if not os.path.exists(meetings_file):
         print(f"❌ ERROR: Meetings file not found: {meetings_file}")
@@ -26,7 +29,8 @@ def main():
         meetings_data = json.load(f)
     
     meetings = meetings_data.get('meetings', [])
-    print(f"✅ Loaded {len(meetings)} meetings for {meetings_data.get('target_date')}\n")
+    meeting_date = meetings_data.get('date', today)
+    print(f"✅ Loaded {len(meetings)} meetings for {meeting_date}\n")
     
     # Prepare experiment results
     experiment_results = {
@@ -137,12 +141,12 @@ Return JSON with:
         print()
     
     # Save classification guide
-    output_dir = Path("experiments/2025-10-28")
+    output_dir = Path(f"experiments/{meeting_date}")
     output_dir.mkdir(parents=True, exist_ok=True)
     
     guide_file = output_dir / "github_copilot_classification_guide.json"
     with open(guide_file, 'w', encoding='utf-8') as f:
-        json.dump(classification_guide, w, indent=2, ensure_ascii=False)
+        json.dump(classification_guide, f, indent=2, ensure_ascii=False)
     
     print(f"\n✅ Classification guide saved to: {guide_file}")
     print("\n" + "=" * 75)

@@ -1,0 +1,74 @@
+{
+  "validation_date": "2025-10-29T21:29:02.881702",
+  "validator": "Human Expert",
+  "model": "gpt5",
+  "model_display_name": "GPT-5",
+  "total_meetings": 8,
+  "validated_count": 8,
+  "validations": {
+    "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAH5PRZHgAA": {
+      "timestamp": "2025-10-29T21:29:02.881714",
+      "is_correct": true,
+      "correct_type": null,
+      "correct_category": null,
+      "notes": "",
+      "difficulty": "easy"
+    },
+    "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAIApurCgAA": {
+      "timestamp": "2025-10-29T21:29:45.396211",
+      "is_correct": true,
+      "correct_type": null,
+      "correct_category": null,
+      "notes": "",
+      "difficulty": "easy"
+    },
+    "AAkBOQAICN4VtPAeQAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAAB0VGToIAABA=": {
+      "timestamp": "2025-10-29T21:32:39.988894",
+      "is_correct": false,
+      "correct_type": "Informational Briefings",
+      "correct_category": "Informational & Broadcast Meetings",
+      "notes": "This is \"office hours\" which is a feature team or a feature crew reserved a time in their calendar to block the time for internal customer service or information sharing.",
+      "difficulty": "medium"
+    },
+    "AAkBOQAICN4WfhqIAAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAABxtbMiQAABA=": {
+      "timestamp": "2025-10-29T21:33:05.720495",
+      "is_correct": true,
+      "correct_type": null,
+      "correct_category": null,
+      "notes": "",
+      "difficulty": "medium"
+    },
+    "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAIBJdDUwAA": {
+      "timestamp": "2025-10-29T21:35:00.216861",
+      "is_correct": false,
+      "correct_type": "Brainstorming / Innovation Meetings",
+      "correct_category": "Strategic Planning & Decision Meetings",
+      "notes": "This is an adhoc meeting but involved all senior leaders in Dongmei's team",
+      "difficulty": "medium"
+    },
+    "AAkBOQAICN4WfhqIAAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAAB7byqvcAABA=": {
+      "timestamp": "2025-10-29T21:35:14.335835",
+      "is_correct": true,
+      "correct_type": null,
+      "correct_category": null,
+      "notes": "",
+      "difficulty": "medium"
+    },
+    "AAkBOQAICN4WfhqIAAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAAB7e5QMoAABA=": {
+      "timestamp": "2025-10-29T21:35:41.805305",
+      "is_correct": true,
+      "correct_type": null,
+      "correct_category": null,
+      "notes": "",
+      "difficulty": "medium"
+    },
+    "AAkBOQAICN4WfhqIAAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAAB7e5QJEAABA=": {
+      "timestamp": "2025-10-29T21:36:19.444368",
+      "is_correct": true,
+      "correct_type": null,
+      "correct_category": null,
+      "notes": "",
+      "difficulty": "medium"
+    }
+  }
+}

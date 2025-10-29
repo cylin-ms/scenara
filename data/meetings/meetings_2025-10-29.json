@@ -1,0 +1,231 @@
+{
+  "extraction_date": "2025-10-29T20:39:01.771489",
+  "date": "2025-10-29",
+  "total_meetings": 8,
+  "meetings": [
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAH+9SxIA==\"",
+      "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAH5PRZHgAA",
+      "subject": "Calendar.AI Schedule | Pillar Review",
+      "bodyPreview": "Session Drivers/POCs: Santhosh Paramesh & Prathyush Kalashwaram\r\n\r\nMeeting Objective: Review the feature adoption and coding execution progress against FY25 goals. Celebrate achievement and escalate issues that require LT support.\r\n\r\n\r\n\r\nPre-read material",
+      "seriesMasterId": null,
+      "showAs": "tentative",
+      "type": "singleInstance",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkALgAAAAAAHYQDEapmEc2byACqAC%2FEWg0A%2BkGCLFUuv0KY0MFe0YQo0AAH5PRZHgAA&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "notResponded",
+        "time": "0001-01-01T00:00:00Z"
+      },
+      "start": {
+        "dateTime": "2025-10-29T00:05:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-10-29T01:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Pratibha Permandla",
+          "address": "Pratibha.Permandla@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAH+9SxKw==\"",
+      "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAIApurCgAA",
+      "subject": "How-to Get Started with XAM: Essentials and Insights",
+      "bodyPreview": "How-to Get Started with XAM: Essentials and Insights\r\n\r\nPresenters: XAM Team\r\n\r\nJoin the XAM Team for an introductory session on XAM (External Active Monitoring), a monitoring framework that enables teams to create probes ( automated tests that mimic ",
+      "seriesMasterId": null,
+      "showAs": "tentative",
+      "type": "singleInstance",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkALgAAAAAAHYQDEapmEc2byACqAC%2FEWg0A%2BkGCLFUuv0KY0MFe0YQo0AAIApurCgAA&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "notResponded",
+        "time": "0001-01-01T00:00:00Z"
+      },
+      "start": {
+        "dateTime": "2025-10-29T00:05:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-10-29T01:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Mahima Srinivasan",
+          "address": "mahima.srinivasan@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAH+9SxFg==\"",
+      "id": "AAkBOQAICN4VtPAeQAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAAB0VGToIAABA=",
+      "subject": "Online A/B experimentation office hours",
+      "bodyPreview": "Hello!\r\n\r\n\r\n\r\nPlease join us during our office hours on Tuesdays at 10-10:30 am (Pacific) or Thursdays at 11-11:30 am (Pacific) with your questions and concerns about BizChat online A/B experiments. Sign-up for Online AB office hours.\r\n\r\n\r\n\r\nWe look forwa",
+      "seriesMasterId": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHRUZOggAA",
+      "showAs": "tentative",
+      "type": "exception",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkBOQAICN4VtPAeQAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAAB0VGToIAABA%3D&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "notResponded",
+        "time": "0001-01-01T00:00:00Z"
+      },
+      "start": {
+        "dateTime": "2025-10-29T01:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-10-29T01:30:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Nathaniel Amenyo",
+          "address": "Nathaniel.Amenyo@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAH+9Sw9g==\"",
+      "id": "AAkBOQAICN4WfhqIAAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAABxtbMiQAABA=",
+      "subject": "[US] Copilot Evaluation Platform Office Hour",
+      "bodyPreview": "Hi,\r\n\r\n\r\nThis Office Hour is used to answer your questions about the Copilot Evaluation Platform. If you have any questions for SEVAL, we're here to help!\r\n\r\nResources:\r\nSEVAL Manual Book | Substrate Dev Center\r\n1. Define Metrics | Substrate Dev Center",
+      "seriesMasterId": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHG1syJAAA",
+      "showAs": "tentative",
+      "type": "occurrence",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkBOQAICN4WfhqIAAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAABxtbMiQAABA%3D&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "notResponded",
+        "time": "0001-01-01T00:00:00Z"
+      },
+      "start": {
+        "dateTime": "2025-10-29T08:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-10-29T08:30:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Yolanda Zhao",
+          "address": "yolandazhao@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAH+9TjHQ==\"",
+      "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAIBJdDUwAA",
+      "subject": "Sync-up",
+      "bodyPreview": "Hi @Qingwei, @Shi, @Chin-Yew, and @Haidong,",
+      "seriesMasterId": null,
+      "showAs": "busy",
+      "type": "singleInstance",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkALgAAAAAAHYQDEapmEc2byACqAC%2FEWg0A%2BkGCLFUuv0KY0MFe0YQo0AAIBJdDUwAA&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "accepted",
+        "time": "2025-10-29T08:41:49.4217984+08:00"
+      },
+      "start": {
+        "dateTime": "2025-10-29T14:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-10-29T14:30:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Dongmei Zhang",
+          "address": "dongmeiz@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAH+9TolA==\"",
+      "id": "AAkBOQAICN4WfhqIAAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAAB7byqvcAABA=",
+      "subject": "[EU & Asia] Copilot Evaluation Platform Office Hour",
+      "bodyPreview": "Hi,\r\n\r\nThis Office Hour is used to answer your questions about the Copilot Evaluation Platform. If you have any questions for SEVAL, we're here to help!\r\n\r\nResources:\r\nSEVAL Manual Book | Substrate Dev Center\r\n1. Define Metrics | Substrate Dev Center\r\n\r\nL",
+      "seriesMasterId": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHtvKq9wAA",
+      "showAs": "tentative",
+      "type": "occurrence",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkBOQAICN4WfhqIAAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAAB7byqvcAABA%3D&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "notResponded",
+        "time": "0001-01-01T00:00:00Z"
+      },
+      "start": {
+        "dateTime": "2025-10-29T16:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-10-29T16:30:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Yolanda Zhao",
+          "address": "yolandazhao@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAH+9T/Rg==\"",
+      "id": "AAkBOQAICN4WfhqIAAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAAB7e5QMoAABA=",
+      "subject": "Prompt Publishing and Promotion - Office Hours (STCA/I)",
+      "bodyPreview": "Hi All,\r\n\r\nWith the recent re-org and ownership changes, the prompt publishing and promotion pipeline has got transitioned to our team (MSAI USR India Prompt Assistance team). While we are working on re-defining the process to accommodate for the large nu",
+      "seriesMasterId": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHt7lAygAA",
+      "showAs": "tentative",
+      "type": "occurrence",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkBOQAICN4WfhqIAAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAAB7e5QMoAABA%3D&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "notResponded",
+        "time": "0001-01-01T00:00:00Z"
+      },
+      "start": {
+        "dateTime": "2025-10-29T16:35:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-10-29T17:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Bhavika Bhadouria",
+          "address": "bhasharma@microsoft.com"
+        }
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAH+855Qg==\"",
+      "id": "AAkBOQAICN4WfhqIAAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAAB7e5QJEAABA=",
+      "subject": "Prompt Publishing and Promotion - Office Hours (PST)",
+      "bodyPreview": "Hi All,\r\n\r\nWith the recent re-org and ownership changes, the prompt publishing and promotion pipeline has got transitioned to our team (MSAI USR India Prompt Assistance team). While we are working on re-defining the process to accommodate for the large nu",
+      "seriesMasterId": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHt7lAkQAA",
+      "showAs": "tentative",
+      "type": "occurrence",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkBOQAICN4WfhqIAAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAAB7e5QJEAABA%3D&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "notResponded",
+        "time": "0001-01-01T00:00:00Z"
+      },
+      "start": {
+        "dateTime": "2025-10-29T23:35:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-10-30T00:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Bhavika Bhadouria",
+          "address": "bhasharma@microsoft.com"
+        }
+      }
+    }
+  ]
+}

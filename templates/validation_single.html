@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meeting Classification Validation</title>
+    <title>{{ model_info.display_name }} Classification Validation</title>
     <style>
         * {
             margin: 0;
@@ -19,7 +19,7 @@
         }
 
         .container {
-            max-width: 1400px;
+            max-width: 1000px;
             margin: 0 auto;
         }
 
@@ -34,6 +34,20 @@
         .header h1 {
             color: #333;
             margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .model-badge {
+            display: inline-block;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+            background: {{ model_info.bg_color }};
+            color: {{ model_info.color }};
+            border: 2px solid {{ model_info.color }};
         }
 
         .header p {
@@ -64,7 +78,7 @@
         }
 
         .stat-card .value {
-            color: #667eea;
+            color: {{ model_info.color }};
             font-size: 32px;
             font-weight: bold;
         }
@@ -148,33 +162,18 @@
             line-height: 1.6;
         }
 
-        .classifications {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
+        .classification {
+            padding: 20px;
+            border-radius: 8px;
+            border: 2px solid {{ model_info.color }};
+            background: {{ model_info.bg_color }};
             margin-bottom: 20px;
         }
 
-        .classification {
-            padding: 15px;
-            border-radius: 8px;
-            border: 2px solid #e5e7eb;
-        }
-
-        .classification.gpt5 {
-            border-color: #8b5cf6;
-            background: #f5f3ff;
-        }
-
-        .classification.copilot {
-            border-color: #3b82f6;
-            background: #eff6ff;
-        }
-
         .classification h3 {
-            font-size: 14px;
-            color: #666;
-            margin-bottom: 10px;
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 15px;
             display: flex;
             align-items: center;
             gap: 8px;
@@ -182,23 +181,23 @@
 
         .classification .type {
             color: #333;
-            font-size: 16px;
+            font-size: 18px;
             font-weight: 600;
-            margin-bottom: 5px;
+            margin-bottom: 8px;
         }
 
         .classification .category {
             color: #666;
-            font-size: 13px;
-            margin-bottom: 8px;
+            font-size: 14px;
+            margin-bottom: 12px;
         }
 
         .classification .confidence {
             display: inline-block;
-            padding: 3px 10px;
+            padding: 5px 14px;
             background: white;
             border-radius: 12px;
-            font-size: 12px;
+            font-size: 13px;
             font-weight: 600;
         }
 
@@ -217,9 +216,25 @@
             background: #fee2e2;
         }
 
+        .classification .reasoning {
+            margin-top: 15px;
+            padding: 12px;
+            background: white;
+            border-radius: 6px;
+            font-size: 13px;
+            color: #555;
+            line-height: 1.5;
+        }
+
+        .classification .reasoning strong {
+            color: #333;
+            display: block;
+            margin-bottom: 5px;
+        }
+
         .validation-panel {
             background: #f9fafb;
-            padding: 20px;
+            padding: 25px;
             border-radius: 8px;
             border: 2px dashed #d1d5db;
         }
@@ -234,18 +249,19 @@
 
         .validation-section h4 {
             color: #333;
-            font-size: 14px;
-            margin-bottom: 10px;
+            font-size: 15px;
+            margin-bottom: 12px;
+            font-weight: 600;
         }
 
         .button-group {
             display: flex;
-            gap: 10px;
+            gap: 12px;
             flex-wrap: wrap;
         }
 
         .btn {
-            padding: 10px 20px;
+            padding: 12px 24px;
             border: 2px solid;
             border-radius: 6px;
             font-size: 14px;
@@ -281,44 +297,46 @@
         }
 
         .btn-primary {
-            background: #667eea;
-            border-color: #667eea;
+            background: {{ model_info.color }};
+            border-color: {{ model_info.color }};
             color: white;
+            padding: 14px 28px;
+            font-size: 15px;
         }
 
         .btn-primary:hover {
-            background: #5568d3;
+            opacity: 0.9;
         }
 
         select {
             width: 100%;
-            padding: 10px;
+            padding: 12px;
             border: 2px solid #d1d5db;
             border-radius: 6px;
             font-size: 14px;
-            margin-bottom: 10px;
+            margin-bottom: 12px;
             background: white;
         }
 
         select:focus {
             outline: none;
-            border-color: #667eea;
+            border-color: {{ model_info.color }};
         }
 
         textarea {
             width: 100%;
-            padding: 10px;
+            padding: 12px;
             border: 2px solid #d1d5db;
             border-radius: 6px;
             font-size: 14px;
             resize: vertical;
-            min-height: 80px;
+            min-height: 100px;
             font-family: inherit;
         }
 
         textarea:focus {
             outline: none;
-            border-color: #667eea;
+            border-color: {{ model_info.color }};
         }
 
         .hidden {
@@ -335,8 +353,9 @@
 
         .progress-fill {
             height: 100%;
-            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(90deg, {{ model_info.color }} 0%, #764ba2 100%);
             transition: width 0.3s;
+            width: {{ (validation_stats.validated / validation_stats.total * 100)|int }}%;
         }
 
         .export-btn {
@@ -344,8 +363,8 @@
             bottom: 30px;
             right: 30px;
             background: white;
-            color: #667eea;
-            border: none;
+            color: {{ model_info.color }};
+            border: 2px solid {{ model_info.color }};
             padding: 15px 25px;
             border-radius: 50px;
             font-size: 14px;
@@ -358,23 +377,27 @@
         .export-btn:hover {
             transform: translateY(-2px);
             box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+            background: {{ model_info.color }};
+            color: white;
         }
 
-        .icon {
-            display: inline-block;
-            width: 16px;
-            height: 16px;
-            vertical-align: middle;
+        .difficulty-btn {
+            flex: 1;
+            min-width: 100px;
         }
 
         @media (max-width: 768px) {
-            .classifications {
-                grid-template-columns: 1fr;
-            }
-
             .meeting-meta {
                 flex-direction: column;
                 gap: 8px;
+            }
+            
+            .button-group {
+                flex-direction: column;
+            }
+            
+            .btn {
+                width: 100%;
             }
         }
     </style>
@@ -382,9 +405,15 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>🎯 Meeting Classification Validation</h1>
+            <h1>
+                🎯 Classification Validation
+                <span class="model-badge">{{ model_info.icon }} {{ model_info.display_name }}</span>
+            </h1>
             <p>Review AI classifications and provide your expert assessment</p>
-            <p style="margin-top: 5px; color: #999; font-size: 12px;">October 28, 2025 • Today's Meetings</p>
+            <p style="margin-top: 5px; color: #999; font-size: 12px;">{{ target_date }} • Validating {{ validation_stats.total }} meetings</p>
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
         </div>
 
         <div class="stats">
@@ -397,12 +426,12 @@
                 <div class="value" id="stat-validated">{{ validation_stats.validated }}</div>
             </div>
             <div class="stat-card">
-                <h3>GPT-5 Accuracy</h3>
-                <div class="value" id="stat-gpt5">-</div>
+                <h3>Accuracy</h3>
+                <div class="value" id="stat-accuracy">-</div>
             </div>
             <div class="stat-card">
-                <h3>Copilot Accuracy</h3>
-                <div class="value" id="stat-copilot">-</div>
+                <h3>Progress</h3>
+                <div class="value" id="stat-progress">{{ (validation_stats.validated / validation_stats.total * 100)|int }}%</div>
             </div>
         </div>
 
@@ -422,55 +451,42 @@
                 </span>
             </div>
 
+            {% if meeting.bodyPreview %}
             <div class="meeting-body">
                 {{ meeting.bodyPreview[:300] }}{% if meeting.bodyPreview|length > 300 %}...{% endif %}
             </div>
+            {% endif %}
 
-            <div class="classifications">
-                <div class="classification gpt5">
-                    <h3>🤖 GPT-5 Classification</h3>
-                    <div class="type">{{ meeting.gpt5.specific_type }}</div>
-                    <div class="category">{{ meeting.gpt5.primary_category }}</div>
-                    <span class="confidence {% if meeting.gpt5.confidence > 0.9 %}high{% elif meeting.gpt5.confidence > 0.8 %}medium{% else %}low{% endif %}">
-                        {{ (meeting.gpt5.confidence * 100)|int }}% confidence
-                    </span>
+            <div class="classification">
+                <h3>{{ model_info.icon }} {{ model_info.display_name }} Classification</h3>
+                
+                {% if meeting.classification and meeting.classification.specific_type %}
+                <div class="type">{{ meeting.classification.specific_type }}</div>
+                <div class="category">{{ meeting.classification.primary_category }}</div>
+                <span class="confidence {% if meeting.classification.confidence > 0.9 %}high{% elif meeting.classification.confidence > 0.8 %}medium{% else %}low{% endif %}">
+                    {{ (meeting.classification.confidence * 100)|int }}% confidence
+                </span>
+                
+                {% if meeting.classification.reasoning %}
+                <div class="reasoning">
+                    <strong>Reasoning:</strong>
+                    {{ meeting.classification.reasoning }}
                 </div>
-
-                <div class="classification copilot">
-                    <h3>🤖 GitHub Copilot Classification</h3>
-                    {% if meeting.copilot and meeting.copilot.specific_type %}
-                    <div class="type">{{ meeting.copilot.specific_type }}</div>
-                    <div class="category">{{ meeting.copilot.primary_category }}</div>
-                    <span class="confidence {% if meeting.copilot.confidence > 0.9 %}high{% elif meeting.copilot.confidence > 0.8 %}medium{% else %}low{% endif %}">
-                        {{ (meeting.copilot.confidence * 100)|int }}% confidence
-                    </span>
-                    {% else %}
-                    <div class="type" style="color: #999; font-style: italic;">Not yet classified</div>
-                    <div class="category" style="color: #999;">Manual classification pending</div>
-                    {% endif %}
-                </div>
+                {% endif %}
+                {% else %}
+                <div class="type" style="color: #999; font-style: italic;">Not yet classified</div>
+                <div class="category" style="color: #999;">Classification pending</div>
+                {% endif %}
             </div>
 
             <div class="validation-panel">
                 <div class="validation-section">
-                    <h4>Is GPT-5 classification correct?</h4>
+                    <h4>Is this classification correct?</h4>
                     <div class="button-group">
-                        <button class="btn btn-correct" onclick="markCorrect('{{ meeting.id }}', 'gpt5', true, {{ loop.index }})">
+                        <button class="btn btn-correct" onclick="markCorrect('{{ meeting.id }}', true, {{ loop.index }})">
                             ✓ Correct
                         </button>
-                        <button class="btn btn-incorrect" onclick="markCorrect('{{ meeting.id }}', 'gpt5', false, {{ loop.index }})">
-                            ✗ Incorrect
-                        </button>
-                    </div>
-                </div>
-
-                <div class="validation-section">
-                    <h4>Is GitHub Copilot classification correct?</h4>
-                    <div class="button-group">
-                        <button class="btn btn-correct" onclick="markCorrect('{{ meeting.id }}', 'copilot', true, {{ loop.index }})">
-                            ✓ Correct
-                        </button>
-                        <button class="btn btn-incorrect" onclick="markCorrect('{{ meeting.id }}', 'copilot', false, {{ loop.index }})">
+                        <button class="btn btn-incorrect" onclick="markCorrect('{{ meeting.id }}', false, {{ loop.index }})">
                             ✗ Incorrect
                         </button>
                     </div>
@@ -491,19 +507,25 @@
 
                 <div class="validation-section">
                     <h4>Notes (optional)</h4>
-                    <textarea id="notes-{{ meeting.id }}" placeholder="Add any observations, reasoning, or comments..."></textarea>
+                    <textarea id="notes-{{ meeting.id }}" placeholder="Add any observations, reasoning, or comments about this classification..."></textarea>
                 </div>
 
                 <div class="validation-section">
-                    <h4>Difficulty to classify</h4>
+                    <h4>How difficult is this meeting to classify?</h4>
                     <div class="button-group">
-                        <button class="btn" onclick="setDifficulty('{{ meeting.id }}', 'easy', {{ loop.index }})">😊 Easy</button>
-                        <button class="btn" onclick="setDifficulty('{{ meeting.id }}', 'medium', {{ loop.index }})">🤔 Medium</button>
-                        <button class="btn" onclick="setDifficulty('{{ meeting.id }}', 'hard', {{ loop.index }})">😰 Hard</button>
+                        <button class="btn difficulty-btn" onclick="setDifficulty('{{ meeting.id }}', 'easy', {{ loop.index }})">
+                            😊 Easy
+                        </button>
+                        <button class="btn difficulty-btn" onclick="setDifficulty('{{ meeting.id }}', 'medium', {{ loop.index }})">
+                            🤔 Medium
+                        </button>
+                        <button class="btn difficulty-btn" onclick="setDifficulty('{{ meeting.id }}', 'hard', {{ loop.index }})">
+                            😰 Hard
+                        </button>
                     </div>
                 </div>
 
-                <button class="btn btn-primary" onclick="saveValidation('{{ meeting.id }}', {{ loop.index }})">
+                <button class="btn btn-primary" onclick="saveValidation('{{ meeting.id }}', {{ loop.index }})" style="width: 100%; margin-top: 10px;">
                     💾 Save Validation
                 </button>
             </div>
@@ -535,26 +557,24 @@
             }
         }
 
-        function markCorrect(meetingId, model, isCorrect, index) {
+        function markCorrect(meetingId, isCorrect, index) {
             if (!validations[meetingId]) {
                 validations[meetingId] = {};
             }
-            validations[meetingId][`${model}_correct`] = isCorrect;
+            validations[meetingId].is_correct = isCorrect;
 
             // Update button states
             const card = document.getElementById(`meeting-${index}`);
-            const buttons = card.querySelectorAll(`.validation-section:nth-child(${model === 'gpt5' ? 1 : 2}) .btn`);
+            const buttons = card.querySelectorAll('.validation-section:first-child .btn');
             buttons.forEach(btn => btn.classList.remove('active'));
             buttons[isCorrect ? 0 : 1].classList.add('active');
 
-            // Show correct type selector if either model is incorrect
-            const showCorrectType = validations[meetingId].gpt5_correct === false || 
-                                   validations[meetingId].copilot_correct === false;
+            // Show/hide correct type selector
             const correctTypePanel = document.getElementById(`correct-type-${meetingId}`);
-            if (showCorrectType) {
-                correctTypePanel.classList.remove('hidden');
-            } else {
+            if (isCorrect) {
                 correctTypePanel.classList.add('hidden');
+            } else {
+                correctTypePanel.classList.remove('hidden');
             }
         }
 
@@ -566,23 +586,23 @@
 
             // Update button states
             const card = document.getElementById(`meeting-${index}`);
-            const buttons = card.querySelectorAll('.validation-section:last-of-type .btn');
-            buttons.forEach(btn => btn.classList.remove('active'));
+            const diffButtons = card.querySelectorAll('.difficulty-btn');
+            diffButtons.forEach(btn => btn.classList.remove('active'));
             
             const diffMap = {easy: 0, medium: 1, hard: 2};
-            buttons[diffMap[difficulty]].classList.add('active');
+            diffButtons[diffMap[difficulty]].classList.add('active');
         }
 
         async function saveValidation(meetingId, index) {
             const validation = validations[meetingId];
             
-            if (!validation || validation.gpt5_correct === undefined || validation.copilot_correct === undefined) {
-                alert('Please mark both GPT-5 and Copilot classifications as correct or incorrect');
+            if (!validation || validation.is_correct === undefined) {
+                alert('Please mark the classification as correct or incorrect');
                 return;
             }
 
-            // Get correct type if needed
-            if (validation.gpt5_correct === false || validation.copilot_correct === false) {
+            // Get correct type if marked incorrect
+            if (validation.is_correct === false) {
                 const category = document.getElementById(`category-${meetingId}`).value;
                 const type = document.getElementById(`type-${meetingId}`).value;
                 
@@ -634,6 +654,9 @@
                     const nextCard = document.getElementById(`meeting-${index + 1}`);
                     if (nextCard) {
                         nextCard.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    } else {
+                        // All done!
+                        alert('🎉 All meetings validated! Great work!');
                     }
                 }
             } catch (error) {
@@ -648,8 +671,12 @@
                 const stats = await response.json();
                 
                 document.getElementById('stat-validated').textContent = stats.validated;
-                document.getElementById('stat-gpt5').textContent = stats.gpt5_accuracy + '%';
-                document.getElementById('stat-copilot').textContent = stats.copilot_accuracy + '%';
+                document.getElementById('stat-accuracy').textContent = stats.accuracy > 0 ? stats.accuracy + '%' : '-';
+                document.getElementById('stat-progress').textContent = Math.round(stats.progress) + '%';
+                
+                // Update progress bar
+                const progressFill = document.querySelector('.progress-fill');
+                progressFill.style.width = stats.progress + '%';
             } catch (error) {
                 console.error('Error updating stats:', error);
             }

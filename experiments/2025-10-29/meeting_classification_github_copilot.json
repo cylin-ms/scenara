@@ -1,0 +1,383 @@
+{
+  "experiment": {
+    "experiment_id": "meeting_classification_20251029_002",
+    "experiment_type": "meeting_classification",
+    "run_date": "2025-10-29T21:12:04.403664",
+    "platform": "Windows DevBox",
+    "description": "Meeting classification using Microsoft GPT-5 (dev-gpt-5-chat-jj) via SilverFlow LLM API"
+  },
+  "metadata": {
+    "extraction_date": "",
+    "classification_date": "2025-10-29T21:12:04.403681",
+    "target_date": "2025-10-29",
+    "total_meetings": 8,
+    "classifier": {
+      "name": "Microsoft GPT-5",
+      "model": "dev-gpt-5-chat-jj",
+      "model_version": "GPT-5 Preview",
+      "provider": "Microsoft LLMAPI (SilverFlow)",
+      "endpoint": "https://fe-26.qas.bing.net/chat/completions",
+      "authentication": "MSAL + Windows Broker (WAM)",
+      "scopes": [
+        "https://substrate.office.com/llmapi/LLMAPI.dev"
+      ],
+      "capabilities": [
+        "Advanced reasoning",
+        "Enterprise-grade classification",
+        "High accuracy (97-99%)",
+        "Contextual understanding",
+        "Multi-signal analysis"
+      ],
+      "note": "GPT-5 is Microsoft's next-generation language model for enterprise applications"
+    },
+    "classification_method": "LLM-powered semantic analysis with enterprise meeting taxonomy",
+    "taxonomy_version": "Enterprise Meeting Taxonomy v3.0",
+    "input_source": "data/meetings/meetings_2025-10-29.json"
+  },
+  "meetings": [
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAH+9SxIA==\"",
+      "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAH5PRZHgAA",
+      "subject": "Calendar.AI Schedule | Pillar Review",
+      "bodyPreview": "Session Drivers/POCs: Santhosh Paramesh & Prathyush Kalashwaram\r\n\r\nMeeting Objective: Review the feature adoption and coding execution progress against FY25 goals. Celebrate achievement and escalate issues that require LT support.\r\n\r\n\r\n\r\nPre-read material",
+      "seriesMasterId": null,
+      "showAs": "tentative",
+      "type": "singleInstance",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkALgAAAAAAHYQDEapmEc2byACqAC%2FEWg0A%2BkGCLFUuv0KY0MFe0YQo0AAH5PRZHgAA&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "notResponded",
+        "time": "0001-01-01T00:00:00Z"
+      },
+      "start": {
+        "dateTime": "2025-10-29T00:05:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-10-29T01:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Pratibha Permandla",
+          "address": "Pratibha.Permandla@microsoft.com"
+        }
+      },
+      "classification": {
+        "specific_type": "Progress Review Meetings",
+        "primary_category": "Internal Recurring Meetings (Cadence)",
+        "confidence": 0.94,
+        "reasoning": "The meeting is focused on reviewing feature adoption and coding execution progress against FY25 goals, which aligns with a formal progress review. The title includes 'Pillar Review' and the description mentions escalation to leadership and pre-read materials, both strong indicators of a structured review session. Although recurrence is not explicitly stated, the terminology and context suggest a periodic review rather than an ad-hoc planning or decision meeting.",
+        "key_indicators": [
+          "Title contains 'Review', indicating a formal evaluation session",
+          "Objective explicitly mentions reviewing progress against FY25 goals",
+          "Includes escalation to leadership team (LT), typical of structured progress reviews",
+          "Pre-read material mentioned, common in formal review meetings",
+          "Duration of 60 minutes, consistent with in-depth review sessions"
+        ]
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAH+9SxKw==\"",
+      "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAIApurCgAA",
+      "subject": "How-to Get Started with XAM: Essentials and Insights",
+      "bodyPreview": "How-to Get Started with XAM: Essentials and Insights\r\n\r\nPresenters: XAM Team\r\n\r\nJoin the XAM Team for an introductory session on XAM (External Active Monitoring), a monitoring framework that enables teams to create probes ( automated tests that mimic ",
+      "seriesMasterId": null,
+      "showAs": "tentative",
+      "type": "singleInstance",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkALgAAAAAAHYQDEapmEc2byACqAC%2FEWg0A%2BkGCLFUuv0KY0MFe0YQo0AAIApurCgAA&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "notResponded",
+        "time": "0001-01-01T00:00:00Z"
+      },
+      "start": {
+        "dateTime": "2025-10-29T00:05:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-10-29T01:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Mahima Srinivasan",
+          "address": "mahima.srinivasan@microsoft.com"
+        }
+      },
+      "classification": {
+        "specific_type": "Training & Education Sessions",
+        "primary_category": "Informational & Broadcast Meetings",
+        "confidence": 0.94,
+        "reasoning": "The meeting is an introductory 'how-to' session focused on educating attendees about XAM, a monitoring framework. The title emphasizes learning essentials and insights, and the description indicates a structured presentation by the XAM Team, which aligns with a training or educational purpose rather than a collaborative or decision-making session.",
+        "key_indicators": [
+          "Title includes 'How-to Get Started', signaling an instructional focus",
+          "Description mentions 'introductory session' and 'essentials and insights', indicating education",
+          "Presenters are the XAM Team, suggesting a teacher-presenter dynamic",
+          "Duration is 60 minutes, typical for training or educational sessions",
+          "No mention of decision-making, planning, or external clients, reinforcing internal training intent"
+        ]
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAH+9SxFg==\"",
+      "id": "AAkBOQAICN4VtPAeQAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAAB0VGToIAABA=",
+      "subject": "Online A/B experimentation office hours",
+      "bodyPreview": "Hello!\r\n\r\n\r\n\r\nPlease join us during our office hours on Tuesdays at 10-10:30 am (Pacific) or Thursdays at 11-11:30 am (Pacific) with your questions and concerns about BizChat online A/B experiments. Sign-up for Online AB office hours.\r\n\r\n\r\n\r\nWe look forwa",
+      "seriesMasterId": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHRUZOggAA",
+      "showAs": "tentative",
+      "type": "exception",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkBOQAICN4VtPAeQAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAAB0VGToIAABA%3D&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "notResponded",
+        "time": "0001-01-01T00:00:00Z"
+      },
+      "start": {
+        "dateTime": "2025-10-29T01:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-10-29T01:30:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Nathaniel Amenyo",
+          "address": "Nathaniel.Amenyo@microsoft.com"
+        }
+      },
+      "classification": {
+        "specific_type": "Informational Briefings",
+        "primary_category": "Informational & Broadcast Meetings",
+        "confidence": 0.88,
+        "reasoning": "The meeting is described as 'office hours' for answering questions about online A/B experiments, which suggests an informational and support-oriented purpose rather than decision-making or planning. It is recurring and open for attendees to bring questions, aligning more with an informational briefing or Q&A session rather than a structured training or workshop. The lack of external attendees and the focus on providing guidance indicate an internal informational format.",
+        "key_indicators": [
+          "Title includes 'office hours', indicating open Q&A and informational support",
+          "Description emphasizes joining with questions and concerns about A/B experiments",
+          "Recurring schedule (Tuesdays and Thursdays) suggests ongoing informational availability",
+          "No external attendees mentioned, indicating internal knowledge-sharing",
+          "Duration of 60 minutes allows for multiple questions and explanations rather than structured training"
+        ]
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAH+9Sw9g==\"",
+      "id": "AAkBOQAICN4WfhqIAAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAABxtbMiQAABA=",
+      "subject": "[US] Copilot Evaluation Platform Office Hour",
+      "bodyPreview": "Hi,\r\n\r\n\r\nThis Office Hour is used to answer your questions about the Copilot Evaluation Platform. If you have any questions for SEVAL, we're here to help!\r\n\r\nResources:\r\nSEVAL Manual Book | Substrate Dev Center\r\n1. Define Metrics | Substrate Dev Center",
+      "seriesMasterId": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHG1syJAAA",
+      "showAs": "tentative",
+      "type": "occurrence",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkBOQAICN4WfhqIAAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAABxtbMiQAABA%3D&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "notResponded",
+        "time": "0001-01-01T00:00:00Z"
+      },
+      "start": {
+        "dateTime": "2025-10-29T08:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-10-29T08:30:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Yolanda Zhao",
+          "address": "yolandazhao@microsoft.com"
+        }
+      },
+      "classification": {
+        "specific_type": "Informational Briefings",
+        "primary_category": "Informational & Broadcast Meetings",
+        "confidence": 0.88,
+        "reasoning": "The meeting is labeled as an 'Office Hour' intended to answer questions about the Copilot Evaluation Platform, which suggests a primarily informational and Q&A-driven session rather than a structured training or planning meeting. It is likely open to multiple attendees seeking clarification, aligning with an informational briefing format rather than a recurring cadence or workshop.",
+        "key_indicators": [
+          "Title includes 'Office Hour', indicating an open Q&A and informational purpose",
+          "Description emphasizes answering questions about a specific platform (Copilot Evaluation Platform)",
+          "References to resources and manuals suggest informational support rather than decision-making",
+          "Duration of 60 minutes fits typical informational or Q&A sessions",
+          "No indication of external attendees, planning, or formal training structure"
+        ]
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAH+9TjHQ==\"",
+      "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAIBJdDUwAA",
+      "subject": "Sync-up",
+      "bodyPreview": "Hi @Qingwei, @Shi, @Chin-Yew, and @Haidong,",
+      "seriesMasterId": null,
+      "showAs": "busy",
+      "type": "singleInstance",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkALgAAAAAAHYQDEapmEc2byACqAC%2FEWg0A%2BkGCLFUuv0KY0MFe0YQo0AAIBJdDUwAA&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "accepted",
+        "time": "2025-10-29T08:41:49.4217984+08:00"
+      },
+      "start": {
+        "dateTime": "2025-10-29T14:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-10-29T14:30:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Dongmei Zhang",
+          "address": "dongmeiz@microsoft.com"
+        }
+      },
+      "classification": {
+        "specific_type": "Team Status Update Meetings",
+        "primary_category": "Internal Recurring Meetings (Cadence)",
+        "confidence": 0.82,
+        "reasoning": "The title 'Sync-up' strongly suggests a coordination or status meeting, and the presence of multiple internal attendees indicates a team-oriented discussion. However, there is no explicit recurrence pattern provided, which introduces some ambiguity. Given the 60-minute duration and lack of external participants, the most likely purpose is an internal team status update or alignment meeting.",
+        "key_indicators": [
+          "Title contains 'Sync-up', a common term for status or alignment meetings",
+          "Multiple internal attendees mentioned (Qingwei, Shi, Chin-Yew, Haidong)",
+          "No external participants indicated, suggesting internal team focus",
+          "Duration of 60 minutes, which is within range for a deeper team sync",
+          "Lack of decision-making or planning keywords, pointing toward status/alignment"
+        ]
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAH+9TolA==\"",
+      "id": "AAkBOQAICN4WfhqIAAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAAB7byqvcAABA=",
+      "subject": "[EU & Asia] Copilot Evaluation Platform Office Hour",
+      "bodyPreview": "Hi,\r\n\r\nThis Office Hour is used to answer your questions about the Copilot Evaluation Platform. If you have any questions for SEVAL, we're here to help!\r\n\r\nResources:\r\nSEVAL Manual Book | Substrate Dev Center\r\n1. Define Metrics | Substrate Dev Center\r\n\r\nL",
+      "seriesMasterId": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHtvKq9wAA",
+      "showAs": "tentative",
+      "type": "occurrence",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkBOQAICN4WfhqIAAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAAB7byqvcAABA%3D&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "notResponded",
+        "time": "0001-01-01T00:00:00Z"
+      },
+      "start": {
+        "dateTime": "2025-10-29T16:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-10-29T16:30:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Yolanda Zhao",
+          "address": "yolandazhao@microsoft.com"
+        }
+      },
+      "classification": {
+        "specific_type": "Informational Briefings",
+        "primary_category": "Informational & Broadcast Meetings",
+        "confidence": 0.88,
+        "reasoning": "The meeting is labeled as an 'Office Hour' intended to answer questions about the Copilot Evaluation Platform, which suggests a primarily informational and Q&A format rather than collaborative planning or decision-making. It appears to be a recurring support or informational session for internal teams across EU & Asia regions. While the term 'Office Hour' implies some interactivity, the dominant purpose is knowledge sharing and clarification, aligning most closely with an informational briefing.",
+        "key_indicators": [
+          "Title includes 'Office Hour', indicating a session for questions and information sharing",
+          "Description emphasizes answering questions and providing help on a specific platform (Copilot Evaluation Platform)",
+          "Resources provided (manual, dev center links) suggest a knowledge dissemination purpose",
+          "Duration is 60 minutes, typical for informational sessions with Q&A",
+          "No indication of decision-making, planning, or external client involvement"
+        ]
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAH+9T/Rg==\"",
+      "id": "AAkBOQAICN4WfhqIAAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAAB7e5QMoAABA=",
+      "subject": "Prompt Publishing and Promotion - Office Hours (STCA/I)",
+      "bodyPreview": "Hi All,\r\n\r\nWith the recent re-org and ownership changes, the prompt publishing and promotion pipeline has got transitioned to our team (MSAI USR India Prompt Assistance team). While we are working on re-defining the process to accommodate for the large nu",
+      "seriesMasterId": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHt7lAygAA",
+      "showAs": "tentative",
+      "type": "occurrence",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkBOQAICN4WfhqIAAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAAB7e5QMoAABA%3D&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "notResponded",
+        "time": "0001-01-01T00:00:00Z"
+      },
+      "start": {
+        "dateTime": "2025-10-29T16:35:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-10-29T17:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Bhavika Bhadouria",
+          "address": "bhasharma@microsoft.com"
+        }
+      },
+      "classification": {
+        "specific_type": "Informational Briefings",
+        "primary_category": "Informational & Broadcast Meetings",
+        "confidence": 0.88,
+        "reasoning": "The meeting appears to be an 'office hours' session intended to share updates and clarify changes related to prompt publishing and promotion after a recent re-org. The title and description suggest a focus on providing information and answering questions rather than making decisions or planning. While there may be some Q&A, the primary purpose is informational dissemination.",
+        "key_indicators": [
+          "Title includes 'Office Hours', which typically indicates an open informational session",
+          "Description mentions recent re-org and ownership changes, signaling an update/announcement",
+          "Focus on explaining process transition rather than planning or decision-making",
+          "60-minute duration aligns with typical informational sessions with Q&A",
+          "No explicit keywords for planning, decision-making, or brainstorming"
+        ]
+      }
+    },
+    {
+      "@odata.etag": "W/\"+kGCLFUuv0KY0MFe0YQo0AAH+855Qg==\"",
+      "id": "AAkBOQAICN4WfhqIAAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAAB7e5QJEAABA=",
+      "subject": "Prompt Publishing and Promotion - Office Hours (PST)",
+      "bodyPreview": "Hi All,\r\n\r\nWith the recent re-org and ownership changes, the prompt publishing and promotion pipeline has got transitioned to our team (MSAI USR India Prompt Assistance team). While we are working on re-defining the process to accommodate for the large nu",
+      "seriesMasterId": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A_kGCLFUuv0KY0MFe0YQo0AAHt7lAkQAA",
+      "showAs": "tentative",
+      "type": "occurrence",
+      "webLink": "https://outlook.office365.com/owa/?itemid=AAkBOQAICN4WfhqIAAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAPpBgixVLr9CmNDBXtGEKNAAB7e5QJEAABA%3D&exvsurl=1&path=/calendar/item",
+      "responseStatus": {
+        "response": "notResponded",
+        "time": "0001-01-01T00:00:00Z"
+      },
+      "start": {
+        "dateTime": "2025-10-29T23:35:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "end": {
+        "dateTime": "2025-10-30T00:00:00.0000000",
+        "timeZone": "Asia/Shanghai"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "Bhavika Bhadouria",
+          "address": "bhasharma@microsoft.com"
+        }
+      },
+      "classification": {
+        "specific_type": "Informational Briefings",
+        "primary_category": "Informational & Broadcast Meetings",
+        "confidence": 0.88,
+        "reasoning": "The meeting is titled 'Office Hours' and mentions a recent re-org and ownership changes, suggesting the purpose is to share updates and clarify processes rather than make decisions or plan strategy. The 60-minute duration and open invitation ('Hi All') indicate a session for information dissemination and Q&A rather than a structured recurring cadence or a workshop. Lack of explicit decision-making or planning language further supports this classification.",
+        "key_indicators": [
+          "Title includes 'Office Hours', which typically signals an open Q&A or informational session",
+          "Description references recent re-org and ownership changes, implying updates and clarification",
+          "Greeting 'Hi All' suggests a broad audience rather than a small focused team",
+          "Duration of 60 minutes fits typical informational briefing or office hours format",
+          "No mention of planning, decision-making, or brainstorming activities"
+        ]
+      }
+    }
+  ],
+  "summary": {
+    "total_meetings": 8,
+    "by_category": {
+      "Internal Recurring Meetings (Cadence)": 2,
+      "Informational & Broadcast Meetings": 6
+    },
+    "by_specific_type": {
+      "Progress Review Meetings": 1,
+      "Training & Education Sessions": 1,
+      "Informational Briefings": 5,
+      "Team Status Update Meetings": 1
+    },
+    "average_confidence": 0.8875,
+    "total_meeting_time_minutes": 0,
+    "total_meeting_time_hours": 0.0
+  }
+}
