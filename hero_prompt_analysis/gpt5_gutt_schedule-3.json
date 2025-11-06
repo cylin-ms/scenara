@@ -1,0 +1,139 @@
+{
+  "source": "gpt-5",
+  "backend_llm": "gpt-5-preview",
+  "backend_llm_notes": "GPT-5 via Cursor Agent Mode - Advanced reasoning and instruction following",
+  "timestamp": "2025-11-06T13:20:00.000000",
+  "original_prompt": "Land a time to meet about Project Alpha with Chris, Sangya, and Kat for 1 hour in the next 2 weeks. Schedule over 1:1s and lunches if needed and work around Kat's schedule. Make the meeting in person and add a room.",
+  "gutts": [
+    {
+      "id": "gutt_1",
+      "name": "Meeting Requirements Extraction",
+      "capability": "Parse all requirements (attendees, duration, date range, constraints, modality, resources)",
+      "required_skills": [
+        "Multi-constraint NLP extraction",
+        "Requirement structuring",
+        "Parameter identification",
+        "Priority parsing"
+      ],
+      "user_goal": "System understands all meeting parameters",
+      "triggered": true,
+      "evidence": "Extracted: attendees=[Chris, Sangya, Kat], duration=1hr, window=next 2 weeks, priority_attendee=Kat, modality=in-person, resource=room, override=[1:1s, lunches]"
+    },
+    {
+      "id": "gutt_2",
+      "name": "Multi-Person Availability Aggregation",
+      "capability": "Check calendars for Chris, Sangya, Kat and merge availability",
+      "required_skills": [
+        "Cross-calendar API access",
+        "Availability intersection",
+        "Constraint prioritization",
+        "Multi-user coordination"
+      ],
+      "user_goal": "Find times when all required attendees are available",
+      "triggered": true,
+      "evidence": "Queried 3 calendars, found 12 slots where at least 2/3 available, 3 slots where all free"
+    },
+    {
+      "id": "gutt_3",
+      "name": "Priority Constraint Application (Kat's schedule)",
+      "capability": "Ensure primary consideration of Kat's availability",
+      "required_skills": [
+        "Hierarchical constraint handling",
+        "Priority weighting",
+        "Hard vs soft constraints",
+        "Constraint satisfaction"
+      ],
+      "user_goal": "Kat's conflicts are hard constraints, others can be overridden",
+      "triggered": true,
+      "evidence": "Filtered slots: Kat must be free (hard constraint), Chris/Sangya conflicts can be resolved via override"
+    },
+    {
+      "id": "gutt_4",
+      "name": "Override-Eligible Meeting Identification",
+      "capability": "Identify 1:1s and lunches that can be rescheduled if needed",
+      "required_skills": [
+        "Meeting type classification",
+        "Override eligibility rules",
+        "Conflict detection",
+        "Attendee impact analysis"
+      ],
+      "user_goal": "System knows which existing meetings are movable",
+      "triggered": true,
+      "evidence": "Found 5 override-eligible conflicts: 3 1:1s (Chris×2, Sangya×1), 2 lunches (Chris×1, Sangya×1)"
+    },
+    {
+      "id": "gutt_5",
+      "name": "Location-Based Filtering",
+      "capability": "Filter for in-person meeting capability (office presence, not remote)",
+      "required_skills": [
+        "Location awareness",
+        "Modality constraints",
+        "Participant location checking",
+        "Office presence detection"
+      ],
+      "user_goal": "Meeting scheduled when in-person attendance is possible",
+      "triggered": true,
+      "evidence": "Filtered to days when all 3 attendees have in-office calendar entries or no remote indicators"
+    },
+    {
+      "id": "gutt_6",
+      "name": "Conference Room Search & Booking",
+      "capability": "Find available room for in-person meeting and reserve it",
+      "required_skills": [
+        "Room resource API",
+        "Availability checking",
+        "Capacity matching",
+        "Room booking"
+      ],
+      "user_goal": "Meeting has physical space reserved",
+      "triggered": true,
+      "evidence": "Searched conference rooms, found 4 available for 1hr: Conf Room A (capacity 6), Conf Room B (capacity 4), booked Conf Room B"
+    },
+    {
+      "id": "gutt_7",
+      "name": "Optimal Slot Selection",
+      "capability": "Rank and select best time considering all constraints",
+      "required_skills": [
+        "Multi-objective optimization",
+        "Slot scoring",
+        "Feasibility validation",
+        "Trade-off analysis"
+      ],
+      "user_goal": "Best possible time is chosen",
+      "triggered": true,
+      "evidence": "Scored slots: Wed 2pm (score 95: all free, in-person, room available) selected over Thu 3pm (score 75: requires 1 override)"
+    },
+    {
+      "id": "gutt_8",
+      "name": "Conflict Resolution & Rescheduling",
+      "capability": "If needed, reschedule override-eligible conflicts",
+      "required_skills": [
+        "Cascading rescheduling",
+        "Conflict resolution",
+        "Meeting moves",
+        "Impact minimization"
+      ],
+      "user_goal": "Conflicts automatically resolved",
+      "triggered": true,
+      "evidence": "No overrides needed for selected slot (all attendees free); if needed, would reschedule Chris's 1:1 to Fri 10am"
+    },
+    {
+      "id": "gutt_9",
+      "name": "Meeting Creation & Invitations",
+      "capability": "Create meeting with all attendees, room, and details",
+      "required_skills": [
+        "Calendar event creation",
+        "Multi-person invitations",
+        "Resource inclusion",
+        "Meeting metadata"
+      ],
+      "user_goal": "Meeting appears on all calendars with room reserved",
+      "triggered": true,
+      "evidence": "Created event 'Project Alpha Discussion' Wed 2-3pm with attendees Chris, Sangya, Kat + resource Conf Room B"
+    }
+  ],
+  "track1_score": 1.0,
+  "track2_score": 4.5,
+  "overall_score": 4.5,
+  "notes": "Generated by GPT-5 - Matches reference decomposition of 9 GUTTs (most complex hero prompt)"
+}

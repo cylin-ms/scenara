@@ -1,0 +1,62 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Scenara//Meeting Prep Focus Time//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Meeting Preparation Focus Time
+X-WR-TIMEZONE:UTC
+BEGIN:VEVENT
+DTSTART:20251008T080000
+DTEND:20251008T084500
+SUMMARY:🎯 Focus Time: Meeting Prep (45min)
+DESCRIPTION:Prepare for 1 meeting(s) on October 09\n\n- Prepare.AI Status Review (45min prep)\n
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:Focus Time,Meeting Prep
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20251015T013000
+DTEND:20251015T020000
+SUMMARY:🎯 Focus Time: Meeting Prep (30min)
+DESCRIPTION:Prepare for 1 meeting(s) on October 16\n\n- Agentic Memory Workshop – Modular, Portable Memory for Human-Agent Interactions (30min prep)\n
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:Focus Time,Meeting Prep
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20251016T023000
+DTEND:20251016T034500
+SUMMARY:🎯 Focus Time: Meeting Prep (75min)
+DESCRIPTION:Prepare for 2 meeting(s) on October 17\n\n- SilverFlow+TopicLens Project weekly review (45min prep)\n- HIVE | T+P Meeting Prep Monthly Sync (30min prep)\n
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:Focus Time,Meeting Prep
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20251020T080000
+DTEND:20251020T083000
+SUMMARY:🎯 Focus Time: Meeting Prep (30min)
+DESCRIPTION:Prepare for 1 meeting(s) on October 21\n\n- Priority Calendar Deep Dive (30min prep)\n
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:Focus Time,Meeting Prep
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20251022T080000
+DTEND:20251022T084500
+SUMMARY:🎯 Focus Time: Meeting Prep (45min)
+DESCRIPTION:Prepare for 1 meeting(s) on October 23\n\n- Prepare.AI Status Review (45min prep)\n
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:Focus Time,Meeting Prep
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20251023T045500
+DTEND:20251023T061000
+SUMMARY:🎯 Focus Time: Meeting Prep (75min)
+DESCRIPTION:Prepare for 2 meeting(s) on October 24\n\n- SilverFlow+TopicLens Project weekly review (45min prep)\n- Virtual Interview for Senior Applied Scientist(LLM) (1864549) (30min prep)\n
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CATEGORIES:Focus Time,Meeting Prep
+END:VEVENT
+END:VCALENDAR

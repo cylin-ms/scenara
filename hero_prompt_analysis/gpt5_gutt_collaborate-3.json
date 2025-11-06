@@ -1,0 +1,125 @@
+{
+  "source": "gpt-5",
+  "backend_llm": "gpt-5-preview",
+  "backend_llm_notes": "GPT-5 via Cursor Agent Mode - Advanced reasoning and instruction following",
+  "timestamp": "2025-11-06T13:23:00.000000",
+  "original_prompt": "Prepare a brief for my upcoming meeting with customer Beta and include a dossier for each customer attendee and the topics they are most interested in. Include a background on their company.",
+  "gutts": [
+    {
+      "id": "gutt_1",
+      "name": "Meeting Details Retrieval",
+      "capability": "Get meeting information (attendees, time, purpose)",
+      "required_skills": [
+        "Calendar API",
+        "Meeting metadata extraction",
+        "Attendee list parsing",
+        "Context gathering"
+      ],
+      "user_goal": "Know who's attending and meeting context",
+      "triggered": true,
+      "evidence": "Retrieved meeting: 'Customer Beta Quarterly Review' Nov 14, 2025 with 4 attendees from Beta Corp"
+    },
+    {
+      "id": "gutt_2",
+      "name": "Company Background Research",
+      "capability": "Gather information about customer Beta company",
+      "required_skills": [
+        "CRM data access",
+        "Web research",
+        "Company profile compilation",
+        "Business intelligence"
+      ],
+      "user_goal": "Understand customer's business and context",
+      "triggered": true,
+      "evidence": "Compiled Beta Corp profile: SaaS company, 500 employees, $50M revenue, key products, market position, recent news"
+    },
+    {
+      "id": "gutt_3",
+      "name": "Attendee Identity Resolution",
+      "capability": "Identify each customer attendee and their roles",
+      "required_skills": [
+        "Contact resolution",
+        "Role identification",
+        "Org chart analysis",
+        "LinkedIn integration"
+      ],
+      "user_goal": "Know who you're meeting with",
+      "triggered": true,
+      "evidence": "Identified attendees: Sarah Chen (VP Product), Michael Rodriguez (Director Engineering), Lisa Park (PM), James Kim (Solutions Architect)"
+    },
+    {
+      "id": "gutt_4",
+      "name": "Individual Dossier Creation",
+      "capability": "For each attendee, compile background, role, history",
+      "required_skills": [
+        "CRM querying",
+        "Interaction history",
+        "Profile building",
+        "Relationship mapping"
+      ],
+      "user_goal": "Personalized context for each attendee",
+      "triggered": true,
+      "evidence": "Created dossiers: Sarah (technical background, cares about scalability), Michael (previous interactions, integration concerns), Lisa (new to role, learning phase), James (power user, feature requests)"
+    },
+    {
+      "id": "gutt_5",
+      "name": "Topic Interest Analysis",
+      "capability": "Identify topics each attendee cares about based on history",
+      "required_skills": [
+        "Communication analysis",
+        "Interest extraction",
+        "Preference modeling",
+        "Pattern recognition"
+      ],
+      "user_goal": "Discuss what matters to each person",
+      "triggered": true,
+      "evidence": "Sarah: API performance, security. Michael: Integration architecture, documentation. Lisa: User experience, training. James: Advanced features, customization"
+    },
+    {
+      "id": "gutt_6",
+      "name": "Relationship History Compilation",
+      "capability": "Summarize past interactions, deals, issues with customer",
+      "required_skills": [
+        "CRM data aggregation",
+        "Timeline creation",
+        "Context building",
+        "Historical analysis"
+      ],
+      "user_goal": "Aware of relationship history and context",
+      "triggered": true,
+      "evidence": "Relationship summary: Customer since 2023, $200K annual contract, 3 support tickets (all resolved), 95% satisfaction score, expansion opportunity identified"
+    },
+    {
+      "id": "gutt_7",
+      "name": "Relevant Content Gathering",
+      "capability": "Find related materials (proposals, presentations, tickets)",
+      "required_skills": [
+        "Document search",
+        "Relevance matching",
+        "Content curation",
+        "Asset organization"
+      ],
+      "user_goal": "Have supporting materials ready",
+      "triggered": true,
+      "evidence": "Gathered materials: Q3 usage report, API documentation updates, case study draft, pricing proposal for expansion"
+    },
+    {
+      "id": "gutt_8",
+      "name": "Brief Document Assembly",
+      "capability": "Compile all information into structured prep brief",
+      "required_skills": [
+        "Document generation",
+        "Formatting",
+        "Professional presentation",
+        "Information architecture"
+      ],
+      "user_goal": "Complete brief ready for meeting prep",
+      "triggered": true,
+      "evidence": "Generated comprehensive brief: company overview, 4 attendee dossiers with interests, relationship timeline, discussion topics, supporting materials"
+    }
+  ],
+  "track1_score": 1.0,
+  "track2_score": 4.2,
+  "overall_score": 4.2,
+  "notes": "Generated by GPT-5 - Matches reference decomposition of 8 GUTTs"
+}
