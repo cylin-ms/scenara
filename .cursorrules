@@ -1199,6 +1199,21 @@ result = subprocess.run(
 
 ## Lessons Learned
 
+### C-GUTT Consolidation & Documentation Architecture Lessons (November 6, 2025) 🏗️ CAPABILITY TAXONOMY
+- **✅ CONSOLIDATION SUCCESS**: Reduced 66 original GUTTs to 39 atomic C-GUTTs (41% reduction, 1.69 avg reusability)
+- **Critical Distinction**: Meeting Type (C-GUTT-03, format-based) ≠ Meeting Importance (C-GUTT-04, value-based) - separate classifiers required
+- **Multi-Document Strategy**: Three complementary views needed for complete coverage:
+  1. **CONSOLIDATED_GUTT_REFERENCE.md**: Functional view with examples (what to build)
+  2. **GUTT_CROSS_PROMPT_CONSOLIDATION_ANALYSIS.md**: Consolidation methodology (how we got to 39)
+  3. **CAPABILITY_INVENTORY_ANALYSIS.md**: Infrastructure implementation view (technical foundation)
+- **Implementation Focus**: Build 39 C-GUTTs, not 66 discrete capabilities - prevents duplication and improves code reuse
+- **3-Tier Architecture**: Infrastructure capabilities (47) → C-GUTTs (39) → Hero Prompts (9)
+- **Priority Guidance**: Most reused C-GUTTs should be built first (C-GUTT-01: 76%, C-GUTT-19: 44%)
+- **Documentation Pattern**: Map infrastructure to C-GUTTs with "Used by X prompts" instead of old GUTT numbers
+- **Cross-Referencing**: All documents link to each other for complete context
+- **Terminology Cleanup**: Remove "GUTT" references, use "C-GUTT" exclusively for implementation clarity
+- **Git Strategy**: Incremental commits for major sections (header → sections → statistics → appendix)
+
 ### Hybrid DevBox + macOS Integration Lessons (October 26, 2025)
 - **✅ HYBRID SUCCESS**: DevBox (data extraction) + macOS (Ollama processing) eliminates platform constraints
 - **DevBox Role**: SilverFlow + MSAL authentication for enterprise Microsoft 365 data extraction
@@ -1208,6 +1223,7 @@ result = subprocess.run(
 - **Method Name Fix Needed**: OllamaLLMMeetingClassifier needs `classify_meeting` method alias for full compatibility
 - **Results Quality**: Successfully processed 267 meetings with multi-source data fusion (Calendar + Graph + Chat + Documents)
 - **Performance**: Top collaborator analysis with importance scores, confidence levels, and recency weighting
+
 - **Workflow Efficiency**: Best of both platforms without authentication complexity on development machine
 
 ### Technical Lessons
