@@ -2,7 +2,13 @@
 
 **Source**: Calendar.AI Hero Prompts Evaluation Framework  
 **Purpose**: Reference decompositions for benchmarking LLM GUTT analysis capabilities  
-**Date**: November 6, 2025
+**Date**: November 6, 2025  
+**Update**: Includes C-GUTT consolidation analysis (66 → 39 atomic capabilities)
+
+**Related Documents**:
+- [CONSOLIDATED_GUTT_REFERENCE.md](docs/gutt_analysis/CONSOLIDATED_GUTT_REFERENCE.md) - Complete C-GUTT specifications
+- [GUTT_CROSS_PROMPT_CONSOLIDATION_ANALYSIS.md](docs/gutt_analysis/GUTT_CROSS_PROMPT_CONSOLIDATION_ANALYSIS.md) - Consolidation methodology
+- [CAPABILITY_INVENTORY_ANALYSIS.md](docs/gutt_analysis/CAPABILITY_INVENTORY_ANALYSIS.md) - Infrastructure implementation view
 
 ---
 
@@ -434,6 +440,49 @@
 | 9. Customer Meeting Prep | Collaborate | 8 | High | CRM, Research, Documents |
 
 **Total**: 9 Hero Prompts, **66 GUTTs**, Average: 7.3 GUTTs per prompt
+
+**Consolidation Update (November 6, 2025)**:
+- **Original GUTTs**: 66 prompt-specific unit tasks
+- **Consolidated C-GUTTs**: 39 atomic capabilities (41% reduction)
+- **Average Reusability**: 1.69 prompts per C-GUTT
+- **Most Reused**: C-GUTT-01 (Calendar Event Retrieval) serves 5 prompts (76% coverage)
+
+See [CONSOLIDATED_GUTT_REFERENCE.md](docs/gutt_analysis/CONSOLIDATED_GUTT_REFERENCE.md) for complete C-GUTT specifications and [GUTT_CROSS_PROMPT_CONSOLIDATION_ANALYSIS.md](docs/gutt_analysis/GUTT_CROSS_PROMPT_CONSOLIDATION_ANALYSIS.md) for consolidation methodology.
+
+---
+
+## C-GUTT Mapping Summary
+
+**Implementation Focus**: Build the 39 atomic C-GUTTs rather than 66 discrete capabilities to achieve better code reuse and architectural clarity.
+
+### High-Reuse C-GUTTs (Priority Implementation)
+
+| C-GUTT | Capability Name | Prompts | Coverage | Priority |
+|--------|----------------|---------|----------|----------|
+| **C-01** | Calendar Event Retrieval | 5/9 | 76% | CRITICAL |
+| **C-19** | Constraint Satisfaction & Slot Finding | 4/9 | 44% | HIGH |
+| **C-02** | Multi-Calendar Availability Checking | 3/9 | 33% | HIGH |
+| **C-07** | Meeting Update & Rescheduling | 3/9 | 33% | HIGH |
+| **C-11** | Meeting Context Extraction | 3/9 | 33% | HIGH |
+| **C-14** | Document Content Analysis | 3/9 | 33% | HIGH |
+| **C-20** | Conflict Detection & Resolution | 3/9 | 33% | HIGH |
+| **C-32** | Reporting & Visualization | 3/9 | 33% | MEDIUM |
+| **C-33** | Document Assembly & Formatting | 3/9 | 33% | MEDIUM |
+
+### C-GUTT Categories
+
+1. **Calendar Data Operations** (7 C-GUTTs): C-01 to C-07
+2. **Natural Language Processing** (8 C-GUTTs): C-08 to C-15
+3. **Reasoning & Decision Making** (7 C-GUTTs): C-16 to C-22
+4. **Analysis & Insights** (5 C-GUTTs): C-23 to C-27
+5. **Resource Management** (3 C-GUTTs): C-28 to C-30
+6. **Output & Communication** (3 C-GUTTs): C-31 to C-33
+7. **Specialized Collaboration** (6 C-GUTTs): C-34 to C-39
+
+**Implementation Strategy**:
+- Build high-reuse C-GUTTs first (C-01, C-19, C-02, C-07, C-11, C-14, C-20)
+- Top 9 C-GUTTs enable 67% of all hero prompt functionality
+- 39 atomic capabilities provide 100% coverage with better architecture than 66 discrete tasks
 
 ---
 
