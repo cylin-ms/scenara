@@ -748,7 +748,89 @@ Explanation (C12) ────────> Trust and debugging
 
 ---
 
-## Appendix: Complete GUTT Reference (66 Unit Tasks)
+---
+
+## Appendix A: Complete GUTT Reference (66 Unit Tasks)
+
+### Quick Reference: All 66 GUTTs by Number
+
+**Format**: `[Prompt#].[GUTT#]` - GUTT Name
+
+#### Organizer Category (GUTTs 1.1-3.8, Total: 21)
+- **1.1** - Priority Definition & Extraction
+- **1.2** - Calendar Event Retrieval
+- **1.3** - Meeting-Priority Alignment Scoring
+- **1.4** - Accept/Decline Decision Logic
+- **1.5** - Calendar Action Execution
+- **1.6** - Decision Justification & Reporting
+- **2.1** - Calendar Data Retrieval
+- **2.2** - Meeting Importance Classification
+- **2.3** - Preparation Time Estimation
+- **2.4** - Meeting Flagging Logic
+- **2.5** - Calendar Gap Analysis
+- **2.6** - Focus Time Block Scheduling
+- **2.7** - Actionable Recommendations & Reporting
+- **3.1** - Calendar Historical Data Retrieval
+- **3.2** - Meeting Categorization & Classification
+- **3.3** - Time Aggregation & Statistical Analysis
+- **3.4** - Priority Alignment Assessment
+- **3.5** - Low-Value Meeting Identification
+- **3.6** - Time Reclamation Opportunity Analysis
+- **3.7** - Schedule Optimization Recommendations
+- **3.8** - Time Usage Reporting & Visualization
+
+#### Schedule Category (GUTTs 4.1-6.9, Total: 24)
+- **4.1** - Constraint Extraction & Formalization
+- **4.2** - Multi-Calendar Availability Checking
+- **4.3** - Constraint-Based Slot Finding
+- **4.4** - Recurring Meeting Series Creation
+- **4.5** - Meeting Invitation Sending
+- **4.6** - Decline/Conflict Detection & Monitoring
+- **4.7** - Automatic Rescheduling Logic
+- **5.1** - Time Block Specification Parsing
+- **5.2** - Affected Meetings Identification
+- **5.3** - RSVP Decline Execution
+- **5.4** - Alternative Slot Finding
+- **5.5** - Meeting Rescheduling Proposals
+- **5.6** - Calendar Status Update
+- **5.7** - Focus Time Block Creation
+- **5.8** - Action Summary & Confirmation
+- **6.1** - Meeting Requirements Extraction
+- **6.2** - Multi-Person Availability Aggregation
+- **6.3** - Priority Constraint Application
+- **6.4** - Override-Eligible Meeting Identification
+- **6.5** - Location-Based Filtering
+- **6.6** - Conference Room Search & Booking
+- **6.7** - Optimal Slot Selection
+- **6.8** - Conflict Resolution & Rescheduling
+- **6.9** - Meeting Creation & Invitations
+
+#### Collaborate Category (GUTTs 7.1-9.8, Total: 21)
+- **7.1** - Meeting Context Retrieval
+- **7.2** - Stakeholder Role Identification
+- **7.3** - Agenda Structure Planning
+- **7.4** - Progress Review Items Generation
+- **7.5** - Blocker & Risk Identification
+- **7.6** - Time Allocation & Formatting
+- **8.1** - Meeting Materials Retrieval
+- **8.2** - Content Analysis & Topic Extraction
+- **8.3** - Executive Summary Distillation
+- **8.4** - Audience-Aware Framing
+- **8.5** - Objection Anticipation
+- **8.6** - Response Preparation
+- **8.7** - Briefing Document Generation
+- **9.1** - Meeting Details Retrieval
+- **9.2** - Company Background Research
+- **9.3** - Attendee Identity Resolution
+- **9.4** - Individual Dossier Creation
+- **9.5** - Topic Interest Analysis
+- **9.6** - Relationship History Compilation
+- **9.7** - Relevant Content Gathering
+- **9.8** - Brief Document Assembly
+
+---
+
+### Detailed GUTT Descriptions
 
 ### Organizer Category (21 GUTTs)
 
