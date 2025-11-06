@@ -6,9 +6,9 @@
 **Update**: Includes C-GUTT consolidation analysis (66 → 39 atomic capabilities)
 
 **Related Documents**:
-- [CONSOLIDATED_GUTT_REFERENCE.md](docs/gutt_analysis/CONSOLIDATED_GUTT_REFERENCE.md) - Complete C-GUTT specifications
-- [GUTT_CROSS_PROMPT_CONSOLIDATION_ANALYSIS.md](docs/gutt_analysis/GUTT_CROSS_PROMPT_CONSOLIDATION_ANALYSIS.md) - Consolidation methodology
-- [CAPABILITY_INVENTORY_ANALYSIS.md](docs/gutt_analysis/CAPABILITY_INVENTORY_ANALYSIS.md) - Infrastructure implementation view
+- [CONSOLIDATED_GUTT_REFERENCE.md](CONSOLIDATED_GUTT_REFERENCE.md) - Complete C-GUTT specifications
+- [GUTT_CROSS_PROMPT_CONSOLIDATION_ANALYSIS.md](GUTT_CROSS_PROMPT_CONSOLIDATION_ANALYSIS.md) - Consolidation methodology
+- [CAPABILITY_INVENTORY_ANALYSIS.md](CAPABILITY_INVENTORY_ANALYSIS.md) - Infrastructure implementation view
 
 ---
 
@@ -447,7 +447,7 @@
 - **Average Reusability**: 1.69 prompts per C-GUTT
 - **Most Reused**: C-GUTT-01 (Calendar Event Retrieval) serves 5 prompts (76% coverage)
 
-See [CONSOLIDATED_GUTT_REFERENCE.md](docs/gutt_analysis/CONSOLIDATED_GUTT_REFERENCE.md) for complete C-GUTT specifications and [GUTT_CROSS_PROMPT_CONSOLIDATION_ANALYSIS.md](docs/gutt_analysis/GUTT_CROSS_PROMPT_CONSOLIDATION_ANALYSIS.md) for consolidation methodology.
+See [CONSOLIDATED_GUTT_REFERENCE.md](CONSOLIDATED_GUTT_REFERENCE.md) for complete C-GUTT specifications and [GUTT_CROSS_PROMPT_CONSOLIDATION_ANALYSIS.md](GUTT_CROSS_PROMPT_CONSOLIDATION_ANALYSIS.md) for consolidation methodology.
 
 ---
 
