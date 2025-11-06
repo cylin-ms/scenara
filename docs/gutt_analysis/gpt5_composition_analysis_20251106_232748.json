@@ -1,0 +1,1709 @@
+{
+  "metadata": {
+    "timestamp": "20251106_232748",
+    "total_prompts": 9,
+    "model": "dev-gpt-5-chat-jj",
+    "endpoint": "https://fe-26.qas.bing.net/chat/completions",
+    "analysis_type": "execution_composition"
+  },
+  "results": [
+    {
+      "prompt_id": "organizer-1",
+      "prompt_text": "Show me my pending invitations and which ones I should prioritize based on my priorities for this week: customer meetings and product strategy.",
+      "execution_plan": [
+        {
+          "step": 1,
+          "task_id": "CAN-04",
+          "task_name": "Natural Language Understanding (Constraint/Intent Extraction)",
+          "tier": 1,
+          "input": {
+            "type": "user_prompt",
+            "description": "Raw user input text specifying the request and priorities",
+            "schema": {
+              "text": "Show me my pending invitations and which ones I should prioritize based on my priorities for this week: customer meetings and product strategy."
+            }
+          },
+          "processing": "Use NLU to extract structured intents and constraints: identify action (show pending invitations), extract user priorities (customer meetings, product strategy), and time frame (this week).",
+          "output": {
+            "description": "Structured representation of user intent and constraints",
+            "schema": {
+              "intent": "show_pending_invitations",
+              "priorities": [
+                "customer meetings",
+                "product strategy"
+              ],
+              "timeframe": "this week"
+            }
+          },
+          "flows_to": [
+            "step_2"
+          ]
+        },
+        {
+          "step": 2,
+          "task_id": "CAN-01",
+          "task_name": "Calendar Events Retrieval",
+          "tier": 1,
+          "input": {
+            "type": "previous_step_output + external_data",
+            "description": "Structured constraints from step 1 and calendar API",
+            "schema": {
+              "time_range": "start/end of current week",
+              "filter": "status eq 'pending' or responseStatus eq 'notResponded'"
+            }
+          },
+          "processing": "Call Microsoft Graph API to retrieve all calendar events within the specified time range that have pending invitations (user has not responded).",
+          "output": {
+            "description": "List of pending invitation events with metadata",
+            "schema": [
+              {
+                "id": "string",
+                "subject": "string",
+                "start": "datetime",
+                "end": "datetime",
+                "attendees": [
+                  "email"
+                ],
+                "organizer": "email",
+                "responseStatus": "notResponded"
+              }
+            ]
+          },
+          "flows_to": [
+            "step_3"
+          ]
+        },
+        {
+          "step": 3,
+          "task_id": "CAN-02",
+          "task_name": "Meeting Classification",
+          "tier": 1,
+          "input": {
+            "type": "previous_step_output + previous_step_output",
+            "description": "Pending invitations from step 2 and user priorities from step 1",
+            "schema": {
+              "events": [
+                {
+                  "id": "string",
+                  "subject": "string",
+                  "attendees": [
+                    "string"
+                  ],
+                  "bodyPreview": "string"
+                }
+              ],
+              "priorities": [
+                "customer meetings",
+                "product strategy"
+              ]
+            }
+          },
+          "processing": "Classify each event by relevance to user priorities using semantic similarity and rule-based classification. Compute a priority score for each event (0.0-1.0) and assign a category (High, Medium, Low).",
+          "output": {
+            "description": "List of pending invitations with priority scores and categories",
+            "schema": [
+              {
+                "id": "string",
+                "subject": "string",
+                "priority_score": "float",
+                "priority_category": "High|Medium|Low"
+              }
+            ]
+          },
+          "flows_to": [
+            "step_4"
+          ]
+        },
+        {
+          "step": 4,
+          "task_id": "CAN-11",
+          "task_name": "Priority/Preference Matching",
+          "tier": 2,
+          "input": {
+            "type": "previous_step_output",
+            "description": "Classified events with scores from step 3",
+            "schema": [
+              {
+                "id": "string",
+                "subject": "string",
+                "priority_score": "float"
+              }
+            ]
+          },
+          "processing": "Rank events by priority score and filter top recommendations. Apply threshold logic (e.g., score > 0.7 = High priority).",
+          "output": {
+            "description": "Ranked list of pending invitations with priority recommendations",
+            "schema": {
+              "ranked_events": [
+                {
+                  "id": "string",
+                  "subject": "string",
+                  "priority_score": "float",
+                  "priority_category": "High|Medium|Low"
+                }
+              ]
+            }
+          },
+          "flows_to": []
+        }
+      ],
+      "data_flow_summary": "User input is parsed by NLU (step 1) to extract priorities and timeframe → Calendar API retrieves pending invitations (step 2) → Events are classified against priorities (step 3) → Ranked by priority score for final recommendation (step 4).",
+      "orchestration_logic": [
+        "Sequential execution: steps 1 → 2 → 3 → 4",
+        "Error handling: If NLU fails, fallback to default timeframe (current week) and no priority filtering",
+        "If calendar retrieval fails, return error message to user",
+        "If classification fails, return unranked pending invitations",
+        "Retry strategy: API calls retried up to 3 times with exponential backoff"
+      ],
+      "composition_pattern": "sequential",
+      "final_output": {
+        "type": "UI_display",
+        "description": "User sees a ranked list of pending invitations with priority recommendations",
+        "schema": {
+          "pending_invitations": [
+            {
+              "subject": "string",
+              "start": "datetime",
+              "priority_category": "High|Medium|Low",
+              "priority_score": "float"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "prompt_id": "organizer-2",
+      "prompt_text": "I have some important meetings this week—flag the ones I need to prep for, and put time on my calendar to prepare.",
+      "execution_plan": [
+        {
+          "step": 1,
+          "task_id": "CAN-04",
+          "task_name": "Natural Language Understanding (Constraint/Intent Extraction)",
+          "tier": 1,
+          "input": {
+            "type": "user_prompt",
+            "description": "Raw user input text specifying intent and constraints",
+            "schema": {
+              "text": "I have some important meetings this week—flag the ones I need to prep for, and put time on my calendar to prepare."
+            }
+          },
+          "processing": "Extract user intent (flag important meetings, schedule prep time) and temporal constraints (this week). Identify actions: classify meetings by importance, allocate prep time.",
+          "output": {
+            "description": "Structured representation of user intent and constraints",
+            "schema": {
+              "intent": "flag_and_schedule_prep",
+              "timeframe": {
+                "start": "2025-11-06T00:00:00",
+                "end": "2025-11-13T00:00:00"
+              },
+              "actions": [
+                "identify_important_meetings",
+                "schedule_prep_time"
+              ]
+            }
+          },
+          "flows_to": [
+            "step_2"
+          ]
+        },
+        {
+          "step": 2,
+          "task_id": "CAN-01",
+          "task_name": "Calendar Events Retrieval",
+          "tier": 1,
+          "input": {
+            "type": "previous_step_output + external_data",
+            "description": "Timeframe from NLU and calendar API",
+            "schema": {
+              "timeframe": {
+                "start": "2025-11-06T00:00:00",
+                "end": "2025-11-13T00:00:00"
+              }
+            }
+          },
+          "processing": "Query calendar API for all events within the specified timeframe. Retrieve metadata: subject, start, end, attendees, location.",
+          "output": {
+            "description": "List of calendar events for the week",
+            "schema": [
+              {
+                "id": "event123",
+                "subject": "Q4 Strategy Review",
+                "start": "2025-11-08T14:00:00",
+                "end": "2025-11-08T15:00:00",
+                "attendees": [
+                  "vp@company.com"
+                ],
+                "location": "Conf Room A"
+              }
+            ]
+          },
+          "flows_to": [
+            "step_3"
+          ]
+        },
+        {
+          "step": 3,
+          "task_id": "CAN-02",
+          "task_name": "Meeting Classification",
+          "tier": 1,
+          "input": {
+            "type": "previous_step_output",
+            "description": "List of events retrieved from calendar",
+            "schema": [
+              {
+                "id": "event123",
+                "subject": "Q4 Strategy Review",
+                "attendees": [
+                  "vp@company.com"
+                ],
+                "duration": 60
+              }
+            ]
+          },
+          "processing": "Apply classification model to determine importance level for each meeting (Critical, High, Medium, Low) based on attendees, subject, duration, and context.",
+          "output": {
+            "description": "Events annotated with importance classification",
+            "schema": [
+              {
+                "id": "event123",
+                "subject": "Q4 Strategy Review",
+                "importance": "Critical"
+              }
+            ]
+          },
+          "flows_to": [
+            "step_4"
+          ]
+        },
+        {
+          "step": 4,
+          "task_id": "CAN-14",
+          "task_name": "Recommendation Engine",
+          "tier": 2,
+          "input": {
+            "type": "previous_step_output",
+            "description": "Classified events with importance levels",
+            "schema": [
+              {
+                "id": "event123",
+                "subject": "Q4 Strategy Review",
+                "importance": "Critical"
+              }
+            ]
+          },
+          "processing": "Select meetings flagged as Critical or High importance. Generate recommendations for prep time allocation (e.g., 30-60 minutes before meeting).",
+          "output": {
+            "description": "List of meetings requiring prep and recommended prep slots",
+            "schema": [
+              {
+                "event_id": "event123",
+                "prep_duration": 60,
+                "preferred_prep_time": "before_meeting"
+              }
+            ]
+          },
+          "flows_to": [
+            "step_5"
+          ]
+        },
+        {
+          "step": 5,
+          "task_id": "CAN-03",
+          "task_name": "Calendar Event Creation/Update",
+          "tier": 1,
+          "input": {
+            "type": "previous_step_output",
+            "description": "Recommended prep slots for important meetings",
+            "schema": [
+              {
+                "event_id": "event123",
+                "prep_duration": 60,
+                "preferred_prep_time": "before_meeting"
+              }
+            ]
+          },
+          "processing": "Create new calendar events for prep time. Schedule them before the corresponding important meetings, ensuring no conflicts.",
+          "output": {
+            "description": "Confirmation of prep events created in calendar",
+            "schema": [
+              {
+                "prep_event_id": "prep456",
+                "linked_meeting_id": "event123",
+                "start": "2025-11-08T13:00:00",
+                "end": "2025-11-08T14:00:00"
+              }
+            ]
+          },
+          "flows_to": []
+        }
+      ],
+      "data_flow_summary": "User intent and timeframe extracted → Calendar events retrieved → Events classified by importance → Important meetings identified → Prep time recommendations generated → Prep events created in calendar.",
+      "orchestration_logic": [
+        "Sequential execution: NLU → Retrieval → Classification → Recommendation → Event Creation",
+        "Conditional branching: If no important meetings found, skip prep scheduling",
+        "Error handling: If calendar API fails, retry up to 3 times with exponential backoff",
+        "Fallback: If prep slot conflicts cannot be resolved, notify user for manual adjustment"
+      ],
+      "composition_pattern": "sequential with conditional branching",
+      "final_output": {
+        "type": "UI_display + calendar_update",
+        "description": "User sees flagged important meetings and new prep time blocks added to calendar",
+        "schema": {
+          "flagged_meetings": [
+            {
+              "id": "event123",
+              "subject": "Q4 Strategy Review",
+              "importance": "Critical"
+            }
+          ],
+          "prep_events": [
+            {
+              "id": "prep456",
+              "linked_meeting_id": "event123",
+              "start": "2025-11-08T13:00:00",
+              "end": "2025-11-08T14:00:00"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "prompt_id": "organizer-3",
+      "prompt_text": "I'm spending too much time in meetings. Help me find patterns in my calendar and identify opportunities to reclaim time.",
+      "execution_plan": [
+        {
+          "step": 1,
+          "task_id": "CAN-01",
+          "task_name": "Calendar Events Retrieval",
+          "tier": 1,
+          "input": {
+            "type": "user_prompt",
+            "description": "User request triggers retrieval of historical calendar data for analysis",
+            "schema": {
+              "time_range": {
+                "start": "ISO8601 datetime",
+                "end": "ISO8601 datetime"
+              },
+              "filters": {
+                "status": "accepted",
+                "include_fields": [
+                  "subject",
+                  "start",
+                  "end",
+                  "attendees",
+                  "categories"
+                ]
+              }
+            }
+          },
+          "processing": "Call Microsoft Graph API to fetch all calendar events within the last 4-8 weeks (configurable). Apply filters to include only accepted meetings and relevant fields.",
+          "output": {
+            "description": "Array of raw calendar event objects",
+            "schema": [
+              {
+                "id": "string",
+                "subject": "string",
+                "start": "datetime",
+                "end": "datetime",
+                "attendees": [
+                  "string"
+                ],
+                "categories": [
+                  "string"
+                ]
+              }
+            ]
+          },
+          "flows_to": [
+            "step_2"
+          ]
+        },
+        {
+          "step": 2,
+          "task_id": "CAN-02",
+          "task_name": "Meeting Classification",
+          "tier": 1,
+          "input": {
+            "type": "previous_step_output",
+            "description": "Raw calendar events from step 1",
+            "schema": [
+              {
+                "id": "string",
+                "subject": "string",
+                "start": "datetime",
+                "end": "datetime",
+                "attendees": [
+                  "string"
+                ]
+              }
+            ]
+          },
+          "processing": "Apply ML or rule-based classification to categorize each meeting by type (e.g., 1:1, team sync, customer call) and importance level (Critical/High/Medium/Low).",
+          "output": {
+            "description": "Calendar events enriched with classification metadata",
+            "schema": [
+              {
+                "id": "string",
+                "subject": "string",
+                "start": "datetime",
+                "end": "datetime",
+                "meeting_type": "string",
+                "importance": "string"
+              }
+            ]
+          },
+          "flows_to": [
+            "step_3"
+          ]
+        },
+        {
+          "step": 3,
+          "task_id": "CAN-10",
+          "task_name": "Time Aggregation/Statistical Analysis",
+          "tier": 2,
+          "input": {
+            "type": "previous_step_output",
+            "description": "Classified calendar events from step 2",
+            "schema": [
+              {
+                "id": "string",
+                "meeting_type": "string",
+                "importance": "string",
+                "duration_minutes": "integer"
+              }
+            ]
+          },
+          "processing": "Aggregate total time spent by meeting type, importance, and week. Compute metrics such as total meeting hours, average duration, and distribution across categories.",
+          "output": {
+            "description": "Aggregated statistics and patterns",
+            "schema": {
+              "total_meeting_hours": "float",
+              "avg_meeting_duration": "float",
+              "time_by_type": {
+                "1:1": "float",
+                "Team Sync": "float",
+                "Customer Call": "float"
+              },
+              "time_by_importance": {
+                "Critical": "float",
+                "High": "float",
+                "Medium": "float",
+                "Low": "float"
+              }
+            }
+          },
+          "flows_to": [
+            "step_4"
+          ]
+        },
+        {
+          "step": 4,
+          "task_id": "CAN-11",
+          "task_name": "Priority/Preference Matching",
+          "tier": 2,
+          "input": {
+            "type": "previous_step_output + user_prompt",
+            "description": "Aggregated stats and user intent to reclaim time",
+            "schema": {
+              "aggregated_stats": {
+                "time_by_type": "object",
+                "time_by_importance": "object"
+              },
+              "user_intent": "reduce meeting load"
+            }
+          },
+          "processing": "Identify low-value or low-priority meeting categories consuming significant time. Rank opportunities for time reclamation based on importance and alignment with user goals.",
+          "output": {
+            "description": "Ranked list of meeting types or patterns to reduce",
+            "schema": [
+              {
+                "pattern": "string",
+                "time_spent_hours": "float",
+                "recommendation": "string"
+              }
+            ]
+          },
+          "flows_to": [
+            "step_5"
+          ]
+        },
+        {
+          "step": 5,
+          "task_id": "CAN-14",
+          "task_name": "Recommendation Engine",
+          "tier": 2,
+          "input": {
+            "type": "previous_step_output",
+            "description": "Ranked opportunities for time reclamation",
+            "schema": [
+              {
+                "pattern": "string",
+                "time_spent_hours": "float",
+                "recommendation": "string"
+              }
+            ]
+          },
+          "processing": "Generate actionable recommendations such as 'Convert weekly 1:1s to bi-weekly', 'Decline low-priority recurring meetings', or 'Block focus time'. Format for user-friendly display.",
+          "output": {
+            "description": "Final recommendations with supporting data",
+            "schema": {
+              "summary": "string",
+              "recommendations": [
+                {
+                  "action": "string",
+                  "impact": "string",
+                  "supporting_data": "string"
+                }
+              ]
+            }
+          },
+          "flows_to": []
+        }
+      ],
+      "data_flow_summary": "User prompt triggers calendar retrieval (step 1), events are classified (step 2), aggregated for patterns (step 3), matched against user intent (step 4), and converted into actionable recommendations (step 5). Each step enriches data for the next, forming a sequential pipeline.",
+      "orchestration_logic": [
+        "Sequential execution: steps 1 → 2 → 3 → 4 → 5",
+        "Error handling: If calendar retrieval fails, abort with user-friendly error",
+        "Fallback: If classification model unavailable, use rule-based fallback",
+        "Conditional: If insufficient data (<10 meetings), return advisory message instead of full analysis",
+        "Parallelization: None required; all steps depend on previous outputs"
+      ],
+      "composition_pattern": "sequential",
+      "final_output": {
+        "type": "UI_display",
+        "description": "User receives a dashboard or summary report showing meeting patterns and actionable recommendations to reclaim time",
+        "schema": {
+          "summary": "string",
+          "charts": {
+            "time_by_type": "bar_chart",
+            "time_by_importance": "pie_chart"
+          },
+          "recommendations": [
+            {
+              "action": "string",
+              "impact": "string",
+              "supporting_data": "string"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "prompt_id": "schedule-1",
+      "prompt_text": "Land a weekly 30min 1:1 with Sarah for me, afternoons preferred, avoid Fridays. If her schedule changes, automatically find a new time.",
+      "execution_plan": [
+        {
+          "step": 1,
+          "task_id": "CAN-04",
+          "task_name": "Natural Language Understanding (Constraint/Intent Extraction)",
+          "tier": 1,
+          "input": {
+            "type": "user_prompt",
+            "description": "Raw natural language scheduling request from user",
+            "schema": "{ \"text\": \"Land a weekly 30min 1:1 with Sarah for me, afternoons preferred, avoid Fridays. If her schedule changes, automatically find a new time.\" }"
+          },
+          "processing": "Parse the user prompt to extract structured constraints: recurrence pattern, duration, attendee name, time preferences, exclusions, and automation intent.",
+          "output": {
+            "description": "Structured scheduling constraints extracted from natural language",
+            "schema": "{ \"recurrence\": \"weekly\", \"duration_minutes\": 30, \"attendees\": [\"Sarah\"], \"time_preferences\": {\"preferred\": \"afternoon\", \"exclude_days\": [\"Friday\"]}, \"automation\": {\"auto_reschedule\": true} }"
+          },
+          "flows_to": [
+            "step_2",
+            "step_5"
+          ]
+        },
+        {
+          "step": 2,
+          "task_id": "CAN-05",
+          "task_name": "Attendee/Contact Resolution",
+          "tier": 1,
+          "input": {
+            "type": "previous_step_output",
+            "description": "Attendee names extracted from NLU step",
+            "schema": "{ \"attendees\": [\"Sarah\"] }"
+          },
+          "processing": "Resolve attendee name(s) to unique calendar identities using directory lookup and disambiguation logic.",
+          "output": {
+            "description": "Resolved attendee identities with email addresses",
+            "schema": "{ \"attendees\": [{\"name\": \"Sarah Smith\", \"email\": \"sarah.smith@company.com\"}] }"
+          },
+          "flows_to": [
+            "step_3"
+          ]
+        },
+        {
+          "step": 3,
+          "task_id": "CAN-06",
+          "task_name": "Availability Checking (Free/Busy)",
+          "tier": 2,
+          "input": {
+            "type": "previous_step_output + external_data",
+            "description": "Resolved attendee emails and user identity; time window for scheduling",
+            "schema": "{ \"schedules\": [\"me@company.com\", \"sarah.smith@company.com\"], \"time_window\": {\"start\": \"2025-11-06T00:00:00\", \"end\": \"2025-12-06T23:59:59\"} }"
+          },
+          "processing": "Call calendar API to retrieve free/busy information for both user and Sarah over the next month, with 30-minute granularity.",
+          "output": {
+            "description": "Availability blocks for each participant",
+            "schema": "{ \"availability\": {\"me@company.com\": [...], \"sarah.smith@company.com\": [...] } }"
+          },
+          "flows_to": [
+            "step_4"
+          ]
+        },
+        {
+          "step": 4,
+          "task_id": "CAN-12",
+          "task_name": "Constraint Satisfaction",
+          "tier": 2,
+          "input": {
+            "type": "previous_step_output + step_1 constraints",
+            "description": "Availability data combined with user constraints (recurrence, duration, time preferences, exclusions)",
+            "schema": "{ \"availability\": {...}, \"constraints\": {\"recurrence\": \"weekly\", \"duration\": 30, \"preferred_time\": \"afternoon\", \"exclude_days\": [\"Friday\"]} }"
+          },
+          "processing": "Run constraint solver to identify optimal recurring time slots that satisfy all constraints and both participants' availability.",
+          "output": {
+            "description": "Optimal time slot(s) for recurring meeting",
+            "schema": "{ \"selected_slot\": {\"day\": \"Tuesday\", \"start\": \"14:00\", \"end\": \"14:30\"}, \"recurrence\": \"weekly\" }"
+          },
+          "flows_to": [
+            "step_6"
+          ]
+        },
+        {
+          "step": 5,
+          "task_id": "CAN-15",
+          "task_name": "Recurrence Rule Generation",
+          "tier": 3,
+          "input": {
+            "type": "step_1 constraints",
+            "description": "Recurrence pattern extracted from NLU",
+            "schema": "{ \"recurrence\": \"weekly\" }"
+          },
+          "processing": "Generate iCalendar RRULE string for weekly recurrence.",
+          "output": {
+            "description": "RRULE string for recurring event",
+            "schema": "{ \"rrule\": \"FREQ=WEEKLY;BYDAY=TU\" }"
+          },
+          "flows_to": [
+            "step_6"
+          ]
+        },
+        {
+          "step": 6,
+          "task_id": "CAN-03",
+          "task_name": "Calendar Event Creation/Update",
+          "tier": 1,
+          "input": {
+            "type": "previous_step_outputs",
+            "description": "Selected time slot, recurrence rule, attendee identities",
+            "schema": "{ \"subject\": \"1:1 with Sarah\", \"start\": \"2025-11-11T14:00:00\", \"end\": \"2025-11-11T14:30:00\", \"attendees\": [\"sarah.smith@company.com\"], \"rrule\": \"FREQ=WEEKLY;BYDAY=TU\" }"
+          },
+          "processing": "Create recurring calendar event via Microsoft Graph API with specified attendees, time, and recurrence rule.",
+          "output": {
+            "description": "Confirmation of event creation with event ID",
+            "schema": "{ \"event_id\": \"AAMkAGVmMDEz...\", \"status\": \"created\" }"
+          },
+          "flows_to": [
+            "step_7"
+          ]
+        },
+        {
+          "step": 7,
+          "task_id": "CAN-16",
+          "task_name": "Event Monitoring/Change Detection",
+          "tier": 3,
+          "input": {
+            "type": "previous_step_output",
+            "description": "Created event ID and automation flag",
+            "schema": "{ \"event_id\": \"AAMkAGVmMDEz...\", \"auto_reschedule\": true }"
+          },
+          "processing": "Subscribe to calendar webhook notifications for changes in Sarah's schedule or this event; trigger rescheduling workflow if conflicts arise.",
+          "output": {
+            "description": "Webhook subscription confirmation",
+            "schema": "{ \"subscription_id\": \"sub_12345\", \"status\": \"active\" }"
+          },
+          "flows_to": []
+        }
+      ],
+      "data_flow_summary": "User prompt → NLU extracts constraints → Attendee resolution → Availability check → Constraint solver finds optimal slot → Recurrence rule generated → Event created → Monitoring set up for auto-reschedule.",
+      "orchestration_logic": [
+        "Sequential execution for steps 1-6; step 5 (RRULE generation) can run in parallel with step 3-4.",
+        "Conditional: If attendee resolution fails, prompt user for clarification.",
+        "Error handling: Retry API calls for availability and event creation on transient errors.",
+        "Fallback: If no slot found, return alternative suggestions or ask user to relax constraints.",
+        "Asynchronous: Event monitoring runs as background subscription after event creation."
+      ],
+      "composition_pattern": "hybrid (sequential core flow with parallel RRULE generation and asynchronous monitoring)",
+      "final_output": {
+        "type": "calendar_update",
+        "description": "Recurring 1:1 meeting scheduled in user's calendar with auto-reschedule enabled",
+        "schema": "{ \"status\": \"success\", \"event_details\": {\"subject\": \"1:1 with Sarah\", \"start\": \"2025-11-11T14:00:00\", \"recurrence\": \"weekly\", \"attendees\": [\"sarah.smith@company.com\"]}, \"auto_reschedule\": true }"
+      }
+    },
+    {
+      "prompt_id": "schedule-2",
+      "prompt_text": "Clear my Thursday afternoon—reschedule what you can, and decline the rest.",
+      "execution_plan": [
+        {
+          "step": 1,
+          "task_id": "CAN-04",
+          "task_name": "Natural Language Understanding (Constraint/Intent Extraction)",
+          "tier": 1,
+          "input": {
+            "type": "user_prompt",
+            "description": "Raw user input text specifying intent and constraints",
+            "schema": "{ \"text\": \"Clear my Thursday afternoon—reschedule what you can, and decline the rest.\" }"
+          },
+          "processing": "Parse natural language to extract structured constraints: target time window (Thursday afternoon), actions (reschedule vs decline), and intent (clear schedule). Resolve relative date to absolute date using current context.",
+          "output": {
+            "description": "Structured representation of constraints and intent",
+            "schema": "{ \"intent\": \"clear_time_block\", \"time_range\": { \"date\": \"2025-11-07\", \"start\": \"13:00\", \"end\": \"17:00\" }, \"actions\": { \"primary\": \"reschedule\", \"fallback\": \"decline\" } }"
+          },
+          "flows_to": [
+            "step_2"
+          ]
+        },
+        {
+          "step": 2,
+          "task_id": "CAN-01",
+          "task_name": "Calendar Events Retrieval",
+          "tier": 1,
+          "input": {
+            "type": "previous_step_output + external_data",
+            "description": "Time range from step 1 and user calendar data",
+            "schema": "{ \"time_range\": { \"start\": \"2025-11-07T13:00:00\", \"end\": \"2025-11-07T17:00:00\" } }"
+          },
+          "processing": "Query calendar API to retrieve all events overlapping the specified time range. Include event details: id, subject, start, end, attendees, flexibility indicators.",
+          "output": {
+            "description": "List of events scheduled during Thursday afternoon",
+            "schema": "[ { \"id\": \"evt123\", \"subject\": \"Team Sync\", \"start\": \"2025-11-07T14:00:00\", \"end\": \"2025-11-07T15:00:00\", \"attendees\": [\"a@company.com\"], \"isFlexible\": true }, ... ]"
+          },
+          "flows_to": [
+            "step_3"
+          ]
+        },
+        {
+          "step": 3,
+          "task_id": "CAN-02",
+          "task_name": "Meeting Classification",
+          "tier": 1,
+          "input": {
+            "type": "previous_step_output",
+            "description": "List of events retrieved from calendar",
+            "schema": "[ { \"id\": \"evt123\", \"subject\": \"Team Sync\", \"attendees\": [...], \"duration\": 60 } ]"
+          },
+          "processing": "Classify each event by importance and flexibility to determine rescheduling eligibility. Use rules or ML model to assign categories: {critical, high, medium, low} and reschedulable flag.",
+          "output": {
+            "description": "Events annotated with classification and rescheduling eligibility",
+            "schema": "[ { \"id\": \"evt123\", \"importance\": \"medium\", \"reschedulable\": true }, { \"id\": \"evt456\", \"importance\": \"high\", \"reschedulable\": false } ]"
+          },
+          "flows_to": [
+            "step_4"
+          ]
+        },
+        {
+          "step": 4,
+          "task_id": "CAN-06",
+          "task_name": "Availability Checking (Free/Busy)",
+          "tier": 2,
+          "input": {
+            "type": "previous_step_output + external_data",
+            "description": "Events marked as reschedulable and attendee lists",
+            "schema": "{ \"reschedulable_events\": [ { \"id\": \"evt123\", \"attendees\": [\"a@company.com\"] } ], \"time_window\": \"next 7 days\" }"
+          },
+          "processing": "For each reschedulable event, check availability of all attendees in the next 7 days to find alternative slots. Use free/busy API to get availability grids.",
+          "output": {
+            "description": "Candidate alternative time slots for each reschedulable event",
+            "schema": "{ \"evt123\": [ { \"start\": \"2025-11-10T10:00:00\", \"end\": \"2025-11-10T11:00:00\" }, ... ] }"
+          },
+          "flows_to": [
+            "step_5"
+          ]
+        },
+        {
+          "step": 5,
+          "task_id": "CAN-03",
+          "task_name": "Calendar Event Creation/Update",
+          "tier": 1,
+          "input": {
+            "type": "previous_step_output",
+            "description": "Alternative slots for reschedulable events and original event IDs",
+            "schema": "{ \"evt123\": { \"new_time\": { \"start\": \"2025-11-10T10:00:00\", \"end\": \"2025-11-10T11:00:00\" } } }"
+          },
+          "processing": "Update calendar events with new time slots for reschedulable meetings. For non-reschedulable events, mark for decline.",
+          "output": {
+            "description": "Update confirmation for rescheduled events and list of events to decline",
+            "schema": "{ \"rescheduled\": [\"evt123\"], \"to_decline\": [\"evt456\"] }"
+          },
+          "flows_to": [
+            "step_6"
+          ]
+        },
+        {
+          "step": 6,
+          "task_id": "CAN-13",
+          "task_name": "RSVP Status Update",
+          "tier": 2,
+          "input": {
+            "type": "previous_step_output",
+            "description": "List of events to decline",
+            "schema": "{ \"to_decline\": [\"evt456\", \"evt789\"] }"
+          },
+          "processing": "Send RSVP decline updates for events that cannot be rescheduled.",
+          "output": {
+            "description": "Confirmation of declined events",
+            "schema": "{ \"declined\": [\"evt456\", \"evt789\"] }"
+          },
+          "flows_to": []
+        }
+      ],
+      "data_flow_summary": "User input → NLU extracts constraints → Calendar events retrieved → Events classified for rescheduling → Availability checked for alternatives → Events updated or declined → RSVP updates sent.",
+      "orchestration_logic": [
+        "Sequential execution with conditional branching: only reschedulable events proceed to availability checking.",
+        "Error handling: If availability API fails, fallback to declining event.",
+        "Retry strategy: Retry calendar API calls up to 3 times on transient errors.",
+        "Parallelization: Availability checks for multiple events can run in parallel."
+      ],
+      "composition_pattern": "hybrid (sequential core flow with parallel sub-tasks and conditional branching)",
+      "final_output": {
+        "type": "UI_display|calendar_update",
+        "description": "User sees summary of cleared time block, rescheduled events, and declined events. Calendar is updated accordingly.",
+        "schema": "{ \"summary\": { \"cleared_time\": \"2025-11-07T13:00-17:00\", \"rescheduled\": [ { \"subject\": \"Team Sync\", \"new_time\": \"2025-11-10T10:00\" } ], \"declined\": [\"Project Update\"] } }"
+      }
+    },
+    {
+      "prompt_id": "schedule-3",
+      "prompt_text": "Land a time for Project Alpha with Chris, Sangya, and Kat for 1 hour in the next 2 weeks. Schedule over 1:1s if needed, work around Kat's schedule. In person with a room.",
+      "execution_plan": [
+        {
+          "step": 1,
+          "task_id": "CAN-04",
+          "task_name": "Natural Language Understanding (Constraint/Intent Extraction)",
+          "tier": 1,
+          "input": {
+            "type": "user_prompt",
+            "description": "Raw user input text containing scheduling intent and constraints",
+            "schema": "{ \"text\": \"Land a time for Project Alpha with Chris, Sangya, and Kat for 1 hour in the next 2 weeks. Schedule over 1:1s if needed, work around Kat's schedule. In person with a room.\" }"
+          },
+          "processing": "Extract structured constraints: purpose, attendees, duration, timeframe, override rules, priority attendee, modality, resource requirements.",
+          "output": {
+            "description": "Structured representation of scheduling constraints",
+            "schema": "{ \"purpose\": \"Project Alpha\", \"attendees\": [\"Chris\", \"Sangya\", \"Kat\"], \"duration\": 60, \"timeframe\": {\"type\": \"relative\", \"value\": \"2 weeks\"}, \"constraints\": {\"override_rules\": [\"1:1s\"], \"priority_attendee\": \"Kat\", \"modality\": \"in-person\", \"resources\": [\"room\"]} }"
+          },
+          "flows_to": [
+            "step_2"
+          ]
+        },
+        {
+          "step": 2,
+          "task_id": "CAN-05",
+          "task_name": "Attendee/Contact Resolution",
+          "tier": 1,
+          "input": {
+            "type": "previous_step_output",
+            "description": "Attendee names extracted from NLU step",
+            "schema": "{ \"attendees\": [\"Chris\", \"Sangya\", \"Kat\"] }"
+          },
+          "processing": "Resolve each name to a unique calendar identity (email) using directory lookup and disambiguation.",
+          "output": {
+            "description": "Resolved attendee identities with email addresses",
+            "schema": "{ \"attendees\": [\"chris@company.com\", \"sangya@company.com\", \"kat@company.com\"] }"
+          },
+          "flows_to": [
+            "step_3"
+          ]
+        },
+        {
+          "step": 3,
+          "task_id": "CAN-01",
+          "task_name": "Calendar Events Retrieval",
+          "tier": 1,
+          "input": {
+            "type": "external_data",
+            "description": "Timeframe and attendee identities for availability analysis",
+            "schema": "{ \"startDateTime\": \"2025-11-07T00:00:00\", \"endDateTime\": \"2025-11-21T23:59:59\", \"attendees\": [\"me@company.com\", \"chris@company.com\", \"sangya@company.com\", \"kat@company.com\"] }"
+          },
+          "processing": "Retrieve all events for user and attendees within the next 2 weeks to build availability map and identify 1:1 meetings for override.",
+          "output": {
+            "description": "Raw calendar events for all participants",
+            "schema": "{ \"events\": [ {\"id\": \"evt1\", \"subject\": \"1:1 with Chris\", \"start\": \"2025-11-10T14:00:00\", \"end\": \"2025-11-10T14:30:00\", \"attendees\": [\"me@company.com\", \"chris@company.com\"]}, ... ] }"
+          },
+          "flows_to": [
+            "step_4"
+          ]
+        },
+        {
+          "step": 4,
+          "task_id": "CAN-06",
+          "task_name": "Availability Checking (Free/Busy)",
+          "tier": 2,
+          "input": {
+            "type": "previous_step_output",
+            "description": "Calendar events for all attendees",
+            "schema": "{ \"events\": [ ... ], \"attendees\": [\"me@company.com\", \"chris@company.com\", \"sangya@company.com\", \"kat@company.com\"] }"
+          },
+          "processing": "Compute free/busy slots for all attendees within the timeframe, considering override rules for 1:1 meetings.",
+          "output": {
+            "description": "Aggregated availability matrix for all attendees",
+            "schema": "{ \"availability\": [ {\"time\": \"2025-11-10T14:00:00\", \"status\": {\"me\": \"busy\", \"chris\": \"busy\", \"sangya\": \"free\", \"kat\": \"free\"}}, ... ] }"
+          },
+          "flows_to": [
+            "step_5"
+          ]
+        },
+        {
+          "step": 5,
+          "task_id": "CAN-12",
+          "task_name": "Constraint Satisfaction",
+          "tier": 2,
+          "input": {
+            "type": "previous_step_output",
+            "description": "Availability matrix and scheduling constraints",
+            "schema": "{ \"availability\": [...], \"constraints\": {\"duration\": 60, \"priority_attendee\": \"kat@company.com\", \"override_rules\": [\"1:1s\"]} }"
+          },
+          "processing": "Apply constraint solver to find optimal time slot satisfying duration, attendee availability, priority attendee preference, and override rules.",
+          "output": {
+            "description": "Selected optimal time slot for the meeting",
+            "schema": "{ \"start\": \"2025-11-12T15:00:00\", \"end\": \"2025-11-12T16:00:00\" }"
+          },
+          "flows_to": [
+            "step_6"
+          ]
+        },
+        {
+          "step": 6,
+          "task_id": "CAN-19",
+          "task_name": "Resource Booking (Rooms/Equipment)",
+          "tier": 3,
+          "input": {
+            "type": "previous_step_output",
+            "description": "Selected time slot and resource requirement",
+            "schema": "{ \"start\": \"2025-11-12T15:00:00\", \"end\": \"2025-11-12T16:00:00\", \"resources\": [\"room\"] }"
+          },
+          "processing": "Query available rooms for the selected time slot and book one.",
+          "output": {
+            "description": "Booked room details",
+            "schema": "{ \"room\": {\"name\": \"Conference Room B41-3A\", \"id\": \"room123\"} }"
+          },
+          "flows_to": [
+            "step_7"
+          ]
+        },
+        {
+          "step": 7,
+          "task_id": "CAN-03",
+          "task_name": "Calendar Event Creation/Update",
+          "tier": 1,
+          "input": {
+            "type": "previous_step_output",
+            "description": "Final meeting details including attendees, time slot, and room",
+            "schema": "{ \"subject\": \"Project Alpha Meeting\", \"start\": \"2025-11-12T15:00:00\", \"end\": \"2025-11-12T16:00:00\", \"attendees\": [\"chris@company.com\", \"sangya@company.com\", \"kat@company.com\"], \"location\": \"Conference Room B41-3A\" }"
+          },
+          "processing": "Create the calendar event in the user's calendar and send invitations to attendees.",
+          "output": {
+            "description": "Confirmation of event creation with event ID",
+            "schema": "{ \"event_id\": \"evt123\", \"status\": \"created\" }"
+          },
+          "flows_to": []
+        }
+      ],
+      "data_flow_summary": "User prompt → NLU extracts constraints → Attendee resolution → Calendar events retrieval → Availability computation → Constraint solver selects slot → Room booking → Event creation and invitations.",
+      "orchestration_logic": [
+        "Sequential execution with dependency chaining",
+        "Error handling: If attendee resolution fails, prompt user for clarification",
+        "Fallback: If no slot found, relax override rules and retry",
+        "Parallelization: Calendar retrieval for multiple attendees can run in parallel",
+        "Conditional: Room booking only if modality = in-person"
+      ],
+      "composition_pattern": "hybrid (parallel for data retrieval, sequential for constraint solving and event creation)",
+      "final_output": {
+        "type": "calendar_update",
+        "description": "User receives confirmation of scheduled meeting with details",
+        "schema": "{ \"meeting\": { \"subject\": \"Project Alpha Meeting\", \"start\": \"2025-11-12T15:00:00\", \"end\": \"2025-11-12T16:00:00\", \"attendees\": [\"chris@company.com\", \"sangya@company.com\", \"kat@company.com\"], \"location\": \"Conference Room B41-3A\", \"status\": \"confirmed\" } }"
+      }
+    },
+    {
+      "prompt_id": "collaborate-1",
+      "prompt_text": "I have a Project Alpha review coming up. Help me set the agenda based on what the team has been working on.",
+      "execution_plan": [
+        {
+          "step": 1,
+          "task_id": "CAN-04",
+          "task_name": "Natural Language Understanding (Constraint/Intent Extraction)",
+          "tier": 1,
+          "input": {
+            "type": "user_prompt",
+            "description": "Raw user input text describing the intent and context",
+            "schema": {
+              "text": "string"
+            }
+          },
+          "processing": "Use NLU to extract structured intent and context from the user prompt. Identify the meeting purpose (Project Alpha review), intent (create agenda), and relevant entities (project name).",
+          "output": {
+            "description": "Structured representation of user intent and context",
+            "schema": {
+              "intent": "create_agenda",
+              "context": {
+                "project": "Project Alpha",
+                "meeting_type": "review"
+              }
+            }
+          },
+          "flows_to": [
+            "step_2"
+          ]
+        },
+        {
+          "step": 2,
+          "task_id": "CAN-05",
+          "task_name": "Attendee/Contact Resolution",
+          "tier": 1,
+          "input": {
+            "type": "previous_step_output + external_data",
+            "description": "Project context from step 1 and directory data to resolve team members",
+            "schema": {
+              "project": "Project Alpha",
+              "directory": "organization directory API"
+            }
+          },
+          "processing": "Resolve the 'team' associated with Project Alpha by querying directory or project metadata. Expand group references into individual team members with emails.",
+          "output": {
+            "description": "List of resolved team members for Project Alpha",
+            "schema": {
+              "team_members": [
+                {
+                  "name": "string",
+                  "email": "string"
+                }
+              ]
+            }
+          },
+          "flows_to": [
+            "step_3"
+          ]
+        },
+        {
+          "step": 3,
+          "task_id": "CAN-01",
+          "task_name": "Calendar Events Retrieval",
+          "tier": 1,
+          "input": {
+            "type": "previous_step_output + external_data",
+            "description": "Team member list and project context to retrieve relevant past meetings",
+            "schema": {
+              "team_members": [
+                "email"
+              ],
+              "project": "Project Alpha"
+            }
+          },
+          "processing": "Query calendar API for recent meetings involving these team members and filter by project-related keywords (e.g., 'Project Alpha') to gather context on what the team has been working on.",
+          "output": {
+            "description": "List of recent project-related meetings with metadata",
+            "schema": {
+              "meetings": [
+                {
+                  "id": "string",
+                  "subject": "string",
+                  "start": "datetime",
+                  "end": "datetime",
+                  "attendees": [
+                    "string"
+                  ],
+                  "notes": "string"
+                }
+              ]
+            }
+          },
+          "flows_to": [
+            "step_4"
+          ]
+        },
+        {
+          "step": 4,
+          "task_id": "CAN-08",
+          "task_name": "Document/Content Retrieval",
+          "tier": 2,
+          "input": {
+            "type": "previous_step_output + external_data",
+            "description": "Meeting list and project context to retrieve related documents or work items",
+            "schema": {
+              "meetings": [
+                {
+                  "id": "string",
+                  "subject": "string"
+                }
+              ],
+              "project": "Project Alpha"
+            }
+          },
+          "processing": "Fetch relevant documents, notes, or work items from SharePoint, OneDrive, or project management tools associated with Project Alpha to understand recent progress.",
+          "output": {
+            "description": "Collection of documents and summaries related to the project",
+            "schema": {
+              "documents": [
+                {
+                  "title": "string",
+                  "summary": "string",
+                  "link": "string"
+                }
+              ]
+            }
+          },
+          "flows_to": [
+            "step_5"
+          ]
+        },
+        {
+          "step": 5,
+          "task_id": "CAN-09",
+          "task_name": "Document Generation/Formatting",
+          "tier": 2,
+          "input": {
+            "type": "previous_step_output",
+            "description": "Aggregated meeting data and documents to generate an agenda",
+            "schema": {
+              "meetings": [
+                {
+                  "subject": "string",
+                  "notes": "string"
+                }
+              ],
+              "documents": [
+                {
+                  "summary": "string"
+                }
+              ]
+            }
+          },
+          "processing": "Synthesize meeting notes and document summaries into a structured agenda. Use NLG and templates to produce a professional agenda document with sections like 'Recent Progress', 'Discussion Points', and 'Next Steps'.",
+          "output": {
+            "description": "Formatted agenda document for the upcoming review meeting",
+            "schema": {
+              "agenda": {
+                "title": "Project Alpha Review Agenda",
+                "sections": [
+                  {
+                    "heading": "string",
+                    "items": [
+                      "string"
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "flows_to": []
+        }
+      ],
+      "data_flow_summary": "User prompt → NLU extracts intent and context → Resolve team members → Retrieve recent project meetings → Fetch related documents → Generate structured agenda document.",
+      "orchestration_logic": [
+        "Sequential execution: Steps 1 → 2 → 3 → 4 → 5",
+        "Error handling: If team resolution fails, prompt user for clarification",
+        "Fallback: If no documents found, generate agenda from meeting notes only",
+        "Parallelization: Steps 3 and 4 can partially overlap after team resolution"
+      ],
+      "composition_pattern": "hybrid (mostly sequential with partial parallelism)",
+      "final_output": {
+        "type": "UI_display",
+        "description": "A structured agenda displayed to the user, optionally downloadable as a document",
+        "schema": {
+          "agenda": {
+            "title": "string",
+            "sections": [
+              {
+                "heading": "string",
+                "items": [
+                  "string"
+                ]
+              }
+            ]
+          },
+          "download_link": "string"
+        }
+      }
+    },
+    {
+      "prompt_id": "collaborate-2",
+      "prompt_text": "I have an executive meeting in 2 hours. Pull together a briefing on the topics we'll be discussing.",
+      "execution_plan": [
+        {
+          "step": 1,
+          "task_id": "CAN-04",
+          "task_name": "Natural Language Understanding (Constraint/Intent Extraction)",
+          "tier": 1,
+          "input": {
+            "type": "user_prompt",
+            "description": "Raw user input text specifying urgency and intent",
+            "schema": {
+              "text": "I have an executive meeting in 2 hours. Pull together a briefing on the topics we'll be discussing."
+            }
+          },
+          "processing": "Extract structured intent and constraints: identify meeting type (executive), time reference (in 2 hours), and intent (prepare briefing).",
+          "output": {
+            "description": "Structured representation of user intent and constraints",
+            "schema": {
+              "intent": "prepare_briefing",
+              "meeting_type": "executive",
+              "timeframe": {
+                "relative": "2 hours",
+                "absolute_start": "2025-11-06T14:00:00Z"
+              }
+            }
+          },
+          "flows_to": [
+            "step_2"
+          ]
+        },
+        {
+          "step": 2,
+          "task_id": "CAN-01",
+          "task_name": "Calendar Events Retrieval",
+          "tier": 1,
+          "input": {
+            "type": "previous_step_output",
+            "description": "Meeting type and timeframe from NLU output",
+            "schema": {
+              "meeting_type": "executive",
+              "absolute_start": "2025-11-06T14:00:00Z"
+            }
+          },
+          "processing": "Query calendar API for events starting within the next 2 hours, filter for executive meeting type using metadata or title keywords.",
+          "output": {
+            "description": "Event object for the upcoming executive meeting",
+            "schema": {
+              "event_id": "string",
+              "subject": "Executive Strategy Review",
+              "start": "2025-11-06T14:00:00Z",
+              "end": "2025-11-06T15:00:00Z",
+              "attendees": [
+                "vp@company.com",
+                "ceo@company.com"
+              ],
+              "bodyPreview": "Agenda: Q4 strategy, budget allocation"
+            }
+          },
+          "flows_to": [
+            "step_3"
+          ]
+        },
+        {
+          "step": 3,
+          "task_id": "CAN-02",
+          "task_name": "Meeting Classification",
+          "tier": 1,
+          "input": {
+            "type": "previous_step_output",
+            "description": "Event details retrieved from calendar",
+            "schema": {
+              "subject": "Executive Strategy Review",
+              "bodyPreview": "Agenda: Q4 strategy, budget allocation"
+            }
+          },
+          "processing": "Classify meeting context and extract key topics from subject and agenda text to guide briefing content.",
+          "output": {
+            "description": "Structured classification and topic list",
+            "schema": {
+              "meeting_category": "Executive Review",
+              "topics": [
+                "Q4 strategy",
+                "budget allocation"
+              ]
+            }
+          },
+          "flows_to": [
+            "step_4"
+          ]
+        },
+        {
+          "step": 4,
+          "task_id": "CAN-08",
+          "task_name": "Document/Content Retrieval",
+          "tier": 2,
+          "input": {
+            "type": "previous_step_output",
+            "description": "Topics identified from meeting classification",
+            "schema": {
+              "topics": [
+                "Q4 strategy",
+                "budget allocation"
+              ]
+            }
+          },
+          "processing": "Search enterprise content sources (SharePoint, CRM) for relevant documents, reports, and data related to identified topics.",
+          "output": {
+            "description": "Collection of relevant documents and key excerpts",
+            "schema": {
+              "documents": [
+                {
+                  "title": "Q4 Strategy Plan",
+                  "link": "https://sharepoint.company.com/q4-strategy",
+                  "summary": "Key objectives and KPIs for Q4"
+                },
+                {
+                  "title": "Budget Allocation Report",
+                  "link": "https://sharepoint.company.com/budget-allocation",
+                  "summary": "Breakdown of departmental budgets"
+                }
+              ]
+            }
+          },
+          "flows_to": [
+            "step_5"
+          ]
+        },
+        {
+          "step": 5,
+          "task_id": "CAN-09",
+          "task_name": "Document Generation/Formatting",
+          "tier": 2,
+          "input": {
+            "type": "previous_step_output",
+            "description": "Relevant documents and summaries for briefing",
+            "schema": {
+              "documents": [
+                {
+                  "title": "Q4 Strategy Plan",
+                  "summary": "Key objectives and KPIs for Q4"
+                },
+                {
+                  "title": "Budget Allocation Report",
+                  "summary": "Breakdown of departmental budgets"
+                }
+              ]
+            }
+          },
+          "processing": "Generate a concise executive briefing document summarizing key topics, linking to source documents, and highlighting critical points.",
+          "output": {
+            "description": "Formatted briefing document ready for user consumption",
+            "schema": {
+              "briefing_title": "Executive Meeting Briefing",
+              "sections": [
+                {
+                  "topic": "Q4 Strategy",
+                  "summary": "Key objectives and KPIs for Q4",
+                  "source_link": "https://sharepoint.company.com/q4-strategy"
+                },
+                {
+                  "topic": "Budget Allocation",
+                  "summary": "Breakdown of departmental budgets",
+                  "source_link": "https://sharepoint.company.com/budget-allocation"
+                }
+              ]
+            }
+          },
+          "flows_to": []
+        }
+      ],
+      "data_flow_summary": "User prompt → NLU extracts intent and timeframe → Calendar retrieval finds the meeting → Classification identifies topics → Content retrieval gathers supporting documents → Document generation compiles an executive briefing.",
+      "orchestration_logic": [
+        "Sequential execution: Steps 1-5 must occur in order.",
+        "Conditional branching: If no meeting found in Step 2, return error or ask user for clarification.",
+        "Error handling: Retry calendar API calls on transient errors; fallback to approximate time search if exact match fails.",
+        "Parallelization: Document retrieval (Step 4) can fetch multiple sources in parallel.",
+        "Timeout handling: If content retrieval exceeds time limit, generate briefing with available data."
+      ],
+      "composition_pattern": "hybrid (sequential core with parallel sub-tasks in content retrieval)",
+      "final_output": {
+        "type": "UI_display",
+        "description": "An executive briefing document summarizing key topics and linking to supporting materials.",
+        "schema": {
+          "briefing_title": "Executive Meeting Briefing",
+          "sections": [
+            {
+              "topic": "string",
+              "summary": "string",
+              "source_link": "URL"
+            }
+          ],
+          "generated_at": "timestamp"
+        }
+      }
+    },
+    {
+      "prompt_id": "collaborate-3",
+      "prompt_text": "I have a customer meeting tomorrow. Give me a dossier on the attendees and recent interactions.",
+      "execution_plan": [
+        {
+          "step": 1,
+          "task_id": "CAN-04",
+          "task_name": "Natural Language Understanding (Constraint/Intent Extraction)",
+          "tier": 1,
+          "input": {
+            "type": "user_prompt",
+            "description": "Raw user input text specifying meeting context and request",
+            "schema": {
+              "text": "I have a customer meeting tomorrow. Give me a dossier on the attendees and recent interactions."
+            }
+          },
+          "processing": "Extract intent ('generate_dossier'), meeting type ('customer meeting'), and temporal constraint ('tomorrow').",
+          "output": {
+            "description": "Structured representation of user intent and constraints",
+            "schema": {
+              "intent": "generate_dossier",
+              "meeting_type": "customer",
+              "timeframe": {
+                "date": "2025-11-07"
+              }
+            }
+          },
+          "flows_to": [
+            "step_2"
+          ]
+        },
+        {
+          "step": 2,
+          "task_id": "CAN-01",
+          "task_name": "Calendar Events Retrieval",
+          "tier": 1,
+          "input": {
+            "type": "previous_step_output",
+            "description": "Structured constraints from NLU step",
+            "schema": {
+              "meeting_type": "customer",
+              "timeframe": {
+                "date": "2025-11-07"
+              }
+            }
+          },
+          "processing": "Query calendar API for events matching date and likely customer meeting indicators (attendees with external domains, subject keywords).",
+          "output": {
+            "description": "List of candidate events for the specified date",
+            "schema": [
+              {
+                "id": "event123",
+                "subject": "Customer Strategy Review",
+                "start": "2025-11-07T14:00:00",
+                "end": "2025-11-07T15:00:00",
+                "attendees": [
+                  {
+                    "email": "john@acme.com",
+                    "name": "John Doe"
+                  },
+                  {
+                    "email": "sarah@company.com",
+                    "name": "Sarah Smith"
+                  }
+                ]
+              }
+            ]
+          },
+          "flows_to": [
+            "step_3"
+          ]
+        },
+        {
+          "step": 3,
+          "task_id": "CAN-02",
+          "task_name": "Meeting Classification",
+          "tier": 1,
+          "input": {
+            "type": "previous_step_output",
+            "description": "Candidate events retrieved from calendar",
+            "schema": [
+              {
+                "id": "event123",
+                "subject": "Customer Strategy Review",
+                "attendees": [
+                  {
+                    "email": "john@acme.com"
+                  },
+                  {
+                    "email": "sarah@company.com"
+                  }
+                ]
+              }
+            ]
+          },
+          "processing": "Classify the retrieved event(s) to confirm they are customer meetings by checking attendee domains and subject keywords.",
+          "output": {
+            "description": "Filtered and confirmed customer meeting event(s)",
+            "schema": [
+              {
+                "id": "event123",
+                "classification": "customer_meeting",
+                "attendees": [
+                  {
+                    "email": "john@acme.com"
+                  },
+                  {
+                    "email": "sarah@company.com"
+                  }
+                ]
+              }
+            ]
+          },
+          "flows_to": [
+            "step_4"
+          ]
+        },
+        {
+          "step": 4,
+          "task_id": "CAN-05",
+          "task_name": "Attendee/Contact Resolution",
+          "tier": 1,
+          "input": {
+            "type": "previous_step_output",
+            "description": "Confirmed meeting attendees",
+            "schema": [
+              {
+                "email": "john@acme.com"
+              },
+              {
+                "email": "sarah@company.com"
+              }
+            ]
+          },
+          "processing": "Resolve attendee identities to full profiles using directory and CRM lookups, including roles, company, and relationship context.",
+          "output": {
+            "description": "Enriched attendee profiles",
+            "schema": [
+              {
+                "email": "john@acme.com",
+                "name": "John Doe",
+                "company": "Acme Corp",
+                "role": "VP of Sales",
+                "internal_external": "external"
+              },
+              {
+                "email": "sarah@company.com",
+                "name": "Sarah Smith",
+                "company": "Company Inc",
+                "role": "Account Manager",
+                "internal_external": "internal"
+              }
+            ]
+          },
+          "flows_to": [
+            "step_5"
+          ]
+        },
+        {
+          "step": 5,
+          "task_id": "CAN-08",
+          "task_name": "Document/Content Retrieval",
+          "tier": 2,
+          "input": {
+            "type": "previous_step_output",
+            "description": "Enriched attendee profiles",
+            "schema": [
+              {
+                "email": "john@acme.com",
+                "company": "Acme Corp"
+              }
+            ]
+          },
+          "processing": "Retrieve recent interactions (emails, meetings, CRM notes) related to these attendees from connected systems (Outlook, CRM, SharePoint).",
+          "output": {
+            "description": "Collection of recent interactions for each attendee",
+            "schema": {
+              "john@acme.com": [
+                {
+                  "type": "email",
+                  "date": "2025-11-01",
+                  "summary": "Follow-up on Q4 proposal"
+                },
+                {
+                  "type": "meeting",
+                  "date": "2025-10-28",
+                  "summary": "Quarterly business review"
+                }
+              ],
+              "sarah@company.com": [
+                {
+                  "type": "internal_note",
+                  "date": "2025-11-02",
+                  "summary": "Prep for customer strategy review"
+                }
+              ]
+            }
+          },
+          "flows_to": [
+            "step_6"
+          ]
+        },
+        {
+          "step": 6,
+          "task_id": "CAN-09",
+          "task_name": "Document Generation/Formatting",
+          "tier": 2,
+          "input": {
+            "type": "previous_step_output",
+            "description": "Enriched attendee profiles and recent interactions",
+            "schema": {
+              "attendees": [
+                {
+                  "name": "John Doe",
+                  "company": "Acme Corp",
+                  "role": "VP of Sales",
+                  "recent_interactions": [
+                    {
+                      "type": "email",
+                      "summary": "Follow-up on Q4 proposal"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "processing": "Generate a well-formatted dossier document summarizing attendee details and recent interactions, using a predefined template.",
+          "output": {
+            "description": "Final dossier document (structured JSON or formatted text)",
+            "schema": {
+              "title": "Customer Meeting Dossier",
+              "date": "2025-11-07",
+              "attendees": [
+                {
+                  "name": "John Doe",
+                  "company": "Acme Corp",
+                  "role": "VP of Sales",
+                  "recent_interactions": [
+                    "2025-11-01: Follow-up on Q4 proposal",
+                    "2025-10-28: Quarterly business review"
+                  ]
+                }
+              ]
+            }
+          },
+          "flows_to": []
+        }
+      ],
+      "data_flow_summary": "User prompt → NLU extracts intent and date → Calendar retrieval finds candidate events → Classification confirms customer meeting → Attendee resolution enriches profiles → Content retrieval gathers recent interactions → Document generation compiles dossier.",
+      "orchestration_logic": [
+        "Sequential execution: Steps 1-6 must occur in order",
+        "Conditional branching: If no events found in Step 2, return 'No customer meeting found' message",
+        "Error handling: Retry API calls for calendar and directory lookups up to 3 times on transient errors",
+        "Fallback: If content retrieval fails, generate dossier with attendee info only",
+        "Parallelization: Within Step 5, retrieve interactions for multiple attendees in parallel"
+      ],
+      "composition_pattern": "hybrid (sequential with parallel sub-tasks)",
+      "final_output": {
+        "type": "UI_display",
+        "description": "A structured dossier summarizing attendees and recent interactions for the identified customer meeting",
+        "schema": {
+          "title": "Customer Meeting Dossier",
+          "meeting_date": "2025-11-07",
+          "attendees": [
+            {
+              "name": "John Doe",
+              "company": "Acme Corp",
+              "role": "VP of Sales",
+              "recent_interactions": [
+                "2025-11-01: Follow-up on Q4 proposal",
+                "2025-10-28: Quarterly business review"
+              ]
+            },
+            {
+              "name": "Sarah Smith",
+              "company": "Company Inc",
+              "role": "Account Manager",
+              "recent_interactions": [
+                "2025-11-02: Prep for customer strategy review"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

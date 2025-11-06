@@ -1,0 +1,180 @@
+{
+  "prompt_id": "organizer-1",
+  "prompt_text": "Show me my pending invitations and which ones I should prioritize based on my priorities for this week: customer meetings and product strategy.",
+  "execution_plan": [
+    {
+      "step": 1,
+      "task_id": "CAN-04",
+      "task_name": "Natural Language Understanding (Constraint/Intent Extraction)",
+      "tier": 1,
+      "input": {
+        "type": "user_prompt",
+        "description": "Raw user input text specifying the request and priorities",
+        "schema": {
+          "text": "Show me my pending invitations and which ones I should prioritize based on my priorities for this week: customer meetings and product strategy."
+        }
+      },
+      "processing": "Use NLU to extract user intent (view pending invitations), and extract explicit priorities ('customer meetings', 'product strategy').",
+      "output": {
+        "description": "Structured representation of user intent and priorities",
+        "schema": {
+          "intent": "view_pending_invitations_with_prioritization",
+          "priorities": [
+            "customer meetings",
+            "product strategy"
+          ],
+          "timeframe": "this week"
+        }
+      },
+      "flows_to": [
+        "step_2",
+        "step_3"
+      ]
+    },
+    {
+      "step": 2,
+      "task_id": "CAN-01",
+      "task_name": "Calendar Events Retrieval",
+      "tier": 1,
+      "input": {
+        "type": "previous_step_output + external_data",
+        "description": "Structured intent from step 1 and calendar API",
+        "schema": {
+          "filter": {
+            "status": "pending",
+            "time_range": "this week"
+          }
+        }
+      },
+      "processing": "Query calendar API (Microsoft Graph) to retrieve all events with RSVP status = 'pending' within the current week.",
+      "output": {
+        "description": "List of pending invitation events with metadata",
+        "schema": [
+          {
+            "event_id": "string",
+            "subject": "string",
+            "start": "datetime",
+            "end": "datetime",
+            "attendees": [
+              "email"
+            ],
+            "organizer": "email",
+            "bodyPreview": "string"
+          }
+        ]
+      },
+      "flows_to": [
+        "step_4"
+      ]
+    },
+    {
+      "step": 3,
+      "task_id": "CAN-11",
+      "task_name": "Priority/Preference Matching",
+      "tier": 2,
+      "input": {
+        "type": "previous_step_output",
+        "description": "User priorities extracted from step 1",
+        "schema": {
+          "priorities": [
+            "customer meetings",
+            "product strategy"
+          ]
+        }
+      },
+      "processing": "Prepare priority embeddings or keyword sets for later semantic matching against meeting details.",
+      "output": {
+        "description": "Priority representation for scoring",
+        "schema": {
+          "priority_vector": "embedding or keyword set"
+        }
+      },
+      "flows_to": [
+        "step_4"
+      ]
+    },
+    {
+      "step": 4,
+      "task_id": "CAN-02",
+      "task_name": "Meeting Classification",
+      "tier": 1,
+      "input": {
+        "type": "previous_step_output (step 2 + step 3)",
+        "description": "Pending invitations and priority representation",
+        "schema": {
+          "events": [
+            {
+              "event_id": "string",
+              "subject": "string",
+              "attendees": [
+                "email"
+              ],
+              "bodyPreview": "string"
+            }
+          ],
+          "priority_vector": "embedding or keyword set"
+        }
+      },
+      "processing": "For each pending invitation, classify its alignment with user priorities using semantic similarity and/or rule-based scoring. Assign a priority score (0-1) and category (High/Medium/Low).",
+      "output": {
+        "description": "Pending invitations with priority scores and categories",
+        "schema": [
+          {
+            "event_id": "string",
+            "subject": "string",
+            "priority_score": "float",
+            "priority_category": "High|Medium|Low"
+          }
+        ]
+      },
+      "flows_to": [
+        "step_5"
+      ]
+    },
+    {
+      "step": 5,
+      "task_id": "CAN-13",
+      "task_name": "RSVP Status Update (Optional)",
+      "tier": 2,
+      "input": {
+        "type": "user_action",
+        "description": "If user chooses to accept/decline based on prioritization",
+        "schema": {
+          "event_id": "string",
+          "action": "accept|decline"
+        }
+      },
+      "processing": "Update RSVP status via calendar API if user acts on recommendations.",
+      "output": {
+        "description": "Confirmation of RSVP update",
+        "schema": {
+          "event_id": "string",
+          "status": "accepted|declined"
+        }
+      },
+      "flows_to": []
+    }
+  ],
+  "data_flow_summary": "User input \u2192 NLU extracts priorities \u2192 Calendar API retrieves pending invitations \u2192 Priority representation prepared \u2192 Classification ranks invitations by alignment \u2192 Results displayed to user \u2192 Optional RSVP updates.",
+  "orchestration_logic": [
+    "Ensure step 2 and step 3 run in parallel since they are independent, then merge outputs for step 4.",
+    "Handle empty pending invitations gracefully (skip classification).",
+    "If classification fails, fallback to simple keyword matching.",
+    "Optional RSVP update only triggered by explicit user action."
+  ],
+  "composition_pattern": "parallel then sequential (steps 2 and 3 in parallel \u2192 step 4 \u2192 optional step 5)",
+  "final_output": {
+    "type": "UI_display",
+    "description": "User sees a ranked list of pending invitations with priority scores and categories.",
+    "schema": {
+      "pending_invitations": [
+        {
+          "subject": "string",
+          "start": "datetime",
+          "priority_score": "float",
+          "priority_category": "High|Medium|Low"
+        }
+      ]
+    }
+  }
+}

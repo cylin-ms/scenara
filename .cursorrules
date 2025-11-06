@@ -225,79 +225,88 @@ Scenara 2.0 is an enterprise meeting intelligence system that evolved from the P
 
 
 ### 🎯 Daily Status Update (November 6, 2025)
-**Status**: ✅ COMPLETE - C-GUTT consolidation + documentation reorganization + GPT-5 GUTT analysis finished
+**Status**: ✅ COMPLETE - Canonical Unit Tasks + Execution Composition Analysis
 
 **Session Summary** (Extended session across multiple activities):
 
-**Part 1: C-GUTT Consolidation** (17.3 minutes):
-- ✅ **C-GUTT Consolidation Analysis**: Reduced 66 original GUTTs to 39 atomic capabilities (41% reduction)
-- ✅ **Cross-Prompt Analysis**: Identified reusability patterns (1.69 prompts per C-GUTT average)
-- ✅ **C-GUTT Reference Documentation**: Created CONSOLIDATED_GUTT_REFERENCE.md with all 39 C-GUTTs documented
-- ✅ **Critical Correction**: Separated Meeting Type (C-GUTT-03) from Meeting Importance (C-GUTT-04)
-- ✅ **Capability Inventory Complete Update**: Converted all 12 sections to C-GUTT-only terminology
-- ✅ **Documentation Cleanup**: Removed 240+ lines of redundant 66 GUTT descriptions from Appendix A
-- ✅ **Hero Prompts Reference Updated**: Added C-GUTT consolidation summary and implementation priorities
+**Part 1: Canonical Unit Tasks Framework** (From Claude 4.5 + GPT-5 consolidation):
+- ✅ **20 Canonical Unit Tasks Identified**: Reduced 132 GUTTs (66 Claude + 66 GPT-5) to 20 atomic tasks
+- ✅ **63.6% Semantic Equivalence**: AI reasoning matched 42/66 cross-model task pairs (vs 9.8% with text similarity)
+- ✅ **3-Tier Structure**: Universal (5), Common (9), Specialized (6) based on usage frequency
+- ✅ **Comprehensive Reference Created**: CANONICAL_UNIT_TASKS_REFERENCE.md (1,166 lines)
+  - Quick reference table with all 20 tasks
+  - Full task specifications with APIs, examples, dependencies
+  - 12-week implementation roadmap (3 phases)
+  - Technology stack recommendations
+  - Author: Chin-Yew Lin
 
-**Part 2: Documentation Reorganization**:
-- ✅ **Centralized GUTT Documentation**: Moved 7 GUTT files from root to docs/gutt_analysis/
-- ✅ **Cross-Reference Updates**: Fixed all markdown links (absolute → relative paths)
-- ✅ **Complete Cleanup**: 0 GUTT files remaining in root, 48 files now centralized
-- ✅ **Git Tracking**: All file moves tracked as renames (preserving history)
+**Part 2: GPT-5 Task Identification Analysis (V1)**:
+- ✅ **9 Hero Prompts Analyzed**: All prompts decomposed with GPT-5 (dev-gpt-5-chat-jj)
+- ✅ **57 Task Instances**: Average 6.33 tasks per prompt
+- ✅ **86% Coverage**: 49 tasks from Tier 1+2 (implemented), 8 from Tier 3 (needs implementation)
+- ✅ **Effort Distribution**: 4 Low, 5 Medium, 0 High effort prompts
+- ✅ **Top Tasks**: CAN-04 (NLU) 78%, CAN-01 (Calendar Retrieval) 67%, CAN-02 (Classification) 67%
+- ✅ **Reports Generated**: 
+  - gpt5_canonical_analysis_20251106_230413.json (718 lines)
+  - GPT5_Canonical_Analysis_Report_20251106_230413.md (484 lines)
 
-**Part 3: GPT-5 GUTT Decomposition Analysis**:
-- ✅ **Generated 9 GPT-5 Decompositions**: All hero prompts analyzed with gpt-oss:20b model
-- ✅ **Comparison Analysis**: GPT-5 vs Reference vs Claude vs Ollama across all 9 prompts
-- ✅ **Accuracy Assessment**: Evaluated GPT-5 performance against ground truth decompositions
-- ✅ **Pattern Documentation**: Identified GPT-5 strengths and weaknesses in GUTT decomposition
+**Part 3: GPT-5 Execution Composition Analysis (V2)** - CRITICAL PIVOT:
+- ✅ **Shifted Focus**: From "WHAT tasks needed" → "HOW tasks compose computationally"
+- ✅ **Execution Plans Generated**: Step-by-step computational workflows for all 9 prompts
+- ✅ **Data Flow Analysis**: Complete input→processing→output chains documented
+- ✅ **50 Total Execution Steps**: Average 5.6 steps per prompt (range: 4-7)
+- ✅ **Composition Patterns Identified**:
+  - 7/9 prompts: Hybrid patterns (parallel + sequential)
+  - 2/9 prompts: Sequential patterns
+  - 0/9 prompts: Pure parallel (all require orchestration)
+- ✅ **Orchestration Requirements** (ALL 9 PROMPTS):
+  - 100% require error handling
+  - 100% need fallback/retry strategies
+  - 100% use conditional logic
+  - 78% (7/9) require parallelization for performance
+- ✅ **Tier Usage in Execution**: 60% Tier 1, 34% Tier 2, 6% Tier 3
+- ✅ **Only 3 Tier 3 Tasks Needed**:
+  - CAN-15: Recurrence Rule Generation (schedule-1)
+  - CAN-16: Event Monitoring (schedule-1)
+  - CAN-19: Resource Booking (schedule-3)
 
-**C-GUTT Framework Complete**:
-- **Total C-GUTTs**: 39 atomic capabilities (from 66 original tasks)
-- **Reduction**: 41% fewer implementation units
-- **Categories**: 7 (Calendar Data, NLP, Reasoning, Analysis, Resource Mgmt, Output, Collaboration)
-- **Most Reused**: C-GUTT-01 (Calendar Event Retrieval) - 76% coverage across prompts
-- **Implementation Focus**: Build 39 C-GUTTs, not 66 discrete capabilities
+**Implementation Roadmap** (From Composition Analysis):
+- **Phase 1 (Quick Wins)**: 3 prompts (organizer-1, organizer-2, organizer-3)
+  - Sequential patterns only
+  - Tier 1+2 tasks only
+  - 2-3 weeks
+- **Phase 2 (Medium Complexity)**: 4 prompts (collaborate-1, collaborate-2, collaborate-3, schedule-2)
+  - Hybrid patterns with parallelization
+  - Tier 1+2 tasks only
+  - 4-6 weeks
+- **Phase 3 (Advanced)**: 2 prompts (schedule-1, schedule-3)
+  - Requires Tier 3 implementation
+  - Most complex orchestration
+  - 5-6 weeks
 
-**Documents Created/Updated**:
-1. **GUTT_CROSS_PROMPT_CONSOLIDATION_ANALYSIS.md** (643 lines) - Consolidation methodology
-2. **CONSOLIDATED_GUTT_REFERENCE.md** (384 lines) - Complete C-GUTT specifications
-3. **CAPABILITY_INVENTORY_ANALYSIS.md** (899 lines) - Infrastructure view (100% C-GUTT converted)
-4. **Hero_Prompts_Reference_GUTT_Decompositions.md** (491 lines) - Updated with C-GUTT priorities
-5. **9 GPT-5 GUTT Decomposition JSONs**: Complete analysis for all hero prompts
-6. **Updated Comparison Report**: Added GPT-5 column to multi-model comparison
-
-**Files Reorganized** (7 files moved to docs/gutt_analysis/):
-- Hero_Prompts_Reference_GUTT_Decompositions.md
-- GUTT_Evaluation_Meeting_Prep_Prompt.md
-- Claude_Sonnet_45_GUTT_Analysis_Complete_Results.md
-- Ollama_GUTT_Analysis_Diagnosis.md
-- Three_Model_GUTT_Comparison_Report.md
-- Reference_GUTT_Decomposition_Ground_Truth.md
-- GUTT_Comparison_Claude_vs_Ollama.md
-
-**Git Commits** (November 6, 2025 - 9 commits total):
-- `24d8156`: Initial consolidation analysis (66→38)
-- `f37aa63`: Corrected to 66→39 with type/importance separation
-- `96bd8fc`: Added complete C-GUTT reference inventory
-- `708e605`: Updated capability inventory with C-GUTT references
-- `9a4a9d9`: Major C-GUTT conversion (removed 66 GUTT references, updated statistics)
-- `8efbdc5`: Complete sections 3-12 conversion
-- `ecd415c`: Hero Prompts Reference update with C-GUTT priorities
-- `b8a7f66`: Documentation reorganization (7 files moved, cross-references updated)
-- `[pending]`: GPT-5 GUTT decomposition analysis
+**Documents Created**:
+1. **CANONICAL_UNIT_TASKS_REFERENCE.md** (1,166 lines) - Complete task library
+2. **analyze_prompt_with_gpt5.py** (456 lines) - V1: Task identification
+3. **gpt5_canonical_analysis_20251106_230413.json** (718 lines) - V1 results
+4. **GPT5_Canonical_Analysis_Report_20251106_230413.md** (484 lines) - V1 report
+5. **analyze_prompt_composition_full.py** (456 lines) - V2: Execution composition
+6. **gpt5_composition_analysis_20251106_232748.json** (1,709 lines) - V2 results
+7. **GPT5_Composition_Report_20251106_232748.md** (1,020 lines) - V2 report
+8. **analyze_composition_insights.py** - Statistical analysis tool
+9. **test_composition_analysis.py** - Single-prompt testing tool
 
 **Key Achievements**:
-- ✅ Complete consolidation from 66 → 39 capabilities
-- ✅ All documentation uses C-GUTT-only terminology
-- ✅ Clear implementation priorities established (build high-reuse C-GUTTs first)
-- ✅ 4-document ecosystem cross-referenced and complete
-- ✅ Infrastructure → C-GUTT → Hero Prompt architecture clear
-- ✅ All 48 GUTT documents centralized in docs/gutt_analysis/
-- ✅ GPT-5 GUTT decomposition complete for all 9 hero prompts
-- ✅ Multi-model comparison updated (Reference + Claude + Ollama + GPT-5)
+- ✅ Complete shift from static task lists to computational workflows
+- ✅ All 9 hero prompts have detailed execution plans with data flow
+- ✅ Orchestration requirements clearly defined (error handling, parallelization, conditionals)
+- ✅ Clear implementation phases with complexity-based prioritization
+- ✅ Only 6% of execution steps require unimplemented Tier 3 tasks
+- ✅ Validated that 94% of implementation uses existing Tier 1+2 capabilities
 
 **Next Session Priorities**:
-1. **Implement high-reuse C-GUTTs**: Start with C-01 (Calendar Event Retrieval), C-19 (Constraint Satisfaction)
-2. **Begin infrastructure capability development**: Focus on Calendar Data Operations (C1.1-C1.4)
+1. **Begin Phase 1 Implementation**: Start with organizer-1 (4 steps, sequential, 100% Tier 1+2)
+2. **Build Orchestration Framework**: Error handling, retry logic, conditional execution patterns
+3. **Implement Data Flow Pipeline**: Input validation → Processing → Output formatting
 3. **Continue meeting classification validation**: Maintain 75%+ accuracy goal
 4. **GPT-5 Model Evaluation**: Analyze GPT-5 GUTT decomposition quality vs other models
 
@@ -1204,6 +1213,139 @@ result = subprocess.run(
 - Lessons learned capture and application (update .cursorrules continuously)
 
 ## Lessons Learned
+
+### Execution Composition Analysis Pattern (November 6, 2025) 🔄 COMPUTATIONAL WORKFLOWS
+- **✅ SHIFT FROM STATIC TO DYNAMIC**: Move from "what tasks" to "how tasks compose computationally"
+- **Critical Pivot**: Task lists alone don't show implementation reality - need execution plans with data flow
+- **V1 Approach (Limited)**: Identify canonical tasks, calculate coverage, estimate effort
+  - Output: "This prompt needs CAN-01, CAN-04, CAN-02, CAN-11"
+  - Problem: No visibility into orchestration, data transformations, or dependencies
+- **V2 Approach (Complete)**: Design execution plans showing computational pipelines
+  - Output: Step-by-step workflow with input→processing→output at each stage
+  - Shows: Data flow, orchestration logic, composition patterns, error handling
+- **GPT-5 Prompt Pattern for Composition Analysis**:
+  ```
+  Design an EXECUTION PLAN showing how Canonical Unit Tasks compose together:
+  1. For each step show: input (type, schema), processing (transformation), output (schema)
+  2. Show complete data flow from user input to final result
+  3. Identify orchestration logic: error handling, retry, fallback, parallelization
+  4. Specify composition pattern: sequential|parallel|conditional|iterative|hybrid
+  ```
+- **Output Schema for Execution Plans**:
+  ```json
+  {
+    "execution_plan": [
+      {
+        "step": 1,
+        "task_id": "CAN-XX",
+        "input": {"type": "...", "description": "...", "schema": "..."},
+        "processing": "Detailed transformation description",
+        "output": {"description": "...", "schema": "..."},
+        "flows_to": ["step_2"]
+      }
+    ],
+    "data_flow_summary": "High-level flow description",
+    "orchestration_logic": ["Error handling", "Retry strategies", ...],
+    "composition_pattern": "sequential|parallel|...",
+    "final_output": {"type": "...", "description": "...", "schema": "..."}
+  }
+  ```
+- **Key Findings from Composition Analysis** (9 hero prompts):
+  - 100% require orchestration logic (error handling, retry, conditional)
+  - 78% (7/9) need parallelization for performance
+  - 78% (7/9) use hybrid patterns (parallel + sequential)
+  - 22% (2/9) use pure sequential patterns
+  - Average 5.6 execution steps per prompt (range: 4-7)
+- **Orchestration Patterns Discovered**:
+  - **Error Handling**: Fallback to simpler algorithms, retry with exponential backoff
+  - **Parallelization**: Independent data retrieval steps run concurrently
+  - **Conditional Logic**: Different paths based on data availability or user preferences
+  - **Sequential Dependencies**: Output of step N becomes input of step N+1
+- **Implementation Value**: 
+  - Shows REAL computational pipeline, not just task list
+  - Identifies orchestration framework requirements
+  - Reveals data transformation needs
+  - Guides error handling strategies
+- **Tools Created**:
+  - `analyze_prompt_composition_full.py`: Full composition analysis script
+  - `analyze_composition_insights.py`: Statistical insights extraction
+  - `test_composition_analysis.py`: Single-prompt testing
+- **Reference Documents**:
+  - `gpt5_composition_analysis_20251106_232748.json` (1,709 lines)
+  - `GPT5_Composition_Report_20251106_232748.md` (1,020 lines)
+- **When to Use**: Always analyze for execution composition AFTER identifying canonical tasks - reveals implementation reality
+
+### GPT-5 API Calling Pattern (November 6, 2025) 🔌 CRITICAL PATTERN
+- **✅ ALWAYS USE ESTABLISHED PATTERN**: Use the GPT5MeetingClassifier infrastructure from `tools/meeting_classifier_gpt5.py`
+- **Correct Import Pattern**:
+  ```python
+  from tools.meeting_classifier_gpt5 import GPT5MeetingClassifier, DEFAULT_ENDPOINT, DEFAULT_MODEL
+  ```
+- **Initialize Client**:
+  ```python
+  self.gpt5_client = GPT5MeetingClassifier(
+      model=DEFAULT_MODEL,  # dev-gpt-5-chat-jj
+      endpoint=DEFAULT_ENDPOINT,  # SilverFlow LLM API
+      max_retries=3,
+      retry_delay=2.0
+  )
+  ```
+- **Call Pattern**:
+  ```python
+  result = self.gpt5_client._call_gpt5_api(
+      system_message="System instructions",
+      user_prompt="User query",
+      timeout=60
+  )
+  
+  if not result.success:
+      # Handle error
+      logger.error(f"GPT-5 API call failed: {result.error}")
+  else:
+      # Parse response
+      response_text = result.response_content
+  ```
+- **Authentication**: Uses MSAL with Windows Broker (WAM) - automatically handled by GPT5MeetingClassifier
+- **SilverFlow Endpoint**: `https://fe-26.qas.bing.net/chat/completions` (Microsoft internal)
+- **Model**: `dev-gpt-5-chat-jj` (GPT-5 preview)
+- **Scopes**: `https://substrate.office.com/llmapi/LLMAPI.dev`
+- **Reference Scripts**: 
+  - `tools/gpt5_gutt_analyzer.py` - GUTT decomposition example
+  - `tools/meeting_classifier_gpt5.py` - Base GPT-5 infrastructure
+  - `run_gpt5_gutt_batch.py` - Batch processing example
+- **Why NOT OpenAI Direct**: 
+  - ❌ GPT-5 not publicly available via OpenAI API
+  - ❌ Requires Microsoft internal SilverFlow access
+  - ❌ Custom authentication via MSAL + Windows Broker
+- **Error to Avoid**: Don't try to use `openai` library or `LLMAPIClient` for GPT-5 - they won't have the correct authentication
+- **JSON Response Handling**: Clean markdown code blocks (````json` / `````) before parsing
+- **Logging**: Use `logging` module with INFO level for production scripts
+- **Retry Logic**: Already built into GPT5MeetingClassifier (max_retries parameter)
+
+### AI Reasoning for NLP Tasks (November 6, 2025) 🧠 CRITICAL PRINCIPLE
+- **✅ USE AI REASONING FOR SEMANTIC TASKS**: When GitHub Copilot (Claude Sonnet 4.5) is available, leverage direct AI reasoning for NLP/semantic tasks instead of string matching algorithms
+- **Dramatic Performance Improvement**: AI semantic analysis achieved 63.6% match rate (42/66 GUTTs) vs 9.8% (13/132) with text similarity - **6.5x improvement**
+- **Example Success**: Correctly matched "Meeting-Priority Alignment Scoring" = "Classify Event Against Priorities" (same API capability) despite different wording
+- **Example Failure**: Text similarity missed "Attendee Identity Resolution" ≈ "Identify Customer Attendees" due to low word overlap
+- **When to Use AI Reasoning**:
+  - ✅ Semantic matching and equivalence detection
+  - ✅ Entity resolution and disambiguation
+  - ✅ Intent classification and understanding
+  - ✅ Text summarization and synthesis
+  - ✅ Question answering and analysis
+  - ✅ Any task requiring understanding of *meaning* not just *words*
+- **When String Matching IS Appropriate**:
+  - Exact code search (specific function names, variable names)
+  - File path matching and glob patterns
+  - Log parsing with structured formats
+  - Data validation and format checking
+  - Regex patterns for known formats
+- **Implementation Pattern**: Load data → Invoke AI reasoning directly → Generate structured analysis (don't build complex similarity algorithms)
+- **GUTT Analysis Example**: Read 132 GUTTs → Reason about API/capability equivalence → Map relationships (=, <, >, ∩, ⊥) → Generate canonical library
+- **Key Insight**: AI understands "Calendar Event Retrieval" = "Retrieve Calendar Events" because both map to `GET /me/calendar/events` API call
+- **Avoid**: Building word overlap algorithms, embedding similarity scores, or complex NLP pipelines when AI can reason directly
+- **Cross-Prompt Consolidation**: AI identified 20 canonical Unit Tasks where exact text matching found 0 (text similarity failed completely)
+- **Documentation**: `docs/gutt_analysis/copilot_claude_semantic_analysis.md` and `COPILOT_ANALYSIS_SUMMARY.md` demonstrate the power of AI reasoning
 
 ### C-GUTT Consolidation & Documentation Architecture Lessons (November 6, 2025) 🏗️ CAPABILITY TAXONOMY
 - **✅ CONSOLIDATION SUCCESS**: Reduced 66 original GUTTs to 39 atomic C-GUTTs (41% reduction, 1.69 avg reusability)

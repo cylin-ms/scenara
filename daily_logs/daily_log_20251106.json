@@ -38,6 +38,36 @@
           "description": "Created DevBox transition checkpoint: Documented C-GUTT consolidation, doc reorganization, verified GPT-5 scripts ready for real SilverFlow API calls on DevBox",
           "category": "Documentation",
           "impact": "high"
+        },
+        {
+          "timestamp": "2025-11-06T15:02:11.704539+00:00",
+          "description": "Added GPT-5 API calling pattern to lessons learned: Use GPT5MeetingClassifier infrastructure with _call_gpt5_api method, MSAL Windows Broker auth, SilverFlow endpoint",
+          "category": "Documentation",
+          "impact": "high"
+        },
+        {
+          "timestamp": "2025-11-06T15:02:19.568121+00:00",
+          "description": "Created CANONICAL_UNIT_TASKS_REFERENCE.md: 20 canonical tasks from Claude+GPT-5 consolidation, 3-tier priority, implementation roadmap, usage examples",
+          "category": "Documentation",
+          "impact": "critical"
+        },
+        {
+          "timestamp": "2025-11-06T15:02:26.875619+00:00",
+          "description": "Created analyze_prompt_with_gpt5.py: GPT-5 script to analyze hero prompts using Canonical Tasks library, generates JSON results and markdown reports",
+          "category": "Development",
+          "impact": "high"
+        },
+        {
+          "timestamp": "2025-11-06T15:04:28.702378+00:00",
+          "description": "Successfully ran analyze_prompt_with_gpt5.py: Analyzed all 9 hero prompts, 57 canonical tasks identified, 86% coverage, 6.33 avg tasks/prompt, generated JSON+markdown reports",
+          "category": "Development",
+          "impact": "critical"
+        },
+        {
+          "timestamp": "2025-11-06T15:29:16.542969+00:00",
+          "description": "Completed GPT-5 EXECUTION COMPOSITION analysis: Analyzed all 9 hero prompts for computational workflows, showing step-by-step data flow (input→processing→output), orchestration logic (error handling, parallelization, conditional branching), composition patterns (7/9 hybrid, 2/9 sequential), 50 total execution steps averaging 5.6 steps/prompt. Created analyze_prompt_composition_full.py and analyze_composition_insights.py. Generated gpt5_composition_analysis_20251106_232748.json (1709 lines) and GPT5_Composition_Report_20251106_232748.md (1020 lines). KEY FINDING: All 9 prompts need orchestration logic (error handling, fallback/retry, conditional), 7/9 require parallelization, only 3 Tier 3 tasks needed (CAN-15, CAN-16, CAN-19 in 2 prompts).",
+          "category": "Development",
+          "impact": "critical"
         }
       ],
       "tools_used": [],
@@ -81,6 +111,36 @@
         "description": "Created DevBox transition checkpoint: Documented C-GUTT consolidation, doc reorganization, verified GPT-5 scripts ready for real SilverFlow API calls on DevBox",
         "category": "Documentation",
         "impact": "high"
+      },
+      {
+        "timestamp": "2025-11-06T15:02:11.704539+00:00",
+        "description": "Added GPT-5 API calling pattern to lessons learned: Use GPT5MeetingClassifier infrastructure with _call_gpt5_api method, MSAL Windows Broker auth, SilverFlow endpoint",
+        "category": "Documentation",
+        "impact": "high"
+      },
+      {
+        "timestamp": "2025-11-06T15:02:19.568121+00:00",
+        "description": "Created CANONICAL_UNIT_TASKS_REFERENCE.md: 20 canonical tasks from Claude+GPT-5 consolidation, 3-tier priority, implementation roadmap, usage examples",
+        "category": "Documentation",
+        "impact": "critical"
+      },
+      {
+        "timestamp": "2025-11-06T15:02:26.875619+00:00",
+        "description": "Created analyze_prompt_with_gpt5.py: GPT-5 script to analyze hero prompts using Canonical Tasks library, generates JSON results and markdown reports",
+        "category": "Development",
+        "impact": "high"
+      },
+      {
+        "timestamp": "2025-11-06T15:04:28.702378+00:00",
+        "description": "Successfully ran analyze_prompt_with_gpt5.py: Analyzed all 9 hero prompts, 57 canonical tasks identified, 86% coverage, 6.33 avg tasks/prompt, generated JSON+markdown reports",
+        "category": "Development",
+        "impact": "critical"
+      },
+      {
+        "timestamp": "2025-11-06T15:29:16.542969+00:00",
+        "description": "Completed GPT-5 EXECUTION COMPOSITION analysis: Analyzed all 9 hero prompts for computational workflows, showing step-by-step data flow (input→processing→output), orchestration logic (error handling, parallelization, conditional branching), composition patterns (7/9 hybrid, 2/9 sequential), 50 total execution steps averaging 5.6 steps/prompt. Created analyze_prompt_composition_full.py and analyze_composition_insights.py. Generated gpt5_composition_analysis_20251106_232748.json (1709 lines) and GPT5_Composition_Report_20251106_232748.md (1020 lines). KEY FINDING: All 9 prompts need orchestration logic (error handling, fallback/retry, conditional), 7/9 require parallelization, only 3 Tier 3 tasks needed (CAN-15, CAN-16, CAN-19 in 2 prompts).",
+        "category": "Development",
+        "impact": "critical"
       }
     ],
     "tools_created": [],

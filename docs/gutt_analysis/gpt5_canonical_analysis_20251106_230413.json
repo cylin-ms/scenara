@@ -1,0 +1,718 @@
+{
+  "metadata": {
+    "analysis_date": "2025-11-06T23:02:35.360344",
+    "analyzer": "GPT-5 with Canonical Unit Tasks Library",
+    "total_prompts": 9,
+    "library_version": "1.0",
+    "author": "Chin-Yew Lin"
+  },
+  "prompt_analyses": {
+    "organizer-1": {
+      "prompt_id": "organizer-1",
+      "prompt_text": "Show me my pending invitations and which ones I should prioritize based on my priorities for this week: customer meetings and product strategy.",
+      "canonical_tasks": [
+        {
+          "task_id": "CAN-01",
+          "task_name": "Calendar Events Retrieval",
+          "tier": 1,
+          "why_needed": "To retrieve all pending invitations from the user's calendar.",
+          "how_used": "Fetch events with status 'pending' or 'tentative' for the current week.",
+          "implementation_status": "implemented"
+        },
+        {
+          "task_id": "CAN-04",
+          "task_name": "Natural Language Understanding (Constraint/Intent Extraction)",
+          "tier": 1,
+          "why_needed": "To extract user priorities from the natural language input.",
+          "how_used": "Parse 'customer meetings and product strategy' as key priorities for ranking.",
+          "implementation_status": "implemented"
+        },
+        {
+          "task_id": "CAN-02",
+          "task_name": "Meeting Classification/Categorization",
+          "tier": 1,
+          "why_needed": "To classify meetings by type and relevance to priorities.",
+          "how_used": "Determine if each pending invitation is a customer meeting or related to product strategy.",
+          "implementation_status": "implemented"
+        },
+        {
+          "task_id": "CAN-11",
+          "task_name": "Priority/Preference Matching",
+          "tier": 2,
+          "why_needed": "To score and rank meetings based on alignment with user priorities.",
+          "how_used": "Compute semantic similarity between meeting details and extracted priorities.",
+          "implementation_status": "implemented"
+        }
+      ],
+      "coverage_analysis": {
+        "total_tasks_identified": 4,
+        "implemented_tasks": 4,
+        "needs_implementation": 0,
+        "coverage_percentage": 100.0
+      },
+      "implementation_effort": "Low",
+      "effort_justification": "All required tasks are already implemented; only orchestration and ranking logic are needed.",
+      "recommendations": [
+        "Implement a ranking algorithm that combines classification and semantic similarity scores.",
+        "Provide a clear UI or response format to display pending invitations sorted by priority alignment."
+      ],
+      "execution_sequence": [
+        "Step 1: Use CAN-04 to extract user priorities from input text.",
+        "Step 2: Use CAN-01 to retrieve pending invitations for the current week.",
+        "Step 3: Apply CAN-02 to classify each meeting by type and relevance.",
+        "Step 4: Use CAN-11 to compute alignment scores and rank meetings.",
+        "Step 5: Return a prioritized list of pending invitations to the user."
+      ]
+    },
+    "organizer-2": {
+      "prompt_id": "organizer-2",
+      "prompt_text": "I have some important meetings this week—flag the ones I need to prep for, and put time on my calendar to prepare.",
+      "canonical_tasks": [
+        {
+          "task_id": "CAN-01",
+          "task_name": "Calendar Events Retrieval",
+          "tier": 1,
+          "why_needed": "To retrieve all meetings scheduled for this week so they can be analyzed for importance and preparation needs.",
+          "how_used": "Fetch the user's calendar events for the current week.",
+          "implementation_status": "implemented"
+        },
+        {
+          "task_id": "CAN-02",
+          "task_name": "Meeting Classification",
+          "tier": 1,
+          "why_needed": "To determine which meetings are important and require preparation.",
+          "how_used": "Classify meetings by importance level based on attendees, subject, and context.",
+          "implementation_status": "implemented"
+        },
+        {
+          "task_id": "CAN-03",
+          "task_name": "Calendar Event Creation/Update",
+          "tier": 1,
+          "why_needed": "To add preparation time blocks to the user's calendar.",
+          "how_used": "Create new calendar events for preparation before important meetings.",
+          "implementation_status": "implemented"
+        },
+        {
+          "task_id": "CAN-04",
+          "task_name": "Natural Language Understanding",
+          "tier": 1,
+          "why_needed": "To interpret the user's intent to flag important meetings and schedule prep time.",
+          "how_used": "Extract intent and constraints from the prompt such as 'flag important meetings' and 'put time on calendar to prepare'.",
+          "implementation_status": "implemented"
+        },
+        {
+          "task_id": "CAN-14",
+          "task_name": "Recommendation Engine",
+          "tier": 2,
+          "why_needed": "To suggest optimal preparation times based on meeting schedule and availability.",
+          "how_used": "Recommend suitable time slots for preparation before each important meeting.",
+          "implementation_status": "implemented"
+        }
+      ],
+      "coverage_analysis": {
+        "total_tasks_identified": 5,
+        "implemented_tasks": 5,
+        "needs_implementation": 0,
+        "coverage_percentage": 100.0
+      },
+      "implementation_effort": "Low",
+      "effort_justification": "All required tasks are already implemented; the work involves orchestration and applying existing capabilities.",
+      "recommendations": [
+        "Leverage classification models to identify important meetings accurately.",
+        "Use recommendation logic to schedule prep time close to the meeting while avoiding conflicts."
+      ],
+      "execution_sequence": [
+        "Step 1: Use CAN-04 to parse user intent and extract constraints.",
+        "Step 2: Use CAN-01 to retrieve all meetings for the current week.",
+        "Step 3: Apply CAN-02 to classify meetings by importance.",
+        "Step 4: Use CAN-14 to recommend preparation time slots.",
+        "Step 5: Use CAN-03 to create calendar events for preparation."
+      ]
+    },
+    "organizer-3": {
+      "prompt_id": "organizer-3",
+      "prompt_text": "I'm spending too much time in meetings. Help me find patterns in my calendar and identify opportunities to reclaim time.",
+      "canonical_tasks": [
+        {
+          "task_id": "CAN-01",
+          "task_name": "Calendar Events Retrieval",
+          "tier": 1,
+          "why_needed": "To analyze meeting patterns, we need access to historical calendar events including details like duration, attendees, and categories.",
+          "how_used": "Retrieve all past and upcoming meetings within a relevant time range to identify patterns and time allocation.",
+          "implementation_status": "implemented"
+        },
+        {
+          "task_id": "CAN-02",
+          "task_name": "Meeting Classification",
+          "tier": 1,
+          "why_needed": "To find patterns, meetings must be categorized by type (e.g., 1:1, team sync, customer calls) and importance.",
+          "how_used": "Classify each meeting into predefined categories to identify which types consume the most time.",
+          "implementation_status": "implemented"
+        },
+        {
+          "task_id": "CAN-10",
+          "task_name": "Time Aggregation/Statistical Analysis",
+          "tier": 2,
+          "why_needed": "To quantify time spent in different meeting categories and detect patterns.",
+          "how_used": "Aggregate total hours by meeting type, compute averages, and identify high-frequency or long-duration meeting types.",
+          "implementation_status": "implemented"
+        },
+        {
+          "task_id": "CAN-11",
+          "task_name": "Priority/Preference Matching",
+          "tier": 2,
+          "why_needed": "To determine which meetings align with user priorities and which can be deprioritized.",
+          "how_used": "Compare meeting topics against user-stated priorities to identify low-value meetings for potential removal.",
+          "implementation_status": "implemented"
+        },
+        {
+          "task_id": "CAN-14",
+          "task_name": "Recommendation Engine",
+          "tier": 2,
+          "why_needed": "To provide actionable suggestions for reclaiming time based on analysis.",
+          "how_used": "Generate recommendations such as canceling low-value meetings, shortening durations, or consolidating recurring sessions.",
+          "implementation_status": "implemented"
+        },
+        {
+          "task_id": "CAN-20",
+          "task_name": "Data Visualization/Reporting",
+          "tier": 3,
+          "why_needed": "To present patterns and insights in an easily understandable visual format.",
+          "how_used": "Create charts or summaries showing time distribution across meeting types and trends over time.",
+          "implementation_status": "needs_implementation"
+        }
+      ],
+      "coverage_analysis": {
+        "total_tasks_identified": 6,
+        "implemented_tasks": 5,
+        "needs_implementation": 1,
+        "coverage_percentage": 83.3
+      },
+      "implementation_effort": "Medium",
+      "effort_justification": "Most required tasks are implemented; only visualization (CAN-20) needs new development, which involves charting and UI integration.",
+      "recommendations": [
+        "Implement CAN-20 (Data Visualization) to enhance user understanding of meeting patterns.",
+        "Leverage existing classification and analytics to provide clear, actionable recommendations for time reclamation."
+      ],
+      "execution_sequence": [
+        "Step 1: Retrieve calendar events (CAN-01)",
+        "Step 2: Classify meetings by type and importance (CAN-02)",
+        "Step 3: Aggregate time and compute statistics (CAN-10)",
+        "Step 4: Match meetings against user priorities (CAN-11)",
+        "Step 5: Generate actionable recommendations (CAN-14)",
+        "Step 6: Visualize patterns and insights (CAN-20)"
+      ]
+    },
+    "schedule-1": {
+      "prompt_id": "schedule-1",
+      "prompt_text": "Land a weekly 30min 1:1 with Sarah for me, afternoons preferred, avoid Fridays. If her schedule changes, automatically find a new time.",
+      "canonical_tasks": [
+        {
+          "task_id": "CAN-04",
+          "task_name": "Natural Language Understanding (Constraint/Intent Extraction)",
+          "tier": 1,
+          "why_needed": "To extract structured constraints such as recurrence, duration, attendee name, time preferences, and exclusions from the natural language prompt.",
+          "how_used": "Parse 'weekly 30min 1:1', 'Sarah', 'afternoons preferred', 'avoid Fridays', and 'automatically find a new time' into structured scheduling constraints.",
+          "implementation_status": "implemented"
+        },
+        {
+          "task_id": "CAN-05",
+          "task_name": "Attendee/Contact Resolution",
+          "tier": 1,
+          "why_needed": "To resolve 'Sarah' to a specific calendar identity (email address) for scheduling.",
+          "how_used": "Look up Sarah in the directory and retrieve her email address for the meeting invite.",
+          "implementation_status": "implemented"
+        },
+        {
+          "task_id": "CAN-06",
+          "task_name": "Availability Checking (Free/Busy)",
+          "tier": 2,
+          "why_needed": "To check both the user's and Sarah's availability to find suitable time slots.",
+          "how_used": "Retrieve free/busy data for both participants over the desired timeframe to identify open slots.",
+          "implementation_status": "implemented"
+        },
+        {
+          "task_id": "CAN-12",
+          "task_name": "Constraint Satisfaction",
+          "tier": 2,
+          "why_needed": "To find a time slot that satisfies all constraints: weekly recurrence, 30-minute duration, afternoons, avoid Fridays, and both attendees available.",
+          "how_used": "Apply constraints to candidate time slots and select the optimal one.",
+          "implementation_status": "implemented"
+        },
+        {
+          "task_id": "CAN-15",
+          "task_name": "Recurrence Rule Generation",
+          "tier": 3,
+          "why_needed": "To generate an iCalendar RRULE for a weekly recurring meeting.",
+          "how_used": "Convert 'weekly' into RRULE format for the calendar event.",
+          "implementation_status": "needs_implementation"
+        },
+        {
+          "task_id": "CAN-03",
+          "task_name": "Calendar Event Creation/Update",
+          "tier": 1,
+          "why_needed": "To create the recurring 1:1 meeting in the user's calendar.",
+          "how_used": "Create a calendar event with the specified recurrence, duration, attendees, and time slot.",
+          "implementation_status": "implemented"
+        },
+        {
+          "task_id": "CAN-07",
+          "task_name": "Meeting Invitation/Notification Sending",
+          "tier": 2,
+          "why_needed": "To send the meeting invitation to Sarah after creating the event.",
+          "how_used": "Dispatch the calendar invite to Sarah's email address.",
+          "implementation_status": "implemented"
+        },
+        {
+          "task_id": "CAN-16",
+          "task_name": "Event Monitoring/Change Detection",
+          "tier": 3,
+          "why_needed": "To detect if Sarah's schedule changes and trigger rescheduling.",
+          "how_used": "Monitor the event or Sarah's calendar for changes that cause conflicts.",
+          "implementation_status": "needs_implementation"
+        },
+        {
+          "task_id": "CAN-17",
+          "task_name": "Automatic Rescheduling",
+          "tier": 3,
+          "why_needed": "To automatically find a new time if Sarah's schedule changes.",
+          "how_used": "Re-run availability checks and constraint satisfaction to reschedule the meeting.",
+          "implementation_status": "needs_implementation"
+        }
+      ],
+      "coverage_analysis": {
+        "total_tasks_identified": 9,
+        "implemented_tasks": 6,
+        "needs_implementation": 3,
+        "coverage_percentage": 66.7
+      },
+      "implementation_effort": "Medium",
+      "effort_justification": "Most core tasks are implemented, but three specialized Tier 3 tasks (recurrence rule generation, event monitoring, automatic rescheduling) require new implementation, increasing complexity beyond simple orchestration.",
+      "recommendations": [
+        "Implement recurrence rule generation using dateutil.rrule or similar library.",
+        "Develop webhook-based event monitoring to detect schedule changes.",
+        "Build automatic rescheduling logic that reuses availability and constraint satisfaction modules."
+      ],
+      "execution_sequence": [
+        "Step 1: Extract constraints and intent from user input (CAN-04).",
+        "Step 2: Resolve attendee 'Sarah' to calendar identity (CAN-05).",
+        "Step 3: Check availability for user and Sarah (CAN-06).",
+        "Step 4: Apply constraints to find optimal time slot (CAN-12).",
+        "Step 5: Generate recurrence rule for weekly meeting (CAN-15).",
+        "Step 6: Create recurring calendar event (CAN-03).",
+        "Step 7: Send meeting invitation to Sarah (CAN-07).",
+        "Step 8: Set up event monitoring for schedule changes (CAN-16).",
+        "Step 9: Implement automatic rescheduling workflow if conflicts arise (CAN-17)."
+      ]
+    },
+    "schedule-2": {
+      "prompt_id": "schedule-2",
+      "prompt_text": "Clear my Thursday afternoon—reschedule what you can, and decline the rest.",
+      "canonical_tasks": [
+        {
+          "task_id": "CAN-04",
+          "task_name": "Natural Language Understanding (Constraint/Intent Extraction)",
+          "tier": 1,
+          "why_needed": "To interpret the user's natural language request and extract structured constraints such as the time range (Thursday afternoon) and actions (reschedule or decline).",
+          "how_used": "Parse 'Thursday afternoon' into a specific date and time range, and identify the intent to reschedule or decline meetings.",
+          "implementation_status": "implemented"
+        },
+        {
+          "task_id": "CAN-01",
+          "task_name": "Calendar Events Retrieval",
+          "tier": 1,
+          "why_needed": "To retrieve all events scheduled during the specified time range (Thursday afternoon) from the user's calendar.",
+          "how_used": "Fetch events for Thursday afternoon to determine which meetings need to be rescheduled or declined.",
+          "implementation_status": "implemented"
+        },
+        {
+          "task_id": "CAN-06",
+          "task_name": "Availability Checking (Free/Busy)",
+          "tier": 2,
+          "why_needed": "To find alternative time slots for meetings that need to be rescheduled.",
+          "how_used": "Check availability of the user and other attendees to propose new times for rescheduled meetings.",
+          "implementation_status": "implemented"
+        },
+        {
+          "task_id": "CAN-12",
+          "task_name": "Constraint Satisfaction",
+          "tier": 2,
+          "why_needed": "To determine optimal new time slots that satisfy constraints for rescheduling meetings.",
+          "how_used": "Apply constraints such as attendee availability and meeting duration to find suitable reschedule options.",
+          "implementation_status": "implemented"
+        },
+        {
+          "task_id": "CAN-03",
+          "task_name": "Calendar Event Creation/Update",
+          "tier": 1,
+          "why_needed": "To update existing events with new times or to decline them if rescheduling is not possible.",
+          "how_used": "Modify event start/end times for rescheduled meetings and update RSVP status for declined meetings.",
+          "implementation_status": "implemented"
+        },
+        {
+          "task_id": "CAN-13",
+          "task_name": "RSVP Status Update",
+          "tier": 2,
+          "why_needed": "To formally decline meetings that cannot be rescheduled.",
+          "how_used": "Update the RSVP status of events to 'declined' when rescheduling is not feasible.",
+          "implementation_status": "implemented"
+        },
+        {
+          "task_id": "CAN-07",
+          "task_name": "Meeting Invitation/Notification Sending",
+          "tier": 2,
+          "why_needed": "To notify attendees about rescheduled meetings or declined invitations.",
+          "how_used": "Send updated invitations for rescheduled meetings and notifications for declined ones.",
+          "implementation_status": "implemented"
+        }
+      ],
+      "coverage_analysis": {
+        "total_tasks_identified": 7,
+        "implemented_tasks": 7,
+        "needs_implementation": 0,
+        "coverage_percentage": 100.0
+      },
+      "implementation_effort": "Low",
+      "effort_justification": "All required tasks are already implemented (Tier 1 and Tier 2), so the effort is primarily orchestration and sequencing of existing capabilities.",
+      "recommendations": [
+        "Implement robust NLU parsing for temporal expressions like 'Thursday afternoon' to ensure accurate time range extraction.",
+        "Ensure conflict resolution logic prioritizes rescheduling before declining to minimize meeting cancellations."
+      ],
+      "execution_sequence": [
+        "Step 1: Use CAN-04 to parse the prompt and extract time range and intent.",
+        "Step 2: Use CAN-01 to retrieve all events scheduled for Thursday afternoon.",
+        "Step 3: For each event, attempt rescheduling using CAN-06 and CAN-12 to find alternative slots.",
+        "Step 4: Apply CAN-03 to update events with new times for successful reschedules.",
+        "Step 5: Use CAN-13 to decline events that cannot be rescheduled.",
+        "Step 6: Use CAN-07 to send notifications or updated invitations to attendees."
+      ]
+    },
+    "schedule-3": {
+      "prompt_id": "schedule-3",
+      "prompt_text": "Land a time for Project Alpha with Chris, Sangya, and Kat for 1 hour in the next 2 weeks. Schedule over 1:1s if needed, work around Kat's schedule. In person with a room.",
+      "canonical_tasks": [
+        {
+          "task_id": "CAN-04",
+          "task_name": "Natural Language Understanding (Constraint/Intent Extraction)",
+          "tier": 1,
+          "why_needed": "To extract structured constraints and intent from the natural language prompt.",
+          "how_used": "Parse 'Project Alpha', attendees (Chris, Sangya, Kat), duration (1 hour), timeframe (next 2 weeks), constraints (override 1:1s, prioritize Kat's schedule), modality (in-person), and resource requirement (room).",
+          "implementation_status": "implemented"
+        },
+        {
+          "task_id": "CAN-05",
+          "task_name": "Attendee/Contact Resolution",
+          "tier": 1,
+          "why_needed": "To resolve attendee names to actual calendar identities for scheduling.",
+          "how_used": "Resolve 'Chris', 'Sangya', and 'Kat' to their corresponding email addresses or user IDs in the directory.",
+          "implementation_status": "implemented"
+        },
+        {
+          "task_id": "CAN-06",
+          "task_name": "Availability Checking (Free/Busy)",
+          "tier": 2,
+          "why_needed": "To check availability of all attendees within the specified timeframe.",
+          "how_used": "Retrieve free/busy information for the next 2 weeks for the user and all three attendees.",
+          "implementation_status": "implemented"
+        },
+        {
+          "task_id": "CAN-12",
+          "task_name": "Constraint Satisfaction",
+          "tier": 2,
+          "why_needed": "To find a time slot that satisfies all constraints including attendee availability, override rules, and priority for Kat's schedule.",
+          "how_used": "Apply constraints such as 'override 1:1s if needed', 'work around Kat's schedule', and 'within next 2 weeks' to identify optimal time slots.",
+          "implementation_status": "implemented"
+        },
+        {
+          "task_id": "CAN-03",
+          "task_name": "Calendar Event Creation/Update",
+          "tier": 1,
+          "why_needed": "To create the actual meeting event once the time slot is determined.",
+          "how_used": "Create a calendar event for 'Project Alpha' with the resolved attendees, chosen time slot, and location details.",
+          "implementation_status": "implemented"
+        },
+        {
+          "task_id": "CAN-07",
+          "task_name": "Meeting Invitation/Notification Sending",
+          "tier": 2,
+          "why_needed": "To send invitations to all attendees after creating the event.",
+          "how_used": "Dispatch meeting invitations to Chris, Sangya, and Kat once the event is scheduled.",
+          "implementation_status": "implemented"
+        },
+        {
+          "task_id": "CAN-19",
+          "task_name": "Resource Booking (Rooms/Equipment)",
+          "tier": 3,
+          "why_needed": "To book a physical meeting room for the in-person meeting.",
+          "how_used": "Search for and reserve an available conference room that fits the meeting time and requirements.",
+          "implementation_status": "needs_implementation"
+        },
+        {
+          "task_id": "CAN-17",
+          "task_name": "Automatic Rescheduling",
+          "tier": 3,
+          "why_needed": "To handle the override rule for 1:1s if needed by automatically rescheduling them.",
+          "how_used": "If the chosen time conflicts with existing 1:1s, reschedule those meetings automatically.",
+          "implementation_status": "needs_implementation"
+        }
+      ],
+      "coverage_analysis": {
+        "total_tasks_identified": 8,
+        "implemented_tasks": 6,
+        "needs_implementation": 2,
+        "coverage_percentage": 75.0
+      },
+      "implementation_effort": "Medium",
+      "effort_justification": "Most core tasks are implemented, but two specialized Tier 3 tasks (resource booking and automatic rescheduling) require new development, increasing complexity beyond simple orchestration.",
+      "recommendations": [
+        "Implement CAN-19 (Resource Booking) to support in-person meeting requirements.",
+        "Implement CAN-17 (Automatic Rescheduling) to honor override rules for 1:1 meetings.",
+        "Develop orchestration logic to integrate NLU, availability checking, constraint satisfaction, and event creation seamlessly."
+      ],
+      "execution_sequence": [
+        "Step 1: Extract constraints and intent using CAN-04.",
+        "Step 2: Resolve attendee identities using CAN-05.",
+        "Step 3: Check availability for all attendees using CAN-06.",
+        "Step 4: Apply constraint satisfaction to find optimal time slot using CAN-12.",
+        "Step 5: Book a physical room using CAN-19.",
+        "Step 6: Create the calendar event using CAN-03.",
+        "Step 7: Send meeting invitations using CAN-07.",
+        "Step 8: If conflicts arise with 1:1s, apply automatic rescheduling using CAN-17."
+      ]
+    },
+    "collaborate-1": {
+      "prompt_id": "collaborate-1",
+      "prompt_text": "I have a Project Alpha review coming up. Help me set the agenda based on what the team has been working on.",
+      "canonical_tasks": [
+        {
+          "task_id": "CAN-04",
+          "task_name": "Natural Language Understanding (Constraint/Intent Extraction)",
+          "tier": 1,
+          "why_needed": "To interpret the user's intent to create an agenda and extract context such as 'Project Alpha review' and the requirement to base it on team work.",
+          "how_used": "Extract intent: create_agenda; extract context: project name = Project Alpha, meeting type = review.",
+          "implementation_status": "implemented"
+        },
+        {
+          "task_id": "CAN-05",
+          "task_name": "Attendee/Contact Resolution",
+          "tier": 1,
+          "why_needed": "To identify which team members are associated with Project Alpha for gathering relevant work updates.",
+          "how_used": "Resolve 'the team' to actual team members or group associated with Project Alpha.",
+          "implementation_status": "implemented"
+        },
+        {
+          "task_id": "CAN-08",
+          "task_name": "Document/Content Retrieval",
+          "tier": 2,
+          "why_needed": "To retrieve recent work updates, documents, or progress reports from team repositories or project folders.",
+          "how_used": "Fetch documents or summaries from SharePoint, OneDrive, or project management tools related to Project Alpha.",
+          "implementation_status": "implemented"
+        },
+        {
+          "task_id": "CAN-09",
+          "task_name": "Document Generation/Formatting",
+          "tier": 2,
+          "why_needed": "To generate a structured agenda document based on retrieved content and meeting context.",
+          "how_used": "Create a formatted agenda with sections for discussion topics, updates, and action items.",
+          "implementation_status": "implemented"
+        },
+        {
+          "task_id": "CAN-02",
+          "task_name": "Meeting Classification/Categorization",
+          "tier": 1,
+          "why_needed": "To classify the meeting as a 'Project Review' for context-aware agenda generation and template selection.",
+          "how_used": "Categorize the meeting type to apply appropriate agenda structure and priorities.",
+          "implementation_status": "implemented"
+        },
+        {
+          "task_id": "CAN-18",
+          "task_name": "Objection/Risk Anticipation",
+          "tier": 3,
+          "why_needed": "To anticipate potential concerns or risks that might arise during the review and include them in the agenda.",
+          "how_used": "Analyze retrieved content to identify risks or blockers and add them as discussion points.",
+          "implementation_status": "needs_implementation"
+        }
+      ],
+      "coverage_analysis": {
+        "total_tasks_identified": 6,
+        "implemented_tasks": 5,
+        "needs_implementation": 1,
+        "coverage_percentage": 83.3
+      },
+      "implementation_effort": "Medium",
+      "effort_justification": "Most required tasks are implemented (Tier 1 and Tier 2), but one specialized Tier 3 task (risk anticipation) needs new implementation, which adds moderate complexity.",
+      "recommendations": [
+        "Leverage existing NLU and document retrieval pipelines to extract context and gather relevant content.",
+        "Implement a lightweight risk anticipation module using LLM reasoning to enhance agenda quality."
+      ],
+      "execution_sequence": [
+        "Step 1: Use CAN-04 to extract intent and context (Project Alpha review).",
+        "Step 2: Apply CAN-05 to resolve team members associated with Project Alpha.",
+        "Step 3: Use CAN-08 to retrieve recent work updates and documents.",
+        "Step 4: Apply CAN-02 to classify the meeting as a project review.",
+        "Step 5: Optionally use CAN-18 to identify potential risks or objections.",
+        "Step 6: Use CAN-09 to generate a structured agenda document."
+      ]
+    },
+    "collaborate-2": {
+      "prompt_id": "collaborate-2",
+      "prompt_text": "I have an executive meeting in 2 hours. Pull together a briefing on the topics we'll be discussing.",
+      "canonical_tasks": [
+        {
+          "task_id": "CAN-04",
+          "task_name": "Natural Language Understanding (Constraint/Intent Extraction)",
+          "tier": 1,
+          "why_needed": "To interpret the user's request, extract the meeting reference, time constraint, and intent to generate a briefing.",
+          "how_used": "Parse 'executive meeting in 2 hours' to identify meeting type and time, and extract intent 'create briefing on discussion topics'.",
+          "implementation_status": "implemented"
+        },
+        {
+          "task_id": "CAN-01",
+          "task_name": "Calendar Events Retrieval",
+          "tier": 1,
+          "why_needed": "To find the specific executive meeting scheduled within the next 2 hours.",
+          "how_used": "Query the calendar for events matching 'executive meeting' within the next 2-hour window.",
+          "implementation_status": "implemented"
+        },
+        {
+          "task_id": "CAN-02",
+          "task_name": "Meeting Classification/Categorization",
+          "tier": 1,
+          "why_needed": "To confirm that the identified meeting is indeed an executive-level meeting and classify its type for context.",
+          "how_used": "Classify the retrieved meeting as 'executive' to ensure correct context for briefing generation.",
+          "implementation_status": "implemented"
+        },
+        {
+          "task_id": "CAN-08",
+          "task_name": "Document/Content Retrieval",
+          "tier": 2,
+          "why_needed": "To gather relevant documents, agendas, or prior notes related to the meeting topics.",
+          "how_used": "Retrieve files from SharePoint, OneDrive, or CRM that are linked to the meeting or its topics.",
+          "implementation_status": "implemented"
+        },
+        {
+          "task_id": "CAN-09",
+          "task_name": "Document Generation/Formatting",
+          "tier": 2,
+          "why_needed": "To compile the retrieved information into a structured, professional briefing document.",
+          "how_used": "Generate a formatted briefing summarizing discussion topics and key points for the executive meeting.",
+          "implementation_status": "implemented"
+        },
+        {
+          "task_id": "CAN-14",
+          "task_name": "Recommendation Engine",
+          "tier": 2,
+          "why_needed": "To suggest which topics or documents are most relevant for the briefing based on meeting context.",
+          "how_used": "Rank and recommend the most critical topics and supporting materials for inclusion in the briefing.",
+          "implementation_status": "implemented"
+        },
+        {
+          "task_id": "CAN-18",
+          "task_name": "Objection/Risk Anticipation",
+          "tier": 3,
+          "why_needed": "To anticipate potential concerns or objections that might arise during the executive meeting.",
+          "how_used": "Analyze meeting context and related documents to highlight possible risks or sensitive points.",
+          "implementation_status": "needs_implementation"
+        }
+      ],
+      "coverage_analysis": {
+        "total_tasks_identified": 7,
+        "implemented_tasks": 6,
+        "needs_implementation": 1,
+        "coverage_percentage": 85.7
+      },
+      "implementation_effort": "Medium",
+      "effort_justification": "Most required tasks are implemented; only one specialized Tier 3 task (risk anticipation) needs development, which involves LLM reasoning and additional logic.",
+      "recommendations": [
+        "Leverage existing NLU, calendar retrieval, and document generation pipelines to fulfill the core request quickly.",
+        "Plan for implementing CAN-18 (risk anticipation) as an enhancement for higher-value executive briefings."
+      ],
+      "execution_sequence": [
+        "Step 1: Use CAN-04 to extract meeting intent, type, and time constraint from user input.",
+        "Step 2: Apply CAN-01 to retrieve the executive meeting scheduled within the next 2 hours.",
+        "Step 3: Use CAN-02 to confirm meeting classification as executive-level.",
+        "Step 4: Execute CAN-08 to gather relevant documents and prior meeting materials.",
+        "Step 5: Apply CAN-14 to recommend the most relevant topics and documents for the briefing.",
+        "Step 6: Use CAN-09 to generate a structured, formatted briefing document.",
+        "Step 7: (Optional) Implement CAN-18 to include risk anticipation insights in the briefing."
+      ]
+    },
+    "collaborate-3": {
+      "prompt_id": "collaborate-3",
+      "prompt_text": "I have a customer meeting tomorrow. Give me a dossier on the attendees and recent interactions.",
+      "canonical_tasks": [
+        {
+          "task_id": "CAN-01",
+          "task_name": "Calendar Events Retrieval",
+          "tier": 1,
+          "why_needed": "To identify the specific customer meeting scheduled for tomorrow and retrieve its details.",
+          "how_used": "Query the calendar for events on the specified date and extract the meeting details including attendees.",
+          "implementation_status": "implemented"
+        },
+        {
+          "task_id": "CAN-05",
+          "task_name": "Attendee/Contact Resolution",
+          "tier": 1,
+          "why_needed": "To resolve attendee names or email addresses to specific identities for dossier generation.",
+          "how_used": "Map meeting attendees to directory profiles for enrichment and dossier creation.",
+          "implementation_status": "implemented"
+        },
+        {
+          "task_id": "CAN-08",
+          "task_name": "Document/Content Retrieval",
+          "tier": 2,
+          "why_needed": "To gather relevant documents or CRM data about attendees and recent interactions.",
+          "how_used": "Fetch recent emails, CRM notes, or shared documents related to the attendees.",
+          "implementation_status": "implemented"
+        },
+        {
+          "task_id": "CAN-09",
+          "task_name": "Document Generation/Formatting",
+          "tier": 2,
+          "why_needed": "To compile the retrieved information into a structured, readable dossier.",
+          "how_used": "Generate a formatted document summarizing attendee profiles and recent interactions.",
+          "implementation_status": "implemented"
+        },
+        {
+          "task_id": "CAN-02",
+          "task_name": "Meeting Classification",
+          "tier": 1,
+          "why_needed": "To confirm that the meeting is a customer meeting and apply appropriate dossier template.",
+          "how_used": "Classify the meeting type based on attendees and context.",
+          "implementation_status": "implemented"
+        }
+      ],
+      "coverage_analysis": {
+        "total_tasks_identified": 5,
+        "implemented_tasks": 5,
+        "needs_implementation": 0,
+        "coverage_percentage": 100.0
+      },
+      "implementation_effort": "Low",
+      "effort_justification": "All identified tasks are Tier 1 or Tier 2 and assumed implemented; only orchestration and data aggregation are needed.",
+      "recommendations": [
+        "Integrate CRM and email data sources for richer interaction history.",
+        "Ensure privacy and compliance checks when compiling attendee dossiers."
+      ],
+      "execution_sequence": [
+        "Step 1: Retrieve tomorrow's customer meeting details (CAN-01).",
+        "Step 2: Classify the meeting as customer-related (CAN-02).",
+        "Step 3: Resolve attendee identities and enrich profiles (CAN-05).",
+        "Step 4: Retrieve related documents and recent interactions (CAN-08).",
+        "Step 5: Generate and format the attendee dossier (CAN-09)."
+      ]
+    }
+  },
+  "summary": {
+    "total_canonical_tasks_used": 57,
+    "average_tasks_per_prompt": 6.33,
+    "total_implemented": 49,
+    "total_needs_implementation": 8,
+    "overall_coverage_percentage": 85.96,
+    "effort_distribution": {
+      "Low": 4,
+      "Medium": 5,
+      "High": 0
+    }
+  }
+}
