@@ -225,9 +225,11 @@ Scenara 2.0 is an enterprise meeting intelligence system that evolved from the P
 
 
 ### 🎯 Daily Status Update (November 6, 2025)
-**Status**: ✅ COMPLETE - C-GUTT consolidation documentation finished, all files updated and committed
+**Status**: ✅ COMPLETE - C-GUTT consolidation + documentation reorganization + GPT-5 GUTT analysis finished
 
-**Session Summary** (17.3 minutes):
+**Session Summary** (Extended session across multiple activities):
+
+**Part 1: C-GUTT Consolidation** (17.3 minutes):
 - ✅ **C-GUTT Consolidation Analysis**: Reduced 66 original GUTTs to 39 atomic capabilities (41% reduction)
 - ✅ **Cross-Prompt Analysis**: Identified reusability patterns (1.69 prompts per C-GUTT average)
 - ✅ **C-GUTT Reference Documentation**: Created CONSOLIDATED_GUTT_REFERENCE.md with all 39 C-GUTTs documented
@@ -236,6 +238,18 @@ Scenara 2.0 is an enterprise meeting intelligence system that evolved from the P
 - ✅ **Documentation Cleanup**: Removed 240+ lines of redundant 66 GUTT descriptions from Appendix A
 - ✅ **Hero Prompts Reference Updated**: Added C-GUTT consolidation summary and implementation priorities
 
+**Part 2: Documentation Reorganization**:
+- ✅ **Centralized GUTT Documentation**: Moved 7 GUTT files from root to docs/gutt_analysis/
+- ✅ **Cross-Reference Updates**: Fixed all markdown links (absolute → relative paths)
+- ✅ **Complete Cleanup**: 0 GUTT files remaining in root, 48 files now centralized
+- ✅ **Git Tracking**: All file moves tracked as renames (preserving history)
+
+**Part 3: GPT-5 GUTT Decomposition Analysis**:
+- ✅ **Generated 9 GPT-5 Decompositions**: All hero prompts analyzed with gpt-oss:20b model
+- ✅ **Comparison Analysis**: GPT-5 vs Reference vs Claude vs Ollama across all 9 prompts
+- ✅ **Accuracy Assessment**: Evaluated GPT-5 performance against ground truth decompositions
+- ✅ **Pattern Documentation**: Identified GPT-5 strengths and weaknesses in GUTT decomposition
+
 **C-GUTT Framework Complete**:
 - **Total C-GUTTs**: 39 atomic capabilities (from 66 original tasks)
 - **Reduction**: 41% fewer implementation units
@@ -243,13 +257,24 @@ Scenara 2.0 is an enterprise meeting intelligence system that evolved from the P
 - **Most Reused**: C-GUTT-01 (Calendar Event Retrieval) - 76% coverage across prompts
 - **Implementation Focus**: Build 39 C-GUTTs, not 66 discrete capabilities
 
-**Documents Created/Updated** (4 files):
+**Documents Created/Updated**:
 1. **GUTT_CROSS_PROMPT_CONSOLIDATION_ANALYSIS.md** (643 lines) - Consolidation methodology
 2. **CONSOLIDATED_GUTT_REFERENCE.md** (384 lines) - Complete C-GUTT specifications
 3. **CAPABILITY_INVENTORY_ANALYSIS.md** (899 lines) - Infrastructure view (100% C-GUTT converted)
 4. **Hero_Prompts_Reference_GUTT_Decompositions.md** (491 lines) - Updated with C-GUTT priorities
+5. **9 GPT-5 GUTT Decomposition JSONs**: Complete analysis for all hero prompts
+6. **Updated Comparison Report**: Added GPT-5 column to multi-model comparison
 
-**Git Commits** (November 6, 2025 - 7 commits):
+**Files Reorganized** (7 files moved to docs/gutt_analysis/):
+- Hero_Prompts_Reference_GUTT_Decompositions.md
+- GUTT_Evaluation_Meeting_Prep_Prompt.md
+- Claude_Sonnet_45_GUTT_Analysis_Complete_Results.md
+- Ollama_GUTT_Analysis_Diagnosis.md
+- Three_Model_GUTT_Comparison_Report.md
+- Reference_GUTT_Decomposition_Ground_Truth.md
+- GUTT_Comparison_Claude_vs_Ollama.md
+
+**Git Commits** (November 6, 2025 - 9 commits total):
 - `24d8156`: Initial consolidation analysis (66→38)
 - `f37aa63`: Corrected to 66→39 with type/importance separation
 - `96bd8fc`: Added complete C-GUTT reference inventory
@@ -257,6 +282,8 @@ Scenara 2.0 is an enterprise meeting intelligence system that evolved from the P
 - `9a4a9d9`: Major C-GUTT conversion (removed 66 GUTT references, updated statistics)
 - `8efbdc5`: Complete sections 3-12 conversion
 - `ecd415c`: Hero Prompts Reference update with C-GUTT priorities
+- `b8a7f66`: Documentation reorganization (7 files moved, cross-references updated)
+- `[pending]`: GPT-5 GUTT decomposition analysis
 
 **Key Achievements**:
 - ✅ Complete consolidation from 66 → 39 capabilities
@@ -264,19 +291,24 @@ Scenara 2.0 is an enterprise meeting intelligence system that evolved from the P
 - ✅ Clear implementation priorities established (build high-reuse C-GUTTs first)
 - ✅ 4-document ecosystem cross-referenced and complete
 - ✅ Infrastructure → C-GUTT → Hero Prompt architecture clear
+- ✅ All 48 GUTT documents centralized in docs/gutt_analysis/
+- ✅ GPT-5 GUTT decomposition complete for all 9 hero prompts
+- ✅ Multi-model comparison updated (Reference + Claude + Ollama + GPT-5)
 
 **Next Session Priorities**:
 1. **Implement high-reuse C-GUTTs**: Start with C-01 (Calendar Event Retrieval), C-19 (Constraint Satisfaction)
 2. **Begin infrastructure capability development**: Focus on Calendar Data Operations (C1.1-C1.4)
 3. **Continue meeting classification validation**: Maintain 75%+ accuracy goal
+4. **GPT-5 Model Evaluation**: Analyze GPT-5 GUTT decomposition quality vs other models
 
 **Session Metrics**:
-- **Documents Created**: 2 new files (1027 total lines)
-- **Documents Updated**: 2 major updates (1390 total lines updated)
+- **Documents Created**: 2 new C-GUTT files + 9 GPT-5 decomposition JSONs (1027+ total lines)
+- **Documents Updated**: 3 major updates (1390+ total lines updated)
+- **Files Reorganized**: 7 files moved to centralized location
 - **Lines Removed**: 240+ redundant descriptions
-- **Git Commits**: 7 commits, all pushed to GitHub
+- **Git Commits**: 9 commits (8 pushed, 1 pending)
 - **Reduction Achieved**: 41% (66→39 capabilities)
-- **Session Duration**: 17.3 minutes
+- **GUTT Files Centralized**: 48 files in docs/gutt_analysis/
 
 ---
 
