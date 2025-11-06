@@ -1,5 +1,6 @@
 # GPT-5 Prompt Optimization & 3-Trial Stability Test
 
+**Author**: Chin-Yew Lin  
 **Date**: November 7, 2025  
 **Status**: ✅ COMPLETE  
 **Objective**: Optimize GPT-5 prompts and validate with 3-trial stability test
