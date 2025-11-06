@@ -1,0 +1,204 @@
+{
+  "per_prompt": {
+    "collaborate-1": {
+      "always_selected": [
+        "CAN-01",
+        "CAN-02A",
+        "CAN-04",
+        "CAN-07",
+        "CAN-08",
+        "CAN-09",
+        "CAN-22"
+      ],
+      "sometimes_selected": [],
+      "task_counts": [
+        7,
+        7,
+        7
+      ],
+      "average_task_count": 7.0,
+      "std_dev": 0.0,
+      "consistency_percentage": 100.0
+    },
+    "collaborate-2": {
+      "always_selected": [
+        "CAN-01",
+        "CAN-02A",
+        "CAN-04",
+        "CAN-07",
+        "CAN-08",
+        "CAN-09",
+        "CAN-22"
+      ],
+      "sometimes_selected": [],
+      "task_counts": [
+        7,
+        7,
+        7
+      ],
+      "average_task_count": 7.0,
+      "std_dev": 0.0,
+      "consistency_percentage": 100.0
+    },
+    "collaborate-3": {
+      "always_selected": [
+        "CAN-01",
+        "CAN-02A",
+        "CAN-04",
+        "CAN-07",
+        "CAN-09"
+      ],
+      "sometimes_selected": [],
+      "task_counts": [
+        5,
+        5,
+        5
+      ],
+      "average_task_count": 5.0,
+      "std_dev": 0.0,
+      "consistency_percentage": 100.0
+    },
+    "organizer-1": {
+      "always_selected": [
+        "CAN-01",
+        "CAN-02A",
+        "CAN-02B",
+        "CAN-04",
+        "CAN-07",
+        "CAN-20"
+      ],
+      "sometimes_selected": [
+        "CAN-11"
+      ],
+      "task_counts": [
+        7,
+        6,
+        7
+      ],
+      "average_task_count": 6.666666666666667,
+      "std_dev": 0.4714045207910317,
+      "consistency_percentage": 85.71428571428571
+    },
+    "organizer-2": {
+      "always_selected": [
+        "CAN-01",
+        "CAN-02A",
+        "CAN-02B",
+        "CAN-03",
+        "CAN-04",
+        "CAN-06",
+        "CAN-07",
+        "CAN-21"
+      ],
+      "sometimes_selected": [],
+      "task_counts": [
+        8,
+        8,
+        8
+      ],
+      "average_task_count": 8.0,
+      "std_dev": 0.0,
+      "consistency_percentage": 100.0
+    },
+    "organizer-3": {
+      "always_selected": [
+        "CAN-01",
+        "CAN-02A",
+        "CAN-02B",
+        "CAN-04",
+        "CAN-10",
+        "CAN-20"
+      ],
+      "sometimes_selected": [
+        "CAN-07",
+        "CAN-14"
+      ],
+      "task_counts": [
+        7,
+        6,
+        8
+      ],
+      "average_task_count": 7.0,
+      "std_dev": 0.816496580927726,
+      "consistency_percentage": 75.0
+    },
+    "schedule-1": {
+      "always_selected": [
+        "CAN-01",
+        "CAN-02A",
+        "CAN-02B",
+        "CAN-03",
+        "CAN-04",
+        "CAN-05",
+        "CAN-06",
+        "CAN-07",
+        "CAN-15",
+        "CAN-23"
+      ],
+      "sometimes_selected": [
+        "CAN-12"
+      ],
+      "task_counts": [
+        10,
+        11,
+        11
+      ],
+      "average_task_count": 10.666666666666666,
+      "std_dev": 0.4714045207910317,
+      "consistency_percentage": 90.9090909090909
+    },
+    "schedule-2": {
+      "always_selected": [
+        "CAN-01",
+        "CAN-02A",
+        "CAN-02B",
+        "CAN-03",
+        "CAN-04",
+        "CAN-06",
+        "CAN-07",
+        "CAN-12",
+        "CAN-23"
+      ],
+      "sometimes_selected": [],
+      "task_counts": [
+        9,
+        9,
+        9
+      ],
+      "average_task_count": 9.0,
+      "std_dev": 0.0,
+      "consistency_percentage": 100.0
+    },
+    "schedule-3": {
+      "always_selected": [
+        "CAN-01",
+        "CAN-02A",
+        "CAN-02B",
+        "CAN-03",
+        "CAN-04",
+        "CAN-05",
+        "CAN-06",
+        "CAN-07",
+        "CAN-19",
+        "CAN-23"
+      ],
+      "sometimes_selected": [
+        "CAN-12"
+      ],
+      "task_counts": [
+        10,
+        11,
+        11
+      ],
+      "average_task_count": 10.666666666666666,
+      "std_dev": 0.4714045207910317,
+      "consistency_percentage": 90.9090909090909
+    }
+  },
+  "aggregate": {
+    "average_task_count": 7.888888888888889,
+    "average_consistency": 93.61471861471861,
+    "average_std_dev": 0.24785668258898014,
+    "interpretation": "High"
+  }
+}

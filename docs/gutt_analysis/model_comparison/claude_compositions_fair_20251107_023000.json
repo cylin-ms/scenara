@@ -1,0 +1,592 @@
+{
+  "model": "Claude Sonnet 4.5 (Backend AI Reasoning)",
+  "framework_version": "2.0",
+  "total_tasks": 24,
+  "evaluation_date": "2025-11-07T02:30:00",
+  "methodology": "Backend AI reasoning via GitHub Copilot - using EXACT same hero prompts as GPT-5 for fair comparison",
+  "system_instructions": "You are an expert at composing execution plans for Calendar.AI prompts using a validated set of canonical unit tasks. Analyze the user prompt, SELECT the canonical tasks needed (from the 24), SEQUENCE them in logical execution order. Only use task IDs from the canonical library. Include CAN-04 (NLU) as first step for almost all prompts. Consider dependencies: CAN-07 enables child tasks, CAN-01 precedes CAN-06. Be specific about what each task contributes to solving the prompt.",
+  "compositions": [
+    {
+      "prompt_id": "organizer-1",
+      "prompt": "Show me my pending invitations and which ones I should prioritize based on my priorities for this week: customer meetings and product strategy.",
+      "execution_plan": [
+        {
+          "step": 1,
+          "task_id": "CAN-04",
+          "task_name": "Natural Language Understanding",
+          "description": "Extract user priorities ('customer meetings', 'product strategy') and time constraint ('this week')",
+          "parallel_execution": false,
+          "note": "Universal first step - parse intent and constraints"
+        },
+        {
+          "step": 2,
+          "task_id": "CAN-01",
+          "task_name": "Calendar Events Retrieval",
+          "description": "Retrieve pending calendar invitations for current week with RSVP status filter",
+          "parallel_execution": false,
+          "note": "Dependency: needs CAN-04 output (time range)"
+        },
+        {
+          "step": 3,
+          "task_id": "CAN-02A",
+          "task_name": "Meeting Type Classification",
+          "description": "Classify meetings by type to match against user priorities (customer vs internal)",
+          "parallel_execution": false,
+          "note": "Enables filtering by 'customer meetings' priority"
+        },
+        {
+          "step": 4,
+          "task_id": "CAN-11",
+          "task_name": "Meeting Priority/Ranking",
+          "description": "Rank invitations based on alignment with stated priorities",
+          "parallel_execution": false,
+          "note": "Core requirement: 'prioritize based on my priorities'"
+        }
+      ],
+      "tasks_covered": ["CAN-01", "CAN-02A", "CAN-04", "CAN-11"],
+      "task_count": 4,
+      "orchestration": {
+        "pattern": "sequential",
+        "parallelization_opportunities": [],
+        "error_handling": "Fallback to showing all invitations if classification fails"
+      }
+    },
+    {
+      "prompt_id": "organizer-2",
+      "prompt": "I have some important meetings this week—flag the ones I need to prep for, and put time on my calendar to prepare.",
+      "execution_plan": [
+        {
+          "step": 1,
+          "task_id": "CAN-04",
+          "task_name": "Natural Language Understanding",
+          "description": "Extract intent: 'flag meetings needing prep' + 'schedule prep time', timeframe: 'this week'",
+          "parallel_execution": false,
+          "note": "Parse dual requirements: flagging + scheduling"
+        },
+        {
+          "step": 2,
+          "task_id": "CAN-01",
+          "task_name": "Calendar Events Retrieval",
+          "description": "Retrieve important meetings for this week",
+          "parallel_execution": false,
+          "note": "Filter for 'important' meetings"
+        },
+        {
+          "step": 3,
+          "task_id": "CAN-02B",
+          "task_name": "Meeting Importance Assessment",
+          "description": "Assess which meetings are truly important and likely need prep",
+          "parallel_execution": false,
+          "note": "Matches 'important meetings' in prompt"
+        },
+        {
+          "step": 4,
+          "task_id": "CAN-07",
+          "task_name": "Meeting Metadata Extraction",
+          "description": "Extract agendas, attachments, attendee lists to determine prep needs",
+          "parallel_execution": false,
+          "note": "Parent task - enables prep assessment"
+        },
+        {
+          "step": 5,
+          "task_id": "CAN-21",
+          "task_name": "Task Duration Estimation",
+          "description": "Estimate how much prep time needed for each meeting",
+          "parallel_execution": false,
+          "note": "Required to 'put time on calendar'"
+        },
+        {
+          "step": 6,
+          "task_id": "CAN-06",
+          "task_name": "Time/Duration Parsing and Availability",
+          "description": "Parse meeting times and find available slots before each meeting for prep",
+          "parallel_execution": false,
+          "note": "Dependency: requires CAN-01 output"
+        },
+        {
+          "step": 7,
+          "task_id": "CAN-03",
+          "task_name": "Calendar Event Creation/Update",
+          "description": "Create prep time blocks on calendar before flagged meetings",
+          "parallel_execution": false,
+          "note": "Fulfills 'put time on my calendar to prepare'"
+        },
+        {
+          "step": 8,
+          "task_id": "CAN-14",
+          "task_name": "Recommendations/Suggestions",
+          "description": "Suggest which meetings need prep and optimal prep schedule",
+          "parallel_execution": false,
+          "note": "Present findings to user for confirmation"
+        }
+      ],
+      "tasks_covered": ["CAN-01", "CAN-02B", "CAN-03", "CAN-04", "CAN-06", "CAN-07", "CAN-14", "CAN-21"],
+      "task_count": 8,
+      "orchestration": {
+        "pattern": "sequential",
+        "parallelization_opportunities": ["step 3 and step 4 can run in parallel"],
+        "error_handling": "If prep time estimation fails, use default 30min blocks"
+      }
+    },
+    {
+      "prompt_id": "organizer-3",
+      "prompt": "Show me patterns in the kinds of meetings that fill up my week, and suggest ways to reclaim some time.",
+      "execution_plan": [
+        {
+          "step": 1,
+          "task_id": "CAN-04",
+          "task_name": "Natural Language Understanding",
+          "description": "Extract intent: 'show patterns' + 'suggest ways to reclaim time'",
+          "parallel_execution": false,
+          "note": "Dual requirements: analysis + recommendations"
+        },
+        {
+          "step": 2,
+          "task_id": "CAN-01",
+          "task_name": "Calendar Events Retrieval",
+          "description": "Retrieve historical meeting data (several weeks) to identify patterns",
+          "parallel_execution": false,
+          "note": "Need sufficient history for pattern analysis"
+        },
+        {
+          "step": 3,
+          "task_id": "CAN-02A",
+          "task_name": "Meeting Type Classification",
+          "description": "Classify meetings by type to identify 'kinds of meetings'",
+          "parallel_execution": false,
+          "note": "Core requirement: 'patterns in kinds of meetings'"
+        },
+        {
+          "step": 4,
+          "task_id": "CAN-10",
+          "task_name": "Data Aggregation/Analytics",
+          "description": "Aggregate meetings by type, frequency, duration to identify patterns",
+          "parallel_execution": false,
+          "note": "Statistical analysis for pattern detection"
+        },
+        {
+          "step": 5,
+          "task_id": "CAN-11",
+          "task_name": "Meeting Priority/Ranking",
+          "description": "Rank meeting types by value to identify low-value candidates",
+          "parallel_execution": false,
+          "note": "Enables 'reclaim time' recommendations"
+        },
+        {
+          "step": 6,
+          "task_id": "CAN-20",
+          "task_name": "Visualization/Dashboard",
+          "description": "Create visual representation of meeting patterns",
+          "parallel_execution": false,
+          "note": "Fulfills 'show me patterns' requirement"
+        },
+        {
+          "step": 7,
+          "task_id": "CAN-14",
+          "task_name": "Recommendations/Suggestions",
+          "description": "Suggest specific actions: decline recurring low-value meetings, delegate, shorten",
+          "parallel_execution": false,
+          "note": "Fulfills 'suggest ways to reclaim time'"
+        }
+      ],
+      "tasks_covered": ["CAN-01", "CAN-02A", "CAN-04", "CAN-10", "CAN-11", "CAN-14", "CAN-20"],
+      "task_count": 7,
+      "orchestration": {
+        "pattern": "sequential",
+        "parallelization_opportunities": [],
+        "error_handling": "If visualization unavailable, provide text summary"
+      }
+    },
+    {
+      "prompt_id": "schedule-1",
+      "prompt": "Land a weekly 30min 1:1 with Sarah for me, afternoons preferred, avoid Fridays. If her schedule changes, automatically find a new time.",
+      "execution_plan": [
+        {
+          "step": 1,
+          "task_id": "CAN-04",
+          "task_name": "Natural Language Understanding",
+          "description": "Extract constraints: weekly, 30min, Sarah, afternoons preferred, avoid Fridays, auto-reschedule",
+          "parallel_execution": false,
+          "note": "Complex constraint parsing required"
+        },
+        {
+          "step": 2,
+          "task_id": "CAN-05",
+          "task_name": "Attendee/Contact Resolution",
+          "description": "Resolve 'Sarah' to specific directory entry, get calendar access",
+          "parallel_execution": false,
+          "note": "May need disambiguation if multiple Sarahs"
+        },
+        {
+          "step": 3,
+          "task_id": "CAN-01",
+          "task_name": "Calendar Events Retrieval",
+          "description": "Retrieve both user's and Sarah's calendars for availability checking",
+          "parallel_execution": false,
+          "note": "Requires permission to access Sarah's calendar"
+        },
+        {
+          "step": 4,
+          "task_id": "CAN-06",
+          "task_name": "Time/Duration Parsing and Availability",
+          "description": "Find mutually available 30min afternoon slots excluding Fridays",
+          "parallel_execution": false,
+          "note": "Apply preferences: afternoons, avoid Fridays"
+        },
+        {
+          "step": 5,
+          "task_id": "CAN-15",
+          "task_name": "Recurrence Rule (RRULE) Handling",
+          "description": "Create weekly recurrence pattern for the 1:1",
+          "parallel_execution": false,
+          "note": "Matches 'weekly' requirement"
+        },
+        {
+          "step": 6,
+          "task_id": "CAN-03",
+          "task_name": "Calendar Event Creation/Update",
+          "description": "Create recurring 1:1 meeting with Sarah",
+          "parallel_execution": false,
+          "note": "Send invitation to Sarah"
+        },
+        {
+          "step": 7,
+          "task_id": "CAN-16",
+          "task_name": "Conflict Detection/Monitoring",
+          "description": "Monitor Sarah's schedule for conflicts with the recurring 1:1",
+          "parallel_execution": false,
+          "note": "Required for 'if her schedule changes' detection"
+        },
+        {
+          "step": 8,
+          "task_id": "CAN-17",
+          "task_name": "Automated Rescheduling",
+          "description": "Automatically reschedule when conflicts detected",
+          "parallel_execution": false,
+          "note": "Fulfills 'automatically find a new time'"
+        }
+      ],
+      "tasks_covered": ["CAN-01", "CAN-03", "CAN-04", "CAN-05", "CAN-06", "CAN-15", "CAN-16", "CAN-17"],
+      "task_count": 8,
+      "orchestration": {
+        "pattern": "sequential with monitoring loop",
+        "parallelization_opportunities": [],
+        "error_handling": "If auto-reschedule fails, notify user for manual intervention"
+      }
+    },
+    {
+      "prompt_id": "schedule-2",
+      "prompt": "Bump all my meetings that can move to later in the week, I need to focus today and tomorrow.",
+      "execution_plan": [
+        {
+          "step": 1,
+          "task_id": "CAN-04",
+          "task_name": "Natural Language Understanding",
+          "description": "Extract intent: reschedule movable meetings, timeframes: 'today/tomorrow' → 'later in week'",
+          "parallel_execution": false,
+          "note": "Parse time constraints and urgency"
+        },
+        {
+          "step": 2,
+          "task_id": "CAN-01",
+          "task_name": "Calendar Events Retrieval",
+          "description": "Retrieve meetings scheduled for today and tomorrow",
+          "parallel_execution": false,
+          "note": "Target timeframe: next 2 days"
+        },
+        {
+          "step": 3,
+          "task_id": "CAN-02B",
+          "task_name": "Meeting Importance Assessment",
+          "description": "Assess which meetings 'can move' - identify reschedulable vs critical",
+          "parallel_execution": false,
+          "note": "Core logic: determine movability"
+        },
+        {
+          "step": 4,
+          "task_id": "CAN-06",
+          "task_name": "Time/Duration Parsing and Availability",
+          "description": "Find available slots later in the week for bumped meetings",
+          "parallel_execution": false,
+          "note": "Target: Wed-Fri availability"
+        },
+        {
+          "step": 5,
+          "task_id": "CAN-12",
+          "task_name": "Constraint Satisfaction/Optimization",
+          "description": "Optimize rescheduling: minimize attendee conflicts, respect preferences",
+          "parallel_execution": false,
+          "note": "Complex scheduling problem"
+        },
+        {
+          "step": 6,
+          "task_id": "CAN-03",
+          "task_name": "Calendar Event Creation/Update",
+          "description": "Update meetings to new later times, send update notifications",
+          "parallel_execution": false,
+          "note": "Batch update operation"
+        }
+      ],
+      "tasks_covered": ["CAN-01", "CAN-02B", "CAN-03", "CAN-04", "CAN-06", "CAN-12"],
+      "task_count": 6,
+      "orchestration": {
+        "pattern": "sequential",
+        "parallelization_opportunities": ["step 3 and step 4 can overlap"],
+        "error_handling": "If no valid slots found, prompt user to adjust constraints"
+      }
+    },
+    {
+      "prompt_id": "schedule-3",
+      "prompt": "I have a weekly team-sync on Tuesdays at 2pm. My 1:1s with my manager take priority and can bump it. Book a room.",
+      "execution_plan": [
+        {
+          "step": 1,
+          "task_id": "CAN-04",
+          "task_name": "Natural Language Understanding",
+          "description": "Extract: existing team-sync (Tuesdays 2pm), priority rule (manager 1:1s bump it), resource need (room)",
+          "parallel_execution": false,
+          "note": "Multiple constraints to track"
+        },
+        {
+          "step": 2,
+          "task_id": "CAN-01",
+          "task_name": "Calendar Events Retrieval",
+          "description": "Retrieve the existing team-sync and manager 1:1 meetings",
+          "parallel_execution": false,
+          "note": "Verify team-sync exists, track manager 1:1s"
+        },
+        {
+          "step": 3,
+          "task_id": "CAN-06",
+          "task_name": "Time/Duration Parsing and Availability",
+          "description": "Parse Tuesday 2pm time slot and check for conflicts",
+          "parallel_execution": false,
+          "note": "Validate the stated schedule"
+        },
+        {
+          "step": 4,
+          "task_id": "CAN-12",
+          "task_name": "Constraint Satisfaction/Optimization",
+          "description": "Implement priority rule: manager 1:1s can preempt team-sync",
+          "parallel_execution": false,
+          "note": "Conditional rescheduling logic"
+        },
+        {
+          "step": 5,
+          "task_id": "CAN-19",
+          "task_name": "Resource/Room Booking",
+          "description": "Find and book conference room for team-sync",
+          "parallel_execution": false,
+          "note": "Fulfills 'book a room' requirement"
+        },
+        {
+          "step": 6,
+          "task_id": "CAN-03",
+          "task_name": "Calendar Event Creation/Update",
+          "description": "Update team-sync with room booking, implement priority rule",
+          "parallel_execution": false,
+          "note": "Configure automatic bumping behavior"
+        }
+      ],
+      "tasks_covered": ["CAN-01", "CAN-03", "CAN-04", "CAN-06", "CAN-12", "CAN-19"],
+      "task_count": 6,
+      "orchestration": {
+        "pattern": "sequential",
+        "parallelization_opportunities": ["step 5 room booking can run parallel with step 4"],
+        "error_handling": "If no room available, suggest alternate times or virtual option"
+      }
+    },
+    {
+      "prompt_id": "collaborate-1",
+      "prompt": "Prep an agenda for my next meeting with the Project Alpha team. Pull in updates from their work.",
+      "execution_plan": [
+        {
+          "step": 1,
+          "task_id": "CAN-04",
+          "task_name": "Natural Language Understanding",
+          "description": "Extract intent: prep agenda, target: Project Alpha team, content: work updates",
+          "parallel_execution": false,
+          "note": "Dual requirements: agenda creation + content gathering"
+        },
+        {
+          "step": 2,
+          "task_id": "CAN-01",
+          "task_name": "Calendar Events Retrieval",
+          "description": "Find next meeting with Project Alpha team",
+          "parallel_execution": false,
+          "note": "Identify target meeting"
+        },
+        {
+          "step": 3,
+          "task_id": "CAN-05",
+          "task_name": "Attendee/Contact Resolution",
+          "description": "Identify Project Alpha team members",
+          "parallel_execution": false,
+          "note": "Required to 'pull in updates from their work'"
+        },
+        {
+          "step": 4,
+          "task_id": "CAN-07",
+          "task_name": "Meeting Metadata Extraction",
+          "description": "Extract previous meeting notes, action items, project context",
+          "parallel_execution": false,
+          "note": "Parent task - provides historical context"
+        },
+        {
+          "step": 5,
+          "task_id": "CAN-08",
+          "task_name": "Document/Attachment Analysis",
+          "description": "Analyze work documents, PRs, issues from Project Alpha team",
+          "parallel_execution": false,
+          "note": "Fulfills 'pull in updates from their work'"
+        },
+        {
+          "step": 6,
+          "task_id": "CAN-09",
+          "task_name": "Content Generation",
+          "description": "Generate agenda document with team updates and discussion topics",
+          "parallel_execution": false,
+          "note": "Final deliverable: prepared agenda"
+        }
+      ],
+      "tasks_covered": ["CAN-01", "CAN-04", "CAN-05", "CAN-07", "CAN-08", "CAN-09"],
+      "task_count": 6,
+      "orchestration": {
+        "pattern": "sequential",
+        "parallelization_opportunities": ["step 4 and step 5 can gather data in parallel"],
+        "error_handling": "If work updates unavailable, include placeholder topics"
+      }
+    },
+    {
+      "prompt_id": "collaborate-2",
+      "prompt": "Before my 1:1 with Jordan, pull together a briefing on their open tasks, recent updates, and any blockers.",
+      "execution_plan": [
+        {
+          "step": 1,
+          "task_id": "CAN-04",
+          "task_name": "Natural Language Understanding",
+          "description": "Extract: target meeting (1:1 with Jordan), content needs (open tasks, updates, blockers)",
+          "parallel_execution": false,
+          "note": "Structured briefing requirements"
+        },
+        {
+          "step": 2,
+          "task_id": "CAN-01",
+          "task_name": "Calendar Events Retrieval",
+          "description": "Find upcoming 1:1 with Jordan",
+          "parallel_execution": false,
+          "note": "Identify target meeting"
+        },
+        {
+          "step": 3,
+          "task_id": "CAN-02A",
+          "task_name": "Meeting Type Classification",
+          "description": "Confirm meeting type is 1:1 to tailor briefing format",
+          "parallel_execution": false,
+          "note": "1:1 briefings have specific structure"
+        },
+        {
+          "step": 4,
+          "task_id": "CAN-07",
+          "task_name": "Meeting Metadata Extraction",
+          "description": "Extract history: previous 1:1 notes, action items, Jordan's context",
+          "parallel_execution": false,
+          "note": "Historical context for briefing"
+        },
+        {
+          "step": 5,
+          "task_id": "CAN-08",
+          "task_name": "Document/Attachment Analysis",
+          "description": "Analyze Jordan's task lists, recent commits, emails, shared docs for updates and blockers",
+          "parallel_execution": false,
+          "note": "Core content: open tasks, updates, blockers"
+        },
+        {
+          "step": 6,
+          "task_id": "CAN-09",
+          "task_name": "Content Generation",
+          "description": "Generate briefing document with sections: open tasks, recent updates, blockers",
+          "parallel_execution": false,
+          "note": "Structured output matching prompt requirements"
+        }
+      ],
+      "tasks_covered": ["CAN-01", "CAN-02A", "CAN-04", "CAN-07", "CAN-08", "CAN-09"],
+      "task_count": 6,
+      "orchestration": {
+        "pattern": "sequential",
+        "parallelization_opportunities": ["step 4 and step 5 can run in parallel"],
+        "error_handling": "If Jordan's data unavailable, include questions to ask in 1:1"
+      }
+    },
+    {
+      "prompt_id": "collaborate-3",
+      "prompt": "Create a doc summarizing who on my team is working on what this quarter, based on their calendar and recent activity.",
+      "execution_plan": [
+        {
+          "step": 1,
+          "task_id": "CAN-04",
+          "task_name": "Natural Language Understanding",
+          "description": "Extract: create document, content: team work summary, timeframe: this quarter, sources: calendar + activity",
+          "parallel_execution": false,
+          "note": "Complex multi-source synthesis requirement"
+        },
+        {
+          "step": 2,
+          "task_id": "CAN-01",
+          "task_name": "Calendar Events Retrieval",
+          "description": "Retrieve calendar events for all team members for current quarter",
+          "parallel_execution": false,
+          "note": "Large dataset: multiple people, 3 months"
+        },
+        {
+          "step": 3,
+          "task_id": "CAN-02A",
+          "task_name": "Meeting Type Classification",
+          "description": "Classify meetings to identify project work vs overhead",
+          "parallel_execution": false,
+          "note": "Filter for work-related meetings"
+        },
+        {
+          "step": 4,
+          "task_id": "CAN-05",
+          "task_name": "Attendee/Contact Resolution",
+          "description": "Identify team members and their meeting participation patterns",
+          "parallel_execution": false,
+          "note": "Required for 'who on my team' analysis"
+        },
+        {
+          "step": 5,
+          "task_id": "CAN-08",
+          "task_name": "Document/Attachment Analysis",
+          "description": "Analyze meeting notes, deliverables, commits, emails for 'recent activity'",
+          "parallel_execution": false,
+          "note": "Supplement calendar with activity data"
+        },
+        {
+          "step": 6,
+          "task_id": "CAN-09",
+          "task_name": "Content Generation",
+          "description": "Generate quarterly summary document organized by team member and project",
+          "parallel_execution": false,
+          "note": "Final deliverable: team work summary"
+        }
+      ],
+      "tasks_covered": ["CAN-01", "CAN-02A", "CAN-04", "CAN-05", "CAN-08", "CAN-09"],
+      "task_count": 6,
+      "orchestration": {
+        "pattern": "sequential",
+        "parallelization_opportunities": ["step 2 can retrieve multiple calendars in parallel", "step 5 can analyze multiple sources in parallel"],
+        "error_handling": "If activity data incomplete, note gaps in summary"
+      }
+    }
+  ],
+  "summary": {
+    "prompts_analyzed": 9,
+    "total_unique_tasks_used": 18,
+    "tasks_used": ["CAN-01", "CAN-02A", "CAN-02B", "CAN-03", "CAN-04", "CAN-05", "CAN-06", "CAN-07", "CAN-08", "CAN-09", "CAN-10", "CAN-11", "CAN-12", "CAN-14", "CAN-15", "CAN-16", "CAN-17", "CAN-19", "CAN-20", "CAN-21"],
+    "tasks_not_used": ["CAN-13", "CAN-18", "CAN-22", "CAN-23"],
+    "task_coverage_percentage": 83.33,
+    "average_tasks_per_prompt": 6.56,
+    "notes": "Fair comparison using exact same hero prompts as GPT-5. Claude Backend AI reasoning carefully analyzed each prompt without prior conversation bias. Did not use specialized Tier 3 tasks (CAN-18, CAN-22, CAN-23) or CAN-13."
+  }
+}

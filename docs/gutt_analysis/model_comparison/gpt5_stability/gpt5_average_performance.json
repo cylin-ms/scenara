@@ -1,0 +1,952 @@
+{
+  "metadata": {
+    "trials": 3,
+    "gold_standard": "docs\\gutt_analysis\\gold_standard_analysis.json",
+    "trial_files": [
+      "docs\\gutt_analysis\\model_comparison\\gpt5_stability\\gpt5_trial1_20251107_023129.json",
+      "docs\\gutt_analysis\\model_comparison\\gpt5_stability\\gpt5_trial2_20251107_023321.json",
+      "docs\\gutt_analysis\\model_comparison\\gpt5_stability\\gpt5_trial3_20251107_023532.json"
+    ]
+  },
+  "aggregate": {
+    "precision": {
+      "mean": 0.7476030142696809,
+      "std_dev": 0.002502153015988846,
+      "min": 0.7452140452140452,
+      "max": 0.7510582010582011
+    },
+    "recall": {
+      "mean": 0.8424603174603175,
+      "std_dev": 0.01788308912585247,
+      "min": 0.8216931216931217,
+      "max": 0.8653439153439153
+    },
+    "f1": {
+      "mean": 0.7839913281433749,
+      "std_dev": 0.007187777660210915,
+      "min": 0.7748433827381196,
+      "max": 0.7924036002983371
+    },
+    "stability": "EXCELLENT (< 2% variance)"
+  },
+  "per_prompt_variance": {
+    "organizer-1": {
+      "mean": 0.6848484848484849,
+      "std_dev": 0.059996939009767686,
+      "min": 0.6,
+      "max": 0.7272727272727273
+    },
+    "organizer-2": {
+      "mean": 0.7999999999999999,
+      "std_dev": 0.0,
+      "min": 0.7999999999999999,
+      "max": 0.7999999999999999
+    },
+    "organizer-3": {
+      "mean": 0.8087912087912087,
+      "std_dev": 0.036424330826830935,
+      "min": 0.7692307692307692,
+      "max": 0.8571428571428571
+    },
+    "schedule-1": {
+      "mean": 0.7412698412698413,
+      "std_dev": 0.02918218462039725,
+      "min": 0.7,
+      "max": 0.761904761904762
+    },
+    "schedule-2": {
+      "mean": 0.75,
+      "std_dev": 0.0,
+      "min": 0.75,
+      "max": 0.75
+    },
+    "schedule-3": {
+      "mean": 0.820662768031189,
+      "std_dev": 0.03032426741930621,
+      "min": 0.7777777777777777,
+      "max": 0.8421052631578948
+    },
+    "collaborate-1": {
+      "mean": 0.7999999999999999,
+      "std_dev": 0.0,
+      "min": 0.7999999999999999,
+      "max": 0.7999999999999999
+    },
+    "collaborate-2": {
+      "mean": 0.923076923076923,
+      "std_dev": 0.0,
+      "min": 0.923076923076923,
+      "max": 0.923076923076923
+    },
+    "collaborate-3": {
+      "mean": 0.7272727272727272,
+      "std_dev": 0.0,
+      "min": 0.7272727272727272,
+      "max": 0.7272727272727272
+    }
+  },
+  "trial_results": [
+    {
+      "per_prompt": {
+        "organizer-1": {
+          "precision": 0.5714285714285714,
+          "recall": 1.0,
+          "f1": 0.7272727272727273,
+          "trial_tasks": [
+            "CAN-01",
+            "CAN-02A",
+            "CAN-02B",
+            "CAN-04",
+            "CAN-07",
+            "CAN-11",
+            "CAN-20"
+          ],
+          "gold_tasks": [
+            "CAN-01",
+            "CAN-02A",
+            "CAN-04",
+            "CAN-11"
+          ],
+          "missing": [],
+          "extra": [
+            "CAN-02B",
+            "CAN-07",
+            "CAN-20"
+          ]
+        },
+        "organizer-2": {
+          "precision": 0.75,
+          "recall": 0.8571428571428571,
+          "f1": 0.7999999999999999,
+          "trial_tasks": [
+            "CAN-01",
+            "CAN-02A",
+            "CAN-02B",
+            "CAN-03",
+            "CAN-04",
+            "CAN-06",
+            "CAN-07",
+            "CAN-21"
+          ],
+          "gold_tasks": [
+            "CAN-01",
+            "CAN-02B",
+            "CAN-03",
+            "CAN-04",
+            "CAN-07",
+            "CAN-14",
+            "CAN-21"
+          ],
+          "missing": [
+            "CAN-14"
+          ],
+          "extra": [
+            "CAN-02A",
+            "CAN-06"
+          ]
+        },
+        "organizer-3": {
+          "precision": 0.8571428571428571,
+          "recall": 0.8571428571428571,
+          "f1": 0.8571428571428571,
+          "trial_tasks": [
+            "CAN-01",
+            "CAN-02A",
+            "CAN-02B",
+            "CAN-04",
+            "CAN-10",
+            "CAN-14",
+            "CAN-20"
+          ],
+          "gold_tasks": [
+            "CAN-01",
+            "CAN-02A",
+            "CAN-04",
+            "CAN-10",
+            "CAN-11",
+            "CAN-14",
+            "CAN-20"
+          ],
+          "missing": [
+            "CAN-11"
+          ],
+          "extra": [
+            "CAN-02B"
+          ]
+        },
+        "schedule-1": {
+          "precision": 0.7,
+          "recall": 0.7,
+          "f1": 0.7,
+          "trial_tasks": [
+            "CAN-01",
+            "CAN-02A",
+            "CAN-02B",
+            "CAN-03",
+            "CAN-04",
+            "CAN-05",
+            "CAN-06",
+            "CAN-07",
+            "CAN-15",
+            "CAN-23"
+          ],
+          "gold_tasks": [
+            "CAN-01",
+            "CAN-03",
+            "CAN-04",
+            "CAN-05",
+            "CAN-06",
+            "CAN-12",
+            "CAN-15",
+            "CAN-16",
+            "CAN-17",
+            "CAN-23"
+          ],
+          "missing": [
+            "CAN-12",
+            "CAN-16",
+            "CAN-17"
+          ],
+          "extra": [
+            "CAN-02A",
+            "CAN-02B",
+            "CAN-07"
+          ]
+        },
+        "schedule-2": {
+          "precision": 0.6666666666666666,
+          "recall": 0.8571428571428571,
+          "f1": 0.75,
+          "trial_tasks": [
+            "CAN-01",
+            "CAN-02A",
+            "CAN-02B",
+            "CAN-03",
+            "CAN-04",
+            "CAN-06",
+            "CAN-07",
+            "CAN-12",
+            "CAN-23"
+          ],
+          "gold_tasks": [
+            "CAN-01",
+            "CAN-02B",
+            "CAN-03",
+            "CAN-04",
+            "CAN-06",
+            "CAN-07",
+            "CAN-13"
+          ],
+          "missing": [
+            "CAN-13"
+          ],
+          "extra": [
+            "CAN-02A",
+            "CAN-12",
+            "CAN-23"
+          ]
+        },
+        "schedule-3": {
+          "precision": 0.7,
+          "recall": 0.875,
+          "f1": 0.7777777777777777,
+          "trial_tasks": [
+            "CAN-01",
+            "CAN-02A",
+            "CAN-02B",
+            "CAN-03",
+            "CAN-04",
+            "CAN-05",
+            "CAN-06",
+            "CAN-07",
+            "CAN-19",
+            "CAN-23"
+          ],
+          "gold_tasks": [
+            "CAN-01",
+            "CAN-03",
+            "CAN-04",
+            "CAN-05",
+            "CAN-06",
+            "CAN-07",
+            "CAN-12",
+            "CAN-19"
+          ],
+          "missing": [
+            "CAN-12"
+          ],
+          "extra": [
+            "CAN-02A",
+            "CAN-02B",
+            "CAN-23"
+          ]
+        },
+        "collaborate-1": {
+          "precision": 0.8571428571428571,
+          "recall": 0.75,
+          "f1": 0.7999999999999999,
+          "trial_tasks": [
+            "CAN-01",
+            "CAN-02A",
+            "CAN-04",
+            "CAN-07",
+            "CAN-08",
+            "CAN-09",
+            "CAN-22"
+          ],
+          "gold_tasks": [
+            "CAN-01",
+            "CAN-04",
+            "CAN-05",
+            "CAN-07",
+            "CAN-08",
+            "CAN-09",
+            "CAN-18",
+            "CAN-22"
+          ],
+          "missing": [
+            "CAN-05",
+            "CAN-18"
+          ],
+          "extra": [
+            "CAN-02A"
+          ]
+        },
+        "collaborate-2": {
+          "precision": 0.8571428571428571,
+          "recall": 1.0,
+          "f1": 0.923076923076923,
+          "trial_tasks": [
+            "CAN-01",
+            "CAN-02A",
+            "CAN-04",
+            "CAN-07",
+            "CAN-08",
+            "CAN-09",
+            "CAN-22"
+          ],
+          "gold_tasks": [
+            "CAN-01",
+            "CAN-02A",
+            "CAN-04",
+            "CAN-07",
+            "CAN-08",
+            "CAN-09"
+          ],
+          "missing": [],
+          "extra": [
+            "CAN-22"
+          ]
+        },
+        "collaborate-3": {
+          "precision": 0.8,
+          "recall": 0.6666666666666666,
+          "f1": 0.7272727272727272,
+          "trial_tasks": [
+            "CAN-01",
+            "CAN-02A",
+            "CAN-04",
+            "CAN-07",
+            "CAN-09"
+          ],
+          "gold_tasks": [
+            "CAN-01",
+            "CAN-02A",
+            "CAN-04",
+            "CAN-05",
+            "CAN-08",
+            "CAN-09"
+          ],
+          "missing": [
+            "CAN-05",
+            "CAN-08"
+          ],
+          "extra": [
+            "CAN-07"
+          ]
+        }
+      },
+      "aggregate": {
+        "total_prompts": 9,
+        "average_precision": 0.7510582010582011,
+        "average_recall": 0.8403439153439154,
+        "average_f1": 0.784727001393668
+      }
+    },
+    {
+      "per_prompt": {
+        "organizer-1": {
+          "precision": 0.5,
+          "recall": 0.75,
+          "f1": 0.6,
+          "trial_tasks": [
+            "CAN-01",
+            "CAN-02A",
+            "CAN-02B",
+            "CAN-04",
+            "CAN-07",
+            "CAN-20"
+          ],
+          "gold_tasks": [
+            "CAN-01",
+            "CAN-02A",
+            "CAN-04",
+            "CAN-11"
+          ],
+          "missing": [
+            "CAN-11"
+          ],
+          "extra": [
+            "CAN-02B",
+            "CAN-07",
+            "CAN-20"
+          ]
+        },
+        "organizer-2": {
+          "precision": 0.75,
+          "recall": 0.8571428571428571,
+          "f1": 0.7999999999999999,
+          "trial_tasks": [
+            "CAN-01",
+            "CAN-02A",
+            "CAN-02B",
+            "CAN-03",
+            "CAN-04",
+            "CAN-06",
+            "CAN-07",
+            "CAN-21"
+          ],
+          "gold_tasks": [
+            "CAN-01",
+            "CAN-02B",
+            "CAN-03",
+            "CAN-04",
+            "CAN-07",
+            "CAN-14",
+            "CAN-21"
+          ],
+          "missing": [
+            "CAN-14"
+          ],
+          "extra": [
+            "CAN-02A",
+            "CAN-06"
+          ]
+        },
+        "organizer-3": {
+          "precision": 0.8333333333333334,
+          "recall": 0.7142857142857143,
+          "f1": 0.7692307692307692,
+          "trial_tasks": [
+            "CAN-01",
+            "CAN-02A",
+            "CAN-02B",
+            "CAN-04",
+            "CAN-10",
+            "CAN-20"
+          ],
+          "gold_tasks": [
+            "CAN-01",
+            "CAN-02A",
+            "CAN-04",
+            "CAN-10",
+            "CAN-11",
+            "CAN-14",
+            "CAN-20"
+          ],
+          "missing": [
+            "CAN-11",
+            "CAN-14"
+          ],
+          "extra": [
+            "CAN-02B"
+          ]
+        },
+        "schedule-1": {
+          "precision": 0.7272727272727273,
+          "recall": 0.8,
+          "f1": 0.761904761904762,
+          "trial_tasks": [
+            "CAN-01",
+            "CAN-02A",
+            "CAN-02B",
+            "CAN-03",
+            "CAN-04",
+            "CAN-05",
+            "CAN-06",
+            "CAN-07",
+            "CAN-12",
+            "CAN-15",
+            "CAN-23"
+          ],
+          "gold_tasks": [
+            "CAN-01",
+            "CAN-03",
+            "CAN-04",
+            "CAN-05",
+            "CAN-06",
+            "CAN-12",
+            "CAN-15",
+            "CAN-16",
+            "CAN-17",
+            "CAN-23"
+          ],
+          "missing": [
+            "CAN-16",
+            "CAN-17"
+          ],
+          "extra": [
+            "CAN-02A",
+            "CAN-02B",
+            "CAN-07"
+          ]
+        },
+        "schedule-2": {
+          "precision": 0.6666666666666666,
+          "recall": 0.8571428571428571,
+          "f1": 0.75,
+          "trial_tasks": [
+            "CAN-01",
+            "CAN-02A",
+            "CAN-02B",
+            "CAN-03",
+            "CAN-04",
+            "CAN-06",
+            "CAN-07",
+            "CAN-12",
+            "CAN-23"
+          ],
+          "gold_tasks": [
+            "CAN-01",
+            "CAN-02B",
+            "CAN-03",
+            "CAN-04",
+            "CAN-06",
+            "CAN-07",
+            "CAN-13"
+          ],
+          "missing": [
+            "CAN-13"
+          ],
+          "extra": [
+            "CAN-02A",
+            "CAN-12",
+            "CAN-23"
+          ]
+        },
+        "schedule-3": {
+          "precision": 0.7272727272727273,
+          "recall": 1.0,
+          "f1": 0.8421052631578948,
+          "trial_tasks": [
+            "CAN-01",
+            "CAN-02A",
+            "CAN-02B",
+            "CAN-03",
+            "CAN-04",
+            "CAN-05",
+            "CAN-06",
+            "CAN-07",
+            "CAN-12",
+            "CAN-19",
+            "CAN-23"
+          ],
+          "gold_tasks": [
+            "CAN-01",
+            "CAN-03",
+            "CAN-04",
+            "CAN-05",
+            "CAN-06",
+            "CAN-07",
+            "CAN-12",
+            "CAN-19"
+          ],
+          "missing": [],
+          "extra": [
+            "CAN-02A",
+            "CAN-02B",
+            "CAN-23"
+          ]
+        },
+        "collaborate-1": {
+          "precision": 0.8571428571428571,
+          "recall": 0.75,
+          "f1": 0.7999999999999999,
+          "trial_tasks": [
+            "CAN-01",
+            "CAN-02A",
+            "CAN-04",
+            "CAN-07",
+            "CAN-08",
+            "CAN-09",
+            "CAN-22"
+          ],
+          "gold_tasks": [
+            "CAN-01",
+            "CAN-04",
+            "CAN-05",
+            "CAN-07",
+            "CAN-08",
+            "CAN-09",
+            "CAN-18",
+            "CAN-22"
+          ],
+          "missing": [
+            "CAN-05",
+            "CAN-18"
+          ],
+          "extra": [
+            "CAN-02A"
+          ]
+        },
+        "collaborate-2": {
+          "precision": 0.8571428571428571,
+          "recall": 1.0,
+          "f1": 0.923076923076923,
+          "trial_tasks": [
+            "CAN-01",
+            "CAN-02A",
+            "CAN-04",
+            "CAN-07",
+            "CAN-08",
+            "CAN-09",
+            "CAN-22"
+          ],
+          "gold_tasks": [
+            "CAN-01",
+            "CAN-02A",
+            "CAN-04",
+            "CAN-07",
+            "CAN-08",
+            "CAN-09"
+          ],
+          "missing": [],
+          "extra": [
+            "CAN-22"
+          ]
+        },
+        "collaborate-3": {
+          "precision": 0.8,
+          "recall": 0.6666666666666666,
+          "f1": 0.7272727272727272,
+          "trial_tasks": [
+            "CAN-01",
+            "CAN-02A",
+            "CAN-04",
+            "CAN-07",
+            "CAN-09"
+          ],
+          "gold_tasks": [
+            "CAN-01",
+            "CAN-02A",
+            "CAN-04",
+            "CAN-05",
+            "CAN-08",
+            "CAN-09"
+          ],
+          "missing": [
+            "CAN-05",
+            "CAN-08"
+          ],
+          "extra": [
+            "CAN-07"
+          ]
+        }
+      },
+      "aggregate": {
+        "total_prompts": 9,
+        "average_precision": 0.7465367965367966,
+        "average_recall": 0.8216931216931217,
+        "average_f1": 0.7748433827381196
+      }
+    },
+    {
+      "per_prompt": {
+        "organizer-1": {
+          "precision": 0.5714285714285714,
+          "recall": 1.0,
+          "f1": 0.7272727272727273,
+          "trial_tasks": [
+            "CAN-01",
+            "CAN-02A",
+            "CAN-02B",
+            "CAN-04",
+            "CAN-07",
+            "CAN-11",
+            "CAN-20"
+          ],
+          "gold_tasks": [
+            "CAN-01",
+            "CAN-02A",
+            "CAN-04",
+            "CAN-11"
+          ],
+          "missing": [],
+          "extra": [
+            "CAN-02B",
+            "CAN-07",
+            "CAN-20"
+          ]
+        },
+        "organizer-2": {
+          "precision": 0.75,
+          "recall": 0.8571428571428571,
+          "f1": 0.7999999999999999,
+          "trial_tasks": [
+            "CAN-01",
+            "CAN-02A",
+            "CAN-02B",
+            "CAN-03",
+            "CAN-04",
+            "CAN-06",
+            "CAN-07",
+            "CAN-21"
+          ],
+          "gold_tasks": [
+            "CAN-01",
+            "CAN-02B",
+            "CAN-03",
+            "CAN-04",
+            "CAN-07",
+            "CAN-14",
+            "CAN-21"
+          ],
+          "missing": [
+            "CAN-14"
+          ],
+          "extra": [
+            "CAN-02A",
+            "CAN-06"
+          ]
+        },
+        "organizer-3": {
+          "precision": 0.75,
+          "recall": 0.8571428571428571,
+          "f1": 0.7999999999999999,
+          "trial_tasks": [
+            "CAN-01",
+            "CAN-02A",
+            "CAN-02B",
+            "CAN-04",
+            "CAN-07",
+            "CAN-10",
+            "CAN-14",
+            "CAN-20"
+          ],
+          "gold_tasks": [
+            "CAN-01",
+            "CAN-02A",
+            "CAN-04",
+            "CAN-10",
+            "CAN-11",
+            "CAN-14",
+            "CAN-20"
+          ],
+          "missing": [
+            "CAN-11"
+          ],
+          "extra": [
+            "CAN-02B",
+            "CAN-07"
+          ]
+        },
+        "schedule-1": {
+          "precision": 0.7272727272727273,
+          "recall": 0.8,
+          "f1": 0.761904761904762,
+          "trial_tasks": [
+            "CAN-01",
+            "CAN-02A",
+            "CAN-02B",
+            "CAN-03",
+            "CAN-04",
+            "CAN-05",
+            "CAN-06",
+            "CAN-07",
+            "CAN-12",
+            "CAN-15",
+            "CAN-23"
+          ],
+          "gold_tasks": [
+            "CAN-01",
+            "CAN-03",
+            "CAN-04",
+            "CAN-05",
+            "CAN-06",
+            "CAN-12",
+            "CAN-15",
+            "CAN-16",
+            "CAN-17",
+            "CAN-23"
+          ],
+          "missing": [
+            "CAN-16",
+            "CAN-17"
+          ],
+          "extra": [
+            "CAN-02A",
+            "CAN-02B",
+            "CAN-07"
+          ]
+        },
+        "schedule-2": {
+          "precision": 0.6666666666666666,
+          "recall": 0.8571428571428571,
+          "f1": 0.75,
+          "trial_tasks": [
+            "CAN-01",
+            "CAN-02A",
+            "CAN-02B",
+            "CAN-03",
+            "CAN-04",
+            "CAN-06",
+            "CAN-07",
+            "CAN-12",
+            "CAN-23"
+          ],
+          "gold_tasks": [
+            "CAN-01",
+            "CAN-02B",
+            "CAN-03",
+            "CAN-04",
+            "CAN-06",
+            "CAN-07",
+            "CAN-13"
+          ],
+          "missing": [
+            "CAN-13"
+          ],
+          "extra": [
+            "CAN-02A",
+            "CAN-12",
+            "CAN-23"
+          ]
+        },
+        "schedule-3": {
+          "precision": 0.7272727272727273,
+          "recall": 1.0,
+          "f1": 0.8421052631578948,
+          "trial_tasks": [
+            "CAN-01",
+            "CAN-02A",
+            "CAN-02B",
+            "CAN-03",
+            "CAN-04",
+            "CAN-05",
+            "CAN-06",
+            "CAN-07",
+            "CAN-12",
+            "CAN-19",
+            "CAN-23"
+          ],
+          "gold_tasks": [
+            "CAN-01",
+            "CAN-03",
+            "CAN-04",
+            "CAN-05",
+            "CAN-06",
+            "CAN-07",
+            "CAN-12",
+            "CAN-19"
+          ],
+          "missing": [],
+          "extra": [
+            "CAN-02A",
+            "CAN-02B",
+            "CAN-23"
+          ]
+        },
+        "collaborate-1": {
+          "precision": 0.8571428571428571,
+          "recall": 0.75,
+          "f1": 0.7999999999999999,
+          "trial_tasks": [
+            "CAN-01",
+            "CAN-02A",
+            "CAN-04",
+            "CAN-07",
+            "CAN-08",
+            "CAN-09",
+            "CAN-22"
+          ],
+          "gold_tasks": [
+            "CAN-01",
+            "CAN-04",
+            "CAN-05",
+            "CAN-07",
+            "CAN-08",
+            "CAN-09",
+            "CAN-18",
+            "CAN-22"
+          ],
+          "missing": [
+            "CAN-05",
+            "CAN-18"
+          ],
+          "extra": [
+            "CAN-02A"
+          ]
+        },
+        "collaborate-2": {
+          "precision": 0.8571428571428571,
+          "recall": 1.0,
+          "f1": 0.923076923076923,
+          "trial_tasks": [
+            "CAN-01",
+            "CAN-02A",
+            "CAN-04",
+            "CAN-07",
+            "CAN-08",
+            "CAN-09",
+            "CAN-22"
+          ],
+          "gold_tasks": [
+            "CAN-01",
+            "CAN-02A",
+            "CAN-04",
+            "CAN-07",
+            "CAN-08",
+            "CAN-09"
+          ],
+          "missing": [],
+          "extra": [
+            "CAN-22"
+          ]
+        },
+        "collaborate-3": {
+          "precision": 0.8,
+          "recall": 0.6666666666666666,
+          "f1": 0.7272727272727272,
+          "trial_tasks": [
+            "CAN-01",
+            "CAN-02A",
+            "CAN-04",
+            "CAN-07",
+            "CAN-09"
+          ],
+          "gold_tasks": [
+            "CAN-01",
+            "CAN-02A",
+            "CAN-04",
+            "CAN-05",
+            "CAN-08",
+            "CAN-09"
+          ],
+          "missing": [
+            "CAN-05",
+            "CAN-08"
+          ],
+          "extra": [
+            "CAN-07"
+          ]
+        }
+      },
+      "aggregate": {
+        "total_prompts": 9,
+        "average_precision": 0.7452140452140452,
+        "average_recall": 0.8653439153439153,
+        "average_f1": 0.7924036002983371
+      }
+    }
+  ]
+}

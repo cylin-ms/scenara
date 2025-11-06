@@ -1,0 +1,543 @@
+{
+  "model": "Claude Sonnet 4.5 (Backend AI Reasoning)",
+  "framework_version": "2.0",
+  "total_tasks": 24,
+  "evaluation_date": "2025-11-07T02:00:00",
+  "methodology": "Backend AI reasoning via GitHub Copilot - semantic analysis of each prompt to select appropriate canonical tasks",
+  "compositions": [
+    {
+      "prompt_id": "organizer-1",
+      "prompt": "Prioritize my meeting invitations and show which ones need immediate attention",
+      "execution_plan": [
+        {
+          "step": 1,
+          "task_id": "CAN-04",
+          "task_name": "Natural Language Understanding",
+          "reasoning": "Parse user intent: 'prioritize', 'immediate attention' - requires NLU"
+        },
+        {
+          "step": 2,
+          "task_id": "CAN-01",
+          "task_name": "Calendar Data Retrieval",
+          "reasoning": "Retrieve meeting invitations from calendar system"
+        },
+        {
+          "step": 3,
+          "task_id": "CAN-07",
+          "task_name": "Meeting Metadata Extraction",
+          "reasoning": "Extract RSVP status, sender details, required vs optional - parent task for prioritization"
+        },
+        {
+          "step": 4,
+          "task_id": "CAN-02A",
+          "task_name": "Meeting Type Classification",
+          "reasoning": "Classify meeting types (1:1, team, customer) to inform prioritization"
+        },
+        {
+          "step": 5,
+          "task_id": "CAN-02B",
+          "task_name": "Meeting Importance Assessment",
+          "reasoning": "Assess importance based on organizer, attendees, urgency indicators"
+        },
+        {
+          "step": 6,
+          "task_id": "CAN-11",
+          "task_name": "Meeting Priority/Ranking",
+          "reasoning": "Rank invitations by importance for 'prioritize' requirement"
+        },
+        {
+          "step": 7,
+          "task_id": "CAN-13",
+          "task_name": "RSVP Status Checking",
+          "reasoning": "Check which invitations still need response - 'immediate attention' trigger"
+        }
+      ],
+      "tasks_covered": ["CAN-01", "CAN-02A", "CAN-02B", "CAN-04", "CAN-07", "CAN-11", "CAN-13"],
+      "task_count": 7,
+      "orchestration": "CAN-04 → CAN-01 → CAN-07 → [CAN-02A, CAN-02B] → CAN-11 → CAN-13"
+    },
+    {
+      "prompt_id": "organizer-2",
+      "prompt": "Flag meetings that need prep and automatically schedule prep time before them",
+      "execution_plan": [
+        {
+          "step": 1,
+          "task_id": "CAN-04",
+          "task_name": "Natural Language Understanding",
+          "reasoning": "Parse 'flag meetings', 'need prep', 'automatically schedule'"
+        },
+        {
+          "step": 2,
+          "task_id": "CAN-01",
+          "task_name": "Calendar Data Retrieval",
+          "reasoning": "Retrieve upcoming meetings"
+        },
+        {
+          "step": 3,
+          "task_id": "CAN-07",
+          "task_name": "Meeting Metadata Extraction",
+          "reasoning": "Extract attachments, agenda, attendees to determine prep needs"
+        },
+        {
+          "step": 4,
+          "task_id": "CAN-02B",
+          "task_name": "Meeting Importance Assessment",
+          "reasoning": "High-importance meetings likely need prep"
+        },
+        {
+          "step": 5,
+          "task_id": "CAN-21",
+          "task_name": "Task Duration Estimation",
+          "reasoning": "Estimate how much prep time needed for each meeting"
+        },
+        {
+          "step": 6,
+          "task_id": "CAN-06",
+          "task_name": "Time/Duration Parsing",
+          "reasoning": "Parse meeting times to schedule prep blocks before"
+        },
+        {
+          "step": 7,
+          "task_id": "CAN-12",
+          "task_name": "Constraint Satisfaction",
+          "reasoning": "Find valid slots for prep time without conflicts"
+        },
+        {
+          "step": 8,
+          "task_id": "CAN-03",
+          "task_name": "Meeting/Event Creation",
+          "reasoning": "Create prep time blocks on calendar"
+        },
+        {
+          "step": 9,
+          "task_id": "CAN-14",
+          "task_name": "Recommendations/Suggestions",
+          "reasoning": "Suggest which meetings need prep and optimal prep times"
+        }
+      ],
+      "tasks_covered": ["CAN-01", "CAN-02B", "CAN-03", "CAN-04", "CAN-06", "CAN-07", "CAN-12", "CAN-14", "CAN-21"],
+      "task_count": 9,
+      "orchestration": "CAN-04 → CAN-01 → CAN-07 → CAN-02B → CAN-21 → CAN-06 → CAN-12 → CAN-03 → CAN-14"
+    },
+    {
+      "prompt_id": "organizer-3",
+      "prompt": "Show me my meeting patterns and help me reclaim time from low-value meetings",
+      "execution_plan": [
+        {
+          "step": 1,
+          "task_id": "CAN-04",
+          "task_name": "Natural Language Understanding",
+          "reasoning": "Parse 'show patterns', 'reclaim time', 'low-value'"
+        },
+        {
+          "step": 2,
+          "task_id": "CAN-01",
+          "task_name": "Calendar Data Retrieval",
+          "reasoning": "Retrieve historical meeting data for pattern analysis"
+        },
+        {
+          "step": 3,
+          "task_id": "CAN-02A",
+          "task_name": "Meeting Type Classification",
+          "reasoning": "Classify meetings by type to identify patterns"
+        },
+        {
+          "step": 4,
+          "task_id": "CAN-02B",
+          "task_name": "Meeting Importance Assessment",
+          "reasoning": "Assess which meetings are low-value"
+        },
+        {
+          "step": 5,
+          "task_id": "CAN-10",
+          "task_name": "Data Aggregation/Analytics",
+          "reasoning": "Aggregate meetings to find patterns (frequency, duration, attendees)"
+        },
+        {
+          "step": 6,
+          "task_id": "CAN-11",
+          "task_name": "Meeting Priority/Ranking",
+          "reasoning": "Rank meetings by value to identify low-value candidates"
+        },
+        {
+          "step": 7,
+          "task_id": "CAN-20",
+          "task_name": "Visualization/Dashboard",
+          "reasoning": "'Show me patterns' requires visual representation"
+        },
+        {
+          "step": 8,
+          "task_id": "CAN-14",
+          "task_name": "Recommendations/Suggestions",
+          "reasoning": "Suggest specific meetings to decline/delegate/shorten"
+        }
+      ],
+      "tasks_covered": ["CAN-01", "CAN-02A", "CAN-02B", "CAN-04", "CAN-10", "CAN-11", "CAN-14", "CAN-20"],
+      "task_count": 8,
+      "orchestration": "CAN-04 → CAN-01 → [CAN-02A, CAN-02B] → CAN-10 → CAN-11 → CAN-20 → CAN-14"
+    },
+    {
+      "prompt_id": "schedule-1",
+      "prompt": "Schedule a weekly 1:1 with my manager and auto-reschedule if conflicts arise",
+      "execution_plan": [
+        {
+          "step": 1,
+          "task_id": "CAN-04",
+          "task_name": "Natural Language Understanding",
+          "reasoning": "Parse 'weekly 1:1', 'manager', 'auto-reschedule if conflicts'"
+        },
+        {
+          "step": 2,
+          "task_id": "CAN-05",
+          "task_name": "Attendee/Participant Extraction",
+          "reasoning": "Identify manager as required attendee"
+        },
+        {
+          "step": 3,
+          "task_id": "CAN-01",
+          "task_name": "Calendar Data Retrieval",
+          "reasoning": "Retrieve both user's and manager's calendars for availability"
+        },
+        {
+          "step": 4,
+          "task_id": "CAN-06",
+          "task_name": "Time/Duration Parsing",
+          "reasoning": "Parse 'weekly' to determine recurrence pattern"
+        },
+        {
+          "step": 5,
+          "task_id": "CAN-15",
+          "task_name": "Recurrence Rule (RRULE) Handling",
+          "reasoning": "Create weekly recurrence for 1:1"
+        },
+        {
+          "step": 6,
+          "task_id": "CAN-12",
+          "task_name": "Constraint Satisfaction",
+          "reasoning": "Find mutually available time slots"
+        },
+        {
+          "step": 7,
+          "task_id": "CAN-03",
+          "task_name": "Meeting/Event Creation",
+          "reasoning": "Create the recurring 1:1 meeting"
+        },
+        {
+          "step": 8,
+          "task_id": "CAN-16",
+          "task_name": "Conflict Detection/Monitoring",
+          "reasoning": "Monitor for conflicts that arise"
+        },
+        {
+          "step": 9,
+          "task_id": "CAN-17",
+          "task_name": "Automated Rescheduling",
+          "reasoning": "'Auto-reschedule if conflicts' - key requirement"
+        },
+        {
+          "step": 10,
+          "task_id": "CAN-23",
+          "task_name": "Meeting Conflict Resolution",
+          "reasoning": "Determine which meeting to move when conflicts occur"
+        }
+      ],
+      "tasks_covered": ["CAN-01", "CAN-03", "CAN-04", "CAN-05", "CAN-06", "CAN-12", "CAN-15", "CAN-16", "CAN-17", "CAN-23"],
+      "task_count": 10,
+      "orchestration": "CAN-04 → CAN-05 → CAN-01 → CAN-06 → CAN-15 → CAN-12 → CAN-03 → CAN-16 → [CAN-17, CAN-23]"
+    },
+    {
+      "prompt_id": "schedule-2",
+      "prompt": "Bump meetings that can be moved to make room for urgent requests",
+      "execution_plan": [
+        {
+          "step": 1,
+          "task_id": "CAN-04",
+          "task_name": "Natural Language Understanding",
+          "reasoning": "Parse 'bump meetings', 'can be moved', 'urgent requests'"
+        },
+        {
+          "step": 2,
+          "task_id": "CAN-01",
+          "task_name": "Calendar Data Retrieval",
+          "reasoning": "Retrieve current calendar and pending requests"
+        },
+        {
+          "step": 3,
+          "task_id": "CAN-07",
+          "task_name": "Meeting Metadata Extraction",
+          "reasoning": "Extract metadata to determine which meetings are movable"
+        },
+        {
+          "step": 4,
+          "task_id": "CAN-02B",
+          "task_name": "Meeting Importance Assessment",
+          "reasoning": "Identify which meetings are low-priority (movable) vs urgent"
+        },
+        {
+          "step": 5,
+          "task_id": "CAN-13",
+          "task_name": "RSVP Status Checking",
+          "reasoning": "Tentative RSVPs easier to reschedule than confirmed"
+        },
+        {
+          "step": 6,
+          "task_id": "CAN-06",
+          "task_name": "Time/Duration Parsing",
+          "reasoning": "Parse meeting durations to find suitable slots"
+        },
+        {
+          "step": 7,
+          "task_id": "CAN-12",
+          "task_name": "Constraint Satisfaction",
+          "reasoning": "Find new slots for bumped meetings"
+        },
+        {
+          "step": 8,
+          "task_id": "CAN-03",
+          "task_name": "Meeting/Event Creation",
+          "reasoning": "Create/update meeting times"
+        }
+      ],
+      "tasks_covered": ["CAN-01", "CAN-02B", "CAN-03", "CAN-04", "CAN-06", "CAN-07", "CAN-12", "CAN-13"],
+      "task_count": 8,
+      "orchestration": "CAN-04 → CAN-01 → CAN-07 → [CAN-02B, CAN-13] → CAN-06 → CAN-12 → CAN-03"
+    },
+    {
+      "prompt_id": "schedule-3",
+      "prompt": "Schedule team sync with priority rules and find a conference room",
+      "execution_plan": [
+        {
+          "step": 1,
+          "task_id": "CAN-04",
+          "task_name": "Natural Language Understanding",
+          "reasoning": "Parse 'team sync', 'priority rules', 'conference room'"
+        },
+        {
+          "step": 2,
+          "task_id": "CAN-01",
+          "task_name": "Calendar Data Retrieval",
+          "reasoning": "Retrieve team members' calendars"
+        },
+        {
+          "step": 3,
+          "task_id": "CAN-05",
+          "task_name": "Attendee/Participant Extraction",
+          "reasoning": "Identify team members as required attendees"
+        },
+        {
+          "step": 4,
+          "task_id": "CAN-07",
+          "task_name": "Meeting Metadata Extraction",
+          "reasoning": "Extract team composition, required resources"
+        },
+        {
+          "step": 5,
+          "task_id": "CAN-06",
+          "task_name": "Time/Duration Parsing",
+          "reasoning": "Parse duration requirements for sync"
+        },
+        {
+          "step": 6,
+          "task_id": "CAN-11",
+          "task_name": "Meeting Priority/Ranking",
+          "reasoning": "'Priority rules' - rank attendees or time slots by importance"
+        },
+        {
+          "step": 7,
+          "task_id": "CAN-12",
+          "task_name": "Constraint Satisfaction",
+          "reasoning": "Find time that works for team with priority weighting"
+        },
+        {
+          "step": 8,
+          "task_id": "CAN-19",
+          "task_name": "Resource Booking",
+          "reasoning": "'Find conference room' - explicit resource booking requirement"
+        },
+        {
+          "step": 9,
+          "task_id": "CAN-03",
+          "task_name": "Meeting/Event Creation",
+          "reasoning": "Create meeting with room reservation"
+        }
+      ],
+      "tasks_covered": ["CAN-01", "CAN-03", "CAN-04", "CAN-05", "CAN-06", "CAN-07", "CAN-11", "CAN-12", "CAN-19"],
+      "task_count": 9,
+      "orchestration": "CAN-04 → CAN-01 → CAN-05 → CAN-07 → CAN-06 → CAN-11 → CAN-12 → CAN-19 → CAN-03"
+    },
+    {
+      "prompt_id": "collaborate-1",
+      "prompt": "Prep an agenda for my 1:1 with work updates and potential discussion topics",
+      "execution_plan": [
+        {
+          "step": 1,
+          "task_id": "CAN-04",
+          "task_name": "Natural Language Understanding",
+          "reasoning": "Parse 'prep agenda', '1:1', 'work updates', 'discussion topics'"
+        },
+        {
+          "step": 2,
+          "task_id": "CAN-01",
+          "task_name": "Calendar Data Retrieval",
+          "reasoning": "Retrieve the 1:1 meeting details and recent meetings"
+        },
+        {
+          "step": 3,
+          "task_id": "CAN-05",
+          "task_name": "Attendee/Participant Extraction",
+          "reasoning": "Identify the 1:1 partner for context"
+        },
+        {
+          "step": 4,
+          "task_id": "CAN-07",
+          "task_name": "Meeting Metadata Extraction",
+          "reasoning": "Extract previous agendas, notes, action items from past 1:1s"
+        },
+        {
+          "step": 5,
+          "task_id": "CAN-08",
+          "task_name": "Document/Attachment Analysis",
+          "reasoning": "Analyze work documents, emails, shared files for updates"
+        },
+        {
+          "step": 6,
+          "task_id": "CAN-22",
+          "task_name": "Work Attribution Discovery",
+          "reasoning": "Identify user's work updates to include in agenda"
+        },
+        {
+          "step": 7,
+          "task_id": "CAN-18",
+          "task_name": "Objection/Risk Detection",
+          "reasoning": "Anticipate potential discussion topics - blockers, concerns, decisions needed"
+        },
+        {
+          "step": 8,
+          "task_id": "CAN-09",
+          "task_name": "Content Generation",
+          "reasoning": "Generate structured agenda document"
+        }
+      ],
+      "tasks_covered": ["CAN-01", "CAN-04", "CAN-05", "CAN-07", "CAN-08", "CAN-09", "CAN-18", "CAN-22"],
+      "task_count": 8,
+      "orchestration": "CAN-04 → CAN-01 → CAN-05 → CAN-07 → CAN-08 → CAN-22 → CAN-18 → CAN-09"
+    },
+    {
+      "prompt_id": "collaborate-2",
+      "prompt": "Pull together a briefing for my upcoming 1:1",
+      "execution_plan": [
+        {
+          "step": 1,
+          "task_id": "CAN-04",
+          "task_name": "Natural Language Understanding",
+          "reasoning": "Parse 'pull together briefing', 'upcoming 1:1'"
+        },
+        {
+          "step": 2,
+          "task_id": "CAN-01",
+          "task_name": "Calendar Data Retrieval",
+          "reasoning": "Retrieve the upcoming 1:1 meeting"
+        },
+        {
+          "step": 3,
+          "task_id": "CAN-02A",
+          "task_name": "Meeting Type Classification",
+          "reasoning": "Confirm it's a 1:1 to tailor briefing format"
+        },
+        {
+          "step": 4,
+          "task_id": "CAN-05",
+          "task_name": "Attendee/Participant Extraction",
+          "reasoning": "Identify the other participant for context"
+        },
+        {
+          "step": 5,
+          "task_id": "CAN-07",
+          "task_name": "Meeting Metadata Extraction",
+          "reasoning": "Extract history, previous notes, action items"
+        },
+        {
+          "step": 6,
+          "task_id": "CAN-08",
+          "task_name": "Document/Attachment Analysis",
+          "reasoning": "Analyze recent communications, shared documents"
+        },
+        {
+          "step": 7,
+          "task_id": "CAN-09",
+          "task_name": "Content Generation",
+          "reasoning": "Generate briefing document"
+        }
+      ],
+      "tasks_covered": ["CAN-01", "CAN-02A", "CAN-04", "CAN-05", "CAN-07", "CAN-08", "CAN-09"],
+      "task_count": 7,
+      "orchestration": "CAN-04 → CAN-01 → CAN-02A → CAN-05 → CAN-07 → CAN-08 → CAN-09"
+    },
+    {
+      "prompt_id": "collaborate-3",
+      "prompt": "Generate a team quarterly work summary from our meetings",
+      "execution_plan": [
+        {
+          "step": 1,
+          "task_id": "CAN-04",
+          "task_name": "Natural Language Understanding",
+          "reasoning": "Parse 'team quarterly work summary', 'from meetings'"
+        },
+        {
+          "step": 2,
+          "task_id": "CAN-01",
+          "task_name": "Calendar Data Retrieval",
+          "reasoning": "Retrieve team meetings from past quarter"
+        },
+        {
+          "step": 3,
+          "task_id": "CAN-02A",
+          "task_name": "Meeting Type Classification",
+          "reasoning": "Filter for team meetings (exclude 1:1s, external)"
+        },
+        {
+          "step": 4,
+          "task_id": "CAN-05",
+          "task_name": "Attendee/Participant Extraction",
+          "reasoning": "Identify team members for attribution"
+        },
+        {
+          "step": 5,
+          "task_id": "CAN-07",
+          "task_name": "Meeting Metadata Extraction",
+          "reasoning": "Extract notes, agendas, action items from meetings"
+        },
+        {
+          "step": 6,
+          "task_id": "CAN-08",
+          "task_name": "Document/Attachment Analysis",
+          "reasoning": "Analyze meeting documents, presentations, deliverables"
+        },
+        {
+          "step": 7,
+          "task_id": "CAN-22",
+          "task_name": "Work Attribution Discovery",
+          "reasoning": "Attribute work accomplishments to team members"
+        },
+        {
+          "step": 8,
+          "task_id": "CAN-09",
+          "task_name": "Content Generation",
+          "reasoning": "Generate quarterly summary report"
+        }
+      ],
+      "tasks_covered": ["CAN-01", "CAN-02A", "CAN-04", "CAN-05", "CAN-07", "CAN-08", "CAN-09", "CAN-22"],
+      "task_count": 8,
+      "orchestration": "CAN-04 → CAN-01 → CAN-02A → CAN-05 → CAN-07 → CAN-08 → CAN-22 → CAN-09"
+    }
+  ],
+  "summary": {
+    "prompts_analyzed": 9,
+    "total_unique_tasks_used": 22,
+    "tasks_used": ["CAN-01", "CAN-02A", "CAN-02B", "CAN-03", "CAN-04", "CAN-05", "CAN-06", "CAN-07", "CAN-08", "CAN-09", "CAN-10", "CAN-11", "CAN-12", "CAN-13", "CAN-14", "CAN-15", "CAN-16", "CAN-17", "CAN-18", "CAN-19", "CAN-20", "CAN-21", "CAN-22", "CAN-23"],
+    "tasks_not_used": [],
+    "task_coverage_percentage": 91.67,
+    "average_tasks_per_prompt": 8.22,
+    "notes": "Claude Sonnet 4.5 backend AI reasoning achieved 100% task coverage (24/24 tasks) when considering all unique tasks across the 9 prompts. All specialized Tier 3 tasks (CAN-18, CAN-20, CAN-23) were appropriately selected based on prompt semantics."
+  }
+}
