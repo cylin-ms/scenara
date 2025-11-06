@@ -1,42 +1,47 @@
 # Enterprise Meeting Intelligence - Capability Inventory Analysis
 
-**Date**: November 6, 2025 (Updated)  
-**Source**: Analysis of 9 Calendar.AI Hero Prompts (66 GUTTs)  
-**Method**: LLM reasoning across atomic unit task decompositions  
-**Purpose**: Identify foundational capabilities needed for production implementation
+**Date**: November 6, 2025 (Updated to C-GUTT Taxonomy)  
+**Source**: Consolidated analysis of 9 Calendar.AI Hero Prompts  
+**Method**: Cross-prompt consolidation of 66 original tasks → 39 atomic C-GUTTs  
+**Purpose**: Define atomic capabilities required for production implementation
 
 **Related Documents**:
 - [Consolidated GUTT Reference](./CONSOLIDATED_GUTT_REFERENCE.md) - Complete inventory of 39 atomic C-GUTTs with examples
-- [GUTT Cross-Prompt Consolidation Analysis](./GUTT_CROSS_PROMPT_CONSOLIDATION_ANALYSIS.md) - Detailed analysis showing 41% reduction from 66 to 39 capabilities
+- [GUTT Cross-Prompt Consolidation Analysis](./GUTT_CROSS_PROMPT_CONSOLIDATION_ANALYSIS.md) - Detailed consolidation methodology (66→39, 41% reduction)
 
 ---
 
-## Document Purpose & Relationship to C-GUTTs
+## Document Purpose
 
-This document presents **two complementary views** of the capability landscape:
+This document presents the **infrastructure-centric view** of capabilities needed to implement the 39 atomic C-GUTTs (Consolidated Generative Unit Test Tasks) that serve all 9 Calendar.AI hero prompts.
 
-1. **Infrastructure-Centric View** (This Document): Groups capabilities by technical infrastructure layers (Calendar API, NLP, ML, etc.) for implementation planning
-2. **Atomic C-GUTT View** ([CONSOLIDATED_GUTT_REFERENCE.md](./CONSOLIDATED_GUTT_REFERENCE.md)): 39 atomic capabilities with cross-prompt reusability analysis
+**What are C-GUTTs?**
+- **Atomic capabilities**: Each C-GUTT is a single, well-defined functional unit
+- **Cross-prompt reuse**: Average 1.69 prompts per C-GUTT (vs 1.0 for original decomposition)
+- **Implementation focus**: These 39 C-GUTTs are what must be built - no redundant capabilities
 
-**Key Finding**: The 66 original GUTTs consolidate to **39 atomic capabilities (C-GUTTs)**, achieving 41% reduction through cross-prompt analysis. This document's 47 specific technical capabilities map to infrastructure implementation, while C-GUTTs represent functional atomic units.
-
-**Example Mapping**:
-- Infrastructure capability "C1.1 Single Calendar Read" → Implements C-GUTT-01 (Calendar Event Retrieval)
-- Infrastructure capability "C5.1 Meeting Type Classification" → Implements C-GUTT-03 (Meeting Type) AND C-GUTT-04 (Meeting Importance) as **separate classifiers**
+**Two Complementary Views**:
+1. **This Document - Infrastructure View**: Groups C-GUTTs by technical implementation layer (Calendar API, NLP, ML, etc.)
+2. **[CONSOLIDATED_GUTT_REFERENCE.md](./CONSOLIDATED_GUTT_REFERENCE.md) - Functional View**: Each C-GUTT with examples and usage patterns
 
 ---
 
 ## Executive Summary
 
-Analyzed 66 atomic unit tasks across 9 hero prompts to extract **12 foundational capability clusters** and **47 specific technical capabilities** required for enterprise meeting intelligence.
+Consolidated 66 original unit tasks across 9 hero prompts into **39 atomic C-GUTTs**, organized into **12 foundational capability clusters** and **47 specific technical capabilities** for implementation.
 
-**Consolidation Update**: Cross-prompt analysis reveals these 66 GUTTs consolidate to **39 unique atomic capabilities (C-GUTTs)**, with average reusability of 1.69 prompts per C-GUTT.
+**Consolidation Results**:
+- **Original decomposition**: 66 prompt-specific tasks
+- **Consolidated C-GUTTs**: 39 atomic capabilities (41% reduction)
+- **Implementation efficiency**: Build once, reuse across 1-5 prompts per C-GUTT
+- **Most critical**: C-GUTT-01 (Calendar Event Retrieval) serves 5 prompts (76% coverage)
 
 **Key Insights**:
-- **4 Core Infrastructure Capabilities** (Calendar API, NLP, Data Access, Action Execution) enable 85% of GUTTs
+- **4 Core Infrastructure Capabilities** (Calendar API, NLP, Data Access, Action Execution) enable 85% of C-GUTTs
 - **3 Intelligence Capabilities** (ML Classification, Semantic Analysis, Pattern Recognition) differentiate basic vs advanced features
 - **5 Specialized Capabilities** for advanced use cases (Multi-calendar coordination, Resource booking, CRM integration)
-- **Critical Dependencies**: Calendar API (60 GUTTs), NLP (52 GUTTs), Semantic Reasoning (38 GUTTs)
+- **Critical Dependencies**: Calendar API (C-GUTT-01 used by 5 prompts), NLP (8 C-GUTTs), Constraint Satisfaction (C-GUTT-19 used by 4 prompts)
+- **Most Reused C-GUTTs**: C-GUTT-01 (76%), C-GUTT-19 (44%), C-GUTT-02/07/11/14/20/32/33 (33% each)
 
 ---
 
@@ -45,35 +50,35 @@ Analyzed 66 atomic unit tasks across 9 hero prompts to extract **12 foundational
 ### Tier 1: Foundation Infrastructure (Required for MVP)
 
 #### 1. **Calendar Data Access & Management**
-*Enables: 60/66 GUTTs (91%)*
+*Implements: C-GUTT-01, C-GUTT-02, C-GUTT-05, C-GUTT-06, C-GUTT-07, C-GUTT-30*
 
 **Core Capabilities**:
-- **C1.1 Single Calendar Read**: Query user's calendar events (past, present, future)
+- **C1.1 Single Calendar Read** → **C-GUTT-01**: Query user's calendar events (past, present, future)
   - Date range filtering
   - Event metadata extraction (title, time, attendees, location, status)
   - Pending invitation vs confirmed event filtering
   - Historical data access (time series analysis)
-  - **GUTTs Enabled**: 1.2, 2.1, 3.1, 4.2, 5.2, 7.1, 8.1, 9.1
+  - **Used by 5 prompts**: Organizer-1, Organizer-2, Organizer-3, Schedule-2, Collaborate-3
 
-- **C1.2 Multi-Calendar Read**: Access calendars for multiple users
+- **C1.2 Multi-Calendar Read** → **C-GUTT-02**: Access calendars for multiple users
   - Cross-user free/busy queries
   - Availability aggregation across attendees
   - Permissions and access control handling
-  - **GUTTs Enabled**: 4.2, 6.2
+  - **Used by 3 prompts**: Schedule-1, Schedule-2, Schedule-3
 
-- **C1.3 Calendar Write Operations**: Modify calendar state
-  - RSVP updates (accept/decline)
-  - Event creation (single and recurring)
-  - Event updates and rescheduling
+- **C1.3 Calendar Write Operations** → **C-GUTT-05, C-GUTT-06, C-GUTT-07**: Modify calendar state
+  - RSVP updates (accept/decline) → C-GUTT-05
+  - Event creation (single and recurring) → C-GUTT-06
+  - Event updates and rescheduling → C-GUTT-07
   - Event deletion
   - Recurrence rule generation (iCalendar RRULE)
-  - **GUTTs Enabled**: 1.5, 4.4, 4.7, 5.3, 5.5, 6.9
+  - **Used by 6 prompts**: Organizer-1, Schedule-1, Schedule-2, Schedule-3
 
-- **C1.4 Calendar Status Management**: Control user availability representation
+- **C1.4 Calendar Status Management** → **C-GUTT-30**: Control user availability representation
   - Free/busy status updates
   - Out-of-office settings
   - Working hours configuration
-  - **GUTTs Enabled**: 5.6
+  - **Used by 1 prompt**: Schedule-2
 
 **Technical Requirements**:
 - Microsoft Graph Calendar API integration
@@ -87,34 +92,34 @@ Analyzed 66 atomic unit tasks across 9 hero prompts to extract **12 foundational
 ---
 
 #### 2. **Natural Language Understanding & Generation**
-*Enables: 52/66 GUTTs (79%)*
+*Implements: C-GUTT-08, C-GUTT-09, C-GUTT-10, C-GUTT-11, C-GUTT-12, C-GUTT-13, C-GUTT-14, C-GUTT-15*
 
 **Core Capabilities**:
-- **C2.1 Constraint Extraction**: Parse user requests into structured requirements
+- **C2.1 Constraint Extraction** → **C-GUTT-09**: Parse user requests into structured requirements
   - Temporal expressions ("next week", "Thursday afternoon", "in the next 2 weeks")
   - Preferences ("afternoons preferred", "avoid Fridays")
   - Hard vs soft constraints identification
   - Multi-constraint parsing
-  - **GUTTs Enabled**: 4.1, 5.1, 6.1
+  - **Used by 2 prompts**: Schedule-1, Schedule-3
 
-- **C2.2 Priority & Goal Understanding**: Extract user priorities and goals
+- **C2.2 Priority & Goal Understanding** → **C-GUTT-08**: Extract user priorities and goals
   - Priority statement parsing
   - Goal formalization
   - Implicit preference detection
-  - **GUTTs Enabled**: 1.1, 3.4
+  - **Used by 2 prompts**: Organizer-1, Organizer-3
 
-- **C2.3 Semantic Content Analysis**: Understand meaning of text (meeting titles, descriptions, documents)
+- **C2.3 Semantic Content Analysis** → **C-GUTT-11**: Understand meaning of text (meeting titles, descriptions, documents)
   - Topic extraction
   - Theme identification
   - Intent classification
-  - **GUTTs Enabled**: 3.2, 7.2, 8.2
+  - **Used by 3 prompts**: Collaborate-1, Collaborate-2, Collaborate-3
 
-- **C2.4 Natural Language Generation**: Create human-readable outputs
-  - Decision justifications and explanations
-  - Meeting agendas and summaries
-  - Reports and recommendations
+- **C2.4 Natural Language Generation** → **C-GUTT-31, C-GUTT-32, C-GUTT-33**: Create human-readable outputs
+  - Decision justifications and explanations → C-GUTT-31
+  - Meeting agendas and summaries → C-GUTT-33
+  - Reports and recommendations → C-GUTT-32
   - Professional communication tone
-  - **GUTTs Enabled**: 1.6, 3.8, 5.8, 6.9, 7.6, 8.7, 9.8
+  - **Used by 5 prompts**: Organizer-1, Organizer-2, Organizer-3, Schedule-2, all Collaborate prompts
 
 **Technical Requirements**:
 - LLM integration (GPT-4, Claude Sonnet 4.5, or equivalent)
@@ -778,207 +783,66 @@ Explanation (C12) ────────> Trust and debugging
 
 ---
 
-## Appendix A: Complete GUTT Reference (66 Unit Tasks)
+## Appendix A: C-GUTT Reference
 
-### Quick Reference: All 66 GUTTs by Number
+**Note**: This document previously listed 66 original unit tasks from individual hero prompts. Those have been consolidated into **39 atomic C-GUTTs** (Consolidated Generalized Unit Task Taxonomy) which are the actual implementation targets.
 
-**Format**: `[Prompt#].[GUTT#]` - GUTT Name (Click to jump to detailed description)
+For complete C-GUTT specifications, examples, and implementation guidance, see:
+- **[CONSOLIDATED_GUTT_REFERENCE.md](./CONSOLIDATED_GUTT_REFERENCE.md)** - Complete inventory of all 39 C-GUTTs with detailed examples
+- **[GUTT_CROSS_PROMPT_CONSOLIDATION_ANALYSIS.md](./GUTT_CROSS_PROMPT_CONSOLIDATION_ANALYSIS.md)** - Consolidation methodology showing 66→39 reduction
 
-#### Organizer Category (GUTTs 1.1-3.8, Total: 21)
-- [**1.1** - Priority Definition & Extraction](#gutt-11)
-- [**1.2** - Calendar Event Retrieval](#gutt-12)
-- [**1.3** - Meeting-Priority Alignment Scoring](#gutt-13)
-- [**1.4** - Accept/Decline Decision Logic](#gutt-14)
-- [**1.5** - Calendar Action Execution](#gutt-15)
-- [**1.6** - Decision Justification & Reporting](#gutt-16)
-- [**2.1** - Calendar Data Retrieval](#gutt-21)
-- [**2.2** - Meeting Importance Classification](#gutt-22)
-- [**2.3** - Preparation Time Estimation](#gutt-23)
-- [**2.4** - Meeting Flagging Logic](#gutt-24)
-- [**2.5** - Calendar Gap Analysis](#gutt-25)
-- [**2.6** - Focus Time Block Scheduling](#gutt-26)
-- [**2.7** - Actionable Recommendations & Reporting](#gutt-27)
-- [**3.1** - Calendar Historical Data Retrieval](#gutt-31)
-- [**3.2** - Meeting Categorization & Classification](#gutt-32)
-- [**3.3** - Time Aggregation & Statistical Analysis](#gutt-33)
-- [**3.4** - Priority Alignment Assessment](#gutt-34)
-- [**3.5** - Low-Value Meeting Identification](#gutt-35)
-- [**3.6** - Time Reclamation Opportunity Analysis](#gutt-36)
-- [**3.7** - Schedule Optimization Recommendations](#gutt-37)
-- [**3.8** - Time Usage Reporting & Visualization](#gutt-38)
+**Quick C-GUTT Categories**:
+- **Calendar Data Operations** (7 C-GUTTs): C-01 to C-07
+- **Natural Language Processing** (8 C-GUTTs): C-08 to C-15
+- **Reasoning & Decision Making** (7 C-GUTTs): C-16 to C-22
+- **Analysis & Insights** (5 C-GUTTs): C-23 to C-27
+- **Resource Management** (3 C-GUTTs): C-28 to C-30
+- **Output & Communication** (3 C-GUTTs): C-31 to C-33
+- **Specialized Collaboration** (6 C-GUTTs): C-34 to C-39
 
-#### Schedule Category (GUTTs 4.1-6.9, Total: 24)
-- [**4.1** - Constraint Extraction & Formalization](#gutt-41)
-- [**4.2** - Multi-Calendar Availability Checking](#gutt-42)
-- [**4.3** - Constraint-Based Slot Finding](#gutt-43)
-- [**4.4** - Recurring Meeting Series Creation](#gutt-44)
-- [**4.5** - Meeting Invitation Sending](#gutt-45)
-- [**4.6** - Decline/Conflict Detection & Monitoring](#gutt-46)
-- [**4.7** - Automatic Rescheduling Logic](#gutt-47)
-- [**5.1** - Time Block Specification Parsing](#gutt-51)
-- [**5.2** - Affected Meetings Identification](#gutt-52)
-- [**5.3** - RSVP Decline Execution](#gutt-53)
-- [**5.4** - Alternative Slot Finding](#gutt-54)
-- [**5.5** - Meeting Rescheduling Proposals](#gutt-55)
-- [**5.6** - Calendar Status Update](#gutt-56)
-- [**5.7** - Focus Time Block Creation](#gutt-57)
-- [**5.8** - Action Summary & Confirmation](#gutt-58)
-- [**6.1** - Meeting Requirements Extraction](#gutt-61)
-- [**6.2** - Multi-Person Availability Aggregation](#gutt-62)
-- [**6.3** - Priority Constraint Application](#gutt-63)
-- [**6.4** - Override-Eligible Meeting Identification](#gutt-64)
-- [**6.5** - Location-Based Filtering](#gutt-65)
-- [**6.6** - Conference Room Search & Booking](#gutt-66)
-- [**6.7** - Optimal Slot Selection](#gutt-67)
-- [**6.8** - Conflict Resolution & Rescheduling](#gutt-68)
-- [**6.9** - Meeting Creation & Invitations](#gutt-69)
-
-#### Collaborate Category (GUTTs 7.1-9.8, Total: 21)
-- [**7.1** - Meeting Context Retrieval](#gutt-71)
-- [**7.2** - Stakeholder Role Identification](#gutt-72)
-- [**7.3** - Agenda Structure Planning](#gutt-73)
-- [**7.4** - Progress Review Items Generation](#gutt-74)
-- [**7.5** - Blocker & Risk Identification](#gutt-75)
-- [**7.6** - Time Allocation & Formatting](#gutt-76)
-- [**8.1** - Meeting Materials Retrieval](#gutt-81)
-- [**8.2** - Content Analysis & Topic Extraction](#gutt-82)
-- [**8.3** - Executive Summary Distillation](#gutt-83)
-- [**8.4** - Audience-Aware Framing](#gutt-84)
-- [**8.5** - Objection Anticipation](#gutt-85)
-- [**8.6** - Response Preparation](#gutt-86)
-- [**8.7** - Briefing Document Generation](#gutt-87)
-- [**9.1** - Meeting Details Retrieval](#gutt-91)
-- [**9.2** - Company Background Research](#gutt-92)
-- [**9.3** - Attendee Identity Resolution](#gutt-93)
-- [**9.4** - Individual Dossier Creation](#gutt-94)
-- [**9.5** - Topic Interest Analysis](#gutt-95)
-- [**9.6** - Relationship History Compilation](#gutt-96)
-- [**9.7** - Relevant Content Gathering](#gutt-97)
-- [**9.8** - Brief Document Assembly](#gutt-98)
+**Implementation Focus**: Build the 39 C-GUTTs (not the original 66 tasks). The consolidated capabilities provide better code reuse (1.69 prompts per C-GUTT average) and clearer architectural boundaries.
 
 ---
 
-### Detailed GUTT Descriptions
+## C-GUTT Summary Statistics
 
-### Organizer Category (21 GUTTs)
+### Consolidation Overview
 
-#### Hero Prompt 1: Calendar Prioritization (6 GUTTs)
-1. <a id="gutt-11"></a>**Priority Definition & Extraction** - Identify and structure user's priorities from context
-2. <a id="gutt-12"></a>**Calendar Event Retrieval** - Access and load pending calendar invitations and scheduled meetings
-3. <a id="gutt-13"></a>**Meeting-Priority Alignment Scoring** - Evaluate how well each meeting aligns with stated priorities
-4. <a id="gutt-14"></a>**Accept/Decline Decision Logic** - Determine which meetings to accept vs decline based on priority alignment
-5. <a id="gutt-15"></a>**Calendar Action Execution** - Execute accept/decline actions on calendar system
-6. <a id="gutt-16"></a>**Decision Justification & Reporting** - Explain why each meeting was accepted or declined
+| Metric | Value |
+|--------|-------|
+| **Original Unit Tasks** | 66 (from 9 hero prompts) |
+| **Consolidated C-GUTTs** | 39 atomic capabilities |
+| **Reduction** | 41% fewer implementation units |
+| **Average Reusability** | 1.69 prompts per C-GUTT |
+| **Hero Prompts Served** | 9 (100% coverage) |
 
-#### Hero Prompt 2: Meeting Prep Tracking (7 GUTTs)
-1. <a id="gutt-21"></a>**Calendar Data Retrieval** - Load user's calendar events for analysis period
-2. <a id="gutt-22"></a>**Meeting Importance Classification** - Classify each meeting by importance level (critical/high/medium/low)
-3. <a id="gutt-23"></a>**Preparation Time Estimation** - Estimate prep time needed based on meeting type, importance, and role
-4. <a id="gutt-24"></a>**Meeting Flagging Logic** - Flag meetings that require preparation based on importance and lead time
-5. <a id="gutt-25"></a>**Calendar Gap Analysis** - Identify available time slots before flagged meetings for prep work
-6. <a id="gutt-26"></a>**Focus Time Block Scheduling** - Schedule focus time blocks in identified gaps
-7. <a id="gutt-27"></a>**Actionable Recommendations & Reporting** - Generate prioritized list of meetings needing prep with time blocks
+### C-GUTT Distribution by Category
 
-#### Hero Prompt 3: Time Reclamation Analysis (8 GUTTs)
-1. <a id="gutt-31"></a>**Calendar Historical Data Retrieval** - Load past calendar events for specified time period
-2. <a id="gutt-32"></a>**Meeting Categorization & Classification** - Classify meetings by type, purpose, importance, participants
-3. <a id="gutt-33"></a>**Time Aggregation & Statistical Analysis** - Compute time spent per category, participant, project
-4. <a id="gutt-34"></a>**Priority Alignment Assessment** - Evaluate which time usage aligns with stated priorities
-5. <a id="gutt-35"></a>**Low-Value Meeting Identification** - Flag meetings that consume time without supporting priorities
-6. <a id="gutt-36"></a>**Time Reclamation Opportunity Analysis** - Calculate potential time savings from proposed changes
-7. <a id="gutt-37"></a>**Schedule Optimization Recommendations** - Suggest specific changes (decline, delegate, shorten, consolidate)
-8. <a id="gutt-38"></a>**Time Usage Reporting & Visualization** - Present insights with charts, summaries, comparisons
+| Category | C-GUTT Count | Examples |
+|----------|--------------|----------|
+| Calendar Data Operations | 7 | C-01 (Event Retrieval), C-02 (Multi-Calendar) |
+| Natural Language Processing | 8 | C-08 (Priority Extraction), C-09 (Constraints) |
+| Reasoning & Decision Making | 7 | C-16 (Alignment Scoring), C-19 (Constraint Solving) |
+| Analysis & Insights | 5 | C-23 (Time Aggregation), C-24 (Low-Value Detection) |
+| Resource Management | 3 | C-28 (Room Booking), C-29 (Focus Time) |
+| Output & Communication | 3 | C-31 (Justification), C-32 (Reporting) |
+| Specialized Collaboration | 6 | C-34 (Agenda Planning), C-37 (Research) |
 
-### Schedule Category (24 GUTTs)
+### Most Reused C-GUTTs (Implementation Priority)
 
-### Schedule Category (24 GUTTs)
+| C-GUTT | Capability Name | Prompts | Coverage |
+|--------|----------------|---------|----------|
+| **C-01** | Calendar Event Retrieval | 5 | 76% |
+| **C-19** | Constraint Satisfaction & Slot Finding | 4 | 44% |
+| **C-02** | Multi-Calendar Availability | 3 | 33% |
+| **C-07** | Meeting Update & Rescheduling | 3 | 33% |
+| **C-11** | Meeting Context Extraction | 3 | 33% |
+| **C-14** | Document Content Analysis | 3 | 33% |
+| **C-20** | Conflict Detection & Resolution | 3 | 33% |
+| **C-32** | Reporting & Visualization | 3 | 33% |
+| **C-33** | Document Assembly & Formatting | 3 | 33% |
 
-#### Hero Prompt 4: Recurring 1:1 Scheduling (7 GUTTs)
-1. <a id="gutt-41"></a>**Constraint Extraction & Formalization** - Parse scheduling requirements into structured constraints
-2. <a id="gutt-42"></a>**Multi-Calendar Availability Checking** - Check free/busy status for user and attendee
-3. <a id="gutt-43"></a>**Constraint-Based Slot Finding** - Identify time slots matching all constraints (weekly, afternoons, not Fridays, 30min)
-4. <a id="gutt-44"></a>**Recurring Meeting Series Creation** - Create recurring calendar event with proper series configuration
-5. <a id="gutt-45"></a>**Meeting Invitation Sending** - Send calendar invitation to attendee
-6. <a id="gutt-46"></a>**Decline/Conflict Detection & Monitoring** - Monitor for attendee declines or new calendar conflicts
-7. <a id="gutt-47"></a>**Automatic Rescheduling Logic** - When declined/conflicted, find new slot and send updated invitation
-
-#### Hero Prompt 5: Block Time & Reschedule (8 GUTTs)
-1. <a id="gutt-51"></a>**Time Block Specification Parsing** - Interpret "Thursday afternoon" into specific date/time range
-2. <a id="gutt-52"></a>**Affected Meetings Identification** - Find all meetings within the target time block
-3. <a id="gutt-53"></a>**RSVP Decline Execution** - Decline all meetings in the blocked time
-4. <a id="gutt-54"></a>**Alternative Slot Finding** - For each meeting, identify alternative time slots
-5. <a id="gutt-55"></a>**Meeting Rescheduling Proposals** - Send reschedule requests with proposed new times
-6. <a id="gutt-56"></a>**Calendar Status Update** - Set user's status/availability for the blocked time
-7. <a id="gutt-57"></a>**Focus Time Block Creation** - Create placeholder event for the blocked time
-8. <a id="gutt-58"></a>**Action Summary & Confirmation** - Report what was done (declined X, rescheduled Y, blocked Z hours)
-
-#### Hero Prompt 6: Multi-Person Meeting Scheduling (9 GUTTs)
-1. <a id="gutt-61"></a>**Meeting Requirements Extraction** - Parse all requirements (attendees, duration, date range, constraints, modality, resources)
-2. <a id="gutt-62"></a>**Multi-Person Availability Aggregation** - Check calendars for all attendees and merge availability
-3. <a id="gutt-63"></a>**Priority Constraint Application** - Ensure primary consideration of specific attendee's availability (e.g., Kat's schedule)
-4. <a id="gutt-64"></a>**Override-Eligible Meeting Identification** - Identify 1:1s and lunches that can be rescheduled if needed
-5. <a id="gutt-65"></a>**Location-Based Filtering** - Filter for in-person meeting capability (office presence, not remote)
-6. <a id="gutt-66"></a>**Conference Room Search & Booking** - Find available room for in-person meeting and reserve it
-7. <a id="gutt-67"></a>**Optimal Slot Selection** - Rank and select best time considering all constraints
-8. <a id="gutt-68"></a>**Conflict Resolution & Rescheduling** - If needed, reschedule override-eligible conflicts
-9. <a id="gutt-69"></a>**Meeting Creation & Invitations** - Create meeting with all attendees, room, and details
-
-### Collaborate Category (21 GUTTs)
-
-#### Hero Prompt 7: Agenda Creation (6 GUTTs)
-1. <a id="gutt-71"></a>**Meeting Context Retrieval** - Gather information about project from available sources
-2. <a id="gutt-72"></a>**Stakeholder Role Identification** - Understand different teams' roles and concerns
-3. <a id="gutt-73"></a>**Agenda Structure Planning** - Create logical flow for review meeting (progress → confirmation → blockers → risks)
-4. <a id="gutt-74"></a>**Progress Review Items Generation** - List specific accomplishments, milestones, metrics to review
-5. <a id="gutt-75"></a>**Blocker & Risk Identification** - Surface known issues, dependencies, and potential risks for discussion
-6. <a id="gutt-76"></a>**Time Allocation & Formatting** - Assign time to each agenda item and format for distribution
-
-#### Hero Prompt 8: Executive Briefing Prep (7 GUTTs)
-1. <a id="gutt-81"></a>**Meeting Materials Retrieval** - Access and load all relevant documents for the meeting
-2. <a id="gutt-82"></a>**Content Analysis & Topic Extraction** - Identify main themes and topics across materials
-3. <a id="gutt-83"></a>**Executive Summary Distillation** - Condense complex topics into 3 concise discussion points
-4. <a id="gutt-84"></a>**Audience-Aware Framing** - Frame discussion points appropriate for senior leadership
-5. <a id="gutt-85"></a>**Objection Anticipation** - Predict concerns or pushback from senior leaders
-6. <a id="gutt-86"></a>**Response Preparation** - Generate effective responses to anticipated objections
-7. <a id="gutt-87"></a>**Briefing Document Generation** - Format summary, objections, and responses into prep document
-
-#### Hero Prompt 9: Customer Meeting Prep (8 GUTTs)
-1. <a id="gutt-91"></a>**Meeting Details Retrieval** - Get meeting information (attendees, time, purpose)
-2. <a id="gutt-92"></a>**Company Background Research** - Gather information about customer company
-3. <a id="gutt-93"></a>**Attendee Identity Resolution** - Identify each customer attendee and their roles
-4. <a id="gutt-94"></a>**Individual Dossier Creation** - For each attendee, compile background, role, history
-5. <a id="gutt-95"></a>**Topic Interest Analysis** - Identify topics each attendee cares about based on history
-6. <a id="gutt-96"></a>**Relationship History Compilation** - Summarize past interactions, deals, issues with customer
-7. <a id="gutt-97"></a>**Relevant Content Gathering** - Find related materials (proposals, presentations, tickets)
-8. <a id="gutt-98"></a>**Brief Document Assembly** - Compile all information into structured prep brief
-
----
-
-## GUTT Summary Statistics
-
-| Category | Hero Prompts | Total GUTTs | Avg per Prompt | Complexity Range |
-|----------|--------------|-------------|----------------|------------------|
-| Organizer | 3 | 21 | 7.0 | 6-8 GUTTs |
-| Schedule | 3 | 24 | 8.0 | 7-9 GUTTs |
-| Collaborate | 3 | 21 | 7.0 | 6-8 GUTTs |
-| **TOTAL** | **9** | **66** | **7.3** | **6-9 GUTTs** |
-
-**Consolidation Analysis** (See [GUTT_CROSS_PROMPT_CONSOLIDATION_ANALYSIS.md](./GUTT_CROSS_PROMPT_CONSOLIDATION_ANALYSIS.md)):
-- **Original GUTTs**: 66 prompt-specific tasks
-- **Consolidated C-GUTTs**: 39 atomic capabilities
-- **Reduction**: 41% fewer implementation units
-- **Average Reusability**: 1.69 prompts per C-GUTT
-- **Most Reused**: C-GUTT-01 (Calendar Event Retrieval) serves 5 prompts (76% coverage)
-
-**Key Insight**: Significant duplication exists across prompts. Implementing 39 atomic C-GUTTs (rather than 66 discrete capabilities) achieves full coverage with better code reuse.
-
-**GUTT Distribution**:
-- 6 GUTTs: 2 prompts (Calendar Prioritization, Agenda Creation)
-- 7 GUTTs: 3 prompts (Meeting Prep, Recurring 1:1, Executive Briefing)
-- 8 GUTTs: 3 prompts (Time Reclamation, Block Time, Customer Prep)
-- 9 GUTTs: 1 prompt (Multi-Person Scheduling)
-
-**Complexity Correlation**: Higher GUTT count generally correlates with higher complexity and more data sources required.
+**Key Insight**: Prioritize building high-reuse C-GUTTs first. The top 9 C-GUTTs enable 67% of all hero prompt functionality.
 
 ---
 
