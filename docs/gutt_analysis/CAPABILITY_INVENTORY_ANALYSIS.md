@@ -133,36 +133,29 @@ Consolidated 66 original unit tasks across 9 hero prompts into **39 atomic C-GUT
 ---
 
 #### 3. **Data Access & Integration Layer**
-*Enables: 45/66 GUTTs (68%)*
+*Implements: C-GUTT-11, C-GUTT-12, C-GUTT-13, C-GUTT-14, C-GUTT-36, C-GUTT-37, C-GUTT-38, C-GUTT-39*
 
 **Core Capabilities**:
-- **C3.1 Document Access & Retrieval**: Read documents from various sources
-  - OneDrive/SharePoint integration
-  - Teams files access
-  - Email attachments
-  - Document format support (PDF, DOCX, PPTX, etc.)
-  - **GUTTs Enabled**: 7.1, 8.1, 9.7
+- **C3.1 Document Access & Retrieval** → **C-GUTT-11** (Meeting Context Extraction), **C-GUTT-14** (Document Content Analysis)
+  - OneDrive/SharePoint integration and Teams files access
+  - Email attachments and document format support (PDF, DOCX, PPTX, etc.)
+  - Used by 3 prompts
 
-- **C3.2 CRM Data Access**: Customer relationship data
-  - Contact information and roles
-  - Company profiles
-  - Interaction history
-  - Relationship timelines
-  - **GUTTs Enabled**: 9.2, 9.3, 9.4, 9.6
+- **C3.2 CRM Data Access** → **C-GUTT-37** (Company Research), **C-GUTT-38** (Attendee Identity Resolution), **C-GUTT-39** (Relationship History)
+  - Contact information, roles, and company profiles
+  - Interaction history and relationship timelines
+  - Used by 1 prompt (Customer Prep)
 
-- **C3.3 Organizational Data**: Internal org structure and people info
-  - Microsoft Graph People API
-  - Organizational hierarchy (manager chains, reports)
-  - Job titles and roles
-  - Skills and expertise data
-  - **GUTTs Enabled**: 7.2, 8.4, 9.3
+- **C3.3 Organizational Data** → **C-GUTT-38** (Attendee Identity Resolution)
+  - Microsoft Graph People API and organizational hierarchy
+  - Job titles, roles, and skills/expertise data
+  - Manager chains and reporting structures
+  - Used by 2 prompts
 
-- **C3.4 Communication History**: Teams chat, email, collaboration patterns
-  - Teams chat messages
-  - Email threads
-  - Document sharing activity
-  - Collaboration frequency metrics
-  - **GUTTs Enabled**: 9.4, 9.5, 9.6
+- **C3.4 Communication History** → **C-GUTT-13** (Communication History Analysis), **C-GUTT-36** (Email/Chat Access)
+  - Teams chat messages and email threads
+  - Document sharing activity and collaboration frequency metrics
+  - Used by 2 prompts
 
 **Technical Requirements**:
 - Microsoft Graph API (People, Teams, OneDrive, SharePoint)
@@ -176,33 +169,26 @@ Consolidated 66 original unit tasks across 9 hero prompts into **39 atomic C-GUT
 ---
 
 #### 4. **Action Execution & Orchestration**
-*Enables: 38/66 GUTTs (58%)*
+*Implements: C-GUTT-06, C-GUTT-07, C-GUTT-20, C-GUTT-32*
 
 **Core Capabilities**:
-- **C4.1 Sequential Task Execution**: Chain multiple operations
-  - Workflow orchestration
-  - Error handling and rollback
-  - Transaction management
-  - Progress tracking
-  - **GUTTs Enabled**: 5.3→5.4→5.5→5.6→5.7, 6.7→6.8→6.9
+- **C4.1 Sequential Task Execution** → **C-GUTT-06** (Meeting Scheduling & Invitations), **C-GUTT-07** (Meeting Update & Rescheduling)
+  - Workflow orchestration (create → invite → monitor → reschedule)
+  - Error handling, rollback, transaction management, progress tracking
+  - Used by 4 prompts
 
-- **C4.2 Batch Operations**: Execute multiple similar actions efficiently
-  - Bulk RSVP updates
-  - Mass meeting creation
-  - Parallel API calls
-  - **GUTTs Enabled**: 5.3 (decline multiple meetings)
+- **C4.2 Batch Operations** → **C-GUTT-06** (Meeting Scheduling & Invitations)
+  - Bulk RSVP updates, mass meeting creation, parallel API calls
+  - Used by 3 prompts
 
-- **C4.3 Event-Driven Automation**: React to calendar changes
+- **C4.3 Event-Driven Automation** → **C-GUTT-20** (Conflict Detection & Resolution)
   - Decline/conflict detection triggers
-  - Automatic rescheduling on conflicts
-  - Real-time monitoring
-  - **GUTTs Enabled**: 4.6, 4.7
+  - Automatic rescheduling on conflicts, real-time monitoring
+  - Used by 3 prompts
 
-- **C4.4 Confirmation & Reporting**: Track and report action outcomes
-  - Action logging
-  - Success/failure tracking
-  - Summary generation
-  - **GUTTs Enabled**: 1.6, 5.8, 9.8
+- **C4.4 Confirmation & Reporting** → **C-GUTT-32** (Reporting & Visualization)
+  - Action logging, success/failure tracking, summary generation
+  - Used by 3 prompts
 
 **Technical Requirements**:
 - Workflow engine (custom or Azure Logic Apps)
@@ -258,32 +244,28 @@ Consolidated 66 original unit tasks across 9 hero prompts into **39 atomic C-GUT
 ---
 
 #### 6. **Semantic Analysis & Reasoning**
-*Enables: 38/66 GUTTs (58%)*
+*Implements: C-GUTT-16, C-GUTT-21, C-GUTT-22*
 
 **Core Capabilities**:
-- **C6.1 Priority-Meeting Alignment**: Match meetings to stated priorities
-  - Semantic similarity scoring
-  - Relevance assessment
+- **C6.1 Priority-Meeting Alignment** → **C-GUTT-16** (Meeting-Priority Alignment Scoring)
+  - Semantic similarity scoring and relevance assessment
   - Multi-factor alignment (topic, people, outcomes)
-  - **GUTTs Enabled**: 1.3, 3.4
+  - Used by 2 prompts
 
-- **C6.2 Topic Interest Modeling**: Understand what topics people care about
+- **C6.2 Topic Interest Modeling** → **C-GUTT-22** (Topic Interest Analysis)
   - Historical topic extraction from communications
-  - Interest profile building
-  - Personalization based on role and history
-  - **GUTTs Enabled**: 9.5
+  - Interest profile building and personalization based on role
+  - Used by 1 prompt
 
-- **C6.3 Objection/Risk Anticipation**: Predict concerns and issues
-  - Critical thinking on proposals
-  - Stakeholder perspective modeling
+- **C6.3 Objection/Risk Anticipation** → **C-GUTT-21** (Objection/Risk Anticipation)
+  - Critical thinking on proposals and stakeholder perspective modeling
   - Risk identification from context
-  - **GUTTs Enabled**: 8.5
+  - Used by 1 prompt
 
-- **C6.4 Response Generation**: Create effective answers to objections
-  - Argumentation strategies
-  - Evidence marshaling from context
-  - Persuasive communication
-  - **GUTTs Enabled**: 8.6
+- **C6.4 Response Generation** → **C-GUTT-21** (Objection/Risk Anticipation)
+  - Argumentation strategies and evidence marshaling
+  - Persuasive communication for anticipated objections
+  - Used by 1 prompt
 
 **Technical Requirements**:
 - Semantic embedding models (text-embedding-ada-002, sentence-transformers)
@@ -297,26 +279,23 @@ Consolidated 66 original unit tasks across 9 hero prompts into **39 atomic C-GUT
 ---
 
 #### 7. **Pattern Recognition & Analytics**
-*Enables: 25/66 GUTTs (38%)*
+*Implements: C-GUTT-23, C-GUTT-24, C-GUTT-25, C-GUTT-26, C-GUTT-27*
 
 **Core Capabilities**:
-- **C7.1 Time Usage Analysis**: Understand how time is spent
+- **C7.1 Time Usage Analysis** → **C-GUTT-23** (Time Aggregation & Statistical Analysis)
   - Meeting aggregation by category, participant, project
-  - Trend detection over time periods
-  - Statistical summaries
-  - **GUTTs Enabled**: 3.3
+  - Trend detection over time periods and statistical summaries
+  - Used by 1 prompt
 
-- **C7.2 Low-Value Meeting Detection**: Flag time-wasting meetings
-  - Value scoring algorithms
-  - Reclamation opportunity identification
-  - Pattern-based detection (recurring low-value)
-  - **GUTTs Enabled**: 3.5
+- **C7.2 Low-Value Meeting Detection** → **C-GUTT-24** (Low-Value Meeting Identification), **C-GUTT-25** (Time Reclamation Opportunity Analysis)
+  - Value scoring algorithms and reclamation opportunity identification
+  - Pattern-based detection (recurring low-value meetings)
+  - Used by 1 prompt
 
-- **C7.3 Scheduling Pattern Optimization**: Find better ways to schedule
-  - Conflict pattern analysis
-  - Fragmentation detection (many small gaps)
+- **C7.3 Scheduling Pattern Optimization** → **C-GUTT-26** (Schedule Optimization Recommendations), **C-GUTT-27** (Calendar Gap Analysis)
+  - Conflict pattern analysis and fragmentation detection
   - Consolidation opportunities
-  - **GUTTs Enabled**: 3.6, 3.7
+  - Used by 2 prompts
 
 **Technical Requirements**:
 - Time series analysis libraries
@@ -332,32 +311,28 @@ Consolidated 66 original unit tasks across 9 hero prompts into **39 atomic C-GUT
 ### Tier 3: Advanced Coordination (Enterprise Scale)
 
 #### 8. **Multi-Party Scheduling & Coordination**
-*Enables: 20/66 GUTTs (30%)*
+*Implements: C-GUTT-02, C-GUTT-19, C-GUTT-20*
 
 **Core Capabilities**:
-- **C8.1 Availability Aggregation**: Combine free/busy across multiple calendars
+- **C8.1 Availability Aggregation** → **C-GUTT-02** (Multi-Calendar Availability Checking)
   - Intersection algorithms (find common free times)
-  - Hierarchical constraint handling (prioritize certain attendees)
-  - Timezone normalization
-  - **GUTTs Enabled**: 6.2, 6.3
+  - Hierarchical constraint handling and timezone normalization
+  - Used by 3 prompts
 
-- **C8.2 Constraint Satisfaction Optimization**: Find best time given complex rules
+- **C8.2 Constraint Satisfaction Optimization** → **C-GUTT-19** (Constraint Satisfaction & Slot Finding)
   - Multi-objective optimization (minimize conflicts, maximize preferences)
-  - Hard vs soft constraint weighting
-  - Slot ranking algorithms
-  - **GUTTs Enabled**: 4.3, 6.7
+  - Hard vs soft constraint weighting and slot ranking algorithms
+  - Used by 4 prompts
 
-- **C8.3 Conflict Resolution**: Handle scheduling conflicts automatically
-  - Override eligibility rules (what meetings can be moved)
-  - Cascading rescheduling (moving one meeting affects others)
+- **C8.3 Conflict Resolution** → **C-GUTT-20** (Conflict Detection & Resolution)
+  - Override eligibility rules and cascading rescheduling
   - Undo/rollback capabilities
-  - **GUTTs Enabled**: 6.4, 6.8
+  - Used by 3 prompts
 
-- **C8.4 Automatic Rescheduling**: Move meetings when conflicts arise
-  - Trigger detection (decline, new conflict)
-  - Re-run scheduling logic
+- **C8.4 Automatic Rescheduling** → **C-GUTT-07** (Meeting Update & Rescheduling), **C-GUTT-19** (Constraint Satisfaction & Slot Finding)
+  - Trigger detection (decline, new conflict) and re-run scheduling logic
   - Communication to attendees
-  - **GUTTs Enabled**: 4.7, 5.4, 5.5
+  - Used by 3 prompts
 
 **Technical Requirements**:
 - Constraint satisfaction solver (OR-Tools, custom algorithms)
@@ -371,27 +346,23 @@ Consolidated 66 original unit tasks across 9 hero prompts into **39 atomic C-GUT
 ---
 
 #### 9. **Resource Management**
-*Enables: 12/66 GUTTs (18%)*
+*Implements: C-GUTT-28, C-GUTT-29, C-GUTT-30*
 
 **Core Capabilities**:
-- **C9.1 Conference Room Discovery**: Find available rooms
-  - Room resource calendars
-  - Capacity matching
-  - Location/building filtering
-  - Equipment requirements (video, whiteboard)
-  - **GUTTs Enabled**: 6.6
+- **C9.1 Conference Room Discovery** → **C-GUTT-28** (Conference Room Search & Booking)
+  - Room resource calendars, capacity matching
+  - Location/building filtering and equipment requirements
+  - Used by 1 prompt
 
-- **C9.2 Room Booking**: Reserve rooms for meetings
-  - Resource reservation API
-  - Booking confirmation
+- **C9.2 Room Booking** → **C-GUTT-28** (Conference Room Search & Booking)
+  - Resource reservation API, booking confirmation
   - Release on cancellation
-  - **GUTTs Enabled**: 6.6
+  - Used by 1 prompt
 
-- **C9.3 Location Intelligence**: Understand physical context
+- **C9.3 Location Intelligence** → **C-GUTT-29** (Location-Based Filtering), **C-GUTT-30** (Focus Time Block Creation)
   - In-person vs remote meeting capability
-  - Participant location tracking
-  - Travel time considerations
-  - **GUTTs Enabled**: 6.5
+  - Participant location tracking and travel time considerations
+  - Used by 2 prompts
 
 **Technical Requirements**:
 - Microsoft Graph Places API
@@ -404,33 +375,28 @@ Consolidated 66 original unit tasks across 9 hero prompts into **39 atomic C-GUT
 ---
 
 #### 10. **Decision Support & Recommendations**
-*Enables: 22/66 GUTTs (33%)*
+*Implements: C-GUTT-17, C-GUTT-25, C-GUTT-26, C-GUTT-27*
 
 **Core Capabilities**:
-- **C10.1 Accept/Decline Logic**: Recommend meeting responses
-  - Priority alignment assessment
-  - Schedule impact evaluation
+- **C10.1 Accept/Decline Logic** → **C-GUTT-17** (Accept/Decline Decision Logic)
+  - Priority alignment assessment and schedule impact evaluation
   - Threshold-based rules
-  - **GUTTs Enabled**: 1.4
+  - Used by 1 prompt
 
-- **C10.2 Time Reclamation Recommendations**: Suggest specific changes
-  - Meeting elimination candidates
-  - Delegation suggestions
-  - Consolidation opportunities
-  - Shortening proposals (60min → 30min)
-  - **GUTTs Enabled**: 3.7
+- **C10.2 Time Reclamation Recommendations** → **C-GUTT-25** (Time Reclamation Opportunity Analysis), **C-GUTT-26** (Schedule Optimization Recommendations)
+  - Meeting elimination candidates and delegation suggestions
+  - Consolidation opportunities and shortening proposals
+  - Used by 1 prompt
 
-- **C10.3 Preparation Guidance**: Advise on meeting prep
-  - Flagging high-prep meetings
-  - Focus time blocking suggestions
+- **C10.3 Preparation Guidance** → **C-GUTT-27** (Calendar Gap Analysis), **C-GUTT-30** (Focus Time Block Creation)
+  - Flagging high-prep meetings and focus time blocking suggestions
   - Lead time adequacy checking
-  - **GUTTs Enabled**: 2.4, 2.6
+  - Used by 1 prompt
 
-- **C10.4 Actionable Insights**: Provide clear next steps
-  - Specific, actionable recommendations
-  - Prioritized action lists
+- **C10.4 Actionable Insights** → **C-GUTT-32** (Reporting & Visualization)
+  - Specific, actionable recommendations and prioritized action lists
   - Impact quantification (e.g., "reclaim 5 hours/week")
-  - **GUTTs Enabled**: 2.7, 3.6, 3.8
+  - Used by 3 prompts
 
 **Technical Requirements**:
 - Decision rule engine
@@ -444,32 +410,28 @@ Consolidated 66 original unit tasks across 9 hero prompts into **39 atomic C-GUT
 ---
 
 #### 11. **Context Synthesis & Briefing**
-*Enables: 18/66 GUTTs (27%)*
+*Implements: C-GUTT-11, C-GUTT-14, C-GUTT-33, C-GUTT-34, C-GUTT-35*
 
 **Core Capabilities**:
-- **C11.1 Multi-Source Information Aggregation**: Combine data from many sources
-  - Calendar + documents + CRM + communications
-  - Deduplication and conflict resolution
-  - Temporal ordering and recency weighting
-  - **GUTTs Enabled**: 7.1, 8.1, 9.1-9.7
+- **C11.1 Multi-Source Information Aggregation** → **C-GUTT-11** (Meeting Context Extraction)
+  - Calendar + documents + CRM + communications integration
+  - Deduplication, conflict resolution, temporal ordering
+  - Used by 3 prompts
 
-- **C11.2 Executive Summarization**: Distill complex info into key points
+- **C11.2 Executive Summarization** → **C-GUTT-14** (Document Content Analysis), **C-GUTT-33** (Document Assembly & Formatting)
   - Content compression (many docs → 3 talking points)
-  - Priority ranking (what matters most)
-  - Audience-aware framing (executive vs technical)
-  - **GUTTs Enabled**: 8.3, 8.4
+  - Priority ranking and audience-aware framing
+  - Used by 3 prompts
 
-- **C11.3 Dossier Generation**: Create person/company profiles
+- **C11.3 Dossier Generation** → **C-GUTT-35** (Individual Dossier Creation), **C-GUTT-38** (Attendee Identity Resolution)
   - Entity resolution (identify people/companies)
   - Profile compilation (background, role, history, interests)
-  - Relationship history summarization
-  - **GUTTs Enabled**: 9.2, 9.3, 9.4
+  - Used by 1 prompt
 
-- **C11.4 Meeting Context Building**: Assemble relevant background for meetings
-  - Project status retrieval
-  - Stakeholder analysis
+- **C11.4 Meeting Context Building** → **C-GUTT-34** (Agenda Structure Planning), **C-GUTT-11** (Meeting Context Extraction)
+  - Project status retrieval and stakeholder analysis
   - Historical context (past meetings, decisions)
-  - **GUTTs Enabled**: 7.1, 9.6
+  - Used by 2 prompts
 
 **Technical Requirements**:
 - Entity resolution and knowledge graph
@@ -483,26 +445,25 @@ Consolidated 66 original unit tasks across 9 hero prompts into **39 atomic C-GUT
 ---
 
 #### 12. **Explanation & Transparency**
-*Enables: 15/66 GUTTs (23%)*
+*Implements: C-GUTT-31*
 
 **Core Capabilities**:
-- **C12.1 Decision Justification**: Explain why actions were taken
+- **C12.1 Decision Justification** → **C-GUTT-31** (Decision Justification & Explanation)
   - Rule-based explanations (link to priority rules)
   - Evidence citation (which data led to decision)
   - Transparency in automation
-  - **GUTTs Enabled**: 1.6
+  - Used by 2 prompts
 
-- **C12.2 Reasoning Trace**: Show how conclusions were reached
-  - Step-by-step logic
-  - Intermediate calculations
+- **C12.2 Reasoning Trace** → **C-GUTT-31** (Decision Justification & Explanation)
+  - Step-by-step logic and intermediate calculations
   - Assumption disclosure
-  - **GUTTs Enabled**: 3.4, 8.5
+  - Used by 2 prompts
 
-- **C12.3 Confidence & Uncertainty**: Communicate certainty levels
+- **C12.3 Confidence & Uncertainty** → **C-GUTT-31** (Decision Justification & Explanation)
   - Confidence scores on classifications
   - Uncertainty flags ("not enough data to determine")
   - Alternative scenarios
-  - **GUTTs Enabled**: 2.2, 5.1
+  - Used by 2 prompts
 
 **Technical Requirements**:
 - Explainable AI techniques (LIME, SHAP for ML models)
