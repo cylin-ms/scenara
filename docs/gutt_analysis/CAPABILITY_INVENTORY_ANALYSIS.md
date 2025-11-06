@@ -748,4 +748,117 @@ Explanation (C12) ────────> Trust and debugging
 
 ---
 
+## Appendix: Complete GUTT Reference (66 Unit Tasks)
+
+### Organizer Category (21 GUTTs)
+
+#### Hero Prompt 1: Calendar Prioritization (6 GUTTs)
+1. **Priority Definition & Extraction** - Identify and structure user's priorities from context
+2. **Calendar Event Retrieval** - Access and load pending calendar invitations and scheduled meetings
+3. **Meeting-Priority Alignment Scoring** - Evaluate how well each meeting aligns with stated priorities
+4. **Accept/Decline Decision Logic** - Determine which meetings to accept vs decline based on priority alignment
+5. **Calendar Action Execution** - Execute accept/decline actions on calendar system
+6. **Decision Justification & Reporting** - Explain why each meeting was accepted or declined
+
+#### Hero Prompt 2: Meeting Prep Tracking (7 GUTTs)
+1. **Calendar Data Retrieval** - Load user's calendar events for analysis period
+2. **Meeting Importance Classification** - Classify each meeting by importance level (critical/high/medium/low)
+3. **Preparation Time Estimation** - Estimate prep time needed based on meeting type, importance, and role
+4. **Meeting Flagging Logic** - Flag meetings that require preparation based on importance and lead time
+5. **Calendar Gap Analysis** - Identify available time slots before flagged meetings for prep work
+6. **Focus Time Block Scheduling** - Schedule focus time blocks in identified gaps
+7. **Actionable Recommendations & Reporting** - Generate prioritized list of meetings needing prep with time blocks
+
+#### Hero Prompt 3: Time Reclamation Analysis (8 GUTTs)
+1. **Calendar Historical Data Retrieval** - Load past calendar events for specified time period
+2. **Meeting Categorization & Classification** - Classify meetings by type, purpose, importance, participants
+3. **Time Aggregation & Statistical Analysis** - Compute time spent per category, participant, project
+4. **Priority Alignment Assessment** - Evaluate which time usage aligns with stated priorities
+5. **Low-Value Meeting Identification** - Flag meetings that consume time without supporting priorities
+6. **Time Reclamation Opportunity Analysis** - Calculate potential time savings from proposed changes
+7. **Schedule Optimization Recommendations** - Suggest specific changes (decline, delegate, shorten, consolidate)
+8. **Time Usage Reporting & Visualization** - Present insights with charts, summaries, comparisons
+
+### Schedule Category (24 GUTTs)
+
+#### Hero Prompt 4: Recurring 1:1 Scheduling (7 GUTTs)
+1. **Constraint Extraction & Formalization** - Parse scheduling requirements into structured constraints
+2. **Multi-Calendar Availability Checking** - Check free/busy status for user and attendee
+3. **Constraint-Based Slot Finding** - Identify time slots matching all constraints (weekly, afternoons, not Fridays, 30min)
+4. **Recurring Meeting Series Creation** - Create recurring calendar event with proper series configuration
+5. **Meeting Invitation Sending** - Send calendar invitation to attendee
+6. **Decline/Conflict Detection & Monitoring** - Monitor for attendee declines or new calendar conflicts
+7. **Automatic Rescheduling Logic** - When declined/conflicted, find new slot and send updated invitation
+
+#### Hero Prompt 5: Block Time & Reschedule (8 GUTTs)
+1. **Time Block Specification Parsing** - Interpret "Thursday afternoon" into specific date/time range
+2. **Affected Meetings Identification** - Find all meetings within the target time block
+3. **RSVP Decline Execution** - Decline all meetings in the blocked time
+4. **Alternative Slot Finding** - For each meeting, identify alternative time slots
+5. **Meeting Rescheduling Proposals** - Send reschedule requests with proposed new times
+6. **Calendar Status Update** - Set user's status/availability for the blocked time
+7. **Focus Time Block Creation** - Create placeholder event for the blocked time
+8. **Action Summary & Confirmation** - Report what was done (declined X, rescheduled Y, blocked Z hours)
+
+#### Hero Prompt 6: Multi-Person Meeting Scheduling (9 GUTTs)
+1. **Meeting Requirements Extraction** - Parse all requirements (attendees, duration, date range, constraints, modality, resources)
+2. **Multi-Person Availability Aggregation** - Check calendars for all attendees and merge availability
+3. **Priority Constraint Application** - Ensure primary consideration of specific attendee's availability (e.g., Kat's schedule)
+4. **Override-Eligible Meeting Identification** - Identify 1:1s and lunches that can be rescheduled if needed
+5. **Location-Based Filtering** - Filter for in-person meeting capability (office presence, not remote)
+6. **Conference Room Search & Booking** - Find available room for in-person meeting and reserve it
+7. **Optimal Slot Selection** - Rank and select best time considering all constraints
+8. **Conflict Resolution & Rescheduling** - If needed, reschedule override-eligible conflicts
+9. **Meeting Creation & Invitations** - Create meeting with all attendees, room, and details
+
+### Collaborate Category (21 GUTTs)
+
+#### Hero Prompt 7: Agenda Creation (6 GUTTs)
+1. **Meeting Context Retrieval** - Gather information about project from available sources
+2. **Stakeholder Role Identification** - Understand different teams' roles and concerns
+3. **Agenda Structure Planning** - Create logical flow for review meeting (progress → confirmation → blockers → risks)
+4. **Progress Review Items Generation** - List specific accomplishments, milestones, metrics to review
+5. **Blocker & Risk Identification** - Surface known issues, dependencies, and potential risks for discussion
+6. **Time Allocation & Formatting** - Assign time to each agenda item and format for distribution
+
+#### Hero Prompt 8: Executive Briefing Prep (7 GUTTs)
+1. **Meeting Materials Retrieval** - Access and load all relevant documents for the meeting
+2. **Content Analysis & Topic Extraction** - Identify main themes and topics across materials
+3. **Executive Summary Distillation** - Condense complex topics into 3 concise discussion points
+4. **Audience-Aware Framing** - Frame discussion points appropriate for senior leadership
+5. **Objection Anticipation** - Predict concerns or pushback from senior leaders
+6. **Response Preparation** - Generate effective responses to anticipated objections
+7. **Briefing Document Generation** - Format summary, objections, and responses into prep document
+
+#### Hero Prompt 9: Customer Meeting Prep (8 GUTTs)
+1. **Meeting Details Retrieval** - Get meeting information (attendees, time, purpose)
+2. **Company Background Research** - Gather information about customer company
+3. **Attendee Identity Resolution** - Identify each customer attendee and their roles
+4. **Individual Dossier Creation** - For each attendee, compile background, role, history
+5. **Topic Interest Analysis** - Identify topics each attendee cares about based on history
+6. **Relationship History Compilation** - Summarize past interactions, deals, issues with customer
+7. **Relevant Content Gathering** - Find related materials (proposals, presentations, tickets)
+8. **Brief Document Assembly** - Compile all information into structured prep brief
+
+---
+
+## GUTT Summary Statistics
+
+| Category | Hero Prompts | Total GUTTs | Avg per Prompt | Complexity Range |
+|----------|--------------|-------------|----------------|------------------|
+| Organizer | 3 | 21 | 7.0 | 6-8 GUTTs |
+| Schedule | 3 | 24 | 8.0 | 7-9 GUTTs |
+| Collaborate | 3 | 21 | 7.0 | 6-8 GUTTs |
+| **TOTAL** | **9** | **66** | **7.3** | **6-9 GUTTs** |
+
+**GUTT Distribution**:
+- 6 GUTTs: 2 prompts (Calendar Prioritization, Agenda Creation)
+- 7 GUTTs: 3 prompts (Meeting Prep, Recurring 1:1, Executive Briefing)
+- 8 GUTTs: 3 prompts (Time Reclamation, Block Time, Customer Prep)
+- 9 GUTTs: 1 prompt (Multi-Person Scheduling)
+
+**Complexity Correlation**: Higher GUTT count generally correlates with higher complexity and more data sources required.
+
+---
+
 *This capability inventory provides the technical foundation for building enterprise meeting intelligence at scale.*
