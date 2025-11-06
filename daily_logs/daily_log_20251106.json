@@ -26,6 +26,12 @@
           "description": "Updated Hero_Prompts_Reference_GUTT_Decompositions.md with C-GUTT consolidation summary, high-reuse priorities, and cross-references to detailed C-GUTT documentation",
           "category": "Documentation",
           "impact": "high"
+        },
+        {
+          "timestamp": "2025-11-06T09:08:06.273144+00:00",
+          "description": "Reorganized all GUTT documentation: Moved 7 GUTT files from root to docs/gutt_analysis/, updated cross-references, now all 48 GUTT docs centralized",
+          "category": "Documentation",
+          "impact": "medium"
         }
       ],
       "tools_used": [],
@@ -57,6 +63,12 @@
         "description": "Updated Hero_Prompts_Reference_GUTT_Decompositions.md with C-GUTT consolidation summary, high-reuse priorities, and cross-references to detailed C-GUTT documentation",
         "category": "Documentation",
         "impact": "high"
+      },
+      {
+        "timestamp": "2025-11-06T09:08:06.273144+00:00",
+        "description": "Reorganized all GUTT documentation: Moved 7 GUTT files from root to docs/gutt_analysis/, updated cross-references, now all 48 GUTT docs centralized",
+        "category": "Documentation",
+        "impact": "medium"
       }
     ],
     "tools_created": [],
