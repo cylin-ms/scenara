@@ -8,13 +8,16 @@
 
 ## Executive Summary
 
-**Finding**: Significant duplication exists across the 66 GUTTs. Through cross-prompt analysis, **32 unique atomic capabilities** can serve all 9 hero prompts (52% reduction from 66).
+**Finding**: Significant duplication exists across the 66 GUTTs. Through cross-prompt analysis, **33 unique atomic capabilities** can serve all 9 hero prompts (50% reduction from 66).
 
 **Consolidation Opportunity**: 
+
 - **Original**: 66 prompt-specific GUTTs
-- **Consolidated**: 32 universal atomic capabilities
-- **Efficiency Gain**: 34 fewer redundant units to implement and test
+- **Consolidated**: 33 universal atomic capabilities
+- **Efficiency Gain**: 33 fewer redundant units to implement and test
 - **Reusability**: Each atomic capability serves 2-4 different hero prompts on average
+
+**Key Correction**: Meeting Type Classification (C-GUTT-03) and Meeting Importance Classification (C-GUTT-04) are **distinct capabilities**. Type = category (1:1, group, lunch), Importance = priority level (critical, high, medium, low).
 
 ---
 
@@ -55,27 +58,34 @@ GUTTs are considered duplicates/mergeable if they:
 **Implementation**: Batch availability checker with attendee list input
 
 #### C-GUTT-03: Meeting Type Classification
-**Original GUTTs**: 2.2, 3.2, 6.4  
-**Prompts**: Organizer-2, Organizer-3, Schedule-3  
+**Original GUTTs**: 3.2, 6.4  
+**Prompts**: Organizer-3, Schedule-3  
 **Capability**: Classify meetings by type (1:1, group, lunch, review, etc.) from 31+ taxonomy  
 **Why Consolidated**: Same ML classifier applied to different meeting sets  
 **Implementation**: Single classifier with ~91% accuracy (per GUTT evaluation)
 
-#### C-GUTT-04: Calendar Action Execution (RSVP)
+#### C-GUTT-04: Meeting Importance Classification
+**Original GUTTs**: 2.2  
+**Prompts**: Organizer-2  
+**Capability**: Determine meeting importance level (critical, high, medium, low) based on attendees, topics, urgency  
+**Why Separate from C-GUTT-03**: Importance is about priority/value, not meeting type. A 1:1 can be low or high importance.  
+**Implementation**: ML classifier trained on importance signals (exec attendance, keywords, recurrence, etc.)
+
+#### C-GUTT-05: Calendar Action Execution (RSVP)
 **Original GUTTs**: 1.5, 5.3  
 **Prompts**: Organizer-1, Schedule-2  
 **Capability**: Execute accept/decline/tentative RSVP actions on calendar events  
 **Why Consolidated**: Both use `PATCH /events/{id}` with `responseStatus` updates  
 **Implementation**: Single RSVP executor with status parameter
 
-#### C-GUTT-05: Meeting Creation & Invitations
+#### C-GUTT-06: Meeting Creation & Invitations
 **Original GUTTs**: 4.4, 4.5, 6.9  
 **Prompts**: Schedule-1, Schedule-3  
 **Capability**: Create calendar events and send invitations to attendees  
 **Why Consolidated**: All use `POST /events` with attendee/recurrence/resource configuration  
 **Implementation**: Unified event creator with template support
 
-#### C-GUTT-06: Meeting Update & Rescheduling
+#### C-GUTT-07: Meeting Update & Rescheduling
 **Original GUTTs**: 4.7, 5.5, 6.8  
 **Prompts**: Schedule-1, Schedule-2, Schedule-3  
 **Capability**: Modify existing meetings (time, attendees, location) and notify participants  
@@ -86,56 +96,56 @@ GUTTs are considered duplicates/mergeable if they:
 
 ### Category 2: Natural Language Processing (8 capabilities)
 
-#### C-GUTT-07: Priority/Goal Extraction
+#### C-GUTT-08: Priority/Goal Extraction
 **Original GUTTs**: 1.1, 3.4  
 **Prompts**: Organizer-1, Organizer-3  
 **Capability**: Parse user's stated priorities, goals, and preferences from natural language  
 **Why Consolidated**: Same NLP extraction pipeline for different priority contexts  
 **Implementation**: Priority extraction NLP model with structured output
 
-#### C-GUTT-08: Constraint & Requirement Parsing
+#### C-GUTT-09: Constraint & Requirement Parsing
 **Original GUTTs**: 4.1, 6.1  
 **Prompts**: Schedule-1, Schedule-3  
 **Capability**: Extract scheduling constraints (time preferences, hard requirements, attendee rules)  
 **Why Consolidated**: Both parse multi-constraint natural language into structured rules  
 **Implementation**: Constraint parser with hierarchical rule representation
 
-#### C-GUTT-09: Temporal Expression Resolution
+#### C-GUTT-10: Temporal Expression Resolution
 **Original GUTTs**: 5.1  
 **Prompts**: Schedule-2  
 **Capability**: Interpret relative time expressions ("Thursday afternoon", "next week") to absolute date/time  
 **Why Consolidated**: Foundational NLP capability needed across multiple scheduling tasks  
 **Implementation**: Temporal resolution engine (SUTime, Duckling, or custom)
 
-#### C-GUTT-10: Meeting Context Extraction
+#### C-GUTT-11: Meeting Context Extraction
 **Original GUTTs**: 7.1, 8.2, 9.2  
 **Prompts**: Collaborate-1, Collaborate-2, Collaborate-3  
 **Capability**: Extract meeting purpose, topics, and context from documents/calendar metadata  
 **Why Consolidated**: All perform information extraction from unstructured sources  
 **Implementation**: Document analysis pipeline with topic extraction
 
-#### C-GUTT-11: Stakeholder/Role Identification
+#### C-GUTT-12: Stakeholder/Role Identification
 **Original GUTTs**: 7.2, 9.3  
 **Prompts**: Collaborate-1, Collaborate-3  
 **Capability**: Identify participants, their roles, and organizational relationships  
 **Why Consolidated**: Both resolve people to roles and understand organizational context  
 **Implementation**: Identity resolution + org chart analysis
 
-#### C-GUTT-12: Interest/Topic Analysis
+#### C-GUTT-13: Interest/Topic Analysis
 **Original GUTTs**: 9.5  
 **Prompts**: Collaborate-3  
 **Capability**: Analyze individual preferences, interests, and communication patterns  
 **Why Consolidated**: Unique capability but foundational for personalization  
 **Implementation**: Communication history analyzer with interest modeling
 
-#### C-GUTT-13: Document Content Analysis
+#### C-GUTT-14: Document Content Analysis
 **Original GUTTs**: 8.1, 8.2, 9.7  
 **Prompts**: Collaborate-2, Collaborate-3  
 **Capability**: Load, parse, and extract key information from documents  
 **Why Consolidated**: All use document retrieval + content extraction pipelines  
 **Implementation**: Multi-format document processor (PDF, DOCX, emails, etc.)
 
-#### C-GUTT-14: Summary & Distillation
+#### C-GUTT-15: Summary & Distillation
 **Original GUTTs**: 8.3  
 **Prompts**: Collaborate-2  
 **Capability**: Condense complex information into concise summaries  
@@ -146,49 +156,49 @@ GUTTs are considered duplicates/mergeable if they:
 
 ### Category 3: Reasoning & Decision Making (7 capabilities)
 
-#### C-GUTT-15: Priority Alignment Scoring
+#### C-GUTT-16: Priority Alignment Scoring
 **Original GUTTs**: 1.3, 3.4  
 **Prompts**: Organizer-1, Organizer-3  
 **Capability**: Evaluate how well meetings/activities align with user's priorities  
 **Why Consolidated**: Same semantic matching algorithm applied to different datasets  
 **Implementation**: Alignment scorer using embedding similarity + rule-based logic
 
-#### C-GUTT-16: Decision Logic (Accept/Decline)
+#### C-GUTT-17: Decision Logic (Accept/Decline)
 **Original GUTTs**: 1.4  
 **Prompts**: Organizer-1  
 **Capability**: Make threshold-based decisions on calendar actions  
 **Why Consolidated**: Foundational decision engine with configurable thresholds  
 **Implementation**: Rule-based decision engine with explainability
 
-#### C-GUTT-17: Preparation Time Estimation
+#### C-GUTT-18: Preparation Time Estimation
 **Original GUTTs**: 2.3  
 **Prompts**: Organizer-2  
 **Capability**: Estimate how much prep time a meeting requires based on type/attendees/complexity  
 **Why Consolidated**: Specialized reasoning for meeting preparation needs  
 **Implementation**: ML model trained on meeting features → prep time
 
-#### C-GUTT-18: Constraint Satisfaction & Slot Finding
+#### C-GUTT-19: Constraint Satisfaction & Slot Finding
 **Original GUTTs**: 4.3, 5.4, 6.7  
 **Prompts**: Schedule-1, Schedule-2, Schedule-3  
 **Capability**: Find time slots satisfying multiple constraints (availability, preferences, resources)  
 **Why Consolidated**: All implement constraint satisfaction with temporal reasoning  
 **Implementation**: CSP solver with multi-objective optimization
 
-#### C-GUTT-19: Conflict Detection & Resolution
+#### C-GUTT-20: Conflict Detection & Resolution
 **Original GUTTs**: 4.6, 6.4, 6.8  
 **Prompts**: Schedule-1, Schedule-3  
 **Capability**: Detect calendar conflicts and determine resolution strategy  
 **Why Consolidated**: Same conflict detection + override eligibility logic  
 **Implementation**: Conflict analyzer with priority-based resolution
 
-#### C-GUTT-20: Objection/Risk Anticipation
+#### C-GUTT-21: Objection/Risk Anticipation
 **Original GUTTs**: 7.5, 8.5  
 **Prompts**: Collaborate-1, Collaborate-2  
 **Capability**: Predict concerns, blockers, or objections from stakeholders  
 **Why Consolidated**: Both use critical analysis to surface potential issues  
 **Implementation**: LLM-based risk/objection generator with role-based reasoning
 
-#### C-GUTT-21: Response/Recommendation Generation
+#### C-GUTT-22: Response/Recommendation Generation
 **Original GUTTs**: 3.7, 8.6  
 **Prompts**: Organizer-3, Collaborate-2  
 **Capability**: Generate actionable recommendations or responses to anticipated concerns  
@@ -199,35 +209,35 @@ GUTTs are considered duplicates/mergeable if they:
 
 ### Category 4: Analysis & Insights (5 capabilities)
 
-#### C-GUTT-22: Time Aggregation & Statistics
+#### C-GUTT-23: Time Aggregation & Statistics
 **Original GUTTs**: 3.3  
 **Prompts**: Organizer-3  
 **Capability**: Compute time spent across categories, calculate statistics, identify patterns  
 **Why Consolidated**: Core analytics capability for time usage analysis  
 **Implementation**: Time series aggregator with grouping/filtering
 
-#### C-GUTT-23: Low-Value Activity Identification
+#### C-GUTT-24: Low-Value Activity Identification
 **Original GUTTs**: 3.5  
 **Prompts**: Organizer-3  
 **Capability**: Flag meetings/activities that don't support priorities (reclamation candidates)  
 **Why Consolidated**: Specialized analysis for time optimization  
 **Implementation**: Value scorer with threshold-based flagging
 
-#### C-GUTT-24: Time Reclamation Opportunity Analysis
+#### C-GUTT-25: Time Reclamation Opportunity Analysis
 **Original GUTTs**: 3.6  
 **Prompts**: Organizer-3  
 **Capability**: Calculate potential time savings from proposed changes  
 **Why Consolidated**: Impact modeling for schedule optimization  
 **Implementation**: Counterfactual analyzer with time savings projection
 
-#### C-GUTT-25: Meeting Flagging Logic
+#### C-GUTT-26: Meeting Flagging Logic
 **Original GUTTs**: 2.4  
 **Prompts**: Organizer-2  
 **Capability**: Apply rules to flag meetings meeting specific criteria (needs prep, high importance, etc.)  
 **Why Consolidated**: Rule-based flagging engine with configurable conditions  
 **Implementation**: Condition evaluator with Boolean logic support
 
-#### C-GUTT-26: Calendar Gap Analysis
+#### C-GUTT-27: Calendar Gap Analysis
 **Original GUTTs**: 2.5  
 **Prompts**: Organizer-2  
 **Capability**: Identify free time blocks in calendar for scheduling purposes  
@@ -238,21 +248,21 @@ GUTTs are considered duplicates/mergeable if they:
 
 ### Category 5: Resource Management (3 capabilities)
 
-#### C-GUTT-27: Conference Room Search & Booking
+#### C-GUTT-28: Conference Room Search & Booking
 **Original GUTTs**: 6.6  
 **Prompts**: Schedule-3  
 **Capability**: Find and reserve meeting rooms based on capacity, location, equipment needs  
 **Why Consolidated**: Specialized resource booking capability  
 **Implementation**: Resource API integration with availability checking + reservation
 
-#### C-GUTT-28: Focus Time Block Scheduling
+#### C-GUTT-29: Focus Time Block Scheduling
 **Original GUTTs**: 2.6, 5.7  
 **Prompts**: Organizer-2, Schedule-2  
 **Capability**: Create dedicated focus/prep time blocks on calendar  
 **Why Consolidated**: Both create placeholder events for protected time  
 **Implementation**: Focus time creator with auto-scheduling logic
 
-#### C-GUTT-29: Calendar Status/Availability Update
+#### C-GUTT-30: Calendar Status/Availability Update
 **Original GUTTs**: 5.6  
 **Prompts**: Schedule-2  
 **Capability**: Set user's free/busy status and availability indicators  
@@ -263,21 +273,21 @@ GUTTs are considered duplicates/mergeable if they:
 
 ### Category 6: Output & Communication (3 capabilities)
 
-#### C-GUTT-30: Decision Justification & Explanation
+#### C-GUTT-31: Decision Justification & Explanation
 **Original GUTTs**: 1.6  
 **Prompts**: Organizer-1  
 **Capability**: Generate natural language explanations for automated decisions  
 **Why Consolidated**: Transparency/explainability for AI actions  
 **Implementation**: NLG engine with rule-to-text translation
 
-#### C-GUTT-31: Reporting & Visualization
+#### C-GUTT-32: Reporting & Visualization
 **Original GUTTs**: 2.7, 3.8, 5.8  
 **Prompts**: Organizer-2, Organizer-3, Schedule-2  
 **Capability**: Create reports, summaries, and visual representations of data/actions  
 **Why Consolidated**: All generate user-facing output with formatting  
 **Implementation**: Report generator with templating + chart creation
 
-#### C-GUTT-32: Document Assembly & Formatting
+#### C-GUTT-33: Document Assembly & Formatting
 **Original GUTTs**: 7.6, 8.7, 9.8  
 **Prompts**: Collaborate-1, Collaborate-2, Collaborate-3  
 **Capability**: Compile information into structured documents (agendas, briefs, dossiers)  
@@ -290,25 +300,28 @@ GUTTs are considered duplicates/mergeable if they:
 
 ### Quantitative Benefits
 
-| Metric | Original (66 GUTTs) | Consolidated (32 C-GUTTs) | Improvement |
+| Metric | Original (66 GUTTs) | Consolidated (33 C-GUTTs) | Improvement |
 |--------|---------------------|---------------------------|-------------|
-| **Unique Capabilities** | 66 | 32 | **-52% redundancy** |
-| **Avg Reusability** | 1.0 prompts/GUTT | 2.1 prompts/C-GUTT | **+110% reuse** |
-| **Implementation Effort** | 66 units to build | 32 units to build | **-52% dev time** |
-| **Test Coverage** | 66 unit tests | 32 unit tests + integration | **-52% test burden** |
-| **Maintenance Surface** | 66 components | 32 components | **-52% maintenance** |
+| **Unique Capabilities** | 66 | 33 | **-50% redundancy** |
+| **Avg Reusability** | 1.0 prompts/GUTT | 2.0 prompts/C-GUTT | **+100% reuse** |
+| **Implementation Effort** | 66 units to build | 33 units to build | **-50% dev time** |
+| **Test Coverage** | 66 unit tests | 33 unit tests + integration | **-50% test burden** |
+| **Maintenance Surface** | 66 components | 33 components | **-50% maintenance** |
 
 ### Reusability Heatmap
 
-**Most Reused Capabilities** (5+ prompts):
+**Most Reused Capabilities** (3+ prompts):
 1. **C-GUTT-01** (Calendar Event Retrieval): 5 prompts → 76% coverage
-2. **C-GUTT-31** (Reporting & Visualization): 3 prompts → 33% coverage
-3. **C-GUTT-18** (Constraint Satisfaction): 3 prompts → 33% coverage
+2. **C-GUTT-19** (Constraint Satisfaction): 4 prompts → 44% coverage
+3. **C-GUTT-02** (Multi-Calendar Availability): 3 prompts → 33% coverage
+4. **C-GUTT-03** (Meeting Type Classification): 2 prompts → 22% coverage
+5. **C-GUTT-32** (Reporting & Visualization): 3 prompts → 33% coverage
 
 **Specialized Capabilities** (1 prompt only):
-- C-GUTT-12 (Interest Analysis), C-GUTT-14 (Summary), C-GUTT-17 (Prep Time Estimation)
-- C-GUTT-23, C-GUTT-24, C-GUTT-27, C-GUTT-29, C-GUTT-30
-- **Total**: 9 specialized capabilities (28% of taxonomy)
+- C-GUTT-04 (Importance Classification), C-GUTT-10 (Temporal Resolution), C-GUTT-13 (Interest Analysis)
+- C-GUTT-15 (Summary), C-GUTT-17 (Decision Logic), C-GUTT-18 (Prep Time Estimation)
+- C-GUTT-24, C-GUTT-25, C-GUTT-28, C-GUTT-30, C-GUTT-31
+- **Total**: 11 specialized capabilities (33% of taxonomy)
 
 ### Coverage Validation
 
@@ -316,8 +329,8 @@ GUTTs are considered duplicates/mergeable if they:
 
 | Hero Prompt | Original GUTTs | C-GUTTs Used | Coverage |
 |-------------|----------------|--------------|----------|
-| 1. Calendar Prioritization | 6 | C-01, C-04, C-07, C-15, C-16, C-30 | ✅ 100% |
-| 2. Meeting Prep Tracking | 7 | C-01, C-03, C-17, C-25, C-26, C-28, C-31 | ✅ 100% |
+| 1. Calendar Prioritization | 6 | C-01, C-05, C-08, C-16, C-17, C-31 | ✅ 100% |
+| 2. Meeting Prep Tracking | 7 | C-01, C-04, C-18, C-26, C-27, C-29, C-32 | ✅ 100% |
 | 3. Time Reclamation | 8 | C-01, C-03, C-07, C-15, C-22, C-23, C-24, C-31 | ✅ 100% |
 | 4. Recurring 1:1 Scheduling | 7 | C-02, C-05, C-08, C-18, C-19, C-06 | ✅ 100% (6 C-GUTTs cover 7 tasks) |
 | 5. Block Time & Reschedule | 8 | C-01, C-02, C-04, C-06, C-09, C-18, C-28, C-29, C-31 | ✅ 100% |
@@ -337,23 +350,23 @@ GUTTs are considered duplicates/mergeable if they:
 #### Prompt 1: Calendar Prioritization
 | Original GUTT | Consolidated C-GUTT | Consolidation Rationale |
 |---------------|---------------------|-------------------------|
-| 1.1 Priority Definition & Extraction | C-GUTT-07 Priority/Goal Extraction | Same NLP extraction of user priorities |
+| 1.1 Priority Definition & Extraction | C-GUTT-08 Priority/Goal Extraction | Same NLP extraction of user priorities |
 | 1.2 Calendar Event Retrieval | C-GUTT-01 Calendar Event Retrieval | Standard calendar API retrieval |
-| 1.3 Meeting-Priority Alignment Scoring | C-GUTT-15 Priority Alignment Scoring | Semantic matching for alignment |
-| 1.4 Accept/Decline Decision Logic | C-GUTT-16 Decision Logic | Threshold-based decision making |
-| 1.5 Calendar Action Execution | C-GUTT-04 Calendar Action Execution | RSVP status updates |
-| 1.6 Decision Justification & Reporting | C-GUTT-30 Decision Justification | NLG for explanations |
+| 1.3 Meeting-Priority Alignment Scoring | C-GUTT-16 Priority Alignment Scoring | Semantic matching for alignment |
+| 1.4 Accept/Decline Decision Logic | C-GUTT-17 Decision Logic | Threshold-based decision making |
+| 1.5 Calendar Action Execution | C-GUTT-05 Calendar Action Execution | RSVP status updates |
+| 1.6 Decision Justification & Reporting | C-GUTT-31 Decision Justification | NLG for explanations |
 
 #### Prompt 2: Meeting Prep Tracking
 | Original GUTT | Consolidated C-GUTT | Consolidation Rationale |
 |---------------|---------------------|-------------------------|
 | 2.1 Calendar Data Retrieval | C-GUTT-01 Calendar Event Retrieval | Same retrieval with different filters |
-| 2.2 Meeting Importance Classification | C-GUTT-03 Meeting Type Classification | Same classifier, different purpose |
-| 2.3 Preparation Time Estimation | C-GUTT-17 Preparation Time Estimation | Unique capability, no consolidation |
-| 2.4 Meeting Flagging Logic | C-GUTT-25 Meeting Flagging Logic | Rule-based flagging engine |
-| 2.5 Calendar Gap Analysis | C-GUTT-26 Calendar Gap Analysis | Temporal gap detection |
-| 2.6 Focus Time Block Scheduling | C-GUTT-28 Focus Time Block Scheduling | Focus time creation |
-| 2.7 Actionable Recommendations & Reporting | C-GUTT-31 Reporting & Visualization | Report generation |
+| 2.2 Meeting Importance Classification | C-GUTT-04 Meeting Importance Classification | **Importance ≠ Type. Unique classifier for priority level** |
+| 2.3 Preparation Time Estimation | C-GUTT-18 Preparation Time Estimation | Unique capability, no consolidation |
+| 2.4 Meeting Flagging Logic | C-GUTT-26 Meeting Flagging Logic | Rule-based flagging engine |
+| 2.5 Calendar Gap Analysis | C-GUTT-27 Calendar Gap Analysis | Temporal gap detection |
+| 2.6 Focus Time Block Scheduling | C-GUTT-29 Focus Time Block Scheduling | Focus time creation |
+| 2.7 Actionable Recommendations & Reporting | C-GUTT-32 Reporting & Visualization | Report generation |
 
 #### Prompt 3: Time Reclamation Analysis
 | Original GUTT | Consolidated C-GUTT | Consolidation Rationale |
@@ -442,24 +455,31 @@ GUTTs are considered duplicates/mergeable if they:
 
 ---
 
-## Revised Consolidated Taxonomy (38 Total C-GUTTs)
+## Revised Consolidated Taxonomy (39 Total C-GUTTs)
 
-After detailed mapping, **6 additional unique capabilities** were identified that couldn't be consolidated:
+After detailed mapping, **6 additional unique capabilities** were identified that couldn't be consolidated. Also, **Meeting Importance Classification was separated from Meeting Type Classification** as they are distinct capabilities.
 
-### Additional Capabilities (C-GUTT-33 to C-GUTT-38)
+### Core Taxonomy (C-GUTT-01 to C-GUTT-33)
+See detailed capability descriptions above in Categories 1-6.
 
-33. **Agenda Structure Planning** - Meeting flow design and structure creation
-34. **Agenda Item Generation** - Generate specific discussion topics and content
-35. **Audience-Aware Communication** - Adapt messaging for specific audiences (executives, customers)
-36. **External Research & Enrichment** - Web research and CRM data aggregation
-37. **Profile Compilation** - Individual dossier/profile building
-38. **Relationship History Analysis** - Timeline creation from interaction history
+### Additional Capabilities (C-GUTT-34 to C-GUTT-39)
+
+34. **Agenda Structure Planning** - Meeting flow design and structure creation (Prompt 7)
+35. **Agenda Item Generation** - Generate specific discussion topics and content (Prompt 7)
+36. **Audience-Aware Communication** - Adapt messaging for specific audiences (executives, customers) (Prompt 8)
+37. **External Research & Enrichment** - Web research and CRM data aggregation (Prompt 9)
+38. **Profile Compilation** - Individual dossier/profile building (Prompt 9)
+39. **Relationship History Analysis** - Timeline creation from interaction history (Prompt 9)
 
 ### Final Count
 - **Original GUTTs**: 66
-- **Consolidated C-GUTTs**: 38
-- **Reduction**: 42% fewer units
-- **Average Reusability**: 1.74 prompts per C-GUTT
+- **Consolidated C-GUTTs**: 39
+- **Reduction**: 41% fewer units
+- **Average Reusability**: 1.69 prompts per C-GUTT
+
+**Key Correction**: Meeting Type (C-GUTT-03) vs Meeting Importance (C-GUTT-04) are separate:
+- **Type**: Categorizes meeting format (1:1, group, lunch, standup, etc.) using 31+ taxonomy
+- **Importance**: Assesses priority level (critical/high/medium/low) based on attendees, urgency, topics
 
 ---
 
@@ -494,7 +514,7 @@ After detailed mapping, **6 additional unique capabilities** were identified tha
 
 ## Testing Strategy
 
-### Unit Testing (38 C-GUTT tests)
+### Unit Testing (39 C-GUTT tests)
 - Each C-GUTT has dedicated unit tests
 - Test with various inputs from all applicable prompts
 - Validate edge cases and error handling
@@ -513,11 +533,11 @@ After detailed mapping, **6 additional unique capabilities** were identified tha
 ## Metrics & Success Criteria
 
 ### Development Efficiency
-- **Target**: 38 C-GUTTs implemented vs 66 original → **42% time savings**
+- **Target**: 39 C-GUTTs implemented vs 66 original → **41% time savings**
 - **Metric**: Story points or dev-hours per capability
 
 ### Code Reusability
-- **Target**: Average 1.74 prompts per C-GUTT → **74% reuse rate**
+- **Target**: Average 1.69 prompts per C-GUTT → **69% reuse rate**
 - **Metric**: Count of prompts using each C-GUTT
 
 ### Test Coverage
@@ -525,7 +545,7 @@ After detailed mapping, **6 additional unique capabilities** were identified tha
 - **Metric**: Code coverage tools + prompt test pass rate
 
 ### Maintenance Burden
-- **Target**: 42% fewer components to maintain
+- **Target**: 41% fewer components to maintain
 - **Metric**: Bug fix/update effort over 6 months post-launch
 
 ---
@@ -533,10 +553,11 @@ After detailed mapping, **6 additional unique capabilities** were identified tha
 ## Conclusion
 
 **Key Findings**:
-1. **42% consolidation achieved** - From 66 to 38 atomic capabilities
+1. **41% consolidation achieved** - From 66 to 39 atomic capabilities
 2. **High reuse validated** - Most common C-GUTTs serve 2-5 prompts
 3. **No functionality lost** - All 9 prompts fully covered by consolidated taxonomy
 4. **Clear implementation path** - Phased rollout prioritizes high-impact, reusable capabilities
+5. **Important distinction preserved** - Meeting Type vs Meeting Importance are separate classifiers
 
 **Next Steps**:
 1. Review and validate consolidated taxonomy with product/engineering teams
