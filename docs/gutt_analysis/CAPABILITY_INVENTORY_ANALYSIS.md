@@ -1,15 +1,36 @@
 # Enterprise Meeting Intelligence - Capability Inventory Analysis
 
-**Date**: November 6, 2025  
+**Date**: November 6, 2025 (Updated)  
 **Source**: Analysis of 9 Calendar.AI Hero Prompts (66 GUTTs)  
 **Method**: LLM reasoning across atomic unit task decompositions  
 **Purpose**: Identify foundational capabilities needed for production implementation
+
+**Related Documents**:
+- [Consolidated GUTT Reference](./CONSOLIDATED_GUTT_REFERENCE.md) - Complete inventory of 39 atomic C-GUTTs with examples
+- [GUTT Cross-Prompt Consolidation Analysis](./GUTT_CROSS_PROMPT_CONSOLIDATION_ANALYSIS.md) - Detailed analysis showing 41% reduction from 66 to 39 capabilities
+
+---
+
+## Document Purpose & Relationship to C-GUTTs
+
+This document presents **two complementary views** of the capability landscape:
+
+1. **Infrastructure-Centric View** (This Document): Groups capabilities by technical infrastructure layers (Calendar API, NLP, ML, etc.) for implementation planning
+2. **Atomic C-GUTT View** ([CONSOLIDATED_GUTT_REFERENCE.md](./CONSOLIDATED_GUTT_REFERENCE.md)): 39 atomic capabilities with cross-prompt reusability analysis
+
+**Key Finding**: The 66 original GUTTs consolidate to **39 atomic capabilities (C-GUTTs)**, achieving 41% reduction through cross-prompt analysis. This document's 47 specific technical capabilities map to infrastructure implementation, while C-GUTTs represent functional atomic units.
+
+**Example Mapping**:
+- Infrastructure capability "C1.1 Single Calendar Read" → Implements C-GUTT-01 (Calendar Event Retrieval)
+- Infrastructure capability "C5.1 Meeting Type Classification" → Implements C-GUTT-03 (Meeting Type) AND C-GUTT-04 (Meeting Importance) as **separate classifiers**
 
 ---
 
 ## Executive Summary
 
 Analyzed 66 atomic unit tasks across 9 hero prompts to extract **12 foundational capability clusters** and **47 specific technical capabilities** required for enterprise meeting intelligence.
+
+**Consolidation Update**: Cross-prompt analysis reveals these 66 GUTTs consolidate to **39 unique atomic capabilities (C-GUTTs)**, with average reusability of 1.69 prompts per C-GUTT.
 
 **Key Insights**:
 - **4 Core Infrastructure Capabilities** (Calendar API, NLP, Data Access, Action Execution) enable 85% of GUTTs
@@ -194,23 +215,30 @@ Analyzed 66 atomic unit tasks across 9 hero prompts to extract **12 foundational
 #### 5. **Machine Learning Classification**
 *Enables: 35/66 GUTTs (53%)*
 
+**Important**: Meeting Type and Meeting Importance are **distinct capabilities** (C-GUTT-03 vs C-GUTT-04):
+- **Type** = structural category (1:1, group, lunch, standup) - format-based
+- **Importance** = priority level (critical, high, medium, low) - value-based
+- A 1:1 can be low or high importance; a group meeting can be critical or routine
+
 **Core Capabilities**:
-- **C5.1 Meeting Type Classification**: Categorize meetings into 31+ types
+- **C5.1 Meeting Type Classification** (→ C-GUTT-03): Categorize meetings into 31+ types
   - 1:1s, team meetings, all-hands, workshops, etc.
+  - Based on: attendee count, duration patterns, title keywords, recurrence
   - Confidence scoring
   - Multi-label classification support
-  - **GUTTs Enabled**: 3.2, 5.4 (identify override-eligible meetings), 6.4
+  - **GUTTs Enabled**: 3.2, 6.4 (identify override-eligible meetings)
 
-- **C5.2 Importance Scoring**: Determine meeting importance/priority
-  - Context-based importance (participants, topic, timing)
+- **C5.2 Meeting Importance Classification** (→ C-GUTT-04): Determine meeting priority level
+  - Context-based importance (exec attendance, strategic topics, urgency signals)
   - User-specific importance (role in meeting, relationship to goals)
-  - Temporal urgency
-  - **GUTTs Enabled**: 2.2, 3.4
+  - Temporal urgency (deadline proximity, preparation requirements)
+  - **Distinct from Type**: Focus on value/priority, not format
+  - **GUTTs Enabled**: 2.2 (flag important meetings needing prep)
 
-- **C5.3 Preparation Time Estimation**: Predict prep time needed
+- **C5.3 Preparation Time Estimation** (→ C-GUTT-18): Predict prep time needed
   - Meeting type → prep time mapping
-  - Complexity assessment
-  - User role consideration
+  - Complexity assessment (attendees, materials, decision weight)
+  - User role consideration (presenter vs attendee)
   - **GUTTs Enabled**: 2.3
 
 **Technical Requirements**:
@@ -935,6 +963,15 @@ Explanation (C12) ────────> Trust and debugging
 | Collaborate | 3 | 21 | 7.0 | 6-8 GUTTs |
 | **TOTAL** | **9** | **66** | **7.3** | **6-9 GUTTs** |
 
+**Consolidation Analysis** (See [GUTT_CROSS_PROMPT_CONSOLIDATION_ANALYSIS.md](./GUTT_CROSS_PROMPT_CONSOLIDATION_ANALYSIS.md)):
+- **Original GUTTs**: 66 prompt-specific tasks
+- **Consolidated C-GUTTs**: 39 atomic capabilities
+- **Reduction**: 41% fewer implementation units
+- **Average Reusability**: 1.69 prompts per C-GUTT
+- **Most Reused**: C-GUTT-01 (Calendar Event Retrieval) serves 5 prompts (76% coverage)
+
+**Key Insight**: Significant duplication exists across prompts. Implementing 39 atomic C-GUTTs (rather than 66 discrete capabilities) achieves full coverage with better code reuse.
+
 **GUTT Distribution**:
 - 6 GUTTs: 2 prompts (Calendar Prioritization, Agenda Creation)
 - 7 GUTTs: 3 prompts (Meeting Prep, Recurring 1:1, Executive Briefing)
@@ -942,6 +979,29 @@ Explanation (C12) ────────> Trust and debugging
 - 9 GUTTs: 1 prompt (Multi-Person Scheduling)
 
 **Complexity Correlation**: Higher GUTT count generally correlates with higher complexity and more data sources required.
+
+---
+
+## Relationship Between Infrastructure Capabilities and C-GUTTs
+
+This document's **47 infrastructure capabilities** provide the technical foundation for implementing the **39 atomic C-GUTTs**:
+
+**Mapping Example**:
+
+| Infrastructure Capability | Implements C-GUTTs | Notes |
+|---------------------------|-------------------|-------|
+| C1.1 Single Calendar Read | C-GUTT-01 | Calendar Event Retrieval |
+| C5.1 Meeting Type Classification | C-GUTT-03 | Meeting Type (format-based) |
+| C5.2 Meeting Importance Classification | C-GUTT-04 | Meeting Importance (value-based) - **distinct from type** |
+| C2.1 Constraint Extraction | C-GUTT-09 | Constraint & Requirement Parsing |
+| C8.2 Constraint Satisfaction Solving | C-GUTT-19 | Constraint Satisfaction & Slot Finding |
+
+**Implementation Strategy**:
+1. Build infrastructure capabilities (this document's 47 capabilities)
+2. Compose them into atomic C-GUTTs (39 functional units)
+3. Combine C-GUTTs to deliver hero prompts (9 user-facing features)
+
+For detailed C-GUTT specifications with examples, see [CONSOLIDATED_GUTT_REFERENCE.md](./CONSOLIDATED_GUTT_REFERENCE.md).
 
 ---
 
