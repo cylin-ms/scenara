@@ -362,32 +362,156 @@ Calendar Status: Up to date with only priority-aligned meetings committed ✓
 - **Tier**: 3 (Specialized)
 - **Note**: **NEW CANONICAL TASK** - Addresses "flag any that require focus time" requirement
 
+**Evaluation Criteria**:
+- Importance classification accuracy (% of truly important meetings identified)
+- Prep time estimation reasonableness (realistic time allocations)
+- Flagging precision (only flag meetings actually requiring prep)
+- Tracking setup completeness (monitoring configured for all important meetings)
+- CAN-25 correctness (NEW task appropriately applied for flagging)
+
 ### Execution Composition
 
-**Pattern**: Sequential with parallel classification + specialized flagging
+**How Tasks Work Together to Answer the Prompt:**
 
 ```
-Step 1: CAN-04 (NLU) - Parse tracking and flagging requirements
-   ↓
-Step 2: CAN-01 (Retrieval) - Get upcoming meetings
-   ↓
-Step 3: CAN-07 (Metadata) - Extract meeting details
-   ↓
-Step 4-5: [PARALLEL] CAN-02 (Type) + CAN-03 (Importance)
-   ↓
-Step 6: CAN-21 (Prep Time) - Estimate preparation time needed
-   ↓
-Step 7: CAN-11 (Priority Match) - Filter to important meetings
-   ↓
-Step 8-9: [PARALLEL] CAN-16 (Monitoring) + CAN-25 (Flagging)
+STEP 1: Understand Tracking and Flagging Requirements
+CAN-04 (NLU) → Extract dual intent
+  - Parse: "track all my important meetings" = monitoring requirement
+  - Parse: "flag any that require focus time to prepare" = conditional annotation
+  - Output: {"intent": ["track_meetings", "flag_prep_required"], "criteria": "important", "flag_condition": "requires_focus_time"}
+
+STEP 2: Retrieve Upcoming Meetings
+CAN-01 (Calendar Retrieval) → Load calendar for analysis period
+  - Time range: Next 2-4 weeks (typical planning horizon)
+  - Filter: All scheduled meetings (not just pending)
+  - Output: Array of upcoming calendar events
+
+STEP 3: Extract Meeting Context
+CAN-07 (Metadata Extraction) → Extract complexity indicators
+  - For each meeting: attendees, subject, organizer, agenda, attachments, meeting notes
+  - Complexity signals: Agenda length, attachment count, attendee seniority
+  - Output: Enriched meeting objects with preparation context
+
+STEP 4-5: Classify and Score Meetings (Parallel Processing)
+CAN-02 (Meeting Type) → Classify by format
+  - Categories: 1:1, team sync, customer meeting, exec review, board meeting, all-hands
+  - High-prep types: Executive reviews, board meetings, customer presentations
+
+CAN-03 (Importance Assessment) → Score strategic value
+  - Evaluate: Attendee seniority (VP+, C-level), business impact, customer-facing
+  - Output: Importance ratings (Critical, High, Medium, Low)
+
+STEP 6: Estimate Preparation Time
+CAN-21 (Preparation Time Analysis) → Calculate prep time needed
+  - Input: Meeting type + importance + complexity signals
+  - Logic: 
+    - Executive review with attachments = 90-120 min prep
+    - Customer presentation = 60-90 min prep
+    - Board meeting = 2-4 hours prep
+    - Regular 1:1 = 0-15 min prep
+  - Output: Prep time estimates per meeting
+
+STEP 7: Filter to Important Meetings
+CAN-11 (Priority Matching) → Select meetings to track
+  - Criteria: Importance = "Critical" OR "High"
+  - Output: Filtered list of important meetings requiring tracking
+
+STEP 8-9: Setup Tracking and Flagging (Parallel Operations)
+CAN-16 (Event Monitoring) → Configure change tracking
+  - Monitor: Cancellations, reschedules, attendee changes
+  - Alert: User when important meeting changes occur
+  - Output: Monitoring rules active for important meetings
+
+CAN-25 (Event Annotation/Flagging) → Flag meetings needing prep (NEW TASK)
+  - Condition: IF prep_time > 30 minutes THEN add flag
+  - Flag format: "⚠️ [X] min prep needed before meeting"
+  - Visibility: Add to calendar event as annotation/category
+  - Output: Visual flags added to calendar for prep-required meetings
+
+OUTPUT: Comprehensive meeting tracking and flagging system
+  - Important meetings tracked with change monitoring active
+  - Meetings requiring prep time visually flagged
+  - User can see at-a-glance which meetings need preparation focus time
 ```
 
-**Orchestration Notes**:
-- CAN-21 critical for CAN-25 (prep time estimates drive flagging logic)
-- CAN-16 and CAN-25 can run in parallel (independent operations)
-- CAN-25 (NEW) implements conditional event annotation
+**Key Orchestration Patterns**:
+- **Sequential Foundation**: CAN-04 → CAN-01 → CAN-07 (linear dependency)
+- **Parallel Classification**: CAN-02 and CAN-03 analyze same metadata concurrently
+- **Prep Time Gate**: CAN-21 must complete before CAN-25 (flagging depends on estimates)
+- **Parallel Finalization**: CAN-16 (tracking) and CAN-25 (flagging) are independent operations
+- **Conditional Logic**: CAN-25 only flags IF prep_time > threshold (conditional execution)
+- **NEW Task Pattern**: CAN-25 introduces event annotation capability (V2.0 framework addition)
 
-**V2.0 Framework Impact**: This prompt drove the creation of CAN-25 (Event Annotation/Flagging)
+**Example Flow - Meeting Tracking and Flagging**:
+
+```
+User Request: "Track all my important meetings and flag any that require focus time to prepare for them."
+
+CAN-04: Parse requirements ✓
+  → track: important meetings
+  → flag: meetings requiring focus time for prep
+  → criteria: importance + prep time needed
+
+CAN-01: Retrieved 12 upcoming meetings ✓
+  1. "Weekly 1:1 with Direct Report" (30 min, Monday)
+  2. "Q4 Business Review with CEO" (60 min, Wednesday)
+  3. "Customer Presentation - Contoso" (90 min, Thursday)
+  4. "Team Standup" (15 min, Daily)
+  5. "Board of Directors Meeting" (120 min, Friday)
+  ... (7 more meetings)
+
+CAN-07: Extract metadata ✓
+  Meeting 2: Attendees: [CEO, CFO, VP Ops], Agenda: 15-page deck attached, Notes: "Prepare revenue projections"
+  Meeting 3: Attendees: [Contoso VP, CTO, Account Team], Agenda: "Product demo", Attachments: Demo script, slides
+  Meeting 5: Attendees: [Board members (6)], Agenda: "Quarterly board review", Attachments: Board packet (50 pages)
+
+CAN-02: Classify types ✓
+  Meeting 1: "1:1 - Management"
+  Meeting 2: "Executive Review"  
+  Meeting 3: "Customer Presentation"
+  Meeting 4: "Team Sync"
+  Meeting 5: "Board Meeting"
+
+CAN-03: Assess importance ✓
+  Meeting 1: Medium (routine 1:1)
+  Meeting 2: CRITICAL (CEO, financial review)
+  Meeting 3: HIGH (customer VP, product demo)
+  Meeting 4: Low (daily standup)
+  Meeting 5: CRITICAL (board governance)
+
+CAN-21: Estimate prep time ✓
+  Meeting 1: 15 min (review notes)
+  Meeting 2: 120 min (prepare projections, review 15-page deck)
+  Meeting 3: 90 min (rehearse demo, review script)
+  Meeting 4: 0 min (no prep needed)
+  Meeting 5: 240 min (review 50-page packet, prepare responses)
+
+CAN-11: Filter to important meetings ✓
+  Important meetings identified: 2 (Q4 Business Review), 3 (Customer Presentation), 5 (Board Meeting)
+  → 3 meetings selected for tracking
+
+CAN-16: Setup monitoring ✓
+  → Tracking enabled for meetings 2, 3, 5
+  → Alerts configured for cancellations, reschedules, attendee changes
+
+CAN-25: Flag meetings needing prep time ✓ (NEW TASK)
+  Meeting 2: Prep time 120 min > 30 min threshold → FLAG ⚠️
+    → Added annotation: "⚠️ 120 min prep needed - Review deck & prepare projections"
+  Meeting 3: Prep time 90 min > 30 min threshold → FLAG ⚠️
+    → Added annotation: "⚠️ 90 min prep needed - Rehearse demo & review script"
+  Meeting 5: Prep time 240 min > 30 min threshold → FLAG ⚠️
+    → Added annotation: "⚠️ 240 min prep needed - Review board packet (50 pages)"
+
+OUTPUT to User:
+  ✅ Tracking 3 important meetings (Q4 Business Review, Customer Presentation, Board Meeting)
+  ✅ Change monitoring active (will alert on cancellations/reschedules)
+  ✅ 3 meetings flagged for prep time:
+     ⚠️ Wed - Q4 Business Review: 120 min prep needed
+     ⚠️ Thu - Customer Presentation: 90 min prep needed  
+     ⚠️ Fri - Board Meeting: 240 min prep needed (schedule focus time!)
+
+**Key Insight**: CAN-25 (Event Annotation/Flagging) is a NEW canonical task created specifically for this use case. The "flag any that require focus time" requirement couldn't be satisfied by existing tasks - it needed a new capability for conditional event annotation based on computed conditions.
+```
 
 ---
 
@@ -458,18 +582,196 @@ Step 8-9: [PARALLEL] CAN-16 (Monitoring) + CAN-25 (Flagging)
 - **Tier**: 3 (Specialized)
 - **Note**: Helps user "understand" through visualization
 
+**Evaluation Criteria**:
+- Time categorization accuracy (% of meetings correctly classified by type)
+- Priority alignment scoring correctness (meetings properly matched to priorities)
+- Recommendation actionability (% of suggestions user can realistically implement)
+- Visualization clarity (dashboard effectively communicates time patterns)
+- Reclamation opportunity identification (low-value time correctly identified)
+
 ### Execution Composition
 
-**Pattern**: Sequential with parallel classification + final reporting
+**How Tasks Work Together to Answer the Prompt:**
 
 ```
-Step 1: CAN-04 (NLU) - Parse time analysis and reclamation intent
-   ↓
-Step 2: CAN-01 (Retrieval) - Get historical + upcoming meetings
-   ↓
-Step 3: CAN-07 (Metadata) - Extract meeting details
-   ↓
-Step 4-5: [PARALLEL] CAN-02 (Type) + CAN-03 (Importance)
+STEP 1: Understand Analysis Requirements
+CAN-04 (NLU) → Extract dual intent
+  - Parse: "understand where I am spending my time" = time analysis requirement
+  - Parse: "identify ways I can reclaim time" = optimization/recommendation requirement
+  - Parse: "focus more on my top priorities" = priority-based filtering
+  - Output: {"intent": ["time_analysis", "reclamation_recommendations"], "priorities": [user's top priorities], "timeframe": "historical_analysis"}
+
+STEP 2: Retrieve Meeting History
+CAN-01 (Calendar Retrieval) → Load comprehensive meeting dataset
+  - Time range: Past 1-3 months (historical analysis) + upcoming 2 weeks
+  - Include: All completed and scheduled meetings
+  - Filter: Exclude canceled meetings
+  - Output: Complete meeting history (e.g., 180 meetings over 90 days)
+
+STEP 3: Extract Meeting Details
+CAN-07 (Metadata Extraction) → Extract classification signals
+  - For each meeting: attendees, duration, subject, organizer, recurrence pattern
+  - Additional: Meeting notes, attachments, historical attendance
+  - Output: Enriched meeting objects with full context
+
+STEP 4-5: Classify and Score Meetings (Parallel Processing)
+CAN-02 (Meeting Type) → Categorize by format
+  - Categories: 1:1, team sync, customer meeting, planning, all-hands, admin, other
+  - Pattern detection: Recurring vs ad-hoc
+  - Output: Type classification for time bucketing
+
+CAN-03 (Importance Assessment) → Score strategic value
+  - Criteria: Business impact, attendee seniority, strategic alignment, customer-facing
+  - Ratings: High-value (strategic), Medium-value (necessary), Low-value (reclaim candidates)
+  - Output: Importance scores for filtering
+
+STEP 6: Aggregate Time Patterns
+CAN-10 (Time Aggregation) → Calculate time distribution statistics
+  - By type: "30% in 1:1s, 25% in customer meetings, 20% in team syncs, 15% in planning, 10% admin"
+  - By participant: "8 hours/month with Manager, 6 hours with Product Team"
+  - By importance: "40% high-value, 35% medium-value, 25% low-value"
+  - Trends: Time spend increasing/decreasing over time
+  - Output: Comprehensive time breakdown with multiple dimensions
+
+STEP 7: Match Against Priorities
+CAN-11 (Priority Matching) → Analyze priority alignment
+  - Compare: Current time allocation vs user's stated top priorities
+  - Gap analysis: Where time SHOULD go vs where it ACTUALLY goes
+  - Output: Priority alignment scores and misalignment identification
+
+STEP 8-9: Generate Insights and Visualizations (Parallel Processing)
+CAN-14 (Recommendation Engine) → Generate reclamation opportunities
+  - Identify: Low-value recurring meetings (weekly admin reviews, status meetings)
+  - Suggest: Decline, delegate, reduce frequency, shorten duration, consolidate
+  - Prioritize: Highest-impact reclamation opportunities first
+  - Output: Ranked list of actionable recommendations with time savings estimates
+
+CAN-20 (Data Visualization) → Create visual dashboard
+  - Pie chart: Time by meeting type
+  - Bar chart: Hours per week over time (trending)
+  - Heatmap: Meeting density by day/hour
+  - Priority breakdown: High vs medium vs low value meetings
+  - Output: Interactive visual dashboard
+
+OUTPUT: Comprehensive time analysis and reclamation report
+  1. WHERE TIME GOES: Breakdown by type, participant, priority (with visualizations)
+  2. PATTERNS DETECTED: Recurring commitments, trending changes
+  3. PRIORITY ALIGNMENT: Gap between current spend vs top priorities
+  4. RECLAMATION OPPORTUNITIES: Specific recommendations to free up 5-10 hours/week
+```
+
+**Key Orchestration Patterns**:
+- **Historical Analysis Focus**: All tasks operate on PAST data (1-3 months lookback) plus future scheduled
+- **Parallel Classification**: CAN-02, CAN-03, CAN-07 process same events concurrently
+- **Aggregation Pipeline**: CAN-10 (time stats) feeds both CAN-14 (recommendations) and CAN-20 (visualization)
+- **Recommendation Filtering**: CAN-14 uses CAN-03 (importance) and CAN-11 (priority match) to identify reclamation targets
+- **Dual Output**: CAN-14 (actionable text) + CAN-20 (visual dashboard) provide complementary insights
+- **Most Complex Prompt**: Uses 9 tasks across all tiers - demonstrates full framework capabilities
+
+**Example Flow - Time Analysis and Reclamation**:
+
+```
+User Request: "Help me understand where I am spending my time and identify ways I can reclaim time to focus more on my top priorities."
+User Priorities: ["customer meetings", "product strategy", "team development"]
+
+CAN-04: Extract intent ✓
+  → analyze time spend + generate reclamation recommendations
+  → priorities: ["customer meetings", "product strategy", "team development"]
+
+CAN-01: Retrieved 180 meetings (past 90 days) ✓
+  - Completed: 165 meetings
+  - Upcoming: 15 meetings
+  - Total hours: 165 hours (11 hours/week average)
+
+CAN-07: Extract metadata for all 180 meetings ✓
+  - Attendee counts: Range 2-50 people
+  - Durations: Range 15 min - 2 hours
+  - Recurrence: 60 recurring, 120 ad-hoc
+
+CAN-02: Classify meeting types ✓
+  - 1:1s: 50 meetings (30 hours total)
+  - Team syncs: 40 meetings (20 hours)
+  - Customer meetings: 25 meetings (40 hours)
+  - Planning sessions: 15 meetings (30 hours)
+  - Admin meetings: 30 meetings (25 hours)
+  - Other: 20 meetings (20 hours)
+
+CAN-03: Assess importance ✓
+  - High-value: 40 meetings (customer + strategy = 70 hours, 42%)
+  - Medium-value: 70 meetings (team syncs + planning = 60 hours, 36%)
+  - Low-value: 70 meetings (admin + some 1:1s = 35 hours, 22%)
+
+CAN-10: Aggregate time statistics ✓
+  By Type:
+  - 1:1s: 30 hours (18%)
+  - Customer meetings: 40 hours (24%) ← Aligns with priority!
+  - Team syncs: 20 hours (12%)
+  - Planning: 30 hours (18%)
+  - Admin: 25 hours (15%) ← LOW VALUE!
+  - Other: 20 hours (12%)
+  
+  By Priority Alignment:
+  - Aligned with priorities: 70 hours (42%)
+  - Necessary but not priorities: 60 hours (36%)
+  - NOT aligned (reclaim candidates): 35 hours (22%)
+
+CAN-11: Priority matching analysis ✓
+  ✅ Customer meetings (40 hrs) - STRONG alignment with "customer meetings" priority
+  ⚠️ Product strategy (only 15 hrs) - WEAK alignment despite being priority!
+  ⚠️ Team development (1:1s 30 hrs) - MODERATE alignment
+  ❌ Admin meetings (25 hrs) - NO alignment, reclaim target!
+
+CAN-14: Generate reclamation recommendations ✓
+  1. **Decline "Weekly Admin Review" (recurring)** → Reclaim 8 hours/month (96 hrs/year)
+     - Rationale: Low-value recurring meeting, organizer is peer, can get updates via email
+  
+  2. **Shorten daily standup from 30→15 min** → Reclaim 5 hours/month (60 hrs/year)
+     - Rationale: Team sync often runs over, strict timeboxing can work
+  
+  3. **Delegate 2 recurring 1:1s** → Reclaim 4 hours/month (48 hrs/year)
+     - Rationale: Two team members are senior enough for skip-level reporting
+  
+  4. **Consolidate monthly planning meetings** → Reclaim 3 hours/month (36 hrs/year)
+     - Rationale: Three separate planning meetings could be one combined session
+  
+  Total potential reclamation: 20 hours/month (240 hours/year!)
+
+CAN-20: Create visual dashboard ✓
+  → Pie chart: Time by type (shows 15% in admin = LOW VALUE)
+  → Bar chart: Hours/week over 12 weeks (trending up - concerning!)
+  → Priority alignment gauge: 42% aligned, 58% not aligned with priorities
+  → Heatmap: Heavy meeting load Tue-Thu afternoons
+
+OUTPUT to User:
+
+📊 **WHERE YOU SPEND YOUR TIME** (Past 90 days):
+- Customer meetings: 40 hrs (24%) ✅ ALIGNED WITH PRIORITIES
+- Planning: 30 hrs (18%)
+- 1:1s: 30 hrs (18%)
+- Admin: 25 hrs (15%) ❌ LOW VALUE!
+- Team syncs: 20 hrs (12%)
+- Other: 20 hrs (12%)
+
+📈 **PRIORITY ALIGNMENT ANALYSIS**:
+- ✅ Strong: Customer meetings (24% of time, top priority)
+- ⚠️ **GAP**: Product strategy (only 9% of time, but listed as top priority!)
+- ⚠️ Moderate: Team development (18% in 1:1s)
+- ❌ **MISALIGNMENT**: 22% of time in low-value admin/other
+
+💡 **TIME RECLAMATION OPPORTUNITIES** (Ranked by impact):
+1. Decline "Weekly Admin Review" → Save 96 hrs/year
+2. Shorten daily standup 30→15 min → Save 60 hrs/year
+3. Delegate 2 recurring 1:1s to senior leads → Save 48 hrs/year
+4. Consolidate monthly planning → Save 36 hrs/year
+
+**Total potential reclamation: 240 hours/year (6 full work weeks!)**
+
+🎯 **RECOMMENDATION**: Use reclaimed time to increase product strategy focus (currently only 15 hrs vs 40 hrs in customer meetings). Gap analysis shows strategy is stated priority but under-represented in calendar.
+
+[Visual Dashboard showing pie charts, trend lines, and priority alignment]
+```
+
+---
    ↓
 Step 6: CAN-10 (Time Aggregation) - Compute time breakdowns
    ↓
@@ -553,34 +855,208 @@ Step 8-9: [PARALLEL] CAN-14 (Recommendations) + CAN-20 (Visualization)
 - **Tier**: 3 (Specialized)
 - **Dependencies**: CAN-16 (monitoring must be active)
 
+**Evaluation Criteria**:
+- Constraint satisfaction accuracy (afternoon preference, avoid Friday correctly applied)
+- Recurrence rule correctness (weekly RRULE properly formatted)
+- Automation setup completeness (monitoring + auto-reschedule fully configured)
+- Attendee resolution accuracy (correct person identified and scheduled)
+- Conflict detection reliability (overlaps detected before scheduling)
+
 ### Execution Composition
 
-**Pattern**: Sequential with constraint resolution + automation setup
+**How Tasks Work Together to Answer the Prompt:**
 
 ```
-Step 1: CAN-04 (NLU) - Parse scheduling requirements
-   ↓
-Step 2: CAN-05 (Attendee Resolution) - Resolve "{name}"
-   ↓
-Step 3: CAN-01 (Retrieval) - Get existing calendar
-   ↓
-Step 4: CAN-06 (Availability) - Find afternoon slots (not Friday)
-   ↓
-Step 5: CAN-12 (Constraints) - Select best time slot
-   ↓
-Step 6: CAN-15 (Recurrence) - Generate weekly RRULE
-   ↓
-Step 7: CAN-03 (Event Creation) - Create recurring meeting
-   ↓
-Step 8: CAN-16 (Monitoring) - Setup change detection
-   ↓
-Step 9: CAN-17 (Auto-reschedule) - Enable automatic rescheduling
+STEP 1: Understand Scheduling Requirements
+CAN-04 (NLU) → Extract scheduling constraints and automation preferences
+  - Parse: "Starting next week" = start_date constraint
+  - Parse: "weekly 30-min 1:1" = recurrence pattern + duration
+  - Parse: "with {name}" = attendee requirement
+  - Parse: "Afternoons preferred, avoid Fridays" = soft + hard time constraints
+  - Parse: "Automatically reschedule on declines or conflicts" = automation requirement
+  - Output: {"duration": 30, "recurrence": "weekly", "attendee": "{name}", "preferences": {"time": "afternoon", "avoid": ["friday"]}, "automation": ["auto_reschedule_on_decline", "auto_reschedule_on_conflict"]}
+
+STEP 2: Resolve Attendee Identity
+CAN-05 (Attendee Resolution) → Look up "{name}" in directory
+  - Search: Organization directory, contact list, recent collaborators
+  - Match: Resolve to full contact details (email, calendar URL, timezone)
+  - Validate: Confirm calendar access available
+  - Output: Full attendee object with calendar permissions
+
+STEP 3: Retrieve Existing Calendar State
+CAN-01 (Calendar Retrieval) → Load current calendar events
+  - Time range: "Next week" + recurring future (52 weeks for recurrence)
+  - Purpose: Detect conflicts before scheduling
+  - Include: User's calendar (for conflicts) + attendee's calendar (for availability)
+  - Output: Complete calendar dataset for both parties
+
+STEP 4: Check Attendee Availability
+CAN-06 (Availability Checking) → Find afternoon slots avoiding Friday
+  - Analyze: User + attendee calendars for free/busy times
+  - Filter: Only afternoon slots (e.g., 12pm-5pm)
+  - Exclude: All Friday slots (hard constraint)
+  - Week-by-week: Check recurring availability pattern
+  - Output: List of available afternoon slots ["Mon 2pm", "Tue 3pm", "Wed 2pm", "Thu 4pm"]
+
+STEP 5: Select Optimal Time Slot
+CAN-12 (Constraint Satisfaction) → Apply preferences to select best time
+  - Hard constraints: Must be afternoon, must not be Friday
+  - Soft preferences: Earlier in week better (more prep time)
+  - Recurring feasibility: Select slot available most weeks (minimize conflicts)
+  - Output: Optimal time selection (e.g., "Mondays 2:00 PM")
+
+STEP 6: Generate Recurrence Rule
+CAN-15 (Recurrence Rule Generation) → Create weekly RRULE pattern
+  - Frequency: WEEKLY
+  - Day: BYDAY=MO (if Monday selected)
+  - Start: DTSTART = next Monday at 2pm
+  - No end date: Ongoing recurrence
+  - Output: RRULE string "FREQ=WEEKLY;BYDAY=MO;DTSTART=20250113T140000Z"
+
+STEP 7: Create Recurring Meeting
+CAN-03 (Event Creation) → Schedule meeting on both calendars
+  - Create: Calendar event with recurrence pattern
+  - Invite: Send meeting invitation to attendee
+  - Subject: "1:1 with {name}" (auto-generated)
+  - Attributes: Duration 30 min, recurring weekly, location TBD
+  - Output: Calendar event ID (for monitoring)
+
+STEP 8: Setup Change Monitoring
+CAN-16 (Event Monitoring) → Configure webhooks for meeting changes
+  - Monitor: Decline responses from attendee
+  - Monitor: Schedule conflicts (new meetings overlapping)
+  - Monitor: Calendar changes (attendee moves/cancels)
+  - Trigger: Webhook fires on any of these events
+  - Output: Monitoring service active, event ID registered
+
+STEP 9: Enable Automatic Rescheduling
+CAN-17 (Auto-Reschedule) → Configure rescheduling workflow
+  - On decline: Trigger CAN-06 (find new time) → CAN-12 (select) → CAN-03 (update)
+  - On conflict: Same rescheduling workflow
+  - Notification: Send rescheduling confirmation to both parties
+  - Retry logic: If no slots available, notify user for manual intervention
+  - Output: Automation workflow active, linked to CAN-16 webhooks
+
+OUTPUT: Fully automated recurring meeting system
+  1. Weekly 1:1 scheduled (Mondays 2pm, starting next week)
+  2. Attendee invited and confirmed
+  3. Monitoring active for declines/conflicts
+  4. Automatic rescheduling enabled (hands-free maintenance)
 ```
 
-**Orchestration Notes**:
-- CAN-05 must complete before CAN-06 (need attendee calendar)
-- CAN-16 → CAN-17 dependency (monitoring enables auto-reschedule)
-- Steps 8-9 are automation setup (one-time configuration)
+**Key Orchestration Patterns**:
+- **Sequential Dependency Chain**: CAN-05 → CAN-06 (must resolve attendee before checking their availability)
+- **Recurrence Pipeline**: CAN-12 (select time) → CAN-15 (generate RRULE) → CAN-03 (create recurring event)
+- **Automation Layer**: CAN-16 (monitoring) → CAN-17 (auto-reschedule) - real-time reactive workflow
+- **Constraint Filtering**: CAN-06 applies hard constraints (afternoon, not Friday), CAN-12 applies soft preferences
+- **Event-Driven Architecture**: CAN-17 subscribes to CAN-16 events for automatic execution
+- **Most Specialized Prompt**: Uses 3 Tier-3 tasks (CAN-15, CAN-16, CAN-17) - demonstrates advanced capabilities
+
+**Example Flow - Recurring 1:1 with Automated Rescheduling**:
+
+```
+User Request: "Starting next week, I want a weekly 30-min 1:1 with Sarah Chen. Afternoons preferred, avoid Fridays. Automatically reschedule on declines or conflicts."
+
+CAN-04: Extract scheduling requirements ✓
+  → duration: 30 min
+  → recurrence: weekly
+  → attendee: "Sarah Chen"
+  → preferences: afternoon, avoid Friday
+  → automation: auto-reschedule enabled
+
+CAN-05: Resolve attendee ✓
+  → Found: Sarah Chen (sarah.chen@company.com)
+  → Title: Product Manager
+  → Calendar access: ✓ Available
+  → Timezone: PST (same as user)
+
+CAN-01: Retrieve calendars ✓
+  User calendar: 42 meetings next 4 weeks
+  Sarah's calendar: 38 meetings next 4 weeks
+  Overlap conflicts: 12 shared time blocks
+
+CAN-06: Check afternoon availability (avoiding Friday) ✓
+  Week 1 options:
+  - Mon 2-3pm ✅ Both free
+  - Mon 3-4pm ✅ Both free
+  - Tue 2-3pm ❌ User has meeting
+  - Wed 3-4pm ✅ Both free
+  - Thu 4-5pm ❌ Sarah has meeting
+  - Fri 2-5pm 🚫 EXCLUDED (hard constraint)
+
+CAN-12: Select optimal time ✓
+  Candidates: Mon 2pm, Mon 3pm, Wed 3pm
+  Selected: **Monday 2:00 PM** (earliest in week, consistent slot)
+  Rationale: Monday provides most prep time for weekly sync
+
+CAN-15: Generate recurrence rule ✓
+  RRULE: FREQ=WEEKLY;BYDAY=MO;DTSTART=20250113T140000Z
+  First occurrence: January 13, 2025 at 2:00 PM PST
+  Recurring: Every Monday indefinitely
+
+CAN-03: Create recurring meeting ✓
+  Event created: "1:1 with Sarah Chen"
+  Duration: 30 minutes (2:00-2:30 PM)
+  Recurrence: Weekly on Mondays
+  Attendees: User + Sarah Chen
+  Invitation sent: ✓ Awaiting Sarah's response
+
+CAN-16: Setup monitoring ✓
+  Webhooks configured:
+  - Decline event: If Sarah declines any instance
+  - Conflict event: If new meeting overlaps 1:1 time
+  - Change event: If Sarah moves/cancels
+  Event ID tracked: cal_evt_12345
+  Monitoring status: 🟢 Active
+
+CAN-17: Enable auto-rescheduling ✓
+  Rescheduling workflow:
+  1. Webhook triggers on decline/conflict
+  2. Auto-run CAN-06 to find alternative afternoon slots (not Friday)
+  3. Auto-run CAN-12 to select best alternative
+  4. Auto-run CAN-03 to update meeting time
+  5. Send notification: "Your 1:1 with Sarah has been automatically rescheduled to..."
+  Fallback: If no slots available, notify user for manual handling
+  Automation status: 🟢 Active
+
+OUTPUT to User:
+
+✅ **RECURRING 1:1 SCHEDULED**:
+- **Meeting**: 1:1 with Sarah Chen
+- **Schedule**: Every Monday, 2:00-2:30 PM PST
+- **First occurrence**: January 13, 2025
+- **Location**: TBD (Microsoft Teams link auto-generated)
+
+✅ **AUTOMATION CONFIGURED**:
+- **Monitoring**: Active for declines and conflicts
+- **Auto-Rescheduling**: Enabled
+  - If Sarah declines: System will automatically find new afternoon time (not Friday)
+  - If conflict detected: System will automatically reschedule
+  - Notifications: Both parties notified of any rescheduling
+
+📧 **NEXT STEP**: Awaiting Sarah's acceptance
+
+---
+
+**SCENARIO: Sarah Declines First Instance** (Automation in Action)
+
+3 days later: Sarah declines January 13 meeting
+
+CAN-16: Detect decline event ✓
+  → Webhook fired: sarah.chen@company.com declined cal_evt_12345_instance_1
+
+CAN-17: Trigger auto-reschedule ✓
+  → Re-run CAN-06: Find afternoon slots week of Jan 13 (not Friday)
+  → Available: Tue Jan 14 3pm, Wed Jan 15 2pm
+  → Re-run CAN-12: Select Wed Jan 15 2pm (better than Tue)
+  → Re-run CAN-03: Update meeting to Wed Jan 15, 2:00 PM
+  → Send notification to user and Sarah
+
+Notification to User:
+"Your 1:1 with Sarah Chen has been automatically rescheduled from Monday, Jan 13 at 2pm to Wednesday, Jan 15 at 2pm. Future occurrences remain on Mondays at 2pm."
+
+**Key Insight**: CAN-17 (Automatic Rescheduling) creates a "self-healing" calendar - user never has to manually handle declines or conflicts. This is a sophisticated workflow requiring CAN-16 monitoring + full rescheduling pipeline (CAN-06 + CAN-12 + CAN-03) to execute automatically.
+```
 
 ---
 
@@ -656,32 +1132,256 @@ Step 9: CAN-17 (Auto-reschedule) - Enable automatic rescheduling
 - **Output**: Calendar events updated to new times
 - **Tier**: 1 (Universal)
 
+**Evaluation Criteria**:
+- RSVP update correctness (status correctly updated to decline/tentative)
+- Attendee resolution completeness (all meeting participants identified)
+- Availability detection accuracy (suitable alternative slots found)
+- Rescheduling plan quality (proposed times work for all attendees)
+- CAN-05 inclusion (CRITICAL - human evaluator identified this as missing dependency)
+
 ### Execution Composition
 
-**Pattern**: Sequential with metadata extraction enabling parallelization
+**How Tasks Work Together to Answer the Prompt:**
 
 ```
-Step 1: CAN-04 (NLU) - Parse rescheduling requirements
-   ↓
-Step 2: CAN-01 (Retrieval) - Get Thursday afternoon meetings
-   ↓
-Step 3: CAN-07 (Metadata) - Extract attendees and RSVP status
-   ↓
-Step 4: CAN-05 (Attendee Resolution) - Resolve attendees for coordination
-   ↓
-Step 5-6: [PARALLEL] CAN-13 (RSVP Update) + CAN-06 (Availability Check)
-   ↓
-Step 7: CAN-12 (Constraints) - Select best alternative times
-   ↓
-Step 8: CAN-23 (Agenda/Plan) - Generate rescheduling proposal
-   ↓
-Step 9: CAN-03 (Event Update) - Update calendar with new times
+STEP 1: Understand Rescheduling Requirements
+CAN-04 (NLU) → Parse multi-action request
+  - Parse: "Clear my Thursday afternoon" = time block to free up
+  - Parse: "Update my RSVPs" = change response status for affected meetings
+  - Parse: "reschedule my meetings to another time" = find alternative slots
+  - Parse: "show me as {status}" = set calendar status display
+  - Output: {"clear_time": "Thursday afternoon", "actions": ["update_rsvp", "reschedule", "set_status"], "status": "{status}"}
+
+STEP 2: Retrieve Thursday Afternoon Meetings
+CAN-01 (Calendar Retrieval) → Load meetings in target time block
+  - Time range: Thursday 12:00 PM - 5:00 PM (afternoon definition)
+  - Filter: Meetings where user is attendee (not organizer-only)
+  - Include: RSVP status, attendees, organizer, duration
+  - Output: List of meetings to be cleared (e.g., 4 meetings in Thursday afternoon)
+
+STEP 3: Extract Meeting Metadata
+CAN-07 (Metadata Extraction) → Get detailed meeting information
+  - For each meeting: Attendee lists, organizer, duration, recurrence, RSVP status
+  - Extract: Meeting importance signals (customer meeting? 1:1? team sync?)
+  - Extract: Flexibility indicators (recurring? organizer is peer? )
+  - Purpose: Provide context for CAN-05 and CAN-13
+  - Output: Enriched meeting objects with full metadata
+
+STEP 4: Resolve All Attendees (CRITICAL - MISSING IN ORIGINAL)
+CAN-05 (Attendee/Contact Resolution) → Resolve attendees for coordination
+  - Input: Attendee lists from CAN-07 (names/emails)
+  - Resolve: Full contact details, calendar URLs, timezones
+  - Purpose: **ESSENTIAL** for CAN-06 availability checking (need attendee calendars!)
+  - Output: Fully resolved attendee objects with calendar access
+
+STEP 5-6: Update RSVPs and Find Alternative Slots (Parallel Processing)
+CAN-13 (RSVP Status Update) → Decline or mark tentative
+  - For each Thursday meeting: Update user's RSVP to "Declined" or "Tentative" (based on {status})
+  - Send: RSVP update notifications to organizers
+  - Purpose: Immediately free up Thursday afternoon slot
+  - Output: RSVP updates sent for all 4 meetings
+
+CAN-06 (Availability Checking) → Find alternative times for rescheduling
+  - Input: Resolved attendees from CAN-05 + meeting durations from CAN-07
+  - For each meeting: Check common availability across all attendees
+  - Constraints: Avoid Thursday afternoon, find slots within next 1-2 weeks
+  - Output: List of alternative time slots for each meeting
+
+STEP 7: Select Best Alternative Times
+CAN-12 (Constraint Satisfaction) → Apply preferences to select optimal slots
+  - Preferences: Minimize attendee conflicts, respect user's calendar patterns
+  - Logic: Earlier in week better, group similar meetings together
+  - Validation: Ensure selected times don't conflict with existing commitments
+  - Output: Optimal rescheduling plan (Meeting A → Mon 2pm, Meeting B → Tue 10am, etc.)
+
+STEP 8: Generate Rescheduling Proposal
+CAN-23 (Agenda/Document Generation) → Create rescheduling plan summary
+  - Format: Structured document showing old time → new time for each meeting
+  - Include: Rationale for each change (attendee availability, user preferences)
+  - Include: Attendees for each meeting (for user review)
+  - Purpose: Human evaluator noted this task for transparency/review
+  - Output: Rescheduling proposal document
+
+STEP 9: Update Calendar with New Times
+CAN-03 (Event Creation/Update) → Execute rescheduling
+  - For each meeting: Update meeting time to new slot
+  - Send: Meeting update notifications to all attendees
+  - Update: User's calendar status to {status} for original Thursday afternoon block
+  - Output: Calendar events updated, Thursday afternoon now clear
+
+OUTPUT: Thursday afternoon cleared with meetings rescheduled
+  1. RSVP updates sent for all Thursday meetings
+  2. Alternative times proposed and scheduled
+  3. User's calendar shows {status} for Thursday afternoon
+  4. All attendees notified of rescheduling
 ```
 
-**Orchestration Notes**:
-- CAN-05 critical dependency for CAN-06 (need attendee calendars)
-- CAN-13 and CAN-06 can run in parallel after CAN-05
-- User confirmation recommended before CAN-03 (final updates)
+**Key Orchestration Patterns**:
+- **Metadata Extraction Enabler**: CAN-07 provides critical input for both CAN-05 and CAN-13
+- **MISSING TASK DEPENDENCY**: CAN-05 is ESSENTIAL - cannot check availability (CAN-06) without attendee calendars
+- **Parallel RSVP + Availability**: CAN-13 and CAN-06 can run concurrently after CAN-05 completes
+- **Human Review Layer**: CAN-23 generates proposal before CAN-03 executes (recommended for user confirmation)
+- **Multi-Action Coordination**: Single prompt triggers 3 distinct actions (RSVP update, rescheduling, status setting)
+- **Critical Human Evaluator Insight**: Original decomposition missed CAN-05 - human noted "model needs to get metadata, and from there to find attendee for those meetings"
+
+**Example Flow - Clear Thursday Afternoon with Rescheduling**:
+
+```
+User Request: "Clear my Thursday afternoon. Update my RSVPs and help me reschedule my meetings to another time and show me as Out of Office."
+
+CAN-04: Extract rescheduling requirements ✓
+  → clear_time: "Thursday afternoon"
+  → actions: ["update_rsvp", "reschedule", "set_status"]
+  → status: "Out of Office"
+
+CAN-01: Retrieve Thursday afternoon meetings ✓
+  Found 4 meetings:
+  - 1:00-2:00 PM: "Product Roadmap Review" (Sarah, Mike, 3 others)
+  - 2:00-3:00 PM: "Customer Check-in: Acme Corp" (Jennifer, Customer team)
+  - 3:00-3:30 PM: "1:1 with Manager" (Manager only)
+  - 4:00-5:00 PM: "Team Sprint Planning" (Entire engineering team, 12 people)
+
+CAN-07: Extract metadata ✓
+  Meeting 1: Product Roadmap Review
+  - Attendees: ["Sarah Chen", "Mike Torres", "3 others"]
+  - Organizer: Sarah Chen
+  - Duration: 60 min
+  - Current RSVP: Accepted
+  
+  Meeting 2: Customer Check-in: Acme Corp
+  - Attendees: ["Jennifer Kim", "Customer Success Team"]
+  - Organizer: User (you)
+  - Duration: 60 min
+  - Current RSVP: N/A (organizer)
+  
+  Meeting 3: 1:1 with Manager
+  - Attendees: ["Alex Johnson"]
+  - Organizer: Alex Johnson (manager)
+  - Duration: 30 min
+  - Current RSVP: Accepted
+  
+  Meeting 4: Team Sprint Planning
+  - Attendees: [12 engineering team members]
+  - Organizer: Team lead
+  - Duration: 60 min
+  - Current RSVP: Accepted
+
+CAN-05: Resolve attendees (CRITICAL - MISSING IN ORIGINAL) ✓
+  **Without this step, CAN-06 cannot check attendee availability!**
+  
+  Resolved contacts:
+  - Sarah Chen → sarah.chen@company.com (calendar access ✓)
+  - Mike Torres → mike.torres@company.com (calendar access ✓)
+  - Jennifer Kim → jennifer.kim@company.com (calendar access ✓)
+  - Alex Johnson → alex.johnson@company.com (calendar access ✓)
+  - [12 team members] → All resolved with calendar access
+  
+  Total attendees resolved: 18 unique people across 4 meetings
+
+CAN-13: Update RSVPs (Parallel with CAN-06) ✓
+  Meeting 1: RSVP changed to "Declined" ✓
+  Meeting 2: As organizer, marked as "Out of Office" ✓
+  Meeting 3: RSVP changed to "Declined" ✓
+  Meeting 4: RSVP changed to "Declined" ✓
+  
+  Notifications sent to all organizers
+
+CAN-06: Find alternative time slots (Parallel with CAN-13) ✓
+  **Uses resolved attendees from CAN-05 to check availability**
+  
+  Meeting 1 alternatives:
+  - Mon 2-3pm ✅ Sarah, Mike, 3 others all free
+  - Tue 10-11am ✅ All free
+  - Wed 3-4pm ❌ Mike has conflict
+  
+  Meeting 2 alternatives:
+  - Tue 11am-12pm ✅ Jennifer and team free
+  - Wed 2-3pm ✅ All free
+  - Fri 10-11am ✅ All free
+  
+  Meeting 3 alternatives:
+  - Mon 10-10:30am ✅ Manager free
+  - Tue 9-9:30am ✅ Manager free
+  - Fri 4-4:30pm ✅ Manager free
+  
+  Meeting 4 alternatives:
+  - Tue 2-3pm ❌ 3 people have conflicts
+  - Wed 10-11am ✅ All 12 team members free!
+  - Fri 2-3pm ✅ 11 of 12 free (acceptable)
+
+CAN-12: Select best alternative times ✓
+  Meeting 1: **Tuesday 10-11am** (earliest available, all attendees free)
+  Meeting 2: **Wednesday 2-3pm** (customer meeting, mid-week better)
+  Meeting 3: **Monday 10-10:30am** (start of week, quick sync)
+  Meeting 4: **Wednesday 10-11am** (all 12 attendees available!)
+
+CAN-23: Generate rescheduling proposal ✓
+  
+  **THURSDAY AFTERNOON RESCHEDULING PLAN**
+  
+  **Original Thursday Schedule** (4 meetings, 3.5 hours blocked):
+  
+  ❌ 1:00-2:00 PM: Product Roadmap Review
+  → **Reschedule to**: Tuesday, 10:00-11:00 AM
+  → **Attendees**: Sarah Chen, Mike Torres, 3 others
+  → **Reason**: All attendees available, earlier in week
+  
+  ❌ 2:00-3:00 PM: Customer Check-in: Acme Corp
+  → **Reschedule to**: Wednesday, 2:00-3:00 PM
+  → **Attendees**: Jennifer Kim, Customer Success Team
+  → **Reason**: Customer meeting, mid-week preferred
+  
+  ❌ 3:00-3:30 PM: 1:1 with Manager
+  → **Reschedule to**: Monday, 10:00-10:30 AM
+  → **Attendees**: Alex Johnson
+  → **Reason**: Start of week check-in
+  
+  ❌ 4:00-5:00 PM: Team Sprint Planning
+  → **Reschedule to**: Wednesday, 10:00-11:00 AM
+  → **Attendees**: 12 engineering team members
+  → **Reason**: Only slot with all 12 attendees available!
+  
+  **Result**: Thursday afternoon completely clear, status set to "Out of Office"
+
+CAN-03: Update calendar with new times ✓
+  Meeting 1: Updated to Tue 10am ✓ (Notifications sent to 5 attendees)
+  Meeting 2: Updated to Wed 2pm ✓ (Notifications sent to Customer team)
+  Meeting 3: Updated to Mon 10am ✓ (Notification sent to manager)
+  Meeting 4: Updated to Wed 10am ✓ (Notifications sent to 12 team members)
+  
+  Thursday afternoon: Marked as "Out of Office" ✓
+
+OUTPUT to User:
+
+✅ **THURSDAY AFTERNOON CLEARED**
+
+**Meetings Rescheduled** (4 meetings moved):
+
+1. **Product Roadmap Review**
+   - Was: Thursday 1-2 PM
+   - Now: **Tuesday 10-11 AM** ✅
+   - Attendees: Sarah, Mike, +3 others (all confirmed available)
+
+2. **Customer Check-in: Acme Corp**
+   - Was: Thursday 2-3 PM
+   - Now: **Wednesday 2-3 PM** ✅
+   - Attendees: Jennifer, Customer Success Team (all confirmed)
+
+3. **1:1 with Manager**
+   - Was: Thursday 3-3:30 PM
+   - Now: **Monday 10-10:30 AM** ✅
+   - Attendee: Alex Johnson (confirmed available)
+
+4. **Team Sprint Planning**
+   - Was: Thursday 4-5 PM
+   - Now: **Wednesday 10-11 AM** ✅
+   - Attendees: All 12 engineering team members (confirmed!)
+
+**Status**: Your calendar now shows "Out of Office" for Thursday afternoon
+**Notifications**: All attendees have been notified of the rescheduling
+
+**Key Insight**: CAN-05 (Attendee Resolution) is CRITICAL for this workflow - human evaluator correctly identified it was missing in original decomposition. Without CAN-05, the system cannot access attendee calendars to run CAN-06 (availability checking), making rescheduling impossible. This demonstrates the importance of human evaluation to catch missing dependencies.
+```
 
 ---
 
@@ -758,33 +1458,260 @@ Step 9: CAN-03 (Event Update) - Update calendar with new times
 - **Output**: Calendar event created (may override 1:1s/lunches)
 - **Tier**: 1 (Universal)
 
+**Evaluation Criteria**:
+- Priority constraint enforcement ("work around Kat" correctly applied as hard constraint)
+- Override logic correctness (1:1s and lunches correctly identified as overridable)
+- Multi-attendee availability accuracy (common slots correctly identified for 3 people)
+- Resource booking success (meeting room reserved for in-person requirement)
+- Complex constraint satisfaction (hard + soft constraints balanced appropriately)
+
 ### Execution Composition
 
-**Pattern**: Sequential with parallel analysis + final booking
+**How Tasks Work Together to Answer the Prompt:**
 
 ```
-Step 1: CAN-04 (NLU) - Parse complex constraints
-   ↓
-Step 2: CAN-05 (Attendee Resolution) - Resolve Chris, Sangya, Kat
-   ↓
-Step 3: CAN-01 (Retrieval) - Get all 3 calendars
-   ↓
-Step 4: CAN-07 (Metadata) - Extract meeting details
-   ↓
-Step 5-6: [PARALLEL] CAN-02 (Type Classification) + CAN-03 (Importance)
-   ↓
-Step 7: CAN-06 (Availability) - Find slots (work around Kat)
-   ↓
-Step 8: CAN-12 (Constraints) - Select best time (complex logic)
-   ↓
-Step 9-10: [PARALLEL] CAN-19 (Room Booking) + CAN-03 (Event Creation)
+STEP 1: Understand Complex Scheduling Constraints
+CAN-04 (NLU) → Parse multi-layered requirements
+  - Parse: "land a time to meet about Project Alpha" = scheduling intent with topic
+  - Parse: "with Chris, Sangya, and Kat" = 3 required attendees
+  - Parse: "for 1 hour in the next 2 weeks" = duration + timeframe constraints
+  - Parse: "Schedule over 1:1s and lunches if needed" = SOFT constraint (override permission)
+  - Parse: "work around Kat's schedule" = HARD constraint (Kat has priority)
+  - Parse: "Make the meeting in person and add a room" = location + resource requirements
+  - Output: {"topic": "Project Alpha", "attendees": ["Chris", "Sangya", "Kat"], "duration": 60, "timeframe": "next 2 weeks", "constraints": {"hard": ["work_around_Kat"], "soft": ["override_1:1s_lunches"]}, "location": "in_person", "resources": ["room"]}
+
+STEP 2: Resolve All Attendees
+CAN-05 (Attendee/Contact Resolution) → Look up Chris, Sangya, and Kat
+  - Search: Organization directory for all 3 names
+  - Resolve: Full contact details (emails, calendar URLs, timezones, office locations)
+  - Validate: Confirm calendar access for all 3 attendees
+  - Output: 3 fully resolved attendee objects with calendar permissions
+
+STEP 3: Retrieve All 3 Calendars
+CAN-01 (Calendar Retrieval) → Load calendar events for next 2 weeks
+  - For Chris: Retrieve all events (next 14 days)
+  - For Sangya: Retrieve all events (next 14 days)
+  - For Kat: Retrieve all events (next 14 days) - PRIORITY SCHEDULE
+  - Include: Event types, attendees, importance, flexibility indicators
+  - Output: Complete calendar dataset for 3 people (e.g., 120 total events)
+
+STEP 4: Extract Meeting Metadata
+CAN-07 (Metadata Extraction) → Get detailed meeting information
+  - For each event: Extract attendees, duration, organizer, meeting type signals
+  - Purpose: Identify which meetings are 1:1s or lunches (potentially overridable)
+  - Extract: Importance signals (customer meeting? team event? admin?)
+  - Output: Enriched meeting objects with classification context
+
+STEP 5-6: Classify and Assess Meetings (Parallel Processing)
+CAN-02 (Meeting Type Classification) → Categorize existing meetings
+  - Identify: 1:1 meetings (2 attendees)
+  - Identify: Lunch meetings (keywords: "lunch", duration 30-60 min, time 11am-2pm)
+  - Identify: Other meeting types (team sync, customer, planning, etc.)
+  - Purpose: Know which meetings can be overridden per soft constraint
+  - Output: Type classifications for all 120 events
+
+CAN-03 (Importance Assessment) → Score meeting priority
+  - High priority: Customer meetings, board meetings, all-hands (CANNOT override)
+  - Medium priority: Team syncs, planning sessions (do not override unless necessary)
+  - Low priority: 1:1s and lunches (OVERRIDABLE per prompt)
+  - Kat's meetings: Importance scores determine hard constraint enforcement
+  - Output: Importance scores for filtering overridable slots
+
+STEP 7: Check Availability with Priority Logic
+CAN-06 (Availability Checking) → Find common available slots
+  - Phase 1: Pure availability - Find slots where all 3 are free
+  - Phase 2: Overridable availability - Find slots where all 3 have only 1:1s or lunches
+  - Hard constraint: NEVER override Kat's meetings (work around Kat's schedule)
+  - Soft constraint: CAN override Chris's and Sangya's 1:1s/lunches if needed
+  - Output: List of available time slots (pure + overridable, sorted by preference)
+
+STEP 8: Select Optimal Time Slot
+CAN-12 (Constraint Satisfaction) → Apply complex constraint logic
+  - Preference 1: Pure availability (no conflicts for anyone) - BEST OPTION
+  - Preference 2: Override Chris's or Sangya's 1:1/lunch - ACCEPTABLE
+  - HARD RULE: Never override Kat's meetings (even if 1:1 or lunch)
+  - Tiebreaker: Earlier in 2-week window better, mid-week better than Monday/Friday
+  - Output: Optimal time slot selected (e.g., "Wednesday 2pm")
+
+STEP 9-10: Book Resources and Create Meeting (Parallel Processing)
+CAN-19 (Resource Booking) → Reserve meeting room
+  - Requirements: In-person meeting room for 3 people + 1 hour
+  - Check: Room availability at selected time slot
+  - Preferences: Conference room near attendees' offices
+  - Output: Room reservation (e.g., "Conference Room B, 3rd floor")
+
+CAN-03 (Event Creation/Update) → Schedule Project Alpha meeting
+  - Create: Calendar event for selected time
+  - Invite: Chris, Sangya, Kat
+  - Location: Reserved conference room
+  - Subject: "Project Alpha Discussion"
+  - Duration: 60 minutes
+  - Note: May override Chris's or Sangya's 1:1/lunch (not Kat's!)
+  - Output: Calendar event created, invitations sent
+
+OUTPUT: Project Alpha meeting scheduled with constraints satisfied
+  1. Time found within next 2 weeks
+  2. All 3 attendees invited
+  3. Kat's schedule fully respected (hard constraint)
+  4. Chris's or Sangya's 1:1/lunch may be overridden (soft constraint)
+  5. In-person meeting room reserved
 ```
 
-**Orchestration Notes**:
-- "Work around Kat" = hard constraint (must respect Kat's schedule)
-- "Schedule over 1:1s/lunches" = soft constraint (override if needed)
-- CAN-19 and CAN-03 can run in parallel (independent operations)
-- Conflict resolution: Project Alpha > 1:1s/lunches
+**Key Orchestration Patterns**:
+- **Dual-Phase Availability Checking**: CAN-06 runs twice (pure availability + overridable availability)
+- **Priority-Based Filtering**: CAN-03 (importance) determines which meetings can be overridden
+- **Hard vs Soft Constraints**: CAN-12 enforces Kat priority (hard) while allowing 1:1/lunch override (soft)
+- **Parallel Classification**: CAN-02 + CAN-03 process same events concurrently
+- **Parallel Finalization**: CAN-19 (room booking) + CAN-03 (event creation) are independent operations
+- **Most Complex Scheduling**: Uses 10 tasks with multi-layered constraint logic - demonstrates sophisticated conflict resolution
+
+**Example Flow - Multi-Person Scheduling with Override Logic**:
+
+```
+User Request: "Land a time to meet about Project Alpha with Chris, Sangya, and Kat for 1 hour in the next 2 weeks. Schedule over 1:1s and lunches if needed and work around Kat's schedule. Make the meeting in person and add a room."
+
+CAN-04: Extract scheduling requirements ✓
+  → topic: "Project Alpha"
+  → attendees: ["Chris", "Sangya", "Kat"]
+  → duration: 60 minutes
+  → timeframe: next 2 weeks
+  → hard constraint: "work around Kat"
+  → soft constraint: "override 1:1s and lunches if needed"
+  → location: "in_person"
+  → resources: ["room"]
+
+CAN-05: Resolve attendees ✓
+  - Chris Martinez → chris.martinez@company.com (calendar access ✓)
+  - Sangya Patel → sangya.patel@company.com (calendar access ✓)
+  - Kat Williams → kat.williams@company.com (calendar access ✓, PRIORITY)
+
+CAN-01: Retrieve calendars (next 2 weeks) ✓
+  Chris's calendar: 38 meetings
+  Sangya's calendar: 42 meetings
+  Kat's calendar: 35 meetings (PRIORITY - work around this!)
+  Total events: 115 meetings
+
+CAN-07: Extract metadata ✓
+  - Meeting types identified: 1:1s, lunches, team syncs, customer meetings, etc.
+  - Attendee counts: Range 2-20 people
+  - Durations: Range 15 min - 2 hours
+  - Time slots: Throughout business hours
+
+CAN-02: Classify meeting types (Parallel with CAN-03) ✓
+  Chris's meetings:
+  - 1:1s: 12 meetings (OVERRIDABLE)
+  - Lunches: 4 meetings (OVERRIDABLE)
+  - Team syncs: 10 meetings
+  - Customer meetings: 8 meetings
+  - Other: 4 meetings
+  
+  Sangya's meetings:
+  - 1:1s: 15 meetings (OVERRIDABLE)
+  - Lunches: 5 meetings (OVERRIDABLE)
+  - Team syncs: 12 meetings
+  - Planning: 6 meetings
+  - Other: 4 meetings
+  
+  Kat's meetings:
+  - 1:1s: 10 meetings (NOT OVERRIDABLE - hard constraint!)
+  - Lunches: 3 meetings (NOT OVERRIDABLE - hard constraint!)
+  - Team syncs: 12 meetings
+  - Customer meetings: 7 meetings
+  - Other: 3 meetings
+
+CAN-03: Assess importance (Parallel with CAN-02) ✓
+  High priority (CANNOT override):
+  - All customer meetings (23 total)
+  - All team syncs (34 total)
+  - All planning sessions (6 total)
+  - ALL of Kat's meetings (35 total - hard constraint!)
+  
+  Low priority (CAN override per soft constraint):
+  - Chris's 1:1s and lunches (16 meetings)
+  - Sangya's 1:1s and lunches (20 meetings)
+  - Kat's 1:1s and lunches: 13 meetings (BUT CANNOT OVERRIDE due to hard constraint!)
+
+CAN-06: Check availability (dual-phase) ✓
+  
+  **Phase 1: Pure Availability** (all 3 free, no conflicts)
+  Scanning next 2 weeks...
+  - Week 1: ❌ No common free slots (all 3 heavily booked)
+  - Week 2: ✅ Found 2 slots!
+    - Wednesday Week 2, 2:00-3:00 PM ✅ ALL FREE
+    - Friday Week 2, 10:00-11:00 AM ✅ ALL FREE
+  
+  **Phase 2: Overridable Availability** (override Chris's or Sangya's 1:1/lunch)
+  Additional slots where Chris or Sangya have 1:1/lunch (but NOT Kat):
+  - Tuesday Week 1, 3:00-4:00 PM ✅ Chris has 1:1 (overridable), Sangya free, Kat free
+  - Thursday Week 1, 12:00-1:00 PM ✅ Sangya has lunch (overridable), Chris free, Kat free
+  - Monday Week 2, 11:00-12:00 PM ✅ Chris has 1:1 (overridable), Sangya free, Kat free
+  
+  **Rejected Slots** (violate hard constraint):
+  - Monday Week 1, 2:00-3:00 PM ❌ Kat has 1:1 (CANNOT OVERRIDE - hard constraint!)
+  - Wednesday Week 1, 12:00-1:00 PM ❌ Kat has lunch (CANNOT OVERRIDE - hard constraint!)
+  
+  Total available slots: 5 (2 pure + 3 overridable)
+
+CAN-12: Select optimal time slot ✓
+  Candidates:
+  1. Wednesday Week 2, 2:00-3:00 PM (pure availability, mid-week) ⭐ BEST
+  2. Friday Week 2, 10:00-11:00 AM (pure availability, but Friday less ideal)
+  3. Tuesday Week 1, 3:00-4:00 PM (override Chris's 1:1)
+  4. Thursday Week 1, 12:00-1:00 PM (override Sangya's lunch)
+  5. Monday Week 2, 11:00-12:00 PM (override Chris's 1:1)
+  
+  Selected: **Wednesday Week 2, 2:00-3:00 PM**
+  Rationale: Pure availability (no overrides needed!), mid-week, afternoon slot
+
+CAN-19: Book meeting room (Parallel with CAN-03) ✓
+  Requirements: 3 people, 60 minutes, in-person
+  Time: Wednesday Week 2, 2:00-3:00 PM
+  Available rooms:
+  - Conference Room A (capacity 4) ✅ Available
+  - Conference Room B (capacity 8) ✅ Available
+  - Board Room (capacity 20) ✅ Available (overkill)
+  
+  Selected: **Conference Room A** (right-sized for 3 people)
+  Location: 3rd floor, near Kat's office
+
+CAN-03: Create calendar event ✓
+  Event created: "Project Alpha Discussion"
+  Time: Wednesday, January 22, 2025, 2:00-3:00 PM
+  Duration: 60 minutes
+  Attendees: Chris Martinez, Sangya Patel, Kat Williams
+  Location: Conference Room A (3rd floor)
+  Status: Invitations sent to all 3 attendees
+
+OUTPUT to User:
+
+✅ **PROJECT ALPHA MEETING SCHEDULED**
+
+**Meeting Details**:
+- **Time**: Wednesday, January 22, 2025, 2:00-3:00 PM
+- **Duration**: 1 hour
+- **Attendees**: Chris Martinez, Sangya Patel, Kat Williams
+- **Location**: Conference Room A (3rd floor) - In-person
+
+**Scheduling Notes**:
+- ✅ **Kat's schedule fully respected** (hard constraint satisfied)
+- ✅ **No overrides needed** (found pure availability slot!)
+- ✅ Selected Wednesday mid-week (optimal for all)
+- ✅ Meeting room reserved
+
+**Alternative Considered**:
+If Wednesday 2pm wasn't available, system would have overridden Chris's or Sangya's 1:1/lunch per your instructions, but NEVER Kat's meetings.
+
+**Next Step**: All 3 attendees have been invited and will receive calendar notifications.
+
+**Key Insight**: This prompt demonstrates the MOST COMPLEX constraint satisfaction in the framework. CAN-12 must balance:
+1. Hard constraint: Never override Kat (priority attendee)
+2. Soft constraint: CAN override others' 1:1s/lunches IF needed
+3. Pure availability preferred over overrides
+4. Multi-person scheduling (3 calendars to coordinate)
+5. Resource booking (in-person room requirement)
+
+The system correctly applies priority-based logic: Kat's even low-priority meetings (1:1s, lunches) are treated as high-priority due to "work around Kat's schedule" instruction, while Chris's and Sangya's similar meetings remain overridable.
+```
 
 ---
 
@@ -991,30 +1918,248 @@ OUTPUT to User:
 - **Tier**: 3 (Specialized)
 - **Note**: User explicitly requests this ("Generate any objections or concerns")
 
+**Evaluation Criteria**:
+- Attendee resolution accuracy (senior leadership correctly identified from organization)
+- Summarization quality (3 discussion points capture key themes from materials)
+- Objection anticipation relevance (concerns match senior leadership perspective)
+- Response effectiveness (prepared responses address objections convincingly)
+- CAN-05 inclusion (CRITICAL - human evaluator identified missing dependency for finding materials)
+
 ### Execution Composition
 
-**Pattern**: Sequential with document processing
+**How Tasks Work Together to Answer the Prompt:**
 
 ```
-Step 1: CAN-04 (NLU) - Parse preparation requirements
-   ↓
-Step 2: CAN-05 (Attendee Resolution) - Identify senior leadership
-   ↓
-Step 3: CAN-01 (Retrieval) - Find upcoming senior leadership meeting
-   ↓
-Step 4: CAN-07 (Metadata) - Extract meeting details and attachments
-   ↓
-Step 5: CAN-08 (Document Retrieval) - Get meeting materials
-   ↓
-Step 6: CAN-09 (Summarization) - Create 3 main discussion points
-   ↓
-Step 7: CAN-18 (Objections) - Generate objections + responses
+STEP 1: Understand Preparation Requirements
+CAN-04 (NLU) → Parse multi-part request
+  - Parse: "Review the materials for my meeting with senior leadership" = material retrieval required
+  - Parse: "suggest the best way to summarize the topics into three main discussion points" = summarization task
+  - Parse: "Generate any objections or concerns that might come up" = objection anticipation
+  - Parse: "give me effective responses" = response preparation
+  - Output: {"intent": "prepare_for_meeting", "attendees": "senior leadership", "tasks": ["review_materials", "summarize_to_3_points", "generate_objections", "create_responses"]}
+
+STEP 2: Resolve Senior Leadership Attendees (CRITICAL - MISSING IN ORIGINAL)
+CAN-05 (Attendee/Contact Resolution) → Identify who is "senior leadership"
+  - Search: Organization directory for senior leadership (VPs, C-level executives)
+  - Resolve: Full contact details, titles, reporting structure
+  - Purpose: **ESSENTIAL** - Cannot find "meeting with senior leadership" without knowing who they are!
+  - Output: Senior leadership list (e.g., CEO, CFO, COO, VP Product, VP Sales)
+
+STEP 3: Find the Senior Leadership Meeting
+CAN-01 (Calendar Retrieval) → Locate upcoming meeting
+  - Input: Resolved senior leadership attendees from CAN-05
+  - Search: Upcoming calendar for meetings with ANY senior leadership member
+  - Filter: Likely candidates (multiple C-level attendees, duration 60+ min, formal subject)
+  - Output: Identified meeting (e.g., "Executive Business Review" with CEO, CFO, VP Product)
+
+STEP 4: Extract Meeting Details
+CAN-07 (Metadata Extraction) → Get meeting metadata
+  - Extract: Attendee list, meeting agenda, scheduled time, location
+  - Extract: Attachments (presentations, pre-read documents, data reports)
+  - Extract: Meeting organizer, purpose, previous meeting series
+  - Output: Meeting metadata including list of attached materials
+
+STEP 5: Retrieve Meeting Materials
+CAN-08 (Document Retrieval) → Load all attached materials
+  - Input: Attachment list from CAN-07
+  - Retrieve: Q3 Financial Report.pdf, Product Roadmap Update.pptx, Market Analysis.docx
+  - Parse: Extract text content from documents for analysis
+  - Output: Full content of all meeting materials (e.g., 50 pages of documents)
+
+STEP 6: Summarize into 3 Main Discussion Points
+CAN-09 (Document Generation) → Synthesize materials into key themes
+  - Analyze: Identify recurring themes across all materials
+  - Prioritize: Select 3 most important topics based on:
+    - Frequency mentioned across materials
+    - Strategic importance signals (revenue, market position, risk)
+    - Action-oriented topics (decisions needed, approvals required)
+  - Format: Create concise summaries with supporting data points
+  - Output: 3 main discussion points with key facts
+
+STEP 7: Generate Objections and Responses
+CAN-18 (Objection/Risk Anticipation) → Anticipate senior leadership concerns
+  - Input: 3 discussion points from CAN-09 + senior leadership profiles from CAN-05
+  - Analyze: For each discussion point, identify potential objections:
+    - Financial concerns (CFO perspective)
+    - Market risks (CEO perspective)
+    - Execution feasibility (COO perspective)
+    - Competitive threats (VP Sales perspective)
+  - Generate: Prepared responses for each objection with supporting data
+  - Output: Objection-response pairs for all 3 discussion points
+
+OUTPUT: Comprehensive meeting preparation package
+  1. 3 MAIN DISCUSSION POINTS: Structured summaries from materials
+  2. ANTICIPATED OBJECTIONS: Likely concerns from senior leadership
+  3. EFFECTIVE RESPONSES: Prepared answers with data/rationale
 ```
 
-**Orchestration Notes**:
-- CAN-05 critical dependency for CAN-01 (must know who senior leadership is)
-- CAN-07 → CAN-08 dependency (need attachments list)
-- CAN-18 explicitly requested by user (vs Collaborate-1 where it was over-interpretation)
+**Key Orchestration Patterns**:
+- **CRITICAL MISSING DEPENDENCY**: CAN-05 MUST precede CAN-01 - cannot find "meeting with senior leadership" without knowing who senior leadership is
+- **Sequential Document Pipeline**: CAN-07 (get attachments) → CAN-08 (retrieve content) → CAN-09 (summarize)
+- **Objection Layer**: CAN-18 runs after CAN-09 (needs discussion points) and uses CAN-05 (needs attendee profiles)
+- **Human Evaluator Insight**: Original decomposition missed CAN-05 - evaluator noted "system needs to know who are in the senior leadership to find relevant meetings and meeting related materials"
+- **Contrast with Collaborate-1**: Here CAN-18 IS appropriate because user explicitly requested "Generate any objections or concerns" (vs Collaborate-1 where it was over-interpreted)
+
+**Example Flow - Executive Meeting Preparation**:
+
+```
+User Request: "Review the materials for my meeting with senior leadership and suggest the best way to summarize the topics into three main discussion points. Generate any objections or concerns that might come up and give me effective responses."
+
+CAN-04: Extract preparation requirements ✓
+  → intent: "prepare_for_meeting"
+  → attendees: "senior leadership"
+  → tasks: ["review_materials", "summarize_to_3_points", "generate_objections", "create_responses"]
+
+CAN-05: Resolve "senior leadership" (CRITICAL - MISSING IN ORIGINAL) ✓
+  **Without this step, system cannot find the meeting!**
+  
+  Organization directory search: "senior leadership"
+  Identified:
+  - Jennifer Park (CEO)
+  - Michael Chen (CFO)
+  - Sarah Williams (COO)
+  - Alex Kumar (VP Product)
+  - Dana Rodriguez (VP Sales)
+  
+  Output: 5 senior leadership members resolved
+
+CAN-01: Find upcoming senior leadership meeting ✓
+  **Uses resolved attendees from CAN-05 to search calendar**
+  
+  Search: Upcoming meetings with Jennifer Park (CEO) OR Michael Chen (CFO) OR ...
+  Found: "Q4 Executive Business Review"
+  - Date: Next Tuesday, 2:00-3:30 PM
+  - Attendees: Jennifer Park (CEO), Michael Chen (CFO), Alex Kumar (VP Product)
+  - Organizer: You
+  - Duration: 90 minutes
+
+CAN-07: Extract meeting metadata ✓
+  Meeting details:
+  - Subject: "Q4 Executive Business Review"
+  - Attendees: CEO, CFO, VP Product (3 executives)
+  - Attachments: 3 documents
+    1. Q4_Financial_Performance.pdf
+    2. Product_Roadmap_2025.pptx
+    3. Competitive_Market_Analysis.docx
+
+CAN-08: Retrieve meeting materials ✓
+  Retrieved 3 documents (50 pages total):
+  
+  **Q4_Financial_Performance.pdf** (15 pages):
+  - Revenue: $45M (target $50M, -10% miss)
+  - Operating margin: 18% (improved from 15% in Q3)
+  - Customer churn: 8% (up from 6% in Q3 - concerning!)
+  - Cash position: $22M (healthy)
+  
+  **Product_Roadmap_2025.pptx** (20 slides):
+  - Launch new AI features in Q1 2025
+  - Mobile app redesign in Q2
+  - Enterprise tier launch in Q3
+  - Total investment required: $8M over 4 quarters
+  - Expected ROI: 30% revenue increase by end of 2025
+  
+  **Competitive_Market_Analysis.docx** (15 pages):
+  - Competitor A launched similar features 2 months ago
+  - Market share: We are #3 (18%), Competitor A is #1 (35%)
+  - Customer win rate declining: 45% → 38% in past 2 quarters
+  - Pricing pressure: Average deal size down 12%
+
+CAN-09: Summarize into 3 main discussion points ✓
+  
+  Analyzed all materials, identified 3 key themes:
+  
+  **DISCUSSION POINT 1: Q4 Financial Performance and Revenue Gap**
+  - Revenue came in at $45M vs $50M target (-10% miss)
+  - Positive: Operating margin improved to 18% (cost management working)
+  - Concern: Customer churn increased to 8% (from 6% in Q3)
+  - Key Question: What caused revenue miss? Churn? Slower new sales?
+  
+  **DISCUSSION POINT 2: 2025 Product Roadmap Investment Decision**
+  - Proposed investment: $8M across 4 quarters for AI features + mobile redesign + enterprise tier
+  - Expected return: 30% revenue increase by end of 2025
+  - Strategic importance: Competitor A already launched similar features
+  - Key Decision: Approve $8M investment or scale back?
+  
+  **DISCUSSION POINT 3: Competitive Position and Market Share**
+  - Market share: #3 position at 18% (behind Competitor A at 35%)
+  - Customer win rate declining: 45% → 38%
+  - Pricing pressure: Average deal size down 12%
+  - Key Question: How do we regain competitive momentum?
+
+CAN-18: Generate objections and effective responses ✓
+  **Uses senior leadership profiles from CAN-05 to anticipate perspective-specific objections**
+  
+  **OBJECTIONS FOR DISCUSSION POINT 1** (Q4 Financial Performance):
+  
+  ❌ **CFO Objection**: "Revenue miss of 10% is concerning. How do we know Q1 won't have the same problem?"
+  ✅ **Your Response**: "Fair concern. The miss was driven by 2 large deals slipping from Q4 to Q1 (both confirmed). Churn increase is the real issue - we're implementing a customer success intervention plan targeting at-risk accounts. We project churn to return to 6% by Q2 with this intervention."
+  
+  ❌ **CEO Objection**: "Churn going from 6% to 8% is a red flag. What's causing it?"
+  ✅ **Your Response**: "Exit interviews show 60% of churned customers cited lack of mobile app and AI features - which our 2025 roadmap addresses. This validates our product investment thesis. The other 40% cited pricing, which we're addressing with enterprise tier for price-sensitive segments."
+  
+  **OBJECTIONS FOR DISCUSSION POINT 2** (Product Roadmap Investment):
+  
+  ❌ **CFO Objection**: "$8M investment is significant given we just missed revenue target. Can we scale back?"
+  ✅ **Your Response**: "We evaluated a phased approach. Minimum viable investment is $5M (AI features only, defer mobile redesign). However, competitive analysis shows Competitor A is gaining share with their mobile app. Delaying mobile risks further customer win rate decline. ROI projections show $8M investment pays back in 10 months."
+  
+  ❌ **VP Product Objection**: "Enterprise tier launch in Q3 is aggressive. Do we have engineering capacity?"
+  ✅ **Your Response**: "Agreed it's tight. We're proposing 2 additional engineering hires in Q1 (already budgeted). Alternative is to push enterprise tier to Q4, but that delays revenue impact by 1 quarter ($3M opportunity cost)."
+  
+  **OBJECTIONS FOR DISCUSSION POINT 3** (Competitive Position):
+  
+  ❌ **CEO Objection**: "Win rate declining from 45% to 38% is alarming. Is this a sales execution problem or product gap?"
+  ✅ **Your Response**: "Analysis shows 70% of losses are to Competitor A citing their AI features (product gap). 30% are sales execution (pricing/contracting delays). Product roadmap addresses the 70%, and we've streamlined sales approval process to address the 30%. We expect win rate to recover to 42% by Q2."
+  
+  ❌ **VP Sales Objection**: "Pricing pressure is killing margins. Should we hold the line on price?"
+  ✅ **Your Response**: "Short-term yes - we're training sales to sell value, not discount. Medium-term, enterprise tier gives us pricing flexibility (tiered pricing reduces pressure on core product). Financial analysis shows enterprise tier can absorb price-sensitive customers without cannibalizing mid-market deals."
+
+OUTPUT to User:
+
+📋 **EXECUTIVE MEETING PREPARATION BRIEF**
+
+**Meeting**: Q4 Executive Business Review  
+**Attendees**: Jennifer Park (CEO), Michael Chen (CFO), Alex Kumar (VP Product)  
+**Date**: Next Tuesday, 2:00-3:30 PM
+
+---
+
+**THREE MAIN DISCUSSION POINTS**:
+
+1. **Q4 Financial Performance and Revenue Gap**
+   - Revenue: $45M vs $50M target (-10% miss)
+   - Margin: 18% (improved from 15%)
+   - Churn: 8% (up from 6% - key concern)
+
+2. **2025 Product Roadmap Investment Decision**
+   - Investment: $8M for AI + Mobile + Enterprise tier
+   - Expected ROI: 30% revenue increase
+   - Competitive urgency: Competitor A already launched
+
+3. **Competitive Position and Market Share**
+   - Market share: #3 at 18% (vs Competitor A at 35%)
+   - Win rate: 45% → 38% (declining)
+   - Pricing pressure: Average deal size down 12%
+
+---
+
+**ANTICIPATED OBJECTIONS & EFFECTIVE RESPONSES**:
+
+**Point 1 - Financial Performance**:
+- CFO: "How prevent Q1 revenue miss?" → 2 large deals slipped to Q1 (confirmed), churn intervention plan targets 6% by Q2
+- CEO: "What's causing churn increase?" → 60% cite lack of mobile/AI (validates roadmap), 40% pricing (enterprise tier addresses)
+
+**Point 2 - Product Investment**:
+- CFO: "Can we scale back $8M investment?" → Minimum $5M (AI only), but delaying mobile risks further decline, 10-month payback
+- VP Product: "Q3 enterprise tier too aggressive?" → 2 engineering hires needed, alternative Q4 push has $3M opportunity cost
+
+**Point 3 - Competitive Position**:
+- CEO: "Is win rate decline sales or product issue?" → 70% product gap (roadmap fixes), 30% sales execution (process streamlined)
+- VP Sales: "Hold line on pricing?" → Yes short-term (value selling training), medium-term enterprise tier provides flexibility
+
+**PREPARATION COMPLETE** ✅
+
+**Key Insight**: CAN-05 (Attendee Resolution) is CRITICAL and was missing in original decomposition. Human evaluator correctly identified: "The system needs to know who are in the senior leadership to find relevant meetings and meeting related materials." Without CAN-05, the system cannot search for "meeting with senior leadership" (CAN-01) or tailor objections to specific executive perspectives (CAN-18). This demonstrates human evaluation catching missing dependencies that break the workflow.
+```
 
 ---
 
@@ -1071,26 +2216,331 @@ Step 7: CAN-18 (Objections) - Generate objections + responses
 - **Tier**: 3 (Specialized)
 - **Note**: Addresses "Include a background on their company"
 
+**Evaluation Criteria**:
+- Meeting identification accuracy (correct customer Beta meeting found)
+- Attendee dossier completeness (all customer attendees profiled with relevant background)
+- Interest topic relevance (topics accurately reflect customer priorities from historical data)
+- Company background depth (comprehensive intelligence on customer Beta company)
+- Document formatting quality (brief is well-structured and executive-ready)
+
 ### Execution Composition
 
-**Pattern**: Sequential with parallel research + generation
+**How Tasks Work Together to Answer the Prompt:**
 
 ```
-Step 1: CAN-04 (NLU) - Parse brief requirements
-   ↓
-Step 2: CAN-01 (Retrieval) - Find customer Beta meeting
-   ↓
-Step 3: CAN-07 (Metadata) - Extract customer attendees
-   ↓
-Step 4: CAN-05 (Attendee Resolution) - Resolve to full profiles
-   ↓
-Step 5: CAN-08 (Document Retrieval) - Get historical materials
-   ↓
-Step 6-7: [PARALLEL] CAN-09 (Brief Generation) + CAN-22 (Company Research)
+STEP 1: Understand Brief Requirements
+CAN-04 (NLU) → Parse multi-component preparation request
+  - Parse: "Prepare a brief for my upcoming meeting with customer Beta" = meeting prep task
+  - Parse: "include a dossier for each customer attendee" = individual profiles required
+  - Parse: "the topics they are most interested in" = interest analysis from historical data
+  - Parse: "Include a background on their company" = company intelligence research
+  - Output: {"intent": "prepare_brief", "customer": "Beta", "components": ["attendee_dossiers", "interest_topics", "company_background"]}
+
+STEP 2: Find Customer Beta Meeting
+CAN-01 (Calendar Retrieval) → Locate upcoming meeting
+  - Search: Upcoming calendar for meetings with "Beta" in subject, attendees, or meeting notes
+  - Filter: Customer-facing meetings (external attendees)
+  - Identify: "Quarterly Business Review - Beta Corporation"
+  - Output: Meeting event (e.g., next Thursday 10:00-11:30 AM)
+
+STEP 3: Extract Customer Attendees
+CAN-07 (Metadata Extraction) → Get meeting participant details
+  - Extract: All attendees from meeting
+  - Separate: Internal attendees vs external customer Beta attendees
+  - Customer attendees identified: ["Sarah Johnson", "Michael Lee", "Emily Carter"]
+  - Output: List of 3 customer Beta attendee names
+
+STEP 4: Resolve Attendees to Full Profiles
+CAN-05 (Attendee/Contact Resolution) → Build comprehensive profiles
+  - For each customer attendee: Search CRM, LinkedIn, contact database
+  - Retrieve: Title, role, seniority, background, LinkedIn profile, previous interactions
+  - Enrich: Years at company, previous roles, education, expertise areas
+  - Output: Full profiles for all 3 customer attendees
+
+STEP 5: Retrieve Historical Interaction Materials
+CAN-08 (Document Retrieval) → Load past meeting data
+  - Search: Previous meetings with customer Beta (past 6-12 months)
+  - Retrieve: Meeting notes, email threads, shared documents, presentations
+  - Search: CRM notes, support tickets, product usage data
+  - Purpose: Identify topics customer Beta has discussed (for interest analysis)
+  - Output: Historical content corpus (e.g., 15 past meetings, 50 emails)
+
+STEP 6-7: Generate Dossiers and Research Company (Parallel Processing)
+CAN-09 (Document Generation) → Create attendee dossiers and brief structure
+  - For each attendee: Synthesize profile + historical interactions into dossier
+  - Analyze: Historical materials to identify topics each attendee discussed frequently
+  - Interest topics: Recurring themes in their questions, requests, concerns
+  - Format: Executive-ready dossier with key facts, interest areas, interaction history
+  - Output: 3 attendee dossiers with interest topic analysis
+
+CAN-22 (Research/Intelligence) → Gather company background
+  - Research: Customer Beta company profile
+  - Sources: Public filings, news articles, press releases, industry reports, LinkedIn company page
+  - Extract: Industry, size (revenue, employees), recent developments (funding, acquisitions, leadership changes)
+  - Financial data: Revenue trends, growth rate, funding status
+  - Strategic context: Business priorities, market position, competitive landscape
+  - Output: Comprehensive company background report
+
+OUTPUT: Complete meeting brief
+  1. CUSTOMER BETA COMPANY BACKGROUND: Industry, financials, recent news, strategic priorities
+  2. ATTENDEE DOSSIERS: Profiles for each customer attendee with roles, background, interaction history
+  3. INTEREST TOPICS: Key themes each attendee cares about (from historical analysis)
+  4. MEETING CONTEXT: Suggested discussion points based on customer interests
 ```
 
-**Orchestration Notes**:
-- CAN-09 and CAN-22 can run in parallel (independent research)
+**Key Orchestration Patterns**:
+- **Parallel Research**: CAN-09 (attendee dossiers) + CAN-22 (company research) run independently
+- **Historical Analysis**: CAN-08 retrieves past interactions, CAN-09 analyzes for interest patterns
+- **Multi-Layer Context**: Individual (dossiers) + company (background) + historical (interests)
+- **Profile Enrichment Pipeline**: CAN-07 (extract names) → CAN-05 (resolve to profiles) → CAN-09 (generate dossiers)
+- **Most Customer-Facing Prompt**: Demonstrates external research capabilities (CAN-22) and relationship intelligence (CAN-08 + CAN-09 analysis)
+
+**Example Flow - Customer Meeting Brief Preparation**:
+
+```
+User Request: "Prepare a brief for my upcoming meeting with customer Beta and include a dossier for each customer attendee and the topics they are most interested in. Include a background on their company."
+
+CAN-04: Extract brief requirements ✓
+  → intent: "prepare_brief"
+  → customer: "Beta"
+  → components: ["attendee_dossiers", "interest_topics", "company_background"]
+
+CAN-01: Find customer Beta meeting ✓
+  Search: Upcoming calendar for "Beta"
+  Found: "Quarterly Business Review - Beta Corporation"
+  - Date: Next Thursday, 10:00-11:30 AM
+  - Location: Conference Room A + Video conference
+  - Internal attendees: You, VP Sales (Dana), Customer Success Manager (Jordan)
+  - External attendees: Sarah Johnson, Michael Lee, Emily Carter (Beta)
+
+CAN-07: Extract customer attendees ✓
+  Meeting metadata:
+  - Subject: "Quarterly Business Review - Beta Corporation"
+  - Duration: 90 minutes
+  - Customer attendees identified:
+    1. Sarah Johnson (external)
+    2. Michael Lee (external)
+    3. Emily Carter (external)
+  - Internal attendees: You, Dana (VP Sales), Jordan (CSM)
+
+CAN-05: Resolve customer attendees to full profiles ✓
+  
+  **Sarah Johnson**:
+  - Title: VP of Operations, Beta Corporation
+  - Role: Decision-maker for operational tools and processes
+  - Background: 8 years at Beta, promoted from Director 2 years ago
+  - Education: MBA from Stanford, BS Industrial Engineering
+  - LinkedIn: linkedin.com/in/sarah-johnson-beta
+  - Previous company: McKinsey (consultant for 5 years)
+  - Expertise: Process optimization, supply chain management
+  
+  **Michael Lee**:
+  - Title: Director of IT, Beta Corporation
+  - Role: Technical evaluation and implementation oversight
+  - Background: 3 years at Beta, joined from Amazon
+  - Education: MS Computer Science, University of Washington
+  - LinkedIn: linkedin.com/in/michael-lee-it
+  - Previous company: Amazon (software engineer, 6 years)
+  - Expertise: Cloud infrastructure, security, API integrations
+  
+  **Emily Carter**:
+  - Title: Product Manager, Beta Corporation
+  - Role: End-user advocate, feature requests
+  - Background: 5 years at Beta, former business analyst
+  - Education: BA Business Administration, UC Berkeley
+  - LinkedIn: linkedin.com/in/emily-carter-pm
+  - Previous role: Business Analyst at Beta (promoted 2 years ago)
+  - Expertise: Product strategy, user experience, analytics
+
+CAN-08: Retrieve historical interaction materials ✓
+  
+  Retrieved 15 past meetings + 50 emails with Beta (past 12 months):
+  
+  **Past Meetings**:
+  - Monthly check-ins (10 meetings)
+  - Onboarding session (3 months ago)
+  - Product training (2 sessions)
+  - Quarterly business reviews (2 previous QBRs)
+  
+  **Email Threads**:
+  - Feature requests (15 emails, mostly from Emily)
+  - Technical questions (20 emails, mostly from Michael)
+  - Process discussions (10 emails, mostly from Sarah)
+  - Billing/contract questions (5 emails)
+  
+  **CRM Notes**:
+  - Account health: Green (high satisfaction)
+  - Renewal date: 4 months away (important context!)
+  - Expansion opportunity: Considering adding 50 more licenses
+  - Support tickets: 8 tickets (all resolved, avg resolution time 6 hours)
+
+CAN-09: Generate attendee dossiers with interest topics (Parallel with CAN-22) ✓
+  
+  **Analyzed historical materials to identify interest topics for each attendee:**
+  
+  **DOSSIER: Sarah Johnson** (VP of Operations)
+  - **Role**: Decision-maker for operational tools, budget owner
+  - **Background**: 8 years at Beta, MBA Stanford, ex-McKinsey consultant
+  - **Previous Interactions**: 
+    - Attended 6 of past 10 monthly check-ins
+    - Led conversation in last 2 QBRs
+    - Sent 10 emails (mostly strategic questions)
+  - **Topics Most Interested In** (from historical analysis):
+    1. **ROI and Cost Optimization** (mentioned in 8 of 10 emails)
+       - Quote: "How can we reduce time spent on manual data entry?"
+       - Context: Sarah is measured on operational efficiency
+    2. **Workflow Automation** (discussed in 4 meetings)
+       - Quote: "Can we automate the monthly reporting process?"
+       - Context: Her team spends 20 hours/month on reports
+    3. **Scalability for Growth** (raised in last QBR)
+       - Quote: "If we expand to 500 users next year, can system handle it?"
+       - Context: Beta is growing 30% YoY, planning headcount expansion
+  
+  **DOSSIER: Michael Lee** (Director of IT)
+  - **Role**: Technical gatekeeper, security/compliance oversight
+  - **Background**: 3 years at Beta, ex-Amazon engineer, MS Computer Science
+  - **Previous Interactions**:
+    - Attended onboarding + 2 training sessions (deep technical engagement)
+    - Sent 20 emails (mostly technical questions)
+    - Opened 3 support tickets (API integration questions)
+  - **Topics Most Interested In** (from historical analysis):
+    1. **Security and Compliance** (mentioned in 12 of 20 emails)
+       - Quote: "Do you have SOC 2 Type 2 certification?"
+       - Context: Beta is in healthcare, subject to HIPAA compliance
+    2. **API Integration and Extensibility** (discussed in 3 support tickets)
+       - Quote: "Can we integrate with our Salesforce instance via API?"
+       - Context: Michael is building internal tools that need API access
+    3. **Performance and Uptime** (raised in 2 emails)
+       - Quote: "What's your SLA for uptime? Our users need 99.9%"
+       - Context: Operational tools are mission-critical for Beta
+  
+  **DOSSIER: Emily Carter** (Product Manager)
+  - **Role**: End-user advocate, feature prioritization influence
+  - **Background**: 5 years at Beta, promoted from analyst, BA UC Berkeley
+  - **Previous Interactions**:
+    - Attended all 10 monthly check-ins (consistent engagement)
+    - Sent 15 feature request emails
+    - Participated actively in 2 product training sessions
+  - **Topics Most Interested In** (from historical analysis):
+    1. **Mobile App Enhancements** (mentioned in 8 of 15 emails)
+       - Quote: "When will offline mode be available on mobile?"
+       - Context: Beta's field team needs offline access
+    2. **User Experience Improvements** (discussed in 5 meetings)
+       - Quote: "Our team finds the dashboard too cluttered"
+       - Context: Emily receives user feedback, advocates for UX
+    3. **Analytics and Reporting** (raised in last QBR)
+       - Quote: "Can we get custom report templates?"
+       - Context: Beta's analysts need specific data views
+
+CAN-22: Research Beta Corporation company background (Parallel with CAN-09) ✓
+  
+  **BETA CORPORATION - COMPANY BACKGROUND**
+  
+  **Industry & Business**:
+  - Industry: Healthcare Technology (medical device distribution)
+  - Founded: 1998 (26 years in business)
+  - Headquarters: Seattle, WA
+  - Locations: 12 distribution centers across US
+  
+  **Size & Financials**:
+  - Employees: 850 (grown from 600 in 2022)
+  - Revenue: $320M annually (est. 2023)
+  - Growth rate: 30% YoY (past 3 years)
+  - Funding: Privately held, Series C funded ($50M in 2021)
+  
+  **Recent Developments** (past 6 months):
+  - **Expansion**: Opened 2 new distribution centers (Denver, Austin)
+  - **Leadership change**: New CEO appointed (Dr. James Park, former Medtronic exec)
+  - **Product launch**: New AI-powered inventory prediction system
+  - **Partnership**: Announced partnership with major hospital network (Kaiser Permanente)
+  
+  **Strategic Priorities** (from press releases + earnings calls):
+  1. **Geographic expansion**: Targeting 20 distribution centers by 2026
+  2. **Digital transformation**: Modernizing legacy systems (our product fits here!)
+  3. **Customer experience**: Improving order fulfillment speed (critical metric for them)
+  
+  **Market Position**:
+  - Market share: #4 in medical device distribution (8% market share)
+  - Main competitors: McKesson, Cardinal Health, AmerisourceBergen
+  - Differentiation: Regional focus + personalized service (vs big national players)
+  
+  **Relevant News** (past 30 days):
+  - Trade publication article: "Beta Corporation invests $15M in technology modernization"
+  - LinkedIn post from CEO: "Our vision is to become the most tech-enabled distributor by 2026"
+  - Industry report: Beta ranked #1 in customer satisfaction (J.D. Power survey)
+
+OUTPUT to User:
+
+📄 **CUSTOMER MEETING BRIEF - BETA CORPORATION**
+
+**Meeting**: Quarterly Business Review  
+**Date**: Next Thursday, 10:00-11:30 AM  
+**Customer Attendees**: Sarah Johnson (VP Ops), Michael Lee (Dir IT), Emily Carter (PM)  
+**Internal Attendees**: You, Dana (VP Sales), Jordan (CSM)
+
+---
+
+**COMPANY BACKGROUND - BETA CORPORATION**
+
+**Industry**: Healthcare Technology (medical device distribution)  
+**Size**: 850 employees, $320M revenue, 30% YoY growth  
+**Recent News**: 
+- New CEO: Dr. James Park (ex-Medtronic)
+- Expansion: Opened Denver + Austin distribution centers
+- Partnership: Kaiser Permanente collaboration announced
+- Investment: $15M in technology modernization (relevant to us!)
+
+**Strategic Priorities**:
+1. Geographic expansion (12 → 20 distribution centers by 2026)
+2. Digital transformation (CEO vision: "most tech-enabled distributor by 2026")
+3. Customer experience (ranked #1 in customer satisfaction)
+
+**Key Context**: Beta is 4 months from renewal and considering expanding from 200 → 250 licenses.
+
+---
+
+**ATTENDEE DOSSIERS**
+
+**Sarah Johnson** - VP of Operations (Decision-Maker)  
+- Background: 8 years at Beta, MBA Stanford, ex-McKinsey  
+- **Top Interests**:
+  1. ROI & Cost Optimization (asks about efficiency gains in 8 of 10 emails)
+  2. Workflow Automation (wants to automate 20 hrs/month manual reporting)
+  3. Scalability (planning for 500 users next year, 30% growth)
+- **Suggested Talking Points**: Showcase ROI metrics, demo automation features, discuss enterprise scalability
+
+**Michael Lee** - Director of IT (Technical Gatekeeper)  
+- Background: 3 years at Beta, ex-Amazon engineer, MS CS  
+- **Top Interests**:
+  1. Security & Compliance (healthcare = HIPAA, asked about SOC 2 Type 2)
+  2. API Integration (building internal tools, needs API access to Salesforce)
+  3. Performance & Uptime (requires 99.9% SLA for mission-critical ops)
+- **Suggested Talking Points**: Share security certifications, demo API capabilities, review SLA performance
+
+**Emily Carter** - Product Manager (User Advocate)  
+- Background: 5 years at Beta, promoted from analyst, BA UC Berkeley  
+- **Top Interests**:
+  1. Mobile App Enhancements (field team needs offline mode - mentioned 8 times!)
+  2. User Experience (feedback: dashboard too cluttered)
+  3. Analytics & Reporting (analysts need custom report templates)
+- **Suggested Talking Points**: Roadmap for mobile offline mode, preview dashboard redesign, demo custom reporting
+
+---
+
+**MEETING PREP RECOMMENDATIONS**:
+
+1. **For Sarah** (ROI focus): Prepare cost savings analysis showing how automation can reclaim 20 hrs/month
+2. **For Michael** (security focus): Bring SOC 2 Type 2 cert, demo API integration with Salesforce
+3. **For Emily** (UX focus): Preview mobile offline mode (in roadmap), show dashboard redesign mockups
+
+**Renewal Context**: 4 months to renewal + expansion opportunity (50 additional licenses) - use this QBR to demonstrate value and set up renewal discussion.
+
+**BRIEF COMPLETE** ✅
+
+**Key Insight**: This prompt demonstrates the most comprehensive customer relationship intelligence in the framework. CAN-08 (historical retrieval) + CAN-09 (interest analysis) create personalized dossiers that go beyond static profiles - they analyze PATTERNS in past interactions to predict what each attendee will care about. Combined with CAN-22 (company research), the brief provides both individual-level (dossiers) and company-level (strategic priorities) context, enabling highly tailored meeting preparation.
+```
+
+---
 - Final brief combines attendee dossiers (CAN-09) + company background (CAN-22)
 - CAN-22 usage: External research for company intelligence
 
