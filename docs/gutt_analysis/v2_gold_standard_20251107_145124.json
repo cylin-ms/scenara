@@ -1,0 +1,168 @@
+{
+  "metadata": {
+    "timestamp": "2025-11-07T06-51-24",
+    "framework_version": "24 Canonical Tasks v2.0",
+    "total_prompts": 9,
+    "evaluator": "Chin-Yew Lin",
+    "source_file": "gpt5_v2_analysis_20251107_125720.json",
+    "description": "Human-validated gold standard for v2 hero prompts"
+  },
+  "prompts": {
+    "Organizer-1": {
+      "prompt_id": "Organizer-1",
+      "prompt_text": "“Keep my Calendar up to date by committing to only meetings that are part of my priorities.”",
+      "tasks_covered": [
+        "CAN-04",
+        "CAN-01",
+        "CAN-07",
+        "CAN-02A",
+        "CAN-02B",
+        "CAN-11",
+        "CAN-13"
+      ],
+      "missing_tasks": [],
+      "overall_rating": "correct",
+      "notes": ""
+    },
+    "Organizer-2": {
+      "prompt_id": "Organizer-2",
+      "prompt_text": "“Track all my important meetings and flag any that require focus time to prepare for them.”",
+      "tasks_covered": [
+        "CAN-04",
+        "CAN-01",
+        "CAN-07",
+        "CAN-02A",
+        "CAN-02B",
+        "CAN-21",
+        "CAN-11",
+        "CAN-16"
+      ],
+      "missing_tasks": [
+        "CAN-16"
+      ],
+      "overall_rating": "partial",
+      "notes": "Missing \"track important meetings\" and \"flag meetings need time for preparation\". Can we attribute \"track\" to CAN-16? But we do not have any Canonical task for \"flag\"?  \"Flag\" is an action that we add an annotation to an event on calendar.  We need to add new canonical tasks for similar tasks that signal something on calendar if some predefined condition occurs. "
+    },
+    "Organizre-3": {
+      "prompt_id": "Organizre-3",
+      "prompt_text": "“Help me understand where I am spending my time .and identify ways I can reclaim time to focus more on my top priorities.”",
+      "tasks_covered": [
+        "CAN-04",
+        "CAN-01",
+        "CAN-07",
+        "CAN-02A",
+        "CAN-02B",
+        "CAN-10",
+        "CAN-11",
+        "CAN-14",
+        "CAN-20"
+      ],
+      "missing_tasks": [],
+      "overall_rating": "correct",
+      "notes": ""
+    },
+    "Schedule-1": {
+      "prompt_id": "Schedule-1",
+      "prompt_text": "“Starting next week, I want a weekly 30-min 1:1 with {name}. Afternoons preferred, avoid Fridays. Automatically reschedule on declines or conflicts.”",
+      "tasks_covered": [
+        "CAN-04",
+        "CAN-05",
+        "CAN-01",
+        "CAN-06",
+        "CAN-12",
+        "CAN-15",
+        "CAN-03",
+        "CAN-16",
+        "CAN-17"
+      ],
+      "missing_tasks": [],
+      "overall_rating": "correct",
+      "notes": ""
+    },
+    "Schedule-2": {
+      "prompt_id": "Schedule-2",
+      "prompt_text": "“Clear my Thursday afternoon. Update my RSVPs and help me reschedule my meetings to another time and show me as {status}.”",
+      "tasks_covered": [
+        "CAN-04",
+        "CAN-01",
+        "CAN-07",
+        "CAN-13",
+        "CAN-06",
+        "CAN-12",
+        "CAN-23",
+        "CAN-03",
+        "CAN-05"
+      ],
+      "missing_tasks": [
+        "CAN-05"
+      ],
+      "overall_rating": "partial",
+      "notes": "The model needs to get meta data, and from there to find attendee for those meeting in the Thursday afternoon."
+    },
+    "Schedule-3": {
+      "prompt_id": "Schedule-3",
+      "prompt_text": "“Land a time to meet about Project Alpha with Chris, Sangya, and Kat for 1 hour in the next 2 weeks. Schedule over 1:1s and lunches if needed and work around Kat’s schedule. Make the meeting in person and add a room.”",
+      "tasks_covered": [
+        "CAN-04",
+        "CAN-05",
+        "CAN-01",
+        "CAN-07",
+        "CAN-02A",
+        "CAN-02B",
+        "CAN-06",
+        "CAN-12",
+        "CAN-19",
+        "CAN-03"
+      ],
+      "missing_tasks": [],
+      "overall_rating": "correct",
+      "notes": ""
+    },
+    "Collaborate-1": {
+      "prompt_id": "Collaborate-1",
+      "prompt_text": "“Help me set the agenda to review the progress of Project Alpha with the product and marketing team to get confirmation we are on track and discuss any blocking issues or risks.”",
+      "tasks_covered": [
+        "CAN-04",
+        "CAN-05",
+        "CAN-09"
+      ],
+      "missing_tasks": [],
+      "overall_rating": null,
+      "notes": "\" to get confirmation we are on track and discuss any blocking issues or risks.\" in the prompt is to set the goal of the meeting and should be used as input for the agenda generation for CAN-09.  The user does not expect the system to find blocking issues and confirm status but the requester want to find out those during the meeting so CAN-18 should not be activated."
+    },
+    "Collaborate-2": {
+      "prompt_id": "Collaborate-2",
+      "prompt_text": "“Review the materials for my meeting with senior leadership and suggest the best way to summarize the topics into three main discussion points. Generate any objections or concerns that might come up and give me effective responses.”",
+      "tasks_covered": [
+        "CAN-04",
+        "CAN-01",
+        "CAN-07",
+        "CAN-08",
+        "CAN-09",
+        "CAN-18",
+        "CAN-05"
+      ],
+      "missing_tasks": [
+        "CAN-05"
+      ],
+      "overall_rating": "partial",
+      "notes": "The system needs to know who are in the senior leadership to find relevant meetings and meeting related materials. So CAN-05 is a critical task. "
+    },
+    "Collaborate-3": {
+      "prompt_id": "Collaborate-3",
+      "prompt_text": "“Prepare a brief for my upcoming meeting with customer Beta and include a dossier for each customer attendee and the topics they are most interested in. Include a background on their company.”",
+      "tasks_covered": [
+        "CAN-04",
+        "CAN-01",
+        "CAN-07",
+        "CAN-05",
+        "CAN-08",
+        "CAN-09",
+        "CAN-22"
+      ],
+      "missing_tasks": [],
+      "overall_rating": "correct",
+      "notes": ""
+    }
+  }
+}
