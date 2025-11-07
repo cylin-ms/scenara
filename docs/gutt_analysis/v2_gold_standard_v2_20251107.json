@@ -1,0 +1,311 @@
+{
+  "metadata": {
+    "timestamp": "2025-11-07T14-30-00",
+    "framework_version": "25 Canonical Tasks v2.0",
+    "total_prompts": 9,
+    "evaluator": "Chin-Yew Lin",
+    "source_file": "v2_gold_standard_20251107_145124.json",
+    "description": "Human-validated gold standard for v2 hero prompts - UPDATED with V2.0 numbering (CAN-02A/CAN-02B → CAN-02/CAN-03) and CAN-25 addition",
+    "changes_from_original": [
+      "Updated CAN-02A → CAN-02 (Meeting Type Classification)",
+      "Updated CAN-02B → CAN-03 (Meeting Importance Assessment)",
+      "Added CAN-25 to Organizer-2 (Event Annotation/Flagging)",
+      "Updated framework_version to 25 Canonical Tasks v2.0",
+      "Organizer-2 rating changed from 'partial' to 'correct' (CAN-25 added)"
+    ]
+  },
+  "prompts": {
+    "Organizer-1": {
+      "prompt_id": "Organizer-1",
+      "prompt_text": "Keep my Calendar up to date by committing to only meetings that are part of my priorities.",
+      "tasks_covered": [
+        "CAN-04",
+        "CAN-01",
+        "CAN-07",
+        "CAN-02",
+        "CAN-03",
+        "CAN-11",
+        "CAN-13"
+      ],
+      "missing_tasks": [],
+      "overall_rating": "correct",
+      "notes": "V2.0 Update: CAN-02A → CAN-02, CAN-02B → CAN-03"
+    },
+    "Organizer-2": {
+      "prompt_id": "Organizer-2",
+      "prompt_text": "Track all my important meetings and flag any that require focus time to prepare for them.",
+      "tasks_covered": [
+        "CAN-04",
+        "CAN-01",
+        "CAN-07",
+        "CAN-02",
+        "CAN-03",
+        "CAN-21",
+        "CAN-11",
+        "CAN-16",
+        "CAN-25"
+      ],
+      "missing_tasks": [],
+      "overall_rating": "correct",
+      "notes": "V2.0 Update: CAN-02A → CAN-02, CAN-02B → CAN-03, ADDED CAN-25 (Event Annotation/Flagging) for 'flag any that require focus time' requirement. CAN-16 (Event Monitoring) addresses 'track' requirement. Now CORRECT with CAN-25."
+    },
+    "Organizre-3": {
+      "prompt_id": "Organizre-3",
+      "prompt_text": "Help me understand where I am spending my time and identify ways I can reclaim time to focus more on my top priorities.",
+      "tasks_covered": [
+        "CAN-04",
+        "CAN-01",
+        "CAN-07",
+        "CAN-02",
+        "CAN-03",
+        "CAN-10",
+        "CAN-11",
+        "CAN-14",
+        "CAN-20"
+      ],
+      "missing_tasks": [],
+      "overall_rating": "correct",
+      "notes": "V2.0 Update: CAN-02A → CAN-02, CAN-02B → CAN-03"
+    },
+    "Schedule-1": {
+      "prompt_id": "Schedule-1",
+      "prompt_text": "Starting next week, I want a weekly 30-min 1:1 with {name}. Afternoons preferred, avoid Fridays. Automatically reschedule on declines or conflicts.",
+      "tasks_covered": [
+        "CAN-04",
+        "CAN-05",
+        "CAN-01",
+        "CAN-06",
+        "CAN-12",
+        "CAN-15",
+        "CAN-03",
+        "CAN-16",
+        "CAN-17"
+      ],
+      "missing_tasks": [],
+      "overall_rating": "correct",
+      "notes": "No CAN-02/CAN-03 updates needed (didn't use those tasks)"
+    },
+    "Schedule-2": {
+      "prompt_id": "Schedule-2",
+      "prompt_text": "Clear my Thursday afternoon. Update my RSVPs and help me reschedule my meetings to another time and show me as {status}.",
+      "tasks_covered": [
+        "CAN-04",
+        "CAN-05",
+        "CAN-01",
+        "CAN-07",
+        "CAN-13",
+        "CAN-06",
+        "CAN-12",
+        "CAN-23",
+        "CAN-03"
+      ],
+      "missing_tasks": [],
+      "overall_rating": "correct",
+      "notes": "V2.0 Update: Added CAN-05 (was in missing_tasks, now in tasks_covered). Human evaluator noted 'The model needs to get metadata, and from there to find attendee' - CAN-05 is CRITICAL. Now CORRECT."
+    },
+    "Schedule-3": {
+      "prompt_id": "Schedule-3",
+      "prompt_text": "Land a time to meet about Project Alpha with Chris, Sangya, and Kat for 1 hour in the next 2 weeks. Schedule over 1:1s and lunches if needed and work around Kat's schedule. Make the meeting in person and add a room.",
+      "tasks_covered": [
+        "CAN-04",
+        "CAN-05",
+        "CAN-01",
+        "CAN-07",
+        "CAN-02",
+        "CAN-03",
+        "CAN-06",
+        "CAN-12",
+        "CAN-19",
+        "CAN-03"
+      ],
+      "missing_tasks": [],
+      "overall_rating": "correct",
+      "notes": "V2.0 Update: CAN-02A → CAN-02, CAN-02B → CAN-03. Note: CAN-03 appears twice (Calendar Event Creation/Update used at end)"
+    },
+    "Collaborate-1": {
+      "prompt_id": "Collaborate-1",
+      "prompt_text": "Help me set the agenda to review the progress of Project Alpha with the product and marketing team to get confirmation we are on track and discuss any blocking issues or risks.",
+      "tasks_covered": [
+        "CAN-04",
+        "CAN-05",
+        "CAN-09"
+      ],
+      "missing_tasks": [],
+      "overall_rating": "correct",
+      "notes": "Human evaluator note: 'to get confirmation we are on track and discuss any blocking issues or risks' is the GOAL of the meeting, not a system task. User wants to DISCUSS risks during meeting, not have system ANTICIPATE them (CAN-18 should NOT be used). No CAN-02/CAN-03 updates needed."
+    },
+    "Collaborate-2": {
+      "prompt_id": "Collaborate-2",
+      "prompt_text": "Review the materials for my meeting with senior leadership and suggest the best way to summarize the topics into three main discussion points. Generate any objections or concerns that might come up and give me effective responses.",
+      "tasks_covered": [
+        "CAN-04",
+        "CAN-05",
+        "CAN-01",
+        "CAN-07",
+        "CAN-08",
+        "CAN-09",
+        "CAN-18"
+      ],
+      "missing_tasks": [],
+      "overall_rating": "correct",
+      "notes": "V2.0 Update: Added CAN-05 (was in missing_tasks, now in tasks_covered). Human evaluator noted 'System needs to know who are in the senior leadership to find relevant meetings and materials. So CAN-05 is a critical task.' Now CORRECT."
+    },
+    "Collaborate-3": {
+      "prompt_id": "Collaborate-3",
+      "prompt_text": "Prepare a brief for my upcoming meeting with customer Beta and include a dossier for each customer attendee and the topics they are most interested in. Include a background on their company.",
+      "tasks_covered": [
+        "CAN-04",
+        "CAN-01",
+        "CAN-07",
+        "CAN-05",
+        "CAN-08",
+        "CAN-09",
+        "CAN-22"
+      ],
+      "missing_tasks": [],
+      "overall_rating": "correct",
+      "notes": "No CAN-02/CAN-03 updates needed (didn't use those tasks)"
+    }
+  },
+  "summary_statistics": {
+    "total_prompts": 9,
+    "correct_prompts": 9,
+    "partial_prompts": 0,
+    "needs_review_prompts": 0,
+    "average_tasks_per_prompt": 7.67,
+    "total_task_instances": 69,
+    "unique_tasks_used": 22,
+    "framework_coverage": "88% (22 of 25 tasks used)",
+    "v2_improvements": {
+      "can_02_03_renumbering": "5 prompts updated (Organizer-1, Organizer-2, Organizre-3, Schedule-3)",
+      "can_25_addition": "1 prompt updated (Organizer-2)",
+      "can_05_corrections": "2 prompts updated (Schedule-2, Collaborate-2)",
+      "rating_improvements": "3 prompts changed from partial/null to correct (Organizer-2, Schedule-2, Collaborate-2)"
+    }
+  },
+  "task_frequency": {
+    "CAN-01": {
+      "count": 9,
+      "frequency": "100%",
+      "prompts": ["Organizer-1", "Organizer-2", "Organizre-3", "Schedule-1", "Schedule-2", "Schedule-3", "Collaborate-1", "Collaborate-2", "Collaborate-3"]
+    },
+    "CAN-02": {
+      "count": 5,
+      "frequency": "56%",
+      "prompts": ["Organizer-1", "Organizer-2", "Organizre-3", "Schedule-3"]
+    },
+    "CAN-03": {
+      "count": 6,
+      "frequency": "67%",
+      "prompts": ["Organizer-1", "Organizer-2", "Organizre-3", "Schedule-1", "Schedule-2", "Schedule-3"]
+    },
+    "CAN-04": {
+      "count": 9,
+      "frequency": "100%",
+      "prompts": ["Organizer-1", "Organizer-2", "Organizre-3", "Schedule-1", "Schedule-2", "Schedule-3", "Collaborate-1", "Collaborate-2", "Collaborate-3"]
+    },
+    "CAN-05": {
+      "count": 6,
+      "frequency": "67%",
+      "prompts": ["Schedule-1", "Schedule-2", "Schedule-3", "Collaborate-1", "Collaborate-2", "Collaborate-3"]
+    },
+    "CAN-06": {
+      "count": 3,
+      "frequency": "33%",
+      "prompts": ["Schedule-1", "Schedule-2", "Schedule-3"]
+    },
+    "CAN-07": {
+      "count": 7,
+      "frequency": "78%",
+      "prompts": ["Organizer-1", "Organizer-2", "Organizre-3", "Schedule-2", "Schedule-3", "Collaborate-2", "Collaborate-3"]
+    },
+    "CAN-08": {
+      "count": 2,
+      "frequency": "22%",
+      "prompts": ["Collaborate-2", "Collaborate-3"]
+    },
+    "CAN-09": {
+      "count": 3,
+      "frequency": "33%",
+      "prompts": ["Collaborate-1", "Collaborate-2", "Collaborate-3"]
+    },
+    "CAN-10": {
+      "count": 1,
+      "frequency": "11%",
+      "prompts": ["Organizre-3"]
+    },
+    "CAN-11": {
+      "count": 3,
+      "frequency": "33%",
+      "prompts": ["Organizer-1", "Organizer-2", "Organizre-3"]
+    },
+    "CAN-12": {
+      "count": 3,
+      "frequency": "33%",
+      "prompts": ["Schedule-1", "Schedule-2", "Schedule-3"]
+    },
+    "CAN-13": {
+      "count": 2,
+      "frequency": "22%",
+      "prompts": ["Organizer-1", "Schedule-2"]
+    },
+    "CAN-14": {
+      "count": 1,
+      "frequency": "11%",
+      "prompts": ["Organizre-3"]
+    },
+    "CAN-15": {
+      "count": 1,
+      "frequency": "11%",
+      "prompts": ["Schedule-1"]
+    },
+    "CAN-16": {
+      "count": 2,
+      "frequency": "22%",
+      "prompts": ["Organizer-2", "Schedule-1"]
+    },
+    "CAN-17": {
+      "count": 1,
+      "frequency": "11%",
+      "prompts": ["Schedule-1"]
+    },
+    "CAN-18": {
+      "count": 1,
+      "frequency": "11%",
+      "prompts": ["Collaborate-2"]
+    },
+    "CAN-19": {
+      "count": 1,
+      "frequency": "11%",
+      "prompts": ["Schedule-3"]
+    },
+    "CAN-20": {
+      "count": 1,
+      "frequency": "11%",
+      "prompts": ["Organizre-3"]
+    },
+    "CAN-21": {
+      "count": 1,
+      "frequency": "11%",
+      "prompts": ["Organizer-2"]
+    },
+    "CAN-22": {
+      "count": 1,
+      "frequency": "11%",
+      "prompts": ["Collaborate-3"]
+    },
+    "CAN-23": {
+      "count": 1,
+      "frequency": "11%",
+      "prompts": ["Schedule-2"]
+    },
+    "CAN-25": {
+      "count": 1,
+      "frequency": "11%",
+      "prompts": ["Organizer-2"]
+    }
+  },
+  "unused_tasks": [
+    "CAN-24"
+  ]
+}
