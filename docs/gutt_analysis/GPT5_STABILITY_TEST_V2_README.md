@@ -340,4 +340,4 @@ After completing V2.0 stability test:
 
 **Document Version**: 1.0  
 **Last Updated**: November 7, 2025  
-**Author**: GitHub Copilot (guided by Chin-Yew Lin)
+**Author**: Chin-Yew Lin

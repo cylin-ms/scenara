@@ -372,4 +372,4 @@ When using these models for GUTT evaluation:
 **Document Version:** 1.0  
 **Generated:** November 6, 2025  
 **Analysis Tool:** show_claude_ollama_side_by_side.py  
-**Author:** Scenara 2.0 Development Team
+**Author:** Chin-Yew Lin

@@ -29,7 +29,7 @@ This guide provides step-by-step instructions for creating a **Gold Standard Ref
 
 **Document Version**: [X.X]  
 **Date**: [Month Day, Year]  
-**Author**: [Your Name]  
+**Author**: Chin-Yew Lin  
 **Framework**: [Framework Name and Version] (e.g., "Calendar.AI Canonical Unit Tasks Framework v2.0 (25 tasks)")
 
 **Related Documents**:
@@ -569,7 +569,7 @@ End with comprehensive metadata:
 
 **Version**: [X.X]  
 **Created**: [Month Day, Year]  
-**Author**: [Your Name]  
+**Author**: Chin-Yew Lin  
 **Total Prompts**: [N]  
 **Total Tasks**: [N] ([describe any special counting])  
 **Framework**: [Framework Name and Version]  
