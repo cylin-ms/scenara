@@ -62,6 +62,9 @@ class V2PromptsAnalyzer:
         with open(self.v2_prompts_path, 'r', encoding='utf-8') as f:
             for line in f:
                 line = line.strip()
+                # Normalize non-breaking spaces to regular spaces
+                line = line.replace('\xa0', ' ')
+                
                 if not line or line.startswith('#'):
                     continue
                 
