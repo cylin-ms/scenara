@@ -191,13 +191,79 @@ def run_single_trial(
     return trial_results
 
 
-def analyze_stability(trials: List[Dict[str, Any]], output_dir: Path) -> Dict[str, Any]:
+def load_gold_standard() -> Dict[str, Any]:
     """
-    Analyze stability across 3 V2.0 trials.
+    Load V2.0 gold standard reference for evaluation.
+    
+    Returns:
+        Gold standard dictionary with human-validated task assignments
+    """
+    gold_standard_path = Path("docs/gutt_analysis/v2_gold_standard_v2_20251107.json")
+    
+    if not gold_standard_path.exists():
+        print(f"⚠️  Gold standard not found: {gold_standard_path}")
+        return None
+    
+    with open(gold_standard_path, 'r', encoding='utf-8') as f:
+        gold_standard = json.load(f)
+    
+    print(f"✅ Loaded gold standard: {gold_standard_path}")
+    print(f"   Framework: {gold_standard['metadata']['framework_version']}")
+    print(f"   Evaluator: {gold_standard['metadata']['evaluator']}")
+    print(f"   Total prompts: {gold_standard['metadata']['total_prompts']}")
+    
+    return gold_standard
+
+
+def compute_metrics(predicted: List[str], gold: List[str]) -> Dict[str, float]:
+    """
+    Compute precision, recall, and F1 score.
+    
+    Args:
+        predicted: List of predicted task IDs
+        gold: List of gold standard task IDs
+        
+    Returns:
+        Dictionary with precision, recall, F1 metrics
+    """
+    predicted_set = set(predicted)
+    gold_set = set(gold)
+    
+    if len(predicted_set) == 0 and len(gold_set) == 0:
+        return {"precision": 1.0, "recall": 1.0, "f1": 1.0}
+    
+    if len(predicted_set) == 0:
+        return {"precision": 0.0, "recall": 0.0, "f1": 0.0}
+    
+    if len(gold_set) == 0:
+        return {"precision": 0.0, "recall": 0.0, "f1": 0.0}
+    
+    true_positives = len(predicted_set.intersection(gold_set))
+    false_positives = len(predicted_set - gold_set)
+    false_negatives = len(gold_set - predicted_set)
+    
+    precision = true_positives / (true_positives + false_positives) if (true_positives + false_positives) > 0 else 0.0
+    recall = true_positives / (true_positives + false_negatives) if (true_positives + false_negatives) > 0 else 0.0
+    f1 = 2 * (precision * recall) / (precision + recall) if (precision + recall) > 0 else 0.0
+    
+    return {
+        "precision": round(precision * 100, 2),
+        "recall": round(recall * 100, 2),
+        "f1": round(f1 * 100, 2),
+        "true_positives": true_positives,
+        "false_positives": false_positives,
+        "false_negatives": false_negatives
+    }
+
+
+def analyze_stability(trials: List[Dict[str, Any]], output_dir: Path, gold_standard: Dict[str, Any] = None) -> Dict[str, Any]:
+    """
+    Analyze stability across 3 V2.0 trials with gold standard scoring.
     
     Args:
         trials: List of 3 trial result dictionaries
         output_dir: Directory to save analysis
+        gold_standard: Optional gold standard for evaluation
         
     Returns:
         Stability analysis dictionary
@@ -216,11 +282,20 @@ def analyze_stability(trials: List[Dict[str, Any]], output_dir: Path) -> Dict[st
                 tasks = set(comp.get('tasks_covered', []))
                 prompt_tasks[prompt_id].append(tasks)
     
+    # Get gold standard tasks if available
+    gold_tasks = {}
+    if gold_standard and 'prompts' in gold_standard:
+        for prompt_id, prompt_data in gold_standard['prompts'].items():
+            gold_tasks[prompt_id] = prompt_data.get('tasks_covered', [])
+    
+    has_gold_standard = len(gold_tasks) > 0
+    
     # Compute stability metrics
     stability_analysis = {
         "framework_version": "2.0",
         "total_canonical_tasks": 25,
         "new_in_v2": "CAN-25: Event Annotation/Flagging",
+        "gold_standard_used": has_gold_standard,
         "per_prompt": {},
         "aggregate": {
             "total_prompts": len(HERO_PROMPTS_V2),
@@ -234,10 +309,20 @@ def analyze_stability(trials: List[Dict[str, Any]], output_dir: Path) -> Dict[st
         }
     }
     
+    if has_gold_standard:
+        stability_analysis["aggregate"]["evaluation_metrics"] = {
+            "description": "Precision, Recall, F1 scores vs human-validated gold standard",
+            "per_trial": [],
+            "average": {}
+        }
+    
     print("\nPER-PROMPT STABILITY:")
+    if has_gold_standard:
+        print("(Scoring against V2.0 Gold Standard - Human-validated)")
     print("-" * 80)
     
     can25_usage = []
+    all_trial_metrics = []  # For computing average precision/recall/F1
     
     for prompt_id in sorted(prompt_tasks.keys()):
         task_sets = prompt_tasks[prompt_id]
@@ -271,6 +356,33 @@ def analyze_stability(trials: List[Dict[str, Any]], output_dir: Path) -> Dict[st
                 "consistency": f"{can25_in_trials}/3"
             })
         
+        # Compute metrics vs gold standard if available
+        prompt_metrics = None
+        if prompt_id in gold_tasks:
+            gold = gold_tasks[prompt_id]
+            trial_metrics = []
+            
+            for i, predicted_tasks in enumerate(task_sets, 1):
+                metrics = compute_metrics(list(predicted_tasks), gold)
+                metrics['trial'] = i
+                trial_metrics.append(metrics)
+                all_trial_metrics.append(metrics)
+            
+            # Average metrics across 3 trials for this prompt
+            avg_precision = sum(m['precision'] for m in trial_metrics) / 3
+            avg_recall = sum(m['recall'] for m in trial_metrics) / 3
+            avg_f1 = sum(m['f1'] for m in trial_metrics) / 3
+            
+            prompt_metrics = {
+                "gold_standard_tasks": gold,
+                "per_trial": trial_metrics,
+                "average": {
+                    "precision": round(avg_precision, 2),
+                    "recall": round(avg_recall, 2),
+                    "f1": round(avg_f1, 2)
+                }
+            }
+        
         stability_analysis["per_prompt"][prompt_id] = {
             "always_selected": sorted(list(intersection)),
             "sometimes_selected": sorted(list(varying_tasks)),
@@ -286,6 +398,9 @@ def analyze_stability(trials: List[Dict[str, Any]], output_dir: Path) -> Dict[st
             }
         }
         
+        if prompt_metrics:
+            stability_analysis["per_prompt"][prompt_id]["gold_standard_metrics"] = prompt_metrics
+        
         print(f"\n{prompt_id}:")
         print(f"  Always selected ({len(intersection)} tasks): {', '.join(sorted(intersection))}")
         if varying_tasks:
@@ -294,6 +409,11 @@ def analyze_stability(trials: List[Dict[str, Any]], output_dir: Path) -> Dict[st
         print(f"  Avg tasks: {avg_count:.1f} ± {std_dev:.2f}")
         if can25_in_trials > 0:
             print(f"  🆕 CAN-25 detected: {can25_in_trials}/3 trials")
+        
+        if prompt_metrics:
+            avg_m = prompt_metrics['average']
+            print(f"  📊 Gold Standard Metrics (3-trial avg):")
+            print(f"     Precision: {avg_m['precision']:.2f}%  Recall: {avg_m['recall']:.2f}%  F1: {avg_m['f1']:.2f}%")
     
     # Aggregate CAN-25 statistics
     stability_analysis["aggregate"]["can25_detection"]["prompts_using_can25"] = can25_usage
@@ -319,12 +439,58 @@ def analyze_stability(trials: List[Dict[str, Any]], output_dir: Path) -> Dict[st
         len(stability_analysis["per_prompt"]), 2
     ) if stability_analysis["per_prompt"] else 0
     
+    # Compute aggregate gold standard metrics if available
+    if has_gold_standard and all_trial_metrics:
+        avg_precision = sum(m['precision'] for m in all_trial_metrics) / len(all_trial_metrics)
+        avg_recall = sum(m['recall'] for m in all_trial_metrics) / len(all_trial_metrics)
+        avg_f1 = sum(m['f1'] for m in all_trial_metrics) / len(all_trial_metrics)
+        
+        # Compute standard deviation for confidence intervals
+        precision_values = [m['precision'] for m in all_trial_metrics]
+        recall_values = [m['recall'] for m in all_trial_metrics]
+        f1_values = [m['f1'] for m in all_trial_metrics]
+        
+        precision_std = (sum((p - avg_precision) ** 2 for p in precision_values) / len(precision_values)) ** 0.5
+        recall_std = (sum((r - avg_recall) ** 2 for r in recall_values) / len(recall_values)) ** 0.5
+        f1_std = (sum((f - avg_f1) ** 2 for f in f1_values) / len(f1_values)) ** 0.5
+        
+        stability_analysis["aggregate"]["evaluation_metrics"]["average"] = {
+            "precision": round(avg_precision, 2),
+            "recall": round(avg_recall, 2),
+            "f1": round(avg_f1, 2),
+            "precision_std": round(precision_std, 2),
+            "recall_std": round(recall_std, 2),
+            "f1_std": round(f1_std, 2),
+            "total_comparisons": len(all_trial_metrics)
+        }
+    
     print("\n" + "=" * 80)
     print("AGGREGATE STATISTICS V2.0")
     print("=" * 80)
     print(f"Average task count: {stability_analysis['aggregate']['average_task_count']:.2f}")
     print(f"Average variance: {stability_analysis['aggregate']['average_variance']:.4f}")
     print(f"Overall consistency: {stability_analysis['aggregate']['overall_consistency_percentage']:.2f}%")
+    
+    if has_gold_standard and 'evaluation_metrics' in stability_analysis['aggregate']:
+        avg_metrics = stability_analysis['aggregate']['evaluation_metrics']['average']
+        print(f"\n📊 GOLD STANDARD EVALUATION (Human-validated V2.0):")
+        print(f"   Precision: {avg_metrics['precision']:.2f}% ± {avg_metrics['precision_std']:.2f}%")
+        print(f"   Recall:    {avg_metrics['recall']:.2f}% ± {avg_metrics['recall_std']:.2f}%")
+        print(f"   F1 Score:  {avg_metrics['f1']:.2f}% ± {avg_metrics['f1_std']:.2f}%")
+        print(f"   Total comparisons: {avg_metrics['total_comparisons']} (9 prompts × 3 trials)")
+        
+        # Stability assessment
+        if avg_metrics['f1_std'] < 1.0:
+            stability_rating = "EXCELLENT (<1% variance)"
+        elif avg_metrics['f1_std'] < 2.0:
+            stability_rating = "GOOD (<2% variance)"
+        elif avg_metrics['f1_std'] < 5.0:
+            stability_rating = "ACCEPTABLE (<5% variance)"
+        else:
+            stability_rating = "NEEDS IMPROVEMENT (≥5% variance)"
+        
+        print(f"   Stability: {stability_rating}")
+    
     print(f"\n🆕 CAN-25 Detection:")
     print(f"   Prompts using CAN-25: {len(can25_usage)}/{len(HERO_PROMPTS_V2)} ({stability_analysis['aggregate']['can25_detection']['percentage']:.1f}%)")
     if can25_usage:
@@ -344,7 +510,7 @@ def analyze_stability(trials: List[Dict[str, Any]], output_dir: Path) -> Dict[st
 
 
 def main():
-    """Run 3-trial stability test for GPT-5 V2.0"""
+    """Run 3-trial stability test for GPT-5 V2.0 with gold standard evaluation"""
     print("=" * 80)
     print("GPT-5 EXECUTION COMPOSITION STABILITY TEST V2.0")
     print("=" * 80)
@@ -354,6 +520,15 @@ def main():
     print(f"Prompts per trial: {len(HERO_PROMPTS_V2)}")
     print(f"Total API calls: {3 * len(HERO_PROMPTS_V2)}")
     print("=" * 80)
+    
+    # Load gold standard
+    print("\nLoading V2.0 Gold Standard Reference...")
+    gold_standard = load_gold_standard()
+    
+    if gold_standard:
+        print("✅ Gold standard loaded - will compute precision/recall/F1 scores")
+    else:
+        print("⚠️  No gold standard - will only compute stability metrics")
     
     # Create output directory
     output_dir = Path("docs/gutt_analysis/model_comparison/gpt5_stability_v2")
@@ -380,8 +555,8 @@ def main():
             print(f"\nPausing 3 seconds before trial {trial_num + 1}...")
             time.sleep(3)
     
-    # Analyze stability
-    stability_analysis = analyze_stability(trials, output_dir)
+    # Analyze stability with gold standard scoring
+    stability_analysis = analyze_stability(trials, output_dir, gold_standard)
     
     print("\n" + "=" * 80)
     print("✅ STABILITY TEST V2.0 COMPLETE")
@@ -389,7 +564,15 @@ def main():
     print(f"Total trials: 3")
     print(f"Total API calls: {3 * len(HERO_PROMPTS_V2)}")
     print(f"Results saved to: {output_dir}")
-    print(f"\nNext step: Run `python tools/compute_gpt5_average_v2.py` to compute average performance")
+    
+    if gold_standard and 'evaluation_metrics' in stability_analysis.get('aggregate', {}):
+        avg_metrics = stability_analysis['aggregate']['evaluation_metrics']['average']
+        print(f"\n🎯 FINAL SCORES (vs Human-validated Gold Standard):")
+        print(f"   F1 Score: {avg_metrics['f1']:.2f}% ± {avg_metrics['f1_std']:.2f}%")
+        print(f"   Precision: {avg_metrics['precision']:.2f}% ± {avg_metrics['precision_std']:.2f}%")
+        print(f"   Recall: {avg_metrics['recall']:.2f}% ± {avg_metrics['recall_std']:.2f}%")
+    
+    print(f"\nNext step: Compare with V1.0 baseline (78.40% F1 ± 0.72%)")
 
 
 if __name__ == "__main__":
