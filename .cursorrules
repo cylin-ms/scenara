@@ -309,6 +309,72 @@ Scenara 2.0 is an enterprise meeting intelligence system that evolved from the P
 
 ---
 
+### 🎯 Daily Status Update (November 8, 2025)
+**Status**: ✅ COMPLETE - Schedule-2 Gold Standard Corrections & Comprehensive Documentation Update
+
+**Session Summary**: Critical gold standard accuracy improvements and framework documentation
+
+**Part 1: Schedule-2 CAN-05 Removal** (User-identified correction):
+- ✅ **Key Insight**: CAN-05 (Attendee Resolution) NOT needed for existing calendar meetings
+- ✅ **Rationale**: Meetings already booked have attendee info via CAN-07 (Meeting Metadata Extraction)
+- ✅ **CAN-05 Distinction Clarified**:
+  - **Needed**: Resolving ambiguous references ("{name}", "senior leadership", "customer Beta")
+  - **NOT Needed**: Working with existing meetings (attendee details already in metadata)
+- ✅ **Schedule-2 Corrections**:
+  - Task count: 9 → 8 tasks
+  - F1 Score: 77.78% → 88.89% (+11.11 pp)
+  - Overall rating: "correct" → "partial" (only CAN-06 missing)
+  - Removed CAN-05 from tasks_covered array
+
+**Part 2: Comprehensive Documentation Updates** (8 files updated):
+- ✅ **V2_GOLD_STANDARD_REPORT.md**: Summary tables, performance metrics, recommendations
+  - Mean F1: 91.98% → 93.21% (+1.23 pp)
+  - F1 Std Dev: 16.38% → 14.97% (-1.41 pp)
+  - Distribution: 7 at 100%, 1 at 88.89%, 1 at 50%
+- ✅ **V2_HERO_PROMPTS_LIST.md**: Schedule-2 section with corrected metrics
+- ✅ **METRIC_UPDATE_SUMMARY_20251108.md**: All Schedule-2 references, Decision #3 added
+- ✅ **v2_recalculated_metrics_20251108.json**: Schedule-2 and aggregate metrics
+- ✅ **GPT5_STABILITY_TEST_V2_README.md**: Variance analysis updated (14.97%)
+- ✅ **SCHEDULE_2_DEEP_DIVE_ANALYSIS.md**: CAN-17 acceptance + CAN-05 removal
+- ✅ **GPT5_V2_OPTIMIZATION_SUMMARY.md**: Deep dive section, variance table
+- ✅ **v2_gold_standard_v2_20251107.json**: SOURCE FILE updated (critical)
+
+**Part 3: Source Gold Standard JSON Updated**:
+- ✅ **v2_gold_standard_v2_20251107.json** (THE SOURCE OF TRUTH):
+  - Removed CAN-05 from Schedule-2 tasks_covered
+  - Updated metadata with CAN-05 removal documentation
+  - Summary statistics: correct_prompts 9→6, partial_prompts 0→3
+  - Task frequency: CAN-05 count 6→5 (67%→56%)
+  - Comprehensive notes explaining both CAN-17 and CAN-05 changes
+
+**Overall Framework Impact**:
+- Mean F1: 91.98% → **93.21%** (+1.23 pp)
+- F1 Std Dev: 16.38% → **14.97%** (-1.41 pp)
+- Mean Precision: 90.86% → **92.10%** (+1.24 pp)
+- Mean Recall: 93.83% → **94.94%** (+1.11 pp)
+- Total task instances: 69 → 68
+
+**Git Commits**:
+- **Commit 02c4c07**: Updated 7 documentation files with Schedule-2 corrections
+- **Commit 9f1cb07**: Updated source gold standard JSON (v2_gold_standard_v2_20251107.json)
+- **Files Changed**: 8 total (7 docs + 1 source JSON)
+- **Changes**: 123 insertions, 99 deletions
+- **Status**: Successfully pushed to GitHub
+
+**Key Lessons Learned** (Added to Lessons section):
+- CAN-05 (Attendee Resolution) distinction is critical for framework accuracy
+- Always update source JSON files, not just derived documentation
+- User domain expertise can identify gold standard errors that automated analysis misses
+- Comprehensive propagation of corrections ensures internal consistency
+
+**Next Session Priorities**:
+1. Continue gold standard validation for other 8 prompts (verify prompt text accuracy)
+2. Consider multi-model validation (Claude 3.5, GPT-4 Turbo) against corrected gold standard
+3. Maintain documentation quality and internal consistency
+4. Log this session with `daily_interaction_logger.py`
+
+---
+
 ### 💤 Daily Status Update (November 6, 2025)
 **Status**: ✅ COMPLETE - Canonical Unit Tasks + Execution Composition Analysis
 
@@ -1412,6 +1478,53 @@ result = subprocess.run(
 - Lessons learned capture and application (update .cursorrules continuously)
 
 ## Lessons Learned
+
+### Gold Standard Corrections & CAN-05 Distinction (November 8, 2025) 🎯 FRAMEWORK ACCURACY
+- **✅ CRITICAL USER INSIGHT**: CAN-05 (Attendee Resolution) NOT always needed - depends on data source
+- **CAN-05 Distinction Clarified**:
+  - **When NEEDED**: Resolving ambiguous references to specific calendar identities
+    - Examples: "{name}", "senior leadership", "customer Beta", "the team"
+    - Use case: Schedule-1, Schedule-3, Collaborate-2, Collaborate-3 (5 prompts)
+    - Required when prompt mentions people without specific identity
+  - **When NOT NEEDED**: Working with existing calendar meetings
+    - Rationale: Meetings already booked have attendee information in metadata
+    - CAN-07 (Meeting Metadata Extraction) provides complete attendee details
+    - Use case: Schedule-2 (existing meetings being rescheduled)
+    - No name resolution required - attendees already identified
+- **Schedule-2 Gold Standard Correction**:
+  - **Before**: 9 tasks (including CAN-05), F1: 77.78%, rating: "partial"
+  - **After**: 8 tasks (CAN-05 removed), F1: 88.89%, rating: "partial" (only CAN-06 missing)
+  - **Impact**: +11.11 pp F1 improvement, only 1 task actually missing (not 2)
+  - **Task flow corrected**: CAN-07 extracts attendees → CAN-06 checks availability → CAN-13 updates RSVPs
+- **Overall Framework Impact** (All 9 prompts):
+  - Mean F1: 91.98% → **93.21%** (+1.23 pp)
+  - F1 Std Dev: 16.38% → **14.97%** (-1.41 pp) - better consistency
+  - Mean Precision: 90.86% → **92.10%** (+1.24 pp)
+  - Mean Recall: 93.83% → **94.94%** (+1.11 pp)
+  - Distribution: 6 perfect (100%), 1 excellent (88.89%), 2 partial (77.78%, 50%)
+- **Documentation Propagation** (8 files updated):
+  - Source JSON: `v2_gold_standard_v2_20251107.json` (THE SOURCE OF TRUTH)
+  - Main reports: `V2_GOLD_STANDARD_REPORT.md`, `V2_HERO_PROMPTS_LIST.md`
+  - Metrics files: `METRIC_UPDATE_SUMMARY_20251108.md`, `v2_recalculated_metrics_20251108.json`
+  - Analysis files: `GPT5_STABILITY_TEST_V2_README.md`, `SCHEDULE_2_DEEP_DIVE_ANALYSIS.md`
+  - Comparison: `GPT5_V2_OPTIMIZATION_SUMMARY.md`
+  - Total changes: 123 insertions, 99 deletions across 8 files
+- **Lesson**: User domain expertise critical for gold standard validation
+  - Automated analysis can miss context-dependent task requirements
+  - Always distinguish between "name resolution" (CAN-05) vs "metadata extraction" (CAN-07)
+  - Existing meetings vs new meeting creation require different task sets
+- **When to Apply**: Always check if working with:
+  - **Existing data** (calendar events, emails, documents) → CAN-07 likely sufficient
+  - **Ambiguous references** (names, roles, departments) → CAN-05 required
+- **Git Commits**:
+  - **02c4c07**: Updated 7 documentation files with Schedule-2 corrections
+  - **9f1cb07**: Updated source gold standard JSON (critical source of truth)
+- **Framework Validation Best Practices**:
+  1. Always update source JSON files first, not just derived documentation
+  2. Propagate corrections consistently across all reference documents
+  3. Document rationale comprehensively in both JSON notes and markdown files
+  4. User insights can identify errors automated analysis misses
+  5. Distinguish between "resolve to identity" vs "extract from existing data"
 
 ### LLM Execution Composition Evaluation (November 7, 2025) 🏆 MODEL COMPARISON
 - **✅ CLAUDE SONNET 4.5 WINS (FAIR TEST)**: Backend AI reasoning achieved 92.29% F1 vs GPT-5's 79.74% (+12.55 points)
