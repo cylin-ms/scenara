@@ -8,7 +8,7 @@ import argparse
 import json
 import os
 import sys
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 from pathlib import Path
 from typing import Dict, List, Any, Optional
 import hashlib
@@ -350,10 +350,14 @@ class ScenaraInteractionLogger:
         
         if log['daily_summary']['major_accomplishments']:
             for i, acc in enumerate(log['daily_summary']['major_accomplishments'], 1):
-                impact_emoji = {'low': '🔵', 'medium': '🟡', 'high': '🟠', 'critical': '🔴'}.get(acc.get('impact', 'medium'), '🟡')
-                markdown += f"{i}. **{acc['description']}** {impact_emoji}\n"
-                markdown += f"   - *Category*: {acc.get('category', 'development').title()}\n"
-                markdown += f"   - *Impact*: {acc.get('impact', 'medium').title()}\n\n"
+                # Handle both string and dict formats for backward compatibility
+                if isinstance(acc, str):
+                    markdown += f"{i}. {acc}\n\n"
+                else:
+                    impact_emoji = {'low': '🔵', 'medium': '🟡', 'high': '🟠', 'critical': '🔴'}.get(acc.get('impact', 'medium'), '🟡')
+                    markdown += f"{i}. **{acc['description']}** {impact_emoji}\n"
+                    markdown += f"   - *Category*: {acc.get('category', 'development').title()}\n"
+                    markdown += f"   - *Impact*: {acc.get('impact', 'medium').title()}\n\n"
         else:
             markdown += "*No major accomplishments recorded today.*\n\n"
         
@@ -363,30 +367,42 @@ class ScenaraInteractionLogger:
         if log['daily_summary']['tools_created']:
             markdown += "### ✨ New Tools Created\n\n"
             for tool in log['daily_summary']['tools_created']:
-                markdown += f"- **{tool['name']}**\n"
-                markdown += f"  - *File*: `{tool['file_path']}`\n"
-                if tool['description']:
-                    markdown += f"  - *Description*: {tool['description']}\n"
-                markdown += "\n"
+                # Handle both string and dict formats for backward compatibility
+                if isinstance(tool, str):
+                    markdown += f"- `{tool}`\n"
+                else:
+                    markdown += f"- **{tool['name']}**\n"
+                    markdown += f"  - *File*: `{tool['file_path']}`\n"
+                    if tool.get('description'):
+                        markdown += f"  - *Description*: {tool['description']}\n"
+                    markdown += "\n"
         
         # Tools modified
         if log['daily_summary']['tools_modified']:
             markdown += "### 🔧 Tools Modified\n\n"
             for tool in log['daily_summary']['tools_modified']:
-                markdown += f"- **{tool['name']}**\n"
-                markdown += f"  - *File*: `{tool['file_path']}`\n"
-                if tool['description']:
-                    markdown += f"  - *Description*: {tool['description']}\n"
-                markdown += "\n"
+                # Handle both string and dict formats for backward compatibility
+                if isinstance(tool, str):
+                    markdown += f"- `{tool}`\n"
+                else:
+                    markdown += f"- **{tool['name']}**\n"
+                    markdown += f"  - *File*: `{tool['file_path']}`\n"
+                    if tool.get('description'):
+                        markdown += f"  - *Description*: {tool['description']}\n"
+                    markdown += "\n"
         
         # Files created
         if log['daily_summary']['files_created']:
             markdown += "### 📄 New Files Created\n\n"
             for file_info in log['daily_summary']['files_created'][:10]:  # Limit to 10 for readability
-                markdown += f"- `{file_info['path']}`"
-                if file_info['description']:
-                    markdown += f" - {file_info['description']}"
-                markdown += "\n"
+                # Handle both string and dict formats for backward compatibility
+                if isinstance(file_info, str):
+                    markdown += f"- `{file_info}`\n"
+                else:
+                    markdown += f"- `{file_info['path']}`"
+                    if file_info.get('description'):
+                        markdown += f" - {file_info['description']}"
+                    markdown += "\n"
             if len(log['daily_summary']['files_created']) > 10:
                 markdown += f"*... and {len(log['daily_summary']['files_created']) - 10} more files*\n"
             markdown += "\n"
@@ -397,13 +413,17 @@ class ScenaraInteractionLogger:
         if log['daily_summary']['decisions_made']:
             markdown += "### 📋 Key Decisions\n\n"
             for decision in log['daily_summary']['decisions_made']:
-                impact_emoji = {'low': '🔵', 'medium': '🟡', 'high': '🟠', 'critical': '🔴'}.get(decision.get('impact', 'medium'), '🟡')
-                markdown += f"- **{decision['decision']}** {impact_emoji}\n"
-                if decision['reasoning']:
-                    markdown += f"  - *Reasoning*: {decision['reasoning']}\n"
-                if decision['alternatives']:
-                    markdown += f"  - *Alternatives considered*: {', '.join(decision['alternatives'])}\n"
-                markdown += "\n"
+                # Handle both string and dict formats for backward compatibility
+                if isinstance(decision, str):
+                    markdown += f"- {decision}\n\n"
+                else:
+                    impact_emoji = {'low': '🔵', 'medium': '🟡', 'high': '🟠', 'critical': '🔴'}.get(decision.get('impact', 'medium'), '🟡')
+                    markdown += f"- **{decision['decision']}** {impact_emoji}\n"
+                    if decision.get('reasoning'):
+                        markdown += f"  - *Reasoning*: {decision['reasoning']}\n"
+                    if decision.get('alternatives'):
+                        markdown += f"  - *Alternatives considered*: {', '.join(decision['alternatives'])}\n"
+                    markdown += "\n"
         
         # Lessons learned
         if log['daily_summary']['lessons_learned']:
@@ -426,7 +446,11 @@ class ScenaraInteractionLogger:
         
         if log['daily_summary']['next_day_priorities']:
             for i, priority in enumerate(log['daily_summary']['next_day_priorities'], 1):
-                markdown += f"{i}. {priority['priority']}\n"
+                # Handle both string and dict formats for backward compatibility
+                if isinstance(priority, str):
+                    markdown += f"{i}. {priority}\n"
+                else:
+                    markdown += f"{i}. {priority['priority']}\n"
         else:
             markdown += "*No priorities set for tomorrow yet.*\n"
         
