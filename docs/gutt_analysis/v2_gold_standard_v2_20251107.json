@@ -1,17 +1,21 @@
 {
   "metadata": {
-    "timestamp": "2025-11-07T14-30-00",
+    "timestamp": "2025-11-08T00-00-00",
     "framework_version": "25 Canonical Tasks v2.0",
     "total_prompts": 9,
     "evaluator": "Chin-Yew Lin",
     "source_file": "v2_gold_standard_20251107_145124.json",
-    "description": "Human-validated gold standard for v2 hero prompts - UPDATED with V2.0 numbering (CAN-02A/CAN-02B → CAN-02/CAN-03) and CAN-25 addition",
+    "description": "Human-validated gold standard for v2 hero prompts - UPDATED with V2.0 numbering (CAN-02A/CAN-02B → CAN-02/CAN-03), CAN-25 addition, and Schedule-2 CAN-05 removal",
     "changes_from_original": [
       "Updated CAN-02A → CAN-02 (Meeting Type Classification)",
       "Updated CAN-02B → CAN-03 (Meeting Importance Assessment)",
       "Added CAN-25 to Organizer-2 (Event Annotation/Flagging)",
       "Updated framework_version to 25 Canonical Tasks v2.0",
-      "Organizer-2 rating changed from 'partial' to 'correct' (CAN-25 added)"
+      "Organizer-2 rating changed from 'partial' to 'correct' (CAN-25 added)",
+      "REVISED 2025-11-08: Removed CAN-05 from Schedule-2 (existing meetings have attendee info via CAN-07)",
+      "REVISED 2025-11-08: Changed CAN-23 to CAN-17 in Schedule-2 (automatic rescheduling)",
+      "Schedule-2 rating changed from 'correct' to 'partial' (only CAN-06 missing)",
+      "Schedule-2 task count: 9 → 8 tasks"
     ]
   },
   "prompts": {
@@ -90,7 +94,6 @@
       "prompt_text": "Clear my Thursday afternoon. Update my RSVPs and help me reschedule my meetings to another time and show me as {status}.",
       "tasks_covered": [
         "CAN-04",
-        "CAN-05",
         "CAN-01",
         "CAN-07",
         "CAN-13",
@@ -99,9 +102,9 @@
         "CAN-17",
         "CAN-03"
       ],
-      "missing_tasks": [],
-      "overall_rating": "correct",
-      "notes": "REVISED 2025-11-08: Changed CAN-23 to CAN-17 - when prompt explicitly mentions 'help me reschedule my meetings', the automatic rescheduling task (CAN-17) is appropriate. CAN-17 specifically handles rescheduling automation which matches user intent. Previous V2.0 Update: Added CAN-05 - Human evaluator noted 'The model needs to get metadata, and from there to find attendee' - CAN-05 is CRITICAL."
+      "missing_tasks": ["CAN-06"],
+      "overall_rating": "partial",
+      "notes": "REVISED 2025-11-08: (1) Changed CAN-23 to CAN-17 - when prompt explicitly mentions 'help me reschedule my meetings', the automatic rescheduling task (CAN-17) is appropriate. CAN-17 specifically handles rescheduling automation which matches user intent. (2) REMOVED CAN-05 - Not needed for existing calendar meetings. Since meetings are already booked, attendee information is available directly from CAN-07 (Meeting Metadata Extraction). CAN-05 only needed when resolving ambiguous references like '{name}' or 'senior leadership' to specific people. Schedule-2 works with existing meetings, so CAN-07 provides all attendee details needed for CAN-06 (availability checking) and CAN-13 (RSVP updates)."
     },
     "Schedule-3": {
       "prompt_id": "Schedule-3",
@@ -169,18 +172,20 @@
   },
   "summary_statistics": {
     "total_prompts": 9,
-    "correct_prompts": 9,
-    "partial_prompts": 0,
+    "correct_prompts": 6,
+    "partial_prompts": 3,
     "needs_review_prompts": 0,
-    "average_tasks_per_prompt": 7.67,
-    "total_task_instances": 69,
+    "average_tasks_per_prompt": 7.56,
+    "total_task_instances": 68,
     "unique_tasks_used": 22,
     "framework_coverage": "88% (22 of 25 tasks used)",
     "v2_improvements": {
       "can_02_03_renumbering": "5 prompts updated (Organizer-1, Organizer-2, Organizre-3, Schedule-3)",
       "can_25_addition": "1 prompt updated (Organizer-2)",
-      "can_05_corrections": "2 prompts updated (Schedule-2, Collaborate-2)",
-      "rating_improvements": "3 prompts changed from partial/null to correct (Organizer-2, Schedule-2, Collaborate-2)"
+      "can_05_corrections": "1 prompt updated (Collaborate-2)",
+      "can_05_removal": "1 prompt corrected (Schedule-2 - CAN-05 not needed for existing meetings)",
+      "can_17_acceptance": "1 prompt updated (Schedule-2 - CAN-23 → CAN-17 for automatic rescheduling)",
+      "rating_improvements": "Schedule-2 changed from 'correct' to 'partial' (only CAN-06 missing); Collaborate-1, Collaborate-2, Schedule-2 all partial"
     }
   },
   "task_frequency": {
@@ -205,9 +210,9 @@
       "prompts": ["Organizer-1", "Organizer-2", "Organizre-3", "Schedule-1", "Schedule-2", "Schedule-3", "Collaborate-1", "Collaborate-2", "Collaborate-3"]
     },
     "CAN-05": {
-      "count": 6,
-      "frequency": "67%",
-      "prompts": ["Schedule-1", "Schedule-2", "Schedule-3", "Collaborate-1", "Collaborate-2", "Collaborate-3"]
+      "count": 5,
+      "frequency": "56%",
+      "prompts": ["Schedule-1", "Schedule-3", "Collaborate-1", "Collaborate-2", "Collaborate-3"]
     },
     "CAN-06": {
       "count": 3,
