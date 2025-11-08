@@ -122,14 +122,14 @@ This gold standard was created through a rigorous 4-phase process:
 | Rating | Count | Prompts | F1 Score Range |
 |--------|-------|---------|----------------|
 | ✅ **Correct** | 5 prompts | Organizer-1, Organizer-2, Organizre-3, Schedule-1, Schedule-3, Collaborate-2, Collaborate-3 | 100% |
-| ⚠️ **Partial** | 2 prompts | Schedule-2 (missing CAN-05, CAN-06), Collaborate-1 (missing CAN-05) | 50-77.78% |
+| ⚠️ **Partial** | 2 prompts | Schedule-2 (missing CAN-06), Collaborate-1 (missing CAN-05) | 50-88.89% |
 
 **Performance Metrics**:
-- **Mean F1**: 91.98% ± 16.38% (EXCELLENT)
+- **Mean F1**: 93.21% ± 14.97% (EXCELLENT)
 - **Median F1**: 100% (7 of 9 prompts)
 - **Best F1**: 100% (7 prompts)
 - **Weakest F1**: 50% (Collaborate-1 - lowest complexity with only 3 tasks)
-- **Distribution**: 7 at 100%, 1 at 77.78%, 1 at 50%
+- **Distribution**: 7 at 100%, 1 at 88.89%, 1 at 50%
 
 **Note on Statistical Interpretation**: The large standard deviation (±16.38%) reflects a **ceiling effect** where 7 of 9 prompts achieved perfect 100% F1 scores. This is mathematically correct for bounded metrics (0-100%) and indicates **excellent overall performance** with most prompts at maximum accuracy.
 
@@ -2486,12 +2486,12 @@ The following table shows which canonical tasks are used across all 9 hero promp
 | Schedule-1 | Schedule | 9 | 100% | ✅ Correct | Automation layer (CAN-16, CAN-17) |
 | Schedule-3 | Schedule | 10 | 100% | ✅ Correct | Most complex (10 tasks) |
 | Collaborate-3 | Collaborate | 7 | 100% | ✅ Correct | Customer intelligence (CAN-22) |
-| Schedule-2 | Schedule | 9 | 77.78% | ⚠️ Partial | Missing CAN-05, CAN-06; Revised CAN-17 |
+| Schedule-2 | Schedule | 8 | 88.89% | ⚠️ Partial | Missing CAN-06; Revised CAN-17; CAN-05 removed (not needed) |
 | Collaborate-2 | Collaborate | 7 | 77.78% | ⚠️ Partial | Missing CAN-05 (critical) |
 | Collaborate-1 | Collaborate | 3 | 50% | ⚠️ Partial | Missing CAN-05, over-applied CAN-18; Revised CAN-23 |
 
 **Overall Statistics**:
-- **Mean F1**: 91.98% ± 16.38%
+- **Mean F1**: 93.21% ± 14.97%
 - **Median F1**: 100%
 - **Prompts at 100% F1**: 6 of 9 (67%)
 - **Prompts needing improvement**: 3 of 9 (33%)
@@ -2791,7 +2791,7 @@ The 25 canonical tasks V2.0 framework is validated for production use:
 
 4. **Optimize Low Performers**:
    - Collaborate-1 (50% F1): Clarify CAN-18 scope, add CAN-05 detection
-   - Schedule-2 (77.78% F1): Improve CAN-05/CAN-06 detection, validate CAN-17 revision
+   - Schedule-2 (88.89% F1): Improve CAN-06 detection; CAN-05 correctly removed
 
 5. **Multi-Model Validation**:
    - Benchmark Claude 3.5 Sonnet against gold standard

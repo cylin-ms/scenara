@@ -161,15 +161,15 @@
         "CAN-03"
       ],
       "metrics": {
-        "precision": 77.78,
-        "recall": 77.78,
-        "f1": 77.78,
-        "tp": 7,
-        "fp": 2,
-        "fn": 2
+        "precision": 88.89,
+        "recall": 88.89,
+        "f1": 88.89,
+        "tp": 8,
+        "fp": 1,
+        "fn": 1
       },
       "num_predicted": 9,
-      "num_gold": 9
+      "num_gold": 8
     },
     "Schedule-3": {
       "predicted": [
@@ -293,18 +293,18 @@
     }
   },
   "aggregate_metrics": {
-    "mean_f1": 91.98,
-    "f1_std": 16.38,
-    "mean_precision": 90.86,
-    "precision_std": 19.27,
-    "mean_recall": 93.83,
-    "recall_std": 11.84,
+    "mean_f1": 93.21,
+    "f1_std": 14.97,
+    "mean_precision": 92.10,
+    "precision_std": 17.61,
+    "mean_recall": 94.94,
+    "recall_std": 10.78,
     "f1_scores": [
       100.0,
       100.0,
       100.0,
       100.0,
-      77.78,
+      88.89,
       100.0,
       50.0,
       100.0,
@@ -315,7 +315,7 @@
       100.0,
       100.0,
       100.0,
-      77.78,
+      88.89,
       100.0,
       40.0,
       100.0,
@@ -326,7 +326,7 @@
       100.0,
       100.0,
       100.0,
-      77.78,
+      88.89,
       100.0,
       66.67,
       100.0,

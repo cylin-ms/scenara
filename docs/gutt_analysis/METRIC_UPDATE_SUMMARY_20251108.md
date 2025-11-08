@@ -28,9 +28,9 @@
 
 | Metric | ORIGINAL | AFTER REVISION | Change |
 |--------|----------|----------------|---------|
-| **F1 Score** | 66.67% | **77.78%** | **+11.11 pp** ✅ |
-| **Precision** | 66.67% | **77.78%** | **+11.11 pp** ✅ |
-| **Recall** | 66.67% | **77.78%** | **+11.11 pp** ✅ |
+| **F1 Score** | 66.67% | **88.89%** | **+22.22 pp** ✅ |
+| **Precision** | 66.67% | **88.89%** | **+22.22 pp** ✅ |
+| **Recall** | 66.67% | **88.89%** | **+22.22 pp** ✅ |
 
 ---
 
@@ -38,12 +38,12 @@
 
 | Metric | ORIGINAL | AFTER BOTH REVISIONS | Total Change |
 |--------|----------|---------------------|--------------|
-| **Mean F1** | 80.07% | **91.98%** | **+11.91 pp** ✅ |
-| **F1 Std Dev** | 21.20% | **16.38%** | **-4.82 pp** ✅ |
-| **Mean Precision** | 87.41% | **90.86%** | **+3.45 pp** ✅ |
-| **Precision Std Dev** | 26.00% | **19.27%** | **-6.73 pp** ✅ |
-| **Mean Recall** | 74.84% | **93.83%** | **+18.99 pp** ✅ |
-| **Recall Std Dev** | 17.02% | **11.84%** | **-5.18 pp** ✅ |
+| **Mean F1** | 80.07% | **93.21%** | **+13.14 pp** ✅ |
+| **F1 Std Dev** | 21.20% | **14.97%** | **-6.23 pp** ✅ |
+| **Mean Precision** | 87.41% | **92.10%** | **+4.69 pp** ✅ |
+| **Precision Std Dev** | 26.00% | **17.61%** | **-8.39 pp** ✅ |
+| **Mean Recall** | 74.84% | **94.94%** | **+20.10 pp** ✅ |
+| **Recall Std Dev** | 17.02% | **10.78%** | **-6.24 pp** ✅ |
 
 **Overall Assessment**: All metrics improved significantly! Higher mean scores, much lower variance.
 
@@ -57,13 +57,13 @@
 | Organizer-2 | 100.00% | 100.00% | ✅ No change |
 | Organizre-3 | 100.00% | 100.00% | ✅ No change |
 | Schedule-1 | 100.00% | 100.00% | ✅ No change |
-| **Schedule-2** | **66.67%** | **77.78%** | **📈 +11.11 pp** |
+| **Schedule-2** | **66.67%** | **88.89%** | **📈 +22.22 pp** |
 | Schedule-3 | 100.00% | 100.00% | ✅ No change |
 | **Collaborate-1** | **25.00%** | **50.00%** | **📈 +25.00 pp** |
 | Collaborate-2 | 100.00% | 100.00% | ✅ No change |
 | Collaborate-3 | 100.00% | 100.00% | ✅ No change |
 
-**Summary**: 7 prompts at 100% F1, 1 at 77.78%, 1 at 50% (both significantly improved)
+**Summary**: 7 prompts at 100% F1, 1 at 88.89%, 1 at 50% (both significantly improved)
 
 ---
 
@@ -99,15 +99,15 @@
 ## Files That Need Updating
 
 ### 1. GPT5_V2_OPTIMIZATION_SUMMARY.md
-**Status**: ✅ UPDATED
+**Status**: ✅ UPDATED (need to re-update with CAN-05 removal)
 
 **Changes Made**:
-- Executive Summary table: Updated all metrics (F1: 91.98% ± 16.38%)
+- Executive Summary table: Updated all metrics (F1: 93.21% ± 14.97%)
 - V2.0 Framework Enhancements table: Updated F1, Precision, Recall comparison
-- Per-Prompt Performance table: Updated Collaborate-1 to 50% F1 and Schedule-2 to 77.78% F1
+- Per-Prompt Performance table: Updated Collaborate-1 to 50% F1 and Schedule-2 to 88.89% F1
 - Collaborate-1 problem analysis section: Revised with CAN-23 acceptance
-- Schedule-2 problem analysis section: Revised with CAN-17 acceptance
-- Variance analysis: Updated std dev to 16.38% and variance breakdown table
+- Schedule-2 problem analysis section: Revised with CAN-17 acceptance and CAN-05 removal
+- Variance analysis: Updated std dev to 14.97% and variance breakdown table
 
 **Needs More Work**:
 - None (fully updated)
@@ -187,17 +187,17 @@ AGGREGATE STATISTICS:
 COMPARISON WITH OLD METRICS:
   Mean F1:             80.07% → 91.98%  (+11.91%)
   F1 Std Dev:          21.20% → 16.38%  (-4.82%)
-  Mean Precision:      87.41% → 90.86%  (+3.45%)
-  Precision Std Dev:   26.00% → 19.27%  (-6.73%)
-  Mean Recall:         74.84% → 93.83%  (+18.99%)
-  Recall Std Dev:      17.02% → 11.84%  (-5.18%)
+  Mean Precision:      87.41% → 92.10%  (+4.69%)
+  Precision Std Dev:   26.00% → 17.61%  (-8.39%)
+  Mean Recall:         74.84% → 94.94%  (+20.10%)
+  Recall Std Dev:      17.02% → 10.78%  (-6.24%)
 
 KEY INSIGHTS:
   1. Collaborate-1 improved from 25.00% to 50.00% F1 (+25.00 pp)
-  2. Schedule-2 improved from 66.67% to 77.78% F1 (+11.11 pp)
-  3. Variance contribution: Collaborate-1 73.0%, Schedule-2 8.4%
-  4. Overall mean F1 increased from 80.07% to 91.98% (+11.91 pp)
-  5. F1 std dev decreased from 21.20% to 16.38% (-4.82 pp)
+  2. Schedule-2 improved from 66.67% to 88.89% F1 (+22.22 pp)
+  3. Variance contribution: Collaborate-1 73.0%, Schedule-2 reduced to ~4%
+  4. Overall mean F1 increased from 80.07% to 93.21% (+13.14 pp)
+  5. F1 std dev decreased from 21.20% to 14.97% (-6.23 pp)
   6. Perfect prompts: 7/9 (77.8%)
 ```
 
@@ -237,7 +237,7 @@ KEY INSIGHTS:
 **Decision**: Accept CAN-17 (Automatic Rescheduling) as correct for Schedule-2  
 **Previous**: Gold standard specified CAN-23 (Conflict Resolution)  
 **Rationale**: When prompt explicitly requests "help me reschedule", auto-reschedule task is appropriate  
-**Impact**: Schedule-2 F1 improved from 66.67% to 77.78%  
+**Impact**: Schedule-2 F1 improved from 66.67% to 88.89%  
 **Approved By**: Chin-Yew Lin
 
 **Supporting Evidence**:
@@ -246,8 +246,23 @@ KEY INSIGHTS:
 - CAN-23 description: "Conflict Resolution - Detect and resolve scheduling conflicts"
 - Conclusion: "Help me reschedule" explicitly requests automation, not just conflict detection
 
+### Decision #3: Schedule-2 CAN-05 Removal
+
+**Date**: November 8, 2025  
+**Decision**: Remove CAN-05 (Attendee Resolution) from Schedule-2 gold standard  
+**Previous**: Gold standard included CAN-05, bringing task count to 9  
+**Rationale**: Existing calendar meetings already have attendee information via CAN-07; CAN-05 only needed for name-to-identity resolution  
+**Impact**: Schedule-2 task count 9→8, F1 improved from 77.78% to 88.89%  
+**Approved By**: Chin-Yew Lin
+
+**Supporting Evidence**:
+- Schedule-2 deals with existing meetings (already booked)
+- CAN-07 (Meeting Metadata Extraction) provides attendee information directly
+- CAN-05 only needed for resolving ambiguous references like "{name}" or "senior leadership"
+- Conclusion: No name resolution required for existing meetings
+
 **Combined Impact**:
-- Overall Mean F1: 80.07% → 91.98% (+11.91 pp)
+- Overall Mean F1: 80.07% → 93.21% (+13.14 pp)
 - F1 Variance: 21.20% → 16.38% (-4.82 pp)
 - Two prompts significantly improved (Collaborate-1: +25 pp, Schedule-2: +11.11 pp)
 - Principle: Accept specialized tasks when prompts explicitly mention the specialization

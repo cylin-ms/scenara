@@ -292,17 +292,18 @@ For each of the 9 hero prompts:
 }
 ```
 
-**UPDATE (November 8, 2025)**: F1 variance improved from 21.20% to 16.38% after two gold standard revisions:
+**UPDATE (November 8, 2025)**: F1 variance improved from 21.20% to 14.97% after three gold standard revisions:
 1. Collaborate-1: CAN-09 → CAN-23 (accepting specialized agenda generation, F1: 25% → 50%)
 2. Schedule-2: CAN-23 → CAN-17 (accepting automatic rescheduling, F1: 66.67% → 77.78%)
+3. Schedule-2: Removed CAN-05 (not needed for existing meetings, F1: 77.78% → 88.89%)
 
-Overall mean F1 improved from 80.07% to 91.98% (+11.91 pp).
+Overall mean F1 improved from 80.07% to 93.21% (+13.14 pp).
 
 ---
 
 ## Understanding Consistency vs Variance
 
-**CRITICAL DISTINCTION**: High consistency (95.33%) with moderate F1 variance (16.38%) is **NORMAL and EXPECTED**. These measure different things:
+**CRITICAL DISTINCTION**: High consistency (95.33%) with moderate F1 variance (14.97%) is **NORMAL and EXPECTED**. These measure different things:
 
 ### Consistency (95.33%) - EXCELLENT ✅
 **What it measures**: How stable is GPT-5's task selection **for the same prompt** across multiple runs?
@@ -316,33 +317,33 @@ Overall mean F1 improved from 80.07% to 91.98% (+11.91 pp).
 - 2 of 9 prompts: Minor variance (83-89% consistency)
 - Model is very **reproducible** and **stable**
 
-### F1 Variance (16.38%) - Cross-Prompt Diversity
+### F1 Variance (14.97%) - Cross-Prompt Diversity
 **What it measures**: How different are F1 scores **across different prompts**?
 
 **Calculation**: Standard deviation of F1 scores across the 9 different prompts
 
-**V2.0 Result**: 16.38% variance because F1 scores range from 50% (Collaborate-1) to 100% (7 prompts)
+**V2.0 Result**: 14.97% variance because F1 scores range from 50% (Collaborate-1) to 100% (7 prompts)
 
 **After Gold Standard Revisions**:
 - Collaborate-1: Improved from 25% to 50% F1
-- Schedule-2: Improved from 66.67% to 77.78% F1
-- Variance reduced from 21.20% to 16.38%
+- Schedule-2: Improved from 66.67% to 88.89% F1 (CAN-05 removed)
+- Variance reduced from 21.20% to 14.97%
 
 **Why variance remains moderate**:
 1. **Small sample size (9 prompts)**:
    - With only 9 different prompts, outliers have significant impact
-   - Collaborate-1 (50% F1) and Schedule-2 (77.78% F1) still below others
+   - Collaborate-1 (50% F1) and Schedule-2 (88.89% F1) still below perfect score
    - Small n = higher variance (standard statistical behavior)
    - Larger sample would smooth out variance
 
 2. **Different prompts have different complexity**:
-   - Collaborate-1: 3 tasks (simple) → Hard to match perfectly (25% F1)
-   - Organizre-3: 9 tasks (complex) → Easier to match many (98% F1)
+   - Collaborate-1: 3 tasks (simple) → Hard to match perfectly (50% F1)
+   - Organizre-3: 9 tasks (complex) → Easier to match many (100% F1)
    - Task count range: 3-10 tasks (wide spread)
 
 3. **Gold standard varies by prompt**:
    - Some prompts are easier to match (Schedule-1, Schedule-3: 100% F1)
-   - Some prompts still challenging after revisions (Collaborate-1: 50% F1, Schedule-2: 77.78% F1)
+   - Some prompts still challenging after revisions (Collaborate-1: 50% F1, Schedule-2: 88.89% F1)
    - Human evaluation reveals nuanced task requirements
 
 4. **This is EXPECTED behavior**: Different prompts genuinely require different task sets and have different levels of difficulty

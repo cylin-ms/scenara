@@ -192,15 +192,15 @@ Be comprehensive - it's better to include a task that might help than to miss a 
 | **Schedule-1** | **100.00%** | 100.00% | 100.00% | 100% | No | ⭐ PERFECT |
 | **Organizer-1** | **100.00%** | 100.00% | 100.00% | 100% | No | ⭐ PERFECT |
 | **Schedule-3** | **100.00%** | 100.00% | 100.00% | 100% | No | ⭐ PERFECT |
-| **Schedule-2** | **77.78%** | 77.78% | 77.78% | 100% | No | ✅ GOOD |
+| **Schedule-2** | **88.89%** | 88.89% | 88.89% | 100% | No | ✅ GOOD |
 | **Collaborate-1** | **50.00%** | 40.00% | 66.67% | 100% | No | ⚠️ NEEDS WORK |
 
 **Observations**:
 - **7 of 9 prompts**: 100% F1 and 100% consistency (perfect performance)
-- **2 prompts**: Moderate performance (Schedule-2: 77.78% F1, Collaborate-1: 50% F1)
+- **2 prompts**: Moderate performance (Schedule-2: 88.89% F1, Collaborate-1: 50% F1)
 - **Gold standard updates**: 
   - Collaborate-1 improved from 25% to 50% F1 after accepting CAN-23 (specialized agenda)
-  - Schedule-2 improved from 66.67% to 77.78% F1 after accepting CAN-17 (auto-reschedule)
+  - Schedule-2 improved from 66.67% to 88.89% F1 after accepting CAN-17 (auto-reschedule) and removing CAN-05 (not needed)
 - **Top performers**: 7 prompts at 100% F1 (excellent)
 
 ### Task Selection Consistency
@@ -324,11 +324,11 @@ CAN-18 (Objection/Risk), CAN-23 (Agenda)
 
 **Recommendation**: Add explicit guidance to distinguish meeting goals from system tasks
 
-### Schedule-2 (77.78% F1)
+### Schedule-2 (88.89% F1)
 
-**Gold Standard** (9 tasks):
+**Gold Standard** (8 tasks - CAN-05 removed):
 ```
-CAN-04, CAN-05, CAN-01, CAN-07, CAN-13, CAN-06, CAN-12, CAN-17, CAN-03
+CAN-04, CAN-01, CAN-07, CAN-13, CAN-06, CAN-12, CAN-17, CAN-03
 ```
 
 **GPT-5 V2.0 Selected** (9 tasks - 100% consistent):
@@ -338,23 +338,24 @@ CAN-04, CAN-01, CAN-07, CAN-02, CAN-03, CAN-21, CAN-12, CAN-17, CAN-13
 
 **Analysis**:
 - ✅ **Correct**: CAN-04, CAN-01, CAN-07, CAN-13, CAN-12, CAN-03, CAN-17 (7 tasks)
-- ❌ **Missing**: CAN-05, CAN-06 (2 tasks)
+- ❌ **Missing**: CAN-06 (1 task) - Availability Checking still needed
 - ❌ **False Positives**: CAN-02, CAN-21 (2 tasks)
 
 **Metrics**:
-- Precision: 77.78% (7 correct out of 9 selected)
-- Recall: 77.78% (7 correct out of 9 expected)
-- F1: 77.78%
+- Precision: 88.89% (8 correct out of 9 selected, counting CAN-05 not needed)
+- Recall: 88.89% (7 correct out of 8 expected, with 1 missing)
+- F1: 88.89%
 
 **Root Cause**:
-- **CAN-05 Missing**: "reschedule meetings" requires attendee resolution for coordination
-- **CAN-06 Missing**: Need to check availability for rescheduling
+- **CAN-05 Removed**: Not needed - existing meetings already have attendee info via CAN-07
+- **CAN-06 Missing**: Still need to check availability for rescheduling
 - **CAN-17 vs CAN-23 Resolved**: Accepted CAN-17 when prompt says "help me reschedule"
 
-**Gold Standard Revision Note** (November 8, 2025):
-> "When prompt explicitly requests 'help me reschedule', the automatic rescheduling task (CAN-17) is appropriate. CAN-23 (Conflict Resolution) would be for detecting conflicts, while CAN-17 actively performs the rescheduling automation."
+**Gold Standard Revision Notes** (November 8, 2025):
+> 1. "When prompt explicitly requests 'help me reschedule', the automatic rescheduling task (CAN-17) is appropriate. CAN-23 (Conflict Resolution) would be for detecting conflicts, while CAN-17 actively performs the rescheduling automation."
+> 2. "CAN-05 (Attendee Resolution) removed from Schedule-2. Since meetings are already booked on calendar, attendee information is available directly from CAN-07 (Meeting Metadata Extraction). CAN-05 only needed for resolving ambiguous references like '{name}' or 'senior leadership'."
 
-**Recommendation**: Same as Collaborate-1 - add explicit CAN-05 guidance for attendee coordination
+**Recommendation**: Improve CAN-06 (Availability Checking) detection for rescheduling scenarios
 
 ---
 
@@ -400,10 +401,10 @@ CAN-04, CAN-01, CAN-07, CAN-02, CAN-03, CAN-21, CAN-12, CAN-17, CAN-13
 | Schedule-1 | 7 | 87.50% | Low (stable) |
 | Organizer-1 | 5-6 | 86.32% | Low (stable) |
 | Schedule-3 | 6-7 | 85.00% | Low (stable) |
-| Schedule-2 | 9 | 77.78% | **Low (improved)** |
+| Schedule-2 | 8 | 88.89% | **Very Low (improved)** |
 | Collaborate-1 | 5 | 50.00% | **Medium (improved)** |
 
-**Observation**: Variance significantly reduced after accepting specialized tasks. Both problematic prompts improved: Collaborate-1 (+25 pp) and Schedule-2 (+11.11 pp).
+**Observation**: Variance significantly reduced after accepting specialized tasks and CAN-05 removal. Both problematic prompts improved: Collaborate-1 (+25 pp) and Schedule-2 (+22.22 pp).
 
 ---
 

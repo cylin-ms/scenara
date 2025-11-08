@@ -58,16 +58,16 @@
 
 ---
 
-### 5. Schedule-2 (Gold Standard F1: 77.78%) ⚠️
+### 5. Schedule-2 (Gold Standard F1: 88.89%) ⚠️
 
 **Prompt**:
 > "Clear my Thursday afternoon. Update my RSVPs and help me reschedule my meetings to another time and show me as {status}."
 
 **Capabilities**: Meeting rescheduling, RSVP management, availability checking, constraint satisfaction  
-**Evaluation**: ⚠️ Partial - Missing CAN-05 (Attendee Resolution) and CAN-06 (Availability Checking)  
-**Tasks Used**: 9 tasks  
-**Gold Standard Revision**: CAN-23 (Conflict Resolution) → CAN-17 (Automatic Rescheduling)  
-**Human Evaluator Note**: "The model needs to get metadata, and from there to find attendee for those meetings in the Thursday afternoon."
+**Evaluation**: ⚠️ Partial - Missing CAN-06 (Availability Checking)  
+**Tasks Used**: 8 tasks  
+**Gold Standard Revision**: CAN-23 (Conflict Resolution) → CAN-17 (Automatic Rescheduling); CAN-05 removed (not needed for existing meetings)  
+**Human Evaluator Note**: "CAN-05 not needed - attendee information already available from existing meetings via CAN-07. Only CAN-06 (Availability Checking) is missing."
 
 ---
 

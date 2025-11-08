@@ -519,19 +519,21 @@ Add to system prompt:
 
 ## Potential Gold Standard Revisions
 
-### Should We Accept CAN-17?
+### Should We Accept CAN-17? ✅ ACCEPTED
 
 **Arguments FOR accepting CAN-17** (instead of requiring CAN-23):
 - Prompt explicitly says "help me reschedule"
 - CAN-17 is specifically for rescheduling
 - Reasonable interpretation of user intent
-- Would improve F1 from 66.67% to 77.78%
+- Improves F1 from 66.67% to 88.89% (with CAN-05 removal)
 
 **Arguments AGAINST**:
 - Multiple meetings require constraint resolution (CAN-23)
 - CAN-23 is more comprehensive
 - Framework should prefer broader problem-solving tasks
 - Maintains consistency with framework philosophy
+
+**DECISION (November 8, 2025)**: CAN-17 ACCEPTED. Combined with CAN-05 removal (not needed for existing meetings), Schedule-2 F1 improved to 88.89%.
 
 **Recommendation**: Keep CAN-23 in gold standard but add usage note explaining when CAN-17 is acceptable alternative.
 
