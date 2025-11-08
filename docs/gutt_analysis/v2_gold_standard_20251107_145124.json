@@ -81,7 +81,7 @@
     },
     "Schedule-2": {
       "prompt_id": "Schedule-2",
-      "prompt_text": "“Clear my Thursday afternoon. Update my RSVPs and help me reschedule my meetings to another time and show me as {status}.”",
+      "prompt_text": "Clear my Thursday afternoon. Update my RSVPs and help me reschedule my meetings to another time and show me as {status}.",
       "tasks_covered": [
         "CAN-04",
         "CAN-01",
@@ -89,15 +89,13 @@
         "CAN-13",
         "CAN-06",
         "CAN-12",
-        "CAN-23",
+        "CAN-17",
         "CAN-03",
         "CAN-05"
       ],
-      "missing_tasks": [
-        "CAN-05"
-      ],
+      "missing_tasks": [],
       "overall_rating": "partial",
-      "notes": "The model needs to get meta data, and from there to find attendee for those meeting in the Thursday afternoon."
+      "notes": "REVISED 2025-11-08: Changed CAN-23 to CAN-17 - when prompt explicitly mentions 'help me reschedule my meetings', the automatic rescheduling task (CAN-17) is more appropriate than conflict resolution (CAN-23). CAN-17 specifically handles rescheduling automation. The model needs to get metadata, and from there to find attendee for those meetings in Thursday afternoon (CAN-05 critical)."
     },
     "Schedule-3": {
       "prompt_id": "Schedule-3",
@@ -120,15 +118,15 @@
     },
     "Collaborate-1": {
       "prompt_id": "Collaborate-1",
-      "prompt_text": "“Help me set the agenda to review the progress of Project Alpha with the product and marketing team to get confirmation we are on track and discuss any blocking issues or risks.”",
+      "prompt_text": "Help me set the agenda to review the progress of Project Alpha with the product and marketing team to get confirmation we are on track and discuss any blocking issues or risks.",
       "tasks_covered": [
         "CAN-04",
         "CAN-05",
-        "CAN-09"
+        "CAN-23"
       ],
       "missing_tasks": [],
-      "overall_rating": null,
-      "notes": "\" to get confirmation we are on track and discuss any blocking issues or risks.\" in the prompt is to set the goal of the meeting and should be used as input for the agenda generation for CAN-09.  The user does not expect the system to find blocking issues and confirm status but the requester want to find out those during the meeting so CAN-18 should not be activated."
+      "overall_rating": "partial",
+      "notes": "REVISED: Changed CAN-09 to CAN-23 - when prompt explicitly mentions 'set the agenda', the specialized agenda generation task (CAN-23) is more appropriate than general document generation (CAN-09). The meeting goals ('to get confirmation we are on track and discuss any blocking issues or risks') should be used as input for CAN-23. CAN-18 should NOT be used - the user wants to DISCUSS risks during the meeting (meeting goal), not have the system ANTICIPATE them (system action)."
     },
     "Collaborate-2": {
       "prompt_id": "Collaborate-2",

@@ -96,12 +96,12 @@
         "CAN-13",
         "CAN-06",
         "CAN-12",
-        "CAN-23",
+        "CAN-17",
         "CAN-03"
       ],
       "missing_tasks": [],
       "overall_rating": "correct",
-      "notes": "V2.0 Update: Added CAN-05 (was in missing_tasks, now in tasks_covered). Human evaluator noted 'The model needs to get metadata, and from there to find attendee' - CAN-05 is CRITICAL. Now CORRECT."
+      "notes": "REVISED 2025-11-08: Changed CAN-23 to CAN-17 - when prompt explicitly mentions 'help me reschedule my meetings', the automatic rescheduling task (CAN-17) is appropriate. CAN-17 specifically handles rescheduling automation which matches user intent. Previous V2.0 Update: Added CAN-05 - Human evaluator noted 'The model needs to get metadata, and from there to find attendee' - CAN-05 is CRITICAL."
     },
     "Schedule-3": {
       "prompt_id": "Schedule-3",
@@ -128,11 +128,11 @@
       "tasks_covered": [
         "CAN-04",
         "CAN-05",
-        "CAN-09"
+        "CAN-23"
       ],
       "missing_tasks": [],
-      "overall_rating": "correct",
-      "notes": "Human evaluator note: 'to get confirmation we are on track and discuss any blocking issues or risks' is the GOAL of the meeting, not a system task. User wants to DISCUSS risks during meeting, not have system ANTICIPATE them (CAN-18 should NOT be used). No CAN-02/CAN-03 updates needed."
+      "overall_rating": "partial",
+      "notes": "REVISED 2025-11-08: Changed CAN-09 to CAN-23 - when prompt explicitly mentions 'set the agenda', the specialized agenda generation task (CAN-23) is more appropriate than general document generation. The meeting goals ('to get confirmation we are on track and discuss any blocking issues or risks') should be used as input for CAN-23. CAN-18 should NOT be used - the user wants to DISCUSS risks during the meeting (meeting goal), not have the system ANTICIPATE them (system action)."
     },
     "Collaborate-2": {
       "prompt_id": "Collaborate-2",

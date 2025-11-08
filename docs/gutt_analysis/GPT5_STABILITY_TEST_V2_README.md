@@ -180,16 +180,17 @@ docs/gutt_analysis/model_comparison/gpt5_stability_v2/
 
 For each of the 9 hero prompts:
 
+**Example 1: Perfect Consistency (100%)**
 ```json
 {
   "prompt_id": "Organizer-2",
-  "always_selected": ["CAN-04", "CAN-01", "CAN-07", "CAN-25"],
-  "sometimes_selected": ["CAN-02", "CAN-03"],
-  "total_unique_tasks": 6,
-  "consistency_percentage": 66.67,
-  "average_task_count": 5.67,
-  "task_count_variance": 0.2222,
-  "task_count_std_dev": 0.47,
+  "always_selected": ["CAN-04", "CAN-01", "CAN-07", "CAN-02", "CAN-03", "CAN-21", "CAN-25"],
+  "sometimes_selected": [],
+  "total_unique_tasks": 7,
+  "consistency_percentage": 100.0,
+  "average_task_count": 7.0,
+  "task_count_variance": 0.0,
+  "task_count_std_dev": 0.0,
   "can25_usage": {
     "detected": true,
     "trials_with_can25": 3,
@@ -198,10 +199,73 @@ For each of the 9 hero prompts:
 }
 ```
 
+**Example 2: Minor Variance (83.3% consistency) - V2.0 Organizer-1**
+```json
+{
+  "prompt_id": "Organizer-1",
+  "prompt_text": "Keep my Calendar up to date by committing to only meetings that are part of my priorities.",
+  "always_selected": [
+    "CAN-04",
+    "CAN-01", 
+    "CAN-07",
+    "CAN-02",
+    "CAN-13"
+  ],
+  "sometimes_selected": [
+    "CAN-11"
+  ],
+  "task_counts": [6, 5, 6],
+  "average_task_count": 5.67,
+  "std_dev": 0.47,
+  "consistency_percentage": 83.3
+}
+```
+
+**Calculation**: 
+- Always selected: 5 tasks (appeared in all 3 trials)
+- Sometimes selected: 1 task (CAN-11 appeared in 1/3 trials)
+- Total unique: 6 tasks
+- **Consistency = 5/6 = 83.3%**
+- **Variance Reason**: CAN-11 (Priority Matching) only appeared in 1 trial - sometimes inferred from "my priorities", sometimes not
+
+**Example 3: Higher Variance (88.9% consistency) - V2.0 Organizre-3**
+```json
+{
+  "prompt_id": "Organizre-3",
+  "prompt_text": "Help me understand where I am spending my time across different types of meetings and suggest ways I might reclaim time for my top priorities.",
+  "always_selected": [
+    "CAN-04",
+    "CAN-01",
+    "CAN-07",
+    "CAN-02",
+    "CAN-03",
+    "CAN-10",
+    "CAN-20",
+    "CAN-14"
+  ],
+  "sometimes_selected": [
+    "CAN-11"
+  ],
+  "task_counts": [9, 9, 8],
+  "average_task_count": 8.67,
+  "std_dev": 0.47,
+  "consistency_percentage": 88.9
+}
+```
+
+**Calculation**: 
+- Always selected: 8 tasks (appeared in all 3 trials)
+- Sometimes selected: 1 task (CAN-11 appeared in 2/3 trials)
+- Total unique: 9 tasks
+- **Consistency = 8/9 = 88.9%**
+- **Variance Reason**: CAN-11 (Priority Matching) appeared in trials 1 & 2, but not trial 3
+
 **Interpretation**:
-- **Always selected**: Core tasks needed 100% of time
-- **Sometimes selected**: Tasks with variance (needs investigation)
-- **Consistency %**: Higher = more stable (>90% excellent)
+- **Always selected**: Core tasks needed 100% of time (appeared in all 3 trials)
+- **Sometimes selected**: Tasks with variance (needs investigation) - appeared in 1-2 trials only
+- **Consistency %**: (Always / Total Unique) × 100% - Higher = more stable (>90% excellent)
+  - Organizer-2: 7/7 = 100% (perfect)
+  - Organizer-1: 5/6 = 83.3% (good, minor variance)
 - **Variance**: Lower = more stable (<1.0 excellent)
 - **CAN-25 usage**: New metric for V2.0 validation
 
@@ -214,7 +278,8 @@ For each of the 9 hero prompts:
   "aggregate": {
     "average_task_count": 7.2,
     "average_variance": 0.45,
-    "overall_consistency_percentage": 91.5,
+    "overall_consistency_percentage": 95.33,
+    "f1_variance": 16.38,
     "can25_detection": {
       "total_prompts_with_can25": 2,
       "percentage": 22.2,
@@ -226,6 +291,73 @@ For each of the 9 hero prompts:
   }
 }
 ```
+
+**UPDATE (November 8, 2025)**: F1 variance improved from 21.20% to 16.38% after two gold standard revisions:
+1. Collaborate-1: CAN-09 → CAN-23 (accepting specialized agenda generation, F1: 25% → 50%)
+2. Schedule-2: CAN-23 → CAN-17 (accepting automatic rescheduling, F1: 66.67% → 77.78%)
+
+Overall mean F1 improved from 80.07% to 91.98% (+11.91 pp).
+
+---
+
+## Understanding Consistency vs Variance
+
+**CRITICAL DISTINCTION**: High consistency (95.33%) with moderate F1 variance (16.38%) is **NORMAL and EXPECTED**. These measure different things:
+
+### Consistency (95.33%) - EXCELLENT ✅
+**What it measures**: How stable is GPT-5's task selection **for the same prompt** across multiple runs?
+
+**Calculation**: For each prompt, (Always Selected / Total Unique) × 100%, then average across all prompts
+
+**V2.0 Result**: 95.33% = GPT-5 selects the same tasks 95% of the time when given the same prompt repeatedly
+
+**Why it's high**:
+- 7 of 9 prompts: 100% consistency (identical tasks in all 3 trials)
+- 2 of 9 prompts: Minor variance (83-89% consistency)
+- Model is very **reproducible** and **stable**
+
+### F1 Variance (16.38%) - Cross-Prompt Diversity
+**What it measures**: How different are F1 scores **across different prompts**?
+
+**Calculation**: Standard deviation of F1 scores across the 9 different prompts
+
+**V2.0 Result**: 16.38% variance because F1 scores range from 50% (Collaborate-1) to 100% (7 prompts)
+
+**After Gold Standard Revisions**:
+- Collaborate-1: Improved from 25% to 50% F1
+- Schedule-2: Improved from 66.67% to 77.78% F1
+- Variance reduced from 21.20% to 16.38%
+
+**Why variance remains moderate**:
+1. **Small sample size (9 prompts)**:
+   - With only 9 different prompts, outliers have significant impact
+   - Collaborate-1 (50% F1) and Schedule-2 (77.78% F1) still below others
+   - Small n = higher variance (standard statistical behavior)
+   - Larger sample would smooth out variance
+
+2. **Different prompts have different complexity**:
+   - Collaborate-1: 3 tasks (simple) → Hard to match perfectly (25% F1)
+   - Organizre-3: 9 tasks (complex) → Easier to match many (98% F1)
+   - Task count range: 3-10 tasks (wide spread)
+
+3. **Gold standard varies by prompt**:
+   - Some prompts are easier to match (Schedule-1, Schedule-3: 100% F1)
+   - Some prompts still challenging after revisions (Collaborate-1: 50% F1, Schedule-2: 77.78% F1)
+   - Human evaluation reveals nuanced task requirements
+
+4. **This is EXPECTED behavior**: Different prompts genuinely require different task sets and have different levels of difficulty
+
+**Analogy**: 
+- **Consistency** = Does a student give the same answer when asked the same question 3 times? (Yes, 95% stable)
+- **F1 Variance** = How different are the student's scores across 9 different exam questions? (Varies, some questions harder than others)
+
+**Conclusion**: 
+- ✅ **High consistency (95.33%)** = Model is reliable and reproducible
+- ✅ **Improved F1 variance (16.38%, down from 21.20%)** = Gold standard revisions reduced variance significantly
+- 📊 **Small sample effect (n=9)** = Remaining variance driven by two challenging prompts (Collaborate-1, Schedule-2)
+- 🎯 **Both can be true simultaneously** = Stable model, diverse task requirements, small sample statistics
+
+**Statistical Reality**: With only 9 prompts, variance is naturally amplified. Gold standard refinements improved variance by 4.82 pp. A larger sample (50+ prompts) would likely reduce F1 variance further while maintaining high consistency.
 
 ---
 

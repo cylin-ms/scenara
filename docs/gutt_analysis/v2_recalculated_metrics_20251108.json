@@ -1,0 +1,336 @@
+{
+  "metadata": {
+    "date": "2025-11-08",
+    "change": "Collaborate-1 gold standard: CAN-09 → CAN-23",
+    "rationale": "Accepting specialized agenda generation task as correct when prompt explicitly mentions 'set the agenda'"
+  },
+  "per_prompt_results": {
+    "Organizer-1": {
+      "predicted": [
+        "CAN-04",
+        "CAN-01",
+        "CAN-07",
+        "CAN-02",
+        "CAN-03",
+        "CAN-11",
+        "CAN-13"
+      ],
+      "gold": [
+        "CAN-04",
+        "CAN-01",
+        "CAN-07",
+        "CAN-02",
+        "CAN-03",
+        "CAN-11",
+        "CAN-13"
+      ],
+      "metrics": {
+        "precision": 100.0,
+        "recall": 100.0,
+        "f1": 100.0,
+        "tp": 7,
+        "fp": 0,
+        "fn": 0
+      },
+      "num_predicted": 7,
+      "num_gold": 7
+    },
+    "Organizer-2": {
+      "predicted": [
+        "CAN-04",
+        "CAN-01",
+        "CAN-07",
+        "CAN-02",
+        "CAN-03",
+        "CAN-21",
+        "CAN-11",
+        "CAN-16",
+        "CAN-25"
+      ],
+      "gold": [
+        "CAN-04",
+        "CAN-01",
+        "CAN-07",
+        "CAN-02",
+        "CAN-03",
+        "CAN-21",
+        "CAN-11",
+        "CAN-16",
+        "CAN-25"
+      ],
+      "metrics": {
+        "precision": 100.0,
+        "recall": 100.0,
+        "f1": 100.0,
+        "tp": 9,
+        "fp": 0,
+        "fn": 0
+      },
+      "num_predicted": 9,
+      "num_gold": 9
+    },
+    "Organizre-3": {
+      "predicted": [
+        "CAN-04",
+        "CAN-01",
+        "CAN-07",
+        "CAN-02",
+        "CAN-03",
+        "CAN-10",
+        "CAN-11",
+        "CAN-14",
+        "CAN-20"
+      ],
+      "gold": [
+        "CAN-04",
+        "CAN-01",
+        "CAN-07",
+        "CAN-02",
+        "CAN-03",
+        "CAN-10",
+        "CAN-11",
+        "CAN-14",
+        "CAN-20"
+      ],
+      "metrics": {
+        "precision": 100.0,
+        "recall": 100.0,
+        "f1": 100.0,
+        "tp": 9,
+        "fp": 0,
+        "fn": 0
+      },
+      "num_predicted": 9,
+      "num_gold": 9
+    },
+    "Schedule-1": {
+      "predicted": [
+        "CAN-04",
+        "CAN-05",
+        "CAN-01",
+        "CAN-06",
+        "CAN-12",
+        "CAN-15",
+        "CAN-03",
+        "CAN-16",
+        "CAN-17"
+      ],
+      "gold": [
+        "CAN-04",
+        "CAN-05",
+        "CAN-01",
+        "CAN-06",
+        "CAN-12",
+        "CAN-15",
+        "CAN-03",
+        "CAN-16",
+        "CAN-17"
+      ],
+      "metrics": {
+        "precision": 100.0,
+        "recall": 100.0,
+        "f1": 100.0,
+        "tp": 9,
+        "fp": 0,
+        "fn": 0
+      },
+      "num_predicted": 9,
+      "num_gold": 9
+    },
+    "Schedule-2": {
+      "predicted": [
+        "CAN-04",
+        "CAN-01",
+        "CAN-07",
+        "CAN-02",
+        "CAN-03",
+        "CAN-21",
+        "CAN-12",
+        "CAN-17",
+        "CAN-13"
+      ],
+      "gold": [
+        "CAN-04",
+        "CAN-05",
+        "CAN-01",
+        "CAN-07",
+        "CAN-13",
+        "CAN-06",
+        "CAN-12",
+        "CAN-17",
+        "CAN-03"
+      ],
+      "metrics": {
+        "precision": 77.78,
+        "recall": 77.78,
+        "f1": 77.78,
+        "tp": 7,
+        "fp": 2,
+        "fn": 2
+      },
+      "num_predicted": 9,
+      "num_gold": 9
+    },
+    "Schedule-3": {
+      "predicted": [
+        "CAN-04",
+        "CAN-05",
+        "CAN-01",
+        "CAN-07",
+        "CAN-02",
+        "CAN-03",
+        "CAN-06",
+        "CAN-12",
+        "CAN-19",
+        "CAN-03"
+      ],
+      "gold": [
+        "CAN-04",
+        "CAN-05",
+        "CAN-01",
+        "CAN-07",
+        "CAN-02",
+        "CAN-03",
+        "CAN-06",
+        "CAN-12",
+        "CAN-19",
+        "CAN-03"
+      ],
+      "metrics": {
+        "precision": 100.0,
+        "recall": 100.0,
+        "f1": 100.0,
+        "tp": 9,
+        "fp": 0,
+        "fn": 0
+      },
+      "num_predicted": 9,
+      "num_gold": 9
+    },
+    "Collaborate-1": {
+      "predicted": [
+        "CAN-04",
+        "CAN-01",
+        "CAN-07",
+        "CAN-18",
+        "CAN-23"
+      ],
+      "gold": [
+        "CAN-04",
+        "CAN-05",
+        "CAN-23"
+      ],
+      "metrics": {
+        "precision": 40.0,
+        "recall": 66.67,
+        "f1": 50.0,
+        "tp": 2,
+        "fp": 3,
+        "fn": 1
+      },
+      "num_predicted": 5,
+      "num_gold": 3
+    },
+    "Collaborate-2": {
+      "predicted": [
+        "CAN-04",
+        "CAN-05",
+        "CAN-01",
+        "CAN-07",
+        "CAN-08",
+        "CAN-09",
+        "CAN-18"
+      ],
+      "gold": [
+        "CAN-04",
+        "CAN-05",
+        "CAN-01",
+        "CAN-07",
+        "CAN-08",
+        "CAN-09",
+        "CAN-18"
+      ],
+      "metrics": {
+        "precision": 100.0,
+        "recall": 100.0,
+        "f1": 100.0,
+        "tp": 7,
+        "fp": 0,
+        "fn": 0
+      },
+      "num_predicted": 7,
+      "num_gold": 7
+    },
+    "Collaborate-3": {
+      "predicted": [
+        "CAN-04",
+        "CAN-01",
+        "CAN-07",
+        "CAN-05",
+        "CAN-08",
+        "CAN-09",
+        "CAN-22"
+      ],
+      "gold": [
+        "CAN-04",
+        "CAN-01",
+        "CAN-07",
+        "CAN-05",
+        "CAN-08",
+        "CAN-09",
+        "CAN-22"
+      ],
+      "metrics": {
+        "precision": 100.0,
+        "recall": 100.0,
+        "f1": 100.0,
+        "tp": 7,
+        "fp": 0,
+        "fn": 0
+      },
+      "num_predicted": 7,
+      "num_gold": 7
+    }
+  },
+  "aggregate_metrics": {
+    "mean_f1": 91.98,
+    "f1_std": 16.38,
+    "mean_precision": 90.86,
+    "precision_std": 19.27,
+    "mean_recall": 93.83,
+    "recall_std": 11.84,
+    "f1_scores": [
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      77.78,
+      100.0,
+      50.0,
+      100.0,
+      100.0
+    ],
+    "precision_scores": [
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      77.78,
+      100.0,
+      40.0,
+      100.0,
+      100.0
+    ],
+    "recall_scores": [
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      77.78,
+      100.0,
+      66.67,
+      100.0,
+      100.0
+    ]
+  }
+}

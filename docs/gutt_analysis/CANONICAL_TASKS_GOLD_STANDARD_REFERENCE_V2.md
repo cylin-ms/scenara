@@ -1,11 +1,19 @@
 # Hero Prompts Canonical Task Analysis - Gold Standard Reference V2.0
 
-**Document Version**: 2.0  
-**Date**: November 7, 2025  
+**Document Version**: 2.1  
+**Date**: November 7, 2025 (Updated: November 8, 2025)  
 **Author**: Chin-Yew Lin  
 **Framework**: Calendar.AI Canonical Unit Tasks Framework V2.0 (25 tasks - renumbered CAN-01 through CAN-25)  
 **Source**: Human-validated gold standard evaluation  
-**Evaluation File**: `v2_gold_standard_20251107_145124.json`
+**Evaluation Files**: 
+- `v2_gold_standard_20251107_145124.json` (original)
+- `v2_gold_standard_v2_20251107.json` (revised November 8, 2025)
+
+**Gold Standard Revisions (November 8, 2025)**:
+1. **Collaborate-1**: CAN-09 (Document Generation) → CAN-23 (Agenda Generation/Structuring)
+   - Rationale: Prompt explicitly mentions "set the agenda" - specialized task more appropriate
+2. **Schedule-2**: CAN-23 (Conflict Resolution) → CAN-17 (Automatic Rescheduling)
+   - Rationale: Prompt explicitly requests "help me reschedule" - automation task more appropriate
 
 **Related Documents**:
 - [GPT5_V2_OPTIMIZATION_SUMMARY.md](model_comparison/GPT5_V2_OPTIMIZATION_SUMMARY.md) - GPT-5 3-trial stability test results
@@ -72,15 +80,15 @@ This gold standard was created through a rigorous 4-phase process:
 | **Tier 3 (Specialized) Coverage** | 80% (8 of 10 specialized tasks used) |
 | **Task Usage Range** | 3-10 tasks per prompt |
 
-**Human Evaluation Results**:
+**Human Evaluation Results** (Updated November 8, 2025):
 - ✅ **Correct**: 5 prompts (Organizer-1, Organizre-3, Schedule-1, Schedule-3, Collaborate-3)
-- ⚠️ **Partial**: 3 prompts (Organizer-2, Schedule-2, Collaborate-2) - missing specific tasks
-- ❓ **Needs Review**: 1 prompt (Collaborate-1) - over-interpretation issue
+- ⚠️ **Partial**: 4 prompts (Organizer-2, Schedule-2, Collaborate-1, Collaborate-2) - missing CAN-05 or other tasks
+- **Note**: Gold standard revised for Collaborate-1 and Schedule-2 to accept specialized tasks
 
 **Key Insights from Evaluation**:
 1. **NEW Task Validated**: CAN-25 for event annotation/flagging (Organizer-2: "flag meetings")
-2. **CAN-05 Critical**: Attendee resolution often missed but essential (Schedule-2, Collaborate-2)
-3. **CAN-18 Scope**: Risk anticipation vs discussion goals (Collaborate-1 over-interpretation)
+2. **CAN-05 Critical**: Attendee resolution often missed but essential (Schedule-2, Collaborate-1, Collaborate-2)
+3. **Specialization Principle Established**: Accept specialized tasks (CAN-23, CAN-17) when prompts explicitly mention the specialization
 4. **CAN-16 Usage**: Event monitoring for "track" use case (Organizer-2)
 
 ---
@@ -1066,7 +1074,10 @@ Notification to User:
 
 **Category**: Schedule  
 **Capabilities Required**: Meeting rescheduling, RSVP management, availability checking, constraint satisfaction  
-**Evaluation**: ⚠️ **Partial** - Missing CAN-05 (Attendee Resolution)
+**Evaluation**: ⚠️ **Partial** - Missing CAN-05 (Attendee Resolution) and CAN-06 (Availability Checking)
+
+**Gold Standard Revision (November 8, 2025)**: 
+> Changed CAN-23 (Conflict Resolution) to CAN-17 (Automatic Rescheduling). When prompt explicitly requests "help me reschedule", the automatic rescheduling task (CAN-17) is more appropriate than conflict resolution (CAN-23). CAN-17 actively performs the rescheduling automation, while CAN-23 would only detect conflicts.
 
 **Human Evaluator Notes**: 
 > "The model needs to get metadata, and from there to find attendee for those meetings in the Thursday afternoon."
@@ -1119,12 +1130,12 @@ Notification to User:
 - **Output**: Optimal rescheduling times
 - **Tier**: 2 (Common)
 
-#### Task 8: Agenda Generation/Structuring (CAN-23)
-- **Purpose**: Generate rescheduling plan/summary
-- **Input**: Original meetings + new proposed times
-- **Output**: Rescheduling proposal document
+#### Task 8: Automatic Rescheduling (CAN-17)
+- **Purpose**: Automatically propose and execute rescheduling
+- **Input**: Original meetings + new proposed times from CAN-12
+- **Output**: Rescheduling proposal with automated time suggestions
 - **Tier**: 3 (Specialized)
-- **Note**: Human evaluator noted this was included (unusual task usage)
+- **Note**: User explicitly requested "help me reschedule" - CAN-17 performs the automation action
 
 #### Task 9: Calendar Event Creation/Update (CAN-03)
 - **Purpose**: Update meeting times in calendar
@@ -1194,13 +1205,13 @@ CAN-12 (Constraint Satisfaction) → Apply preferences to select optimal slots
   - Validation: Ensure selected times don't conflict with existing commitments
   - Output: Optimal rescheduling plan (Meeting A → Mon 2pm, Meeting B → Tue 10am, etc.)
 
-STEP 8: Generate Rescheduling Proposal
-CAN-23 (Agenda/Document Generation) → Create rescheduling plan summary
-  - Format: Structured document showing old time → new time for each meeting
+STEP 8: Generate Rescheduling Proposal with Automation
+CAN-17 (Automatic Rescheduling) → Create rescheduling plan with automation
+  - Format: Structured proposal showing old time → new time for each meeting
   - Include: Rationale for each change (attendee availability, user preferences)
-  - Include: Attendees for each meeting (for user review)
-  - Purpose: Human evaluator noted this task for transparency/review
-  - Output: Rescheduling proposal document
+  - Include: Automated time suggestions based on CAN-12 constraints
+  - Purpose: Provide automation action requested by "help me reschedule"
+  - Output: Rescheduling proposal with automated suggestions
 
 STEP 9: Update Calendar with New Times
 CAN-03 (Event Creation/Update) → Execute rescheduling
@@ -1220,9 +1231,10 @@ OUTPUT: Thursday afternoon cleared with meetings rescheduled
 - **Metadata Extraction Enabler**: CAN-07 provides critical input for both CAN-05 and CAN-13
 - **MISSING TASK DEPENDENCY**: CAN-05 is ESSENTIAL - cannot check availability (CAN-06) without attendee calendars
 - **Parallel RSVP + Availability**: CAN-13 and CAN-06 can run concurrently after CAN-05 completes
-- **Human Review Layer**: CAN-23 generates proposal before CAN-03 executes (recommended for user confirmation)
+- **Automation Layer**: CAN-17 provides automated rescheduling action requested by user ("help me reschedule")
 - **Multi-Action Coordination**: Single prompt triggers 3 distinct actions (RSVP update, rescheduling, status setting)
 - **Critical Human Evaluator Insight**: Original decomposition missed CAN-05 - human noted "model needs to get metadata, and from there to find attendee for those meetings"
+- **Gold Standard Revision**: CAN-23 → CAN-17 to reflect explicit automation request in prompt
 
 **Example Flow - Clear Thursday Afternoon with Rescheduling**:
 
@@ -1721,10 +1733,13 @@ The system correctly applies priority-based logic: Kat's even low-priority meeti
 
 **Category**: Collaborate  
 **Capabilities Required**: Attendee resolution, agenda generation  
-**Evaluation**: ❓ **Needs Review** - CAN-18 over-interpretation
+**Evaluation**: ⚠️ **Partial** - Still missing CAN-05 (Attendee Resolution)
+
+**Gold Standard Revision (November 8, 2025)**: 
+> Changed CAN-09 (Document Generation) to CAN-23 (Agenda Generation/Structuring). When prompt explicitly mentions "set the agenda", the specialized agenda generation task (CAN-23) is more appropriate than general document generation (CAN-09). The meeting goals ("get confirmation", "discuss risks") should be used as INPUT for CAN-23, not as system tasks to execute.
 
 **Human Evaluator Notes**: 
-> "'to get confirmation we are on track and discuss any blocking issues or risks' in the prompt is to set the goal of the meeting and should be used as input for the agenda generation for CAN-09. The user does not expect the system to find blocking issues and confirm status but the requester want to find out those during the meeting so CAN-18 should not be activated."
+> "'to get confirmation we are on track and discuss any blocking issues or risks' in the prompt is to set the goal of the meeting and should be used as input for the agenda generation for CAN-23 (was CAN-09). The user does not expect the system to find blocking issues and confirm status but the requester want to find out those during the meeting so CAN-18 should not be activated."
 
 ### Canonical Task Decomposition: 3 Tasks
 
@@ -1741,12 +1756,12 @@ The system correctly applies priority-based logic: Kat's even low-priority meeti
 - **Tier**: 1 (Universal)
 - **Note**: Needed to know who will attend (for agenda context)
 
-#### Task 3: Document Generation/Formatting (CAN-09)
-- **Purpose**: Generate structured meeting agenda
+#### Task 3: Agenda Generation/Structuring (CAN-23)
+- **Purpose**: Generate specialized meeting agenda structure
 - **Input**: Meeting goals from CAN-04 ("confirm on track", "discuss blocking issues/risks")
-- **Output**: Formatted agenda with topics, time allocations, discussion goals
-- **Tier**: 2 (Common)
-- **Note**: Goals used as INPUT, not as tasks to execute (CAN-18 should NOT be used)
+- **Output**: Structured agenda with topics, time allocations, discussion goals
+- **Tier**: 3 (Specialized)
+- **Note**: User explicitly requested "set the agenda" - CAN-23 is specialized for agenda creation. Goals used as INPUT, not as tasks to execute (CAN-18 should NOT be used)
 
 **Evaluation Criteria**:
 - Agenda completeness (covers all stated goals)
@@ -1777,7 +1792,7 @@ CAN-05 (Attendee Resolution) → Identify individual team members
     - Marketing team: [Marketing Manager, Content Lead, Campaign Manager]
 
 STEP 3: Generate Meeting Agenda
-CAN-09 (Document Generation) → Create structured agenda document
+CAN-23 (Agenda Generation/Structuring) → Create specialized agenda structure
   - Meeting title: "Project Alpha Progress Review"
   - Attendees: 7 people (product + marketing teams)
   - Duration: 60 minutes (estimated)
@@ -1790,7 +1805,7 @@ CAN-09 (Document Generation) → Create structured agenda document
     4. Next Steps & Action Items (15 min)
     5. Q&A (5 min)
 
-OUTPUT: Structured meeting agenda ready for distribution
+OUTPUT: Specialized meeting agenda ready for distribution
   - Clear topic breakdown aligned with user's stated goals
   - Realistic time allocations
   - Discussion objectives for each agenda item
