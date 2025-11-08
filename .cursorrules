@@ -1848,6 +1848,20 @@ result = subprocess.run(
   - **Analysis**: `experiments/2025-10-28/PROMPT_IMPROVEMENT_ANALYSIS.md`
 - **Benefits**:
   - **Consistency**: Same taxonomy across all classifiers
+
+### V2 Gold Standard Report Creation Lessons (November 8, 2025)
+- **Always Verify Against Original Sources**: Report initially used expanded Organizer-1 prompt instead of actual v2 version - caught by comparing to `9_hero_prompts_v2.txt`
+- **Dual Source Validation**: Cross-check both `v2_gold_standard_v2_20251107.json` (task lists) and `9_hero_prompts_v2.txt` (prompt text) for 100% accuracy
+- **Dependent Sections Cascade**: Correcting one prompt requires updating task decompositions, execution compositions, example flows, and output descriptions
+- **Document Data Provenance**: Added "Supporting Documents" section listing all 7 sources + 6-step creation process for reproducibility
+- **Follow Writing Guide Precisely**: Use "Input:" and "Context:" instead of "User Input:", maintain consistent formatting across all 9 prompts
+- **Gold Standard JSON is Authoritative**: For task decompositions, always trust `v2_gold_standard_v2_20251107.json` over derivative documents
+- **.cursorrules Has Multiple Requirements**: Beyond git operations - includes daily logging, Lessons section updates, Scratchpad maintenance
+- **Production-Ready Documentation**: V2_GOLD_STANDARD_REPORT.md (2,900 lines) now serves as authoritative reference for LLM evaluation, training data, and production implementation
+- **Statistical Validation**: 91.98% ± 16.38% F1, 6/9 perfect scores (100%), 3/9 partial (50-77.78%), framework coverage 88% (22/25 tasks)
+- **Git Commit Messages Matter**: Comprehensive 60+ line commit message documented all changes, impacts, and next steps - critical for project continuity
+- **CAN-24 Distinction Clarified**: Unused because hero prompts use deterministic scheduling; needed only for complex multi-person negotiation scenarios
+- **Framework Gaps Identified**: CAN-05 detection weakness in 3 prompts (Schedule-2, Collaborate-1, Collaborate-2) - needs explicit attendee identification triggers
   - **Maintainability**: Update once, applies to all
   - **Traceability**: Track prompt version in experiments
   - **Quality**: Based on Chin-Yew Lin's official taxonomy (>95% coverage)
