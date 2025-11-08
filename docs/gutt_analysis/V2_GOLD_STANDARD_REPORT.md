@@ -1146,16 +1146,15 @@ Notification: "Your 1:1 with Sarah Chen has been automatically rescheduled from 
 
 **Category**: Schedule  
 **Capabilities Required**: Meeting rescheduling, RSVP management, availability checking, constraint satisfaction  
-**Gold Standard F1**: 77.78%  
-**Evaluation**: ⚠️ **Partial** - Missing CAN-05 (Attendee Resolution) and CAN-06 (Availability Checking)
+**Gold Standard F1**: 88.89%  
+**Evaluation**: ⚠️ **Partial** - Missing CAN-06 (Availability Checking)
 
 **Gold Standard Revision (November 8, 2025)**: 
 > Changed CAN-23 (Conflict Resolution) to CAN-17 (Automatic Rescheduling). When prompt explicitly requests "help me reschedule", the automatic rescheduling task (CAN-17) is more appropriate than conflict resolution (CAN-23). CAN-17 actively performs the rescheduling automation, while CAN-23 would only detect conflicts.
+> 
+> **CAN-05 Removal (November 8, 2025)**: Removed CAN-05 (Attendee Resolution) from Schedule-2. Since meetings are already booked on the calendar, attendee information is available directly from CAN-07 (Meeting Metadata Extraction). CAN-05 is only needed when resolving names to calendar identities (e.g., "{name}" in Schedule-1), not when extracting attendees from existing meetings.
 
-**Human Evaluator Notes**: 
-> "The model needs to get metadata, and from there to find attendee for those meetings in the Thursday afternoon."
-
-#### Canonical Task Decomposition: 9 Tasks (Including CAN-05, CAN-06)
+#### Canonical Task Decomposition: 8 Tasks (Removed CAN-05)
 
 **Task 1: Natural Language Understanding (CAN-04)**
 - **Purpose**: Extract rescheduling requirements
@@ -1172,45 +1171,38 @@ Notification: "Your 1:1 with Sarah Chen has been automatically rescheduled from 
 **Task 3: Meeting Metadata Extraction (CAN-07)**
 - **Purpose**: Extract RSVP status, attendees, meeting details
 - **Input**: Thursday afternoon meetings from CAN-01
-- **Output**: Detailed metadata for each meeting
+- **Output**: Detailed metadata including attendee information for rescheduling
 - **Tier**: Common (Tier 2)
-- **Note**: Critical for CAN-05 and CAN-13
+- **Note**: Provides all attendee information needed for CAN-06 (availability checking) and CAN-13 (RSVP updates)
 
-**Task 4: Attendee/Contact Resolution (CAN-05) - **MISSING IN ORIGINAL****
-- **Purpose**: Resolve attendees for rescheduling coordination
-- **Input**: Attendee lists from CAN-07
-- **Output**: Full contact details for rescheduling notifications
-- **Tier**: Universal (Tier 1)
-- **Note**: **CRITICAL** - Needed to find attendees and check their availability
-
-**Task 5: RSVP Status Update (CAN-13)**
+**Task 4: RSVP Status Update (CAN-13)**
 - **Purpose**: Update RSVP status (decline or tentative)
 - **Input**: Meetings from CAN-07 + user status preference
 - **Output**: RSVP updates sent
 - **Tier**: Common (Tier 2)
 - **Dependencies**: CAN-07 (need current RSVP status)
 
-**Task 6: Availability Checking (CAN-06) - **MISSING IN ORIGINAL****
+**Task 5: Availability Checking (CAN-06) - **MISSING IN ORIGINAL****
 - **Purpose**: Find alternative time slots for rescheduling
-- **Input**: Meeting attendees + duration
+- **Input**: Meeting attendees from CAN-07 + duration
 - **Output**: Available slots for rescheduled meetings
 - **Tier**: Common (Tier 2)
-- **Dependencies**: CAN-05 (need attendee calendars)
+- **Dependencies**: CAN-07 (attendee information comes from metadata extraction)
 
-**Task 7: Constraint Satisfaction (CAN-12)**
+**Task 6: Constraint Satisfaction (CAN-12)**
 - **Purpose**: Select best alternative times for each meeting
 - **Input**: Available slots + user preferences
 - **Output**: Optimal rescheduling times
 - **Tier**: Common (Tier 2)
 
-**Task 8: Automatic Rescheduling (CAN-17) - **REVISED FROM CAN-23****
+**Task 7: Automatic Rescheduling (CAN-17) - **REVISED FROM CAN-23****
 - **Purpose**: Automatically propose and execute rescheduling
 - **Input**: Original meetings + new proposed times from CAN-12
 - **Output**: Rescheduling proposal with automated time suggestions
 - **Tier**: Specialized (Tier 3)
 - **Note**: User explicitly requested "help me reschedule" - CAN-17 performs the automation action
 
-**Task 9: Calendar Event Creation/Update (CAN-03)**
+**Task 8: Calendar Event Creation/Update (CAN-03)**
 - **Purpose**: Update meeting times in calendar
 - **Input**: Rescheduling plan from CAN-17
 - **Output**: Calendar events updated to new times
@@ -1218,10 +1210,9 @@ Notification: "Your 1:1 with Sarah Chen has been automatically rescheduled from 
 
 #### Evaluation Criteria
 - RSVP update correctness (status correctly updated to decline/tentative)
-- Attendee resolution completeness (all meeting participants identified)
 - Availability detection accuracy (suitable alternative slots found)
 - Rescheduling plan quality (proposed times work for all attendees)
-- CAN-05 inclusion (CRITICAL - human evaluator identified this as missing dependency)
+- CAN-06 inclusion (CRITICAL - human evaluator identified availability checking as missing)
 
 #### Execution Composition
 
@@ -1248,17 +1239,11 @@ CAN-07 (Metadata Extraction) → Get detailed meeting information
   - For each meeting: Attendee lists, organizer, duration, recurrence, RSVP status
   - Extract: Meeting importance signals (customer meeting? 1:1?)
   - Extract: Flexibility indicators (recurring? organizer is peer?)
-  - Purpose: Provide context for CAN-05 and CAN-13
-  - Output: Enriched meeting objects with full metadata
+  - Extract: Attendee information (names, emails) for availability checking
+  - Purpose: Provide context for CAN-13 (RSVP) and CAN-06 (availability)
+  - Output: Enriched meeting objects with full metadata including attendee details
 
-STEP 4: Resolve All Attendees (CRITICAL - MISSING IN ORIGINAL)
-CAN-05 (Attendee/Contact Resolution) → Resolve attendees for coordination
-  - Input: Attendee lists from CAN-07 (names/emails)
-  - Resolve: Full contact details, calendar URLs, timezones
-  - Purpose: **ESSENTIAL** for CAN-06 availability checking
-  - Output: Fully resolved attendee objects with calendar access
-
-STEP 5-6: Update RSVPs and Find Alternative Slots (Parallel Processing)
+STEP 4-5: Update RSVPs and Find Alternative Slots (Parallel Processing)
 CAN-13 (RSVP Status Update) → Decline or mark tentative
   - For each Thursday meeting: Update user's RSVP to "Declined" or "Tentative"
   - Send: RSVP update notifications to organizers
@@ -1266,19 +1251,19 @@ CAN-13 (RSVP Status Update) → Decline or mark tentative
   - Output: RSVP updates sent for all meetings
 
 CAN-06 (Availability Checking) → Find alternative times for rescheduling
-  - Input: Resolved attendees from CAN-05 + meeting durations from CAN-07
+  - Input: Attendee information from CAN-07 + meeting durations
   - For each meeting: Check common availability across all attendees
   - Constraints: Avoid Thursday afternoon, find slots within next 1-2 weeks
   - Output: List of alternative time slots for each meeting
 
-STEP 7: Select Best Alternative Times
+STEP 6: Select Best Alternative Times
 CAN-12 (Constraint Satisfaction) → Apply preferences
   - Preferences: Minimize attendee conflicts, respect calendar patterns
   - Logic: Earlier in week better, group similar meetings together
   - Validation: Ensure selected times don't conflict
   - Output: Optimal rescheduling plan
 
-STEP 8: Generate Rescheduling Proposal with Automation
+STEP 7: Generate Rescheduling Proposal with Automation
 CAN-17 (Automatic Rescheduling) → Create rescheduling plan
   - Format: Structured proposal showing old time → new time
   - Include: Rationale for each change (attendee availability)
@@ -1286,7 +1271,7 @@ CAN-17 (Automatic Rescheduling) → Create rescheduling plan
   - Purpose: Provide automation action requested by "help me reschedule"
   - Output: Rescheduling proposal with automated suggestions
 
-STEP 9: Update Calendar with New Times
+STEP 8: Update Calendar with New Times
 CAN-03 (Event Creation/Update) → Execute rescheduling
   - For each meeting: Update meeting time to new slot
   - Send: Meeting update notifications to all attendees
@@ -1301,12 +1286,12 @@ OUTPUT: Thursday afternoon cleared with meetings rescheduled
 ```
 
 #### Key Orchestration Patterns
-- **Metadata Extraction Enabler**: CAN-07 provides critical input for both CAN-05 and CAN-13
-- **MISSING TASK DEPENDENCY**: CAN-05 is ESSENTIAL - cannot check availability (CAN-06) without attendee calendars
-- **Parallel RSVP + Availability**: CAN-13 and CAN-06 can run concurrently after CAN-05 completes
+- **Metadata Extraction Enabler**: CAN-07 provides critical input for both CAN-13 (RSVP) and CAN-06 (availability) - attendee information comes from existing meeting metadata
+- **No Attendee Resolution Needed**: Since meetings are already booked, CAN-07 extracts attendee details directly from calendar events (unlike Schedule-1 where "{name}" must be resolved)
+- **Parallel RSVP + Availability**: CAN-13 and CAN-06 can run concurrently after CAN-07 completes
 - **Automation Layer**: CAN-17 provides automated rescheduling action requested by user
 - **Multi-Action Coordination**: Single prompt triggers 3 distinct actions (RSVP update, rescheduling, status setting)
-- **Critical Human Evaluator Insight**: Original decomposition missed CAN-05 - human noted "model needs to get metadata, and from there to find attendee"
+- **Critical Missing Task**: Original decomposition missed CAN-06 (Availability Checking) - human evaluator noted this was needed to find alternative times
 - **Gold Standard Revision**: CAN-23 → CAN-17 to reflect explicit automation request in prompt
 
 #### Example Flow - Clear Thursday Afternoon with Rescheduling
@@ -1331,19 +1316,17 @@ CAN-07: Extract metadata ✓
   - Attendees: ["Sarah Chen", "Mike Torres", "+3 others"]
   - Organizer: Sarah Chen, Duration: 60 min, Current RSVP: Accepted
   
-  [Full metadata for all 4 meetings extracted]
-
-CAN-05: Resolve attendees (CRITICAL - MISSING IN ORIGINAL) ✓
-  **Without this step, CAN-06 cannot check attendee availability!**
+  Meeting 2: Customer Check-in: Acme Corp
+  - Attendees: ["Jennifer Kim", "Customer VP", "Account Manager"]
+  - Organizer: You, Duration: 60 min, Current RSVP: Accepted
   
-  Resolved contacts:
-  - Sarah Chen → sarah.chen@company.com (calendar access ✓)
-  - Mike Torres → mike.torres@company.com (calendar access ✓)
-  - Jennifer Kim → jennifer.kim@company.com (calendar access ✓)
-  - Alex Johnson → alex.johnson@company.com (calendar access ✓)
-  - [12 team members] → All resolved with calendar access
+  Meeting 3: 1:1 with Manager
+  - Attendees: ["Manager"]
+  - Organizer: Manager, Duration: 30 min, Current RSVP: Accepted
   
-  Total attendees resolved: 18 unique people across 4 meetings
+  Meeting 4: Team Sprint Planning
+  - Attendees: [12 engineering team members listed with emails]
+  - Organizer: Engineering Lead, Duration: 60 min, Current RSVP: Accepted
 
 CAN-13: Update RSVPs (Parallel with CAN-06) ✓
   Meeting 1: RSVP changed to "Declined" ✓
@@ -1354,7 +1337,7 @@ CAN-13: Update RSVPs (Parallel with CAN-06) ✓
   Notifications sent to all organizers
 
 CAN-06: Find alternative time slots (Parallel with CAN-13) ✓
-  **Uses resolved attendees from CAN-05 to check availability**
+  **Uses attendee information from CAN-07 to check availability**
   
   Meeting 1 alternatives:
   - Mon 2-3pm ✅ Sarah, Mike, 3 others all free
@@ -1427,7 +1410,7 @@ OUTPUT to User:
 **Status**: Your calendar now shows "Out of Office" for Thursday afternoon
 **Notifications**: All attendees notified of rescheduling
 
-**Key Insight**: CAN-05 (Attendee Resolution) is CRITICAL for this workflow - human evaluator correctly identified it was missing in original decomposition. Without CAN-05, the system cannot access attendee calendars to run CAN-06 (availability checking), making rescheduling impossible. This demonstrates the importance of human evaluation to catch missing dependencies.
+**Key Insight**: Schedule-2 demonstrates that CAN-05 (Attendee Resolution) is NOT needed when working with existing calendar meetings. Since meetings are already booked, CAN-07 (Meeting Metadata Extraction) provides complete attendee information directly from the calendar events. CAN-05 is only required when resolving names to identities (like "{name}" in Schedule-1 or "senior leadership" in Collaborate-2).
 ```
 
 ---
