@@ -2720,6 +2720,56 @@ with open(output_file) as f:
 - Enterprise focus: Microsoft Graph integration, compliance, scalability
 - Research foundation: Microsoft ACRUE framework, proven methodologies
 
+### 📊 Most Important GUTT Framework Documentation (Prioritized)
+
+#### **Tier 1: Core Framework & Gold Standards** ⭐⭐⭐
+1. **`V2_GOLD_STANDARD_REPORT.md`** - Production-ready gold standard evaluation (2,900 lines, comprehensive reference)
+2. **`v2_gold_standard_v2_20251107.json`** - **SOURCE OF TRUTH**: Authoritative JSON for all task decompositions (always update first!)
+3. **`V2_HERO_PROMPTS_LIST.md`** - Quick reference for all 9 hero prompts with F1 scores and metrics
+4. **`CANONICAL_TASKS_GOLD_STANDARD_REFERENCE_V2.md`** - V2 canonical task definitions and specifications
+5. **`GUTT_v4.0_ACRUE_Integrated_Evaluation_Prompt.md`** - Current evaluation framework (ACRUE integration)
+
+#### **Tier 2: Metrics & Analysis** ⭐⭐
+6. **`METRIC_UPDATE_SUMMARY_20251108.md`** - **Latest metrics** with Schedule-2 corrections (Mean F1: 93.21%, F1 Std Dev: 14.97%)
+7. **`v2_recalculated_metrics_20251108.json`** - Numerical metrics for all 9 prompts (precision, recall, F1)
+8. **`GPT5_STABILITY_TEST_V2_README.md`** - Stability analysis and variance metrics
+9. **`SCHEDULE_2_DEEP_DIVE_ANALYSIS.md`** - CAN-17 acceptance + CAN-05 removal rationale (Schedule-2: 88.89% F1)
+10. **`COLLABORATE_1_DEEP_DIVE_ANALYSIS.md`** - Deep dive analysis for Collaborate-1 prompt
+
+#### **Tier 3: Implementation Guides** ⭐
+11. **`GOLD_STANDARD_REPORT_WRITING_GUIDE.md`** - Production documentation standards and formatting guidelines
+12. **`GUTT_v4.0_ACRUE_Integration_Documentation.md`** - Framework integration details and methodology
+13. **`CANONICAL_TASK_DECOMPOSITION_EXTRACTION.md`** - How canonical tasks work and are extracted
+14. **`CANONICAL_TASKS_CAPABILITY_INVENTORY_V2.md`** - V2 capability inventory and task catalog
+
+#### **Tier 4: Historical Reference**
+15. **`GOLD_STANDARD_REVISION_FINAL_SUMMARY_20251108.md`** - Complete revision history and decision log
+16. **`GPT5_V2_METRICS_CALCULATION_REPORT.md`** - Detailed calculation methodology and formulas
+17. **`GUTT_vs_ACRUE_Framework_Comparison.md`** - Framework comparison analysis
+
+#### **🎯 Quick Access Guidelines**
+
+**For Daily Work:**
+- Start with `V2_GOLD_STANDARD_REPORT.md` for complete reference
+- Use `V2_HERO_PROMPTS_LIST.md` for quick prompt lookup
+- Check `METRIC_UPDATE_SUMMARY_20251108.md` for current performance metrics
+
+**For Framework Understanding:**
+- Read `GUTT_v4.0_ACRUE_Integrated_Evaluation_Prompt.md` for evaluation methodology
+- Reference `CANONICAL_TASKS_GOLD_STANDARD_REFERENCE_V2.md` for task definitions
+
+**For Source of Truth Updates:**
+- **ALWAYS** update `v2_gold_standard_v2_20251107.json` FIRST
+- Then propagate changes to derived documentation
+- Maintain consistency across all references
+
+**Current Framework Performance (November 8, 2025):**
+- **Mean F1**: 93.21% (↑ from 91.98%)
+- **F1 Std Dev**: 14.97% (↓ from 16.38% - better consistency)
+- **Distribution**: 6 perfect (100%), 1 excellent (88.89%), 2 partial (77.78%, 50%)
+- **9 Hero Prompts**: All validated against gold standard
+- **Total Task Instances**: 68 canonical tasks across 9 prompts
+
 ### Environment Configuration
 - Virtual Environment: `./venv`
 - Requirements: `requirements.txt`
