@@ -1510,6 +1510,22 @@ result = subprocess.run(
 - **Key Lesson**: "Before implementing any post-training plan, discover ground truth - don't assume conceptual framework tasks have working implementations"
 - **Documents Created**: 7 strategic documents (4,600+ lines) + Outlook_Data_Loop_Evolution_Summary.md (600 lines)
 
+### Daily Logging Workflow Order (November 10, 2025) 📝 PROCESS DISCIPLINE
+- **✅ CORRECT WORKFLOW**: Always follow exact sequence from .cursorrules:
+  1. Log accomplishments: `python tools/daily_interaction_logger.py accomplish --session-id <id> ...`
+  2. End session: `python tools/daily_interaction_logger.py end --session-id <id> --priorities "..." "..." "..."`
+  3. **Generate summary**: `python tools/daily_interaction_logger.py summary` 
+  4. **THEN git operations**: `git add .` → `git commit` → `git push`
+- **❌ MISTAKE**: Running git operations before explicitly generating summary
+  - Even though summary auto-generates during `end` command
+  - Summary review should be deliberate step before committing
+  - Ensures documentation completeness verification
+- **Why Order Matters**:
+  - Summary generation = Review what's being documented
+  - Git commit = Permanent record with that documentation
+  - Can't verify completeness if you commit first
+- **Key Lesson**: "Daily summary is not just auto-generated output - it's a deliberate review checkpoint before git commit"
+
 ### Gold Standard Corrections & CAN-05 Distinction (November 8, 2025) 🎯 FRAMEWORK ACCURACY
 - **✅ CRITICAL USER INSIGHT**: CAN-05 (Attendee Resolution) NOT always needed - depends on data source
 - **CAN-05 Distinction Clarified**:
