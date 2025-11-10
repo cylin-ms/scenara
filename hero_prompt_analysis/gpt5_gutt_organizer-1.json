@@ -1,97 +1,86 @@
 {
-  "source": "gpt-5",
-  "backend_llm": "gpt-5-preview",
-  "backend_llm_notes": "GPT-5 via Cursor Agent Mode - Advanced reasoning and instruction following",
-  "timestamp": "2025-11-06T13:15:00.000000",
+  "source": "gpt-5-v2",
+  "backend_llm": "dev-gpt-5-chat-jj",
+  "backend_llm_notes": "GPT-5 via Microsoft SilverFlow LLM API - v2 with full GUTT documentation context (same as Claude/Ollama)",
+  "prompt_version": "v2_full_context",
+  "timestamp": "2025-11-06T20:08:53.031253",
   "original_prompt": "Keep my Calendar up to date by committing to only meetings that are part of my priorities.",
   "gutts": [
     {
       "id": "gutt_1",
-      "name": "Priority Definition & Extraction",
-      "capability": "Identify and structure user's priorities from context",
+      "name": "Retrieve Calendar Events",
+      "capability": "Access and fetch all scheduled calendar events from the user's calendar system",
       "required_skills": [
-        "Natural language understanding",
-        "Priority extraction",
-        "Rule formalization",
-        "Context inference"
+        "calendar_api_integration",
+        "authentication_handling"
       ],
-      "user_goal": "System understands what matters to the user",
+      "user_goal": "Ensure the system has the latest view of all meetings and events",
       "triggered": true,
-      "evidence": "User priorities extracted from profile, documents, or explicit statements"
+      "evidence": "Implementation uses Google Calendar API to pull events with OAuth authentication"
     },
     {
       "id": "gutt_2",
-      "name": "Calendar Event Retrieval",
-      "capability": "Access and load pending calendar invitations and scheduled meetings",
+      "name": "Extract Event Attributes",
+      "capability": "Parse each event to extract key details such as title, time, participants, and description",
       "required_skills": [
-        "Calendar API integration",
-        "Event filtering (pending/confirmed)",
-        "Data parsing",
-        "Invitation management"
+        "data_parsing",
+        "structured_data_processing"
       ],
-      "user_goal": "Get all meetings that need decision-making",
+      "user_goal": "Enable downstream analysis of meeting relevance and priority",
       "triggered": true,
-      "evidence": "Query calendar for all pending invitations and upcoming events"
+      "evidence": "JSON response from calendar API is parsed to extract event metadata fields"
     },
     {
       "id": "gutt_3",
-      "name": "Meeting-Priority Alignment Scoring",
-      "capability": "Evaluate how well each meeting aligns with stated priorities",
+      "name": "Retrieve User Priority Profile",
+      "capability": "Access and load the user's defined priorities or priority model",
       "required_skills": [
-        "Semantic matching",
-        "Relevance scoring",
-        "Priority ranking",
-        "Feature extraction"
+        "user_profile_management",
+        "data_retrieval"
       ],
-      "user_goal": "Know which meetings support goals and which don't",
+      "user_goal": "Provide a reference for determining which meetings align with user priorities",
       "triggered": true,
-      "evidence": "Score each meeting against priority criteria (0-100 alignment score)"
+      "evidence": "System queries user preference store to retrieve priority categories and rules"
     },
     {
       "id": "gutt_4",
-      "name": "Accept/Decline Decision Logic",
-      "capability": "Determine which meetings to accept vs decline based on priority alignment",
+      "name": "Classify Event Against Priorities",
+      "capability": "Determine if each event aligns with the user's stated priorities",
       "required_skills": [
-        "Threshold-based decision making",
-        "Conflict resolution",
-        "Calendar optimization",
-        "Rule application"
+        "natural_language_processing",
+        "classification_algorithm",
+        "priority_matching"
       ],
-      "user_goal": "Automated keep/decline recommendations",
+      "user_goal": "Identify which meetings should be committed to based on user priorities",
       "triggered": true,
-      "evidence": "Decision rule: alignment_score >= 70 → Accept, < 70 → Decline"
+      "evidence": "NLP model scores event description against priority keywords and returns binary relevance"
     },
     {
       "id": "gutt_5",
-      "name": "Calendar Action Execution",
-      "capability": "Execute accept/decline actions on calendar system",
+      "name": "Filter Non-Priority Events",
+      "capability": "Separate events that do not match the user's priorities from those that do",
       "required_skills": [
-        "Calendar API write operations",
-        "RSVP updates",
-        "Confirmation handling",
-        "Error recovery"
+        "data_filtering",
+        "logical_operations"
       ],
-      "user_goal": "Calendar automatically reflects priority decisions",
+      "user_goal": "Ensure only relevant meetings are considered for commitment",
       "triggered": true,
-      "evidence": "API calls to accept/decline invitations with success confirmation"
+      "evidence": "System applies boolean filter to event list based on classification results"
     },
     {
       "id": "gutt_6",
-      "name": "Decision Justification & Reporting",
-      "capability": "Explain why each meeting was accepted or declined",
+      "name": "Commit Priority Meetings",
+      "capability": "Update the calendar to confirm attendance for meetings identified as priority",
       "required_skills": [
-        "Natural language generation",
-        "Rule-based explanation",
-        "Transparency reporting",
-        "User communication"
+        "calendar_api_integration",
+        "event_update_operations"
       ],
-      "user_goal": "Understand the reasoning behind each decision",
+      "user_goal": "Keep the calendar accurate by committing to relevant meetings",
       "triggered": true,
-      "evidence": "Generated report: 'Accepted: Aligns with Priority #1 (Product Launch), Score: 85'"
+      "evidence": "API call updates event RSVP status to 'accepted' for priority meetings"
     }
   ],
   "track1_score": 1.0,
-  "track2_score": 4.0,
-  "overall_score": 4.0,
-  "notes": "Generated by GPT-5 - Matches reference decomposition of 6 GUTTs"
+  "track2_score": null,
+  "overall_score": null
 }

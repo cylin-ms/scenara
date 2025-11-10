@@ -1,0 +1,149 @@
+{
+  "id": "tier2_senior_ic_architect",
+  "name": "Senior IC - Technical Architect",
+  "tier": 2,
+  "demographics": {
+    "level": "Senior IC (L65-66)",
+    "function": "Engineering",
+    "tenure": "5-7 years",
+    "team_size": "0 direct reports (tech lead for 15-person team)",
+    "company": "Enterprise Tech Company",
+    "industry": "Technology"
+  },
+  "meeting_context": {
+    "weekly_meeting_hours": "15-20 hours",
+    "typical_breakdown": {
+      "design_reviews": "30%",
+      "technical_discussions": "25%",
+      "cross_team_coordination": "20%",
+      "team_standups": "10%",
+      "1on1_with_manager": "5%",
+      "learning_sessions": "10%"
+    }
+  },
+  "importance_criteria": {
+    "always_important": [
+      "architecture review",
+      "design review",
+      "technical design",
+      "security review",
+      "performance review",
+      "production incident",
+      "system design"
+    ],
+    "usually_important": [
+      "technical discussion",
+      "API design",
+      "integration planning",
+      "scalability",
+      "cross-team",
+      "tech talk",
+      "mentoring"
+    ],
+    "sometimes_important": [
+      "team meeting",
+      "planning",
+      "retrospective",
+      "status update",
+      "training"
+    ],
+    "rarely_important": [
+      "all-hands",
+      "social",
+      "celebration",
+      "townhall"
+    ]
+  },
+  "priority_framework": [
+    {
+      "name": "Q4 Architecture Modernization",
+      "time_commitment": "40%",
+      "keywords": [
+        "microservices migration",
+        "architecture modernization",
+        "technical debt",
+        "system design",
+        "scalability review"
+      ]
+    },
+    {
+      "name": "Cross-Team API Integration",
+      "time_commitment": "30%",
+      "keywords": [
+        "API design",
+        "integration",
+        "cross-team",
+        "service contract",
+        "API review"
+      ]
+    },
+    {
+      "name": "Technical Mentoring",
+      "time_commitment": "20%",
+      "keywords": [
+        "mentoring",
+        "tech talk",
+        "design review",
+        "code review",
+        "knowledge sharing"
+      ]
+    },
+    {
+      "name": "Production Reliability",
+      "time_commitment": "10%",
+      "keywords": [
+        "incident",
+        "on-call",
+        "production issue",
+        "reliability",
+        "monitoring"
+      ]
+    }
+  ],
+  "rsvp_rules": {
+    "always_accept": [
+      "Architecture/design reviews (expertise needed)",
+      "Production incidents (system knowledge critical)",
+      "Cross-team technical planning (integration dependencies)",
+      "Security reviews (compliance required)"
+    ],
+    "conditional": [
+      "Technical discussions (if relevant to current work)",
+      "Planning meetings (if architectural input needed)",
+      "Team meetings (unless deep work time)",
+      "1on1s with manager (every other week minimum)"
+    ],
+    "decline_by_default": [
+      "Large team meetings without clear agenda",
+      "All-hands (can watch recording)",
+      "Social events (limited time)"
+    ],
+    "always_decline": [
+      "Non-technical meetings without clear IC role",
+      "Meetings overlapping with critical design reviews"
+    ]
+  },
+  "prep_time_needs": {
+    "requires_prep": [
+      "Architecture reviews (60 min: review design docs, identify gaps, prepare feedback)",
+      "Design reviews (45 min: understand requirements, research alternatives, prepare questions)",
+      "Technical presentations (90 min: prepare slides, validate approach, anticipate questions)",
+      "Cross-team planning (30 min: review dependencies, identify blockers, prepare proposals)"
+    ],
+    "optional_prep": [
+      "Technical discussions (15 min: review context if complex)",
+      "Team planning (10 min: check backlog if participating)",
+      "Mentoring sessions (20 min: review mentee's recent work)"
+    ],
+    "no_prep": [
+      "Daily standups",
+      "Informal technical chats",
+      "Social events",
+      "All-hands meetings"
+    ]
+  },
+  "work_style": "Senior IC - Technical Architect: Deep technical expertise in distributed systems with 5-7 years tenure. Balances hands-on coding (40%) with technical leadership (60%). Spends 15-20 hours/week in meetings focused on architecture reviews, design discussions, and cross-team coordination. Values focused work time for complex technical problems - meetings must have clear technical value. Serves as technical mentor for 3-4 junior engineers while driving architecture modernization initiative. Known for thorough design reviews and asking hard questions about scalability, security, and maintainability. Protective of deep work time but willing to interrupt for production incidents or critical design decisions.",
+  "career_stage": "5-7 years into career, established as senior technical expert. At inflection point: stay on IC track (pursue Principal/Distinguished Engineer) or move to management. Currently proving technical leadership through architecture modernization project. Career growth depends on: (1) Technical depth - solving hard distributed systems problems, (2) Technical breadth - influencing architecture across teams, (3) Mentorship impact - developing next generation of engineers. Success metric: Architecture modernization completed by EOY, 3 teams successfully migrated. Risk: Spending too much time in meetings vs hands-on technical work. Opportunity: Tech talks and design reviews build reputation for future principal engineer promotion.",
+  "stress_level": "⭐⭐⭐ MODERATE-HIGH: 15-20 hour meeting weeks balanced with need for deep work. Architecture decisions have long-term impact but not immediate revenue risk. Some pressure from: (1) Migrating production systems without downtime, (2) Balancing IC work with tech leadership, (3) Multiple teams depending on integration decisions. Can tolerate 75-80% accuracy on meeting prioritization - has flexibility to reschedule most meetings except critical design reviews and production incidents.",
+  "notes": "KEY INSIGHT: Senior ICs are Tier 2 because stakes are medium-high (technical decisions have long-term impact) but not immediate career/revenue risk like Tier 1. Missing design review = technical debt but not lost deal. Can tolerate 75-80% accuracy. Good alpha users for validation before launching to high-stakes Tier 1 personas."
+}

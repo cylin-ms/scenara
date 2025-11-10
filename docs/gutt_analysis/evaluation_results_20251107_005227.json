@@ -1,0 +1,495 @@
+{
+  "metadata": {
+    "timestamp": "2025-11-06T16-52-27",
+    "total_prompts": 9,
+    "evaluator": "Chin-Yew Lin",
+    "source_file": "gpt5_composition_analysis_20251106_232748.json"
+  },
+  "evaluations": {
+    "organizer-1": {
+      "prompt_id": "organizer-1",
+      "prompt_text": "Show me my pending invitations and which ones I should prioritize based on my priorities for this week: customer meetings and product strategy.",
+      "steps": {
+        "1": {
+          "step_number": 1,
+          "task_id": "CAN-04",
+          "task_name": "Natural Language Understanding (Constraint/Intent Extraction)",
+          "tier": 1,
+          "is_correct": true,
+          "notes": ""
+        },
+        "2": {
+          "step_number": 2,
+          "task_id": "CAN-01",
+          "task_name": "Calendar Events Retrieval",
+          "tier": 1,
+          "is_correct": true,
+          "notes": ""
+        },
+        "3": {
+          "step_number": 3,
+          "task_id": "CAN-02",
+          "task_name": "Meeting Classification",
+          "tier": 1,
+          "is_correct": true,
+          "notes": " The meeting classification lump two types: the meeting type and meeting priority. They are separate capability."
+        },
+        "4": {
+          "step_number": 4,
+          "task_id": "CAN-11",
+          "task_name": "Priority/Preference Matching",
+          "tier": 2,
+          "is_correct": true,
+          "notes": ""
+        }
+      },
+      "missing_tasks": [],
+      "execution_plan_rating": "correct",
+      "overall_notes": " The meeting classification lump two types: the meeting type and meeting priority. They are separate capability."
+    },
+    "organizer-2": {
+      "prompt_id": "organizer-2",
+      "prompt_text": "I have some important meetings this week—flag the ones I need to prep for, and put time on my calendar to prepare.",
+      "steps": {
+        "1": {
+          "step_number": 1,
+          "task_id": "CAN-04",
+          "task_name": "Natural Language Understanding (Constraint/Intent Extraction)",
+          "tier": 1,
+          "is_correct": true,
+          "notes": ""
+        },
+        "2": {
+          "step_number": 2,
+          "task_id": "CAN-01",
+          "task_name": "Calendar Events Retrieval",
+          "tier": 1,
+          "is_correct": true,
+          "notes": ""
+        },
+        "3": {
+          "step_number": 3,
+          "task_id": "CAN-02",
+          "task_name": "Meeting Classification",
+          "tier": 1,
+          "is_correct": true,
+          "notes": ""
+        },
+        "4": {
+          "step_number": 4,
+          "task_id": "CAN-14",
+          "task_name": "Recommendation Engine",
+          "tier": 2,
+          "is_correct": true,
+          "notes": ""
+        },
+        "5": {
+          "step_number": 5,
+          "task_id": "CAN-03",
+          "task_name": "Calendar Event Creation/Update",
+          "tier": 1,
+          "is_correct": true,
+          "notes": ""
+        }
+      },
+      "missing_tasks": [],
+      "execution_plan_rating": "correct",
+      "overall_notes": "1. There is a missing task, To answer this prompt, the system needs to have the capability of estimating the time for this individual to finish the preparation. This is not easy to estimate. But it needs to have some idea of how much time a person typically needs to reserve to finish a particular task. 2. The meeting classification lump two types: the meeting type and meeting priority. They are separate capability."
+    },
+    "organizer-3": {
+      "prompt_id": "organizer-3",
+      "prompt_text": "I'm spending too much time in meetings. Help me find patterns in my calendar and identify opportunities to reclaim time.",
+      "steps": {
+        "1": {
+          "step_number": 1,
+          "task_id": "CAN-01",
+          "task_name": "Calendar Events Retrieval",
+          "tier": 1,
+          "is_correct": true,
+          "notes": ""
+        },
+        "2": {
+          "step_number": 2,
+          "task_id": "CAN-02",
+          "task_name": "Meeting Classification",
+          "tier": 1,
+          "is_correct": true,
+          "notes": "From this, I assume that the \"Meeting Classification\" capability includes \"meeting type\" and \"meeting importance\". Does \"important\" equal to \"priority\"? For this hero prompt, it is more about differentiate \"important\" vs. \"unimportant\" ones so the user can reclaim time from his/her calendar. "
+        },
+        "3": {
+          "step_number": 3,
+          "task_id": "CAN-10",
+          "task_name": "Time Aggregation/Statistical Analysis",
+          "tier": 2,
+          "is_correct": true,
+          "notes": ""
+        },
+        "4": {
+          "step_number": 4,
+          "task_id": "CAN-11",
+          "task_name": "Priority/Preference Matching",
+          "tier": 2,
+          "is_correct": true,
+          "notes": "Does this overlap with \"Meeting Classification\" (CAN-02)?  It seems CAN-11 is about aligning with user goals but \"CAN-02\" Meeting Classification also does similar things. If we have identify important vs. unimportant meetings via CAN-02, Meeting Classification\", then why do we need this step?"
+        },
+        "5": {
+          "step_number": 5,
+          "task_id": "CAN-14",
+          "task_name": "Recommendation Engine",
+          "tier": 2,
+          "is_correct": true,
+          "notes": ""
+        }
+      },
+      "missing_tasks": [
+        "CAN-04"
+      ],
+      "execution_plan_rating": "partial",
+      "overall_notes": "Isn't NLP CAN-04 is needed for all the prompts? It is powered by Copilot Reasoning and Language Understanding."
+    },
+    "schedule-1": {
+      "prompt_id": "schedule-1",
+      "prompt_text": "Land a weekly 30min 1:1 with Sarah for me, afternoons preferred, avoid Fridays. If her schedule changes, automatically find a new time.",
+      "steps": {
+        "1": {
+          "step_number": 1,
+          "task_id": "CAN-04",
+          "task_name": "Natural Language Understanding (Constraint/Intent Extraction)",
+          "tier": 1,
+          "is_correct": true,
+          "notes": ""
+        },
+        "2": {
+          "step_number": 2,
+          "task_id": "CAN-05",
+          "task_name": "Attendee/Contact Resolution",
+          "tier": 1,
+          "is_correct": true,
+          "notes": ""
+        },
+        "3": {
+          "step_number": 3,
+          "task_id": "CAN-06",
+          "task_name": "Availability Checking (Free/Busy)",
+          "tier": 2,
+          "is_correct": true,
+          "notes": "Does this relate to CAN-01 Calendar Event Retrieval? This is the compliment of CAN-01 which is to find meetings. CAN-06 is to find free timeslots. Am I right? Do we need to do CAN-01 first? analysis on other prompts calls CAN-01 first."
+        },
+        "4": {
+          "step_number": 4,
+          "task_id": "CAN-12",
+          "task_name": "Constraint Satisfaction",
+          "tier": 2,
+          "is_correct": true,
+          "notes": "Do we assume that we can always find a time to fulfill the request? If not, do we have a conflict resolution module to resolve the conflict?"
+        },
+        "5": {
+          "step_number": 5,
+          "task_id": "CAN-15",
+          "task_name": "Recurrence Rule Generation",
+          "tier": 3,
+          "is_correct": true,
+          "notes": ""
+        },
+        "6": {
+          "step_number": 6,
+          "task_id": "CAN-03",
+          "task_name": "Calendar Event Creation/Update",
+          "tier": 1,
+          "is_correct": true,
+          "notes": ""
+        },
+        "7": {
+          "step_number": 7,
+          "task_id": "CAN-16",
+          "task_name": "Event Monitoring/Change Detection",
+          "tier": 3,
+          "is_correct": true,
+          "notes": ""
+        }
+      },
+      "missing_tasks": [
+        "CAN-01"
+      ],
+      "execution_plan_rating": "partial",
+      "overall_notes": ""
+    },
+    "schedule-2": {
+      "prompt_id": "schedule-2",
+      "prompt_text": "Clear my Thursday afternoon—reschedule what you can, and decline the rest.",
+      "steps": {
+        "1": {
+          "step_number": 1,
+          "task_id": "CAN-04",
+          "task_name": "Natural Language Understanding (Constraint/Intent Extraction)",
+          "tier": 1,
+          "is_correct": true,
+          "notes": ""
+        },
+        "2": {
+          "step_number": 2,
+          "task_id": "CAN-01",
+          "task_name": "Calendar Events Retrieval",
+          "tier": 1,
+          "is_correct": true,
+          "notes": ""
+        },
+        "3": {
+          "step_number": 3,
+          "task_id": "CAN-02",
+          "task_name": "Meeting Classification",
+          "tier": 1,
+          "is_correct": true,
+          "notes": "So this time the Meeting Classification CAN-02 is used to classify \"reschedulable or not reschedulable\"? Does this equal to \"important\" or \"not important\"? "
+        },
+        "4": {
+          "step_number": 4,
+          "task_id": "CAN-06",
+          "task_name": "Availability Checking (Free/Busy)",
+          "tier": 2,
+          "is_correct": true,
+          "notes": ""
+        },
+        "5": {
+          "step_number": 5,
+          "task_id": "CAN-03",
+          "task_name": "Calendar Event Creation/Update",
+          "tier": 1,
+          "is_correct": true,
+          "notes": ""
+        },
+        "6": {
+          "step_number": 6,
+          "task_id": "CAN-13",
+          "task_name": "RSVP Status Update",
+          "tier": 2,
+          "is_correct": true,
+          "notes": ""
+        }
+      },
+      "missing_tasks": [],
+      "execution_plan_rating": "correct",
+      "overall_notes": ""
+    },
+    "schedule-3": {
+      "prompt_id": "schedule-3",
+      "prompt_text": "Land a time for Project Alpha with Chris, Sangya, and Kat for 1 hour in the next 2 weeks. Schedule over 1:1s if needed, work around Kat's schedule. In person with a room.",
+      "steps": {
+        "1": {
+          "step_number": 1,
+          "task_id": "CAN-04",
+          "task_name": "Natural Language Understanding (Constraint/Intent Extraction)",
+          "tier": 1,
+          "is_correct": true,
+          "notes": ""
+        },
+        "2": {
+          "step_number": 2,
+          "task_id": "CAN-05",
+          "task_name": "Attendee/Contact Resolution",
+          "tier": 1,
+          "is_correct": true,
+          "notes": ""
+        },
+        "3": {
+          "step_number": 3,
+          "task_id": "CAN-01",
+          "task_name": "Calendar Events Retrieval",
+          "tier": 1,
+          "is_correct": true,
+          "notes": ""
+        },
+        "4": {
+          "step_number": 4,
+          "task_id": "CAN-06",
+          "task_name": "Availability Checking (Free/Busy)",
+          "tier": 2,
+          "is_correct": true,
+          "notes": "Does CAN-06 depend on CAN-01?"
+        },
+        "5": {
+          "step_number": 5,
+          "task_id": "CAN-12",
+          "task_name": "Constraint Satisfaction",
+          "tier": 2,
+          "is_correct": true,
+          "notes": ""
+        },
+        "6": {
+          "step_number": 6,
+          "task_id": "CAN-19",
+          "task_name": "Resource Booking (Rooms/Equipment)",
+          "tier": 3,
+          "is_correct": true,
+          "notes": ""
+        },
+        "7": {
+          "step_number": 7,
+          "task_id": "CAN-03",
+          "task_name": "Calendar Event Creation/Update",
+          "tier": 1,
+          "is_correct": true,
+          "notes": ""
+        }
+      },
+      "missing_tasks": [],
+      "execution_plan_rating": "correct",
+      "overall_notes": ""
+    },
+    "collaborate-1": {
+      "prompt_id": "collaborate-1",
+      "prompt_text": "I have a Project Alpha review coming up. Help me set the agenda based on what the team has been working on.",
+      "steps": {
+        "1": {
+          "step_number": 1,
+          "task_id": "CAN-04",
+          "task_name": "Natural Language Understanding (Constraint/Intent Extraction)",
+          "tier": 1,
+          "is_correct": true,
+          "notes": ""
+        },
+        "2": {
+          "step_number": 2,
+          "task_id": "CAN-05",
+          "task_name": "Attendee/Contact Resolution",
+          "tier": 1,
+          "is_correct": true,
+          "notes": ""
+        },
+        "3": {
+          "step_number": 3,
+          "task_id": "CAN-01",
+          "task_name": "Calendar Events Retrieval",
+          "tier": 1,
+          "is_correct": true,
+          "notes": ""
+        },
+        "4": {
+          "step_number": 4,
+          "task_id": "CAN-08",
+          "task_name": "Document/Content Retrieval",
+          "tier": 2,
+          "is_correct": true,
+          "notes": ""
+        },
+        "5": {
+          "step_number": 5,
+          "task_id": "CAN-09",
+          "task_name": "Document Generation/Formatting",
+          "tier": 2,
+          "is_correct": true,
+          "notes": "So this Document Generation capability include \"agenda generation\"? Does this include all kinds of document generation? Do we need to specialize for various document generation, for example, PPT, spreadsheet, code, image, video, audio, plan, etc.?"
+        }
+      },
+      "missing_tasks": [],
+      "execution_plan_rating": "partial",
+      "overall_notes": "From CAN-05 and CAN-08, we can find who are working on Project Alpha and docs related to each member of the project team. However, documents themselves do not tell us who is working on what.  We need the capability to discover who works on what."
+    },
+    "collaborate-2": {
+      "prompt_id": "collaborate-2",
+      "prompt_text": "I have an executive meeting in 2 hours. Pull together a briefing on the topics we'll be discussing.",
+      "steps": {
+        "1": {
+          "step_number": 1,
+          "task_id": "CAN-04",
+          "task_name": "Natural Language Understanding (Constraint/Intent Extraction)",
+          "tier": 1,
+          "is_correct": true,
+          "notes": ""
+        },
+        "2": {
+          "step_number": 2,
+          "task_id": "CAN-01",
+          "task_name": "Calendar Events Retrieval",
+          "tier": 1,
+          "is_correct": true,
+          "notes": ""
+        },
+        "3": {
+          "step_number": 3,
+          "task_id": "CAN-02",
+          "task_name": "Meeting Classification",
+          "tier": 1,
+          "is_correct": true,
+          "notes": ""
+        },
+        "4": {
+          "step_number": 4,
+          "task_id": "CAN-08",
+          "task_name": "Document/Content Retrieval",
+          "tier": 2,
+          "is_correct": true,
+          "notes": ""
+        },
+        "5": {
+          "step_number": 5,
+          "task_id": "CAN-09",
+          "task_name": "Document Generation/Formatting",
+          "tier": 2,
+          "is_correct": true,
+          "notes": ""
+        }
+      },
+      "missing_tasks": [],
+      "execution_plan_rating": "correct",
+      "overall_notes": ""
+    },
+    "collaborate-3": {
+      "prompt_id": "collaborate-3",
+      "prompt_text": "I have a customer meeting tomorrow. Give me a dossier on the attendees and recent interactions.",
+      "steps": {
+        "1": {
+          "step_number": 1,
+          "task_id": "CAN-04",
+          "task_name": "Natural Language Understanding (Constraint/Intent Extraction)",
+          "tier": 1,
+          "is_correct": true,
+          "notes": ""
+        },
+        "2": {
+          "step_number": 2,
+          "task_id": "CAN-01",
+          "task_name": "Calendar Events Retrieval",
+          "tier": 1,
+          "is_correct": true,
+          "notes": ""
+        },
+        "3": {
+          "step_number": 3,
+          "task_id": "CAN-02",
+          "task_name": "Meeting Classification",
+          "tier": 1,
+          "is_correct": true,
+          "notes": ""
+        },
+        "4": {
+          "step_number": 4,
+          "task_id": "CAN-05",
+          "task_name": "Attendee/Contact Resolution",
+          "tier": 1,
+          "is_correct": true,
+          "notes": ""
+        },
+        "5": {
+          "step_number": 5,
+          "task_id": "CAN-08",
+          "task_name": "Document/Content Retrieval",
+          "tier": 2,
+          "is_correct": true,
+          "notes": ""
+        },
+        "6": {
+          "step_number": 6,
+          "task_id": "CAN-09",
+          "task_name": "Document Generation/Formatting",
+          "tier": 2,
+          "is_correct": true,
+          "notes": ""
+        }
+      },
+      "missing_tasks": [],
+      "execution_plan_rating": "correct",
+      "overall_notes": ""
+    }
+  }
+}

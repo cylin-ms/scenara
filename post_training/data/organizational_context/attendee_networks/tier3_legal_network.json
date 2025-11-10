@@ -1,0 +1,97 @@
+{
+  "persona_id": "tier3_specialist_legal",
+  "persona_name": "Michelle Zhang - Legal Specialist",
+  "email": "michelle.zhang@contoso.com",
+  
+  "attendee_patterns": {
+    "weekly_1on1_manager": {
+      "meeting_types": ["Weekly 1:1 with Manager"],
+      "attendees": ["richard.tan@contoso.com"],
+      "count": 2
+    },
+    
+    "team_meetings": {
+      "meeting_types": ["Legal Team Weekly Sync", "Team Meeting"],
+      "attendees": [
+        "richard.tan@contoso.com",
+        "andrew.liu@contoso.com",
+        "victoria.chen@contoso.com"
+      ],
+      "count_range": [4, 5]
+    },
+    
+    "contract_reviews": {
+      "meeting_types": ["Contract Review", "Agreement Review", "Legal Review"],
+      "internal_stakeholders": [
+        "richard.tan@contoso.com",
+        "alex.chen@contoso.com",
+        "emily.tan@contoso.com",
+        "henry.zhou@contoso.com"
+      ],
+      "count_range": [3, 6]
+    },
+    
+    "vendor_negotiations": {
+      "meeting_types": ["Vendor Negotiation", "Supplier Discussion"],
+      "internal_team": [
+        "richard.tan@contoso.com",
+        "henry.zhou@contoso.com"
+      ],
+      "external_companies": ["litware_inc"],
+      "count_range": [4, 7]
+    },
+    
+    "compliance_meetings": {
+      "meeting_types": ["Compliance Check", "Regulatory Review", "Audit"],
+      "attendees": [
+        "carol.wang@contoso.com",
+        "richard.tan@contoso.com",
+        "victoria.chen@contoso.com"
+      ],
+      "count_range": [3, 5]
+    },
+    
+    "legal_consultation": {
+      "meeting_types": ["Legal Consultation", "Advisory Session"],
+      "business_stakeholders": [
+        "alex.chen@contoso.com",
+        "oliver.chen@contoso.com",
+        "james.park@contoso.com",
+        "amy.liu@contoso.com"
+      ],
+      "count_range": [2, 4]
+    },
+    
+    "monthly_review_board": {
+      "meeting_types": ["Monthly Contract Review Board", "Legal Review Board"],
+      "attendees": [
+        "richard.tan@contoso.com",
+        "jennifer.wang@contoso.com",
+        "andrew.liu@contoso.com"
+      ],
+      "count_range": [3, 5]
+    }
+  },
+  
+  "frequent_contacts": {
+    "internal": [
+      "richard.tan@contoso.com",
+      "andrew.liu@contoso.com",
+      "victoria.chen@contoso.com",
+      "carol.wang@contoso.com",
+      "jennifer.wang@contoso.com",
+      "henry.zhou@contoso.com",
+      "alex.chen@contoso.com",
+      "emily.tan@contoso.com"
+    ],
+    "external": {
+      "litware_inc": [
+        "brian.miller@litware.com",
+        "maria.santos@litware.com"
+      ],
+      "fabrikam_inc": [
+        "william.chen@fabrikam.com"
+      ]
+    }
+  }
+}

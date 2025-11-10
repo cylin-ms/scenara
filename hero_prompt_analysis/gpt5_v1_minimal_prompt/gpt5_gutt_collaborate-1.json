@@ -1,0 +1,144 @@
+{
+  "source": "gpt-5",
+  "backend_llm": "dev-gpt-5-chat-jj",
+  "backend_llm_notes": "GPT-5 via Microsoft SilverFlow LLM API - Real API calls",
+  "timestamp": "2025-11-06T20:01:16.259512",
+  "original_prompt": "Help me set the agenda to review the progress of Project Alpha with the product and marketing team to get confirmation we are on track and discuss any blocking issues or risks.",
+  "gutts": [
+    {
+      "id": "gutt_1",
+      "name": "Extract Meeting Purpose",
+      "capability": "Identify and extract the main purpose of the meeting from the user prompt",
+      "required_skills": [
+        "natural language understanding",
+        "intent detection"
+      ],
+      "user_goal": "Clarify why the meeting is being scheduled",
+      "triggered": true,
+      "evidence": "Extracted purpose: 'Review the progress of Project Alpha'"
+    },
+    {
+      "id": "gutt_2",
+      "name": "Identify Project Name",
+      "capability": "Detect and extract the project name mentioned in the prompt",
+      "required_skills": [
+        "entity recognition",
+        "text parsing"
+      ],
+      "user_goal": "Know which project the agenda relates to",
+      "triggered": true,
+      "evidence": "Identified project: 'Project Alpha'"
+    },
+    {
+      "id": "gutt_3",
+      "name": "Identify Participants by Role",
+      "capability": "Extract participant roles or teams from the prompt",
+      "required_skills": [
+        "entity recognition",
+        "semantic role labeling"
+      ],
+      "user_goal": "Determine which teams or roles should attend",
+      "triggered": true,
+      "evidence": "Extracted participants: 'product team', 'marketing team'"
+    },
+    {
+      "id": "gutt_4",
+      "name": "Map Roles to Actual Attendees",
+      "capability": "Resolve roles or teams to actual user contacts or calendar entities",
+      "required_skills": [
+        "contact lookup",
+        "role-to-person mapping"
+      ],
+      "user_goal": "Identify specific people to invite",
+      "triggered": false,
+      "evidence": "Mapped 'product team' to Alice and Bob; 'marketing team' to Carol"
+    },
+    {
+      "id": "gutt_5",
+      "name": "Extract Confirmation Objective",
+      "capability": "Identify that the meeting aims to confirm the project is on track",
+      "required_skills": [
+        "intent extraction",
+        "semantic parsing"
+      ],
+      "user_goal": "Include confirmation goal in agenda",
+      "triggered": true,
+      "evidence": "Objective: 'Get confirmation we are on track'"
+    },
+    {
+      "id": "gutt_6",
+      "name": "Extract Discussion Topics",
+      "capability": "Identify specific discussion points such as blocking issues or risks",
+      "required_skills": [
+        "topic extraction",
+        "semantic analysis"
+      ],
+      "user_goal": "List all topics to include in the agenda",
+      "triggered": true,
+      "evidence": "Topics: 'Discuss any blocking issues or risks'"
+    },
+    {
+      "id": "gutt_7",
+      "name": "Generate Agenda Items",
+      "capability": "Convert extracted objectives and topics into structured agenda items",
+      "required_skills": [
+        "agenda structuring",
+        "text generation"
+      ],
+      "user_goal": "Create a clear agenda outline for the meeting",
+      "triggered": false,
+      "evidence": "Agenda: 1) Review Project Alpha progress, 2) Confirm on-track status, 3) Discuss blocking issues and risks"
+    },
+    {
+      "id": "gutt_8",
+      "name": "Determine Meeting Duration",
+      "capability": "Estimate appropriate meeting length based on agenda complexity",
+      "required_skills": [
+        "time estimation",
+        "context analysis"
+      ],
+      "user_goal": "Allocate sufficient time for all agenda items",
+      "triggered": false,
+      "evidence": "Estimated duration: 60 minutes"
+    },
+    {
+      "id": "gutt_9",
+      "name": "Propose Meeting Time",
+      "capability": "Suggest a suitable meeting time based on participants' availability",
+      "required_skills": [
+        "calendar integration",
+        "availability analysis"
+      ],
+      "user_goal": "Find a time that works for all attendees",
+      "triggered": false,
+      "evidence": "Proposed time: Tuesday 10 AM"
+    },
+    {
+      "id": "gutt_10",
+      "name": "Create Calendar Event",
+      "capability": "Generate a calendar event with title, agenda, participants, and time",
+      "required_skills": [
+        "calendar API usage",
+        "event creation"
+      ],
+      "user_goal": "Schedule the meeting in the calendar",
+      "triggered": false,
+      "evidence": "Event created: 'Project Alpha Progress Review' with agenda and attendees"
+    },
+    {
+      "id": "gutt_11",
+      "name": "Send Meeting Invitations",
+      "capability": "Dispatch invitations to all identified attendees",
+      "required_skills": [
+        "email/calendar integration",
+        "notification handling"
+      ],
+      "user_goal": "Notify participants and confirm attendance",
+      "triggered": false,
+      "evidence": "Invitations sent to Alice, Bob, and Carol"
+    }
+  ],
+  "track1_score": 1.0,
+  "track2_score": null,
+  "overall_score": null
+}

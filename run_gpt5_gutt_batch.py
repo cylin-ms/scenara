@@ -1,6 +1,14 @@
 #!/usr/bin/env python3
 """
-Batch GPT-5 GUTT Analysis for All 9 Hero Prompts
+Batch GPT-5 GUTT Analysis for All 9 Hero Prompts - Version 2
+
+**Version 2 Changes**:
+- Now loads full GUTT v4.0 ACRUE Integration Documentation (same as Claude/Ollama)
+- Includes Hero Prompts Reference GUTT Decompositions for context
+- Uses same prompt structure as Claude/Ollama analyzers for fair comparison
+- Results marked as "v2_full_context" for distinction from v1 (minimal prompt)
+
+**v1 Results** (minimal prompt, over-decomposition): Saved to hero_prompt_analysis/gpt5_v1_minimal_prompt/
 
 Runs GPT-5 GUTT decomposition on each of the 9 Calendar.AI hero prompts
 using real Microsoft SilverFlow LLM API calls.
@@ -81,72 +89,73 @@ HERO_PROMPTS = [
 
 
 def acquire_token():
-    """Acquire access token using MSAL interactive auth."""
+    """Acquire access token using MSAL interactive auth - same method as meeting classifier."""
     print("🔐 Acquiring access token...")
     
-    # Use Windows broker for better authentication on Windows
+    # Use same authentication as GPT5MeetingClassifier (which works!)
     app = msal.PublicClientApplication(
         APP_ID,
         authority=f"https://login.microsoftonline.com/{TENANT_ID}",
-        enable_broker_on_windows=True  # Use Windows Account Manager
+        enable_broker_on_windows=True
     )
     
-    # Try silent acquisition first
+    # Try to get cached account first
     accounts = app.get_accounts()
-    if accounts:
-        print(f"   Found {len(accounts)} cached account(s)")
-        result = app.acquire_token_silent(SCOPES, account=accounts[0])
+    account = accounts[0] if accounts else None
+    
+    # Try silent token acquisition first
+    if account:
+        print(f"   Found cached account: {account.get('username', 'unknown')}")
+        result = app.acquire_token_silent(SCOPES, account=account)
         if result and "access_token" in result:
             print("✅ Token acquired silently from cache")
             return result["access_token"]
     
-    # Interactive acquisition with Windows broker
+    # Interactive authentication if silent fails (same as GPT5MeetingClassifier)
     print("   Launching interactive authentication...")
-    try:
-        result = app.acquire_token_interactive(
-            scopes=SCOPES,
-            parent_window_handle=None,  # Let MSAL handle it
-            prompt="select_account"
-        )
-    except Exception as e:
-        print(f"   ⚠️  Windows broker failed: {e}")
-        print("   Trying device code flow...")
-        
-        # Fallback to device code flow
-        flow = app.initiate_device_flow(scopes=SCOPES)
-        if "user_code" not in flow:
-            raise Exception(f"Failed to create device flow: {flow.get('error_description')}")
-        
-        print(f"\n{'=' * 80}")
-        print(flow["message"])
-        print(f"{'=' * 80}\n")
-        
-        result = app.acquire_token_by_device_flow(flow)
+    result = app.acquire_token_interactive(
+        SCOPES,
+        parent_window_handle=msal.application.PublicClientApplication.CONSOLE_WINDOW_HANDLE,
+    )
     
-    if "access_token" in result:
+    if result and "access_token" in result:
         print("✅ Token acquired successfully")
         return result["access_token"]
-    else:
-        error = result.get("error_description", result.get("error", "Unknown error"))
-        print(f"❌ Authentication failed: {error}")
-        raise Exception(f"Failed to acquire token: {error}")
+    
+    error = result.get("error_description", result.get("error", "Unknown error"))
+    print(f"❌ Authentication failed: {error}")
+    raise Exception(f"Failed to acquire token: {error}")
 
 
 def call_gpt5_api(token: str, system_message: str, user_prompt: str) -> dict:
-    """Call GPT-5 API with system and user messages."""
-    headers = {
-        "Content-Type": "application/json",
-        "Authorization": f"Bearer {token}"
-    }
+    """Call GPT-5 API with system and user messages - matches working GPT5MeetingClassifier format."""
+    import uuid
     
+    # Build payload matching working classifier
     payload = {
-        "model": MODEL,
         "messages": [
             {"role": "system", "content": system_message},
             {"role": "user", "content": user_prompt}
         ],
+        "presence_penalty": 0,
+        "frequency_penalty": 0,
+        "max_completion_tokens": 4000,
         "temperature": 0.3,
-        "max_tokens": 4000
+        "top_p": 0.95,
+        "n": 1,
+        "stream": False,
+        "response_format": None,
+    }
+    
+    # Generate scenario GUID for telemetry (matches working classifier)
+    scenario_guid = str(uuid.uuid4())
+    
+    # Build headers matching working classifier
+    headers = {
+        "Authorization": f"Bearer {token}",
+        "X-ModelType": MODEL,  # Critical: working classifier uses X-ModelType header
+        "X-ScenarioGUID": scenario_guid,
+        "Content-Type": "application/json"
     }
     
     try:
@@ -173,26 +182,85 @@ def parse_gpt5_response(response_json: dict) -> str:
         return ""
 
 
-def decompose_prompt(token: str, prompt: str) -> dict:
-    """Decompose a hero prompt into GUTTs using GPT-5."""
+def load_gutt_context() -> str:
+    """Load GUTT framework context from documentation - same as Claude/Ollama analyzers"""
+    from pathlib import Path
     
-    system_message = """You are an expert at decomposing complex prompts into atomic Granular Unit Task Taxonomy (GUTT) components.
+    context_parts = []
+    
+    # Try to load GUTT v4.0 documentation (same files as Claude/Ollama)
+    gutt_docs = [
+        "docs/gutt_analysis/GUTT_v4.0_ACRUE_Integration_Documentation.md",
+        "docs/gutt_analysis/Hero_Prompts_Reference_GUTT_Decompositions.md"
+    ]
+    
+    for doc_path in gutt_docs:
+        if Path(doc_path).exists():
+            try:
+                with open(doc_path, 'r', encoding='utf-8') as f:
+                    content = f.read()
+                    # Take first 1000 chars as context (same as Claude/Ollama)
+                    context_parts.append(content[:1000])
+                    print(f"   ✅ Loaded {len(content[:1000])} chars from {doc_path}")
+            except Exception as e:
+                print(f"   ⚠️  Could not load {doc_path}: {e}")
+    
+    if context_parts:
+        return "\n\n**GUTT Framework Context**:\n" + "\n---\n".join(context_parts)
+    else:
+        # Fallback context if files not found
+        return """**GUTT Framework Context**:
+GUTT = Granular Unit Task Taxonomy
+- Break down complex requests into atomic unit tasks
+- Each unit task represents a single, specific capability
+- Typical requests decompose into 3-9 unit tasks
+- Each GUTT should be independently implementable and evaluable"""
 
-GUTT Framework (v4.0 ACRUE):
-- Each GUTT represents ONE atomic, indivisible unit task
-- GUTTs must be granular enough that each can be independently implemented
-- Each GUTT has: unique ID, name, capability description, required skills, user goal, triggered status, evidence
 
-Your task:
-1. Analyze the prompt and identify ALL atomic unit tasks required
-2. Decompose to the finest granularity - each GUTT should be ONE specific action/capability
-3. Do NOT group related tasks - keep them as separate GUTTs
-4. Ensure GUTTs are sequenced logically if they have dependencies
+def decompose_prompt(token: str, prompt: str, gutt_context: str) -> dict:
+    """Decompose a hero prompt into GUTTs using GPT-5 with full GUTT documentation.
+    
+    Args:
+        token: Authentication token for API
+        prompt: User prompt to decompose
+        gutt_context: Pre-loaded GUTT framework documentation (loaded once for entire batch)
+    """
+    
+    system_message = f"""You are an expert AI system evaluator specializing in GUTT (Granular Unit Task Taxonomy) analysis using the GUTT v4.0 ACRUE framework.
+
+{gutt_context}
+
+Your task: Analyze the following user prompt and decompose it into constituent GUTT tasks (unit tasks).
+
+**CRITICAL Instructions for GUTT Decomposition**:
+
+1. **Granularity Level**: Decompose into ATOMIC unit tasks, not high-level capabilities
+   - Each GUTT = ONE specific capability/operation
+   - Typical complexity: 3-9 GUTTs for standard requests
+   - Each GUTT should map to a distinct implementation component
+
+2. **Unit Task Definition**:
+   - Single, clear purpose (not a group of capabilities)
+   - Independently implementable component
+   - Distinct skill requirement
+   - Can be evaluated separately for ACRUE quality
+
+3. **Avoid These Mistakes**:
+   - ❌ Grouping multiple capabilities into one GUTT
+   - ❌ Using vague verbs like "handle", "manage", "process"
+   - ❌ Combining data retrieval + analysis + output in single GUTT
+   - ✅ Separate each distinct operation into its own GUTT
+
+4. **Self-Check After Decomposition**:
+   For each GUTT, verify:
+   - Does this represent ONE atomic capability?
+   - Could this be split into smaller unit tasks? (if yes, split it)
+   - Does this require multiple distinct skills? (if yes, decompose further)
 
 Return ONLY a valid JSON object (no markdown, no code blocks) with this structure:
-{
+{{
   "gutts": [
-    {
+    {{
       "id": "gutt_1",
       "name": "Task Name",
       "capability": "What this task does",
@@ -200,9 +268,9 @@ Return ONLY a valid JSON object (no markdown, no code blocks) with this structur
       "user_goal": "What user wants to achieve",
       "triggered": true,
       "evidence": "Specific implementation evidence or example"
-    }
+    }}
   ]
-}"""
+}}"""
 
     user_prompt = f"""Decompose this Calendar.AI hero prompt into atomic GUTTs:
 
@@ -243,9 +311,16 @@ def run_batch_analysis():
     """Run GUTT analysis on all 9 hero prompts."""
     
     print("=" * 80)
-    print("🎯 GPT-5 GUTT BATCH ANALYSIS - 9 Hero Prompts")
+    print("🎯 GPT-5 GUTT BATCH ANALYSIS v2 - 9 Hero Prompts")
     print("=" * 80)
     print()
+    
+    # Load GUTT documentation ONCE for entire batch (optimize bandwidth/tokens)
+    print("📚 Loading GUTT framework documentation (once for entire batch)...")
+    gutt_context = load_gutt_context()
+    context_length = len(gutt_context)
+    print(f"✅ Loaded {context_length:,} characters of GUTT documentation")
+    print(f"💡 Will reuse this context for all 9 prompts (saves ~{context_length * 8:,} tokens total)\n")
     
     # Acquire token once for all API calls
     try:
@@ -273,15 +348,16 @@ def run_batch_analysis():
         print(f"{'=' * 80}")
         
         try:
-            # Run GUTT decomposition
-            gutts_data = decompose_prompt(token, prompt_text)
+            # Run GUTT decomposition (pass pre-loaded context)
+            gutts_data = decompose_prompt(token, prompt_text, gutt_context)
             gpt5_gutts = len(gutts_data.get("gutts", []))
             
             # Build result
             decomposition = {
-                "source": "gpt-5",
+                "source": "gpt-5-v2",
                 "backend_llm": MODEL,
-                "backend_llm_notes": "GPT-5 via Microsoft SilverFlow LLM API - Real API calls",
+                "backend_llm_notes": "GPT-5 via Microsoft SilverFlow LLM API - v2 with full GUTT documentation context (same as Claude/Ollama)",
+                "prompt_version": "v2_full_context",
                 "timestamp": datetime.now().isoformat(),
                 "original_prompt": prompt_text,
                 "gutts": gutts_data.get("gutts", []),

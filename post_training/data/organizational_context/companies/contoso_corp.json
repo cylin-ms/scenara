@@ -1,0 +1,70 @@
+{
+  "company_id": "contoso_corp",
+  "company_name": "Contoso Corporation",
+  "industry": "Enterprise Software",
+  "headquarters": "Shanghai, China",
+  "employee_count": 2500,
+  "description": "Leading enterprise software solutions provider in Asia-Pacific region",
+  
+  "divisions": [
+    {
+      "division_id": "sales",
+      "division_name": "Sales & Customer Success",
+      "head": {
+        "name": "David Zhang",
+        "title": "VP of Sales - APAC",
+        "email": "david.zhang@contoso.com"
+      },
+      "employee_count": 120
+    },
+    {
+      "division_id": "engineering",
+      "division_name": "Engineering",
+      "head": {
+        "name": "Sarah Chen",
+        "title": "VP of Engineering",
+        "email": "sarah.chen@contoso.com"
+      },
+      "employee_count": 450
+    },
+    {
+      "division_id": "product",
+      "division_name": "Product Management",
+      "head": {
+        "name": "Michael Liu",
+        "title": "Chief Product Officer",
+        "email": "michael.liu@contoso.com"
+      },
+      "employee_count": 80
+    },
+    {
+      "division_id": "legal",
+      "division_name": "Legal & Compliance",
+      "head": {
+        "name": "Jennifer Wang",
+        "title": "General Counsel",
+        "email": "jennifer.wang@contoso.com"
+      },
+      "employee_count": 35
+    },
+    {
+      "division_id": "finance",
+      "division_name": "Finance & Operations",
+      "head": {
+        "name": "Robert Huang",
+        "title": "CFO",
+        "email": "robert.huang@contoso.com"
+      },
+      "employee_count": 65
+    }
+  ],
+  
+  "common_meeting_rooms": [
+    "Building 1 - Conference Room A",
+    "Building 1 - Conference Room B",
+    "Building 2 - Large Meeting Room",
+    "Building 2 - Executive Boardroom",
+    "Microsoft Teams Meeting",
+    "Zoom Meeting"
+  ]
+}

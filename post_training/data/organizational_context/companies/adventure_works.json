@@ -1,0 +1,37 @@
+{
+  "company_id": "adventure_works",
+  "company_name": "Adventure Works",
+  "industry": "Retail & E-commerce",
+  "headquarters": "Shenzhen, China",
+  "employee_count": 8000,
+  "relationship": "customer",
+  "deal_size": "$1.2M ARR",
+  "description": "Fast-growing e-commerce platform, active customer",
+  
+  "contacts": [
+    {
+      "name": "Gary Liu",
+      "title": "VP of Technology",
+      "email": "gary.liu@adventureworks.com",
+      "employee_type": "required"
+    },
+    {
+      "name": "Patricia Huang",
+      "title": "Director of Platform Engineering",
+      "email": "patricia.huang@adventureworks.com",
+      "employee_type": "required"
+    },
+    {
+      "name": "Eric Zhou",
+      "title": "Senior Product Manager",
+      "email": "eric.zhou@adventureworks.com",
+      "employee_type": "optional"
+    },
+    {
+      "name": "Diana Chen",
+      "title": "Lead Software Engineer",
+      "email": "diana.chen@adventureworks.com",
+      "employee_type": "required"
+    }
+  ]
+}

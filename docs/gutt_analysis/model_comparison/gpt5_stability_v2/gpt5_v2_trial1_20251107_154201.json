@@ -1,0 +1,1167 @@
+{
+  "metadata": {
+    "trial": 1,
+    "source": "gpt-5",
+    "model": "dev-gpt-5-chat-jj",
+    "model_name": "GPT-5",
+    "framework_version": "2.0",
+    "timestamp": "20251107_154201",
+    "total_prompts": 9,
+    "successful": 9,
+    "failed": 0,
+    "canonical_tasks_version": "2.0",
+    "total_canonical_tasks": 25,
+    "new_in_v2": "CAN-25: Event Annotation/Flagging",
+    "prompt_optimization": "Optimized V2.0 November 7, 2025 - Added CAN-25, renumbered 1-25, enhanced flagging guidance"
+  },
+  "compositions": [
+    {
+      "source": "gpt-5",
+      "backend_llm": "dev-gpt-5-chat-jj",
+      "backend_llm_notes": "GPT-5 (dev-gpt-5-chat-jj) via Microsoft SilverFlow API",
+      "framework_version": "2.0",
+      "total_canonical_tasks": 25,
+      "timestamp": "2025-11-07T15:41:01.655388",
+      "prompt_id": "Organizer-1",
+      "prompt_text": "Show me my pending invitations and which ones I should prioritize based on my priorities for this week: customer meetings and product strategy.",
+      "execution_plan": [
+        {
+          "step": 1,
+          "task_id": "CAN-04",
+          "task_name": "Natural Language Understanding",
+          "description": "Parse the user prompt to extract intent: show pending invitations and prioritize based on weekly priorities (customer meetings and product strategy). Identify constraints: timeframe = this week, priorities = customer meetings and product strategy.",
+          "input_schema": {
+            "user_query": "string"
+          },
+          "output_schema": {
+            "intent": "string",
+            "constraints": "object",
+            "priorities": "array"
+          },
+          "parallel_execution": false,
+          "note": "Universal first step to interpret natural language and extract actionable parameters."
+        },
+        {
+          "step": 2,
+          "task_id": "CAN-01",
+          "task_name": "Calendar Events Retrieval",
+          "description": "Retrieve all calendar events and invitations for the current week from the user's calendar.",
+          "input_schema": {
+            "time_range": "object"
+          },
+          "output_schema": {
+            "events": "array"
+          },
+          "parallel_execution": false,
+          "note": "Required to get the raw set of events to filter pending invitations."
+        },
+        {
+          "step": 3,
+          "task_id": "CAN-07",
+          "task_name": "Meeting Metadata Extraction",
+          "description": "Extract RSVP status and other metadata from retrieved events to identify which invitations are still pending.",
+          "input_schema": {
+            "events": "array"
+          },
+          "output_schema": {
+            "events_with_metadata": "array"
+          },
+          "parallel_execution": false,
+          "note": "Enables filtering for pending invitations and provides details for prioritization."
+        },
+        {
+          "step": 4,
+          "task_id": "CAN-02",
+          "task_name": "Meeting Type Classification",
+          "description": "Classify each pending invitation by meeting type (e.g., customer meeting, product strategy, internal sync).",
+          "input_schema": {
+            "events_with_metadata": "array"
+          },
+          "output_schema": {
+            "classified_events": "array"
+          },
+          "parallel_execution": true,
+          "note": "Needed to identify which meetings match the user's stated priorities."
+        },
+        {
+          "step": 5,
+          "task_id": "CAN-03",
+          "task_name": "Meeting Importance Assessment",
+          "description": "Assess the importance of each pending invitation relative to the user's priorities (customer meetings and product strategy).",
+          "input_schema": {
+            "classified_events": "array",
+            "priorities": "array"
+          },
+          "output_schema": {
+            "prioritized_events": "array"
+          },
+          "parallel_execution": true,
+          "note": "Ranks pending invitations based on strategic value and user-defined priorities."
+        }
+      ],
+      "tasks_covered": [
+        "CAN-04",
+        "CAN-01",
+        "CAN-07",
+        "CAN-02",
+        "CAN-03"
+      ],
+      "orchestration": {
+        "pattern": "hybrid",
+        "parallelization_opportunities": [
+          "step 4 and step 5 can run in parallel after metadata extraction"
+        ],
+        "error_handling": "If classification or importance assessment fails, return pending invitations without prioritization; retry retrieval on transient errors."
+      },
+      "category": "organizer",
+      "trial": 1
+    },
+    {
+      "source": "gpt-5",
+      "backend_llm": "dev-gpt-5-chat-jj",
+      "backend_llm_notes": "GPT-5 (dev-gpt-5-chat-jj) via Microsoft SilverFlow API",
+      "framework_version": "2.0",
+      "total_canonical_tasks": 25,
+      "timestamp": "2025-11-07T15:41:09.213813",
+      "prompt_id": "Organizer-2",
+      "prompt_text": "I have some important meetings coming up. Help me track all my important meetings this week and flag any that require focus time to prepare for them.",
+      "execution_plan": [
+        {
+          "step": 1,
+          "task_id": "CAN-04",
+          "task_name": "Natural Language Understanding",
+          "description": "Parse the user prompt to extract intent: identify that the user wants to track important meetings this week and flag those requiring preparation time.",
+          "input_schema": {
+            "user_query": "string"
+          },
+          "output_schema": {
+            "intent": "string",
+            "constraints": "object",
+            "keywords": "array"
+          },
+          "parallel_execution": false,
+          "note": "Universal first step to interpret natural language and extract constraints like timeframe (this week), importance, and prep time requirement."
+        },
+        {
+          "step": 2,
+          "task_id": "CAN-01",
+          "task_name": "Calendar Events Retrieval",
+          "description": "Retrieve all calendar events for the current week to identify which meetings are scheduled.",
+          "input_schema": {
+            "time_range": "object"
+          },
+          "output_schema": {
+            "events": "array"
+          },
+          "parallel_execution": false,
+          "note": "Needed to get the raw set of meetings for this week."
+        },
+        {
+          "step": 3,
+          "task_id": "CAN-07",
+          "task_name": "Meeting Metadata Extraction",
+          "description": "Extract metadata from each meeting such as attendees, RSVP status, attachments, and notes to support preparation time analysis and flagging.",
+          "input_schema": {
+            "events": "array"
+          },
+          "output_schema": {
+            "events_with_metadata": "array"
+          },
+          "parallel_execution": false,
+          "note": "Provides details required for prep time estimation and importance assessment."
+        },
+        {
+          "step": 4,
+          "task_id": "CAN-02",
+          "task_name": "Meeting Type Classification",
+          "description": "Classify each meeting by type (e.g., 1:1, team sync, client meeting) to help contextualize importance and preparation needs.",
+          "input_schema": {
+            "events_with_metadata": "array"
+          },
+          "output_schema": {
+            "events_with_type": "array"
+          },
+          "parallel_execution": true,
+          "note": "Supports understanding of meeting context for importance and prep time."
+        },
+        {
+          "step": 5,
+          "task_id": "CAN-03",
+          "task_name": "Meeting Importance Assessment",
+          "description": "Assess the strategic importance of each meeting to identify which ones are 'important' as per the user request.",
+          "input_schema": {
+            "events_with_metadata": "array"
+          },
+          "output_schema": {
+            "events_with_importance": "array"
+          },
+          "parallel_execution": true,
+          "note": "Determines which meetings qualify as important for tracking."
+        },
+        {
+          "step": 6,
+          "task_id": "CAN-21",
+          "task_name": "Focus Time/Preparation Time Analysis",
+          "description": "Estimate preparation time required for each meeting based on complexity, attachments, and agenda details.",
+          "input_schema": {
+            "events_with_metadata": "array"
+          },
+          "output_schema": {
+            "events_with_prep_time": "array"
+          },
+          "parallel_execution": false,
+          "note": "Identifies which meetings require focus time to prepare."
+        },
+        {
+          "step": 7,
+          "task_id": "CAN-25",
+          "task_name": "Event Annotation/Flagging",
+          "description": "Flag meetings that require preparation time so the user can easily identify them.",
+          "input_schema": {
+            "events_with_prep_time": "array"
+          },
+          "output_schema": {
+            "flagged_events": "array"
+          },
+          "parallel_execution": false,
+          "note": "Adds visual indicators or annotations to meetings needing prep time."
+        }
+      ],
+      "tasks_covered": [
+        "CAN-04",
+        "CAN-01",
+        "CAN-07",
+        "CAN-02",
+        "CAN-03",
+        "CAN-21",
+        "CAN-25"
+      ],
+      "orchestration": {
+        "pattern": "hybrid",
+        "parallelization_opportunities": [
+          "step 4 and step 5 can run in parallel after step 3"
+        ],
+        "error_handling": "If metadata extraction fails, fallback to basic event info; if prep time analysis fails, still return important meetings without flags."
+      },
+      "category": "organizer",
+      "trial": 1
+    },
+    {
+      "source": "gpt-5",
+      "backend_llm": "dev-gpt-5-chat-jj",
+      "backend_llm_notes": "GPT-5 (dev-gpt-5-chat-jj) via Microsoft SilverFlow API",
+      "framework_version": "2.0",
+      "total_canonical_tasks": 25,
+      "timestamp": "2025-11-07T15:41:17.531914",
+      "prompt_id": "Organizre-3",
+      "prompt_text": "Help me understand where I am spending my time across different types of meetings and suggest ways I might reclaim time for my top priorities.",
+      "execution_plan": [
+        {
+          "step": 1,
+          "task_id": "CAN-04",
+          "task_name": "Natural Language Understanding",
+          "description": "Parse the user prompt to extract intent: analyze time allocation across meeting types and suggest ways to reclaim time for top priorities.",
+          "input_schema": {
+            "user_query": "string"
+          },
+          "output_schema": {
+            "intent": "string",
+            "constraints": "object",
+            "priorities": "array"
+          },
+          "parallel_execution": false,
+          "note": "Universal first step to interpret natural language and identify goals: breakdown by meeting type and optimization suggestions."
+        },
+        {
+          "step": 2,
+          "task_id": "CAN-01",
+          "task_name": "Calendar Events Retrieval",
+          "description": "Retrieve all calendar events for the relevant timeframe (e.g., past month or user-specified period) to analyze time distribution.",
+          "input_schema": {
+            "time_range": "object"
+          },
+          "output_schema": {
+            "events": "array"
+          },
+          "parallel_execution": false
+        },
+        {
+          "step": 3,
+          "task_id": "CAN-07",
+          "task_name": "Meeting Metadata Extraction",
+          "description": "Extract metadata from retrieved events such as attendees, duration, and meeting details to support classification and analysis.",
+          "input_schema": {
+            "events": "array"
+          },
+          "output_schema": {
+            "events_with_metadata": "array"
+          },
+          "parallel_execution": false,
+          "note": "Provides foundational data for classification and time aggregation."
+        },
+        {
+          "step": 4,
+          "task_id": "CAN-02",
+          "task_name": "Meeting Type Classification",
+          "description": "Classify each meeting into types (e.g., 1:1, team sync, customer) to enable breakdown of time spent by category.",
+          "input_schema": {
+            "events_with_metadata": "array"
+          },
+          "output_schema": {
+            "classified_events": "array"
+          },
+          "parallel_execution": false
+        },
+        {
+          "step": 5,
+          "task_id": "CAN-03",
+          "task_name": "Meeting Importance Assessment",
+          "description": "Assess the strategic importance and priority of each meeting to identify which meetings align with top priorities and which do not.",
+          "input_schema": {
+            "classified_events": "array"
+          },
+          "output_schema": {
+            "events_with_importance": "array"
+          },
+          "parallel_execution": false
+        },
+        {
+          "step": 6,
+          "task_id": "CAN-10",
+          "task_name": "Time Aggregation/Statistical Analysis",
+          "description": "Aggregate total time spent across different meeting types and compute statistics to show patterns and identify time sinks.",
+          "input_schema": {
+            "events_with_importance": "array"
+          },
+          "output_schema": {
+            "time_breakdown": "object"
+          },
+          "parallel_execution": false
+        },
+        {
+          "step": 7,
+          "task_id": "CAN-20",
+          "task_name": "Data Visualization/Reporting",
+          "description": "Generate visual representations (charts, graphs) of time spent by meeting type and importance to help the user understand patterns.",
+          "input_schema": {
+            "time_breakdown": "object"
+          },
+          "output_schema": {
+            "visual_report": "object"
+          },
+          "parallel_execution": false
+        },
+        {
+          "step": 8,
+          "task_id": "CAN-11",
+          "task_name": "Priority/Preference Matching",
+          "description": "Match current meeting patterns against the user's stated top priorities to identify misalignments and opportunities to reclaim time.",
+          "input_schema": {
+            "events_with_importance": "array",
+            "priorities": "array"
+          },
+          "output_schema": {
+            "priority_alignment_report": "object"
+          },
+          "parallel_execution": false
+        },
+        {
+          "step": 9,
+          "task_id": "CAN-14",
+          "task_name": "Recommendation Engine",
+          "description": "Generate personalized recommendations for reclaiming time, such as reducing low-priority meetings or consolidating similar sessions.",
+          "input_schema": {
+            "priority_alignment_report": "object"
+          },
+          "output_schema": {
+            "recommendations": "array"
+          },
+          "parallel_execution": false
+        }
+      ],
+      "tasks_covered": [
+        "CAN-04",
+        "CAN-01",
+        "CAN-07",
+        "CAN-02",
+        "CAN-03",
+        "CAN-10",
+        "CAN-20",
+        "CAN-11",
+        "CAN-14"
+      ],
+      "orchestration": {
+        "pattern": "sequential",
+        "parallelization_opportunities": [
+          "Steps 4 and 5 could partially overlap after metadata extraction, but typically run sequentially for dependency clarity."
+        ],
+        "error_handling": "If visualization fails, still return textual breakdown and recommendations; retry retrieval and classification on transient errors."
+      },
+      "category": "organizer",
+      "trial": 1
+    },
+    {
+      "source": "gpt-5",
+      "backend_llm": "dev-gpt-5-chat-jj",
+      "backend_llm_notes": "GPT-5 (dev-gpt-5-chat-jj) via Microsoft SilverFlow API",
+      "framework_version": "2.0",
+      "total_canonical_tasks": 25,
+      "timestamp": "2025-11-07T15:41:25.857702",
+      "prompt_id": "Schedule-1",
+      "prompt_text": "Set up a weekly 30-minute 1:1 with {name}. I'd prefer afternoons and want to avoid Fridays. Automatically reschedule on declines or conflicts.",
+      "execution_plan": [
+        {
+          "step": 1,
+          "task_id": "CAN-04",
+          "task_name": "Natural Language Understanding",
+          "description": "Parse the user prompt to extract intent (schedule recurring meeting), constraints (weekly, 30 minutes, afternoons, avoid Fridays), attendee ({name}), and special instructions (auto-reschedule on declines/conflicts).",
+          "input_schema": {
+            "user_query": "string"
+          },
+          "output_schema": {
+            "intent": "string",
+            "constraints": "object",
+            "attendees": "array",
+            "preferences": "object"
+          },
+          "parallel_execution": false,
+          "note": "Universal first step - interpret natural language into structured data"
+        },
+        {
+          "step": 2,
+          "task_id": "CAN-05",
+          "task_name": "Attendee/Contact Resolution",
+          "description": "Resolve the provided attendee name to a directory entry or email address to ensure accurate invitation.",
+          "input_schema": {
+            "attendees": "array"
+          },
+          "output_schema": {
+            "resolved_attendees": "array"
+          },
+          "parallel_execution": false,
+          "note": "Needed to correctly identify and invite the specified person"
+        },
+        {
+          "step": 3,
+          "task_id": "CAN-01",
+          "task_name": "Calendar Events Retrieval",
+          "description": "Retrieve the user's calendar events for the relevant timeframe to check availability and avoid conflicts.",
+          "input_schema": {
+            "time_range": "object"
+          },
+          "output_schema": {
+            "events": "array"
+          },
+          "parallel_execution": false,
+          "note": "Required to find open slots and avoid conflicts"
+        },
+        {
+          "step": 4,
+          "task_id": "CAN-06",
+          "task_name": "Availability Checking (Free/Busy)",
+          "description": "Check free/busy status for both the user and the resolved attendee to find common available slots that meet constraints (afternoons, avoid Fridays).",
+          "input_schema": {
+            "events": "array",
+            "constraints": "object",
+            "attendees": "array"
+          },
+          "output_schema": {
+            "available_slots": "array"
+          },
+          "parallel_execution": false,
+          "note": "Ensures the meeting is scheduled at a mutually available time"
+        },
+        {
+          "step": 5,
+          "task_id": "CAN-12",
+          "task_name": "Constraint Satisfaction",
+          "description": "Apply scheduling constraints (weekly recurrence, 30-minute duration, afternoons, avoid Fridays) to select the optimal time slot from available options.",
+          "input_schema": {
+            "available_slots": "array",
+            "constraints": "object"
+          },
+          "output_schema": {
+            "selected_slot": "object"
+          },
+          "parallel_execution": false,
+          "note": "Optimizes scheduling based on user preferences and constraints"
+        },
+        {
+          "step": 6,
+          "task_id": "CAN-15",
+          "task_name": "Recurrence Rule Generation",
+          "description": "Generate an RRULE for a weekly recurring meeting based on the selected slot and constraints.",
+          "input_schema": {
+            "selected_slot": "object",
+            "recurrence_pattern": "string"
+          },
+          "output_schema": {
+            "rrule": "string"
+          },
+          "parallel_execution": false,
+          "note": "Creates the recurrence pattern for the 1:1 meeting"
+        },
+        {
+          "step": 7,
+          "task_id": "CAN-17",
+          "task_name": "Automatic Rescheduling",
+          "description": "Enable automatic rescheduling logic to handle declines or conflicts by finding alternative slots that meet the original constraints.",
+          "input_schema": {
+            "constraints": "object",
+            "attendees": "array"
+          },
+          "output_schema": {
+            "reschedule_policy": "object"
+          },
+          "parallel_execution": false,
+          "note": "Implements the user's request for auto-rescheduling on declines or conflicts"
+        }
+      ],
+      "tasks_covered": [
+        "CAN-04",
+        "CAN-05",
+        "CAN-01",
+        "CAN-06",
+        "CAN-12",
+        "CAN-15",
+        "CAN-17"
+      ],
+      "orchestration": {
+        "pattern": "sequential",
+        "parallelization_opportunities": [
+          "Steps 3 and 5 cannot run in parallel due to dependency, but attendee resolution (step 2) could theoretically run in parallel with calendar retrieval (step 3) after NLU."
+        ],
+        "error_handling": "If attendee resolution fails, prompt user for clarification. If availability check fails, suggest alternative constraints. Retry rescheduling logic on transient errors."
+      },
+      "category": "schedule",
+      "trial": 1
+    },
+    {
+      "source": "gpt-5",
+      "backend_llm": "dev-gpt-5-chat-jj",
+      "backend_llm_notes": "GPT-5 (dev-gpt-5-chat-jj) via Microsoft SilverFlow API",
+      "framework_version": "2.0",
+      "total_canonical_tasks": 25,
+      "timestamp": "2025-11-07T15:41:34.272362",
+      "prompt_id": "Schedule-2",
+      "prompt_text": "I need to clear my schedule for Thursday afternoon to focus on our product review. Help me reschedule or decline those meetings so I have dedicated time to prepare.",
+      "execution_plan": [
+        {
+          "step": 1,
+          "task_id": "CAN-04",
+          "task_name": "Natural Language Understanding",
+          "description": "Parse the user prompt to extract intent (clear Thursday afternoon), constraints (timeframe: Thursday afternoon), and actions (reschedule or decline meetings, create prep time).",
+          "input_schema": {
+            "user_query": "string"
+          },
+          "output_schema": {
+            "intent": "string",
+            "constraints": "object",
+            "actions": "array"
+          },
+          "parallel_execution": false,
+          "note": "Universal first step - interpret natural language to structured form."
+        },
+        {
+          "step": 2,
+          "task_id": "CAN-01",
+          "task_name": "Calendar Events Retrieval",
+          "description": "Retrieve all calendar events scheduled for Thursday afternoon to identify which meetings need to be rescheduled or declined.",
+          "input_schema": {
+            "time_range": "object"
+          },
+          "output_schema": {
+            "events": "array"
+          },
+          "parallel_execution": false
+        },
+        {
+          "step": 3,
+          "task_id": "CAN-07",
+          "task_name": "Meeting Metadata Extraction",
+          "description": "Extract metadata for the retrieved events, including attendees, RSVP status, and logistics, to determine which meetings can be moved or declined.",
+          "input_schema": {
+            "events": "array"
+          },
+          "output_schema": {
+            "events_with_metadata": "array"
+          },
+          "parallel_execution": false,
+          "note": "Needed to understand meeting details before rescheduling or declining."
+        },
+        {
+          "step": 4,
+          "task_id": "CAN-02",
+          "task_name": "Meeting Type Classification",
+          "description": "Classify each meeting by type (e.g., 1:1, team sync, customer) to help decide which meetings are easier to reschedule or decline.",
+          "input_schema": {
+            "events_with_metadata": "array"
+          },
+          "output_schema": {
+            "classified_meetings": "array"
+          },
+          "parallel_execution": true
+        },
+        {
+          "step": 5,
+          "task_id": "CAN-03",
+          "task_name": "Meeting Importance Assessment",
+          "description": "Assess the strategic importance and urgency of each meeting to prioritize which ones to reschedule versus decline.",
+          "input_schema": {
+            "classified_meetings": "array"
+          },
+          "output_schema": {
+            "meetings_with_priority": "array"
+          },
+          "parallel_execution": true,
+          "note": "Runs in parallel with CAN-02 after metadata extraction."
+        },
+        {
+          "step": 6,
+          "task_id": "CAN-21",
+          "task_name": "Focus Time/Preparation Time Analysis",
+          "description": "Estimate the preparation time needed for the product review and ensure enough focus time is blocked after clearing the schedule.",
+          "input_schema": {
+            "intent": "string",
+            "events_with_metadata": "array"
+          },
+          "output_schema": {
+            "prep_time_estimate": "duration"
+          },
+          "parallel_execution": false
+        },
+        {
+          "step": 7,
+          "task_id": "CAN-12",
+          "task_name": "Constraint Satisfaction",
+          "description": "Formulate scheduling constraints to free Thursday afternoon and maintain critical meetings elsewhere in the calendar.",
+          "input_schema": {
+            "meetings_with_priority": "array",
+            "constraints": "object"
+          },
+          "output_schema": {
+            "rescheduling_plan": "object"
+          },
+          "parallel_execution": false
+        },
+        {
+          "step": 8,
+          "task_id": "CAN-17",
+          "task_name": "Automatic Rescheduling",
+          "description": "Automatically reschedule lower-priority meetings to alternative time slots or mark them for decline based on the constraint satisfaction output.",
+          "input_schema": {
+            "rescheduling_plan": "object"
+          },
+          "output_schema": {
+            "updated_calendar": "array"
+          },
+          "parallel_execution": false,
+          "note": "Executes after constraints are solved."
+        },
+        {
+          "step": 9,
+          "task_id": "CAN-13",
+          "task_name": "RSVP Status Update",
+          "description": "Update RSVP statuses for declined meetings and send notifications to attendees about rescheduled times.",
+          "input_schema": {
+            "updated_calendar": "array"
+          },
+          "output_schema": {
+            "confirmation_status": "object"
+          },
+          "parallel_execution": false
+        }
+      ],
+      "tasks_covered": [
+        "CAN-04",
+        "CAN-01",
+        "CAN-07",
+        "CAN-02",
+        "CAN-03",
+        "CAN-21",
+        "CAN-12",
+        "CAN-17",
+        "CAN-13"
+      ],
+      "orchestration": {
+        "pattern": "hybrid",
+        "parallelization_opportunities": [
+          "step 4 and step 5 can run in parallel after step 3"
+        ],
+        "error_handling": "If automatic rescheduling fails, fallback to manual suggestion; retry RSVP updates on failure; log and notify user for any unsatisfied constraints."
+      },
+      "category": "schedule",
+      "trial": 1
+    },
+    {
+      "source": "gpt-5",
+      "backend_llm": "dev-gpt-5-chat-jj",
+      "backend_llm_notes": "GPT-5 (dev-gpt-5-chat-jj) via Microsoft SilverFlow API",
+      "framework_version": "2.0",
+      "total_canonical_tasks": 25,
+      "timestamp": "2025-11-07T15:41:41.095069",
+      "prompt_id": "Schedule-3",
+      "prompt_text": "Find a time in the next two weeks for a 1 hour meeting with Chris, Sangya, and Kat. We need to work around Kat's schedule since she's traveling. Make the meeting in person and add a room.",
+      "execution_plan": [
+        {
+          "step": 1,
+          "task_id": "CAN-04",
+          "task_name": "Natural Language Understanding",
+          "description": "Parse the user prompt to extract constraints: 1-hour meeting, next two weeks, attendees (Chris, Sangya, Kat), in-person requirement, add a room, and prioritize Kat's availability due to travel.",
+          "input_schema": {
+            "user_query": "string"
+          },
+          "output_schema": {
+            "constraints": "object",
+            "intent": "schedule_meeting",
+            "attendees": "array",
+            "duration": "string",
+            "location": "string"
+          },
+          "parallel_execution": false,
+          "note": "Universal first step - extract all scheduling constraints and intent"
+        },
+        {
+          "step": 2,
+          "task_id": "CAN-05",
+          "task_name": "Attendee/Contact Resolution",
+          "description": "Resolve Chris, Sangya, and Kat to their directory entries and calendars, ensuring correct identity mapping.",
+          "input_schema": {
+            "attendees": "array"
+          },
+          "output_schema": {
+            "resolved_attendees": "array"
+          },
+          "parallel_execution": false,
+          "note": "Needed to access their availability and calendars"
+        },
+        {
+          "step": 3,
+          "task_id": "CAN-01",
+          "task_name": "Calendar Events Retrieval",
+          "description": "Retrieve calendar events for the next two weeks for the user and all resolved attendees.",
+          "input_schema": {
+            "time_range": "object",
+            "attendees": "array"
+          },
+          "output_schema": {
+            "events": "array"
+          },
+          "parallel_execution": false,
+          "note": "Required to check availability and constraints"
+        },
+        {
+          "step": 4,
+          "task_id": "CAN-06",
+          "task_name": "Availability Checking (Free/Busy)",
+          "description": "Check free/busy status across all attendees' calendars to find common available slots for 1 hour, considering Kat's travel schedule.",
+          "input_schema": {
+            "events": "array",
+            "constraints": "object"
+          },
+          "output_schema": {
+            "available_slots": "array"
+          },
+          "parallel_execution": false,
+          "note": "Core step to identify possible meeting times"
+        },
+        {
+          "step": 5,
+          "task_id": "CAN-12",
+          "task_name": "Constraint Satisfaction",
+          "description": "Apply constraints such as in-person requirement, Kat's travel limitations, and duration to select the optimal time slot.",
+          "input_schema": {
+            "available_slots": "array",
+            "constraints": "object"
+          },
+          "output_schema": {
+            "selected_slot": "object"
+          },
+          "parallel_execution": false,
+          "note": "Ensures all user-specified conditions are satisfied"
+        },
+        {
+          "step": 6,
+          "task_id": "CAN-19",
+          "task_name": "Resource Booking (Rooms/Equipment)",
+          "description": "Book an appropriate meeting room for the selected time slot to fulfill the in-person requirement.",
+          "input_schema": {
+            "selected_slot": "object",
+            "location": "string"
+          },
+          "output_schema": {
+            "room_booking_confirmation": "object"
+          },
+          "parallel_execution": false,
+          "note": "Handles the 'add a room' requirement"
+        }
+      ],
+      "tasks_covered": [
+        "CAN-04",
+        "CAN-05",
+        "CAN-01",
+        "CAN-06",
+        "CAN-12",
+        "CAN-19"
+      ],
+      "orchestration": {
+        "pattern": "sequential",
+        "parallelization_opportunities": [
+          "None due to strong dependencies between steps"
+        ],
+        "error_handling": "If room booking fails, suggest alternative rooms or times; if attendee resolution fails, prompt user for clarification"
+      },
+      "category": "schedule",
+      "trial": 1
+    },
+    {
+      "source": "gpt-5",
+      "backend_llm": "dev-gpt-5-chat-jj",
+      "backend_llm_notes": "GPT-5 (dev-gpt-5-chat-jj) via Microsoft SilverFlow API",
+      "framework_version": "2.0",
+      "total_canonical_tasks": 25,
+      "timestamp": "2025-11-07T15:41:47.075516",
+      "prompt_id": "Collaborate-1",
+      "prompt_text": "Help me set the agenda to review the progress of Project Alpha. I want to get confirmation we are on track and discuss any blocking issues or risks.",
+      "execution_plan": [
+        {
+          "step": 1,
+          "task_id": "CAN-04",
+          "task_name": "Natural Language Understanding",
+          "description": "Parse the user prompt to extract intent (set agenda), key entities (Project Alpha), and objectives (review progress, confirm on track, discuss blocking issues or risks).",
+          "input_schema": {
+            "user_query": "string"
+          },
+          "output_schema": {
+            "intent": "string",
+            "entities": "array",
+            "objectives": "array"
+          },
+          "parallel_execution": false,
+          "note": "Universal first step to interpret natural language and derive constraints."
+        },
+        {
+          "step": 2,
+          "task_id": "CAN-01",
+          "task_name": "Calendar Events Retrieval",
+          "description": "Retrieve upcoming meetings related to Project Alpha to identify the correct meeting for agenda setting.",
+          "input_schema": {
+            "time_range": "object",
+            "filters": "object"
+          },
+          "output_schema": {
+            "events": "array"
+          },
+          "parallel_execution": false
+        },
+        {
+          "step": 3,
+          "task_id": "CAN-07",
+          "task_name": "Meeting Metadata Extraction",
+          "description": "Extract metadata from the identified Project Alpha meeting such as attendees, notes, and any existing agenda or attachments.",
+          "input_schema": {
+            "events": "array"
+          },
+          "output_schema": {
+            "metadata": "object"
+          },
+          "parallel_execution": false,
+          "note": "Needed to understand meeting details before generating agenda."
+        },
+        {
+          "step": 4,
+          "task_id": "CAN-23",
+          "task_name": "Agenda Generation/Structuring",
+          "description": "Generate a structured agenda for the Project Alpha meeting including topics: progress review, confirmation of being on track, and discussion of blocking issues or risks.",
+          "input_schema": {
+            "objectives": "array",
+            "metadata": "object"
+          },
+          "output_schema": {
+            "agenda": "object"
+          },
+          "parallel_execution": false,
+          "note": "Directly addresses the user's request to set the agenda."
+        },
+        {
+          "step": 5,
+          "task_id": "CAN-18",
+          "task_name": "Objection/Risk Anticipation",
+          "description": "Analyze historical meeting notes and context to anticipate potential risks or blockers to include in the agenda discussion.",
+          "input_schema": {
+            "metadata": "object",
+            "historical_data": "array"
+          },
+          "output_schema": {
+            "anticipated_risks": "array"
+          },
+          "parallel_execution": false,
+          "note": "Supports the user's goal to discuss blocking issues or risks."
+        }
+      ],
+      "tasks_covered": [
+        "CAN-04",
+        "CAN-01",
+        "CAN-07",
+        "CAN-23",
+        "CAN-18"
+      ],
+      "orchestration": {
+        "pattern": "sequential",
+        "parallelization_opportunities": [
+          "Step 4 and Step 5 could partially run in parallel after metadata extraction"
+        ],
+        "error_handling": "If metadata extraction fails, fallback to generating a generic agenda template; if risk anticipation fails, proceed with agenda without risk section."
+      },
+      "category": "collaborate",
+      "trial": 1
+    },
+    {
+      "source": "gpt-5",
+      "backend_llm": "dev-gpt-5-chat-jj",
+      "backend_llm_notes": "GPT-5 (dev-gpt-5-chat-jj) via Microsoft SilverFlow API",
+      "framework_version": "2.0",
+      "total_canonical_tasks": 25,
+      "timestamp": "2025-11-07T15:41:54.790986",
+      "prompt_id": "Collaborate-2",
+      "prompt_text": "I have a meeting with senior leadership tomorrow. Find the most recent meeting with them and summarize the topics into 3 discussion points. Generate any objections or concerns that might come up and give me effective responses.",
+      "execution_plan": [
+        {
+          "step": 1,
+          "task_id": "CAN-04",
+          "task_name": "Natural Language Understanding",
+          "description": "Parse the user prompt to extract intent: identify that the user wants to find the most recent meeting with senior leadership, summarize topics into 3 discussion points, and generate objections with responses.",
+          "input_schema": {
+            "user_query": "string"
+          },
+          "output_schema": {
+            "intent": "string",
+            "entities": "object",
+            "constraints": "object"
+          },
+          "parallel_execution": false,
+          "note": "Universal first step to interpret natural language and extract constraints like 'senior leadership', 'most recent meeting', 'summarize topics', 'generate objections and responses'."
+        },
+        {
+          "step": 2,
+          "task_id": "CAN-01",
+          "task_name": "Calendar Events Retrieval",
+          "description": "Retrieve all recent calendar events, focusing on meetings involving senior leadership, including tomorrow's meeting and past meetings.",
+          "input_schema": {
+            "time_range": "object"
+          },
+          "output_schema": {
+            "events": "array"
+          },
+          "parallel_execution": false,
+          "note": "Needed to access historical and upcoming meetings to find the most recent one with senior leadership."
+        },
+        {
+          "step": 3,
+          "task_id": "CAN-07",
+          "task_name": "Meeting Metadata Extraction",
+          "description": "Extract metadata from retrieved events such as attendees, meeting titles, descriptions, and notes to identify senior leadership meetings and their topics.",
+          "input_schema": {
+            "events": "array"
+          },
+          "output_schema": {
+            "meetings_metadata": "array"
+          },
+          "parallel_execution": false,
+          "note": "Required to confirm which meetings include senior leadership and to access topics for summarization."
+        },
+        {
+          "step": 4,
+          "task_id": "CAN-05",
+          "task_name": "Attendee/Contact Resolution",
+          "description": "Resolve 'senior leadership' to actual attendee names and match them against meeting participants to filter relevant meetings.",
+          "input_schema": {
+            "attendee_names": "array"
+          },
+          "output_schema": {
+            "resolved_attendees": "array"
+          },
+          "parallel_execution": false,
+          "note": "Ensures accurate identification of meetings with senior leadership."
+        },
+        {
+          "step": 5,
+          "task_id": "CAN-09",
+          "task_name": "Document Generation/Formatting",
+          "description": "Generate a concise summary of the most recent senior leadership meeting, condensing topics into 3 clear discussion points.",
+          "input_schema": {
+            "meeting_notes": "string"
+          },
+          "output_schema": {
+            "summary": "string"
+          },
+          "parallel_execution": false,
+          "note": "Fulfills the requirement to summarize topics into 3 discussion points."
+        },
+        {
+          "step": 6,
+          "task_id": "CAN-18",
+          "task_name": "Objection/Risk Anticipation",
+          "description": "Analyze the context of the upcoming senior leadership meeting and past discussions to anticipate potential objections or concerns.",
+          "input_schema": {
+            "meeting_context": "string"
+          },
+          "output_schema": {
+            "anticipated_objections": "array"
+          },
+          "parallel_execution": false,
+          "note": "Addresses the user's request to generate possible objections or concerns."
+        },
+        {
+          "step": 7,
+          "task_id": "CAN-09",
+          "task_name": "Document Generation/Formatting",
+          "description": "Generate effective responses to each anticipated objection, formatted for easy reference during the meeting.",
+          "input_schema": {
+            "anticipated_objections": "array"
+          },
+          "output_schema": {
+            "responses": "array"
+          },
+          "parallel_execution": false,
+          "note": "Completes the requirement by providing actionable responses to anticipated objections."
+        }
+      ],
+      "tasks_covered": [
+        "CAN-04",
+        "CAN-01",
+        "CAN-07",
+        "CAN-05",
+        "CAN-09",
+        "CAN-18"
+      ],
+      "orchestration": {
+        "pattern": "sequential",
+        "parallelization_opportunities": [
+          "Steps 6 and 7 could partially overlap after objections are generated, but generally sequential for clarity."
+        ],
+        "error_handling": "If attendee resolution fails, fallback to keyword matching for 'senior leadership'; if summarization fails, provide raw meeting notes."
+      },
+      "category": "collaborate",
+      "trial": 1
+    },
+    {
+      "source": "gpt-5",
+      "backend_llm": "dev-gpt-5-chat-jj",
+      "backend_llm_notes": "GPT-5 (dev-gpt-5-chat-jj) via Microsoft SilverFlow API",
+      "framework_version": "2.0",
+      "total_canonical_tasks": 25,
+      "timestamp": "2025-11-07T15:42:01.448592",
+      "prompt_id": "Collaborate-3",
+      "prompt_text": "Prepare me for my meeting with our customer Beta tomorrow. Include a background on their company, create a dossier of who will attend and include their interests so I can have better conversations.",
+      "execution_plan": [
+        {
+          "step": 1,
+          "task_id": "CAN-04",
+          "task_name": "Natural Language Understanding",
+          "description": "Parse the user prompt to extract intent: prepare for a customer meeting with Beta tomorrow, gather company background, attendee dossier with interests.",
+          "input_schema": {
+            "user_query": "string"
+          },
+          "output_schema": {
+            "intent": "string",
+            "entities": "object",
+            "constraints": "object"
+          },
+          "parallel_execution": false,
+          "note": "Universal first step to interpret natural language and identify tasks like research, attendee info, and meeting details."
+        },
+        {
+          "step": 2,
+          "task_id": "CAN-01",
+          "task_name": "Calendar Events Retrieval",
+          "description": "Retrieve calendar events for tomorrow to locate the meeting with customer Beta.",
+          "input_schema": {
+            "time_range": "object"
+          },
+          "output_schema": {
+            "events": "array"
+          },
+          "parallel_execution": false,
+          "note": "Needed to find the specific meeting and its details."
+        },
+        {
+          "step": 3,
+          "task_id": "CAN-07",
+          "task_name": "Meeting Metadata Extraction",
+          "description": "Extract metadata for the Beta meeting: attendees, RSVP status, meeting link, notes, and any attached documents.",
+          "input_schema": {
+            "events": "array"
+          },
+          "output_schema": {
+            "meeting_metadata": "object"
+          },
+          "parallel_execution": false,
+          "note": "Provides attendee list and other details required for dossier creation."
+        },
+        {
+          "step": 4,
+          "task_id": "CAN-05",
+          "task_name": "Attendee/Contact Resolution",
+          "description": "Resolve attendee names from the Beta meeting to directory entries and enrich with known profiles.",
+          "input_schema": {
+            "attendees": "array"
+          },
+          "output_schema": {
+            "resolved_attendees": "array"
+          },
+          "parallel_execution": false,
+          "note": "Enables building a detailed dossier of attendees."
+        },
+        {
+          "step": 5,
+          "task_id": "CAN-22",
+          "task_name": "Research/Intelligence Gathering",
+          "description": "Gather background information on Beta (the customer company) and identify attendee interests from past interactions or public data.",
+          "input_schema": {
+            "company_name": "string",
+            "attendees": "array"
+          },
+          "output_schema": {
+            "company_background": "object",
+            "attendee_interests": "array"
+          },
+          "parallel_execution": false,
+          "note": "Fulfills the request for company background and attendee interests."
+        },
+        {
+          "step": 6,
+          "task_id": "CAN-09",
+          "task_name": "Document Generation/Formatting",
+          "description": "Generate a structured briefing dossier combining company background and attendee profiles with interests.",
+          "input_schema": {
+            "company_background": "object",
+            "attendee_profiles": "array"
+          },
+          "output_schema": {
+            "briefing_document": "string"
+          },
+          "parallel_execution": false,
+          "note": "Creates the final deliverable for the user to prepare for the meeting."
+        }
+      ],
+      "tasks_covered": [
+        "CAN-04",
+        "CAN-01",
+        "CAN-07",
+        "CAN-05",
+        "CAN-22",
+        "CAN-09"
+      ],
+      "orchestration": {
+        "pattern": "sequential",
+        "parallelization_opportunities": [
+          "Steps 4 and 5 could partially overlap after metadata extraction"
+        ],
+        "error_handling": "If research fails, provide partial dossier with available attendee and meeting details; retry external data fetch with backoff."
+      },
+      "category": "collaborate",
+      "trial": 1
+    }
+  ]
+}

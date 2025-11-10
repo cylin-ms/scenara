@@ -1,0 +1,58 @@
+{
+  "prompt_id": "schedule-3",
+  "solvability": {
+    "score": 6,
+    "reasoning": "The task requires multi-constraint reasoning: finding a 1-hour slot within 2 weeks, prioritizing over 1:1s and lunches, respecting Kat's schedule, ensuring in-person attendance, and booking a room. Current AI can handle basic scheduling via calendar APIs (Google, Outlook), but prioritization logic, conflict resolution, and physical room booking introduce complexity. Access to all participants' calendars and room availability is essential, which is often restricted by permissions and organizational policies.",
+    "difficulty_factors": [
+      "Multi-party availability coordination",
+      "Preference hierarchy (override 1:1s and lunches)",
+      "Physical room booking integration",
+      "Incomplete or restricted calendar data",
+      "Natural language interpretation of constraints"
+    ]
+  },
+  "verification_ease": {
+    "score": 9,
+    "reasoning": "Verification is straightforward: check if the scheduled event meets all explicit constraints (participants, duration, time window, in-person, room assigned, respects Kat's schedule). This can be programmatically validated against calendar data and meeting metadata.",
+    "verification_methods": [
+      "Compare scheduled event participants to requested names",
+      "Check event duration and date range",
+      "Validate room resource attached to event",
+      "Ensure Kat's schedule constraints are respected",
+      "Confirm event is marked as in-person"
+    ]
+  },
+  "verification_asymmetry": {
+    "score": 9 - (10 - 6) = 5,
+    "interpretation": "Positive asymmetry: The task is significantly easier to verify than to solve, making it a strong candidate for AI improvement under Verifier's Law.",
+    "priority": "HIGH"
+  },
+  "ai_readiness": {
+    "timeline": "Soon (6mo)",
+    "blockers": [
+      "Access to all participants' calendars with correct permissions",
+      "Integration with room booking systems",
+      "Robust handling of organizational scheduling policies"
+    ],
+    "enablers": [
+      "Existing calendar APIs (Google Calendar, Microsoft Graph)",
+      "Advances in LLM-based constraint parsing",
+      "Reinforcement learning from user feedback on scheduling outcomes"
+    ]
+  },
+  "training_data_quality": {
+    "score": 8,
+    "reasoning": "High-quality training data can be generated from historical scheduling logs, user corrections, and synthetic scenarios. Many organizations already have structured calendar data that can be anonymized for model training.",
+    "data_sources": [
+      "Historical meeting scheduling data",
+      "User feedback on proposed times",
+      "Synthetic constraint-based scheduling scenarios"
+    ]
+  },
+  "key_insights": [
+    "Verification is almost trivial compared to solving complexity, which aligns strongly with Verifier's Law.",
+    "The main challenge is not algorithmic but data access and integration with enterprise systems.",
+    "User feedback loops (accept/reject proposed times) provide a strong RL signal for fine-tuning."
+  ],
+  "recommendation": "HIGH priority for AI development. Focus on building robust constraint parsing and multi-party scheduling logic, leveraging easy verification for rapid RL-based improvement. Invest in API integrations and permission management to unlock full capability."
+}

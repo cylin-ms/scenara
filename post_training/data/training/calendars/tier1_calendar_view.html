@@ -1,0 +1,1299 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calendar View - Tier1 Sales Manager Pipeline</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+        .week {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .week-header {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+        .day {
+            margin-bottom: 25px;
+        }
+        .day-header {
+            font-size: 18px;
+            font-weight: bold;
+            color: #555;
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-left: 4px solid #667eea;
+        }
+        .meeting {
+            margin-left: 20px;
+            margin-bottom: 15px;
+            padding: 15px;
+            border-left: 4px solid;
+            background-color: #fafafa;
+            border-radius: 5px;
+        }
+        .meeting.critical { border-left-color: #dc3545; background-color: #fff5f5; }
+        .meeting.high { border-left-color: #ffc107; background-color: #fffef5; }
+        .meeting.medium { border-left-color: #28a745; background-color: #f5fff5; }
+        .meeting.low { border-left-color: #17a2b8; background-color: #f5fcff; }
+        .meeting-time {
+            font-weight: bold;
+            color: #666;
+            font-size: 14px;
+        }
+        .meeting-subject {
+            font-size: 16px;
+            font-weight: bold;
+            color: #333;
+            margin: 5px 0;
+        }
+        .meeting-description {
+            color: #666;
+            font-size: 14px;
+            margin: 5px 0;
+        }
+        .meeting-meta {
+            display: flex;
+            gap: 20px;
+            margin-top: 10px;
+            font-size: 13px;
+            color: #888;
+        }
+        .badge {
+            display: inline-block;
+            padding: 3px 8px;
+            border-radius: 12px;
+            font-size: 11px;
+            font-weight: bold;
+        }
+        .badge.critical { background-color: #dc3545; color: white; }
+        .badge.high { background-color: #ffc107; color: #333; }
+        .badge.medium { background-color: #28a745; color: white; }
+        .badge.low { background-color: #17a2b8; color: white; }
+        .prep-indicator {
+            background-color: #9c27b0;
+            color: white;
+            padding: 3px 8px;
+            border-radius: 12px;
+            font-size: 11px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>📅 Calendar View: Tier1 Sales Manager Pipeline</h1>
+        <p>Generated training data calendar visualization</p>
+    </div>
+
+    <div class="week">
+        <div class="week-header">Week 47: Nov 17 - Nov 23, 2025</div>
+
+        <div class="day">
+            <div class="day-header">Monday, Nov 17 (4 meetings)</div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">10:00 AM - 10:45 AM (45 min)</div>
+                <div class="meeting-subject">Weekly 1:1 with Regional Director</div>
+                <div class="meeting-description">Discuss team performance, forecast accuracy, and strategic priorities....</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    <span class="prep-indicator">📝 Prep: 30min</span>
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">10:00 AM - 11:00 AM (60 min)</div>
+                <div class="meeting-subject">Weekly 1:1 with Regional Director</div>
+                <div class="meeting-description">Discuss team performance, escalations, and forecast accuracy...</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    <span class="prep-indicator">📝 Prep: 30min</span>
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">2:00 PM - 3:30 PM (90 min)</div>
+                <div class="meeting-subject">Regional Pipeline Review</div>
+                <div class="meeting-description">Review open deals, commit stage, and blockers for APAC region...</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    <span class="prep-indicator">📝 Prep: 30min</span>
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">2:30 PM - 3:30 PM (60 min)</div>
+                <div class="meeting-subject">Customer Escalation: ABC Corp Renewal Blocker</div>
+                <div class="meeting-description">Critical renewal blocker discussion with ABC Corp VP of IT. Immediate resolution needed....</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    <span class="prep-indicator">📝 Prep: 30min</span>
+                    <span>2 attendees</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="day">
+            <div class="day-header">Tuesday, Nov 18 (4 meetings)</div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">9:00 AM - 10:00 AM (60 min)</div>
+                <div class="meeting-subject">Weekly Forecast Call</div>
+                <div class="meeting-description">Review current quarter forecast, risk deals, and pipeline adjustments....</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    <span class="prep-indicator">📝 Prep: 30min</span>
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">9:30 AM - 10:30 AM (60 min)</div>
+                <div class="meeting-subject">Customer Call: Alpha Technologies Renewal</div>
+                <div class="meeting-description">Discuss renewal terms and expansion opportunities...</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    <span class="prep-indicator">📝 Prep: 30min</span>
+                    <span>2 attendees</span>
+                </div>
+            </div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">2:00 PM - 3:00 PM (60 min)</div>
+                <div class="meeting-subject">Customer Demo: ZenTech Solutions</div>
+                <div class="meeting-description">Demonstrate advanced analytics features to ZenTech technical team....</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    <span class="prep-indicator">📝 Prep: 30min</span>
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">3:00 PM - 4:00 PM (60 min)</div>
+                <div class="meeting-subject">Internal Forecast Alignment</div>
+                <div class="meeting-description">Align forecast numbers with finance and operations for Q4 close...</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    <span class="prep-indicator">📝 Prep: 30min</span>
+                    <span>2 attendees</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="day">
+            <div class="day-header">Wednesday, Nov 19 (4 meetings)</div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">2:00 PM - 3:00 PM (60 min)</div>
+                <div class="meeting-subject">Sales Team Weekly Sync</div>
+                <div class="meeting-description">Discuss pipeline status, recent wins/losses, and team goals....</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    <span class="prep-indicator">📝 Prep: 30min</span>
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+            <div class="meeting medium">
+                <div class="meeting-time">2:00 PM - 3:00 PM (60 min)</div>
+                <div class="meeting-subject">Weekly Team Sync</div>
+                <div class="meeting-description">Review top deals, share success stories, align priorities...</div>
+                <div class="meeting-meta">
+                    <span class="badge medium">MEDIUM</span>
+                    
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+            <div class="meeting high">
+                <div class="meeting-time">4:00 PM - 5:00 PM (60 min)</div>
+                <div class="meeting-subject">Proposal Review: Global Retail Inc</div>
+                <div class="meeting-description">Final review of terms and conditions for proposal submission....</div>
+                <div class="meeting-meta">
+                    <span class="badge high">HIGH</span>
+                    <span class="prep-indicator">📝 Prep: 30min</span>
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">4:00 PM - 5:00 PM (60 min)</div>
+                <div class="meeting-subject">Customer Escalation: Beta Corp API Outage</div>
+                <div class="meeting-description">Urgent discussion on outage impact on renewal and SLA commitments...</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    <span class="prep-indicator">📝 Prep: 30min</span>
+                    <span>2 attendees</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="day">
+            <div class="day-header">Thursday, Nov 20 (3 meetings)</div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">10:00 AM - 10:45 AM (45 min)</div>
+                <div class="meeting-subject">1:1 Coaching with Sarah Wong</div>
+                <div class="meeting-description">Deal strategy and negotiation tactics for Q4 pipeline...</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    <span class="prep-indicator">📝 Prep: 30min</span>
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">11:00 AM - 12:00 PM (60 min)</div>
+                <div class="meeting-subject">Customer Call: BrightData Solutions</div>
+                <div class="meeting-description">Negotiate discount structure and payment terms for Q4 close....</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    <span class="prep-indicator">📝 Prep: 30min</span>
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">3:00 PM - 4:00 PM (60 min)</div>
+                <div class="meeting-subject">Customer Demo: Gamma Solutions</div>
+                <div class="meeting-description">Present new analytics module and ROI case study...</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    <span class="prep-indicator">📝 Prep: 30min</span>
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="day">
+            <div class="day-header">Friday, Nov 21 (4 meetings)</div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">9:00 AM - 10:30 AM (90 min)</div>
+                <div class="meeting-subject">Pipeline Deep Dive - APAC Deals</div>
+                <div class="meeting-description">Review top 10 deals and escalation plans for end-of-quarter push....</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    <span class="prep-indicator">📝 Prep: 30min</span>
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+            <div class="meeting high">
+                <div class="meeting-time">11:00 AM - 12:00 PM (60 min)</div>
+                <div class="meeting-subject">Q4 Closing Strategy Session</div>
+                <div class="meeting-description">Review top 10 deals and define next steps for each...</div>
+                <div class="meeting-meta">
+                    <span class="badge high">HIGH</span>
+                    <span class="prep-indicator">📝 Prep: 30min</span>
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">3:00 PM - 3:45 PM (45 min)</div>
+                <div class="meeting-subject">Customer Follow-Up: NextGen Analytics</div>
+                <div class="meeting-description">Finalize technical validation and confirm legal review status....</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    <span class="prep-indicator">📝 Prep: 30min</span>
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">3:00 PM - 4:00 PM (60 min)</div>
+                <div class="meeting-subject">Customer Call: Delta Enterprises Pricing Negotiation</div>
+                <div class="meeting-description">Finalize pricing and discount approvals for deal closure...</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    <span class="prep-indicator">📝 Prep: 30min</span>
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="week">
+        <div class="week-header">Week 48: Nov 24 - Nov 30, 2025</div>
+
+        <div class="day">
+            <div class="day-header">Monday, Nov 24 (6 meetings)</div>
+
+            <div class="meeting medium">
+                <div class="meeting-time">10:00 AM - 10:45 AM (45 min)</div>
+                <div class="meeting-subject">Weekly 1:1 with Regional Director</div>
+                <div class="meeting-description">Review last week's progress and upcoming big deals....</div>
+                <div class="meeting-meta">
+                    <span class="badge medium">MEDIUM</span>
+                    
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">10:00 AM - 11:00 AM (60 min)</div>
+                <div class="meeting-subject">Weekly 1:1 with Regional Director</div>
+                <div class="meeting-description">Review last week's performance and critical escalations...</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    <span class="prep-indicator">📝 Prep: 30min</span>
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">10:00 AM - 11:00 AM (60 min)</div>
+                <div class="meeting-subject">Weekly 1:1 with VP Sales</div>
+                <div class="meeting-description">Review team performance, pipeline blockers, and strategic priorities....</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    <span class="prep-indicator">📝 Prep: 30min</span>
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">2:00 PM - 3:00 PM (60 min)</div>
+                <div class="meeting-subject">Renewal Strategy Discussion: Key Accounts</div>
+                <div class="meeting-description">Align on approach for top renewal accounts before quarter close....</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    <span class="prep-indicator">📝 Prep: 30min</span>
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">2:00 PM - 3:00 PM (60 min)</div>
+                <div class="meeting-subject">Customer Call: Epsilon Innovations Expansion</div>
+                <div class="meeting-description">Position upsell for additional modules before year-end...</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    <span class="prep-indicator">📝 Prep: 30min</span>
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">3:30 PM - 4:30 PM (60 min)</div>
+                <div class="meeting-subject">Customer Call - BrightFuture Tech</div>
+                <div class="meeting-description">Demo follow-up and pricing discussion for enterprise package....</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    <span class="prep-indicator">📝 Prep: 30min</span>
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="day">
+            <div class="day-header">Tuesday, Nov 25 (6 meetings)</div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">9:00 AM - 10:00 AM (60 min)</div>
+                <div class="meeting-subject">Weekly Forecast Call</div>
+                <div class="meeting-description">Finalize numbers for executive review....</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    <span class="prep-indicator">📝 Prep: 30min</span>
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">9:00 AM - 10:00 AM (60 min)</div>
+                <div class="meeting-subject">Customer Call: Zeta Holdings Contract Review</div>
+                <div class="meeting-description">Discuss legal redlines and finalize contract for signature...</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    <span class="prep-indicator">📝 Prep: 30min</span>
+                    <span>2 attendees</span>
+                </div>
+            </div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">9:00 AM - 10:30 AM (90 min)</div>
+                <div class="meeting-subject">Regional Pipeline Review</div>
+                <div class="meeting-description">Deep dive into APAC pipeline health and deal risk assessment....</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    <span class="prep-indicator">📝 Prep: 30min</span>
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">11:00 AM - 12:00 PM (60 min)</div>
+                <div class="meeting-subject">Escalation - Data Sync Issue with GlobalMart</div>
+                <div class="meeting-description">Urgent call to resolve integration blockers for Q4 deal closure....</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    <span class="prep-indicator">📝 Prep: 30min</span>
+                    <span>2 attendees</span>
+                </div>
+            </div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">3:00 PM - 4:00 PM (60 min)</div>
+                <div class="meeting-subject">Client Negotiation: DataFusion Ltd</div>
+                <div class="meeting-description">Discuss final pricing and terms for enterprise contract....</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    <span class="prep-indicator">📝 Prep: 30min</span>
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+            <div class="meeting high">
+                <div class="meeting-time">3:30 PM - 4:30 PM (60 min)</div>
+                <div class="meeting-subject">Internal Pricing Approval for Key Deals</div>
+                <div class="meeting-description">Get CFO sign-off for high-discount deals in final stretch...</div>
+                <div class="meeting-meta">
+                    <span class="badge high">HIGH</span>
+                    <span class="prep-indicator">📝 Prep: 30min</span>
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="day">
+            <div class="day-header">Wednesday, Nov 26 (5 meetings)</div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">2:00 PM - 3:00 PM (60 min)</div>
+                <div class="meeting-subject">Sales Team Weekly Sync</div>
+                <div class="meeting-description">Final quarter push strategies and priority deals update....</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    <span class="prep-indicator">📝 Prep: 30min</span>
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+            <div class="meeting medium">
+                <div class="meeting-time">2:00 PM - 3:00 PM (60 min)</div>
+                <div class="meeting-subject">Weekly Team Sync</div>
+                <div class="meeting-description">Focus on last-mile tactics for month-end deals...</div>
+                <div class="meeting-meta">
+                    <span class="badge medium">MEDIUM</span>
+                    
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+            <div class="meeting medium">
+                <div class="meeting-time">2:00 PM - 3:00 PM (60 min)</div>
+                <div class="meeting-subject">Weekly Sales Team Sync</div>
+                <div class="meeting-description">Review weekly KPIs, deal status, and upcoming priorities....</div>
+                <div class="meeting-meta">
+                    <span class="badge medium">MEDIUM</span>
+                    
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+            <div class="meeting high">
+                <div class="meeting-time">4:00 PM - 4:30 PM (30 min)</div>
+                <div class="meeting-subject">Proposal Sign-Off: CloudBridge Systems</div>
+                <div class="meeting-description">Get internal approvals before sending final proposal....</div>
+                <div class="meeting-meta">
+                    <span class="badge high">HIGH</span>
+                    <span class="prep-indicator">📝 Prep: 30min</span>
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">4:00 PM - 5:00 PM (60 min)</div>
+                <div class="meeting-subject">Customer Call - Oceanic Retail</div>
+                <div class="meeting-description">Finalize legal and security review questions for procurement....</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    <span class="prep-indicator">📝 Prep: 30min</span>
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="day">
+            <div class="day-header">Thursday, Nov 27 (5 meetings)</div>
+
+            <div class="meeting high">
+                <div class="meeting-time">9:30 AM - 10:15 AM (45 min)</div>
+                <div class="meeting-subject">1:1 Coaching with Daniel Ho</div>
+                <div class="meeting-description">Navigate procurement hurdles and closing strategies...</div>
+                <div class="meeting-meta">
+                    <span class="badge high">HIGH</span>
+                    <span class="prep-indicator">📝 Prep: 30min</span>
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">9:30 AM - 11:00 AM (90 min)</div>
+                <div class="meeting-subject">Forecast Accuracy Review</div>
+                <div class="meeting-description">Validate deal stages and expected close dates for month-end forecast....</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    <span class="prep-indicator">📝 Prep: 30min</span>
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">11:00 AM - 12:00 PM (60 min)</div>
+                <div class="meeting-subject">Critical Deal Review: TechNova</div>
+                <div class="meeting-description">Escalation meeting to secure approval for exception pricing....</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    <span class="prep-indicator">📝 Prep: 30min</span>
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">3:00 PM - 4:00 PM (60 min)</div>
+                <div class="meeting-subject">Customer Call - Innovate Labs</div>
+                <div class="meeting-description">Product roadmap alignment and executive Q&A session....</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    <span class="prep-indicator">📝 Prep: 30min</span>
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">4:00 PM - 5:00 PM (60 min)</div>
+                <div class="meeting-subject">Urgent Escalation: Theta Inc Compliance Concern</div>
+                <div class="meeting-description">Address compliance questions to unblock $500K deal...</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    <span class="prep-indicator">📝 Prep: 30min</span>
+                    <span>2 attendees</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="day">
+            <div class="day-header">Friday, Nov 28 (3 meetings)</div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">9:00 AM - 10:30 AM (90 min)</div>
+                <div class="meeting-subject">Pipeline Deep Dive - APAC Deals</div>
+                <div class="meeting-description">Final inspection of top deals before quarter end....</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    <span class="prep-indicator">📝 Prep: 30min</span>
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">10:00 AM - 11:00 AM (60 min)</div>
+                <div class="meeting-subject">Customer Call - SkyNet Solutions</div>
+                <div class="meeting-description">Renewal negotiation and upsell opportunity discussion....</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    <span class="prep-indicator">📝 Prep: 30min</span>
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">3:30 PM - 4:15 PM (45 min)</div>
+                <div class="meeting-subject">Client Finalization: SmartEdge AI</div>
+                <div class="meeting-description">Confirm signatures and payment plan to close deal....</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    <span class="prep-indicator">📝 Prep: 30min</span>
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="week">
+        <div class="week-header">Week 49: Dec 01 - Dec 07, 2025</div>
+
+        <div class="day">
+            <div class="day-header">Monday, Dec 01 (6 meetings)</div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">10:00 AM - 11:00 AM (60 min)</div>
+                <div class="meeting-subject">Weekly 1:1 with VP Sales</div>
+                <div class="meeting-description">Review team performance, pipeline blockers, and strategic priorities....</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    <span class="prep-indicator">📝 Prep: 30min</span>
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">10:00 AM - 11:00 AM (60 min)</div>
+                <div class="meeting-subject">Weekly 1:1 with Regional Director</div>
+                <div class="meeting-description">Discuss regional pipeline health, forecast accuracy, and escalation handling....</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">10:00 AM - 10:45 AM (45 min)</div>
+                <div class="meeting-subject">Weekly 1:1 with Regional VP</div>
+                <div class="meeting-description">Discuss pipeline health, team performance, and forecast accuracy....</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">3:00 PM - 4:00 PM (60 min)</div>
+                <div class="meeting-subject">Customer Call - Nova Health</div>
+                <div class="meeting-description">Finalize procurement and address compliance documentation....</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    <span class="prep-indicator">📝 Prep: 30min</span>
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">3:00 PM - 4:00 PM (60 min)</div>
+                <div class="meeting-subject">Client Demo: Apex Solutions</div>
+                <div class="meeting-description">Product demonstration for Apex Solutions' procurement team....</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    <span class="prep-indicator">📝 Prep: 30min</span>
+                    <span>2 attendees</span>
+                </div>
+            </div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">3:00 PM - 4:00 PM (60 min)</div>
+                <div class="meeting-subject">Customer Demo - BrightTech Solutions</div>
+                <div class="meeting-description">Showcase platform capabilities to BrightTech leadership....</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    <span class="prep-indicator">📝 Prep: 30min</span>
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="day">
+            <div class="day-header">Tuesday, Dec 02 (6 meetings)</div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">9:00 AM - 10:30 AM (90 min)</div>
+                <div class="meeting-subject">Regional Pipeline Review</div>
+                <div class="meeting-description">Deep dive into APAC pipeline health and deal risk assessment....</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    <span class="prep-indicator">📝 Prep: 30min</span>
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">9:00 AM - 10:00 AM (60 min)</div>
+                <div class="meeting-subject">Quarter-End Forecast Planning</div>
+                <div class="meeting-description">Align on final forecast submission, confidence levels, and deal risk mitigation....</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    
+                    <span>2 attendees</span>
+                </div>
+            </div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">11:00 AM - 12:00 PM (60 min)</div>
+                <div class="meeting-subject">Renewal Strategy: BrightTech</div>
+                <div class="meeting-description">Discuss renewal terms, upsell opportunities, and discount approvals....</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    <span class="prep-indicator">📝 Prep: 30min</span>
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">11:00 AM - 12:00 PM (60 min)</div>
+                <div class="meeting-subject">Regional Pipeline Review</div>
+                <div class="meeting-description">Analyze pipeline coverage and high-risk deals....</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">2:30 PM - 3:30 PM (60 min)</div>
+                <div class="meeting-subject">Escalation - Contract Redlines with MegaCorp</div>
+                <div class="meeting-description">Immediate review of legal terms blocking signature....</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    <span class="prep-indicator">📝 Prep: 30min</span>
+                    <span>2 attendees</span>
+                </div>
+            </div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">4:00 PM - 5:00 PM (60 min)</div>
+                <div class="meeting-subject">Quarter-End Forecast Planning</div>
+                <div class="meeting-description">Finalize forecast for Q4 and review commit deals....</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="day">
+            <div class="day-header">Wednesday, Dec 03 (5 meetings)</div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">9:00 AM - 10:00 AM (60 min)</div>
+                <div class="meeting-subject">Negotiation Call - Zenith Enterprises</div>
+                <div class="meeting-description">Finalize pricing and contract terms....</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    <span class="prep-indicator">📝 Prep: 30min</span>
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+            <div class="meeting high">
+                <div class="meeting-time">10:30 AM - 11:30 AM (60 min)</div>
+                <div class="meeting-subject">Proposal Review: NovaCorp</div>
+                <div class="meeting-description">Finalize proposal details before sending to NovaCorp procurement....</div>
+                <div class="meeting-meta">
+                    <span class="badge high">HIGH</span>
+                    
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+            <div class="meeting medium">
+                <div class="meeting-time">2:00 PM - 3:00 PM (60 min)</div>
+                <div class="meeting-subject">Weekly Sales Team Sync</div>
+                <div class="meeting-description">Review weekly KPIs, deal status, and upcoming priorities....</div>
+                <div class="meeting-meta">
+                    <span class="badge medium">MEDIUM</span>
+                    
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">2:00 PM - 3:00 PM (60 min)</div>
+                <div class="meeting-subject">Midweek Sales Team Sync</div>
+                <div class="meeting-description">Weekly sync to review pipeline stages, blockers, and quarter-end priorities....</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">2:00 PM - 3:00 PM (60 min)</div>
+                <div class="meeting-subject">Weekly Sales Team Sync</div>
+                <div class="meeting-description">Review team pipeline, deal blockers, and weekly targets....</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    
+                    <span>2 attendees</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="day">
+            <div class="day-header">Thursday, Dec 04 (4 meetings)</div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">9:00 AM - 10:00 AM (60 min)</div>
+                <div class="meeting-subject">Mid-Week Forecast Update</div>
+                <div class="meeting-description">Update forecast numbers and validate closing strategy with VP....</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    <span class="prep-indicator">📝 Prep: 30min</span>
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">1:00 PM - 2:00 PM (60 min)</div>
+                <div class="meeting-subject">Customer Escalation - Orion Corp</div>
+                <div class="meeting-description">Urgent issue impacting renewal negotiations....</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    <span class="prep-indicator">📝 Prep: 30min</span>
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">3:00 PM - 4:00 PM (60 min)</div>
+                <div class="meeting-subject">Customer Call - Zenith Systems</div>
+                <div class="meeting-description">Executive alignment on rollout timelines and success metrics....</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    <span class="prep-indicator">📝 Prep: 30min</span>
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">4:00 PM - 5:00 PM (60 min)</div>
+                <div class="meeting-subject">Customer Escalation: Delta Manufacturing</div>
+                <div class="meeting-description">Urgent: Address implementation issues causing renewal risk....</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    <span class="prep-indicator">📝 Prep: 30min</span>
+                    <span>2 attendees</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="day">
+            <div class="day-header">Friday, Dec 05 (2 meetings)</div>
+
+            <div class="meeting medium">
+                <div class="meeting-time">9:30 AM - 10:30 AM (60 min)</div>
+                <div class="meeting-subject">Discovery Call: ZenFin</div>
+                <div class="meeting-description">Understand ZenFin's Q1 priorities and upcoming RFP requirements....</div>
+                <div class="meeting-meta">
+                    <span class="badge medium">MEDIUM</span>
+                    
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+            <div class="meeting medium">
+                <div class="meeting-time">11:30 AM - 12:30 PM (60 min)</div>
+                <div class="meeting-subject">Follow-up Call - NovaTech</div>
+                <div class="meeting-description">Address procurement questions and legal concerns....</div>
+                <div class="meeting-meta">
+                    <span class="badge medium">MEDIUM</span>
+                    
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="week">
+        <div class="week-header">Week 50: Dec 08 - Dec 14, 2025</div>
+
+        <div class="day">
+            <div class="day-header">Monday, Dec 08 (8 meetings)</div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">10:00 AM - 11:00 AM (60 min)</div>
+                <div class="meeting-subject">Weekly 1:1 with Regional Director</div>
+                <div class="meeting-description">Discuss regional pipeline health, forecast accuracy, and escalation handling....</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">10:00 AM - 10:45 AM (45 min)</div>
+                <div class="meeting-subject">Weekly 1:1 with Regional VP</div>
+                <div class="meeting-description">Discuss pipeline health, team performance, and forecast accuracy....</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">10:00 AM - 11:00 AM (60 min)</div>
+                <div class="meeting-subject">Weekly 1:1 with VP Sales</div>
+                <div class="meeting-description">Discuss pipeline health, forecast accuracy, and strategic accounts....</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">11:30 AM - 12:30 PM (60 min)</div>
+                <div class="meeting-subject">Customer Call: Acme Corp Renewal Discussion</div>
+                <div class="meeting-description">Review renewal terms and address product roadmap questions....</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    <span class="prep-indicator">📝 Prep: 30min</span>
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">2:00 PM - 3:00 PM (60 min)</div>
+                <div class="meeting-subject">Internal Strategy Sync: Quarter-End Push</div>
+                <div class="meeting-description">Align on top deals and executive involvement for EoQ....</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    
+                    <span>2 attendees</span>
+                </div>
+            </div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">2:30 PM - 3:30 PM (60 min)</div>
+                <div class="meeting-subject">Client Renewal: Horizon Global</div>
+                <div class="meeting-description">Finalize renewal terms and secure signature before fiscal close....</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    <span class="prep-indicator">📝 Prep: 30min</span>
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">3:00 PM - 4:00 PM (60 min)</div>
+                <div class="meeting-subject">Executive Presentation - Delta Group</div>
+                <div class="meeting-description">Present ROI analysis and success stories for Delta execs....</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    <span class="prep-indicator">📝 Prep: 30min</span>
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+            <div class="meeting high">
+                <div class="meeting-time">4:00 PM - 5:00 PM (60 min)</div>
+                <div class="meeting-subject">Product Demo: BrightTech Evaluation</div>
+                <div class="meeting-description">Showcase key features to CTO and address technical concerns....</div>
+                <div class="meeting-meta">
+                    <span class="badge high">HIGH</span>
+                    <span class="prep-indicator">📝 Prep: 30min</span>
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="day">
+            <div class="day-header">Tuesday, Dec 09 (8 meetings)</div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">9:00 AM - 10:00 AM (60 min)</div>
+                <div class="meeting-subject">Quarter-End Forecast Planning</div>
+                <div class="meeting-description">Align on final forecast submission, confidence levels, and deal risk mitigation....</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    
+                    <span>2 attendees</span>
+                </div>
+            </div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">9:00 AM - 10:30 AM (90 min)</div>
+                <div class="meeting-subject">Weekly Forecast & Pipeline Review</div>
+                <div class="meeting-description">Deep dive into deal stages, risks, and commit numbers....</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+            <div class="meeting high">
+                <div class="meeting-time">11:00 AM - 12:30 PM (90 min)</div>
+                <div class="meeting-subject">Proposal Workshop: Q4 Mega Deal</div>
+                <div class="meeting-description">Collaborate on pricing and legal terms for major enterprise prospect....</div>
+                <div class="meeting-meta">
+                    <span class="badge high">HIGH</span>
+                    
+                    <span>2 attendees</span>
+                </div>
+            </div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">11:00 AM - 12:00 PM (60 min)</div>
+                <div class="meeting-subject">Regional Pipeline Review</div>
+                <div class="meeting-description">Analyze pipeline coverage and high-risk deals....</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">11:00 AM - 12:00 PM (60 min)</div>
+                <div class="meeting-subject">Customer Call: Orion Ltd Expansion</div>
+                <div class="meeting-description">Discuss expansion scope and new license procurement....</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    <span class="prep-indicator">📝 Prep: 30min</span>
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+            <div class="meeting high">
+                <div class="meeting-time">2:00 PM - 2:30 PM (30 min)</div>
+                <div class="meeting-subject">1:1 Coaching - Rep: David Chen</div>
+                <div class="meeting-description">Focus on high-risk deals and negotiation tactics....</div>
+                <div class="meeting-meta">
+                    <span class="badge high">HIGH</span>
+                    
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">4:00 PM - 5:00 PM (60 min)</div>
+                <div class="meeting-subject">Renewal Strategy Call - Apex Systems</div>
+                <div class="meeting-description">Discuss renewal plan and expansion opportunities....</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    <span class="prep-indicator">📝 Prep: 30min</span>
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">4:00 PM - 5:00 PM (60 min)</div>
+                <div class="meeting-subject">Escalation: Contract Blocker with Nova Inc</div>
+                <div class="meeting-description">Urgent call to resolve legal terms delaying contract signature....</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    <span class="prep-indicator">📝 Prep: 30min</span>
+                    <span>2 attendees</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="day">
+            <div class="day-header">Wednesday, Dec 10 (4 meetings)</div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">2:00 PM - 3:00 PM (60 min)</div>
+                <div class="meeting-subject">Midweek Sales Team Sync</div>
+                <div class="meeting-description">Weekly sync to review pipeline stages, blockers, and quarter-end priorities....</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">2:00 PM - 3:00 PM (60 min)</div>
+                <div class="meeting-subject">Weekly Sales Team Sync</div>
+                <div class="meeting-description">Review team pipeline, deal blockers, and weekly targets....</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    
+                    <span>2 attendees</span>
+                </div>
+            </div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">2:00 PM - 3:00 PM (60 min)</div>
+                <div class="meeting-subject">Weekly Sales Team Sync</div>
+                <div class="meeting-description">Review pipeline coverage, share win stories, and remove blockers....</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    
+                    <span>2 attendees</span>
+                </div>
+            </div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">4:00 PM - 5:00 PM (60 min)</div>
+                <div class="meeting-subject">Customer Call: Zenith Co Negotiation</div>
+                <div class="meeting-description">Finalize pricing and payment terms for enterprise deal....</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    <span class="prep-indicator">📝 Prep: 30min</span>
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="day">
+            <div class="day-header">Thursday, Dec 11 (5 meetings)</div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">9:00 AM - 9:30 AM (30 min)</div>
+                <div class="meeting-subject">1:1 Coaching - Rep: Sarah Lim</div>
+                <div class="meeting-description">Review pipeline and discuss objection handling for key accounts....</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">10:30 AM - 11:30 AM (60 min)</div>
+                <div class="meeting-subject">Pricing Negotiation - QuantumWorks</div>
+                <div class="meeting-description">Align on final pricing before contract signature....</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    <span class="prep-indicator">📝 Prep: 30min</span>
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">11:00 AM - 12:00 PM (60 min)</div>
+                <div class="meeting-subject">Customer Call: Titan Group Procurement</div>
+                <div class="meeting-description">Discuss procurement terms and delivery schedule....</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    <span class="prep-indicator">📝 Prep: 30min</span>
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">3:00 PM - 4:00 PM (60 min)</div>
+                <div class="meeting-subject">Executive Briefing: Orion Enterprises</div>
+                <div class="meeting-description">Present Q4 value metrics and roadmap to Orion's executive stakeholders....</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    <span class="prep-indicator">📝 Prep: 30min</span>
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+            <div class="meeting high">
+                <div class="meeting-time">3:00 PM - 4:00 PM (60 min)</div>
+                <div class="meeting-subject">Internal Alignment: Pricing Exceptions</div>
+                <div class="meeting-description">Work with finance on special discount approvals....</div>
+                <div class="meeting-meta">
+                    <span class="badge high">HIGH</span>
+                    
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="day">
+            <div class="day-header">Friday, Dec 12 (5 meetings)</div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">9:00 AM - 10:00 AM (60 min)</div>
+                <div class="meeting-subject">Customer Escalation: Vertex Systems</div>
+                <div class="meeting-description">Urgent compliance issue jeopardizing deal closure....</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    <span class="prep-indicator">📝 Prep: 30min</span>
+                    <span>2 attendees</span>
+                </div>
+            </div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">9:30 AM - 10:30 AM (60 min)</div>
+                <div class="meeting-subject">Forecast Adjustment Session</div>
+                <div class="meeting-description">Update forecast numbers for executive review next week....</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">11:00 AM - 12:00 PM (60 min)</div>
+                <div class="meeting-subject">Customer Call: Alpha Systems Renewal</div>
+                <div class="meeting-description">Review contract renewal and upsell opportunities....</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    <span class="prep-indicator">📝 Prep: 30min</span>
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">2:00 PM - 3:00 PM (60 min)</div>
+                <div class="meeting-subject">Internal Strategy Alignment</div>
+                <div class="meeting-description">Coordinate with marketing and customer success for Q4 close....</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    
+                    <span>2 attendees</span>
+                </div>
+            </div>
+
+            <div class="meeting medium">
+                <div class="meeting-time">3:00 PM - 4:00 PM (60 min)</div>
+                <div class="meeting-subject">End-of-Week Deal Desk</div>
+                <div class="meeting-description">Finalize approvals and discuss deal strategy for next week....</div>
+                <div class="meeting-meta">
+                    <span class="badge medium">MEDIUM</span>
+                    
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

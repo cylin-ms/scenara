@@ -1,111 +1,91 @@
 {
-  "source": "gpt-5",
-  "backend_llm": "gpt-5-preview",
-  "backend_llm_notes": "GPT-5 via Cursor Agent Mode - Advanced reasoning and instruction following",
-  "timestamp": "2025-11-06T13:22:00.000000",
+  "source": "gpt-5-v2",
+  "backend_llm": "dev-gpt-5-chat-jj",
+  "backend_llm_notes": "GPT-5 via Microsoft SilverFlow LLM API - v2 with full GUTT documentation context (same as Claude/Ollama)",
+  "prompt_version": "v2_full_context",
+  "timestamp": "2025-11-06T20:10:28.458397",
   "original_prompt": "Review the materials for my meeting with senior leadership and suggest the best way to summarize the topics into three main discussion points. Generate any objections or concerns that might come up and give me effective responses.",
   "gutts": [
     {
       "id": "gutt_1",
-      "name": "Meeting Materials Retrieval",
-      "capability": "Access and load all relevant documents for the meeting",
+      "name": "Retrieve Meeting Materials",
+      "capability": "Access and collect all relevant documents and resources for the specified senior leadership meeting",
       "required_skills": [
-        "Document access",
-        "File reading",
-        "Content extraction",
-        "Multi-format parsing"
+        "calendar_integration",
+        "document_retrieval",
+        "context_identification"
       ],
-      "user_goal": "System has all materials to analyze",
+      "user_goal": "Ensure all necessary materials for the meeting are available for review",
       "triggered": true,
-      "evidence": "Retrieved 5 documents: Q4 strategy deck, budget proposal, market analysis, competitive review, product roadmap"
+      "evidence": "Fetch files linked to the meeting invite and associated shared folders"
     },
     {
       "id": "gutt_2",
-      "name": "Content Analysis & Topic Extraction",
-      "capability": "Identify main themes and topics across materials",
+      "name": "Analyze Meeting Materials",
+      "capability": "Read and extract key information, topics, and themes from the retrieved documents",
       "required_skills": [
-        "Document analysis",
-        "Theme extraction",
-        "Topic clustering",
-        "Content synthesis"
+        "document_parsing",
+        "natural_language_understanding",
+        "topic_extraction"
       ],
-      "user_goal": "Understand what the materials cover",
+      "user_goal": "Understand the content and identify main subjects in the meeting materials",
       "triggered": true,
-      "evidence": "Extracted 8 topics: Q4 revenue growth, new product launch, budget increase, team expansion, market positioning, competitor threats, technology investments, customer retention"
+      "evidence": "Perform semantic analysis to identify recurring concepts and critical points"
     },
     {
       "id": "gutt_3",
-      "name": "Executive Summary Distillation",
-      "capability": "Condense complex topics into 3 concise discussion points",
+      "name": "Generate Candidate Discussion Topics",
+      "capability": "List all significant topics identified from the analysis for potential discussion",
       "required_skills": [
-        "Summarization",
-        "Priority ranking",
-        "Executive communication",
-        "Message framing"
+        "summarization",
+        "content_clustering",
+        "importance_ranking"
       ],
-      "user_goal": "Clear, high-level discussion framework",
+      "user_goal": "Have a comprehensive set of possible discussion items derived from the materials",
       "triggered": true,
-      "evidence": "3 discussion points: (1) Q4 Growth Strategy & Revenue Targets, (2) Product Innovation & Competitive Positioning, (3) Resource Investment Priorities"
+      "evidence": "Produce a preliminary list of 8-12 key topics extracted from the documents"
     },
     {
       "id": "gutt_4",
-      "name": "Audience-Aware Framing",
-      "capability": "Frame discussion points appropriate for senior leadership",
+      "name": "Rank and Select Top Three Topics",
+      "capability": "Prioritize and choose the three most important discussion points based on relevance and impact",
       "required_skills": [
-        "Role-based communication",
-        "Executive context",
-        "Tone adjustment",
-        "Strategic framing"
+        "priority_reasoning",
+        "contextual_ranking",
+        "decision_logic"
       ],
-      "user_goal": "Points resonate with executive concerns",
+      "user_goal": "Identify the three most strategic topics for senior leadership discussion",
       "triggered": true,
-      "evidence": "Framed with executive focus: business impact, risk mitigation, competitive advantage, ROI, strategic alignment"
+      "evidence": "Apply weighted scoring to select top three topics from candidate list"
     },
     {
       "id": "gutt_5",
-      "name": "Objection Anticipation",
-      "capability": "Predict concerns or pushback from senior leaders",
+      "name": "Generate Potential Objections",
+      "capability": "Predict likely objections or concerns that senior leadership might raise regarding the selected topics",
       "required_skills": [
-        "Critical thinking",
-        "Risk identification",
-        "Executive perspective modeling",
-        "Devil's advocate reasoning"
+        "anticipatory_reasoning",
+        "stakeholder_analysis",
+        "risk_identification"
       ],
-      "user_goal": "Prepared for tough questions",
+      "user_goal": "Prepare for possible pushback or questions during the meeting",
       "triggered": true,
-      "evidence": "Anticipated objections: (1) 'Budget too high given market uncertainty', (2) 'Product launch timeline too aggressive', (3) 'Team expansion not justified'"
+      "evidence": "Produce a list of 2-3 plausible objections per discussion point"
     },
     {
       "id": "gutt_6",
-      "name": "Response Preparation",
-      "capability": "Generate effective responses to anticipated objections",
+      "name": "Create Effective Responses",
+      "capability": "Formulate clear, persuasive responses to each predicted objection",
       "required_skills": [
-        "Argumentation",
-        "Evidence marshaling",
-        "Persuasive communication",
-        "Counter-argument development"
+        "argument_generation",
+        "persuasive_communication",
+        "contextual_adaptation"
       ],
-      "user_goal": "Confident, well-reasoned responses ready",
+      "user_goal": "Be equipped with strong, ready-to-use answers to anticipated concerns",
       "triggered": true,
-      "evidence": "Response to budget objection: 'Budget increase is 15% but projected revenue growth is 30%; ROI analysis shows break-even in Q2; competitors investing 20% more'"
-    },
-    {
-      "id": "gutt_7",
-      "name": "Briefing Document Generation",
-      "capability": "Format summary, objections, and responses into prep document",
-      "required_skills": [
-        "Document formatting",
-        "Professional presentation",
-        "Structure design",
-        "Executive communication standards"
-      ],
-      "user_goal": "Comprehensive prep materials ready to review",
-      "triggered": true,
-      "evidence": "Generated executive briefing: 3 discussion points with supporting data, 5 anticipated objections with responses, appendix with detailed analysis"
+      "evidence": "Generate concise, actionable responses aligned with meeting objectives"
     }
   ],
   "track1_score": 1.0,
-  "track2_score": 4.0,
-  "overall_score": 4.0,
-  "notes": "Generated by GPT-5 - Matches reference decomposition of 7 GUTTs"
+  "track2_score": null,
+  "overall_score": null
 }

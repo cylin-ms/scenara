@@ -1,111 +1,87 @@
 {
-  "source": "gpt-5",
-  "backend_llm": "gpt-5-preview",
-  "backend_llm_notes": "GPT-5 via Cursor Agent Mode - Advanced reasoning and instruction following",
-  "timestamp": "2025-11-06T13:16:00.000000",
+  "source": "gpt-5-v2",
+  "backend_llm": "dev-gpt-5-chat-jj",
+  "backend_llm_notes": "GPT-5 via Microsoft SilverFlow LLM API - v2 with full GUTT documentation context (same as Claude/Ollama)",
+  "prompt_version": "v2_full_context",
+  "timestamp": "2025-11-06T20:09:04.464589",
   "original_prompt": "Track all my important meetings and flag any that require focus time to prepare for them.",
   "gutts": [
     {
       "id": "gutt_1",
-      "name": "Calendar Data Retrieval",
-      "capability": "Load and parse calendar events from data source for analysis",
+      "name": "Retrieve Calendar Events",
+      "capability": "Access and fetch all scheduled meetings from the user's calendar",
       "required_skills": [
-        "Calendar API integration",
-        "JSON data parsing",
-        "Event data deserialization",
-        "Error handling for data access"
+        "calendar_api_integration",
+        "data_retrieval"
       ],
-      "user_goal": "Get comprehensive calendar data for analysis",
+      "user_goal": "Ensure the system has the complete list of upcoming meetings",
       "triggered": true,
-      "evidence": "Calendar API query loaded 267 events from my_calendar_events_complete_attendees.json"
+      "evidence": "Implementation calls to Google Calendar API or Microsoft Graph to pull event data"
     },
     {
       "id": "gutt_2",
-      "name": "Meeting Importance Classification",
-      "capability": "Score meetings based on multiple importance criteria (executives, customers, large meetings, presentations)",
+      "name": "Identify Important Meetings",
+      "capability": "Analyze fetched meetings and determine which ones are marked or inferred as important",
       "required_skills": [
-        "Multi-criteria scoring algorithm",
-        "Keyword detection and matching",
-        "Attendee analysis and role identification",
-        "Confidence weighting and threshold application"
+        "natural_language_processing",
+        "priority_classification",
+        "metadata_analysis"
       ],
-      "user_goal": "Identify which meetings are important and require attention",
+      "user_goal": "Distinguish important meetings from regular ones",
       "triggered": true,
-      "evidence": "Implemented importance scoring with 9 factors: executive_attendee (25pts), external_attendee (20pts), large_meeting (15pts), etc."
+      "evidence": "Priority tagging logic based on event metadata or user-defined rules"
     },
     {
       "id": "gutt_3",
-      "name": "Preparation Time Estimation",
-      "capability": "Calculate required preparation time based on meeting type, importance, and complexity",
+      "name": "Extract Meeting Context",
+      "capability": "Parse meeting details such as title, agenda, participants, and duration for context",
       "required_skills": [
-        "Meeting type classification",
-        "Time estimation mapping",
-        "Context-aware time adjustments",
-        "Preparation requirements analysis"
+        "text_parsing",
+        "entity_extraction"
       ],
-      "user_goal": "Know how much time to allocate for meeting preparation",
+      "user_goal": "Gather contextual information needed for preparation assessment",
       "triggered": true,
-      "evidence": "Created prep time mapping for 10+ meeting types: Executive Briefing (120min), Customer Meeting (90min), Technical Design Review (60min), etc."
+      "evidence": "Parsing event descriptions and extracting agenda items from calendar entries"
     },
     {
       "id": "gutt_4",
-      "name": "Meeting Flagging Logic",
-      "capability": "Identify and flag meetings that need preparation focus time based on importance and prep requirements",
+      "name": "Determine Preparation Requirement",
+      "capability": "Assess whether a meeting requires dedicated focus time based on its context and importance",
       "required_skills": [
-        "Threshold-based filtering",
-        "Criteria evaluation logic",
-        "List segmentation and categorization",
-        "Multi-condition filtering"
+        "contextual_reasoning",
+        "rule_based_inference",
+        "machine_learning_classification"
       ],
-      "user_goal": "Get clear list of meetings requiring prep time allocation",
+      "user_goal": "Identify meetings that need preparation before attending",
       "triggered": true,
-      "evidence": "Flagging logic: importance_score >= 30 AND prep_time > 0 (identified 8 meetings requiring prep)"
+      "evidence": "Model or rule engine that flags meetings with complex agendas or high-priority participants"
     },
     {
       "id": "gutt_5",
-      "name": "Calendar Gap Analysis",
-      "capability": "Identify available time slots in calendar for scheduling focus time blocks",
+      "name": "Flag Meetings Requiring Focus Time",
+      "capability": "Mark or annotate meetings that need preparation in the system",
       "required_skills": [
-        "Temporal gap detection",
-        "Work hours enforcement (8 AM - 6 PM)",
-        "Meeting conflict checking",
-        "Duration-based slot validation"
+        "calendar_annotation",
+        "state_update"
       ],
-      "user_goal": "Find when focus time can be scheduled without conflicts",
+      "user_goal": "Visually or programmatically indicate which meetings require preparation",
       "triggered": true,
-      "evidence": "Gap finding algorithm analyzes calendar: before first meeting, between meetings, after last meeting"
+      "evidence": "Adding a 'requires focus' tag or label to the calendar event"
     },
     {
       "id": "gutt_6",
-      "name": "Focus Time Block Scheduling",
-      "capability": "Create and schedule preparation time blocks in calendar with appropriate timing",
+      "name": "Notify User of Preparation Needs",
+      "capability": "Send alerts or reminders to the user about meetings that require focus time",
       "required_skills": [
-        "Slot allocation algorithm",
-        "iCalendar format generation (.ics)",
-        "Optimal timing selection (day before meeting)",
-        "Multi-meeting prep time aggregation"
+        "notification_delivery",
+        "user_preference_handling"
       ],
-      "user_goal": "Automatically block time for meeting preparation",
+      "user_goal": "Ensure the user is aware of and can allocate time for preparation",
       "triggered": true,
-      "evidence": "Scheduled 6 focus time blocks with .ics export: meeting_prep_focus_time.ics"
-    },
-    {
-      "id": "gutt_7",
-      "name": "Actionable Recommendations & Reporting",
-      "capability": "Generate user-facing insights, summaries, and preparation guidance",
-      "required_skills": [
-        "User communication formatting",
-        "Priority-based reporting",
-        "Actionable guidance generation",
-        "Summary statistics calculation"
-      ],
-      "user_goal": "Understand which meetings need prep and receive specific guidance",
-      "triggered": true,
-      "evidence": "Generated daily digest with prep alerts, schedule overview, specific recommendations: 'Executive Briefing on Oct 15 - 2 hours prep recommended'"
+      "evidence": "Push notification or email alert about flagged meetings"
     }
   ],
   "track1_score": 1.0,
-  "track2_score": 3.96,
-  "overall_score": 3.96,
-  "notes": "Generated by GPT-5 - Matches reference decomposition of 7 GUTTs"
+  "track2_score": null,
+  "overall_score": null
 }

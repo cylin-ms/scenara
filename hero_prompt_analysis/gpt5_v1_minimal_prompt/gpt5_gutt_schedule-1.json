@@ -1,0 +1,180 @@
+{
+  "source": "gpt-5",
+  "backend_llm": "dev-gpt-5-chat-jj",
+  "backend_llm_notes": "GPT-5 via Microsoft SilverFlow LLM API - Real API calls",
+  "timestamp": "2025-11-06T20:00:24.803530",
+  "original_prompt": "Starting next week, I want a weekly 30-min 1:1 with {name}. Afternoons preferred, avoid Fridays. Automatically reschedule on declines or conflicts.",
+  "gutts": [
+    {
+      "id": "gutt_1",
+      "name": "Interpret Start Date as Next Week",
+      "capability": "Determine the calendar week immediately following the current week and set it as the start date for scheduling.",
+      "required_skills": [
+        "natural language date parsing",
+        "calendar computation"
+      ],
+      "user_goal": "Ensure the recurring meeting starts in the week after the current one.",
+      "triggered": true,
+      "evidence": "System correctly identifies that 'starting next week' means the first day of the next calendar week."
+    },
+    {
+      "id": "gutt_2",
+      "name": "Identify Meeting Frequency as Weekly",
+      "capability": "Extract and interpret the recurrence pattern from the prompt as weekly.",
+      "required_skills": [
+        "natural language recurrence parsing",
+        "pattern recognition"
+      ],
+      "user_goal": "Schedule the meeting to repeat every week.",
+      "triggered": true,
+      "evidence": "System sets recurrence rule: FREQ=WEEKLY."
+    },
+    {
+      "id": "gutt_3",
+      "name": "Extract Meeting Duration",
+      "capability": "Parse the meeting duration as 30 minutes from the prompt.",
+      "required_skills": [
+        "duration parsing",
+        "text interpretation"
+      ],
+      "user_goal": "Ensure each meeting is scheduled for 30 minutes.",
+      "triggered": true,
+      "evidence": "System sets meeting length to 30 minutes."
+    },
+    {
+      "id": "gutt_4",
+      "name": "Extract Meeting Type as 1:1",
+      "capability": "Interpret that the meeting is a one-on-one session.",
+      "required_skills": [
+        "semantic interpretation",
+        "meeting classification"
+      ],
+      "user_goal": "Schedule a meeting involving only the user and the specified person.",
+      "triggered": true,
+      "evidence": "System creates an event with exactly two participants."
+    },
+    {
+      "id": "gutt_5",
+      "name": "Identify Participant Name",
+      "capability": "Extract the placeholder {name} as the other participant in the meeting.",
+      "required_skills": [
+        "entity extraction",
+        "contact resolution"
+      ],
+      "user_goal": "Invite the correct person to the meeting.",
+      "triggered": true,
+      "evidence": "System resolves {name} to a valid contact and adds them as an attendee."
+    },
+    {
+      "id": "gutt_6",
+      "name": "Apply Time Preference: Afternoons",
+      "capability": "Interpret 'afternoons preferred' and prioritize scheduling between 12:00 PM and 5:00 PM.",
+      "required_skills": [
+        "time range interpretation",
+        "preference handling"
+      ],
+      "user_goal": "Schedule meetings in the afternoon whenever possible.",
+      "triggered": true,
+      "evidence": "System selects time slots in the afternoon range."
+    },
+    {
+      "id": "gutt_7",
+      "name": "Avoid Fridays",
+      "capability": "Exclude Friday from the set of possible meeting days.",
+      "required_skills": [
+        "day-of-week filtering",
+        "constraint application"
+      ],
+      "user_goal": "Ensure meetings do not occur on Fridays.",
+      "triggered": true,
+      "evidence": "System does not propose or schedule meetings on Fridays."
+    },
+    {
+      "id": "gutt_8",
+      "name": "Find First Available Slot Next Week",
+      "capability": "Search the user's and participant's calendars for the earliest available afternoon slot next week that is not Friday.",
+      "required_skills": [
+        "calendar availability search",
+        "constraint satisfaction"
+      ],
+      "user_goal": "Book the first suitable time slot that meets all constraints.",
+      "triggered": true,
+      "evidence": "System identifies a mutually free afternoon slot next week excluding Friday."
+    },
+    {
+      "id": "gutt_9",
+      "name": "Create Recurring Event",
+      "capability": "Schedule the meeting as a recurring weekly event starting from the chosen slot.",
+      "required_skills": [
+        "calendar event creation",
+        "recurrence rule application"
+      ],
+      "user_goal": "Have a standing weekly meeting scheduled.",
+      "triggered": true,
+      "evidence": "System creates a recurring event with FREQ=WEEKLY and correct start date."
+    },
+    {
+      "id": "gutt_10",
+      "name": "Send Invitations",
+      "capability": "Send calendar invitations to the participant and confirm the event with the user.",
+      "required_skills": [
+        "calendar API integration",
+        "notification handling"
+      ],
+      "user_goal": "Notify both parties of the scheduled meeting.",
+      "triggered": true,
+      "evidence": "Participant receives an invite and user sees confirmation."
+    },
+    {
+      "id": "gutt_11",
+      "name": "Monitor for Declines",
+      "capability": "Detect if the participant declines any occurrence of the meeting.",
+      "required_skills": [
+        "event response tracking",
+        "status monitoring"
+      ],
+      "user_goal": "Be aware when the participant cannot attend.",
+      "triggered": true,
+      "evidence": "System registers a declined response from the participant."
+    },
+    {
+      "id": "gutt_12",
+      "name": "Detect Scheduling Conflicts",
+      "capability": "Identify when a scheduled meeting conflicts with another event for either participant.",
+      "required_skills": [
+        "conflict detection",
+        "calendar comparison"
+      ],
+      "user_goal": "Avoid overlapping meetings.",
+      "triggered": true,
+      "evidence": "System flags a conflict when another event overlaps the scheduled time."
+    },
+    {
+      "id": "gutt_13",
+      "name": "Automatically Reschedule on Decline",
+      "capability": "When a decline is detected, find a new suitable time slot and update the meeting.",
+      "required_skills": [
+        "calendar rescheduling",
+        "constraint reapplication"
+      ],
+      "user_goal": "Keep the meeting happening even if the original time is declined.",
+      "triggered": true,
+      "evidence": "System proposes and reschedules to a new available afternoon slot."
+    },
+    {
+      "id": "gutt_14",
+      "name": "Automatically Reschedule on Conflict",
+      "capability": "When a conflict is detected, adjust the meeting to a new suitable time slot.",
+      "required_skills": [
+        "conflict resolution",
+        "calendar rescheduling"
+      ],
+      "user_goal": "Maintain the recurring meeting without overlaps.",
+      "triggered": true,
+      "evidence": "System moves the meeting to a non-conflicting afternoon slot."
+    }
+  ],
+  "track1_score": 1.0,
+  "track2_score": null,
+  "overall_score": null
+}

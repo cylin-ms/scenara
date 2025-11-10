@@ -1,0 +1,103 @@
+{
+  "source": "gpt-5",
+  "backend_llm": "dev-gpt-5-chat-jj",
+  "backend_llm_notes": "GPT-5 via Microsoft SilverFlow LLM API - Real API calls",
+  "timestamp": "2025-11-06T20:01:34.507697",
+  "original_prompt": "Review the materials for my meeting with senior leadership and suggest the best way to summarize the topics into three main discussion points. Generate any objections or concerns that might come up and give me effective responses.",
+  "gutts": [
+    {
+      "id": "gutt_1",
+      "name": "Retrieve Meeting Materials",
+      "capability": "Access and collect all relevant materials for the upcoming senior leadership meeting.",
+      "required_skills": [
+        "data retrieval",
+        "file access",
+        "API integration"
+      ],
+      "user_goal": "Ensure all necessary documents and resources are available for review.",
+      "triggered": true,
+      "evidence": "System fetches meeting agenda, slide decks, and supporting documents from calendar attachments and linked resources."
+    },
+    {
+      "id": "gutt_2",
+      "name": "Parse Meeting Materials",
+      "capability": "Extract and structure the content from the retrieved materials for analysis.",
+      "required_skills": [
+        "text parsing",
+        "document processing",
+        "content extraction"
+      ],
+      "user_goal": "Convert raw documents into structured text for easier comprehension and summarization.",
+      "triggered": true,
+      "evidence": "System converts PDF and DOCX files into plain text and organizes them by section headings."
+    },
+    {
+      "id": "gutt_3",
+      "name": "Identify Key Topics",
+      "capability": "Analyze the parsed content to identify the main topics covered in the meeting materials.",
+      "required_skills": [
+        "natural language processing",
+        "topic modeling",
+        "semantic analysis"
+      ],
+      "user_goal": "Understand the core subjects discussed in the meeting materials.",
+      "triggered": true,
+      "evidence": "System outputs a list of candidate topics such as 'Budget Forecast', 'Product Roadmap', and 'Risk Management'."
+    },
+    {
+      "id": "gutt_4",
+      "name": "Rank Topics by Importance",
+      "capability": "Determine the relative importance of identified topics based on context and meeting objectives.",
+      "required_skills": [
+        "priority ranking",
+        "contextual analysis",
+        "weighting algorithms"
+      ],
+      "user_goal": "Focus on the most critical topics for senior leadership discussion.",
+      "triggered": true,
+      "evidence": "System assigns importance scores to topics and orders them from most to least relevant."
+    },
+    {
+      "id": "gutt_5",
+      "name": "Condense Topics into Three Discussion Points",
+      "capability": "Combine and summarize the most important topics into three concise discussion points.",
+      "required_skills": [
+        "summarization",
+        "content synthesis",
+        "writing clarity"
+      ],
+      "user_goal": "Have three clear, high-level points to guide the meeting discussion.",
+      "triggered": true,
+      "evidence": "System outputs: 1) Strategic Budget Alignment, 2) Upcoming Product Launch Timeline, 3) Key Risk Mitigation Strategies."
+    },
+    {
+      "id": "gutt_6",
+      "name": "Generate Potential Objections",
+      "capability": "Predict possible objections or concerns that senior leadership might raise regarding the discussion points.",
+      "required_skills": [
+        "predictive reasoning",
+        "stakeholder analysis",
+        "risk anticipation"
+      ],
+      "user_goal": "Prepare for counterarguments or concerns during the meeting.",
+      "triggered": true,
+      "evidence": "System lists objections such as 'Budget cuts may impact hiring' and 'Timeline seems unrealistic given resource constraints'."
+    },
+    {
+      "id": "gutt_7",
+      "name": "Craft Effective Responses",
+      "capability": "Develop persuasive and well-structured responses to each predicted objection.",
+      "required_skills": [
+        "argumentation",
+        "persuasive writing",
+        "business communication"
+      ],
+      "user_goal": "Be ready with strong responses to maintain confidence and credibility during the meeting.",
+      "triggered": true,
+      "evidence": "System provides responses like 'We have accounted for phased hiring to offset budget cuts' and 'Timeline includes buffer periods for resource allocation'."
+    }
+  ],
+  "track1_score": 1.0,
+  "track2_score": null,
+  "overall_score": null
+}

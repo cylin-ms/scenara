@@ -1,0 +1,35 @@
+
+====================================================================================================
+GUTT CONSOLIDATION ANALYZER
+Goal: Create canonical GUTT library for Calendar.AI evaluation framework
+====================================================================================================
+
+====================================================================================================
+ANALYZING: organizer-1 - Priority-based calendar management
+====================================================================================================
+
+Claude: 6 GUTTs
+GPT-5:  6 GUTTs
+
+Mapping Results:
+  [MATCH] Matched pairs: 1
+  [CLAUDE] Claude-only:  5
+  [GPT-5] GPT-5-only:    5
+Traceback (most recent call last):
+  File "C:\Users\cyl\Projects\Scenara_v6.0_checkpoint\Scenara\tools\gutt_consolidation_analyzer.py", line 455, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\cyl\Projects\Scenara_v6.0_checkpoint\Scenara\tools\gutt_consolidation_analyzer.py", line 451, in main
+    results, consolidation, library = analyzer.run_full_analysis()
+                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\cyl\Projects\Scenara_v6.0_checkpoint\Scenara\tools\gutt_consolidation_analyzer.py", line 414, in run_full_analysis
+    results = self.analyze_all_prompts()
+  File "C:\Users\cyl\Projects\Scenara_v6.0_checkpoint\Scenara\tools\gutt_consolidation_analyzer.py", line 234, in analyze_all_prompts
+    result = self.analyze_prompt(prompt_id, prompt_desc)
+  File "C:\Users\cyl\Projects\Scenara_v6.0_checkpoint\Scenara\tools\gutt_consolidation_analyzer.py", line 184, in analyze_prompt
+    print(f"\n{'\u2500'*100}")
+    ~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\cyl\Miniconda3\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 2-101: character maps to <undefined>

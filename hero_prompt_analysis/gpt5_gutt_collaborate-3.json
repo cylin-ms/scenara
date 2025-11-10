@@ -1,125 +1,115 @@
 {
-  "source": "gpt-5",
-  "backend_llm": "gpt-5-preview",
-  "backend_llm_notes": "GPT-5 via Cursor Agent Mode - Advanced reasoning and instruction following",
-  "timestamp": "2025-11-06T13:23:00.000000",
+  "source": "gpt-5-v2",
+  "backend_llm": "dev-gpt-5-chat-jj",
+  "backend_llm_notes": "GPT-5 via Microsoft SilverFlow LLM API - v2 with full GUTT documentation context (same as Claude/Ollama)",
+  "prompt_version": "v2_full_context",
+  "timestamp": "2025-11-06T20:10:40.989865",
   "original_prompt": "Prepare a brief for my upcoming meeting with customer Beta and include a dossier for each customer attendee and the topics they are most interested in. Include a background on their company.",
   "gutts": [
     {
       "id": "gutt_1",
-      "name": "Meeting Details Retrieval",
-      "capability": "Get meeting information (attendees, time, purpose)",
+      "name": "Identify Upcoming Meeting with Customer Beta",
+      "capability": "Locate the specific upcoming calendar event involving customer Beta",
       "required_skills": [
-        "Calendar API",
-        "Meeting metadata extraction",
-        "Attendee list parsing",
-        "Context gathering"
+        "calendar_access",
+        "entity_matching",
+        "event_search"
       ],
-      "user_goal": "Know who's attending and meeting context",
+      "user_goal": "Find the correct meeting to prepare for",
       "triggered": true,
-      "evidence": "Retrieved meeting: 'Customer Beta Quarterly Review' Nov 14, 2025 with 4 attendees from Beta Corp"
+      "evidence": "Query calendar events and match 'customer Beta' in participant or title fields"
     },
     {
       "id": "gutt_2",
-      "name": "Company Background Research",
-      "capability": "Gather information about customer Beta company",
+      "name": "Extract Meeting Details",
+      "capability": "Retrieve date, time, and participant list from the identified meeting",
       "required_skills": [
-        "CRM data access",
-        "Web research",
-        "Company profile compilation",
-        "Business intelligence"
+        "calendar_event_parsing",
+        "structured_data_extraction"
       ],
-      "user_goal": "Understand customer's business and context",
+      "user_goal": "Obtain meeting metadata for context and attendee identification",
       "triggered": true,
-      "evidence": "Compiled Beta Corp profile: SaaS company, 500 employees, $50M revenue, key products, market position, recent news"
+      "evidence": "Parse event object for start time, end time, and attendees"
     },
     {
       "id": "gutt_3",
-      "name": "Attendee Identity Resolution",
-      "capability": "Identify each customer attendee and their roles",
+      "name": "Identify Customer Attendees",
+      "capability": "Filter attendees belonging to customer Beta from the participant list",
       "required_skills": [
-        "Contact resolution",
-        "Role identification",
-        "Org chart analysis",
-        "LinkedIn integration"
+        "entity_resolution",
+        "organization_mapping"
       ],
-      "user_goal": "Know who you're meeting with",
+      "user_goal": "Determine which attendees represent the customer",
       "triggered": true,
-      "evidence": "Identified attendees: Sarah Chen (VP Product), Michael Rodriguez (Director Engineering), Lisa Park (PM), James Kim (Solutions Architect)"
+      "evidence": "Cross-reference attendee emails/domains with Beta's domain"
     },
     {
       "id": "gutt_4",
-      "name": "Individual Dossier Creation",
-      "capability": "For each attendee, compile background, role, history",
+      "name": "Retrieve Profile Data for Each Customer Attendee",
+      "capability": "Fetch professional background and role information for each identified attendee",
       "required_skills": [
-        "CRM querying",
-        "Interaction history",
-        "Profile building",
-        "Relationship mapping"
+        "contact_data_lookup",
+        "profile_enrichment",
+        "external_api_integration"
       ],
-      "user_goal": "Personalized context for each attendee",
+      "user_goal": "Gather attendee-specific details for the dossier",
       "triggered": true,
-      "evidence": "Created dossiers: Sarah (technical background, cares about scalability), Michael (previous interactions, integration concerns), Lisa (new to role, learning phase), James (power user, feature requests)"
+      "evidence": "Call CRM or LinkedIn API to get role, title, and bio"
     },
     {
       "id": "gutt_5",
-      "name": "Topic Interest Analysis",
-      "capability": "Identify topics each attendee cares about based on history",
+      "name": "Determine Topics of Interest for Each Attendee",
+      "capability": "Analyze historical interactions or preference data to identify topics each attendee cares about",
       "required_skills": [
-        "Communication analysis",
-        "Interest extraction",
-        "Preference modeling",
-        "Pattern recognition"
+        "interest_inference",
+        "nlp_topic_modeling",
+        "data_aggregation"
       ],
-      "user_goal": "Discuss what matters to each person",
+      "user_goal": "Personalize the briefing by including relevant topics",
       "triggered": true,
-      "evidence": "Sarah: API performance, security. Michael: Integration architecture, documentation. Lisa: User experience, training. James: Advanced features, customization"
+      "evidence": "Aggregate prior meeting notes or CRM tags to extract interest areas"
     },
     {
       "id": "gutt_6",
-      "name": "Relationship History Compilation",
-      "capability": "Summarize past interactions, deals, issues with customer",
+      "name": "Compile Dossier for Each Customer Attendee",
+      "capability": "Generate a structured summary containing attendee background and topics of interest",
       "required_skills": [
-        "CRM data aggregation",
-        "Timeline creation",
-        "Context building",
-        "Historical analysis"
+        "document_generation",
+        "template_filling",
+        "summarization"
       ],
-      "user_goal": "Aware of relationship history and context",
+      "user_goal": "Create an attendee-specific dossier for the briefing",
       "triggered": true,
-      "evidence": "Relationship summary: Customer since 2023, $200K annual contract, 3 support tickets (all resolved), 95% satisfaction score, expansion opportunity identified"
+      "evidence": "Assemble profile details and interest topics into a formatted section"
     },
     {
       "id": "gutt_7",
-      "name": "Relevant Content Gathering",
-      "capability": "Find related materials (proposals, presentations, tickets)",
+      "name": "Retrieve Company Background for Customer Beta",
+      "capability": "Gather company-level information such as industry, size, recent news",
       "required_skills": [
-        "Document search",
-        "Relevance matching",
-        "Content curation",
-        "Asset organization"
+        "company_data_lookup",
+        "web_search",
+        "knowledge_graph_query"
       ],
-      "user_goal": "Have supporting materials ready",
+      "user_goal": "Provide context about the customer's organization",
       "triggered": true,
-      "evidence": "Gathered materials: Q3 usage report, API documentation updates, case study draft, pricing proposal for expansion"
+      "evidence": "Query company database or external sources for Beta's profile"
     },
     {
       "id": "gutt_8",
-      "name": "Brief Document Assembly",
-      "capability": "Compile all information into structured prep brief",
+      "name": "Compose Meeting Brief",
+      "capability": "Integrate meeting details, attendee dossiers, and company background into a concise briefing document",
       "required_skills": [
-        "Document generation",
-        "Formatting",
-        "Professional presentation",
-        "Information architecture"
+        "content_synthesis",
+        "document_structuring",
+        "natural_language_generation"
       ],
-      "user_goal": "Complete brief ready for meeting prep",
+      "user_goal": "Deliver a complete, well-structured meeting preparation brief",
       "triggered": true,
-      "evidence": "Generated comprehensive brief: company overview, 4 attendee dossiers with interests, relationship timeline, discussion topics, supporting materials"
+      "evidence": "Generate final document with sections for meeting info, attendee dossiers, and company overview"
     }
   ],
   "track1_score": 1.0,
-  "track2_score": 4.2,
-  "overall_score": 4.2,
-  "notes": "Generated by GPT-5 - Matches reference decomposition of 8 GUTTs"
+  "track2_score": null,
+  "overall_score": null
 }

@@ -1,0 +1,43 @@
+{
+  "company_id": "fabrikam_inc",
+  "company_name": "Fabrikam Inc.",
+  "industry": "Manufacturing",
+  "headquarters": "Beijing, China",
+  "employee_count": 15000,
+  "relationship": "customer",
+  "deal_size": "$2.5M ARR",
+  "description": "Large manufacturing company, potential enterprise customer",
+  
+  "contacts": [
+    {
+      "name": "William Chen",
+      "title": "CIO",
+      "email": "william.chen@fabrikam.com",
+      "employee_type": "optional"
+    },
+    {
+      "name": "Susan Li",
+      "title": "VP of IT Operations",
+      "email": "susan.li@fabrikam.com",
+      "employee_type": "required"
+    },
+    {
+      "name": "Jason Wu",
+      "title": "Director of Enterprise Architecture",
+      "email": "jason.wu@fabrikam.com",
+      "employee_type": "required"
+    },
+    {
+      "name": "Karen Zhang",
+      "title": "IT Manager - Infrastructure",
+      "email": "karen.zhang@fabrikam.com",
+      "employee_type": "optional"
+    },
+    {
+      "name": "Tony Wang",
+      "title": "Senior IT Architect",
+      "email": "tony.wang@fabrikam.com",
+      "employee_type": "required"
+    }
+  ]
+}

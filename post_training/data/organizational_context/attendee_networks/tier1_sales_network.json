@@ -1,0 +1,95 @@
+{
+  "persona_id": "tier1_sales_manager_pipeline",
+  "persona_name": "Alex Chen - Sales Manager",
+  "email": "alex.chen@contoso.com",
+  
+  "attendee_patterns": {
+    "weekly_1on1_manager": {
+      "meeting_types": ["Weekly 1:1 with Regional Director"],
+      "attendees": ["emily.tan@contoso.com"],
+      "count": 2
+    },
+    
+    "team_meetings": {
+      "meeting_types": ["Sales Team Weekly Sync", "Weekly Pipeline Review", "Team Sync"],
+      "attendees": [
+        "jessica.wu@contoso.com",
+        "kevin.lin@contoso.com",
+        "lisa.zhang@contoso.com",
+        "tom.wang@contoso.com",
+        "steven.zhao@contoso.com"
+      ],
+      "count_range": [5, 7]
+    },
+    
+    "customer_calls": {
+      "meeting_types": ["Customer Call", "Client Demo", "Customer Escalation", "Discovery Call", "Negotiation"],
+      "internal_team": [
+        "jessica.wu@contoso.com",
+        "kevin.lin@contoso.com",
+        "steven.zhao@contoso.com",
+        "nancy.yang@contoso.com"
+      ],
+      "external_companies": ["fabrikam_inc", "adventure_works"],
+      "count_range": [5, 10]
+    },
+    
+    "forecast_review": {
+      "meeting_types": ["Forecast", "Q4 Forecast", "Monthly Forecast", "Pipeline Review"],
+      "attendees": [
+        "emily.tan@contoso.com",
+        "david.zhang@contoso.com",
+        "mark.johnson@contoso.com"
+      ],
+      "count_range": [3, 5]
+    },
+    
+    "deal_review": {
+      "meeting_types": ["Deal Review", "Contract Review", "Pricing Discussion"],
+      "internal_team": [
+        "emily.tan@contoso.com",
+        "michelle.zhang@contoso.com",
+        "oliver.chen@contoso.com",
+        "robert.huang@contoso.com"
+      ],
+      "count_range": [4, 6]
+    },
+    
+    "cross_functional": {
+      "meeting_types": ["Product Feedback", "Feature Request", "Technical Deep Dive"],
+      "attendees": [
+        "oliver.chen@contoso.com",
+        "daniel.kim@contoso.com",
+        "james.park@contoso.com",
+        "steven.zhao@contoso.com"
+      ],
+      "count_range": [4, 7]
+    }
+  },
+  
+  "frequent_contacts": {
+    "internal": [
+      "emily.tan@contoso.com",
+      "jessica.wu@contoso.com",
+      "kevin.lin@contoso.com",
+      "lisa.zhang@contoso.com",
+      "tom.wang@contoso.com",
+      "steven.zhao@contoso.com",
+      "nancy.yang@contoso.com",
+      "michelle.zhang@contoso.com",
+      "oliver.chen@contoso.com"
+    ],
+    "external": {
+      "fabrikam_inc": [
+        "susan.li@fabrikam.com",
+        "jason.wu@fabrikam.com",
+        "tony.wang@fabrikam.com"
+      ],
+      "adventure_works": [
+        "gary.liu@adventureworks.com",
+        "patricia.huang@adventureworks.com",
+        "diana.chen@adventureworks.com"
+      ]
+    }
+  }
+}

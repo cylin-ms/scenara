@@ -1479,6 +1479,37 @@ result = subprocess.run(
 
 ## Lessons Learned
 
+### Oracle Input Strategy vs Reactive Data Loop (November 10, 2025) 🚀 POST-TRAINING REVOLUTION
+- **✅ STRATEGIC BREAKTHROUGH**: Don't wait for users - generate synthetic training data upfront with explicit persona rules
+- **Reactive Approach Problems** (Outlook's 4-step data loop):
+  - ❌ 12-month timeline to 85% accuracy (waiting for user feedback)
+  - ❌ Cold start at 50-60% accuracy (no pre-training)
+  - ❌ 200 feedback events required per user (high burden)
+  - ❌ $200K+ cost over 12 months
+- **Oracle Input Strategy** (Proactive synthetic data generation):
+  - ✅ **Personal preferences ARE articulable** - can create explicit rules for role-based personas
+  - ✅ 2-month timeline to 85% accuracy (6x faster)
+  - ✅ Launch at 70-75% accuracy with pre-trained models
+  - ✅ Only 50 feedback events needed (4x lower burden)
+  - ✅ $50K cost (75% savings)
+- **Verifier's Law Application** (Jason Wei):
+  - Only 2/9 prompts need RLHF (Organizer-1, Organizer-2)
+  - Post-training only valuable when BOTH: Easy to verify (8-10/10) AND Hard to solve (3-7/10)
+  - Schedule prompts (1/2/3) already solvable with deterministic engineering
+  - Budget reduced 46% ($120K → $65K)
+- **Accuracy-Pain Paradox** (CRITICAL CORRECTION):
+  - ❌ Wrong assumption: High-pain users tolerate 70% accuracy
+  - ✅ Reality: High pain = High stakes = Need 85%+ accuracy (lost $100K deals, career damage)
+  - ✅ Launch strategy: Tier 3 (low stakes) → Tier 2 → Tier 1 (high stakes) only after 85%+ proven
+  - ✅ Training vs Testing split: Use 60% Tier 1 data for TRAINING, 0% Tier 1 for ALPHA testing
+- **Implementation Created**:
+  - 4 Python tools (~2,030 lines): Persona data generator, calendar generator, schema validator, Outlook visualizer
+  - 3 initial personas (Tier 1 Sales, Tier 2 Architect, Tier 3 Legal)
+  - 188 labeled meetings (4-week calendars) in Microsoft Graph API format
+  - Interactive Outlook-style HTML calendar with persona switching
+- **Key Lesson**: "Before implementing any post-training plan, discover ground truth - don't assume conceptual framework tasks have working implementations"
+- **Documents Created**: 7 strategic documents (4,600+ lines) + Outlook_Data_Loop_Evolution_Summary.md (600 lines)
+
 ### Gold Standard Corrections & CAN-05 Distinction (November 8, 2025) 🎯 FRAMEWORK ACCURACY
 - **✅ CRITICAL USER INSIGHT**: CAN-05 (Attendee Resolution) NOT always needed - depends on data source
 - **CAN-05 Distinction Clarified**:

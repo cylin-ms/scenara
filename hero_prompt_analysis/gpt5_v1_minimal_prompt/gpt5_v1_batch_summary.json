@@ -1,0 +1,72 @@
+{
+  "timestamp": "2025-11-06T20:01:50.346790",
+  "model": "dev-gpt-5-chat-jj",
+  "total_prompts": 9,
+  "successful": 9,
+  "failed": 0,
+  "results": [
+    {
+      "prompt_id": "organizer-1",
+      "success": true,
+      "gpt5_gutts": 9,
+      "reference_gutts": 6,
+      "output_file": "hero_prompt_analysis\\gpt5_gutt_organizer-1.json"
+    },
+    {
+      "prompt_id": "organizer-2",
+      "success": true,
+      "gpt5_gutts": 6,
+      "reference_gutts": 7,
+      "output_file": "hero_prompt_analysis\\gpt5_gutt_organizer-2.json"
+    },
+    {
+      "prompt_id": "organizer-3",
+      "success": true,
+      "gpt5_gutts": 9,
+      "reference_gutts": 8,
+      "output_file": "hero_prompt_analysis\\gpt5_gutt_organizer-3.json"
+    },
+    {
+      "prompt_id": "schedule-1",
+      "success": true,
+      "gpt5_gutts": 14,
+      "reference_gutts": 7,
+      "output_file": "hero_prompt_analysis\\gpt5_gutt_schedule-1.json"
+    },
+    {
+      "prompt_id": "schedule-2",
+      "success": true,
+      "gpt5_gutts": 8,
+      "reference_gutts": 8,
+      "output_file": "hero_prompt_analysis\\gpt5_gutt_schedule-2.json"
+    },
+    {
+      "prompt_id": "schedule-3",
+      "success": true,
+      "gpt5_gutts": 17,
+      "reference_gutts": 9,
+      "output_file": "hero_prompt_analysis\\gpt5_gutt_schedule-3.json"
+    },
+    {
+      "prompt_id": "collaborate-1",
+      "success": true,
+      "gpt5_gutts": 11,
+      "reference_gutts": 6,
+      "output_file": "hero_prompt_analysis\\gpt5_gutt_collaborate-1.json"
+    },
+    {
+      "prompt_id": "collaborate-2",
+      "success": true,
+      "gpt5_gutts": 7,
+      "reference_gutts": 7,
+      "output_file": "hero_prompt_analysis\\gpt5_gutt_collaborate-2.json"
+    },
+    {
+      "prompt_id": "collaborate-3",
+      "success": true,
+      "gpt5_gutts": 9,
+      "reference_gutts": 8,
+      "output_file": "hero_prompt_analysis\\gpt5_gutt_collaborate-3.json"
+    }
+  ]
+}

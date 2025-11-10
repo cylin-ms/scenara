@@ -1,0 +1,57 @@
+{
+  "prompt_id": "collaborate-2",
+  "solvability": {
+    "score": 7,
+    "reasoning": "Current LLMs (GPT-4, Claude, Gemini) can summarize meeting materials and generate discussion points with reasonable quality. They can also anticipate common objections and draft responses using general business knowledge. However, perfect execution requires nuanced understanding of organizational context, leadership priorities, and sensitive tone, which is partially outside the model's default knowledge. Access to meeting materials is feasible via calendar APIs and document integrations, but interpreting implicit priorities remains challenging.",
+    "difficulty_factors": [
+      "Need for deep contextual understanding of leadership priorities",
+      "Ambiguity in what constitutes 'best' discussion points",
+      "Tone and political sensitivity in objections/responses",
+      "Integration with enterprise document sources for full context"
+    ]
+  },
+  "verification_ease": {
+    "score": 8,
+    "reasoning": "Verification is relatively easy because we can check if the summary accurately reflects the meeting materials and whether objections/responses are relevant and coherent. Human reviewers (the user) can quickly validate correctness. Automated checks can compare extracted key points against source documents using semantic similarity. Objection plausibility can be benchmarked against historical meeting Q&A datasets.",
+    "verification_methods": [
+      "Semantic similarity scoring between suggested discussion points and source materials",
+      "Human-in-the-loop validation (user feedback loop)",
+      "Check for factual consistency with provided documents",
+      "Compare objections/responses against historical objection patterns in similar meetings"
+    ]
+  },
+  "verification_asymmetry": {
+    "score": 8 - (10 - 7),
+    "interpretation": "Score = 8 - 3 = 5 (Positive). This means the task is significantly easier to verify than to solve, creating strong asymmetry.",
+    "priority": "HIGH"
+  },
+  "ai_readiness": {
+    "timeline": "Soon (6mo)",
+    "blockers": [
+      "Access to full meeting context and materials in structured form",
+      "Customization for organizational tone and leadership style",
+      "Privacy and compliance constraints on sensitive documents"
+    ],
+    "enablers": [
+      "Existing LLM summarization and objection-generation capabilities",
+      "Calendar and document API integrations",
+      "Fine-tuning with enterprise-specific meeting datasets"
+    ]
+  },
+  "training_data_quality": {
+    "score": 6,
+    "reasoning": "We can generate synthetic training data for summarization and objection handling, and some real-world data exists in enterprise Q&A logs and meeting notes. However, high-quality labeled data for 'best discussion points' and 'effective responses' is scarce and often proprietary.",
+    "data_sources": [
+      "Historical meeting summaries and executive briefings",
+      "Internal Q&A logs from leadership meetings",
+      "Synthetic data generation using LLMs with human review"
+    ]
+  },
+  "key_insights": [
+    "Strong verification asymmetry makes this a prime candidate for AI automation under Verifier's Law.",
+    "Main challenge is contextualization and tone alignment, not core summarization or objection generation.",
+    "User feedback loop can rapidly improve performance through RLHF or preference optimization.",
+    "Privacy and compliance will be critical for enterprise adoption."
+  ],
+  "recommendation": "HIGH priority for development. Start with a prototype using existing LLM summarization and objection-generation capabilities, integrate semantic verification checks, and implement a human feedback loop for tone and relevance refinement. Enterprise fine-tuning and secure data handling are essential for production."
+}

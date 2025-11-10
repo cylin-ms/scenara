@@ -1,0 +1,106 @@
+{
+  "persona_id": "tier2_senior_ic_architect",
+  "persona_name": "Daniel Kim - Senior Software Engineer",
+  "email": "daniel.kim@contoso.com",
+  
+  "attendee_patterns": {
+    "weekly_1on1_manager": {
+      "meeting_types": ["Weekly 1:1 with Manager"],
+      "attendees": ["james.park@contoso.com"],
+      "count": 2
+    },
+    
+    "team_meetings": {
+      "meeting_types": ["Weekly Team Sync", "Team Standup"],
+      "attendees": [
+        "james.park@contoso.com",
+        "emma.zhang@contoso.com",
+        "ryan.lee@contoso.com",
+        "sophie.chen@contoso.com"
+      ],
+      "count_range": [5, 6]
+    },
+    
+    "architecture_reviews": {
+      "meeting_types": ["Architecture Review", "Design Review", "Technical Design"],
+      "attendees": [
+        "thomas.liu@contoso.com",
+        "angela.zhao@contoso.com",
+        "james.park@contoso.com",
+        "oliver.chen@contoso.com",
+        "emma.zhang@contoso.com",
+        "peter.huang@contoso.com"
+      ],
+      "count_range": [5, 9]
+    },
+    
+    "standup_architecture": {
+      "meeting_types": ["Weekly Standup - Architecture Focus", "Architecture Sync"],
+      "attendees": [
+        "thomas.liu@contoso.com",
+        "angela.zhao@contoso.com"
+      ],
+      "count_range": [3, 4]
+    },
+    
+    "cross_team_collaboration": {
+      "meeting_types": ["Cross-Team Sync", "Integration Planning", "API Review"],
+      "attendees": [
+        "linda.wu@contoso.com",
+        "oliver.chen@contoso.com",
+        "peter.huang@contoso.com",
+        "grace.wang@contoso.com",
+        "emma.zhang@contoso.com",
+        "ryan.lee@contoso.com"
+      ],
+      "count_range": [4, 8]
+    },
+    
+    "learning_sessions": {
+      "meeting_types": ["Learning Session", "Tech Talk", "Knowledge Sharing"],
+      "attendees": [
+        "emma.zhang@contoso.com",
+        "ryan.lee@contoso.com",
+        "sophie.chen@contoso.com",
+        "angela.zhao@contoso.com",
+        "peter.huang@contoso.com"
+      ],
+      "count_range": [4, 7]
+    },
+    
+    "customer_technical_calls": {
+      "meeting_types": ["Technical Deep Dive", "Architecture Discussion"],
+      "internal_team": [
+        "james.park@contoso.com",
+        "steven.zhao@contoso.com",
+        "oliver.chen@contoso.com"
+      ],
+      "external_companies": ["fabrikam_inc", "adventure_works"],
+      "count_range": [5, 9]
+    }
+  },
+  
+  "frequent_contacts": {
+    "internal": [
+      "james.park@contoso.com",
+      "thomas.liu@contoso.com",
+      "angela.zhao@contoso.com",
+      "emma.zhang@contoso.com",
+      "ryan.lee@contoso.com",
+      "sophie.chen@contoso.com",
+      "oliver.chen@contoso.com",
+      "peter.huang@contoso.com",
+      "linda.wu@contoso.com"
+    ],
+    "external": {
+      "fabrikam_inc": [
+        "tony.wang@fabrikam.com",
+        "karen.zhang@fabrikam.com"
+      ],
+      "adventure_works": [
+        "patricia.huang@adventureworks.com",
+        "diana.chen@adventureworks.com"
+      ]
+    }
+  }
+}

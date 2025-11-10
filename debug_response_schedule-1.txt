@@ -1,0 +1,55 @@
+{
+  "prompt_id": "schedule-1",
+  "solvability": {
+    "score": 8,
+    "reasoning": "Modern AI systems can already handle natural language interpretation of scheduling constraints and interact with calendar APIs (Google Calendar, Outlook) to create recurring events. The main complexity lies in dynamic conflict resolution and automatic rescheduling logic, which requires multi-step reasoning and API orchestration. However, these are well within current capabilities using LLMs combined with deterministic scheduling algorithms.",
+    "difficulty_factors": [
+      "Parsing nuanced constraints (e.g., 'afternoons preferred', 'avoid Fridays')",
+      "Handling dynamic conflicts and rescheduling logic",
+      "Maintaining state across recurring events",
+      "Integration with multiple calendar systems and permissions"
+    ]
+  },
+  "verification_ease": {
+    "score": 9,
+    "reasoning": "Verification is straightforward: we can check if the scheduled events meet the specified constraints (weekly, 30-min, afternoons, avoid Fridays) and confirm that conflicts are resolved. Ground truth is explicit in the user prompt and calendar state.",
+    "verification_methods": [
+      "Programmatic check of event recurrence pattern and duration",
+      "Validate time slots against 'afternoon' and 'avoid Friday' constraints",
+      "Simulate conflict scenarios and verify rescheduling occurs",
+      "User confirmation feedback loop"
+    ]
+  },
+  "verification_asymmetry": {
+    "score": 9 - (10 - 8),
+    "interpretation": "Score = 9 - 2 = 7 (Positive). This means the task is significantly easier to verify than to solve, which makes it a high-priority candidate for AI automation under Verifier's Law.",
+    "priority": "HIGH"
+  },
+  "ai_readiness": {
+    "timeline": "Now",
+    "blockers": [
+      "Access to user calendars and permissions",
+      "Robust handling of ambiguous constraints (e.g., what counts as 'afternoon')"
+    ],
+    "enablers": [
+      "Existing calendar APIs (Google, Microsoft)",
+      "LLM-based natural language understanding",
+      "Rule-based scheduling engines for deterministic conflict resolution"
+    ]
+  },
+  "training_data_quality": {
+    "score": 8,
+    "reasoning": "High-quality training data can be generated from historical scheduling logs, synthetic prompts, and user feedback. Many organizations already have structured calendar data that can be anonymized for training.",
+    "data_sources": [
+      "Historical calendar event data",
+      "Synthetic prompt-response pairs",
+      "User feedback on scheduling suggestions"
+    ]
+  },
+  "key_insights": [
+    "This task exemplifies strong verification asymmetry: constraints are explicit and easy to check programmatically.",
+    "Combining LLM interpretation with deterministic scheduling logic is the optimal approach.",
+    "User feedback provides a strong reinforcement signal for fine-tuning."
+  ],
+  "recommendation": "HIGH priority for development. Implement a hybrid system: LLM for constraint parsing + deterministic scheduler for execution and verification. Leverage synthetic data and user feedback for continuous improvement."
+}

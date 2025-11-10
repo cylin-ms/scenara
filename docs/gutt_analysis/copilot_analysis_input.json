@@ -1,0 +1,1833 @@
+{
+  "prompts": [
+    {
+      "prompt_id": "organizer-1",
+      "prompt_desc": "Priority-based calendar management",
+      "original_prompt": "Keep my Calendar up to date by committing to only meetings that are part of my priorities.",
+      "claude_gutts": [
+        {
+          "id": "gutt_1",
+          "name": "Priority Definition & Extraction",
+          "capability": "Identify and structure user's priorities from context, goals, and stated objectives",
+          "required_skills": [
+            "Natural language understanding",
+            "Priority extraction from unstructured text",
+            "Rule formalization",
+            "Goal hierarchy construction"
+          ],
+          "user_goal": "System understands what matters to the user for decision-making",
+          "triggered": true,
+          "evidence": "Would extract priorities from user profile, past decisions, or explicit statements"
+        },
+        {
+          "id": "gutt_2",
+          "name": "Calendar Event Retrieval",
+          "capability": "Access and load pending calendar invitations and scheduled meetings requiring decisions",
+          "required_skills": [
+            "Calendar API integration",
+            "Event filtering (pending/confirmed status)",
+            "Data parsing and normalization",
+            "Invitation metadata extraction"
+          ],
+          "user_goal": "Get all meetings that need accept/decline decisions",
+          "triggered": true,
+          "evidence": "Calendar API query for events with pending RSVP status"
+        },
+        {
+          "id": "gutt_3",
+          "name": "Meeting-Priority Alignment Scoring",
+          "capability": "Evaluate how well each meeting aligns with stated priorities using semantic matching and relevance scoring",
+          "required_skills": [
+            "Semantic similarity computation",
+            "Multi-criteria relevance scoring",
+            "Feature extraction from meeting metadata",
+            "Priority-event mapping logic"
+          ],
+          "user_goal": "Know which meetings support goals and which don't",
+          "triggered": true,
+          "evidence": "Scoring algorithm comparing meeting attributes to priority rules"
+        },
+        {
+          "id": "gutt_4",
+          "name": "Accept/Decline Decision Logic",
+          "capability": "Determine which meetings to accept vs decline based on priority alignment thresholds and constraints",
+          "required_skills": [
+            "Threshold-based decision making",
+            "Conflict resolution logic",
+            "Calendar optimization",
+            "Rule-based classification"
+          ],
+          "user_goal": "Automated keep/decline recommendations aligned with priorities",
+          "triggered": true,
+          "evidence": "Decision rules applied to alignment scores to generate accept/decline actions"
+        },
+        {
+          "id": "gutt_5",
+          "name": "Calendar Action Execution",
+          "capability": "Execute accept/decline actions on calendar system by updating RSVP status",
+          "required_skills": [
+            "Calendar API write operations",
+            "RSVP status updates",
+            "Event confirmation handling",
+            "Error handling for API failures"
+          ],
+          "user_goal": "Calendar automatically reflects priority-based decisions",
+          "triggered": true,
+          "evidence": "Calendar API calls to update meeting RSVP responses"
+        },
+        {
+          "id": "gutt_6",
+          "name": "Decision Justification & Reporting",
+          "capability": "Explain why each meeting was accepted or declined with explicit linkage to priority rules",
+          "required_skills": [
+            "Natural language generation",
+            "Rule-based explanation",
+            "Transparency reporting",
+            "Decision audit trail creation"
+          ],
+          "user_goal": "Understand the reasoning behind each calendar decision",
+          "triggered": true,
+          "evidence": "Generated explanations linking decisions to specific priorities and alignment scores"
+        }
+      ],
+      "gpt5_gutts": [
+        {
+          "id": "gutt_1",
+          "name": "Retrieve Calendar Events",
+          "capability": "Access and fetch all scheduled calendar events from the user's calendar system",
+          "required_skills": [
+            "calendar_api_integration",
+            "authentication_handling"
+          ],
+          "user_goal": "Ensure the system has the latest view of all meetings and events",
+          "triggered": true,
+          "evidence": "Implementation uses Google Calendar API to pull events with OAuth authentication"
+        },
+        {
+          "id": "gutt_2",
+          "name": "Extract Event Attributes",
+          "capability": "Parse each event to extract key details such as title, time, participants, and description",
+          "required_skills": [
+            "data_parsing",
+            "structured_data_processing"
+          ],
+          "user_goal": "Enable downstream analysis of meeting relevance and priority",
+          "triggered": true,
+          "evidence": "JSON response from calendar API is parsed to extract event metadata fields"
+        },
+        {
+          "id": "gutt_3",
+          "name": "Retrieve User Priority Profile",
+          "capability": "Access and load the user's defined priorities or priority model",
+          "required_skills": [
+            "user_profile_management",
+            "data_retrieval"
+          ],
+          "user_goal": "Provide a reference for determining which meetings align with user priorities",
+          "triggered": true,
+          "evidence": "System queries user preference store to retrieve priority categories and rules"
+        },
+        {
+          "id": "gutt_4",
+          "name": "Classify Event Against Priorities",
+          "capability": "Determine if each event aligns with the user's stated priorities",
+          "required_skills": [
+            "natural_language_processing",
+            "classification_algorithm",
+            "priority_matching"
+          ],
+          "user_goal": "Identify which meetings should be committed to based on user priorities",
+          "triggered": true,
+          "evidence": "NLP model scores event description against priority keywords and returns binary relevance"
+        },
+        {
+          "id": "gutt_5",
+          "name": "Filter Non-Priority Events",
+          "capability": "Separate events that do not match the user's priorities from those that do",
+          "required_skills": [
+            "data_filtering",
+            "logical_operations"
+          ],
+          "user_goal": "Ensure only relevant meetings are considered for commitment",
+          "triggered": true,
+          "evidence": "System applies boolean filter to event list based on classification results"
+        },
+        {
+          "id": "gutt_6",
+          "name": "Commit Priority Meetings",
+          "capability": "Update the calendar to confirm attendance for meetings identified as priority",
+          "required_skills": [
+            "calendar_api_integration",
+            "event_update_operations"
+          ],
+          "user_goal": "Keep the calendar accurate by committing to relevant meetings",
+          "triggered": true,
+          "evidence": "API call updates event RSVP status to 'accepted' for priority meetings"
+        }
+      ]
+    },
+    {
+      "prompt_id": "organizer-2",
+      "prompt_desc": "Track important meetings, flag prep needs",
+      "original_prompt": "Track all my important meetings and flag any that require focus time to prepare for them.",
+      "claude_gutts": [
+        {
+          "id": "gutt_1",
+          "name": "Calendar Data Retrieval",
+          "capability": "Load and parse calendar events from data source for analysis",
+          "required_skills": [
+            "Calendar API integration",
+            "JSON data parsing",
+            "Event data deserialization",
+            "Error handling for data access"
+          ],
+          "user_goal": "Get comprehensive calendar data for analysis",
+          "triggered": true,
+          "evidence": "Calendar API query loaded 267 events from my_calendar_events_complete_attendees.json"
+        },
+        {
+          "id": "gutt_2",
+          "name": "Meeting Importance Classification",
+          "capability": "Score meetings based on multiple importance criteria (executives, customers, large meetings, presentations)",
+          "required_skills": [
+            "Multi-criteria scoring algorithm",
+            "Keyword detection and matching",
+            "Attendee analysis and role identification",
+            "Confidence weighting and threshold application"
+          ],
+          "user_goal": "Identify which meetings are important and require attention",
+          "triggered": true,
+          "evidence": "Implemented importance scoring with 9 factors: executive_attendee (25pts), external_attendee (20pts), large_meeting (15pts), etc."
+        },
+        {
+          "id": "gutt_3",
+          "name": "Preparation Time Estimation",
+          "capability": "Calculate required preparation time based on meeting type, importance, and complexity",
+          "required_skills": [
+            "Meeting type classification",
+            "Time estimation mapping",
+            "Context-aware time adjustments",
+            "Preparation requirements analysis"
+          ],
+          "user_goal": "Know how much time to allocate for meeting preparation",
+          "triggered": true,
+          "evidence": "Created prep time mapping for 10+ meeting types: Executive Briefing (120min), Customer Meeting (90min), Technical Design Review (60min), etc."
+        },
+        {
+          "id": "gutt_4",
+          "name": "Meeting Flagging Logic",
+          "capability": "Identify and flag meetings that need preparation focus time based on importance and prep requirements",
+          "required_skills": [
+            "Threshold-based filtering",
+            "Criteria evaluation logic",
+            "List segmentation and categorization",
+            "Multi-condition filtering"
+          ],
+          "user_goal": "Get clear list of meetings requiring prep time allocation",
+          "triggered": true,
+          "evidence": "Flagging logic: importance_score >= 30 AND prep_time > 0 (identified 8 meetings requiring prep)"
+        },
+        {
+          "id": "gutt_5",
+          "name": "Calendar Gap Analysis",
+          "capability": "Identify available time slots in calendar for scheduling focus time blocks",
+          "required_skills": [
+            "Temporal gap detection",
+            "Work hours enforcement (8 AM - 6 PM)",
+            "Meeting conflict checking",
+            "Duration-based slot validation"
+          ],
+          "user_goal": "Find when focus time can be scheduled without conflicts",
+          "triggered": true,
+          "evidence": "Gap finding algorithm analyzes calendar: before first meeting, between meetings, after last meeting"
+        },
+        {
+          "id": "gutt_6",
+          "name": "Focus Time Block Scheduling",
+          "capability": "Create and schedule preparation time blocks in calendar with appropriate timing",
+          "required_skills": [
+            "Slot allocation algorithm",
+            "iCalendar format generation (.ics)",
+            "Optimal timing selection (day before meeting)",
+            "Multi-meeting prep time aggregation"
+          ],
+          "user_goal": "Automatically block time for meeting preparation",
+          "triggered": true,
+          "evidence": "Scheduled 6 focus time blocks with .ics export: meeting_prep_focus_time.ics"
+        },
+        {
+          "id": "gutt_7",
+          "name": "Actionable Recommendations & Reporting",
+          "capability": "Generate user-facing insights, summaries, and preparation guidance",
+          "required_skills": [
+            "User communication formatting",
+            "Priority-based reporting",
+            "Actionable guidance generation",
+            "Summary statistics calculation"
+          ],
+          "user_goal": "Understand which meetings need prep and receive specific guidance",
+          "triggered": true,
+          "evidence": "Generated daily digest with prep alerts, schedule overview, specific recommendations: 'Executive Briefing on Oct 15 - 2 hours prep recommended'"
+        }
+      ],
+      "gpt5_gutts": [
+        {
+          "id": "gutt_1",
+          "name": "Retrieve Calendar Events",
+          "capability": "Access and fetch all scheduled meetings from the user's calendar",
+          "required_skills": [
+            "calendar_api_integration",
+            "data_retrieval"
+          ],
+          "user_goal": "Ensure the system has the complete list of upcoming meetings",
+          "triggered": true,
+          "evidence": "Implementation calls to Google Calendar API or Microsoft Graph to pull event data"
+        },
+        {
+          "id": "gutt_2",
+          "name": "Identify Important Meetings",
+          "capability": "Analyze fetched meetings and determine which ones are marked or inferred as important",
+          "required_skills": [
+            "natural_language_processing",
+            "priority_classification",
+            "metadata_analysis"
+          ],
+          "user_goal": "Distinguish important meetings from regular ones",
+          "triggered": true,
+          "evidence": "Priority tagging logic based on event metadata or user-defined rules"
+        },
+        {
+          "id": "gutt_3",
+          "name": "Extract Meeting Context",
+          "capability": "Parse meeting details such as title, agenda, participants, and duration for context",
+          "required_skills": [
+            "text_parsing",
+            "entity_extraction"
+          ],
+          "user_goal": "Gather contextual information needed for preparation assessment",
+          "triggered": true,
+          "evidence": "Parsing event descriptions and extracting agenda items from calendar entries"
+        },
+        {
+          "id": "gutt_4",
+          "name": "Determine Preparation Requirement",
+          "capability": "Assess whether a meeting requires dedicated focus time based on its context and importance",
+          "required_skills": [
+            "contextual_reasoning",
+            "rule_based_inference",
+            "machine_learning_classification"
+          ],
+          "user_goal": "Identify meetings that need preparation before attending",
+          "triggered": true,
+          "evidence": "Model or rule engine that flags meetings with complex agendas or high-priority participants"
+        },
+        {
+          "id": "gutt_5",
+          "name": "Flag Meetings Requiring Focus Time",
+          "capability": "Mark or annotate meetings that need preparation in the system",
+          "required_skills": [
+            "calendar_annotation",
+            "state_update"
+          ],
+          "user_goal": "Visually or programmatically indicate which meetings require preparation",
+          "triggered": true,
+          "evidence": "Adding a 'requires focus' tag or label to the calendar event"
+        },
+        {
+          "id": "gutt_6",
+          "name": "Notify User of Preparation Needs",
+          "capability": "Send alerts or reminders to the user about meetings that require focus time",
+          "required_skills": [
+            "notification_delivery",
+            "user_preference_handling"
+          ],
+          "user_goal": "Ensure the user is aware of and can allocate time for preparation",
+          "triggered": true,
+          "evidence": "Push notification or email alert about flagged meetings"
+        }
+      ]
+    },
+    {
+      "prompt_id": "organizer-3",
+      "prompt_desc": "Time reclamation analysis",
+      "original_prompt": "Help me understand where I am spending my time and identify ways I can reclaim time to focus more on my top priorities.",
+      "claude_gutts": [
+        {
+          "id": "gutt_1",
+          "name": "Calendar Historical Data Retrieval",
+          "capability": "Load past calendar events for specified time period (weeks/months)",
+          "required_skills": [
+            "Calendar API integration",
+            "Date range filtering",
+            "Historical data access",
+            "Batch data retrieval"
+          ],
+          "user_goal": "Get comprehensive time usage data for analysis",
+          "triggered": true,
+          "evidence": "Calendar API query for historical events in analysis period"
+        },
+        {
+          "id": "gutt_2",
+          "name": "Meeting Categorization & Classification",
+          "capability": "Classify meetings by type, purpose, importance level, and participants",
+          "required_skills": [
+            "Meeting type taxonomy (31+ types)",
+            "Automatic classification algorithms",
+            "Participant role identification",
+            "Purpose extraction from meeting metadata"
+          ],
+          "user_goal": "Understand what kinds of meetings fill the calendar",
+          "triggered": true,
+          "evidence": "Classification model applied to each historical meeting"
+        },
+        {
+          "id": "gutt_3",
+          "name": "Time Aggregation & Statistical Analysis",
+          "capability": "Compute time spent per category, participant, project, and other dimensions",
+          "required_skills": [
+            "Time duration calculation",
+            "Statistical aggregation",
+            "Multi-dimensional grouping",
+            "Trend analysis"
+          ],
+          "user_goal": "Quantify where time is actually going",
+          "triggered": true,
+          "evidence": "Aggregation queries computing total hours by various dimensions"
+        },
+        {
+          "id": "gutt_4",
+          "name": "Priority Alignment Assessment",
+          "capability": "Evaluate which time usage aligns with stated priorities and identify gaps",
+          "required_skills": [
+            "Priority-to-activity mapping",
+            "Alignment scoring",
+            "Gap identification",
+            "Misalignment detection"
+          ],
+          "user_goal": "See misalignment between goals and actual time usage",
+          "triggered": true,
+          "evidence": "Comparison of time allocation vs priority importance weights"
+        },
+        {
+          "id": "gutt_5",
+          "name": "Low-Value Meeting Identification",
+          "capability": "Flag meetings that consume time without supporting priorities",
+          "required_skills": [
+            "Value scoring algorithms",
+            "Reclamation candidate detection",
+            "Opportunity cost analysis",
+            "ROI-based filtering"
+          ],
+          "user_goal": "Know which meetings to eliminate or delegate",
+          "triggered": true,
+          "evidence": "Identification of meetings with low priority alignment and high time cost"
+        },
+        {
+          "id": "gutt_6",
+          "name": "Time Reclamation Opportunity Analysis",
+          "capability": "Calculate potential time savings from proposed changes (decline/delegate/shorten)",
+          "required_skills": [
+            "Impact modeling",
+            "Time savings projection",
+            "Feasibility assessment",
+            "What-if scenario analysis"
+          ],
+          "user_goal": "Understand how much time could be reclaimed",
+          "triggered": true,
+          "evidence": "Calculation of hours saved if low-value meetings are eliminated"
+        },
+        {
+          "id": "gutt_7",
+          "name": "Schedule Optimization Recommendations",
+          "capability": "Suggest specific changes (decline, delegate, shorten, consolidate meetings)",
+          "required_skills": [
+            "Recommendation generation",
+            "Actionable guidance creation",
+            "Change feasibility assessment",
+            "Prioritized suggestion ranking"
+          ],
+          "user_goal": "Know exactly what to do to reclaim time",
+          "triggered": true,
+          "evidence": "Generated list of specific meeting changes with expected time savings"
+        },
+        {
+          "id": "gutt_8",
+          "name": "Time Usage Reporting & Visualization",
+          "capability": "Present insights with charts, summaries, and comparisons (current vs optimal)",
+          "required_skills": [
+            "Data visualization",
+            "Report generation",
+            "Insight communication",
+            "Comparative presentation"
+          ],
+          "user_goal": "Easily understand patterns and take action",
+          "triggered": true,
+          "evidence": "Generated dashboard showing time distribution and reclamation opportunities"
+        }
+      ],
+      "gpt5_gutts": [
+        {
+          "id": "gutt_1",
+          "name": "Retrieve Calendar Events",
+          "capability": "Access and fetch all scheduled calendar events within the relevant timeframe",
+          "required_skills": [
+            "calendar_api_integration",
+            "data_retrieval"
+          ],
+          "user_goal": "Obtain a complete dataset of the user's time allocations",
+          "triggered": true,
+          "evidence": "Implementation calls Google/Microsoft Calendar API to pull event data"
+        },
+        {
+          "id": "gutt_2",
+          "name": "Extract Event Attributes",
+          "capability": "Parse and normalize event details such as duration, participants, and category",
+          "required_skills": [
+            "data_parsing",
+            "schema_mapping"
+          ],
+          "user_goal": "Ensure all event data is structured for analysis",
+          "triggered": true,
+          "evidence": "Transforms raw calendar JSON into structured objects with standardized fields"
+        },
+        {
+          "id": "gutt_3",
+          "name": "Classify Events by Category",
+          "capability": "Assign each event to a category (e.g., meeting, focus work, personal) using rules or ML",
+          "required_skills": [
+            "classification_algorithm",
+            "nlp_text_analysis"
+          ],
+          "user_goal": "Understand the nature of time spent across different activity types",
+          "triggered": true,
+          "evidence": "Uses ML model or keyword-based rules to label events as 'meeting', 'admin', etc."
+        },
+        {
+          "id": "gutt_4",
+          "name": "Identify Priority Alignment",
+          "capability": "Determine whether each event aligns with the user’s stated top priorities",
+          "required_skills": [
+            "priority_mapping",
+            "semantic_matching"
+          ],
+          "user_goal": "Evaluate which activities support the user’s goals",
+          "triggered": true,
+          "evidence": "Compares event descriptions against user-defined priority keywords or goals"
+        },
+        {
+          "id": "gutt_5",
+          "name": "Compute Time Allocation Metrics",
+          "capability": "Aggregate event durations by category and priority alignment",
+          "required_skills": [
+            "data_aggregation",
+            "statistical_computation"
+          ],
+          "user_goal": "Quantify how time is distributed across different activities",
+          "triggered": true,
+          "evidence": "Generates summary metrics such as total hours in meetings vs. focus work"
+        },
+        {
+          "id": "gutt_6",
+          "name": "Detect Low-Value or Non-Priority Blocks",
+          "capability": "Identify events that consume time but do not align with top priorities",
+          "required_skills": [
+            "pattern_detection",
+            "priority_filtering"
+          ],
+          "user_goal": "Spot reclaimable time opportunities",
+          "triggered": true,
+          "evidence": "Produces a list of events marked as low-priority or non-essential"
+        },
+        {
+          "id": "gutt_7",
+          "name": "Generate Time Reclaim Recommendations",
+          "capability": "Suggest actionable strategies to free up time (e.g., decline, shorten, delegate)",
+          "required_skills": [
+            "recommendation_engine",
+            "contextual_reasoning"
+          ],
+          "user_goal": "Receive practical steps to focus more on top priorities",
+          "triggered": true,
+          "evidence": "Outputs recommendations like 'Shorten weekly sync to 30 mins' or 'Decline optional meeting'"
+        },
+        {
+          "id": "gutt_8",
+          "name": "Present Insights and Recommendations",
+          "capability": "Visualize time distribution and display suggested actions in an understandable format",
+          "required_skills": [
+            "data_visualization",
+            "ux_design"
+          ],
+          "user_goal": "Clearly understand current time usage and next steps",
+          "triggered": true,
+          "evidence": "Generates charts and a summary dashboard with actionable insights"
+        }
+      ]
+    },
+    {
+      "prompt_id": "schedule-1",
+      "prompt_desc": "Recurring 1:1 with constraints",
+      "original_prompt": "Starting next week, I want a weekly 30-min 1:1 with {name}. Afternoons preferred, avoid Fridays. Automatically reschedule on declines or conflicts.",
+      "claude_gutts": [
+        {
+          "id": "gutt_1",
+          "name": "Constraint Extraction & Formalization",
+          "capability": "Parse scheduling requirements into structured constraints (weekly recurrence, duration, time preferences, exclusions)",
+          "required_skills": [
+            "NLP for constraint extraction",
+            "Rule formalization",
+            "Preference modeling",
+            "Temporal constraint structuring"
+          ],
+          "user_goal": "System understands all scheduling rules and preferences",
+          "triggered": true,
+          "evidence": "Parsed constraints: weekly, 30min, afternoons, !Friday, auto-reschedule"
+        },
+        {
+          "id": "gutt_2",
+          "name": "Multi-Calendar Availability Checking",
+          "capability": "Check free/busy status for both user and specified attendee",
+          "required_skills": [
+            "Calendar API for multiple users",
+            "Free/busy queries",
+            "Availability matrix construction",
+            "Cross-calendar access"
+          ],
+          "user_goal": "Find times when both parties are free",
+          "triggered": true,
+          "evidence": "API queries to retrieve availability for user and {name}"
+        },
+        {
+          "id": "gutt_3",
+          "name": "Constraint-Based Slot Finding",
+          "capability": "Identify time slots matching all constraints (weekly pattern, afternoons, not Fridays, 30min duration)",
+          "required_skills": [
+            "Constraint satisfaction algorithms",
+            "Temporal reasoning",
+            "Slot ranking by preferences",
+            "Feasibility validation"
+          ],
+          "user_goal": "Get valid time options that meet all preferences",
+          "triggered": true,
+          "evidence": "Algorithm finds afternoon slots excluding Fridays that fit 30min duration"
+        },
+        {
+          "id": "gutt_4",
+          "name": "Recurring Meeting Series Creation",
+          "capability": "Create recurring calendar event with proper series configuration and recurrence rules",
+          "required_skills": [
+            "Recurrence rule generation (iCalendar RRULE)",
+            "Series management",
+            "Calendar event creation",
+            "Metadata configuration"
+          ],
+          "user_goal": "One-time setup creates ongoing weekly meetings automatically",
+          "triggered": true,
+          "evidence": "Created recurring event with RRULE:FREQ=WEEKLY"
+        },
+        {
+          "id": "gutt_5",
+          "name": "Meeting Invitation Sending",
+          "capability": "Send calendar invitation to specified attendee with meeting details",
+          "required_skills": [
+            "Calendar invitation API",
+            "Email notification",
+            "RSVP request generation",
+            "Attendee management"
+          ],
+          "user_goal": "Attendee receives invitation and can accept/decline",
+          "triggered": true,
+          "evidence": "Invitation sent to {name} with meeting details and RSVP request"
+        },
+        {
+          "id": "gutt_6",
+          "name": "Decline/Conflict Detection & Monitoring",
+          "capability": "Monitor for attendee declines or new calendar conflicts in the series",
+          "required_skills": [
+            "Event change detection",
+            "RSVP status tracking",
+            "Conflict identification",
+            "Webhook/polling for updates"
+          ],
+          "user_goal": "System knows when rescheduling is needed",
+          "triggered": true,
+          "evidence": "Monitoring system tracks RSVP changes and conflict events"
+        },
+        {
+          "id": "gutt_7",
+          "name": "Automatic Rescheduling Logic",
+          "capability": "When declined or conflicted, find new slot and send updated invitation automatically",
+          "required_skills": [
+            "Trigger-based automation",
+            "Slot re-finding with same constraints",
+            "Event update API",
+            "Notification management"
+          ],
+          "user_goal": "Seamless rescheduling without manual intervention",
+          "triggered": true,
+          "evidence": "Automated workflow: detect decline → find new slot → send update"
+        }
+      ],
+      "gpt5_gutts": [
+        {
+          "id": "gutt_1",
+          "name": "Parse Scheduling Intent",
+          "capability": "Extract user intent and constraints from natural language input",
+          "required_skills": [
+            "NLU",
+            "Intent Recognition",
+            "Entity Extraction"
+          ],
+          "user_goal": "Convert user’s request into structured scheduling parameters",
+          "triggered": true,
+          "evidence": "Identify recurring meeting request, participant name, duration, start date, time preferences, and constraints"
+        },
+        {
+          "id": "gutt_2",
+          "name": "Resolve Participant Identity",
+          "capability": "Match {name} to a specific contact or calendar entity",
+          "required_skills": [
+            "Contact Resolution",
+            "Disambiguation",
+            "Directory Lookup"
+          ],
+          "user_goal": "Ensure the correct person is invited to the meeting",
+          "triggered": true,
+          "evidence": "Map {name} to a unique email/contact in user’s directory"
+        },
+        {
+          "id": "gutt_3",
+          "name": "Determine Recurrence Pattern",
+          "capability": "Translate 'weekly starting next week' into a structured recurrence rule",
+          "required_skills": [
+            "Temporal Reasoning",
+            "Recurrence Rule Generation"
+          ],
+          "user_goal": "Create a weekly recurring schedule starting from the correct date",
+          "triggered": true,
+          "evidence": "Generate RRULE for weekly 1:1 starting next Monday"
+        },
+        {
+          "id": "gutt_4",
+          "name": "Apply Time Preferences",
+          "capability": "Interpret and enforce time-of-day and day-of-week constraints",
+          "required_skills": [
+            "Constraint Parsing",
+            "Preference Application"
+          ],
+          "user_goal": "Ensure meetings are scheduled in afternoons and not on Fridays",
+          "triggered": true,
+          "evidence": "Filter candidate slots to afternoons (e.g., 1–5 PM) and exclude Fridays"
+        },
+        {
+          "id": "gutt_5",
+          "name": "Find Optimal Time Slot",
+          "capability": "Search calendars for available 30-minute slots matching constraints",
+          "required_skills": [
+            "Calendar Query",
+            "Availability Analysis",
+            "Constraint Satisfaction"
+          ],
+          "user_goal": "Identify a mutually available time that meets all preferences",
+          "triggered": true,
+          "evidence": "Locate first available afternoon slot next week excluding Friday"
+        },
+        {
+          "id": "gutt_6",
+          "name": "Create Calendar Event",
+          "capability": "Generate and insert the meeting event into the calendar system",
+          "required_skills": [
+            "Calendar API Integration",
+            "Event Creation"
+          ],
+          "user_goal": "Schedule the agreed-upon meeting in the calendar",
+          "triggered": true,
+          "evidence": "POST event with recurrence, participants, and time to calendar API"
+        },
+        {
+          "id": "gutt_7",
+          "name": "Send Invitation",
+          "capability": "Dispatch meeting invite to participant(s)",
+          "required_skills": [
+            "Invitation Dispatch",
+            "Notification Handling"
+          ],
+          "user_goal": "Notify participant and confirm meeting",
+          "triggered": true,
+          "evidence": "Send email/calendar invite to resolved participant"
+        },
+        {
+          "id": "gutt_8",
+          "name": "Monitor for Declines or Conflicts",
+          "capability": "Track responses and detect scheduling conflicts post-creation",
+          "required_skills": [
+            "Event Status Monitoring",
+            "Conflict Detection"
+          ],
+          "user_goal": "Detect when rescheduling is needed",
+          "triggered": true,
+          "evidence": "Subscribe to event updates and participant responses"
+        },
+        {
+          "id": "gutt_9",
+          "name": "Automatically Reschedule",
+          "capability": "Recompute and update meeting time when declines or conflicts occur",
+          "required_skills": [
+            "Dynamic Scheduling",
+            "Constraint Reapplication",
+            "Calendar Update"
+          ],
+          "user_goal": "Maintain recurring meeting without manual intervention",
+          "triggered": true,
+          "evidence": "Cancel original slot and book a new one following same constraints"
+        }
+      ]
+    },
+    {
+      "prompt_id": "schedule-2",
+      "prompt_desc": "Clear time block & reschedule",
+      "original_prompt": "Clear my Thursday afternoon. Update my RSVPs and help me reschedule my meetings to another time and show me as {status}.",
+      "claude_gutts": [
+        {
+          "id": "gutt_1",
+          "name": "Time Block Specification Parsing",
+          "capability": "Interpret 'Thursday afternoon' into specific date and time range based on context",
+          "required_skills": [
+            "Temporal expression resolution",
+            "Date/time parsing",
+            "Context awareness for relative dates",
+            "Time block definition"
+          ],
+          "user_goal": "System knows exactly which time block to clear",
+          "triggered": true,
+          "evidence": "Resolved 'Thursday afternoon' to specific datetime range (e.g., Thu 1PM-5PM)"
+        },
+        {
+          "id": "gutt_2",
+          "name": "Affected Meetings Identification",
+          "capability": "Find all meetings within the target time block that need rescheduling",
+          "required_skills": [
+            "Calendar querying",
+            "Temporal overlap detection",
+            "Meeting filtering by time range",
+            "Event enumeration"
+          ],
+          "user_goal": "Know which meetings need rescheduling",
+          "triggered": true,
+          "evidence": "Query identified N meetings in Thursday afternoon time block"
+        },
+        {
+          "id": "gutt_3",
+          "name": "RSVP Decline Execution",
+          "capability": "Decline all meetings in the blocked time with appropriate notifications",
+          "required_skills": [
+            "Calendar API updates",
+            "RSVP status changes",
+            "Batch operations",
+            "Decline message generation"
+          ],
+          "user_goal": "Notify organizers user won't attend these instances",
+          "triggered": true,
+          "evidence": "RSVP status updated to 'declined' for all affected meetings"
+        },
+        {
+          "id": "gutt_4",
+          "name": "Alternative Slot Finding",
+          "capability": "For each declined meeting, identify alternative time slots when same attendees are available",
+          "required_skills": [
+            "Availability checking",
+            "Multi-attendee coordination",
+            "Slot ranking",
+            "Constraint preservation"
+          ],
+          "user_goal": "Find times when same attendees can meet",
+          "triggered": true,
+          "evidence": "Alternative slots identified for each meeting based on attendee availability"
+        },
+        {
+          "id": "gutt_5",
+          "name": "Meeting Rescheduling Proposals",
+          "capability": "Send reschedule requests with proposed new times to meeting organizers/attendees",
+          "required_skills": [
+            "Meeting update API",
+            "Attendee communication",
+            "Proposal generation",
+            "Reschedule request formatting"
+          ],
+          "user_goal": "Meetings moved to new times with attendee agreement",
+          "triggered": true,
+          "evidence": "Reschedule proposals sent with alternative times for each meeting"
+        },
+        {
+          "id": "gutt_6",
+          "name": "Calendar Status Update",
+          "capability": "Set user's availability/status for the blocked time (busy/away/focus time)",
+          "required_skills": [
+            "Free/busy status setting",
+            "Calendar property updates",
+            "Availability indicator management",
+            "Status publishing"
+          ],
+          "user_goal": "Others see user as unavailable during blocked time",
+          "triggered": true,
+          "evidence": "User status set to {status} for Thursday afternoon time block"
+        },
+        {
+          "id": "gutt_7",
+          "name": "Focus Time Block Creation",
+          "capability": "Create placeholder calendar event for the blocked time with appropriate title/description",
+          "required_skills": [
+            "Calendar event creation",
+            "Focus time labeling",
+            "Event property configuration",
+            "Blocking event setup"
+          ],
+          "user_goal": "Visual representation of blocked time on calendar",
+          "triggered": true,
+          "evidence": "Focus time block event created for Thursday afternoon"
+        },
+        {
+          "id": "gutt_8",
+          "name": "Action Summary & Confirmation",
+          "capability": "Report what was done (declined X meetings, rescheduled Y, blocked Z hours, set status)",
+          "required_skills": [
+            "Action tracking",
+            "Status reporting",
+            "Confirmation generation",
+            "Summary compilation"
+          ],
+          "user_goal": "Understand complete outcome of the request",
+          "triggered": true,
+          "evidence": "Summary report: 'Declined 3 meetings, proposed reschedules, blocked 4 hours, status set to {status}'"
+        }
+      ],
+      "gpt5_gutts": [
+        {
+          "id": "gutt_1",
+          "name": "Identify Thursday Afternoon Time Window",
+          "capability": "Parse and determine the exact time range for 'Thursday afternoon' based on user’s calendar settings and locale",
+          "required_skills": [
+            "natural_language_time_parsing",
+            "calendar_time_zone_handling"
+          ],
+          "user_goal": "Ensure the system understands which time slots need to be cleared",
+          "triggered": true,
+          "evidence": "System interprets 'Thursday afternoon' as 12:00 PM–5:00 PM local time"
+        },
+        {
+          "id": "gutt_2",
+          "name": "Retrieve Thursday Afternoon Events",
+          "capability": "Fetch all calendar events scheduled within the identified Thursday afternoon time range",
+          "required_skills": [
+            "calendar_api_integration",
+            "event_data_retrieval"
+          ],
+          "user_goal": "Get a complete list of meetings that need to be cleared",
+          "triggered": true,
+          "evidence": "System queries calendar and lists 3 events between 1:00 PM and 4:30 PM"
+        },
+        {
+          "id": "gutt_3",
+          "name": "Cancel or Decline Thursday Events",
+          "capability": "Update RSVPs for all identified events to indicate non-attendance (e.g., decline or cancel)",
+          "required_skills": [
+            "calendar_event_update",
+            "rsvp_status_management"
+          ],
+          "user_goal": "Ensure user is no longer committed to Thursday afternoon meetings",
+          "triggered": true,
+          "evidence": "System sends RSVP updates marking user as 'Declined' for all affected events"
+        },
+        {
+          "id": "gutt_4",
+          "name": "Propose Alternative Times for Affected Meetings",
+          "capability": "Generate suitable alternative time slots for each rescheduled meeting based on user availability and constraints",
+          "required_skills": [
+            "availability_analysis",
+            "meeting_reschedule_logic"
+          ],
+          "user_goal": "Find new times for meetings that were cleared from Thursday afternoon",
+          "triggered": true,
+          "evidence": "System suggests Friday 10:00 AM for one meeting and Monday 2:00 PM for another"
+        },
+        {
+          "id": "gutt_5",
+          "name": "Reschedule Meetings to Proposed Times",
+          "capability": "Update calendar events with new times and send updated invites to participants",
+          "required_skills": [
+            "calendar_event_modification",
+            "invite_notification_handling"
+          ],
+          "user_goal": "Ensure meetings are successfully moved to new time slots",
+          "triggered": true,
+          "evidence": "System updates event start time and sends revised invitations"
+        },
+        {
+          "id": "gutt_6",
+          "name": "Update User Calendar Status for Thursday Afternoon",
+          "capability": "Set user’s calendar availability status (e.g., Free, Busy, Out of Office) for the cleared time window",
+          "required_skills": [
+            "calendar_status_update",
+            "user_preference_application"
+          ],
+          "user_goal": "Reflect the desired status in the calendar for Thursday afternoon",
+          "triggered": true,
+          "evidence": "System marks Thursday afternoon as 'Free' in user’s calendar"
+        }
+      ]
+    },
+    {
+      "prompt_id": "schedule-3",
+      "prompt_desc": "Multi-person meeting with room",
+      "original_prompt": "Land a time to meet about Project Alpha with Chris, Sangya, and Kat for 1 hour in the next 2 weeks. Schedule over 1:1s and lunches if needed and work around Kat's schedule. Make the meeting in person and add a room.",
+      "claude_gutts": [
+        {
+          "id": "gutt_1",
+          "name": "Meeting Requirements Extraction",
+          "capability": "Parse all requirements (attendees, duration, date range, override rules, modality, resources)",
+          "required_skills": [
+            "Multi-constraint NLP extraction",
+            "Requirement structuring",
+            "Parameter identification",
+            "Constraint hierarchy parsing"
+          ],
+          "user_goal": "System understands all meeting parameters and constraints",
+          "triggered": true,
+          "evidence": "Extracted: 4 attendees, 1hr, 2-week window, override 1:1s/lunches, Kat priority, in-person, room needed"
+        },
+        {
+          "id": "gutt_2",
+          "name": "Multi-Person Availability Aggregation",
+          "capability": "Check calendars for Chris, Sangya, Kat and merge availability data",
+          "required_skills": [
+            "Cross-calendar API access",
+            "Availability intersection",
+            "Multi-user data aggregation",
+            "Conflict detection"
+          ],
+          "user_goal": "Find times when all required attendees could be available",
+          "triggered": true,
+          "evidence": "Retrieved and merged calendar data for all 4 participants"
+        },
+        {
+          "id": "gutt_3",
+          "name": "Priority Constraint Application (Kat's schedule)",
+          "capability": "Ensure primary consideration of Kat's availability as hard constraint",
+          "required_skills": [
+            "Hierarchical constraint handling",
+            "Priority weighting",
+            "Hard vs soft constraint differentiation",
+            "Conflict prioritization"
+          ],
+          "user_goal": "Kat's conflicts are absolute blockers, others can be overridden",
+          "triggered": true,
+          "evidence": "Kat's busy times marked as hard constraints in scheduling logic"
+        },
+        {
+          "id": "gutt_4",
+          "name": "Override-Eligible Meeting Identification",
+          "capability": "Identify 1:1s and lunches on others' calendars that can be rescheduled if needed",
+          "required_skills": [
+            "Meeting type classification",
+            "Override eligibility rules",
+            "Event metadata analysis",
+            "Movable meeting detection"
+          ],
+          "user_goal": "System knows which existing meetings are movable",
+          "triggered": true,
+          "evidence": "Classified existing meetings as 1:1/lunch (override-eligible) or not"
+        },
+        {
+          "id": "gutt_5",
+          "name": "Location-Based Filtering",
+          "capability": "Filter for in-person meeting capability (office presence, not remote-only days)",
+          "required_skills": [
+            "Location awareness",
+            "Modality constraints",
+            "Participant location checking",
+            "Office day identification"
+          ],
+          "user_goal": "Meeting scheduled when in-person attendance is possible for all",
+          "triggered": true,
+          "evidence": "Filtered slots to days when all attendees are in office"
+        },
+        {
+          "id": "gutt_6",
+          "name": "Conference Room Search & Booking",
+          "capability": "Find available conference room for in-person meeting and reserve it",
+          "required_skills": [
+            "Room resource API",
+            "Availability checking",
+            "Capacity matching",
+            "Room booking operations"
+          ],
+          "user_goal": "Meeting has physical space reserved",
+          "triggered": true,
+          "evidence": "Room search for 4-person capacity, booking confirmation obtained"
+        },
+        {
+          "id": "gutt_7",
+          "name": "Optimal Slot Selection",
+          "capability": "Rank and select best time considering all constraints (hard, soft, preferences)",
+          "required_skills": [
+            "Multi-objective optimization",
+            "Slot scoring",
+            "Feasibility validation",
+            "Best-fit algorithm"
+          ],
+          "user_goal": "Best possible time is chosen balancing all factors",
+          "triggered": true,
+          "evidence": "Ranked slots by: Kat availability, override cost, location, preferences"
+        },
+        {
+          "id": "gutt_8",
+          "name": "Conflict Resolution & Rescheduling",
+          "capability": "If needed, reschedule override-eligible conflicts (1:1s/lunches) to make room",
+          "required_skills": [
+            "Cascading rescheduling",
+            "Conflict resolution",
+            "Meeting move operations",
+            "Attendee notification"
+          ],
+          "user_goal": "Conflicts automatically resolved to accommodate meeting",
+          "triggered": true,
+          "evidence": "Identified 1:1/lunch conflicts and initiated reschedule workflows"
+        },
+        {
+          "id": "gutt_9",
+          "name": "Meeting Creation & Invitations",
+          "capability": "Create meeting with all attendees, room resource, and Project Alpha details",
+          "required_skills": [
+            "Calendar event creation",
+            "Multi-person invitations",
+            "Resource inclusion",
+            "Meeting metadata setup"
+          ],
+          "user_goal": "Meeting appears on all calendars with room reserved",
+          "triggered": true,
+          "evidence": "Event created with Chris, Sangya, Kat, room resource, 'Project Alpha' subject"
+        }
+      ],
+      "gpt5_gutts": [
+        {
+          "id": "gutt_1",
+          "name": "Parse Meeting Request",
+          "capability": "Extract meeting details such as participants, duration, timeframe, constraints, and preferences from natural language prompt",
+          "required_skills": [
+            "NLU",
+            "entity extraction",
+            "constraint parsing"
+          ],
+          "user_goal": "Understand the full set of requirements for the requested meeting",
+          "triggered": true,
+          "evidence": "Prompt specifies participants (Chris, Sangya, Kat), duration (1 hour), timeframe (next 2 weeks), constraints (schedule over 1:1s and lunches if needed, work around Kat's schedule), and preferences (in person, add a room)"
+        },
+        {
+          "id": "gutt_2",
+          "name": "Resolve Participant Identities",
+          "capability": "Map participant names to their corresponding calendar identities and contact information",
+          "required_skills": [
+            "directory lookup",
+            "disambiguation",
+            "identity resolution"
+          ],
+          "user_goal": "Ensure the system knows exactly which calendars to check for availability",
+          "triggered": true,
+          "evidence": "Participants mentioned by first name only: Chris, Sangya, Kat"
+        },
+        {
+          "id": "gutt_3",
+          "name": "Retrieve Participant Calendars",
+          "capability": "Access and retrieve availability data for all participants within the specified timeframe",
+          "required_skills": [
+            "calendar API integration",
+            "data retrieval",
+            "authentication handling"
+          ],
+          "user_goal": "Obtain accurate availability windows for all required attendees",
+          "triggered": true,
+          "evidence": "Need to find a time in the next 2 weeks for Chris, Sangya, and Kat"
+        },
+        {
+          "id": "gutt_4",
+          "name": "Retrieve Kat's Constraints",
+          "capability": "Identify and extract Kat-specific scheduling constraints and preferences from her calendar",
+          "required_skills": [
+            "calendar data parsing",
+            "constraint detection"
+          ],
+          "user_goal": "Respect Kat's schedule as a higher-priority constraint",
+          "triggered": true,
+          "evidence": "Prompt explicitly says 'work around Kat's schedule'"
+        },
+        {
+          "id": "gutt_5",
+          "name": "Apply Override Rules",
+          "capability": "Determine which existing events (1:1s, lunches) can be overridden and under what conditions",
+          "required_skills": [
+            "policy reasoning",
+            "event classification",
+            "priority handling"
+          ],
+          "user_goal": "Allow rescheduling or overriding of lower-priority events to accommodate the new meeting",
+          "triggered": true,
+          "evidence": "Prompt states 'Schedule over 1:1s and lunches if needed'"
+        },
+        {
+          "id": "gutt_6",
+          "name": "Compute Common Availability",
+          "capability": "Calculate overlapping free time slots for all participants within the given timeframe, respecting constraints and override rules",
+          "required_skills": [
+            "constraint satisfaction",
+            "time window intersection",
+            "optimization"
+          ],
+          "user_goal": "Find a feasible 1-hour slot for all participants",
+          "triggered": true,
+          "evidence": "Meeting must include all three participants for 1 hour in the next 2 weeks"
+        },
+        {
+          "id": "gutt_7",
+          "name": "Select Optimal Time Slot",
+          "capability": "Choose the best available time slot based on constraints, preferences, and minimal disruption",
+          "required_skills": [
+            "multi-criteria decision making",
+            "ranking",
+            "preference handling"
+          ],
+          "user_goal": "Pick the most suitable time for everyone involved",
+          "triggered": true,
+          "evidence": "Must work around Kat's schedule and override 1:1s/lunches only if necessary"
+        },
+        {
+          "id": "gutt_8",
+          "name": "Find Available Room",
+          "capability": "Locate and reserve an available physical meeting room matching the selected time slot",
+          "required_skills": [
+            "resource booking",
+            "room availability check",
+            "calendar integration"
+          ],
+          "user_goal": "Ensure the meeting is in person with a reserved room",
+          "triggered": true,
+          "evidence": "Prompt specifies 'Make the meeting in person and add a room'"
+        },
+        {
+          "id": "gutt_9",
+          "name": "Create and Send Meeting Invite",
+          "capability": "Generate the meeting event with all details and send invitations to participants",
+          "required_skills": [
+            "calendar event creation",
+            "notification handling",
+            "data consistency"
+          ],
+          "user_goal": "Finalize the meeting and inform all attendees",
+          "triggered": true,
+          "evidence": "After selecting time and room, the meeting must be scheduled and participants notified"
+        }
+      ]
+    },
+    {
+      "prompt_id": "collaborate-1",
+      "prompt_desc": "Set agenda for project review",
+      "original_prompt": "Help me set the agenda to review the progress of Project Alpha with the product and marketing team to get confirmation we are on track and discuss any blocking issues or risks.",
+      "claude_gutts": [
+        {
+          "id": "gutt_1",
+          "name": "Meeting Context Retrieval",
+          "capability": "Gather information about Project Alpha from available sources (docs, project management tools, status reports)",
+          "required_skills": [
+            "Document retrieval",
+            "Context extraction",
+            "Project status queries",
+            "Multi-source data aggregation"
+          ],
+          "user_goal": "Agenda based on actual project state, not generic template",
+          "triggered": true,
+          "evidence": "Retrieved Project Alpha documents, status updates, and current state information"
+        },
+        {
+          "id": "gutt_2",
+          "name": "Stakeholder Role Identification",
+          "capability": "Understand product team vs marketing team roles, responsibilities, and concerns",
+          "required_skills": [
+            "Role-based reasoning",
+            "Stakeholder analysis",
+            "Perspective modeling",
+            "Team responsibility mapping"
+          ],
+          "user_goal": "Agenda addresses each group's specific needs and concerns",
+          "triggered": true,
+          "evidence": "Identified product team (delivery, features) vs marketing (messaging, launch) perspectives"
+        },
+        {
+          "id": "gutt_3",
+          "name": "Agenda Structure Planning",
+          "capability": "Create logical flow for review meeting (progress → confirmation → blockers → risks)",
+          "required_skills": [
+            "Meeting structure best practices",
+            "Agenda templating",
+            "Flow optimization",
+            "Topic sequencing"
+          ],
+          "user_goal": "Meeting has clear structure and logical progression",
+          "triggered": true,
+          "evidence": "Structured agenda: 1) Progress review, 2) On-track confirmation, 3) Blocker discussion, 4) Risk assessment"
+        },
+        {
+          "id": "gutt_4",
+          "name": "Progress Review Items Generation",
+          "capability": "List specific accomplishments, milestones completed, and metrics to review",
+          "required_skills": [
+            "Achievement extraction",
+            "Milestone identification",
+            "Metrics selection",
+            "Status summary creation"
+          ],
+          "user_goal": "Concrete progress discussion points with evidence",
+          "triggered": true,
+          "evidence": "Generated list of completed milestones, metrics (e.g., feature completion %), achievements"
+        },
+        {
+          "id": "gutt_5",
+          "name": "Blocker & Risk Identification",
+          "capability": "Surface known issues, dependencies, blockers, and potential risks for discussion",
+          "required_skills": [
+            "Issue tracking",
+            "Risk analysis",
+            "Dependency mapping",
+            "Problem identification"
+          ],
+          "user_goal": "Problems addressed proactively in meeting",
+          "triggered": true,
+          "evidence": "Identified current blockers (e.g., API dependency) and risks (e.g., timeline pressure)"
+        },
+        {
+          "id": "gutt_6",
+          "name": "Time Allocation & Formatting",
+          "capability": "Assign time to each agenda item and format for professional distribution",
+          "required_skills": [
+            "Time budgeting",
+            "Agenda formatting",
+            "Document generation",
+            "Meeting time management"
+          ],
+          "user_goal": "Professional, well-structured agenda document ready to share",
+          "triggered": true,
+          "evidence": "Time allocated per section (15min progress, 10min confirmation, 20min blockers, 15min risks), formatted document"
+        }
+      ],
+      "gpt5_gutts": [
+        {
+          "id": "gutt_1",
+          "name": "Extract Meeting Intent",
+          "capability": "Identify that the user wants to create an agenda for a progress review meeting",
+          "required_skills": [
+            "intent_recognition",
+            "natural_language_understanding"
+          ],
+          "user_goal": "Ensure the system understands the purpose of the request",
+          "triggered": true,
+          "evidence": "Detects 'set the agenda' and 'review the progress of Project Alpha' as core intent"
+        },
+        {
+          "id": "gutt_2",
+          "name": "Identify Project Context",
+          "capability": "Extract and confirm the project name and context from the prompt",
+          "required_skills": [
+            "entity_extraction",
+            "context_resolution"
+          ],
+          "user_goal": "Associate the agenda with Project Alpha accurately",
+          "triggered": true,
+          "evidence": "Recognizes 'Project Alpha' as the specific project under discussion"
+        },
+        {
+          "id": "gutt_3",
+          "name": "Determine Participants",
+          "capability": "Identify required participants (product and marketing team) from the request",
+          "required_skills": [
+            "entity_extraction",
+            "role_mapping"
+          ],
+          "user_goal": "Ensure correct stakeholders are considered for the meeting",
+          "triggered": true,
+          "evidence": "Extracts 'product team' and 'marketing team' as participant groups"
+        },
+        {
+          "id": "gutt_4",
+          "name": "Retrieve Team Member Details",
+          "capability": "Map identified teams to actual user contacts or calendar groups",
+          "required_skills": [
+            "directory_lookup",
+            "contact_resolution"
+          ],
+          "user_goal": "Translate team names into actionable participant lists",
+          "triggered": true,
+          "evidence": "Queries organizational directory to find members of product and marketing teams"
+        },
+        {
+          "id": "gutt_5",
+          "name": "Define Agenda Objectives",
+          "capability": "Extract and structure the meeting objectives from the user prompt",
+          "required_skills": [
+            "semantic_parsing",
+            "goal_structuring"
+          ],
+          "user_goal": "Ensure agenda reflects all user-stated goals",
+          "triggered": true,
+          "evidence": "Identifies objectives: review progress, confirm on-track status, discuss blocking issues/risks"
+        },
+        {
+          "id": "gutt_6",
+          "name": "Generate Agenda Items",
+          "capability": "Convert objectives into actionable agenda items in logical order",
+          "required_skills": [
+            "agenda_generation",
+            "task_structuring"
+          ],
+          "user_goal": "Provide a clear, organized agenda for the meeting",
+          "triggered": true,
+          "evidence": "Creates items: 1) Progress review, 2) On-track confirmation, 3) Blocking issues and risks"
+        },
+        {
+          "id": "gutt_7",
+          "name": "Validate Agenda Completeness",
+          "capability": "Check that all user-specified topics are included and no critical element is missing",
+          "required_skills": [
+            "consistency_checking",
+            "requirement_validation"
+          ],
+          "user_goal": "Ensure the agenda fully meets the stated purpose",
+          "triggered": true,
+          "evidence": "Compares generated agenda items against extracted objectives"
+        },
+        {
+          "id": "gutt_8",
+          "name": "Present Agenda for Confirmation",
+          "capability": "Display the proposed agenda to the user for approval or edits",
+          "required_skills": [
+            "UI_rendering",
+            "confirmation_flow"
+          ],
+          "user_goal": "Allow user to confirm or adjust the agenda before finalization",
+          "triggered": true,
+          "evidence": "Shows draft agenda in user interface with edit/approve options"
+        }
+      ]
+    },
+    {
+      "prompt_id": "collaborate-2",
+      "prompt_desc": "Executive briefing prep",
+      "original_prompt": "Review the materials for my meeting with senior leadership and suggest the best way to summarize the topics into three main discussion points. Generate any objections or concerns that might come up and give me effective responses.",
+      "claude_gutts": [
+        {
+          "id": "gutt_1",
+          "name": "Meeting Materials Retrieval",
+          "capability": "Access and load all relevant documents, presentations, and data for the meeting",
+          "required_skills": [
+            "Document access",
+            "File reading",
+            "Content extraction",
+            "Multi-format parsing"
+          ],
+          "user_goal": "System has all materials to analyze comprehensively",
+          "triggered": true,
+          "evidence": "Retrieved meeting materials (presentations, reports, data files)"
+        },
+        {
+          "id": "gutt_2",
+          "name": "Content Analysis & Topic Extraction",
+          "capability": "Identify main themes and topics across all materials",
+          "required_skills": [
+            "Document analysis",
+            "Theme extraction",
+            "Topic clustering",
+            "Content synthesis"
+          ],
+          "user_goal": "Understand what the materials cover at high level",
+          "triggered": true,
+          "evidence": "Extracted key themes from materials using NLP analysis"
+        },
+        {
+          "id": "gutt_3",
+          "name": "Executive Summary Distillation",
+          "capability": "Condense complex topics into 3 concise, high-impact discussion points",
+          "required_skills": [
+            "Summarization",
+            "Priority ranking",
+            "Executive communication",
+            "Distillation to core messages"
+          ],
+          "user_goal": "Clear, high-level discussion framework for leadership",
+          "triggered": true,
+          "evidence": "Generated 3 discussion points: 1) Strategy alignment, 2) Resource needs, 3) Risk mitigation"
+        },
+        {
+          "id": "gutt_4",
+          "name": "Audience-Aware Framing",
+          "capability": "Frame discussion points appropriately for senior leadership audience (strategic, high-level, business impact)",
+          "required_skills": [
+            "Role-based communication",
+            "Executive context awareness",
+            "Tone adjustment",
+            "Strategic framing"
+          ],
+          "user_goal": "Points resonate with executive priorities and concerns",
+          "triggered": true,
+          "evidence": "Framed points with business impact, strategic implications, resource considerations"
+        },
+        {
+          "id": "gutt_5",
+          "name": "Objection Anticipation",
+          "capability": "Predict concerns, pushback, or tough questions from senior leaders",
+          "required_skills": [
+            "Critical thinking",
+            "Risk identification",
+            "Executive perspective modeling",
+            "Concern prediction"
+          ],
+          "user_goal": "Prepared for tough questions and challenges",
+          "triggered": true,
+          "evidence": "Anticipated objections: budget concerns, timeline feasibility, ROI questions"
+        },
+        {
+          "id": "gutt_6",
+          "name": "Response Preparation",
+          "capability": "Generate effective, well-reasoned responses to anticipated objections",
+          "required_skills": [
+            "Argumentation",
+            "Evidence marshaling",
+            "Persuasive communication",
+            "Counter-argument development"
+          ],
+          "user_goal": "Confident, well-reasoned responses ready for each concern",
+          "triggered": true,
+          "evidence": "Prepared responses with supporting data, analogies, mitigation strategies"
+        },
+        {
+          "id": "gutt_7",
+          "name": "Briefing Document Generation",
+          "capability": "Format summary, objections, and responses into comprehensive prep document",
+          "required_skills": [
+            "Document formatting",
+            "Professional presentation",
+            "Structured organization",
+            "Executive brief writing"
+          ],
+          "user_goal": "Comprehensive prep materials ready to review before meeting",
+          "triggered": true,
+          "evidence": "Generated briefing doc: 3 discussion points, anticipated objections, prepared responses"
+        }
+      ],
+      "gpt5_gutts": [
+        {
+          "id": "gutt_1",
+          "name": "Retrieve Meeting Materials",
+          "capability": "Access and collect all relevant documents and resources for the specified senior leadership meeting",
+          "required_skills": [
+            "calendar_integration",
+            "document_retrieval",
+            "context_identification"
+          ],
+          "user_goal": "Ensure all necessary materials for the meeting are available for review",
+          "triggered": true,
+          "evidence": "Fetch files linked to the meeting invite and associated shared folders"
+        },
+        {
+          "id": "gutt_2",
+          "name": "Analyze Meeting Materials",
+          "capability": "Read and extract key information, topics, and themes from the retrieved documents",
+          "required_skills": [
+            "document_parsing",
+            "natural_language_understanding",
+            "topic_extraction"
+          ],
+          "user_goal": "Understand the content and identify main subjects in the meeting materials",
+          "triggered": true,
+          "evidence": "Perform semantic analysis to identify recurring concepts and critical points"
+        },
+        {
+          "id": "gutt_3",
+          "name": "Generate Candidate Discussion Topics",
+          "capability": "List all significant topics identified from the analysis for potential discussion",
+          "required_skills": [
+            "summarization",
+            "content_clustering",
+            "importance_ranking"
+          ],
+          "user_goal": "Have a comprehensive set of possible discussion items derived from the materials",
+          "triggered": true,
+          "evidence": "Produce a preliminary list of 8-12 key topics extracted from the documents"
+        },
+        {
+          "id": "gutt_4",
+          "name": "Rank and Select Top Three Topics",
+          "capability": "Prioritize and choose the three most important discussion points based on relevance and impact",
+          "required_skills": [
+            "priority_reasoning",
+            "contextual_ranking",
+            "decision_logic"
+          ],
+          "user_goal": "Identify the three most strategic topics for senior leadership discussion",
+          "triggered": true,
+          "evidence": "Apply weighted scoring to select top three topics from candidate list"
+        },
+        {
+          "id": "gutt_5",
+          "name": "Generate Potential Objections",
+          "capability": "Predict likely objections or concerns that senior leadership might raise regarding the selected topics",
+          "required_skills": [
+            "anticipatory_reasoning",
+            "stakeholder_analysis",
+            "risk_identification"
+          ],
+          "user_goal": "Prepare for possible pushback or questions during the meeting",
+          "triggered": true,
+          "evidence": "Produce a list of 2-3 plausible objections per discussion point"
+        },
+        {
+          "id": "gutt_6",
+          "name": "Create Effective Responses",
+          "capability": "Formulate clear, persuasive responses to each predicted objection",
+          "required_skills": [
+            "argument_generation",
+            "persuasive_communication",
+            "contextual_adaptation"
+          ],
+          "user_goal": "Be equipped with strong, ready-to-use answers to anticipated concerns",
+          "triggered": true,
+          "evidence": "Generate concise, actionable responses aligned with meeting objectives"
+        }
+      ]
+    },
+    {
+      "prompt_id": "collaborate-3",
+      "prompt_desc": "Customer meeting brief",
+      "original_prompt": "Prepare a brief for my upcoming meeting with customer Beta and include a dossier for each customer attendee and the topics they are most interested in. Include a background on their company.",
+      "claude_gutts": [
+        {
+          "id": "gutt_1",
+          "name": "Meeting Details Retrieval",
+          "capability": "Get meeting information (attendees list, meeting time, purpose/subject)",
+          "required_skills": [
+            "Calendar API",
+            "Meeting metadata extraction",
+            "Attendee list parsing",
+            "Event details retrieval"
+          ],
+          "user_goal": "Know who's attending, when, and meeting context",
+          "triggered": true,
+          "evidence": "Retrieved meeting details: attendees from customer Beta, subject, date/time"
+        },
+        {
+          "id": "gutt_2",
+          "name": "Company Background Research",
+          "capability": "Gather information about customer Beta company (industry, size, products, recent news)",
+          "required_skills": [
+            "CRM data access",
+            "Web research",
+            "Company profile compilation",
+            "Business intelligence"
+          ],
+          "user_goal": "Understand customer's business context and current state",
+          "triggered": true,
+          "evidence": "Compiled company background: industry, revenue, key products, recent developments"
+        },
+        {
+          "id": "gutt_3",
+          "name": "Attendee Identity Resolution",
+          "capability": "Identify each customer attendee and their specific roles/titles",
+          "required_skills": [
+            "Contact resolution",
+            "Role identification",
+            "Org chart analysis",
+            "LinkedIn/directory lookup"
+          ],
+          "user_goal": "Know exactly who you're meeting with and their positions",
+          "triggered": true,
+          "evidence": "Resolved attendees: John Smith (VP Product), Sarah Chen (Director Engineering)"
+        },
+        {
+          "id": "gutt_4",
+          "name": "Individual Dossier Creation",
+          "capability": "For each attendee, compile background, role, interaction history, and context",
+          "required_skills": [
+            "CRM querying",
+            "Interaction history analysis",
+            "Profile building",
+            "Contact research"
+          ],
+          "user_goal": "Personalized context for each individual attendee",
+          "triggered": true,
+          "evidence": "Created dossiers with background, role, past interactions, preferences"
+        },
+        {
+          "id": "gutt_5",
+          "name": "Topic Interest Analysis",
+          "capability": "Identify topics each attendee cares about based on communication history, role, and context",
+          "required_skills": [
+            "Communication analysis",
+            "Interest extraction",
+            "Preference modeling",
+            "Topic mapping to roles"
+          ],
+          "user_goal": "Discuss what matters most to each person",
+          "triggered": true,
+          "evidence": "VP Product: roadmap integration; Director Eng: API performance, scalability"
+        },
+        {
+          "id": "gutt_6",
+          "name": "Relationship History Compilation",
+          "capability": "Summarize past interactions, deals, support issues, and relationship context with customer",
+          "required_skills": [
+            "CRM data aggregation",
+            "Timeline creation",
+            "Relationship context building",
+            "Historical summary"
+          ],
+          "user_goal": "Aware of relationship history and ongoing context",
+          "triggered": true,
+          "evidence": "History: signed contract Q2, 3 support escalations, renewal upcoming Q4"
+        },
+        {
+          "id": "gutt_7",
+          "name": "Relevant Content Gathering",
+          "capability": "Find related materials (proposals, presentations, technical docs, case studies)",
+          "required_skills": [
+            "Document search",
+            "Relevance matching",
+            "Content curation",
+            "Material organization"
+          ],
+          "user_goal": "Have supporting materials ready for discussion",
+          "triggered": true,
+          "evidence": "Gathered: recent proposal, technical integration guide, relevant case study"
+        },
+        {
+          "id": "gutt_8",
+          "name": "Brief Document Assembly",
+          "capability": "Compile all information into structured, comprehensive prep brief",
+          "required_skills": [
+            "Document generation",
+            "Professional formatting",
+            "Information organization",
+            "Brief writing"
+          ],
+          "user_goal": "Complete brief ready for meeting preparation",
+          "triggered": true,
+          "evidence": "Generated brief: company background, attendee dossiers, topics, history, materials"
+        }
+      ],
+      "gpt5_gutts": [
+        {
+          "id": "gutt_1",
+          "name": "Identify Upcoming Meeting with Customer Beta",
+          "capability": "Locate the specific upcoming calendar event involving customer Beta",
+          "required_skills": [
+            "calendar_access",
+            "entity_matching",
+            "event_search"
+          ],
+          "user_goal": "Find the correct meeting to prepare for",
+          "triggered": true,
+          "evidence": "Query calendar events and match 'customer Beta' in participant or title fields"
+        },
+        {
+          "id": "gutt_2",
+          "name": "Extract Meeting Details",
+          "capability": "Retrieve date, time, and participant list from the identified meeting",
+          "required_skills": [
+            "calendar_event_parsing",
+            "structured_data_extraction"
+          ],
+          "user_goal": "Obtain meeting metadata for context and attendee identification",
+          "triggered": true,
+          "evidence": "Parse event object for start time, end time, and attendees"
+        },
+        {
+          "id": "gutt_3",
+          "name": "Identify Customer Attendees",
+          "capability": "Filter attendees belonging to customer Beta from the participant list",
+          "required_skills": [
+            "entity_resolution",
+            "organization_mapping"
+          ],
+          "user_goal": "Determine which attendees represent the customer",
+          "triggered": true,
+          "evidence": "Cross-reference attendee emails/domains with Beta's domain"
+        },
+        {
+          "id": "gutt_4",
+          "name": "Retrieve Profile Data for Each Customer Attendee",
+          "capability": "Fetch professional background and role information for each identified attendee",
+          "required_skills": [
+            "contact_data_lookup",
+            "profile_enrichment",
+            "external_api_integration"
+          ],
+          "user_goal": "Gather attendee-specific details for the dossier",
+          "triggered": true,
+          "evidence": "Call CRM or LinkedIn API to get role, title, and bio"
+        },
+        {
+          "id": "gutt_5",
+          "name": "Determine Topics of Interest for Each Attendee",
+          "capability": "Analyze historical interactions or preference data to identify topics each attendee cares about",
+          "required_skills": [
+            "interest_inference",
+            "nlp_topic_modeling",
+            "data_aggregation"
+          ],
+          "user_goal": "Personalize the briefing by including relevant topics",
+          "triggered": true,
+          "evidence": "Aggregate prior meeting notes or CRM tags to extract interest areas"
+        },
+        {
+          "id": "gutt_6",
+          "name": "Compile Dossier for Each Customer Attendee",
+          "capability": "Generate a structured summary containing attendee background and topics of interest",
+          "required_skills": [
+            "document_generation",
+            "template_filling",
+            "summarization"
+          ],
+          "user_goal": "Create an attendee-specific dossier for the briefing",
+          "triggered": true,
+          "evidence": "Assemble profile details and interest topics into a formatted section"
+        },
+        {
+          "id": "gutt_7",
+          "name": "Retrieve Company Background for Customer Beta",
+          "capability": "Gather company-level information such as industry, size, recent news",
+          "required_skills": [
+            "company_data_lookup",
+            "web_search",
+            "knowledge_graph_query"
+          ],
+          "user_goal": "Provide context about the customer's organization",
+          "triggered": true,
+          "evidence": "Query company database or external sources for Beta's profile"
+        },
+        {
+          "id": "gutt_8",
+          "name": "Compose Meeting Brief",
+          "capability": "Integrate meeting details, attendee dossiers, and company background into a concise briefing document",
+          "required_skills": [
+            "content_synthesis",
+            "document_structuring",
+            "natural_language_generation"
+          ],
+          "user_goal": "Deliver a complete, well-structured meeting preparation brief",
+          "triggered": true,
+          "evidence": "Generate final document with sections for meeting info, attendee dossiers, and company overview"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "total_prompts": 9,
+    "total_claude_gutts": 66,
+    "total_gpt5_gutts": 66
+  }
+}

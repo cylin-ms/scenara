@@ -1,0 +1,95 @@
+{
+  "team_id": "legal_contracts",
+  "team_name": "Legal Contracts Team",
+  "division": "legal",
+  "company": "contoso_corp",
+  "description": "Legal team handling contracts, compliance, and vendor relationships",
+  
+  "org_chart": {
+    "general_counsel": {
+      "name": "Jennifer Wang",
+      "title": "General Counsel",
+      "email": "jennifer.wang@contoso.com",
+      "employee_type": "optional"
+    },
+    "senior_counsel": [
+      {
+        "name": "Richard Tan",
+        "title": "Senior Legal Counsel - Contracts",
+        "email": "richard.tan@contoso.com",
+        "employee_type": "required",
+        "direct_reports": [
+          {
+            "name": "Michelle Zhang",
+            "title": "Legal Specialist - Enterprise Contracts",
+            "email": "michelle.zhang@contoso.com",
+            "employee_type": "organizer",
+            "persona_id": "tier3_specialist_legal",
+            "is_persona": true
+          },
+          {
+            "name": "Andrew Liu",
+            "title": "Legal Specialist - Vendor Contracts",
+            "email": "andrew.liu@contoso.com",
+            "employee_type": "required"
+          }
+        ]
+      },
+      {
+        "name": "Victoria Chen",
+        "title": "Senior Legal Counsel - Compliance",
+        "email": "victoria.chen@contoso.com",
+        "employee_type": "optional"
+      }
+    ],
+    "cross_functional": [
+      {
+        "name": "Carol Wang",
+        "title": "Compliance Manager",
+        "email": "carol.wang@contoso.com",
+        "employee_type": "required"
+      },
+      {
+        "name": "Henry Zhou",
+        "title": "Procurement Manager",
+        "email": "henry.zhou@contoso.com",
+        "employee_type": "optional"
+      }
+    ]
+  },
+  
+  "recurring_meetings": [
+    {
+      "meeting_name": "Weekly 1:1 with Manager",
+      "frequency": "weekly",
+      "day": "Monday",
+      "time": "10:00",
+      "duration": 30,
+      "attendees": ["michelle.zhang@contoso.com", "richard.tan@contoso.com"]
+    },
+    {
+      "meeting_name": "Legal Team Weekly Sync",
+      "frequency": "weekly",
+      "day": "Wednesday",
+      "time": "14:00",
+      "duration": 60,
+      "attendees": ["michelle.zhang@contoso.com", "richard.tan@contoso.com", "andrew.liu@contoso.com", "victoria.chen@contoso.com"]
+    },
+    {
+      "meeting_name": "Weekly Compliance Check-In",
+      "frequency": "weekly",
+      "day": "Thursday",
+      "time": "11:00",
+      "duration": 30,
+      "attendees": ["michelle.zhang@contoso.com", "carol.wang@contoso.com"]
+    },
+    {
+      "meeting_name": "Monthly Contract Review Board",
+      "frequency": "monthly",
+      "day": "second_tuesday",
+      "time": "10:00",
+      "duration": 90,
+      "attendees": ["michelle.zhang@contoso.com", "richard.tan@contoso.com", "jennifer.wang@contoso.com", "andrew.liu@contoso.com"]
+    }
+  ]
+}

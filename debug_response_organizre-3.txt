@@ -1,0 +1,57 @@
+{
+  "prompt_id": "organizre-3",
+  "solvability": {
+    "score": 7,
+    "reasoning": "Current AI systems can analyze calendar data, categorize events, and summarize time allocation by category or priority. However, the second part—identifying ways to reclaim time aligned with user priorities—requires contextual understanding of user goals, organizational norms, and trade-offs. This involves reasoning beyond raw data and may require integration with task management systems and user feedback loops.",
+    "difficulty_factors": [
+      "Need for accurate event categorization (work vs personal vs priority projects)",
+      "Understanding implicit user priorities from limited signals",
+      "Suggesting actionable time-reclaim strategies without disrupting critical commitments",
+      "Integration with multiple calendar sources and possibly email/task data"
+    ]
+  },
+  "verification_ease": {
+    "score": 8,
+    "reasoning": "Verification is relatively straightforward because we can compare AI-generated time allocation summaries against ground truth from the calendar data. For recommendations, user feedback (thumbs up/down) and A/B testing can validate usefulness. Objective metrics like 'percentage of time categorized correctly' and 'alignment with stated priorities' can be computed.",
+    "verification_methods": [
+      "Cross-check time allocation breakdown against actual calendar entries",
+      "User validation of category accuracy",
+      "Feedback on suggested time-reclaim strategies (click-through, acceptance rate)",
+      "Comparison to baseline heuristics (e.g., simple category grouping)"
+    ]
+  },
+  "verification_asymmetry": {
+    "score": 8 - (10 - 7),
+    "interpretation": "Score = 8 - 3 = +5 → Positive asymmetry: The task is significantly easier to verify than to solve, making it a strong candidate for AI-driven improvement.",
+    "priority": "HIGH"
+  },
+  "ai_readiness": {
+    "timeline": "Soon (6mo)",
+    "blockers": [
+      "Access to comprehensive calendar and meeting metadata",
+      "Reliable extraction of user priorities (may require explicit input or inference from historical behavior)",
+      "Privacy and compliance constraints for organizational data"
+    ],
+    "enablers": [
+      "Existing calendar APIs (Google, Outlook) provide structured event data",
+      "LLMs with reasoning capabilities for summarization and recommendation",
+      "User feedback loops for reinforcement learning"
+    ]
+  },
+  "training_data_quality": {
+    "score": 7,
+    "reasoning": "We can generate synthetic and semi-supervised datasets by labeling calendar events with categories and simulating user priorities. Real-world data collection is possible with opt-in users, but privacy concerns limit scale. Feedback signals from deployed systems can further improve models.",
+    "data_sources": [
+      "Historical calendar data with user-labeled categories",
+      "Synthetic schedules with known priorities",
+      "User feedback logs on recommendation usefulness"
+    ]
+  },
+  "key_insights": [
+    "The task splits into two subproblems: descriptive analytics (time allocation) and prescriptive analytics (time-reclaim strategies).",
+    "Descriptive part is almost solved with current tech; prescriptive part is harder but feasible with LLM reasoning and user feedback.",
+    "Verification is strong because ground truth exists for time allocation and user feedback provides a clear signal for recommendations.",
+    "Privacy and data integration are the main non-technical blockers."
+  ],
+  "recommendation": "HIGH priority for AI development. Start with descriptive analytics (time breakdown) as a baseline, then iterate on prescriptive recommendations using reinforcement learning from user feedback. Leverage existing calendar APIs and integrate explicit user priority input for better personalization."
+}

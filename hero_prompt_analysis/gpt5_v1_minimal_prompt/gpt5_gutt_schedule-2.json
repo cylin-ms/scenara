@@ -1,0 +1,116 @@
+{
+  "source": "gpt-5",
+  "backend_llm": "dev-gpt-5-chat-jj",
+  "backend_llm_notes": "GPT-5 via Microsoft SilverFlow LLM API - Real API calls",
+  "timestamp": "2025-11-06T20:00:37.000717",
+  "original_prompt": "Clear my Thursday afternoon. Update my RSVPs and help me reschedule my meetings to another time and show me as {status}.",
+  "gutts": [
+    {
+      "id": "gutt_1",
+      "name": "Identify Thursday Afternoon Time Range",
+      "capability": "Determine the exact time slots that constitute Thursday afternoon in the user's calendar context.",
+      "required_skills": [
+        "natural language processing",
+        "time parsing",
+        "calendar data interpretation"
+      ],
+      "user_goal": "Understand which time blocks need to be cleared.",
+      "triggered": true,
+      "evidence": "Parsing 'Thursday afternoon' into a specific time range, e.g., 12:00 PM - 5:00 PM on Thursday."
+    },
+    {
+      "id": "gutt_2",
+      "name": "Retrieve Events in Specified Time Range",
+      "capability": "Fetch all calendar events scheduled during the identified Thursday afternoon time range.",
+      "required_skills": [
+        "calendar API integration",
+        "data retrieval",
+        "query filtering"
+      ],
+      "user_goal": "Get a list of all events that need to be cleared.",
+      "triggered": true,
+      "evidence": "Querying the calendar API for events between 12:00 PM and 5:00 PM on Thursday."
+    },
+    {
+      "id": "gutt_3",
+      "name": "Cancel or Remove Events from Time Range",
+      "capability": "Cancel or remove all identified events from the user's calendar for Thursday afternoon.",
+      "required_skills": [
+        "calendar API write operations",
+        "event cancellation",
+        "data consistency handling"
+      ],
+      "user_goal": "Clear the Thursday afternoon schedule.",
+      "triggered": true,
+      "evidence": "Sending cancellation requests for each event in the identified time range."
+    },
+    {
+      "id": "gutt_4",
+      "name": "Update RSVPs for Affected Events",
+      "capability": "Update the user's RSVP status for all events that were canceled or rescheduled.",
+      "required_skills": [
+        "calendar API",
+        "RSVP status management",
+        "communication protocol handling"
+      ],
+      "user_goal": "Ensure event organizers know the user is no longer attending.",
+      "triggered": true,
+      "evidence": "Setting RSVP status to 'Declined' for canceled events via API."
+    },
+    {
+      "id": "gutt_5",
+      "name": "Identify Alternative Time Slots for Rescheduling",
+      "capability": "Find suitable alternative time slots for meetings that were removed from Thursday afternoon.",
+      "required_skills": [
+        "calendar availability analysis",
+        "constraint satisfaction",
+        "time optimization"
+      ],
+      "user_goal": "Determine when to reschedule the displaced meetings.",
+      "triggered": true,
+      "evidence": "Scanning user's calendar for open slots that meet meeting duration and participant availability."
+    },
+    {
+      "id": "gutt_6",
+      "name": "Propose New Times to Meeting Participants",
+      "capability": "Send rescheduling proposals to all participants for the affected meetings.",
+      "required_skills": [
+        "calendar API",
+        "invitation management",
+        "notification handling"
+      ],
+      "user_goal": "Communicate new proposed times to participants.",
+      "triggered": true,
+      "evidence": "Sending updated meeting invites with proposed alternative time slots."
+    },
+    {
+      "id": "gutt_7",
+      "name": "Update Calendar with Rescheduled Meetings",
+      "capability": "Confirm and update the calendar with new meeting times once participants accept.",
+      "required_skills": [
+        "calendar API write operations",
+        "event update handling",
+        "synchronization"
+      ],
+      "user_goal": "Ensure the calendar reflects the new meeting schedule.",
+      "triggered": true,
+      "evidence": "Replacing old meeting entries with new confirmed times in the calendar."
+    },
+    {
+      "id": "gutt_8",
+      "name": "Set User Status for Thursday Afternoon",
+      "capability": "Update the user's calendar status (e.g., Free, Busy, Out of Office) for the cleared Thursday afternoon period.",
+      "required_skills": [
+        "calendar API",
+        "status management",
+        "time block modification"
+      ],
+      "user_goal": "Reflect the desired availability status for Thursday afternoon.",
+      "triggered": true,
+      "evidence": "Marking the cleared time range as 'Free' or 'Out of Office' based on {status}."
+    }
+  ],
+  "track1_score": 1.0,
+  "track2_score": null,
+  "overall_score": null
+}

@@ -1,0 +1,141 @@
+{
+  "id": "tier3_specialist_legal",
+  "name": "Legal Specialist - Contracts",
+  "tier": 3,
+  "demographics": {
+    "level": "IC",
+    "function": "Legal",
+    "tenure": "3-4 years",
+    "team_size": "0 direct reports",
+    "company": "Enterprise Tech Company",
+    "industry": "Technology"
+  },
+  "meeting_context": {
+    "weekly_meeting_hours": "8-12 hours",
+    "typical_breakdown": {
+      "contract_reviews": "40%",
+      "legal_consultations": "25%",
+      "team_meetings": "15%",
+      "vendor_negotiations": "10%",
+      "compliance_reviews": "10%"
+    }
+  },
+  "importance_criteria": {
+    "always_important": [
+      "contract review",
+      "legal review",
+      "compliance",
+      "audit",
+      "litigation",
+      "regulatory"
+    ],
+    "usually_important": [
+      "vendor negotiation",
+      "terms review",
+      "policy review",
+      "risk assessment",
+      "legal consultation"
+    ],
+    "sometimes_important": [
+      "team meeting",
+      "training",
+      "process review",
+      "knowledge sharing"
+    ],
+    "rarely_important": [
+      "all-hands",
+      "social",
+      "celebration",
+      "general update"
+    ]
+  },
+  "priority_framework": [
+    {
+      "name": "Enterprise Contract Reviews",
+      "time_commitment": "50%",
+      "keywords": [
+        "enterprise contract",
+        "MSA review",
+        "terms negotiation",
+        "contract redline",
+        "vendor agreement"
+      ]
+    },
+    {
+      "name": "Compliance & Regulatory",
+      "time_commitment": "25%",
+      "keywords": [
+        "compliance review",
+        "regulatory",
+        "audit",
+        "GDPR",
+        "privacy review"
+      ]
+    },
+    {
+      "name": "Internal Legal Support",
+      "time_commitment": "20%",
+      "keywords": [
+        "legal consultation",
+        "risk assessment",
+        "policy review",
+        "internal legal"
+      ]
+    },
+    {
+      "name": "Professional Development",
+      "time_commitment": "5%",
+      "keywords": [
+        "legal training",
+        "CLE",
+        "professional development",
+        "legal update"
+      ]
+    }
+  ],
+  "rsvp_rules": {
+    "always_accept": [
+      "Contract reviews with external parties (deadline-driven)",
+      "Compliance/audit meetings (regulatory requirement)",
+      "Litigation discussions (high risk)",
+      "Executive legal consultations (strategic importance)"
+    ],
+    "conditional": [
+      "Vendor negotiations (if significant deal value)",
+      "Internal consultations (assess urgency and risk)",
+      "Team meetings (if agenda relevant)",
+      "Training sessions (if applies to current work)"
+    ],
+    "decline_by_default": [
+      "Optional team meetings",
+      "All-hands (unless legal updates)",
+      "Social events"
+    ],
+    "always_decline": [
+      "Non-legal meetings without clear legal need",
+      "Meetings without agenda or context"
+    ]
+  },
+  "prep_time_needs": {
+    "requires_prep": [
+      "Contract negotiations (45-60 min: review terms, research precedents, prepare positions)",
+      "Compliance reviews (30-45 min: review regulations, assess risk, prepare guidance)",
+      "Executive consultations (30 min: research issue, identify risks, prepare options)"
+    ],
+    "optional_prep": [
+      "Internal consultations (15 min: review background if complex)",
+      "Vendor meetings (20 min: review agreement history)",
+      "Team meetings (10 min: review agenda if substantive)"
+    ],
+    "no_prep": [
+      "Routine status updates",
+      "General legal questions",
+      "Team social events",
+      "All-hands meetings"
+    ]
+  },
+  "work_style": "Legal Specialist - Contracts: Focused on contract reviews and compliance with 3-4 years experience. Spends 8-12 hours/week in meetings, primarily contract reviews and legal consultations. Work is deadline-driven (contract signatures, compliance deadlines) but generally planned with advance notice. Values clear meeting agendas and legal context - avoids meetings without defined legal need. Balances transactional work (contract reviews) with advisory work (legal consultations). Comfortable working independently with periodic team check-ins. Known for thorough contract reviews and pragmatic risk assessment.",
+  "career_stage": "3-4 years into legal career, developing specialized expertise in commercial contracts. Building reputation as reliable contract reviewer. Career growth depends on: (1) Handling complex enterprise deals, (2) Building business relationships, (3) Developing specialized knowledge. Success metric: Complete contract reviews within SLA, no major contract issues escalating. Risk: Becoming bottleneck for deals. Opportunity: Handle strategic enterprise contracts, expand to new legal areas (IP, privacy).",
+  "stress_level": "⭐⭐ LOW-MODERATE: 8-12 hour meeting weeks, work is important but rarely urgent emergencies. Deadlines are known in advance. Missing meeting = delayed review but can usually reschedule. Lower stakes than sales or executive roles. Comfortable environment for alpha testing - can tolerate 70-75% accuracy without major risk.",
+  "notes": "KEY INSIGHT: Legal specialists are Tier 3 because stakes are lower - missing meeting = delayed review but not lost deal or career risk. Work is deadline-driven but predictable. Perfect for alpha testing - low risk if tool makes mistakes, can provide valuable feedback for improvement."
+}

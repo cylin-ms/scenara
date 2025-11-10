@@ -1,0 +1,88 @@
+{
+  "source": "gpt-5",
+  "backend_llm": "dev-gpt-5-chat-jj",
+  "backend_llm_notes": "GPT-5 via Microsoft SilverFlow LLM API - Real API calls",
+  "timestamp": "2025-11-06T19:59:38.352877",
+  "original_prompt": "Track all my important meetings and flag any that require focus time to prepare for them.",
+  "gutts": [
+    {
+      "id": "gutt_1",
+      "name": "Access Calendar Data",
+      "capability": "Retrieve user's calendar events from connected sources",
+      "required_skills": [
+        "API integration",
+        "OAuth authentication",
+        "Calendar data parsing"
+      ],
+      "user_goal": "Enable the system to read all scheduled meetings",
+      "triggered": true,
+      "evidence": "Successfully fetching event objects from Google Calendar API"
+    },
+    {
+      "id": "gutt_2",
+      "name": "Identify Important Meetings",
+      "capability": "Determine which meetings are marked as important based on user-defined criteria or metadata",
+      "required_skills": [
+        "Natural language processing",
+        "Rule-based filtering",
+        "User preference handling"
+      ],
+      "user_goal": "Filter out only the meetings that are considered important",
+      "triggered": true,
+      "evidence": "Applying importance rules and returning a subset of events labeled as important"
+    },
+    {
+      "id": "gutt_3",
+      "name": "Extract Meeting Metadata",
+      "capability": "Parse and extract meeting details such as title, participants, and agenda",
+      "required_skills": [
+        "Data parsing",
+        "Structured data extraction"
+      ],
+      "user_goal": "Obtain detailed information about each important meeting",
+      "triggered": true,
+      "evidence": "Structured JSON object containing meeting title, participants, and description"
+    },
+    {
+      "id": "gutt_4",
+      "name": "Analyze Preparation Needs",
+      "capability": "Analyze meeting details to determine if preparation or focus time is required",
+      "required_skills": [
+        "Natural language understanding",
+        "Contextual analysis",
+        "Classification algorithms"
+      ],
+      "user_goal": "Identify which meetings require additional preparation",
+      "triggered": true,
+      "evidence": "Classification result indicating whether a meeting requires prep time"
+    },
+    {
+      "id": "gutt_5",
+      "name": "Flag Meetings Requiring Focus Time",
+      "capability": "Mark meetings that require preparation with a specific flag or label",
+      "required_skills": [
+        "Data annotation",
+        "Calendar API update"
+      ],
+      "user_goal": "Visually or programmatically indicate meetings that need focus time",
+      "triggered": true,
+      "evidence": "Meeting entries updated with a 'Focus Required' label in the calendar system"
+    },
+    {
+      "id": "gutt_6",
+      "name": "Track Important Meetings",
+      "capability": "Maintain an up-to-date list or log of all important meetings for user reference",
+      "required_skills": [
+        "Data storage",
+        "Synchronization",
+        "State management"
+      ],
+      "user_goal": "Have a consolidated view of all important meetings",
+      "triggered": true,
+      "evidence": "Persistent data structure listing all important meetings with timestamps"
+    }
+  ],
+  "track1_score": 1.0,
+  "track2_score": null,
+  "overall_score": null
+}

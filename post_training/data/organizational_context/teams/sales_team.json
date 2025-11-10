@@ -1,0 +1,127 @@
+{
+  "team_id": "sales_apac",
+  "team_name": "APAC Sales Team",
+  "division": "sales",
+  "company": "contoso_corp",
+  "description": "Enterprise sales team covering Asia-Pacific region",
+  
+  "org_chart": {
+    "vp": {
+      "name": "David Zhang",
+      "title": "VP of Sales - APAC",
+      "email": "david.zhang@contoso.com",
+      "employee_type": "response_required"
+    },
+    "directors": [
+      {
+        "name": "Emily Tan",
+        "title": "Sales Director - Greater China",
+        "email": "emily.tan@contoso.com",
+        "employee_type": "optional",
+        "direct_reports": [
+          {
+            "name": "Alex Chen",
+            "title": "Sales Manager - Enterprise Accounts",
+            "email": "alex.chen@contoso.com",
+            "employee_type": "organizer",
+            "persona_id": "tier1_sales_manager_pipeline",
+            "is_persona": true,
+            "direct_reports": [
+              {
+                "name": "Jessica Wu",
+                "title": "Senior Account Executive",
+                "email": "jessica.wu@contoso.com",
+                "employee_type": "required"
+              },
+              {
+                "name": "Kevin Lin",
+                "title": "Senior Account Executive",
+                "email": "kevin.lin@contoso.com",
+                "employee_type": "required"
+              },
+              {
+                "name": "Lisa Zhang",
+                "title": "Account Executive",
+                "email": "lisa.zhang@contoso.com",
+                "employee_type": "required"
+              },
+              {
+                "name": "Tom Wang",
+                "title": "Account Executive",
+                "email": "tom.wang@contoso.com",
+                "employee_type": "required"
+              }
+            ]
+          },
+          {
+            "name": "Mark Johnson",
+            "title": "Sales Manager - Mid-Market",
+            "email": "mark.johnson@contoso.com",
+            "employee_type": "optional"
+          }
+        ]
+      },
+      {
+        "name": "Rachel Kim",
+        "title": "Sales Director - Southeast Asia",
+        "email": "rachel.kim@contoso.com",
+        "employee_type": "optional"
+      }
+    ],
+    "support_roles": [
+      {
+        "name": "Amy Liu",
+        "title": "Sales Operations Manager",
+        "email": "amy.liu@contoso.com",
+        "employee_type": "optional"
+      },
+      {
+        "name": "Steven Zhao",
+        "title": "Sales Engineer - Solutions",
+        "email": "steven.zhao@contoso.com",
+        "employee_type": "required"
+      },
+      {
+        "name": "Nancy Yang",
+        "title": "Customer Success Manager",
+        "email": "nancy.yang@contoso.com",
+        "employee_type": "optional"
+      }
+    ]
+  },
+  
+  "recurring_meetings": [
+    {
+      "meeting_name": "Weekly Pipeline Review",
+      "frequency": "weekly",
+      "day": "Tuesday",
+      "time": "09:00",
+      "duration": 60,
+      "attendees": ["alex.chen@contoso.com", "emily.tan@contoso.com", "jessica.wu@contoso.com", "kevin.lin@contoso.com", "lisa.zhang@contoso.com", "tom.wang@contoso.com"]
+    },
+    {
+      "meeting_name": "Sales Team Weekly Sync",
+      "frequency": "weekly",
+      "day": "Wednesday",
+      "time": "14:00",
+      "duration": 60,
+      "attendees": ["alex.chen@contoso.com", "jessica.wu@contoso.com", "kevin.lin@contoso.com", "lisa.zhang@contoso.com", "tom.wang@contoso.com", "steven.zhao@contoso.com"]
+    },
+    {
+      "meeting_name": "Weekly 1:1 with Regional Director",
+      "frequency": "weekly",
+      "day": "Monday",
+      "time": "10:00",
+      "duration": 30,
+      "attendees": ["alex.chen@contoso.com", "emily.tan@contoso.com"]
+    },
+    {
+      "meeting_name": "Monthly Forecast Review",
+      "frequency": "monthly",
+      "day": "last_friday",
+      "time": "15:00",
+      "duration": 90,
+      "attendees": ["alex.chen@contoso.com", "emily.tan@contoso.com", "david.zhang@contoso.com", "mark.johnson@contoso.com"]
+    }
+  ]
+}

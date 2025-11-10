@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calendar View - Tier3 Specialist Legal</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+        .week {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .week-header {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+        .day {
+            margin-bottom: 25px;
+        }
+        .day-header {
+            font-size: 18px;
+            font-weight: bold;
+            color: #555;
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-left: 4px solid #667eea;
+        }
+        .meeting {
+            margin-left: 20px;
+            margin-bottom: 15px;
+            padding: 15px;
+            border-left: 4px solid;
+            background-color: #fafafa;
+            border-radius: 5px;
+        }
+        .meeting.critical { border-left-color: #dc3545; background-color: #fff5f5; }
+        .meeting.high { border-left-color: #ffc107; background-color: #fffef5; }
+        .meeting.medium { border-left-color: #28a745; background-color: #f5fff5; }
+        .meeting.low { border-left-color: #17a2b8; background-color: #f5fcff; }
+        .meeting-time {
+            font-weight: bold;
+            color: #666;
+            font-size: 14px;
+        }
+        .meeting-subject {
+            font-size: 16px;
+            font-weight: bold;
+            color: #333;
+            margin: 5px 0;
+        }
+        .meeting-description {
+            color: #666;
+            font-size: 14px;
+            margin: 5px 0;
+        }
+        .meeting-meta {
+            display: flex;
+            gap: 20px;
+            margin-top: 10px;
+            font-size: 13px;
+            color: #888;
+        }
+        .badge {
+            display: inline-block;
+            padding: 3px 8px;
+            border-radius: 12px;
+            font-size: 11px;
+            font-weight: bold;
+        }
+        .badge.critical { background-color: #dc3545; color: white; }
+        .badge.high { background-color: #ffc107; color: #333; }
+        .badge.medium { background-color: #28a745; color: white; }
+        .badge.low { background-color: #17a2b8; color: white; }
+        .prep-indicator {
+            background-color: #9c27b0;
+            color: white;
+            padding: 3px 8px;
+            border-radius: 12px;
+            font-size: 11px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>📅 Calendar View: Tier3 Specialist Legal</h1>
+        <p>Generated training data calendar visualization</p>
+    </div>
+
+    <div class="week">
+        <div class="week-header">Week 47: Nov 17 - Nov 23, 2025</div>
+
+        <div class="day">
+            <div class="day-header">Monday, Nov 17 (1 meetings)</div>
+
+            <div class="meeting medium">
+                <div class="meeting-time">10:00 AM - 10:30 AM (30 min)</div>
+                <div class="meeting-subject">Weekly 1:1 with Manager</div>
+                <div class="meeting-description">Discuss workload, priorities, and any legal escalations for the week....</div>
+                <div class="meeting-meta">
+                    <span class="badge medium">MEDIUM</span>
+                    
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="day">
+            <div class="day-header">Tuesday, Nov 18 (2 meetings)</div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">9:00 AM - 10:00 AM (60 min)</div>
+                <div class="meeting-subject">Contract Review: Supplier Agreement</div>
+                <div class="meeting-description">Review terms for new hardware supplier agreement and provide legal feedback....</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    
+                    <span>2 attendees</span>
+                </div>
+            </div>
+
+            <div class="meeting high">
+                <div class="meeting-time">3:00 PM - 3:45 PM (45 min)</div>
+                <div class="meeting-subject">Legal Consultation: Marketing Campaign Terms</div>
+                <div class="meeting-description">Discuss disclaimers and IP usage for upcoming digital campaign....</div>
+                <div class="meeting-meta">
+                    <span class="badge high">HIGH</span>
+                    
+                    <span>2 attendees</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="day">
+            <div class="day-header">Wednesday, Nov 19 (2 meetings)</div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">11:00 AM - 12:00 PM (60 min)</div>
+                <div class="meeting-subject">Contract Review: SaaS Renewal</div>
+                <div class="meeting-description">Review renewal terms for SaaS vendor contract, identify compliance risks....</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">2:00 PM - 3:00 PM (60 min)</div>
+                <div class="meeting-subject">Legal Team Weekly Sync</div>
+                <div class="meeting-description">Team updates, compliance news, and workload alignment....</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    
+                    <span>2 attendees</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="day">
+            <div class="day-header">Thursday, Nov 20 (1 meetings)</div>
+
+            <div class="meeting high">
+                <div class="meeting-time">4:00 PM - 5:00 PM (60 min)</div>
+                <div class="meeting-subject">Vendor Negotiation: Cloud Services</div>
+                <div class="meeting-description">Discuss liability clauses and SLAs with vendor legal team....</div>
+                <div class="meeting-meta">
+                    <span class="badge high">HIGH</span>
+                    <span class="prep-indicator">📝 Prep: 30min</span>
+                    <span>2 attendees</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="day">
+            <div class="day-header">Friday, Nov 21 (2 meetings)</div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">11:00 AM - 11:30 AM (30 min)</div>
+                <div class="meeting-subject">Bi-Weekly Compliance Update</div>
+                <div class="meeting-description">Review upcoming compliance deadlines and regional regulatory updates....</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">2:00 PM - 2:45 PM (45 min)</div>
+                <div class="meeting-subject">Contract Review: NDA for Partnership</div>
+                <div class="meeting-description">Review NDA terms for potential strategic partnership....</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="week">
+        <div class="week-header">Week 48: Nov 24 - Nov 30, 2025</div>
+
+        <div class="day">
+            <div class="day-header">Monday, Nov 24 (2 meetings)</div>
+
+            <div class="meeting medium">
+                <div class="meeting-time">10:00 AM - 10:30 AM (30 min)</div>
+                <div class="meeting-subject">Weekly 1:1 with Manager</div>
+                <div class="meeting-description">Discuss workload, priorities, and any legal escalations for the week....</div>
+                <div class="meeting-meta">
+                    <span class="badge medium">MEDIUM</span>
+                    
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+            <div class="meeting high">
+                <div class="meeting-time">3:00 PM - 3:30 PM (30 min)</div>
+                <div class="meeting-subject">Legal Consultation: Employment Agreement</div>
+                <div class="meeting-description">Discuss terms for new regional hire agreement....</div>
+                <div class="meeting-meta">
+                    <span class="badge high">HIGH</span>
+                    
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="day">
+            <div class="day-header">Tuesday, Nov 25 (2 meetings)</div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">9:30 AM - 10:30 AM (60 min)</div>
+                <div class="meeting-subject">Contract Review: OEM Agreement</div>
+                <div class="meeting-description">Review OEM agreement for compliance and liability exposure....</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+            <div class="meeting high">
+                <div class="meeting-time">4:00 PM - 4:30 PM (30 min)</div>
+                <div class="meeting-subject">Legal Consultation: Trademark Usage</div>
+                <div class="meeting-description">Confirm trademark usage for co-branding initiative....</div>
+                <div class="meeting-meta">
+                    <span class="badge high">HIGH</span>
+                    
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="day">
+            <div class="day-header">Wednesday, Nov 26 (2 meetings)</div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">9:00 AM - 10:00 AM (60 min)</div>
+                <div class="meeting-subject">Contract Review: Reseller Agreement</div>
+                <div class="meeting-description">Evaluate terms for reseller partnership and margin clauses....</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">2:00 PM - 3:00 PM (60 min)</div>
+                <div class="meeting-subject">Legal Team Weekly Sync</div>
+                <div class="meeting-description">Team updates, compliance news, and workload alignment....</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    
+                    <span>2 attendees</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="day">
+            <div class="day-header">Thursday, Nov 27 (1 meetings)</div>
+
+            <div class="meeting high">
+                <div class="meeting-time">11:00 AM - 12:00 PM (60 min)</div>
+                <div class="meeting-subject">Vendor Negotiation: Licensing Terms</div>
+                <div class="meeting-description">Clarify indemnity and governing law clauses with licensing vendor....</div>
+                <div class="meeting-meta">
+                    <span class="badge high">HIGH</span>
+                    
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="day">
+            <div class="day-header">Friday, Nov 28 (1 meetings)</div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">3:00 PM - 4:00 PM (60 min)</div>
+                <div class="meeting-subject">Contract Review: Joint Development Agreement</div>
+                <div class="meeting-description">Assess IP ownership and confidentiality terms for joint dev project....</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="week">
+        <div class="week-header">Week 49: Dec 01 - Dec 07, 2025</div>
+
+        <div class="day">
+            <div class="day-header">Monday, Dec 01 (3 meetings)</div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">10:00 AM - 10:30 AM (30 min)</div>
+                <div class="meeting-subject">Weekly 1:1 with Manager</div>
+                <div class="meeting-description">Discuss ongoing contract reviews, priorities, and any blockers for the week....</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+            <div class="meeting high">
+                <div class="meeting-time">10:30 AM - 11:15 AM (45 min)</div>
+                <div class="meeting-subject">Legal Consultation: Data Privacy Policy</div>
+                <div class="meeting-description">Discuss data privacy terms for new customer onboarding process....</div>
+                <div class="meeting-meta">
+                    <span class="badge high">HIGH</span>
+                    
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">2:00 PM - 3:00 PM (60 min)</div>
+                <div class="meeting-subject">Contract Review: Alpha Tech Partnership</div>
+                <div class="meeting-description">Detailed review of partnership contract terms with Alpha Tech's procurement team....</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    <span class="prep-indicator">📝 Prep: 30min</span>
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="day">
+            <div class="day-header">Tuesday, Dec 02 (1 meetings)</div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">9:30 AM - 10:30 AM (60 min)</div>
+                <div class="meeting-subject">Contract Review: BetaCloud Service Agreement</div>
+                <div class="meeting-description">Evaluate liability and termination clauses with BetaCloud legal team....</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    <span class="prep-indicator">📝 Prep: 30min</span>
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="day">
+            <div class="day-header">Wednesday, Dec 03 (2 meetings)</div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">2:00 PM - 3:00 PM (60 min)</div>
+                <div class="meeting-subject">Legal Team Weekly Sync</div>
+                <div class="meeting-description">Team updates, key compliance deadlines, and process improvements....</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    
+                    <span>2 attendees</span>
+                </div>
+            </div>
+
+            <div class="meeting high">
+                <div class="meeting-time">4:00 PM - 5:00 PM (60 min)</div>
+                <div class="meeting-subject">Vendor Negotiation: Supply Contract Terms</div>
+                <div class="meeting-description">Finalize payment terms and penalties with supplier legal representative....</div>
+                <div class="meeting-meta">
+                    <span class="badge high">HIGH</span>
+                    <span class="prep-indicator">📝 Prep: 30min</span>
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="day">
+            <div class="day-header">Thursday, Dec 04 (2 meetings)</div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">11:00 AM - 11:30 AM (30 min)</div>
+                <div class="meeting-subject">Weekly Compliance Check-In</div>
+                <div class="meeting-description">Review latest compliance updates and regulatory alerts impacting contracts....</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">3:00 PM - 4:00 PM (60 min)</div>
+                <div class="meeting-subject">Legal Consultation: Product Launch Risk Review</div>
+                <div class="meeting-description">Review IP considerations and compliance obligations for upcoming launch....</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="day">
+            <div class="day-header">Friday, Dec 05 (1 meetings)</div>
+
+            <div class="meeting medium">
+                <div class="meeting-time">9:00 AM - 10:00 AM (60 min)</div>
+                <div class="meeting-subject">Contract Finalization: Gamma Systems</div>
+                <div class="meeting-description">Review final draft before signature and confirm data privacy clauses....</div>
+                <div class="meeting-meta">
+                    <span class="badge medium">MEDIUM</span>
+                    
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="week">
+        <div class="week-header">Week 50: Dec 08 - Dec 14, 2025</div>
+
+        <div class="day">
+            <div class="day-header">Monday, Dec 08 (2 meetings)</div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">10:00 AM - 10:30 AM (30 min)</div>
+                <div class="meeting-subject">Weekly 1:1 with Manager</div>
+                <div class="meeting-description">Discuss ongoing contract reviews, priorities, and any blockers for the week....</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+            <div class="meeting high">
+                <div class="meeting-time">2:30 PM - 3:30 PM (60 min)</div>
+                <div class="meeting-subject">Legal Consultation: Sales Agreement Terms</div>
+                <div class="meeting-description">Discuss standard terms for high-value sales contracts....</div>
+                <div class="meeting-meta">
+                    <span class="badge high">HIGH</span>
+                    
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="day">
+            <div class="day-header">Tuesday, Dec 09 (2 meetings)</div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">11:00 AM - 12:00 PM (60 min)</div>
+                <div class="meeting-subject">Contract Review: DeltaNet Licensing</div>
+                <div class="meeting-description">Examine licensing obligations and renewal terms with DeltaNet representative....</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    <span class="prep-indicator">📝 Prep: 30min</span>
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+            <div class="meeting high">
+                <div class="meeting-time">3:30 PM - 4:30 PM (60 min)</div>
+                <div class="meeting-subject">Vendor Negotiation: IT Services Renewal</div>
+                <div class="meeting-description">Negotiate SLA and liability terms for IT services contract renewal....</div>
+                <div class="meeting-meta">
+                    <span class="badge high">HIGH</span>
+                    <span class="prep-indicator">📝 Prep: 30min</span>
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="day">
+            <div class="day-header">Wednesday, Dec 10 (1 meetings)</div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">2:00 PM - 3:00 PM (60 min)</div>
+                <div class="meeting-subject">Legal Team Weekly Sync</div>
+                <div class="meeting-description">Team updates, key compliance deadlines, and process improvements....</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    
+                    <span>2 attendees</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="day">
+            <div class="day-header">Thursday, Dec 11 (2 meetings)</div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">11:00 AM - 11:30 AM (30 min)</div>
+                <div class="meeting-subject">Weekly Compliance Check-In</div>
+                <div class="meeting-description">Review latest compliance updates and regulatory alerts impacting contracts....</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">3:00 PM - 4:00 PM (60 min)</div>
+                <div class="meeting-subject">Legal Consultation: Marketing Agreements</div>
+                <div class="meeting-description">Ensure compliance and IP protection in new marketing partnerships....</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="day">
+            <div class="day-header">Friday, Dec 12 (1 meetings)</div>
+
+            <div class="meeting critical">
+                <div class="meeting-time">10:00 AM - 11:00 AM (60 min)</div>
+                <div class="meeting-subject">Contract Review: Epsilon Data Sharing</div>
+                <div class="meeting-description">Discuss cross-border data transfer compliance in Epsilon contract....</div>
+                <div class="meeting-meta">
+                    <span class="badge critical">CRITICAL</span>
+                    <span class="prep-indicator">📝 Prep: 30min</span>
+                    <span>1 attendees</span>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

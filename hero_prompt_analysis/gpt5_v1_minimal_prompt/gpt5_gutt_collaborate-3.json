@@ -1,0 +1,124 @@
+{
+  "source": "gpt-5",
+  "backend_llm": "dev-gpt-5-chat-jj",
+  "backend_llm_notes": "GPT-5 via Microsoft SilverFlow LLM API - Real API calls",
+  "timestamp": "2025-11-06T20:01:48.344847",
+  "original_prompt": "Prepare a brief for my upcoming meeting with customer Beta and include a dossier for each customer attendee and the topics they are most interested in. Include a background on their company.",
+  "gutts": [
+    {
+      "id": "gutt_1",
+      "name": "Identify Upcoming Meeting",
+      "capability": "Locate the user's upcoming meeting with customer Beta in the calendar.",
+      "required_skills": [
+        "calendar parsing",
+        "event identification",
+        "natural language understanding"
+      ],
+      "user_goal": "Find the specific meeting to prepare the brief for.",
+      "triggered": true,
+      "evidence": "Extract meeting titled 'Meeting with Beta' scheduled in the user's calendar."
+    },
+    {
+      "id": "gutt_2",
+      "name": "Extract Meeting Details",
+      "capability": "Retrieve date, time, location, and attendees from the identified meeting.",
+      "required_skills": [
+        "calendar data extraction",
+        "structured data parsing"
+      ],
+      "user_goal": "Get all relevant details of the meeting.",
+      "triggered": true,
+      "evidence": "List attendees: Alice Smith, John Doe; Date: June 15, 2024; Location: Zoom."
+    },
+    {
+      "id": "gutt_3",
+      "name": "Identify Customer Attendees",
+      "capability": "Filter attendees to identify which belong to customer Beta.",
+      "required_skills": [
+        "entity resolution",
+        "organization affiliation mapping"
+      ],
+      "user_goal": "Know which attendees are from customer Beta.",
+      "triggered": true,
+      "evidence": "Alice Smith and John Doe are confirmed as Beta employees."
+    },
+    {
+      "id": "gutt_4",
+      "name": "Generate Meeting Brief Structure",
+      "capability": "Create a structured template for the meeting brief.",
+      "required_skills": [
+        "document structuring",
+        "template generation"
+      ],
+      "user_goal": "Have a clear format for the meeting brief.",
+      "triggered": true,
+      "evidence": "Sections: Meeting Overview, Attendee Dossiers, Topics of Interest, Company Background."
+    },
+    {
+      "id": "gutt_5",
+      "name": "Create Meeting Overview",
+      "capability": "Summarize meeting purpose, date, time, and participants.",
+      "required_skills": [
+        "summarization",
+        "data formatting"
+      ],
+      "user_goal": "Provide a concise meeting overview in the brief.",
+      "triggered": true,
+      "evidence": "Overview: Meeting with Beta on June 15, 2024, via Zoom. Participants: Alice Smith, John Doe."
+    },
+    {
+      "id": "gutt_6",
+      "name": "Generate Attendee Dossier",
+      "capability": "For each customer attendee, compile a dossier with name, role, and relevant background.",
+      "required_skills": [
+        "profile aggregation",
+        "information retrieval",
+        "summarization"
+      ],
+      "user_goal": "Understand each attendee's profile and context.",
+      "triggered": true,
+      "evidence": "Alice Smith: VP of Marketing at Beta, 10 years experience in B2B marketing."
+    },
+    {
+      "id": "gutt_7",
+      "name": "Identify Topics of Interest per Attendee",
+      "capability": "Determine topics each customer attendee is most interested in based on past interactions or data.",
+      "required_skills": [
+        "interest inference",
+        "data analysis",
+        "contextual reasoning"
+      ],
+      "user_goal": "Know what topics to focus on for each attendee.",
+      "triggered": true,
+      "evidence": "Alice Smith: Interested in product roadmap and marketing analytics."
+    },
+    {
+      "id": "gutt_8",
+      "name": "Compile Company Background",
+      "capability": "Generate a background summary for customer Beta, including industry, size, and recent news.",
+      "required_skills": [
+        "company research",
+        "summarization",
+        "data aggregation"
+      ],
+      "user_goal": "Understand the customer's company context.",
+      "triggered": true,
+      "evidence": "Beta: SaaS company in marketing analytics, 500 employees, recently launched AI-driven platform."
+    },
+    {
+      "id": "gutt_9",
+      "name": "Assemble Final Brief Document",
+      "capability": "Combine meeting overview, attendee dossiers, topics of interest, and company background into a cohesive brief.",
+      "required_skills": [
+        "document assembly",
+        "content formatting"
+      ],
+      "user_goal": "Have a complete, well-structured meeting brief.",
+      "triggered": true,
+      "evidence": "Final brief includes all sections in a clear, professional format."
+    }
+  ],
+  "track1_score": 1.0,
+  "track2_score": null,
+  "overall_score": null
+}

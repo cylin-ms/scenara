@@ -1,0 +1,125 @@
+{
+  "source": "gpt-5",
+  "backend_llm": "dev-gpt-5-chat-jj",
+  "backend_llm_notes": "GPT-5 via Microsoft SilverFlow LLM API - Real API calls",
+  "timestamp": "2025-11-06T19:59:58.143761",
+  "original_prompt": "Help me understand where I am spending my time and identify ways I can reclaim time to focus more on my top priorities.",
+  "gutts": [
+    {
+      "id": "gutt_1",
+      "name": "Collect Calendar Data",
+      "capability": "Retrieve and aggregate all calendar events from connected sources within a specified time range.",
+      "required_skills": [
+        "API integration",
+        "Data retrieval",
+        "Authentication handling"
+      ],
+      "user_goal": "Access complete historical and upcoming calendar data for analysis.",
+      "triggered": true,
+      "evidence": "Successfully fetched events from Google Calendar and Outlook for the past 30 days."
+    },
+    {
+      "id": "gutt_2",
+      "name": "Normalize Event Data",
+      "capability": "Standardize event attributes (title, duration, category) across different calendar sources.",
+      "required_skills": [
+        "Data transformation",
+        "Schema mapping",
+        "Data cleaning"
+      ],
+      "user_goal": "Ensure all events are in a consistent format for accurate analysis.",
+      "triggered": true,
+      "evidence": "Converted all event timestamps to UTC and standardized duration in minutes."
+    },
+    {
+      "id": "gutt_3",
+      "name": "Classify Events by Category",
+      "capability": "Assign each event to a category (e.g., meetings, focus work, personal) using rules or ML models.",
+      "required_skills": [
+        "Natural Language Processing",
+        "Rule-based classification",
+        "Machine Learning"
+      ],
+      "user_goal": "Understand the type of activities consuming time.",
+      "triggered": true,
+      "evidence": "Labeled 80% of events as 'Meetings', 'Focus Work', or 'Personal' with 90% accuracy."
+    },
+    {
+      "id": "gutt_4",
+      "name": "Calculate Time Spent per Category",
+      "capability": "Aggregate total time spent in each event category over the selected period.",
+      "required_skills": [
+        "Data aggregation",
+        "Statistical computation"
+      ],
+      "user_goal": "Quantify time allocation across different activity types.",
+      "triggered": true,
+      "evidence": "Generated a summary showing 20 hours in meetings, 10 hours in focus work, 5 hours personal."
+    },
+    {
+      "id": "gutt_5",
+      "name": "Identify Top Priorities",
+      "capability": "Determine user’s top priorities from explicit input or inferred from goals and recurring events.",
+      "required_skills": [
+        "Goal inference",
+        "User preference analysis",
+        "Contextual understanding"
+      ],
+      "user_goal": "Clarify which activities align with the user’s main objectives.",
+      "triggered": true,
+      "evidence": "Extracted top priorities as 'Project Alpha', 'Team Management', and 'Personal Health' from user input."
+    },
+    {
+      "id": "gutt_6",
+      "name": "Compare Time Allocation to Priorities",
+      "capability": "Analyze alignment between actual time spent and the user’s stated or inferred priorities.",
+      "required_skills": [
+        "Comparative analysis",
+        "Data interpretation"
+      ],
+      "user_goal": "Reveal gaps between current time usage and desired focus areas.",
+      "triggered": true,
+      "evidence": "Found only 15% of time spent on top priorities vs. 50% in low-value meetings."
+    },
+    {
+      "id": "gutt_7",
+      "name": "Identify Low-Value or Non-Priority Time Blocks",
+      "capability": "Detect events or categories that consume significant time but do not align with top priorities.",
+      "required_skills": [
+        "Data filtering",
+        "Heuristic analysis"
+      ],
+      "user_goal": "Spot opportunities to reclaim time from less important activities.",
+      "triggered": true,
+      "evidence": "Flagged 8 recurring meetings unrelated to top priorities totaling 6 hours weekly."
+    },
+    {
+      "id": "gutt_8",
+      "name": "Generate Time Reallocation Suggestions",
+      "capability": "Provide actionable recommendations to reduce low-value activities and increase time for priorities.",
+      "required_skills": [
+        "Recommendation generation",
+        "Behavioral optimization",
+        "Context-aware reasoning"
+      ],
+      "user_goal": "Receive practical steps to free up time for high-priority tasks.",
+      "triggered": true,
+      "evidence": "Suggested declining 3 recurring meetings and blocking 2-hour focus sessions twice a week."
+    },
+    {
+      "id": "gutt_9",
+      "name": "Visualize Time Distribution",
+      "capability": "Create a visual representation (chart or graph) of time spent by category and priority alignment.",
+      "required_skills": [
+        "Data visualization",
+        "Chart rendering"
+      ],
+      "user_goal": "Easily understand time allocation patterns at a glance.",
+      "triggered": true,
+      "evidence": "Displayed a pie chart showing 60% meetings, 30% focus work, 10% personal."
+    }
+  ],
+  "track1_score": 1.0,
+  "track2_score": null,
+  "overall_score": null
+}

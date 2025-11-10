@@ -1,0 +1,2620 @@
+{
+  "metadata": {
+    "generated_date": "2025-11-06",
+    "source_prompts": 9,
+    "total_gutts_analyzed": 132,
+    "models": [
+      "Claude Sonnet 4.5",
+      "GPT-5 v2"
+    ]
+  },
+  "canonical_gutts": [
+    {
+      "id": "c_gutt_1",
+      "canonical_name": "Calendar Event Retrieval",
+      "alternative_names": [
+        "Retrieve Calendar Events"
+      ],
+      "capability": "Access and load pending calendar invitations and scheduled meetings requiring decisions",
+      "alternative_capabilities": [
+        "Access and fetch all scheduled calendar events from the user's calendar system"
+      ],
+      "categories": [
+        "scheduling",
+        "data_retrieval"
+      ],
+      "required_skills": [
+        "calendar_api_integration",
+        "Calendar API integration",
+        "Data parsing and normalization",
+        "authentication_handling",
+        "Invitation metadata extraction",
+        "Event filtering (pending/confirmed status)"
+      ],
+      "sources": [
+        {
+          "model": "Claude Sonnet 4.5",
+          "prompt": "organizer-1"
+        },
+        {
+          "model": "GPT-5 v2",
+          "prompt": "organizer-1"
+        }
+      ],
+      "match_score": 0.4
+    },
+    {
+      "id": "c_gutt_2",
+      "canonical_name": "Preparation Time Estimation",
+      "alternative_names": [
+        "Determine Preparation Requirement"
+      ],
+      "capability": "Calculate required preparation time based on meeting type, importance, and complexity",
+      "alternative_capabilities": [
+        "Assess whether a meeting requires dedicated focus time based on its context and importance"
+      ],
+      "categories": [
+        "analysis"
+      ],
+      "required_skills": [
+        "rule_based_inference",
+        "contextual_reasoning",
+        "machine_learning_classification",
+        "Time estimation mapping",
+        "Preparation requirements analysis",
+        "Context-aware time adjustments",
+        "Meeting type classification"
+      ],
+      "sources": [
+        {
+          "model": "Claude Sonnet 4.5",
+          "prompt": "organizer-2"
+        },
+        {
+          "model": "GPT-5 v2",
+          "prompt": "organizer-2"
+        }
+      ],
+      "match_score": 0.4380952380952381
+    },
+    {
+      "id": "c_gutt_3",
+      "canonical_name": "Schedule Optimization Recommendations",
+      "alternative_names": [
+        "Generate Time Reclaim Recommendations"
+      ],
+      "capability": "Suggest specific changes (decline, delegate, shorten, consolidate meetings)",
+      "alternative_capabilities": [
+        "Suggest actionable strategies to free up time (e.g., decline, shorten, delegate)"
+      ],
+      "categories": [
+        "other"
+      ],
+      "required_skills": [
+        "contextual_reasoning",
+        "Recommendation generation",
+        "recommendation_engine",
+        "Change feasibility assessment",
+        "Actionable guidance creation",
+        "Prioritized suggestion ranking"
+      ],
+      "sources": [
+        {
+          "model": "Claude Sonnet 4.5",
+          "prompt": "organizer-3"
+        },
+        {
+          "model": "GPT-5 v2",
+          "prompt": "organizer-3"
+        }
+      ],
+      "match_score": 0.38333333333333336
+    },
+    {
+      "id": "c_gutt_4",
+      "canonical_name": "Meeting Invitation Sending",
+      "alternative_names": [
+        "Send Invitation"
+      ],
+      "capability": "Send calendar invitation to specified attendee with meeting details",
+      "alternative_capabilities": [
+        "Dispatch meeting invite to participant(s)"
+      ],
+      "categories": [
+        "notification"
+      ],
+      "required_skills": [
+        "Calendar invitation API",
+        "RSVP request generation",
+        "Attendee management",
+        "Email notification",
+        "Notification Handling",
+        "Invitation Dispatch"
+      ],
+      "sources": [
+        {
+          "model": "Claude Sonnet 4.5",
+          "prompt": "schedule-1"
+        },
+        {
+          "model": "GPT-5 v2",
+          "prompt": "schedule-1"
+        }
+      ],
+      "match_score": 0.35555555555555557
+    },
+    {
+      "id": "c_gutt_5",
+      "canonical_name": "Calendar Status Update",
+      "alternative_names": [
+        "Update User Calendar Status for Thursday Afternoon"
+      ],
+      "capability": "Set user's availability/status for the blocked time (busy/away/focus time)",
+      "alternative_capabilities": [
+        "Set user’s calendar availability status (e.g., Free, Busy, Out of Office) for the cleared time window"
+      ],
+      "categories": [
+        "other"
+      ],
+      "required_skills": [
+        "Availability indicator management",
+        "user_preference_application",
+        "Calendar property updates",
+        "calendar_status_update",
+        "Free/busy status setting",
+        "Status publishing"
+      ],
+      "sources": [
+        {
+          "model": "Claude Sonnet 4.5",
+          "prompt": "schedule-2"
+        },
+        {
+          "model": "GPT-5 v2",
+          "prompt": "schedule-2"
+        }
+      ],
+      "match_score": 0.4857142857142857
+    },
+    {
+      "id": "c_gutt_6",
+      "canonical_name": "Conference Room Search & Booking",
+      "alternative_names": [
+        "Find Available Room"
+      ],
+      "capability": "Find available conference room for in-person meeting and reserve it",
+      "alternative_capabilities": [
+        "Locate and reserve an available physical meeting room matching the selected time slot"
+      ],
+      "categories": [
+        "scheduling"
+      ],
+      "required_skills": [
+        "Room booking operations",
+        "Capacity matching",
+        "room availability check",
+        "Availability checking",
+        "resource booking",
+        "calendar integration",
+        "Room resource API"
+      ],
+      "sources": [
+        {
+          "model": "Claude Sonnet 4.5",
+          "prompt": "schedule-3"
+        },
+        {
+          "model": "GPT-5 v2",
+          "prompt": "schedule-3"
+        }
+      ],
+      "match_score": 0.3038461538461539
+    },
+    {
+      "id": "c_gutt_7",
+      "canonical_name": "Optimal Slot Selection",
+      "alternative_names": [
+        "Select Optimal Time Slot"
+      ],
+      "capability": "Rank and select best time considering all constraints (hard, soft, preferences)",
+      "alternative_capabilities": [
+        "Choose the best available time slot based on constraints, preferences, and minimal disruption"
+      ],
+      "categories": [
+        "decision_making",
+        "optimization"
+      ],
+      "required_skills": [
+        "Best-fit algorithm",
+        "multi-criteria decision making",
+        "Slot scoring",
+        "preference handling",
+        "Feasibility validation",
+        "Multi-objective optimization",
+        "ranking"
+      ],
+      "sources": [
+        {
+          "model": "Claude Sonnet 4.5",
+          "prompt": "schedule-3"
+        },
+        {
+          "model": "GPT-5 v2",
+          "prompt": "schedule-3"
+        }
+      ],
+      "match_score": 0.3538461538461538
+    },
+    {
+      "id": "c_gutt_8",
+      "canonical_name": "Time Allocation & Formatting",
+      "alternative_names": [
+        "Present Agenda for Confirmation"
+      ],
+      "capability": "Assign time to each agenda item and format for professional distribution",
+      "alternative_capabilities": [
+        "Display the proposed agenda to the user for approval or edits"
+      ],
+      "categories": [
+        "other"
+      ],
+      "required_skills": [
+        "Agenda formatting",
+        "UI_rendering",
+        "Meeting time management",
+        "confirmation_flow",
+        "Document generation",
+        "Time budgeting"
+      ],
+      "sources": [
+        {
+          "model": "Claude Sonnet 4.5",
+          "prompt": "collaborate-1"
+        },
+        {
+          "model": "GPT-5 v2",
+          "prompt": "collaborate-1"
+        }
+      ],
+      "match_score": 0.3090909090909091
+    },
+    {
+      "id": "c_gutt_9",
+      "canonical_name": "Meeting Materials Retrieval",
+      "alternative_names": [
+        "Retrieve Meeting Materials"
+      ],
+      "capability": "Access and load all relevant documents, presentations, and data for the meeting",
+      "alternative_capabilities": [
+        "Access and collect all relevant documents and resources for the specified senior leadership meeting"
+      ],
+      "categories": [
+        "reporting",
+        "data_retrieval"
+      ],
+      "required_skills": [
+        "Multi-format parsing",
+        "Document access",
+        "calendar_integration",
+        "Content extraction",
+        "document_retrieval",
+        "context_identification",
+        "File reading"
+      ],
+      "sources": [
+        {
+          "model": "Claude Sonnet 4.5",
+          "prompt": "collaborate-2"
+        },
+        {
+          "model": "GPT-5 v2",
+          "prompt": "collaborate-2"
+        }
+      ],
+      "match_score": 0.47948717948717945
+    },
+    {
+      "id": "c_gutt_10",
+      "canonical_name": "Executive Summary Distillation",
+      "alternative_names": [
+        "Generate Candidate Discussion Topics"
+      ],
+      "capability": "Condense complex topics into 3 concise, high-impact discussion points",
+      "alternative_capabilities": [
+        "List all significant topics identified from the analysis for potential discussion"
+      ],
+      "categories": [
+        "other"
+      ],
+      "required_skills": [
+        "Summarization",
+        "importance_ranking",
+        "content_clustering",
+        "Distillation to core messages",
+        "summarization",
+        "Priority ranking",
+        "Executive communication"
+      ],
+      "sources": [
+        {
+          "model": "Claude Sonnet 4.5",
+          "prompt": "collaborate-2"
+        },
+        {
+          "model": "GPT-5 v2",
+          "prompt": "collaborate-2"
+        }
+      ],
+      "match_score": 0.3060606060606061
+    },
+    {
+      "id": "c_gutt_11",
+      "canonical_name": "Meeting Details Retrieval",
+      "alternative_names": [
+        "Extract Meeting Details"
+      ],
+      "capability": "Get meeting information (attendees list, meeting time, purpose/subject)",
+      "alternative_capabilities": [
+        "Retrieve date, time, and participant list from the identified meeting"
+      ],
+      "categories": [
+        "notification",
+        "data_retrieval"
+      ],
+      "required_skills": [
+        "Calendar API",
+        "Attendee list parsing",
+        "structured_data_extraction",
+        "Event details retrieval",
+        "calendar_event_parsing",
+        "Meeting metadata extraction"
+      ],
+      "sources": [
+        {
+          "model": "Claude Sonnet 4.5",
+          "prompt": "collaborate-3"
+        },
+        {
+          "model": "GPT-5 v2",
+          "prompt": "collaborate-3"
+        }
+      ],
+      "match_score": 0.3533333333333333
+    },
+    {
+      "id": "c_gutt_12",
+      "canonical_name": "Company Background Research",
+      "alternative_names": [
+        "Retrieve Company Background for Customer Beta"
+      ],
+      "capability": "Gather information about customer Beta company (industry, size, products, recent news)",
+      "alternative_capabilities": [
+        "Gather company-level information such as industry, size, recent news"
+      ],
+      "categories": [
+        "notification"
+      ],
+      "required_skills": [
+        "CRM data access",
+        "company_data_lookup",
+        "knowledge_graph_query",
+        "Company profile compilation",
+        "Web research",
+        "web_search",
+        "Business intelligence"
+      ],
+      "sources": [
+        {
+          "model": "Claude Sonnet 4.5",
+          "prompt": "collaborate-3"
+        },
+        {
+          "model": "GPT-5 v2",
+          "prompt": "collaborate-3"
+        }
+      ],
+      "match_score": 0.5212121212121212
+    },
+    {
+      "id": "c_gutt_13",
+      "canonical_name": "Topic Interest Analysis",
+      "alternative_names": [
+        "Determine Topics of Interest for Each Attendee"
+      ],
+      "capability": "Identify topics each attendee cares about based on communication history, role, and context",
+      "alternative_capabilities": [
+        "Analyze historical interactions or preference data to identify topics each attendee cares about"
+      ],
+      "categories": [
+        "parsing"
+      ],
+      "required_skills": [
+        "nlp_topic_modeling",
+        "Interest extraction",
+        "Topic mapping to roles",
+        "data_aggregation",
+        "Preference modeling",
+        "interest_inference",
+        "Communication analysis"
+      ],
+      "sources": [
+        {
+          "model": "Claude Sonnet 4.5",
+          "prompt": "collaborate-3"
+        },
+        {
+          "model": "GPT-5 v2",
+          "prompt": "collaborate-3"
+        }
+      ],
+      "match_score": 0.3131868131868132
+    }
+  ],
+  "unique_claude_gutts": [
+    {
+      "id": "c_gutt_claude_1",
+      "canonical_name": "Priority Definition & Extraction",
+      "capability": "Identify and structure user's priorities from context, goals, and stated objectives",
+      "categories": [
+        "parsing"
+      ],
+      "required_skills": [
+        "Natural language understanding",
+        "Priority extraction from unstructured text",
+        "Rule formalization",
+        "Goal hierarchy construction"
+      ],
+      "sources": [
+        {
+          "model": "Claude Sonnet 4.5",
+          "prompt": "organizer-1"
+        }
+      ],
+      "note": "Unique to Claude - no GPT-5 equivalent found"
+    },
+    {
+      "id": "c_gutt_claude_2",
+      "canonical_name": "Meeting-Priority Alignment Scoring",
+      "capability": "Evaluate how well each meeting aligns with stated priorities using semantic matching and relevance scoring",
+      "categories": [
+        "analysis"
+      ],
+      "required_skills": [
+        "Semantic similarity computation",
+        "Multi-criteria relevance scoring",
+        "Feature extraction from meeting metadata",
+        "Priority-event mapping logic"
+      ],
+      "sources": [
+        {
+          "model": "Claude Sonnet 4.5",
+          "prompt": "organizer-1"
+        }
+      ],
+      "note": "Unique to Claude - no GPT-5 equivalent found"
+    },
+    {
+      "id": "c_gutt_claude_3",
+      "canonical_name": "Accept/Decline Decision Logic",
+      "capability": "Determine which meetings to accept vs decline based on priority alignment thresholds and constraints",
+      "categories": [
+        "decision_making"
+      ],
+      "required_skills": [
+        "Threshold-based decision making",
+        "Conflict resolution logic",
+        "Calendar optimization",
+        "Rule-based classification"
+      ],
+      "sources": [
+        {
+          "model": "Claude Sonnet 4.5",
+          "prompt": "organizer-1"
+        }
+      ],
+      "note": "Unique to Claude - no GPT-5 equivalent found"
+    },
+    {
+      "id": "c_gutt_claude_4",
+      "canonical_name": "Calendar Action Execution",
+      "capability": "Execute accept/decline actions on calendar system by updating RSVP status",
+      "categories": [
+        "execution"
+      ],
+      "required_skills": [
+        "Calendar API write operations",
+        "RSVP status updates",
+        "Event confirmation handling",
+        "Error handling for API failures"
+      ],
+      "sources": [
+        {
+          "model": "Claude Sonnet 4.5",
+          "prompt": "organizer-1"
+        }
+      ],
+      "note": "Unique to Claude - no GPT-5 equivalent found"
+    },
+    {
+      "id": "c_gutt_claude_5",
+      "canonical_name": "Decision Justification & Reporting",
+      "capability": "Explain why each meeting was accepted or declined with explicit linkage to priority rules",
+      "categories": [
+        "other"
+      ],
+      "required_skills": [
+        "Natural language generation",
+        "Rule-based explanation",
+        "Transparency reporting",
+        "Decision audit trail creation"
+      ],
+      "sources": [
+        {
+          "model": "Claude Sonnet 4.5",
+          "prompt": "organizer-1"
+        }
+      ],
+      "note": "Unique to Claude - no GPT-5 equivalent found"
+    },
+    {
+      "id": "c_gutt_claude_6",
+      "canonical_name": "Calendar Data Retrieval",
+      "capability": "Load and parse calendar events from data source for analysis",
+      "categories": [
+        "parsing",
+        "data_retrieval"
+      ],
+      "required_skills": [
+        "Calendar API integration",
+        "JSON data parsing",
+        "Event data deserialization",
+        "Error handling for data access"
+      ],
+      "sources": [
+        {
+          "model": "Claude Sonnet 4.5",
+          "prompt": "organizer-2"
+        }
+      ],
+      "note": "Unique to Claude - no GPT-5 equivalent found"
+    },
+    {
+      "id": "c_gutt_claude_7",
+      "canonical_name": "Meeting Importance Classification",
+      "capability": "Score meetings based on multiple importance criteria (executives, customers, large meetings, presentations)",
+      "categories": [
+        "reporting"
+      ],
+      "required_skills": [
+        "Multi-criteria scoring algorithm",
+        "Keyword detection and matching",
+        "Attendee analysis and role identification",
+        "Confidence weighting and threshold application"
+      ],
+      "sources": [
+        {
+          "model": "Claude Sonnet 4.5",
+          "prompt": "organizer-2"
+        }
+      ],
+      "note": "Unique to Claude - no GPT-5 equivalent found"
+    },
+    {
+      "id": "c_gutt_claude_8",
+      "canonical_name": "Meeting Flagging Logic",
+      "capability": "Identify and flag meetings that need preparation focus time based on importance and prep requirements",
+      "categories": [
+        "parsing"
+      ],
+      "required_skills": [
+        "Threshold-based filtering",
+        "Criteria evaluation logic",
+        "List segmentation and categorization",
+        "Multi-condition filtering"
+      ],
+      "sources": [
+        {
+          "model": "Claude Sonnet 4.5",
+          "prompt": "organizer-2"
+        }
+      ],
+      "note": "Unique to Claude - no GPT-5 equivalent found"
+    },
+    {
+      "id": "c_gutt_claude_9",
+      "canonical_name": "Calendar Gap Analysis",
+      "capability": "Identify available time slots in calendar for scheduling focus time blocks",
+      "categories": [
+        "parsing"
+      ],
+      "required_skills": [
+        "Temporal gap detection",
+        "Work hours enforcement (8 AM - 6 PM)",
+        "Meeting conflict checking",
+        "Duration-based slot validation"
+      ],
+      "sources": [
+        {
+          "model": "Claude Sonnet 4.5",
+          "prompt": "organizer-2"
+        }
+      ],
+      "note": "Unique to Claude - no GPT-5 equivalent found"
+    },
+    {
+      "id": "c_gutt_claude_10",
+      "canonical_name": "Focus Time Block Scheduling",
+      "capability": "Create and schedule preparation time blocks in calendar with appropriate timing",
+      "categories": [
+        "scheduling"
+      ],
+      "required_skills": [
+        "Slot allocation algorithm",
+        "iCalendar format generation (.ics)",
+        "Optimal timing selection (day before meeting)",
+        "Multi-meeting prep time aggregation"
+      ],
+      "sources": [
+        {
+          "model": "Claude Sonnet 4.5",
+          "prompt": "organizer-2"
+        }
+      ],
+      "note": "Unique to Claude - no GPT-5 equivalent found"
+    },
+    {
+      "id": "c_gutt_claude_11",
+      "canonical_name": "Actionable Recommendations & Reporting",
+      "capability": "Generate user-facing insights, summaries, and preparation guidance",
+      "categories": [
+        "reporting"
+      ],
+      "required_skills": [
+        "User communication formatting",
+        "Priority-based reporting",
+        "Actionable guidance generation",
+        "Summary statistics calculation"
+      ],
+      "sources": [
+        {
+          "model": "Claude Sonnet 4.5",
+          "prompt": "organizer-2"
+        }
+      ],
+      "note": "Unique to Claude - no GPT-5 equivalent found"
+    },
+    {
+      "id": "c_gutt_claude_12",
+      "canonical_name": "Calendar Historical Data Retrieval",
+      "capability": "Load past calendar events for specified time period (weeks/months)",
+      "categories": [
+        "data_retrieval"
+      ],
+      "required_skills": [
+        "Calendar API integration",
+        "Date range filtering",
+        "Historical data access",
+        "Batch data retrieval"
+      ],
+      "sources": [
+        {
+          "model": "Claude Sonnet 4.5",
+          "prompt": "organizer-3"
+        }
+      ],
+      "note": "Unique to Claude - no GPT-5 equivalent found"
+    },
+    {
+      "id": "c_gutt_claude_13",
+      "canonical_name": "Meeting Categorization & Classification",
+      "capability": "Classify meetings by type, purpose, importance level, and participants",
+      "categories": [
+        "classification"
+      ],
+      "required_skills": [
+        "Meeting type taxonomy (31+ types)",
+        "Automatic classification algorithms",
+        "Participant role identification",
+        "Purpose extraction from meeting metadata"
+      ],
+      "sources": [
+        {
+          "model": "Claude Sonnet 4.5",
+          "prompt": "organizer-3"
+        }
+      ],
+      "note": "Unique to Claude - no GPT-5 equivalent found"
+    },
+    {
+      "id": "c_gutt_claude_14",
+      "canonical_name": "Time Aggregation & Statistical Analysis",
+      "capability": "Compute time spent per category, participant, project, and other dimensions",
+      "categories": [
+        "analysis"
+      ],
+      "required_skills": [
+        "Time duration calculation",
+        "Statistical aggregation",
+        "Multi-dimensional grouping",
+        "Trend analysis"
+      ],
+      "sources": [
+        {
+          "model": "Claude Sonnet 4.5",
+          "prompt": "organizer-3"
+        }
+      ],
+      "note": "Unique to Claude - no GPT-5 equivalent found"
+    },
+    {
+      "id": "c_gutt_claude_15",
+      "canonical_name": "Priority Alignment Assessment",
+      "capability": "Evaluate which time usage aligns with stated priorities and identify gaps",
+      "categories": [
+        "analysis",
+        "parsing"
+      ],
+      "required_skills": [
+        "Priority-to-activity mapping",
+        "Alignment scoring",
+        "Gap identification",
+        "Misalignment detection"
+      ],
+      "sources": [
+        {
+          "model": "Claude Sonnet 4.5",
+          "prompt": "organizer-3"
+        }
+      ],
+      "note": "Unique to Claude - no GPT-5 equivalent found"
+    },
+    {
+      "id": "c_gutt_claude_16",
+      "canonical_name": "Low-Value Meeting Identification",
+      "capability": "Flag meetings that consume time without supporting priorities",
+      "categories": [
+        "other"
+      ],
+      "required_skills": [
+        "Value scoring algorithms",
+        "Reclamation candidate detection",
+        "Opportunity cost analysis",
+        "ROI-based filtering"
+      ],
+      "sources": [
+        {
+          "model": "Claude Sonnet 4.5",
+          "prompt": "organizer-3"
+        }
+      ],
+      "note": "Unique to Claude - no GPT-5 equivalent found"
+    },
+    {
+      "id": "c_gutt_claude_17",
+      "canonical_name": "Time Reclamation Opportunity Analysis",
+      "capability": "Calculate potential time savings from proposed changes (decline/delegate/shorten)",
+      "categories": [
+        "analysis"
+      ],
+      "required_skills": [
+        "Impact modeling",
+        "Time savings projection",
+        "Feasibility assessment",
+        "What-if scenario analysis"
+      ],
+      "sources": [
+        {
+          "model": "Claude Sonnet 4.5",
+          "prompt": "organizer-3"
+        }
+      ],
+      "note": "Unique to Claude - no GPT-5 equivalent found"
+    },
+    {
+      "id": "c_gutt_claude_18",
+      "canonical_name": "Time Usage Reporting & Visualization",
+      "capability": "Present insights with charts, summaries, and comparisons (current vs optimal)",
+      "categories": [
+        "reporting"
+      ],
+      "required_skills": [
+        "Data visualization",
+        "Report generation",
+        "Insight communication",
+        "Comparative presentation"
+      ],
+      "sources": [
+        {
+          "model": "Claude Sonnet 4.5",
+          "prompt": "organizer-3"
+        }
+      ],
+      "note": "Unique to Claude - no GPT-5 equivalent found"
+    },
+    {
+      "id": "c_gutt_claude_19",
+      "canonical_name": "Constraint Extraction & Formalization",
+      "capability": "Parse scheduling requirements into structured constraints (weekly recurrence, duration, time preferences, exclusions)",
+      "categories": [
+        "parsing"
+      ],
+      "required_skills": [
+        "NLP for constraint extraction",
+        "Rule formalization",
+        "Preference modeling",
+        "Temporal constraint structuring"
+      ],
+      "sources": [
+        {
+          "model": "Claude Sonnet 4.5",
+          "prompt": "schedule-1"
+        }
+      ],
+      "note": "Unique to Claude - no GPT-5 equivalent found"
+    },
+    {
+      "id": "c_gutt_claude_20",
+      "canonical_name": "Multi-Calendar Availability Checking",
+      "capability": "Check free/busy status for both user and specified attendee",
+      "categories": [
+        "validation"
+      ],
+      "required_skills": [
+        "Calendar API for multiple users",
+        "Free/busy queries",
+        "Availability matrix construction",
+        "Cross-calendar access"
+      ],
+      "sources": [
+        {
+          "model": "Claude Sonnet 4.5",
+          "prompt": "schedule-1"
+        }
+      ],
+      "note": "Unique to Claude - no GPT-5 equivalent found"
+    },
+    {
+      "id": "c_gutt_claude_21",
+      "canonical_name": "Constraint-Based Slot Finding",
+      "capability": "Identify time slots matching all constraints (weekly pattern, afternoons, not Fridays, 30min duration)",
+      "categories": [
+        "parsing"
+      ],
+      "required_skills": [
+        "Constraint satisfaction algorithms",
+        "Temporal reasoning",
+        "Slot ranking by preferences",
+        "Feasibility validation"
+      ],
+      "sources": [
+        {
+          "model": "Claude Sonnet 4.5",
+          "prompt": "schedule-1"
+        }
+      ],
+      "note": "Unique to Claude - no GPT-5 equivalent found"
+    },
+    {
+      "id": "c_gutt_claude_22",
+      "canonical_name": "Recurring Meeting Series Creation",
+      "capability": "Create recurring calendar event with proper series configuration and recurrence rules",
+      "categories": [
+        "other"
+      ],
+      "required_skills": [
+        "Recurrence rule generation (iCalendar RRULE)",
+        "Series management",
+        "Calendar event creation",
+        "Metadata configuration"
+      ],
+      "sources": [
+        {
+          "model": "Claude Sonnet 4.5",
+          "prompt": "schedule-1"
+        }
+      ],
+      "note": "Unique to Claude - no GPT-5 equivalent found"
+    },
+    {
+      "id": "c_gutt_claude_23",
+      "canonical_name": "Decline/Conflict Detection & Monitoring",
+      "capability": "Monitor for attendee declines or new calendar conflicts in the series",
+      "categories": [
+        "monitoring"
+      ],
+      "required_skills": [
+        "Event change detection",
+        "RSVP status tracking",
+        "Conflict identification",
+        "Webhook/polling for updates"
+      ],
+      "sources": [
+        {
+          "model": "Claude Sonnet 4.5",
+          "prompt": "schedule-1"
+        }
+      ],
+      "note": "Unique to Claude - no GPT-5 equivalent found"
+    },
+    {
+      "id": "c_gutt_claude_24",
+      "canonical_name": "Automatic Rescheduling Logic",
+      "capability": "When declined or conflicted, find new slot and send updated invitation automatically",
+      "categories": [
+        "notification",
+        "execution"
+      ],
+      "required_skills": [
+        "Trigger-based automation",
+        "Slot re-finding with same constraints",
+        "Event update API",
+        "Notification management"
+      ],
+      "sources": [
+        {
+          "model": "Claude Sonnet 4.5",
+          "prompt": "schedule-1"
+        }
+      ],
+      "note": "Unique to Claude - no GPT-5 equivalent found"
+    },
+    {
+      "id": "c_gutt_claude_25",
+      "canonical_name": "Time Block Specification Parsing",
+      "capability": "Interpret 'Thursday afternoon' into specific date and time range based on context",
+      "categories": [
+        "other"
+      ],
+      "required_skills": [
+        "Temporal expression resolution",
+        "Date/time parsing",
+        "Context awareness for relative dates",
+        "Time block definition"
+      ],
+      "sources": [
+        {
+          "model": "Claude Sonnet 4.5",
+          "prompt": "schedule-2"
+        }
+      ],
+      "note": "Unique to Claude - no GPT-5 equivalent found"
+    },
+    {
+      "id": "c_gutt_claude_26",
+      "canonical_name": "Affected Meetings Identification",
+      "capability": "Find all meetings within the target time block that need rescheduling",
+      "categories": [
+        "data_retrieval"
+      ],
+      "required_skills": [
+        "Calendar querying",
+        "Temporal overlap detection",
+        "Meeting filtering by time range",
+        "Event enumeration"
+      ],
+      "sources": [
+        {
+          "model": "Claude Sonnet 4.5",
+          "prompt": "schedule-2"
+        }
+      ],
+      "note": "Unique to Claude - no GPT-5 equivalent found"
+    },
+    {
+      "id": "c_gutt_claude_27",
+      "canonical_name": "RSVP Decline Execution",
+      "capability": "Decline all meetings in the blocked time with appropriate notifications",
+      "categories": [
+        "other"
+      ],
+      "required_skills": [
+        "Calendar API updates",
+        "RSVP status changes",
+        "Batch operations",
+        "Decline message generation"
+      ],
+      "sources": [
+        {
+          "model": "Claude Sonnet 4.5",
+          "prompt": "schedule-2"
+        }
+      ],
+      "note": "Unique to Claude - no GPT-5 equivalent found"
+    },
+    {
+      "id": "c_gutt_claude_28",
+      "canonical_name": "Alternative Slot Finding",
+      "capability": "For each declined meeting, identify alternative time slots when same attendees are available",
+      "categories": [
+        "parsing"
+      ],
+      "required_skills": [
+        "Availability checking",
+        "Multi-attendee coordination",
+        "Slot ranking",
+        "Constraint preservation"
+      ],
+      "sources": [
+        {
+          "model": "Claude Sonnet 4.5",
+          "prompt": "schedule-2"
+        }
+      ],
+      "note": "Unique to Claude - no GPT-5 equivalent found"
+    },
+    {
+      "id": "c_gutt_claude_29",
+      "canonical_name": "Meeting Rescheduling Proposals",
+      "capability": "Send reschedule requests with proposed new times to meeting organizers/attendees",
+      "categories": [
+        "notification",
+        "scheduling"
+      ],
+      "required_skills": [
+        "Meeting update API",
+        "Attendee communication",
+        "Proposal generation",
+        "Reschedule request formatting"
+      ],
+      "sources": [
+        {
+          "model": "Claude Sonnet 4.5",
+          "prompt": "schedule-2"
+        }
+      ],
+      "note": "Unique to Claude - no GPT-5 equivalent found"
+    },
+    {
+      "id": "c_gutt_claude_30",
+      "canonical_name": "Focus Time Block Creation",
+      "capability": "Create placeholder calendar event for the blocked time with appropriate title/description",
+      "categories": [
+        "other"
+      ],
+      "required_skills": [
+        "Calendar event creation",
+        "Focus time labeling",
+        "Event property configuration",
+        "Blocking event setup"
+      ],
+      "sources": [
+        {
+          "model": "Claude Sonnet 4.5",
+          "prompt": "schedule-2"
+        }
+      ],
+      "note": "Unique to Claude - no GPT-5 equivalent found"
+    },
+    {
+      "id": "c_gutt_claude_31",
+      "canonical_name": "Action Summary & Confirmation",
+      "capability": "Report what was done (declined X meetings, rescheduled Y, blocked Z hours, set status)",
+      "categories": [
+        "scheduling",
+        "reporting"
+      ],
+      "required_skills": [
+        "Action tracking",
+        "Status reporting",
+        "Confirmation generation",
+        "Summary compilation"
+      ],
+      "sources": [
+        {
+          "model": "Claude Sonnet 4.5",
+          "prompt": "schedule-2"
+        }
+      ],
+      "note": "Unique to Claude - no GPT-5 equivalent found"
+    },
+    {
+      "id": "c_gutt_claude_32",
+      "canonical_name": "Meeting Requirements Extraction",
+      "capability": "Parse all requirements (attendees, duration, date range, override rules, modality, resources)",
+      "categories": [
+        "parsing"
+      ],
+      "required_skills": [
+        "Multi-constraint NLP extraction",
+        "Requirement structuring",
+        "Parameter identification",
+        "Constraint hierarchy parsing"
+      ],
+      "sources": [
+        {
+          "model": "Claude Sonnet 4.5",
+          "prompt": "schedule-3"
+        }
+      ],
+      "note": "Unique to Claude - no GPT-5 equivalent found"
+    },
+    {
+      "id": "c_gutt_claude_33",
+      "canonical_name": "Multi-Person Availability Aggregation",
+      "capability": "Check calendars for Chris, Sangya, Kat and merge availability data",
+      "categories": [
+        "validation"
+      ],
+      "required_skills": [
+        "Cross-calendar API access",
+        "Availability intersection",
+        "Multi-user data aggregation",
+        "Conflict detection"
+      ],
+      "sources": [
+        {
+          "model": "Claude Sonnet 4.5",
+          "prompt": "schedule-3"
+        }
+      ],
+      "note": "Unique to Claude - no GPT-5 equivalent found"
+    },
+    {
+      "id": "c_gutt_claude_34",
+      "canonical_name": "Priority Constraint Application (Kat's schedule)",
+      "capability": "Ensure primary consideration of Kat's availability as hard constraint",
+      "categories": [
+        "other"
+      ],
+      "required_skills": [
+        "Hierarchical constraint handling",
+        "Priority weighting",
+        "Hard vs soft constraint differentiation",
+        "Conflict prioritization"
+      ],
+      "sources": [
+        {
+          "model": "Claude Sonnet 4.5",
+          "prompt": "schedule-3"
+        }
+      ],
+      "note": "Unique to Claude - no GPT-5 equivalent found"
+    },
+    {
+      "id": "c_gutt_claude_35",
+      "canonical_name": "Override-Eligible Meeting Identification",
+      "capability": "Identify 1:1s and lunches on others' calendars that can be rescheduled if needed",
+      "categories": [
+        "scheduling",
+        "parsing"
+      ],
+      "required_skills": [
+        "Meeting type classification",
+        "Override eligibility rules",
+        "Event metadata analysis",
+        "Movable meeting detection"
+      ],
+      "sources": [
+        {
+          "model": "Claude Sonnet 4.5",
+          "prompt": "schedule-3"
+        }
+      ],
+      "note": "Unique to Claude - no GPT-5 equivalent found"
+    },
+    {
+      "id": "c_gutt_claude_36",
+      "canonical_name": "Location-Based Filtering",
+      "capability": "Filter for in-person meeting capability (office presence, not remote-only days)",
+      "categories": [
+        "other"
+      ],
+      "required_skills": [
+        "Location awareness",
+        "Modality constraints",
+        "Participant location checking",
+        "Office day identification"
+      ],
+      "sources": [
+        {
+          "model": "Claude Sonnet 4.5",
+          "prompt": "schedule-3"
+        }
+      ],
+      "note": "Unique to Claude - no GPT-5 equivalent found"
+    },
+    {
+      "id": "c_gutt_claude_37",
+      "canonical_name": "Conflict Resolution & Rescheduling",
+      "capability": "If needed, reschedule override-eligible conflicts (1:1s/lunches) to make room",
+      "categories": [
+        "scheduling"
+      ],
+      "required_skills": [
+        "Cascading rescheduling",
+        "Conflict resolution",
+        "Meeting move operations",
+        "Attendee notification"
+      ],
+      "sources": [
+        {
+          "model": "Claude Sonnet 4.5",
+          "prompt": "schedule-3"
+        }
+      ],
+      "note": "Unique to Claude - no GPT-5 equivalent found"
+    },
+    {
+      "id": "c_gutt_claude_38",
+      "canonical_name": "Meeting Creation & Invitations",
+      "capability": "Create meeting with all attendees, room resource, and Project Alpha details",
+      "categories": [
+        "other"
+      ],
+      "required_skills": [
+        "Calendar event creation",
+        "Multi-person invitations",
+        "Resource inclusion",
+        "Meeting metadata setup"
+      ],
+      "sources": [
+        {
+          "model": "Claude Sonnet 4.5",
+          "prompt": "schedule-3"
+        }
+      ],
+      "note": "Unique to Claude - no GPT-5 equivalent found"
+    },
+    {
+      "id": "c_gutt_claude_39",
+      "canonical_name": "Meeting Context Retrieval",
+      "capability": "Gather information about Project Alpha from available sources (docs, project management tools, status reports)",
+      "categories": [
+        "notification",
+        "reporting"
+      ],
+      "required_skills": [
+        "Document retrieval",
+        "Context extraction",
+        "Project status queries",
+        "Multi-source data aggregation"
+      ],
+      "sources": [
+        {
+          "model": "Claude Sonnet 4.5",
+          "prompt": "collaborate-1"
+        }
+      ],
+      "note": "Unique to Claude - no GPT-5 equivalent found"
+    },
+    {
+      "id": "c_gutt_claude_40",
+      "canonical_name": "Stakeholder Role Identification",
+      "capability": "Understand product team vs marketing team roles, responsibilities, and concerns",
+      "categories": [
+        "other"
+      ],
+      "required_skills": [
+        "Role-based reasoning",
+        "Stakeholder analysis",
+        "Perspective modeling",
+        "Team responsibility mapping"
+      ],
+      "sources": [
+        {
+          "model": "Claude Sonnet 4.5",
+          "prompt": "collaborate-1"
+        }
+      ],
+      "note": "Unique to Claude - no GPT-5 equivalent found"
+    },
+    {
+      "id": "c_gutt_claude_41",
+      "canonical_name": "Agenda Structure Planning",
+      "capability": "Create logical flow for review meeting (progress → confirmation → blockers → risks)",
+      "categories": [
+        "validation"
+      ],
+      "required_skills": [
+        "Meeting structure best practices",
+        "Agenda templating",
+        "Flow optimization",
+        "Topic sequencing"
+      ],
+      "sources": [
+        {
+          "model": "Claude Sonnet 4.5",
+          "prompt": "collaborate-1"
+        }
+      ],
+      "note": "Unique to Claude - no GPT-5 equivalent found"
+    },
+    {
+      "id": "c_gutt_claude_42",
+      "canonical_name": "Progress Review Items Generation",
+      "capability": "List specific accomplishments, milestones completed, and metrics to review",
+      "categories": [
+        "other"
+      ],
+      "required_skills": [
+        "Achievement extraction",
+        "Milestone identification",
+        "Metrics selection",
+        "Status summary creation"
+      ],
+      "sources": [
+        {
+          "model": "Claude Sonnet 4.5",
+          "prompt": "collaborate-1"
+        }
+      ],
+      "note": "Unique to Claude - no GPT-5 equivalent found"
+    },
+    {
+      "id": "c_gutt_claude_43",
+      "canonical_name": "Blocker & Risk Identification",
+      "capability": "Surface known issues, dependencies, blockers, and potential risks for discussion",
+      "categories": [
+        "other"
+      ],
+      "required_skills": [
+        "Issue tracking",
+        "Risk analysis",
+        "Dependency mapping",
+        "Problem identification"
+      ],
+      "sources": [
+        {
+          "model": "Claude Sonnet 4.5",
+          "prompt": "collaborate-1"
+        }
+      ],
+      "note": "Unique to Claude - no GPT-5 equivalent found"
+    },
+    {
+      "id": "c_gutt_claude_44",
+      "canonical_name": "Content Analysis & Topic Extraction",
+      "capability": "Identify main themes and topics across all materials",
+      "categories": [
+        "parsing"
+      ],
+      "required_skills": [
+        "Document analysis",
+        "Theme extraction",
+        "Topic clustering",
+        "Content synthesis"
+      ],
+      "sources": [
+        {
+          "model": "Claude Sonnet 4.5",
+          "prompt": "collaborate-2"
+        }
+      ],
+      "note": "Unique to Claude - no GPT-5 equivalent found"
+    },
+    {
+      "id": "c_gutt_claude_45",
+      "canonical_name": "Audience-Aware Framing",
+      "capability": "Frame discussion points appropriately for senior leadership audience (strategic, high-level, business impact)",
+      "categories": [
+        "other"
+      ],
+      "required_skills": [
+        "Role-based communication",
+        "Executive context awareness",
+        "Tone adjustment",
+        "Strategic framing"
+      ],
+      "sources": [
+        {
+          "model": "Claude Sonnet 4.5",
+          "prompt": "collaborate-2"
+        }
+      ],
+      "note": "Unique to Claude - no GPT-5 equivalent found"
+    },
+    {
+      "id": "c_gutt_claude_46",
+      "canonical_name": "Objection Anticipation",
+      "capability": "Predict concerns, pushback, or tough questions from senior leaders",
+      "categories": [
+        "other"
+      ],
+      "required_skills": [
+        "Critical thinking",
+        "Risk identification",
+        "Executive perspective modeling",
+        "Concern prediction"
+      ],
+      "sources": [
+        {
+          "model": "Claude Sonnet 4.5",
+          "prompt": "collaborate-2"
+        }
+      ],
+      "note": "Unique to Claude - no GPT-5 equivalent found"
+    },
+    {
+      "id": "c_gutt_claude_47",
+      "canonical_name": "Response Preparation",
+      "capability": "Generate effective, well-reasoned responses to anticipated objections",
+      "categories": [
+        "reporting"
+      ],
+      "required_skills": [
+        "Argumentation",
+        "Evidence marshaling",
+        "Persuasive communication",
+        "Counter-argument development"
+      ],
+      "sources": [
+        {
+          "model": "Claude Sonnet 4.5",
+          "prompt": "collaborate-2"
+        }
+      ],
+      "note": "Unique to Claude - no GPT-5 equivalent found"
+    },
+    {
+      "id": "c_gutt_claude_48",
+      "canonical_name": "Briefing Document Generation",
+      "capability": "Format summary, objections, and responses into comprehensive prep document",
+      "categories": [
+        "other"
+      ],
+      "required_skills": [
+        "Document formatting",
+        "Professional presentation",
+        "Structured organization",
+        "Executive brief writing"
+      ],
+      "sources": [
+        {
+          "model": "Claude Sonnet 4.5",
+          "prompt": "collaborate-2"
+        }
+      ],
+      "note": "Unique to Claude - no GPT-5 equivalent found"
+    },
+    {
+      "id": "c_gutt_claude_49",
+      "canonical_name": "Attendee Identity Resolution",
+      "capability": "Identify each customer attendee and their specific roles/titles",
+      "categories": [
+        "parsing"
+      ],
+      "required_skills": [
+        "Contact resolution",
+        "Role identification",
+        "Org chart analysis",
+        "LinkedIn/directory lookup"
+      ],
+      "sources": [
+        {
+          "model": "Claude Sonnet 4.5",
+          "prompt": "collaborate-3"
+        }
+      ],
+      "note": "Unique to Claude - no GPT-5 equivalent found"
+    },
+    {
+      "id": "c_gutt_claude_50",
+      "canonical_name": "Individual Dossier Creation",
+      "capability": "For each attendee, compile background, role, interaction history, and context",
+      "categories": [
+        "other"
+      ],
+      "required_skills": [
+        "CRM querying",
+        "Interaction history analysis",
+        "Profile building",
+        "Contact research"
+      ],
+      "sources": [
+        {
+          "model": "Claude Sonnet 4.5",
+          "prompt": "collaborate-3"
+        }
+      ],
+      "note": "Unique to Claude - no GPT-5 equivalent found"
+    },
+    {
+      "id": "c_gutt_claude_51",
+      "canonical_name": "Relationship History Compilation",
+      "capability": "Summarize past interactions, deals, support issues, and relationship context with customer",
+      "categories": [
+        "reporting"
+      ],
+      "required_skills": [
+        "CRM data aggregation",
+        "Timeline creation",
+        "Relationship context building",
+        "Historical summary"
+      ],
+      "sources": [
+        {
+          "model": "Claude Sonnet 4.5",
+          "prompt": "collaborate-3"
+        }
+      ],
+      "note": "Unique to Claude - no GPT-5 equivalent found"
+    },
+    {
+      "id": "c_gutt_claude_52",
+      "canonical_name": "Relevant Content Gathering",
+      "capability": "Find related materials (proposals, presentations, technical docs, case studies)",
+      "categories": [
+        "reporting"
+      ],
+      "required_skills": [
+        "Document search",
+        "Relevance matching",
+        "Content curation",
+        "Material organization"
+      ],
+      "sources": [
+        {
+          "model": "Claude Sonnet 4.5",
+          "prompt": "collaborate-3"
+        }
+      ],
+      "note": "Unique to Claude - no GPT-5 equivalent found"
+    },
+    {
+      "id": "c_gutt_claude_53",
+      "canonical_name": "Brief Document Assembly",
+      "capability": "Compile all information into structured, comprehensive prep brief",
+      "categories": [
+        "notification"
+      ],
+      "required_skills": [
+        "Document generation",
+        "Professional formatting",
+        "Information organization",
+        "Brief writing"
+      ],
+      "sources": [
+        {
+          "model": "Claude Sonnet 4.5",
+          "prompt": "collaborate-3"
+        }
+      ],
+      "note": "Unique to Claude - no GPT-5 equivalent found"
+    }
+  ],
+  "unique_gpt5_gutts": [
+    {
+      "id": "c_gutt_gpt5_1",
+      "canonical_name": "Extract Event Attributes",
+      "capability": "Parse each event to extract key details such as title, time, participants, and description",
+      "categories": [
+        "parsing"
+      ],
+      "required_skills": [
+        "data_parsing",
+        "structured_data_processing"
+      ],
+      "sources": [
+        {
+          "model": "GPT-5 v2",
+          "prompt": "organizer-1"
+        }
+      ],
+      "note": "Unique to GPT-5 - no Claude equivalent found"
+    },
+    {
+      "id": "c_gutt_gpt5_2",
+      "canonical_name": "Retrieve User Priority Profile",
+      "capability": "Access and load the user's defined priorities or priority model",
+      "categories": [
+        "data_retrieval"
+      ],
+      "required_skills": [
+        "user_profile_management",
+        "data_retrieval"
+      ],
+      "sources": [
+        {
+          "model": "GPT-5 v2",
+          "prompt": "organizer-1"
+        }
+      ],
+      "note": "Unique to GPT-5 - no Claude equivalent found"
+    },
+    {
+      "id": "c_gutt_gpt5_3",
+      "canonical_name": "Classify Event Against Priorities",
+      "capability": "Determine if each event aligns with the user's stated priorities",
+      "categories": [
+        "decision_making"
+      ],
+      "required_skills": [
+        "natural_language_processing",
+        "classification_algorithm",
+        "priority_matching"
+      ],
+      "sources": [
+        {
+          "model": "GPT-5 v2",
+          "prompt": "organizer-1"
+        }
+      ],
+      "note": "Unique to GPT-5 - no Claude equivalent found"
+    },
+    {
+      "id": "c_gutt_gpt5_4",
+      "canonical_name": "Filter Non-Priority Events",
+      "capability": "Separate events that do not match the user's priorities from those that do",
+      "categories": [
+        "other"
+      ],
+      "required_skills": [
+        "data_filtering",
+        "logical_operations"
+      ],
+      "sources": [
+        {
+          "model": "GPT-5 v2",
+          "prompt": "organizer-1"
+        }
+      ],
+      "note": "Unique to GPT-5 - no Claude equivalent found"
+    },
+    {
+      "id": "c_gutt_gpt5_5",
+      "canonical_name": "Commit Priority Meetings",
+      "capability": "Update the calendar to confirm attendance for meetings identified as priority",
+      "categories": [
+        "validation",
+        "execution"
+      ],
+      "required_skills": [
+        "calendar_api_integration",
+        "event_update_operations"
+      ],
+      "sources": [
+        {
+          "model": "GPT-5 v2",
+          "prompt": "organizer-1"
+        }
+      ],
+      "note": "Unique to GPT-5 - no Claude equivalent found"
+    },
+    {
+      "id": "c_gutt_gpt5_6",
+      "canonical_name": "Retrieve Calendar Events",
+      "capability": "Access and fetch all scheduled meetings from the user's calendar",
+      "categories": [
+        "scheduling",
+        "data_retrieval"
+      ],
+      "required_skills": [
+        "calendar_api_integration",
+        "data_retrieval"
+      ],
+      "sources": [
+        {
+          "model": "GPT-5 v2",
+          "prompt": "organizer-2"
+        }
+      ],
+      "note": "Unique to GPT-5 - no Claude equivalent found"
+    },
+    {
+      "id": "c_gutt_gpt5_7",
+      "canonical_name": "Identify Important Meetings",
+      "capability": "Analyze fetched meetings and determine which ones are marked or inferred as important",
+      "categories": [
+        "decision_making",
+        "analysis",
+        "data_retrieval"
+      ],
+      "required_skills": [
+        "natural_language_processing",
+        "priority_classification",
+        "metadata_analysis"
+      ],
+      "sources": [
+        {
+          "model": "GPT-5 v2",
+          "prompt": "organizer-2"
+        }
+      ],
+      "note": "Unique to GPT-5 - no Claude equivalent found"
+    },
+    {
+      "id": "c_gutt_gpt5_8",
+      "canonical_name": "Extract Meeting Context",
+      "capability": "Parse meeting details such as title, agenda, participants, and duration for context",
+      "categories": [
+        "parsing"
+      ],
+      "required_skills": [
+        "text_parsing",
+        "entity_extraction"
+      ],
+      "sources": [
+        {
+          "model": "GPT-5 v2",
+          "prompt": "organizer-2"
+        }
+      ],
+      "note": "Unique to GPT-5 - no Claude equivalent found"
+    },
+    {
+      "id": "c_gutt_gpt5_9",
+      "canonical_name": "Flag Meetings Requiring Focus Time",
+      "capability": "Mark or annotate meetings that need preparation in the system",
+      "categories": [
+        "other"
+      ],
+      "required_skills": [
+        "calendar_annotation",
+        "state_update"
+      ],
+      "sources": [
+        {
+          "model": "GPT-5 v2",
+          "prompt": "organizer-2"
+        }
+      ],
+      "note": "Unique to GPT-5 - no Claude equivalent found"
+    },
+    {
+      "id": "c_gutt_gpt5_10",
+      "canonical_name": "Notify User of Preparation Needs",
+      "capability": "Send alerts or reminders to the user about meetings that require focus time",
+      "categories": [
+        "notification"
+      ],
+      "required_skills": [
+        "notification_delivery",
+        "user_preference_handling"
+      ],
+      "sources": [
+        {
+          "model": "GPT-5 v2",
+          "prompt": "organizer-2"
+        }
+      ],
+      "note": "Unique to GPT-5 - no Claude equivalent found"
+    },
+    {
+      "id": "c_gutt_gpt5_11",
+      "canonical_name": "Retrieve Calendar Events",
+      "capability": "Access and fetch all scheduled calendar events within the relevant timeframe",
+      "categories": [
+        "scheduling",
+        "data_retrieval"
+      ],
+      "required_skills": [
+        "calendar_api_integration",
+        "data_retrieval"
+      ],
+      "sources": [
+        {
+          "model": "GPT-5 v2",
+          "prompt": "organizer-3"
+        }
+      ],
+      "note": "Unique to GPT-5 - no Claude equivalent found"
+    },
+    {
+      "id": "c_gutt_gpt5_12",
+      "canonical_name": "Extract Event Attributes",
+      "capability": "Parse and normalize event details such as duration, participants, and category",
+      "categories": [
+        "parsing"
+      ],
+      "required_skills": [
+        "data_parsing",
+        "schema_mapping"
+      ],
+      "sources": [
+        {
+          "model": "GPT-5 v2",
+          "prompt": "organizer-3"
+        }
+      ],
+      "note": "Unique to GPT-5 - no Claude equivalent found"
+    },
+    {
+      "id": "c_gutt_gpt5_13",
+      "canonical_name": "Classify Events by Category",
+      "capability": "Assign each event to a category (e.g., meeting, focus work, personal) using rules or ML",
+      "categories": [
+        "other"
+      ],
+      "required_skills": [
+        "classification_algorithm",
+        "nlp_text_analysis"
+      ],
+      "sources": [
+        {
+          "model": "GPT-5 v2",
+          "prompt": "organizer-3"
+        }
+      ],
+      "note": "Unique to GPT-5 - no Claude equivalent found"
+    },
+    {
+      "id": "c_gutt_gpt5_14",
+      "canonical_name": "Identify Priority Alignment",
+      "capability": "Determine whether each event aligns with the user’s stated top priorities",
+      "categories": [
+        "decision_making"
+      ],
+      "required_skills": [
+        "priority_mapping",
+        "semantic_matching"
+      ],
+      "sources": [
+        {
+          "model": "GPT-5 v2",
+          "prompt": "organizer-3"
+        }
+      ],
+      "note": "Unique to GPT-5 - no Claude equivalent found"
+    },
+    {
+      "id": "c_gutt_gpt5_15",
+      "canonical_name": "Compute Time Allocation Metrics",
+      "capability": "Aggregate event durations by category and priority alignment",
+      "categories": [
+        "other"
+      ],
+      "required_skills": [
+        "data_aggregation",
+        "statistical_computation"
+      ],
+      "sources": [
+        {
+          "model": "GPT-5 v2",
+          "prompt": "organizer-3"
+        }
+      ],
+      "note": "Unique to GPT-5 - no Claude equivalent found"
+    },
+    {
+      "id": "c_gutt_gpt5_16",
+      "canonical_name": "Detect Low-Value or Non-Priority Blocks",
+      "capability": "Identify events that consume time but do not align with top priorities",
+      "categories": [
+        "parsing"
+      ],
+      "required_skills": [
+        "pattern_detection",
+        "priority_filtering"
+      ],
+      "sources": [
+        {
+          "model": "GPT-5 v2",
+          "prompt": "organizer-3"
+        }
+      ],
+      "note": "Unique to GPT-5 - no Claude equivalent found"
+    },
+    {
+      "id": "c_gutt_gpt5_17",
+      "canonical_name": "Present Insights and Recommendations",
+      "capability": "Visualize time distribution and display suggested actions in an understandable format",
+      "categories": [
+        "reporting"
+      ],
+      "required_skills": [
+        "data_visualization",
+        "ux_design"
+      ],
+      "sources": [
+        {
+          "model": "GPT-5 v2",
+          "prompt": "organizer-3"
+        }
+      ],
+      "note": "Unique to GPT-5 - no Claude equivalent found"
+    },
+    {
+      "id": "c_gutt_gpt5_18",
+      "canonical_name": "Parse Scheduling Intent",
+      "capability": "Extract user intent and constraints from natural language input",
+      "categories": [
+        "parsing"
+      ],
+      "required_skills": [
+        "NLU",
+        "Intent Recognition",
+        "Entity Extraction"
+      ],
+      "sources": [
+        {
+          "model": "GPT-5 v2",
+          "prompt": "schedule-1"
+        }
+      ],
+      "note": "Unique to GPT-5 - no Claude equivalent found"
+    },
+    {
+      "id": "c_gutt_gpt5_19",
+      "canonical_name": "Resolve Participant Identity",
+      "capability": "Match {name} to a specific contact or calendar entity",
+      "categories": [
+        "other"
+      ],
+      "required_skills": [
+        "Contact Resolution",
+        "Disambiguation",
+        "Directory Lookup"
+      ],
+      "sources": [
+        {
+          "model": "GPT-5 v2",
+          "prompt": "schedule-1"
+        }
+      ],
+      "note": "Unique to GPT-5 - no Claude equivalent found"
+    },
+    {
+      "id": "c_gutt_gpt5_20",
+      "canonical_name": "Determine Recurrence Pattern",
+      "capability": "Translate 'weekly starting next week' into a structured recurrence rule",
+      "categories": [
+        "other"
+      ],
+      "required_skills": [
+        "Temporal Reasoning",
+        "Recurrence Rule Generation"
+      ],
+      "sources": [
+        {
+          "model": "GPT-5 v2",
+          "prompt": "schedule-1"
+        }
+      ],
+      "note": "Unique to GPT-5 - no Claude equivalent found"
+    },
+    {
+      "id": "c_gutt_gpt5_21",
+      "canonical_name": "Apply Time Preferences",
+      "capability": "Interpret and enforce time-of-day and day-of-week constraints",
+      "categories": [
+        "other"
+      ],
+      "required_skills": [
+        "Constraint Parsing",
+        "Preference Application"
+      ],
+      "sources": [
+        {
+          "model": "GPT-5 v2",
+          "prompt": "schedule-1"
+        }
+      ],
+      "note": "Unique to GPT-5 - no Claude equivalent found"
+    },
+    {
+      "id": "c_gutt_gpt5_22",
+      "canonical_name": "Find Optimal Time Slot",
+      "capability": "Search calendars for available 30-minute slots matching constraints",
+      "categories": [
+        "other"
+      ],
+      "required_skills": [
+        "Calendar Query",
+        "Availability Analysis",
+        "Constraint Satisfaction"
+      ],
+      "sources": [
+        {
+          "model": "GPT-5 v2",
+          "prompt": "schedule-1"
+        }
+      ],
+      "note": "Unique to GPT-5 - no Claude equivalent found"
+    },
+    {
+      "id": "c_gutt_gpt5_23",
+      "canonical_name": "Create Calendar Event",
+      "capability": "Generate and insert the meeting event into the calendar system",
+      "categories": [
+        "reporting"
+      ],
+      "required_skills": [
+        "Calendar API Integration",
+        "Event Creation"
+      ],
+      "sources": [
+        {
+          "model": "GPT-5 v2",
+          "prompt": "schedule-1"
+        }
+      ],
+      "note": "Unique to GPT-5 - no Claude equivalent found"
+    },
+    {
+      "id": "c_gutt_gpt5_24",
+      "canonical_name": "Monitor for Declines or Conflicts",
+      "capability": "Track responses and detect scheduling conflicts post-creation",
+      "categories": [
+        "monitoring"
+      ],
+      "required_skills": [
+        "Event Status Monitoring",
+        "Conflict Detection"
+      ],
+      "sources": [
+        {
+          "model": "GPT-5 v2",
+          "prompt": "schedule-1"
+        }
+      ],
+      "note": "Unique to GPT-5 - no Claude equivalent found"
+    },
+    {
+      "id": "c_gutt_gpt5_25",
+      "canonical_name": "Automatically Reschedule",
+      "capability": "Recompute and update meeting time when declines or conflicts occur",
+      "categories": [
+        "analysis",
+        "execution"
+      ],
+      "required_skills": [
+        "Dynamic Scheduling",
+        "Constraint Reapplication",
+        "Calendar Update"
+      ],
+      "sources": [
+        {
+          "model": "GPT-5 v2",
+          "prompt": "schedule-1"
+        }
+      ],
+      "note": "Unique to GPT-5 - no Claude equivalent found"
+    },
+    {
+      "id": "c_gutt_gpt5_26",
+      "canonical_name": "Identify Thursday Afternoon Time Window",
+      "capability": "Parse and determine the exact time range for 'Thursday afternoon' based on user’s calendar settings and locale",
+      "categories": [
+        "decision_making",
+        "parsing"
+      ],
+      "required_skills": [
+        "natural_language_time_parsing",
+        "calendar_time_zone_handling"
+      ],
+      "sources": [
+        {
+          "model": "GPT-5 v2",
+          "prompt": "schedule-2"
+        }
+      ],
+      "note": "Unique to GPT-5 - no Claude equivalent found"
+    },
+    {
+      "id": "c_gutt_gpt5_27",
+      "canonical_name": "Retrieve Thursday Afternoon Events",
+      "capability": "Fetch all calendar events scheduled within the identified Thursday afternoon time range",
+      "categories": [
+        "scheduling",
+        "data_retrieval"
+      ],
+      "required_skills": [
+        "calendar_api_integration",
+        "event_data_retrieval"
+      ],
+      "sources": [
+        {
+          "model": "GPT-5 v2",
+          "prompt": "schedule-2"
+        }
+      ],
+      "note": "Unique to GPT-5 - no Claude equivalent found"
+    },
+    {
+      "id": "c_gutt_gpt5_28",
+      "canonical_name": "Cancel or Decline Thursday Events",
+      "capability": "Update RSVPs for all identified events to indicate non-attendance (e.g., decline or cancel)",
+      "categories": [
+        "execution"
+      ],
+      "required_skills": [
+        "calendar_event_update",
+        "rsvp_status_management"
+      ],
+      "sources": [
+        {
+          "model": "GPT-5 v2",
+          "prompt": "schedule-2"
+        }
+      ],
+      "note": "Unique to GPT-5 - no Claude equivalent found"
+    },
+    {
+      "id": "c_gutt_gpt5_29",
+      "canonical_name": "Propose Alternative Times for Affected Meetings",
+      "capability": "Generate suitable alternative time slots for each rescheduled meeting based on user availability and constraints",
+      "categories": [
+        "scheduling",
+        "reporting"
+      ],
+      "required_skills": [
+        "availability_analysis",
+        "meeting_reschedule_logic"
+      ],
+      "sources": [
+        {
+          "model": "GPT-5 v2",
+          "prompt": "schedule-2"
+        }
+      ],
+      "note": "Unique to GPT-5 - no Claude equivalent found"
+    },
+    {
+      "id": "c_gutt_gpt5_30",
+      "canonical_name": "Reschedule Meetings to Proposed Times",
+      "capability": "Update calendar events with new times and send updated invites to participants",
+      "categories": [
+        "notification",
+        "execution"
+      ],
+      "required_skills": [
+        "calendar_event_modification",
+        "invite_notification_handling"
+      ],
+      "sources": [
+        {
+          "model": "GPT-5 v2",
+          "prompt": "schedule-2"
+        }
+      ],
+      "note": "Unique to GPT-5 - no Claude equivalent found"
+    },
+    {
+      "id": "c_gutt_gpt5_31",
+      "canonical_name": "Parse Meeting Request",
+      "capability": "Extract meeting details such as participants, duration, timeframe, constraints, and preferences from natural language prompt",
+      "categories": [
+        "parsing"
+      ],
+      "required_skills": [
+        "NLU",
+        "entity extraction",
+        "constraint parsing"
+      ],
+      "sources": [
+        {
+          "model": "GPT-5 v2",
+          "prompt": "schedule-3"
+        }
+      ],
+      "note": "Unique to GPT-5 - no Claude equivalent found"
+    },
+    {
+      "id": "c_gutt_gpt5_32",
+      "canonical_name": "Resolve Participant Identities",
+      "capability": "Map participant names to their corresponding calendar identities and contact information",
+      "categories": [
+        "notification"
+      ],
+      "required_skills": [
+        "directory lookup",
+        "disambiguation",
+        "identity resolution"
+      ],
+      "sources": [
+        {
+          "model": "GPT-5 v2",
+          "prompt": "schedule-3"
+        }
+      ],
+      "note": "Unique to GPT-5 - no Claude equivalent found"
+    },
+    {
+      "id": "c_gutt_gpt5_33",
+      "canonical_name": "Retrieve Participant Calendars",
+      "capability": "Access and retrieve availability data for all participants within the specified timeframe",
+      "categories": [
+        "data_retrieval"
+      ],
+      "required_skills": [
+        "calendar API integration",
+        "data retrieval",
+        "authentication handling"
+      ],
+      "sources": [
+        {
+          "model": "GPT-5 v2",
+          "prompt": "schedule-3"
+        }
+      ],
+      "note": "Unique to GPT-5 - no Claude equivalent found"
+    },
+    {
+      "id": "c_gutt_gpt5_34",
+      "canonical_name": "Retrieve Kat's Constraints",
+      "capability": "Identify and extract Kat-specific scheduling constraints and preferences from her calendar",
+      "categories": [
+        "parsing"
+      ],
+      "required_skills": [
+        "calendar data parsing",
+        "constraint detection"
+      ],
+      "sources": [
+        {
+          "model": "GPT-5 v2",
+          "prompt": "schedule-3"
+        }
+      ],
+      "note": "Unique to GPT-5 - no Claude equivalent found"
+    },
+    {
+      "id": "c_gutt_gpt5_35",
+      "canonical_name": "Apply Override Rules",
+      "capability": "Determine which existing events (1:1s, lunches) can be overridden and under what conditions",
+      "categories": [
+        "decision_making"
+      ],
+      "required_skills": [
+        "policy reasoning",
+        "event classification",
+        "priority handling"
+      ],
+      "sources": [
+        {
+          "model": "GPT-5 v2",
+          "prompt": "schedule-3"
+        }
+      ],
+      "note": "Unique to GPT-5 - no Claude equivalent found"
+    },
+    {
+      "id": "c_gutt_gpt5_36",
+      "canonical_name": "Compute Common Availability",
+      "capability": "Calculate overlapping free time slots for all participants within the given timeframe, respecting constraints and override rules",
+      "categories": [
+        "analysis"
+      ],
+      "required_skills": [
+        "constraint satisfaction",
+        "time window intersection",
+        "optimization"
+      ],
+      "sources": [
+        {
+          "model": "GPT-5 v2",
+          "prompt": "schedule-3"
+        }
+      ],
+      "note": "Unique to GPT-5 - no Claude equivalent found"
+    },
+    {
+      "id": "c_gutt_gpt5_37",
+      "canonical_name": "Create and Send Meeting Invite",
+      "capability": "Generate the meeting event with all details and send invitations to participants",
+      "categories": [
+        "notification",
+        "reporting"
+      ],
+      "required_skills": [
+        "calendar event creation",
+        "notification handling",
+        "data consistency"
+      ],
+      "sources": [
+        {
+          "model": "GPT-5 v2",
+          "prompt": "schedule-3"
+        }
+      ],
+      "note": "Unique to GPT-5 - no Claude equivalent found"
+    },
+    {
+      "id": "c_gutt_gpt5_38",
+      "canonical_name": "Extract Meeting Intent",
+      "capability": "Identify that the user wants to create an agenda for a progress review meeting",
+      "categories": [
+        "parsing"
+      ],
+      "required_skills": [
+        "intent_recognition",
+        "natural_language_understanding"
+      ],
+      "sources": [
+        {
+          "model": "GPT-5 v2",
+          "prompt": "collaborate-1"
+        }
+      ],
+      "note": "Unique to GPT-5 - no Claude equivalent found"
+    },
+    {
+      "id": "c_gutt_gpt5_39",
+      "canonical_name": "Identify Project Context",
+      "capability": "Extract and confirm the project name and context from the prompt",
+      "categories": [
+        "validation",
+        "parsing"
+      ],
+      "required_skills": [
+        "entity_extraction",
+        "context_resolution"
+      ],
+      "sources": [
+        {
+          "model": "GPT-5 v2",
+          "prompt": "collaborate-1"
+        }
+      ],
+      "note": "Unique to GPT-5 - no Claude equivalent found"
+    },
+    {
+      "id": "c_gutt_gpt5_40",
+      "canonical_name": "Determine Participants",
+      "capability": "Identify required participants (product and marketing team) from the request",
+      "categories": [
+        "parsing"
+      ],
+      "required_skills": [
+        "entity_extraction",
+        "role_mapping"
+      ],
+      "sources": [
+        {
+          "model": "GPT-5 v2",
+          "prompt": "collaborate-1"
+        }
+      ],
+      "note": "Unique to GPT-5 - no Claude equivalent found"
+    },
+    {
+      "id": "c_gutt_gpt5_41",
+      "canonical_name": "Retrieve Team Member Details",
+      "capability": "Map identified teams to actual user contacts or calendar groups",
+      "categories": [
+        "other"
+      ],
+      "required_skills": [
+        "directory_lookup",
+        "contact_resolution"
+      ],
+      "sources": [
+        {
+          "model": "GPT-5 v2",
+          "prompt": "collaborate-1"
+        }
+      ],
+      "note": "Unique to GPT-5 - no Claude equivalent found"
+    },
+    {
+      "id": "c_gutt_gpt5_42",
+      "canonical_name": "Define Agenda Objectives",
+      "capability": "Extract and structure the meeting objectives from the user prompt",
+      "categories": [
+        "parsing"
+      ],
+      "required_skills": [
+        "semantic_parsing",
+        "goal_structuring"
+      ],
+      "sources": [
+        {
+          "model": "GPT-5 v2",
+          "prompt": "collaborate-1"
+        }
+      ],
+      "note": "Unique to GPT-5 - no Claude equivalent found"
+    },
+    {
+      "id": "c_gutt_gpt5_43",
+      "canonical_name": "Generate Agenda Items",
+      "capability": "Convert objectives into actionable agenda items in logical order",
+      "categories": [
+        "other"
+      ],
+      "required_skills": [
+        "agenda_generation",
+        "task_structuring"
+      ],
+      "sources": [
+        {
+          "model": "GPT-5 v2",
+          "prompt": "collaborate-1"
+        }
+      ],
+      "note": "Unique to GPT-5 - no Claude equivalent found"
+    },
+    {
+      "id": "c_gutt_gpt5_44",
+      "canonical_name": "Validate Agenda Completeness",
+      "capability": "Check that all user-specified topics are included and no critical element is missing",
+      "categories": [
+        "validation"
+      ],
+      "required_skills": [
+        "consistency_checking",
+        "requirement_validation"
+      ],
+      "sources": [
+        {
+          "model": "GPT-5 v2",
+          "prompt": "collaborate-1"
+        }
+      ],
+      "note": "Unique to GPT-5 - no Claude equivalent found"
+    },
+    {
+      "id": "c_gutt_gpt5_45",
+      "canonical_name": "Analyze Meeting Materials",
+      "capability": "Read and extract key information, topics, and themes from the retrieved documents",
+      "categories": [
+        "notification",
+        "parsing",
+        "data_retrieval"
+      ],
+      "required_skills": [
+        "document_parsing",
+        "natural_language_understanding",
+        "topic_extraction"
+      ],
+      "sources": [
+        {
+          "model": "GPT-5 v2",
+          "prompt": "collaborate-2"
+        }
+      ],
+      "note": "Unique to GPT-5 - no Claude equivalent found"
+    },
+    {
+      "id": "c_gutt_gpt5_46",
+      "canonical_name": "Rank and Select Top Three Topics",
+      "capability": "Prioritize and choose the three most important discussion points based on relevance and impact",
+      "categories": [
+        "decision_making",
+        "optimization"
+      ],
+      "required_skills": [
+        "priority_reasoning",
+        "contextual_ranking",
+        "decision_logic"
+      ],
+      "sources": [
+        {
+          "model": "GPT-5 v2",
+          "prompt": "collaborate-2"
+        }
+      ],
+      "note": "Unique to GPT-5 - no Claude equivalent found"
+    },
+    {
+      "id": "c_gutt_gpt5_47",
+      "canonical_name": "Generate Potential Objections",
+      "capability": "Predict likely objections or concerns that senior leadership might raise regarding the selected topics",
+      "categories": [
+        "decision_making"
+      ],
+      "required_skills": [
+        "anticipatory_reasoning",
+        "stakeholder_analysis",
+        "risk_identification"
+      ],
+      "sources": [
+        {
+          "model": "GPT-5 v2",
+          "prompt": "collaborate-2"
+        }
+      ],
+      "note": "Unique to GPT-5 - no Claude equivalent found"
+    },
+    {
+      "id": "c_gutt_gpt5_48",
+      "canonical_name": "Create Effective Responses",
+      "capability": "Formulate clear, persuasive responses to each predicted objection",
+      "categories": [
+        "other"
+      ],
+      "required_skills": [
+        "argument_generation",
+        "persuasive_communication",
+        "contextual_adaptation"
+      ],
+      "sources": [
+        {
+          "model": "GPT-5 v2",
+          "prompt": "collaborate-2"
+        }
+      ],
+      "note": "Unique to GPT-5 - no Claude equivalent found"
+    },
+    {
+      "id": "c_gutt_gpt5_49",
+      "canonical_name": "Identify Upcoming Meeting with Customer Beta",
+      "capability": "Locate the specific upcoming calendar event involving customer Beta",
+      "categories": [
+        "other"
+      ],
+      "required_skills": [
+        "calendar_access",
+        "entity_matching",
+        "event_search"
+      ],
+      "sources": [
+        {
+          "model": "GPT-5 v2",
+          "prompt": "collaborate-3"
+        }
+      ],
+      "note": "Unique to GPT-5 - no Claude equivalent found"
+    },
+    {
+      "id": "c_gutt_gpt5_50",
+      "canonical_name": "Identify Customer Attendees",
+      "capability": "Filter attendees belonging to customer Beta from the participant list",
+      "categories": [
+        "other"
+      ],
+      "required_skills": [
+        "entity_resolution",
+        "organization_mapping"
+      ],
+      "sources": [
+        {
+          "model": "GPT-5 v2",
+          "prompt": "collaborate-3"
+        }
+      ],
+      "note": "Unique to GPT-5 - no Claude equivalent found"
+    },
+    {
+      "id": "c_gutt_gpt5_51",
+      "canonical_name": "Retrieve Profile Data for Each Customer Attendee",
+      "capability": "Fetch professional background and role information for each identified attendee",
+      "categories": [
+        "notification",
+        "data_retrieval"
+      ],
+      "required_skills": [
+        "contact_data_lookup",
+        "profile_enrichment",
+        "external_api_integration"
+      ],
+      "sources": [
+        {
+          "model": "GPT-5 v2",
+          "prompt": "collaborate-3"
+        }
+      ],
+      "note": "Unique to GPT-5 - no Claude equivalent found"
+    },
+    {
+      "id": "c_gutt_gpt5_52",
+      "canonical_name": "Compile Dossier for Each Customer Attendee",
+      "capability": "Generate a structured summary containing attendee background and topics of interest",
+      "categories": [
+        "reporting"
+      ],
+      "required_skills": [
+        "document_generation",
+        "template_filling",
+        "summarization"
+      ],
+      "sources": [
+        {
+          "model": "GPT-5 v2",
+          "prompt": "collaborate-3"
+        }
+      ],
+      "note": "Unique to GPT-5 - no Claude equivalent found"
+    },
+    {
+      "id": "c_gutt_gpt5_53",
+      "canonical_name": "Compose Meeting Brief",
+      "capability": "Integrate meeting details, attendee dossiers, and company background into a concise briefing document",
+      "categories": [
+        "other"
+      ],
+      "required_skills": [
+        "content_synthesis",
+        "document_structuring",
+        "natural_language_generation"
+      ],
+      "sources": [
+        {
+          "model": "GPT-5 v2",
+          "prompt": "collaborate-3"
+        }
+      ],
+      "note": "Unique to GPT-5 - no Claude equivalent found"
+    }
+  ]
+}

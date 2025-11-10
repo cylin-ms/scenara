@@ -1,0 +1,628 @@
+{
+  "assessment_date": "2025-11-10T18:48:43.694475",
+  "framework": "Verifier's Law",
+  "model": "dev-gpt-5-chat-jj (GPT-5)",
+  "trials": 3,
+  "total_prompts": 9,
+  "successful_assessments": 9,
+  "ranked_prompts": [
+    {
+      "prompt_id": "schedule-1",
+      "trial_count": 3,
+      "solvability": {
+        "score": 8,
+        "std": 0.0,
+        "range": "8-8",
+        "reasoning": "Current AI systems can already integrate with calendar APIs (Google Calendar, Outlook) to create recurring events, check availability, and apply constraints like 'afternoons' and 'avoid Fridays'. The main complexity lies in interpreting natural language preferences, handling dynamic rescheduling on declines, and negotiating conflicts automatically. These are solvable with existing NLP and scheduling optimization techniques combined with API calls.",
+        "difficulty_factors": [
+          "Natural language interpretation of vague constraints (e.g., 'afternoons preferred')",
+          "Dynamic rescheduling logic after declines/conflicts",
+          "Cross-calendar availability checks and permissions",
+          "Maintaining user intent fidelity during automated adjustments"
+        ]
+      },
+      "verification_ease": {
+        "score": 9,
+        "std": 0.0,
+        "range": "9-9",
+        "reasoning": "Verification is straightforward: we can check if the created recurring event matches the specified constraints (weekly, 30-min, starting next week, afternoons, avoid Fridays) and whether rescheduling occurs correctly after a decline. This can be validated against the calendar state and user preferences.",
+        "verification_methods": [
+          "Compare scheduled event metadata (time, recurrence, duration) against parsed constraints",
+          "Simulate declines and verify automatic rescheduling occurs within constraints",
+          "User confirmation or automated test harness with expected outputs"
+        ]
+      },
+      "verification_asymmetry": {
+        "score": 7,
+        "std": 0.0,
+        "range": "7-7",
+        "interpretation": "Score = 9 - 2 = 7 (Positive). This means the task is significantly easier to verify than to solve, which aligns with Verifier's Law as a high-priority AI target.",
+        "priority": "HIGH"
+      },
+      "ai_readiness": {
+        "timeline": "Soon (6mo)",
+        "blockers": [
+          "Robust handling of ambiguous natural language preferences",
+          "Reliable conflict resolution without human intervention"
+        ],
+        "enablers": [
+          "Existing calendar APIs (Google, Microsoft)",
+          "Pre-trained LLMs for intent parsing",
+          "Rule-based and ML-based scheduling optimization libraries"
+        ]
+      },
+      "training_data_quality": {
+        "score": 8,
+        "std": 0.0,
+        "range": "8-8",
+        "reasoning": "We can generate synthetic data by simulating user prompts and expected calendar actions, and also collect real-world anonymized scheduling requests. Feedback loops from user corrections provide strong reinforcement signals.",
+        "data_sources": [
+          "Synthetic prompt-action pairs",
+          "Historical scheduling logs (with consent)",
+          "User feedback on proposed schedules"
+        ]
+      },
+      "key_insights": [
+        "High verification asymmetry makes this an ideal candidate for rapid AI improvement",
+        "Most technical challenges are in robust preference interpretation and conflict handling",
+        "Strong availability of APIs and structured calendar data accelerates development"
+      ],
+      "recommendation": "HIGH priority for development. Focus on building a hybrid system: LLM for intent parsing + deterministic scheduling engine for constraint satisfaction. Implement automated verification harness to leverage easy validation for RL fine-tuning.",
+      "composite_score": 37.5,
+      "rank": 1,
+      "rank_tier": "🥇 Tier 1 (High Priority)"
+    },
+    {
+      "prompt_id": "organizer-2",
+      "trial_count": 3,
+      "solvability": {
+        "score": 7,
+        "std": 0.0,
+        "range": "7-7",
+        "reasoning": "Current AI can access calendar APIs (Google, Outlook) to retrieve meeting metadata (titles, attendees, duration) and can apply NLP models to classify meeting importance and preparation needs. The main challenge lies in interpreting 'important' and 'requires focus time' based on user context, which is subjective and may require personalization. However, with embeddings, LLM reasoning, and historical user behavior, this is feasible.",
+        "difficulty_factors": [
+          "Subjective definition of 'important' varies by user and organization",
+          "Contextual understanding of meeting purpose from limited metadata",
+          "Dynamic user preferences and evolving priorities",
+          "Integration with multiple calendar APIs and permissions"
+        ]
+      },
+      "verification_ease": {
+        "score": 9,
+        "std": 0.0,
+        "range": "9-9",
+        "reasoning": "Verification is straightforward: we can check if flagged meetings match user feedback or historical patterns. Users can confirm or reject suggestions, and ground truth can be derived from explicit user labels or retrospective analysis of which meetings had prep time scheduled.",
+        "verification_methods": [
+          "User feedback loop (approve/reject flagged meetings)",
+          "Compare flagged meetings against historical prep time allocations",
+          "Cross-check with meeting metadata (e.g., titles containing 'review', 'strategy')"
+        ]
+      },
+      "verification_asymmetry": {
+        "score": 6,
+        "std": 0.0,
+        "range": "6-6",
+        "interpretation": "Positive asymmetry: verification is much easier than solving because correctness can be confirmed via user feedback or historical data, while solving requires nuanced interpretation of context and intent.",
+        "priority": "HIGH"
+      },
+      "ai_readiness": {
+        "timeline": "Soon (6mo)",
+        "blockers": [
+          "Need for user-specific preference modeling",
+          "Access to sufficient historical calendar data for personalization"
+        ],
+        "enablers": [
+          "Existing calendar APIs (Google, Outlook)",
+          "Pre-trained LLMs for meeting classification",
+          "Embedding-based similarity for meeting context"
+        ]
+      },
+      "training_data_quality": {
+        "score": 8,
+        "std": 0.0,
+        "range": "8-8",
+        "reasoning": "High-quality training data can be generated from historical calendars, user feedback, and organizational meeting patterns. Synthetic data can also be created by labeling meetings based on keywords and roles.",
+        "data_sources": [
+          "Historical calendar events with prep time annotations",
+          "User feedback on flagged meetings",
+          "Public meeting datasets (e.g., Enron email/calendar corpus)"
+        ]
+      },
+      "key_insights": [
+        "Verification is trivial compared to solving, making this a strong candidate for AI automation per Verifier's Law.",
+        "Personalization is the main complexity; generic models can achieve baseline performance quickly.",
+        "Continuous feedback loop from user corrections will rapidly improve accuracy."
+      ],
+      "recommendation": "HIGH priority for development. Start with rule-based + LLM hybrid for initial deployment, then fine-tune with user feedback for personalization. Strong fit for Verifier's Law due to easy verification and moderate solving complexity.",
+      "composite_score": 34.0,
+      "rank": 2,
+      "rank_tier": "🥇 Tier 1 (High Priority)"
+    },
+    {
+      "prompt_id": "collaborate-1",
+      "trial_count": 3,
+      "solvability": {
+        "score": 7,
+        "std": 0.0,
+        "range": "7-7",
+        "reasoning": "Current LLMs can generate structured agendas from natural language prompts, especially when context like project name and team roles is provided. However, achieving a truly useful agenda requires understanding project status, relevant stakeholders, and organizational norms. Access to calendar APIs and project management tools (e.g., Jira, Asana) would significantly improve accuracy. Without integration, the AI can only produce a generic agenda.",
+        "difficulty_factors": [
+          "Need for contextual awareness of Project Alpha's current status",
+          "Integration with calendar and project management APIs",
+          "Understanding organizational norms for agenda structure",
+          "Balancing completeness with brevity in agenda generation"
+        ]
+      },
+      "verification_ease": {
+        "score": 9,
+        "std": 0.0,
+        "range": "9-9",
+        "reasoning": "Verifying an agenda is relatively easy because correctness can be judged by checking if it includes key elements: progress review, confirmation of being on track, discussion of blockers and risks, and relevant participants. Users can quickly validate via a checklist or automated semantic matching.",
+        "verification_methods": [
+          "Keyword/semantic matching against required topics (progress, blockers, risks)",
+          "User feedback (thumbs up/down or edit acceptance)",
+          "Comparison to historical agendas for similar meetings"
+        ]
+      },
+      "verification_asymmetry": {
+        "score": 6,
+        "std": 0.0,
+        "range": "6-6",
+        "interpretation": "Positive asymmetry: The task is moderately hard to solve (7/10) but very easy to verify (9/10). This means it's a strong candidate for AI improvement because feedback loops are cheap and reliable.",
+        "priority": "HIGH"
+      },
+      "ai_readiness": {
+        "timeline": "Soon (6mo)",
+        "blockers": [
+          "Limited access to real-time project data",
+          "Context injection from multiple sources (calendar, PM tools)"
+        ],
+        "enablers": [
+          "Existing LLM capabilities for structured text generation",
+          "Calendar API integration for participant and time context",
+          "Fine-tuning on historical agendas and meeting notes"
+        ]
+      },
+      "training_data_quality": {
+        "score": 8,
+        "std": 0.0,
+        "range": "8-8",
+        "reasoning": "High-quality training data can be generated from historical meeting agendas, templates, and user feedback loops. Many organizations have structured agenda archives, and synthetic data can be created easily.",
+        "data_sources": [
+          "Historical agendas from enterprise calendars",
+          "Public templates for project review meetings",
+          "Synthetic agenda generation with human validation"
+        ]
+      },
+      "key_insights": [
+        "Agenda generation is a text-structuring task with strong patterns, making it suitable for LLM fine-tuning.",
+        "Verification is cheap and scalable via semantic checks and user feedback.",
+        "Context integration (project status, team roles) is the main technical challenge, not language generation."
+      ],
+      "recommendation": "HIGH priority for AI development. Start with generic agenda generation using LLMs and progressively integrate organizational context via APIs. Leverage user feedback for rapid RLHF improvement.",
+      "composite_score": 34.0,
+      "rank": 3,
+      "rank_tier": "🥇 Tier 1 (High Priority)"
+    },
+    {
+      "prompt_id": "schedule-2",
+      "trial_count": 3,
+      "solvability": {
+        "score": 6,
+        "std": 0.0,
+        "range": "6-6",
+        "reasoning": "The task involves multiple sub-steps: (1) interpreting 'Thursday afternoon' in the user's timezone, (2) identifying all events in that window, (3) clearing them (cancel or reschedule), (4) updating RSVPs, (5) finding alternative times for rescheduling, and (6) setting the user's status. Current AI can handle natural language interpretation and API calls, but rescheduling requires negotiation logic, availability checks, and preference handling, which is non-trivial. APIs like Google Calendar and Microsoft Graph support these operations, but the complexity lies in reasoning about constraints and communicating changes appropriately.",
+        "difficulty_factors": [
+          "Ambiguity in 'afternoon' definition (time range)",
+          "Need for access to calendar APIs and permissions",
+          "Complexity of rescheduling logic (finding mutually available slots)",
+          "Handling RSVP updates across different platforms",
+          "Maintaining user preferences and organizational norms"
+        ]
+      },
+      "verification_ease": {
+        "score": 9,
+        "std": 0.0,
+        "range": "9-9",
+        "reasoning": "Verification is straightforward: we can check the calendar state before and after execution. Did all Thursday afternoon events move or cancel? Were RSVPs updated? Is the user's status set correctly? These are objective checks against the calendar API's ground truth.",
+        "verification_methods": [
+          "Compare event list before and after for Thursday afternoon",
+          "Check new times for rescheduled events exist and are valid",
+          "Verify RSVP statuses via API response",
+          "Confirm user status field matches requested value"
+        ]
+      },
+      "verification_asymmetry": {
+        "score": 5,
+        "std": 0.0,
+        "range": "5-5",
+        "interpretation": "Score = 9 - 4 = 5 (Positive). This means the task is significantly easier to verify than to solve, which aligns with Verifier's Law as a high-priority candidate for AI automation.",
+        "priority": "HIGH"
+      },
+      "ai_readiness": {
+        "timeline": "Soon (6mo)",
+        "blockers": [
+          "Robust handling of ambiguous time ranges",
+          "Negotiation logic for rescheduling with multiple participants",
+          "User preference modeling for alternative times"
+        ],
+        "enablers": [
+          "Existing calendar APIs (Google, Microsoft Graph)",
+          "LLM capability for natural language interpretation",
+          "Structured feedback loops from calendar state changes"
+        ]
+      },
+      "training_data_quality": {
+        "score": 8,
+        "std": 0.0,
+        "range": "8-8",
+        "reasoning": "We can generate synthetic data by simulating user requests and calendar states. Real-world data can be collected with user consent. Calendar APIs provide structured ground truth for supervised learning and RLHF.",
+        "data_sources": [
+          "Synthetic calendar scenarios",
+          "Anonymized real user logs",
+          "API response logs for event modifications"
+        ]
+      },
+      "key_insights": [
+        "High verification asymmetry makes this an ideal RLHF candidate",
+        "Complexity lies in multi-step reasoning and constraint satisfaction, not in API execution",
+        "User preference and organizational norms are the hardest part to model",
+        "Feedback loop is strong because calendar state provides objective ground truth"
+      ],
+      "recommendation": "HIGH priority for AI development. Focus on building a reasoning layer for rescheduling logic and preference handling. Start with deterministic rule-based fallback for negotiation and gradually integrate LLM-based reasoning with RLHF using calendar state as the reward signal.",
+      "composite_score": 30.5,
+      "rank": 4,
+      "rank_tier": "🥈 Tier 2 (Medium Priority)"
+    },
+    {
+      "prompt_id": "schedule-3",
+      "trial_count": 3,
+      "solvability": {
+        "score": 6,
+        "std": 0.0,
+        "range": "6-6",
+        "reasoning": "The task requires multi-constraint reasoning: finding a 1-hour slot within 2 weeks, prioritizing over 1:1s and lunches, respecting Kat's schedule, ensuring in-person format, and booking a room. Current AI can query calendar APIs (Google, Outlook) and apply constraint satisfaction, but handling nuanced trade-offs (e.g., 'schedule over 1:1s and lunches if needed') and interpreting implicit preferences is non-trivial. Room booking adds complexity due to resource availability APIs. Solvable with orchestration of APIs and constraint solvers, but not trivial.",
+        "difficulty_factors": [
+          "Multi-party availability coordination",
+          "Soft constraints and override rules (e.g., prioritize over 1:1s)",
+          "Integration with room booking systems",
+          "Natural language interpretation of vague instructions",
+          "Access to organizational calendar and resource APIs"
+        ]
+      },
+      "verification_ease": {
+        "score": 9,
+        "std": 0.0,
+        "range": "9-9",
+        "reasoning": "Verification is straightforward: check if the scheduled event meets explicit constraints (participants, duration, time window, in-person, room added). This can be programmatically validated against the final calendar entry and organizational data.",
+        "verification_methods": [
+          "Compare event participants to requested list",
+          "Check event duration and date range",
+          "Verify location field is a physical room",
+          "Ensure no conflicts with Kat's schedule beyond allowed overrides",
+          "Cross-check that the event exists in all participants' calendars"
+        ]
+      },
+      "verification_asymmetry": {
+        "score": 5,
+        "std": 0.0,
+        "range": "5-5",
+        "interpretation": "Positive asymmetry: verification is much easier than solving. This means the task is a strong candidate for AI improvement because correctness can be quickly validated, enabling iterative refinement.",
+        "priority": "HIGH"
+      },
+      "ai_readiness": {
+        "timeline": "Soon (6mo)",
+        "blockers": [
+          "Reliable access to all participants' calendars and room booking APIs",
+          "Handling ambiguous override rules in natural language",
+          "Conflict resolution when no perfect slot exists"
+        ],
+        "enablers": [
+          "Existing calendar APIs (Google Calendar, Microsoft Graph)",
+          "Constraint satisfaction algorithms",
+          "LLMs for natural language interpretation",
+          "Verification feedback loop for RL fine-tuning"
+        ]
+      },
+      "training_data_quality": {
+        "score": 7.7,
+        "std": 0.58,
+        "range": "7-8",
+        "reasoning": "High-quality training data can be generated from historical scheduling logs, synthetic scenarios, and user feedback loops. Many organizations have structured calendar data and meeting policies that can be anonymized for training.",
+        "data_sources": [
+          "Historical calendar event data",
+          "Synthetic scheduling scenarios with labeled constraints",
+          "User correction feedback (accepted/rejected suggestions)",
+          "Room booking system logs"
+        ]
+      },
+      "key_insights": [
+        "This is a classic constraint satisfaction problem with natural language front-end.",
+        "Verification is almost trivial compared to solving, making it ideal for RLHF and self-play approaches.",
+        "The main challenge is not algorithmic but integration: access to calendars, rooms, and organizational policies.",
+        "Soft constraints (e.g., 'schedule over 1:1s if needed') require preference modeling and trade-off reasoning."
+      ],
+      "recommendation": "HIGH priority for AI development. Invest in building a constraint solver integrated with calendar APIs and fine-tune LLMs for interpreting scheduling instructions. Leverage easy verification for rapid iteration and RL-based improvement.",
+      "composite_score": 30.2,
+      "rank": 5,
+      "rank_tier": "🥈 Tier 2 (Medium Priority)"
+    },
+    {
+      "prompt_id": "organizre-3",
+      "trial_count": 3,
+      "solvability": {
+        "score": 7,
+        "std": 0.0,
+        "range": "7-7",
+        "reasoning": "Current AI can analyze calendar data, categorize events, and summarize time allocation using NLP and structured data. Identifying 'top priorities' requires either explicit user input or inference from historical patterns, which is moderately complex but feasible with current LLM + analytics pipelines. Suggesting ways to reclaim time involves heuristic or optimization-based recommendations, which is harder but still within near-term capabilities.",
+        "difficulty_factors": [
+          "Ambiguity in defining 'top priorities' without explicit user input",
+          "Need for integration with calendar APIs and possibly email/task systems",
+          "Personalization and context-awareness for meaningful recommendations",
+          "Balancing prescriptive advice with user autonomy"
+        ]
+      },
+      "verification_ease": {
+        "score": 8,
+        "std": 0.0,
+        "range": "8-8",
+        "reasoning": "Verification can be done by comparing AI-generated time breakdown with actual calendar data (objective), and checking if recommendations align with stated priorities (semi-objective). User feedback provides a strong signal for correctness. Automated metrics like percentage of time categorized correctly and alignment with user-labeled priorities are feasible.",
+        "verification_methods": [
+          "Cross-check time allocation summary against raw calendar event durations",
+          "User validation of identified top priorities and suggested changes",
+          "A/B testing: measure user satisfaction and adoption of recommendations",
+          "Heuristic checks: ensure recommendations reduce low-priority time blocks"
+        ]
+      },
+      "verification_asymmetry": {
+        "score": 5,
+        "std": 0.0,
+        "range": "5-5",
+        "interpretation": "Score = 8 - 3 = +5 → Positive asymmetry: much easier to verify than to solve. This means the task is a strong candidate for AI improvement because correctness can be validated objectively while solution requires non-trivial reasoning.",
+        "priority": "HIGH"
+      },
+      "ai_readiness": {
+        "timeline": "Soon (6mo)",
+        "blockers": [
+          "Reliable extraction of user priorities without heavy manual input",
+          "Contextual understanding of meeting importance beyond titles",
+          "Generating actionable, non-generic recommendations"
+        ],
+        "enablers": [
+          "Existing calendar APIs (Google, Outlook) provide structured event data",
+          "LLMs can summarize and categorize events effectively",
+          "User feedback loops for reinforcement learning",
+          "Historical time-tracking datasets for supervised training"
+        ]
+      },
+      "training_data_quality": {
+        "score": 6.7,
+        "std": 0.58,
+        "range": "6-7",
+        "reasoning": "We can generate synthetic data for time categorization and recommendations, but real-world labeled data on 'top priorities' and 'good time reclamation strategies' is sparse. However, user feedback and opt-in labeling can bootstrap quality datasets over time.",
+        "data_sources": [
+          "User calendars and meeting metadata",
+          "Self-reported priorities and goals",
+          "Aggregated anonymized productivity datasets",
+          "Synthetic scenarios for recommendation testing"
+        ]
+      },
+      "key_insights": [
+        "Task has strong verification asymmetry, making it ideal for iterative AI improvement",
+        "Main complexity lies in personalization and priority inference, not raw data processing",
+        "Feedback loops from user validation can rapidly improve model performance",
+        "Integration with calendar APIs is straightforward, but behavioral recommendations require careful UX design"
+      ],
+      "recommendation": "HIGH priority for AI development. Start with accurate time categorization and visualization (easy win), then incrementally add priority inference and recommendation generation. Leverage user feedback for RLHF to refine suggestions.",
+      "composite_score": 29.2,
+      "rank": 6,
+      "rank_tier": "🥈 Tier 2 (Medium Priority)"
+    },
+    {
+      "prompt_id": "collaborate-2",
+      "trial_count": 3,
+      "solvability": {
+        "score": 6.3,
+        "std": 0.58,
+        "range": "6-7",
+        "reasoning": "Current LLMs (GPT-4, Claude, Gemini) can summarize documents and generate discussion points, but doing so in a contextually optimal way for senior leadership requires nuanced understanding of organizational priorities, tone, and implicit goals. Generating likely objections and effective responses adds complexity because it requires anticipating stakeholder perspectives and domain-specific concerns. Access to meeting materials is feasible via calendar and document APIs, but reasoning about leadership priorities is non-trivial.",
+        "difficulty_factors": [
+          "Need for deep contextual understanding of leadership priorities and company strategy",
+          "Ambiguity in what constitutes 'best' discussion points",
+          "Objection generation requires modeling human concerns and organizational politics",
+          "Limited explicit ground truth for 'effective responses'"
+        ]
+      },
+      "verification_ease": {
+        "score": 8,
+        "std": 0.0,
+        "range": "8-8",
+        "reasoning": "Verification can be done by checking if the summary accurately reflects the meeting materials and if the discussion points are relevant and coherent. Objections and responses can be evaluated by human reviewers or through user feedback loops. Objective checks like semantic similarity to source materials and coverage of key topics are possible.",
+        "verification_methods": [
+          "Semantic similarity scoring between generated summary and source materials",
+          "Coverage metrics: Are all major agenda items represented?",
+          "Human-in-the-loop evaluation for objection plausibility and response quality",
+          "User feedback (thumbs up/down) after actual meeting outcomes"
+        ]
+      },
+      "verification_asymmetry": {
+        "score": 4.3,
+        "std": 0.58,
+        "range": "4-5",
+        "interpretation": "Positive asymmetry: The task is moderately hard to solve (6/10) but relatively easy to verify (8/10). This means it's a good candidate for AI improvement because correctness can be validated with automated and human-in-the-loop methods.",
+        "priority": "HIGH"
+      },
+      "ai_readiness": {
+        "timeline": "Soon (6mo)",
+        "blockers": [
+          "Access to proprietary meeting materials and organizational context",
+          "Fine-tuning for leadership communication style and objection handling"
+        ],
+        "enablers": [
+          "Existing LLM summarization and reasoning capabilities",
+          "Calendar and document integration APIs",
+          "RLHF pipelines for objection-response quality"
+        ]
+      },
+      "training_data_quality": {
+        "score": 6.7,
+        "std": 0.58,
+        "range": "6-7",
+        "reasoning": "We can generate synthetic training data by simulating meeting summaries, objections, and responses using expert-curated templates. Real-world data can be collected from anonymized meeting prep notes and leadership Q&A sessions. However, high-quality labeled data for 'effective responses' is limited and requires domain experts.",
+        "data_sources": [
+          "Internal meeting prep documents",
+          "Public leadership communication guides",
+          "Synthetic objection-response pairs generated by expert prompts",
+          "User feedback logs from Calendar.AI interactions"
+        ]
+      },
+      "key_insights": [
+        "Task aligns well with Verifier's Law because verification is easier than generation",
+        "Objection-response generation is the hardest subcomponent due to lack of explicit ground truth",
+        "Calendar.AI can leverage user feedback loops to improve objection handling over time",
+        "Integration with organizational knowledge bases will significantly boost performance"
+      ],
+      "recommendation": "HIGH priority for development. Start with summarization and discussion point generation (already strong with current LLMs), then incrementally add objection modeling and response generation using RLHF and user feedback. Focus on building verification pipelines (semantic similarity, coverage checks, human review) to accelerate improvement.",
+      "composite_score": 26.749999999999996,
+      "rank": 7,
+      "rank_tier": "🥉 Tier 3 (Lower Priority)"
+    },
+    {
+      "prompt_id": "collaborate-3",
+      "trial_count": 3,
+      "solvability": {
+        "score": 6,
+        "std": 0.0,
+        "range": "6-6",
+        "reasoning": "The task requires multiple steps: (1) identify the upcoming meeting with customer Beta from the user's calendar, (2) retrieve attendee list, (3) gather dossiers for each attendee (likely from CRM, LinkedIn, or internal org data), (4) infer topics of interest for each attendee (requires semantic understanding of past interactions, emails, or CRM notes), and (5) compile a company background. Current AI can generate summaries and briefs well, but the challenge lies in secure data integration, entity resolution, and topic inference from sparse signals.",
+        "difficulty_factors": [
+          "Integration with multiple data sources (calendar, CRM, LinkedIn, email)",
+          "Entity disambiguation for attendees (matching names to profiles)",
+          "Topic interest inference from limited historical data",
+          "Maintaining privacy and compliance constraints"
+        ]
+      },
+      "verification_ease": {
+        "score": 8,
+        "std": 0.0,
+        "range": "8-8",
+        "reasoning": "Verification is relatively straightforward because the output can be checked against known facts: correct meeting, correct attendees, accurate company background, and relevance of topics. Users can easily validate if the brief is correct and useful. Automated checks can confirm factual accuracy for company info and attendee names.",
+        "verification_methods": [
+          "Cross-check attendee list against calendar event metadata",
+          "Validate company background against public sources (e.g., Wikipedia, company website)",
+          "User feedback on relevance and correctness of topics",
+          "Named entity matching for attendee dossiers"
+        ]
+      },
+      "verification_asymmetry": {
+        "score": 4,
+        "std": 0.0,
+        "range": "4-4",
+        "interpretation": "Positive score indicates the task is easier to verify than to solve, which aligns with Verifier's Law as a good candidate for AI improvement. The complexity is in data integration and reasoning, not in checking correctness.",
+        "priority": "HIGH"
+      },
+      "ai_readiness": {
+        "timeline": "Soon (6mo)",
+        "blockers": [
+          "Reliable and secure API access to CRM and LinkedIn data",
+          "Robust entity resolution across heterogeneous data sources",
+          "Contextual topic inference from sparse historical data"
+        ],
+        "enablers": [
+          "Existing LLM capabilities for summarization and brief generation",
+          "Calendar APIs (Google, Microsoft) for event and attendee data",
+          "Public company data sources and embeddings for enrichment"
+        ]
+      },
+      "training_data_quality": {
+        "score": 7,
+        "std": 0.0,
+        "range": "7-7",
+        "reasoning": "We can generate synthetic training data by simulating meeting briefs and dossiers using public company and persona data. Real-world data is harder due to privacy, but user feedback loops and anonymized historical briefs can provide strong fine-tuning signals.",
+        "data_sources": [
+          "Public company profiles (Crunchbase, Wikipedia)",
+          "Synthetic attendee personas and interest topics",
+          "Anonymized historical meeting briefs from consenting organizations"
+        ]
+      },
+      "key_insights": [
+        "Task complexity is dominated by data integration and entity resolution, not language generation.",
+        "Verification is easy because factual correctness and relevance can be objectively checked.",
+        "User feedback provides a strong reinforcement signal for iterative improvement.",
+        "This is a prime candidate for Verifier's Law acceleration due to high verification asymmetry."
+      ],
+      "recommendation": "HIGH priority for AI development. Focus on building robust data connectors and entity resolution pipelines, then leverage LLMs for summarization and dossier generation. Implement user feedback loops for rapid RLHF fine-tuning.",
+      "composite_score": 26.0,
+      "rank": 8,
+      "rank_tier": "🥉 Tier 3 (Lower Priority)"
+    },
+    {
+      "prompt_id": "organizer-1",
+      "trial_count": 3,
+      "solvability": {
+        "score": 5,
+        "std": 0.0,
+        "range": "5-5",
+        "reasoning": "The task requires interpreting user priorities (which may be implicit), mapping them to meeting metadata, and making scheduling decisions. Current AI can integrate with calendar APIs (Google, Outlook) and parse meeting details, but understanding nuanced personal priorities and organizational context is non-trivial. Requires preference learning, context modeling, and possibly natural language understanding of meeting descriptions.",
+        "difficulty_factors": [
+          "Ambiguity in user priorities (often implicit or dynamic)",
+          "Need for integration with multiple calendar APIs",
+          "Contextual reasoning about meeting importance",
+          "Handling conflicts and trade-offs between priorities"
+        ]
+      },
+      "verification_ease": {
+        "score": 8,
+        "std": 0.0,
+        "range": "8-8",
+        "reasoning": "Verification is relatively straightforward: we can check if the meetings accepted align with a defined priority list or user feedback. If the user provides explicit priorities or labels, correctness can be objectively measured. Even without explicit labels, user approval/rejection acts as a strong feedback signal.",
+        "verification_methods": [
+          "Compare accepted meetings against user-defined priority tags",
+          "User feedback loop (approve/reject decisions)",
+          "Historical pattern matching (did the AI follow past behavior?)"
+        ]
+      },
+      "verification_asymmetry": {
+        "score": 3,
+        "std": 0.0,
+        "range": "3-3",
+        "interpretation": "Positive asymmetry: verification is easier than solving, but not extremely skewed. This suggests moderate priority for AI development because correctness can be validated and used for iterative improvement.",
+        "priority": "MEDIUM"
+      },
+      "ai_readiness": {
+        "timeline": "Soon (6mo)",
+        "blockers": [
+          "Accurate modeling of user priorities without heavy manual input",
+          "Dynamic adaptation to changing priorities",
+          "Privacy and security constraints when accessing calendars"
+        ],
+        "enablers": [
+          "Existing calendar APIs (Google Calendar, Outlook)",
+          "LLMs for natural language understanding of meeting descriptions",
+          "Reinforcement learning from user feedback"
+        ]
+      },
+      "training_data_quality": {
+        "score": 6.3,
+        "std": 0.58,
+        "range": "6-7",
+        "reasoning": "We can collect historical calendar data and user decisions (accept/reject) as labeled examples. However, explicit priority annotations are rare, so synthetic data or preference elicitation may be needed. Data sparsity and privacy concerns limit scale.",
+        "data_sources": [
+          "User calendar history",
+          "Meeting metadata (titles, participants, descriptions)",
+          "Explicit user feedback on meeting importance"
+        ]
+      },
+      "key_insights": [
+        "Task difficulty lies in preference inference, not API integration",
+        "Verification is easy because user feedback provides a clear signal",
+        "Reinforcement learning from user corrections is a strong fit",
+        "Synthetic data generation for priorities could bootstrap models"
+      ],
+      "recommendation": "MEDIUM priority: Start with semi-automated approach (AI suggests, user confirms) to gather training data. Move toward full automation as preference models improve. Focus on building a feedback loop for continuous learning.",
+      "composite_score": 21.8,
+      "rank": 9,
+      "rank_tier": "🥉 Tier 3 (Lower Priority)"
+    }
+  ]
+}

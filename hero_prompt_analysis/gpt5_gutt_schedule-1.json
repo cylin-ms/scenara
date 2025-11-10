@@ -1,111 +1,125 @@
 {
-  "source": "gpt-5",
-  "backend_llm": "gpt-5-preview",
-  "backend_llm_notes": "GPT-5 via Cursor Agent Mode - Advanced reasoning and instruction following",
-  "timestamp": "2025-11-06T13:18:00.000000",
+  "source": "gpt-5-v2",
+  "backend_llm": "dev-gpt-5-chat-jj",
+  "backend_llm_notes": "GPT-5 via Microsoft SilverFlow LLM API - v2 with full GUTT documentation context (same as Claude/Ollama)",
+  "prompt_version": "v2_full_context",
+  "timestamp": "2025-11-06T20:09:31.599895",
   "original_prompt": "Starting next week, I want a weekly 30-min 1:1 with {name}. Afternoons preferred, avoid Fridays. Automatically reschedule on declines or conflicts.",
   "gutts": [
     {
       "id": "gutt_1",
-      "name": "Constraint Extraction & Formalization",
-      "capability": "Parse scheduling requirements into structured constraints",
+      "name": "Parse Scheduling Intent",
+      "capability": "Extract user intent and constraints from natural language input",
       "required_skills": [
-        "NLP for constraint extraction",
-        "Rule formalization",
-        "Preference modeling",
-        "Temporal logic"
+        "NLU",
+        "Intent Recognition",
+        "Entity Extraction"
       ],
-      "user_goal": "System understands all scheduling rules",
+      "user_goal": "Convert user’s request into structured scheduling parameters",
       "triggered": true,
-      "evidence": "Extracted constraints: weekly recurrence, 30min duration, afternoons (12pm-6pm), exclude Fridays"
+      "evidence": "Identify recurring meeting request, participant name, duration, start date, time preferences, and constraints"
     },
     {
       "id": "gutt_2",
-      "name": "Multi-Calendar Availability Checking",
-      "capability": "Check free/busy status for user and attendee",
+      "name": "Resolve Participant Identity",
+      "capability": "Match {name} to a specific contact or calendar entity",
       "required_skills": [
-        "Calendar API for multiple users",
-        "Free/busy queries",
-        "Availability matrix",
-        "Cross-calendar integration"
+        "Contact Resolution",
+        "Disambiguation",
+        "Directory Lookup"
       ],
-      "user_goal": "Find times when both parties are free",
+      "user_goal": "Ensure the correct person is invited to the meeting",
       "triggered": true,
-      "evidence": "Queried calendars for user and {name}, found 8 overlapping free slots next week"
+      "evidence": "Map {name} to a unique email/contact in user’s directory"
     },
     {
       "id": "gutt_3",
-      "name": "Constraint-Based Slot Finding",
-      "capability": "Identify time slots matching all constraints (weekly, afternoons, not Fridays, 30min)",
+      "name": "Determine Recurrence Pattern",
+      "capability": "Translate 'weekly starting next week' into a structured recurrence rule",
       "required_skills": [
-        "Constraint satisfaction",
-        "Temporal reasoning",
-        "Slot ranking",
-        "Preference optimization"
+        "Temporal Reasoning",
+        "Recurrence Rule Generation"
       ],
-      "user_goal": "Get valid time options that meet preferences",
+      "user_goal": "Create a weekly recurring schedule starting from the correct date",
       "triggered": true,
-      "evidence": "Filtered to 3 afternoon slots (Mon 2pm, Tue 3pm, Wed 4pm) excluding Fridays"
+      "evidence": "Generate RRULE for weekly 1:1 starting next Monday"
     },
     {
       "id": "gutt_4",
-      "name": "Recurring Meeting Series Creation",
-      "capability": "Create recurring calendar event with proper series configuration",
+      "name": "Apply Time Preferences",
+      "capability": "Interpret and enforce time-of-day and day-of-week constraints",
       "required_skills": [
-        "Recurrence rule generation (iCalendar RRULE)",
-        "Series management",
-        "Calendar event creation",
-        "Exception handling"
+        "Constraint Parsing",
+        "Preference Application"
       ],
-      "user_goal": "One-time setup creates ongoing weekly meetings",
+      "user_goal": "Ensure meetings are scheduled in afternoons and not on Fridays",
       "triggered": true,
-      "evidence": "Created recurring event: RRULE:FREQ=WEEKLY;BYDAY=TU starting next Tuesday 3pm"
+      "evidence": "Filter candidate slots to afternoons (e.g., 1–5 PM) and exclude Fridays"
     },
     {
       "id": "gutt_5",
-      "name": "Meeting Invitation Sending",
-      "capability": "Send calendar invitation to attendee",
+      "name": "Find Optimal Time Slot",
+      "capability": "Search calendars for available 30-minute slots matching constraints",
       "required_skills": [
-        "Calendar invitation API",
-        "Email notification",
-        "RSVP request",
-        "Invitation formatting"
+        "Calendar Query",
+        "Availability Analysis",
+        "Constraint Satisfaction"
       ],
-      "user_goal": "Attendee receives and can accept/decline",
+      "user_goal": "Identify a mutually available time that meets all preferences",
       "triggered": true,
-      "evidence": "Sent calendar invitation to {name} with subject 'Weekly 1:1' and RSVP request"
+      "evidence": "Locate first available afternoon slot next week excluding Friday"
     },
     {
       "id": "gutt_6",
-      "name": "Decline/Conflict Detection & Monitoring",
-      "capability": "Monitor for attendee declines or new calendar conflicts",
+      "name": "Create Calendar Event",
+      "capability": "Generate and insert the meeting event into the calendar system",
       "required_skills": [
-        "Event change detection",
-        "RSVP tracking",
-        "Conflict identification",
-        "Notification monitoring"
+        "Calendar API Integration",
+        "Event Creation"
       ],
-      "user_goal": "System knows when rescheduling is needed",
+      "user_goal": "Schedule the agreed-upon meeting in the calendar",
       "triggered": true,
-      "evidence": "Set up webhook/polling to monitor RSVP status and calendar changes for both parties"
+      "evidence": "POST event with recurrence, participants, and time to calendar API"
     },
     {
       "id": "gutt_7",
-      "name": "Automatic Rescheduling Logic",
-      "capability": "When declined/conflicted, find new slot and send updated invitation",
+      "name": "Send Invitation",
+      "capability": "Dispatch meeting invite to participant(s)",
       "required_skills": [
-        "Trigger-based automation",
-        "Slot re-finding",
-        "Invitation updates",
-        "Conflict resolution"
+        "Invitation Dispatch",
+        "Notification Handling"
       ],
-      "user_goal": "Seamless rescheduling without manual intervention",
+      "user_goal": "Notify participant and confirm meeting",
       "triggered": true,
-      "evidence": "Automation rule: ON_DECLINE → find_next_available_slot(constraints) → send_updated_invitation()"
+      "evidence": "Send email/calendar invite to resolved participant"
+    },
+    {
+      "id": "gutt_8",
+      "name": "Monitor for Declines or Conflicts",
+      "capability": "Track responses and detect scheduling conflicts post-creation",
+      "required_skills": [
+        "Event Status Monitoring",
+        "Conflict Detection"
+      ],
+      "user_goal": "Detect when rescheduling is needed",
+      "triggered": true,
+      "evidence": "Subscribe to event updates and participant responses"
+    },
+    {
+      "id": "gutt_9",
+      "name": "Automatically Reschedule",
+      "capability": "Recompute and update meeting time when declines or conflicts occur",
+      "required_skills": [
+        "Dynamic Scheduling",
+        "Constraint Reapplication",
+        "Calendar Update"
+      ],
+      "user_goal": "Maintain recurring meeting without manual intervention",
+      "triggered": true,
+      "evidence": "Cancel original slot and book a new one following same constraints"
     }
   ],
   "track1_score": 1.0,
-  "track2_score": 3.8,
-  "overall_score": 3.8,
-  "notes": "Generated by GPT-5 - Matches reference decomposition of 7 GUTTs"
+  "track2_score": null,
+  "overall_score": null
 }

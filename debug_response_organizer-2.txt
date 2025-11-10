@@ -1,0 +1,55 @@
+{
+  "prompt_id": "organizer-2",
+  "solvability": {
+    "score": 7,
+    "reasoning": "Current AI can access calendar APIs (Google, Outlook) to retrieve meeting metadata (titles, attendees, duration). Identifying 'important meetings' can be approximated using heuristics (e.g., external attendees, senior participants, keywords) and ML models trained on historical user behavior. Flagging meetings that require focus time involves semantic understanding of meeting purpose and preparation needs, which is moderately complex but feasible with LLMs and embeddings. The main challenge is personalization and context inference.",
+    "difficulty_factors": [
+      "Ambiguity in 'important' definition (user-specific)",
+      "Contextual reasoning about preparation needs",
+      "Limited explicit labels in calendar data",
+      "Integration with multiple calendar APIs and permissions"
+    ]
+  },
+  "verification_ease": {
+    "score": 9,
+    "reasoning": "Verification is straightforward: we can compare flagged meetings against user feedback (thumbs up/down), or check if the user manually blocks focus time for those meetings. Objective ground truth can be approximated by historical patterns (e.g., meetings where user previously prepared). Additionally, correctness can be validated by asking the user to confirm flagged meetings.",
+    "verification_methods": [
+      "User feedback loop (approve/reject flagged meetings)",
+      "Historical comparison with past focus time allocations",
+      "A/B testing: measure reduction in last-minute prep or missed deadlines"
+    ]
+  },
+  "verification_asymmetry": {
+    "score": 9 - (10 - 7) = 6,
+    "interpretation": "Positive asymmetry: verification is much easier than solving. This means the task is a strong candidate for AI improvement because correctness can be quickly validated and used for reinforcement learning.",
+    "priority": "HIGH"
+  },
+  "ai_readiness": {
+    "timeline": "Soon (6mo)",
+    "blockers": [
+      "Need for user-specific preference modeling",
+      "Access to sufficient historical calendar data for personalization"
+    ],
+    "enablers": [
+      "Existing calendar APIs (Google, Microsoft)",
+      "LLMs capable of semantic classification and intent detection",
+      "Embedding-based similarity for meeting topic analysis"
+    ]
+  },
+  "training_data_quality": {
+    "score": 8,
+    "reasoning": "We can generate high-quality training data from historical calendars, user feedback, and synthetic labeling (e.g., using heuristics for importance). Data augmentation is possible by simulating different meeting scenarios. Privacy concerns exist but can be mitigated with anonymization.",
+    "data_sources": [
+      "Historical user calendar data",
+      "Enterprise meeting logs",
+      "Synthetic datasets with labeled importance/prep requirements"
+    ]
+  },
+  "key_insights": [
+    "Task benefits from strong verification signal (user feedback, historical patterns)",
+    "Personalization is the hardest part, but solvable with fine-tuning and embeddings",
+    "High asymmetry makes this ideal for RLHF or online learning",
+    "Integration complexity is low due to mature calendar APIs"
+  ],
+  "recommendation": "HIGH priority for development. Start with heuristic + LLM hybrid approach, integrate user feedback loop for continuous improvement. Focus on building a personalization layer and reinforcement learning pipeline leveraging easy verification."
+}

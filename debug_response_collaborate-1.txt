@@ -1,0 +1,56 @@
+{
+  "prompt_id": "collaborate-1",
+  "solvability": {
+    "score": 7,
+    "reasoning": "Current LLMs can generate structured agendas from natural language prompts and context. The main challenge is integrating organizational context (Project Alpha details, team roles, current progress) from calendar APIs, project management tools, and email. With access to these APIs and embeddings for context retrieval, the task is solvable with near-future AI capabilities.",
+    "difficulty_factors": [
+      "Context retrieval from multiple sources (calendar, project management, emails)",
+      "Entity resolution (identifying 'product and marketing team' members)",
+      "Dynamic agenda structuring based on project status and risks",
+      "Maintaining organizational tone and preferences"
+    ]
+  },
+  "verification_ease": {
+    "score": 9,
+    "reasoning": "Verifying an agenda is relatively easy because correctness can be judged by checking if the agenda includes key elements: project progress review, confirmation of being on track, discussion of blocking issues and risks. This can be automated via keyword/semantic checks or user confirmation.",
+    "verification_methods": [
+      "Semantic similarity check against required topics (progress, confirmation, risks)",
+      "Checklist-based validation (does agenda include all requested items?)",
+      "User feedback loop (approve/reject agenda)",
+      "Comparison with historical agendas for similar meetings"
+    ]
+  },
+  "verification_asymmetry": {
+    "score": 9 - (10 - 7),
+    "interpretation": "Score = 6 (Positive). This means the task is significantly easier to verify than to solve, which makes it a strong candidate for AI development under Verifier's Law.",
+    "priority": "HIGH"
+  },
+  "ai_readiness": {
+    "timeline": "Soon (6mo)",
+    "blockers": [
+      "Reliable integration with organizational data sources (project management tools, calendars)",
+      "Context retrieval and grounding in real project details"
+    ],
+    "enablers": [
+      "Existing LLM capabilities for text generation and summarization",
+      "Calendar and project management APIs (Google Calendar, Jira, Asana)",
+      "Embedding-based retrieval for contextual grounding"
+    ]
+  },
+  "training_data_quality": {
+    "score": 8,
+    "reasoning": "High-quality training data can be generated from historical meeting agendas, templates, and synthetic variations. Many organizations have structured agenda templates that can be used for supervised fine-tuning.",
+    "data_sources": [
+      "Historical meeting agendas from enterprise calendars",
+      "Publicly available agenda templates",
+      "Synthetic data generation using prompt engineering"
+    ]
+  },
+  "key_insights": [
+    "Agenda generation is a structured text generation task with clear verification criteria.",
+    "Verification is straightforward via semantic checks and user approval, creating a strong RLHF loop.",
+    "The main complexity lies in contextual grounding, not in language generation.",
+    "This task aligns well with Verifier's Law because it is easy to verify and moderately hard to solve."
+  ],
+  "recommendation": "HIGH priority for AI development. Focus on building a retrieval-augmented generation pipeline that pulls project context and team details, then uses LLMs to generate agendas. Implement automated verification via semantic checks and user feedback for continuous improvement."
+}

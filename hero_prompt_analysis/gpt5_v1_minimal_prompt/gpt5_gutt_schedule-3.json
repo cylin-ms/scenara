@@ -1,0 +1,213 @@
+{
+  "source": "gpt-5",
+  "backend_llm": "dev-gpt-5-chat-jj",
+  "backend_llm_notes": "GPT-5 via Microsoft SilverFlow LLM API - Real API calls",
+  "timestamp": "2025-11-06T20:00:55.595443",
+  "original_prompt": "Land a time to meet about Project Alpha with Chris, Sangya, and Kat for 1 hour in the next 2 weeks. Schedule over 1:1s and lunches if needed and work around Kat's schedule. Make the meeting in person and add a room.",
+  "gutts": [
+    {
+      "id": "gutt_1",
+      "name": "Parse Meeting Intent",
+      "capability": "Extract the core intent to schedule a meeting from the user prompt",
+      "required_skills": [
+        "natural language understanding",
+        "intent recognition"
+      ],
+      "user_goal": "Identify that the user wants to schedule a meeting",
+      "triggered": true,
+      "evidence": "Detects that the user wants to arrange a meeting about Project Alpha"
+    },
+    {
+      "id": "gutt_2",
+      "name": "Extract Meeting Subject",
+      "capability": "Identify the topic of the meeting from the prompt",
+      "required_skills": [
+        "entity extraction",
+        "semantic parsing"
+      ],
+      "user_goal": "Determine the meeting subject",
+      "triggered": true,
+      "evidence": "Extracts 'Project Alpha' as the meeting topic"
+    },
+    {
+      "id": "gutt_3",
+      "name": "Extract Participants",
+      "capability": "Identify all participants mentioned in the prompt",
+      "required_skills": [
+        "named entity recognition",
+        "contact resolution"
+      ],
+      "user_goal": "Know who should attend the meeting",
+      "triggered": true,
+      "evidence": "Extracts Chris, Sangya, and Kat as participants"
+    },
+    {
+      "id": "gutt_4",
+      "name": "Resolve Participant Identities",
+      "capability": "Match participant names to calendar/contact identities",
+      "required_skills": [
+        "contact lookup",
+        "disambiguation"
+      ],
+      "user_goal": "Ensure correct individuals are scheduled",
+      "triggered": true,
+      "evidence": "Maps 'Chris', 'Sangya', and 'Kat' to their respective calendar accounts"
+    },
+    {
+      "id": "gutt_5",
+      "name": "Extract Meeting Duration",
+      "capability": "Determine the length of the meeting",
+      "required_skills": [
+        "temporal expression parsing"
+      ],
+      "user_goal": "Set correct meeting duration",
+      "triggered": true,
+      "evidence": "Identifies '1 hour' as the meeting duration"
+    },
+    {
+      "id": "gutt_6",
+      "name": "Extract Scheduling Window",
+      "capability": "Identify the time range for scheduling",
+      "required_skills": [
+        "temporal range extraction"
+      ],
+      "user_goal": "Know the allowed scheduling period",
+      "triggered": true,
+      "evidence": "Extracts 'next 2 weeks' as the scheduling window"
+    },
+    {
+      "id": "gutt_7",
+      "name": "Retrieve Participant Calendars",
+      "capability": "Access the calendars of all participants",
+      "required_skills": [
+        "calendar API integration",
+        "authentication handling"
+      ],
+      "user_goal": "Get availability data for all attendees",
+      "triggered": true,
+      "evidence": "Fetches free/busy data for Chris, Sangya, and Kat"
+    },
+    {
+      "id": "gutt_8",
+      "name": "Apply Scheduling Constraints",
+      "capability": "Incorporate user-specified rules into scheduling logic",
+      "required_skills": [
+        "constraint satisfaction",
+        "rule-based reasoning"
+      ],
+      "user_goal": "Respect user preferences in scheduling",
+      "triggered": true,
+      "evidence": "Understands 'schedule over 1:1s and lunches if needed' and 'work around Kat's schedule'"
+    },
+    {
+      "id": "gutt_9",
+      "name": "Prioritize Kat's Availability",
+      "capability": "Ensure Kat's schedule is given priority",
+      "required_skills": [
+        "constraint prioritization",
+        "calendar conflict resolution"
+      ],
+      "user_goal": "Work around Kat's schedule as requested",
+      "triggered": true,
+      "evidence": "Marks Kat's availability as a hard constraint in scheduling"
+    },
+    {
+      "id": "gutt_10",
+      "name": "Allow Overriding 1:1 and Lunch Events",
+      "capability": "Permit scheduling over certain event types if necessary",
+      "required_skills": [
+        "event classification",
+        "override logic"
+      ],
+      "user_goal": "Increase flexibility by allowing some conflicts",
+      "triggered": true,
+      "evidence": "Identifies 1:1 and lunch events as overridable"
+    },
+    {
+      "id": "gutt_11",
+      "name": "Find Optimal Meeting Slot",
+      "capability": "Compute the best time slot satisfying constraints and preferences",
+      "required_skills": [
+        "scheduling optimization",
+        "conflict resolution"
+      ],
+      "user_goal": "Select a suitable time for all participants",
+      "triggered": true,
+      "evidence": "Chooses a 1-hour slot within the next 2 weeks that meets all rules"
+    },
+    {
+      "id": "gutt_12",
+      "name": "Determine Meeting Location Type",
+      "capability": "Identify that the meeting should be in person",
+      "required_skills": [
+        "intent interpretation"
+      ],
+      "user_goal": "Ensure meeting is not virtual",
+      "triggered": true,
+      "evidence": "Extracts 'Make the meeting in person' from the prompt"
+    },
+    {
+      "id": "gutt_13",
+      "name": "Reserve Physical Room",
+      "capability": "Book an available room for the meeting",
+      "required_skills": [
+        "resource booking",
+        "room availability lookup"
+      ],
+      "user_goal": "Secure a physical location for the meeting",
+      "triggered": true,
+      "evidence": "Finds and reserves a suitable meeting room"
+    },
+    {
+      "id": "gutt_14",
+      "name": "Create Calendar Event",
+      "capability": "Generate the meeting event with all details",
+      "required_skills": [
+        "calendar event creation",
+        "data population"
+      ],
+      "user_goal": "Finalize the meeting in the calendar system",
+      "triggered": true,
+      "evidence": "Creates an event with title 'Project Alpha', participants, time, duration, and location"
+    },
+    {
+      "id": "gutt_15",
+      "name": "Add Participants to Event",
+      "capability": "Include all required attendees in the event",
+      "required_skills": [
+        "calendar API usage",
+        "participant management"
+      ],
+      "user_goal": "Ensure all specified people are invited",
+      "triggered": true,
+      "evidence": "Adds Chris, Sangya, and Kat to the event"
+    },
+    {
+      "id": "gutt_16",
+      "name": "Attach Meeting Location to Event",
+      "capability": "Add the reserved room to the event details",
+      "required_skills": [
+        "calendar event update",
+        "resource linking"
+      ],
+      "user_goal": "Include location information in the event",
+      "triggered": true,
+      "evidence": "Sets the reserved room as the meeting location"
+    },
+    {
+      "id": "gutt_17",
+      "name": "Send Invitations",
+      "capability": "Dispatch calendar invites to all participants",
+      "required_skills": [
+        "notification handling",
+        "calendar invite sending"
+      ],
+      "user_goal": "Notify attendees and confirm meeting",
+      "triggered": true,
+      "evidence": "Sends event invitations to Chris, Sangya, and Kat"
+    }
+  ],
+  "track1_score": 1.0,
+  "track2_score": null,
+  "overall_score": null
+}

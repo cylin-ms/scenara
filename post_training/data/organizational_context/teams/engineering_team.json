@@ -1,0 +1,127 @@
+{
+  "team_id": "platform_engineering",
+  "team_name": "Platform Engineering Team",
+  "division": "engineering",
+  "company": "contoso_corp",
+  "description": "Core platform and infrastructure engineering team",
+  
+  "org_chart": {
+    "director": {
+      "name": "Sarah Chen",
+      "title": "Director of Engineering - Platform",
+      "email": "sarah.chen@contoso.com",
+      "employee_type": "optional"
+    },
+    "senior_managers": [
+      {
+        "name": "James Park",
+        "title": "Engineering Manager - Backend",
+        "email": "james.park@contoso.com",
+        "employee_type": "optional",
+        "direct_reports": [
+          {
+            "name": "Daniel Kim",
+            "title": "Senior Software Engineer - Architecture",
+            "email": "daniel.kim@contoso.com",
+            "employee_type": "organizer",
+            "persona_id": "tier2_senior_ic_architect",
+            "is_persona": true
+          },
+          {
+            "name": "Emma Zhang",
+            "title": "Senior Software Engineer",
+            "email": "emma.zhang@contoso.com",
+            "employee_type": "required"
+          },
+          {
+            "name": "Ryan Lee",
+            "title": "Software Engineer II",
+            "email": "ryan.lee@contoso.com",
+            "employee_type": "required"
+          },
+          {
+            "name": "Sophie Chen",
+            "title": "Software Engineer II",
+            "email": "sophie.chen@contoso.com",
+            "employee_type": "required"
+          }
+        ]
+      },
+      {
+        "name": "Linda Wu",
+        "title": "Engineering Manager - Frontend",
+        "email": "linda.wu@contoso.com",
+        "employee_type": "optional"
+      }
+    ],
+    "staff_engineers": [
+      {
+        "name": "Dr. Thomas Liu",
+        "title": "Principal Engineer - Systems Architecture",
+        "email": "thomas.liu@contoso.com",
+        "employee_type": "optional"
+      },
+      {
+        "name": "Angela Zhao",
+        "title": "Staff Engineer - Distributed Systems",
+        "email": "angela.zhao@contoso.com",
+        "employee_type": "required"
+      }
+    ],
+    "cross_functional": [
+      {
+        "name": "Peter Huang",
+        "title": "Senior DevOps Engineer",
+        "email": "peter.huang@contoso.com",
+        "employee_type": "optional"
+      },
+      {
+        "name": "Grace Wang",
+        "title": "Senior QA Engineer",
+        "email": "grace.wang@contoso.com",
+        "employee_type": "optional"
+      },
+      {
+        "name": "Oliver Chen",
+        "title": "Product Manager - Platform",
+        "email": "oliver.chen@contoso.com",
+        "employee_type": "required"
+      }
+    ]
+  },
+  
+  "recurring_meetings": [
+    {
+      "meeting_name": "Weekly 1:1 with Manager",
+      "frequency": "weekly",
+      "day": "Monday",
+      "time": "10:00",
+      "duration": 30,
+      "attendees": ["daniel.kim@contoso.com", "james.park@contoso.com"]
+    },
+    {
+      "meeting_name": "Weekly Team Sync",
+      "frequency": "weekly",
+      "day": "Wednesday",
+      "time": "14:00",
+      "duration": 60,
+      "attendees": ["daniel.kim@contoso.com", "james.park@contoso.com", "emma.zhang@contoso.com", "ryan.lee@contoso.com", "sophie.chen@contoso.com"]
+    },
+    {
+      "meeting_name": "Weekly Standup - Architecture Focus",
+      "frequency": "weekly",
+      "day": "Friday",
+      "time": "09:00",
+      "duration": 15,
+      "attendees": ["daniel.kim@contoso.com", "angela.zhao@contoso.com", "thomas.liu@contoso.com"]
+    },
+    {
+      "meeting_name": "Bi-Weekly Architecture Council",
+      "frequency": "biweekly",
+      "day": "Thursday",
+      "time": "15:00",
+      "duration": 90,
+      "attendees": ["daniel.kim@contoso.com", "thomas.liu@contoso.com", "angela.zhao@contoso.com", "sarah.chen@contoso.com", "james.park@contoso.com", "linda.wu@contoso.com"]
+    }
+  ]
+}

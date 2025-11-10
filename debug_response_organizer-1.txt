@@ -1,0 +1,58 @@
+{
+  "prompt_id": "organizer-1",
+  "solvability": {
+    "score": 5,
+    "reasoning": "The task requires understanding user priorities (which are often implicit), mapping them to meeting metadata, and making real-time decisions about accepting or declining invites. Current AI can parse calendar data and meeting descriptions, but reliably inferring nuanced personal priorities and organizational context is non-trivial. APIs like Google Calendar and Microsoft Graph provide access to events and RSVP actions, but the reasoning layer is complex.",
+    "difficulty_factors": [
+      "Implicit and dynamic nature of user priorities",
+      "Need for contextual understanding of meeting purpose",
+      "Ambiguity in meeting descriptions and invite metadata",
+      "Risk of false positives/negatives in declining important meetings",
+      "Integration with multiple calendar systems and permissions"
+    ]
+  },
+  "verification_ease": {
+    "score": 8,
+    "reasoning": "Verification is relatively straightforward: we can check if the meetings accepted align with a defined priority list or user feedback. Ground truth can be established by asking the user to label meetings as 'priority' or 'not priority' after the fact. Objective metrics like acceptance rate for priority meetings and rejection rate for non-priority meetings can be computed.",
+    "verification_methods": [
+      "Compare accepted meetings against user-defined priority tags or categories",
+      "Post-action user feedback (thumbs up/down on decisions)",
+      "Historical analysis of user manual decisions vs AI decisions",
+      "A/B testing with control group to measure alignment with user satisfaction"
+    ]
+  },
+  "verification_asymmetry": {
+    "score": 8 - (10 - 5),
+    "interpretation": "Score = 8 - 5 = 3 (Positive). This means the task is easier to verify than to solve, creating a favorable asymmetry for AI development under Verifier's Law.",
+    "priority": "HIGH"
+  },
+  "ai_readiness": {
+    "timeline": "Later (1-2yr)",
+    "blockers": [
+      "Robust modeling of user priorities from sparse signals",
+      "Contextual NLP for meeting purpose inference",
+      "Dynamic adaptation to changing user goals"
+    ],
+    "enablers": [
+      "Access to calendar APIs (Google, Microsoft)",
+      "User feedback loops for reinforcement learning",
+      "Advances in LLM-based personal assistant reasoning"
+    ]
+  },
+  "training_data_quality": {
+    "score": 6,
+    "reasoning": "We can collect labeled data from user feedback and historical meeting decisions, but initial data sparsity and privacy concerns limit quality. Synthetic data generation is possible but may not capture real-world complexity.",
+    "data_sources": [
+      "Historical calendar event logs with user RSVP patterns",
+      "Explicit user tagging of priority meetings",
+      "Synthetic meeting scenarios for model pre-training"
+    ]
+  },
+  "key_insights": [
+    "High verification asymmetry makes this a strong candidate for iterative AI improvement",
+    "Main challenge is modeling implicit user priorities, not API integration",
+    "Continuous feedback loop from user corrections is critical for success",
+    "Privacy and trust are major adoption factors"
+  ],
+  "recommendation": "HIGH priority for research and prototyping. Start with semi-automated suggestions and user-in-the-loop verification to bootstrap training data. Full autonomy likely in 1-2 years as preference modeling improves."
+}

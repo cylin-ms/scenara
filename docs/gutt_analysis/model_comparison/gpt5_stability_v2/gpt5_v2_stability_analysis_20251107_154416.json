@@ -1,0 +1,653 @@
+{
+  "framework_version": "2.0",
+  "total_canonical_tasks": 25,
+  "new_in_v2": "CAN-25: Event Annotation/Flagging",
+  "gold_standard_used": true,
+  "per_prompt": {
+    "Collaborate-1": {
+      "always_selected": [
+        "CAN-01",
+        "CAN-04",
+        "CAN-07",
+        "CAN-18",
+        "CAN-23"
+      ],
+      "sometimes_selected": [],
+      "total_unique_tasks": 5,
+      "consistency_percentage": 100.0,
+      "average_task_count": 5.0,
+      "task_count_variance": 0.0,
+      "task_count_std_dev": 0.0,
+      "can25_usage": {
+        "detected": false,
+        "trials_with_can25": 0,
+        "consistency": "0/3"
+      },
+      "gold_standard_metrics": {
+        "gold_standard_tasks": [
+          "CAN-04",
+          "CAN-05",
+          "CAN-09"
+        ],
+        "per_trial": [
+          {
+            "precision": 20.0,
+            "recall": 33.33,
+            "f1": 25.0,
+            "true_positives": 1,
+            "false_positives": 4,
+            "false_negatives": 2,
+            "trial": 1
+          },
+          {
+            "precision": 20.0,
+            "recall": 33.33,
+            "f1": 25.0,
+            "true_positives": 1,
+            "false_positives": 4,
+            "false_negatives": 2,
+            "trial": 2
+          },
+          {
+            "precision": 20.0,
+            "recall": 33.33,
+            "f1": 25.0,
+            "true_positives": 1,
+            "false_positives": 4,
+            "false_negatives": 2,
+            "trial": 3
+          }
+        ],
+        "average": {
+          "precision": 20.0,
+          "recall": 33.33,
+          "f1": 25.0
+        }
+      }
+    },
+    "Collaborate-2": {
+      "always_selected": [
+        "CAN-01",
+        "CAN-04",
+        "CAN-05",
+        "CAN-07",
+        "CAN-09",
+        "CAN-18"
+      ],
+      "sometimes_selected": [],
+      "total_unique_tasks": 6,
+      "consistency_percentage": 100.0,
+      "average_task_count": 6.0,
+      "task_count_variance": 0.0,
+      "task_count_std_dev": 0.0,
+      "can25_usage": {
+        "detected": false,
+        "trials_with_can25": 0,
+        "consistency": "0/3"
+      },
+      "gold_standard_metrics": {
+        "gold_standard_tasks": [
+          "CAN-04",
+          "CAN-05",
+          "CAN-01",
+          "CAN-07",
+          "CAN-08",
+          "CAN-09",
+          "CAN-18"
+        ],
+        "per_trial": [
+          {
+            "precision": 100.0,
+            "recall": 85.71,
+            "f1": 92.31,
+            "true_positives": 6,
+            "false_positives": 0,
+            "false_negatives": 1,
+            "trial": 1
+          },
+          {
+            "precision": 100.0,
+            "recall": 85.71,
+            "f1": 92.31,
+            "true_positives": 6,
+            "false_positives": 0,
+            "false_negatives": 1,
+            "trial": 2
+          },
+          {
+            "precision": 100.0,
+            "recall": 85.71,
+            "f1": 92.31,
+            "true_positives": 6,
+            "false_positives": 0,
+            "false_negatives": 1,
+            "trial": 3
+          }
+        ],
+        "average": {
+          "precision": 100.0,
+          "recall": 85.71,
+          "f1": 92.31
+        }
+      }
+    },
+    "Collaborate-3": {
+      "always_selected": [
+        "CAN-01",
+        "CAN-04",
+        "CAN-05",
+        "CAN-07",
+        "CAN-09",
+        "CAN-22"
+      ],
+      "sometimes_selected": [],
+      "total_unique_tasks": 6,
+      "consistency_percentage": 100.0,
+      "average_task_count": 6.0,
+      "task_count_variance": 0.0,
+      "task_count_std_dev": 0.0,
+      "can25_usage": {
+        "detected": false,
+        "trials_with_can25": 0,
+        "consistency": "0/3"
+      },
+      "gold_standard_metrics": {
+        "gold_standard_tasks": [
+          "CAN-04",
+          "CAN-01",
+          "CAN-07",
+          "CAN-05",
+          "CAN-08",
+          "CAN-09",
+          "CAN-22"
+        ],
+        "per_trial": [
+          {
+            "precision": 100.0,
+            "recall": 85.71,
+            "f1": 92.31,
+            "true_positives": 6,
+            "false_positives": 0,
+            "false_negatives": 1,
+            "trial": 1
+          },
+          {
+            "precision": 100.0,
+            "recall": 85.71,
+            "f1": 92.31,
+            "true_positives": 6,
+            "false_positives": 0,
+            "false_negatives": 1,
+            "trial": 2
+          },
+          {
+            "precision": 100.0,
+            "recall": 85.71,
+            "f1": 92.31,
+            "true_positives": 6,
+            "false_positives": 0,
+            "false_negatives": 1,
+            "trial": 3
+          }
+        ],
+        "average": {
+          "precision": 100.0,
+          "recall": 85.71,
+          "f1": 92.31
+        }
+      }
+    },
+    "Organizer-1": {
+      "always_selected": [
+        "CAN-01",
+        "CAN-02",
+        "CAN-03",
+        "CAN-04",
+        "CAN-07"
+      ],
+      "sometimes_selected": [
+        "CAN-11"
+      ],
+      "total_unique_tasks": 6,
+      "consistency_percentage": 83.33,
+      "average_task_count": 5.33,
+      "task_count_variance": 0.2222,
+      "task_count_std_dev": 0.4714,
+      "can25_usage": {
+        "detected": false,
+        "trials_with_can25": 0,
+        "consistency": "0/3"
+      },
+      "gold_standard_metrics": {
+        "gold_standard_tasks": [
+          "CAN-04",
+          "CAN-01",
+          "CAN-07",
+          "CAN-02",
+          "CAN-03",
+          "CAN-11",
+          "CAN-13"
+        ],
+        "per_trial": [
+          {
+            "precision": 100.0,
+            "recall": 71.43,
+            "f1": 83.33,
+            "true_positives": 5,
+            "false_positives": 0,
+            "false_negatives": 2,
+            "trial": 1
+          },
+          {
+            "precision": 100.0,
+            "recall": 85.71,
+            "f1": 92.31,
+            "true_positives": 6,
+            "false_positives": 0,
+            "false_negatives": 1,
+            "trial": 2
+          },
+          {
+            "precision": 100.0,
+            "recall": 71.43,
+            "f1": 83.33,
+            "true_positives": 5,
+            "false_positives": 0,
+            "false_negatives": 2,
+            "trial": 3
+          }
+        ],
+        "average": {
+          "precision": 100.0,
+          "recall": 76.19,
+          "f1": 86.32
+        }
+      }
+    },
+    "Organizer-2": {
+      "always_selected": [
+        "CAN-01",
+        "CAN-02",
+        "CAN-03",
+        "CAN-04",
+        "CAN-07",
+        "CAN-21",
+        "CAN-25"
+      ],
+      "sometimes_selected": [],
+      "total_unique_tasks": 7,
+      "consistency_percentage": 100.0,
+      "average_task_count": 7.0,
+      "task_count_variance": 0.0,
+      "task_count_std_dev": 0.0,
+      "can25_usage": {
+        "detected": true,
+        "trials_with_can25": 3,
+        "consistency": "3/3"
+      },
+      "gold_standard_metrics": {
+        "gold_standard_tasks": [
+          "CAN-04",
+          "CAN-01",
+          "CAN-07",
+          "CAN-02",
+          "CAN-03",
+          "CAN-21",
+          "CAN-11",
+          "CAN-16",
+          "CAN-25"
+        ],
+        "per_trial": [
+          {
+            "precision": 100.0,
+            "recall": 77.78,
+            "f1": 87.5,
+            "true_positives": 7,
+            "false_positives": 0,
+            "false_negatives": 2,
+            "trial": 1
+          },
+          {
+            "precision": 100.0,
+            "recall": 77.78,
+            "f1": 87.5,
+            "true_positives": 7,
+            "false_positives": 0,
+            "false_negatives": 2,
+            "trial": 2
+          },
+          {
+            "precision": 100.0,
+            "recall": 77.78,
+            "f1": 87.5,
+            "true_positives": 7,
+            "false_positives": 0,
+            "false_negatives": 2,
+            "trial": 3
+          }
+        ],
+        "average": {
+          "precision": 100.0,
+          "recall": 77.78,
+          "f1": 87.5
+        }
+      }
+    },
+    "Organizre-3": {
+      "always_selected": [
+        "CAN-01",
+        "CAN-02",
+        "CAN-03",
+        "CAN-04",
+        "CAN-07",
+        "CAN-10",
+        "CAN-14",
+        "CAN-20"
+      ],
+      "sometimes_selected": [
+        "CAN-11"
+      ],
+      "total_unique_tasks": 9,
+      "consistency_percentage": 88.89,
+      "average_task_count": 8.67,
+      "task_count_variance": 0.2222,
+      "task_count_std_dev": 0.4714,
+      "can25_usage": {
+        "detected": false,
+        "trials_with_can25": 0,
+        "consistency": "0/3"
+      },
+      "gold_standard_metrics": {
+        "gold_standard_tasks": [
+          "CAN-04",
+          "CAN-01",
+          "CAN-07",
+          "CAN-02",
+          "CAN-03",
+          "CAN-10",
+          "CAN-11",
+          "CAN-14",
+          "CAN-20"
+        ],
+        "per_trial": [
+          {
+            "precision": 100.0,
+            "recall": 100.0,
+            "f1": 100.0,
+            "true_positives": 9,
+            "false_positives": 0,
+            "false_negatives": 0,
+            "trial": 1
+          },
+          {
+            "precision": 100.0,
+            "recall": 100.0,
+            "f1": 100.0,
+            "true_positives": 9,
+            "false_positives": 0,
+            "false_negatives": 0,
+            "trial": 2
+          },
+          {
+            "precision": 100.0,
+            "recall": 88.89,
+            "f1": 94.12,
+            "true_positives": 8,
+            "false_positives": 0,
+            "false_negatives": 1,
+            "trial": 3
+          }
+        ],
+        "average": {
+          "precision": 100.0,
+          "recall": 96.3,
+          "f1": 98.04
+        }
+      }
+    },
+    "Schedule-1": {
+      "always_selected": [
+        "CAN-01",
+        "CAN-04",
+        "CAN-05",
+        "CAN-06",
+        "CAN-12",
+        "CAN-15",
+        "CAN-17"
+      ],
+      "sometimes_selected": [],
+      "total_unique_tasks": 7,
+      "consistency_percentage": 100.0,
+      "average_task_count": 7.0,
+      "task_count_variance": 0.0,
+      "task_count_std_dev": 0.0,
+      "can25_usage": {
+        "detected": false,
+        "trials_with_can25": 0,
+        "consistency": "0/3"
+      },
+      "gold_standard_metrics": {
+        "gold_standard_tasks": [
+          "CAN-04",
+          "CAN-05",
+          "CAN-01",
+          "CAN-06",
+          "CAN-12",
+          "CAN-15",
+          "CAN-03",
+          "CAN-16",
+          "CAN-17"
+        ],
+        "per_trial": [
+          {
+            "precision": 100.0,
+            "recall": 77.78,
+            "f1": 87.5,
+            "true_positives": 7,
+            "false_positives": 0,
+            "false_negatives": 2,
+            "trial": 1
+          },
+          {
+            "precision": 100.0,
+            "recall": 77.78,
+            "f1": 87.5,
+            "true_positives": 7,
+            "false_positives": 0,
+            "false_negatives": 2,
+            "trial": 2
+          },
+          {
+            "precision": 100.0,
+            "recall": 77.78,
+            "f1": 87.5,
+            "true_positives": 7,
+            "false_positives": 0,
+            "false_negatives": 2,
+            "trial": 3
+          }
+        ],
+        "average": {
+          "precision": 100.0,
+          "recall": 77.78,
+          "f1": 87.5
+        }
+      }
+    },
+    "Schedule-2": {
+      "always_selected": [
+        "CAN-01",
+        "CAN-02",
+        "CAN-03",
+        "CAN-04",
+        "CAN-07",
+        "CAN-12",
+        "CAN-13",
+        "CAN-17",
+        "CAN-21"
+      ],
+      "sometimes_selected": [],
+      "total_unique_tasks": 9,
+      "consistency_percentage": 100.0,
+      "average_task_count": 9.0,
+      "task_count_variance": 0.0,
+      "task_count_std_dev": 0.0,
+      "can25_usage": {
+        "detected": false,
+        "trials_with_can25": 0,
+        "consistency": "0/3"
+      },
+      "gold_standard_metrics": {
+        "gold_standard_tasks": [
+          "CAN-04",
+          "CAN-05",
+          "CAN-01",
+          "CAN-07",
+          "CAN-13",
+          "CAN-06",
+          "CAN-12",
+          "CAN-23",
+          "CAN-03"
+        ],
+        "per_trial": [
+          {
+            "precision": 66.67,
+            "recall": 66.67,
+            "f1": 66.67,
+            "true_positives": 6,
+            "false_positives": 3,
+            "false_negatives": 3,
+            "trial": 1
+          },
+          {
+            "precision": 66.67,
+            "recall": 66.67,
+            "f1": 66.67,
+            "true_positives": 6,
+            "false_positives": 3,
+            "false_negatives": 3,
+            "trial": 2
+          },
+          {
+            "precision": 66.67,
+            "recall": 66.67,
+            "f1": 66.67,
+            "true_positives": 6,
+            "false_positives": 3,
+            "false_negatives": 3,
+            "trial": 3
+          }
+        ],
+        "average": {
+          "precision": 66.67,
+          "recall": 66.67,
+          "f1": 66.67
+        }
+      }
+    },
+    "Schedule-3": {
+      "always_selected": [
+        "CAN-01",
+        "CAN-04",
+        "CAN-05",
+        "CAN-06",
+        "CAN-12",
+        "CAN-19"
+      ],
+      "sometimes_selected": [
+        "CAN-07"
+      ],
+      "total_unique_tasks": 7,
+      "consistency_percentage": 85.71,
+      "average_task_count": 6.67,
+      "task_count_variance": 0.2222,
+      "task_count_std_dev": 0.4714,
+      "can25_usage": {
+        "detected": false,
+        "trials_with_can25": 0,
+        "consistency": "0/3"
+      },
+      "gold_standard_metrics": {
+        "gold_standard_tasks": [
+          "CAN-04",
+          "CAN-05",
+          "CAN-01",
+          "CAN-07",
+          "CAN-02",
+          "CAN-03",
+          "CAN-06",
+          "CAN-12",
+          "CAN-19",
+          "CAN-03"
+        ],
+        "per_trial": [
+          {
+            "precision": 100.0,
+            "recall": 66.67,
+            "f1": 80.0,
+            "true_positives": 6,
+            "false_positives": 0,
+            "false_negatives": 3,
+            "trial": 1
+          },
+          {
+            "precision": 100.0,
+            "recall": 77.78,
+            "f1": 87.5,
+            "true_positives": 7,
+            "false_positives": 0,
+            "false_negatives": 2,
+            "trial": 2
+          },
+          {
+            "precision": 100.0,
+            "recall": 77.78,
+            "f1": 87.5,
+            "true_positives": 7,
+            "false_positives": 0,
+            "false_negatives": 2,
+            "trial": 3
+          }
+        ],
+        "average": {
+          "precision": 100.0,
+          "recall": 74.08,
+          "f1": 85.0
+        }
+      }
+    }
+  },
+  "aggregate": {
+    "total_prompts": 9,
+    "trials": 3,
+    "average_task_count": 6.74,
+    "task_variance": [],
+    "can25_detection": {
+      "description": "CAN-25 (Event Annotation/Flagging) detection rate - NEW in V2.0",
+      "prompts_using_can25": [
+        {
+          "prompt_id": "Organizer-2",
+          "trials_detected": 3,
+          "consistency": "3/3"
+        }
+      ],
+      "total_prompts_with_can25": 1,
+      "percentage": 11.11
+    },
+    "evaluation_metrics": {
+      "description": "Precision, Recall, F1 scores vs human-validated gold standard",
+      "per_trial": [],
+      "average": {
+        "precision": 87.41,
+        "recall": 74.84,
+        "f1": 80.07,
+        "precision_std": 26.0,
+        "recall_std": 17.02,
+        "f1_std": 21.2,
+        "total_comparisons": 27
+      }
+    },
+    "average_variance": 0.0741,
+    "overall_consistency_percentage": 95.33
+  }
+}

@@ -1,97 +1,109 @@
 {
-  "source": "gpt-5",
-  "backend_llm": "gpt-5-preview",
-  "backend_llm_notes": "GPT-5 via Cursor Agent Mode - Advanced reasoning and instruction following",
-  "timestamp": "2025-11-06T13:21:00.000000",
+  "source": "gpt-5-v2",
+  "backend_llm": "dev-gpt-5-chat-jj",
+  "backend_llm_notes": "GPT-5 via Microsoft SilverFlow LLM API - v2 with full GUTT documentation context (same as Claude/Ollama)",
+  "prompt_version": "v2_full_context",
+  "timestamp": "2025-11-06T20:10:16.410571",
   "original_prompt": "Help me set the agenda to review the progress of Project Alpha with the product and marketing team to get confirmation we are on track and discuss any blocking issues or risks.",
   "gutts": [
     {
       "id": "gutt_1",
-      "name": "Meeting Context Retrieval",
-      "capability": "Gather information about Project Alpha from available sources",
+      "name": "Extract Meeting Intent",
+      "capability": "Identify that the user wants to create an agenda for a progress review meeting",
       "required_skills": [
-        "Document retrieval",
-        "Context extraction",
-        "Project status queries",
-        "Data source integration"
+        "intent_recognition",
+        "natural_language_understanding"
       ],
-      "user_goal": "Agenda based on actual project state",
+      "user_goal": "Ensure the system understands the purpose of the request",
       "triggered": true,
-      "evidence": "Retrieved Project Alpha docs: timeline, milestones, status reports, issue tracker"
+      "evidence": "Detects 'set the agenda' and 'review the progress of Project Alpha' as core intent"
     },
     {
       "id": "gutt_2",
-      "name": "Stakeholder Role Identification",
-      "capability": "Understand product team vs marketing team roles and concerns",
+      "name": "Identify Project Context",
+      "capability": "Extract and confirm the project name and context from the prompt",
       "required_skills": [
-        "Role-based reasoning",
-        "Stakeholder analysis",
-        "Perspective modeling",
-        "Concern mapping"
+        "entity_extraction",
+        "context_resolution"
       ],
-      "user_goal": "Agenda addresses each group's needs",
+      "user_goal": "Associate the agenda with Project Alpha accurately",
       "triggered": true,
-      "evidence": "Identified: Product team (feature delivery, tech debt) vs Marketing team (launch readiness, messaging)"
+      "evidence": "Recognizes 'Project Alpha' as the specific project under discussion"
     },
     {
       "id": "gutt_3",
-      "name": "Agenda Structure Planning",
-      "capability": "Create logical flow for review meeting (progress → confirmation → blockers → risks)",
+      "name": "Determine Participants",
+      "capability": "Identify required participants (product and marketing team) from the request",
       "required_skills": [
-        "Meeting structure best practices",
-        "Agenda templating",
-        "Flow optimization",
-        "Time allocation"
+        "entity_extraction",
+        "role_mapping"
       ],
-      "user_goal": "Meeting has clear structure and progression",
+      "user_goal": "Ensure correct stakeholders are considered for the meeting",
       "triggered": true,
-      "evidence": "Structured agenda: (1) Progress review 20min, (2) Track confirmation 10min, (3) Blockers 15min, (4) Risks 10min, (5) Actions 5min"
+      "evidence": "Extracts 'product team' and 'marketing team' as participant groups"
     },
     {
       "id": "gutt_4",
-      "name": "Progress Review Items Generation",
-      "capability": "List specific accomplishments, milestones, metrics to review",
+      "name": "Retrieve Team Member Details",
+      "capability": "Map identified teams to actual user contacts or calendar groups",
       "required_skills": [
-        "Achievement extraction",
-        "Milestone identification",
-        "Metrics selection",
-        "Status summarization"
+        "directory_lookup",
+        "contact_resolution"
       ],
-      "user_goal": "Concrete progress discussion points",
+      "user_goal": "Translate team names into actionable participant lists",
       "triggered": true,
-      "evidence": "Progress items: Feature A completed (85% → 100%), Beta signups (target 500, actual 650), Marketing assets (8/10 done)"
+      "evidence": "Queries organizational directory to find members of product and marketing teams"
     },
     {
       "id": "gutt_5",
-      "name": "Blocker & Risk Identification",
-      "capability": "Surface known issues, dependencies, and potential risks for discussion",
+      "name": "Define Agenda Objectives",
+      "capability": "Extract and structure the meeting objectives from the user prompt",
       "required_skills": [
-        "Issue tracking",
-        "Risk analysis",
-        "Dependency mapping",
-        "Problem surfacing"
+        "semantic_parsing",
+        "goal_structuring"
       ],
-      "user_goal": "Problems addressed proactively",
+      "user_goal": "Ensure agenda reflects all user-stated goals",
       "triggered": true,
-      "evidence": "Blockers: API integration delayed 1 week, designer capacity limited. Risks: Feature B scope creep, competitor launch timing"
+      "evidence": "Identifies objectives: review progress, confirm on-track status, discuss blocking issues/risks"
     },
     {
       "id": "gutt_6",
-      "name": "Time Allocation & Formatting",
-      "capability": "Assign time to each agenda item and format for distribution",
+      "name": "Generate Agenda Items",
+      "capability": "Convert objectives into actionable agenda items in logical order",
       "required_skills": [
-        "Time budgeting",
-        "Agenda formatting",
-        "Document generation",
-        "Professional presentation"
+        "agenda_generation",
+        "task_structuring"
       ],
-      "user_goal": "Professional, well-structured agenda document",
+      "user_goal": "Provide a clear, organized agenda for the meeting",
       "triggered": true,
-      "evidence": "Generated formal agenda document with time allocations, sections, discussion prompts, and pre-read materials"
+      "evidence": "Creates items: 1) Progress review, 2) On-track confirmation, 3) Blocking issues and risks"
+    },
+    {
+      "id": "gutt_7",
+      "name": "Validate Agenda Completeness",
+      "capability": "Check that all user-specified topics are included and no critical element is missing",
+      "required_skills": [
+        "consistency_checking",
+        "requirement_validation"
+      ],
+      "user_goal": "Ensure the agenda fully meets the stated purpose",
+      "triggered": true,
+      "evidence": "Compares generated agenda items against extracted objectives"
+    },
+    {
+      "id": "gutt_8",
+      "name": "Present Agenda for Confirmation",
+      "capability": "Display the proposed agenda to the user for approval or edits",
+      "required_skills": [
+        "UI_rendering",
+        "confirmation_flow"
+      ],
+      "user_goal": "Allow user to confirm or adjust the agenda before finalization",
+      "triggered": true,
+      "evidence": "Shows draft agenda in user interface with edit/approve options"
     }
   ],
   "track1_score": 1.0,
-  "track2_score": 3.7,
-  "overall_score": 3.7,
-  "notes": "Generated by GPT-5 - Matches reference decomposition of 6 GUTTs"
+  "track2_score": null,
+  "overall_score": null
 }

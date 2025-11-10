@@ -1,0 +1,1568 @@
+{
+  "metadata": {
+    "generated_date": "2025-11-06",
+    "method": "GPT-5 Semantic Analysis",
+    "source_prompts": 9,
+    "total_gutts_analyzed": 132,
+    "models": [
+      "Claude Sonnet 4.5",
+      "GPT-5 v2"
+    ]
+  },
+  "per_prompt_mappings": [
+    {
+      "prompt_id": "organizer-1",
+      "prompt_desc": "Priority-based calendar management",
+      "original_prompt": "Keep my Calendar up to date by committing to only meetings that are part of my priorities.",
+      "claude_count": 6,
+      "gpt5_count": 6,
+      "gpt5_semantic_analysis": "Here’s the full relationship analysis between Claude’s 6 GUTTs (C1–C6) and GPT-5’s 6 GUTTs (G1–G6):\n\n---\n\n### **1. EQUIVALENT (A = B)**  \n**C2 = G1:** Both represent the capability to **retrieve calendar events from the user’s calendar system**.  \n- C2: “Access and load pending calendar invitations and scheduled meetings requiring decisions”  \n- G1: “Access and fetch all scheduled calendar events from the user's calendar system”  \n**Common API:** Calendar event retrieval (read access).\n\n---\n\n### **2. SUBSET (A < B)**  \n**C4 < G5:**  \n- C4: “Determine which meetings to accept vs decline based on priority alignment thresholds and constraints”  \n- G5: “Separate events that do not match the user's priorities from those that do”  \n**Why subset?** C4 focuses on **decision logic for RSVP actions** (accept/decline), which is a narrower interpretation of filtering. G5 is broader because it includes classification and separation without necessarily deciding on RSVP actions.\n\n---\n\n### **3. SUPERSET (A > B)**  \n**C3 > G4:**  \n- C3: “Evaluate how well each meeting aligns with stated priorities using semantic matching and relevance scoring”  \n- G4: “Determine if each event aligns with the user's stated priorities”  \n**Why superset?** C3 implies **graded scoring and semantic relevance**, whereas G4 is a simpler binary classification (aligns or not). C3 encompasses G4’s functionality and adds more complexity.\n\n---\n\n### **4. OVERLAPPING (A ∩ B)**  \n**C5 ∩ G6:**  \n- C5: “Execute accept/decline actions on calendar system by updating RSVP status”  \n- G6: “Update the calendar to confirm attendance for meetings identified as priority”  \n**Shared part:** Both involve **writing back to the calendar system**.  \n**Unique parts:**  \n- C5 includes both **accept and decline actions**.  \n- G6 focuses only on **confirming attendance (accept)** for priority meetings, not handling declines.\n\n---\n\n### **5. CLAUDE UNIQUE (⊥)**  \n**C1:** “Priority Definition & Extraction”  \n- No GPT-5 equivalent. GPT-5 assumes priorities are already defined and just retrieves them (G3). C1 involves **deriving priorities from context/goals**, which is a distinct capability.  \n**C6:** “Decision Justification & Reporting”  \n- No GPT-5 equivalent. Explaining decisions and linking them to priority rules is unique to Claude’s decomposition.\n\n---\n\n### **6. GPT-5 UNIQUE (⊥)**  \n**G2:** “Extract Event Attributes”  \n- No Claude equivalent. Claude assumes event details are already available after retrieval. G2 explicitly parses and structures event attributes.  \n**G3:** “Retrieve User Priority Profile”  \n- No Claude equivalent. Claude creates priorities (C1), but does not have a separate retrieval step for an existing profile.\n\n---\n\n## ✅ **Summary Table of Key Relationships**\n| Claude | GPT-5 | Relationship | Explanation |\n|--------|-------|-------------|-------------|\n| C2 | G1 | = | Both retrieve calendar events |\n| C3 | G4 | > | C3 does semantic scoring; G4 does binary classification |\n| C4 | G5 | < | C4 focuses on RSVP decisions; G5 broadly filters events |\n| C5 | G6 | ∩ | Both update calendar, but C5 handles accept/decline; G6 only confirms attendance |\n| C1 | — | ⊥ | Unique: derive priorities from context |\n| C6 | — | ⊥ | Unique: explain decisions |\n| — | G2 | ⊥ | Unique: extract event attributes |\n| — | G3 | ⊥ | Unique: retrieve existing priority profile |\n\n---\n\n### **High-Level Insight**\n- Claude emphasizes **reasoning and explanation** (C1, C6) and nuanced scoring (C3).  \n- GPT-5 emphasizes **data structuring and retrieval** (G2, G3) and assumes priorities are predefined.  \n- Both share core steps: **event retrieval, alignment check, and calendar update**, but differ in granularity and assumptions.\n\n---\n\n✅ Would you like me to **visualize this as a relationship matrix** (Claude vs GPT-5 with symbols =, <, >, ∩, ⊥) for quick reference? Or **produce a merged “ideal” decomposition combining the best of both approaches**?"
+    },
+    {
+      "prompt_id": "organizer-2",
+      "prompt_desc": "Track important meetings, flag prep needs",
+      "original_prompt": "Track all my important meetings and flag any that require focus time to prepare for them.",
+      "claude_count": 7,
+      "gpt5_count": 6,
+      "gpt5_semantic_analysis": "Here’s the full relationship analysis between Claude’s 7 GUTTs (C1–C7) and GPT-5’s 6 GUTTs (G1–G6):\n\n---\n\n### **1. EQUIVALENT (A = B)**\n\n- **C1 = G1**: *Calendar Data Retrieval* = *Retrieve Calendar Events*  \n  **Common capability:** Both involve accessing and fetching all scheduled meetings from the user’s calendar for downstream processing.\n\n- **C4 = G5**: *Meeting Flagging Logic* = *Flag Meetings Requiring Focus Time*  \n  **Common capability:** Both tasks mark or annotate meetings that require preparation/focus time.\n\n---\n\n### **2. SUBSET (C < G)**\n\n- **C2 < G2**: *Meeting Importance Classification* < *Identify Important Meetings*  \n  **Explanation:** C2 focuses on scoring meetings based on multiple criteria (importance classification), whereas G2 includes both detecting explicit importance markers and inferring importance. G2 is slightly broader because it may include user-defined flags or metadata beyond classification logic.\n\n- **C3 < G4**: *Preparation Time Estimation* < *Determine Preparation Requirement*  \n  **Explanation:** C3 only estimates the amount of prep time needed, while G4 decides whether a meeting requires any preparation at all (binary decision) based on context and importance. G4 may internally use time estimation, but its scope is broader.\n\n---\n\n### **3. SUPERSET (C > G)**\n\n- **C6 > G6**: *Focus Time Block Scheduling* > *Notify User of Preparation Needs*  \n  **Explanation:** C6 actively creates and schedules calendar blocks for preparation, which is a stronger action than G6’s notification. Scheduling implies user notification, but also involves calendar modification, making C6 a superset.\n\n---\n\n### **4. OVERLAPPING (C ∩ G)**\n\n- **C2 ∩ G3**: *Meeting Importance Classification* ∩ *Extract Meeting Context*  \n  **Shared part:** Both deal with meeting attributes.  \n  **Unique parts:** C2 uses attributes to classify importance; G3 focuses on extracting raw details (title, agenda, participants) without classification.\n\n- **C3 ∩ G4**: *Preparation Time Estimation* ∩ *Determine Preparation Requirement*  \n  **Shared part:** Both relate to preparation needs.  \n  **Unique parts:** C3 computes duration; G4 makes a yes/no decision based on multiple factors.\n\n- **C7 ∩ G6**: *Actionable Recommendations & Reporting* ∩ *Notify User of Preparation Needs*  \n  **Shared part:** Both communicate something to the user.  \n  **Unique parts:** C7 provides summaries, insights, and guidance; G6 only sends alerts/reminders.\n\n---\n\n### **5. CLAUDE UNIQUE (⊥)**\n\n- **C5:** *Calendar Gap Analysis*  \n  **Unique capability:** Identifying available time slots for scheduling focus time. GPT-5 has no equivalent task for analyzing free time.\n\n- **C7 (partially):** While C7 overlaps with G6, its broader reporting and recommendation functionality (beyond notifications) is unique.\n\n---\n\n### **6. GPT-5 UNIQUE (⊥)**\n\n- **G3:** *Extract Meeting Context*  \n  **Unique capability:** Parsing meeting details (agenda, participants, etc.) as a standalone step. Claude’s decomposition assumes this is implicit in classification but does not list it as a separate atomic capability.\n\n---\n\n## **Summary Table**\n\n| Claude Task | Closest GPT-5 Relation | Relationship |\n|-------------|-------------------------|--------------|\n| C1          | G1                      | =            |\n| C2          | G2, G3                  | < and ∩      |\n| C3          | G4                      | < and ∩      |\n| C4          | G5                      | =            |\n| C5          | —                       | ⊥            |\n| C6          | G6                      | >            |\n| C7          | G6                      | ∩ (partial)  |\n\n| GPT-5 Task | Closest Claude Relation | Relationship |\n|------------|--------------------------|--------------|\n| G1         | C1                      | =            |\n| G2         | C2                      | >            |\n| G3         | C2                      | ∩ (and unique)|\n| G4         | C3                      | > and ∩      |\n| G5         | C4                      | =            |\n| G6         | C6, C7                  | < and ∩      |\n\n---\n\n✅ **Key Observations:**\n- Both decompositions agree on core steps: fetch calendar, identify important meetings, flag them, and inform the user.\n- Claude emphasizes scheduling and time-blocking (C5, C6), while GPT-5 emphasizes context extraction (G3).\n- Notification vs. scheduling is a major difference: GPT-5 stops at alerts; Claude goes further to automate scheduling.\n\n---\n\nWould you like me to **visualize this as a relationship matrix** (Claude vs GPT-5 with symbols =, <, >, ∩, ⊥) for quick reference?"
+    },
+    {
+      "prompt_id": "organizer-3",
+      "prompt_desc": "Time reclamation analysis",
+      "original_prompt": "Help me understand where I am spending my time and identify ways I can reclaim time to focus more on my top priorities.",
+      "claude_count": 8,
+      "gpt5_count": 8,
+      "gpt5_semantic_analysis": "Here’s the full relationship analysis between Claude’s 8 GUTTs (C1–C8) and GPT-5’s 8 GUTTs (G1–G8), using the 5-relationship model:\n\n---\n\n### **1. EQUIVALENT (A = B)**\n\n- **C4 = G4**: *Priority Alignment Assessment* = *Identify Priority Alignment*  \n  **Common capability:** Both determine whether each event aligns with the user’s stated top priorities.\n\n- **C7 = G7**: *Schedule Optimization Recommendations* = *Generate Time Reclaim Recommendations*  \n  **Common capability:** Both suggest actionable strategies to free up time (decline, delegate, shorten, consolidate).\n\n- **C8 = G8**: *Time Usage Reporting & Visualization* = *Present Insights and Recommendations*  \n  **Common capability:** Both present insights visually and summarize time distribution and recommendations.\n\n---\n\n### **2. SUBSET (C < G)**\n\n- **C1 < G1**: *Calendar Historical Data Retrieval* < *Retrieve Calendar Events*  \n  **Reason:** C1 focuses on past events for a specified historical period, while G1 covers all scheduled events within the relevant timeframe (past, present, future).\n\n- **C2 < G3**: *Meeting Categorization & Classification* < *Classify Events by Category*  \n  **Reason:** C2 focuses on meetings specifically and classifies by type, purpose, importance, participants, whereas G3 classifies all events (meetings, focus work, personal) into broader categories.\n\n---\n\n### **3. SUPERSET (C > G)**\n\n- **C3 > G5**: *Time Aggregation & Statistical Analysis* > *Compute Time Allocation Metrics*  \n  **Reason:** C3 includes computing time spent per category, participant, project, and other dimensions (broader statistical analysis), while G5 focuses on aggregating durations by category and priority alignment only.\n\n---\n\n### **4. OVERLAPPING (C ∩ G)**\n\n- **C5 ∩ G6**: *Low-Value Meeting Identification* ∩ *Detect Low-Value or Non-Priority Blocks*  \n  **Shared:** Both identify time-consuming events that don’t align with priorities.  \n  **Unique:** C5 is meeting-specific and emphasizes “low-value” meetings; G6 applies to any event type and focuses on non-priority blocks, not just meetings.\n\n- **C2 ∩ G2**: *Meeting Categorization & Classification* ∩ *Extract Event Attributes*  \n  **Shared:** Both involve understanding event details.  \n  **Unique:** G2 is about parsing raw attributes (duration, participants), while C2 uses those attributes to classify meetings by purpose and importance.\n\n---\n\n### **5. CLAUDE UNIQUE (⊥)**\n\n- **C6:** *Time Reclamation Opportunity Analysis*  \n  **Unique capability:** Calculates potential time savings from proposed changes (quantitative impact analysis). GPT-5 suggests recommendations but does not explicitly compute potential savings.\n\n---\n\n### **6. GPT-5 UNIQUE (⊥)**\n\n- **G2:** *Extract Event Attributes*  \n  **Unique capability:** Parsing and normalizing raw event details (duration, participants, category) as a preprocessing step. Claude assumes this data is already structured.\n\n---\n\n## ✅ **Summary Table of Key Relationships**\n\n| Claude Task | Relationship | GPT-5 Task |\n|-------------|-------------|------------|\n| C1 | < | G1 |\n| C2 | < | G3 |\n| C2 | ∩ | G2 |\n| C3 | > | G5 |\n| C4 | = | G4 |\n| C5 | ∩ | G6 |\n| C6 | ⊥ | — |\n| C7 | = | G7 |\n| C8 | = | G8 |\n| — | ⊥ | G2 |\n\n---\n\n### **Observations**\n- Strong alignment: C4=G4, C7=G7, C8=G8 (priority alignment, recommendations, visualization).\n- Claude emphasizes **historical analysis** and **quantifying potential time savings** (C6), which GPT-5 lacks.\n- GPT-5 emphasizes **data preprocessing (attribute extraction)**, which Claude omits.\n- Both share a similar conceptual pipeline but differ in granularity and scope for some steps.\n\n---\n\n✅ Would you like me to **produce a visual mapping diagram** (Claude vs GPT-5 tasks with arrows and relationship labels) to make this even clearer? Or a **merged canonical decomposition** that combines the best of both?"
+    },
+    {
+      "prompt_id": "schedule-1",
+      "prompt_desc": "Recurring 1:1 with constraints",
+      "original_prompt": "Starting next week, I want a weekly 30-min 1:1 with {name}. Afternoons preferred, avoid Fridays. Automatically reschedule on declines or conflicts.",
+      "claude_count": 7,
+      "gpt5_count": 9,
+      "gpt5_semantic_analysis": "Here’s the full relationship analysis between Claude’s 7 GUTTs (C1–C7) and GPT-5’s 9 GUTTs (G1–G9), using the 5-relationship model:\n\n---\n\n### **1. EQUIVALENT (A = B)**\n\n- **C5 = G7**: *Send calendar invitation to specified attendee*  \n  Both represent the atomic capability of dispatching a meeting invite to participants after event creation.\n\n- **C6 = G8**: *Monitor for attendee declines or new calendar conflicts*  \n  Both involve tracking responses and detecting conflicts after the event is scheduled.\n\n- **C7 = G9**: *Automatically reschedule on declines or conflicts*  \n  Both represent the capability to recompute and update meeting time when conflicts or declines occur.\n\n---\n\n### **2. SUBSET (C < G)**\n\n- **C3 < G5**:  \n  - **Shared**: Both find time slots matching constraints.  \n  - **Difference**: G5 emphasizes *optimal* slot selection (possibly ranking or optimization), while C3 only ensures constraint satisfaction.  \n  So C3 is a narrower version of G5.\n\n---\n\n### **3. SUPERSET (C > G)**\n\n- **C1 > G1, G3, G4**:  \n  - C1 (*Constraint Extraction & Formalization*) parses all scheduling requirements into structured constraints, including recurrence, duration, time preferences, and exclusions.  \n  - G1 (*Parse Scheduling Intent*) is only about extracting intent and constraints from natural language.  \n  - G3 (*Determine Recurrence Pattern*) and G4 (*Apply Time Preferences*) are sub-parts of what C1 does.  \n  So C1 is a superset of G1, G3, and G4 combined.\n\n---\n\n### **4. OVERLAPPING (C ∩ G)**\n\n- **C2 ∩ G5**:  \n  - **Shared**: Both involve checking availability to find suitable time slots.  \n  - **Unique to C2**: Purely checks free/busy status for multiple calendars without necessarily selecting a slot.  \n  - **Unique to G5**: Goes beyond checking to actually select the optimal slot.  \n  So they overlap on availability checking but differ in scope.\n\n- **C4 ∩ G6**:  \n  - **Shared**: Both create a calendar event.  \n  - **Unique to C4**: Explicitly handles recurring series configuration and recurrence rules.  \n  - **Unique to G6**: More general event creation (could be single or recurring).  \n  So they overlap but C4 is more specialized for recurring events.\n\n---\n\n### **5. CLAUDE UNIQUE (⊥)**\n\n*(None — all Claude tasks map to at least one GPT-5 task.)*\n\n---\n\n### **6. GPT-5 UNIQUE (⊥)**\n\n- **G2**: *Resolve Participant Identity*  \n  GPT-5 includes an explicit step to match `{name}` to a specific contact or calendar entity. Claude’s decomposition does not mention this as a separate atomic capability.\n\n---\n\n## **Summary Table**\n\n| Claude Task | Relationship | GPT-5 Task(s) |\n|-------------|-------------|---------------|\n| C1          | >           | G1, G3, G4   |\n| C2          | ∩           | G5           |\n| C3          | <           | G5           |\n| C4          | ∩           | G6           |\n| C5          | =           | G7           |\n| C6          | =           | G8           |\n| C7          | =           | G9           |\n\n**GPT-5 Unique:** G2 (Resolve Participant Identity)\n\n---\n\n### **Key Insights**\n- Claude’s decomposition tends to group related parsing tasks into one superset (C1), while GPT-5 splits them into finer-grained atomic tasks (G1, G3, G4).\n- Both decompositions agree on the core scheduling pipeline: parse → find slot → create event → send invite → monitor → reschedule.\n- GPT-5 adds identity resolution as a distinct atomic capability, which Claude omits.\n- Claude emphasizes recurring series creation as a specialized capability, whereas GPT-5 treats event creation more generically.\n\n---\n\n✅ Would you like me to **visualize this as a bipartite mapping diagram** (Claude tasks on one side, GPT-5 on the other, with arrows showing =, <, >, ∩ relationships)?"
+    },
+    {
+      "prompt_id": "schedule-2",
+      "prompt_desc": "Clear time block & reschedule",
+      "original_prompt": "Clear my Thursday afternoon. Update my RSVPs and help me reschedule my meetings to another time and show me as {status}.",
+      "claude_count": 8,
+      "gpt5_count": 6,
+      "gpt5_semantic_analysis": "Here’s the full relationship analysis between Claude’s 8 GUTTs (C1–C8) and GPT-5’s 6 GUTTs (G1–G6):\n\n---\n\n### **1. EQUIVALENT (A = B)**\n\n- **C1 = G1**: Both interpret the natural language phrase *“Thursday afternoon”* into a concrete date/time range based on context and locale.  \n  **Common capability:** Time expression parsing and normalization.\n\n- **C2 = G2**: Both identify or retrieve all calendar events within the specified time window.  \n  **Common capability:** Query calendar events by time range.\n\n- **C3 = G3**: Both update RSVPs for the identified events to indicate non-attendance (decline/cancel).  \n  **Common capability:** Modify RSVP status for events.\n\n- **C6 = G6**: Both set the user’s calendar availability/status (Busy, Out of Office, etc.) for the cleared time window.  \n  **Common capability:** Update calendar free/busy status.\n\n---\n\n### **2. SUBSET (C < G)**\n\n- **C4 < G4**:  \n  - **Shared:** Both involve finding alternative time slots for rescheduling.  \n  - **Difference:** C4 focuses only on *identifying alternative slots* based on attendee availability, while G4 includes generating suitable proposals considering user constraints and possibly preferences.  \n  **Why subset:** C4 is narrower because it only finds slots, whereas G4 may also incorporate optimization and constraint handling.\n\n---\n\n### **3. SUPERSET (C > G)**\n\n- **C5 > G5**:  \n  - **Shared:** Both involve rescheduling meetings.  \n  - **Difference:** G5 focuses on updating events and sending invites for new times, while C5 includes *sending proposals* (which implies negotiation or tentative suggestions) before finalizing.  \n  **Why superset:** C5 covers both proposing and initiating reschedule requests, whereas G5 assumes confirmed rescheduling.\n\n---\n\n### **4. OVERLAPPING (C ∩ G)**\n\n- **C4 ∩ G4** (already noted as subset, but to clarify): They overlap on finding alternative slots, but G4 adds more logic around constraints and suitability, so they share a core but differ in scope.\n\n*(No other overlaps beyond those already classified as subset/superset.)*\n\n---\n\n### **5. CLAUDE UNIQUE (⊥)**\n\n- **C7**: *Focus Time Block Creation*  \n  **Unique capability:** Create a placeholder event for the blocked time with a title/description (e.g., “Focus Time”). GPT-5 does not mention creating a new event, only updating status.\n\n- **C8**: *Action Summary & Confirmation*  \n  **Unique capability:** Generate a summary report of actions taken (declined X meetings, rescheduled Y, etc.). GPT-5 has no equivalent reporting step.\n\n---\n\n### **6. GPT-5 UNIQUE (⊥)**\n\n*(None beyond those already mapped; all GPT-5 tasks have a Claude counterpart.)*\n\n---\n\n## **Summary Table**\n\n| Claude Task | Relationship | GPT-5 Task |\n|-------------|-------------|------------|\n| C1          | =           | G1         |\n| C2          | =           | G2         |\n| C3          | =           | G3         |\n| C4          | <           | G4         |\n| C5          | >           | G5         |\n| C6          | =           | G6         |\n| C7          | ⊥           | —          |\n| C8          | ⊥           | —          |\n\n---\n\n### **Key Observations**\n- Core parsing, event retrieval, RSVP updates, and status updates are equivalent across both decompositions.\n- Claude adds **user-facing confirmation** and **focus time placeholder creation**, which GPT-5 omits.\n- GPT-5’s rescheduling step assumes confirmed updates, while Claude models a more nuanced proposal phase.\n- GPT-5’s alternative slot generation is broader (includes constraints), whereas Claude’s is a simpler availability check.\n\n---\n\n✅ Would you like me to **visualize this as a relationship matrix** (Claude vs GPT-5) with color-coded cells for =, <, >, ∩, ⊥? Or **produce a merged “canonical” GUTT decomposition** that combines the best of both?"
+    },
+    {
+      "prompt_id": "schedule-3",
+      "prompt_desc": "Multi-person meeting with room",
+      "original_prompt": "Land a time to meet about Project Alpha with Chris, Sangya, and Kat for 1 hour in the next 2 weeks. Schedule over 1:1s and lunches if needed and work around Kat's schedule. Make the meeting in person and add a room.",
+      "claude_count": 9,
+      "gpt5_count": 9,
+      "gpt5_semantic_analysis": "Here’s the detailed relationship analysis between Claude’s 9 GUTTs (C1–C9) and GPT-5’s 9 GUTTs (G1–G9):\n\n---\n\n### **1. EQUIVALENT (A = B)**\n\n- **C7 = G7**: *Optimal Slot Selection* = *Select Optimal Time Slot*  \n  **Common capability:** Both tasks involve ranking and selecting the best meeting time considering all constraints, preferences, and minimal disruption.\n\n- **C9 = G9**: *Meeting Creation & Invitations* = *Create and Send Meeting Invite*  \n  **Common capability:** Both create the calendar event with all details and send invitations to participants.\n\n---\n\n### **2. SUBSET (C < G)**\n\n- **C3 < G4**: *Priority Constraint Application (Kat's schedule)* < *Retrieve Kat's Constraints*  \n  **Explanation:** C3 focuses on applying Kat’s constraints as a hard rule during scheduling, while G4 includes identifying and extracting those constraints from her calendar (broader).\n\n- **C6 < G8**: *Conference Room Search & Booking* < *Find Available Room*  \n  **Explanation:** C6 is about finding and booking a room, while G8 includes locating and reserving a physical meeting room matching the selected time slot (slightly broader because it ties to the chosen slot).\n\n---\n\n### **3. SUPERSET (C > G)**\n\n- **C1 > G1**: *Meeting Requirements Extraction* > *Parse Meeting Request*  \n  **Explanation:** C1 parses all requirements including attendees, duration, date range, override rules, modality, and resources. G1 focuses on extracting meeting details and constraints from the natural language prompt but does not explicitly include override rules or resource requirements.\n\n- **C2 > G3**: *Multi-Person Availability Aggregation* > *Retrieve Participant Calendars*  \n  **Explanation:** C2 aggregates availability across participants, while G3 only retrieves raw calendar data. Aggregation is a higher-level capability.\n\n---\n\n### **4. OVERLAPPING (C ∩ G)**\n\n- **C4 ∩ G5**: *Override-Eligible Meeting Identification* ∩ *Apply Override Rules*  \n  **Shared:** Both deal with override logic for existing events (1:1s, lunches).  \n  **Unique:** C4 focuses on identifying which events can be overridden, while G5 includes determining conditions and applying those rules during scheduling.\n\n- **C5 ∩ G8**: *Location-Based Filtering* ∩ *Find Available Room*  \n  **Shared:** Both involve physical location considerations.  \n  **Unique:** C5 filters for in-person feasibility (e.g., office presence), while G8 is about finding and reserving a specific room.\n\n- **C8 ∩ G5**: *Conflict Resolution & Rescheduling* ∩ *Apply Override Rules*  \n  **Shared:** Both involve handling conflicts with override-eligible events.  \n  **Unique:** C8 actively reschedules conflicting events, while G5 focuses on determining override eligibility and applying rules, not performing the reschedule.\n\n---\n\n### **5. CLAUDE UNIQUE (⊥)**\n\n*(None are completely disjoint; all Claude tasks have some mapping or overlap with GPT-5 tasks.)*\n\n---\n\n### **6. GPT-5 UNIQUE (⊥)**\n\n- **G2:** *Resolve Participant Identities*  \n  **Unique capability:** Mapping participant names to calendar identities and contact info. Claude’s decomposition assumes identity resolution is implicit in requirement extraction but does not list it as an atomic task.\n\n- **G6:** *Compute Common Availability*  \n  **Unique capability:** Explicit calculation of overlapping free slots for all participants. Claude’s C2 (aggregation) and C7 (selection) imply this step but do not isolate it as a separate atomic capability.\n\n---\n\n## ✅ **Summary Table**\n\n| Claude Task | Relationship | GPT-5 Task |\n|-------------|-------------|------------|\n| C1 | > | G1 |\n| C2 | > | G3 |\n| C3 | < | G4 |\n| C4 | ∩ | G5 |\n| C5 | ∩ | G8 |\n| C6 | < | G8 |\n| C7 | = | G7 |\n| C8 | ∩ | G5 |\n| C9 | = | G9 |\n| — | — | G2 (Unique) |\n| — | — | G6 (Unique) |\n\n---\n\n### **Key Observations**\n- Claude tends to group related steps into broader tasks (e.g., aggregation + computation), while GPT-5 decomposes more granularly (identity resolution, common availability).\n- Both decompositions cover the same overall workflow, but GPT-5 introduces explicit identity resolution and availability computation as separate atomic capabilities.\n- Claude emphasizes override and rescheduling as distinct steps, whereas GPT-5 focuses on applying rules rather than executing reschedules.\n\n---\n\nWould you like me to **visualize this as a bipartite mapping diagram** showing all relationships (>, <, =, ∩) for quick reference?"
+    },
+    {
+      "prompt_id": "collaborate-1",
+      "prompt_desc": "Set agenda for project review",
+      "original_prompt": "Help me set the agenda to review the progress of Project Alpha with the product and marketing team to get confirmation we are on track and discuss any blocking issues or risks.",
+      "claude_count": 6,
+      "gpt5_count": 8,
+      "gpt5_semantic_analysis": "Here’s the full relationship analysis between Claude’s 6 GUTTs (C1–C6) and GPT-5’s 8 GUTTs (G1–G8), using the 5-relationship model:\n\n---\n\n### **Step 1: Analyze Pairwise Relationships**\n\n---\n\n#### **C1. Meeting Context Retrieval**\n- **Capability:** Gather information about Project Alpha from available sources (docs, PM tools, status reports)\n\nCompare to GPT-5:\n- **G2. Identify Project Context**: Extract and confirm project name/context from prompt  \n  **C1 > G2**: C1 is broader because it involves gathering detailed project info from multiple sources, while G2 only extracts name/context from the prompt.\n- **Others (G1, G3–G8)**: No overlap (⊥)\n\n**Result:**  \n**C1 > G2**: C1 encompasses G2’s extraction and adds external data retrieval.\n\n---\n\n#### **C2. Stakeholder Role Identification**\n- **Capability:** Understand product vs marketing team roles, responsibilities, concerns\n\nCompare to GPT-5:\n- **G3. Determine Participants**: Identify required participants (product and marketing team)  \n  **C2 > G3**: C2 goes beyond identifying participants; it understands their roles and concerns.\n- **G4. Retrieve Team Member Details**: Map teams to actual contacts  \n  **C2 ∩ G4**: Overlap in understanding who is involved, but G4 focuses on mapping to actual contacts, while C2 focuses on conceptual roles/responsibilities.\n\n**Result:**  \n**C2 > G3**  \n**C2 ∩ G4**\n\n---\n\n#### **C3. Agenda Structure Planning**\n- **Capability:** Create logical flow for review meeting (progress → confirmation → blockers → risks)\n\nCompare to GPT-5:\n- **G5. Define Agenda Objectives**: Extract and structure meeting objectives  \n  **C3 ∩ G5**: Both involve structuring, but G5 focuses on extracting objectives from prompt, while C3 focuses on designing the flow/order.\n- **G6. Generate Agenda Items**: Convert objectives into actionable items in logical order  \n  **C3 ∩ G6**: Overlap in ordering/logical flow, but G6 is about generating items, while C3 is about high-level structure.\n\n**Result:**  \n**C3 ∩ G5**  \n**C3 ∩ G6**\n\n---\n\n#### **C4. Progress Review Items Generation**\n- **Capability:** List specific accomplishments, milestones, metrics to review\n\nCompare to GPT-5:\n- **G6. Generate Agenda Items**: Convert objectives into actionable agenda items  \n  **C4 < G6**: C4 is narrower because it only covers progress review items, while G6 covers all agenda items.\n\n**Result:**  \n**C4 < G6**\n\n---\n\n#### **C5. Blocker & Risk Identification**\n- **Capability:** Surface known issues, dependencies, blockers, risks\n\nCompare to GPT-5:\n- **G6. Generate Agenda Items**: Convert objectives into actionable items  \n  **C5 < G6**: C5 is narrower because it only covers blockers/risks, while G6 covers all agenda items.\n\n**Result:**  \n**C5 < G6**\n\n---\n\n#### **C6. Time Allocation & Formatting**\n- **Capability:** Assign time to each agenda item and format for professional distribution\n\nCompare to GPT-5:\n- No GPT-5 task mentions time allocation or formatting.  \n**C6 ⊥ all G#**\n\n**Result:**  \n**C6 is unique.**\n\n---\n\n---\n\n### **Step 2: Identify GPT-5 Unique Tasks**\n\nCheck GPT-5 tasks not covered by any Claude task:\n- **G1. Extract Meeting Intent**: Identify that user wants to create an agenda  \n  ⊥ all C#: Claude assumes intent, doesn’t extract it explicitly → **Unique**\n- **G7. Validate Agenda Completeness**: Check all topics included  \n  ⊥ all C#: Claude doesn’t validate completeness → **Unique**\n- **G8. Present Agenda for Confirmation**: Display agenda for approval  \n  ⊥ all C#: Claude doesn’t include user confirmation → **Unique**\n\n---\n\n---\n\n## **FINAL OUTPUT**\n\n---\n\n### **EQUIVALENT (A = B)**\n*(None found — no exact matches)*\n\n---\n\n### **SUBSET (A < B)**\n- **C4 < G6**: C4 only generates progress review items, while G6 generates all agenda items.\n- **C5 < G6**: C5 only identifies blockers/risks, while G6 generates all agenda items.\n\n---\n\n### **SUPERSET (A > B)**\n- **C1 > G2**: C1 gathers detailed project info from multiple sources, while G2 only extracts project name/context from prompt.\n- **C2 > G3**: C2 understands roles/responsibilities, while G3 only identifies participants.\n\n---\n\n### **OVERLAPPING (A ∩ B)**\n- **C2 ∩ G4**: Both deal with participants; C2 focuses on roles/responsibilities, G4 on mapping to contacts.\n- **C3 ∩ G5**: Both involve structuring; C3 focuses on flow, G5 on extracting objectives.\n- **C3 ∩ G6**: Both involve ordering; C3 focuses on structure, G6 on generating items.\n\n---\n\n### **CLAUDE UNIQUE**\n- **C6**: Time allocation and professional formatting of agenda.\n\n---\n\n### **GPT-5 UNIQUE**\n- **G1**: Extract meeting intent from user prompt.\n- **G7**: Validate agenda completeness.\n- **G8**: Present agenda for user confirmation.\n\n---\n\n✅ This analysis shows **Claude focuses more on content depth and meeting context**, while **GPT-5 emphasizes intent extraction, validation, and user interaction steps**.\n\n---\n\nWould you like me to **visualize this as a relationship matrix (Claude vs GPT-5)** for quick reference? Or **summarize the main capability gaps between the two decompositions**?"
+    },
+    {
+      "prompt_id": "collaborate-2",
+      "prompt_desc": "Executive briefing prep",
+      "original_prompt": "Review the materials for my meeting with senior leadership and suggest the best way to summarize the topics into three main discussion points. Generate any objections or concerns that might come up and give me effective responses.",
+      "claude_count": 7,
+      "gpt5_count": 6,
+      "gpt5_semantic_analysis": "Here’s the full relationship analysis between Claude’s 7 GUTTs (C1–C7) and GPT-5’s 6 GUTTs (G1–G6), using the 5-relationship model:\n\n---\n\n### **1. EQUIVALENT (A = B)**\n\n- **C1 = G1**: *Meeting Materials Retrieval* = *Retrieve Meeting Materials*  \n  **Common capability:** Both involve accessing and collecting all relevant documents/resources for the meeting. Same atomic function: retrieval of meeting materials.\n\n- **C5 = G5**: *Objection Anticipation* = *Generate Potential Objections*  \n  **Common capability:** Both predict likely objections or concerns from senior leadership. Identical predictive capability.\n\n- **C6 = G6**: *Response Preparation* = *Create Effective Responses*  \n  **Common capability:** Both formulate persuasive responses to anticipated objections. Same atomic function.\n\n---\n\n### **2. SUBSET (C < G)**\n\n- **C3 < G4**: *Executive Summary Distillation* < *Rank and Select Top Three Topics*  \n  **Explanation:** C3 focuses on condensing complex topics into **three high-impact discussion points** (summarization with a fixed number). G4 is broader: it involves prioritizing and selecting top three topics from a candidate list, which includes ranking logic beyond summarization. C3 is narrower because it assumes the summarization step and fixed output, while G4 includes prioritization criteria.\n\n---\n\n### **3. SUPERSET (C > G)**\n\n- **C2 > G2**: *Content Analysis & Topic Extraction* > *Analyze Meeting Materials*  \n  **Explanation:** G2 focuses on reading and extracting key information and themes. C2 includes that but also explicitly emphasizes **topic extraction** across all materials, which is a slightly broader interpretation (though close). So C2 encompasses G2’s analysis and adds structured topic identification.\n\n---\n\n### **4. OVERLAPPING (C ∩ G)**\n\n- **C2 ∩ G3**: *Content Analysis & Topic Extraction* ∩ *Generate Candidate Discussion Topics*  \n  **Shared part:** Both deal with identifying topics from the materials.  \n  **Unique parts:** C2 includes the initial analysis and extraction of themes (raw understanding), while G3 focuses on generating a **candidate list of discussion topics** (a more explicit enumeration step). So they overlap on topic identification but differ in scope and output format.\n\n- **C3 ∩ G3**: *Executive Summary Distillation* ∩ *Generate Candidate Discussion Topics*  \n  **Shared part:** Both relate to discussion topics.  \n  **Unique parts:** C3 condenses into **three final points**, while G3 just lists all possible topics without prioritization. Overlap is minimal but present in the sense that both operate on the same conceptual space (topics).\n\n---\n\n### **5. CLAUDE UNIQUE (⊥)**\n\n- **C4:** *Audience-Aware Framing*  \n  **Unique capability:** Tailoring discussion points for a senior leadership audience (strategic framing). GPT-5 has no equivalent or overlapping task; its tasks stop at topic selection and objection handling, without audience-specific framing.\n\n- **C7:** *Briefing Document Generation*  \n  **Unique capability:** Formatting and compiling the summary, objections, and responses into a comprehensive prep document. GPT-5 does not include any document generation or formatting step.\n\n---\n\n### **6. GPT-5 UNIQUE (⊥)**\n\n- **G4:** *Rank and Select Top Three Topics* (partially overlaps with C3 but not fully unique)  \n  Actually, G4 is **not unique** because it overlaps/subsumes C3.  \n  So **no GPT-5 task is completely unique**—all have some mapping to Claude’s tasks.\n\n---\n\n## **Summary Table of Key Relationships**\n\n| Claude Task | Relationship | GPT-5 Task | Justification |\n|-------------|-------------|------------|---------------|\n| C1 | = | G1 | Both retrieve meeting materials |\n| C2 | > | G2 | C2 includes analysis + topic extraction; G2 is just analysis |\n| C2 | ∩ | G3 | Both identify topics; G3 enumerates candidates |\n| C3 | < | G4 | C3 summarizes into 3 points; G4 ranks and selects top 3 |\n| C3 | ∩ | G3 | Both deal with topics; different granularity |\n| C4 | ⊥ | — | Audience-aware framing is unique |\n| C5 | = | G5 | Both predict objections |\n| C6 | = | G6 | Both create responses |\n| C7 | ⊥ | — | Briefing document generation is unique |\n\n---\n\n### **Final Observations**\n- Claude’s decomposition includes **audience adaptation** and **final deliverable generation**, which GPT-5 omits.\n- GPT-5 introduces an explicit **ranking and selection step** (G4), which Claude implies but does not separate as its own atomic task.\n- Core overlaps: retrieval, analysis, objection handling, and response generation are common to both.\n\n---\n\n✅ Would you like me to **visualize this as a relationship matrix** (Claude vs GPT-5) with color-coded relationship types for clarity? Or **produce a merged “ideal” decomposition combining the strengths of both?**"
+    },
+    {
+      "prompt_id": "collaborate-3",
+      "prompt_desc": "Customer meeting brief",
+      "original_prompt": "Prepare a brief for my upcoming meeting with customer Beta and include a dossier for each customer attendee and the topics they are most interested in. Include a background on their company.",
+      "claude_count": 8,
+      "gpt5_count": 8,
+      "gpt5_semantic_analysis": "Here’s the full relationship analysis between Claude’s 8 GUTTs (C1–C8) and GPT-5’s 8 GUTTs (G1–G8), following the 5-relationship model:\n\n---\n\n### **1. EQUIVALENT (A = B)**\n\n- **C2 = G7**: *Company Background Research* = *Retrieve Company Background for Customer Beta*  \n  **Common capability:** Both require gathering company-level information (industry, size, products, recent news). Same atomic function.\n\n- **C5 = G5**: *Topic Interest Analysis* = *Determine Topics of Interest for Each Attendee*  \n  **Common capability:** Both analyze historical data or context to identify topics each attendee cares about.\n\n- **C8 = G8**: *Brief Document Assembly* = *Compose Meeting Brief*  \n  **Common capability:** Both integrate all gathered information into a structured briefing document.\n\n---\n\n### **2. SUBSET (C < G)**\n\n- **C1 < G2**: *Meeting Details Retrieval* < *Extract Meeting Details*  \n  **Reason:** C1 retrieves meeting info (attendees, time, purpose), while G2 does the same but is explicitly tied to a previously identified meeting (G1). G2’s scope includes the same details but is part of a two-step process. C1 is slightly narrower because it assumes the meeting is already known.\n\n- **C3 < G4**: *Attendee Identity Resolution* < *Retrieve Profile Data for Each Customer Attendee*  \n  **Reason:** C3 focuses on identifying attendees and their roles/titles, whereas G4 retrieves full professional background and role info. G4 is broader because it includes richer profile data beyond just identity and title.\n\n---\n\n### **3. SUPERSET (C > G)**\n\n- **C4 > G6**: *Individual Dossier Creation* > *Compile Dossier for Each Customer Attendee*  \n  **Reason:** C4 includes compiling background, role, interaction history, and context. G6 focuses on attendee background and topics of interest only. C4 encompasses more dimensions (interaction history, context) than G6.\n\n---\n\n### **4. OVERLAPPING (C ∩ G)**\n\n- **C1 ∩ G1**: *Meeting Details Retrieval* ∩ *Identify Upcoming Meeting with Customer Beta*  \n  **Shared:** Both relate to meeting identification and details.  \n  **Unique:** G1 is about locating the correct meeting in the calendar (search/filter), while C1 assumes the meeting is known and retrieves details. C1 focuses on extracting details, not finding the meeting.\n\n- **C3 ∩ G3**: *Attendee Identity Resolution* ∩ *Identify Customer Attendees*  \n  **Shared:** Both involve identifying which attendees belong to the customer.  \n  **Unique:** G3 is specifically about filtering customer attendees from the participant list, while C3 also resolves roles/titles (identity enrichment).\n\n---\n\n### **5. CLAUDE UNIQUE (⊥)**\n\n- **C6:** *Relationship History Compilation*  \n  **Unique capability:** Summarizing past interactions, deals, and support issues with the customer. GPT-5 has no equivalent task for historical relationship context.\n\n- **C7:** *Relevant Content Gathering*  \n  **Unique capability:** Finding related materials (proposals, presentations, technical docs). GPT-5 does not include any content retrieval beyond attendee/company info.\n\n---\n\n### **6. GPT-5 UNIQUE (⊥)**\n\n- **G1:** *Identify Upcoming Meeting with Customer Beta*  \n  **Unique capability:** Locating the specific meeting in the calendar. Claude assumes the meeting is already known and does not include this step.\n\n---\n\n## **Summary Table of Key Matches**\n\n| Claude Task | Relationship | GPT-5 Task |\n|-------------|-------------|------------|\n| C1          | ∩           | G1         |\n| C1          | <           | G2         |\n| C2          | =           | G7         |\n| C3          | ∩           | G3         |\n| C3          | <           | G4         |\n| C4          | >           | G6         |\n| C5          | =           | G5         |\n| C8          | =           | G8         |\n| C6          | ⊥           | —          |\n| C7          | ⊥           | —          |\n| —           | ⊥           | G1         |\n\n---\n\n### **Observations**\n- Both decompositions share core tasks (meeting details, company background, attendee dossiers, topics of interest, final brief).\n- Claude includes **relationship history** and **content gathering**, which GPT-5 omits.\n- GPT-5 includes **meeting identification** as a distinct step, which Claude assumes away.\n- Claude’s dossier creation (C4) is broader than GPT-5’s (G6), which is more narrowly defined.\n\n---\n\n✅ Would you like me to **visualize this as a relationship matrix** (Claude vs GPT-5 with symbols =, <, >, ∩, ⊥) for quick reference? Or **produce a merged “ideal” decomposition combining the best of both?**"
+    }
+  ],
+  "cross_prompt_consolidation": "Here’s the consolidated analysis of the **top canonical Unit Tasks** across the 132 decomposed tasks from 9 Calendar.AI prompts. I’ve grouped equivalent tasks, mapped subset/superset relationships, and abstracted to the most reusable level.\n\n---\n\n## ✅ **Canonical Task #1: Calendar Events Retrieval**\n- **API/Tool**: Microsoft Graph API `GET /me/calendar/events` (or Google Calendar `events.list`)\n- **Relationship Graph**:\n  - **Equivalent (=)**:  \n    #2 (Calendar Event Retrieval), #7 (Retrieve Calendar Events), #13 (Calendar Data Retrieval), #20 (Retrieve Calendar Events), #34 (Retrieve Calendar Events)\n  - **Subset (<)**:  \n    #26 (Calendar Historical Data Retrieval) – specific to past events  \n    #34 (Retrieve Calendar Events within timeframe)\n  - **Superset (>)**:  \n    None (already fairly atomic)\n  - **Overlapping (∩)**:  \n    #8, #22, #35 (Extract Event Attributes) – often bundled together\n- **Frequency**: **8/9 prompts**\n- **Variations**:  \n  - Some retrieve all events, others filter by timeframe or status (pending invites, historical data).\n\n---\n\n## ✅ **Canonical Task #2: Extract Event Attributes**\n- **API/Tool**: Parsing layer after retrieval (fields: title, time, participants)\n- **Relationship Graph**:\n  - **Equivalent (=)**:  \n    #8 (Extract Event Attributes), #22 (Extract Meeting Context), #35 (Extract Event Attributes)\n  - **Subset (<)**:  \n    None\n  - **Superset (>)**:  \n    None\n  - **Overlapping (∩)**:  \n    #27 (Meeting Categorization) – uses extracted attributes\n- **Frequency**: **6 prompts**\n- **Variations**:  \n  - Some extract minimal fields (title/time), others full context (agenda, participants).\n\n---\n\n## ✅ **Canonical Task #3: Retrieve User Priority Profile**\n- **API/Tool**: Internal user profile service or config store\n- **Relationship Graph**:\n  - **Equivalent (=)**:  \n    #1 (Priority Definition & Extraction), #9 (Retrieve User Priority Profile)\n  - **Subset (<)**:  \n    None\n  - **Superset (>)**:  \n    None\n  - **Overlapping (∩)**:  \n    #29 (Priority Alignment Assessment) – uses this data\n- **Frequency**: **3 prompts**\n- **Variations**:  \n  - Some infer priorities from context, others load explicit profile.\n\n---\n\n## ✅ **Canonical Task #4: Classify Event Against Priorities**\n- **API/Tool**: ML model or rules engine for priority alignment\n- **Relationship Graph**:\n  - **Equivalent (=)**:  \n    #3 (Meeting-Priority Alignment Scoring), #10 (Classify Event Against Priorities), #37 (Identify Priority Alignment)\n  - **Subset (<)**:  \n    #30 (Low-Value Meeting Identification) – specific case of non-alignment\n  - **Superset (>)**:  \n    None\n  - **Overlapping (∩)**:  \n    #14 (Meeting Importance Classification) – similar but uses different criteria\n- **Frequency**: **6 prompts**\n- **Variations**:  \n  - Some return binary (priority vs non-priority), others return score.\n\n---\n\n## ✅ **Canonical Task #5: Meeting Importance Classification**\n- **API/Tool**: ML/rules scoring engine\n- **Relationship Graph**:\n  - **Equivalent (=)**:  \n    #14 (Meeting Importance Classification), #21 (Identify Important Meetings), #27 (Meeting Categorization & Classification), #36 (Classify Events by Category)\n  - **Subset (<)**:  \n    None\n  - **Superset (>)**:  \n    None\n  - **Overlapping (∩)**:  \n    #4 (Classify Event Against Priorities)\n- **Frequency**: **5 prompts**\n- **Variations**:  \n  - Some classify by importance, others by type or category.\n\n---\n\n## ✅ **Canonical Task #6: Calendar Action Execution (RSVP Update)**\n- **API/Tool**: Graph API `PATCH /event/{id}` or `POST /event/accept|decline`\n- **Relationship Graph**:\n  - **Equivalent (=)**:  \n    #5 (Calendar Action Execution), #12 (Commit Priority Meetings)\n  - **Subset (<)**:  \n    None\n  - **Superset (>)**:  \n    None\n- **Frequency**: **3 prompts**\n- **Variations**:  \n  - Accept/decline decisions applied to events.\n\n---\n\n## ✅ **Canonical Task #7: Schedule New Event**\n- **API/Tool**: Graph API `POST /me/events`\n- **Relationship Graph**:\n  - **Equivalent (=)**:  \n    #18 (Focus Time Block Scheduling), #45 (Recurring Meeting Series Creation)\n  - **Subset (<)**:  \n    #18 (focus time) is a specific case of scheduling\n  - **Superset (>)**:  \n    None\n- **Frequency**: **4 prompts**\n- **Variations**:  \n  - Create recurring meetings, create focus blocks.\n\n---\n\n## ✅ **Canonical Task #8: Find Available Time Slots**\n- **API/Tool**: Graph API `POST /me/calendar/getSchedule`\n- **Relationship Graph**:\n  - **Equivalent (=)**:  \n    #44 (Constraint-Based Slot Finding), #17 (Calendar Gap Analysis)\n  - **Subset (<)**:  \n    None\n  - **Superset (>)**:  \n    None\n- **Frequency**: **3 prompts**\n- **Variations**:  \n  - Some include constraints (duration, day), others just find gaps.\n\n---\n\n## ✅ **Canonical Task #9: Multi-Calendar Availability Check**\n- **API/Tool**: Graph API `getSchedule` with multiple attendees\n- **Relationship Graph**:\n  - **Equivalent (=)**:  \n    #43 (Multi-Calendar Availability Checking)\n  - **Subset (<)**:  \n    None\n- **Frequency**: **2 prompts**\n\n---\n\n## ✅ **Canonical Task #10: Send Meeting Invitation**\n- **API/Tool**: Graph API `POST /me/events` with attendees\n- **Relationship Graph**:\n  - **Equivalent (=)**:  \n    #46 (Meeting Invitation Sending)\n- **Frequency**: **2 prompts**\n\n---\n\n## ✅ **Canonical Task #11: Automatic Rescheduling**\n- **API/Tool**: Combination of slot finding + update event\n- **Relationship Graph**:\n  - **Equivalent (=)**:  \n    #48 (Automatic Rescheduling Logic)\n- **Frequency**: **2 prompts**\n\n---\n\n## ✅ **Canonical Task #12: Compute Time Allocation Metrics**\n- **API/Tool**: Analytics layer\n- **Relationship Graph**:\n  - **Equivalent (=)**:  \n    #28 (Time Aggregation & Statistical Analysis), #38 (Compute Time Allocation Metrics)\n- **Frequency**: **3 prompts**\n\n---\n\n## ✅ **Canonical Task #13: Generate Recommendations**\n- **API/Tool**: Internal logic layer\n- **Relationship Graph**:\n  - **Equivalent (=)**:  \n    #32 (Schedule Optimization Recommendations), #40 (Generate Time Reclaim Recommendations)\n- **Frequency**: **3 prompts**\n\n---\n\n## ✅ **Canonical Task #14: Present Insights / Reporting**\n- **API/Tool**: Visualization or reporting module\n- **Relationship Graph**:\n  - **Equivalent (=)**:  \n    #19 (Actionable Recommendations & Reporting), #33 (Time Usage Reporting & Visualization), #41 (Present Insights and Recommendations)\n- **Frequency**: **4 prompts**\n\n---\n\n## ✅ **Canonical Task #15: Notify User**\n- **API/Tool**: Notification service\n- **Relationship Graph**:\n  - **Equivalent (=)**:  \n    #25 (Notify User of Preparation Needs)\n- **Frequency**: **2 prompts**\n\n---\n\n---\n\n### 🔍 **Patterns & Hierarchies**\n- **Retrieval + Extraction** always paired (#1 + #2)\n- **Classification** splits into:\n  - Priority alignment (#4)\n  - Importance/category (#5)\n- **Action layer** splits into:\n  - RSVP updates (#6)\n  - Scheduling new events (#7)\n  - Invitations (#10)\n  - Rescheduling (#11)\n- **Analytics layer**:\n  - Compute metrics (#12)\n  - Generate recommendations (#13)\n  - Present insights (#14)\n\n---\n\n## ✅ **Top 20 Canonical Unit Tasks (Summary Table)**\n\n| #  | Canonical Task                     | Frequency |\n|----|------------------------------------|-----------|\n| 1  | Calendar Events Retrieval          | 8         |\n| 2  | Extract Event Attributes           | 6         |\n| 3  | Retrieve User Priority Profile     | 3         |\n| 4  | Classify Event Against Priorities  | 6         |\n| 5  | Meeting Importance Classification  | 5         |\n| 6  | Calendar Action Execution (RSVP)   | 3         |\n| 7  | Schedule New Event                 | 4         |\n| 8  | Find Available Time Slots          | 3         |\n| 9  | Multi-Calendar Availability Check  | 2         |\n| 10 | Send Meeting Invitation            | 2         |\n| 11 | Automatic Rescheduling             | 2         |\n| 12 | Compute Time Allocation Metrics    | 3         |\n| 13 | Generate Recommendations           | 3         |\n| 14 | Present Insights / Reporting       | 4         |\n| 15 | Notify User                        | 2         |\n\n---\n\n✅ **Next Step**: I can now produce a **visual relationship graph** (clusters + subset/superset arrows) or a **canonical API mapping table** for these 20 tasks.\n\n---\n\n👉 Do you want me to **(a)** produce the **visual relationship graph**, **(b)** map each canonical task to **standard APIs (Graph/Google)**, or **(c)** create a **full canonical taxonomy with hierarchy and overlaps**?",
+  "raw_gutts": [
+    {
+      "source": "Claude",
+      "prompt": "organizer-1",
+      "name": "Priority Definition & Extraction",
+      "capability": "Identify and structure user's priorities from context, goals, and stated objectives",
+      "skills": [
+        "Natural language understanding",
+        "Priority extraction from unstructured text",
+        "Rule formalization",
+        "Goal hierarchy construction"
+      ]
+    },
+    {
+      "source": "Claude",
+      "prompt": "organizer-1",
+      "name": "Calendar Event Retrieval",
+      "capability": "Access and load pending calendar invitations and scheduled meetings requiring decisions",
+      "skills": [
+        "Calendar API integration",
+        "Event filtering (pending/confirmed status)",
+        "Data parsing and normalization",
+        "Invitation metadata extraction"
+      ]
+    },
+    {
+      "source": "Claude",
+      "prompt": "organizer-1",
+      "name": "Meeting-Priority Alignment Scoring",
+      "capability": "Evaluate how well each meeting aligns with stated priorities using semantic matching and relevance scoring",
+      "skills": [
+        "Semantic similarity computation",
+        "Multi-criteria relevance scoring",
+        "Feature extraction from meeting metadata",
+        "Priority-event mapping logic"
+      ]
+    },
+    {
+      "source": "Claude",
+      "prompt": "organizer-1",
+      "name": "Accept/Decline Decision Logic",
+      "capability": "Determine which meetings to accept vs decline based on priority alignment thresholds and constraints",
+      "skills": [
+        "Threshold-based decision making",
+        "Conflict resolution logic",
+        "Calendar optimization",
+        "Rule-based classification"
+      ]
+    },
+    {
+      "source": "Claude",
+      "prompt": "organizer-1",
+      "name": "Calendar Action Execution",
+      "capability": "Execute accept/decline actions on calendar system by updating RSVP status",
+      "skills": [
+        "Calendar API write operations",
+        "RSVP status updates",
+        "Event confirmation handling",
+        "Error handling for API failures"
+      ]
+    },
+    {
+      "source": "Claude",
+      "prompt": "organizer-1",
+      "name": "Decision Justification & Reporting",
+      "capability": "Explain why each meeting was accepted or declined with explicit linkage to priority rules",
+      "skills": [
+        "Natural language generation",
+        "Rule-based explanation",
+        "Transparency reporting",
+        "Decision audit trail creation"
+      ]
+    },
+    {
+      "source": "GPT-5",
+      "prompt": "organizer-1",
+      "name": "Retrieve Calendar Events",
+      "capability": "Access and fetch all scheduled calendar events from the user's calendar system",
+      "skills": [
+        "calendar_api_integration",
+        "authentication_handling"
+      ]
+    },
+    {
+      "source": "GPT-5",
+      "prompt": "organizer-1",
+      "name": "Extract Event Attributes",
+      "capability": "Parse each event to extract key details such as title, time, participants, and description",
+      "skills": [
+        "data_parsing",
+        "structured_data_processing"
+      ]
+    },
+    {
+      "source": "GPT-5",
+      "prompt": "organizer-1",
+      "name": "Retrieve User Priority Profile",
+      "capability": "Access and load the user's defined priorities or priority model",
+      "skills": [
+        "user_profile_management",
+        "data_retrieval"
+      ]
+    },
+    {
+      "source": "GPT-5",
+      "prompt": "organizer-1",
+      "name": "Classify Event Against Priorities",
+      "capability": "Determine if each event aligns with the user's stated priorities",
+      "skills": [
+        "natural_language_processing",
+        "classification_algorithm",
+        "priority_matching"
+      ]
+    },
+    {
+      "source": "GPT-5",
+      "prompt": "organizer-1",
+      "name": "Filter Non-Priority Events",
+      "capability": "Separate events that do not match the user's priorities from those that do",
+      "skills": [
+        "data_filtering",
+        "logical_operations"
+      ]
+    },
+    {
+      "source": "GPT-5",
+      "prompt": "organizer-1",
+      "name": "Commit Priority Meetings",
+      "capability": "Update the calendar to confirm attendance for meetings identified as priority",
+      "skills": [
+        "calendar_api_integration",
+        "event_update_operations"
+      ]
+    },
+    {
+      "source": "Claude",
+      "prompt": "organizer-2",
+      "name": "Calendar Data Retrieval",
+      "capability": "Load and parse calendar events from data source for analysis",
+      "skills": [
+        "Calendar API integration",
+        "JSON data parsing",
+        "Event data deserialization",
+        "Error handling for data access"
+      ]
+    },
+    {
+      "source": "Claude",
+      "prompt": "organizer-2",
+      "name": "Meeting Importance Classification",
+      "capability": "Score meetings based on multiple importance criteria (executives, customers, large meetings, presentations)",
+      "skills": [
+        "Multi-criteria scoring algorithm",
+        "Keyword detection and matching",
+        "Attendee analysis and role identification",
+        "Confidence weighting and threshold application"
+      ]
+    },
+    {
+      "source": "Claude",
+      "prompt": "organizer-2",
+      "name": "Preparation Time Estimation",
+      "capability": "Calculate required preparation time based on meeting type, importance, and complexity",
+      "skills": [
+        "Meeting type classification",
+        "Time estimation mapping",
+        "Context-aware time adjustments",
+        "Preparation requirements analysis"
+      ]
+    },
+    {
+      "source": "Claude",
+      "prompt": "organizer-2",
+      "name": "Meeting Flagging Logic",
+      "capability": "Identify and flag meetings that need preparation focus time based on importance and prep requirements",
+      "skills": [
+        "Threshold-based filtering",
+        "Criteria evaluation logic",
+        "List segmentation and categorization",
+        "Multi-condition filtering"
+      ]
+    },
+    {
+      "source": "Claude",
+      "prompt": "organizer-2",
+      "name": "Calendar Gap Analysis",
+      "capability": "Identify available time slots in calendar for scheduling focus time blocks",
+      "skills": [
+        "Temporal gap detection",
+        "Work hours enforcement (8 AM - 6 PM)",
+        "Meeting conflict checking",
+        "Duration-based slot validation"
+      ]
+    },
+    {
+      "source": "Claude",
+      "prompt": "organizer-2",
+      "name": "Focus Time Block Scheduling",
+      "capability": "Create and schedule preparation time blocks in calendar with appropriate timing",
+      "skills": [
+        "Slot allocation algorithm",
+        "iCalendar format generation (.ics)",
+        "Optimal timing selection (day before meeting)",
+        "Multi-meeting prep time aggregation"
+      ]
+    },
+    {
+      "source": "Claude",
+      "prompt": "organizer-2",
+      "name": "Actionable Recommendations & Reporting",
+      "capability": "Generate user-facing insights, summaries, and preparation guidance",
+      "skills": [
+        "User communication formatting",
+        "Priority-based reporting",
+        "Actionable guidance generation",
+        "Summary statistics calculation"
+      ]
+    },
+    {
+      "source": "GPT-5",
+      "prompt": "organizer-2",
+      "name": "Retrieve Calendar Events",
+      "capability": "Access and fetch all scheduled meetings from the user's calendar",
+      "skills": [
+        "calendar_api_integration",
+        "data_retrieval"
+      ]
+    },
+    {
+      "source": "GPT-5",
+      "prompt": "organizer-2",
+      "name": "Identify Important Meetings",
+      "capability": "Analyze fetched meetings and determine which ones are marked or inferred as important",
+      "skills": [
+        "natural_language_processing",
+        "priority_classification",
+        "metadata_analysis"
+      ]
+    },
+    {
+      "source": "GPT-5",
+      "prompt": "organizer-2",
+      "name": "Extract Meeting Context",
+      "capability": "Parse meeting details such as title, agenda, participants, and duration for context",
+      "skills": [
+        "text_parsing",
+        "entity_extraction"
+      ]
+    },
+    {
+      "source": "GPT-5",
+      "prompt": "organizer-2",
+      "name": "Determine Preparation Requirement",
+      "capability": "Assess whether a meeting requires dedicated focus time based on its context and importance",
+      "skills": [
+        "contextual_reasoning",
+        "rule_based_inference",
+        "machine_learning_classification"
+      ]
+    },
+    {
+      "source": "GPT-5",
+      "prompt": "organizer-2",
+      "name": "Flag Meetings Requiring Focus Time",
+      "capability": "Mark or annotate meetings that need preparation in the system",
+      "skills": [
+        "calendar_annotation",
+        "state_update"
+      ]
+    },
+    {
+      "source": "GPT-5",
+      "prompt": "organizer-2",
+      "name": "Notify User of Preparation Needs",
+      "capability": "Send alerts or reminders to the user about meetings that require focus time",
+      "skills": [
+        "notification_delivery",
+        "user_preference_handling"
+      ]
+    },
+    {
+      "source": "Claude",
+      "prompt": "organizer-3",
+      "name": "Calendar Historical Data Retrieval",
+      "capability": "Load past calendar events for specified time period (weeks/months)",
+      "skills": [
+        "Calendar API integration",
+        "Date range filtering",
+        "Historical data access",
+        "Batch data retrieval"
+      ]
+    },
+    {
+      "source": "Claude",
+      "prompt": "organizer-3",
+      "name": "Meeting Categorization & Classification",
+      "capability": "Classify meetings by type, purpose, importance level, and participants",
+      "skills": [
+        "Meeting type taxonomy (31+ types)",
+        "Automatic classification algorithms",
+        "Participant role identification",
+        "Purpose extraction from meeting metadata"
+      ]
+    },
+    {
+      "source": "Claude",
+      "prompt": "organizer-3",
+      "name": "Time Aggregation & Statistical Analysis",
+      "capability": "Compute time spent per category, participant, project, and other dimensions",
+      "skills": [
+        "Time duration calculation",
+        "Statistical aggregation",
+        "Multi-dimensional grouping",
+        "Trend analysis"
+      ]
+    },
+    {
+      "source": "Claude",
+      "prompt": "organizer-3",
+      "name": "Priority Alignment Assessment",
+      "capability": "Evaluate which time usage aligns with stated priorities and identify gaps",
+      "skills": [
+        "Priority-to-activity mapping",
+        "Alignment scoring",
+        "Gap identification",
+        "Misalignment detection"
+      ]
+    },
+    {
+      "source": "Claude",
+      "prompt": "organizer-3",
+      "name": "Low-Value Meeting Identification",
+      "capability": "Flag meetings that consume time without supporting priorities",
+      "skills": [
+        "Value scoring algorithms",
+        "Reclamation candidate detection",
+        "Opportunity cost analysis",
+        "ROI-based filtering"
+      ]
+    },
+    {
+      "source": "Claude",
+      "prompt": "organizer-3",
+      "name": "Time Reclamation Opportunity Analysis",
+      "capability": "Calculate potential time savings from proposed changes (decline/delegate/shorten)",
+      "skills": [
+        "Impact modeling",
+        "Time savings projection",
+        "Feasibility assessment",
+        "What-if scenario analysis"
+      ]
+    },
+    {
+      "source": "Claude",
+      "prompt": "organizer-3",
+      "name": "Schedule Optimization Recommendations",
+      "capability": "Suggest specific changes (decline, delegate, shorten, consolidate meetings)",
+      "skills": [
+        "Recommendation generation",
+        "Actionable guidance creation",
+        "Change feasibility assessment",
+        "Prioritized suggestion ranking"
+      ]
+    },
+    {
+      "source": "Claude",
+      "prompt": "organizer-3",
+      "name": "Time Usage Reporting & Visualization",
+      "capability": "Present insights with charts, summaries, and comparisons (current vs optimal)",
+      "skills": [
+        "Data visualization",
+        "Report generation",
+        "Insight communication",
+        "Comparative presentation"
+      ]
+    },
+    {
+      "source": "GPT-5",
+      "prompt": "organizer-3",
+      "name": "Retrieve Calendar Events",
+      "capability": "Access and fetch all scheduled calendar events within the relevant timeframe",
+      "skills": [
+        "calendar_api_integration",
+        "data_retrieval"
+      ]
+    },
+    {
+      "source": "GPT-5",
+      "prompt": "organizer-3",
+      "name": "Extract Event Attributes",
+      "capability": "Parse and normalize event details such as duration, participants, and category",
+      "skills": [
+        "data_parsing",
+        "schema_mapping"
+      ]
+    },
+    {
+      "source": "GPT-5",
+      "prompt": "organizer-3",
+      "name": "Classify Events by Category",
+      "capability": "Assign each event to a category (e.g., meeting, focus work, personal) using rules or ML",
+      "skills": [
+        "classification_algorithm",
+        "nlp_text_analysis"
+      ]
+    },
+    {
+      "source": "GPT-5",
+      "prompt": "organizer-3",
+      "name": "Identify Priority Alignment",
+      "capability": "Determine whether each event aligns with the user’s stated top priorities",
+      "skills": [
+        "priority_mapping",
+        "semantic_matching"
+      ]
+    },
+    {
+      "source": "GPT-5",
+      "prompt": "organizer-3",
+      "name": "Compute Time Allocation Metrics",
+      "capability": "Aggregate event durations by category and priority alignment",
+      "skills": [
+        "data_aggregation",
+        "statistical_computation"
+      ]
+    },
+    {
+      "source": "GPT-5",
+      "prompt": "organizer-3",
+      "name": "Detect Low-Value or Non-Priority Blocks",
+      "capability": "Identify events that consume time but do not align with top priorities",
+      "skills": [
+        "pattern_detection",
+        "priority_filtering"
+      ]
+    },
+    {
+      "source": "GPT-5",
+      "prompt": "organizer-3",
+      "name": "Generate Time Reclaim Recommendations",
+      "capability": "Suggest actionable strategies to free up time (e.g., decline, shorten, delegate)",
+      "skills": [
+        "recommendation_engine",
+        "contextual_reasoning"
+      ]
+    },
+    {
+      "source": "GPT-5",
+      "prompt": "organizer-3",
+      "name": "Present Insights and Recommendations",
+      "capability": "Visualize time distribution and display suggested actions in an understandable format",
+      "skills": [
+        "data_visualization",
+        "ux_design"
+      ]
+    },
+    {
+      "source": "Claude",
+      "prompt": "schedule-1",
+      "name": "Constraint Extraction & Formalization",
+      "capability": "Parse scheduling requirements into structured constraints (weekly recurrence, duration, time preferences, exclusions)",
+      "skills": [
+        "NLP for constraint extraction",
+        "Rule formalization",
+        "Preference modeling",
+        "Temporal constraint structuring"
+      ]
+    },
+    {
+      "source": "Claude",
+      "prompt": "schedule-1",
+      "name": "Multi-Calendar Availability Checking",
+      "capability": "Check free/busy status for both user and specified attendee",
+      "skills": [
+        "Calendar API for multiple users",
+        "Free/busy queries",
+        "Availability matrix construction",
+        "Cross-calendar access"
+      ]
+    },
+    {
+      "source": "Claude",
+      "prompt": "schedule-1",
+      "name": "Constraint-Based Slot Finding",
+      "capability": "Identify time slots matching all constraints (weekly pattern, afternoons, not Fridays, 30min duration)",
+      "skills": [
+        "Constraint satisfaction algorithms",
+        "Temporal reasoning",
+        "Slot ranking by preferences",
+        "Feasibility validation"
+      ]
+    },
+    {
+      "source": "Claude",
+      "prompt": "schedule-1",
+      "name": "Recurring Meeting Series Creation",
+      "capability": "Create recurring calendar event with proper series configuration and recurrence rules",
+      "skills": [
+        "Recurrence rule generation (iCalendar RRULE)",
+        "Series management",
+        "Calendar event creation",
+        "Metadata configuration"
+      ]
+    },
+    {
+      "source": "Claude",
+      "prompt": "schedule-1",
+      "name": "Meeting Invitation Sending",
+      "capability": "Send calendar invitation to specified attendee with meeting details",
+      "skills": [
+        "Calendar invitation API",
+        "Email notification",
+        "RSVP request generation",
+        "Attendee management"
+      ]
+    },
+    {
+      "source": "Claude",
+      "prompt": "schedule-1",
+      "name": "Decline/Conflict Detection & Monitoring",
+      "capability": "Monitor for attendee declines or new calendar conflicts in the series",
+      "skills": [
+        "Event change detection",
+        "RSVP status tracking",
+        "Conflict identification",
+        "Webhook/polling for updates"
+      ]
+    },
+    {
+      "source": "Claude",
+      "prompt": "schedule-1",
+      "name": "Automatic Rescheduling Logic",
+      "capability": "When declined or conflicted, find new slot and send updated invitation automatically",
+      "skills": [
+        "Trigger-based automation",
+        "Slot re-finding with same constraints",
+        "Event update API",
+        "Notification management"
+      ]
+    },
+    {
+      "source": "GPT-5",
+      "prompt": "schedule-1",
+      "name": "Parse Scheduling Intent",
+      "capability": "Extract user intent and constraints from natural language input",
+      "skills": [
+        "NLU",
+        "Intent Recognition",
+        "Entity Extraction"
+      ]
+    },
+    {
+      "source": "GPT-5",
+      "prompt": "schedule-1",
+      "name": "Resolve Participant Identity",
+      "capability": "Match {name} to a specific contact or calendar entity",
+      "skills": [
+        "Contact Resolution",
+        "Disambiguation",
+        "Directory Lookup"
+      ]
+    },
+    {
+      "source": "GPT-5",
+      "prompt": "schedule-1",
+      "name": "Determine Recurrence Pattern",
+      "capability": "Translate 'weekly starting next week' into a structured recurrence rule",
+      "skills": [
+        "Temporal Reasoning",
+        "Recurrence Rule Generation"
+      ]
+    },
+    {
+      "source": "GPT-5",
+      "prompt": "schedule-1",
+      "name": "Apply Time Preferences",
+      "capability": "Interpret and enforce time-of-day and day-of-week constraints",
+      "skills": [
+        "Constraint Parsing",
+        "Preference Application"
+      ]
+    },
+    {
+      "source": "GPT-5",
+      "prompt": "schedule-1",
+      "name": "Find Optimal Time Slot",
+      "capability": "Search calendars for available 30-minute slots matching constraints",
+      "skills": [
+        "Calendar Query",
+        "Availability Analysis",
+        "Constraint Satisfaction"
+      ]
+    },
+    {
+      "source": "GPT-5",
+      "prompt": "schedule-1",
+      "name": "Create Calendar Event",
+      "capability": "Generate and insert the meeting event into the calendar system",
+      "skills": [
+        "Calendar API Integration",
+        "Event Creation"
+      ]
+    },
+    {
+      "source": "GPT-5",
+      "prompt": "schedule-1",
+      "name": "Send Invitation",
+      "capability": "Dispatch meeting invite to participant(s)",
+      "skills": [
+        "Invitation Dispatch",
+        "Notification Handling"
+      ]
+    },
+    {
+      "source": "GPT-5",
+      "prompt": "schedule-1",
+      "name": "Monitor for Declines or Conflicts",
+      "capability": "Track responses and detect scheduling conflicts post-creation",
+      "skills": [
+        "Event Status Monitoring",
+        "Conflict Detection"
+      ]
+    },
+    {
+      "source": "GPT-5",
+      "prompt": "schedule-1",
+      "name": "Automatically Reschedule",
+      "capability": "Recompute and update meeting time when declines or conflicts occur",
+      "skills": [
+        "Dynamic Scheduling",
+        "Constraint Reapplication",
+        "Calendar Update"
+      ]
+    },
+    {
+      "source": "Claude",
+      "prompt": "schedule-2",
+      "name": "Time Block Specification Parsing",
+      "capability": "Interpret 'Thursday afternoon' into specific date and time range based on context",
+      "skills": [
+        "Temporal expression resolution",
+        "Date/time parsing",
+        "Context awareness for relative dates",
+        "Time block definition"
+      ]
+    },
+    {
+      "source": "Claude",
+      "prompt": "schedule-2",
+      "name": "Affected Meetings Identification",
+      "capability": "Find all meetings within the target time block that need rescheduling",
+      "skills": [
+        "Calendar querying",
+        "Temporal overlap detection",
+        "Meeting filtering by time range",
+        "Event enumeration"
+      ]
+    },
+    {
+      "source": "Claude",
+      "prompt": "schedule-2",
+      "name": "RSVP Decline Execution",
+      "capability": "Decline all meetings in the blocked time with appropriate notifications",
+      "skills": [
+        "Calendar API updates",
+        "RSVP status changes",
+        "Batch operations",
+        "Decline message generation"
+      ]
+    },
+    {
+      "source": "Claude",
+      "prompt": "schedule-2",
+      "name": "Alternative Slot Finding",
+      "capability": "For each declined meeting, identify alternative time slots when same attendees are available",
+      "skills": [
+        "Availability checking",
+        "Multi-attendee coordination",
+        "Slot ranking",
+        "Constraint preservation"
+      ]
+    },
+    {
+      "source": "Claude",
+      "prompt": "schedule-2",
+      "name": "Meeting Rescheduling Proposals",
+      "capability": "Send reschedule requests with proposed new times to meeting organizers/attendees",
+      "skills": [
+        "Meeting update API",
+        "Attendee communication",
+        "Proposal generation",
+        "Reschedule request formatting"
+      ]
+    },
+    {
+      "source": "Claude",
+      "prompt": "schedule-2",
+      "name": "Calendar Status Update",
+      "capability": "Set user's availability/status for the blocked time (busy/away/focus time)",
+      "skills": [
+        "Free/busy status setting",
+        "Calendar property updates",
+        "Availability indicator management",
+        "Status publishing"
+      ]
+    },
+    {
+      "source": "Claude",
+      "prompt": "schedule-2",
+      "name": "Focus Time Block Creation",
+      "capability": "Create placeholder calendar event for the blocked time with appropriate title/description",
+      "skills": [
+        "Calendar event creation",
+        "Focus time labeling",
+        "Event property configuration",
+        "Blocking event setup"
+      ]
+    },
+    {
+      "source": "Claude",
+      "prompt": "schedule-2",
+      "name": "Action Summary & Confirmation",
+      "capability": "Report what was done (declined X meetings, rescheduled Y, blocked Z hours, set status)",
+      "skills": [
+        "Action tracking",
+        "Status reporting",
+        "Confirmation generation",
+        "Summary compilation"
+      ]
+    },
+    {
+      "source": "GPT-5",
+      "prompt": "schedule-2",
+      "name": "Identify Thursday Afternoon Time Window",
+      "capability": "Parse and determine the exact time range for 'Thursday afternoon' based on user’s calendar settings and locale",
+      "skills": [
+        "natural_language_time_parsing",
+        "calendar_time_zone_handling"
+      ]
+    },
+    {
+      "source": "GPT-5",
+      "prompt": "schedule-2",
+      "name": "Retrieve Thursday Afternoon Events",
+      "capability": "Fetch all calendar events scheduled within the identified Thursday afternoon time range",
+      "skills": [
+        "calendar_api_integration",
+        "event_data_retrieval"
+      ]
+    },
+    {
+      "source": "GPT-5",
+      "prompt": "schedule-2",
+      "name": "Cancel or Decline Thursday Events",
+      "capability": "Update RSVPs for all identified events to indicate non-attendance (e.g., decline or cancel)",
+      "skills": [
+        "calendar_event_update",
+        "rsvp_status_management"
+      ]
+    },
+    {
+      "source": "GPT-5",
+      "prompt": "schedule-2",
+      "name": "Propose Alternative Times for Affected Meetings",
+      "capability": "Generate suitable alternative time slots for each rescheduled meeting based on user availability and constraints",
+      "skills": [
+        "availability_analysis",
+        "meeting_reschedule_logic"
+      ]
+    },
+    {
+      "source": "GPT-5",
+      "prompt": "schedule-2",
+      "name": "Reschedule Meetings to Proposed Times",
+      "capability": "Update calendar events with new times and send updated invites to participants",
+      "skills": [
+        "calendar_event_modification",
+        "invite_notification_handling"
+      ]
+    },
+    {
+      "source": "GPT-5",
+      "prompt": "schedule-2",
+      "name": "Update User Calendar Status for Thursday Afternoon",
+      "capability": "Set user’s calendar availability status (e.g., Free, Busy, Out of Office) for the cleared time window",
+      "skills": [
+        "calendar_status_update",
+        "user_preference_application"
+      ]
+    },
+    {
+      "source": "Claude",
+      "prompt": "schedule-3",
+      "name": "Meeting Requirements Extraction",
+      "capability": "Parse all requirements (attendees, duration, date range, override rules, modality, resources)",
+      "skills": [
+        "Multi-constraint NLP extraction",
+        "Requirement structuring",
+        "Parameter identification",
+        "Constraint hierarchy parsing"
+      ]
+    },
+    {
+      "source": "Claude",
+      "prompt": "schedule-3",
+      "name": "Multi-Person Availability Aggregation",
+      "capability": "Check calendars for Chris, Sangya, Kat and merge availability data",
+      "skills": [
+        "Cross-calendar API access",
+        "Availability intersection",
+        "Multi-user data aggregation",
+        "Conflict detection"
+      ]
+    },
+    {
+      "source": "Claude",
+      "prompt": "schedule-3",
+      "name": "Priority Constraint Application (Kat's schedule)",
+      "capability": "Ensure primary consideration of Kat's availability as hard constraint",
+      "skills": [
+        "Hierarchical constraint handling",
+        "Priority weighting",
+        "Hard vs soft constraint differentiation",
+        "Conflict prioritization"
+      ]
+    },
+    {
+      "source": "Claude",
+      "prompt": "schedule-3",
+      "name": "Override-Eligible Meeting Identification",
+      "capability": "Identify 1:1s and lunches on others' calendars that can be rescheduled if needed",
+      "skills": [
+        "Meeting type classification",
+        "Override eligibility rules",
+        "Event metadata analysis",
+        "Movable meeting detection"
+      ]
+    },
+    {
+      "source": "Claude",
+      "prompt": "schedule-3",
+      "name": "Location-Based Filtering",
+      "capability": "Filter for in-person meeting capability (office presence, not remote-only days)",
+      "skills": [
+        "Location awareness",
+        "Modality constraints",
+        "Participant location checking",
+        "Office day identification"
+      ]
+    },
+    {
+      "source": "Claude",
+      "prompt": "schedule-3",
+      "name": "Conference Room Search & Booking",
+      "capability": "Find available conference room for in-person meeting and reserve it",
+      "skills": [
+        "Room resource API",
+        "Availability checking",
+        "Capacity matching",
+        "Room booking operations"
+      ]
+    },
+    {
+      "source": "Claude",
+      "prompt": "schedule-3",
+      "name": "Optimal Slot Selection",
+      "capability": "Rank and select best time considering all constraints (hard, soft, preferences)",
+      "skills": [
+        "Multi-objective optimization",
+        "Slot scoring",
+        "Feasibility validation",
+        "Best-fit algorithm"
+      ]
+    },
+    {
+      "source": "Claude",
+      "prompt": "schedule-3",
+      "name": "Conflict Resolution & Rescheduling",
+      "capability": "If needed, reschedule override-eligible conflicts (1:1s/lunches) to make room",
+      "skills": [
+        "Cascading rescheduling",
+        "Conflict resolution",
+        "Meeting move operations",
+        "Attendee notification"
+      ]
+    },
+    {
+      "source": "Claude",
+      "prompt": "schedule-3",
+      "name": "Meeting Creation & Invitations",
+      "capability": "Create meeting with all attendees, room resource, and Project Alpha details",
+      "skills": [
+        "Calendar event creation",
+        "Multi-person invitations",
+        "Resource inclusion",
+        "Meeting metadata setup"
+      ]
+    },
+    {
+      "source": "GPT-5",
+      "prompt": "schedule-3",
+      "name": "Parse Meeting Request",
+      "capability": "Extract meeting details such as participants, duration, timeframe, constraints, and preferences from natural language prompt",
+      "skills": [
+        "NLU",
+        "entity extraction",
+        "constraint parsing"
+      ]
+    },
+    {
+      "source": "GPT-5",
+      "prompt": "schedule-3",
+      "name": "Resolve Participant Identities",
+      "capability": "Map participant names to their corresponding calendar identities and contact information",
+      "skills": [
+        "directory lookup",
+        "disambiguation",
+        "identity resolution"
+      ]
+    },
+    {
+      "source": "GPT-5",
+      "prompt": "schedule-3",
+      "name": "Retrieve Participant Calendars",
+      "capability": "Access and retrieve availability data for all participants within the specified timeframe",
+      "skills": [
+        "calendar API integration",
+        "data retrieval",
+        "authentication handling"
+      ]
+    },
+    {
+      "source": "GPT-5",
+      "prompt": "schedule-3",
+      "name": "Retrieve Kat's Constraints",
+      "capability": "Identify and extract Kat-specific scheduling constraints and preferences from her calendar",
+      "skills": [
+        "calendar data parsing",
+        "constraint detection"
+      ]
+    },
+    {
+      "source": "GPT-5",
+      "prompt": "schedule-3",
+      "name": "Apply Override Rules",
+      "capability": "Determine which existing events (1:1s, lunches) can be overridden and under what conditions",
+      "skills": [
+        "policy reasoning",
+        "event classification",
+        "priority handling"
+      ]
+    },
+    {
+      "source": "GPT-5",
+      "prompt": "schedule-3",
+      "name": "Compute Common Availability",
+      "capability": "Calculate overlapping free time slots for all participants within the given timeframe, respecting constraints and override rules",
+      "skills": [
+        "constraint satisfaction",
+        "time window intersection",
+        "optimization"
+      ]
+    },
+    {
+      "source": "GPT-5",
+      "prompt": "schedule-3",
+      "name": "Select Optimal Time Slot",
+      "capability": "Choose the best available time slot based on constraints, preferences, and minimal disruption",
+      "skills": [
+        "multi-criteria decision making",
+        "ranking",
+        "preference handling"
+      ]
+    },
+    {
+      "source": "GPT-5",
+      "prompt": "schedule-3",
+      "name": "Find Available Room",
+      "capability": "Locate and reserve an available physical meeting room matching the selected time slot",
+      "skills": [
+        "resource booking",
+        "room availability check",
+        "calendar integration"
+      ]
+    },
+    {
+      "source": "GPT-5",
+      "prompt": "schedule-3",
+      "name": "Create and Send Meeting Invite",
+      "capability": "Generate the meeting event with all details and send invitations to participants",
+      "skills": [
+        "calendar event creation",
+        "notification handling",
+        "data consistency"
+      ]
+    },
+    {
+      "source": "Claude",
+      "prompt": "collaborate-1",
+      "name": "Meeting Context Retrieval",
+      "capability": "Gather information about Project Alpha from available sources (docs, project management tools, status reports)",
+      "skills": [
+        "Document retrieval",
+        "Context extraction",
+        "Project status queries",
+        "Multi-source data aggregation"
+      ]
+    },
+    {
+      "source": "Claude",
+      "prompt": "collaborate-1",
+      "name": "Stakeholder Role Identification",
+      "capability": "Understand product team vs marketing team roles, responsibilities, and concerns",
+      "skills": [
+        "Role-based reasoning",
+        "Stakeholder analysis",
+        "Perspective modeling",
+        "Team responsibility mapping"
+      ]
+    },
+    {
+      "source": "Claude",
+      "prompt": "collaborate-1",
+      "name": "Agenda Structure Planning",
+      "capability": "Create logical flow for review meeting (progress → confirmation → blockers → risks)",
+      "skills": [
+        "Meeting structure best practices",
+        "Agenda templating",
+        "Flow optimization",
+        "Topic sequencing"
+      ]
+    },
+    {
+      "source": "Claude",
+      "prompt": "collaborate-1",
+      "name": "Progress Review Items Generation",
+      "capability": "List specific accomplishments, milestones completed, and metrics to review",
+      "skills": [
+        "Achievement extraction",
+        "Milestone identification",
+        "Metrics selection",
+        "Status summary creation"
+      ]
+    },
+    {
+      "source": "Claude",
+      "prompt": "collaborate-1",
+      "name": "Blocker & Risk Identification",
+      "capability": "Surface known issues, dependencies, blockers, and potential risks for discussion",
+      "skills": [
+        "Issue tracking",
+        "Risk analysis",
+        "Dependency mapping",
+        "Problem identification"
+      ]
+    },
+    {
+      "source": "Claude",
+      "prompt": "collaborate-1",
+      "name": "Time Allocation & Formatting",
+      "capability": "Assign time to each agenda item and format for professional distribution",
+      "skills": [
+        "Time budgeting",
+        "Agenda formatting",
+        "Document generation",
+        "Meeting time management"
+      ]
+    },
+    {
+      "source": "GPT-5",
+      "prompt": "collaborate-1",
+      "name": "Extract Meeting Intent",
+      "capability": "Identify that the user wants to create an agenda for a progress review meeting",
+      "skills": [
+        "intent_recognition",
+        "natural_language_understanding"
+      ]
+    },
+    {
+      "source": "GPT-5",
+      "prompt": "collaborate-1",
+      "name": "Identify Project Context",
+      "capability": "Extract and confirm the project name and context from the prompt",
+      "skills": [
+        "entity_extraction",
+        "context_resolution"
+      ]
+    },
+    {
+      "source": "GPT-5",
+      "prompt": "collaborate-1",
+      "name": "Determine Participants",
+      "capability": "Identify required participants (product and marketing team) from the request",
+      "skills": [
+        "entity_extraction",
+        "role_mapping"
+      ]
+    },
+    {
+      "source": "GPT-5",
+      "prompt": "collaborate-1",
+      "name": "Retrieve Team Member Details",
+      "capability": "Map identified teams to actual user contacts or calendar groups",
+      "skills": [
+        "directory_lookup",
+        "contact_resolution"
+      ]
+    },
+    {
+      "source": "GPT-5",
+      "prompt": "collaborate-1",
+      "name": "Define Agenda Objectives",
+      "capability": "Extract and structure the meeting objectives from the user prompt",
+      "skills": [
+        "semantic_parsing",
+        "goal_structuring"
+      ]
+    },
+    {
+      "source": "GPT-5",
+      "prompt": "collaborate-1",
+      "name": "Generate Agenda Items",
+      "capability": "Convert objectives into actionable agenda items in logical order",
+      "skills": [
+        "agenda_generation",
+        "task_structuring"
+      ]
+    },
+    {
+      "source": "GPT-5",
+      "prompt": "collaborate-1",
+      "name": "Validate Agenda Completeness",
+      "capability": "Check that all user-specified topics are included and no critical element is missing",
+      "skills": [
+        "consistency_checking",
+        "requirement_validation"
+      ]
+    },
+    {
+      "source": "GPT-5",
+      "prompt": "collaborate-1",
+      "name": "Present Agenda for Confirmation",
+      "capability": "Display the proposed agenda to the user for approval or edits",
+      "skills": [
+        "UI_rendering",
+        "confirmation_flow"
+      ]
+    },
+    {
+      "source": "Claude",
+      "prompt": "collaborate-2",
+      "name": "Meeting Materials Retrieval",
+      "capability": "Access and load all relevant documents, presentations, and data for the meeting",
+      "skills": [
+        "Document access",
+        "File reading",
+        "Content extraction",
+        "Multi-format parsing"
+      ]
+    },
+    {
+      "source": "Claude",
+      "prompt": "collaborate-2",
+      "name": "Content Analysis & Topic Extraction",
+      "capability": "Identify main themes and topics across all materials",
+      "skills": [
+        "Document analysis",
+        "Theme extraction",
+        "Topic clustering",
+        "Content synthesis"
+      ]
+    },
+    {
+      "source": "Claude",
+      "prompt": "collaborate-2",
+      "name": "Executive Summary Distillation",
+      "capability": "Condense complex topics into 3 concise, high-impact discussion points",
+      "skills": [
+        "Summarization",
+        "Priority ranking",
+        "Executive communication",
+        "Distillation to core messages"
+      ]
+    },
+    {
+      "source": "Claude",
+      "prompt": "collaborate-2",
+      "name": "Audience-Aware Framing",
+      "capability": "Frame discussion points appropriately for senior leadership audience (strategic, high-level, business impact)",
+      "skills": [
+        "Role-based communication",
+        "Executive context awareness",
+        "Tone adjustment",
+        "Strategic framing"
+      ]
+    },
+    {
+      "source": "Claude",
+      "prompt": "collaborate-2",
+      "name": "Objection Anticipation",
+      "capability": "Predict concerns, pushback, or tough questions from senior leaders",
+      "skills": [
+        "Critical thinking",
+        "Risk identification",
+        "Executive perspective modeling",
+        "Concern prediction"
+      ]
+    },
+    {
+      "source": "Claude",
+      "prompt": "collaborate-2",
+      "name": "Response Preparation",
+      "capability": "Generate effective, well-reasoned responses to anticipated objections",
+      "skills": [
+        "Argumentation",
+        "Evidence marshaling",
+        "Persuasive communication",
+        "Counter-argument development"
+      ]
+    },
+    {
+      "source": "Claude",
+      "prompt": "collaborate-2",
+      "name": "Briefing Document Generation",
+      "capability": "Format summary, objections, and responses into comprehensive prep document",
+      "skills": [
+        "Document formatting",
+        "Professional presentation",
+        "Structured organization",
+        "Executive brief writing"
+      ]
+    },
+    {
+      "source": "GPT-5",
+      "prompt": "collaborate-2",
+      "name": "Retrieve Meeting Materials",
+      "capability": "Access and collect all relevant documents and resources for the specified senior leadership meeting",
+      "skills": [
+        "calendar_integration",
+        "document_retrieval",
+        "context_identification"
+      ]
+    },
+    {
+      "source": "GPT-5",
+      "prompt": "collaborate-2",
+      "name": "Analyze Meeting Materials",
+      "capability": "Read and extract key information, topics, and themes from the retrieved documents",
+      "skills": [
+        "document_parsing",
+        "natural_language_understanding",
+        "topic_extraction"
+      ]
+    },
+    {
+      "source": "GPT-5",
+      "prompt": "collaborate-2",
+      "name": "Generate Candidate Discussion Topics",
+      "capability": "List all significant topics identified from the analysis for potential discussion",
+      "skills": [
+        "summarization",
+        "content_clustering",
+        "importance_ranking"
+      ]
+    },
+    {
+      "source": "GPT-5",
+      "prompt": "collaborate-2",
+      "name": "Rank and Select Top Three Topics",
+      "capability": "Prioritize and choose the three most important discussion points based on relevance and impact",
+      "skills": [
+        "priority_reasoning",
+        "contextual_ranking",
+        "decision_logic"
+      ]
+    },
+    {
+      "source": "GPT-5",
+      "prompt": "collaborate-2",
+      "name": "Generate Potential Objections",
+      "capability": "Predict likely objections or concerns that senior leadership might raise regarding the selected topics",
+      "skills": [
+        "anticipatory_reasoning",
+        "stakeholder_analysis",
+        "risk_identification"
+      ]
+    },
+    {
+      "source": "GPT-5",
+      "prompt": "collaborate-2",
+      "name": "Create Effective Responses",
+      "capability": "Formulate clear, persuasive responses to each predicted objection",
+      "skills": [
+        "argument_generation",
+        "persuasive_communication",
+        "contextual_adaptation"
+      ]
+    },
+    {
+      "source": "Claude",
+      "prompt": "collaborate-3",
+      "name": "Meeting Details Retrieval",
+      "capability": "Get meeting information (attendees list, meeting time, purpose/subject)",
+      "skills": [
+        "Calendar API",
+        "Meeting metadata extraction",
+        "Attendee list parsing",
+        "Event details retrieval"
+      ]
+    },
+    {
+      "source": "Claude",
+      "prompt": "collaborate-3",
+      "name": "Company Background Research",
+      "capability": "Gather information about customer Beta company (industry, size, products, recent news)",
+      "skills": [
+        "CRM data access",
+        "Web research",
+        "Company profile compilation",
+        "Business intelligence"
+      ]
+    },
+    {
+      "source": "Claude",
+      "prompt": "collaborate-3",
+      "name": "Attendee Identity Resolution",
+      "capability": "Identify each customer attendee and their specific roles/titles",
+      "skills": [
+        "Contact resolution",
+        "Role identification",
+        "Org chart analysis",
+        "LinkedIn/directory lookup"
+      ]
+    },
+    {
+      "source": "Claude",
+      "prompt": "collaborate-3",
+      "name": "Individual Dossier Creation",
+      "capability": "For each attendee, compile background, role, interaction history, and context",
+      "skills": [
+        "CRM querying",
+        "Interaction history analysis",
+        "Profile building",
+        "Contact research"
+      ]
+    },
+    {
+      "source": "Claude",
+      "prompt": "collaborate-3",
+      "name": "Topic Interest Analysis",
+      "capability": "Identify topics each attendee cares about based on communication history, role, and context",
+      "skills": [
+        "Communication analysis",
+        "Interest extraction",
+        "Preference modeling",
+        "Topic mapping to roles"
+      ]
+    },
+    {
+      "source": "Claude",
+      "prompt": "collaborate-3",
+      "name": "Relationship History Compilation",
+      "capability": "Summarize past interactions, deals, support issues, and relationship context with customer",
+      "skills": [
+        "CRM data aggregation",
+        "Timeline creation",
+        "Relationship context building",
+        "Historical summary"
+      ]
+    },
+    {
+      "source": "Claude",
+      "prompt": "collaborate-3",
+      "name": "Relevant Content Gathering",
+      "capability": "Find related materials (proposals, presentations, technical docs, case studies)",
+      "skills": [
+        "Document search",
+        "Relevance matching",
+        "Content curation",
+        "Material organization"
+      ]
+    },
+    {
+      "source": "Claude",
+      "prompt": "collaborate-3",
+      "name": "Brief Document Assembly",
+      "capability": "Compile all information into structured, comprehensive prep brief",
+      "skills": [
+        "Document generation",
+        "Professional formatting",
+        "Information organization",
+        "Brief writing"
+      ]
+    },
+    {
+      "source": "GPT-5",
+      "prompt": "collaborate-3",
+      "name": "Identify Upcoming Meeting with Customer Beta",
+      "capability": "Locate the specific upcoming calendar event involving customer Beta",
+      "skills": [
+        "calendar_access",
+        "entity_matching",
+        "event_search"
+      ]
+    },
+    {
+      "source": "GPT-5",
+      "prompt": "collaborate-3",
+      "name": "Extract Meeting Details",
+      "capability": "Retrieve date, time, and participant list from the identified meeting",
+      "skills": [
+        "calendar_event_parsing",
+        "structured_data_extraction"
+      ]
+    },
+    {
+      "source": "GPT-5",
+      "prompt": "collaborate-3",
+      "name": "Identify Customer Attendees",
+      "capability": "Filter attendees belonging to customer Beta from the participant list",
+      "skills": [
+        "entity_resolution",
+        "organization_mapping"
+      ]
+    },
+    {
+      "source": "GPT-5",
+      "prompt": "collaborate-3",
+      "name": "Retrieve Profile Data for Each Customer Attendee",
+      "capability": "Fetch professional background and role information for each identified attendee",
+      "skills": [
+        "contact_data_lookup",
+        "profile_enrichment",
+        "external_api_integration"
+      ]
+    },
+    {
+      "source": "GPT-5",
+      "prompt": "collaborate-3",
+      "name": "Determine Topics of Interest for Each Attendee",
+      "capability": "Analyze historical interactions or preference data to identify topics each attendee cares about",
+      "skills": [
+        "interest_inference",
+        "nlp_topic_modeling",
+        "data_aggregation"
+      ]
+    },
+    {
+      "source": "GPT-5",
+      "prompt": "collaborate-3",
+      "name": "Compile Dossier for Each Customer Attendee",
+      "capability": "Generate a structured summary containing attendee background and topics of interest",
+      "skills": [
+        "document_generation",
+        "template_filling",
+        "summarization"
+      ]
+    },
+    {
+      "source": "GPT-5",
+      "prompt": "collaborate-3",
+      "name": "Retrieve Company Background for Customer Beta",
+      "capability": "Gather company-level information such as industry, size, recent news",
+      "skills": [
+        "company_data_lookup",
+        "web_search",
+        "knowledge_graph_query"
+      ]
+    },
+    {
+      "source": "GPT-5",
+      "prompt": "collaborate-3",
+      "name": "Compose Meeting Brief",
+      "capability": "Integrate meeting details, attendee dossiers, and company background into a concise briefing document",
+      "skills": [
+        "content_synthesis",
+        "document_structuring",
+        "natural_language_generation"
+      ]
+    }
+  ]
+}

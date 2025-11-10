@@ -1,0 +1,162 @@
+{
+  "id": "tier1_sales_manager_pipeline",
+  "name": "Sales Manager - Pipeline Juggler",
+  "tier": 1,
+  "demographics": {
+    "level": "Manager",
+    "function": "Sales",
+    "tenure": "2-3 years",
+    "team_size": "8-12 direct reports",
+    "company": "Growth Stage SaaS",
+    "industry": "Technology"
+  },
+  "meeting_context": {
+    "weekly_meeting_hours": "28-32 hours",
+    "typical_breakdown": {
+      "customer_calls": "40%",
+      "pipeline_reviews": "20%",
+      "team_1on1s": "15%",
+      "forecast_planning": "10%",
+      "internal_coordination": "15%"
+    }
+  },
+  "importance_criteria": {
+    "always_important": [
+      "customer",
+      "client",
+      "deal review",
+      "executive",
+      "pipeline",
+      "forecast",
+      "quarter",
+      "contract",
+      "renewal",
+      "escalation"
+    ],
+    "usually_important": [
+      "prospect",
+      "sales call",
+      "demo",
+      "proposal",
+      "pricing",
+      "negotiation",
+      "competitive",
+      "opportunity",
+      "territory"
+    ],
+    "sometimes_important": [
+      "team meeting",
+      "training",
+      "onboarding",
+      "strategy",
+      "planning",
+      "metrics",
+      "performance"
+    ],
+    "rarely_important": [
+      "all-hands",
+      "social",
+      "celebration",
+      "townhall"
+    ]
+  },
+  "priority_framework": [
+    {
+      "name": "Close Q4 deals ($2M pipeline)",
+      "time_commitment": "50%",
+      "keywords": [
+        "Q4",
+        "quarter end",
+        "close",
+        "contract",
+        "purchase order",
+        "legal review",
+        "executive sponsor",
+        "final approval"
+      ]
+    },
+    {
+      "name": "Enterprise expansion (3 target accounts)",
+      "time_commitment": "25%",
+      "keywords": [
+        "enterprise",
+        "expansion",
+        "upsell",
+        "cross-sell",
+        "multi-year",
+        "strategic account"
+      ]
+    },
+    {
+      "name": "Team performance (hit 120% quota)",
+      "time_commitment": "15%",
+      "keywords": [
+        "team performance",
+        "quota",
+        "pipeline health",
+        "coaching",
+        "1on1",
+        "forecast"
+      ]
+    },
+    {
+      "name": "Product launch prep (new feature rollout)",
+      "time_commitment": "10%",
+      "keywords": [
+        "product launch",
+        "new feature",
+        "GTM",
+        "enablement",
+        "competitive positioning"
+      ]
+    }
+  ],
+  "rsvp_rules": {
+    "always_accept": [
+      "Customer/client meetings (revenue at stake)",
+      "Executive deal reviews (career visibility)",
+      "Contract negotiations (deal closure)",
+      "Pipeline reviews with leadership (accountability)",
+      "Customer escalations (relationship risk)"
+    ],
+    "conditional": [
+      "Team meetings (unless customer conflict)",
+      "Internal planning (delegate if possible)",
+      "Training sessions (send rep if available)",
+      "Product meetings (attend if impacts active deals)"
+    ],
+    "decline_by_default": [
+      "Optional social events (no time during quarter)",
+      "Large all-hands (can watch recording)",
+      "Non-sales department meetings (not relevant)"
+    ],
+    "always_decline": [
+      "Anything conflicting with customer meetings",
+      "Non-essential meetings during quarter-end (last 2 weeks of Q)"
+    ]
+  },
+  "prep_time_needs": {
+    "requires_prep": [
+      "Customer presentations (30-60 min: review account history, competitive intel, pricing)",
+      "Executive business reviews (45-90 min: data analysis, success metrics, renewal strategy)",
+      "Contract negotiations (60+ min: legal review, pricing approval, competitive analysis)",
+      "Deal reviews with leadership (30 min: pipeline data, forecast accuracy, risk assessment)",
+      "New prospect discovery calls (20-30 min: research company, identify pain points, prep questions)"
+    ],
+    "optional_prep": [
+      "Team 1on1s (15 min: review performance data if discussing quota)",
+      "Product demos (15 min: customize demo flow for specific prospect)",
+      "Internal planning meetings (10 min: review agenda if strategic decisions)"
+    ],
+    "no_prep": [
+      "Daily standups",
+      "Social events",
+      "All-hands meetings",
+      "General team updates"
+    ]
+  },
+  "work_style": "Sales Manager - Pipeline Juggler: Manages 8-12 reps with $15M annual quota. Days dominated by customer calls (40% of time) and pipeline management. Lives in constant state of urgency - every meeting either generates revenue or blocks deals. Quarter-end creates extreme time pressure with 28-32 hour meeting weeks. Must balance coaching team (everyone struggling with different deals) with personal selling (carry own quota too). Customer escalations happen weekly and require immediate attention regardless of schedule. Success measured by hitting 120% of team quota while maintaining forecast accuracy above 90%. High emotional labor managing customer expectations and team morale simultaneously.",
+  "career_stage": "2-3 years into management, proving can scale beyond individual contributor success. Under intense pressure to demonstrate team leadership while maintaining personal sales performance. Career trajectory depends on consistently hitting quota and developing future managers from team. Risks: Missing quarter = missed promotion, losing top rep = cascade effect on pipeline, customer churn = reputation damage with leadership. Opportunities: Successful quarter = promotion to Senior Manager, landing enterprise deal = visibility with executives, developing high-performing rep = leadership credibility.",
+  "stress_level": "⭐⭐⭐⭐⭐ EXTREMELY HIGH: 28-32 hour meeting weeks, $15M quota pressure, customer escalations weekly, team performance accountability, quarter-end crunch every 90 days. Calendar is battlefield where every hour either wins or loses deals. Missing customer meeting can cost $50K-500K in revenue. Unprepared for executive review = career damage. Work-life balance non-existent during last 2 weeks of quarter.",
+  "notes": "KEY INSIGHT: Sales managers are most desperate for meeting intelligence because stakes are highest (revenue impact) and time is most scarce (customer-first priority). Missing prep for customer call = lost deal = missed quota = career risk. Every meeting optimization saves hours that could close deals. BUT ⚠️ ZERO TOLERANCE FOR ERRORS - suggesting 'low priority' for customer meeting would be catastrophic. Need 85%+ accuracy before launch to this persona."
+}

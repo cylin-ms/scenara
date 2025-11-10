@@ -381,4 +381,450 @@ Each C-GUTT entry follows this template:
 
 ---
 
-*Reference generated from GUTT Cross-Prompt Consolidation Analysis - November 6, 2025*
+## CANONICAL UNIT TASKS (Claude 4.5 + GPT-5 v2 Consolidation)
+
+**Date**: November 6, 2025  
+**Method**: AI Reasoning - Semantic analysis of 132 GUTTs (66 Claude + 66 GPT-5)  
+**Framework**: 5-Relationship Model (=, <, >, ∩, ⊥) + Unit Task Principle
+
+**Summary**: 20 atomic capabilities identified through cross-model consolidation
+
+---
+
+### Tier 1: Universal Capabilities (50%+ prompt coverage)
+
+#### CANONICAL-01: Calendar Events Retrieval ⭐⭐⭐⭐⭐
+- **Frequency**: 9/9 prompts (100% - MOST UNIVERSAL)
+- **What it does**: Retrieve calendar event data from calendar systems via API, with optional filters for time range, attendees, or status
+- **API/Tool**: `GET /me/calendar/events` (Microsoft Graph), `GET /calendar/v3/users/me/events` (Google Calendar)
+- **Used in**: ALL 9 hero prompts
+- **Example**: User requests "show meetings this week" → API call with startDateTime=2025-11-06, endDateTime=2025-11-12 → returns array of event objects
+- **Claude Tasks**: C2 (org-1), C1 (org-2), C1 (org-3), C2 (sch-2), C2 (sch-3), C1 (col-3)
+- **GPT-5 Tasks**: G1 (org-1), G1 (org-2), G1 (org-3), G2 (sch-2), G3 (sch-3), G2 (col-3)
+- **Type**: Calendar API read operation
+- **Implementation Priority**: ⭐⭐⭐⭐⭐ CRITICAL - Build first
+
+#### CANONICAL-02: Meeting Classification/Categorization ⭐⭐⭐⭐⭐
+- **Frequency**: 7/9 prompts (78%)
+- **What it does**: Assign categories, scores, or classifications to calendar events based on attributes, content, and context
+- **API/Tool**: ML Classification Model, Azure AI Language, OpenAI GPT, Custom classifier
+- **Used in**: Prompts 1, 2, 3, 6 (organizer-1, organizer-2, organizer-3, schedule-3)
+- **Example**: Meeting with title "1:1 with Sarah", 30min duration, 2 attendees → classified as type="1:1", importance="medium", override_eligible=true
+- **Variants**:
+  - Priority alignment classification (organizer-1): Score 0-1 how well meeting aligns with user priorities
+  - Importance scoring (organizer-2): Critical/High/Medium/Low based on attendees, urgency
+  - Type categorization (organizer-3): 31+ meeting types (1:1, team sync, executive review, etc.)
+  - Override-eligibility (schedule-3): Identify 1:1s and lunches that can be rescheduled
+- **Claude Tasks**: C3 (org-1), C2 (org-2), C2 (org-3), C4 (sch-3)
+- **GPT-5 Tasks**: G4 (org-1), G2 (org-2), G3 (org-3), G5 (sch-3)
+- **Type**: Machine Learning classification
+- **Implementation Priority**: ⭐⭐⭐⭐⭐ CRITICAL - High reuse
+
+#### CANONICAL-03: Calendar Event Creation/Update ⭐⭐⭐⭐⭐
+- **Frequency**: 6/9 prompts (67%)
+- **What it does**: Create or modify calendar events via API, including recurrence rules, attendees, and resources
+- **API/Tool**: `POST /me/calendar/events`, `PATCH /me/calendar/events/{id}` (Microsoft Graph)
+- **Used in**: Prompts 1, 2, 4, 5, 6 (organizer-1, organizer-2, schedule-1, schedule-2, schedule-3)
+- **Example**: Create weekly recurring 1:1 → POST with subject="Weekly 1:1 with Sarah", recurrence={pattern:"weekly",daysOfWeek:["tuesday"]}, attendees=[{emailAddress:"sarah@company.com"}]
+- **Variants**:
+  - Single event creation (schedule-3)
+  - Recurring series with iCalendar RRULE (schedule-1)
+  - RSVP status updates: accept/decline/tentative (organizer-1, schedule-2)
+  - Event time/attendee modifications (schedule-2, schedule-3)
+  - Focus time block creation (organizer-2)
+- **Claude Tasks**: C5 (org-1), C6 (org-2), C4 (sch-1), C5 (sch-2), C9 (sch-3)
+- **GPT-5 Tasks**: G6 (org-1), G6 (sch-1), G5 (sch-2), G9 (sch-3)
+- **Type**: Calendar API write operation
+- **Implementation Priority**: ⭐⭐⭐⭐⭐ CRITICAL - Core write capability
+
+#### CANONICAL-04: Natural Language Understanding (Constraint/Intent Extraction) ⭐⭐⭐⭐⭐
+- **Frequency**: 6/9 prompts (67%)
+- **What it does**: Extract structured information (entities, constraints, intents) from unstructured natural language input
+- **API/Tool**: Azure AI Language, OpenAI GPT, Claude, Custom NLP pipeline
+- **Used in**: Prompts 1, 4, 5, 6, 7, 8 (organizer-1, schedule-1/2/3, collaborate-1/2)
+- **Example**: "Weekly 30min 1:1 with Sarah, afternoons preferred, avoid Fridays" → {recurrence:"weekly", duration:30, attendee:"Sarah", time_preference:"afternoon", exclusion:"Friday"}
+- **Variants**:
+  - Priority extraction (organizer-1): "Focus on customer meetings and product strategy" → priorities=["customer meetings", "product strategy"]
+  - Constraint parsing (schedule-1/2/3): Time preferences, hard requirements, attendee rules
+  - Temporal resolution (schedule-2): "Thursday afternoon" → 2025-11-07 13:00-17:00
+  - Topic extraction (collaborate-2): Extract themes from meeting materials
+  - Intent recognition (collaborate-1): "set the agenda" → intent="create_agenda"
+- **Claude Tasks**: C1 (org-1), C1 (sch-1), C1 (sch-2), C1 (sch-3), C2 (col-2)
+- **GPT-5 Tasks**: G1 (sch-1), G1 (sch-2), G1 (sch-3), G1 (col-1), G2 (col-2)
+- **Type**: Natural Language Processing
+- **Implementation Priority**: ⭐⭐⭐⭐⭐ CRITICAL - Enables natural language interface
+
+#### CANONICAL-05: Attendee/Contact Resolution ⭐⭐⭐⭐
+- **Frequency**: 5/9 prompts (56%)
+- **What it does**: Resolve participant names/descriptions to specific calendar identities via directory lookup
+- **API/Tool**: `GET /users` (Microsoft Graph), Azure AD Directory, Contact resolver
+- **Used in**: Prompts 4, 6, 7, 9 (schedule-1, schedule-3, collaborate-1, collaborate-3)
+- **Example**: "Schedule with Chris and the product team" → resolves to chris.jones@company.com + [sarah.smith@company.com, mike.wang@company.com, lisa.chen@company.com]
+- **Variants**:
+  - Name to email resolution: "Chris" → chris.jones@company.com
+  - Team expansion: "product team" → [list of team member emails]
+  - Role-based lookup: "my manager" → manager.name@company.com
+  - Customer attendee identification: Filter external vs internal attendees
+- **Claude Tasks**: C2 (sch-3), C2 (col-1), C3 (col-3)
+- **GPT-5 Tasks**: G2 (sch-1), G2 (sch-3), G4 (col-1), G3 (col-3)
+- **Type**: Directory/Contact resolution
+- **Implementation Priority**: ⭐⭐⭐⭐ HIGH - Required for multi-person scheduling
+
+---
+
+### Tier 2: Common Capabilities (25-50% prompt coverage)
+
+#### CANONICAL-06: Availability Checking (Free/Busy) ⭐⭐⭐
+- **Frequency**: 4/9 prompts (44%)
+- **What it does**: Retrieve availability status (free/busy) for specified users and time ranges
+- **API/Tool**: `POST /me/calendar/getSchedule` (Microsoft Graph), `POST /freeBusy` (Google Calendar)
+- **Used in**: Prompts 4, 5, 6 (schedule-1, schedule-2, schedule-3)
+- **Example**: Check availability for [user, chris, sarah, mike] from 2025-11-07 to 2025-11-21 → returns free/busy schedules for all 4 users
+- **Variants**:
+  - Single user availability (schedule-1)
+  - Multi-user availability aggregation (schedule-3)
+  - Common availability calculation: Find overlapping free slots
+  - Alternative slot finding (schedule-2): When rescheduling needed
+- **Claude Tasks**: C2 (sch-1), C4 (sch-2), C2 (sch-3)
+- **GPT-5 Tasks**: G5 (sch-1), G4 (sch-2), G3+G6 (sch-3)
+- **Type**: Calendar API availability query
+- **Implementation Priority**: ⭐⭐⭐ MEDIUM-HIGH - Core scheduling capability
+
+#### CANONICAL-07: Meeting Invitation/Notification Sending ⭐⭐⭐
+- **Frequency**: 4/9 prompts (44%)
+- **What it does**: Dispatch calendar invitations or notifications via email/calendar system
+- **API/Tool**: `POST /me/sendMail` (Microsoft Graph), Calendar invitation system, Email service
+- **Used in**: Prompts 2, 4, 5, 6 (organizer-2, schedule-1, schedule-2, schedule-3)
+- **Example**: Send invitation for new meeting → Calendar system sends email to attendees with .ics attachment, RSVP buttons
+- **Variants**:
+  - Initial invitation (schedule-1, schedule-3)
+  - Reschedule notification (schedule-2)
+  - Prep time reminder (organizer-2)
+  - Update notification (schedule-1 auto-reschedule)
+- **Claude Tasks**: C5 (sch-1), C5 (sch-2), C9 (sch-3)
+- **GPT-5 Tasks**: G7 (sch-1), G5 (sch-2), G9 (sch-3), G6 (org-2)
+- **Type**: Email/Calendar notification
+- **Implementation Priority**: ⭐⭐⭐ MEDIUM - Required for collaboration
+
+#### CANONICAL-08: Document/Content Retrieval ⭐⭐⭐
+- **Frequency**: 4/9 prompts (44%)
+- **What it does**: Retrieve documents, data, or content from various sources (SharePoint, CRM, web, etc.)
+- **API/Tool**: SharePoint API, OneDrive API, CRM API (Salesforce/Dynamics), Web search
+- **Used in**: Prompts 7, 8, 9 (collaborate-1, collaborate-2, collaborate-3)
+- **Example**: Customer meeting prep → Retrieve: CRM records for "Acme Corp", recent proposals from SharePoint, company news from web search
+- **Variants**:
+  - Project context retrieval: Get Project Alpha docs, status reports (collaborate-1)
+  - Meeting materials: Load presentations, reports for executive briefing (collaborate-2)
+  - Company background: CRM data + web research (collaborate-3)
+  - Supporting content: Related documents, case studies (collaborate-3)
+- **Claude Tasks**: C1 (col-1), C1 (col-2), C2+C7 (col-3)
+- **GPT-5 Tasks**: G2 (col-1), G1 (col-2), G7 (col-3)
+- **Type**: Document/Data retrieval
+- **Implementation Priority**: ⭐⭐⭐ MEDIUM - Enables context-aware features
+
+#### CANONICAL-09: Document Generation/Formatting ⭐⭐⭐
+- **Frequency**: 4/9 prompts (44%)
+- **What it does**: Generate formatted documents from structured data using templates and NLG
+- **API/Tool**: Natural Language Generation service, Template engine, python-docx, HTML/PDF generators
+- **Used in**: Prompts 5, 7, 8, 9 (schedule-2, collaborate-1, collaborate-2, collaborate-3)
+- **Example**: Customer meeting brief → Generates Word document with sections: Company Overview, Attendee Dossiers (with photos), Topics of Interest, Relationship History
+- **Variants**:
+  - Agenda generation (collaborate-1): Structured meeting flow with time allocations
+  - Executive briefing (collaborate-2): 3 discussion points + objections + responses
+  - Customer dossier (collaborate-3): Comprehensive prep brief
+  - Action summary (schedule-2): Report of actions taken (declined, rescheduled, blocked)
+- **Claude Tasks**: C6 (col-1), C7 (col-2), C8 (col-3), C8 (sch-2)
+- **GPT-5 Tasks**: G8 (col-1), G6 (col-2), G8 (col-3)
+- **Type**: Document generation, Natural Language Generation
+- **Implementation Priority**: ⭐⭐⭐ MEDIUM - Professional output quality
+
+#### CANONICAL-10: Time Aggregation/Statistical Analysis ⭐⭐
+- **Frequency**: 3/9 prompts (33%)
+- **What it does**: Aggregate and compute statistical metrics from calendar event data
+- **API/Tool**: Data aggregation service, pandas, NumPy, SQL analytics
+- **Used in**: Prompt 3 (organizer-3: Time Reclamation)
+- **Example**: Analyze 30 days calendar history → Computes: 40% time in 1:1s (12 hrs/wk), 30% in group meetings (9 hrs/wk), 20% in customer calls (6 hrs/wk)
+- **Variants**:
+  - Time spent by category (1:1, team, executive, customer)
+  - Time spent by person (which colleagues consume most time)
+  - Time spent by project/topic
+  - Average meeting duration, meeting count per day/week
+  - Trend analysis (increasing/decreasing over time)
+- **Claude Tasks**: C3 (org-3)
+- **GPT-5 Tasks**: G5 (org-3)
+- **Type**: Analytics, Statistical computation
+- **Implementation Priority**: ⭐⭐ MEDIUM - Insights generation
+
+#### CANONICAL-11: Priority/Preference Matching ⭐⭐
+- **Frequency**: 3/9 prompts (33%)
+- **What it does**: Score/classify calendar events based on alignment with user-defined priorities or preferences
+- **API/Tool**: Semantic similarity service (Sentence Transformers), Priority scoring algorithm
+- **Used in**: Prompts 1, 3 (organizer-1, organizer-3)
+- **Example**: User priority="customer meetings", Meeting about "Q4 Customer Strategy Review" → Semantic similarity score=0.92 (high alignment)
+- **Variants**:
+  - Priority alignment scoring (organizer-1): Score each meeting 0-1 against priorities
+  - Gap identification (organizer-3): Find misalignment between time usage and priorities
+  - Preference matching: Match meetings to user preferences (time of day, meeting size, etc.)
+- **Claude Tasks**: C3 (org-1), C4 (org-3)
+- **GPT-5 Tasks**: G4 (org-1), G4 (org-3)
+- **Type**: Semantic matching, Relevance scoring
+- **Implementation Priority**: ⭐⭐ MEDIUM - Intelligent prioritization
+
+#### CANONICAL-12: Constraint Satisfaction ⭐⭐⭐
+- **Frequency**: 3/9 prompts (33%)
+- **What it does**: Find time slots satisfying multiple scheduling constraints using CSP algorithms
+- **API/Tool**: Constraint solver (Google OR-Tools, python-constraint), Custom scheduling algorithm
+- **Used in**: Prompts 4, 6 (schedule-1, schedule-3)
+- **Example**: Constraints: weekly recurring, 30min, afternoons, not Friday, both attendees free → Solver finds: "Tuesdays 2:00-2:30pm" satisfies all
+- **Variants**:
+  - Simple constraint satisfaction (schedule-1): Time preferences + availability
+  - Multi-constraint optimization (schedule-3): Attendee priority (Kat's schedule), override rules, location (in-person), resource (room)
+  - Hard vs soft constraints: Must-have vs nice-to-have
+  - Slot ranking: Order solutions by preference match
+- **Claude Tasks**: C3 (sch-1), C7 (sch-3)
+- **GPT-5 Tasks**: G4+G5 (sch-1), G6+G7 (sch-3)
+- **Type**: Constraint Satisfaction Problem solver
+- **Implementation Priority**: ⭐⭐⭐ MEDIUM-HIGH - Complex scheduling scenarios
+
+#### CANONICAL-13: RSVP Status Update ⭐⭐
+- **Frequency**: 3/9 prompts (33%)
+- **What it does**: Update meeting RSVP status via calendar API
+- **API/Tool**: `POST /me/events/{id}/accept`, `POST /me/events/{id}/decline`, `POST /me/events/{id}/tentativelyAccept`
+- **Used in**: Prompts 1, 5 (organizer-1, schedule-2)
+- **Example**: Decline low-priority meeting → PATCH /events/{id} with responseStatus="declined", sends notification to organizer
+- **Variants**:
+  - Accept meeting (organizer-1: priority-aligned)
+  - Decline meeting (organizer-1: low priority; schedule-2: blocked time)
+  - Tentative response
+  - Bulk RSVP updates (schedule-2: decline all in time block)
+- **Claude Tasks**: C3 (sch-2), C5 (org-1)
+- **GPT-5 Tasks**: G3 (sch-2), G6 (org-1)
+- **Type**: Calendar API write operation
+- **Implementation Priority**: ⭐⭐ MEDIUM - Standard calendar operation
+
+#### CANONICAL-14: Recommendation Engine ⭐⭐
+- **Frequency**: 3/9 prompts (33%)
+- **What it does**: Generate actionable recommendations based on analysis using rules or ML
+- **API/Tool**: Rule engine, LLM (Claude/GPT), Recommendation algorithm
+- **Used in**: Prompts 2, 3, 8 (organizer-2, organizer-3, collaborate-2)
+- **Example**: Time analysis shows 10hrs/week in low-priority meetings → Recommends: "Decline 'Weekly Team Happy Hour' (saves 1hr/wk), Shorten 'Status Sync' from 60min to 30min (saves 2hrs/month)"
+- **Variants**:
+  - Time reclamation recommendations (organizer-3): Decline, delegate, shorten, consolidate
+  - Preparation recommendations (organizer-2): When to schedule focus time
+  - Response recommendations (collaborate-2): Effective responses to anticipated objections
+- **Claude Tasks**: C7 (org-2), C7 (org-3), C6 (col-2)
+- **GPT-5 Tasks**: G7 (org-3), G6 (col-2)
+- **Type**: Recommendation system
+- **Implementation Priority**: ⭐⭐ MEDIUM - Value-add insights
+
+---
+
+### Tier 3: Specialized Capabilities (<25% prompt coverage)
+
+#### CANONICAL-15: Recurrence Rule Generation ⭐
+- **Frequency**: 2/9 prompts (22%)
+- **What it does**: Generate iCalendar RRULE specifications from natural language recurrence patterns
+- **API/Tool**: iCalendar RRULE specification, python-dateutil.rrule, Custom RRULE generator
+- **Used in**: Prompts 4 (schedule-1)
+- **Example**: "Weekly starting next Monday" → RRULE:FREQ=WEEKLY;BYDAY=MO;DTSTART=20251110
+- **Variants**:
+  - Weekly recurring (schedule-1): Every Tuesday at 2pm
+  - Bi-weekly: Every other Friday
+  - Monthly: First Monday of each month
+  - Custom patterns: Every weekday except Friday
+- **Claude Tasks**: C4 (sch-1)
+- **GPT-5 Tasks**: G3 (sch-1)
+- **Type**: Temporal pattern generation
+- **Implementation Priority**: ⭐ LOW - Specialized use case
+
+#### CANONICAL-16: Event Monitoring/Change Detection ⭐
+- **Frequency**: 2/9 prompts (22%)
+- **What it does**: Detect and respond to calendar event changes via webhooks or polling
+- **API/Tool**: Microsoft Graph Webhooks, Change Notifications API, Polling service
+- **Used in**: Prompts 4 (schedule-1)
+- **Example**: Subscribe to meeting RSVP changes → Webhook fires when attendee declines → Trigger auto-reschedule workflow
+- **Variants**:
+  - RSVP change detection (schedule-1): Attendee accepts/declines/tentative
+  - Conflict detection: New meeting conflicts with existing
+  - Event update tracking: Time/location/attendee changes
+  - Cancellation monitoring
+- **Claude Tasks**: C6 (sch-1)
+- **GPT-5 Tasks**: G8 (sch-1)
+- **Type**: Event monitoring, Webhooks
+- **Implementation Priority**: ⭐ LOW - Advanced automation
+
+#### CANONICAL-17: Automatic Rescheduling ⭐
+- **Frequency**: 2/9 prompts (22%)
+- **What it does**: Automatically reschedule meetings in response to conflicts or declines
+- **API/Tool**: Workflow automation, Dynamic scheduling service, Orchestration engine
+- **Used in**: Prompts 4, 6 (schedule-1, schedule-3)
+- **Example**: Attendee declines Tuesday 2pm meeting → System finds new slot (Thursday 3pm), updates event, sends notification automatically
+- **Variants**:
+  - Decline-triggered rescheduling (schedule-1): When attendee declines, find new time
+  - Conflict-driven rescheduling (schedule-3): Override lower-priority meetings
+  - Cascading rescheduling: When moving one meeting affects others
+- **Claude Tasks**: C7 (sch-1), C8 (sch-3)
+- **GPT-5 Tasks**: G9 (sch-1)
+- **Type**: Workflow automation
+- **Implementation Priority**: ⭐ LOW - Advanced automation
+
+#### CANONICAL-18: Objection/Risk Anticipation ⭐
+- **Frequency**: 2/9 prompts (22%)
+- **What it does**: Predict objections, concerns, or risks using critical thinking and risk modeling
+- **API/Tool**: LLM (Claude/GPT-4), Risk analysis model, Critical thinking engine
+- **Used in**: Prompts 7, 8 (collaborate-1, collaborate-2)
+- **Example**: Executive briefing on budget increase → Anticipates objections: "ROI unclear" (provide cost-benefit analysis), "Timeline aggressive" (show risk mitigation), "Why not MVP?" (explain scope rationale)
+- **Variants**:
+  - Executive objections (collaborate-2): Budget, timeline, scope concerns
+  - Project blockers (collaborate-1): Dependencies, resource constraints, technical risks
+  - Stakeholder concerns: Different perspectives (product vs marketing vs engineering)
+- **Claude Tasks**: C5 (col-1), C5 (col-2)
+- **GPT-5 Tasks**: G5 (col-2)
+- **Type**: LLM reasoning, Risk analysis
+- **Implementation Priority**: ⭐ LOW - Advanced collaboration feature
+
+#### CANONICAL-19: Resource Booking (Rooms/Equipment) ⭐
+- **Frequency**: 1/9 prompts (11%)
+- **What it does**: Search for and book physical resources (rooms, equipment) via resource scheduling API
+- **API/Tool**: `GET /places` (Microsoft Graph), Room booking API, Equipment reservation system
+- **Used in**: Prompt 6 (schedule-3)
+- **Example**: Need conference room for 5 people, in-person, with projector → Searches rooms, finds "Conf Room B41-3A" (capacity 8, has projector), reserves it
+- **Variants**:
+  - Room search by capacity: Find rooms fitting attendee count
+  - Equipment requirements: Projector, whiteboard, video conferencing
+  - Location filtering: Specific building or floor
+  - Availability checking: Room free during time slot
+- **Claude Tasks**: C6 (sch-3)
+- **GPT-5 Tasks**: G8 (sch-3)
+- **Type**: Resource management
+- **Implementation Priority**: ⭐ LOW - Facilities integration
+
+#### CANONICAL-20: Data Visualization/Reporting ⭐
+- **Frequency**: 1/9 prompts (11%)
+- **What it does**: Generate visualizations (charts, graphs, dashboards) from calendar data
+- **API/Tool**: Chart.js, D3.js, matplotlib, plotly, Power BI, Tableau
+- **Used in**: Prompt 3 (organizer-3: Time Reclamation)
+- **Example**: Time usage analysis → Generates: Pie chart (time by category), Bar chart (top 10 time consumers), Line chart (trend over weeks), Dashboard with key metrics
+- **Variants**:
+  - Time distribution visualization: How time is allocated
+  - Trend analysis: Meeting load over time
+  - Comparison views: Current vs target allocation
+  - Interactive dashboards: Drill-down capabilities
+- **Claude Tasks**: C8 (org-3)
+- **GPT-5 Tasks**: G8 (org-3)
+- **Type**: Data visualization
+- **Implementation Priority**: ⭐ LOW - Reporting/analytics feature
+
+---
+
+## Canonical Tasks: Quick Reference Table
+
+| ID | Canonical Task | Frequency | Tier | APIs/Tools | Priority |
+|----|---------------|-----------|------|------------|----------|
+| **CAN-01** | **Calendar Events Retrieval** | **9/9 (100%)** | 1 | Microsoft Graph, Google Calendar | ⭐⭐⭐⭐⭐ |
+| **CAN-02** | **Meeting Classification** | **7/9 (78%)** | 1 | ML Model, Azure AI, OpenAI | ⭐⭐⭐⭐⭐ |
+| **CAN-03** | **Calendar Event Creation/Update** | **6/9 (67%)** | 1 | Microsoft Graph POST/PATCH | ⭐⭐⭐⭐⭐ |
+| **CAN-04** | **NLU (Constraint/Intent Extraction)** | **6/9 (67%)** | 1 | Azure AI, OpenAI, Claude | ⭐⭐⭐⭐⭐ |
+| **CAN-05** | **Attendee/Contact Resolution** | **5/9 (56%)** | 1 | Microsoft Graph /users | ⭐⭐⭐⭐ |
+| **CAN-06** | **Availability Checking** | **4/9 (44%)** | 2 | Microsoft Graph /getSchedule | ⭐⭐⭐ |
+| **CAN-07** | **Meeting Invitations** | **4/9 (44%)** | 2 | Email/Calendar system | ⭐⭐⭐ |
+| **CAN-08** | **Document/Content Retrieval** | **4/9 (44%)** | 2 | SharePoint, OneDrive, CRM | ⭐⭐⭐ |
+| **CAN-09** | **Document Generation** | **4/9 (44%)** | 2 | NLG, Template engine | ⭐⭐⭐ |
+| **CAN-10** | **Time Aggregation/Analytics** | **3/9 (33%)** | 2 | pandas, NumPy, SQL | ⭐⭐ |
+| **CAN-11** | **Priority/Preference Matching** | **3/9 (33%)** | 2 | Semantic similarity | ⭐⭐ |
+| **CAN-12** | **Constraint Satisfaction** | **3/9 (33%)** | 2 | OR-Tools, CSP solver | ⭐⭐⭐ |
+| **CAN-13** | **RSVP Status Update** | **3/9 (33%)** | 2 | Microsoft Graph accept/decline | ⭐⭐ |
+| **CAN-14** | **Recommendation Engine** | **3/9 (33%)** | 2 | LLM, Rule engine | ⭐⭐ |
+| **CAN-15** | **Recurrence Rule Generation** | **2/9 (22%)** | 3 | iCalendar RRULE | ⭐ |
+| **CAN-16** | **Event Monitoring** | **2/9 (22%)** | 3 | Webhooks, Polling | ⭐ |
+| **CAN-17** | **Automatic Rescheduling** | **2/9 (22%)** | 3 | Workflow automation | ⭐ |
+| **CAN-18** | **Objection/Risk Anticipation** | **2/9 (22%)** | 3 | LLM reasoning | ⭐ |
+| **CAN-19** | **Resource Booking** | **1/9 (11%)** | 3 | Microsoft Graph /places | ⭐ |
+| **CAN-20** | **Data Visualization** | **1/9 (11%)** | 3 | Chart.js, D3.js, plotly | ⭐ |
+
+---
+
+## Implementation Roadmap
+
+### Phase 1: Universal Tier (Weeks 1-4)
+**Build Order**: CAN-01 → CAN-04 → CAN-02 → CAN-03 → CAN-05
+
+1. **CAN-01: Calendar Events Retrieval** (Week 1)
+   - Foundational capability - required by all other features
+   - Implement Microsoft Graph integration
+   - Add filtering, pagination, error handling
+
+2. **CAN-04: NLU (Constraint/Intent Extraction)** (Week 1-2)
+   - Critical for natural language interface
+   - Integrate Azure AI Language or OpenAI
+   - Build prompt templates for common patterns
+
+3. **CAN-02: Meeting Classification** (Week 2-3)
+   - High-reuse capability across multiple features
+   - Train/fine-tune classification model
+   - Implement 31+ meeting type taxonomy
+
+4. **CAN-03: Calendar Event Creation/Update** (Week 3)
+   - Core write capability
+   - Implement CRUD operations
+   - Add recurrence rule support
+
+5. **CAN-05: Attendee/Contact Resolution** (Week 4)
+   - Required for multi-person scenarios
+   - Directory integration
+   - Disambiguation logic
+
+### Phase 2: Common Tier (Weeks 5-8)
+**Build Order**: CAN-06 → CAN-12 → CAN-07 → CAN-08 → CAN-09 → Others
+
+Focus on scheduling capabilities (CAN-06, CAN-12) first, then collaboration features (CAN-08, CAN-09).
+
+### Phase 3: Specialized Tier (Weeks 9-12)
+**Build Order**: Based on product priorities and use case demand
+
+Implement on-demand as specific features require them.
+
+---
+
+## Comparison: C-GUTT (39) vs Canonical Tasks (20)
+
+| Aspect | C-GUTT (39 tasks) | Canonical Tasks (20 tasks) |
+|--------|-------------------|----------------------------|
+| **Source** | Claude 4.5 only (66 GUTTs) | Claude 4.5 + GPT-5 v2 (132 GUTTs) |
+| **Method** | Within-model consolidation | Cross-model semantic consolidation |
+| **Validation** | Single model perspective | Dual model validation (higher confidence) |
+| **Granularity** | Mid-level (39 tasks) | Higher-level (20 tasks) - more atomic |
+| **Coverage** | 9 prompts (Calendar.AI hero set) | 9 prompts (same dataset) |
+| **Organization** | 7 categories | 3 tiers by frequency |
+| **Use Case** | Implementation reference | Platform evaluation + architecture |
+
+### When to Use Each
+
+**Use C-GUTT (39 tasks)**:
+- ✅ Detailed implementation planning
+- ✅ Understanding capability variants and nuances
+- ✅ Technology stack selection
+- ✅ Granular tracking and testing
+
+**Use Canonical Tasks (20 tasks)**:
+- ✅ New prompt evaluation and decomposition
+- ✅ Platform-wide capability planning
+- ✅ Implementation prioritization (Tier 1 → 2 → 3)
+- ✅ Cross-validation of LLM decomposition quality
+- ✅ Architectural design decisions
+
+### Mapping Between Systems
+
+Many C-GUTTs map to Canonical Tasks with 1:1 or N:1 relationships:
+
+- **CANONICAL-01** (Calendar Events Retrieval) = C-GUTT-01
+- **CANONICAL-02** (Meeting Classification) = C-GUTT-03 + C-GUTT-04
+- **CANONICAL-03** (Calendar Event Creation/Update) = C-GUTT-05 + C-GUTT-06 + C-GUTT-07
+- **CANONICAL-04** (NLU) = C-GUTT-08 + C-GUTT-09 + C-GUTT-10
+- And so on...
+
+---
+
+*Reference generated from GUTT Cross-Prompt Consolidation Analysis - November 6, 2025*  
+*Canonical Tasks generated from Claude 4.5 + GPT-5 v2 AI Reasoning Consolidation - November 6, 2025*
+

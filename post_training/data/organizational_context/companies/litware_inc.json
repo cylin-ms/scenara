@@ -1,0 +1,30 @@
+{
+  "company_id": "litware_inc",
+  "company_name": "Litware Inc.",
+  "industry": "Cloud Services Provider",
+  "headquarters": "Singapore",
+  "employee_count": 3500,
+  "relationship": "vendor",
+  "description": "Cloud infrastructure vendor providing hosting services",
+  
+  "contacts": [
+    {
+      "name": "Brian Miller",
+      "title": "Account Manager",
+      "email": "brian.miller@litware.com",
+      "employee_type": "required"
+    },
+    {
+      "name": "Maria Santos",
+      "title": "Solutions Architect",
+      "email": "maria.santos@litware.com",
+      "employee_type": "required"
+    },
+    {
+      "name": "David Park",
+      "title": "Customer Success Manager",
+      "email": "david.park@litware.com",
+      "employee_type": "optional"
+    }
+  ]
+}
