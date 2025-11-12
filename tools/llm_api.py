@@ -67,8 +67,8 @@ class LLMAPIClient:
         """Query Ollama local LLM"""
         try:
             # Check if model is available
-            models = self.ollama_client.list()
-            available_models = [m['name'] for m in models['models']]
+            models_response = self.ollama_client.list()
+            available_models = [m.model for m in models_response.models]
             
             if model not in available_models:
                 # Try to pull the model

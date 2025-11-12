@@ -1,0 +1,504 @@
+[
+  {
+    "training_id": "ado_9979157",
+    "source": "azure_devops",
+    "context": {
+      "goal": "FSI group 4/11/25",
+      "description": "<div><p style=\"font-size:16.799999px;margin:0px;\"><span style=\"font-family:TimesNewRomanPS-BoldMT;font-size:12px;\"><b>Key Topics:</b></span> </p><p style=\"font-size:16.799999px;margin:0px;\"><span style=\"font-family:&quot;Times New Roman&quot;;font-size:12px;\"><br></span> </p><p style=\"font-size:16.799999px;margin:0px;\"><span style=\"font-family:&quot;Times New Roman&quot;;font-size:12px;\"><br></span> </p><p style=\"font-size:16.799999px;margin:0px;\"><span style=\"font-family:&quot;Times New Roman&quot;;font-size:12px;\">-<span>&nbsp;</span></span><span style=\"font-family:TimesNewRomanPS-BoldMT;font-size:12px;\"><b>New Outlook Adoption:</b></span><span style=\"font-family:&quot;Times New Roman&quot;;font-size:12px;\">&nbsp;David Gorelik discussed the ongoing adoption of the new Outlook across various segments, including consumer, education, and commercial sectors. He highlighted the organic growth and the toggle feature that allows users to try out the new product alongside the classic version.<span>&nbsp;</span><a style=\"word-break:break-word;margin-top:0px;margin-bottom:0px;pointer-events:none;\">1</a>&nbsp;</span> </p><p style=\"font-size:16.799999px;margin:0px;\"><span style=\"font-family:&quot;Times New Roman&quot;;font-size:12px;\">-<span>&nbsp;</span></span><span style=\"font-family:TimesNewRomanPS-BoldMT;font-size:12px;\"><b>Feedback and NDA:</b></span><span style=\"font-family:&quot;Times New Roman&quot;;font-size:12px;\">&nbsp;Caitlin Hart emphasized the importance of feedback and the volatile nature of changes in industries like FSI. She encouraged participants to deliver feedback, which will be incorporated into the new Outlook. David Gorelik confirmed that all participants are under NDA, allowing for a more candid conversation.<span>&nbsp;</span><a style=\"word-break:break-word;margin-top:0px;margin-bottom:0px;pointer-events:none;\">2</a>&nbsp;</span> </p><p style=\"font-size:16.799999px;margin:0px;\"><span style=\"font-family:&quot;Times New Roman&quot;;font-size:12px;\">-<span>&nbsp;</span></span><span style=\"font-family:TimesNewRomanPS-BoldMT;font-size:12px;\"><b>New Outlook Features:</b></span><span style=\"font-family:&quot;Times New Roman&quot;;font-size:12px;\">&nbsp;David Gorelik presented the new Outlook features, including agility, consistency, and manageability. He explained how the new code base allows for faster updates and improvements, such as Copilot features and editorial content enhancements.<span>&nbsp;</span><a style=\"word-break:break-word;margin-top:0px;margin-bottom:0px;pointer-events:none;\">3</a>&nbsp;</span> </p><p style=\"font-size:16.799999px;margin:0px;\"><span style=\"font-family:&quot;Times New Roman&quot;;font-size:12px;\">-<span>&nbsp;</span></span><span style=\"font-family:TimesNewRomanPS-BoldMT;font-size:12px;\"><b>Shared Mailboxes:</b></span><span style=\"font-family:&quot;Times New Roman&quot;;font-size:12px;\">&nbsp;Caitlin Hart discussed the improvements in shared mailboxes, including the ability to see all shared items and manage settings like auto replies and categories. She highlighted the upcoming work to enhance the shared mailbox experience, making it better than the classic version.<span>&nbsp;</span><a style=\"word-break:break-word;margin-top:0px;margin-bottom:0px;pointer-events:none;\">4</a>&nbsp;</span> </p><p style=\"font-size:16.799999px;margin:0px;\"><span style=\"font-family:&quot;Times New Roman&quot;;font-size:12px;\">-<span>&nbsp;</span></span><span style=\"font-family:TimesNewRomanPS-BoldMT;font-size:12px;\"><b>Migration Planning:</b></span><span style=\"font-family:&quot;Times New Roman&quot;;font-size:12px;\">&nbsp;Caitlin Hart outlined the migration planning phases, including the opt-in phase starting in April 2026 and the cutover beyond 2029. She encouraged organizations to run pilot groups and control their own timing for migration to the new Outlook.<span>&nbsp;</span><a style=\"word-break:break-word;margin-top:0px;margin-bottom:0px;pointer-events:none;\">5</a>&nbsp;</span> </p><p style=\"font-size:16.799999px;margin:0px;\"><span style=\"font-family:&quot;Times New Roman&quot;;font-size:12px;\">-<span>&nbsp;</span></span><span style=\"font-family:TimesNewRomanPS-BoldMT;font-size:12px;\"><b>Add-ins Migration:</b></span><span style=\"font-family:&quot;Times New Roman&quot;;font-size:12px;\">&nbsp;Caitlin Hart addressed the migration of add-ins, focusing on security-related add-ins and partnering with top developers to bring COM add-in capabilities to the web platform. She recommended running pilots to identify necessary add-ins and provide feedback for further improvements.<span>&nbsp;</span><a style=\"word-break:break-word;margin-top:0px;margin-bottom:0px;pointer-events:none;\">6</a>&nbsp;</span> </p><p style=\"font-size:16.799999px;margin:0px;\"><span style=\"font-family:&quot;Times New Roman&quot;;font-size:12px;\">-<span>&nbsp;</span></span><span style=\"font-family:TimesNewRomanPS-BoldMT;font-size:12px;\"><b>Feedback Channels:</b></span><span style=\"font-family:&quot;Times New Roman&quot;;font-size:12px;\">&nbsp;Kelly raised concerns about the limitations of built-in feedback channels due to compliance policies. Caitlin Hart suggested using calls like this one, DCRs, and the product feedback page in the admin center to prioritize important features.<span>&nbsp;</span><a style=\"word-break:break-word;margin-top:0px;margin-bottom:0px;pointer-events:none;\">7</a>&nbsp;</span> </p><p style=\"font-size:16.799999px;margin:0px;\"><span style=\"font-family:&quot;Times New Roman&quot;;font-size:12px;\">-<span>&nbsp;</span></span><span style=\"font-family:TimesNewRomanPS-BoldMT;font-size:12px;\"><b>Security and Compliance:</b></span><span style=\"font-family:&quot;Times New Roman&quot;;font-size:12px;\">&nbsp;Mohun emphasized the importance of security and compliance features in the new Outlook, particularly for purview, DLP, and policy tips. Caitlin Hart assured that security is a high priority and recommended reviewing the new security white paper for detailed information.<span>&nbsp;</span><a style=\"word-break:break-word;margin-top:0px;margin-bottom:0px;pointer-events:none;\">8</a>&nbsp;</span> </p><p style=\"font-size:16.799999px;margin:0px;\"><span style=\"font-family:&quot;Times New Roman&quot;;font-size:12px;\">-<span>&nbsp;</span></span><span style=\"font-family:TimesNewRomanPS-BoldMT;font-size:12px;\"><b>Delegate Support:</b></span><span style=\"font-family:&quot;Times New Roman&quot;;font-size:12px;\">&nbsp;Jeffrey Frank inquired about delegate support and sync issues with mobile devices. Caitlin Hart explained that the new Outlook's architecture should resolve many of the sync issues and provided a resource overview for delegates.<span>&nbsp;</span><a style=\"word-break:break-word;margin-top:0px;margin-bottom:0px;pointer-events:none;\">9</a>&nbsp;</span> </p><p style=\"font-size:16.799999px;margin:0px;\"><span style=\"font-family:&quot;Times New Roman&quot;;font-size:12px;\">-<span>&nbsp;</span></span><span style=\"font-family:TimesNewRomanPS-BoldMT;font-size:12px;\"><b>Memory Consumption:</b></span><span style=\"font-family:&quot;Times New Roman&quot;;font-size:12px;\">&nbsp;Jeffrey Frank mentioned occasional high memory consumption warnings in the new Outlook. Caitlin Hart acknowledged the issue and assured that there is an ongoing work stream to improve memory performance and reduce such incidents.<span>&nbsp;</span><a style=\"word-break:break-word;margin-top:0px;margin-bottom:0px;pointer-events:none;\">10</a>&nbsp;</span> </p><br> </div>",
+      "work_item_type": "Task",
+      "priority": null,
+      "business_value": null,
+      "tags": [
+        "Monarch"
+      ],
+      "assigned_to": "Caitlin Hart"
+    },
+    "plan": {
+      "task": {
+        "id": 9979157,
+        "title": "FSI group 4/11/25",
+        "estimated_hours": null,
+        "actual_hours": null,
+        "story_points": null,
+        "state": "Closed",
+        "created_date": "2025-04-03T23:50:15.56Z",
+        "closed_date": "2025-04-12T01:39:56.333Z"
+      },
+      "dependencies": [
+        {
+          "type": "parent",
+          "from": 9979157,
+          "to": 8562710
+        }
+      ]
+    },
+    "outcome": {
+      "work_item_id": 9979157,
+      "effort_variance": null,
+      "effort_outcome": "unknown",
+      "schedule_variance_days": null,
+      "schedule_outcome": "unknown",
+      "overall_outcome": "partial_success",
+      "actual_duration_days": 8
+    },
+    "metadata": {
+      "project": "Outlook",
+      "work_item_id": 9979157,
+      "work_item_url": "https://office.visualstudio.com/Outlook/_workitems/edit/9979157",
+      "complexity": "Q2_Low_Complexity",
+      "value": "Low_Value",
+      "extracted_date": "2025-11-12T02:31:17.022161"
+    }
+  },
+  {
+    "training_id": "ado_9969328",
+    "source": "azure_devops",
+    "context": {
+      "goal": "Compass IT Admin Roundtable (1/23/25)",
+      "description": "",
+      "work_item_type": "Task",
+      "priority": null,
+      "business_value": null,
+      "tags": [
+        "Monarch"
+      ],
+      "assigned_to": "Jon LeCroy"
+    },
+    "plan": {
+      "task": {
+        "id": 9969328,
+        "title": "Compass IT Admin Roundtable (1/23/25)",
+        "estimated_hours": null,
+        "actual_hours": null,
+        "story_points": null,
+        "state": "Closed",
+        "created_date": "2025-04-01T21:21:25.84Z",
+        "closed_date": "2025-04-01T21:35:02.943Z"
+      },
+      "dependencies": [
+        {
+          "type": "parent",
+          "from": 9969328,
+          "to": 9969286
+        }
+      ]
+    },
+    "outcome": {
+      "work_item_id": 9969328,
+      "effort_variance": null,
+      "effort_outcome": "unknown",
+      "schedule_variance_days": null,
+      "schedule_outcome": "unknown",
+      "overall_outcome": "partial_success",
+      "actual_duration_days": 0
+    },
+    "metadata": {
+      "project": "Outlook",
+      "work_item_id": 9969328,
+      "work_item_url": "https://office.visualstudio.com/Outlook/_workitems/edit/9969328",
+      "complexity": "Q2_Low_Complexity",
+      "value": "Low_Value",
+      "extracted_date": "2025-11-12T02:31:17.022371"
+    }
+  },
+  {
+    "training_id": "ado_9969359",
+    "source": "azure_devops",
+    "context": {
+      "goal": "Compass IT Admin Roundtable (1/23/25)",
+      "description": "",
+      "work_item_type": "Task",
+      "priority": null,
+      "business_value": null,
+      "tags": [],
+      "assigned_to": "Jon LeCroy"
+    },
+    "plan": {
+      "task": {
+        "id": 9969359,
+        "title": "Compass IT Admin Roundtable (1/23/25)",
+        "estimated_hours": null,
+        "actual_hours": null,
+        "story_points": null,
+        "state": "Closed",
+        "created_date": "2025-04-01T21:28:49.297Z",
+        "closed_date": "2025-04-01T21:34:57.917Z"
+      },
+      "dependencies": [
+        {
+          "type": "parent",
+          "from": 9969359,
+          "to": 5179569
+        }
+      ]
+    },
+    "outcome": {
+      "work_item_id": 9969359,
+      "effort_variance": null,
+      "effort_outcome": "unknown",
+      "schedule_variance_days": null,
+      "schedule_outcome": "unknown",
+      "overall_outcome": "partial_success",
+      "actual_duration_days": 0
+    },
+    "metadata": {
+      "project": "Outlook",
+      "work_item_id": 9969359,
+      "work_item_url": "https://office.visualstudio.com/Outlook/_workitems/edit/9969359",
+      "complexity": "Q2_Low_Complexity",
+      "value": "Low_Value",
+      "extracted_date": "2025-11-12T02:31:17.022553"
+    }
+  },
+  {
+    "training_id": "ado_9969392",
+    "source": "azure_devops",
+    "context": {
+      "goal": "Compass IT Admin Roundtable (1/23/25)",
+      "description": "",
+      "work_item_type": "Task",
+      "priority": null,
+      "business_value": null,
+      "tags": [
+        "Monarch"
+      ],
+      "assigned_to": "Jon LeCroy"
+    },
+    "plan": {
+      "task": {
+        "id": 9969392,
+        "title": "Compass IT Admin Roundtable (1/23/25)",
+        "estimated_hours": null,
+        "actual_hours": null,
+        "story_points": null,
+        "state": "Closed",
+        "created_date": "2025-04-01T21:32:59.823Z",
+        "closed_date": "2025-04-01T21:33:02.48Z"
+      },
+      "dependencies": [
+        {
+          "type": "parent",
+          "from": 9969392,
+          "to": 9969389
+        }
+      ]
+    },
+    "outcome": {
+      "work_item_id": 9969392,
+      "effort_variance": null,
+      "effort_outcome": "unknown",
+      "schedule_variance_days": null,
+      "schedule_outcome": "unknown",
+      "overall_outcome": "partial_success",
+      "actual_duration_days": 0
+    },
+    "metadata": {
+      "project": "Outlook",
+      "work_item_id": 9969392,
+      "work_item_url": "https://office.visualstudio.com/Outlook/_workitems/edit/9969392",
+      "complexity": "Q2_Low_Complexity",
+      "value": "Low_Value",
+      "extracted_date": "2025-11-12T02:31:17.022724"
+    }
+  },
+  {
+    "training_id": "ado_9969376",
+    "source": "azure_devops",
+    "context": {
+      "goal": "Compass IT Admin Roundtable (1/23/25)",
+      "description": "",
+      "work_item_type": "Task",
+      "priority": null,
+      "business_value": null,
+      "tags": [],
+      "assigned_to": "Jon LeCroy"
+    },
+    "plan": {
+      "task": {
+        "id": 9969376,
+        "title": "Compass IT Admin Roundtable (1/23/25)",
+        "estimated_hours": null,
+        "actual_hours": null,
+        "story_points": null,
+        "state": "Closed",
+        "created_date": "2025-04-01T21:31:56.563Z",
+        "closed_date": "2025-04-01T21:32:01.9Z"
+      },
+      "dependencies": [
+        {
+          "type": "parent",
+          "from": 9969376,
+          "to": 8519286
+        }
+      ]
+    },
+    "outcome": {
+      "work_item_id": 9969376,
+      "effort_variance": null,
+      "effort_outcome": "unknown",
+      "schedule_variance_days": null,
+      "schedule_outcome": "unknown",
+      "overall_outcome": "partial_success",
+      "actual_duration_days": 0
+    },
+    "metadata": {
+      "project": "Outlook",
+      "work_item_id": 9969376,
+      "work_item_url": "https://office.visualstudio.com/Outlook/_workitems/edit/9969376",
+      "complexity": "Q2_Low_Complexity",
+      "value": "Low_Value",
+      "extracted_date": "2025-11-12T02:31:17.022867"
+    }
+  },
+  {
+    "training_id": "ado_9969371",
+    "source": "azure_devops",
+    "context": {
+      "goal": "Compass IT Admin Roundtable (1/23/25)",
+      "description": "",
+      "work_item_type": "Task",
+      "priority": null,
+      "business_value": null,
+      "tags": [
+        "Monarch"
+      ],
+      "assigned_to": "Jon LeCroy"
+    },
+    "plan": {
+      "task": {
+        "id": 9969371,
+        "title": "Compass IT Admin Roundtable (1/23/25)",
+        "estimated_hours": null,
+        "actual_hours": null,
+        "story_points": null,
+        "state": "Closed",
+        "created_date": "2025-04-01T21:31:29.277Z",
+        "closed_date": "2025-04-01T21:31:32.263Z"
+      },
+      "dependencies": [
+        {
+          "type": "parent",
+          "from": 9969371,
+          "to": 8519280
+        }
+      ]
+    },
+    "outcome": {
+      "work_item_id": 9969371,
+      "effort_variance": null,
+      "effort_outcome": "unknown",
+      "schedule_variance_days": null,
+      "schedule_outcome": "unknown",
+      "overall_outcome": "partial_success",
+      "actual_duration_days": 0
+    },
+    "metadata": {
+      "project": "Outlook",
+      "work_item_id": 9969371,
+      "work_item_url": "https://office.visualstudio.com/Outlook/_workitems/edit/9969371",
+      "complexity": "Q2_Low_Complexity",
+      "value": "Low_Value",
+      "extracted_date": "2025-11-12T02:31:17.023010"
+    }
+  },
+  {
+    "training_id": "ado_9969370",
+    "source": "azure_devops",
+    "context": {
+      "goal": "Compass IT Admin Roundtable (1/23/25)",
+      "description": "",
+      "work_item_type": "Task",
+      "priority": null,
+      "business_value": null,
+      "tags": [],
+      "assigned_to": "Jon LeCroy"
+    },
+    "plan": {
+      "task": {
+        "id": 9969370,
+        "title": "Compass IT Admin Roundtable (1/23/25)",
+        "estimated_hours": null,
+        "actual_hours": null,
+        "story_points": null,
+        "state": "Closed",
+        "created_date": "2025-04-01T21:30:58.88Z",
+        "closed_date": "2025-04-01T21:31:04.957Z"
+      },
+      "dependencies": [
+        {
+          "type": "parent",
+          "from": 9969370,
+          "to": 8519278
+        }
+      ]
+    },
+    "outcome": {
+      "work_item_id": 9969370,
+      "effort_variance": null,
+      "effort_outcome": "unknown",
+      "schedule_variance_days": null,
+      "schedule_outcome": "unknown",
+      "overall_outcome": "partial_success",
+      "actual_duration_days": 0
+    },
+    "metadata": {
+      "project": "Outlook",
+      "work_item_id": 9969370,
+      "work_item_url": "https://office.visualstudio.com/Outlook/_workitems/edit/9969370",
+      "complexity": "Q2_Low_Complexity",
+      "value": "Low_Value",
+      "extracted_date": "2025-11-12T02:31:17.023142"
+    }
+  },
+  {
+    "training_id": "ado_9969369",
+    "source": "azure_devops",
+    "context": {
+      "goal": "Compass IT Admin Roundtable (1/23/25)",
+      "description": "",
+      "work_item_type": "Task",
+      "priority": null,
+      "business_value": null,
+      "tags": [],
+      "assigned_to": "Jon LeCroy"
+    },
+    "plan": {
+      "task": {
+        "id": 9969369,
+        "title": "Compass IT Admin Roundtable (1/23/25)",
+        "estimated_hours": null,
+        "actual_hours": null,
+        "story_points": null,
+        "state": "Closed",
+        "created_date": "2025-04-01T21:30:31.69Z",
+        "closed_date": "2025-04-01T21:30:34.79Z"
+      },
+      "dependencies": [
+        {
+          "type": "parent",
+          "from": 9969369,
+          "to": 8519290
+        }
+      ]
+    },
+    "outcome": {
+      "work_item_id": 9969369,
+      "effort_variance": null,
+      "effort_outcome": "unknown",
+      "schedule_variance_days": null,
+      "schedule_outcome": "unknown",
+      "overall_outcome": "partial_success",
+      "actual_duration_days": 0
+    },
+    "metadata": {
+      "project": "Outlook",
+      "work_item_id": 9969369,
+      "work_item_url": "https://office.visualstudio.com/Outlook/_workitems/edit/9969369",
+      "complexity": "Q2_Low_Complexity",
+      "value": "Low_Value",
+      "extracted_date": "2025-11-12T02:31:17.023277"
+    }
+  },
+  {
+    "training_id": "ado_9969365",
+    "source": "azure_devops",
+    "context": {
+      "goal": "Compass IT Admin Roundtable (1/23/25)",
+      "description": "",
+      "work_item_type": "Task",
+      "priority": null,
+      "business_value": null,
+      "tags": [
+        "Monarch"
+      ],
+      "assigned_to": "Jon LeCroy"
+    },
+    "plan": {
+      "task": {
+        "id": 9969365,
+        "title": "Compass IT Admin Roundtable (1/23/25)",
+        "estimated_hours": null,
+        "actual_hours": null,
+        "story_points": null,
+        "state": "Closed",
+        "created_date": "2025-04-01T21:29:51.703Z",
+        "closed_date": "2025-04-01T21:29:55.15Z"
+      },
+      "dependencies": [
+        {
+          "type": "parent",
+          "from": 9969365,
+          "to": 5102889
+        }
+      ]
+    },
+    "outcome": {
+      "work_item_id": 9969365,
+      "effort_variance": null,
+      "effort_outcome": "unknown",
+      "schedule_variance_days": null,
+      "schedule_outcome": "unknown",
+      "overall_outcome": "partial_success",
+      "actual_duration_days": 0
+    },
+    "metadata": {
+      "project": "Outlook",
+      "work_item_id": 9969365,
+      "work_item_url": "https://office.visualstudio.com/Outlook/_workitems/edit/9969365",
+      "complexity": "Q2_Low_Complexity",
+      "value": "Low_Value",
+      "extracted_date": "2025-11-12T02:31:17.023407"
+    }
+  },
+  {
+    "training_id": "ado_5581951",
+    "source": "azure_devops",
+    "context": {
+      "goal": "Mobile Wireframe Kit",
+      "description": "<div><span style=\"display:inline !important;\">Low-fidelity wireframe mocks to be used for conceptual work.</span><br> </div>",
+      "work_item_type": "User Story",
+      "priority": null,
+      "business_value": null,
+      "tags": [
+        "Design"
+      ],
+      "assigned_to": null
+    },
+    "plan": {
+      "task": {
+        "id": 5581951,
+        "title": "Mobile Wireframe Kit",
+        "estimated_hours": null,
+        "actual_hours": null,
+        "story_points": null,
+        "state": "Closed",
+        "created_date": "2021-11-15T15:25:25.05Z",
+        "closed_date": "2025-01-10T21:39:01.673Z"
+      },
+      "dependencies": [
+        {
+          "type": "parent",
+          "from": 5581951,
+          "to": 5581955
+        }
+      ]
+    },
+    "outcome": {
+      "work_item_id": 5581951,
+      "effort_variance": null,
+      "effort_outcome": "unknown",
+      "schedule_variance_days": null,
+      "schedule_outcome": "unknown",
+      "overall_outcome": "partial_success",
+      "actual_duration_days": 1152
+    },
+    "metadata": {
+      "project": "Outlook",
+      "work_item_id": 5581951,
+      "work_item_url": "https://office.visualstudio.com/Outlook/_workitems/edit/5581951",
+      "complexity": "Q2_Low_Complexity",
+      "value": "Medium_Value",
+      "extracted_date": "2025-11-12T02:31:17.023541"
+    }
+  }
+]

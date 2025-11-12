@@ -1,0 +1,25 @@
+{
+  "total_examples": 10,
+  "complexity_distribution": {
+    "Q2_Low_Complexity": 10
+  },
+  "value_distribution": {
+    "Low_Value": 9,
+    "Medium_Value": 1
+  },
+  "outcome_distribution": {
+    "partial_success": 10
+  },
+  "work_item_types": {
+    "Task": 9,
+    "User Story": 1
+  },
+  "average_story_points": 0,
+  "average_effort_variance": 0,
+  "data_quality": {
+    "has_estimate": "0.0%",
+    "has_actual": "0.0%",
+    "has_dependencies": "100.0%",
+    "has_description": "20.0%"
+  }
+}

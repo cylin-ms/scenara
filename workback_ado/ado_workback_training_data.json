@@ -1,0 +1,2794 @@
+[
+  {
+    "training_id": "ado_9979157",
+    "source": "azure_devops",
+    "context": {
+      "goal": "FSI group 4/11/25",
+      "description": "<div><p style=\"font-size:16.799999px;margin:0px;\"><span style=\"font-family:TimesNewRomanPS-BoldMT;font-size:12px;\"><b>Key Topics:</b></span> </p><p style=\"font-size:16.799999px;margin:0px;\"><span style=\"font-family:&quot;Times New Roman&quot;;font-size:12px;\"><br></span> </p><p style=\"font-size:16.799999px;margin:0px;\"><span style=\"font-family:&quot;Times New Roman&quot;;font-size:12px;\"><br></span> </p><p style=\"font-size:16.799999px;margin:0px;\"><span style=\"font-family:&quot;Times New Roman&quot;;font-size:12px;\">-<span>&nbsp;</span></span><span style=\"font-family:TimesNewRomanPS-BoldMT;font-size:12px;\"><b>New Outlook Adoption:</b></span><span style=\"font-family:&quot;Times New Roman&quot;;font-size:12px;\">&nbsp;David Gorelik discussed the ongoing adoption of the new Outlook across various segments, including consumer, education, and commercial sectors. He highlighted the organic growth and the toggle feature that allows users to try out the new product alongside the classic version.<span>&nbsp;</span><a style=\"word-break:break-word;margin-top:0px;margin-bottom:0px;pointer-events:none;\">1</a>&nbsp;</span> </p><p style=\"font-size:16.799999px;margin:0px;\"><span style=\"font-family:&quot;Times New Roman&quot;;font-size:12px;\">-<span>&nbsp;</span></span><span style=\"font-family:TimesNewRomanPS-BoldMT;font-size:12px;\"><b>Feedback and NDA:</b></span><span style=\"font-family:&quot;Times New Roman&quot;;font-size:12px;\">&nbsp;Caitlin Hart emphasized the importance of feedback and the volatile nature of changes in industries like FSI. She encouraged participants to deliver feedback, which will be incorporated into the new Outlook. David Gorelik confirmed that all participants are under NDA, allowing for a more candid conversation.<span>&nbsp;</span><a style=\"word-break:break-word;margin-top:0px;margin-bottom:0px;pointer-events:none;\">2</a>&nbsp;</span> </p><p style=\"font-size:16.799999px;margin:0px;\"><span style=\"font-family:&quot;Times New Roman&quot;;font-size:12px;\">-<span>&nbsp;</span></span><span style=\"font-family:TimesNewRomanPS-BoldMT;font-size:12px;\"><b>New Outlook Features:</b></span><span style=\"font-family:&quot;Times New Roman&quot;;font-size:12px;\">&nbsp;David Gorelik presented the new Outlook features, including agility, consistency, and manageability. He explained how the new code base allows for faster updates and improvements, such as Copilot features and editorial content enhancements.<span>&nbsp;</span><a style=\"word-break:break-word;margin-top:0px;margin-bottom:0px;pointer-events:none;\">3</a>&nbsp;</span> </p><p style=\"font-size:16.799999px;margin:0px;\"><span style=\"font-family:&quot;Times New Roman&quot;;font-size:12px;\">-<span>&nbsp;</span></span><span style=\"font-family:TimesNewRomanPS-BoldMT;font-size:12px;\"><b>Shared Mailboxes:</b></span><span style=\"font-family:&quot;Times New Roman&quot;;font-size:12px;\">&nbsp;Caitlin Hart discussed the improvements in shared mailboxes, including the ability to see all shared items and manage settings like auto replies and categories. She highlighted the upcoming work to enhance the shared mailbox experience, making it better than the classic version.<span>&nbsp;</span><a style=\"word-break:break-word;margin-top:0px;margin-bottom:0px;pointer-events:none;\">4</a>&nbsp;</span> </p><p style=\"font-size:16.799999px;margin:0px;\"><span style=\"font-family:&quot;Times New Roman&quot;;font-size:12px;\">-<span>&nbsp;</span></span><span style=\"font-family:TimesNewRomanPS-BoldMT;font-size:12px;\"><b>Migration Planning:</b></span><span style=\"font-family:&quot;Times New Roman&quot;;font-size:12px;\">&nbsp;Caitlin Hart outlined the migration planning phases, including the opt-in phase starting in April 2026 and the cutover beyond 2029. She encouraged organizations to run pilot groups and control their own timing for migration to the new Outlook.<span>&nbsp;</span><a style=\"word-break:break-word;margin-top:0px;margin-bottom:0px;pointer-events:none;\">5</a>&nbsp;</span> </p><p style=\"font-size:16.799999px;margin:0px;\"><span style=\"font-family:&quot;Times New Roman&quot;;font-size:12px;\">-<span>&nbsp;</span></span><span style=\"font-family:TimesNewRomanPS-BoldMT;font-size:12px;\"><b>Add-ins Migration:</b></span><span style=\"font-family:&quot;Times New Roman&quot;;font-size:12px;\">&nbsp;Caitlin Hart addressed the migration of add-ins, focusing on security-related add-ins and partnering with top developers to bring COM add-in capabilities to the web platform. She recommended running pilots to identify necessary add-ins and provide feedback for further improvements.<span>&nbsp;</span><a style=\"word-break:break-word;margin-top:0px;margin-bottom:0px;pointer-events:none;\">6</a>&nbsp;</span> </p><p style=\"font-size:16.799999px;margin:0px;\"><span style=\"font-family:&quot;Times New Roman&quot;;font-size:12px;\">-<span>&nbsp;</span></span><span style=\"font-family:TimesNewRomanPS-BoldMT;font-size:12px;\"><b>Feedback Channels:</b></span><span style=\"font-family:&quot;Times New Roman&quot;;font-size:12px;\">&nbsp;Kelly raised concerns about the limitations of built-in feedback channels due to compliance policies. Caitlin Hart suggested using calls like this one, DCRs, and the product feedback page in the admin center to prioritize important features.<span>&nbsp;</span><a style=\"word-break:break-word;margin-top:0px;margin-bottom:0px;pointer-events:none;\">7</a>&nbsp;</span> </p><p style=\"font-size:16.799999px;margin:0px;\"><span style=\"font-family:&quot;Times New Roman&quot;;font-size:12px;\">-<span>&nbsp;</span></span><span style=\"font-family:TimesNewRomanPS-BoldMT;font-size:12px;\"><b>Security and Compliance:</b></span><span style=\"font-family:&quot;Times New Roman&quot;;font-size:12px;\">&nbsp;Mohun emphasized the importance of security and compliance features in the new Outlook, particularly for purview, DLP, and policy tips. Caitlin Hart assured that security is a high priority and recommended reviewing the new security white paper for detailed information.<span>&nbsp;</span><a style=\"word-break:break-word;margin-top:0px;margin-bottom:0px;pointer-events:none;\">8</a>&nbsp;</span> </p><p style=\"font-size:16.799999px;margin:0px;\"><span style=\"font-family:&quot;Times New Roman&quot;;font-size:12px;\">-<span>&nbsp;</span></span><span style=\"font-family:TimesNewRomanPS-BoldMT;font-size:12px;\"><b>Delegate Support:</b></span><span style=\"font-family:&quot;Times New Roman&quot;;font-size:12px;\">&nbsp;Jeffrey Frank inquired about delegate support and sync issues with mobile devices. Caitlin Hart explained that the new Outlook's architecture should resolve many of the sync issues and provided a resource overview for delegates.<span>&nbsp;</span><a style=\"word-break:break-word;margin-top:0px;margin-bottom:0px;pointer-events:none;\">9</a>&nbsp;</span> </p><p style=\"font-size:16.799999px;margin:0px;\"><span style=\"font-family:&quot;Times New Roman&quot;;font-size:12px;\">-<span>&nbsp;</span></span><span style=\"font-family:TimesNewRomanPS-BoldMT;font-size:12px;\"><b>Memory Consumption:</b></span><span style=\"font-family:&quot;Times New Roman&quot;;font-size:12px;\">&nbsp;Jeffrey Frank mentioned occasional high memory consumption warnings in the new Outlook. Caitlin Hart acknowledged the issue and assured that there is an ongoing work stream to improve memory performance and reduce such incidents.<span>&nbsp;</span><a style=\"word-break:break-word;margin-top:0px;margin-bottom:0px;pointer-events:none;\">10</a>&nbsp;</span> </p><br> </div>",
+      "work_item_type": "Task",
+      "priority": null,
+      "business_value": null,
+      "tags": [
+        "Monarch"
+      ],
+      "assigned_to": "Caitlin Hart"
+    },
+    "plan": {
+      "task": {
+        "id": 9979157,
+        "title": "FSI group 4/11/25",
+        "estimated_hours": null,
+        "actual_hours": null,
+        "story_points": null,
+        "state": "Closed",
+        "created_date": "2025-04-03T23:50:15.56Z",
+        "closed_date": "2025-04-12T01:39:56.333Z"
+      },
+      "dependencies": [
+        {
+          "type": "parent",
+          "from": 9979157,
+          "to": 8562710
+        }
+      ]
+    },
+    "outcome": {
+      "work_item_id": 9979157,
+      "effort_variance": null,
+      "effort_outcome": "unknown",
+      "schedule_variance_days": null,
+      "schedule_outcome": "unknown",
+      "overall_outcome": "partial_success",
+      "actual_duration_days": 8
+    },
+    "metadata": {
+      "project": "Outlook",
+      "work_item_id": 9979157,
+      "work_item_url": "https://office.visualstudio.com/Outlook/_workitems/edit/9979157",
+      "complexity": "Q2_Low_Complexity",
+      "value": "Low_Value",
+      "extracted_date": "2025-11-11T20:38:27.624251"
+    }
+  },
+  {
+    "training_id": "ado_9969328",
+    "source": "azure_devops",
+    "context": {
+      "goal": "Compass IT Admin Roundtable (1/23/25)",
+      "description": "",
+      "work_item_type": "Task",
+      "priority": null,
+      "business_value": null,
+      "tags": [
+        "Monarch"
+      ],
+      "assigned_to": "Jon LeCroy"
+    },
+    "plan": {
+      "task": {
+        "id": 9969328,
+        "title": "Compass IT Admin Roundtable (1/23/25)",
+        "estimated_hours": null,
+        "actual_hours": null,
+        "story_points": null,
+        "state": "Closed",
+        "created_date": "2025-04-01T21:21:25.84Z",
+        "closed_date": "2025-04-01T21:35:02.943Z"
+      },
+      "dependencies": [
+        {
+          "type": "parent",
+          "from": 9969328,
+          "to": 9969286
+        }
+      ]
+    },
+    "outcome": {
+      "work_item_id": 9969328,
+      "effort_variance": null,
+      "effort_outcome": "unknown",
+      "schedule_variance_days": null,
+      "schedule_outcome": "unknown",
+      "overall_outcome": "partial_success",
+      "actual_duration_days": 0
+    },
+    "metadata": {
+      "project": "Outlook",
+      "work_item_id": 9969328,
+      "work_item_url": "https://office.visualstudio.com/Outlook/_workitems/edit/9969328",
+      "complexity": "Q2_Low_Complexity",
+      "value": "Low_Value",
+      "extracted_date": "2025-11-11T20:38:27.624524"
+    }
+  },
+  {
+    "training_id": "ado_9969359",
+    "source": "azure_devops",
+    "context": {
+      "goal": "Compass IT Admin Roundtable (1/23/25)",
+      "description": "",
+      "work_item_type": "Task",
+      "priority": null,
+      "business_value": null,
+      "tags": [],
+      "assigned_to": "Jon LeCroy"
+    },
+    "plan": {
+      "task": {
+        "id": 9969359,
+        "title": "Compass IT Admin Roundtable (1/23/25)",
+        "estimated_hours": null,
+        "actual_hours": null,
+        "story_points": null,
+        "state": "Closed",
+        "created_date": "2025-04-01T21:28:49.297Z",
+        "closed_date": "2025-04-01T21:34:57.917Z"
+      },
+      "dependencies": [
+        {
+          "type": "parent",
+          "from": 9969359,
+          "to": 5179569
+        }
+      ]
+    },
+    "outcome": {
+      "work_item_id": 9969359,
+      "effort_variance": null,
+      "effort_outcome": "unknown",
+      "schedule_variance_days": null,
+      "schedule_outcome": "unknown",
+      "overall_outcome": "partial_success",
+      "actual_duration_days": 0
+    },
+    "metadata": {
+      "project": "Outlook",
+      "work_item_id": 9969359,
+      "work_item_url": "https://office.visualstudio.com/Outlook/_workitems/edit/9969359",
+      "complexity": "Q2_Low_Complexity",
+      "value": "Low_Value",
+      "extracted_date": "2025-11-11T20:38:27.624757"
+    }
+  },
+  {
+    "training_id": "ado_9969392",
+    "source": "azure_devops",
+    "context": {
+      "goal": "Compass IT Admin Roundtable (1/23/25)",
+      "description": "",
+      "work_item_type": "Task",
+      "priority": null,
+      "business_value": null,
+      "tags": [
+        "Monarch"
+      ],
+      "assigned_to": "Jon LeCroy"
+    },
+    "plan": {
+      "task": {
+        "id": 9969392,
+        "title": "Compass IT Admin Roundtable (1/23/25)",
+        "estimated_hours": null,
+        "actual_hours": null,
+        "story_points": null,
+        "state": "Closed",
+        "created_date": "2025-04-01T21:32:59.823Z",
+        "closed_date": "2025-04-01T21:33:02.48Z"
+      },
+      "dependencies": [
+        {
+          "type": "parent",
+          "from": 9969392,
+          "to": 9969389
+        }
+      ]
+    },
+    "outcome": {
+      "work_item_id": 9969392,
+      "effort_variance": null,
+      "effort_outcome": "unknown",
+      "schedule_variance_days": null,
+      "schedule_outcome": "unknown",
+      "overall_outcome": "partial_success",
+      "actual_duration_days": 0
+    },
+    "metadata": {
+      "project": "Outlook",
+      "work_item_id": 9969392,
+      "work_item_url": "https://office.visualstudio.com/Outlook/_workitems/edit/9969392",
+      "complexity": "Q2_Low_Complexity",
+      "value": "Low_Value",
+      "extracted_date": "2025-11-11T20:38:27.624977"
+    }
+  },
+  {
+    "training_id": "ado_9969376",
+    "source": "azure_devops",
+    "context": {
+      "goal": "Compass IT Admin Roundtable (1/23/25)",
+      "description": "",
+      "work_item_type": "Task",
+      "priority": null,
+      "business_value": null,
+      "tags": [],
+      "assigned_to": "Jon LeCroy"
+    },
+    "plan": {
+      "task": {
+        "id": 9969376,
+        "title": "Compass IT Admin Roundtable (1/23/25)",
+        "estimated_hours": null,
+        "actual_hours": null,
+        "story_points": null,
+        "state": "Closed",
+        "created_date": "2025-04-01T21:31:56.563Z",
+        "closed_date": "2025-04-01T21:32:01.9Z"
+      },
+      "dependencies": [
+        {
+          "type": "parent",
+          "from": 9969376,
+          "to": 8519286
+        }
+      ]
+    },
+    "outcome": {
+      "work_item_id": 9969376,
+      "effort_variance": null,
+      "effort_outcome": "unknown",
+      "schedule_variance_days": null,
+      "schedule_outcome": "unknown",
+      "overall_outcome": "partial_success",
+      "actual_duration_days": 0
+    },
+    "metadata": {
+      "project": "Outlook",
+      "work_item_id": 9969376,
+      "work_item_url": "https://office.visualstudio.com/Outlook/_workitems/edit/9969376",
+      "complexity": "Q2_Low_Complexity",
+      "value": "Low_Value",
+      "extracted_date": "2025-11-11T20:38:27.625190"
+    }
+  },
+  {
+    "training_id": "ado_9969371",
+    "source": "azure_devops",
+    "context": {
+      "goal": "Compass IT Admin Roundtable (1/23/25)",
+      "description": "",
+      "work_item_type": "Task",
+      "priority": null,
+      "business_value": null,
+      "tags": [
+        "Monarch"
+      ],
+      "assigned_to": "Jon LeCroy"
+    },
+    "plan": {
+      "task": {
+        "id": 9969371,
+        "title": "Compass IT Admin Roundtable (1/23/25)",
+        "estimated_hours": null,
+        "actual_hours": null,
+        "story_points": null,
+        "state": "Closed",
+        "created_date": "2025-04-01T21:31:29.277Z",
+        "closed_date": "2025-04-01T21:31:32.263Z"
+      },
+      "dependencies": [
+        {
+          "type": "parent",
+          "from": 9969371,
+          "to": 8519280
+        }
+      ]
+    },
+    "outcome": {
+      "work_item_id": 9969371,
+      "effort_variance": null,
+      "effort_outcome": "unknown",
+      "schedule_variance_days": null,
+      "schedule_outcome": "unknown",
+      "overall_outcome": "partial_success",
+      "actual_duration_days": 0
+    },
+    "metadata": {
+      "project": "Outlook",
+      "work_item_id": 9969371,
+      "work_item_url": "https://office.visualstudio.com/Outlook/_workitems/edit/9969371",
+      "complexity": "Q2_Low_Complexity",
+      "value": "Low_Value",
+      "extracted_date": "2025-11-11T20:38:27.625405"
+    }
+  },
+  {
+    "training_id": "ado_9969370",
+    "source": "azure_devops",
+    "context": {
+      "goal": "Compass IT Admin Roundtable (1/23/25)",
+      "description": "",
+      "work_item_type": "Task",
+      "priority": null,
+      "business_value": null,
+      "tags": [],
+      "assigned_to": "Jon LeCroy"
+    },
+    "plan": {
+      "task": {
+        "id": 9969370,
+        "title": "Compass IT Admin Roundtable (1/23/25)",
+        "estimated_hours": null,
+        "actual_hours": null,
+        "story_points": null,
+        "state": "Closed",
+        "created_date": "2025-04-01T21:30:58.88Z",
+        "closed_date": "2025-04-01T21:31:04.957Z"
+      },
+      "dependencies": [
+        {
+          "type": "parent",
+          "from": 9969370,
+          "to": 8519278
+        }
+      ]
+    },
+    "outcome": {
+      "work_item_id": 9969370,
+      "effort_variance": null,
+      "effort_outcome": "unknown",
+      "schedule_variance_days": null,
+      "schedule_outcome": "unknown",
+      "overall_outcome": "partial_success",
+      "actual_duration_days": 0
+    },
+    "metadata": {
+      "project": "Outlook",
+      "work_item_id": 9969370,
+      "work_item_url": "https://office.visualstudio.com/Outlook/_workitems/edit/9969370",
+      "complexity": "Q2_Low_Complexity",
+      "value": "Low_Value",
+      "extracted_date": "2025-11-11T20:38:27.625621"
+    }
+  },
+  {
+    "training_id": "ado_9969369",
+    "source": "azure_devops",
+    "context": {
+      "goal": "Compass IT Admin Roundtable (1/23/25)",
+      "description": "",
+      "work_item_type": "Task",
+      "priority": null,
+      "business_value": null,
+      "tags": [],
+      "assigned_to": "Jon LeCroy"
+    },
+    "plan": {
+      "task": {
+        "id": 9969369,
+        "title": "Compass IT Admin Roundtable (1/23/25)",
+        "estimated_hours": null,
+        "actual_hours": null,
+        "story_points": null,
+        "state": "Closed",
+        "created_date": "2025-04-01T21:30:31.69Z",
+        "closed_date": "2025-04-01T21:30:34.79Z"
+      },
+      "dependencies": [
+        {
+          "type": "parent",
+          "from": 9969369,
+          "to": 8519290
+        }
+      ]
+    },
+    "outcome": {
+      "work_item_id": 9969369,
+      "effort_variance": null,
+      "effort_outcome": "unknown",
+      "schedule_variance_days": null,
+      "schedule_outcome": "unknown",
+      "overall_outcome": "partial_success",
+      "actual_duration_days": 0
+    },
+    "metadata": {
+      "project": "Outlook",
+      "work_item_id": 9969369,
+      "work_item_url": "https://office.visualstudio.com/Outlook/_workitems/edit/9969369",
+      "complexity": "Q2_Low_Complexity",
+      "value": "Low_Value",
+      "extracted_date": "2025-11-11T20:38:27.625826"
+    }
+  },
+  {
+    "training_id": "ado_9969365",
+    "source": "azure_devops",
+    "context": {
+      "goal": "Compass IT Admin Roundtable (1/23/25)",
+      "description": "",
+      "work_item_type": "Task",
+      "priority": null,
+      "business_value": null,
+      "tags": [
+        "Monarch"
+      ],
+      "assigned_to": "Jon LeCroy"
+    },
+    "plan": {
+      "task": {
+        "id": 9969365,
+        "title": "Compass IT Admin Roundtable (1/23/25)",
+        "estimated_hours": null,
+        "actual_hours": null,
+        "story_points": null,
+        "state": "Closed",
+        "created_date": "2025-04-01T21:29:51.703Z",
+        "closed_date": "2025-04-01T21:29:55.15Z"
+      },
+      "dependencies": [
+        {
+          "type": "parent",
+          "from": 9969365,
+          "to": 5102889
+        }
+      ]
+    },
+    "outcome": {
+      "work_item_id": 9969365,
+      "effort_variance": null,
+      "effort_outcome": "unknown",
+      "schedule_variance_days": null,
+      "schedule_outcome": "unknown",
+      "overall_outcome": "partial_success",
+      "actual_duration_days": 0
+    },
+    "metadata": {
+      "project": "Outlook",
+      "work_item_id": 9969365,
+      "work_item_url": "https://office.visualstudio.com/Outlook/_workitems/edit/9969365",
+      "complexity": "Q2_Low_Complexity",
+      "value": "Low_Value",
+      "extracted_date": "2025-11-11T20:38:27.626035"
+    }
+  },
+  {
+    "training_id": "ado_5581951",
+    "source": "azure_devops",
+    "context": {
+      "goal": "Mobile Wireframe Kit",
+      "description": "<div><span style=\"display:inline !important;\">Low-fidelity wireframe mocks to be used for conceptual work.</span><br> </div>",
+      "work_item_type": "User Story",
+      "priority": null,
+      "business_value": null,
+      "tags": [
+        "Design"
+      ],
+      "assigned_to": null
+    },
+    "plan": {
+      "task": {
+        "id": 5581951,
+        "title": "Mobile Wireframe Kit",
+        "estimated_hours": null,
+        "actual_hours": null,
+        "story_points": null,
+        "state": "Closed",
+        "created_date": "2021-11-15T15:25:25.05Z",
+        "closed_date": "2025-01-10T21:39:01.673Z"
+      },
+      "dependencies": [
+        {
+          "type": "parent",
+          "from": 5581951,
+          "to": 5581955
+        }
+      ]
+    },
+    "outcome": {
+      "work_item_id": 5581951,
+      "effort_variance": null,
+      "effort_outcome": "unknown",
+      "schedule_variance_days": null,
+      "schedule_outcome": "unknown",
+      "overall_outcome": "partial_success",
+      "actual_duration_days": 1152
+    },
+    "metadata": {
+      "project": "Outlook",
+      "work_item_id": 5581951,
+      "work_item_url": "https://office.visualstudio.com/Outlook/_workitems/edit/5581951",
+      "complexity": "Q2_Low_Complexity",
+      "value": "Low_Value",
+      "extracted_date": "2025-11-11T20:38:27.626245"
+    }
+  },
+  {
+    "training_id": "ado_5581952",
+    "source": "azure_devops",
+    "context": {
+      "goal": "Teaching Framework Documentation",
+      "description": "",
+      "work_item_type": "User Story",
+      "priority": null,
+      "business_value": null,
+      "tags": [
+        "Design",
+        " Documentation"
+      ],
+      "assigned_to": null
+    },
+    "plan": {
+      "task": {
+        "id": 5581952,
+        "title": "Teaching Framework Documentation",
+        "estimated_hours": null,
+        "actual_hours": null,
+        "story_points": null,
+        "state": "Closed",
+        "created_date": "2021-11-15T15:29:22.273Z",
+        "closed_date": "2025-01-10T21:39:01.673Z"
+      },
+      "dependencies": [
+        {
+          "type": "parent",
+          "from": 5581952,
+          "to": 5581955
+        }
+      ]
+    },
+    "outcome": {
+      "work_item_id": 5581952,
+      "effort_variance": null,
+      "effort_outcome": "unknown",
+      "schedule_variance_days": null,
+      "schedule_outcome": "unknown",
+      "overall_outcome": "partial_success",
+      "actual_duration_days": 1152
+    },
+    "metadata": {
+      "project": "Outlook",
+      "work_item_id": 5581952,
+      "work_item_url": "https://office.visualstudio.com/Outlook/_workitems/edit/5581952",
+      "complexity": "Q2_Low_Complexity",
+      "value": "Low_Value",
+      "extracted_date": "2025-11-11T20:38:27.626462"
+    }
+  },
+  {
+    "training_id": "ado_5581954",
+    "source": "azure_devops",
+    "context": {
+      "goal": "Define process for kit/component updates",
+      "description": "",
+      "work_item_type": "User Story",
+      "priority": null,
+      "business_value": null,
+      "tags": [
+        "Copper (FY22H2)",
+        " Design"
+      ],
+      "assigned_to": "Jenna Peppler"
+    },
+    "plan": {
+      "task": {
+        "id": 5581954,
+        "title": "Define process for kit/component updates",
+        "estimated_hours": null,
+        "actual_hours": null,
+        "story_points": null,
+        "state": "Closed",
+        "created_date": "2021-11-15T15:30:38.88Z",
+        "closed_date": "2025-01-10T21:39:01.673Z"
+      },
+      "dependencies": [
+        {
+          "type": "parent",
+          "from": 5581954,
+          "to": 5581955
+        }
+      ]
+    },
+    "outcome": {
+      "work_item_id": 5581954,
+      "effort_variance": null,
+      "effort_outcome": "unknown",
+      "schedule_variance_days": null,
+      "schedule_outcome": "unknown",
+      "overall_outcome": "partial_success",
+      "actual_duration_days": 1152
+    },
+    "metadata": {
+      "project": "Outlook",
+      "work_item_id": 5581954,
+      "work_item_url": "https://office.visualstudio.com/Outlook/_workitems/edit/5581954",
+      "complexity": "Q2_Low_Complexity",
+      "value": "Low_Value",
+      "extracted_date": "2025-11-11T20:38:27.626682"
+    }
+  },
+  {
+    "training_id": "ado_5581957",
+    "source": "azure_devops",
+    "context": {
+      "goal": "Theming Documentation & Guidelines",
+      "description": "",
+      "work_item_type": "User Story",
+      "priority": null,
+      "business_value": null,
+      "tags": [
+        "Copper (FY22H2)",
+        " Design",
+        " Documentation"
+      ],
+      "assigned_to": null
+    },
+    "plan": {
+      "task": {
+        "id": 5581957,
+        "title": "Theming Documentation & Guidelines",
+        "estimated_hours": null,
+        "actual_hours": null,
+        "story_points": null,
+        "state": "Closed",
+        "created_date": "2021-11-15T15:31:57.95Z",
+        "closed_date": "2025-01-10T21:39:01.673Z"
+      },
+      "dependencies": [
+        {
+          "type": "parent",
+          "from": 5581957,
+          "to": 5581955
+        }
+      ]
+    },
+    "outcome": {
+      "work_item_id": 5581957,
+      "effort_variance": null,
+      "effort_outcome": "unknown",
+      "schedule_variance_days": null,
+      "schedule_outcome": "unknown",
+      "overall_outcome": "partial_success",
+      "actual_duration_days": 1152
+    },
+    "metadata": {
+      "project": "Outlook",
+      "work_item_id": 5581957,
+      "work_item_url": "https://office.visualstudio.com/Outlook/_workitems/edit/5581957",
+      "complexity": "Q2_Low_Complexity",
+      "value": "Low_Value",
+      "extracted_date": "2025-11-11T20:38:27.626903"
+    }
+  },
+  {
+    "training_id": "ado_5581963",
+    "source": "azure_devops",
+    "context": {
+      "goal": "Define Density Guidelines",
+      "description": "",
+      "work_item_type": "User Story",
+      "priority": null,
+      "business_value": null,
+      "tags": [
+        "Copper (FY22H2)",
+        " Design",
+        " Documentation"
+      ],
+      "assigned_to": "Jenna Peppler"
+    },
+    "plan": {
+      "task": {
+        "id": 5581963,
+        "title": "Define Density Guidelines",
+        "estimated_hours": null,
+        "actual_hours": null,
+        "story_points": null,
+        "state": "Closed",
+        "created_date": "2021-11-15T15:35:05.803Z",
+        "closed_date": "2025-01-10T21:39:01.673Z"
+      },
+      "dependencies": [
+        {
+          "type": "parent",
+          "from": 5581963,
+          "to": 5581955
+        }
+      ]
+    },
+    "outcome": {
+      "work_item_id": 5581963,
+      "effort_variance": null,
+      "effort_outcome": "unknown",
+      "schedule_variance_days": null,
+      "schedule_outcome": "unknown",
+      "overall_outcome": "partial_success",
+      "actual_duration_days": 1152
+    },
+    "metadata": {
+      "project": "Outlook",
+      "work_item_id": 5581963,
+      "work_item_url": "https://office.visualstudio.com/Outlook/_workitems/edit/5581963",
+      "complexity": "Q2_Low_Complexity",
+      "value": "Low_Value",
+      "extracted_date": "2025-11-11T20:38:27.627115"
+    }
+  },
+  {
+    "training_id": "ado_5498638",
+    "source": "azure_devops",
+    "context": {
+      "goal": "Base Calendar",
+      "description": "",
+      "work_item_type": "Task",
+      "priority": null,
+      "business_value": null,
+      "tags": [
+        "Copper (FY22H2)",
+        " Design",
+        " UI Kit"
+      ],
+      "assigned_to": "Hao Liu (Microsoft Teams Designer)"
+    },
+    "plan": {
+      "task": {
+        "id": 5498638,
+        "title": "Base Calendar",
+        "estimated_hours": null,
+        "actual_hours": null,
+        "story_points": null,
+        "state": "Closed",
+        "created_date": "2021-10-15T08:36:12.307Z",
+        "closed_date": "2025-01-10T21:39:01.673Z"
+      },
+      "dependencies": [
+        {
+          "type": "child",
+          "from": 5498638,
+          "to": 5498739
+        },
+        {
+          "type": "child",
+          "from": 5498638,
+          "to": 5498652
+        },
+        {
+          "type": "child",
+          "from": 5498638,
+          "to": 5498649
+        },
+        {
+          "type": "child",
+          "from": 5498638,
+          "to": 5498647
+        },
+        {
+          "type": "child",
+          "from": 5498638,
+          "to": 5498744
+        },
+        {
+          "type": "child",
+          "from": 5498638,
+          "to": 5498646
+        },
+        {
+          "type": "child",
+          "from": 5498638,
+          "to": 5498650
+        },
+        {
+          "type": "child",
+          "from": 5498638,
+          "to": 5498645
+        },
+        {
+          "type": "child",
+          "from": 5498638,
+          "to": 5498648
+        },
+        {
+          "type": "child",
+          "from": 5498638,
+          "to": 5498653
+        },
+        {
+          "type": "parent",
+          "from": 5498638,
+          "to": 5276585
+        },
+        {
+          "type": "child",
+          "from": 5498638,
+          "to": 5498651
+        }
+      ]
+    },
+    "outcome": {
+      "work_item_id": 5498638,
+      "effort_variance": null,
+      "effort_outcome": "unknown",
+      "schedule_variance_days": null,
+      "schedule_outcome": "unknown",
+      "overall_outcome": "partial_success",
+      "actual_duration_days": 1183
+    },
+    "metadata": {
+      "project": "Outlook",
+      "work_item_id": 5498638,
+      "work_item_url": "https://office.visualstudio.com/Outlook/_workitems/edit/5498638",
+      "complexity": "Q2_Low_Complexity",
+      "value": "Low_Value",
+      "extracted_date": "2025-11-11T20:38:27.627353"
+    }
+  },
+  {
+    "training_id": "ado_5498639",
+    "source": "azure_devops",
+    "context": {
+      "goal": "Create/Edit Event",
+      "description": "",
+      "work_item_type": "Task",
+      "priority": null,
+      "business_value": null,
+      "tags": [
+        "Copper (FY22H2)",
+        " Design",
+        " UI Kit"
+      ],
+      "assigned_to": "Hao Liu (Microsoft Teams Designer)"
+    },
+    "plan": {
+      "task": {
+        "id": 5498639,
+        "title": "Create/Edit Event",
+        "estimated_hours": null,
+        "actual_hours": null,
+        "story_points": null,
+        "state": "Closed",
+        "created_date": "2021-10-15T08:36:44.573Z",
+        "closed_date": "2025-01-10T21:39:01.673Z"
+      },
+      "dependencies": [
+        {
+          "type": "parent",
+          "from": 5498639,
+          "to": 5276585
+        }
+      ]
+    },
+    "outcome": {
+      "work_item_id": 5498639,
+      "effort_variance": null,
+      "effort_outcome": "unknown",
+      "schedule_variance_days": null,
+      "schedule_outcome": "unknown",
+      "overall_outcome": "partial_success",
+      "actual_duration_days": 1183
+    },
+    "metadata": {
+      "project": "Outlook",
+      "work_item_id": 5498639,
+      "work_item_url": "https://office.visualstudio.com/Outlook/_workitems/edit/5498639",
+      "complexity": "Q2_Low_Complexity",
+      "value": "Low_Value",
+      "extracted_date": "2025-11-11T20:38:27.627561"
+    }
+  },
+  {
+    "training_id": "ado_5498640",
+    "source": "azure_devops",
+    "context": {
+      "goal": "View Event",
+      "description": "",
+      "work_item_type": "Task",
+      "priority": null,
+      "business_value": null,
+      "tags": [
+        "Copper (FY22H2)",
+        " Design",
+        " UI Kit"
+      ],
+      "assigned_to": "Hao Liu (Microsoft Teams Designer)"
+    },
+    "plan": {
+      "task": {
+        "id": 5498640,
+        "title": "View Event",
+        "estimated_hours": null,
+        "actual_hours": null,
+        "story_points": null,
+        "state": "Closed",
+        "created_date": "2021-10-15T08:36:57.29Z",
+        "closed_date": "2025-01-10T21:39:01.673Z"
+      },
+      "dependencies": [
+        {
+          "type": "parent",
+          "from": 5498640,
+          "to": 5276585
+        }
+      ]
+    },
+    "outcome": {
+      "work_item_id": 5498640,
+      "effort_variance": null,
+      "effort_outcome": "unknown",
+      "schedule_variance_days": null,
+      "schedule_outcome": "unknown",
+      "overall_outcome": "partial_success",
+      "actual_duration_days": 1183
+    },
+    "metadata": {
+      "project": "Outlook",
+      "work_item_id": 5498640,
+      "work_item_url": "https://office.visualstudio.com/Outlook/_workitems/edit/5498640",
+      "complexity": "Q2_Low_Complexity",
+      "value": "Low_Value",
+      "extracted_date": "2025-11-11T20:38:27.627765"
+    }
+  },
+  {
+    "training_id": "ado_5498641",
+    "source": "azure_devops",
+    "context": {
+      "goal": "RSVP Flow",
+      "description": "",
+      "work_item_type": "Task",
+      "priority": null,
+      "business_value": null,
+      "tags": [
+        "Design",
+        " UI Kit"
+      ],
+      "assigned_to": "Hao Liu (Microsoft Teams Designer)"
+    },
+    "plan": {
+      "task": {
+        "id": 5498641,
+        "title": "RSVP Flow",
+        "estimated_hours": null,
+        "actual_hours": null,
+        "story_points": null,
+        "state": "Closed",
+        "created_date": "2021-10-15T08:37:08.833Z",
+        "closed_date": "2025-01-10T21:39:01.673Z"
+      },
+      "dependencies": [
+        {
+          "type": "parent",
+          "from": 5498641,
+          "to": 5276585
+        }
+      ]
+    },
+    "outcome": {
+      "work_item_id": 5498641,
+      "effort_variance": null,
+      "effort_outcome": "unknown",
+      "schedule_variance_days": null,
+      "schedule_outcome": "unknown",
+      "overall_outcome": "partial_success",
+      "actual_duration_days": 1183
+    },
+    "metadata": {
+      "project": "Outlook",
+      "work_item_id": 5498641,
+      "work_item_url": "https://office.visualstudio.com/Outlook/_workitems/edit/5498641",
+      "complexity": "Q2_Low_Complexity",
+      "value": "Low_Value",
+      "extracted_date": "2025-11-11T20:38:27.627977"
+    }
+  },
+  {
+    "training_id": "ado_5498645",
+    "source": "azure_devops",
+    "context": {
+      "goal": "Event Cell Agenda (Component)",
+      "description": "<div style=\"box-sizing:border-box;\">Status:&nbsp;<font color=\"#de6a19\" style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;color:rgb(200, 38, 19);\"><b style=\"box-sizing:border-box;\">Needs Major Fixes</b></span></font> </div><div style=\"box-sizing:border-box;\"><br> </div><div style=\"box-sizing:border-box;\"><b><u>Variants:</u></b> </div><div style=\"box-sizing:border-box;\"><ul style=\"box-sizing:border-box;padding:0px 0px 0px 40px;\"><li style=\"box-sizing:border-box;\">All Day <i>vs</i> Time + Duration </li><li style=\"box-sizing:border-box;\">Small dot vs Icon&nbsp; </li><li style=\"box-sizing:border-box;\">Attendees on/off&nbsp; </li><li style=\"box-sizing:border-box;\">Up Next indicator on/off <br><img src=\"https://office.visualstudio.com/a969624d-6e42-421f-a49d-8c50e624b3ef/_apis/wit/attachments/30c133b9-510d-447f-9e99-d584cceeb5a4?fileName=image.png\" alt=Image width=245 height=89 style=\"width:245px;\"><br><br> </li><li style=\"box-sizing:border-box;\">Location on/off <br><img src=\"https://office.visualstudio.com/a969624d-6e42-421f-a49d-8c50e624b3ef/_apis/wit/attachments/ea873d36-96b8-4227-9eea-3add550fa506?fileName=image.png\" alt=Image width=246 height=222 style=\"width:246px;\"><br><br> </li><li style=\"box-sizing:border-box;\">Title - Support multi line/expandable to x2 lines </li><li style=\"box-sizing:border-box;\">Long strings and Truncation<br><img src=\"https://office.visualstudio.com/a969624d-6e42-421f-a49d-8c50e624b3ef/_apis/wit/attachments/9c58b24c-6fe2-4b97-8bd5-fd6b108a1cfc?fileName=image.png\" alt=Image style=\"width:246px;\" width=246 height=199><br><br> </li><li style=\"box-sizing:border-box;\">&quot;No Event&quot; empty state </li><li style=\"box-sizing:border-box;\">Weather Off/On<br><img src=\"https://office.visualstudio.com/a969624d-6e42-421f-a49d-8c50e624b3ef/_apis/wit/attachments/d4fcebf3-e5d9-40f1-9120-89f67cf5940c?fileName=image.png\" alt=Image width=243 height=86 style=\"width:243px;\"><br><br> </li><li style=\"box-sizing:border-box;\">More than +5 attendees </li><li style=\"box-sizing:border-box;\">Repeat / No Repeat<br><img src=\"https://office.visualstudio.com/a969624d-6e42-421f-a49d-8c50e624b3ef/_apis/wit/attachments/ce3cf0b5-96f7-4020-807c-a5e96c6e5e51?fileName=image.png\" alt=Image width=246 height=135 style=\"width:246px;\"><br> </li> </ul><div><span style=\"color:rgb(111, 192, 64);\"><b><i>See more in-product examples in attached images (iPhone X + iPhone 12)</i></b></span> </div><div><br><br> </div> </div><div style=\"box-sizing:border-box;\"><b><u>Checklist: </u></b> </div><div style=\"box-sizing:border-box;\"><ul style=\"box-sizing:border-box;padding:0px 0px 0px 40px;\"><li style=\"box-sizing:border-box;\">Light + Dark mode </li><li style=\"box-sizing:border-box;\">Typography styles<span style=\"box-sizing:border-box;display:inline !important;\"><span style=\"box-sizing:border-box;\">&nbsp;</span>correctly linked</span> </li><li style=\"box-sizing:border-box;\">Colour styles correctly linked </li><li style=\"box-sizing:border-box;\">Icons/Imagery correctly linked<span style=\"box-sizing:border-box;\">&nbsp;</span><i style=\"box-sizing:border-box;\">(where applicable)</i> </li><li style=\"box-sizing:border-box;\">Follows 4px Grid </li><li style=\"box-sizing:border-box;\">Re-sizeable? </li><li style=\"box-sizing:border-box;\">Merge branch&nbsp;<i style=\"box-sizing:border-box;\">(where applicable)</i> </li><li style=\"box-sizing:border-box;\">Update Changelog + Publish </li> </ul> </div><br>",
+      "work_item_type": "Task",
+      "priority": null,
+      "business_value": null,
+      "tags": [
+        "Component",
+        " Design"
+      ],
+      "assigned_to": "Hao Liu (Microsoft Teams Designer)"
+    },
+    "plan": {
+      "task": {
+        "id": 5498645,
+        "title": "Event Cell Agenda (Component)",
+        "estimated_hours": null,
+        "actual_hours": null,
+        "story_points": null,
+        "state": "Closed",
+        "created_date": "2021-10-15T08:38:59.083Z",
+        "closed_date": "2025-01-10T21:39:01.673Z"
+      },
+      "dependencies": [
+        {
+          "type": "parent",
+          "from": 5498645,
+          "to": 5498638
+        }
+      ]
+    },
+    "outcome": {
+      "work_item_id": 5498645,
+      "effort_variance": null,
+      "effort_outcome": "unknown",
+      "schedule_variance_days": null,
+      "schedule_outcome": "unknown",
+      "overall_outcome": "partial_success",
+      "actual_duration_days": 1183
+    },
+    "metadata": {
+      "project": "Outlook",
+      "work_item_id": 5498645,
+      "work_item_url": "https://office.visualstudio.com/Outlook/_workitems/edit/5498645",
+      "complexity": "Q2_Low_Complexity",
+      "value": "Low_Value",
+      "extracted_date": "2025-11-11T20:38:27.628199"
+    }
+  },
+  {
+    "training_id": "ado_5498646",
+    "source": "azure_devops",
+    "context": {
+      "goal": "Event Cell Day (Component)",
+      "description": "<div style=\"box-sizing:border-box;\">Status:&nbsp;<font color=\"#de6a19\" style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;color:rgb(200, 38, 19);\"><b style=\"box-sizing:border-box;\">Needs Major Fixes</b></span></font> </div><div style=\"box-sizing:border-box;\"><br> </div><div style=\"box-sizing:border-box;\"><b><u>Variants: </u></b> </div><div style=\"box-sizing:border-box;\"><ul style=\"box-sizing:border-box;padding:0px 0px 0px 40px;\"><li style=\"box-sizing:border-box;\">Single Day vs 3-Day Size<div style=\"box-sizing:border-box;text-align:start;\"> </div> </li><li>Location on/off </li><li>Attendees on/off<span>&nbsp;<br></span><img src=\"https://office.visualstudio.com/a969624d-6e42-421f-a49d-8c50e624b3ef/_apis/wit/attachments/1b6719e9-7a37-4233-afb6-d34209f11d1c?fileName=image.png\" alt=Image width=260 height=149 style=\"width:260px;\"><span>&nbsp; &nbsp;</span><img src=\"https://office.visualstudio.com/a969624d-6e42-421f-a49d-8c50e624b3ef/_apis/wit/attachments/56420a32-e824-41a8-8515-3a0ddbb91b89?fileName=image.png\" alt=Image width=298 height=133 style=\"width:298px;\"><br><br> </li><li>Long titles / Multi Line / Truncated text </li><li>Card Sizing: 30m, 1 hour, etc<br><img src=\"https://office.visualstudio.com/a969624d-6e42-421f-a49d-8c50e624b3ef/_apis/wit/attachments/f0faeba6-2976-42e6-bc49-8cefd2ea236a?fileName=image.png\" alt=Image width=261 height=136 style=\"width:261px;\"><span>&nbsp; &nbsp;</span><img src=\"https://office.visualstudio.com/a969624d-6e42-421f-a49d-8c50e624b3ef/_apis/wit/attachments/20dd2ee8-27c2-4840-ae0e-da68b28c3b10?fileName=image.png\" alt=Image width=274 height=139 style=\"width:274px;\"><br><br> </li><li>Card RSVP Status </li><li>Calendar Colours<br><img src=\"https://office.visualstudio.com/a969624d-6e42-421f-a49d-8c50e624b3ef/_apis/wit/attachments/b19c6aa9-b2bb-4bc4-9981-eb1673f28389?fileName=image.png\" alt=Image width=173 height=169 style=\"width:173px;\">&nbsp;<img src=\"https://office.visualstudio.com/a969624d-6e42-421f-a49d-8c50e624b3ef/_apis/wit/attachments/b8852cfc-a59c-4f82-a726-804ed579ff64?fileName=image.png\" alt=Image style=\"width:246px;\" width=246 height=172>&nbsp;<img src=\"https://office.visualstudio.com/a969624d-6e42-421f-a49d-8c50e624b3ef/_apis/wit/attachments/cce8f23c-5eb8-4ec4-8c57-d186a368b038?fileName=image.png\" alt=Image width=288 height=158 style=\"width:288px;\"> </li><li><i>Note: See <a href=\"https://www.figma.com/file/0qIfgG99fmypy03sr9cHmy/branch/M0doe4ebKnu8EBh7e2iZV0/Android?node-id=9:0\">Android Components branch file</a> for WIP examples</i> </li><li><i>Calendar colours available as linked <a href=\"https://www.figma.com/file/4p7rgWliKWHty1LupVWKcK/Color?node-id=86:191\">Outlook colour styles</a></i> </li> </ul> </div><b style=\"color:rgb(111, 192, 64);\"><i><div><b><i><br></i></b> </div>See more in-product examples in attached images (iPhone X + iPhone 12)</i></b><br><div style=\"box-sizing:border-box;\"><br style=\"box-sizing:border-box;\"> </div><div style=\"box-sizing:border-box;\"><br> </div><div style=\"box-sizing:border-box;\"><b><u>Checklist:</u></b> </div><ul style=\"box-sizing:border-box;padding:0px 0px 0px 40px;\"><li style=\"box-sizing:border-box;\">Light + Dark mode </li><li style=\"box-sizing:border-box;\">Typography styles<span style=\"box-sizing:border-box;display:inline !important;\"><span style=\"box-sizing:border-box;\">&nbsp;</span>correctly linked</span> </li><li style=\"box-sizing:border-box;\">Colour styles correctly linked </li><li style=\"box-sizing:border-box;\">Icons/Imagery correctly linked<span style=\"box-sizing:border-box;\">&nbsp;</span><i style=\"box-sizing:border-box;\">(where applicable)</i> </li><li style=\"box-sizing:border-box;\">Follows 4px Grid </li><li style=\"box-sizing:border-box;\">Re-sizeable? </li><li style=\"box-sizing:border-box;\">Merge branch&nbsp;<i style=\"box-sizing:border-box;\">(where applicable)</i> </li><li style=\"box-sizing:border-box;\">Update Changelog + Publish </li> </ul><br style=\"box-sizing:border-box;\"><br>",
+      "work_item_type": "Task",
+      "priority": null,
+      "business_value": null,
+      "tags": [
+        "Component",
+        " Design"
+      ],
+      "assigned_to": "Hao Liu (Microsoft Teams Designer)"
+    },
+    "plan": {
+      "task": {
+        "id": 5498646,
+        "title": "Event Cell Day (Component)",
+        "estimated_hours": null,
+        "actual_hours": null,
+        "story_points": null,
+        "state": "Closed",
+        "created_date": "2021-10-15T08:42:25.46Z",
+        "closed_date": "2025-01-10T21:39:01.673Z"
+      },
+      "dependencies": [
+        {
+          "type": "parent",
+          "from": 5498646,
+          "to": 5498638
+        }
+      ]
+    },
+    "outcome": {
+      "work_item_id": 5498646,
+      "effort_variance": null,
+      "effort_outcome": "unknown",
+      "schedule_variance_days": null,
+      "schedule_outcome": "unknown",
+      "overall_outcome": "partial_success",
+      "actual_duration_days": 1183
+    },
+    "metadata": {
+      "project": "Outlook",
+      "work_item_id": 5498646,
+      "work_item_url": "https://office.visualstudio.com/Outlook/_workitems/edit/5498646",
+      "complexity": "Q2_Low_Complexity",
+      "value": "Low_Value",
+      "extracted_date": "2025-11-11T20:38:27.628644"
+    }
+  },
+  {
+    "training_id": "ado_5498647",
+    "source": "azure_devops",
+    "context": {
+      "goal": "Event Cell Month (Component)",
+      "description": "<div style=\"box-sizing:border-box;\">Status:&nbsp;<font color=\"#de6a19\" style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;color:rgb(243, 144, 29);\"><b style=\"box-sizing:border-box;\">Needs Minor Fixes</b></span></font> </div><div style=\"box-sizing:border-box;\"><br style=\"box-sizing:border-box;\"> </div><div style=\"box-sizing:border-box;\"><b><u>Variants: </u></b> </div><div style=\"box-sizing:border-box;\"><ul style=\"box-sizing:border-box;padding:0px 0px 0px 40px;\"><li style=\"box-sizing:border-box;\">All Day Marker (<i>Line on left side of card</i>) </li><li style=\"box-sizing:border-box;\">Multi-day (<i>stretch</i>)&nbsp; </li><li style=\"box-sizing:border-box;\">&quot;More&quot; marker&nbsp; </li><li style=\"box-sizing:border-box;\">RSVP States <i>(note: Out of Office pattern not displayed in Month view)</i>&nbsp;&nbsp;<br><img src=\"https://office.visualstudio.com/a969624d-6e42-421f-a49d-8c50e624b3ef/_apis/wit/attachments/b8f74fdc-0789-4690-872c-7fabfca7ae67?fileName=image.png\" alt=Image width=269 height=143 style=\"width:269px;\"><br><br> </li><li style=\"box-sizing:border-box;\">Different Calendars Colours<br><img src=\"https://office.visualstudio.com/a969624d-6e42-421f-a49d-8c50e624b3ef/_apis/wit/attachments/e4a82099-9ba6-4f5e-9adc-878b52f47500?fileName=image.png\" alt=Image width=178 height=83 style=\"width:178px;height:83px;\"><br><br> </li><li style=\"box-sizing:border-box;\">Week Numbers on/off (<i>left hand side</i>)<br><img src=\"https://office.visualstudio.com/a969624d-6e42-421f-a49d-8c50e624b3ef/_apis/wit/attachments/0d3c05ba-1218-4792-8134-248ec762b0e5?fileName=image.png\" alt=Image width=451 height=131 style=\"width:451px;height:131px;\"><br> </li> </ul> </div><div style=\"box-sizing:border-box;\"><div style=\"box-sizing:border-box;\"><b style=\"box-sizing:border-box;color:rgb(111, 192, 64);\"><i style=\"box-sizing:border-box;\">See more in-product examples in attached images<br><br style=\"box-sizing:border-box;\"></i></b> </div><br style=\"box-sizing:border-box;\"> </div><div style=\"box-sizing:border-box;\"><b><u>Checklist: </u></b> </div><div style=\"box-sizing:border-box;\"><ul style=\"box-sizing:border-box;padding:0px 0px 0px 40px;\"><li style=\"box-sizing:border-box;\">Light + Dark mode </li><li style=\"box-sizing:border-box;\">Typography styles<span style=\"box-sizing:border-box;display:inline !important;\"><span style=\"box-sizing:border-box;\">&nbsp;</span>correctly linked</span> </li><li style=\"box-sizing:border-box;\">Colour styles correctly linked </li><li style=\"box-sizing:border-box;\">Icons/Imagery correctly linked<span style=\"box-sizing:border-box;\">&nbsp;</span><i style=\"box-sizing:border-box;\">(where applicable)</i> </li><li style=\"box-sizing:border-box;\">Follows 4px Grid </li><li style=\"box-sizing:border-box;\">Re-sizeable </li><li style=\"box-sizing:border-box;\">Merge branch&nbsp;<i style=\"box-sizing:border-box;\">(where applicable)</i><br> </li><li style=\"box-sizing:border-box;\">Update Changelog + Publish </li> </ul> </div><br style=\"box-sizing:border-box;\"><br>",
+      "work_item_type": "Task",
+      "priority": null,
+      "business_value": null,
+      "tags": [
+        "Component",
+        " Design"
+      ],
+      "assigned_to": "Hao Liu (Microsoft Teams Designer)"
+    },
+    "plan": {
+      "task": {
+        "id": 5498647,
+        "title": "Event Cell Month (Component)",
+        "estimated_hours": null,
+        "actual_hours": null,
+        "story_points": null,
+        "state": "Closed",
+        "created_date": "2021-10-15T08:43:06.003Z",
+        "closed_date": "2025-01-10T21:39:01.673Z"
+      },
+      "dependencies": [
+        {
+          "type": "parent",
+          "from": 5498647,
+          "to": 5498638
+        }
+      ]
+    },
+    "outcome": {
+      "work_item_id": 5498647,
+      "effort_variance": null,
+      "effort_outcome": "unknown",
+      "schedule_variance_days": null,
+      "schedule_outcome": "unknown",
+      "overall_outcome": "partial_success",
+      "actual_duration_days": 1183
+    },
+    "metadata": {
+      "project": "Outlook",
+      "work_item_id": 5498647,
+      "work_item_url": "https://office.visualstudio.com/Outlook/_workitems/edit/5498647",
+      "complexity": "Q2_Low_Complexity",
+      "value": "Low_Value",
+      "extracted_date": "2025-11-11T20:38:27.628925"
+    }
+  },
+  {
+    "training_id": "ado_5498648",
+    "source": "azure_devops",
+    "context": {
+      "goal": "Event Timeslot (Sub-Component)",
+      "description": "<div style=\"box-sizing:border-box;\">Status:&nbsp;<font color=\"#de6a19\" style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;color:rgb(243, 144, 29);\"><b style=\"box-sizing:border-box;\">Needs Minor Fixes</b></span></font> </div><div style=\"box-sizing:border-box;\"><br style=\"box-sizing:border-box;\"> </div><div style=\"box-sizing:border-box;\">Current component called &quot;Empty Time Block&quot;. </div><div style=\"box-sizing:border-box;\">- To be used as a sub-component of Calendar Surface, Single and 3-Day views </div><div style=\"box-sizing:border-box;\"><br> </div><div style=\"box-sizing:border-box;\">Example in <a href=\"https://www.figma.com/file/M0doe4ebKnu8EBh7e2iZV0/Calendar-Components?node-id=1520:4433\">Android Components WIP branch</a> </div><div style=\"box-sizing:border-box;\"><br> </div><div style=\"box-sizing:border-box;\"><b><u>Variants: </u></b> </div><div style=\"box-sizing:border-box;\"><ul style=\"box-sizing:border-box;padding:0px 0px 0px 40px;\"><li style=\"box-sizing:border-box;\">Active on/off </li><ul><li style=\"box-sizing:border-box;\">Note: Dark mode doesn't show highlight </li> </ul><li style=\"box-sizing:border-box;\">Expandable to single day vs 3 day </li> </ul> </div><div style=\"box-sizing:border-box;\"><div style=\"box-sizing:border-box;\"><b style=\"box-sizing:border-box;color:rgb(111, 192, 64);\"><i style=\"box-sizing:border-box;\">See examples on &quot;Calendar Surface component&quot; ticket</i></b><br style=\"box-sizing:border-box;\"> </div><div style=\"box-sizing:border-box;\"><br style=\"box-sizing:border-box;\"> </div><br style=\"box-sizing:border-box;\"> </div><div style=\"box-sizing:border-box;\"><b><u>Checklist: </u></b> </div><div style=\"box-sizing:border-box;\"><ul style=\"box-sizing:border-box;padding:0px 0px 0px 40px;\"><li style=\"box-sizing:border-box;\">Light + Dark mode </li><li style=\"box-sizing:border-box;\">Typography styles<span style=\"box-sizing:border-box;display:inline !important;\"><span style=\"box-sizing:border-box;\">&nbsp;</span>correctly linked</span> </li><li style=\"box-sizing:border-box;\">Colour styles correctly linked </li><li style=\"box-sizing:border-box;\">Icons/Imagery correctly linked<span style=\"box-sizing:border-box;\">&nbsp;</span><i style=\"box-sizing:border-box;\">(where applicable)</i> </li><li style=\"box-sizing:border-box;\">Follows 4px Grid </li><li style=\"box-sizing:border-box;\">Re-sizeable </li><li style=\"box-sizing:border-box;\">Merge branch&nbsp;<i style=\"box-sizing:border-box;\">(where applicable)</i><br> </li><li style=\"box-sizing:border-box;\">Update Changelog + Publish </li> </ul> </div><br style=\"box-sizing:border-box;\"><br>",
+      "work_item_type": "Task",
+      "priority": null,
+      "business_value": null,
+      "tags": [
+        "Component",
+        " Design"
+      ],
+      "assigned_to": "Hao Liu (Microsoft Teams Designer)"
+    },
+    "plan": {
+      "task": {
+        "id": 5498648,
+        "title": "Event Timeslot (Sub-Component)",
+        "estimated_hours": null,
+        "actual_hours": null,
+        "story_points": null,
+        "state": "Closed",
+        "created_date": "2021-10-15T08:43:56.467Z",
+        "closed_date": "2025-01-10T21:39:01.673Z"
+      },
+      "dependencies": [
+        {
+          "type": "parent",
+          "from": 5498648,
+          "to": 5498638
+        }
+      ]
+    },
+    "outcome": {
+      "work_item_id": 5498648,
+      "effort_variance": null,
+      "effort_outcome": "unknown",
+      "schedule_variance_days": null,
+      "schedule_outcome": "unknown",
+      "overall_outcome": "partial_success",
+      "actual_duration_days": 1183
+    },
+    "metadata": {
+      "project": "Outlook",
+      "work_item_id": 5498648,
+      "work_item_url": "https://office.visualstudio.com/Outlook/_workitems/edit/5498648",
+      "complexity": "Q2_Low_Complexity",
+      "value": "Low_Value",
+      "extracted_date": "2025-11-11T20:38:27.629158"
+    }
+  },
+  {
+    "training_id": "ado_5498649",
+    "source": "azure_devops",
+    "context": {
+      "goal": "All Day Bar (Component)",
+      "description": "<div style=\"box-sizing:border-box;\">Status:&nbsp;<font color=\"#de6a19\" style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;color:rgb(200, 38, 19);\"><b style=\"box-sizing:border-box;\">Does not exist</b></span></font> </div><div style=\"box-sizing:border-box;\"><br style=\"box-sizing:border-box;\"> </div><div style=\"box-sizing:border-box;\"><b><u>Variants: </u></b> </div><div style=\"box-sizing:border-box;\"><ul style=\"box-sizing:border-box;padding:0px 0px 0px 40px;\"><li style=\"box-sizing:border-box;\">Single Day </li><li style=\"box-sizing:border-box;\"><span style=\"display:inline !important;\">Weather on/off</span><br style=\"box-sizing:border-box;\"><img src=\"https://office.visualstudio.com/a969624d-6e42-421f-a49d-8c50e624b3ef/_apis/wit/attachments/f26f3f2b-8966-4ff7-915f-ece799096ccf?fileName=image.png\" alt=Image width=279 height=58 style=\"box-sizing:border-box;max-width:100%;align-self:center;width:279px;\"><span style=\"display:inline !important;\">&nbsp; &nbsp;</span><img src=\"https://office.visualstudio.com/a969624d-6e42-421f-a49d-8c50e624b3ef/_apis/wit/attachments/cb0caa90-418e-4a78-ac65-e726d3c69b2e?fileName=image.png\" alt=Image width=277 height=45 style=\"box-sizing:border-box;max-width:100%;align-self:center;width:277px;\">&nbsp; <br><img src=\"https://office.visualstudio.com/a969624d-6e42-421f-a49d-8c50e624b3ef/_apis/wit/attachments/8b11f294-0071-4dfb-8e0d-a4f47c0915a8?fileName=image.png\" alt=Image width=281 height=44 style=\"width:281px;\"><br><br> </li><li style=\"box-sizing:border-box;\">3 Day <br><img src=\"https://office.visualstudio.com/a969624d-6e42-421f-a49d-8c50e624b3ef/_apis/wit/attachments/756c6790-3629-4684-898a-e4a5d7fa3403?fileName=image.png\" alt=Image width=281 height=49 style=\"width:281px;\">&nbsp;&nbsp;<img src=\"https://office.visualstudio.com/a969624d-6e42-421f-a49d-8c50e624b3ef/_apis/wit/attachments/b384ff97-1587-409c-bf65-256d42ffdbd2?fileName=image.png\" alt=Image width=281 height=32 style=\"width:281px;\"><br><img src=\"https://office.visualstudio.com/a969624d-6e42-421f-a49d-8c50e624b3ef/_apis/wit/attachments/9e965c9d-2346-48fe-b40d-f612f21bca60?fileName=image.png\" alt=Image width=282 height=34 style=\"width:282px;\"><br><br><br> </li><li style=\"box-sizing:border-box;\">Multiple All Day Events<br><img src=\"https://office.visualstudio.com/a969624d-6e42-421f-a49d-8c50e624b3ef/_apis/wit/attachments/4bdec8ad-5104-4acd-be72-29b99608d899?fileName=image.png\" alt=Image width=279 height=61 style=\"width:279px;\"><br><br> </li><li style=\"box-sizing:border-box;\">Max Events + Scrollable<br><img src=\"https://office.visualstudio.com/a969624d-6e42-421f-a49d-8c50e624b3ef/_apis/wit/attachments/f7e00a0f-e918-4b90-876e-9894b7a18a46?fileName=image.png\" alt=Image width=278 height=173 style=\"width:278px;\">&nbsp; &nbsp;<img src=\"https://office.visualstudio.com/a969624d-6e42-421f-a49d-8c50e624b3ef/_apis/wit/attachments/64445f03-0342-4fc1-ac3d-075968a0a897?fileName=image.png\" alt=Image width=288 height=173 style=\"width:288px;\"><br> </li> </ul> </div><div style=\"box-sizing:border-box;\"><div style=\"box-sizing:border-box;\"><b style=\"box-sizing:border-box;color:rgb(111, 192, 64);\"><i style=\"box-sizing:border-box;\">See more in-product examples in attached images (iPhone X + iPhone 12)<br><br style=\"box-sizing:border-box;\"></i></b> </div> </div><div style=\"box-sizing:border-box;\"><br> </div><div style=\"box-sizing:border-box;\"><b><u>Checklist: </u></b> </div><div style=\"box-sizing:border-box;\"><ul style=\"box-sizing:border-box;padding:0px 0px 0px 40px;\"><li style=\"box-sizing:border-box;\">Make variant </li><li style=\"box-sizing:border-box;\">Light + Dark mode </li><li style=\"box-sizing:border-box;\">Typography styles<span style=\"box-sizing:border-box;display:inline !important;\"><span style=\"box-sizing:border-box;\">&nbsp;</span>correctly linked</span> </li><li style=\"box-sizing:border-box;\">Colour styles correctly linked </li><li style=\"box-sizing:border-box;\">Icons/Imagery correctly linked<span style=\"box-sizing:border-box;\">&nbsp;</span><i style=\"box-sizing:border-box;\">(where applicable)</i> </li><li style=\"box-sizing:border-box;\">Follows 4px Grid </li><li style=\"box-sizing:border-box;\">Re-sizeable </li><li style=\"box-sizing:border-box;\">Merge branch&nbsp;<i style=\"box-sizing:border-box;\">(where applicable)</i><br> </li><li style=\"box-sizing:border-box;\">Update Changelog + Publish </li> </ul> </div><br style=\"box-sizing:border-box;\"><br>",
+      "work_item_type": "Task",
+      "priority": null,
+      "business_value": null,
+      "tags": [
+        "Component",
+        " Design"
+      ],
+      "assigned_to": "Hao Liu (Microsoft Teams Designer)"
+    },
+    "plan": {
+      "task": {
+        "id": 5498649,
+        "title": "All Day Bar (Component)",
+        "estimated_hours": null,
+        "actual_hours": null,
+        "story_points": null,
+        "state": "Closed",
+        "created_date": "2021-10-15T08:44:33.66Z",
+        "closed_date": "2025-01-10T21:39:01.673Z"
+      },
+      "dependencies": [
+        {
+          "type": "parent",
+          "from": 5498649,
+          "to": 5498638
+        }
+      ]
+    },
+    "outcome": {
+      "work_item_id": 5498649,
+      "effort_variance": null,
+      "effort_outcome": "unknown",
+      "schedule_variance_days": null,
+      "schedule_outcome": "unknown",
+      "overall_outcome": "partial_success",
+      "actual_duration_days": 1183
+    },
+    "metadata": {
+      "project": "Outlook",
+      "work_item_id": 5498649,
+      "work_item_url": "https://office.visualstudio.com/Outlook/_workitems/edit/5498649",
+      "complexity": "Q2_Low_Complexity",
+      "value": "Low_Value",
+      "extracted_date": "2025-11-11T20:38:27.629374"
+    }
+  },
+  {
+    "training_id": "ado_5498650",
+    "source": "azure_devops",
+    "context": {
+      "goal": "Agenda Date Header (Component)",
+      "description": "<div style=\"box-sizing:border-box;\">Status: <font color=\"#c82613\"><b>Does not exist</b></font> </div><div style=\"box-sizing:border-box;\"><br style=\"box-sizing:border-box;\"> </div><div style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;color:rgb(81, 167, 249);\"><b style=\"box-sizing:border-box;\">Can this re-use the<span>&nbsp;</span><a href=\"https://www.figma.com/file/DSW21FJ32DlQtJDTGdwKr5/iOS?node-id=1437:563\" style=\"box-sizing:border-box;text-decoration:underline;cursor:pointer;\">Mail group header,</a><span>&nbsp;</span>or a Fluent component, instead of making a new component?</b></span><br> </div><div style=\"box-sizing:border-box;\"><br> </div><div style=\"box-sizing:border-box;\"><b><u>Variants: </u></b> </div><div style=\"box-sizing:border-box;\"><ul style=\"box-sizing:border-box;padding:0px 0px 0px 40px;\"><li style=\"box-sizing:border-box;\">Yesterday/Today/Tomorrow <i>vs</i> Only Date<br><img src=\"https://office.visualstudio.com/a969624d-6e42-421f-a49d-8c50e624b3ef/_apis/wit/attachments/41eb6178-06c7-47d0-a887-3117733a7056?fileName=image.png\" alt=Image width=311 height=40 style=\"box-sizing:border-box;max-width:100%;align-self:center;width:311px;\">&nbsp;&nbsp;<img src=\"https://office.visualstudio.com/a969624d-6e42-421f-a49d-8c50e624b3ef/_apis/wit/attachments/51f9591d-3599-4093-a2f1-f7a9625d7627?fileName=image.png\" alt=Image width=328 height=43 style=\"width:328px;\"><br><br> </li><li style=\"box-sizing:border-box;\">Weather on/off <br><img src=\"https://office.visualstudio.com/a969624d-6e42-421f-a49d-8c50e624b3ef/_apis/wit/attachments/41eb6178-06c7-47d0-a887-3117733a7056?fileName=image.png\" alt=Image width=311 height=40 style=\"box-sizing:border-box;max-width:100%;align-self:center;width:311px;\">&nbsp;&nbsp;<img src=\"https://office.visualstudio.com/a969624d-6e42-421f-a49d-8c50e624b3ef/_apis/wit/attachments/4a93f8d5-0a11-4665-b428-8b727381d04f?fileName=image.png\" alt=Image width=300 height=44 style=\"width:300px;\">&nbsp;&nbsp; </li> </ul> </div><div style=\"box-sizing:border-box;\"><div style=\"box-sizing:border-box;\"><b style=\"box-sizing:border-box;color:rgb(111, 192, 64);\"><i style=\"box-sizing:border-box;\">See more in-product examples in attached images (iPhone X + iPhone 12)</i></b><br style=\"box-sizing:border-box;\"> </div><div style=\"box-sizing:border-box;\"><br> </div> </div><div style=\"box-sizing:border-box;\"><br> </div><div style=\"box-sizing:border-box;\"><b><u>Checklist:</u></b> </div><div style=\"box-sizing:border-box;\"><ul style=\"box-sizing:border-box;padding:0px 0px 0px 40px;\"><li style=\"box-sizing:border-box;\">Make variant </li><li style=\"box-sizing:border-box;\">Light + Dark mode </li><li style=\"box-sizing:border-box;\">Typography styles<span style=\"box-sizing:border-box;display:inline !important;\"><span style=\"box-sizing:border-box;\">&nbsp;</span>correctly linked</span> </li><li style=\"box-sizing:border-box;\">Colour styles correctly linked </li><li style=\"box-sizing:border-box;\">Icons/Imagery correctly linked<span style=\"box-sizing:border-box;\">&nbsp;</span><i style=\"box-sizing:border-box;\">(where applicable)</i> </li><li style=\"box-sizing:border-box;\">Follows 4px Grid </li><li style=\"box-sizing:border-box;\">Re-sizeable </li><li style=\"box-sizing:border-box;\">Merge branch&nbsp;<i style=\"box-sizing:border-box;\">(where applicable)</i><br> </li><li style=\"box-sizing:border-box;\">Update Changelog + Publish </li> </ul> </div><br style=\"box-sizing:border-box;\"><br>",
+      "work_item_type": "Task",
+      "priority": null,
+      "business_value": null,
+      "tags": [
+        "Component",
+        " Design"
+      ],
+      "assigned_to": "Hao Liu (Microsoft Teams Designer)"
+    },
+    "plan": {
+      "task": {
+        "id": 5498650,
+        "title": "Agenda Date Header (Component)",
+        "estimated_hours": null,
+        "actual_hours": null,
+        "story_points": null,
+        "state": "Closed",
+        "created_date": "2021-10-15T08:45:07.58Z",
+        "closed_date": "2025-01-10T21:39:01.673Z"
+      },
+      "dependencies": [
+        {
+          "type": "parent",
+          "from": 5498650,
+          "to": 5498638
+        }
+      ]
+    },
+    "outcome": {
+      "work_item_id": 5498650,
+      "effort_variance": null,
+      "effort_outcome": "unknown",
+      "schedule_variance_days": null,
+      "schedule_outcome": "unknown",
+      "overall_outcome": "partial_success",
+      "actual_duration_days": 1183
+    },
+    "metadata": {
+      "project": "Outlook",
+      "work_item_id": 5498650,
+      "work_item_url": "https://office.visualstudio.com/Outlook/_workitems/edit/5498650",
+      "complexity": "Q2_Low_Complexity",
+      "value": "Low_Value",
+      "extracted_date": "2025-11-11T20:38:27.629589"
+    }
+  },
+  {
+    "training_id": "ado_5498651",
+    "source": "azure_devops",
+    "context": {
+      "goal": "Calendar Surface (Component)",
+      "description": "<div style=\"box-sizing:border-box;\"> </div><div style=\"box-sizing:border-box;\">Status:&nbsp;<font color=\"#de6a19\" style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;color:rgb(200, 38, 19);\"><b style=\"box-sizing:border-box;\">Does not Exist</b></span></font> </div><div style=\"box-sizing:border-box;\"><br>This component is the background that goes behind event cards. For Single/3-Day Views, this includes times stacked on left side, as well as &quot;timeslot&quot; lines (see sub-component &quot;Empty Time Block&quot;). <br><br>Note: Month View uses individual cells for the days, instead of a vertical stack -<span style=\"color:rgb(237, 92, 87);\"><i> should month view be a different component?</i></span><br><br>Reference work done for <a href=\"https://www.figma.com/file/M0doe4ebKnu8EBh7e2iZV0/Calendar-Components?node-id=1520:8016\">Android Components WIP</a><br><br><b><u>Variants: </u></b> </div><div style=\"box-sizing:border-box;\"><ul style=\"box-sizing:border-box;padding:0px 0px 0px 40px;\"><li style=\"box-sizing:border-box;\">Single Day<br><img src=\"https://office.visualstudio.com/a969624d-6e42-421f-a49d-8c50e624b3ef/_apis/wit/attachments/a7a178a5-cefc-422a-ae48-f14ce3c6bcd2?fileName=image.png\" alt=Image width=285 height=269 style=\"box-sizing:border-box;max-width:100%;align-self:center;text-align:start;width:285px;\"><br><br> </li><li style=\"box-sizing:border-box;\">3-Day <br><img src=\"https://office.visualstudio.com/a969624d-6e42-421f-a49d-8c50e624b3ef/_apis/wit/attachments/105ce2dd-6ae2-4c75-8fd3-46f4fbd559ea?fileName=image.png\" alt=Image width=285 height=285 style=\"box-sizing:border-box;max-width:100%;align-self:center;text-align:start;width:285px;\"><br><br> </li><li style=\"box-sizing:border-box;\">Month - <i>Separate into its own component?</i><br><img src=\"https://office.visualstudio.com/a969624d-6e42-421f-a49d-8c50e624b3ef/_apis/wit/attachments/657037c3-b49e-499f-90b1-1a389364d10c?fileName=image.png\" alt=Image width=210 height=285 style=\"box-sizing:border-box;max-width:100%;align-self:center;text-align:start;width:210px;\"> </li><li style=\"box-sizing:border-box;\"><i>Make sub-component for Month cells?</i><br><span style=\"display:inline !important;\"><br></span> </li><li style=\"box-sizing:border-box;\"><span style=\"display:inline !important;\">Current Day on/off (<i>blue highlight)</i><br><i>Single</i>:&nbsp;<img src=\"https://office.visualstudio.com/a969624d-6e42-421f-a49d-8c50e624b3ef/_apis/wit/attachments/57fc3052-edb3-487e-b85f-8bc3d3885475?fileName=image.png\" alt=Image width=573 height=99 style=\"width:573px;\"><br><br><i>3 Day:</i>&nbsp;<img src=\"https://office.visualstudio.com/a969624d-6e42-421f-a49d-8c50e624b3ef/_apis/wit/attachments/7105168c-de5b-4247-99aa-1e5f00f06f16?fileName=image.png\" alt=Image width=571 height=94 style=\"width:571px;\"><br><br><i>Month</i>:&nbsp;<img src=\"https://office.visualstudio.com/a969624d-6e42-421f-a49d-8c50e624b3ef/_apis/wit/attachments/76650edc-84d4-4be7-b1e0-a77b9f1bf743?fileName=image.png\" alt=Image width=303 height=164 style=\"width:303px;\"><br></span> </li> </ul> </div><div style=\"box-sizing:border-box;\"><div style=\"box-sizing:border-box;\"><b style=\"box-sizing:border-box;color:rgb(111, 192, 64);\"><i style=\"box-sizing:border-box;\">See more in-product examples in attached images (iPhone X + iPhone 12)</i></b><br style=\"box-sizing:border-box;\"> </div><div style=\"box-sizing:border-box;\"><br style=\"box-sizing:border-box;\"> </div><br> </div><div style=\"box-sizing:border-box;\"><b><u>Checklist: </u></b> </div><div style=\"box-sizing:border-box;\"><ul style=\"box-sizing:border-box;padding:0px 0px 0px 40px;\"><li style=\"box-sizing:border-box;\">Light + Dark mode </li><li style=\"box-sizing:border-box;\">Typography styles<span style=\"box-sizing:border-box;display:inline !important;\"><span style=\"box-sizing:border-box;\">&nbsp;</span>correctly linked</span> </li><li style=\"box-sizing:border-box;\">Colour styles correctly linked </li><li style=\"box-sizing:border-box;\">Icons/Imagery correctly linked<span style=\"box-sizing:border-box;\">&nbsp;</span><i style=\"box-sizing:border-box;\">(where applicable)</i> </li><li style=\"box-sizing:border-box;\">Follows 4px Grid </li><li style=\"box-sizing:border-box;\">Re-sizeable </li><li style=\"box-sizing:border-box;\">Merge branch&nbsp;<i style=\"box-sizing:border-box;\">(where applicable)</i><br> </li><li style=\"box-sizing:border-box;\">Update Changelog + Publish </li> </ul> </div>",
+      "work_item_type": "Task",
+      "priority": null,
+      "business_value": null,
+      "tags": [
+        "Component",
+        " Design"
+      ],
+      "assigned_to": "Hao Liu (Microsoft Teams Designer)"
+    },
+    "plan": {
+      "task": {
+        "id": 5498651,
+        "title": "Calendar Surface (Component)",
+        "estimated_hours": null,
+        "actual_hours": null,
+        "story_points": null,
+        "state": "Closed",
+        "created_date": "2021-10-15T08:45:50.66Z",
+        "closed_date": "2025-01-10T21:39:01.673Z"
+      },
+      "dependencies": [
+        {
+          "type": "parent",
+          "from": 5498651,
+          "to": 5498638
+        }
+      ]
+    },
+    "outcome": {
+      "work_item_id": 5498651,
+      "effort_variance": null,
+      "effort_outcome": "unknown",
+      "schedule_variance_days": null,
+      "schedule_outcome": "unknown",
+      "overall_outcome": "partial_success",
+      "actual_duration_days": 1183
+    },
+    "metadata": {
+      "project": "Outlook",
+      "work_item_id": 5498651,
+      "work_item_url": "https://office.visualstudio.com/Outlook/_workitems/edit/5498651",
+      "complexity": "Q2_Low_Complexity",
+      "value": "Low_Value",
+      "extracted_date": "2025-11-11T20:38:27.629798"
+    }
+  },
+  {
+    "training_id": "ado_5498652",
+    "source": "azure_devops",
+    "context": {
+      "goal": "Month Cell (Sub-Component)",
+      "description": "<div style=\"box-sizing:border-box;\">Status:&nbsp;<font color=\"#de6a19\" style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;color:rgb(200, 38, 19);\"><b style=\"box-sizing:border-box;\">Does not Exist</b></span></font> </div><div style=\"box-sizing:border-box;\"><br> </div><div style=\"box-sizing:border-box;\">Possible sub-component to be used by the Month Calendar Surface (see&nbsp;<a href=\"https://dev.azure.com/office/a969624d-6e42-421f-a49d-8c50e624b3ef/_workitems/edit/5498651\" data-vss-mention=\"version:1.0\">#5498651</a>&nbsp;) </div><div style=\"box-sizing:border-box;\"><br style=\"box-sizing:border-box;\"><b><u>Variants: </u></b> </div><div style=\"box-sizing:border-box;\"><ul style=\"box-sizing:border-box;padding:0px 0px 0px 40px;\"><li style=\"box-sizing:border-box;\">Current Month (White)&nbsp;<i style=\"\">vs </i>Alternate month (Grey) </li><li style=\"box-sizing:border-box;\">Current day on/off </li><li style=\"box-sizing:border-box;\">First Day of month on/off <i>(top text)</i> </li><li style=\"box-sizing:border-box;\">Resizable vertical to allow for different phone sizes </li><li style=\"box-sizing:border-box;\">Resizable horizontal to allow for Week Numbers <i>(see examples)</i> </li> </ul><div><div style=\"box-sizing:border-box;\"><b style=\"box-sizing:border-box;color:rgb(111, 192, 64);\"><i style=\"box-sizing:border-box;\">See more in-product examples in attached images</i></b><br style=\"box-sizing:border-box;\"> </div><div style=\"box-sizing:border-box;\"><br style=\"box-sizing:border-box;\"> </div><br> </div> </div><div style=\"box-sizing:border-box;\"><b><u>Checklist: </u></b> </div><div style=\"box-sizing:border-box;\"><ul style=\"box-sizing:border-box;padding:0px 0px 0px 40px;\"><li style=\"box-sizing:border-box;\">Light + Dark mode </li><li style=\"box-sizing:border-box;\">Typography styles<span style=\"box-sizing:border-box;display:inline !important;\"><span style=\"box-sizing:border-box;\">&nbsp;</span>correctly linked</span> </li><li style=\"box-sizing:border-box;\">Colour styles correctly linked </li><li style=\"box-sizing:border-box;\">Icons/Imagery correctly linked<span style=\"box-sizing:border-box;\">&nbsp;</span><i style=\"box-sizing:border-box;\">(where applicable)</i> </li><li style=\"box-sizing:border-box;\">Follows 4px Grid </li><li style=\"box-sizing:border-box;\">Re-sizeable </li><li style=\"box-sizing:border-box;\">Merge branch&nbsp;<i style=\"box-sizing:border-box;\">(where applicable)</i><br> </li><li style=\"box-sizing:border-box;\">Update Changelog + Publish </li> </ul> </div>",
+      "work_item_type": "Task",
+      "priority": null,
+      "business_value": null,
+      "tags": [
+        "Component",
+        " Design"
+      ],
+      "assigned_to": "Hao Liu (Microsoft Teams Designer)"
+    },
+    "plan": {
+      "task": {
+        "id": 5498652,
+        "title": "Month Cell (Sub-Component)",
+        "estimated_hours": null,
+        "actual_hours": null,
+        "story_points": null,
+        "state": "Closed",
+        "created_date": "2021-10-15T08:46:17.35Z",
+        "closed_date": "2025-01-10T21:39:01.673Z"
+      },
+      "dependencies": [
+        {
+          "type": "parent",
+          "from": 5498652,
+          "to": 5498638
+        }
+      ]
+    },
+    "outcome": {
+      "work_item_id": 5498652,
+      "effort_variance": null,
+      "effort_outcome": "unknown",
+      "schedule_variance_days": null,
+      "schedule_outcome": "unknown",
+      "overall_outcome": "partial_success",
+      "actual_duration_days": 1183
+    },
+    "metadata": {
+      "project": "Outlook",
+      "work_item_id": 5498652,
+      "work_item_url": "https://office.visualstudio.com/Outlook/_workitems/edit/5498652",
+      "complexity": "Q2_Low_Complexity",
+      "value": "Low_Value",
+      "extracted_date": "2025-11-11T20:38:27.630009"
+    }
+  },
+  {
+    "training_id": "ado_5498653",
+    "source": "azure_devops",
+    "context": {
+      "goal": "Current Time Indicator (Component)",
+      "description": "<div style=\"box-sizing:border-box;\">Status:&nbsp;<font color=\"#de6a19\" style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;color:rgb(200, 38, 19);\"><b style=\"box-sizing:border-box;\">Does not Exist</b></span></font> </div><div style=\"box-sizing:border-box;\"><br>Single vs 3Day - Variant Needed?<br><br><img src=\"https://office.visualstudio.com/a969624d-6e42-421f-a49d-8c50e624b3ef/_apis/wit/attachments/2e083e70-3c30-4fb4-ae6f-51dbda8d0f7a?fileName=image.png\" alt=Image width=395 height=92 style=\"width:395px;height:92px;\"> </div><div style=\"box-sizing:border-box;\"><img src=\"https://office.visualstudio.com/a969624d-6e42-421f-a49d-8c50e624b3ef/_apis/wit/attachments/6c5fb862-9ad9-4308-a858-3dc8592a560d?fileName=image.png\" alt=Image width=399 height=82 style=\"width:399px;height:82px;\"><br><br> </div><div style=\"box-sizing:border-box;\"><b><u>Checklist: </u></b> </div><div style=\"box-sizing:border-box;\"><ul style=\"box-sizing:border-box;padding:0px 0px 0px 40px;\"><li style=\"box-sizing:border-box;\">Light + Dark mode </li><li style=\"box-sizing:border-box;\">Typography styles<span style=\"box-sizing:border-box;display:inline !important;\"><span style=\"box-sizing:border-box;\">&nbsp;</span>correctly linked</span> </li><li style=\"box-sizing:border-box;\">Colour styles correctly linked </li><li style=\"box-sizing:border-box;\">Icons/Imagery correctly linked<span style=\"box-sizing:border-box;\">&nbsp;</span><i style=\"box-sizing:border-box;\">(where applicable)</i> </li><li style=\"box-sizing:border-box;\">Follows 4px Grid </li><li style=\"box-sizing:border-box;\">Re-sizeable </li><li style=\"box-sizing:border-box;\">Merge branch&nbsp;<i style=\"box-sizing:border-box;\">(where applicable)</i><br> </li><li style=\"box-sizing:border-box;\">Update Changelog + Publish </li> </ul> </div><br style=\"box-sizing:border-box;\"><br>",
+      "work_item_type": "Task",
+      "priority": null,
+      "business_value": null,
+      "tags": [
+        "Design"
+      ],
+      "assigned_to": "Hao Liu (Microsoft Teams Designer)"
+    },
+    "plan": {
+      "task": {
+        "id": 5498653,
+        "title": "Current Time Indicator (Component)",
+        "estimated_hours": null,
+        "actual_hours": null,
+        "story_points": null,
+        "state": "Closed",
+        "created_date": "2021-10-15T08:46:52.997Z",
+        "closed_date": "2025-01-10T21:39:01.673Z"
+      },
+      "dependencies": [
+        {
+          "type": "parent",
+          "from": 5498653,
+          "to": 5498638
+        }
+      ]
+    },
+    "outcome": {
+      "work_item_id": 5498653,
+      "effort_variance": null,
+      "effort_outcome": "unknown",
+      "schedule_variance_days": null,
+      "schedule_outcome": "unknown",
+      "overall_outcome": "partial_success",
+      "actual_duration_days": 1183
+    },
+    "metadata": {
+      "project": "Outlook",
+      "work_item_id": 5498653,
+      "work_item_url": "https://office.visualstudio.com/Outlook/_workitems/edit/5498653",
+      "complexity": "Q2_Low_Complexity",
+      "value": "Low_Value",
+      "extracted_date": "2025-11-11T20:38:27.630226"
+    }
+  },
+  {
+    "training_id": "ado_5498739",
+    "source": "azure_devops",
+    "context": {
+      "goal": "Calendar Accessory View (Component)",
+      "description": "<div><div style=\"box-sizing:border-box;\">Status:&nbsp;<font color=\"#de6a19\" style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;color:rgb(243, 144, 29);\"><b style=\"box-sizing:border-box;\">Needs Minor Fixes</b></span></font> </div><div style=\"box-sizing:border-box;\"><br>Reference previous work done for <a href=\"https://www.figma.com/file/0qIfgG99fmypy03sr9cHmy/Android?node-id=1340:3576\">Android Component</a><br><br style=\"box-sizing:border-box;\"> </div><div style=\"box-sizing:border-box;\"><b style=\"box-sizing:border-box;\"><u style=\"box-sizing:border-box;\">Variants:</u></b> </div><div style=\"box-sizing:border-box;\"><ul style=\"box-sizing:border-box;padding:0px 0px 0px 40px;\"><li style=\"box-sizing:border-box;\">Week (Monday &gt; Sunday) - <i>Used for Agenda, Day, Month views</i><br><img src=\"https://office.visualstudio.com/a969624d-6e42-421f-a49d-8c50e624b3ef/_apis/wit/attachments/ae55f5f8-575f-4b85-8544-171c9af344bc?fileName=image.png\" alt=Image width=293 height=40 style=\"width:293px;\"><br><br> </li><li style=\"box-sizing:border-box;\">3 Day<br><img src=\"https://office.visualstudio.com/a969624d-6e42-421f-a49d-8c50e624b3ef/_apis/wit/attachments/d7e7a193-90ab-4cbb-a302-8898cf3c910f?fileName=image.png\" alt=Image width=293 height=40 style=\"width:293px;\"><br><br> </li><li style=\"box-sizing:border-box;\">Week Numbers on/off<br><img src=\"https://office.visualstudio.com/a969624d-6e42-421f-a49d-8c50e624b3ef/_apis/wit/attachments/d72f6af6-af85-4e18-beaf-b57a6e69c8bb?fileName=image.png\" alt=Image width=293 height=75 style=\"width:293px;\">&nbsp; &nbsp;<img src=\"https://office.visualstudio.com/a969624d-6e42-421f-a49d-8c50e624b3ef/_apis/wit/attachments/704076fa-2e35-435b-8ac5-2985b98600d6?fileName=image.png\" alt=Image width=296 height=37 style=\"width:296px;\"> </li> </ul> </div><div style=\"box-sizing:border-box;\"><div style=\"box-sizing:border-box;\"><b style=\"box-sizing:border-box;color:rgb(111, 192, 64);\"><i style=\"box-sizing:border-box;\"><br>See more in-product examples in attached images<br style=\"box-sizing:border-box;\"><br style=\"box-sizing:border-box;\"></i></b> </div><br style=\"box-sizing:border-box;\"> </div><div style=\"box-sizing:border-box;\"><b style=\"box-sizing:border-box;\"><u style=\"box-sizing:border-box;\">Checklist:</u></b> </div><div style=\"box-sizing:border-box;\"><ul style=\"box-sizing:border-box;padding:0px 0px 0px 40px;\"><li style=\"box-sizing:border-box;\">Light + Dark mode </li><li style=\"box-sizing:border-box;\">Typography styles<span style=\"box-sizing:border-box;display:inline !important;\"><span style=\"box-sizing:border-box;\">&nbsp;</span>correctly linked</span> </li><li style=\"box-sizing:border-box;\">Colour styles correctly linked </li><li style=\"box-sizing:border-box;\">Icons/Imagery correctly linked<span style=\"box-sizing:border-box;\">&nbsp;</span><i style=\"box-sizing:border-box;\">(where applicable)</i> </li><li style=\"box-sizing:border-box;\">Follows 4px Grid </li><li style=\"box-sizing:border-box;\">Re-sizeable </li><li style=\"box-sizing:border-box;\">Merge branch&nbsp;<i style=\"box-sizing:border-box;\">(where applicable)</i><br style=\"box-sizing:border-box;\"> </li><li style=\"box-sizing:border-box;\">Update Changelog + Publish </li> </ul> </div><br style=\"box-sizing:border-box;\"><br> </div>",
+      "work_item_type": "Task",
+      "priority": null,
+      "business_value": null,
+      "tags": [
+        "Component",
+        " Design"
+      ],
+      "assigned_to": "Hao Liu (Microsoft Teams Designer)"
+    },
+    "plan": {
+      "task": {
+        "id": 5498739,
+        "title": "Calendar Accessory View (Component)",
+        "estimated_hours": null,
+        "actual_hours": null,
+        "story_points": null,
+        "state": "Closed",
+        "created_date": "2021-10-15T11:31:25.5Z",
+        "closed_date": "2025-01-10T21:39:01.673Z"
+      },
+      "dependencies": [
+        {
+          "type": "parent",
+          "from": 5498739,
+          "to": 5498638
+        }
+      ]
+    },
+    "outcome": {
+      "work_item_id": 5498739,
+      "effort_variance": null,
+      "effort_outcome": "unknown",
+      "schedule_variance_days": null,
+      "schedule_outcome": "unknown",
+      "overall_outcome": "partial_success",
+      "actual_duration_days": 1183
+    },
+    "metadata": {
+      "project": "Outlook",
+      "work_item_id": 5498739,
+      "work_item_url": "https://office.visualstudio.com/Outlook/_workitems/edit/5498739",
+      "complexity": "Q2_Low_Complexity",
+      "value": "Low_Value",
+      "extracted_date": "2025-11-11T20:38:27.630459"
+    }
+  },
+  {
+    "training_id": "ado_5498744",
+    "source": "azure_devops",
+    "context": {
+      "goal": "Mini Calendar (Component)",
+      "description": "<div><div style=\"box-sizing:border-box;\">Status:&nbsp;<font color=\"#de6a19\" style=\"box-sizing:border-box;\"><span style=\"box-sizing:border-box;color:rgb(200, 38, 19);\"><b style=\"box-sizing:border-box;\">Does not exist</b></span></font> </div><div style=\"box-sizing:border-box;\"><br> </div><div style=\"box-sizing:border-box;\">This component is used not only on the main Calendar, but also on date-pickers throughout the rest of the app.<br style=\"box-sizing:border-box;\">Reference previous work done for<span>&nbsp;</span><a href=\"https://www.figma.com/file/0qIfgG99fmypy03sr9cHmy/Android?node-id=1340:4233\">Android Component</a><br style=\"box-sizing:border-box;\"><br style=\"box-sizing:border-box;\"> </div><div style=\"box-sizing:border-box;\"><b style=\"box-sizing:border-box;\"><u style=\"box-sizing:border-box;\">Variants:</u></b> </div><div style=\"box-sizing:border-box;\"><ul style=\"box-sizing:border-box;padding:0px 0px 0px 40px;\"><li style=\"box-sizing:border-box;\">Collapsed View </li><li style=\"box-sizing:border-box;\">Handle On/Off<br><img src=\"https://office.visualstudio.com/a969624d-6e42-421f-a49d-8c50e624b3ef/_apis/wit/attachments/37321e55-c0d6-44d2-9720-53ff7b5c22fd?fileName=image.png\" alt=Image width=240 height=51 style=\"width:240px;\">&nbsp;&nbsp;<img src=\"https://office.visualstudio.com/a969624d-6e42-421f-a49d-8c50e624b3ef/_apis/wit/attachments/60f2d613-6f59-4a20-8c75-ae6671807aef?fileName=image.png\" alt=Image width=233 height=41 style=\"width:233px;height:41px;\"><br><br> </li><li style=\"box-sizing:border-box;\">Expanded View<br><img src=\"https://office.visualstudio.com/a969624d-6e42-421f-a49d-8c50e624b3ef/_apis/wit/attachments/6f3f799d-44c1-4650-a0ec-4d3505db2523?fileName=image.png\" alt=Image width=238 height=163 style=\"width:238px;\">&nbsp;&nbsp;<img src=\"https://office.visualstudio.com/a969624d-6e42-421f-a49d-8c50e624b3ef/_apis/wit/attachments/fbac0558-6358-4d49-b054-25446d970d0d?fileName=image.png\" alt=Image width=231 height=170 style=\"width:231px;height:170px;\"><br><br> </li><li style=\"box-sizing:border-box;\">Week Numbers on/off (<i>left hand side</i>)<br><img src=\"https://office.visualstudio.com/a969624d-6e42-421f-a49d-8c50e624b3ef/_apis/wit/attachments/8d609b7e-7274-4755-8105-ea7951d13b9d?fileName=image.png\" alt=Image width=237 height=48 style=\"width:237px;\">&nbsp;&nbsp;<br><img src=\"https://office.visualstudio.com/a969624d-6e42-421f-a49d-8c50e624b3ef/_apis/wit/attachments/4dc0df85-6526-4fcc-8970-dc9f6e03abe5?fileName=image.png\" alt=Image width=237 height=161 style=\"width:237px;\"><br><br> </li><li style=\"box-sizing:border-box;\">Week Day Letter Row - <i>Shown during Create Event date picker<br></i><img src=\"https://office.visualstudio.com/a969624d-6e42-421f-a49d-8c50e624b3ef/_apis/wit/attachments/9a32ec20-7d7b-4abb-b038-a2edf8e051e5?fileName=image.png\" alt=Image width=240 height=66 style=\"width:240px;\"><br><br> </li><li style=\"box-sizing:border-box;\">Calendar Cell Variants (<i>Current Day / Selected Day / Month Top Text / Event Indicator</i>)<br><img src=\"https://office.visualstudio.com/a969624d-6e42-421f-a49d-8c50e624b3ef/_apis/wit/attachments/b30e3a70-bb18-4e6a-87ed-7de52029e860?fileName=image.png\" alt=Image width=281 height=51 style=\"width:281px;\"><br><i>Sub-Component for Calendar cells recommended - see <a href=\"https://www.figma.com/file/0qIfgG99fmypy03sr9cHmy/Android?node-id=1340:3908\">Android component</a> for build example</i> </li> </ul> </div><div style=\"box-sizing:border-box;\"><div style=\"box-sizing:border-box;\"><b style=\"box-sizing:border-box;color:rgb(111, 192, 64);\"><i style=\"box-sizing:border-box;\"><br style=\"box-sizing:border-box;\">See more in-product examples in attached images<br style=\"box-sizing:border-box;\"><br style=\"box-sizing:border-box;\"></i></b> </div><br style=\"box-sizing:border-box;\"> </div><div style=\"box-sizing:border-box;\"><b style=\"box-sizing:border-box;\"><u style=\"box-sizing:border-box;\">Checklist:</u></b> </div><div style=\"box-sizing:border-box;\"><ul style=\"box-sizing:border-box;padding:0px 0px 0px 40px;\"><li style=\"box-sizing:border-box;\">Light + Dark mode </li><li style=\"box-sizing:border-box;\">Typography styles<span style=\"box-sizing:border-box;display:inline !important;\"><span style=\"box-sizing:border-box;\">&nbsp;</span>correctly linked</span> </li><li style=\"box-sizing:border-box;\">Colour styles correctly linked </li><li style=\"box-sizing:border-box;\">Icons/Imagery correctly linked<span style=\"box-sizing:border-box;\">&nbsp;</span><i style=\"box-sizing:border-box;\">(where applicable)</i> </li><li style=\"box-sizing:border-box;\">Follows 4px Grid </li><li style=\"box-sizing:border-box;\">Re-sizeable </li><li style=\"box-sizing:border-box;\">Merge branch&nbsp;<i style=\"box-sizing:border-box;\">(where applicable)</i><br style=\"box-sizing:border-box;\"> </li><li style=\"box-sizing:border-box;\">Update Changelog + Publish </li> </ul> </div> </div>",
+      "work_item_type": "Task",
+      "priority": null,
+      "business_value": null,
+      "tags": [
+        "Component",
+        " Design"
+      ],
+      "assigned_to": "Hao Liu (Microsoft Teams Designer)"
+    },
+    "plan": {
+      "task": {
+        "id": 5498744,
+        "title": "Mini Calendar (Component)",
+        "estimated_hours": null,
+        "actual_hours": null,
+        "story_points": null,
+        "state": "Closed",
+        "created_date": "2021-10-15T11:41:11.58Z",
+        "closed_date": "2025-01-10T21:39:01.673Z"
+      },
+      "dependencies": [
+        {
+          "type": "parent",
+          "from": 5498744,
+          "to": 5498638
+        }
+      ]
+    },
+    "outcome": {
+      "work_item_id": 5498744,
+      "effort_variance": null,
+      "effort_outcome": "unknown",
+      "schedule_variance_days": null,
+      "schedule_outcome": "unknown",
+      "overall_outcome": "partial_success",
+      "actual_duration_days": 1183
+    },
+    "metadata": {
+      "project": "Outlook",
+      "work_item_id": 5498744,
+      "work_item_url": "https://office.visualstudio.com/Outlook/_workitems/edit/5498744",
+      "complexity": "Q2_Low_Complexity",
+      "value": "Low_Value",
+      "extracted_date": "2025-11-11T20:38:27.630670"
+    }
+  },
+  {
+    "training_id": "ado_5581947",
+    "source": "azure_devops",
+    "context": {
+      "goal": "iOS List Style Update",
+      "description": "<div>iOS has updated their default list style from full-width blocks, to inset blocks with rounded corners. Since we use the native list item style in Outlook iOS, this visual change was automatically updated in the app.&nbsp; This means the iOS Design Kit is now out of date with the build. </div><h3>Action Items </h3><div><ol><li>Update kits to reflect this new list item style. Key areas of affect are Settings and Calendar areas, which use list items heavily. </li><li>Sync with Fluent team and see if they will be updating the iOS Fluent Library to have this new style. If they aren't updating, Outlook will need to fork the styling and may need to create our own components, where necessary. </li> </ol> </div><div><br> </div><div><br> </div>",
+      "work_item_type": "User Story",
+      "priority": 1,
+      "business_value": null,
+      "tags": [
+        "Copper (FY22H2)",
+        " Design",
+        " UI Kit"
+      ],
+      "assigned_to": "Jenna Peppler"
+    },
+    "plan": {
+      "task": {
+        "id": 5581947,
+        "title": "iOS List Style Update",
+        "estimated_hours": null,
+        "actual_hours": null,
+        "story_points": null,
+        "state": "Closed",
+        "created_date": "2021-11-15T15:21:58.463Z",
+        "closed_date": "2025-01-10T21:39:01.673Z"
+      },
+      "dependencies": [
+        {
+          "type": "parent",
+          "from": 5581947,
+          "to": 5223345
+        }
+      ]
+    },
+    "outcome": {
+      "work_item_id": 5581947,
+      "effort_variance": null,
+      "effort_outcome": "unknown",
+      "schedule_variance_days": null,
+      "schedule_outcome": "unknown",
+      "overall_outcome": "partial_success",
+      "actual_duration_days": 1152
+    },
+    "metadata": {
+      "project": "Outlook",
+      "work_item_id": 5581947,
+      "work_item_url": "https://office.visualstudio.com/Outlook/_workitems/edit/5581947",
+      "complexity": "Q2_Low_Complexity",
+      "value": "Medium_Value",
+      "extracted_date": "2025-11-11T20:38:27.630876"
+    }
+  },
+  {
+    "training_id": "ado_5317972",
+    "source": "azure_devops",
+    "context": {
+      "goal": "Workshop Planning",
+      "description": "",
+      "work_item_type": "Task",
+      "priority": null,
+      "business_value": null,
+      "tags": [
+        "Design"
+      ],
+      "assigned_to": "Jenna Peppler"
+    },
+    "plan": {
+      "task": {
+        "id": 5317972,
+        "title": "Workshop Planning",
+        "estimated_hours": null,
+        "actual_hours": null,
+        "story_points": null,
+        "state": "Closed",
+        "created_date": "2021-08-03T16:01:46.483Z",
+        "closed_date": "2025-01-10T21:39:01.673Z"
+      },
+      "dependencies": [
+        {
+          "type": "parent",
+          "from": 5317972,
+          "to": 5317971
+        }
+      ]
+    },
+    "outcome": {
+      "work_item_id": 5317972,
+      "effort_variance": null,
+      "effort_outcome": "unknown",
+      "schedule_variance_days": null,
+      "schedule_outcome": "unknown",
+      "overall_outcome": "partial_success",
+      "actual_duration_days": 1256
+    },
+    "metadata": {
+      "project": "Outlook",
+      "work_item_id": 5317972,
+      "work_item_url": "https://office.visualstudio.com/Outlook/_workitems/edit/5317972",
+      "complexity": "Q2_Low_Complexity",
+      "value": "Low_Value",
+      "extracted_date": "2025-11-11T20:38:27.631091"
+    }
+  },
+  {
+    "training_id": "ado_5582243",
+    "source": "azure_devops",
+    "context": {
+      "goal": "[iOS] New Feature Additions",
+      "description": "",
+      "work_item_type": "User Story",
+      "priority": null,
+      "business_value": null,
+      "tags": [
+        "Copper (FY22H2)",
+        " Design",
+        " UI Kit"
+      ],
+      "assigned_to": "Jenna Peppler"
+    },
+    "plan": {
+      "task": {
+        "id": 5582243,
+        "title": "[iOS] New Feature Additions",
+        "estimated_hours": null,
+        "actual_hours": null,
+        "story_points": null,
+        "state": "Closed",
+        "created_date": "2021-11-15T16:24:17.213Z",
+        "closed_date": "2025-01-10T21:39:01.673Z"
+      },
+      "dependencies": [
+        {
+          "type": "parent",
+          "from": 5582243,
+          "to": 5223345
+        },
+        {
+          "type": "child",
+          "from": 5582243,
+          "to": 5870896
+        },
+        {
+          "type": "child",
+          "from": 5582243,
+          "to": 5582246
+        },
+        {
+          "type": "child",
+          "from": 5582243,
+          "to": 5276601
+        }
+      ]
+    },
+    "outcome": {
+      "work_item_id": 5582243,
+      "effort_variance": null,
+      "effort_outcome": "unknown",
+      "schedule_variance_days": null,
+      "schedule_outcome": "unknown",
+      "overall_outcome": "partial_success",
+      "actual_duration_days": 1152
+    },
+    "metadata": {
+      "project": "Outlook",
+      "work_item_id": 5582243,
+      "work_item_url": "https://office.visualstudio.com/Outlook/_workitems/edit/5582243",
+      "complexity": "Q2_Low_Complexity",
+      "value": "Low_Value",
+      "extracted_date": "2025-11-11T20:38:27.631301"
+    }
+  },
+  {
+    "training_id": "ado_5582246",
+    "source": "azure_devops",
+    "context": {
+      "goal": "[Calendar] Attendee Options",
+      "description": "",
+      "work_item_type": "Task",
+      "priority": null,
+      "business_value": null,
+      "tags": [
+        "Copper (FY22H2)",
+        " Design",
+        " UI Kit"
+      ],
+      "assigned_to": "Jenna Peppler"
+    },
+    "plan": {
+      "task": {
+        "id": 5582246,
+        "title": "[Calendar] Attendee Options",
+        "estimated_hours": null,
+        "actual_hours": null,
+        "story_points": null,
+        "state": "Closed",
+        "created_date": "2021-11-15T16:25:30.403Z",
+        "closed_date": "2025-01-10T21:39:01.673Z"
+      },
+      "dependencies": [
+        {
+          "type": "parent",
+          "from": 5582246,
+          "to": 5582243
+        }
+      ]
+    },
+    "outcome": {
+      "work_item_id": 5582246,
+      "effort_variance": null,
+      "effort_outcome": "unknown",
+      "schedule_variance_days": null,
+      "schedule_outcome": "unknown",
+      "overall_outcome": "partial_success",
+      "actual_duration_days": 1152
+    },
+    "metadata": {
+      "project": "Outlook",
+      "work_item_id": 5582246,
+      "work_item_url": "https://office.visualstudio.com/Outlook/_workitems/edit/5582246",
+      "complexity": "Q2_Low_Complexity",
+      "value": "Low_Value",
+      "extracted_date": "2025-11-11T20:38:27.631510"
+    }
+  },
+  {
+    "training_id": "ado_5582249",
+    "source": "azure_devops",
+    "context": {
+      "goal": "[Android] New Feature Additions",
+      "description": "",
+      "work_item_type": "User Story",
+      "priority": null,
+      "business_value": null,
+      "tags": [
+        "Copper (FY22H2)",
+        " Design",
+        " UI Kit"
+      ],
+      "assigned_to": "Jenna Peppler"
+    },
+    "plan": {
+      "task": {
+        "id": 5582249,
+        "title": "[Android] New Feature Additions",
+        "estimated_hours": null,
+        "actual_hours": null,
+        "story_points": null,
+        "state": "Closed",
+        "created_date": "2021-11-15T16:25:50.04Z",
+        "closed_date": "2025-01-10T21:39:01.673Z"
+      },
+      "dependencies": [
+        {
+          "type": "child",
+          "from": 5582249,
+          "to": 5870895
+        },
+        {
+          "type": "child",
+          "from": 5582249,
+          "to": 5582260
+        },
+        {
+          "type": "child",
+          "from": 5582249,
+          "to": 5582258
+        },
+        {
+          "type": "child",
+          "from": 5582249,
+          "to": 5582256
+        },
+        {
+          "type": "parent",
+          "from": 5582249,
+          "to": 5223346
+        },
+        {
+          "type": "child",
+          "from": 5582249,
+          "to": 5582262
+        }
+      ]
+    },
+    "outcome": {
+      "work_item_id": 5582249,
+      "effort_variance": null,
+      "effort_outcome": "unknown",
+      "schedule_variance_days": null,
+      "schedule_outcome": "unknown",
+      "overall_outcome": "partial_success",
+      "actual_duration_days": 1152
+    },
+    "metadata": {
+      "project": "Outlook",
+      "work_item_id": 5582249,
+      "work_item_url": "https://office.visualstudio.com/Outlook/_workitems/edit/5582249",
+      "complexity": "Q2_Low_Complexity",
+      "value": "Low_Value",
+      "extracted_date": "2025-11-11T20:38:27.631720"
+    }
+  },
+  {
+    "training_id": "ado_5582256",
+    "source": "azure_devops",
+    "context": {
+      "goal": "[Calendar] Optional/Required Attendees",
+      "description": "",
+      "work_item_type": "Task",
+      "priority": null,
+      "business_value": null,
+      "tags": [
+        "Copper (FY22H2)",
+        " Design",
+        " UI Kit"
+      ],
+      "assigned_to": "Jenna Peppler"
+    },
+    "plan": {
+      "task": {
+        "id": 5582256,
+        "title": "[Calendar] Optional/Required Attendees",
+        "estimated_hours": null,
+        "actual_hours": null,
+        "story_points": null,
+        "state": "Closed",
+        "created_date": "2021-11-15T16:31:30.67Z",
+        "closed_date": "2025-01-10T21:39:01.673Z"
+      },
+      "dependencies": [
+        {
+          "type": "parent",
+          "from": 5582256,
+          "to": 5582249
+        }
+      ]
+    },
+    "outcome": {
+      "work_item_id": 5582256,
+      "effort_variance": null,
+      "effort_outcome": "unknown",
+      "schedule_variance_days": null,
+      "schedule_outcome": "unknown",
+      "overall_outcome": "partial_success",
+      "actual_duration_days": 1152
+    },
+    "metadata": {
+      "project": "Outlook",
+      "work_item_id": 5582256,
+      "work_item_url": "https://office.visualstudio.com/Outlook/_workitems/edit/5582256",
+      "complexity": "Q2_Low_Complexity",
+      "value": "Low_Value",
+      "extracted_date": "2025-11-11T20:38:27.631929"
+    }
+  },
+  {
+    "training_id": "ado_5582258",
+    "source": "azure_devops",
+    "context": {
+      "goal": "[Calendar] Time Zones",
+      "description": "",
+      "work_item_type": "Task",
+      "priority": null,
+      "business_value": null,
+      "tags": [
+        "Copper (FY22H2)",
+        " Design",
+        " UI Kit"
+      ],
+      "assigned_to": "Jenna Peppler"
+    },
+    "plan": {
+      "task": {
+        "id": 5582258,
+        "title": "[Calendar] Time Zones",
+        "estimated_hours": null,
+        "actual_hours": null,
+        "story_points": null,
+        "state": "Closed",
+        "created_date": "2021-11-15T16:32:02.68Z",
+        "closed_date": "2025-01-10T21:39:01.673Z"
+      },
+      "dependencies": [
+        {
+          "type": "parent",
+          "from": 5582258,
+          "to": 5582249
+        }
+      ]
+    },
+    "outcome": {
+      "work_item_id": 5582258,
+      "effort_variance": null,
+      "effort_outcome": "unknown",
+      "schedule_variance_days": null,
+      "schedule_outcome": "unknown",
+      "overall_outcome": "partial_success",
+      "actual_duration_days": 1152
+    },
+    "metadata": {
+      "project": "Outlook",
+      "work_item_id": 5582258,
+      "work_item_url": "https://office.visualstudio.com/Outlook/_workitems/edit/5582258",
+      "complexity": "Q2_Low_Complexity",
+      "value": "Low_Value",
+      "extracted_date": "2025-11-11T20:38:27.632133"
+    }
+  },
+  {
+    "training_id": "ado_5582260",
+    "source": "azure_devops",
+    "context": {
+      "goal": "[Settings] Inbox Density",
+      "description": "",
+      "work_item_type": "Task",
+      "priority": null,
+      "business_value": null,
+      "tags": [
+        "Copper (FY22H2)",
+        " Design",
+        " UI Kit"
+      ],
+      "assigned_to": "Jenna Peppler"
+    },
+    "plan": {
+      "task": {
+        "id": 5582260,
+        "title": "[Settings] Inbox Density",
+        "estimated_hours": null,
+        "actual_hours": null,
+        "story_points": null,
+        "state": "Closed",
+        "created_date": "2021-11-15T16:32:30.99Z",
+        "closed_date": "2025-01-10T21:39:01.673Z"
+      },
+      "dependencies": [
+        {
+          "type": "child",
+          "from": 5582260,
+          "to": 5582331
+        },
+        {
+          "type": "parent",
+          "from": 5582260,
+          "to": 5582249
+        }
+      ]
+    },
+    "outcome": {
+      "work_item_id": 5582260,
+      "effort_variance": null,
+      "effort_outcome": "unknown",
+      "schedule_variance_days": null,
+      "schedule_outcome": "unknown",
+      "overall_outcome": "partial_success",
+      "actual_duration_days": 1152
+    },
+    "metadata": {
+      "project": "Outlook",
+      "work_item_id": 5582260,
+      "work_item_url": "https://office.visualstudio.com/Outlook/_workitems/edit/5582260",
+      "complexity": "Q2_Low_Complexity",
+      "value": "Low_Value",
+      "extracted_date": "2025-11-11T20:38:27.632338"
+    }
+  },
+  {
+    "training_id": "ado_5582262",
+    "source": "azure_devops",
+    "context": {
+      "goal": "[Settings] Theme Switcher",
+      "description": "",
+      "work_item_type": "Task",
+      "priority": null,
+      "business_value": null,
+      "tags": [
+        "Copper (FY22H2)",
+        " Design",
+        " UI Kit"
+      ],
+      "assigned_to": "Jenna Peppler"
+    },
+    "plan": {
+      "task": {
+        "id": 5582262,
+        "title": "[Settings] Theme Switcher",
+        "estimated_hours": null,
+        "actual_hours": null,
+        "story_points": null,
+        "state": "Closed",
+        "created_date": "2021-11-15T16:32:55.29Z",
+        "closed_date": "2025-01-10T21:39:01.673Z"
+      },
+      "dependencies": [
+        {
+          "type": "parent",
+          "from": 5582262,
+          "to": 5582249
+        }
+      ]
+    },
+    "outcome": {
+      "work_item_id": 5582262,
+      "effort_variance": null,
+      "effort_outcome": "unknown",
+      "schedule_variance_days": null,
+      "schedule_outcome": "unknown",
+      "overall_outcome": "partial_success",
+      "actual_duration_days": 1152
+    },
+    "metadata": {
+      "project": "Outlook",
+      "work_item_id": 5582262,
+      "work_item_url": "https://office.visualstudio.com/Outlook/_workitems/edit/5582262",
+      "complexity": "Q2_Low_Complexity",
+      "value": "Low_Value",
+      "extracted_date": "2025-11-11T20:38:27.632540"
+    }
+  },
+  {
+    "training_id": "ado_5276571",
+    "source": "azure_devops",
+    "context": {
+      "goal": "Mail",
+      "description": "",
+      "work_item_type": "User Story",
+      "priority": null,
+      "business_value": null,
+      "tags": [
+        "Design"
+      ],
+      "assigned_to": "Jenna Peppler"
+    },
+    "plan": {
+      "task": {
+        "id": 5276571,
+        "title": "Mail",
+        "estimated_hours": null,
+        "actual_hours": null,
+        "story_points": null,
+        "state": "Closed",
+        "created_date": "2021-07-16T16:07:38.33Z",
+        "closed_date": "2025-01-10T21:39:01.673Z"
+      },
+      "dependencies": [
+        {
+          "type": "parent",
+          "from": 5276571,
+          "to": 5223346
+        },
+        {
+          "type": "child",
+          "from": 5276571,
+          "to": 5303480
+        },
+        {
+          "type": "child",
+          "from": 5276571,
+          "to": 5303481
+        },
+        {
+          "type": "child",
+          "from": 5276571,
+          "to": 5303473
+        }
+      ]
+    },
+    "outcome": {
+      "work_item_id": 5276571,
+      "effort_variance": null,
+      "effort_outcome": "unknown",
+      "schedule_variance_days": null,
+      "schedule_outcome": "unknown",
+      "overall_outcome": "partial_success",
+      "actual_duration_days": 1274
+    },
+    "metadata": {
+      "project": "Outlook",
+      "work_item_id": 5276571,
+      "work_item_url": "https://office.visualstudio.com/Outlook/_workitems/edit/5276571",
+      "complexity": "Q2_Low_Complexity",
+      "value": "Low_Value",
+      "extracted_date": "2025-11-11T20:38:27.632744"
+    }
+  },
+  {
+    "training_id": "ado_5276573",
+    "source": "azure_devops",
+    "context": {
+      "goal": "Search",
+      "description": "",
+      "work_item_type": "User Story",
+      "priority": null,
+      "business_value": null,
+      "tags": [
+        "Design"
+      ],
+      "assigned_to": "Jenna Peppler"
+    },
+    "plan": {
+      "task": {
+        "id": 5276573,
+        "title": "Search",
+        "estimated_hours": null,
+        "actual_hours": null,
+        "story_points": null,
+        "state": "Closed",
+        "created_date": "2021-07-16T16:08:10.8Z",
+        "closed_date": "2025-01-10T21:39:01.673Z"
+      },
+      "dependencies": [
+        {
+          "type": "parent",
+          "from": 5276573,
+          "to": 5223346
+        }
+      ]
+    },
+    "outcome": {
+      "work_item_id": 5276573,
+      "effort_variance": null,
+      "effort_outcome": "unknown",
+      "schedule_variance_days": null,
+      "schedule_outcome": "unknown",
+      "overall_outcome": "partial_success",
+      "actual_duration_days": 1274
+    },
+    "metadata": {
+      "project": "Outlook",
+      "work_item_id": 5276573,
+      "work_item_url": "https://office.visualstudio.com/Outlook/_workitems/edit/5276573",
+      "complexity": "Q2_Low_Complexity",
+      "value": "Low_Value",
+      "extracted_date": "2025-11-11T20:38:27.632946"
+    }
+  },
+  {
+    "training_id": "ado_5276574",
+    "source": "azure_devops",
+    "context": {
+      "goal": "Calendar",
+      "description": "",
+      "work_item_type": "User Story",
+      "priority": null,
+      "business_value": null,
+      "tags": [
+        "Design"
+      ],
+      "assigned_to": "Jenna Peppler"
+    },
+    "plan": {
+      "task": {
+        "id": 5276574,
+        "title": "Calendar",
+        "estimated_hours": null,
+        "actual_hours": null,
+        "story_points": null,
+        "state": "Closed",
+        "created_date": "2021-07-16T16:08:19.273Z",
+        "closed_date": "2025-01-10T21:39:01.673Z"
+      },
+      "dependencies": [
+        {
+          "type": "child",
+          "from": 5276574,
+          "to": 5308744
+        },
+        {
+          "type": "child",
+          "from": 5276574,
+          "to": 5308677
+        },
+        {
+          "type": "child",
+          "from": 5276574,
+          "to": 5308754
+        },
+        {
+          "type": "child",
+          "from": 5276574,
+          "to": 5308745
+        },
+        {
+          "type": "parent",
+          "from": 5276574,
+          "to": 5223346
+        }
+      ]
+    },
+    "outcome": {
+      "work_item_id": 5276574,
+      "effort_variance": null,
+      "effort_outcome": "unknown",
+      "schedule_variance_days": null,
+      "schedule_outcome": "unknown",
+      "overall_outcome": "partial_success",
+      "actual_duration_days": 1274
+    },
+    "metadata": {
+      "project": "Outlook",
+      "work_item_id": 5276574,
+      "work_item_url": "https://office.visualstudio.com/Outlook/_workitems/edit/5276574",
+      "complexity": "Q2_Low_Complexity",
+      "value": "Low_Value",
+      "extracted_date": "2025-11-11T20:38:27.633154"
+    }
+  },
+  {
+    "training_id": "ado_5276575",
+    "source": "azure_devops",
+    "context": {
+      "goal": "Settings",
+      "description": "",
+      "work_item_type": "User Story",
+      "priority": null,
+      "business_value": null,
+      "tags": [
+        "Design"
+      ],
+      "assigned_to": "Jenna Peppler"
+    },
+    "plan": {
+      "task": {
+        "id": 5276575,
+        "title": "Settings",
+        "estimated_hours": null,
+        "actual_hours": null,
+        "story_points": null,
+        "state": "Closed",
+        "created_date": "2021-07-16T16:08:34.613Z",
+        "closed_date": "2025-01-10T21:39:01.673Z"
+      },
+      "dependencies": [
+        {
+          "type": "parent",
+          "from": 5276575,
+          "to": 5223346
+        }
+      ]
+    },
+    "outcome": {
+      "work_item_id": 5276575,
+      "effort_variance": null,
+      "effort_outcome": "unknown",
+      "schedule_variance_days": null,
+      "schedule_outcome": "unknown",
+      "overall_outcome": "partial_success",
+      "actual_duration_days": 1274
+    },
+    "metadata": {
+      "project": "Outlook",
+      "work_item_id": 5276575,
+      "work_item_url": "https://office.visualstudio.com/Outlook/_workitems/edit/5276575",
+      "complexity": "Q2_Low_Complexity",
+      "value": "Low_Value",
+      "extracted_date": "2025-11-11T20:38:27.633368"
+    }
+  },
+  {
+    "training_id": "ado_5276578",
+    "source": "azure_devops",
+    "context": {
+      "goal": "People & Groups",
+      "description": "",
+      "work_item_type": "User Story",
+      "priority": null,
+      "business_value": null,
+      "tags": [
+        "Design"
+      ],
+      "assigned_to": "Jenna Peppler"
+    },
+    "plan": {
+      "task": {
+        "id": 5276578,
+        "title": "People & Groups",
+        "estimated_hours": null,
+        "actual_hours": null,
+        "story_points": null,
+        "state": "Closed",
+        "created_date": "2021-07-16T16:09:11.65Z",
+        "closed_date": "2025-01-10T21:39:01.673Z"
+      },
+      "dependencies": [
+        {
+          "type": "child",
+          "from": 5276578,
+          "to": 5276597
+        },
+        {
+          "type": "child",
+          "from": 5276578,
+          "to": 5276600
+        },
+        {
+          "type": "child",
+          "from": 5276578,
+          "to": 6046112
+        },
+        {
+          "type": "child",
+          "from": 5276578,
+          "to": 5276593
+        },
+        {
+          "type": "child",
+          "from": 5276578,
+          "to": 5276598
+        },
+        {
+          "type": "parent",
+          "from": 5276578,
+          "to": 5223346
+        }
+      ]
+    },
+    "outcome": {
+      "work_item_id": 5276578,
+      "effort_variance": null,
+      "effort_outcome": "unknown",
+      "schedule_variance_days": null,
+      "schedule_outcome": "unknown",
+      "overall_outcome": "partial_success",
+      "actual_duration_days": 1274
+    },
+    "metadata": {
+      "project": "Outlook",
+      "work_item_id": 5276578,
+      "work_item_url": "https://office.visualstudio.com/Outlook/_workitems/edit/5276578",
+      "complexity": "Q2_Low_Complexity",
+      "value": "Low_Value",
+      "extracted_date": "2025-11-11T20:38:27.633581"
+    }
+  },
+  {
+    "training_id": "ado_5276579",
+    "source": "azure_devops",
+    "context": {
+      "goal": "Onboarding",
+      "description": "",
+      "work_item_type": "User Story",
+      "priority": null,
+      "business_value": null,
+      "tags": [
+        "Design"
+      ],
+      "assigned_to": "Jenna Peppler"
+    },
+    "plan": {
+      "task": {
+        "id": 5276579,
+        "title": "Onboarding",
+        "estimated_hours": null,
+        "actual_hours": null,
+        "story_points": null,
+        "state": "Closed",
+        "created_date": "2021-07-16T16:09:20.767Z",
+        "closed_date": "2025-01-10T21:39:01.673Z"
+      },
+      "dependencies": [
+        {
+          "type": "parent",
+          "from": 5276579,
+          "to": 5223346
+        }
+      ]
+    },
+    "outcome": {
+      "work_item_id": 5276579,
+      "effort_variance": null,
+      "effort_outcome": "unknown",
+      "schedule_variance_days": null,
+      "schedule_outcome": "unknown",
+      "overall_outcome": "partial_success",
+      "actual_duration_days": 1274
+    },
+    "metadata": {
+      "project": "Outlook",
+      "work_item_id": 5276579,
+      "work_item_url": "https://office.visualstudio.com/Outlook/_workitems/edit/5276579",
+      "complexity": "Q2_Low_Complexity",
+      "value": "Low_Value",
+      "extracted_date": "2025-11-11T20:38:27.633797"
+    }
+  },
+  {
+    "training_id": "ado_5276581",
+    "source": "azure_devops",
+    "context": {
+      "goal": "Mail",
+      "description": "",
+      "work_item_type": "User Story",
+      "priority": null,
+      "business_value": null,
+      "tags": [
+        "Design"
+      ],
+      "assigned_to": "Jenna Peppler"
+    },
+    "plan": {
+      "task": {
+        "id": 5276581,
+        "title": "Mail",
+        "estimated_hours": null,
+        "actual_hours": null,
+        "story_points": null,
+        "state": "Closed",
+        "created_date": "2021-07-16T16:09:54.11Z",
+        "closed_date": "2025-01-10T21:39:01.673Z"
+      },
+      "dependencies": [
+        {
+          "type": "child",
+          "from": 5276581,
+          "to": 5303626
+        },
+        {
+          "type": "parent",
+          "from": 5276581,
+          "to": 5223345
+        },
+        {
+          "type": "child",
+          "from": 5276581,
+          "to": 5303711
+        },
+        {
+          "type": "child",
+          "from": 5276581,
+          "to": 5304020
+        }
+      ]
+    },
+    "outcome": {
+      "work_item_id": 5276581,
+      "effort_variance": null,
+      "effort_outcome": "unknown",
+      "schedule_variance_days": null,
+      "schedule_outcome": "unknown",
+      "overall_outcome": "partial_success",
+      "actual_duration_days": 1274
+    },
+    "metadata": {
+      "project": "Outlook",
+      "work_item_id": 5276581,
+      "work_item_url": "https://office.visualstudio.com/Outlook/_workitems/edit/5276581",
+      "complexity": "Q2_Low_Complexity",
+      "value": "Low_Value",
+      "extracted_date": "2025-11-11T20:38:27.634004"
+    }
+  },
+  {
+    "training_id": "ado_5276584",
+    "source": "azure_devops",
+    "context": {
+      "goal": "Search",
+      "description": "",
+      "work_item_type": "User Story",
+      "priority": null,
+      "business_value": null,
+      "tags": [
+        "Design"
+      ],
+      "assigned_to": "Jenna Peppler"
+    },
+    "plan": {
+      "task": {
+        "id": 5276584,
+        "title": "Search",
+        "estimated_hours": null,
+        "actual_hours": null,
+        "story_points": null,
+        "state": "Closed",
+        "created_date": "2021-07-16T16:10:45.287Z",
+        "closed_date": "2025-01-10T21:39:01.673Z"
+      },
+      "dependencies": [
+        {
+          "type": "parent",
+          "from": 5276584,
+          "to": 5223345
+        }
+      ]
+    },
+    "outcome": {
+      "work_item_id": 5276584,
+      "effort_variance": null,
+      "effort_outcome": "unknown",
+      "schedule_variance_days": null,
+      "schedule_outcome": "unknown",
+      "overall_outcome": "partial_success",
+      "actual_duration_days": 1274
+    },
+    "metadata": {
+      "project": "Outlook",
+      "work_item_id": 5276584,
+      "work_item_url": "https://office.visualstudio.com/Outlook/_workitems/edit/5276584",
+      "complexity": "Q2_Low_Complexity",
+      "value": "Low_Value",
+      "extracted_date": "2025-11-11T20:38:27.634209"
+    }
+  },
+  {
+    "training_id": "ado_5276585",
+    "source": "azure_devops",
+    "context": {
+      "goal": "Calendar",
+      "description": "",
+      "work_item_type": "User Story",
+      "priority": null,
+      "business_value": null,
+      "tags": [
+        "Design",
+        " UI Kit"
+      ],
+      "assigned_to": "Hao Liu (Microsoft Teams Designer)"
+    },
+    "plan": {
+      "task": {
+        "id": 5276585,
+        "title": "Calendar",
+        "estimated_hours": null,
+        "actual_hours": null,
+        "story_points": null,
+        "state": "Closed",
+        "created_date": "2021-07-16T16:10:53.86Z",
+        "closed_date": "2025-01-10T21:39:01.673Z"
+      },
+      "dependencies": [
+        {
+          "type": "child",
+          "from": 5276585,
+          "to": 5276602
+        },
+        {
+          "type": "child",
+          "from": 5276585,
+          "to": 5498638
+        },
+        {
+          "type": "parent",
+          "from": 5276585,
+          "to": 5223345
+        },
+        {
+          "type": "child",
+          "from": 5276585,
+          "to": 5498641
+        },
+        {
+          "type": "child",
+          "from": 5276585,
+          "to": 5498639
+        },
+        {
+          "type": "child",
+          "from": 5276585,
+          "to": 5498640
+        }
+      ]
+    },
+    "outcome": {
+      "work_item_id": 5276585,
+      "effort_variance": null,
+      "effort_outcome": "unknown",
+      "schedule_variance_days": null,
+      "schedule_outcome": "unknown",
+      "overall_outcome": "partial_success",
+      "actual_duration_days": 1274
+    },
+    "metadata": {
+      "project": "Outlook",
+      "work_item_id": 5276585,
+      "work_item_url": "https://office.visualstudio.com/Outlook/_workitems/edit/5276585",
+      "complexity": "Q2_Low_Complexity",
+      "value": "Low_Value",
+      "extracted_date": "2025-11-11T20:38:27.634423"
+    }
+  },
+  {
+    "training_id": "ado_5276586",
+    "source": "azure_devops",
+    "context": {
+      "goal": "Settings",
+      "description": "",
+      "work_item_type": "User Story",
+      "priority": null,
+      "business_value": null,
+      "tags": [
+        "Design"
+      ],
+      "assigned_to": "Jenna Peppler"
+    },
+    "plan": {
+      "task": {
+        "id": 5276586,
+        "title": "Settings",
+        "estimated_hours": null,
+        "actual_hours": null,
+        "story_points": null,
+        "state": "Closed",
+        "created_date": "2021-07-16T16:11:13.42Z",
+        "closed_date": "2025-01-10T21:39:01.673Z"
+      },
+      "dependencies": [
+        {
+          "type": "parent",
+          "from": 5276586,
+          "to": 5223345
+        }
+      ]
+    },
+    "outcome": {
+      "work_item_id": 5276586,
+      "effort_variance": null,
+      "effort_outcome": "unknown",
+      "schedule_variance_days": null,
+      "schedule_outcome": "unknown",
+      "overall_outcome": "partial_success",
+      "actual_duration_days": 1274
+    },
+    "metadata": {
+      "project": "Outlook",
+      "work_item_id": 5276586,
+      "work_item_url": "https://office.visualstudio.com/Outlook/_workitems/edit/5276586",
+      "complexity": "Q2_Low_Complexity",
+      "value": "Low_Value",
+      "extracted_date": "2025-11-11T20:38:27.634626"
+    }
+  },
+  {
+    "training_id": "ado_5276588",
+    "source": "azure_devops",
+    "context": {
+      "goal": "People & Groups",
+      "description": "",
+      "work_item_type": "User Story",
+      "priority": null,
+      "business_value": null,
+      "tags": [
+        "Design"
+      ],
+      "assigned_to": "Jenna Peppler"
+    },
+    "plan": {
+      "task": {
+        "id": 5276588,
+        "title": "People & Groups",
+        "estimated_hours": null,
+        "actual_hours": null,
+        "story_points": null,
+        "state": "Closed",
+        "created_date": "2021-07-16T16:11:22.177Z",
+        "closed_date": "2025-01-10T21:39:01.673Z"
+      },
+      "dependencies": [
+        {
+          "type": "child",
+          "from": 5276588,
+          "to": 6046115
+        },
+        {
+          "type": "child",
+          "from": 5276588,
+          "to": 6046117
+        },
+        {
+          "type": "parent",
+          "from": 5276588,
+          "to": 5223345
+        }
+      ]
+    },
+    "outcome": {
+      "work_item_id": 5276588,
+      "effort_variance": null,
+      "effort_outcome": "unknown",
+      "schedule_variance_days": null,
+      "schedule_outcome": "unknown",
+      "overall_outcome": "partial_success",
+      "actual_duration_days": 1274
+    },
+    "metadata": {
+      "project": "Outlook",
+      "work_item_id": 5276588,
+      "work_item_url": "https://office.visualstudio.com/Outlook/_workitems/edit/5276588",
+      "complexity": "Q2_Low_Complexity",
+      "value": "Low_Value",
+      "extracted_date": "2025-11-11T20:38:27.634833"
+    }
+  },
+  {
+    "training_id": "ado_5276589",
+    "source": "azure_devops",
+    "context": {
+      "goal": "Onboarding",
+      "description": "",
+      "work_item_type": "User Story",
+      "priority": null,
+      "business_value": null,
+      "tags": [
+        "Design"
+      ],
+      "assigned_to": "Jenna Peppler"
+    },
+    "plan": {
+      "task": {
+        "id": 5276589,
+        "title": "Onboarding",
+        "estimated_hours": null,
+        "actual_hours": null,
+        "story_points": null,
+        "state": "Closed",
+        "created_date": "2021-07-16T16:11:40.397Z",
+        "closed_date": "2025-01-10T21:39:01.673Z"
+      },
+      "dependencies": [
+        {
+          "type": "parent",
+          "from": 5276589,
+          "to": 5223345
+        }
+      ]
+    },
+    "outcome": {
+      "work_item_id": 5276589,
+      "effort_variance": null,
+      "effort_outcome": "unknown",
+      "schedule_variance_days": null,
+      "schedule_outcome": "unknown",
+      "overall_outcome": "partial_success",
+      "actual_duration_days": 1274
+    },
+    "metadata": {
+      "project": "Outlook",
+      "work_item_id": 5276589,
+      "work_item_url": "https://office.visualstudio.com/Outlook/_workitems/edit/5276589",
+      "complexity": "Q2_Low_Complexity",
+      "value": "Low_Value",
+      "extracted_date": "2025-11-11T20:38:27.635033"
+    }
+  }
+]
