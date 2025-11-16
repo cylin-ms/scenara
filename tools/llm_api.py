@@ -16,10 +16,11 @@ from anthropic import Anthropic
 class LLMAPIClient:
     def __init__(self):
         self.configure_clients()
+        self.ollama_clients = {}  # Cache for different Ollama base URLs
     
     def configure_clients(self):
         """Configure API clients for different providers"""
-        # Ollama (local)
+        # Ollama (local) - default client
         self.ollama_client = ollama.Client()
         
         # OpenAI
@@ -36,7 +37,7 @@ class LLMAPIClient:
         else:
             self.anthropic_client = None
     
-    def query_llm(self, prompt: str, provider: str = "ollama", model: str = None, image_path: Optional[str] = None) -> str:
+    def query_llm(self, prompt: str, provider: str = "ollama", model: str = None, image_path: Optional[str] = None, base_url: Optional[str] = None, temperature: Optional[float] = None, timeout: Optional[float] = None) -> str:
         """
         Query LLM with support for different providers
         
@@ -45,13 +46,16 @@ class LLMAPIClient:
             provider: LLM provider ("ollama", "openai", "anthropic")
             model: Specific model to use (optional)
             image_path: Path to image for vision capabilities (optional)
+            base_url: Base URL for Ollama server (optional, for remote servers)
+            temperature: Temperature parameter for generation (optional)
+            timeout: Timeout in seconds (optional)
         
         Returns:
             LLM response as string
         """
         try:
             if provider == "ollama":
-                return self._query_ollama(prompt, model or "gpt-oss:20b", image_path)
+                return self._query_ollama(prompt, model or "gpt-oss:20b", image_path, base_url, temperature, timeout)
             elif provider == "openai":
                 return self._query_openai(prompt, model or "gpt-4o", image_path)
             elif provider == "anthropic":
@@ -63,17 +67,28 @@ class LLMAPIClient:
             print(f"Error querying {provider}: {e}", file=sys.stderr)
             return f"Error: Failed to get response from {provider}: {str(e)}"
     
-    def _query_ollama(self, prompt: str, model: str, image_path: Optional[str] = None) -> str:
-        """Query Ollama local LLM"""
+    def _query_ollama(self, prompt: str, model: str, image_path: Optional[str] = None, base_url: Optional[str] = None, temperature: Optional[float] = None, timeout: Optional[float] = None) -> str:
+        """Query Ollama local or remote LLM"""
         try:
-            # Check if model is available
-            models_response = self.ollama_client.list()
-            available_models = [m.model for m in models_response.models]
+            # Get or create client for this base_url
+            if base_url:
+                if base_url not in self.ollama_clients:
+                    print(f"Creating Ollama client for {base_url}", file=sys.stderr)
+                    self.ollama_clients[base_url] = ollama.Client(host=base_url)
+                client = self.ollama_clients[base_url]
+            else:
+                client = self.ollama_client
             
-            if model not in available_models:
-                # Try to pull the model
-                print(f"Model {model} not found. Attempting to pull...", file=sys.stderr)
-                self.ollama_client.pull(model)
+            # Check if model is available
+            try:
+                models_response = client.list()
+                available_models = [m['name'] if isinstance(m, dict) else m.model for m in models_response.get('models', [])]
+            except Exception as e:
+                print(f"Warning: Could not list models: {e}", file=sys.stderr)
+                available_models = []
+            
+            if available_models and model not in available_models:
+                print(f"Warning: Model {model} not found in available models: {available_models}", file=sys.stderr)
             
             # Prepare message
             message = {"role": "user", "content": prompt}
@@ -85,10 +100,22 @@ class LLMAPIClient:
                     image_data = base64.b64encode(f.read()).decode()
                     message["images"] = [image_data]
             
-            response = self.ollama_client.chat(
+            # Prepare options
+            options = {}
+            if temperature is not None:
+                options["temperature"] = temperature
+            else:
+                options["temperature"] = 0.3
+            
+            # Set timeout (default 5 minutes for large models)
+            request_timeout = timeout if timeout else 300.0
+            
+            print(f"Querying {base_url or 'localhost'} with model {model} (timeout: {request_timeout}s)...", file=sys.stderr)
+            
+            response = client.chat(
                 model=model,
                 messages=[message],
-                options={"temperature": 0.3}
+                options=options
             )
             
             return response['message']['content']

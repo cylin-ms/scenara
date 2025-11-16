@@ -1,0 +1,8 @@
+{
+  "total_training": 14,
+  "total_eval": 7,
+  "scenarios_processed": 7,
+  "variations_per_scenario": 3,
+  "output_file": "post_training/data/training/workback_scenarios.jsonl",
+  "eval_file": "post_training/data/training/workback_scenarios_eval.jsonl"
+}

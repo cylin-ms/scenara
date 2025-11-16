@@ -1,0 +1,60 @@
+{
+  "id": "WB-BOARD-OF-DIRECTORS-M&A-APPROVAL-MEETING-001",
+  "subject": "Board of Directors M&A Approval Meeting",
+  "bodyPreview": "Board approval to acquire DataFlow Analytics for $385M cash + stock, strategic rationale review, integration planning",
+  "showAs": "busy",
+  "type": "singleInstance",
+  "start": {
+    "dateTime": "2025-12-15T14:00:00.0000000",
+    "timeZone": "America/Los_Angeles"
+  },
+  "end": {
+    "dateTime": "2025-12-15T16:00:00.0000000",
+    "timeZone": "America/Los_Angeles"
+  },
+  "organizer": {
+    "emailAddress": {
+      "name": "Chief Executive Officer",
+      "address": "chief.executive.officer@example.com"
+    }
+  },
+  "attendees": [
+    {
+      "type": "required",
+      "status": {
+        "response": "none",
+        "time": "0001-01-01T00:00:00Z"
+      },
+      "emailAddress": {
+        "name": "Chief Executive Officer",
+        "address": "ceo@example.com"
+      }
+    },
+    {
+      "type": "required",
+      "status": {
+        "response": "none",
+        "time": "0001-01-01T00:00:00Z"
+      },
+      "emailAddress": {
+        "name": "Chief Financial Officer",
+        "address": "cfo@example.com"
+      }
+    }
+  ],
+  "responseStatus": {
+    "response": "organizer",
+    "time": "2025-11-12T18:24:48.088354Z"
+  },
+  "_workback_metadata": {
+    "meeting_type": "Board of Directors M&A Approval Meeting",
+    "complexity": "high",
+    "original_context": {
+      "meeting_type": "Board of Directors M&A Approval Meeting",
+      "target_date": "March 20, 2026, 9:00 AM - 3:00 PM PT (Board retreat format)",
+      "organizer": "Chief Executive Officer",
+      "attendees": "Board of Directors (9 members), CEO, CFO, General Counsel, Head of Corp Dev, M&A Advisors (Goldman Sachs, Skadden Arps)",
+      "objective": "Board approval to acquire DataFlow Analytics for $385M cash + stock, strategic rationale review, integration planning"
+    }
+  }
+}

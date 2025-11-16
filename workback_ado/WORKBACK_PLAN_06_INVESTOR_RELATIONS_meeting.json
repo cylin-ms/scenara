@@ -1,0 +1,60 @@
+{
+  "id": "WB-Q4-2025-EARNINGS-CALL-AND-INVESTOR-PRESENTATION-001",
+  "subject": "Q4 2025 Earnings Call and Investor Presentation",
+  "bodyPreview": "Report Q4 and FY2025 financial results, provide FY2026 guidance, answer analyst questions",
+  "showAs": "busy",
+  "type": "singleInstance",
+  "start": {
+    "dateTime": "2025-12-15T14:00:00.0000000",
+    "timeZone": "America/Los_Angeles"
+  },
+  "end": {
+    "dateTime": "2025-12-15T16:00:00.0000000",
+    "timeZone": "America/Los_Angeles"
+  },
+  "organizer": {
+    "emailAddress": {
+      "name": "Chief Financial Officer",
+      "address": "chief.financial.officer@example.com"
+    }
+  },
+  "attendees": [
+    {
+      "type": "required",
+      "status": {
+        "response": "none",
+        "time": "0001-01-01T00:00:00Z"
+      },
+      "emailAddress": {
+        "name": "Chief Executive Officer",
+        "address": "ceo@example.com"
+      }
+    },
+    {
+      "type": "required",
+      "status": {
+        "response": "none",
+        "time": "0001-01-01T00:00:00Z"
+      },
+      "emailAddress": {
+        "name": "Chief Financial Officer",
+        "address": "cfo@example.com"
+      }
+    }
+  ],
+  "responseStatus": {
+    "response": "organizer",
+    "time": "2025-11-12T18:24:48.082291Z"
+  },
+  "_workback_metadata": {
+    "meeting_type": "Q4 2025 Earnings Call and Investor Presentation",
+    "complexity": "high",
+    "original_context": {
+      "meeting_type": "Q4 2025 Earnings Call and Investor Presentation",
+      "target_date": "January 28, 2026, 5:00 PM - 6:30 PM ET",
+      "organizer": "Chief Financial Officer",
+      "attendees": "Public call (500+ investors/analysts expected), Presenters: CEO, CFO (Internal prep team: IR Director, Legal, Corporate Comm, Investor Relations)",
+      "objective": "Report Q4 and FY2025 financial results, provide FY2026 guidance, answer analyst questions"
+    }
+  }
+}

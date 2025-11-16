@@ -1,0 +1,60 @@
+{
+  "id": "WB-QUARTERLY-BUSINESS-REVIEW-001",
+  "subject": "Quarterly Business Review",
+  "bodyPreview": "Review Q4 2025 performance, align on Q1 2026 priorities",
+  "showAs": "busy",
+  "type": "singleInstance",
+  "start": {
+    "dateTime": "2025-12-15T14:00:00.0000000",
+    "timeZone": "America/Los_Angeles"
+  },
+  "end": {
+    "dateTime": "2025-12-15T16:00:00.0000000",
+    "timeZone": "America/Los_Angeles"
+  },
+  "organizer": {
+    "emailAddress": {
+      "name": "SVP of Operations",
+      "address": "svp.of.operations@example.com"
+    }
+  },
+  "attendees": [
+    {
+      "type": "required",
+      "status": {
+        "response": "none",
+        "time": "0001-01-01T00:00:00Z"
+      },
+      "emailAddress": {
+        "name": "Chief Executive Officer",
+        "address": "ceo@example.com"
+      }
+    },
+    {
+      "type": "required",
+      "status": {
+        "response": "none",
+        "time": "0001-01-01T00:00:00Z"
+      },
+      "emailAddress": {
+        "name": "Chief Financial Officer",
+        "address": "cfo@example.com"
+      }
+    }
+  ],
+  "responseStatus": {
+    "response": "organizer",
+    "time": "2025-11-12T18:24:48.043834Z"
+  },
+  "_workback_metadata": {
+    "meeting_type": "Quarterly Business Review",
+    "complexity": "high",
+    "original_context": {
+      "meeting_type": "Quarterly Business Review",
+      "target_date": "December 15, 2025, 2:00 PM - 4:00 PM PT",
+      "organizer": "SVP of Operations",
+      "attendees": "CEO, CFO, Division heads (8), Key stakeholders (12)",
+      "objective": "Review Q4 2025 performance, align on Q1 2026 priorities"
+    }
+  }
+}

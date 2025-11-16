@@ -1,0 +1,39 @@
+{
+  "test_date": "2025-11-16",
+  "test_scenario": "Newsletter Launch Workback Plan (CXA slide07)",
+  "context": "\nMeeting: Newsletter Launch Planning\nTarget Date: 2025-12-15\nDuration: 4 weeks\n\nParticipants:\n- Content Owner (content@cxa.com) - Responsible for initial draft\n- Leadership Team (lt@cxa.com) - First review cycle\n- Executive Team (exec@cxa.com) - Final approval\n- Ops/Marketing (ops@cxa.com) - Publication and distribution\n\nObjectives:\n1. Create comprehensive newsletter content\n2. Complete multi-level review process (LT \u2192 Exec)\n3. Prepare and publish newsletter on schedule\n4. Ensure quality and alignment with company messaging\n\nMilestones (4-week timeline):\n- T-4w: Content Due - Initial draft ready\n- T-3w: LT Review - Leadership team review cycle\n- T-2w: Exec Review - Executive approval\n- T-1w: Publish Prep - Final preparation\n- T-0: Go Live - Newsletter sent to audience\n\nKey Constraints:\n- Multi-stakeholder approval process\n- Fixed 4-week timeline\n- Quality standards must be met\n- Cross-functional coordination required\n\nDeliverables:\n- Newsletter content (draft, reviewed, final)\n- Review feedback and revisions\n- Publication materials and distribution list\n",
+  "results": {
+    "gpt-oss:20b": {
+      "success": true,
+      "elapsed": 141.79316687583923,
+      "metrics": {
+        "has_summary": false,
+        "task_count": 25,
+        "deliverable_count": 0,
+        "participant_count": 0,
+        "tasks_with_dependencies": 0,
+        "tasks_with_participants": 0,
+        "tasks_with_artifacts": 0,
+        "avg_task_description_length": 0
+      },
+      "analysis_length": 6749,
+      "structured_length": 10935
+    },
+    "gpt-oss:120b": {
+      "success": true,
+      "elapsed": 178.04549717903137,
+      "metrics": {
+        "has_summary": false,
+        "task_count": 26,
+        "deliverable_count": 5,
+        "participant_count": 4,
+        "tasks_with_dependencies": 0,
+        "tasks_with_participants": 0,
+        "tasks_with_artifacts": 0,
+        "avg_task_description_length": 0
+      },
+      "analysis_length": 9666,
+      "structured_length": 14561
+    }
+  }
+}

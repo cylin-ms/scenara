@@ -1,0 +1,49 @@
+{
+  "id": "WB-BOARD-OF-DIRECTORS-QUARTERLY-REVIEW-001",
+  "subject": "Board of Directors Quarterly Review",
+  "bodyPreview": "Review Q4 2025 performance, approve FY2026 budget, governance matters",
+  "showAs": "busy",
+  "type": "singleInstance",
+  "start": {
+    "dateTime": "2025-12-15T14:00:00.0000000",
+    "timeZone": "America/Los_Angeles"
+  },
+  "end": {
+    "dateTime": "2025-12-15T16:00:00.0000000",
+    "timeZone": "America/Los_Angeles"
+  },
+  "organizer": {
+    "emailAddress": {
+      "name": "CEO",
+      "address": "ceo@example.com"
+    }
+  },
+  "attendees": [
+    {
+      "type": "required",
+      "status": {
+        "response": "none",
+        "time": "0001-01-01T00:00:00Z"
+      },
+      "emailAddress": {
+        "name": "Chief Financial Officer",
+        "address": "cfo@example.com"
+      }
+    }
+  ],
+  "responseStatus": {
+    "response": "organizer",
+    "time": "2025-11-12T18:24:48.049988Z"
+  },
+  "_workback_metadata": {
+    "meeting_type": "Board of Directors Quarterly Review",
+    "complexity": "high",
+    "original_context": {
+      "meeting_type": "Board of Directors Quarterly Review",
+      "target_date": "January 15, 2026, 9:00 AM - 12:00 PM ET",
+      "organizer": "CEO",
+      "attendees": "9 Board members (7 independent, 2 management), General Counsel, CFO",
+      "objective": "Review Q4 2025 performance, approve FY2026 budget, governance matters"
+    }
+  }
+}

@@ -1,0 +1,108 @@
+What was discussed in this <event> meeting? Focus on the top 3 or 4 points. And why does it matter? Should I attend or what happens if I skip?
+Accuracy 
+- States the meeting title exactly as provided (no renaming or conflation).
+- Correctly identifies whether the meeting is in the past or future relative to today.
+- Uses appropriate tense: past-tense for completed meetings; future/expected language for upcoming meetings.
+- Summarizes only topics actually discussed (or on the official agenda if upcoming) for this meeting, not from other meetings.
+- Distinguishes clearly between decisions made vs. items proposed or discussed without resolution.
+- Accurately reflects the top 3–4 points as the major topics in the minutes/notes/agenda (not minor tangents).
+- Names projects, initiatives, acronyms, and stakeholders correctly (spelling and roles).
+- Reports attendees or key stakeholders accurately if stated in the invite/attendance list.
+- States dates and deadlines exactly as recorded if has recording(no altered due dates or invented timelines).
+- References the correct meeting artifacts (agenda, minutes, recording, slides) with accurate titles/links.
+- Does not include developments that occurred after the meeting date unless the question explicitly requests follow-up progress.
+- For upcoming meetings, does not claim outcomes or decisions that have not happened yet; labels items as "planned" or "expected."
+- If the meeting information is incomplete, flags uncertainty (e.g., "no minutes available") rather than asserting unverified details.
+- Correctly identifies if the user's presence/input was requested (e.g., agenda item owner, decision gatekeeper).
+- Accurately states whether attendance was/ is marked mandatory or optional in the invite (if such metadata exists).
+- Correctly interprets and reflects the relationship between this meeting and dependent milestones/approvals (e.g., "budget sign-off occurs here").
+- Does not claim access to systems or data beyond what is provided (no unsupported capabilities).
+- Marks assumptions explicitly and minimally; otherwise uses "Unknown."
+
+Completeness (what it means here: include all essential elements the user needs—top points, significance, decisions, actions, and attendance guidance)
+- Provides 3 or 4 top points; not fewer than 3 (if available) and not more than 4.
+- Each top point includes a concise summary plus a "why it matters" explanation.
+- Identifies finalized decisions made in the meeting (if any).
+- Identifies action items and owners (assignees) for each, if available.
+- Includes relevant deadlines or key dates associated with the discussed items.
+- Notes critical risks/blockers raised during the meeting.
+- Highlights dependencies (e.g., cross-team inputs, approvals) connected to the top points.
+- Provides an attendance recommendation ("attend" or "skip") with rationale tied to the user's role or responsibilities.
+- Explains consequences of skipping (what the user would miss or what could go wrong).
+- Offers mitigation options if the user chooses to skip (delegate, send input async, read minutes, follow up with owner).
+- Points to where the user can access full notes, recording, or slides (if available).
+- Mentions next steps or follow-up meetings relevant to the top points.
+- Clarifies open questions that remain unresolved after the meeting.
+- If information is insufficient to identify 3–4 top points, states the limitation and suggests how to obtain the missing details (e.g., request minutes).
+- Includes minimal necessary context so a reader unfamiliar with the project understands the significance (e.g., the project's goal or phase).
+- Addresses all parts of the user's query: what was discussed, why it matters, and attend vs. skip consequences.
+
+Relevance
+- Limits content to this specific meeting's key topics and outcomes.
+- Prioritizes points with highest impact on the user/team/business; excludes minor side discussions.
+- Tailors "why it matters" to the user's role/team (or states conditional relevance if the role is unknown).
+- Aligns the attendance recommendation with the user's responsibilities (or provides conditional guidance).
+- Excludes unrelated updates or meetings, unless they directly affect a top point from this meeting.
+- Avoids organizational gossip or speculative commentary not grounded in meeting artifacts.
+- Keeps the explanation succinct and directly responsive to the three parts of the question: what was discussed, why it matters, attend vs skip.
+- Omits post-meeting developments unless explicitly requested or necessary to explain immediate consequences of skipping (e.g., a decision already implemented).
+- Focuses only on outcomes from the specified meeting or relevant prior context, avoiding unrelated details.
+- Avoids duplication across sections (e.g., an item should not appear in both Decisions and Action Items).
+
+Usefulness 
+- Presents the top points as concise bullets for quick scanning.
+- Ranks or orders points by importance/urgency when possible.
+- Quantifies impact where available (dates, costs, metrics, scope, risk levels).
+- Provides a clear, explicit recommendation to attend or skip (not just pros/cons).
+- States the specific reasons supporting the recommendation (e.g., decision gate, required input, upcoming deadline).
+- Highlights any item where the user's absence would cause delay, risk, or reduced decision quality.
+- Suggests concrete mitigation steps if skipping (delegate name/role, share input asynchronously, read minutes by a date, set follow-up).
+- Identifies the primary contact(s) for each top point for follow-up questions.
+- Notes any prework or documents to review before attending (if attending is recommended).
+- Includes links or references to artifacts (minutes, recording, deck) that facilitate quick catch-up or preparation.
+- Uses plain language without jargon, or briefly defines necessary terms.
+- Keeps the response within a reasonable length while fully answering all parts (concise but complete).
+- Organizes the response into three clear parts: top 3–4 points, why they matter, attend vs. skip guidance.
+- Uses bullets or numbered items for the top points to enhance readability.
+- States the attend/skip recommendation in a single, prominent sentence.
+- Bold key entities (owners, deadlines) for readability and quick scanning.
+
+Exceptional 
+- Adjusts nuance based on the meeting's nature (e.g., decision meeting vs. status update) when evident.
+- Offers conditional advice scenarios (e.g., "Attend if you own X or need Y approval; otherwise, skip with these mitigations").
+- Flags calendar or milestone conflicts that make attendance more or less critical (if known).
+- Identifies leverage points or opportunities (e.g., chance to influence scope or secure resources) tied to the top points.
+- Provides a simple risk assessment for skipping (low/medium/high) with brief justification.
+- Suggests an ideal delegate profile if the user skips (role/knowledge required), or specific delegate if available.
+- Proposes a brief post-meeting catch-up checklist (what to read, who to ping, what to confirm).
+- Notes recurring patterns (e.g., this is a weekly stand-up; missing one is low impact if mitigations are used) when relevant and supported by data.
+- Correctly interprets the relationship between current date and the meeting date (past vs. future) and frames content accordingly.
+- If the meeting is future, explicitly states outcomes are expected and uses agenda/chats/emails without asserting completed outcomes.
+- If the meeting is past, focuses on outcomes from that meeting and does not speculate on progress beyond available status updates.
+- Updates action item statuses up to the current date when available and indicates the status date.
+- Notes if the upcoming discussion occurs before any key due dates or decision deadlines.
+- Confirms that the most recent occurrence is used for recurring meetings (not an older instance).
+- Explicitly notes the recurrence pattern when relevant (e.g., "Weekly") and references the prior occurrence date used.
+- Uses correct tense consistently across the summary, significance, and attendance guidance.
+- Matches the urgency of the attendance recommendation to time remaining before the meeting (e.g., urgent if imminent).
+- Reflects any time-bound dependencies (deadlines, approvals) that make attendance more or less critical at this point.
+- Pairs each top point with its corresponding "why it matters" explanation (not separated or left implicit).
+- Avoids overly long paragraphs; keeps each point concise and self-contained.
+- Eliminates ambiguous wording; decisions and actions are labeled explicitly.
+- Avoids contradictions (e.g., recommending to skip while stating attendance is mandatory).
+- Maintains coherent flow from summary to impact to guidance, minimizing cognitive load.
+- Uses consistent bullet style and parallel sentence structure across sections.
+- Includes source references or links for each outcome where available (doc titles, tickets, email subject/date).
+- States the information cutoff date/time used for compiling outcomes (if available).
+- When prioritizing top outcomes, indicates the basis for selection if available (e.g., "per agenda," "per latest notes").
+- Owner names are consistently formatted across sections (e.g., first name last name or role).
+- Dates are consistently formatted and include timezone if relevant.
+- Status labels use a consistent taxonomy where present (e.g., Not Started, In Progress, Completed).
+- Ownership in next steps aligns with action items (no conflicting owners for the same work).
+- Terminology for decisions vs. action items is used consistently (no misclassification).
+- The same outcome is not split across sections; classification is consistent with definitions.
+- Ensures internal consistency (no contradictions across sections or items).
+- Reflects any known details about the user's role or stakes; if unknown, provides conditional guidance.
+- Ensures the number of points stays within 3–4 as requested, prioritizing significance.
+- Provides practical next steps regardless of attend/skip choice (prepare or catch up).
+- Respects time sensitivity and avoids speculative content beyond verified information.

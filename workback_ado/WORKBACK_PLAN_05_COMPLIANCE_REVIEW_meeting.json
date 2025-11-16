@@ -1,0 +1,49 @@
+{
+  "id": "WB-ANNUAL-SOX-404-COMPLIANCE-REVIEW-WITH-EXTERNAL-AUDITORS-001",
+  "subject": "Annual SOX 404 Compliance Review with External Auditors",
+  "bodyPreview": "Review internal controls testing, certify SOX 404 compliance, identify deficiencies, approve remediation plans",
+  "showAs": "busy",
+  "type": "singleInstance",
+  "start": {
+    "dateTime": "2025-12-15T14:00:00.0000000",
+    "timeZone": "America/Los_Angeles"
+  },
+  "end": {
+    "dateTime": "2025-12-15T16:00:00.0000000",
+    "timeZone": "America/Los_Angeles"
+  },
+  "organizer": {
+    "emailAddress": {
+      "name": "Chief Compliance Officer",
+      "address": "chief.compliance.officer@example.com"
+    }
+  },
+  "attendees": [
+    {
+      "type": "required",
+      "status": {
+        "response": "none",
+        "time": "0001-01-01T00:00:00Z"
+      },
+      "emailAddress": {
+        "name": "Chief Financial Officer",
+        "address": "cfo@example.com"
+      }
+    }
+  ],
+  "responseStatus": {
+    "response": "organizer",
+    "time": "2025-11-12T18:24:48.067162Z"
+  },
+  "_workback_metadata": {
+    "meeting_type": "Annual SOX 404 Compliance Review with External Auditors",
+    "complexity": "high",
+    "original_context": {
+      "meeting_type": "Annual SOX 404 Compliance Review with External Auditors",
+      "target_date": "March 15, 2026, 2:00 PM - 5:00 PM ET",
+      "organizer": "Chief Compliance Officer",
+      "attendees": "External Auditors (4), CFO, CTO, Chief Compliance Officer, General Counsel, Internal Audit (8 total)",
+      "objective": "Review internal controls testing, certify SOX 404 compliance, identify deficiencies, approve remediation plans"
+    }
+  }
+}

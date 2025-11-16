@@ -1,0 +1,82 @@
+{
+  "test_date": "2025-11-16",
+  "model": "gpt-oss:120b",
+  "server": "http://192.168.2.204:11434",
+  "scenarios": [
+    {
+      "name": "Newsletter Launch",
+      "elapsed": 178.04549717903137,
+      "metrics": {
+        "elapsed": 178.04549717903137,
+        "analysis_length": 9666,
+        "structured_json_length": 14561,
+        "has_summary": false,
+        "task_count": 26,
+        "deliverable_count": 5,
+        "participant_count": 4,
+        "reference_count": 0,
+        "tasks_with_dependencies": 0,
+        "tasks_with_participants": 0,
+        "tasks_with_artifacts": 0,
+        "milestones_identified": 0
+      }
+    },
+    {
+      "name": "Project Launch",
+      "elapsed": 213.84689283370972,
+      "metrics": {
+        "success": true,
+        "analysis_length": 11306,
+        "structured_json_length": 18697,
+        "has_summary": false,
+        "task_count": 40,
+        "deliverable_count": 5,
+        "participant_count": 6,
+        "reference_count": 0,
+        "tasks_with_dependencies": 0,
+        "tasks_with_participants": 0,
+        "tasks_with_artifacts": 0,
+        "milestones_identified": 0,
+        "elapsed": 213.84689283370972
+      }
+    },
+    {
+      "name": "QBR Planning",
+      "elapsed": 190.4150059223175,
+      "metrics": {
+        "success": true,
+        "analysis_length": 10510,
+        "structured_json_length": 16996,
+        "has_summary": false,
+        "task_count": 35,
+        "deliverable_count": 6,
+        "participant_count": 5,
+        "reference_count": 0,
+        "tasks_with_dependencies": 0,
+        "tasks_with_participants": 0,
+        "tasks_with_artifacts": 0,
+        "milestones_identified": 0,
+        "elapsed": 190.4150059223175
+      }
+    },
+    {
+      "name": "Strategic Initiatives Review",
+      "elapsed": 236.81727814674377,
+      "metrics": {
+        "success": true,
+        "analysis_length": 11555,
+        "structured_json_length": 22733,
+        "has_summary": false,
+        "task_count": 50,
+        "deliverable_count": 0,
+        "participant_count": 5,
+        "reference_count": 0,
+        "tasks_with_dependencies": 0,
+        "tasks_with_participants": 0,
+        "tasks_with_artifacts": 0,
+        "milestones_identified": 0,
+        "elapsed": 236.81727814674377
+      }
+    }
+  ]
+}
