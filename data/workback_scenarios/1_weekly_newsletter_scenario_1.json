@@ -1,0 +1,39 @@
+{
+  "scenario_name": "EcoTech Weekly Support Newsletter \u2013 Issue 42",
+  "company_context": "EcoTech Solutions is a mid\u2011size SaaS provider for renewable\u2011energy asset management. The Customer Success department is organized into three squads (Onboarding, Support, and Retention). The weekly newsletter is produced by the Support Squad (team name: Renewable Energy Support Team) to keep agents, product managers, and sales operations informed about recent wins, product tweaks, and key performance metrics.",
+  "meeting_event_details": "Issue 42 deadline: Thursday, 21\u202fNov\u202f2025, 12:00\u202fPM\u202fEST (content final). Publication: Friday, 22\u202fNov\u202f2025, 9:00\u202fAM\u202fEST on the internal SharePoint News portal. No physical meeting; coordination occurs via Microsoft Teams channel #support\u2011newsletter and the shared Outlook calendar.",
+  "stakeholders": [
+    "Maria Lopez \u2013 Senior Content Specialist (Content Creator). Responsible for drafting all copy, sourcing images, and assembling the newsletter in the company template.",
+    "James Patel \u2013 Support Team Lead (Reviewer). Reviews copy for accuracy, validates metrics, and ensures compliance with support policies.",
+    "Lena Kim \u2013 Director of Customer Success (Approver). Gives final sign\u2011off, checks alignment with corporate messaging, and authorises distribution.",
+    "Tyler Reed \u2013 UX Designer (Optional Contributor). Provides alt\u2011text and accessibility checks for any graphics.",
+    "Sofia Alvarez \u2013 Marketing Operations Analyst (Distribution Owner). Schedules the publish job on SharePoint and notifies the mailing list."
+  ],
+  "deliverables": [
+    "Draft newsletter (Word/Google Docs) by Tuesday, 19\u202fNov\u202f2025, 5:00\u202fPM\u202fEST.",
+    "Reviewed version with tracked changes by Wednesday, 20\u202fNov\u202f2025, 11:00\u202fAM\u202fEST.",
+    "Final approved PDF/HTML newsletter file by Thursday, 21\u202fNov\u202f2025, 12:00\u202fPM\u202fEST.",
+    "Publish schedule entry and distribution email ready for Friday 9:00\u202fAM\u202fEST release."
+  ],
+  "success_criteria": [
+    "Newsletter published on time (by 9:00\u202fAM\u202fEST Friday).",
+    "Zero compliance issues (GDPR, accessibility WCAG 2.1 AA).",
+    "Word count \u2264\u202f800 words and \u2264\u202f4 content sections.",
+    "Open\u2011rate \u2265\u202f45\u202f% and click\u2011through rate \u2265\u202f12\u202f% measured after 48\u202fhours.",
+    "Positive feedback from at least 3 team leads in the post\u2011issue survey."
+  ],
+  "constraints": [
+    "Planning horizon is T\u20117 (content must be ready 7 days before publication).",
+    "Budget for external images is $0 \u2013 only internal assets may be used.",
+    "All copy must use the approved EcoTech brand voice guide (version 3.2).",
+    "Newsletter must be fully accessible: alt\u2011text for images, proper heading hierarchy, and color contrast \u2265\u202f4.5:1.",
+    "Dependency on the weekly metrics report, which is delivered by the Data Analytics team every Wednesday 10:00\u202fAM\u202fEST."
+  ],
+  "workback_prompt": "Generate a detailed work\u2011back plan for the EcoTech Weekly Support Newsletter (Issue 42) described above. Start from the final publication deadline (Friday, 22\u202fNov\u202f2025, 9:00\u202fAM\u202fEST) and work backwards to the first task, covering all required tasks, owners, estimated durations, dependencies, and key milestones. Include buffer time for review cycles, compliance checks, and unexpected delays. Present the plan in a table format with columns: Task, Owner, Start Date/Time, End Date/Time, Duration, Dependencies, and Notes.",
+  "meeting_type": "Weekly Team Newsletter",
+  "meeting_type_key": "1_weekly_newsletter",
+  "scenario_number": 1,
+  "horizon": "T-7",
+  "complexity": "Low",
+  "generated_at": "2025-11-17T03:53:28.701407"
+}

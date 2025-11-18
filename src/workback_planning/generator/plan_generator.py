@@ -46,16 +46,21 @@ def _get_doc_format() -> str:
 
 
 # Model configurations for two-stage pipeline
+# Using remote Ollama server with gpt-oss:120b for both stages
 _analysis_model = {
-    "provider": "openai",  # O1 available only via OpenAI
-    "model": "o1-preview",  # Use o1-preview as o1 is not yet available
-    "temperature": 1.0  # O1 doesn't support reasoning_effort in standard API
+    "provider": "ollama",
+    "model": "gpt-oss:120b",
+    "base_url": "http://192.168.2.204:11434",
+    "temperature": 0.7,  # Good balance for analysis
+    "timeout": 300.0  # 5 minutes for deep analysis
 }
 
 _structure_model = {
-    "provider": "openai",
-    "model": "gpt-4o",  # Use gpt-4o (gpt-4.1 not yet available)
-    "temperature": 0.1
+    "provider": "ollama",
+    "model": "gpt-oss:120b",
+    "base_url": "http://192.168.2.204:11434",
+    "temperature": 0.1,  # Low temp for structured output
+    "timeout": 180.0  # 3 minutes for structuring
 }
 
 
@@ -86,10 +91,10 @@ def _generate_analysis(
     try:
         response = client.query_llm(
             prompt=prompt,
-            provider=model_config.get("provider", "openai"),
-            model=model_config.get("model", "o1-preview"),
-            base_url=model_config.get("base_url"),
-            temperature=model_config.get("temperature"),
+            provider=model_config.get("provider", "ollama"),
+            model=model_config.get("model", "gpt-oss:120b"),
+            base_url=model_config.get("base_url", "http://192.168.2.204:11434"),
+            temperature=model_config.get("temperature", 0.7),
             timeout=model_config.get("timeout", 300.0)  # 5 minute default for analysis
         )
         return response
@@ -127,18 +132,46 @@ def _generate_structured(
     try:
         response = client.query_llm(
             prompt=prompt,
-            provider=model_config.get("provider", "openai"),
-            model=model_config.get("model", "gpt-4o"),
-            base_url=model_config.get("base_url"),
-            temperature=model_config.get("temperature"),
+            provider=model_config.get("provider", "ollama"),
+            model=model_config.get("model", "gpt-oss:120b"),
+            base_url=model_config.get("base_url", "http://192.168.2.204:11434"),
+            temperature=model_config.get("temperature", 0.1),
             timeout=model_config.get("timeout", 180.0)  # 3 minute default for structuring
         )
         
-        # Parse JSON response
-        structured = json.loads(response)
-        return structured
-    except json.JSONDecodeError as e:
-        raise RuntimeError(f"Failed to parse structured response: {e}\nResponse: {response}")
+        # Strip markdown code blocks if present
+        json_str = response.strip()
+        if json_str.startswith("```"):
+            json_str = json_str.split("\n", 1)[1] if "\n" in json_str else json_str[3:]
+            if json_str.endswith("```"):
+                json_str = json_str.rsplit("```", 1)[0]
+            json_str = json_str.strip()
+        
+        # Try to fix common JSON issues
+        # Remove trailing commas before closing braces/brackets
+        import re
+        json_str = re.sub(r',(\s*[}\]])', r'\1', json_str)
+        # Remove control characters except newlines and tabs
+        json_str = ''.join(char for char in json_str if ord(char) >= 32 or char in '\n\t\r')
+        
+        # Try parsing with error recovery
+        try:
+            structured = json.loads(json_str)
+            return structured
+        except json.JSONDecodeError as e:
+            # Try to extract valid JSON if there's extra data
+            error_pos = e.pos
+            if error_pos and error_pos < len(json_str):
+                # Try parsing up to the error position
+                try:
+                    structured = json.loads(json_str[:error_pos])
+                    print(f"⚠️  Warning: Truncated response at position {error_pos}, recovered partial data")
+                    return structured
+                except:
+                    pass
+            raise RuntimeError(f"Failed to parse structured response: {e}\nResponse preview: {json_str[:500]}")
+    except RuntimeError:
+        raise
     except Exception as e:
         raise RuntimeError(f"Failed to generate structured plan: {e}")
 
@@ -154,8 +187,8 @@ def generate_plan(
     Generate a workback plan based on the given context.
     
     This implements a two-stage pipeline:
-    1. Analysis stage: Use O1 for deep reasoning and hierarchical breakdown
-    2. Structuring stage: Use GPT-4 to convert analysis into structured JSON
+    1. Analysis stage: Use gpt-oss:120b for deep reasoning and hierarchical breakdown
+    2. Structuring stage: Use gpt-oss:120b to convert analysis into structured JSON
     
     Args:
         context: User context describing objectives, constraints, participants, artifacts
@@ -180,14 +213,14 @@ def generate_plan(
     """
     client = client or LLMAPIClient()
     
-    # Stage 1: Generate analysis with O1
-    print("Stage 1: Generating analysis with O1...")
+    # Stage 1: Generate analysis with gpt-oss:120b
+    print("Stage 1: Generating analysis with gpt-oss:120b on remote Ollama...")
     analysis = _generate_analysis(context, client, analysis_model_override)
     
-    # Stage 2: Convert to structured JSON with GPT-4
+    # Stage 2: Convert to structured JSON with gpt-oss:120b
     structured = None
     if generate_structured:
-        print("Stage 2: Converting to structured JSON with GPT-4...")
+        print("Stage 2: Converting to structured JSON with gpt-oss:120b...")
         structured = _generate_structured(analysis, client, structure_model_override)
     
     return {

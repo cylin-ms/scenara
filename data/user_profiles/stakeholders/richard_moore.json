@@ -1,0 +1,137 @@
+{
+  "basic_info": {
+    "full_name": "Richard Moore",
+    "age": 46,
+    "location": "Seattle, WA, USA",
+    "timezone": "America/Los_Angeles (UTC-8/UTC-7 DST)",
+    "years_experience": 22,
+    "education": [
+      {
+        "degree": "Juris Doctor (JD)",
+        "institution": "University of Washington School of Law",
+        "year": 2003
+      },
+      {
+        "degree": "Bachelor of Arts in Political Science",
+        "institution": "University of Washington",
+        "year": 2000
+      }
+    ]
+  },
+  "work_habits": {
+    "preferred_working_hours": "Early bird (07:00‑12:00) with flexible afternoon slots",
+    "peak_productivity_times": [
+      "08:00‑11:00",
+      "14:00‑16:00"
+    ],
+    "communication_style": {
+      "preference": "Async for routine updates, sync for negotiations or crisis",
+      "response_time_expectation": "Within 2‑4 business hours for async, immediate for sync calls"
+    },
+    "meeting_preferences": "Minimizes meetings; prefers 30‑minute standing meetings with clear agenda; only attends face‑to‑face when contract sign‑off required",
+    "work_environment": "Hybrid (3 days remote, 2 days in Seattle office)",
+    "focus_time_requirements": "At least 4 uninterrupted hours per day for deep legal analysis"
+  },
+  "personality": {
+    "mbti": "INTJ",
+    "decision_making_approach": "Data‑driven, consults key stakeholders but makes final call after risk assessment",
+    "risk_tolerance": "Moderate – comfortable with calculated legal risk, avoids exposure to regulatory penalties",
+    "collaboration_style": "Strategic partner; provides guidance but expects deliverables on schedule",
+    "stress_management_approach": "Scheduled short walks, mindfulness apps, and delegating tactical tasks to junior counsel",
+    "conflict_resolution_style": "Direct yet diplomatic; uses facts and precedent to defuse tension"
+  },
+  "skills": {
+    "core_technical_skills": {
+      "Contract Drafting & Negotiation": 9,
+      "Regulatory Compliance (US & EU)": 8,
+      "Intellectual Property Law": 7,
+      "Data Privacy (GDPR, CCPA)": 8,
+      "Litigation Management": 6,
+      "M&A Due Diligence": 8,
+      "Risk Assessment": 9,
+      "Legal Research": 9,
+      "Policy Development": 7,
+      "Cross‑border Transaction Structuring": 7
+    },
+    "leadership_abilities": 8,
+    "domain_expertise_areas": [
+      "Technology licensing",
+      "Cloud services agreements",
+      "AI ethics & liability",
+      "Cybersecurity regulations",
+      "Software as a Service (SaaS) contracts"
+    ],
+    "learning_agility": 8,
+    "tools_proficiency": [
+      "Microsoft Office 365 (advanced)",
+      "Confluence & Jira",
+      "DocuSign",
+      "Contract lifecycle management (CLM) platforms – Ironclad, Agiloft",
+      "Legal research – Westlaw, LexisNexis",
+      "Data privacy management tools – OneTrust"
+    ],
+    "languages_spoken": [
+      "English (native)",
+      "Spanish (conversational)"
+    ]
+  },
+  "performance": {
+    "task_completion_rate": 94,
+    "quality_score": 96,
+    "estimation_accuracy": 89,
+    "multitasking_ability": 7,
+    "performance_under_pressure": 9
+  },
+  "availability": {
+    "available_hours_per_week": 45,
+    "timezone_and_working_hours": "Pacific Time, typically 07:00‑17:30 with 1‑hour lunch break",
+    "planned_time_off_days_per_year": 22,
+    "other_commitments": "Quarterly board advisory role for a nonprofit tech incubator (≈4 hrs/month)",
+    "travel_flexibility": "Up to 20% travel (≈1‑2 weeks per quarter) for contract sign‑offs and M&A due diligence"
+  },
+  "personal_factors": {
+    "family_status": "Married, two children (ages 9 and 12)",
+    "caregiving_responsibilities": "Occasional weekend school events; no regular elder‑care duties",
+    "commute_situation": "15‑minute drive to office; prefers driving to avoid public‑transit delays",
+    "health_considerations": "Mild hypertension managed with medication and regular exercise; avoids excessive overtime",
+    "career_motivation": "Desire to shape corporate governance in emerging tech, mentor next‑gen counsel, and eventually transition to Chief Legal Officer role"
+  },
+  "project_impact": {
+    "reliability": 9,
+    "innovation_tendency": 6,
+    "documentation_quality": 9,
+    "mentorship_capability": 8,
+    "influence_level": 8
+  },
+  "collaboration": {
+    "meeting_frequency_preference": "Bi‑weekly strategic syncs; ad‑hoc as needed for urgent matters",
+    "communication_channels_preference": [
+      "Email",
+      "Slack (threads)",
+      "Microsoft Teams for video calls"
+    ],
+    "feedback_style": "Direct with data‑backed examples; follows up with written summary",
+    "knowledge_sharing_habits": "Runs monthly ‘Legal Briefings’ for product teams; contributes to internal wiki",
+    "cross_team_collaboration": 8
+  },
+  "risk_factors": {
+    "potential_bottlenecks": "Heavy reliance on his sign‑off for high‑value contracts can create delays if he is unavailable",
+    "backup_person_needed": "Senior Associate Counsel – Maya Patel (3‑year tenure) can act as interim sign‑off for routine agreements",
+    "ramp_up_time_for_new_projects_weeks": 3,
+    "context_switching_tolerance": 5,
+    "burnout_risk_factors": [
+      "Extended litigation cycles",
+      "Back‑to‑back M&A closings",
+      "Excessive after‑hours email load"
+    ]
+  },
+  "_metadata": {
+    "generated_at": "2025-11-17T15:33:28.304158",
+    "name": "Richard Moore",
+    "role": "Legal Counsel",
+    "seniority": "senior",
+    "company": "TechCorp",
+    "model": "gpt-oss:120b",
+    "provider": "ollama"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "scenario_name": "HelioGrid Annual Planning Board Meeting \u2013 FY25 Strategy & Budget Approval",
+  "company_context": "HelioGrid Technologies, Inc. (NASDAQ: HGT) \u2013 a publicly traded, vertically integrated renewable energy storage company. Series B completed in 2022, IPO in Q2\u202f2024. Headquartered in San Francisco, CA. Core business: utility\u2011scale battery systems, software\u2011enabled energy management, and emerging hydrogen\u2011storage solutions. Board of Directors includes 2 investor representatives, 4 independent directors, and 2 executive directors.",
+  "meeting_event_details": "Date: Thursday, 12\u202fJune\u202f2025\nTime: 09:00\u202f\u2013\u202f12:30\u202fET (3.5\u202fhours)\nLocation: HelioGrid HQ \u2013 Boardroom\u202fA, 1\u202fHelio Plaza, San Francisco, CA, with secure video\u2011conferencing for remote directors.\nFormat: In\u2011person with live virtual participation; simultaneous interpretation for one non\u2011English\u2011speaking director.",
+  "stakeholders": [
+    "Laura Chen \u2013 Chief Executive Officer & Board Chair",
+    "Michael Patel \u2013 Chief Financial Officer & Board Treasurer",
+    "Dr. Elena Garc\u00eda \u2013 Independent Director (Energy & Technology expert)",
+    "Thomas Reed \u2013 Independent Director (Corporate Governance)",
+    "Sofia Martinez \u2013 Independent Director (ESG & Sustainability)",
+    "David Kim \u2013 Independent Director (M&A & Strategy)",
+    "Rebecca Liu \u2013 Venture Capital Investor Representative (Series\u202fB lead, GreenVentures)",
+    "James O'Connor \u2013 Institutional Investor Representative (PensionFund Partners)",
+    "Aisha Patel \u2013 Employee Representative (Director, HR)",
+    "Katherine \u201cKate\u201d O\u2019Neil \u2013 Lead Independent Director (Committee Chair)",
+    "KPMG Audit Partner \u2013 External Auditor Representative (John Whitaker)",
+    "Compensation Committee Chair \u2013 Robert \u201cBob\u201d Sinclair",
+    "Risk Committee Chair \u2013 Dr. Priya Nair"
+  ],
+  "deliverables": [
+    "Board\u2011approved FY25 operating budget (US$\u202f1.2\u202fB) and capital expenditure plan (US$\u202f250\u202fM)",
+    "Approval of FY25 share repurchase program (US$\u202f100\u202fM) and amendment to executive compensation policy",
+    "Ratification of the 2025 ESG and sustainability roadmap",
+    "Formal appointment of new Independent Director (Dr. Priya Nair) to the Nominating & Governance Committee",
+    "Signed audit opinion from KPMG for FY24 and acceptance of internal audit recommendations",
+    "Board meeting minutes and action\u2011item register distributed within 5 business days"
+  ],
+  "success_criteria": [
+    "All listed approvals obtained with no dissenting votes",
+    "Meeting stays within the 3.5\u2011hour schedule (\u2264\u202f10\u202fminutes overrun)",
+    "Post\u2011meeting director satisfaction survey average \u2265\u202f90\u202f% (question on agenda relevance and material adequacy)",
+    "All SEC filing deadlines met (Form\u202f10\u2011K filing by 30\u202fdays post\u2011meeting)",
+    "No material governance issues raised during the meeting (e.g., conflicts of interest, compliance breaches)"
+  ],
+  "constraints": [
+    "Planning horizon limited to T\u201190 (90\u202fdays) from start of FY25 budgeting cycle",
+    "Total budget authority capped at US$\u202f1.5\u202fB by existing debt covenants",
+    "Audit report must be finalized and signed no later than 5\u202fbusiness days before the meeting",
+    "All board materials must be distributed 21\u202fdays prior, with a Q&A window open for 7\u202fdays before the meeting",
+    "Confidentiality and data\u2011security protocols (ISO\u202f27001) must be enforced for virtual participants",
+    "Regulatory filing timeline: FY24 Form\u202f10\u2011K due 30\u202fdays after meeting; FY25 Q1 Form\u202f10\u2011Q due 45\u202fdays after quarter end"
+  ],
+  "workback_prompt": "Generate a detailed work\u2011back plan for the HelioGrid Annual Planning Board Meeting (June\u202f12\u202f2025) that covers all pre\u2011meeting activities, stakeholder coordination, material preparation, governance compliance, and post\u2011meeting deliverables. Include milestones, owners, dependencies, and critical path items, ensuring the plan meets the T\u201190 planning horizon, SEC filing deadlines, audit report finalization, and board\u2011material distribution timeline. Provide a Gantt\u2011style schedule with weekly checkpoints and risk mitigation steps.",
+  "meeting_type": "Board Meeting (Annual Planning)",
+  "meeting_type_key": "10_board_meeting",
+  "scenario_number": 2,
+  "horizon": "T-90",
+  "complexity": "Very High",
+  "generated_at": "2025-11-17T10:27:58.981120"
+}

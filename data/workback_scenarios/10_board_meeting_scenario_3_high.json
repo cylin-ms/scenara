@@ -1,0 +1,855 @@
+{
+  "scenario_name": "HelioGrid FY2026 Annual Planning Board Meeting",
+  "scenario_number": 3,
+  "meeting_type": "Board Meeting (Annual Planning)",
+  "quality_level": "high",
+  "workback_prompt": "Create a detailed work\u2011back plan for HelioGrid Technologies\u2019 FY2026 Annual Planning Board Meeting (June 12, 2025). Include all preparatory activities such as board material compilation, pre\u2011read distribution (T\u201190), rehearsal sessions, audit committee report finalization, ESG policy drafting, financing term\u2011sheet negotiation, and post\u2011meeting deliverables (minutes, approvals, regulatory filings). Identify owners, dependencies, milestones, and critical path items, ensuring compliance with governance requirements and the constraints listed.\n\nGenerate a HIGH QUALITY workback plan with these characteristics:\n- Comprehensive task coverage\n- Clear, actionable task descriptions\n- Well-defined dependencies\n- All tasks assigned to specific owners\n- Clear milestones with completion criteria\n- Realistic timelines with buffers\n- Proactive risk management\n- Complete deliverable list\n\nIMPORTANT: Generate a plan that naturally exhibits HIGH quality characteristics.\nDo not explicitly label the plan as \"high quality\" - let the quality emerge from the content.",
+  "generated_at": "2025-11-17T11:23:28.102067",
+  "analysis": "# Outcomes  \n\n## 1. Board Material Package Completion  \nAll content that will appear in the FY2026 Annual Planning Board packet (financial statements, strategic plan, risk dashboard, ESG summary, financing proposals, audit committee report, etc.) is compiled, reviewed, approved, and packaged for distribution.  \nArtifact references: *none provided*  \n\n### Reasoning  \nThe meeting agenda cannot be finalized until the complete packet exists. The user explicitly listed \u201cboard material compilation\u201d as a required preparatory activity, making this the first major deliverable.  \n\n### Approach  \n1. **Define required components** \u2013 Finance, Strategy, ESG, Audit, and Legal leads each produce a list of items.  \n2. **Create a master content schedule** \u2013 assign due dates that allow for review cycles and a 2\u2011day buffer before the pre\u2011read deadline (T\u201190).  \n3. **Draft each component** \u2013 owners develop their sections using the latest data.  \n4. **Internal peer review** \u2013 cross\u2011functional reviewers validate consistency and completeness.  \n5. **Executive sign\u2011off** \u2013 CFO, CEO, and Board Chair approve the final packet.  \n6. **Package** \u2013 Corporate Secretary assembles the PDF/online portal bundle and archives version control.  \n\n*Key milestones* \u2013 Component outlines (T\u2011120), Draft completion (T\u2011100), Peer\u2011review sign\u2011off (T\u201195), Executive sign\u2011off (T\u201192), Final package ready (T\u201190).  \n\n*Critical path*: Component outlines \u2192 Draft completion \u2192 Peer\u2011review \u2192 Executive sign\u2011off \u2192 Final package.  \n\n*Risks & mitigation*:  \n- **Data lag** \u2013 schedule data\u2011freeze dates with Finance (T\u2011110).  \n- **Inconsistent messaging** \u2013 hold a cross\u2011functional alignment call (T\u2011105).  \n- **Version control errors** \u2013 use a shared repository with change\u2011log enforcement.  \n\n\n\n## 2. Pre\u2011Read Distribution (T\u201190)  \nThe finalized board packet is distributed to all directors and required external participants 90 calendar days before the meeting (June\u202f12\u202f2025).  \n\n### Reasoning  \nThe user explicitly called for \u201cpre\u2011read distribution (T\u201190)\u201d. Distribution must occur after the final package is ready and before rehearsal sessions.  \n\n### Approach  \n1. **Validate distribution list** \u2013 Corporate Secretary confirms addresses and consent for electronic delivery.  \n2. **Configure secure delivery platform** \u2013 IT sets up encrypted portal access, tests login credentials.  \n3. **Send notification email** \u2013 includes access instructions, read\u2011acknowledgement request, and deadline for questions (T\u201175).  \n4. **Track acknowledgements** \u2013 Secretary logs receipt; follow\u2011up on missing acknowledgements (T\u201180).  \n\n*Milestone*: All directors have confirmed receipt (T\u201185).  \n\n*Critical path*: Final package ready (T\u201190) \u2192 Secure platform ready (T\u201192) \u2192 Distribution \u2192 Acknowledgement tracking.  \n\n*Risks & mitigation*:  \n- **Technical delivery failure** \u2013 perform a pilot test with a small group (T\u201195).  \n- **Late acknowledgements** \u2013 schedule automated reminders (T\u201180, T\u201178).  \n\n\n\n## 3. Rehearsal Sessions  \nTwo full\u2011dress rehearsals (one with senior management only, one with the full board) to ensure smooth presentation flow and timing.  \n\n### Reasoning  \n\u201cRehearsal sessions\u201d are listed as a required activity and are essential to verify that the board packet can be presented within the allocated meeting time.  \n\n### Approach  \n1. **Schedule rehearsals** \u2013 Executive Assistant books rooms/virtual links (T\u201185).  \n2. **Develop run\u2011through script** \u2013 Presentation Lead creates slide\u2011by\u2011slide cue sheet (T\u201184).  \n3. **First rehearsal (management only)** \u2013 Conducted (T\u201180); capture timing gaps.  \n4. **Adjust materials** \u2013 Presentation Lead updates slides/pacing (T\u201178).  \n5. **Second rehearsal (full board)** \u2013 Conducted (T\u201175); collect board member feedback.  \n6. **Finalize presentation deck** \u2013 Incorporate feedback, lock final version (T\u201173).  \n\n*Milestone*: Rehearsal sign\u2011off \u2013 all presenters confirm comfort with flow (T\u201173).  \n\n*Critical path*: Script development \u2192 First rehearsal \u2192 Adjustments \u2192 Second rehearsal \u2192 Final deck lock.  \n\n*Risks & mitigation*:  \n- **Presenter availability** \u2013 secure commitments early (T\u201190).  \n- **Timing overruns** \u2013 embed a 5\u2011minute buffer in each segment.  \n\n\n\n## 4. Audit Committee Report Finalization  \nComplete the audit committee\u2019s independent report, obtain audit\u2011committee chair sign\u2011off, and embed it in the board packet.  \n\n### Reasoning  \nThe audit committee report is a distinct deliverable listed by the user; it must be finalized before the packet is locked.  \n\n### Approach  \n1. **Data collection** \u2013 Audit Lead gathers financial audit findings and risk assessments (T\u2011110).  \n2. **Draft report** \u2013 Audit Lead writes the report (T\u2011105).  \n3. **Internal review** \u2013 CFO and Legal review for accuracy and liability (T\u2011103).  \n4. **Chair sign\u2011off** \u2013 Audit Committee Chair signs (T\u2011101).  \n5. **Integrate into packet** \u2013 Corporate Secretary inserts the report (T\u2011100).  \n\n*Milestone*: Signed audit report incorporated (T\u2011100).  \n\n*Critical path*: Data collection \u2192 Draft \u2192 Review \u2192 Sign\u2011off \u2192 Integration.  \n\n*Risks & mitigation*:  \n- **Audit delays** \u2013 set a firm data\u2011freeze date (T\u2011115).  \n- **Regulatory compliance** \u2013 Legal performs a compliance checklist (T\u2011102).  \n\n\n\n## 5. ESG Policy Drafting  \nDevelop a draft ESG (Environmental, Social, Governance) policy to be presented for board approval.  \n\n### Reasoning  \n\u201cESG policy drafting\u201d is a required activity; the policy must be ready for board discussion and potential approval.  \n\n### Approach  \n1. **Stakeholder workshops** \u2013 ESG Lead runs internal workshops (T\u2011115).  \n2. **Benchmarking** \u2013 ESG Lead reviews peer policies and regulatory guidance (T\u2011112).  \n3. **Draft policy** \u2013 ESG Lead produces a full draft (T\u2011108).  \n4. **Legal review** \u2013 Legal Counsel checks for compliance (T\u2011106).  \n5. **Finance impact analysis** \u2013 CFO assesses cost implications (T\u2011105).  \n6. **Incorporate feedback** \u2013 ESG Lead revises (T\u2011104).  \n7. **Board\u2011ready version** \u2013 Corporate Secretary adds to packet (T\u2011102).  \n\n*Milestone*: ESG policy ready for board vote (T\u2011102).  \n\n*Critical path*: Workshops \u2192 Draft \u2192 Legal review \u2192 Finance impact \u2192 Final version.  \n\n*Risks & mitigation*:  \n- **Regulatory changes** \u2013 monitor regulator updates through T\u2011110.  \n- **Insufficient stakeholder input** \u2013 schedule additional focus groups if needed (buffer of 3 days).  \n\n\n\n## 6. Financing Term\u2011Sheet Negotiation  \nNegotiate and finalize the financing term\u2011sheet that will be presented to the board for approval.  \n\n### Reasoning  \n\u201cFinancing term\u2011sheet negotiation\u201d is a core deliverable; the board must see a finalized term\u2011sheet before voting.  \n\n### Approach  \n1. **Define financing objectives** \u2013 CFO and Treasury outline required capital, covenants, timeline (T\u2011130).  \n2. **Select advisors** \u2013 Legal and Finance engage external advisors (T\u2011128).  \n3. **Issue request for proposal (RFP)** \u2013 Sent to potential lenders (T\u2011127).  \n4. **Receive and evaluate proposals** \u2013 Finance scores proposals (T\u2011120).  \n5. **Negotiation rounds** \u2013 Lead negotiator (CFO) conducts discussions (T\u2011115 to T\u2011105).  \n6. **Draft term\u2011sheet** \u2013 Legal prepares final document (T\u2011103).  \n7. **Board\u2011ready term\u2011sheet** \u2013 Corporate Secretary adds to packet (T\u2011101).  \n\n*Milestone*: Signed term\u2011sheet ready for board vote (T\u2011101).  \n\n*Critical path*: Objectives \u2192 RFP \u2192 Evaluation \u2192 Negotiations \u2192 Draft \u2192 Board\u2011ready.  \n\n*Risks & mitigation*:  \n- **Market volatility** \u2013 include a contingency clause; keep alternative lenders on standby.  \n- **Negotiation delays** \u2013 set firm internal decision dates (T\u2011108).  \n\n\n\n## 7. Post\u2011Meeting Deliverables  \nProduce meeting minutes, capture board approvals, file regulatory reports, and communicate next steps.  \n\n### Reasoning  \nThe user listed \u201cpost\u2011meeting deliverables (minutes, approvals, regulatory filings)\u201d. These must be completed promptly after the June\u202f12 meeting.  \n\n### Approach  \n1. **Live minute\u2011taking** \u2013 Designated Board Secretary records decisions in real time.  \n2. **Draft minutes** \u2013 Completed within 2 business days (T\u202f+\u202f2).  \n3. **Circulate for review** \u2013 Board members review and comment (T\u202f+\u202f4).  \n4. **Incorporate changes & obtain sign\u2011off** \u2013 Secretary finalizes (T\u202f+\u202f6).  \n5. **Regulatory filing preparation** \u2013 Legal prepares required filings (e.g., SEC Form 8\u2011K) (T\u202f+\u202f7).  \n6. **Submit filings** \u2013 Legal files with regulators (T\u202f+\u202f9).  \n7. **Communications** \u2013 Corporate Communications drafts internal/external summary (T\u202f+\u202f10).  \n\n*Milestone*: All post\u2011meeting deliverables completed and filed (T\u202f+\u202f10 business days).  \n\n*Critical path*: Draft minutes \u2192 Review \u2192 Sign\u2011off \u2192 Regulatory filing.  \n\n*Risks & mitigation*:  \n- **Delayed approvals** \u2013 set a hard deadline for board sign\u2011off (T\u202f+\u202f6).  \n- **Filing errors** \u2013 conduct a compliance checklist review before submission.  \n\n\n\n## 8. Governance Compliance Review  \nEnsure every preparatory and post\u2011meeting activity meets HelioGrid\u2019s governance policies, SEC regulations, and any other statutory requirements.  \n\n### Reasoning  \nThe user emphasized \u201ccompliance with governance requirements\u201d. A dedicated review ensures no step violates policy.  \n\n### Approach  \n1. **Create compliance checklist** \u2013 Governance Officer maps each deliverable to relevant rules (T\u2011130).  \n2. **Periodic audit** \u2013 Governance Officer conducts a mid\u2011plan audit (T\u201170) and a final audit (T\u20115).  \n3. **Issue compliance sign\u2011off** \u2013 Governance Officer signs off on the complete plan (T\u20113).  \n\n*Milestone*: Governance sign\u2011off confirming full compliance (T\u20113).  \n\n*Critical path*: Checklist creation \u2192 Mid\u2011plan audit \u2192 Final audit \u2192 Sign\u2011off.  \n\n*Risks & mitigation*:  \n- **Policy updates** \u2013 subscribe to regulator alerts; adjust checklist accordingly.  \n- **Overlooked requirement** \u2013 involve external counsel for a final review.  \n\n\n\n# Breakdown  \n\n```\n1. Board Material Package Completion\n   1.1 Define required components (Owner: Strategy Lead) \u2013 Due T\u2011120\n   1.2 Create master content schedule (Owner: Project Coordinator) \u2013 Due T\u2011119\n   1.3 Draft component sections\n        1.3.1 Financial statements (CFO) \u2013 Due T\u2011110\n        1.3.2 Strategic plan (Strategy Lead) \u2013 Due T\u2011108\n        1.3.3 Risk dashboard (Risk Officer) \u2013 Due T\u2011108\n        1.3.4 ESG summary (ESG Lead) \u2013 Due T\u2011108\n        1.3.5 Financing proposal (Finance Team) \u2013 Due T\u2011108\n        1.3.6 Audit Committee report (Audit Lead) \u2013 Due T\u2011100\n   1.4 Cross\u2011functional peer review (Owner: Corporate Secretary) \u2013 Due T\u201195\n        Depends on: 1.3\n   1.5 Executive sign\u2011off (CFO, CEO, Board Chair) \u2013 Due T\u201192\n        Depends on: 1.4\n   1.6 Assemble final packet (Corporate Secretary) \u2013 Due T\u201190\n        Depends on: 1.5\n\n2. Pre\u2011Read Distribution (T\u201190)\n   2.1 Validate distribution list (Corporate Secretary) \u2013 Due T\u201192\n        Depends on: 1.6\n   2.2 Configure secure delivery platform (IT Lead) \u2013 Due T\u201193\n        Can run in parallel with: 2.1\n   2.3 Send notification & access instructions (Corporate Secretary) \u2013 Due T\u201190\n        Depends on: 2.1, 2.2\n   2.4 Track acknowledgements (Corporate Secretary) \u2013 Due T\u201185\n        Depends on: 2.3\n\n3. Rehearsal Sessions\n   3.1 Schedule rehearsals (Executive Assistant) \u2013 Due T\u201185\n        Depends on: 2.4\n   3.2 Develop run\u2011through script (Presentation Lead) \u2013 Due T\u201184\n        Depends on: 1.6\n   3.3 First rehearsal \u2013 Management only (All presenters) \u2013 Due T\u201180\n        Depends on: 3.1, 3.2\n   3.4 Adjust materials (Presentation Lead) \u2013 Due T\u201178\n        Depends on: 3.3\n   3.5 Second rehearsal \u2013 Full board (All presenters) \u2013 Due T\u201175\n        Depends on: 3.4\n   3.6 Finalize presentation deck (Presentation Lead) \u2013 Due T\u201173\n        Depends on: 3.5\n\n4. Audit Committee Report Finalization\n   4.1 Collect audit data (Audit Lead) \u2013 Due T\u2011110\n   4.2 Draft audit report (Audit Lead) \u2013 Due T\u2011105\n        Depends on: 4.1\n   4.3 Internal review (CFO, Legal) \u2013 Due T\u2011103\n        Depends on: 4.2\n   4.4 Chair sign\u2011off (Audit Committee Chair) \u2013 Due T\u2011101\n        Depends on: 4.3\n   4.5 Insert into packet (Corporate Secretary) \u2013 Due T\u2011100\n        Depends on: 4.4, 1.6\n\n5. ESG Policy Drafting\n   5.1 Stakeholder workshops (ESG Lead) \u2013 Due T\u2011115\n   5.2 Benchmarking & regulatory scan (ESG Lead) \u2013 Due T\u2011112\n        Depends on: 5.1\n   5.3 Draft ESG policy (ESG Lead) \u2013 Due T\u2011108\n        Depends on: 5.2\n   5.4 Legal compliance review (Legal Counsel) \u2013 Due T\u2011106\n        Depends on: 5.3\n   5.5 Finance impact analysis (CFO) \u2013 Due T\u2011105\n        Depends on: 5.3\n   5.6 Revise draft (ESG Lead) \u2013 Due T\u2011104\n        Depends on: 5.4, 5.5\n   5.7 Add to packet (Corporate Secretary) \u2013 Due T\u2011102\n        Depends on: 5.6, 1.6\n\n6. Financing Term\u2011Sheet Negotiation\n   6.1 Define financing objectives (CFO & Treasury) \u2013 Due T\u2011130\n   6.2 Engage advisors (Legal & Finance) \u2013 Due T\u2011128\n        Depends on: 6.1\n   6.3 Issue RFP to lenders (Finance) \u2013 Due T\u2011127\n        Depends on: 6.2\n   6.4 Receive & evaluate proposals (Finance) \u2013 Due T\u2011120\n        Depends on: 6.3\n   6.5 Negotiation rounds (CFO lead) \u2013 Due T\u2011105\n        Depends on: 6.4\n   6.6 Draft term\u2011sheet (Legal) \u2013 Due T\u2011103\n        Depends on: 6.5\n   6.7 Add term\u2011sheet to packet (Corporate Secretary) \u2013 Due T\u2011101\n        Depends on: 6.6, 1.6\n\n7. Post\u2011Meeting Deliverables\n   7.1 Live minute\u2011taking (Board Secretary) \u2013 During meeting (June\u202f12)\n   7.2 Draft minutes (Board Secretary) \u2013 Due T\u202f+\u202f2 business days\n        Depends on: 7.1\n   7.3 Circulate minutes for review (Board Secretary) \u2013 Due T\u202f+\u202f4\n        Depends on: 7.2\n   7.4 Incorporate changes & obtain sign\u2011off (Board Secretary) \u2013 Due T\u202f+\u202f6\n        Depends on: 7.3\n   7.5 Prepare regulatory filings (Legal) \u2013 Due T\u202f+\u202f7\n        Depends on: 7.4\n   7.6 Submit filings (Legal) \u2013 Due T\u202f+\u202f9\n        Depends on: 7.5\n   7.7 Draft communications (Corporate Communications) \u2013 Due T\u202f+\u202f10\n        Depends on: 7.4\n\n8. Governance Compliance Review\n   8.1 Create compliance checklist (Governance Officer) \u2013 Due T\u2011130\n   8.2 Mid\u2011plan compliance audit (Governance Officer) \u2013 Due T\u201170\n        Depends on: 1\u20116 (major milestones)\n   8.3 Final compliance audit (Governance Officer) \u2013 Due T\u20115\n        Depends on: 7.7\n   8.4 Governance sign\u2011off (Governance Officer) \u2013 Due T\u20113\n        Depends on: 8.3\n```\n\n**Key Milestones & Critical Path Summary**\n\n| Milestone | Date (relative to meeting) | Critical Path? |\n|-----------|----------------------------|----------------|\n| Component outlines completed | T\u2011120 | Yes |\n| Draft board packet ready | T\u2011100 | Yes |\n| Final packet assembled | T\u201190 (pre\u2011read) | Yes |\n| Pre\u2011read distribution completed | T\u201190 | Yes |\n| First rehearsal (management) | T\u201180 | Yes |\n| Second rehearsal (full board) | T\u201175 | Yes |\n| Final presentation deck locked | T\u201173 | Yes |\n| ESG policy ready for vote | T\u2011102 | Yes |\n| Financing term\u2011sheet ready for vote | T\u2011101 | Yes |\n| Governance compliance sign\u2011off | T\u20113 | Yes |\n| Post\u2011meeting deliverables completed | T\u202f+\u202f10 business days | Yes |\n\n**Risk Management Highlights**\n\n| Risk | Impact | Mitigation |\n|------|--------|------------|\n| Data/financial freeze delays | Pushes back packet draft | Set hard data\u2011freeze date (T\u2011110) and communicate early |\n| Technical delivery failure for pre\u2011reads | Directors miss material | Pilot test platform (T\u201195) and have backup email distribution |\n| Presenter availability | Rehearsal postponement | Capture presenter commitments by T\u201190 |\n| Regulatory change mid\u2011plan | Non\u2011compliant ESG or filing | Governance Officer monitors alerts; update checklist by T\u2011110 |\n| Negotiation deadlock on term\u2011sheet | Delays board approval | Identify backup lenders; include contingency clause |\n\nBy following the outlined outcomes, their associated approaches, and the detailed work\u2011breakdown structure, HelioGrid Technologies can confidently progress from initial data collection to a fully compliant, board\u2011approved FY2026 Annual Planning outcome, while maintaining clear ownership, realistic timelines, and proactive risk controls.",
+  "plan": {
+    "id": "document-001",
+    "name": "FY2026 Board Planning Execution Plan",
+    "details": "",
+    "draft": true,
+    "participants": [
+      {
+        "name": "Strategy Lead",
+        "email": "",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Project Coordinator",
+        "email": "",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "CFO",
+        "email": "",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "CEO",
+        "email": "",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Board Chair",
+        "email": "",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Corporate Secretary",
+        "email": "",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "IT Lead",
+        "email": "",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Executive Assistant",
+        "email": "",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Presentation Lead",
+        "email": "",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Risk Officer",
+        "email": "",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "ESG Lead",
+        "email": "",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Finance Team",
+        "email": "",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Audit Lead",
+        "email": "",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Audit Committee Chair",
+        "email": "",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Legal Counsel",
+        "email": "",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Treasury",
+        "email": "",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Governance Officer",
+        "email": "",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Board Secretary",
+        "email": "",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Corporate Communications",
+        "email": "",
+        "details": "",
+        "draft": true
+      }
+    ],
+    "references": [],
+    "deliverables": [],
+    "tasks": [
+      {
+        "id": "task-001",
+        "name": "Define required components",
+        "draft": true,
+        "details": "Strategy Lead defines the list of required components for the board packet.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Strategy Lead"
+        ]
+      },
+      {
+        "id": "task-002",
+        "name": "Create master content schedule",
+        "draft": true,
+        "details": "Project Coordinator creates a schedule aligning component drafts, reviews, and buffers.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Project Coordinator"
+        ]
+      },
+      {
+        "id": "task-003",
+        "name": "Draft financial statements",
+        "draft": true,
+        "details": "CFO drafts the financial statements section of the packet.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "CFO"
+        ]
+      },
+      {
+        "id": "task-004",
+        "name": "Draft strategic plan",
+        "draft": true,
+        "details": "Strategy Lead drafts the strategic plan section.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Strategy Lead"
+        ]
+      },
+      {
+        "id": "task-005",
+        "name": "Draft risk dashboard",
+        "draft": true,
+        "details": "Risk Officer drafts the risk dashboard section.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Risk Officer"
+        ]
+      },
+      {
+        "id": "task-006",
+        "name": "Draft ESG summary",
+        "draft": true,
+        "details": "ESG Lead drafts the ESG summary section.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "ESG Lead"
+        ]
+      },
+      {
+        "id": "task-007",
+        "name": "Draft financing proposal",
+        "draft": true,
+        "details": "Finance Team drafts the financing proposal section.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Finance Team"
+        ]
+      },
+      {
+        "id": "task-008",
+        "name": "Draft audit committee report",
+        "draft": true,
+        "details": "Audit Lead drafts the audit committee report.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Audit Lead"
+        ]
+      },
+      {
+        "id": "task-009",
+        "name": "Cross\u2011functional peer review",
+        "draft": true,
+        "details": "Corporate Secretary coordinates peer review of all drafted components.",
+        "dependencies": [
+          "task-003",
+          "task-004",
+          "task-005",
+          "task-006",
+          "task-007",
+          "task-008"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Corporate Secretary"
+        ]
+      },
+      {
+        "id": "task-010",
+        "name": "Executive sign\u2011off",
+        "draft": true,
+        "details": "CFO, CEO, and Board Chair provide final sign\u2011off on the assembled packet.",
+        "dependencies": [
+          "task-009"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "CFO",
+          "CEO",
+          "Board Chair"
+        ]
+      },
+      {
+        "id": "task-011",
+        "name": "Assemble final packet",
+        "draft": true,
+        "details": "Corporate Secretary assembles all components into the final board packet.",
+        "dependencies": [
+          "task-010"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Corporate Secretary"
+        ]
+      },
+      {
+        "id": "task-012",
+        "name": "Validate distribution list",
+        "draft": true,
+        "details": "Corporate Secretary validates the list of directors and recipients for pre\u2011read distribution.",
+        "dependencies": [
+          "task-011"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Corporate Secretary"
+        ]
+      },
+      {
+        "id": "task-013",
+        "name": "Configure secure delivery platform",
+        "draft": true,
+        "details": "IT Lead configures the secure platform used for pre\u2011read distribution.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "IT Lead"
+        ]
+      },
+      {
+        "id": "task-014",
+        "name": "Send pre\u2011read notification",
+        "draft": true,
+        "details": "Corporate Secretary sends the pre\u2011read distribution email with access instructions.",
+        "dependencies": [
+          "task-012",
+          "task-013"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Corporate Secretary"
+        ]
+      },
+      {
+        "id": "task-015",
+        "name": "Track acknowledgements",
+        "draft": true,
+        "details": "Corporate Secretary tracks receipt acknowledgements from directors.",
+        "dependencies": [
+          "task-014"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Corporate Secretary"
+        ]
+      },
+      {
+        "id": "task-016",
+        "name": "Schedule rehearsals",
+        "draft": true,
+        "details": "Executive Assistant schedules both management and full\u2011board rehearsals.",
+        "dependencies": [
+          "task-015"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Executive Assistant"
+        ]
+      },
+      {
+        "id": "task-017",
+        "name": "Develop run\u2011through script",
+        "draft": true,
+        "details": "Presentation Lead creates a detailed script for the board presentation.",
+        "dependencies": [
+          "task-011"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Presentation Lead"
+        ]
+      },
+      {
+        "id": "task-018",
+        "name": "First rehearsal \u2013 Management only",
+        "draft": true,
+        "details": "All presenters conduct the first rehearsal for management audience.",
+        "dependencies": [
+          "task-016",
+          "task-017"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Presentation Lead",
+          "CFO",
+          "ESG Lead",
+          "Risk Officer",
+          "Finance Team",
+          "Audit Lead"
+        ]
+      },
+      {
+        "id": "task-019",
+        "name": "Adjust materials",
+        "draft": true,
+        "details": "Presentation Lead updates presentation materials based on first rehearsal feedback.",
+        "dependencies": [
+          "task-018"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Presentation Lead"
+        ]
+      },
+      {
+        "id": "task-020",
+        "name": "Second rehearsal \u2013 Full board",
+        "draft": true,
+        "details": "All presenters conduct the full\u2011board rehearsal.",
+        "dependencies": [
+          "task-019"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Presentation Lead",
+          "CFO",
+          "CEO",
+          "Board Chair",
+          "Corporate Secretary"
+        ]
+      },
+      {
+        "id": "task-021",
+        "name": "Finalize presentation deck",
+        "draft": true,
+        "details": "Presentation Lead finalizes the deck after full\u2011board rehearsal.",
+        "dependencies": [
+          "task-020"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Presentation Lead"
+        ]
+      },
+      {
+        "id": "task-022",
+        "name": "Collect audit data",
+        "draft": true,
+        "details": "Audit Lead gathers all data needed for the audit committee report.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Audit Lead"
+        ]
+      },
+      {
+        "id": "task-023",
+        "name": "Draft audit report",
+        "draft": true,
+        "details": "Audit Lead drafts the audit committee report based on collected data.",
+        "dependencies": [
+          "task-022"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Audit Lead"
+        ]
+      },
+      {
+        "id": "task-024",
+        "name": "Internal review of audit report",
+        "draft": true,
+        "details": "CFO and Legal perform internal review of the draft audit report.",
+        "dependencies": [
+          "task-023"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "CFO",
+          "Legal Counsel"
+        ]
+      },
+      {
+        "id": "task-025",
+        "name": "Audit committee chair sign\u2011off",
+        "draft": true,
+        "details": "Audit Committee Chair signs off the audited report.",
+        "dependencies": [
+          "task-024"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Audit Committee Chair"
+        ]
+      },
+      {
+        "id": "task-026",
+        "name": "Insert audit report into packet",
+        "draft": true,
+        "details": "Corporate Secretary inserts the signed audit report into the final board packet.",
+        "dependencies": [
+          "task-025",
+          "task-011"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Corporate Secretary"
+        ]
+      },
+      {
+        "id": "task-027",
+        "name": "Stakeholder workshops for ESG policy",
+        "draft": true,
+        "details": "ESG Lead conducts workshops with key stakeholders.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "ESG Lead"
+        ]
+      },
+      {
+        "id": "task-028",
+        "name": "Benchmarking & regulatory scan",
+        "draft": true,
+        "details": "ESG Lead benchmarks external ESG policies and scans regulations.",
+        "dependencies": [
+          "task-027"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "ESG Lead"
+        ]
+      },
+      {
+        "id": "task-029",
+        "name": "Draft ESG policy",
+        "draft": true,
+        "details": "ESG Lead drafts the full ESG policy document.",
+        "dependencies": [
+          "task-028"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "ESG Lead"
+        ]
+      },
+      {
+        "id": "task-030",
+        "name": "Legal compliance review of ESG policy",
+        "draft": true,
+        "details": "Legal Counsel reviews the ESG policy for compliance.",
+        "dependencies": [
+          "task-029"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Legal Counsel"
+        ]
+      },
+      {
+        "id": "task-031",
+        "name": "Finance impact analysis of ESG policy",
+        "draft": true,
+        "details": "CFO assesses the financial impact of the ESG policy.",
+        "dependencies": [
+          "task-029"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "CFO"
+        ]
+      },
+      {
+        "id": "task-032",
+        "name": "Revise ESG draft",
+        "draft": true,
+        "details": "ESG Lead revises the ESG policy based on legal and finance feedback.",
+        "dependencies": [
+          "task-030",
+          "task-031"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "ESG Lead"
+        ]
+      },
+      {
+        "id": "task-033",
+        "name": "Add ESG policy to packet",
+        "draft": true,
+        "details": "Corporate Secretary adds the finalized ESG policy to the board packet.",
+        "dependencies": [
+          "task-032",
+          "task-011"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Corporate Secretary"
+        ]
+      },
+      {
+        "id": "task-034",
+        "name": "Define financing objectives",
+        "draft": true,
+        "details": "CFO & Treasury define the objectives for the financing term\u2011sheet.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "CFO",
+          "Treasury"
+        ]
+      },
+      {
+        "id": "task-035",
+        "name": "Engage advisors for financing",
+        "draft": true,
+        "details": "Legal & Finance engage external advisors to support term\u2011sheet negotiation.",
+        "dependencies": [
+          "task-034"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Legal Counsel",
+          "Finance Team"
+        ]
+      },
+      {
+        "id": "task-036",
+        "name": "Issue RFP to lenders",
+        "draft": true,
+        "details": "Finance issues a Request for Proposal to potential lenders.",
+        "dependencies": [
+          "task-035"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Finance Team"
+        ]
+      },
+      {
+        "id": "task-037",
+        "name": "Receive & evaluate financing proposals",
+        "draft": true,
+        "details": "Finance reviews proposals received from lenders.",
+        "dependencies": [
+          "task-036"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Finance Team"
+        ]
+      },
+      {
+        "id": "task-038",
+        "name": "Negotiation rounds for term\u2011sheet",
+        "draft": true,
+        "details": "CFO leads negotiation rounds with selected lenders.",
+        "dependencies": [
+          "task-037"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "CFO"
+        ]
+      },
+      {
+        "id": "task-039",
+        "name": "Draft financing term\u2011sheet",
+        "draft": true,
+        "details": "Legal drafts the final financing term\u2011sheet based on negotiated terms.",
+        "dependencies": [
+          "task-038"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Legal Counsel"
+        ]
+      },
+      {
+        "id": "task-040",
+        "name": "Add term\u2011sheet to packet",
+        "draft": true,
+        "details": "Corporate Secretary adds the finalized term\u2011sheet to the board packet.",
+        "dependencies": [
+          "task-039",
+          "task-011"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Corporate Secretary"
+        ]
+      },
+      {
+        "id": "task-041",
+        "name": "Live minute\u2011taking",
+        "draft": true,
+        "details": "Board Secretary takes minutes live during the June\u202f12 meeting.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Board Secretary"
+        ]
+      },
+      {
+        "id": "task-042",
+        "name": "Draft minutes",
+        "draft": true,
+        "details": "Board Secretary drafts meeting minutes within two business days after the meeting.",
+        "dependencies": [
+          "task-041"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Board Secretary"
+        ]
+      },
+      {
+        "id": "task-043",
+        "name": "Circulate minutes for review",
+        "draft": true,
+        "details": "Board Secretary circulates draft minutes for stakeholder review.",
+        "dependencies": [
+          "task-042"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Board Secretary"
+        ]
+      },
+      {
+        "id": "task-044",
+        "name": "Incorporate changes & obtain sign\u2011off on minutes",
+        "draft": true,
+        "details": "Board Secretary incorporates feedback and obtains final sign\u2011off on minutes.",
+        "dependencies": [
+          "task-043"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Board Secretary"
+        ]
+      },
+      {
+        "id": "task-045",
+        "name": "Prepare regulatory filings",
+        "draft": true,
+        "details": "Legal prepares required regulatory filings based on meeting outcomes.",
+        "dependencies": [
+          "task-044"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Legal Counsel"
+        ]
+      },
+      {
+        "id": "task-046",
+        "name": "Submit regulatory filings",
+        "draft": true,
+        "details": "Legal submits the prepared regulatory filings.",
+        "dependencies": [
+          "task-045"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Legal Counsel"
+        ]
+      },
+      {
+        "id": "task-047",
+        "name": "Draft post\u2011meeting communications",
+        "draft": true,
+        "details": "Corporate Communications drafts communications summarizing meeting outcomes.",
+        "dependencies": [
+          "task-044"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Corporate Communications"
+        ]
+      },
+      {
+        "id": "task-048",
+        "name": "Create compliance checklist",
+        "draft": true,
+        "details": "Governance Officer creates a compliance checklist covering all regulatory requirements.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Governance Officer"
+        ]
+      },
+      {
+        "id": "task-049",
+        "name": "Mid\u2011plan compliance audit",
+        "draft": true,
+        "details": "Governance Officer conducts a mid\u2011plan audit after major milestones.",
+        "dependencies": [
+          "task-011",
+          "task-015",
+          "task-021",
+          "task-026",
+          "task-033",
+          "task-040"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Governance Officer"
+        ]
+      },
+      {
+        "id": "task-050",
+        "name": "Final compliance audit",
+        "draft": true,
+        "details": "Governance Officer performs the final compliance audit after post\u2011meeting activities.",
+        "dependencies": [
+          "task-047"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Governance Officer"
+        ]
+      },
+      {
+        "id": "task-051",
+        "name": "Governance sign\u2011off",
+        "draft": true,
+        "details": "Governance Officer provides final sign\u2011off confirming all compliance requirements are met.",
+        "dependencies": [
+          "task-050"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Governance Officer"
+        ]
+      }
+    ],
+    "history": [],
+    "historySummary": [],
+    "historyDetails": [],
+    "historyEvents": []
+  }
+}

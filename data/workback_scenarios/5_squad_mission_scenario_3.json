@@ -1,0 +1,47 @@
+{
+  "scenario_name": "Project Aurora \u2013 AI\u2011Powered Search Optimization Squad Mission",
+  "company_context": "Microsoft Azure AI division, Cloud Search product team. The squad is part of the Azure Cognitive Search group, tasked with integrating a new large\u2011language\u2011model (LLM) based relevance engine into the existing search service. The team follows the MMM (Mission\u2011Milestone\u2011Metric) framework and operates as a cross\u2011functional, autonomous squad of 7 members.",
+  "meeting_event_details": "2025-12-02, 10:00\u202fAM \u2013 11:00\u202fAM PST, 60\u2011minute virtual kickoff via Microsoft Teams (Meeting ID: 274 819 562). All squad members and key stakeholders are required to attend.",
+  "stakeholders": [
+    "Priya Patel \u2013 Directly Responsible Individual (DRI), Senior Product Manager \u2013 owns mission success, defines scope, and prioritizes backlog.",
+    "Liam O'Connor \u2013 Engineering Lead, Senior Software Engineer \u2013 responsible for architecture, code quality, and delivery of the LLM inference service.",
+    "Aisha Rahman \u2013 UX Lead, Interaction Designer \u2013 designs UI/UX for the new relevance controls and admin dashboards.",
+    "Dr. Chen Wu \u2013 Data Science Lead, Principal Data Scientist \u2013 builds and validates the LLM relevance model, defines evaluation metrics.",
+    "Ravi Kumar \u2013 Security & Compliance Engineer \u2013 ensures the solution meets Azure security baselines and GDPR/CCPA requirements.",
+    "Megan Liu \u2013 Marketing & Go\u2011to\u2011Market Manager \u2013 creates launch messaging, beta program plan, and adoption tracking.",
+    "Jenna Torres \u2013 Program Manager, Azure Cloud Infra \u2013 coordinates dependencies on compute quota, networking, and storage provisioning."
+  ],
+  "deliverables": [
+    "Mission Charter (incl. scope, success metrics, risk register) \u2013 due T+2 weeks.",
+    "Technical Architecture Document and API spec for the LLM relevance service \u2013 due T+2 weeks.",
+    "High\u2011fidelity UI mockups and interaction flow for relevance controls \u2013 due T+4 weeks.",
+    "Prototype LLM model trained on Azure Search logs with baseline relevance score \u2013 due T+4 weeks.",
+    "Beta\u2011ready integrated service (CI/CD pipeline, automated tests, security hardening) deployed to Azure staging \u2013 due T+6 weeks.",
+    "Beta program plan, pilot customer list, and success measurement framework \u2013 due T+6 weeks.",
+    "General Availability (GA) release package: code, documentation, rollout checklist, and post\u2011launch monitoring dashboard \u2013 due T+8 weeks."
+  ],
+  "success_criteria": [
+    "Achieve \u226520\u202f% reduction in average query latency for relevance\u2011enhanced searches in the beta environment.",
+    "Increase relevance\u2011score (NDCG@10) by \u226515\u202f% compared with the existing BM25 baseline on a held\u2011out test set.",
+    "Onboard at least 5 strategic enterprise customers into the beta program within 2 weeks of beta launch.",
+    "Maintain 99.9\u202f% availability of the LLM inference endpoint during the beta period.",
+    "Pass all Azure security compliance scans (Microsoft Secure Development Lifecycle) with zero critical findings.",
+    "Deliver GA on schedule (T+8 weeks) within the allocated $250k budget.",
+    "Post\u2011launch adoption: \u226530\u202f% of Azure Search customers enable the new relevance feature within 30 days of GA."
+  ],
+  "constraints": [
+    "Total budget capped at $250,000 (includes cloud compute, third\u2011party model licensing, and contractor UX work).",
+    "Compute quota for GPU\u2011accelerated VMs must be secured from the Cloud Infra team by T+1 week.",
+    "All data used for model training must be anonymized and stored in a compliant Azure Blob container (RG\u2011azsearch\u2011ml).",
+    "Dependency on the Azure Identity team for token\u2011based authentication integration \u2013 delivery expected by T+3 weeks.",
+    "Legal review of the external model licensing agreement must be completed before any production deployment (deadline T+5 weeks).",
+    "Team members are allocated 75\u202f% of their time to this mission; other commitments must not exceed 25\u202f%."
+  ],
+  "workback_prompt": "Generate a detailed 8\u2011week workback plan for the 'Project Aurora \u2013 AI\u2011Powered Search Optimization' squad mission. Include bi\u2011weekly milestones, owners, required inputs/outputs for each milestone, risk mitigation actions, and a timeline view. Align each deliverable and success metric with the mission charter, and reference the constraints (budget, compute quota, legal review, and cross\u2011team dependencies). Use the MMM framework (Mission, Milestone, Metric) to structure the plan and provide a concise executive summary for senior leadership.",
+  "meeting_type": "Squad Mission Planning",
+  "meeting_type_key": "5_squad_mission",
+  "scenario_number": 3,
+  "horizon": "T-42 to T-56",
+  "complexity": "Medium-High",
+  "generated_at": "2025-11-17T05:54:48.561815"
+}

@@ -1,0 +1,60 @@
+{
+  "scenario_name": "DataPulse Marketing Analytics Weekly Newsletter (Week of Nov\u202f18\u202f2025)",
+  "company_context": "DataPulse Inc. is a mid\u2011size SaaS company (\u2248850 employees) that provides real\u2011time data\u2011visualization platforms for retail brands. The Marketing Analytics Team (15 members) sits in the Marketing Department and reports to the VP of Marketing, Maya Patel. The team produces a weekly internal newsletter to surface campaign performance, upcoming experiments, and cross\u2011team learnings for the broader Marketing organization (\u2248120 readers).",
+  "meeting_event_details": "Newsletter publishing meeting \u2013 Friday, 15\u202fNov\u202f2025, 10:30\u202fAM \u2013 11:00\u202fAM (30\u202fmin) via Microsoft Teams (recorded). The meeting is used to confirm final copy, graphics, and distribution list before the newsletter goes live at 12:00\u202fPM the same day. The next edition will be published Monday, 18\u202fNov\u202f2025 at 12:00\u202fPM.",
+  "stakeholders": [
+    {
+      "name": "Lena Gomez",
+      "role": "Content Creator / Newsletter Editor",
+      "responsibility": "Collects contributions, writes editorial intro, assembles layout in Canva, and uploads final PDF to the internal portal."
+    },
+    {
+      "name": "Ravi Singh",
+      "role": "Data Insights Lead (Reviewer)",
+      "responsibility": "Reviews the 'Performance Snapshot' section for accuracy, validates charts, and ensures compliance with data\u2011privacy guidelines."
+    },
+    {
+      "name": "Maya Patel",
+      "role": "VP of Marketing (Approver)",
+      "responsibility": "Gives final sign\u2011off on tone, strategic messaging, and any announcements that affect the whole Marketing org."
+    },
+    {
+      "name": "Jenna Lee",
+      "role": "Design Specialist",
+      "responsibility": "Creates visual assets (header banner, infographics) and ensures brand guidelines are met."
+    },
+    {
+      "name": "Tom Alvarez",
+      "role": "Communications Operations Manager",
+      "responsibility": "Manages distribution list in the internal newsletter platform (Workplace by Meta) and tracks open\u2011rate metrics."
+    }
+  ],
+  "deliverables": [
+    "Weekly Newsletter PDF (2\u2011page, 1,200\u202fwords max) ready for upload by 12:00\u202fPM Friday, 15\u202fNov\u202f2025.",
+    "Accompanying HTML version for the intranet portal (optional, for accessibility).",
+    "Performance Snapshot data file (Excel) with source links attached for reviewer reference.",
+    "Distribution report template (pre\u2011filled with recipient list) for Tom to upload.",
+    "Post\u2011publish analytics deck (open rate, click\u2011through, feedback) to be shared in the next Monday stand\u2011up."
+  ],
+  "success_criteria": [
+    "Newsletter published on schedule (by 12:00\u202fPM Friday).",
+    "Zero data\u2011accuracy errors flagged by the reviewer.",
+    "Brand\u2011compliance score \u2265 95\u202f% (checked against the internal brand checklist).",
+    "Open rate \u2265 78\u202f% of the Marketing org and click\u2011through on at least one featured link \u2265 30\u202f%.",
+    "All stakeholder sign\u2011offs captured in the shared Teams channel before the publishing meeting."
+  ],
+  "constraints": [
+    "T\u20117 planning horizon \u2013 all content must be submitted to Lena by 12:00\u202fPM Thursday, 14\u202fNov\u202f2025.",
+    "Budget: No external design tools may be purchased; only Canva Enterprise (already licensed) can be used.",
+    "Data privacy: Any customer\u2011level data must be aggregated to the campaign level before inclusion.",
+    "Dependency: Ravi\u2019s review cannot start until the raw performance data file is uploaded to the shared OneDrive folder (deadline 9:00\u202fAM Thursday).",
+    "Technical: The newsletter platform only accepts PDFs under 2\u202fMB; graphics must be optimized accordingly."
+  ],
+  "workback_prompt": "Generate a detailed workback plan for the 'DataPulse Marketing Analytics Weekly Newsletter (Week of Nov\u202f18\u202f2025)' scenario. Include all tasks, owners, start/end dates, and dependencies, working backwards from the final publishing deadline of Friday, 15\u202fNov\u202f2025 at 12:00\u202fPM. Account for the T\u20117 planning horizon, stakeholder sign\u2011offs, data\u2011privacy checks, and the constraints listed.",
+  "meeting_type": "Weekly Team Newsletter",
+  "meeting_type_key": "1_weekly_newsletter",
+  "scenario_number": 3,
+  "horizon": "T-7",
+  "complexity": "Low",
+  "generated_at": "2025-11-17T04:08:36.852346"
+}

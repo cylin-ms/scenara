@@ -1,0 +1,134 @@
+{
+  "basic_info": {
+    "full_name": "Rebecca Foster",
+    "age": 34,
+    "location": "Austin, Texas, USA",
+    "timezone": "America/Chicago (CST)",
+    "years_of_experience": 9,
+    "education": [
+      {
+        "degree": "B.S. Computer Science",
+        "institution": "University of Texas at Austin",
+        "year": 2014
+      },
+      {
+        "degree": "MBA (Technology Management)",
+        "institution": "Rice University",
+        "year": 2018
+      }
+    ]
+  },
+  "work_habits": {
+    "preferred_working_hours": "08:00-16:00 CST (flexible +/- 1 hour)",
+    "peak_productivity_times": [
+      "09:00-11:30",
+      "14:00-15:30"
+    ],
+    "communication_style": {
+      "preference": "Hybrid (mostly async, with synchronous sync‑calls for urgent matters)",
+      "average_response_time": "Within 2 business hours for async messages, immediate for chat during core hours"
+    },
+    "meeting_preferences": "Limits scheduled meetings to 4 hours per week; prefers short (15‑30 min) stand‑ups and uses video only when necessary",
+    "work_environment": "Hybrid (3 days remote, 2 days in office)",
+    "focus_time_requirements": "Blocks 3‑4 hours of uninterrupted focus time each workday"
+  },
+  "personality": {
+    "mbti": "ENTJ",
+    "decision_making_approach": "Data‑driven with a bias toward quick, decisive action; seeks stakeholder input but owns final call",
+    "risk_tolerance": "Moderate‑high (comfortable piloting new sales tactics, avoids reckless gambles)",
+    "collaboration_style": "Goal‑oriented; enjoys cross‑functional brainstorming but keeps discussions tightly scoped",
+    "stress_management_approach": "Uses time‑boxing, short walks, and Pomodoro breaks; practices mindfulness 2‑3 times weekly",
+    "conflict_resolution_style": "Direct but diplomatic; addresses issues early, focuses on facts and mutually beneficial outcomes"
+  },
+  "skills": {
+    "core_technical_skills": {
+      "CRM (Salesforce)": 9,
+      "Data Analysis (SQL, Tableau)": 7,
+      "API Basics (REST)": 6,
+      "SaaS Product Knowledge": 8,
+      "Basic Python Scripting": 5
+    },
+    "leadership_abilities": 7,
+    "domain_expertise_areas": [
+      "Enterprise SaaS sales cycles",
+      "Channel partner management",
+      "Customer success alignment"
+    ],
+    "learning_agility": 8,
+    "tools_proficiency": [
+      "Salesforce",
+      "HubSpot",
+      "Microsoft Teams",
+      "Zoom",
+      "Asana",
+      "Google Workspace"
+    ],
+    "languages_spoken": [
+      "English (native)",
+      "Spanish (conversational)"
+    ]
+  },
+  "performance": {
+    "task_completion_rate": 94,
+    "quality_score": 92,
+    "estimation_accuracy": 88,
+    "multitasking_ability": 7,
+    "performance_under_pressure": 8
+  },
+  "availability": {
+    "available_hours_per_week": 38,
+    "timezone_and_working_hours": "CST, core hours 08:00‑16:00 with 1 hour lunch break",
+    "planned_time_off_days_per_year": 22,
+    "other_commitments": [
+      "Quarterly MBA alumni networking (2‑3 hrs per quarter)",
+      "Local tech meetup speaker (6 hrs per year)"
+    ],
+    "travel_flexibility": "Up to 25% travel (≈5 days per quarter) for client meetings and industry conferences"
+  },
+  "personal_factors": {
+    "family_status": "Married, no children",
+    "caregiving_responsibilities": "None",
+    "commute_situation": "0‑5 minute walk to office (hybrid days)",
+    "health_considerations": "Mild seasonal allergies; uses standing desk to avoid back strain",
+    "career_motivation": "Aiming for Senior Account Executive → Sales Director within 3‑4 years; driven by revenue impact and mentorship opportunities"
+  },
+  "project_impact": {
+    "reliability": 9,
+    "innovation_tendency": 6,
+    "documentation_quality": 8,
+    "mentorship_capability": 7,
+    "influence_level": 7
+  },
+  "collaboration": {
+    "meeting_frequency_preference": "1‑2 structured meetings per week; ad‑hoc syncs limited to 15 minutes",
+    "communication_channels_preference": [
+      "Asynchronous: Email, Teams chat, Confluence",
+      "Synchronous: Zoom for quick video calls"
+    ],
+    "feedback_style": "Direct but constructive; provides data‑backed observations and actionable suggestions",
+    "knowledge_sharing_habits": "Writes concise post‑mortem summaries in Confluence; runs monthly 30‑minute “Wins & Learnings” huddles",
+    "cross_team_collaboration": 8
+  },
+  "risk_factors": {
+    "potential_bottlenecks": [
+      "High meeting load during product launch weeks",
+      "Dependency on a single senior sales engineer for technical demos"
+    ],
+    "backup_person_needed": "Jordan Lee (Senior AE, familiar with Rebecca’s accounts)",
+    "ramp_up_time_weeks": 3,
+    "context_switching_tolerance": 6,
+    "burnout_risk_factors": [
+      "Extended periods of back‑to‑back client demos",
+      "Travel spikes during Q4"
+    ]
+  },
+  "_metadata": {
+    "generated_at": "2025-11-17T15:26:49.342557",
+    "name": "Rebecca Foster",
+    "role": "Account Executive",
+    "seniority": "mid",
+    "company": "TechCorp",
+    "model": "gpt-oss:120b",
+    "provider": "ollama"
+  }
+}

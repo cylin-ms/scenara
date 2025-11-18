@@ -1,0 +1,48 @@
+{
+  "scenario_name": "DataPulse AI Insights Feature Launch \u2013 Acme Analytics",
+  "company_context": "Acme Analytics is a SaaS company in the Business Intelligence space serving mid\u2011market SaaS and e\u2011commerce firms. The product, Acme Dashboard, provides real\u2011time visualizations and reporting. The new feature, **DataPulse AI Insights**, adds AI\u2011driven predictive forecasts, anomaly detection, and automated insight cards directly into existing dashboards. Target customers are data analysts, product managers, and growth teams who need faster, more accurate forward\u2011looking metrics. Value proposition: cut time\u2011to\u2011insight by 50% and improve forecast accuracy by 20% versus manual methods. The launch is high\u2011complexity (AI model validation, data pipeline scaling, compliance) and follows a T\u201130 workback schedule.",
+  "meeting_event_details": "Kickoff Launch Planning Meeting \u2013 2025-11-15, 09:00\u202fAM\u202fPST (UTC\u20118), 2\u2011hour duration, Acme Headquarters Conference Room A (Hybrid: in\u2011person + Zoom link: https://zoom.acme.com/launch\u2011kickoff). Agenda: review feature scope, assign responsibilities, confirm timeline, identify dependencies and risks.",
+  "stakeholders": [
+    "Maya Patel \u2013 Senior Director of Product Management (Feature Owner, defines scope, approves go\u2011to\u2011market strategy)",
+    "Carlos Ruiz \u2013 Principal Engineer, AI Platform (Engineering Lead, responsible for model deployment, performance testing, and data pipeline readiness)",
+    "Priya Singh \u2013 Head of Marketing (Marketing Lead, creates positioning, messaging, demand generation plan, and launch communications)",
+    "Jordan Lee \u2013 VP of Sales (Sales Lead, builds sales enablement, pricing, and quota planning)",
+    "Elena Gomez \u2013 Director of Customer Success (Support Lead, designs support playbook, training, and post\u2011launch monitoring)",
+    "Tom Whitaker \u2013 Program Manager, Launch Office (Launch Coordinator, tracks milestones, facilitates cross\u2011functional sync, manages budget)"
+  ],
+  "deliverables": [
+    "Feature Requirements Document (FRD) \u2013 finalized by 2025-11-20",
+    "Technical Architecture & Deployment Checklist \u2013 2025-11-22",
+    "AI Model Validation Report (accuracy, bias, GDPR compliance) \u2013 2025-12-01",
+    "Release Notes & Product Update Blog Draft \u2013 2025-12-08",
+    "Customer\u2011Facing User Guide (PDF) and Quick\u2011Start Video \u2013 2025-12-10",
+    "In\u2011App Announcement Banner copy & design assets \u2013 2025-12-12",
+    "Email Campaign (teaser, launch, follow\u2011up) \u2013 2025-12-13",
+    "Sales Enablement Deck + Pricing FAQ \u2013 2025-12-09",
+    "Support Playbook (triage flow, escalation matrix) \u2013 2025-12-10",
+    "Webinar Script & Slides for \u201cLive Demo of DataPulse AI Insights\u201d \u2013 2025-12-14",
+    "LinkedIn Sponsored Content assets \u2013 2025-12-13"
+  ],
+  "success_criteria": [
+    "At least 20% of existing customers enable DataPulse AI Insights within 30\u202fdays of launch",
+    "Net Promoter Score (NPS) for the new feature \u2265\u202f45 in the first survey window",
+    "Generate $500,000 incremental ARR from upsells and new logos in Q1\u202f2026",
+    "Reduce churn among target segment by 5% YoY attributable to the new feature",
+    "Support tickets related to DataPulse AI Insights \u2264\u202f5% of total support volume in the first month",
+    "Achieve \u2265\u202f30% email open rate and \u2265\u202f8% click\u2011through rate on launch announcement"
+  ],
+  "constraints": [
+    "Total launch marketing budget capped at $150,000",
+    "AI model must receive GDPR\u2011compliant data processing certification by 2025-12-01",
+    "Engineering bandwidth limited to 2 full\u2011time engineers for final QA and hot\u2011fixes after 2025-12-05",
+    "All customer\u2011facing documentation must be approved by Legal and Compliance by 2025-12-08",
+    "Launch must not conflict with the scheduled release of Acme Dashboard v3.2 on 2025-12-20"
+  ],
+  "workback_prompt": "Create a detailed workback plan for the **DataPulse AI Insights** feature launch at Acme Analytics. The launch is scheduled for **2025-12-15 10:00\u202fAM\u202fPST** and follows a T\u201130 planning horizon. Include all phases (strategy, development, QA, documentation, marketing, sales enablement, support readiness, launch day execution, post\u2011launch monitoring). Break down tasks by week, assign owners (using the stakeholder list provided), indicate dependencies, critical path items, risk mitigation steps, and required approvals. Provide a Gantt\u2011style timeline, a RACI matrix, and a checklist of go/no\u2011go criteria for the launch day. Use the scenario details above (company context, deliverables, success criteria, constraints) to ensure the plan is realistic and actionable.",
+  "meeting_type": "Product Feature Launch",
+  "meeting_type_key": "4_feature_launch",
+  "scenario_number": 2,
+  "horizon": "T-30",
+  "complexity": "High",
+  "generated_at": "2025-11-17T05:16:41.598227"
+}

@@ -1,0 +1,395 @@
+{
+  "scenario_name": "AstraTech\u2011MedPulse Enterprise Integration (Extreme Complexity)",
+  "scenario_number": 2,
+  "meeting_type": "M&A Integration Planning",
+  "quality_level": "high",
+  "workback_prompt": "Create a detailed, day\u2011by\u2011day workback plan for the AstraTech Solutions \u2013 MedPulse Health integration described above. The plan should cover all key workstreams (HR, IT, Finance, Product, Sales, Operations), map each deliverable to a specific date, assign owners from the stakeholder list, identify dependencies, flag critical path items, and embed the Day\u20111 and 100\u2011day priorities. Include risk mitigation actions, budget checkpoints, and communication milestones. Output the plan in a table format suitable for the Integration Management Office to track progress against the success criteria and constraints.\n\nGenerate a HIGH QUALITY workback plan with these characteristics:\n- Comprehensive task coverage\n- Clear, actionable task descriptions\n- Well-defined dependencies\n- All tasks assigned to specific owners\n- Clear milestones with completion criteria\n- Realistic timelines with buffers\n- Proactive risk management\n- Complete deliverable list\n\nIMPORTANT: Generate a plan that naturally exhibits HIGH quality characteristics.\nDo not explicitly label the plan as \"high quality\" - let the quality emerge from the content.",
+  "generated_at": "2025-11-17T08:23:28.274238",
+  "analysis": "# Outcomes\n\n## 1. Establish Integration Planning Framework  \nCreate a reusable template that defines the structure, terminology, and level\u2011of\u2011detail required for the AstraTech\u202f\u2013\u202fMedPulse day\u2011by\u2011day workback plan (workstreams, deliverables, owners, dependencies, milestones, buffers, risks, budget checkpoints, communication milestones).  \n\n**Artifact references:** None  \n\n### Reasoning  \nThe user\u2019s request spans many workstreams and demands a \u201ctable format suitable for the Integration Management Office.\u201d Before populating data, the team needs a clear, agreed\u2011upon framework so that every subsequent task (owner assignment, date mapping, risk identification) follows the same conventions. This foundation prevents rework and ensures consistency across workstreams.\n\n### Approach  \n1. **Select a baseline template** \u2013 use the IM\u2011Office\u2019s standard integration schedule (if one exists) or draft a new one in a spreadsheet or project\u2011management tool.  \n2. **Define columns** \u2013 e.g., Date, Workstream, Deliverable, Owner, Dependencies, Critical\u2011Path Flag, Completion Criteria, Risk, Mitigation, Budget Checkpoint, Communication Milestone.  \n3. **Add guidance notes** \u2013 explain required granularity (day\u2011level), how to indicate buffers, and the meaning of each flag.  \n4. **Circulate draft to the Integration Steering Committee** for quick sign\u2011off (\u2264\u202f2\u202fdays).  \n\n---\n\n## 2. Capture Stakeholder Ownership Matrix  \nCompile a definitive list of owners for each workstream (HR, IT, Finance, Product, Sales, Operations) and map them to the specific deliverables they will be accountable for.  \n\n**Artifact references:** None  \n\n### Reasoning  \nThe plan must \u201cassign owners from the stakeholder list.\u201d Without a verified ownership matrix, tasks could be orphaned or duplicated, leading to delays and accountability gaps.  \n\n### Approach  \n1. **Extract stakeholder names** from existing integration charters or meeting minutes.  \n2. **Host a short alignment call** (\u2264\u202f1\u202fday) with each functional lead to confirm responsibility for each major deliverable.  \n3. **Document the matrix** in a shared sheet (Owner\u202f|\u202fWorkstream\u202f|\u202fPrimary Deliverables).  \n4. **Obtain written acknowledgment** (email reply) from each owner to lock in accountability.  \n\n---\n\n## 3. Enumerate All Required Deliverables and Milestones  \nIdentify every deliverable required to satisfy the Day\u20111 and 100\u2011day priorities, success criteria, and constraints across all workstreams.  \n\n**Artifact references:** None  \n\n### Reasoning  \nA \u201ccomplete deliverable list\u201d is the backbone of the workback schedule. Missing items would surface later as scope creep or missed dependencies, jeopardizing the critical path.  \n\n### Approach  \n1. **Review integration charter** and any existing \u201cDay\u20111/100\u2011day\u201d documents.  \n2. **Facilitate a cross\u2011functional workshop** (1\u202fday) where each workstream lists its required outputs (e.g., HR\u202f\u2192\u202fOnboarding SOP, IT\u202f\u2192\u202fSystem Cut\u2011over Plan).  \n3. **Validate each deliverable** against the success criteria and constraints (budget, regulatory, timeline).  \n4. **Prioritize** deliverables into \u201cDay\u20111,\u201d \u201c30\u2011day,\u201d \u201c60\u2011day,\u201d and \u201c100\u2011day\u201d buckets.  \n\n---\n\n## 4. Map Deliverables to Dates with Dependencies and Buffers  \nUsing the framework, assign realistic start/end dates to every deliverable, embed appropriate buffers, and flag critical\u2011path items.  \n\n**Artifact references:** None  \n\n### Reasoning  \nThe user explicitly wants \u201ceach deliverable to a specific date,\u201d with \u201cwell\u2011defined dependencies\u201d and \u201ccritical path items.\u201d This step turns the static list into a time\u2011based schedule that can be tracked.  \n\n### Approach  \n1. **Sequence deliverables** based on logical order (e.g., legal contracts before system integration).  \n2. **Identify dependencies** by cross\u2011referencing owners\u2019 inputs; capture them in the \u201cDepends on\u201d column.  \n3. **Apply buffer logic** (e.g., 10\u202f% of task duration or a minimum of 2\u202fdays for high\u2011risk items).  \n4. **Run a quick forward\u2011pass/backward\u2011pass** calculation (manual or in the spreadsheet) to highlight the longest path \u2013 mark those rows as \u201cCritical\u2011Path.\u201d  \n5. **Review schedule with the Integration Management Office** for feasibility; adjust dates if any workstream flags resource constraints.  \n\n---\n\n## 5. Integrate Risk Mitigation, Budget Checkpoints, and Communication Milestones  \nOverlay risk owners, mitigation actions, budget review points, and communication events onto the schedule.  \n\n**Artifact references:** None  \n\n### Reasoning  \nThe plan must \u201cinclude risk mitigation actions, budget checkpoints, and communication milestones.\u201d Embedding these directly in the schedule ensures they are tracked alongside deliverables and not treated as after\u2011thoughts.  \n\n### Approach  \n1. **Conduct a risk\u2011identification session** (1\u202fday) with each workstream; capture risk description, impact, likelihood, and owner.  \n2. **Define mitigation actions** and tie each to a specific deliverable or date (e.g., \u201cContingency testing\u201d before System Cut\u2011over).  \n3. **Set budget checkpoint dates** (e.g., \u201cFinance\u202f\u2192\u202fSpend Review \u2013 Day\u202f30\u201d).  \n4. **Plan communication milestones** (e.g., \u201cAll\u2011hands integration update \u2013 Day\u202f15\u201d).  \n5. **Add columns** for Risk, Mitigation Owner, Budget Checkpoint, Communication Owner, and populate accordingly.  \n\n---\n\n## 6. Produce Final Day\u2011by\u2011Day Workback Plan Document  \nCompile all populated tables, executive summary, and governance notes into a single deliverable ready for the Integration Management Office to track.  \n\n**Artifact references:** None  \n\n### Reasoning  \nThe ultimate output requested is a \u201chigh\u2011quality workback plan in table format.\u201d This outcome aggregates all prior work into the final artifact.  \n\n### Approach  \n1. **Consolidate the master schedule** into a clean, printable table (e.g., Excel or Google Sheet).  \n2. **Add an executive summary** (objectives, critical\u2011path highlights, key risks).  \n3. **Include a \u201cHow to Use\u201d guide** for the IM\u2011Office (updating status, flagging issues).  \n4. **Perform a final review** with all functional owners (\u2264\u202f2\u202fdays) to confirm accuracy.  \n5. **Obtain formal sign\u2011off** from the Integration Steering Committee and distribute to the IM\u2011Office.  \n\n---\n\n# Breakdown\n\n### 1. Establish Integration Planning Framework  \n1.1 Draft template structure (Day\u2011by\u2011Day table layout)  \n1.2 Define column set and data conventions  \n1.3 Add guidance notes on granularity and flags  \n1.4 Circulate draft to Steering Committee \u2192 incorporate feedback \u2192 final sign\u2011off  \n\n### 2. Capture Stakeholder Ownership Matrix  \n2.1 Pull existing stakeholder list from charter  \n2.2 Schedule 30\u2011minute calls with each functional lead  \n2.3 Record agreed owners per workstream & deliverable  \n2.4 Distribute matrix for written acknowledgment  \n\n### 3. Enumerate All Required Deliverables and Milestones  \n3.1 Review Day\u20111/100\u2011day priority documents  \n3.2 Host cross\u2011functional deliverable workshop (all workstream leads)  \n3.3 Consolidate deliverable list in shared sheet  \n3.4 Validate against success criteria & constraints  \n3.5 Categorize into time buckets (Day\u20111, 30\u2011day, \u2026)  \n\n### 4. Map Deliverables to Dates with Dependencies and Buffers  \n4.1 Sequence deliverables based on logical order  \n4.2 Identify and record dependencies (owner input)  \n4.3 Apply duration estimates and buffer rules  \n4.4 Perform forward\u2011pass/backward\u2011pass to compute critical path  \n4.5 Review schedule with IM\u2011Office; adjust for resource constraints  \n\n### 5. Integrate Risk Mitigation, Budget Checkpoints, and Communication Milestones  \n5.1 Conduct risk\u2011identification session per workstream  \n5.2 Document risk owners, mitigation actions, and target dates  \n5.3 Define budget review points aligned with major spend events  \n5.4 Schedule communication milestones (updates, demos, stakeholder briefings)  \n5.5 Populate risk, budget, and communication columns in the master table  \n\n### 6. Produce Final Day\u2011by\u2011Day Workback Plan Document  \n6.1 Assemble master schedule into final table format  \n6.2 Write executive summary and governance notes  \n6.3 Create \u201cHow to Use\u201d guide for status updates  \n6.4 Distribute to functional owners for final verification  \n6.5 Obtain Steering Committee sign\u2011off and hand\u2011over to Integration Management Office  \n\n**Dependencies**  \n- Step\u202f2 must finish before Step\u202f4 (owner info needed for dependency mapping).  \n- Step\u202f3 must finish before Step\u202f4 (deliverable list required to schedule).  \n- Step\u202f5 runs in parallel with Step\u202f4 but final risk/budget columns are added in Step\u202f6.  \n- Step\u202f6 depends on completion of Steps\u202f4 and\u202f5.  \n\n**Critical\u2011Path Highlights**  \n- Completion of the Planning Framework (1) \u2192 Ownership Matrix (2) \u2192 Deliverable Enumeration (3) \u2192 Date Mapping (4) \u2192 Final Document (6).  \n\n**Risk Mitigation at Planning Level**  \n- *Risk:* Delayed owner confirmations \u2192 *Mitigation:* Set firm 2\u2011day response deadline, escalate to functional VP if missed.  \n- *Risk:* Under\u2011estimated task durations \u2192 *Mitigation:* Include 10\u202f% buffer; conduct quick sanity\u2011check with each workstream lead.  \n\n**Budget Checkpoints**  \n- Preliminary spend review \u2013 Day\u202f15 (Finance lead)  \n- Mid\u2011integration spend review \u2013 Day\u202f45 (Finance lead)  \n- Final spend reconciliation \u2013 Day\u202f100 (Finance lead)  \n\n**Communication Milestones**  \n- Integration kickoff \u2013 Day\u202f0 (All stakeholders)  \n- Weekly status sync \u2013 Every Friday (Integration PM)  \n- Day\u20111 readiness brief \u2013 Day\u202f-3 (Operations lead)  \n- 30\u2011day progress town\u2011hall \u2013 Day\u202f30 (Executive sponsor)  \n\nThis structured approach gives the Integration Management Office a clear roadmap to produce the requested day\u2011by\u2011day workback plan, ensures ownership and accountability, surfaces dependencies early, and embeds risk, budget, and communication controls from the outset.",
+  "plan": {
+    "id": "document-001",
+    "name": "AstraTech \u2013 MedPulse Integration Workback Plan",
+    "details": "Workback plan to produce a day\u2011by\u2011day integration schedule for AstraTech \u2013 MedPulse, including framework definition, ownership matrix, deliverable enumeration, scheduling, risk/budget/communication integration, and final document hand\u2011off.",
+    "draft": true,
+    "participants": [
+      {
+        "name": "You",
+        "email": "you@example.com",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "System",
+        "email": "system@example.com",
+        "details": "",
+        "draft": true
+      }
+    ],
+    "references": [],
+    "deliverables": [],
+    "tasks": [
+      {
+        "id": "task-001",
+        "name": "Establish Integration Planning Framework",
+        "draft": true,
+        "details": "Create a reusable template that defines the structure, terminology, and level\u2011of\u2011detail required for the AstraTech \u2013 MedPulse day\u2011by\u2011day workback plan.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-001-1",
+        "name": "Draft template structure (Day\u2011by\u2011Day table layout)",
+        "draft": true,
+        "details": "Select a baseline template \u2013 use the IM\u2011Office\u2019s standard integration schedule (if one exists) or draft a new one in a spreadsheet or project\u2011management tool.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-001-2",
+        "name": "Define column set and data conventions",
+        "draft": true,
+        "details": "Define columns \u2013 e.g., Date, Workstream, Deliverable, Owner, Dependencies, Critical\u2011Path Flag, Completion Criteria, Risk, Mitigation, Budget Checkpoint, Communication Milestone.",
+        "dependencies": [
+          "task-001-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-001-3",
+        "name": "Add guidance notes on granularity and flags",
+        "draft": true,
+        "details": "Add guidance notes \u2013 explain required granularity (day\u2011level), how to indicate buffers, and the meaning of each flag.",
+        "dependencies": [
+          "task-001-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-001-4",
+        "name": "Circulate draft to Steering Committee \u2192 incorporate feedback \u2192 final sign\u2011off",
+        "draft": true,
+        "details": "Circulate draft to the Integration Steering Committee for quick sign\u2011off (\u2264\u202f2\u202fdays).",
+        "dependencies": [
+          "task-001-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-002",
+        "name": "Capture Stakeholder Ownership Matrix",
+        "draft": true,
+        "details": "Compile a definitive list of owners for each workstream and map them to the specific deliverables they will be accountable for.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-002-1",
+        "name": "Pull existing stakeholder list from charter",
+        "draft": true,
+        "details": "Extract stakeholder names from existing integration charters or meeting minutes.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-002-2",
+        "name": "Schedule 30\u2011minute calls with each functional lead",
+        "draft": true,
+        "details": "Host a short alignment call (\u2264\u202f1\u202fday) with each functional lead to confirm responsibility for each major deliverable.",
+        "dependencies": [
+          "task-002-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-002-3",
+        "name": "Record agreed owners per workstream & deliverable",
+        "draft": true,
+        "details": "Document the matrix in a shared sheet (Owner\u202f|\u202fWorkstream\u202f|\u202fPrimary Deliverables).",
+        "dependencies": [
+          "task-002-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-002-4",
+        "name": "Distribute matrix for written acknowledgment",
+        "draft": true,
+        "details": "Obtain written acknowledgment (email reply) from each owner to lock in accountability.",
+        "dependencies": [
+          "task-002-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-003",
+        "name": "Enumerate All Required Deliverables and Milestones",
+        "draft": true,
+        "details": "Identify every deliverable required to satisfy the Day\u20111 and 100\u2011day priorities, success criteria, and constraints across all workstreams.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-003-1",
+        "name": "Review Day\u20111/100\u2011day priority documents",
+        "draft": true,
+        "details": "Review integration charter and any existing \u201cDay\u20111/100\u2011day\u201d documents.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-003-2",
+        "name": "Host cross\u2011functional deliverable workshop (all workstream leads)",
+        "draft": true,
+        "details": "Facilitate a workshop (1\u202fday) where each workstream lists its required outputs.",
+        "dependencies": [
+          "task-003-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-003-3",
+        "name": "Consolidate deliverable list in shared sheet",
+        "draft": true,
+        "details": "Compile the deliverable list into a shared sheet.",
+        "dependencies": [
+          "task-003-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-003-4",
+        "name": "Validate against success criteria & constraints",
+        "draft": true,
+        "details": "Validate each deliverable against success criteria, budget, regulatory, and timeline constraints.",
+        "dependencies": [
+          "task-003-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-003-5",
+        "name": "Categorize into time buckets (Day\u20111, 30\u2011day, \u2026)",
+        "draft": true,
+        "details": "Prioritize deliverables into \u201cDay\u20111,\u201d \u201c30\u2011day,\u201d \u201c60\u2011day,\u201d and \u201c100\u2011day\u201d buckets.",
+        "dependencies": [
+          "task-003-4"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-004",
+        "name": "Map Deliverables to Dates with Dependencies and Buffers",
+        "draft": true,
+        "details": "Assign realistic start/end dates to every deliverable, embed appropriate buffers, and flag critical\u2011path items.",
+        "dependencies": [
+          "task-001",
+          "task-002",
+          "task-003"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-004-1",
+        "name": "Sequence deliverables based on logical order",
+        "draft": true,
+        "details": "Sequence deliverables based on logical order (e.g., legal contracts before system integration).",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-004-2",
+        "name": "Identify and record dependencies (owner input)",
+        "draft": true,
+        "details": "Identify dependencies by cross\u2011referencing owners\u2019 inputs; capture them in the \u201cDepends on\u201d column.",
+        "dependencies": [
+          "task-004-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-004-3",
+        "name": "Apply duration estimates and buffer rules",
+        "draft": true,
+        "details": "Apply buffer logic (e.g., 10\u202f% of task duration or minimum 2\u202fdays for high\u2011risk items).",
+        "dependencies": [
+          "task-004-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-004-4",
+        "name": "Perform forward\u2011pass/backward\u2011pass to compute critical path",
+        "draft": true,
+        "details": "Run a quick forward\u2011pass/backward\u2011pass calculation to highlight the longest path and mark those rows as \u201cCritical\u2011Path.\u201d",
+        "dependencies": [
+          "task-004-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-004-5",
+        "name": "Review schedule with IM\u2011Office; adjust for resource constraints",
+        "draft": true,
+        "details": "Review schedule with the Integration Management Office for feasibility; adjust dates if any workstream flags resource constraints.",
+        "dependencies": [
+          "task-004-4"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-005",
+        "name": "Integrate Risk Mitigation, Budget Checkpoints, and Communication Milestones",
+        "draft": true,
+        "details": "Overlay risk owners, mitigation actions, budget review points, and communication events onto the schedule.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-005-1",
+        "name": "Conduct risk\u2011identification session per workstream",
+        "draft": true,
+        "details": "Conduct a risk\u2011identification session (1\u202fday) with each workstream; capture risk description, impact, likelihood, and owner.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-005-2",
+        "name": "Document risk owners, mitigation actions, and target dates",
+        "draft": true,
+        "details": "Define mitigation actions and tie each to a specific deliverable or date.",
+        "dependencies": [
+          "task-005-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-005-3",
+        "name": "Define budget review points aligned with major spend events",
+        "draft": true,
+        "details": "Set budget checkpoint dates (e.g., Preliminary spend review \u2013 Day\u202f15, Mid\u2011integration spend review \u2013 Day\u202f45, Final spend reconciliation \u2013 Day\u202f100).",
+        "dependencies": [
+          "task-005-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-005-4",
+        "name": "Schedule communication milestones (updates, demos, stakeholder briefings)",
+        "draft": true,
+        "details": "Plan communication milestones (e.g., Integration kickoff \u2013 Day\u202f0, Weekly status sync \u2013 Every Friday, Day\u20111 readiness brief \u2013 Day\u202f\u20113, 30\u2011day progress town\u2011hall \u2013 Day\u202f30).",
+        "dependencies": [
+          "task-005-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-005-5",
+        "name": "Populate risk, budget, and communication columns in the master table",
+        "draft": true,
+        "details": "Add columns for Risk, Mitigation Owner, Budget Checkpoint, Communication Owner, and populate accordingly.",
+        "dependencies": [
+          "task-005-4"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-006",
+        "name": "Produce Final Day\u2011by\u2011Day Workback Plan Document",
+        "draft": true,
+        "details": "Compile all populated tables, executive summary, and governance notes into a single deliverable ready for the Integration Management Office to track.",
+        "dependencies": [
+          "task-004",
+          "task-005"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-006-1",
+        "name": "Assemble master schedule into final table format",
+        "draft": true,
+        "details": "Consolidate the master schedule into the final table (e.g., spreadsheet or document).",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-006-2",
+        "name": "Write executive summary and governance notes",
+        "draft": true,
+        "details": "Write an executive summary and include governance notes.",
+        "dependencies": [
+          "task-006-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-006-3",
+        "name": "Create \u201cHow to Use\u201d guide for status updates",
+        "draft": true,
+        "details": "Create a \u201cHow to Use\u201d guide for the final document.",
+        "dependencies": [
+          "task-006-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-006-4",
+        "name": "Distribute to functional owners for final verification",
+        "draft": true,
+        "details": "Distribute the draft to functional owners for final verification.",
+        "dependencies": [
+          "task-006-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-006-5",
+        "name": "Obtain Steering Committee sign\u2011off and hand\u2011over to Integration Management Office",
+        "draft": true,
+        "details": "Obtain Steering Committee sign\u2011off and hand\u2011over the final plan to the Integration Management Office.",
+        "dependencies": [
+          "task-006-4"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      }
+    ],
+    "history": []
+  }
+}

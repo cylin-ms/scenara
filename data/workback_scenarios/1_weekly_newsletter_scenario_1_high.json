@@ -1,0 +1,356 @@
+{
+  "scenario_name": "EcoTech Weekly Support Newsletter \u2013 Issue 42",
+  "scenario_number": 1,
+  "meeting_type": "Weekly Team Newsletter",
+  "quality_level": "high",
+  "workback_prompt": "Generate a detailed work\u2011back plan for the EcoTech Weekly Support Newsletter (Issue 42) described above. Start from the final publication deadline (Friday, 22\u202fNov\u202f2025, 9:00\u202fAM\u202fEST) and work backwards to the first task, covering all required tasks, owners, estimated durations, dependencies, and key milestones. Include buffer time for review cycles, compliance checks, and unexpected delays. Present the plan in a table format with columns: Task, Owner, Start Date/Time, End Date/Time, Duration, Dependencies, and Notes.\n\nGenerate a HIGH QUALITY workback plan with these characteristics:\n- Comprehensive task coverage\n- Clear, actionable task descriptions\n- Well-defined dependencies\n- All tasks assigned to specific owners\n- Clear milestones with completion criteria\n- Realistic timelines with buffers\n- Proactive risk management\n- Complete deliverable list\n\nIMPORTANT: Generate a plan that naturally exhibits HIGH quality characteristics.\nDo not explicitly label the plan as \"high quality\" - let the quality emerge from the content.",
+  "generated_at": "2025-11-17T03:58:48.482480",
+  "analysis": "**EcoTech\u202fWeekly Support\u202fNewsletter \u2013 Issue\u202f42 \u2013 Work\u2011Back Plan**  \n*Target publication: Friday\u202f22\u202fNov\u202f2025\u202f09:00\u202fAM\u202fEST*  \n\n| # | Task | Owner | Start (EST) | End (EST) | Duration | Dependencies | Notes / Milestones |\n|---|------|-------|--------------|-----------|----------|---------------|--------------------|\n| 1 | Kick\u2011off meeting (project overview, roles, timeline) | Newsletter Lead | Mon\u202f04\u202fNov\u202f2025\u202f10:00 | Mon\u202f04\u202fNov\u202f2025\u202f11:00 | 1\u202fhr | \u2013 | Sets baseline for all downstream work |\n| 2 | Finalise content calendar (topic list, word\u2011count, deadlines) | Content Lead | Mon\u202f04\u202fNov\u202f2025\u202f11:00 | Mon\u202f04\u202fNov\u202f2025\u202f12:00 | 1\u202fhr | 1 | Approved by Newsletter Lead (Milestone\u202fA) |\n| 3 | Assign article briefs to writers | Content Lead | Mon\u202f04\u202fNov\u202f2025\u202f12:00 | Mon\u202f04\u202fNov\u202f2025\u202f13:00 | 1\u202fhr | 2 | Writers receive brief with due dates |\n| 4 | Writer research & first\u2011draft creation | Assigned Writers | Tue\u202f05\u202fNov\u202f2025\u202f09:00 | Fri\u202f08\u202fNov\u202f2025\u202f17:00 | 32\u202fhrs (4\u202fdays\u202f\u00d7\u202f8\u202fhrs) | 3 | Continuous work; progress tracked daily |\n| 5 | First\u2011draft submission (all articles) | Writers | Fri\u202f08\u202fNov\u202f2025\u202f12:00 | Fri\u202f08\u202fNov\u202f2025\u202f12:00 | \u2013 | 4 | Marks completion of initial content creation |\n| 6 | Initial editorial review (structure, tone, completeness) | Managing Editor | Fri\u202f08\u202fNov\u202f2025\u202f13:00 | Fri\u202f08\u202fNov\u202f2025\u202f15:00 | 2\u202fhrs | 5 | Review notes compiled for writers |\n| 7 | Feedback to writers (action items) | Managing Editor | Fri\u202f08\u202fNov\u202f2025\u202f15:00 | Fri\u202f08\u202fNov\u202f2025\u202f16:00 | 1\u202fhr | 6 | Writers begin revisions immediately |\n| 8 | Writer revisions & second\u2011draft preparation | Writers | Mon\u202f11\u202fNov\u202f2025\u202f09:00 | Tue\u202f12\u202fNov\u202f2025\u202f13:00 | 12\u202fhrs | 7 | Includes any additional research |\n| 9 | Second\u2011draft submission (ready for copy\u2011edit) | Writers | Tue\u202f12\u202fNov\u202f2025\u202f12:00 | Tue\u202f12\u202fNov\u202f2025\u202f12:00 | \u2013 | 8 | Milestone\u202fB \u2013 content lock |\n| 10 | Copy edit (grammar, style, fact\u2011check) | Copy Editor | Tue\u202f12\u202fNov\u202f2025\u202f13:00 | Wed\u202f13\u202fNov\u202f2025\u202f12:00 | 7\u202fhrs | 9 | Flagged issues returned to writers (if any) |\n| 11 | Copy\u2011edit sign\u2011off | Copy Editor | Wed\u202f13\u202fNov\u202f2025\u202f12:00 | Wed\u202f13\u202fNov\u202f2025\u202f12:00 | \u2013 | 10 | Milestone\u202fC \u2013 copy ready |\n| 12 | Create design brief (layout specs, image needs) | Art Director | Wed\u202f13\u202fNov\u202f2025\u202f13:00 | Wed\u202f13\u202fNov\u202f2025\u202f14:00 | 1\u202fhr | 11 | Brief handed to Graphic Designer |\n| 13 | Graphic production (illustrations, charts, photos) | Graphic Designer | Thu\u202f14\u202fNov\u202f2025\u202f09:00 | Fri\u202f15\u202fNov\u202f2025\u202f17:00 | 16\u202fhrs (2\u202fdays\u202f\u00d7\u202f8\u202fhrs) | 12 | Assets delivered in approved formats |\n| 14 | Layout assembly (place copy & graphics, apply branding) | Layout Designer | Mon\u202f18\u202fNov\u202f2025\u202f09:00 | Mon\u202f18\u202fNov\u202f2025\u202f13:00 | 4\u202fhrs | 13 | Draft PDF generated |\n| 15 | Internal QA & formatting check (links, alt\u2011text, mobile view) | QA Lead | Mon\u202f18\u202fNov\u202f2025\u202f13:30 | Mon\u202f18\u202fNov\u202f2025\u202f15:00 | 1.5\u202fhrs | 14 | Defects logged and fixed before next step |\n| 16 | Compliance & legal review (branding, privacy, disclosures) | Legal/Compliance | Mon\u202f18\u202fNov\u202f2025\u202f15:30 | Mon\u202f18\u202fNov\u202f2025\u202f17:00 | 1.5\u202fhrs | 15 | Must be cleared before final sign\u2011off |\n| 17 | Final approval sign\u2011off (newsletter ready for distribution) | Newsletter Lead | Tue\u202f19\u202fNov\u202f2025\u202f09:00 | Tue\u202f19\u202fNov\u202f2025\u202f10:00 | 1\u202fhr | 16 | Milestone\u202fD \u2013 \u201cReady for Publish\u201d |\n| 18 | Contingency buffer (address any late\u2011emerging issues) | Newsletter Lead | Tue\u202f19\u202fNov\u202f2025\u202f10:00 | Tue\u202f19\u202fNov\u202f2025\u202f12:00 | 2\u202fhrs | 17 | Built\u2011in risk mitigation |\n| 19 | Final file export & upload to distribution platform | Marketing Ops | Tue\u202f19\u202fNov\u202f2025\u202f12:30 | Tue\u202f19\u202fNov\u202f2025\u202f14:00 | 1.5\u202fhrs | 18 | Exported as PDF + HTML |\n| 20 | Schedule send (set send time, audience list, test send) | Marketing Ops | Tue\u202f19\u202fNov\u202f2025\u202f14:30 | Tue\u202f19\u202fNov\u202f2025\u202f15:00 | 0.5\u202fhr | 19 | Test\u2011email approved by QA |\n| 21 | Publication \u2013 send newsletter to subscribers | Marketing Ops | Fri\u202f22\u202fNov\u202f2025\u202f09:00 | Fri\u202f22\u202fNov\u202f2025\u202f09:00 | \u2013 | 20 | Milestone\u202fE \u2013 Issue\u202f42 live |\n\n### Key Milestones & Completion Criteria\n| Milestone | Criteria |\n|-----------|----------|\n| **A \u2013 Content Calendar Approved** | Calendar signed off by Newsletter Lead (Task\u202f2). |\n| **B \u2013 Content Lock** | All second drafts submitted; no further editorial changes (Task\u202f9). |\n| **C \u2013 Copy Ready** | Copy\u2011edit sign\u2011off received; no open copy issues (Task\u202f11). |\n| **D \u2013 Ready for Publish** | Final approval obtained; compliance cleared; final file uploaded (Task\u202f17). |\n| **E \u2013 Issue\u202f42 Sent** | Newsletter dispatched at 09:00\u202fAM\u202fEST on 22\u202fNov\u202f2025 (Task\u202f21). |\n\n### Risk Management & Buffers\n* **Buffer time (Task\u202f18)** \u2013 2\u202fhours reserved on 19\u202fNov for any late\u2011stage fixes (e.g., last\u2011minute legal comment, broken link).  \n* **Parallel work** \u2013 Graphic production (Task\u202f13) runs concurrently with copy\u2011edit to compress schedule.  \n* **Weekend protection** \u2013 No critical tasks are scheduled on 9\u201310\u202fNov (Sat\u2011Sun) or 16\u201317\u202fNov (Sat\u2011Sun); all dependencies respect business days.  \n* **Escalation path** \u2013 If a task slips >1\u202fhour beyond its end time, the Newsletter Lead escalates to senior management and may re\u2011allocate resources from the buffer.  \n\nThis work\u2011back plan provides a clear, actionable roadmap from the final publication deadline back to the initial kickoff, with owners, realistic durations, explicit dependencies, and built\u2011in safeguards to ensure Issue\u202f42 is delivered on time and to quality standards.",
+  "plan": {
+    "id": "document-001",
+    "name": "EcoTech Weekly Support Newsletter \u2013 Issue 42 \u2013 Work\u2011Back Plan",
+    "details": "",
+    "draft": true,
+    "participants": [
+      {
+        "name": "Newsletter Lead",
+        "email": null,
+        "details": "",
+        "draft": true,
+        "history": []
+      },
+      {
+        "name": "Content Lead",
+        "email": null,
+        "details": "",
+        "draft": true,
+        "history": []
+      },
+      {
+        "name": "Assigned Writers",
+        "email": null,
+        "details": "",
+        "draft": true,
+        "history": []
+      },
+      {
+        "name": "Writers",
+        "email": null,
+        "details": "",
+        "draft": true,
+        "history": []
+      },
+      {
+        "name": "Managing Editor",
+        "email": null,
+        "details": "",
+        "draft": true,
+        "history": []
+      },
+      {
+        "name": "Copy Editor",
+        "email": null,
+        "details": "",
+        "draft": true,
+        "history": []
+      },
+      {
+        "name": "Art Director",
+        "email": null,
+        "details": "",
+        "draft": true,
+        "history": []
+      },
+      {
+        "name": "Graphic Designer",
+        "email": null,
+        "details": "",
+        "draft": true,
+        "history": []
+      },
+      {
+        "name": "Layout Designer",
+        "email": null,
+        "details": "",
+        "draft": true,
+        "history": []
+      },
+      {
+        "name": "QA Lead",
+        "email": null,
+        "details": "",
+        "draft": true,
+        "history": []
+      },
+      {
+        "name": "Legal/Compliance",
+        "email": null,
+        "details": "",
+        "draft": true,
+        "history": []
+      },
+      {
+        "name": "Marketing Ops",
+        "email": null,
+        "details": "",
+        "draft": true,
+        "history": []
+      }
+    ],
+    "references": [],
+    "deliverables": [],
+    "tasks": [
+      {
+        "id": "task-001",
+        "name": "Kick\u2011off meeting (project overview, roles, timeline)",
+        "draft": true,
+        "details": "Sets baseline for all downstream work.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "history": []
+      },
+      {
+        "id": "task-002",
+        "name": "Finalise content calendar (topic list, word\u2011count, deadlines)",
+        "draft": true,
+        "details": "Approved by Newsletter Lead (Milestone A).",
+        "dependencies": [
+          "task-001"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "history": []
+      },
+      {
+        "id": "task-003",
+        "name": "Assign article briefs to writers",
+        "draft": true,
+        "details": "Writers receive brief with due dates.",
+        "dependencies": [
+          "task-002"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "history": []
+      },
+      {
+        "id": "task-004",
+        "name": "Writer research & first\u2011draft creation",
+        "draft": true,
+        "details": "Continuous work; progress tracked daily.",
+        "dependencies": [
+          "task-003"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "history": []
+      },
+      {
+        "id": "task-005",
+        "name": "First\u2011draft submission (all articles)",
+        "draft": true,
+        "details": "Marks completion of initial content creation.",
+        "dependencies": [
+          "task-004"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "history": []
+      },
+      {
+        "id": "task-006",
+        "name": "Initial editorial review (structure, tone, completeness)",
+        "draft": true,
+        "details": "Review notes compiled for writers.",
+        "dependencies": [
+          "task-005"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "history": []
+      },
+      {
+        "id": "task-007",
+        "name": "Feedback to writers (action items)",
+        "draft": true,
+        "details": "Writers begin revisions immediately.",
+        "dependencies": [
+          "task-006"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "history": []
+      },
+      {
+        "id": "task-008",
+        "name": "Writer revisions & second\u2011draft preparation",
+        "draft": true,
+        "details": "Includes any additional research.",
+        "dependencies": [
+          "task-007"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "history": []
+      },
+      {
+        "id": "task-009",
+        "name": "Second\u2011draft submission (ready for copy\u2011edit)",
+        "draft": true,
+        "details": "Milestone B \u2013 content lock.",
+        "dependencies": [
+          "task-008"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "history": []
+      },
+      {
+        "id": "task-010",
+        "name": "Copy edit (grammar, style, fact\u2011check)",
+        "draft": true,
+        "details": "Flagged issues returned to writers (if any).",
+        "dependencies": [
+          "task-009"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "history": []
+      },
+      {
+        "id": "task-011",
+        "name": "Copy\u2011edit sign\u2011off",
+        "draft": true,
+        "details": "Milestone C \u2013 copy ready.",
+        "dependencies": [
+          "task-010"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "history": []
+      },
+      {
+        "id": "task-012",
+        "name": "Create design brief (layout specs, image needs)",
+        "draft": true,
+        "details": "Brief handed to Graphic Designer.",
+        "dependencies": [
+          "task-011"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "history": []
+      },
+      {
+        "id": "task-013",
+        "name": "Graphic production (illustrations, charts, photos)",
+        "draft": true,
+        "details": "Assets delivered in approved formats.",
+        "dependencies": [
+          "task-012"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "history": []
+      },
+      {
+        "id": "task-014",
+        "name": "Layout assembly (place copy & graphics, apply branding)",
+        "draft": true,
+        "details": "Draft PDF generated.",
+        "dependencies": [
+          "task-013"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "history": []
+      },
+      {
+        "id": "task-015",
+        "name": "Internal QA & formatting check (links, alt\u2011text, mobile view)",
+        "draft": true,
+        "details": "Defects logged and fixed before next step.",
+        "dependencies": [
+          "task-014"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "history": []
+      },
+      {
+        "id": "task-016",
+        "name": "Compliance & legal review (branding, privacy, disclosures)",
+        "draft": true,
+        "details": "Must be cleared before final sign\u2011off.",
+        "dependencies": [
+          "task-015"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "history": []
+      },
+      {
+        "id": "task-017",
+        "name": "Final approval sign\u2011off (newsletter ready for distribution)",
+        "draft": true,
+        "details": "Milestone D \u2013 \u201cReady for Publish\u201d.",
+        "dependencies": [
+          "task-016"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "history": []
+      },
+      {
+        "id": "task-018",
+        "name": "Contingency buffer (address any late\u2011emerging issues)",
+        "draft": true,
+        "details": "Built\u2011in risk mitigation.",
+        "dependencies": [
+          "task-017"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "history": []
+      },
+      {
+        "id": "task-019",
+        "name": "Final file export & upload to distribution platform",
+        "draft": true,
+        "details": "Exported as PDF + HTML.",
+        "dependencies": [
+          "task-018"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "history": []
+      },
+      {
+        "id": "task-020",
+        "name": "Schedule send (set send time, audience list, test send)",
+        "draft": true,
+        "details": "Test\u2011email approved by QA.",
+        "dependencies": [
+          "task-019"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "history": []
+      },
+      {
+        "id": "task-021",
+        "name": "Publication \u2013 send newsletter to subscribers",
+        "draft": true,
+        "details": "Milestone E \u2013 Issue\u202f42 live.",
+        "dependencies": [
+          "task-020"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "history": []
+      }
+    ],
+    "history": []
+  }
+}

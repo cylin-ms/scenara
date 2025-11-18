@@ -1,0 +1,140 @@
+{
+  "basic_info": {
+    "full_name": "Daniel Park",
+    "age": 32,
+    "location": "San Jose, California, USA",
+    "timezone": "America/Los_Angeles (PST)",
+    "years_experience": 7,
+    "education": {
+      "degree": "Bachelor of Science",
+      "field": "Computer Science",
+      "institution": "University of California, Berkeley",
+      "graduation_year": 2016
+    }
+  },
+  "work_habits": {
+    "preferred_working_hours": "Early bird (starts around 07:30)",
+    "peak_productivity_times": "08:30‑11:30 and 14:00‑16:00",
+    "communication_style": {
+      "async_preference": true,
+      "sync_preference": "Brief syncs when needed",
+      "average_response_time_minutes": 30
+    },
+    "meeting_preferences": "Keeps meetings short (<45 min); prefers agenda‑driven stand‑ups and bi‑weekly sprint reviews; avoids unnecessary all‑hands.",
+    "work_environment": "Hybrid (2‑3 days in office, rest remote)",
+    "focus_time_requirements_hours_per_day": 3
+  },
+  "personality": {
+    "mbti": "ENTJ",
+    "decision_making_approach": "Data‑driven but willing to act on gut when timelines are tight",
+    "risk_tolerance": "Moderate – comfortable with incremental innovation, cautious on large‑scale bets",
+    "collaboration_style": "Assertive facilitator; encourages input but drives consensus quickly",
+    "stress_management_approach": "Morning workout, Pomodoro technique, and scheduled ‘quiet hours’",
+    "conflict_resolution_style": "Direct with focus on solutions; uses structured de‑briefs to keep tone constructive"
+  },
+  "skills": {
+    "technical_skills": {
+      "data_analysis": 8,
+      "roadmapping": 9,
+      "user_research": 7,
+      "ux_design_basics": 6,
+      "api_integration": 5,
+      "agile_methodologies": 9,
+      "sql": 7,
+      "python": 5
+    },
+    "leadership_abilities": {
+      "team_coaching": 7,
+      "stakeholder_management": 8,
+      "vision_setting": 7,
+      "decision_making": 8,
+      "conflict_mediation": 6
+    },
+    "domain_expertise_areas": [
+      "SaaS productivity tools",
+      "Cloud collaboration platforms",
+      "Mobile app ecosystems"
+    ],
+    "learning_agility": 8,
+    "tools_proficiency": [
+      "Jira",
+      "Confluence",
+      "Aha!",
+      "Mixpanel",
+      "Tableau",
+      "Slack",
+      "Microsoft Teams",
+      "Figma"
+    ],
+    "languages_spoken": [
+      "English (native)",
+      "Korean (fluent)",
+      "Spanish (basic)"
+    ]
+  },
+  "performance": {
+    "task_completion_rate_percent": 92,
+    "quality_score_percent": 88,
+    "estimation_accuracy_percent": 81,
+    "multitasking_ability": 7,
+    "performance_under_pressure": 8
+  },
+  "availability": {
+    "available_hours_per_week": 38,
+    "timezone": "America/Los_Angeles (PST)",
+    "working_hours": "08:00‑17:00 PST (core hours), flexible +/-2 h",
+    "planned_time_off_days_per_year": 20,
+    "other_commitments": [
+      "Monthly industry meetup (2 h)",
+      "Weekly 1‑on‑1 with mentor (1 h)"
+    ],
+    "travel_flexibility": "Moderate (up to 5 trips/year, each up to 5 days)"
+  },
+  "personal_factors": {
+    "family_status": "Married, one child (3 years old)",
+    "caregiving_responsibilities": "Primary caregiver evenings and weekends",
+    "commute_situation": "Hybrid: 30‑minute drive to office on office days",
+    "health_considerations": "Mild lower‑back issue; uses standing desk and stretches regularly",
+    "career_motivation": "Aim to lead a full product line, shape user experience at scale, and build a reputation as a cross‑functional leader"
+  },
+  "project_impact": {
+    "reliability": 9,
+    "innovation_tendency": 6,
+    "documentation_quality": 8,
+    "mentorship_capability": 7,
+    "influence_level": 7
+  },
+  "collaboration": {
+    "meeting_frequency_preference": "Weekly stand‑up, bi‑weekly sprint planning, ad‑hoc as needed; caps longer meetings at 1 h",
+    "communication_channels_preference": [
+      "Slack (async)",
+      "Zoom (sync)",
+      "Confluence (docs)"
+    ],
+    "feedback_style": "Direct but diplomatic; prefers data‑backed points",
+    "knowledge_sharing_habits": "Writes concise post‑mortems, hosts monthly brown‑bag sessions, maintains a shared best‑practice repo",
+    "cross_team_collaboration_score": 8
+  },
+  "risk_factors": {
+    "potential_bottlenecks": [
+      "Occasional over‑commitment to feature scope",
+      "Dependency on external data engineering team for analytics"
+    ],
+    "backup_person_needed": "Associate PM Emily Chen for day‑to‑day task ownership during absences",
+    "ramp_up_time_weeks_for_new_projects": 3,
+    "context_switching_tolerance": 5,
+    "burnout_risk_factors": [
+      "High meeting load during release weeks",
+      "Balancing family duties with occasional overtime"
+    ]
+  },
+  "_metadata": {
+    "generated_at": "2025-11-17T15:15:01.710700",
+    "name": "Daniel Park",
+    "role": "Product Manager",
+    "seniority": "mid",
+    "company": "TechCorp",
+    "model": "gpt-oss:120b",
+    "provider": "ollama"
+  }
+}

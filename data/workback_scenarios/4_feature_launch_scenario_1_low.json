@@ -1,0 +1,417 @@
+{
+  "scenario_name": "Nimbus Analytics \u2013 Real\u2011Time Cohort Attribution Dashboard Launch",
+  "scenario_number": 1,
+  "meeting_type": "Product Feature Launch",
+  "quality_level": "low",
+  "workback_prompt": "Create a detailed workback plan for Nimbus Analytics' Real\u2011Time Cohort Attribution Dashboard launch. The plan should cover a T\u201130 horizon (starting 2025\u201111\u201115) with high complexity, listing all milestones, owners, dependencies, risk mitigation steps, and required resources to deliver the listed deliverables, meet the success criteria, and stay within the constraints.\n\nGenerate a LOW QUALITY workback plan with these characteristics:\n- Missing key tasks or phases\n- Vague task descriptions\n- Few or no dependencies defined\n- Missing stakeholder assignments\n- No milestones or poorly defined milestones\n- Unrealistic timelines\n- No risk consideration\n- Minimal deliverables identified\n\nIMPORTANT: Generate a plan that naturally exhibits LOW quality characteristics.\nDo not explicitly label the plan as \"low quality\" - let the quality emerge from the content.",
+  "generated_at": "2025-11-17T05:04:47.328507",
+  "analysis": "# Outcomes\n\n## Draft \u201cReal\u2011Time Cohort Attribution Dashboard\u201d work\u2011back schedule (T\u201130)\nCreate an initial schedule that lists the major milestones, owners, rough dates, and a high\u2011level view of required resources for the launch window that begins on\u202f2025\u201111\u201115.  \nArtifact references: *none* (the schedule will be produced as a new document).\n\n### Reasoning\nThe user\u2019s primary request is a work\u2011back plan covering the 30\u2011day horizon. The first concrete deliverable is therefore a draft schedule that captures the requested elements (milestones, owners, dependencies, risk mitigation, resources). Starting with a draft gives the team something to iterate on and makes it possible to identify missing pieces later.\n\n### Approach\n1. **Define the launch target date** \u2013 2025\u201111\u201115 (Day\u202f0).  \n2. **Back\u2011track 30\u202fdays** to establish the earliest start date (2025\u201110\u201116).  \n3. **Identify high\u2011level phases** that typically appear in a dashboard launch (e.g., requirements, data integration, UI development, testing, deployment, communications).  \n4. **Assign provisional owners** (product manager, data engineer, UI/UX lead, QA lead, release manager). Because the request is for a low\u2011detail plan, keep the assignments brief.  \n5. **Set rough dates** for each phase by dividing the 30\u2011day window evenly (e.g., 5\u2011day blocks).  \n6. **Add placeholder columns** for dependencies, risk mitigation, and resources, but leave most entries empty or generic.  \n7. **Compile the information** into a simple table (e.g., Excel or Google Sheet) and label it \u201cDraft Work\u2011back Schedule \u2013 Nimbus Analytics Real\u2011Time Cohort Attribution Dashboard\u201d.\n\n---\n\n## Review & Add Missing Elements (optional)\nConduct a quick walkthrough with the core team to surface any obvious gaps (e.g., missing regulatory review, stakeholder sign\u2011off) and decide whether to add them to the draft.  \nArtifact references: *none*.\n\n### Reasoning\nEven a low\u2011detail plan benefits from a brief sanity\u2011check to avoid completely overlooking critical steps. The user asked for a plan that \u201cnaturally exhibits low\u2011quality characteristics,\u201d so a minimal review that only catches the most glaring omissions aligns with that intent without over\u2011engineering the output.\n\n### Approach\n1. **Schedule a 30\u2011minute sync** with the product owner, data lead, and release manager.  \n2. **Walk through the draft table** row by row, asking each owner if the listed dates and responsibilities feel plausible.  \n3. **Note any obvious missing tasks** (e.g., \u201cfinal data validation\u201d) on a separate \u201cAdd\u2011On\u201d list, but do not flesh them out fully.  \n4. **Update the draft** with the new items in a single additional row per missing task, keeping descriptions vague.\n\n---\n\n## Distribute Draft to Stakeholders\nSend the draft schedule to the broader project audience (e.g., senior leadership, compliance, ops) for awareness.  \nArtifact references: *none*.\n\n### Reasoning\nThe user\u2019s request includes \u201cowners\u201d and \u201cdependencies,\u201d which implies that stakeholders need to be aware of who is responsible for what. A simple email with the attached draft satisfies this requirement without adding depth.\n\n### Approach\n1. **Create a brief email** that states the purpose of the attached schedule and the launch date.  \n2. **Attach the draft schedule** file.  \n3. **CC** the product manager, data engineering lead, UI/UX lead, QA lead, release manager, and any senior leaders.  \n4. **Request acknowledgment** (optional) but do not solicit detailed feedback.\n\n---\n\n## Archive the Work\u2011back Plan\nStore the final draft in the project\u2019s shared repository for future reference.  \nArtifact references: *none*.\n\n### Reasoning\nEven a low\u2011quality artifact should be version\u2011controlled and accessible. Archiving completes the minimal lifecycle of the deliverable.\n\n### Approach\n1. **Choose a shared folder** (e.g., \u201cNimbusAnalytics/Projects/RealTimeCohortDashboard\u201d).  \n2. **Upload the draft file** with a clear name (e.g., \u201cWorkbackPlan_T\u201130_2025\u201111\u201115.xlsx\u201d).  \n3. **Set permissions** so the core team can view/edit if needed.  \n4. **Log the location** in a short note (e.g., in a project wiki or tracker).\n\n---\n\n# Breakdown\n\n**1. Draft \u201cReal\u2011Time Cohort Attribution Dashboard\u201d work\u2011back schedule (T\u201130)**\n- 1.1. Confirm launch date (2025\u201111\u201115)  \n- 1.2. Calculate start date (2025\u201110\u201116)  \n- 1.3. List high\u2011level phases (Requirements, Data Integration, UI Development, Testing, Deployment, Communications)  \n- 1.4. Assign provisional owners (Product Manager, Data Engineer, UI/UX Lead, QA Lead, Release Manager)  \n- 1.5. Allocate rough 5\u2011day blocks to each phase  \n- 1.6. Insert placeholder columns for dependencies, risk mitigation, resources (leave largely empty)  \n- 1.7. Build simple table in spreadsheet and label it  \n\n**2. Review & Add Missing Elements (optional)**\n- 2.1. Schedule 30\u2011minute sync with core team (Product Owner, Data Lead, Release Manager)  \n- 2.2. Walk through draft, ask for obvious missing tasks  \n- 2.3. Capture any new tasks on \u201cAdd\u2011On\u201d list (e.g., final data validation)  \n- 2.4. Append new rows with vague descriptions  \n\n**3. Distribute Draft to Stakeholders**\n- 3.1. Draft concise email explaining purpose and launch date  \n- 3.2. Attach schedule file  \n- 3.3. CC core owners and senior leadership  \n- 3.4. Send email, optionally request acknowledgment  \n\n**4. Archive the Work\u2011back Plan**\n- 4.1. Identify shared repository location  \n- 4.2. Upload file with clear naming convention  \n- 4.3. Set appropriate view/edit permissions  \n- 4.4. Record link/location in project wiki or tracker  \n\n*Dependencies*:  \n- Step\u202f2 depends on completion of Step\u202f1.  \n- Step\u202f3 can run after Step\u202f2 (or directly after Step\u202f1 if the optional review is skipped).  \n- Step\u202f4 depends on the final version produced in Step\u202f2 (or Step\u202f1 if no review).\n\n*Risks*: (kept minimal per user request)  \n- Overly optimistic 5\u2011day blocks may compress effort.  \n- Vague owner assignments could lead to unclear accountability.  \n\n*Resources*:  \n- Spreadsheet tool (e.g., Excel, Google Sheets)  \n- Email client for distribution  \n- Shared drive or repository for archiving  \n\n--- \n\nBy following this high\u2011level outline, the team can quickly produce a work\u2011back schedule that meets the user\u2019s request while naturally exhibiting the low\u2011detail characteristics described. The plan remains intentionally sparse, with limited task granularity, vague descriptions, and minimal risk or dependency articulation.",
+  "plan": {
+    "id": "document-001",
+    "name": "Real\u2011Time Cohort Attribution Dashboard Work\u2011back Plan",
+    "details": "High\u2011level T\u201130 work\u2011back schedule for the Real\u2011Time Cohort Attribution Dashboard launch on 2025\u201111\u201115. Includes draft creation, optional review, distribution, and archiving.",
+    "draft": true,
+    "participants": [
+      {
+        "name": "Product Manager",
+        "draft": true
+      },
+      {
+        "name": "Data Engineer",
+        "draft": true
+      },
+      {
+        "name": "UI/UX Lead",
+        "draft": true
+      },
+      {
+        "name": "QA Lead",
+        "draft": true
+      },
+      {
+        "name": "Release Manager",
+        "draft": true
+      },
+      {
+        "name": "Product Owner",
+        "draft": true
+      },
+      {
+        "name": "Data Lead",
+        "draft": true
+      },
+      {
+        "name": "Senior Leadership",
+        "draft": true
+      },
+      {
+        "name": "Ops",
+        "draft": true
+      }
+    ],
+    "references": [],
+    "deliverables": [
+      {
+        "id": "deliverable-001",
+        "name": "Draft Work\u2011back Schedule \u2013 Nimbus Analytics Real\u2011Time Cohort Attribution Dashboard",
+        "type": "excel",
+        "draft": true,
+        "history": []
+      }
+    ],
+    "tasks": [
+      {
+        "id": "task-001",
+        "name": "Draft \u201cReal\u2011Time Cohort Attribution Dashboard\u201d work\u2011back schedule (T\u201130)",
+        "draft": true,
+        "details": "Create the initial schedule covering the 30\u2011day horizon.",
+        "dependencies": [
+          "task-001-1",
+          "task-001-2",
+          "task-001-3",
+          "task-001-4",
+          "task-001-5",
+          "task-001-6",
+          "task-001-7"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-001-1",
+        "name": "Confirm launch date (2025\u201111\u201115)",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-001-2",
+        "name": "Calculate start date (2025\u201110\u201116)",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-001-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-001-3",
+        "name": "List high\u2011level phases (Requirements, Data Integration, UI Development, Testing, Deployment, Communications)",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-001-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-001-4",
+        "name": "Assign provisional owners (Product Manager, Data Engineer, UI/UX Lead, QA Lead, Release Manager)",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-001-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-001-5",
+        "name": "Allocate rough 5\u2011day blocks to each phase",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-001-4"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-001-6",
+        "name": "Insert placeholder columns for dependencies, risk mitigation, resources",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-001-5"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-001-7",
+        "name": "Build simple table in spreadsheet and label it",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-001-6"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[excel]/deliverable-001"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002",
+        "name": "Review & Add Missing Elements (optional)",
+        "draft": true,
+        "details": "Quick walkthrough with core team to surface gaps.",
+        "dependencies": [
+          "task-001"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002-1",
+        "name": "Schedule 30\u2011minute sync with core team (Product Owner, Data Lead, Release Manager)",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002-2",
+        "name": "Walk through draft, ask for obvious missing tasks",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-002-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002-3",
+        "name": "Capture any new tasks on \u201cAdd\u2011On\u201d list",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-002-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002-4",
+        "name": "Append new rows with vague descriptions",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-002-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[excel]/deliverable-001"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003",
+        "name": "Distribute Draft to Stakeholders",
+        "draft": true,
+        "details": "Send the draft schedule to the broader project audience.",
+        "dependencies": [
+          "task-002"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003-1",
+        "name": "Draft concise email explaining purpose and launch date",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003-2",
+        "name": "Attach schedule file",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-003-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[excel]/deliverable-001"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003-3",
+        "name": "CC core owners and senior leadership",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-003-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003-4",
+        "name": "Send email, optionally request acknowledgment",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-003-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-004",
+        "name": "Archive the Work\u2011back Plan",
+        "draft": true,
+        "details": "Store the final draft in the shared repository.",
+        "dependencies": [
+          "task-003"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-004-1",
+        "name": "Identify shared repository location",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-004-2",
+        "name": "Upload file with clear naming convention",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-004-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[excel]/deliverable-001"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-004-3",
+        "name": "Set appropriate view/edit permissions",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-004-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-004-4",
+        "name": "Record link/location in project wiki or tracker",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-004-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      }
+    ],
+    "history": []
+  }
+}

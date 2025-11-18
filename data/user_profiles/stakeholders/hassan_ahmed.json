@@ -1,0 +1,139 @@
+{
+  "basic_info": {
+    "full_name": "Hassan Ahmed",
+    "age": 30,
+    "location": "Austin, TX, USA",
+    "timezone": "America/Chicago (UTC-6)",
+    "years_experience": 6,
+    "education": [
+      {
+        "degree": "B.Sc. Computer Science",
+        "institution": "University of Texas at Austin",
+        "graduation_year": 2016
+      },
+      {
+        "certification": "ISTQB Advanced Test Analyst",
+        "year_obtained": 2019
+      }
+    ]
+  },
+  "work_habits": {
+    "preferred_working_hours": "early bird (08:00‑16:00)",
+    "peak_productivity_times": [
+      "09:00‑11:00",
+      "14:00‑15:00"
+    ],
+    "communication_style": {
+      "preference": "mixed async/sync",
+      "response_time_expectation": "within 2 hours during workday"
+    },
+    "meeting_preferences": {
+      "frequency": "minimizes meetings; prefers 15‑minute stand‑ups",
+      "format": "video only when deep discussion needed"
+    },
+    "work_environment": "hybrid (3 days office, 2 days remote)",
+    "focus_time_requirements": "3‑4 hours of uninterrupted time per day"
+  },
+  "personality": {
+    "mbti": "ISTJ",
+    "decision_making_approach": "data‑driven, analytical, prefers documented evidence",
+    "risk_tolerance": "moderate",
+    "collaboration_style": "structured, values clear roles and responsibilities",
+    "stress_management_approach": "scheduled short breaks, daily 30‑minute run, mindfulness app",
+    "conflict_resolution_style": "collaborative problem solving with emphasis on facts"
+  },
+  "skills": {
+    "core_technical_skills": {
+      "Selenium": 9,
+      "Cypress": 8,
+      "API Testing (Postman/REST‑Assured)": 9,
+      "Java": 7,
+      "Python": 8,
+      "SQL": 8,
+      "CI/CD (Jenkins)": 7
+    },
+    "leadership_abilities": 6,
+    "domain_expertise_areas": [
+      "FinTech",
+      "Payments",
+      "Regulatory compliance testing"
+    ],
+    "learning_agility": 8,
+    "tools_proficiency": {
+      "JIRA": 9,
+      "Confluence": 8,
+      "Git": 8,
+      "Jenkins": 7,
+      "TestRail": 8,
+      "Docker": 6,
+      "Slack": 9,
+      "Microsoft Teams": 7
+    },
+    "languages_spoken": [
+      "English (fluent)",
+      "Arabic (native)"
+    ]
+  },
+  "performance": {
+    "task_completion_rate": 94,
+    "quality_score": 96,
+    "estimation_accuracy": 88,
+    "multitasking_ability": 7,
+    "performance_under_pressure": 8
+  },
+  "availability": {
+    "available_hours_per_week": 38,
+    "timezone": "America/Chicago (UTC-6)",
+    "working_hours": "08:00‑17:00 (including 1‑hour lunch)",
+    "planned_time_off_days_per_year": 20,
+    "other_commitments": "Weekly QA community meetup (2 hrs), occasional evening childcare",
+    "travel_flexibility": "up to 5 days per quarter, prefers short trips"
+  },
+  "personal_factors": {
+    "family_status": "Married, one child (5 years old)",
+    "caregiving_responsibilities": "Evening drop‑offs/pick‑ups twice a week",
+    "commute_situation": "30‑minute drive to office, occasional traffic delays",
+    "health_considerations": "Mild asthma (requires occasional inhaler use)",
+    "career_motivation": "Aiming to become QA Lead within 2‑3 years; passionate about automation framework design"
+  },
+  "project_impact": {
+    "reliability": 9,
+    "innovation_tendency": 7,
+    "documentation_quality": 9,
+    "mentorship_capability": 6,
+    "influence_level": 7
+  },
+  "collaboration": {
+    "meeting_frequency_preference": "Twice‑weekly team sync + ad‑hoc as needed",
+    "communication_channels_preference": {
+      "quick": "Slack",
+      "formal": "Email",
+      "detailed": "Video calls (Zoom/Teams)"
+    },
+    "feedback_style": "direct but courteous; prefers constructive specifics",
+    "knowledge_sharing_habits": "Writes detailed test case docs in Confluence; runs monthly brown‑bag sessions on new tools",
+    "cross_team_collaboration": 7
+  },
+  "risk_factors": {
+    "potential_bottlenecks": [
+      "High reliance on manual regression during sprint peaks",
+      "Limited early‑morning availability due to childcare"
+    ],
+    "backup_person_needed": "Junior QA engineer (Ali Khan) for critical test runs",
+    "ramp_up_time_for_new_projects_weeks": 3,
+    "context_switching_tolerance": 6,
+    "burnout_risk_factors": [
+      "Extended overtime during release cycles",
+      "Meeting overload if not kept to short stand‑ups"
+    ]
+  },
+  "_metadata": {
+    "generated_at": "2025-11-17T15:25:05.826405",
+    "name": "Hassan Ahmed",
+    "role": "QA Engineer",
+    "seniority": "mid",
+    "company": "TechCorp",
+    "model": "gpt-oss:120b",
+    "provider": "ollama"
+  }
+}

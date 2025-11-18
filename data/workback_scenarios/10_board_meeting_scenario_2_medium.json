@@ -1,0 +1,786 @@
+{
+  "scenario_name": "HelioGrid Annual Planning Board Meeting \u2013 FY25 Strategy & Budget Approval",
+  "scenario_number": 2,
+  "meeting_type": "Board Meeting (Annual Planning)",
+  "quality_level": "medium",
+  "workback_prompt": "Generate a detailed work\u2011back plan for the HelioGrid Annual Planning Board Meeting (June\u202f12\u202f2025) that covers all pre\u2011meeting activities, stakeholder coordination, material preparation, governance compliance, and post\u2011meeting deliverables. Include milestones, owners, dependencies, and critical path items, ensuring the plan meets the T\u201190 planning horizon, SEC filing deadlines, audit report finalization, and board\u2011material distribution timeline. Provide a Gantt\u2011style schedule with weekly checkpoints and risk mitigation steps.\n\nGenerate a MEDIUM QUALITY workback plan with these characteristics:\n- Most major tasks present but some gaps\n- Reasonable task descriptions\n- Some dependencies defined\n- Most tasks have owners\n- Milestones present but may lack detail\n- Generally realistic timelines\n- Some consideration of risks\n- Key deliverables identified\n\nIMPORTANT: Generate a plan that naturally exhibits MEDIUM quality characteristics.\nDo not explicitly label the plan as \"medium quality\" - let the quality emerge from the content.",
+  "generated_at": "2025-11-17T11:06:47.024465",
+  "analysis": "# Outcomes\n\n## 1.\u202fPre\u2011Meeting Planning & Schedule Confirmation  \nDefine the overall work\u2011back schedule, assign owners, and lock the critical\u2011path dates (T\u201190 start, SEC filing deadline, audit finalization, board\u2011material distribution).  \nArtifact references: none  \n\n### Reasoning  \nThe meeting is set for **12\u202fJune\u202f2025** and the organization requires a **90\u2011day (T\u201190) planning horizon**. Establishing the master schedule first makes every subsequent task traceable to the critical dates (SEC filing, audit, distribution).  \n\n### Approach  \n1. Convene a short kickoff call (Week\u202f1) with the Chief Planning Officer (CPO) and the Board Secretariat to agree on the \u201cas\u2011planned\u201d dates.  \n2. Create a master Gantt chart covering weeks\u202f1\u201113 (Mar\u202f13\u202f\u2013\u202fJun\u202f12).  \n3. Identify the critical\u2011path milestones (audit sign\u2011off, SEC filing, material distribution) and flag them in the chart.  \n4. Publish the schedule to the project\u2011team channel and capture sign\u2011off from the CFO and General Counsel.  \n\n---\n\n## 2.\u202fStakeholder Coordination & Approvals  \nSecure commitments from internal and external stakeholders (Finance, Audit firm, Legal, Investor Relations, IT, and external counsel) and capture any prerequisite approvals.  \n\n### Reasoning  \nAll downstream deliverables (financial pack, audit report, SEC filing) depend on timely input and sign\u2011off from these groups. Early alignment reduces re\u2011work and protects the critical path.  \n\n### Approach  \n1. Issue a stakeholder\u2011engagement matrix (Week\u202f2) listing required deliverables, owners, and due dates.  \n2. Schedule a series of \u201calignment workshops\u201d (Weeks\u202f2\u20114) to walk through expectations and collect preliminary data.  \n3. Capture formal approvals (e.g., Finance sign\u2011off on forecast, Audit firm acceptance of scope) in a shared tracker.  \n4. Escalate any missing approvals to the Executive Sponsor within 2\u202fbusiness days of the due date.  \n\n---\n\n## 3.\u202fAudit Report Finalization  \nComplete the external audit, obtain the auditor\u2019s management letter, and produce the final audit report ready for board review.  \n\n### Reasoning  \nThe audit report must be finalized **no later than 30\u202fdays before the board meeting** to satisfy both governance best\u2011practice and SEC filing sequencing.  \n\n### Approach  \n1. Provide the audit firm with the year\u2011end financial package (Week\u202f4).  \n2. Track audit fieldwork progress via a weekly status call (Weeks\u202f5\u20118).  \n3. Receive draft audit findings (Week\u202f9) and circulate to Finance for response.  \n4. Incorporate management responses and obtain the auditor\u2019s sign\u2011off (Week\u202f10).  \n5. Archive the final audit report in the Board Portal and notify the Legal team for compliance review.  \n\n---\n\n## 4.\u202fSEC Filing Preparation & Submission  \nPrepare the Form\u202f10\u2011K (or applicable filing) and ensure submission by the regulatory deadline.  \n\n### Reasoning  \nSEC filing deadlines are fixed (typically **45\u202fdays after fiscal year\u2011end**). Missing this deadline triggers penalties and can delay board material distribution.  \n\n### Approach  \n1. Draft the filing narrative using the audited financials (Week\u202f9).  \n2. Conduct a legal compliance review (Week\u202f10) with the General Counsel.  \n3. Perform a \u201cpre\u2011file\u201d quality check with Investor Relations (Week\u202f11).  \n4. Submit the filing electronically to the SEC (Week\u202f12,\u202fby\u202f02\u202fMay\u202f2025).  \n5. Capture the EDGAR acceptance receipt and distribute it to the Board Secretariat.  \n\n---\n\n## 5.\u202fBoard\u2011Material Development & Distribution  \nAssemble the complete board packet (financial statements, audit report, SEC filing confirmation, strategic plan, risk dashboard) and distribute it to directors at least **10\u202fbusiness days** before the meeting.  \n\n### Reasoning  \nThe board\u2019s governance charter requires a minimum of 10\u202fbusiness\u2011day review period. This outcome sits directly on the critical path after audit and SEC filing completion.  \n\n### Approach  \n1. Draft the executive summary and strategic outlook (Week\u202f9).  \n2. Integrate audited financials and audit report (Week\u202f10).  \n3. Add the SEC filing confirmation and any required legal footnotes (Week\u202f11).  \n4. Perform a design/layout review with the Communications lead (Week\u202f11).  \n5. Upload the final PDF to the secure Board Portal and trigger the automated distribution notification (Week\u202f12,\u202fby\u202f05\u202fMay\u202f2025).  \n6. Log receipt acknowledgments from each director; follow\u2011up on any missing confirmations.  \n\n---\n\n## 6.\u202fAnnual Planning Board Meeting Execution  \nConduct the board meeting on **12\u202fJune\u202f2025**, ensuring all logistical, technical, and governance elements are in place.  \n\n### Reasoning  \nThe meeting itself is the culmination of the work\u2011back plan; any failure in logistics or missing materials would jeopardize the board\u2019s ability to approve the annual plan.  \n\n### Approach  \n1. Confirm venue (or virtual platform) and AV setup (Week\u202f11).  \n2. Distribute a final agenda and speaker list (Week\u202f12).  \n3. Run a dry\u2011run with the Board Chair and senior presenters (Week\u202f13).  \n4. Execute the meeting, capture minutes in real time, and record any votes.  \n\n---\n\n## 7.\u202fPost\u2011Meeting Deliverables & Close\u2011Out  \nFinalize meeting minutes, action\u2011item log, and any required regulatory filings; close the work\u2011back project.  \n\n### Reasoning  \nBoard resolutions often trigger downstream actions (e.g., budget approval, policy updates). Timely completion of post\u2011meeting tasks satisfies governance compliance and enables the next fiscal cycle.  \n\n### Approach  \n1. Draft minutes within 2\u202fbusiness days (Week\u202f14).  \n2. Circulate minutes for director sign\u2011off (Week\u202f14).  \n3. Update the action\u2011item tracker and assign owners (Week\u202f14).  \n4. File any post\u2011meeting SEC amendments (if required) within 5\u202fbusiness days.  \n5. Conduct a project close\u2011out review, capture lessons learned, and archive all artifacts (Week\u202f15).  \n\n---\n\n# Breakdown (Work\u2011Back Structure)\n\n```\n1. Pre\u2011Meeting Planning & Schedule Confirmation\n   1.1. Kickoff call \u2013 CPO (Week 1)\n   1.2. Build master Gantt (CPO) \u2013 Depends on 1.1\n   1.3. Identify critical\u2011path milestones \u2013 CPO/Legal (Week 1)\n   1.4. Publish & obtain sign\u2011off \u2013 CFO, General Counsel (Week 2)\n\n2. Stakeholder Coordination & Approvals\n   2.1. Create stakeholder matrix \u2013 PMO (Week 2)\n   2.2. Alignment workshops \u2013 Finance, Audit, Legal, IR (Weeks 2\u20114)\n   2.3. Capture formal approvals \u2013 PMO (Week 4)\n   2.4. Escalation protocol \u2013 Executive Sponsor (Ongoing)\n\n3. Audit Report Finalization\n   3.1. Deliver year\u2011end financial package to auditor \u2013 Finance (Week 4)\n   3.2. Weekly audit status calls \u2013 Audit Lead (Weeks 5\u20118)\n   3.3. Receive draft findings \u2013 Auditor (Week 9)\n   3.4. Finance response to findings \u2013 Finance (Week 9\u201110)\n   3.5. Auditor sign\u2011off & final report \u2013 Auditor (Week 10)\n   3.6. Archive report \u2013 Board Secretariat (Week 10)\n\n4. SEC Filing Preparation & Submission\n   4.1. Draft filing narrative \u2013 IR (Week 9)\n   4.2. Legal compliance review \u2013 General Counsel (Week 10)\n   4.3. Pre\u2011file quality check \u2013 IR (Week 11)\n   4.4. Submit filing to SEC \u2013 IR (Week 12, \u226402\u202fMay)\n   4.5. Capture EDGAR receipt \u2013 IR (Week 12)\n\n5. Board\u2011Material Development & Distribution\n   5.1. Draft executive summary \u2013 Strategy Lead (Week 9)\n   5.2. Integrate audited financials \u2013 Finance (Week 10)\n   5.3. Add SEC filing confirmation \u2013 Legal (Week 11)\n   5.4. Design/layout review \u2013 Communications (Week 11)\n   5.5. Upload final packet to Board Portal \u2013 Board Secretariat (Week 12, \u226405\u202fMay)\n   5.6. Track director acknowledgments \u2013 Board Secretariat (Week 12\u201113)\n\n6. Annual Planning Board Meeting Execution\n   6.1. Confirm venue/virtual platform \u2013 Operations (Week 11)\n   6.2. Distribute final agenda \u2013 Board Secretariat (Week 12)\n   6.3. Dry\u2011run with presenters \u2013 Board Chair (Week 13)\n   6.4. Conduct meeting \u2013 Board Chair (12\u202fJun\u202f2025)\n   6.5. Capture minutes & votes \u2013 Secretary (During meeting)\n\n7. Post\u2011Meeting Deliverables & Close\u2011Out\n   7.1. Draft minutes \u2013 Secretary (Week 14)\n   7.2. Director sign\u2011off on minutes \u2013 Board Secretariat (Week 14)\n   7.3. Update action\u2011item log \u2013 PMO (Week 14)\n   7.4. Post\u2011meeting SEC amendments (if any) \u2013 IR (Week 14\u201115)\n   7.5. Project close\u2011out review & archive \u2013 PMO (Week 15)\n```\n\n**Dependencies (selected):**  \n\n- 3.1 depends on 2.3 (Finance approvals).  \n- 4.1 depends on 3.5 (final audited numbers).  \n- 5.1\u20115.4 depend on 3.5 and 4.4 (audit & filing completed).  \n- 6.1\u20116.3 depend on 5.5 (materials distributed).  \n- 7.1\u20117.3 depend on 6.4 (meeting completed).  \n\n**Critical Path Items** (must not slip):  \n\n1. Audit Report Finalization (3.5) \u2013 latest **10\u202fMay\u202f2025**.  \n2. SEC Filing Submission (4.4) \u2013 **02\u202fMay\u202f2025** (regulatory deadline).  \n3. Board\u2011Material Distribution (5.5) \u2013 **05\u202fMay\u202f2025** (ensures 10\u2011business\u2011day review).  \n\n# Gantt\u2011Style Schedule (weekly checkpoints)\n\n| Week (Mon\u2011Sun) | Dates                | Key Checkpoint(s)                              |\n|----------------|----------------------|-----------------------------------------------|\n| **W1** | 13\u201119\u202fMar | Kickoff call, initial schedule draft |\n| **W2** | 20\u201126\u202fMar | Publish master Gantt, stakeholder matrix |\n| **W3** | 27\u201102\u202fApr | First alignment workshop (Finance/IR) |\n| **W4** | 03\u201109\u202fApr | Deliver year\u2011end pack to auditor; capture approvals |\n| **W5** | 10\u201116\u202fApr | Audit status call #1 |\n| **W6** | 17\u201123\u202fApr | Audit status call #2 |\n| **W7** | 24\u201130\u202fApr | Audit status call #3 |\n| **W8** | 01\u201107\u202fMay | Audit status call #4 (final fieldwork) |\n| **W9** | 08\u201114\u202fMay | Draft audit findings received; draft filing narrative |\n| **W10** | 15\u201121\u202fMay | Finance response to findings; legal review of filing |\n| **W11** | 22\u201128\u202fMay | Auditor sign\u2011off; pre\u2011file quality check; design review of board pack |\n| **W12** | 29\u202fMay\u201104\u202fJun | **SEC filing submitted (02\u202fMay)**; final board packet uploaded (05\u202fMay) |\n| **W13** | 05\u201111\u202fJun | Dry\u2011run; final agenda distribution |\n| **W14** | 12\u201118\u202fJun | **Board meeting (12\u202fJun)**; draft minutes |\n| **W15** | 19\u201125\u202fJun | Minutes sign\u2011off; action\u2011item log update; project close\u2011out |\n\n# Risk Mitigation Steps (high\u2011level)\n\n| Risk | Potential Impact | Mitigation |\n|------|------------------|------------|\n| **Audit delay** (fieldwork overruns) | Shifts audit sign\u2011off past 10\u202fMay, jeopardizing board\u2011packet deadline | \u2022 Weekly audit status calls; \u2022 Escalate to CFO after 2\u202fday lag; \u2022 Identify backup audit resources in advance |\n| **SEC filing rejection** | Misses regulatory deadline, triggers penalties | \u2022 Early legal review; \u2022 Pre\u2011file checklist; \u2022 Reserve 48\u2011hour buffer before final submission |\n| **Material distribution bottleneck** (portal access issues) | Directors receive pack late, violates 10\u2011business\u2011day rule | \u2022 Conduct portal access test (Week\u202f11); \u2022 Have IT standby for rapid issue resolution |\n| **Key stakeholder unavailability** (e.g., CFO on leave) | Delays approvals and sign\u2011offs | \u2022 Capture backup owners in stakeholder matrix; \u2022 Schedule overlap weeks for critical sign\u2011offs |\n| **Meeting logistics failure** (venue or virtual platform outage) | Disruption of board meeting | \u2022 Secure secondary venue/virtual platform; \u2022 Run dry\u2011run with contingency path |\n| **Post\u2011meeting action\u2011item drift** | Follow\u2011up tasks not executed, affecting next fiscal cycle | \u2022 Assign owners with clear due dates in action\u2011item log; \u2022 Set reminder alerts 1\u202fweek after meeting |\n\nThese mitigation actions are embedded in the weekly checkpoints and the dependency structure, ensuring that any deviation is identified early and escalated appropriately.",
+  "plan": {
+    "id": "document-001",
+    "name": "Annual Planning Board Meeting Workback Plan",
+    "details": "Work\u2011back plan for the FY2025 annual planning board meeting scheduled for 12\u202fJune\u202f2025. Includes pre\u2011meeting planning, stakeholder coordination, audit finalization, SEC filing, board\u2011material development, meeting execution and post\u2011meeting close\u2011out.",
+    "draft": false,
+    "participants": [
+      {
+        "name": "Chief Planning Officer",
+        "email": "cpo@example.com",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Chief Financial Officer",
+        "email": "cfo@example.com",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "General Counsel",
+        "email": "gc@example.com",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Board Secretariat",
+        "email": "secretariat@example.com",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "PMO",
+        "email": "pmo@example.com",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Finance Lead",
+        "email": "finance@example.com",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Audit Lead",
+        "email": "auditlead@example.com",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "External Auditor",
+        "email": "auditor@example.com",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Investor Relations",
+        "email": "ir@example.com",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Strategy Lead",
+        "email": "strategy@example.com",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Communications Lead",
+        "email": "comms@example.com",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Operations Lead",
+        "email": "ops@example.com",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Board Chair",
+        "email": "chair@example.com",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Secretary",
+        "email": "secretary@example.com",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Executive Sponsor",
+        "email": "execsponsor@example.com",
+        "details": "",
+        "draft": true
+      }
+    ],
+    "references": [],
+    "deliverables": [
+      {
+        "name": "Master Gantt Chart",
+        "type": "excel",
+        "id": "deliverable-001",
+        "draft": true,
+        "history": []
+      },
+      {
+        "name": "Stakeholder Engagement Matrix",
+        "type": "excel",
+        "id": "deliverable-002",
+        "draft": true,
+        "history": []
+      },
+      {
+        "name": "Final Audit Report",
+        "type": "pdf",
+        "id": "deliverable-003",
+        "draft": true,
+        "history": []
+      },
+      {
+        "name": "SEC Filing EDGAR Receipt",
+        "type": "pdf",
+        "id": "deliverable-004",
+        "draft": true,
+        "history": []
+      },
+      {
+        "name": "Board Packet (PDF)",
+        "type": "pdf",
+        "id": "deliverable-005",
+        "draft": true,
+        "history": []
+      },
+      {
+        "name": "Meeting Minutes",
+        "type": "pdf",
+        "id": "deliverable-006",
+        "draft": true,
+        "history": []
+      },
+      {
+        "name": "Action\u2011Item Log",
+        "type": "excel",
+        "id": "deliverable-007",
+        "draft": true,
+        "history": []
+      },
+      {
+        "name": "Project Close\u2011Out Archive",
+        "type": "folder",
+        "id": "deliverable-008",
+        "draft": true,
+        "history": []
+      }
+    ],
+    "tasks": [
+      {
+        "id": "task-001",
+        "name": "Kickoff call \u2013 CPO",
+        "draft": true,
+        "details": "Week\u202f1 kickoff call with Chief Planning Officer and Board Secretariat to agree on as\u2011planned dates.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "cpo@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002",
+        "name": "Build master Gantt",
+        "draft": true,
+        "details": "Create master Gantt chart covering weeks\u202f1\u201113 (Mar\u202f13\u202f\u2013\u202fJun\u202f12).",
+        "dependencies": [
+          "task-001"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "cpo@example.com"
+        ],
+        "deliverables": [
+          "@deliverable[excel]/deliverable-001"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003",
+        "name": "Identify critical\u2011path milestones",
+        "draft": true,
+        "details": "Identify audit sign\u2011off, SEC filing, material distribution milestones.",
+        "dependencies": [
+          "task-001"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "cpo@example.com",
+          "gc@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-004",
+        "name": "Publish & obtain sign\u2011off",
+        "draft": true,
+        "details": "Publish schedule to project\u2011team channel and capture sign\u2011off from CFO and General Counsel.",
+        "dependencies": [
+          "task-002",
+          "task-003"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "cfo@example.com",
+          "gc@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-005",
+        "name": "Create stakeholder matrix",
+        "draft": true,
+        "details": "Issue stakeholder\u2011engagement matrix (Week\u202f2) listing required deliverables, owners, and due dates.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "pmo@example.com"
+        ],
+        "deliverables": [
+          "@deliverable[excel]/deliverable-002"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-006",
+        "name": "Alignment workshops",
+        "draft": true,
+        "details": "Schedule and run workshops (Weeks\u202f2\u20114) with Finance, Audit, Legal, IR to walk through expectations.",
+        "dependencies": [
+          "task-005"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "finance@example.com",
+          "auditlead@example.com",
+          "gc@example.com",
+          "ir@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-007",
+        "name": "Capture formal approvals",
+        "draft": true,
+        "details": "Capture formal approvals in a shared tracker (Week\u202f4).",
+        "dependencies": [
+          "task-006"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "pmo@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-008",
+        "name": "Escalation protocol",
+        "draft": true,
+        "details": "Define escalation protocol to Executive Sponsor for missing approvals (ongoing).",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "execsponsor@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-009",
+        "name": "Deliver year\u2011end financial package to auditor",
+        "draft": true,
+        "details": "Provide the audit firm with the year\u2011end financial package (Week\u202f4).",
+        "dependencies": [
+          "task-007"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "finance@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-010",
+        "name": "Weekly audit status calls",
+        "draft": true,
+        "details": "Track audit fieldwork progress via weekly status calls (Weeks\u202f5\u20118).",
+        "dependencies": [
+          "task-009"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "auditlead@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-011",
+        "name": "Receive draft findings",
+        "draft": true,
+        "details": "Receive draft audit findings from auditor (Week\u202f9).",
+        "dependencies": [
+          "task-010"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "auditor@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-012",
+        "name": "Finance response to findings",
+        "draft": true,
+        "details": "Finance team responds to draft findings (Week\u202f9\u201110).",
+        "dependencies": [
+          "task-011"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "finance@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-013",
+        "name": "Auditor sign\u2011off & final report",
+        "draft": true,
+        "details": "Auditor provides sign\u2011off and issues final audit report (Week\u202f10).",
+        "dependencies": [
+          "task-012"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "auditor@example.com"
+        ],
+        "deliverables": [
+          "@deliverable[pdf]/deliverable-003"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-014",
+        "name": "Archive audit report",
+        "draft": true,
+        "details": "Archive the final audit report in the board portal (Week\u202f10).",
+        "dependencies": [
+          "task-013"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "secretariat@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-015",
+        "name": "Draft filing narrative",
+        "draft": true,
+        "details": "Prepare SEC filing narrative (Week\u202f9).",
+        "dependencies": [
+          "task-013"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "ir@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-016",
+        "name": "Legal compliance review",
+        "draft": true,
+        "details": "Legal review of draft filing narrative (Week\u202f9).",
+        "dependencies": [
+          "task-015"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "gc@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-017",
+        "name": "Pre\u2011file quality check",
+        "draft": true,
+        "details": "Conduct pre\u2011file checklist with IR (Week\u202f9).",
+        "dependencies": [
+          "task-016"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "ir@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-018",
+        "name": "Submit filing to SEC",
+        "draft": true,
+        "details": "Submit filing to SEC (Week\u202f9).",
+        "dependencies": [
+          "task-017"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "ir@example.com"
+        ],
+        "deliverables": [
+          "@deliverable[pdf]/deliverable-004"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-019",
+        "name": "Capture EDGAR receipt",
+        "draft": true,
+        "details": "Capture the EDGAR receipt after SEC filing acceptance.",
+        "dependencies": [
+          "task-018"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "ir@example.com"
+        ],
+        "deliverables": [
+          "@deliverable[pdf]/deliverable-004"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-020",
+        "name": "Draft executive summary",
+        "draft": true,
+        "details": "Prepare executive summary for board packet (Week\u202f9).",
+        "dependencies": [
+          "task-013",
+          "task-018"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "strategy@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-021",
+        "name": "Integrate audited financials",
+        "draft": true,
+        "details": "Integrate audited financial statements into board packet (Week\u202f9).",
+        "dependencies": [
+          "task-013"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "finance@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-022",
+        "name": "Add SEC filing confirmation",
+        "draft": true,
+        "details": "Add SEC filing confirmation to board material (Week\u202f9).",
+        "dependencies": [
+          "task-018"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "gc@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-023",
+        "name": "Design/layout review",
+        "draft": true,
+        "details": "Communications review of board packet design and layout (Week\u202f11).",
+        "dependencies": [
+          "task-021",
+          "task-022"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "comms@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-024",
+        "name": "Upload final packet to Board Portal",
+        "draft": true,
+        "details": "Upload the finalized board packet PDF to the Board Portal (Week\u202f11).",
+        "dependencies": [
+          "task-023"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "secretariat@example.com"
+        ],
+        "deliverables": [
+          "@deliverable[pdf]/deliverable-005"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-025",
+        "name": "Track director acknowledgments",
+        "draft": true,
+        "details": "Monitor director acknowledgments of receipt (Week\u202f11\u201112).",
+        "dependencies": [
+          "task-024"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "secretariat@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-026",
+        "name": "Confirm venue/virtual platform",
+        "draft": true,
+        "details": "Secure venue or virtual platform (depends on material distribution).",
+        "dependencies": [
+          "task-024"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "ops@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-027",
+        "name": "Distribute final agenda",
+        "draft": true,
+        "details": "Distribute final agenda to directors (Week\u202f11).",
+        "dependencies": [
+          "task-024"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "secretariat@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-028",
+        "name": "Dry\u2011run with presenters",
+        "draft": true,
+        "details": "Run dry\u2011run with presenters (Week\u202f11).",
+        "dependencies": [
+          "task-027"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "chair@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-029",
+        "name": "Conduct meeting",
+        "draft": true,
+        "details": "Hold the board meeting on 12\u202fJune\u202f2025.",
+        "dependencies": [
+          "task-028"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "chair@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-030",
+        "name": "Capture minutes & votes",
+        "draft": true,
+        "details": "Record minutes and votes during the meeting.",
+        "dependencies": [
+          "task-029"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "secretary@example.com"
+        ],
+        "deliverables": [
+          "@deliverable[pdf]/deliverable-006"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-031",
+        "name": "Draft minutes",
+        "draft": true,
+        "details": "Prepare formal meeting minutes after the meeting (Week\u202f12).",
+        "dependencies": [
+          "task-029"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "secretary@example.com"
+        ],
+        "deliverables": [
+          "@deliverable[pdf]/deliverable-006"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-032",
+        "name": "Director sign\u2011off on minutes",
+        "draft": true,
+        "details": "Obtain director sign\u2011off on the meeting minutes (Week\u202f13).",
+        "dependencies": [
+          "task-031"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "secretariat@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-033",
+        "name": "Update action\u2011item log",
+        "draft": true,
+        "details": "Update the action\u2011item log with owners and due dates (Week\u202f13).",
+        "dependencies": [
+          "task-029"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "pmo@example.com"
+        ],
+        "deliverables": [
+          "@deliverable[excel]/deliverable-007"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-034",
+        "name": "Post\u2011meeting SEC amendments",
+        "draft": true,
+        "details": "Prepare any post\u2011meeting SEC amendments if required (Week\u202f14).",
+        "dependencies": [
+          "task-032"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "ir@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-035",
+        "name": "Project close\u2011out review & archive",
+        "draft": true,
+        "details": "Conduct final project close\u2011out review and archive all deliverables (Week\u202f15).",
+        "dependencies": [
+          "task-034"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "pmo@example.com"
+        ],
+        "deliverables": [
+          "@deliverable[folder]/deliverable-008"
+        ],
+        "references": [],
+        "history": []
+      }
+    ],
+    "history": []
+  }
+}

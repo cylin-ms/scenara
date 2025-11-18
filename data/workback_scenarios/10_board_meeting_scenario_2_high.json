@@ -1,0 +1,735 @@
+{
+  "scenario_name": "HelioGrid Annual Planning Board Meeting \u2013 FY25 Strategy & Budget Approval",
+  "scenario_number": 2,
+  "meeting_type": "Board Meeting (Annual Planning)",
+  "quality_level": "high",
+  "workback_prompt": "Generate a detailed work\u2011back plan for the HelioGrid Annual Planning Board Meeting (June\u202f12\u202f2025) that covers all pre\u2011meeting activities, stakeholder coordination, material preparation, governance compliance, and post\u2011meeting deliverables. Include milestones, owners, dependencies, and critical path items, ensuring the plan meets the T\u201190 planning horizon, SEC filing deadlines, audit report finalization, and board\u2011material distribution timeline. Provide a Gantt\u2011style schedule with weekly checkpoints and risk mitigation steps.\n\nGenerate a HIGH QUALITY workback plan with these characteristics:\n- Comprehensive task coverage\n- Clear, actionable task descriptions\n- Well-defined dependencies\n- All tasks assigned to specific owners\n- Clear milestones with completion criteria\n- Realistic timelines with buffers\n- Proactive risk management\n- Complete deliverable list\n\nIMPORTANT: Generate a plan that naturally exhibits HIGH quality characteristics.\nDo not explicitly label the plan as \"high quality\" - let the quality emerge from the content.",
+  "generated_at": "2025-11-17T11:11:01.201686",
+  "analysis": "# Outcomes\n\n## 1.\u202fEstablish Planning Governance & Timeline  \nCreate the formal governance structure, approve the work\u2011back schedule, and secure all required approvals for the planning effort.  \nArtifact references: *(none)*  \n\n### Reasoning  \nThe board\u2011meeting planning must be anchored in a documented governance charter and an approved schedule to satisfy the T\u201190 horizon, SEC filing rules, and audit\u2011report deadlines. Without this foundation, downstream tasks would lack clear authority and accountability.\n\n### Approach  \n1. Convene a **Planning Governance Kick\u2011off** with senior leadership (CEO, CFO, CCO, Corporate Secretary, Audit Lead, Investor Relations Lead).  \n2. Draft a **Planning Charter** that defines scope, owners, decision\u2011making authority, and escalation paths.  \n3. Review the charter with Legal and Compliance, incorporate any SEC\u2011related timing constraints, and obtain sign\u2011off.  \n4. Publish the approved charter and the master work\u2011back schedule to the project repository.  \n\n---\n\n## 2.\u202fFinalize Audit Report & SEC Filing Preparation  \nComplete the FY\u20112024 audit, incorporate any required adjustments, and prepare the SEC filing package in time for the statutory deadline.  \n\n### Reasoning  \nThe audit report must be finalized **\u2265\u202f30\u202fdays** before the board meeting (by\u202fMay\u202f13\u202f2025) to allow the Audit Committee review and incorporation into board materials. The SEC filing deadline (typically **10\u202fdays** before the meeting) is dependent on the audit\u2019s sign\u2011off.\n\n### Approach  \n1. **Audit Fieldwork Completion** \u2013 ensure all audit procedures are wrapped up by\u202fApril\u202f30\u202f2025.  \n2. **Management Review** \u2013 CFO and Audit Lead address audit findings, update financial statements, and obtain management sign\u2011off by\u202fMay\u202f5\u202f2025.  \n3. **Audit Committee Review** \u2013 schedule a dedicated committee session, capture approvals, and finalize the audit report by\u202fMay\u202f10\u202f2025.  \n4. **SEC Filing Package Assembly** \u2013 Legal Counsel, Investor Relations, and the CFO compile the 10\u2011K/8\u2011K (or applicable) filing, perform a compliance check, and submit to the SEC by **May\u202f22\u202f2025** (10\u202fdays before the meeting).  \n\n---\n\n## 3.\u202fDevelop & Approve Board Meeting Agenda & Presentation Decks  \nDefine the meeting agenda, prepare strategic and financial presentations, and secure senior\u2011leadership sign\u2011off.  \n\n### Reasoning  \nThe agenda and decks form the core of board\u2011material distribution. They must be locked **\u2265\u202f14\u202fdays** before the meeting (by\u202fMay\u202f29\u202f2025) to allow legal review, formatting, and distribution.  \n\n### Approach  \n1. **Agenda Definition** \u2013 Business Unit Leaders submit proposed topics by **March\u202f20\u202f2025**; Planning PM consolidates into a draft agenda.  \n2. **Strategic Presentation Development** \u2013 Strategy Lead drafts the 2025\u20112026 roadmap slides; CFO prepares financial performance and forecast slides.  \n3. **Internal Review Cycle** \u2013 Conduct two rounds of internal reviews (first round by **April\u202f15\u202f2025**, second round by **May\u202f1\u202f2025**) with input from Legal, Compliance, and the Audit Lead.  \n4. **Final Sign\u2011off** \u2013 CEO and Board Chair approve the agenda and decks by **May\u202f10\u202f2025**.  \n\n---\n\n## 4.\u202fAssemble & Distribute Board Materials Package  \nCompile all approved documents (agenda, decks, audit report, SEC filing excerpts, governance memoranda) into the final board\u2011packet and deliver to directors.  \n\n### Reasoning  \nBoard\u2011material distribution must occur **\u2265\u202f14\u202fdays** prior to the meeting to satisfy governance best practices and give directors sufficient review time.  \n\n### Approach  \n1. **Material Compilation** \u2013 Corporate Secretary integrates all components into a single PDF/secure portal package by **May\u202f15\u202f2025**.  \n2. **Compliance & Formatting Review** \u2013 Legal and Investor Relations verify that the package meets SEC and internal formatting standards (completed by **May\u202f20\u202f2025**).  \n3. **Secure Distribution** \u2013 Use the board\u2011portal to upload the packet, send encrypted email notifications, and confirm receipt from each director (target completion **May\u202f22\u202f2025**).  \n\n---\n\n## 5.\u202fConduct HelioGrid Annual Planning Board Meeting (June\u202f12\u202f2025)  \nFacilitate the board meeting, capture minutes, and record decisions/action items.  \n\n### Reasoning  \nThe meeting itself is the culmination of all prior work. Successful execution requires a detailed run\u2011of\u2011show, logistics coordination, and real\u2011time documentation.  \n\n### Approach  \n1. **Run\u2011of\u2011Show Finalization** \u2013 PM finalizes the timing, speaker order, and Q&A slots by **June\u202f5\u202f2025**.  \n2. **Logistics Coordination** \u2013 Facilities, IT, and Catering confirm room setup, video\u2011conference links, and catering by **June\u202f7\u202f2025**.  \n3. **Live Minute\u2011Taking** \u2013 Corporate Secretary and designated note\u2011taker record minutes; decisions are logged in the board\u2011action register.  \n4. **Post\u2011Meeting Confirmation** \u2013 Immediate distribution of provisional minutes to the Board Chair for review (by **June\u202f13\u202f2025**).  \n\n---\n\n## 6.\u202fPost\u2011Meeting Deliverables & Follow\u2011Up  \nFinalize minutes, update the audit\u2011report addenda, communicate board decisions to stakeholders, and close the planning cycle.  \n\n### Reasoning  \nBoard decisions often trigger downstream actions (e.g., capital allocation, policy updates). Formalizing minutes and communicating outcomes within **5\u202fbusiness days** ensures regulatory compliance and operational alignment.  \n\n### Approach  \n1. **Minute Finalization** \u2013 Incorporate Board Chair comments, obtain sign\u2011off from the CEO, and publish the final minutes by **June\u202f19\u202f2025**.  \n2. **Action\u2011Item Tracking** \u2013 Project Management Office (PMO) creates a tracker for each board\u2011mandated action, assigns owners, and sets target dates.  \n3. **Stakeholder Communication** \u2013 Investor Relations drafts a post\u2011meeting summary for shareholders and analysts; Legal reviews for any forward\u2011looking statements; distribution by **June\u202f21\u202f2025**.  \n4. **Close\u2011out Review** \u2013 Conduct a lessons\u2011learned session with the Planning Governance team to capture improvement ideas for the next cycle (by **June\u202f28\u202f2025**).  \n\n---\n\n# Breakdown\n\n### 0\u202f\u2013\u202fT\u201190 Planning Horizon (Start:\u202fMar\u202f13\u202f2025)\n\n| Week | Checkpoint | Owner(s) | Key Deliverable |\n|------|------------|----------|-----------------|\n| W\u201113 (Mar\u202f13\u201119) | Governance Charter approved | CEO, CFO, CCO, Corporate Secretary, PM | Planning Charter |\n| W\u201112 (Mar\u202f20\u201126) | Agenda topics collected | Business Unit Leaders, PM | Draft agenda topics |\n| W\u201111 (Mar\u202f27\u2011Apr\u202f2) | Audit fieldwork wrap\u2011up plan | Audit Lead, CFO | Audit fieldwork schedule |\n| W\u201110 (Apr\u202f3\u20119) | First draft of strategic deck | Strategy Lead | Draft strategic slides |\n| W\u20119 (Apr\u202f10\u201116) | Internal review of agenda & decks (Round\u202f1) | PM, Legal, Compliance | Review notes |\n| W\u20118 (Apr\u202f17\u201123) | Audit fieldwork completed | Audit Team | Audit workpapers |\n| W\u20117 (Apr\u202f24\u201130) | Management review of audit findings | CFO, Audit Lead | Management sign\u2011off |\n| W\u20116 (May\u202f1\u20117) | Internal review of agenda & decks (Round\u202f2) | PM, Legal, Compliance | Revised decks |\n| W\u20115 (May\u202f8\u201114) | Board\u2011Committee audit sign\u2011off | Audit Committee, CFO | Final audit report |\n| W\u20114 (May\u202f15\u201121) | Material compilation & compliance check | Corporate Secretary, Legal, IR | Draft board packet |\n| W\u20113 (May\u202f22\u201128) | SEC filing submission & board\u2011packet distribution | Legal, CFO, IR, Corporate Secretary | SEC filing, packet sent |\n| W\u20112 (May\u202f29\u2011Jun\u202f4) | Final run\u2011of\u2011show & logistics lock | PM, Facilities, IT, Catering | Final agenda, logistics confirmed |\n| W\u20111 (Jun\u202f5\u201111) | Pre\u2011meeting rehearsals & final minute\u2011taking prep | PM, Speakers, Corporate Secretary | Rehearsal completed |\n| **Meeting Day** (Jun\u202f12) | Conduct Board Meeting | All | Minutes captured |\n| Post\u2011Meeting (Jun\u202f13\u201128) | Finalize minutes, action tracking, communication, close\u2011out | Corporate Secretary, PMO, IR, Legal | Final minutes, action tracker, summary release, lessons\u2011learned |\n\n---\n\n## Detailed Task Tree (WBS)\n\n### 1. Planning Governance  \n1.1 Draft Planning Charter \u2013 **PM** (Mar\u202f13\u201115)  \n1.2 Review with Legal/Compliance \u2013 **Legal Counsel** (Mar\u202f16\u201118)  \n1.3 Obtain Executive Sign\u2011off \u2013 **CEO & CFO** (Mar\u202f19)  \n1.4 Publish Charter & Schedule \u2013 **PM** (Mar\u202f20)  \n\n### 2. Audit & SEC  \n2.1 Complete Audit Fieldwork \u2013 **Audit Team** (Apr\u202f3\u20118)  \n2.2 Management Review of Findings \u2013 **CFO, Audit Lead** (Apr\u202f9\u201112)  \n2.3 Audit Committee Review \u2013 **Audit Committee Chair** (May\u202f5)  \n2.4 Final Audit Report Sign\u2011off \u2013 **CFO** (May\u202f10)  \n2.5 Assemble SEC Filing Package \u2013 **Legal, IR, CFO** (May\u202f15\u201120)  \n2.6 SEC Filing Submission \u2013 **Legal** (May\u202f22)  \n\n### 3. Agenda & Presentation Development  \n3.1 Collect Topic Proposals \u2013 **Business Unit Leaders** (Mar\u202f20\u201122)  \n3.2 Draft Agenda \u2013 **PM** (Mar\u202f23\u201125)  \n3.3 Develop Strategic Deck \u2013 **Strategy Lead** (Apr\u202f1\u201115)  \n3.4 Develop Financial Deck \u2013 **CFO** (Apr\u202f1\u201115)  \n3.5 First Internal Review \u2013 **Legal, Compliance** (Apr\u202f16\u201118)  \n3.6 Revise Decks \u2013 **Strategy Lead, CFO** (Apr\u202f19\u201130)  \n3.7 Second Internal Review \u2013 **Legal, Compliance** (May\u202f1\u20113)  \n3.8 Final Sign\u2011off \u2013 **CEO, Board Chair** (May\u202f10)  \n\n### 4. Board\u2011Material Assembly & Distribution  \n4.1 Compile Materials \u2013 **Corporate Secretary** (May\u202f15\u201117)  \n4.2 Formatting & Compliance Check \u2013 **Legal, IR** (May\u202f18\u201120)  \n4.3 Upload to Board Portal \u2013 **Corporate Secretary** (May\u202f21)  \n4.4 Send Distribution Notices \u2013 **Corporate Secretary** (May\u202f22)  \n4.5 Confirm Receipt \u2013 **Corporate Secretary** (May\u202f23\u201124)  \n\n### 5. Meeting Execution  \n5.1 Final Run\u2011of\u2011Show \u2013 **PM** (Jun\u202f5)  \n5.2 Logistics Confirmation \u2013 **Facilities, IT, Catering** (Jun\u202f7)  \n5.3 Speaker Rehearsals \u2013 **Speakers, PM** (Jun\u202f8\u201110)  \n5.4 Conduct Meeting \u2013 **All Participants** (Jun\u202f12)  \n5.5 Capture Provisional Minutes \u2013 **Corporate Secretary** (Jun\u202f12\u201113)  \n\n### 6. Post\u2011Meeting Follow\u2011Up  \n6.1 Incorporate Chair Comments \u2013 **Corporate Secretary** (Jun\u202f14\u201115)  \n6.2 Final Minutes Sign\u2011off \u2013 **CEO** (Jun\u202f16)  \n6.3 Publish Final Minutes \u2013 **Corporate Secretary** (Jun\u202f19)  \n6.4 Create Action\u2011Item Tracker \u2013 **PMO** (Jun\u202f19\u201121)  \n6.5 Draft Stakeholder Summary \u2013 **IR** (Jun\u202f19\u201120)  \n6.6 Legal Review of Summary \u2013 **Legal** (Jun\u202f21)  \n6.7 Distribute Summary \u2013 **IR** (Jun\u202f21)  \n6.8 Lessons\u2011Learned Session \u2013 **PM, Governance Team** (Jun\u202f28)  \n\n---\n\n## Critical Path & Dependencies  \n\n| Critical Path Item | Depends On | Latest Finish |\n|--------------------|------------|---------------|\n| Governance Charter approval | \u2013 | Mar\u202f19 |\n| Audit Fieldwork Completion | Governance Charter | Apr\u202f8 |\n| Management Review of Audit | Audit Fieldwork | Apr\u202f12 |\n| Audit Committee Sign\u2011off | Management Review | May\u202f5 |\n| Final Audit Report | Audit Committee | May\u202f10 |\n| SEC Filing Submission | Final Audit Report | May\u202f22 |\n| Final Board\u2011Material Package | SEC Filing, Final Deck Sign\u2011off | May\u202f22 |\n| Board\u2011Material Distribution | Final Package | May\u202f22 |\n| Run\u2011of\u2011Show Finalization | Board\u2011Material Distribution | Jun\u202f5 |\n| Meeting Execution | Run\u2011of\u2011Show, Logistics | Jun\u202f12 |\n| Minutes Finalization | Meeting Execution | Jun\u202f19 |\n| Action\u2011Item Tracker | Minutes Finalization | Jun\u202f21 |\n\nAny delay in the audit\u2011report or SEC\u2011filing steps cascades directly to the material\u2011distribution deadline, making those two tasks the **primary critical\u2011path anchors**.\n\n---\n\n## Gantt\u2011Style Weekly Checkpoints  \n\n```\nWeek  -13  -12  -11  -10  -9  -8  -7  -6  -5  -4  -3  -2  -1   0\nMar13   Mar20 Mar27 Apr3 Apr10 Apr17 Apr24 May1 May8 May15 May22 May29 Jun5 Jun12\n|-------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|\nGovernance Charter               \u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\nAudit Fieldwork                        \u2588\u2588\u2588\u2588\u2588\u2588\u2588\nManagement Review                               \u2588\u2588\u2588\nAudit Committee Sign\u2011off                                 \u2588\nSEC Filing Submission                                        \u2588\nBoard\u2011Material Compilation                                    \u2588\u2588\u2588\nDistribution to Directors                                         \u2588\nRun\u2011of\u2011Show Finalization                                                \u2588\nMeeting Execution                                                          \u2588\nPost\u2011Meeting Close\u2011out (minutes, actions, communication)                  \u2588\u2588\u2588\n```\n\n*Each block (\u2588) represents a task window; overlapping blocks indicate parallel work.*\n\n---\n\n## Risk Mitigation Steps  \n\n| Risk | Impact | Likelihood | Mitigation |\n|------|--------|------------|------------|\n| Audit fieldwork overruns | Delay to SEC filing & board materials | Medium | Early weekly status with Audit Lead; allocate 2\u2011day buffer (complete by Apr\u202f8). |\n| SEC filing rejection | Missed filing deadline \u2192 regulatory penalty | Low | Pre\u2011submission compliance checklist; Legal sign\u2011off 48\u202fhrs before filing. |\n| Late deck revisions due to new data | Missed material lock\u2011date | Medium | Freeze data inputs by Apr\u202f30; schedule a \u201cdata\u2011freeze\u201d meeting with Finance. |\n| Distribution platform outage | Directors unable to access materials | Low | Use dual\u2011delivery (secure portal + encrypted email). Perform test upload 48\u202fhrs before distribution. |\n| Key participant unavailability on meeting day | Incomplete agenda execution | Low | Identify backup presenters during run\u2011of\u2011show planning; confirm attendance 2\u202fweeks prior. |\n| Action\u2011item tracking gaps post\u2011meeting | Delayed implementation of board decisions | Medium | Assign a dedicated PMO owner for the tracker; schedule weekly status calls for 4\u202fweeks after meeting. |\n\n--- \n\n**Result:** This work\u2011back plan provides a complete, actionable roadmap from the start of the T\u201190 horizon (13\u202fweeks before the board meeting) through post\u2011meeting closure, with clearly assigned owners, defined dependencies, weekly checkpoints, and proactive risk controls that satisfy SEC filing constraints, audit\u2011report finalization, and board\u2011material distribution timelines.",
+  "plan": {
+    "id": "document-001",
+    "name": "HelioGrid Annual Planning Board Meeting Workback Plan",
+    "details": "Workback plan covering governance charter, audit and SEC filing, agenda and deck development, board\u2011material assembly, meeting execution, and post\u2011meeting follow\u2011up.",
+    "draft": false,
+    "participants": [
+      {
+        "name": "CEO",
+        "draft": true
+      },
+      {
+        "name": "CFO",
+        "draft": true
+      },
+      {
+        "name": "CCO",
+        "draft": true
+      },
+      {
+        "name": "Corporate Secretary",
+        "draft": true
+      },
+      {
+        "name": "Audit Lead",
+        "draft": true
+      },
+      {
+        "name": "Investor Relations Lead",
+        "draft": true
+      },
+      {
+        "name": "Legal Counsel",
+        "draft": true
+      },
+      {
+        "name": "Strategy Lead",
+        "draft": true
+      },
+      {
+        "name": "Business Unit Leaders",
+        "draft": true
+      },
+      {
+        "name": "Audit Team",
+        "draft": true
+      },
+      {
+        "name": "Audit Committee Chair",
+        "draft": true
+      },
+      {
+        "name": "Board Chair",
+        "draft": true
+      },
+      {
+        "name": "Planning PM",
+        "draft": true
+      },
+      {
+        "name": "PMO",
+        "draft": true
+      },
+      {
+        "name": "Facilities",
+        "draft": true
+      },
+      {
+        "name": "IT",
+        "draft": true
+      },
+      {
+        "name": "Catering",
+        "draft": true
+      },
+      {
+        "name": "Speakers",
+        "draft": true
+      }
+    ],
+    "references": [],
+    "deliverables": [
+      {
+        "id": "deliverable-001",
+        "name": "Planning Charter",
+        "type": "word",
+        "draft": true
+      },
+      {
+        "id": "deliverable-002",
+        "name": "Audit Fieldwork Schedule",
+        "type": "excel",
+        "draft": true
+      },
+      {
+        "id": "deliverable-003",
+        "name": "Draft Strategic Slides",
+        "type": "powerpoint",
+        "draft": true
+      },
+      {
+        "id": "deliverable-004",
+        "name": "Draft Financial Slides",
+        "type": "powerpoint",
+        "draft": true
+      },
+      {
+        "id": "deliverable-005",
+        "name": "Final Audit Report",
+        "type": "word",
+        "draft": true
+      },
+      {
+        "id": "deliverable-006",
+        "name": "SEC Filing Package",
+        "type": "word",
+        "draft": true
+      },
+      {
+        "id": "deliverable-007",
+        "name": "Final Board Packet",
+        "type": "word",
+        "draft": true
+      },
+      {
+        "id": "deliverable-008",
+        "name": "Final Minutes",
+        "type": "word",
+        "draft": true
+      },
+      {
+        "id": "deliverable-009",
+        "name": "Action\u2011Item Tracker",
+        "type": "excel",
+        "draft": true
+      },
+      {
+        "id": "deliverable-010",
+        "name": "Stakeholder Summary",
+        "type": "word",
+        "draft": true
+      },
+      {
+        "id": "deliverable-011",
+        "name": "Lessons\u2011Learned Report",
+        "type": "word",
+        "draft": true
+      }
+    ],
+    "tasks": [
+      {
+        "id": "task-001",
+        "name": "Draft Planning Charter",
+        "draft": true,
+        "details": "Create the initial Planning Charter document.",
+        "dependencies": [],
+        "coDependencies": [],
+        "state": "not-started",
+        "dueBy": "2025-03-15T00:00:00Z",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[word]/deliverable-001"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002",
+        "name": "Review Planning Charter with Legal/Compliance",
+        "draft": true,
+        "details": "Legal and compliance review of the draft charter.",
+        "dependencies": [
+          "task-001"
+        ],
+        "coDependencies": [],
+        "state": "not-started",
+        "dueBy": "2025-03-18T00:00:00Z",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003",
+        "name": "Obtain Executive Sign\u2011off on Planning Charter",
+        "draft": true,
+        "details": "Secure sign\u2011off from CEO, CFO, CCO, and Corporate Secretary.",
+        "dependencies": [
+          "task-002"
+        ],
+        "coDependencies": [],
+        "state": "not-started",
+        "dueBy": "2025-03-19T00:00:00Z",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-004",
+        "name": "Publish Charter & Schedule",
+        "draft": true,
+        "details": "Publish the approved Planning Charter and meeting schedule.",
+        "dependencies": [
+          "task-003"
+        ],
+        "coDependencies": [],
+        "state": "not-started",
+        "dueBy": "2025-03-20T00:00:00Z",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[word]/deliverable-001"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-005",
+        "name": "Complete Audit Fieldwork",
+        "draft": true,
+        "details": "Execute audit fieldwork activities.",
+        "dependencies": [
+          "task-004"
+        ],
+        "coDependencies": [],
+        "state": "not-started",
+        "dueBy": "2025-04-08T00:00:00Z",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[excel]/deliverable-002"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-006",
+        "name": "Management Review of Findings",
+        "draft": true,
+        "details": "CFO and Finance team review audit findings.",
+        "dependencies": [
+          "task-005"
+        ],
+        "coDependencies": [],
+        "state": "not-started",
+        "dueBy": "2025-04-12T00:00:00Z",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-007",
+        "name": "Audit Committee Review",
+        "draft": true,
+        "details": "Audit Committee evaluates management review.",
+        "dependencies": [
+          "task-006"
+        ],
+        "coDependencies": [],
+        "state": "not-started",
+        "dueBy": "2025-05-05T00:00:00Z",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-008",
+        "name": "Final Audit Report Sign\u2011off",
+        "draft": true,
+        "details": "Executive sign\u2011off on the final audit report.",
+        "dependencies": [
+          "task-007"
+        ],
+        "coDependencies": [],
+        "state": "not-started",
+        "dueBy": "2025-05-10T00:00:00Z",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[word]/deliverable-005"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-009",
+        "name": "Assemble SEC Filing Package",
+        "draft": true,
+        "details": "Prepare the SEC filing documentation.",
+        "dependencies": [
+          "task-008"
+        ],
+        "coDependencies": [],
+        "state": "not-started",
+        "dueBy": "2025-05-20T00:00:00Z",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[word]/deliverable-006"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-010",
+        "name": "SEC Filing Submission",
+        "draft": true,
+        "details": "Submit the SEC filing package.",
+        "dependencies": [
+          "task-009"
+        ],
+        "coDependencies": [],
+        "state": "not-started",
+        "dueBy": "2025-05-22T00:00:00Z",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[word]/deliverable-006"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-011",
+        "name": "Collect Topic Proposals",
+        "draft": true,
+        "details": "Business Unit Leaders submit topic proposals.",
+        "dependencies": [],
+        "coDependencies": [],
+        "state": "not-started",
+        "dueBy": "2025-03-22T00:00:00Z",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-012",
+        "name": "Draft Agenda",
+        "draft": true,
+        "details": "Planning PM creates the meeting agenda.",
+        "dependencies": [
+          "task-011"
+        ],
+        "coDependencies": [],
+        "state": "not-started",
+        "dueBy": "2025-03-25T00:00:00Z",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-013",
+        "name": "Develop Strategic Deck",
+        "draft": true,
+        "details": "Strategy Lead prepares strategic PowerPoint slides.",
+        "dependencies": [],
+        "coDependencies": [],
+        "state": "not-started",
+        "dueBy": "2025-04-15T00:00:00Z",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[powerpoint]/deliverable-003"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-014",
+        "name": "Develop Financial Deck",
+        "draft": true,
+        "details": "Finance team creates financial PowerPoint slides.",
+        "dependencies": [],
+        "coDependencies": [],
+        "state": "not-started",
+        "dueBy": "2025-04-15T00:00:00Z",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[powerpoint]/deliverable-004"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-015",
+        "name": "First Internal Review of Decks",
+        "draft": true,
+        "details": "Legal and compliance perform first review of agenda and decks.",
+        "dependencies": [
+          "task-012",
+          "task-013",
+          "task-014"
+        ],
+        "coDependencies": [],
+        "state": "not-started",
+        "dueBy": "2025-04-18T00:00:00Z",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-016",
+        "name": "Revise Decks",
+        "draft": true,
+        "details": "Incorporate feedback and revise strategic and financial slides.",
+        "dependencies": [
+          "task-015"
+        ],
+        "coDependencies": [],
+        "state": "not-started",
+        "dueBy": "2025-04-30T00:00:00Z",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-017",
+        "name": "Second Internal Review",
+        "draft": true,
+        "details": "Legal and compliance perform second review of revised decks.",
+        "dependencies": [
+          "task-016"
+        ],
+        "coDependencies": [],
+        "state": "not-started",
+        "dueBy": "2025-05-03T00:00:00Z",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-018",
+        "name": "Final Sign\u2011off on Agenda & Decks",
+        "draft": true,
+        "details": "Executive sign\u2011off on the final agenda and both decks.",
+        "dependencies": [
+          "task-017"
+        ],
+        "coDependencies": [],
+        "state": "not-started",
+        "dueBy": "2025-05-10T00:00:00Z",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[powerpoint]/deliverable-003",
+          "@deliverable[powerpoint]/deliverable-004"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-019",
+        "name": "Compile Board Materials",
+        "draft": true,
+        "details": "Corporate Secretary assembles final audit report, SEC filing confirmation, and approved decks into the board packet.",
+        "dependencies": [
+          "task-010",
+          "task-018",
+          "task-008"
+        ],
+        "coDependencies": [],
+        "state": "not-started",
+        "dueBy": "2025-05-17T00:00:00Z",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[word]/deliverable-007"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-020",
+        "name": "Formatting & Compliance Check",
+        "draft": true,
+        "details": "Legal and compliance review the compiled board packet for formatting and regulatory compliance.",
+        "dependencies": [
+          "task-019"
+        ],
+        "coDependencies": [],
+        "state": "not-started",
+        "dueBy": "2025-05-20T00:00:00Z",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-021",
+        "name": "Upload to Board Portal",
+        "draft": true,
+        "details": "Secure upload of the final board packet to the distribution platform.",
+        "dependencies": [
+          "task-020"
+        ],
+        "coDependencies": [],
+        "state": "not-started",
+        "dueBy": "2025-05-21T00:00:00Z",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-022",
+        "name": "Send Distribution Notices",
+        "draft": true,
+        "details": "Corporate Secretary sends encrypted email notices to directors.",
+        "dependencies": [
+          "task-021"
+        ],
+        "coDependencies": [],
+        "state": "not-started",
+        "dueBy": "2025-05-22T00:00:00Z",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-023",
+        "name": "Confirm Receipt of Materials",
+        "draft": true,
+        "details": "Track director acknowledgments of receipt.",
+        "dependencies": [
+          "task-022"
+        ],
+        "coDependencies": [],
+        "state": "not-started",
+        "dueBy": "2025-05-24T00:00:00Z",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-024",
+        "name": "Final Run\u2011of\u2011Show",
+        "draft": true,
+        "details": "Finalize the detailed run\u2011of\u2011show for the meeting day.",
+        "dependencies": [
+          "task-023"
+        ],
+        "coDependencies": [],
+        "state": "not-started",
+        "dueBy": "2025-06-05T00:00:00Z",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-025",
+        "name": "Logistics Confirmation",
+        "draft": true,
+        "details": "Facilities, IT, and Catering confirm venue and support services.",
+        "dependencies": [
+          "task-024"
+        ],
+        "coDependencies": [],
+        "state": "not-started",
+        "dueBy": "2025-06-07T00:00:00Z",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-026",
+        "name": "Speaker Rehearsals",
+        "draft": true,
+        "details": "Presenters rehearse their portions using the finalized agenda and decks.",
+        "dependencies": [
+          "task-024",
+          "task-025"
+        ],
+        "coDependencies": [],
+        "state": "not-started",
+        "dueBy": "2025-06-10T00:00:00Z",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-027",
+        "name": "Conduct Board Meeting",
+        "draft": true,
+        "details": "Execute the board meeting according to the finalized agenda.",
+        "dependencies": [
+          "task-024",
+          "task-025",
+          "task-026"
+        ],
+        "coDependencies": [],
+        "state": "not-started",
+        "dueBy": "2025-06-12T00:00:00Z",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-028",
+        "name": "Capture Provisional Minutes",
+        "draft": true,
+        "details": "Record provisional minutes during and immediately after the meeting.",
+        "dependencies": [
+          "task-027"
+        ],
+        "coDependencies": [],
+        "state": "not-started",
+        "dueBy": "2025-06-13T00:00:00Z",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-029",
+        "name": "Incorporate Chair Comments",
+        "draft": true,
+        "details": "Integrate Board Chair feedback into the provisional minutes.",
+        "dependencies": [
+          "task-028"
+        ],
+        "coDependencies": [],
+        "state": "not-started",
+        "dueBy": "2025-06-15T00:00:00Z",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-030",
+        "name": "Final Minutes Sign\u2011off",
+        "draft": true,
+        "details": "Executive sign\u2011off on the finalized minutes.",
+        "dependencies": [
+          "task-029"
+        ],
+        "coDependencies": [],
+        "state": "not-started",
+        "dueBy": "2025-06-20T00:00:00Z",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[word]/deliverable-008"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-031",
+        "name": "Distribute Final Minutes",
+        "draft": true,
+        "details": "Distribute the signed final minutes to all participants.",
+        "dependencies": [
+          "task-030"
+        ],
+        "coDependencies": [],
+        "state": "not-started",
+        "dueBy": "2025-06-22T00:00:00Z",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[word]/deliverable-008"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-032",
+        "name": "Create Action\u2011Item Tracker",
+        "draft": true,
+        "details": "PMO logs all action items identified in the minutes.",
+        "dependencies": [
+          "task-030"
+        ],
+        "coDependencies": [],
+        "state": "not-started",
+        "dueBy": "2025-06-25T00:00:00Z",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[excel]/deliverable-009"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-033",
+        "name": "Prepare Stakeholder Summary",
+        "draft": true,
+        "details": "Summarize key decisions and action items for broader distribution.",
+        "dependencies": [
+          "task-032"
+        ],
+        "coDependencies": [],
+        "state": "not-started",
+        "dueBy": "2025-06-28T00:00:00Z",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[word]/deliverable-010"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-034",
+        "name": "Compile Lessons\u2011Learned Report",
+        "draft": true,
+        "details": "Document lessons learned and best practices from the meeting process.",
+        "dependencies": [
+          "task-033"
+        ],
+        "coDependencies": [],
+        "state": "not-started",
+        "dueBy": "2025-07-01T00:00:00Z",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[word]/deliverable-011"
+        ],
+        "references": [],
+        "history": []
+      }
+    ],
+    "history": []
+  }
+}

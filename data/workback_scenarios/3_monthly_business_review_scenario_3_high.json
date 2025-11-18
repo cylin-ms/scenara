@@ -1,0 +1,437 @@
+{
+  "scenario_name": "Nimbus Cloud Solutions \u2013 Enterprise SaaS Division Monthly Business Review (Product)",
+  "scenario_number": 3,
+  "meeting_type": "Monthly Business Review",
+  "quality_level": "high",
+  "workback_prompt": "Generate a detailed workback plan for the 'Nimbus Cloud Solutions \u2013 Enterprise SaaS Division Monthly Business Review (Product)' scenario. The plan should start 30 days before the meeting (T\u201130) and list all tasks, owners, start/end dates, dependencies, required data pulls, review checkpoints, and risk mitigation steps needed to deliver the listed deliverables on time, stay within the budget constraints, and meet the success criteria. Include milestones for data validation, roadmap finalization, budget memo approval, and rehearsal of the presentation.\n\nGenerate a HIGH QUALITY workback plan with these characteristics:\n- Comprehensive task coverage\n- Clear, actionable task descriptions\n- Well-defined dependencies\n- All tasks assigned to specific owners\n- Clear milestones with completion criteria\n- Realistic timelines with buffers\n- Proactive risk management\n- Complete deliverable list\n\nIMPORTANT: Generate a plan that naturally exhibits HIGH quality characteristics.\nDo not explicitly label the plan as \"high quality\" - let the quality emerge from the content.",
+  "generated_at": "2025-11-17T05:02:00.591402",
+  "analysis": "# Outcomes  \n\n## 1. Data Collection & Validation  \nAll required product\u2011performance, usage, and financial data are pulled, reconciled, and validated for accuracy before any analysis or reporting begins.  \n\n**Artifact references:** none  \n\n### Reasoning  \nThe Monthly Business Review (MBR) relies on trustworthy metrics. The user explicitly asked for a milestone \u201cdata validation,\u201d so delivering a clean data set is the first logical outcome. Without validated data, downstream tasks (roadmap updates, budget memo, presentation) cannot be completed reliably.  \n\n### Approach  \n1. **Identify data sources** (e.g., SaaS usage logs, CRM pipeline, finance system, support tickets).  \n2. **Assign owners** for each source (Product Analytics Lead, Finance Analyst, Support Ops Manager).  \n3. **Schedule automated extracts** to run on T\u201128 and T\u201126 to provide a buffer for issues.  \n4. **Reconcile extracts** against known totals (e.g., ARR, churn) and flag discrepancies.  \n5. **Perform validation checks** (missing fields, out\u2011of\u2011range values, duplicate records).  \n6. **Document validation results** in a shared \u201cData Validation Log\u201d and obtain sign\u2011off from the Data Governance Lead.  \n7. **Set a checkpoint meeting** on T\u201124 to review validation findings and approve the data set for analysis.  \n\n---\n\n## 2. Product Roadmap Finalization  \nThe product roadmap for the next quarter is reviewed, updated with the latest feature progress, and locked for inclusion in the MBR deck.  \n\n**Artifact references:** none  \n\n### Reasoning  \nOne of the required milestones is \u201croadmap finalization.\u201d The roadmap informs stakeholders about upcoming releases and aligns budget discussions, making it a critical deliverable.  \n\n### Approach  \n1. **Gather status updates** from Engineering Leads (feature completion %, risk flags) by T\u201125.  \n2. **Consolidate updates** into a \u201cRoadmap Draft\u201d (Google Sheet/PowerPoint) by the Product Manager.  \n3. **Run a cross\u2011functional review** (Engineering, Sales, Customer Success) on T\u201122 to capture dependencies and market feedback.  \n4. **Incorporate feedback** and produce the \u201cRoadmap Final\u201d by T\u201120.  \n5. **Obtain sign\u2011off** from the VP of Product on T\u201119; this constitutes the roadmap finalization milestone.  \n\n---\n\n## 3. Budget Memo Approval  \nPrepare and obtain approval for the budget memo that outlines spend, revenue forecasts, and variance analysis for the Enterprise SaaS Division.  \n\n**Artifact references:** none  \n\n### Reasoning  \nThe user asked for a \u201cbudget memo approval\u201d milestone. The budget memo is a core deliverable that drives financial alignment and must be approved before the presentation is finalized.  \n\n### Approach  \n1. **Compile financial data** (ARR, churn, operating expenses) from Finance Analyst by T\u201123.  \n2. **Draft the budget memo** (including variance explanations) by the Finance Lead by T\u201121.  \n3. **Circulate the draft** to Product, Sales, and Operations leads for comments (T\u201120).  \n4. **Incorporate feedback** and produce the \u201cBudget Memo \u2013 Final\u201d by T\u201118.  \n5. **Schedule an approval meeting** with the CFO and Division VP on T\u201117; obtain written sign\u2011off.  \n\n---\n\n## 4. Presentation Deck Preparation  \nCreate a polished MBR slide deck that integrates validated data, the finalized roadmap, and the approved budget memo.  \n\n**Artifact references:** none  \n\n### Reasoning  \nThe presentation deck is the primary vehicle for communicating the MBR outcomes to senior leadership. It must be ready before rehearsal and the live meeting.  \n\n### Approach  \n1. **Assign slide owners** (Data Analyst \u2192 KPI slides, Product Manager \u2192 Roadmap slides, Finance Lead \u2192 Budget slides) by T\u201119.  \n2. **Develop first draft** of each slide set by the respective owners (T\u201116).  \n3. **Consolidate slides** into a single deck by the MBR Coordinator (T\u201115).  \n4. **Run a design review** (branding, readability) with the Marketing Designer (T\u201114).  \n5. **Incorporate design feedback** and produce a \u201cDeck \u2013 Near Final\u201d by T\u201113.  \n6. **Conduct a peer review** (senior product & finance peers) on T\u201112 and capture comments.  \n7. **Finalize the deck** (T\u201111) and store it in the shared MBR folder with version control.  \n\n---\n\n## 5. Presentation Rehearsal  \nPerform a full run\u2011through of the MBR presentation, capture feedback, and make final adjustments.  \n\n**Artifact references:** none  \n\n### Reasoning  \nA dedicated rehearsal milestone ensures the presenters are confident, timing is correct, and any last\u2011minute gaps are identified.  \n\n### Approach  \n1. **Schedule rehearsal** with all presenters and key stakeholders for T\u20119.  \n2. **Execute a timed run\u2011through** using the \u201cDeck \u2013 Final\u201d and record the session.  \n3. **Collect feedback** on content clarity, slide transitions, and Q&A readiness (T\u20118).  \n4. **Assign action items** (e.g., clarify a KPI definition, add a slide note) to owners and complete by T\u20117.  \n5. **Perform a second quick rehearsal** on T\u20116 to confirm all changes.  \n6. **Obtain final presenter sign\u2011off** on T\u20115, marking the rehearsal milestone complete.  \n\n---\n\n## 6. Monthly Business Review Meeting Delivery  \nConduct the live MBR meeting, distribute post\u2011meeting materials, and capture action items.  \n\n**Artifact references:** none  \n\n### Reasoning  \nThe ultimate goal is to deliver the MBR meeting on schedule, within budget, and meeting success criteria (clear decisions, stakeholder alignment).  \n\n### Approach  \n1. **Confirm meeting logistics** (room/virtual link, attendee list) by T\u20114.  \n2. **Send final deck and supporting docs** to attendees (T\u20113).  \n3. **Host the MBR meeting** on the scheduled date (T\u20110).  \n4. **Record meeting** and capture minutes/action items in the \u201cMBR Action Log\u201d (T\u20110).  \n5. **Distribute minutes and next\u2011step owners** by T\u20111.  \n6. **Conduct a post\u2011meeting debrief** with the core team (T\u20112) to evaluate success criteria and note improvement points for the next cycle.  \n\n---\n\n# Breakdown  \n\n## 1. Data Collection & Validation  \n\n| # | Task | Owner | Start | End | Dependencies | Notes / Risk Mitigation |\n|---|------|-------|-------|-----|--------------|------------------------|\n| 1.1 | Identify all required data sources (usage, finance, support) | Product Analytics Lead | T\u201130 | T\u201129 | \u2013 | Create source inventory document |\n| 1.2 | Assign source owners (Finance Analyst, Support Ops Manager) | MBR Coordinator | T\u201129 | T\u201128 | 1.1 | Ensure each owner has access rights |\n| 1.3 | Schedule automated extracts (T\u201128 & T\u201126) | Data Engineer | T\u201128 | T\u201126 | 1.2 | Add alert on extract failure |\n| 1.4 | Reconcile extracts against known totals | Finance Analyst | T\u201126 | T\u201125 | 1.3 | Flag any >2% variance |\n| 1.5 | Perform validation checks (missing, out\u2011of\u2011range, duplicates) | Product Analytics Lead | T\u201125 | T\u201124 | 1.4 | Use validation scripts; peer\u2011review |\n| 1.6 | Document validation results in \u201cData Validation Log\u201d | Data Governance Lead | T\u201124 | T\u201123 | 1.5 | Sign\u2011off required |\n| 1.7 | Validation checkpoint meeting (review & approve) | All owners | T\u201124 | T\u201124 | 1.6 | Decision: proceed or re\u2011extract |\n\n## 2. Product Roadmap Finalization  \n\n| # | Task | Owner | Start | End | Dependencies | Notes / Risk Mitigation |\n|---|------|-------|-------|-----|--------------|------------------------|\n| 2.1 | Request feature status updates from Engineering Leads | Product Manager | T\u201130 | T\u201125 | \u2013 | Use standardized status template |\n| 2.2 | Consolidate updates into \u201cRoadmap Draft\u201d | Product Manager | T\u201125 | T\u201122 | 2.1 | Include risk flags |\n| 2.3 | Cross\u2011functional review (Engineering, Sales, CS) | VP of Product (facilitator) | T\u201122 | T\u201122 | 2.2 | Capture minutes, action items |\n| 2.4 | Incorporate feedback \u2192 \u201cRoadmap Final\u201d | Product Manager | T\u201122 | T\u201120 | 2.3 | Verify alignment with product strategy |\n| 2.5 | Obtain VP of Product sign\u2011off | VP of Product | T\u201119 | T\u201119 | 2.4 | Sign\u2011off = roadmap finalization milestone |\n\n## 3. Budget Memo Approval  \n\n| # | Task | Owner | Start | End | Dependencies | Notes / Risk Mitigation |\n|---|------|-------|-------|-----|--------------|------------------------|\n| 3.1 | Pull latest financial data (ARR, churn, OPEX) | Finance Analyst | T\u201130 | T\u201123 | \u2013 | Verify data from validated set (1.6) |\n| 3.2 | Draft budget memo (narrative + tables) | Finance Lead | T\u201123 | T\u201121 | 3.1 | Include variance explanations |\n| 3.3 | Circulate draft for comments (Product, Sales, Ops) | Finance Lead | T\u201121 | T\u201120 | 3.2 | Set deadline for feedback |\n| 3.4 | Revise memo with feedback \u2192 \u201cBudget Memo \u2013 Final\u201d | Finance Lead | T\u201120 | T\u201118 | 3.3 | Track changes in version control |\n| 3.5 | Approval meeting with CFO & Division VP; obtain sign\u2011off | CFO & Division VP | T\u201117 | T\u201117 | 3.4 | Document approval in memo header |\n\n## 4. Presentation Deck Preparation  \n\n| # | Task | Owner | Start | End | Dependencies | Notes / Risk Mitigation |\n|---|------|-------|-------|-----|--------------|------------------------|\n| 4.1 | Assign slide ownership (KPIs, Roadmap, Budget) | MBR Coordinator | T\u201119 | T\u201119 | \u2013 | Clear responsibility matrix |\n| 4.2 | Create first\u2011draft slides (per owner) | Respective owners | T\u201119 | T\u201116 | 4.1 | Use approved templates |\n| 4.3 | Consolidate slides into master deck | MBR Coordinator | T\u201116 | T\u201115 | 4.2 | Verify slide order aligns with narrative |\n| 4.4 | Design review (branding, readability) | Marketing Designer | T\u201115 | T\u201114 | 4.3 | Provide style guide |\n| 4.5 | Incorporate design feedback \u2192 \u201cDeck \u2013 Near Final\u201d | MBR Coordinator | T\u201114 | T\u201113 | 4.4 | Checklist for visual consistency |\n| 4.6 | Peer review (senior product & finance) | Peer reviewers | T\u201113 | T\u201112 | 4.5 | Capture comments in shared doc |\n| 4.7 | Finalize deck (clean up, version tag) | MBR Coordinator | T\u201112 | T\u201111 | 4.6 | Store in \u201cMBR_Final_vX\u201d |\n\n## 5. Presentation Rehearsal  \n\n| # | Task | Owner | Start | End | Dependencies | Notes / Risk Mitigation |\n|---|------|-------|-------|-----|--------------|------------------------|\n| 5.1 | Schedule full rehearsal (all presenters) | MBR Coordinator | T\u201110 | T\u20119 | \u2013 | Reserve conference room/virtual link |\n| 5.2 | Conduct timed run\u2011through; record session | All presenters | T\u20119 | T\u20119 | 5.1, 4.7 | Use timer; note overruns |\n| 5.3 | Collect feedback (content, flow, Q&A) | Presenter Lead | T\u20119 | T\u20118 | 5.2 | Use feedback form |\n| 5.4 | Assign action items from feedback | Presenter Lead | T\u20118 | T\u20117 | 5.3 | Prioritize critical fixes |\n| 5.5 | Implement fixes (slide edits, speaker notes) | Respective owners | T\u20117 | T\u20116 | 5.4 | Verify changes in deck |\n| 5.6 | Second quick rehearsal (validation) | All presenters | T\u20116 | T\u20115 | 5.5 | Ensure timing \u2264 30\u202fmin |\n| 5.7 | Presenter sign\u2011off on final deck | Lead Presenter | T\u20115 | T\u20115 | 5.6 | Marks rehearsal milestone complete |\n\n## 6. Monthly Business Review Meeting Delivery  \n\n| # | Task | Owner | Start | End | Dependencies | Notes / Risk Mitigation |\n|---|------|-------|-------|-----|--------------|------------------------|\n| 6.1 | Confirm meeting logistics (room, dial\u2011in, attendee list) | MBR Coordinator | T\u20114 | T\u20114 | \u2013 | Send calendar invites |\n| 6.2 | Distribute final deck & supporting docs to attendees | MBR Coordinator | T\u20113 | T\u20113 | 5.7 | Include executive summary |\n| 6.3 | Host live MBR meeting (presentation, Q&A) | Lead Presenter | T\u20110 | T\u20110 | 5.7, 6.2 | Record session |\n| 6.4 | Capture minutes & action items in \u201cMBR Action Log\u201d | Scribe (Product Ops) | T\u20110 | T\u20110 | 6.3 | Assign owners, due dates |\n| 6.5 | Distribute minutes & action log to stakeholders | MBR Coordinator | T\u20111 | T\u20111 | 6.4 | Follow\u2011up email |\n| 6.6 | Post\u2011meeting debrief (evaluate success criteria) | Core Team (PM, Finance, Ops) | T\u20112 | T\u20112 | 6.5 | Document lessons learned for next cycle |\n\n---\n\n### Risk Mitigation Summary (Cross\u2011Cutting)\n\n| Risk | Potential Impact | Mitigation |\n|------|------------------|------------|\n| Data extraction failure or delayed validation | Missed downstream analysis | Schedule two extraction windows (T\u201128 & T\u201126) and set up automated alerts; have a manual fallback script ready. |\n| Engineering status updates late | Roadmap not finalized on time | Set a hard deadline (T\u201125) and include escalation path to Engineering Manager. |\n| Budget variance assumptions disputed | Memo approval delayed | Involve Finance Lead early (T\u201123) and circulate preliminary variance rationale for early feedback. |\n| Slide design inconsistencies | Rework time increase | Conduct early design review (T\u201115) and provide a style guide to all slide owners. |\n| Presentation timing exceeds slot | Meeting overruns, stakeholder frustration | Use timed rehearsals; enforce cut\u2011offs; prepare \u201cslide\u2011skip\u201d options for low\u2011priority content. |\n| Key stakeholder unavailable for sign\u2011off | Milestone delay | Identify backup approvers (e.g., Deputy VP) and secure provisional sign\u2011off if primary unavailable. |\n| Last\u2011minute data change after validation | Confusion in deck | Freeze data set after validation checkpoint (T\u201124); any changes require a formal amendment request and re\u2011validation. |\n\nBy following this workback plan\u2014starting at T\u201130 and progressing through clearly defined tasks, owners, dependencies, and checkpoints\u2014the Nimbus Cloud Solutions Enterprise SaaS Division can deliver a complete, accurate, and compelling Monthly Business Review on schedule, within budget, and meeting all success criteria.",
+  "plan": {
+    "id": "document-001",
+    "name": "Monthly Business Review Workback Plan",
+    "details": "Workback plan covering data collection, roadmap finalization, budget memo approval, deck preparation, rehearsal, and meeting delivery for the Monthly Business Review.",
+    "draft": true,
+    "participants": [
+      {
+        "name": "Product Analytics Lead",
+        "draft": true
+      },
+      {
+        "name": "Finance Analyst",
+        "draft": true
+      },
+      {
+        "name": "Support Ops Manager",
+        "draft": true
+      },
+      {
+        "name": "MBR Coordinator",
+        "draft": true
+      },
+      {
+        "name": "Data Engineer",
+        "draft": true
+      },
+      {
+        "name": "Finance Lead",
+        "draft": true
+      },
+      {
+        "name": "VP of Product",
+        "draft": true
+      },
+      {
+        "name": "CFO",
+        "draft": true
+      },
+      {
+        "name": "Division VP",
+        "draft": true
+      },
+      {
+        "name": "Marketing Designer",
+        "draft": true
+      },
+      {
+        "name": "Lead Presenter",
+        "draft": true
+      },
+      {
+        "name": "Presenter Lead",
+        "draft": true
+      },
+      {
+        "name": "Scribe (Product Ops)",
+        "draft": true
+      }
+    ],
+    "references": [],
+    "deliverables": [],
+    "tasks": [
+      {
+        "id": "task-001",
+        "name": "Identify all required data sources (usage, finance, support)",
+        "draft": true,
+        "details": "Create source inventory document listing SaaS usage logs, CRM pipeline, finance system, support tickets, etc.",
+        "dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-002",
+        "name": "Assign source owners (Finance Analyst, Support Ops Manager)",
+        "draft": true,
+        "details": "Ensure each data source has a designated owner with appropriate access rights.",
+        "dependencies": [
+          "task-001"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-003",
+        "name": "Schedule automated extracts (T\u201128 & T\u201126)",
+        "draft": true,
+        "details": "Set up extraction jobs and alerts for failures.",
+        "dependencies": [
+          "task-002"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-004",
+        "name": "Reconcile extracts against known totals",
+        "draft": true,
+        "details": "Compare extracted data to ARR, churn, etc., flagging any >2% variance.",
+        "dependencies": [
+          "task-003"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-005",
+        "name": "Perform validation checks (missing, out\u2011of\u2011range, duplicates)",
+        "draft": true,
+        "details": "Run validation scripts and peer\u2011review results.",
+        "dependencies": [
+          "task-004"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-006",
+        "name": "Document validation results in \u201cData Validation Log\u201d",
+        "draft": true,
+        "details": "Log findings and obtain sign\u2011off from Data Governance Lead.",
+        "dependencies": [
+          "task-005"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-007",
+        "name": "Validation checkpoint meeting (review & approve)",
+        "draft": true,
+        "details": "All owners review validation log and decide to proceed or re\u2011extract.",
+        "dependencies": [
+          "task-006"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-008",
+        "name": "Request feature status updates from Engineering Leads",
+        "draft": true,
+        "details": "Use standardized status template; deadline T\u201125.",
+        "dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-009",
+        "name": "Consolidate updates into \u201cRoadmap Draft\u201d",
+        "draft": true,
+        "details": "Product Manager compiles updates, includes risk flags.",
+        "dependencies": [
+          "task-008"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-010",
+        "name": "Cross\u2011functional review (Engineering, Sales, CS)",
+        "draft": true,
+        "details": "Facilitated by VP of Product on T\u201122; capture minutes and action items.",
+        "dependencies": [
+          "task-009"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-011",
+        "name": "Incorporate feedback \u2192 \u201cRoadmap Final\u201d",
+        "draft": true,
+        "details": "Product Manager updates draft, verifies alignment with strategy.",
+        "dependencies": [
+          "task-010"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-012",
+        "name": "Obtain VP of Product sign\u2011off",
+        "draft": true,
+        "details": "Sign\u2011off on T\u201119 constitutes roadmap finalization milestone.",
+        "dependencies": [
+          "task-011"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-013",
+        "name": "Pull latest financial data (ARR, churn, OPEX)",
+        "draft": true,
+        "details": "Finance Analyst extracts data; verify against validated data set.",
+        "dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-014",
+        "name": "Draft budget memo (narrative + tables)",
+        "draft": true,
+        "details": "Finance Lead creates memo with variance explanations.",
+        "dependencies": [
+          "task-013"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-015",
+        "name": "Circulate draft for comments (Product, Sales, Ops)",
+        "draft": true,
+        "details": "Set deadline for feedback by T\u201120.",
+        "dependencies": [
+          "task-014"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-016",
+        "name": "Revise memo \u2192 \u201cBudget Memo \u2013 Final\u201d",
+        "draft": true,
+        "details": "Incorporate all feedback; track changes in version control.",
+        "dependencies": [
+          "task-015"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-017",
+        "name": "Approval meeting with CFO & Division VP; obtain sign\u2011off",
+        "draft": true,
+        "details": "Document approval in memo header on T\u201117.",
+        "dependencies": [
+          "task-016"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-018",
+        "name": "Assign slide ownership (KPIs, Roadmap, Budget)",
+        "draft": true,
+        "details": "MBR Coordinator defines responsibility matrix.",
+        "dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-019",
+        "name": "Create first\u2011draft slides (per owner)",
+        "draft": true,
+        "details": "Data Analyst, Product Manager, Finance Lead develop their slide sets using approved templates.",
+        "dependencies": [
+          "task-018"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-020",
+        "name": "Consolidate slides into master deck",
+        "draft": true,
+        "details": "MBR Coordinator assembles slides, verifies order aligns with narrative.",
+        "dependencies": [
+          "task-019"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-021",
+        "name": "Design review (branding, readability)",
+        "draft": true,
+        "details": "Marketing Designer checks deck against style guide.",
+        "dependencies": [
+          "task-020"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-022",
+        "name": "Incorporate design feedback \u2192 \u201cDeck \u2013 Near Final\u201d",
+        "draft": true,
+        "details": "MBR Coordinator applies visual consistency checklist.",
+        "dependencies": [
+          "task-021"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-023",
+        "name": "Peer review",
+        "draft": true,
+        "details": "Stakeholders perform a peer review of content and flow.",
+        "dependencies": [
+          "task-022"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-023",
+        "name": "Finalize deck",
+        "draft": true,
+        "details": "MBR Coordinator finalizes deck after peer review.",
+        "dependencies": [
+          "task-023"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-025",
+        "name": "Schedule full rehearsal",
+        "draft": true,
+        "details": "All presenters set rehearsal dates starting T\u20115.",
+        "dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-026",
+        "name": "Conduct timed run\u2011through",
+        "draft": true,
+        "details": "All presenters run through the final deck; ensure timing \u226430\u202fmin.",
+        "dependencies": [
+          "task-025",
+          "task-024"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-027",
+        "name": "Collect feedback",
+        "draft": true,
+        "details": "Presenter Lead gathers feedback on content, pacing, and clarity.",
+        "dependencies": [
+          "task-026"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-028",
+        "name": "Assign action items from feedback",
+        "draft": true,
+        "details": "Presenter Lead creates a list of required deck edits with owners.",
+        "dependencies": [
+          "task-027"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-029",
+        "name": "Implement fixes",
+        "draft": true,
+        "details": "Apply agreed changes to the deck; verify timing remains within limits.",
+        "dependencies": [
+          "task-028"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-030",
+        "name": "Second quick rehearsal (validation)",
+        "draft": true,
+        "details": "Run a brief rehearsal to confirm timing \u226430\u202fmin.",
+        "dependencies": [
+          "task-029"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-031",
+        "name": "Presenter sign\u2011off on final deck",
+        "draft": true,
+        "details": "Lead Presenter signs off on T\u20115, marking rehearsal milestone complete.",
+        "dependencies": [
+          "task-030"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-032",
+        "name": "Confirm meeting logistics (room, dial\u2011in, attendee list)",
+        "draft": true,
+        "details": "MBR Coordinator sends calendar invites and verifies dial\u2011in details.",
+        "dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-033",
+        "name": "Distribute final deck & supporting docs to attendees",
+        "draft": true,
+        "details": "Send deck, executive summary, and any supporting documents on T\u20113.",
+        "dependencies": [
+          "task-032",
+          "task-024",
+          "task-031"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-034",
+        "name": "Host live MBR meeting (presentation, Q&A)",
+        "draft": true,
+        "details": "Lead Presenter delivers presentation, records session, and handles Q&A.",
+        "dependencies": [
+          "task-032",
+          "task-024",
+          "task-031"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-035",
+        "name": "Capture minutes & action items in \u201cMBR Action Log\u201d",
+        "draft": true,
+        "details": "Scribe (Product Ops) records minutes, assigns owners and due dates.",
+        "dependencies": [
+          "task-034"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-036",
+        "name": "Distribute minutes & action log to stakeholders",
+        "draft": true,
+        "details": "MBR Coordinator sends follow\u2011up email with minutes on T\u20111.",
+        "dependencies": [
+          "task-035"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-037",
+        "name": "Post\u2011meeting debrief (evaluate success criteria)",
+        "draft": true,
+        "details": "Core team reviews outcomes, documents lessons learned for next cycle.",
+        "dependencies": [
+          "task-036"
+        ],
+        "state": "not-started"
+      }
+    ],
+    "history": []
+  }
+}

@@ -1,0 +1,1092 @@
+{
+  "scenario_name": "VisionEdge Squad \u2013 Real\u2011Time Object Detection API Launch (8\u2011week mission)",
+  "scenario_number": 2,
+  "meeting_type": "Squad Mission Planning",
+  "quality_level": "medium",
+  "workback_prompt": "Generate a detailed workback plan for the VisionEdge Squad mission to launch the real\u2011time object detection API for edge devices. Include all milestones (T\u201156, T\u201142, T\u201128, T\u201114, T\u20110), weekly tasks, owners, dependencies (e.g., Azure IoT Hub SDK v3.2), resource allocations, risk mitigation, and deliverable dates. Align each task with the success metrics and constraints listed, and format the plan as a Gantt\u2011style table with clear start/end dates, effort estimates, and required approvals.\n\nGenerate a MEDIUM QUALITY workback plan with these characteristics:\n- Most major tasks present but some gaps\n- Reasonable task descriptions\n- Some dependencies defined\n- Most tasks have owners\n- Milestones present but may lack detail\n- Generally realistic timelines\n- Some consideration of risks\n- Key deliverables identified\n\nIMPORTANT: Generate a plan that naturally exhibits MEDIUM quality characteristics.\nDo not explicitly label the plan as \"medium quality\" - let the quality emerge from the content.",
+  "generated_at": "2025-11-17T05:50:51.817424",
+  "analysis": "# Outcomes\n\n## 1. Draft the VisionEdge Squad work\u2011back plan (initial Gantt\u2011style table)  \nCreate a first\u2011pass schedule that lists the five mission milestones (T\u201156, T\u201142, T\u201128, T\u201114, T\u20110), weekly work\u2011packages, tentative owners, effort estimates, key dependencies (e.g., Azure IoT Hub SDK\u202fv3.2), resource allocations, risk\u2011mitigation notes, and the success\u2011metric alignment required for the real\u2011time object\u2011detection API launch.  \n\n### Reasoning  \nThe user\u2019s request is for a complete work\u2011back plan. The natural first step is to produce a **draft** that captures all major elements (milestones, tasks, owners, dependencies, risks, approvals) while allowing the squad to fill any missing details. This outcome directly satisfies the need for a \u201cmost major tasks present but some gaps\u201d and provides a concrete artefact that can be iterated on.\n\n### Approach  \n1. **Collect existing artefacts** \u2013 gather any specification documents, SDK release notes, capacity\u2011planning spreadsheets, and risk registers that already exist within the VisionEdge Squad.  \n2. **Define the milestone skeleton** \u2013 list the five fixed dates (T\u201156, T\u201142, T\u201128, T\u201114, T\u20110) and the high\u2011level deliverables tied to each (e.g., \u201cArchitecture sign\u2011off\u201d, \u201cPrototype demo\u201d, \u201cBeta release\u201d, \u201cPerformance validation\u201d, \u201cProduction launch\u201d).  \n3. **Map weekly work\u2011packages** \u2013 for each week between the current date and T\u20110, draft a concise task description (e.g., \u201cImplement edge\u2011inference pipeline\u201d, \u201cIntegrate Azure IoT Hub SDK\u202fv3.2\u201d).  \n4. **Assign provisional owners** \u2013 based on team roster and skill matrix, allocate a primary owner and a backup for each work\u2011package.  \n5. **Identify dependencies** \u2013 note technical (SDK version, hardware board availability), procedural (security review, compliance sign\u2011off), and external (partner API availability) links between tasks.  \n6. **Estimate effort** \u2013 use story\u2011point conversion or historical velocity to assign person\u2011days or hours to each task.  \n7. **Add risk\u2011mitigation notes** \u2013 for each high\u2011impact task, list a mitigation action (e.g., \u201cCreate fallback inference model\u201d).  \n8. **Insert approval gates** \u2013 mark where formal approvals (architecture review, QA sign\u2011off) are required.  \n9. **Populate a Gantt\u2011style table** \u2013 use a spreadsheet or project\u2011management tool to lay out start/end dates, effort, owners, and dependencies.  \n10. **Circulate for feedback** \u2013 share the draft with the squad and key stakeholders for comment.\n\n---\n\n## 2. Review, refine, and obtain approvals for the work\u2011back plan  \nIterate on the draft based on stakeholder input, fill identified gaps, confirm resource commitments, and secure formal sign\u2011off from the product owner, engineering lead, and compliance officer.  \n\n### Reasoning  \nA draft plan alone does not guarantee execution. The user explicitly asked for \u201crequired approvals\u201d and risk considerations, so a dedicated outcome to **review and approve** ensures the plan becomes a binding roadmap rather than a loose sketch.\n\n### Approach  \n1. **Schedule a review meeting** \u2013 invite all owners, the product owner, engineering lead, and any compliance or security representatives.  \n2. **Gather feedback** \u2013 capture comments on missing tasks, unrealistic effort estimates, or overlooked dependencies.  \n3. **Update the plan** \u2013 incorporate agreed changes, add any newly identified tasks, and adjust dates/effort as needed.  \n4. **Validate resource allocation** \u2013 confirm that each owner has the capacity (e.g., % of time) for the assigned weeks; negotiate re\u2011allocation if overload is detected.  \n5. **Finalize risk register** \u2013 ensure every high\u2011severity risk has a mitigation and an owner.  \n6. **Document approval decisions** \u2013 record who approved each milestone gate and the overall plan (e.g., via a signed sign\u2011off sheet or an approved change\u2011request record).  \n7. **Publish the approved plan** \u2013 store the final Gantt table in the squad\u2019s shared repository and notify all participants.\n\n---\n\n## 3. Execute the work\u2011back plan and monitor progress against success metrics  \nCarry out the weekly tasks, track actual effort versus estimates, update the Gantt view in real time, and report status to stakeholders at each milestone checkpoint.  \n\n### Reasoning  \nThe ultimate goal is the launch of the real\u2011time object\u2011detection API. After the plan is approved, the squad must **execute** it while keeping visibility on success metrics (e.g., latency \u2264\u202f30\u202fms, detection accuracy \u2265\u202f90\u202f%). This outcome captures the operational phase and the need for ongoing monitoring.\n\n### Approach  \n1. **Kick\u2011off execution** \u2013 hold a brief sprint\u2011zero meeting to reaffirm owners, clarify expectations, and confirm the reporting cadence.  \n2. **Weekly stand\u2011ups** \u2013 each owner reports progress, blockers, and any deviation from effort estimates.  \n3. **Update the Gantt table** \u2013 adjust start/end dates and remaining effort for any delayed tasks; propagate changes to dependent tasks.  \n4. **Metric tracking** \u2013 link each completed work\u2011package to the relevant success metric (e.g., \u201cEdge inference latency test\u201d \u2192 latency metric). Use a dashboard to visualize metric trends.  \n5. **Risk review** \u2013 at each milestone (T\u201142, T\u201128, etc.) reconfirm that mitigation actions are still valid; elevate any new risks.  \n6. **Milestone reviews** \u2013 conduct formal checkpoint meetings at T\u201142, T\u201128, T\u201114 to verify that deliverables meet acceptance criteria and obtain the next\u2011phase approval.  \n7. **Final launch readiness** \u2013 at T\u20110, perform a full end\u2011to\u2011end validation, obtain production sign\u2011off, and schedule the public API release.\n\n---\n\n# Breakdown\n\n### Outcome\u202f1 \u2013 Draft the VisionEdge Squad work\u2011back plan  \n\n1. **Gather existing inputs**  \n   1.1. Retrieve specification docs, SDK release notes, hardware BOMs.  \n   1.2. Pull current capacity\u2011planning spreadsheet.  \n2. **Define milestone skeleton** *(depends on 1)*  \n   2.1. List T\u201156 \u2013 Architecture sign\u2011off.  \n   2.2. List T\u201142 \u2013 Prototype demo.  \n   2.3. List T\u201128 \u2013 Beta release to pilot devices.  \n   2.4. List T\u201114 \u2013 Performance validation & security review.  \n   2.5. List T\u20110 \u2013 Production launch.  \n3. **Map weekly work\u2011packages** *(depends on 2)*  \n   3.1. Week\u202f\u201156 to\u202f\u201155 \u2013 Requirements grooming.  \n   3.2. Week\u202f\u201154 to\u202f\u201148 \u2013 Core inference engine development.  \n   3.3. Week\u202f\u201147 to\u202f\u201142 \u2013 Azure IoT Hub SDK\u202fv3.2 integration.  \n   3.4. \u2026 *(continue for each week up to T\u20110)*  \n4. **Assign provisional owners** *(parallel with 3)*  \n   4.1. Identify primary engineer for inference pipeline.  \n   4.2. Assign SDK integration owner.  \n   4.3. Allocate QA lead for test\u2011automation tasks.  \n5. **Identify dependencies** *(parallel with 3\u20114)*  \n   5.1. SDK\u202fv3.2 release \u2192 integration start (Week\u202f\u201147).  \n   5.2. Hardware board shipment \u2192 inference testing (Week\u202f\u201144).  \n   5.3. Security review \u2192 milestone T\u201114.  \n6. **Estimate effort** *(depends on 3\u20115)*  \n   6.1. Convert story points to person\u2011days per task.  \n   6.2. Flag tasks >\u202f5\u202fperson\u2011days for possible split.  \n7. **Add risk\u2011mitigation notes** *(parallel with 6)*  \n   7.1. Risk: SDK delay \u2192 mitigation: use v3.1 as fallback.  \n   7.2. Risk: Edge\u2011device memory shortage \u2192 mitigation: model pruning.  \n8. **Insert approval gates** *(depends on 2\u20117)*  \n   8.1. Architecture review gate at T\u201156.  \n   8.2. QA sign\u2011off gate at T\u201114.  \n9. **Populate Gantt\u2011style table** *(depends on 1\u20118)*  \n   9.1. Use spreadsheet columns: Task, Owner, Start, End, Effort, Dependencies, Risks, Approvals.  \n10. **Circulate draft for feedback** *(depends on 9)*  \n    10.1. Email link to squad channel; request comments within 3\u202fbusiness days.\n\n### Outcome\u202f2 \u2013 Review, refine, and obtain approvals  \n\n1. **Schedule review meeting** *(depends on Outcome\u202f1\u201110)*  \n   1.1. Book 1\u2011hour slot with product owner, engineering lead, compliance officer.  \n2. **Collect stakeholder feedback** *(parallel with 1)*  \n   2.1. Capture missing tasks, unrealistic estimates, additional dependencies.  \n3. **Update plan** *(depends on 2)*  \n   3.1. Add newly identified tasks (e.g., \u201cTelemetry data schema finalisation\u201d).  \n   3.2. Adjust effort where variance >\u202f20\u202f%.  \n4. **Validate resource allocation** *(depends on 3)*  \n   4.1. Cross\u2011check each owner\u2019s %\u2011time commitment; re\u2011assign if >\u202f80\u202f% overload.  \n5. **Finalize risk register** *(parallel with 4)*  \n   5.1. Ensure every high\u2011impact risk has an owner and mitigation action.  \n6. **Document approvals** *(depends on 4\u20115)*  \n   6.1. Capture signatures or approval comments in a \u201cPlan Sign\u2011off\u201d document.  \n7. **Publish approved plan** *(depends on 6)*  \n   7.1. Store final Gantt table in the squad\u2019s shared repo; notify via team channel.\n\n### Outcome\u202f3 \u2013 Execute the work\u2011back plan and monitor progress  \n\n1. **Kick\u2011off execution** *(depends on Outcome\u202f2\u20117)*  \n   1.1. Hold sprint\u2011zero meeting to reaffirm owners & expectations.  \n2. **Weekly stand\u2011ups** *(ongoing)*  \n   2.1. Each owner reports: completed work, %\u2011complete, blockers.  \n3. **Update Gantt in real time** *(depends on 2)*  \n   3.1. Adjust dates/effort for delayed tasks; cascade to dependents.  \n4. **Track success metrics** *(parallel with 2\u20113)*  \n   4.1. Link completed tasks to latency, accuracy, throughput KPIs.  \n   4.2. Visualise trends on a dashboard shared with stakeholders.  \n5. **Risk review at each milestone** *(depends on 4)*  \n   5.1. Re\u2011assess mitigation effectiveness; raise new risks.  \n6. **Milestone checkpoint meetings** *(at T\u201142, T\u201128, T\u201114)*  \n   6.1. Demonstrate deliverable; obtain next\u2011phase approval.  \n7. **Final launch readiness** *(depends on 6)*  \n   7.1. Conduct end\u2011to\u2011end performance test on target edge devices.  \n   7.2. Secure production sign\u2011off; schedule public API release.  \n\n---  \n\n**Collaboration Tips**\n\n- **Shared visibility**: Keep the Gantt table in a read\u2011only view for the wider organization while allowing owners to edit their rows.  \n- **Clear ownership**: Every task should have a primary and a backup owner to avoid single\u2011point bottlenecks.  \n- **Regular risk surfacing**: Use a lightweight risk\u2011log that is reviewed in each stand\u2011up; this prevents hidden blockers from surfacing only at milestones.  \n- **Iterative refinement**: Treat the draft plan as a living document; schedule a brief \u201cplan health\u201d check every two weeks to capture scope creep early.  \n- **Stakeholder gating**: Align approval gates with existing governance processes (architecture board, security review) to avoid ad\u2011hoc delays.  \n\nFollowing this structured approach will enable the VisionEdge Squad to produce a comprehensive, realistic work\u2011back plan, secure the necessary approvals, and maintain disciplined execution toward the real\u2011time object detection API launch.",
+  "plan": {
+    "id": "document-001",
+    "name": "VisionEdge Squad Work\u2011back Plan",
+    "details": "Comprehensive work\u2011back plan for the VisionEdge Squad covering drafting, review/approval, and execution phases for the real\u2011time object\u2011detection API launch.",
+    "draft": true,
+    "participants": [
+      {
+        "name": "you",
+        "email": "you@example.com",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "system",
+        "email": "system@example.com",
+        "details": "",
+        "draft": true
+      }
+    ],
+    "references": [],
+    "deliverables": [],
+    "tasks": [
+      {
+        "id": "task-001",
+        "name": "Gather existing inputs",
+        "draft": true,
+        "details": "Collect all existing artefacts needed for planning.",
+        "dependencies": [
+          "task-001-1",
+          "task-001-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-001-1",
+        "name": "Retrieve specification docs, SDK release notes, hardware BOMs",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-001-2",
+        "name": "Pull current capacity\u2011planning spreadsheet",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-001-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002",
+        "name": "Define milestone skeleton",
+        "draft": true,
+        "details": "Create high\u2011level milestones tied to fixed dates.",
+        "dependencies": [
+          "task-001"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002-1",
+        "name": "List T\u201156 \u2013 Architecture sign\u2011off",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002-2",
+        "name": "List T\u201142 \u2013 Prototype demo",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-002-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002-3",
+        "name": "List T\u201128 \u2013 Beta release to pilot devices",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-002-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002-4",
+        "name": "List T\u201114 \u2013 Performance validation & security review",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-002-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002-5",
+        "name": "List T\u20110 \u2013 Production launch",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-002-4"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003",
+        "name": "Map weekly work\u2011packages",
+        "draft": true,
+        "details": "Draft concise weekly tasks between now and T\u20110.",
+        "dependencies": [
+          "task-002"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003-1",
+        "name": "Week\u202f\u201156 to\u202f\u201155 \u2013 Requirements grooming",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003-2",
+        "name": "Week\u202f\u201154 to\u202f\u201148 \u2013 Core inference engine development",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-003-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003-3",
+        "name": "Week\u202f\u201147 to\u202f\u201142 \u2013 Azure IoT Hub SDK\u202fv3.2 integration",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-003-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003-4",
+        "name": "Continue weekly work\u2011packages up to T\u20110",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-003-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-004",
+        "name": "Assign provisional owners",
+        "draft": true,
+        "details": "Allocate primary and backup owners for each work\u2011package.",
+        "dependencies": [
+          "task-003"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-004-1",
+        "name": "Identify primary engineer for inference pipeline",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-004-2",
+        "name": "Assign SDK integration owner",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-004-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-004-3",
+        "name": "Allocate QA lead for test\u2011automation tasks",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-004-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-005",
+        "name": "Identify dependencies",
+        "draft": true,
+        "details": "Document technical, procedural, and external dependencies.",
+        "dependencies": [
+          "task-004"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-005-1",
+        "name": "SDK\u202fv3.2 release \u2192 integration start (Week\u202f\u201147)",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-005-2",
+        "name": "Hardware board shipment \u2192 inference testing (Week\u202f\u201144)",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-005-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-005-3",
+        "name": "Security review \u2192 milestone T\u201114",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-005-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-006",
+        "name": "Estimate effort",
+        "draft": true,
+        "details": "Convert story points to effort estimates and flag large tasks.",
+        "dependencies": [
+          "task-005"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-006-1",
+        "name": "Convert story points to person\u2011days per task",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-006-2",
+        "name": "Flag tasks >\u202f5\u202fperson\u2011days for possible split",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-006-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-007",
+        "name": "Add risk\u2011mitigation notes",
+        "draft": true,
+        "details": "Document risks and corresponding mitigations.",
+        "dependencies": [
+          "task-006"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-007-1",
+        "name": "Risk: SDK delay \u2192 mitigation: use v3.1 as fallback",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-007-2",
+        "name": "Risk: Edge\u2011device memory shortage \u2192 mitigation: model pruning",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-007-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-008",
+        "name": "Insert approval gates",
+        "draft": true,
+        "details": "Define formal approval checkpoints.",
+        "dependencies": [
+          "task-007"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-008-1",
+        "name": "Architecture review gate at T\u201156",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-008-2",
+        "name": "QA sign\u2011off gate at T\u201114",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-008-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-009",
+        "name": "Populate Gantt\u2011style table",
+        "draft": true,
+        "details": "Create the planning spreadsheet with required columns.",
+        "dependencies": [
+          "task-008"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-009-1",
+        "name": "Use spreadsheet columns: Task, Owner, Start, End, Effort, Dependencies, Risks, Approvals",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-010",
+        "name": "Circulate draft for feedback",
+        "draft": true,
+        "details": "Distribute the draft plan to the squad for comments.",
+        "dependencies": [
+          "task-009"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-010-1",
+        "name": "Email link to squad channel; request comments within 3\u202fbusiness days",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-011",
+        "name": "Schedule review meeting",
+        "draft": true,
+        "details": "Book a review meeting with stakeholders.",
+        "dependencies": [
+          "task-010"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-011-1",
+        "name": "Book 1\u2011hour slot with product owner, engineering lead, compliance officer",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-012",
+        "name": "Collect stakeholder feedback",
+        "draft": true,
+        "details": "Capture feedback on missing tasks, estimates, and dependencies.",
+        "dependencies": [
+          "task-011"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-012-1",
+        "name": "Capture missing tasks, unrealistic estimates, additional dependencies",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-013",
+        "name": "Update plan",
+        "draft": true,
+        "details": "Incorporate feedback and adjust effort.",
+        "dependencies": [
+          "task-012"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-013-1",
+        "name": "Add newly identified tasks (e.g., \u201cTelemetry data schema finalisation\u201d)",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-013-2",
+        "name": "Adjust effort where variance >\u202f20\u202f%",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-013-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-014",
+        "name": "Validate resource allocation",
+        "draft": true,
+        "details": "Check each owner's time commitment and re\u2011assign if overloaded.",
+        "dependencies": [
+          "task-013"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-014-1",
+        "name": "Cross\u2011check each owner\u2019s %\u2011time commitment; re\u2011assign if >\u202f80\u202f% overload",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-015",
+        "name": "Finalize risk register",
+        "draft": true,
+        "details": "Ensure all high\u2011impact risks have owners and mitigations.",
+        "dependencies": [
+          "task-014"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-015-1",
+        "name": "Ensure every high\u2011impact risk has an owner and mitigation action",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-016",
+        "name": "Document approvals",
+        "draft": true,
+        "details": "Capture signatures or approval comments.",
+        "dependencies": [
+          "task-015"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-016-1",
+        "name": "Capture signatures or approval comments in a \u201cPlan Sign\u2011off\u201d document",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-017",
+        "name": "Publish approved plan",
+        "draft": true,
+        "details": "Store the final Gantt table and notify the team.",
+        "dependencies": [
+          "task-016"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-017-1",
+        "name": "Store final Gantt table in the squad\u2019s shared repo; notify via team channel",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-018",
+        "name": "Kick\u2011off execution",
+        "draft": true,
+        "details": "Begin execution of the approved plan.",
+        "dependencies": [
+          "task-017"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-018-1",
+        "name": "Hold sprint\u2011zero meeting to reaffirm owners & expectations",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-019",
+        "name": "Weekly stand\u2011ups",
+        "draft": true,
+        "details": "Conduct regular stand\u2011up meetings.",
+        "dependencies": [
+          "task-018"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-019-1",
+        "name": "Each owner reports: completed work, %\u2011complete, blockers",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-020",
+        "name": "Update Gantt in real time",
+        "draft": true,
+        "details": "Adjust the plan as work progresses.",
+        "dependencies": [
+          "task-019"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-020-1",
+        "name": "Adjust dates/effort for delayed tasks; cascade to dependents",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-021",
+        "name": "Track success metrics",
+        "draft": true,
+        "details": "Monitor key performance indicators.",
+        "dependencies": [
+          "task-020"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-021-1",
+        "name": "Link completed tasks to latency, accuracy, throughput KPIs",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-021-2",
+        "name": "Visualise trends on a dashboard shared with stakeholders",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-021-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-022",
+        "name": "Risk review at each milestone",
+        "draft": true,
+        "details": "Re\u2011assess mitigations and capture new risks.",
+        "dependencies": [
+          "task-021"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-022-1",
+        "name": "Re\u2011assess mitigation effectiveness; raise new risks",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-023",
+        "name": "Milestone checkpoint meetings",
+        "draft": true,
+        "details": "Hold meetings at each milestone to demonstrate progress.",
+        "dependencies": [
+          "task-022"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-023-1",
+        "name": "Demonstrate deliverable; obtain next\u2011phase approval",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-024",
+        "name": "Final launch readiness",
+        "draft": true,
+        "details": "Complete final steps before production release.",
+        "dependencies": [
+          "task-023"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-024-1",
+        "name": "Perform final performance testing and validation",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      }
+    ],
+    "history": []
+  }
+}

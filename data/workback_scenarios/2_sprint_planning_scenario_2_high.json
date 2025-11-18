@@ -1,0 +1,624 @@
+{
+  "scenario_name": "CareConnect Squad Sprint 7 Planning (Patient Portal Enhancements)",
+  "scenario_number": 2,
+  "meeting_type": "Sprint Planning Meeting",
+  "quality_level": "high",
+  "workback_prompt": "Create a detailed workback plan for Nimbus Health's CareConnect Squad Sprint 7 (14 Oct \u2013 27 Oct 2025). Include all tasks needed to deliver the sprint goal, assign owners, estimate effort, identify critical path items, and map each deliverable to the success criteria and constraints listed in the scenario. Output the plan as a table with columns: Task, Owner, Estimated Effort (hours), Start Date, End Date, Dependencies, Success Metric Alignment.\n\nGenerate a HIGH QUALITY workback plan with these characteristics:\n- Comprehensive task coverage\n- Clear, actionable task descriptions\n- Well-defined dependencies\n- All tasks assigned to specific owners\n- Clear milestones with completion criteria\n- Realistic timelines with buffers\n- Proactive risk management\n- Complete deliverable list\n\nIMPORTANT: Generate a plan that naturally exhibits HIGH quality characteristics.\nDo not explicitly label the plan as \"high quality\" - let the quality emerge from the content.",
+  "generated_at": "2025-11-17T04:32:14.441858",
+  "analysis": "# Outcomes\n\n## 1. Sprint Goal Clarification & Success\u2011Metric Mapping  \nCreate a concise statement of Sprint\u202f7\u2019s goal and explicitly map each success metric and constraint (e.g., \u201cFeature X must be live in production with 0\u202f% regression\u201d, \u201cCompliance\u2011A must be met\u201d) to the work that will be done.  \n**Artifact references:** *none*  \n\n### Reasoning  \nA clear, shared understanding of the goal and the metrics that define \u201cdone\u201d is the foundation for every downstream task. Without this, owners cannot reliably align effort, and the critical\u2011path analysis would be inaccurate.\n\n### Approach  \n1. **Facilitate a goal\u2011definition session** (Product Owner + Scrum Master + Squad).  \n2. **Document success metrics** (e.g., functional acceptance, performance thresholds, regulatory compliance).  \n3. **Create a matrix** that links each metric to the high\u2011level deliverable(s) that will satisfy it.  \n4. **Validate** the matrix with stakeholders (UX, Security, Ops) and obtain sign\u2011off.\n\n---\n\n## 2. High\u2011Level Deliverable Identification  \nEnumerate every deliverable required to meet the sprint goal (e.g., new API endpoint, UI screen, automated test suite, deployment pipeline change).  \n\n### Reasoning  \nListing deliverables before task breakdown ensures completeness and prevents later scope creep. It also makes it easier to see which items are \u201cmust\u2011have\u201d versus \u201cnice\u2011to\u2011have\u201d under the sprint\u2019s timebox.\n\n### Approach  \n1. Review the sprint goal and success\u2011metric matrix.  \n2. Draft a deliverable list in a shared document.  \n3. Categorize each deliverable by type (feature, bug\u2011fix, non\u2011functional improvement, documentation).  \n4. Prioritize based on business value and constraint criticality.  \n\n---\n\n## 3. Detailed Task Decomposition & Owner Assignment  \nBreak each deliverable into granular, actionable tasks, assign a clear owner (role or individual), and estimate effort in hours.  \n\n### Reasoning  \nGranular tasks make the workback schedule realistic, expose dependencies, and give each squad member a concrete piece of work to commit to. Owner assignment eliminates ambiguity about responsibility.\n\n### Approach  \n1. **Facilitated task\u2011breakdown workshop** (Developers, QA, UX, DevOps, Product Owner).  \n2. For each deliverable, ask \u201cWhat is the smallest unit of work that can be completed and verified?\u201d  \n3. Write tasks in the format \u201c<Action> <artifact> for <purpose>\u201d.  \n4. Assign owners based on expertise and capacity.  \n5. Use Planning Poker or analogous technique to estimate effort (hours).  \n6. Capture estimates in a spreadsheet that will feed the workback table.\n\n---\n\n## 4. Dependency Mapping & Critical\u2011Path Identification  \nIdentify all predecessor\u2011successor relationships, then compute the critical path that determines the earliest possible sprint completion.  \n\n### Reasoning  \nDependencies dictate sequencing; the critical path highlights tasks that have zero slack and therefore must be protected from delay. This informs where buffers should be placed.\n\n### Approach  \n1. Populate a dependency matrix using the task list.  \n2. Visualize with a simple Gantt or network diagram.  \n3. Calculate earliest start/finish dates assuming a 14\u2011day sprint window (14\u202fOct\u202f\u2013\u202f27\u202fOct).  \n4. Highlight tasks with zero float as the critical path.  \n5. Flag any external dependencies (e.g., security review) that could become bottlenecks.\n\n---\n\n## 5. Workback Schedule Construction (Table)  \nTranslate the task list, owners, effort, dates, dependencies, and success\u2011metric alignment into the final table format required by the stakeholder.  \n\n### Reasoning  \nThe table is the deliverable the user explicitly requested; it consolidates all planning artifacts into a single, consumable view for the squad and leadership.\n\n### Approach  \n1. Using the critical\u2011path dates, assign realistic start/end dates to each task, inserting a 10\u202f% buffer on high\u2011risk items.  \n2. Add a \u201cSuccess Metric Alignment\u201d column that references the matrix from Outcome\u202f1 (e.g., \u201cMeets Performance\u2011SLA\u201d).  \n3. Review the draft table with the squad for feasibility; adjust effort or dates as needed.  \n4. Finalize and publish the table in the agreed repository (Confluence, SharePoint, etc.).\n\n---\n\n## 6. Risk Register & Mitigation Planning  \nIdentify sprint\u2011level risks (resource, technical, compliance) and define mitigation actions.  \n\n### Reasoning  \nProactive risk management prevents surprises that could jeopardize the critical path or violate constraints.\n\n### Approach  \n1. Conduct a brief risk\u2011identification session after the schedule is drafted.  \n2. Log each risk with probability, impact, owner, and mitigation steps.  \n3. Link high\u2011impact risks to the tasks they affect in the workback table (e.g., \u201cIf security review delayed \u2192 add buffer to Task\u202fX\u201d).  \n\n---\n\n## 7. Review, Sign\u2011off, and Communication Plan  \nObtain formal acceptance of the workback plan and ensure all squad members understand their commitments.  \n\n### Reasoning  \nSign\u2011off creates accountability; a communication plan ensures the schedule stays visible throughout the sprint.\n\n### Approach  \n1. Present the final table, risk register, and success\u2011metric matrix to the Product Owner and Scrum Master.  \n2. Capture any final adjustments and record sign\u2011off (e.g., email or ticket).  \n3. Publish the plan on the squad\u2019s dashboard and schedule a brief \u201cplan\u2011kickoff\u201d meeting on 14\u202fOct to reiterate expectations.  \n\n---\n\n# Breakdown\n\n```\n1. Sprint Goal Clarification & Success\u2011Metric Mapping\n   1.1 Facilitate goal\u2011definition session\n   1.2 Document success metrics & constraints\n   1.3 Build goal\u2011to\u2011metric matrix\n   1.4 Validate & obtain sign\u2011off\n\n2. High\u2011Level Deliverable Identification\n   2.1 Review goal & metric matrix\n   2.2 Draft deliverable list\n   2.3 Categorize & prioritize deliverables\n   2.4 Stakeholder review\n\n3. Detailed Task Decomposition & Owner Assignment\n   3.1 Conduct task\u2011breakdown workshop\n   3.2 Define atomic tasks per deliverable\n   3.3 Assign owners (Dev, QA, UX, DevOps, PO)\n   3.4 Estimate effort (hours)\n   3.5 Record in master task sheet\n\n4. Dependency Mapping & Critical\u2011Path Identification\n   4.1 Populate dependency matrix\n   4.2 Create network diagram\n   4.3 Compute earliest/lates dates\n   4.4 Highlight critical\u2011path tasks\n   4.5 Flag external dependencies\n\n5. Workback Schedule Construction (Table)\n   5.1 Apply buffers (\u224810\u202f% on high\u2011risk tasks)\n   5.2 Assign start/end dates (14\u202fOct\u202f\u2013\u202f27\u202fOct)\n   5.3 Populate \u201cSuccess Metric Alignment\u201d column\n   5.4 Squad review & adjust\n   5.5 Finalize and publish table\n\n6. Risk Register & Mitigation Planning\n   6.1 Identify sprint\u2011level risks\n   6.2 Log risk details (probability, impact, owner)\n   6.3 Map mitigations to tasks\n   6.4 Integrate risk notes into schedule\n\n7. Review, Sign\u2011off, and Communication Plan\n   7.1 Present plan to PO & Scrum Master\n   7.2 Capture final adjustments\n   7.3 Record formal sign\u2011off\n   7.4 Publish on squad dashboard\n   7.5 Schedule plan\u2011kickoff meeting (14\u202fOct)\n```\n\n**Dependencies between outcomes**  \n- Outcome\u202f2 depends on completion of Outcome\u202f1.  \n- Outcome\u202f3 depends on Outcomes\u202f1\u202f&\u202f2.  \n- Outcome\u202f4 depends on Outcome\u202f3 (task list).  \n- Outcome\u202f5 depends on Outcomes\u202f3\u202f&\u202f4 (tasks + dependencies).  \n- Outcome\u202f6 can run in parallel with Outcome\u202f5 but should reference the draft schedule.  \n- Outcome\u202f7 runs after Outcome\u202f5 (final table) and incorporates inputs from Outcome\u202f6 (risk mitigations).  \n\nBy following this structured approach, Nimbus Health\u2019s CareConnect Squad can produce a complete, realistic workback plan for Sprint\u202f7, ensure every task is owned and aligned with success criteria, protect the critical path with buffers, and proactively manage risks\u2014all within the 14\u2011Oct to 27\u2011Oct sprint window.",
+  "plan": {
+    "id": "document-001",
+    "name": "Sprint 7 Workback Plan",
+    "details": "",
+    "draft": true,
+    "participants": [
+      {
+        "name": "Product Owner",
+        "email": "po@example.com",
+        "draft": true
+      },
+      {
+        "name": "Scrum Master",
+        "email": "scrummaster@example.com",
+        "draft": true
+      },
+      {
+        "name": "Developers",
+        "email": "devteam@example.com",
+        "draft": true
+      },
+      {
+        "name": "QA",
+        "email": "qa@example.com",
+        "draft": true
+      },
+      {
+        "name": "UX",
+        "email": "ux@example.com",
+        "draft": true
+      },
+      {
+        "name": "DevOps",
+        "email": "devops@example.com",
+        "draft": true
+      },
+      {
+        "name": "you",
+        "email": "",
+        "draft": true
+      }
+    ],
+    "references": [],
+    "deliverables": [],
+    "tasks": [
+      {
+        "id": "task-001",
+        "name": "Sprint Goal Clarification & Success\u2011Metric Mapping",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-001-1",
+          "task-001-2",
+          "task-001-3",
+          "task-001-4"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": []
+      },
+      {
+        "id": "task-001-1",
+        "name": "Facilitate goal\u2011definition session",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": []
+      },
+      {
+        "id": "task-001-2",
+        "name": "Document success metrics & constraints",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-001-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": []
+      },
+      {
+        "id": "task-001-3",
+        "name": "Build goal\u2011to\u2011metric matrix",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-001-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": []
+      },
+      {
+        "id": "task-001-4",
+        "name": "Validate & obtain sign\u2011off",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-001-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": []
+      },
+      {
+        "id": "task-002",
+        "name": "High\u2011Level Deliverable Identification",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-001",
+          "task-002-1",
+          "task-002-2",
+          "task-002-3",
+          "task-002-4"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": []
+      },
+      {
+        "id": "task-002-1",
+        "name": "Review goal & metric matrix",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": []
+      },
+      {
+        "id": "task-002-2",
+        "name": "Draft deliverable list",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-002-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": []
+      },
+      {
+        "id": "task-002-3",
+        "name": "Categorize & prioritize deliverables",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-002-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": []
+      },
+      {
+        "id": "task-002-4",
+        "name": "Stakeholder review",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-002-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": []
+      },
+      {
+        "id": "task-003",
+        "name": "Detailed Task Decomposition & Owner Assignment",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-001",
+          "task-002",
+          "task-003-1",
+          "task-003-2",
+          "task-003-3",
+          "task-003-4",
+          "task-003-5"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": []
+      },
+      {
+        "id": "task-003-1",
+        "name": "Conduct task\u2011breakdown workshop",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": []
+      },
+      {
+        "id": "task-003-2",
+        "name": "Define atomic tasks per deliverable",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-003-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": []
+      },
+      {
+        "id": "task-003-3",
+        "name": "Assign owners (Dev, QA, UX, DevOps, PO)",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-003-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": []
+      },
+      {
+        "id": "task-003-4",
+        "name": "Estimate effort (hours)",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-003-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": []
+      },
+      {
+        "id": "task-003-5",
+        "name": "Record in master task sheet",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-003-4"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": []
+      },
+      {
+        "id": "task-004",
+        "name": "Dependency Mapping & Critical\u2011Path Identification",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-003",
+          "task-004-1",
+          "task-004-2",
+          "task-004-3",
+          "task-004-4",
+          "task-004-5"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": []
+      },
+      {
+        "id": "task-004-1",
+        "name": "Populate dependency matrix",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": []
+      },
+      {
+        "id": "task-004-2",
+        "name": "Create network diagram",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-004-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": []
+      },
+      {
+        "id": "task-004-3",
+        "name": "Compute earliest/lates dates",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-004-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": []
+      },
+      {
+        "id": "task-004-4",
+        "name": "Highlight critical\u2011path tasks",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-004-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": []
+      },
+      {
+        "id": "task-004-5",
+        "name": "Flag external dependencies",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-004-4"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": []
+      },
+      {
+        "id": "task-005",
+        "name": "Workback Schedule Construction (Table)",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-003",
+          "task-004",
+          "task-005-1",
+          "task-005-2",
+          "task-005-3",
+          "task-005-4",
+          "task-005-5"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": []
+      },
+      {
+        "id": "task-005-1",
+        "name": "Apply buffers (\u224810\u202f% on high\u2011risk tasks)",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": []
+      },
+      {
+        "id": "task-005-2",
+        "name": "Assign start/end dates (14\u202fOct\u202f\u2013\u202f27\u202fOct)",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-005-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": []
+      },
+      {
+        "id": "task-005-3",
+        "name": "Populate \u201cSuccess Metric Alignment\u201d column",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-005-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": []
+      },
+      {
+        "id": "task-005-4",
+        "name": "Squad review & adjust",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-005-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": []
+      },
+      {
+        "id": "task-005-5",
+        "name": "Finalize and publish table",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-005-4"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": []
+      },
+      {
+        "id": "task-006",
+        "name": "Risk Register & Mitigation Planning",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-006-1",
+          "task-006-2",
+          "task-006-3",
+          "task-006-4"
+        ],
+        "co-dependencies": [
+          "task-005"
+        ],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": []
+      },
+      {
+        "id": "task-006-1",
+        "name": "Identify sprint\u2011level risks",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": []
+      },
+      {
+        "id": "task-006-2",
+        "name": "Log risk details (probability, impact, owner)",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-006-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": []
+      },
+      {
+        "id": "task-006-3",
+        "name": "Map mitigations to tasks",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-006-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": []
+      },
+      {
+        "id": "task-006-4",
+        "name": "Integrate risk notes into schedule",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-006-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": []
+      },
+      {
+        "id": "task-007",
+        "name": "Review, Sign\u2011off, and Communication Plan",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-005",
+          "task-006",
+          "task-007-1",
+          "task-007-2",
+          "task-007-3",
+          "task-007-4",
+          "task-007-5"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": []
+      },
+      {
+        "id": "task-007-1",
+        "name": "Present plan to PO & Scrum Master",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": []
+      },
+      {
+        "id": "task-007-2",
+        "name": "Capture final adjustments",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-007-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": []
+      },
+      {
+        "id": "task-007-3",
+        "name": "Record formal sign\u2011off",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-007-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": []
+      },
+      {
+        "id": "task-007-4",
+        "name": "Publish on squad dashboard",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-007-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": []
+      },
+      {
+        "id": "task-007-5",
+        "name": "Schedule plan\u2011kickoff meeting (14\u202fOct)",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-007-4"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": []
+      }
+    ],
+    "history": []
+  }
+}

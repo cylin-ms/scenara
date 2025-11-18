@@ -1,0 +1,143 @@
+{
+  "basic_info": {
+    "full_name": "Marcus Johnson",
+    "age": 32,
+    "location": "Austin, Texas, USA",
+    "timezone": "America/Chicago",
+    "years_experience": 8,
+    "education": {
+      "degree": "B.S. Computer Science",
+      "institution": "University of Texas at Austin",
+      "graduation_year": 2015
+    }
+  },
+  "work_habits": {
+    "preferred_working_hours": "07:00-15:00",
+    "work_style": "early bird",
+    "peak_productivity_times": "08:00-11:00",
+    "communication_style": {
+      "preference": "async",
+      "average_response_time_minutes": 45
+    },
+    "meeting_preferences": {
+      "minimizes_meetings": true,
+      "preferred_meeting_type": "short stand‑ups (15 min) or async updates",
+      "max_meetings_per_week": 4
+    },
+    "work_environment": "hybrid (3 days remote, 2 days office)",
+    "focus_time_requirements": {
+      "daily_uninterrupted_hours": 3,
+      "preferred_time_blocks": [
+        "08:00-11:00",
+        "13:00-15:00"
+      ]
+    }
+  },
+  "personality": {
+    "mbti": "ISTJ",
+    "decision_making_approach": "data‑driven with stakeholder input",
+    "risk_tolerance": "moderate",
+    "collaboration_style": "team‑oriented, likes clear roles",
+    "stress_management_approach": "daily 30‑min run + mindfulness app",
+    "conflict_resolution_style": "collaborative, seeks win‑win solutions"
+  },
+  "skills": {
+    "core_technical_skills": {
+      "Java": 9,
+      "Python": 8,
+      "JavaScript/Node.js": 7,
+      "SQL": 9,
+      "NoSQL (MongoDB)": 6,
+      "Docker/Kubernetes": 7,
+      "AWS (EC2, S3, Lambda)": 6,
+      "CI/CD (Jenkins, GitHub Actions)": 8,
+      "Microservices Architecture": 7,
+      "Test‑Driven Development": 8
+    },
+    "leadership_abilities": 6,
+    "domain_expertise_areas": [
+      "Enterprise SaaS platforms",
+      "Payment processing systems",
+      "Data analytics pipelines"
+    ],
+    "learning_agility": 8,
+    "tools_proficiency": [
+      "IntelliJ IDEA",
+      "VS Code",
+      "Jira",
+      "Confluence",
+      "Git",
+      "Slack",
+      "Postman"
+    ],
+    "languages_spoken": [
+      "English (native)",
+      "Spanish (conversational)"
+    ]
+  },
+  "performance": {
+    "task_completion_rate_percent": 92,
+    "quality_score_percent": 94,
+    "estimation_accuracy_percent": 88,
+    "multitasking_ability": 6,
+    "performance_under_pressure": 8
+  },
+  "availability": {
+    "available_hours_per_week": 38,
+    "timezone": "America/Chicago",
+    "typical_working_hours": "07:00-15:00 (CST)",
+    "planned_time_off_days_per_year": 18,
+    "other_commitments": [
+      "Mentors two junior engineers (1 hour/week each)",
+      "Runs a monthly brown‑bag tech talk"
+    ],
+    "travel_flexibility": "up to 10 % travel (≈2‑3 onsite days per quarter)"
+  },
+  "personal_factors": {
+    "family_status": "Married, one child (age 4)",
+    "caregiving_responsibilities": "None",
+    "commute_situation": "2‑mile drive, ~10 min each way on average",
+    "health_considerations": "Mild asthma, avoids heavy physical strain",
+    "career_motivation": "Become a Staff Engineer within 2 years; lead high‑impact product features"
+  },
+  "project_impact": {
+    "reliability": 9,
+    "innovation_tendency": 6,
+    "documentation_quality": 8,
+    "mentorship_capability": 7,
+    "influence_level": 6
+  },
+  "collaboration": {
+    "meeting_frequency_preference": "Twice‑weekly team stand‑ups; ad‑hoc syncs only when needed",
+    "communication_channels_preference": [
+      "Slack (primary)",
+      "Jira comments",
+      "Email (for formal summaries)"
+    ],
+    "feedback_style": "direct but respectful; prefers constructive specifics",
+    "knowledge_sharing_habits": "writes Confluence run‑books, hosts monthly brown‑bag sessions, contributes to internal wiki",
+    "cross_team_collaboration": 7
+  },
+  "risk_factors": {
+    "potential_bottlenecks": [
+      "Limited recent experience with serverless architectures",
+      "Dependence on legacy monolith for critical data"
+    ],
+    "backup_person_needed": "Senior Engineer Alex Patel (Team Lead, Cloud Services)",
+    "ramp_up_time_weeks_for_new_projects": 3,
+    "context_switching_tolerance": 5,
+    "burnout_risk_factors": [
+      "Occasional high meeting load during release weeks",
+      "Tendency to take on extra mentorship duties"
+    ]
+  },
+  "_metadata": {
+    "generated_at": "2025-11-17T15:17:53.316530",
+    "name": "Marcus Johnson",
+    "role": "Software Engineer",
+    "seniority": "mid",
+    "company": "TechCorp",
+    "model": "gpt-oss:120b",
+    "provider": "ollama"
+  }
+}

@@ -1,0 +1,911 @@
+{
+  "scenario_name": "Helios Energy Solutions Q1\u202f2025 Quarterly Business Review",
+  "scenario_number": 3,
+  "meeting_type": "Quarterly Business Review",
+  "quality_level": "high",
+  "workback_prompt": "Generate a detailed work\u2011back plan for the Helios Energy Solutions Q1\u202f2025 Quarterly Business Review. Include all tasks required to prepare pre\u2011reads (financial deck, market analysis, risk register, ESG report), coordinate department presentations, secure video\u2011link testing, distribute board materials, collect approvals, and capture post\u2011meeting action items. Identify owners, dependencies, critical path milestones, and deadlines that align with the meeting date of May\u202f14\u202f2025 (08:30\u202f\u2013\u202f12:30\u202fET). Account for constraints such as the $150\u202fM capital\u2011allocation cap, regulatory permitting timeline, and the five\u2011day pre\u2011read distribution window.\n\nGenerate a HIGH QUALITY workback plan with these characteristics:\n- Comprehensive task coverage\n- Clear, actionable task descriptions\n- Well-defined dependencies\n- All tasks assigned to specific owners\n- Clear milestones with completion criteria\n- Realistic timelines with buffers\n- Proactive risk management\n- Complete deliverable list\n\nIMPORTANT: Generate a plan that naturally exhibits HIGH quality characteristics.\nDo not explicitly label the plan as \"high quality\" - let the quality emerge from the content.",
+  "generated_at": "2025-11-17T06:30:02.909017",
+  "analysis": "# Outcomes  \n\n## 1. Finalize Q1\u202f2025 QBR Pre\u2011read Pack  \nComplete the financial deck, market analysis, risk register, and ESG report, incorporate the $150\u202fM capital\u2011allocation cap and regulatory permitting timeline, and obtain sign\u2011off from all owners.  \n\n**Artifact references:** none (derived from user request)\n\n### Reasoning  \nThe user explicitly needs a set of pre\u2011reads that must be ready **before** the five\u2011day distribution window (May\u202f9\u202f2025). All four components are listed as required deliverables, and the capital\u2011allocation and permitting constraints must be reflected in the content. Without a signed\u2011off pack, subsequent steps (distribution, approvals, presentations) cannot proceed, making this the first critical\u2011path outcome.\n\n### Approach  \n1. **Kick\u2011off & Scope Confirmation** \u2013 Align owners on scope, data sources, and constraint incorporation.  \n2. **Data Collection & Drafting** \u2013 Each owner drafts their section using the latest internal data (financials, market trends, risk items, ESG metrics).  \n3. **Integrated Review** \u2013 A project coordinator merges the sections into a single deck, checks for consistency, and verifies that the $150\u202fM cap and permitting dates are correctly represented.  \n4. **Internal Review Cycle** \u2013 Circulate the integrated pack to senior reviewers (Finance VP, Market Head, Risk Officer, ESG Lead) for comments.  \n5. **Incorporate Feedback & Final Sign\u2011off** \u2013 Revise the pack, obtain formal sign\u2011off from each owner (documented email or approval form).  \n6. **Package for Distribution** \u2013 Export PDFs, create a secure share folder, and generate a distribution checklist.  \n\n**Milestone:** \u201cPre\u2011read Pack Sign\u2011off\u201d \u2013 all four sections approved and packaged (target\u202fdate\u202fMay\u202f5\u202f2025).  \n\n---\n\n## 2. Conduct Department Presentation Rehearsals  \nPrepare and rehearse each department\u2019s 5\u2011minute presentation to ensure timing, messaging, and slide alignment with the pre\u2011read pack.  \n\n**Artifact references:** none  \n\n### Reasoning  \nThe QBR agenda includes live presentations from Finance, Market, Risk, and ESG. Rehearsals are needed to avoid overruns and to surface any gaps between the live talk and the pre\u2011read content. This outcome depends on the finalized pre\u2011read pack (Outcome\u202f1) and must be completed before the video\u2011link test sign\u2011off.  \n\n### Approach  \n1. **Schedule Rehearsal Slots** \u2013 Project coordinator books 30\u2011minute rehearsal windows for each department (preferably May\u202f6\u20118).  \n2. **Run\u2011throughs** \u2013 Departments present using the final slide set; a moderator notes timing, slide errors, and Q&A gaps.  \n3. **Feedback Loop** \u2013 Immediate feedback is sent to presenters; minor edits are made to slides or talking points.  \n4. **Final Dry\u2011Run** \u2013 All presenters join a joint rehearsal on May\u202f9 to confirm flow and transitions.  \n\n**Milestone:** \u201cRehearsal Sign\u2011off\u201d \u2013 all presenters confirmed they can deliver within allotted time (target\u202fdate\u202fMay\u202f9\u202f2025).  \n\n---\n\n## 3. Secure Video\u2011link Testing & Technical Readiness  \nValidate the video\u2011conference platform, screen\u2011sharing, recording, and backup connectivity to guarantee a seamless virtual experience for board members.  \n\n**Artifact references:** none  \n\n### Reasoning  \nTechnical failure would jeopardize the QBR. The user specifically requests \u201csecure video\u2011link testing.\u201d This task must be completed **before** the board materials are distributed (so any platform\u2011specific instructions can be included) and **after** the rehearsal dry\u2011run (to test the exact slide set).  \n\n### Approach  \n1. **Select Platform & Licensing** \u2013 IT Lead confirms platform (e.g., Teams, Zoom) meets security and capacity requirements.  \n2. **Create Test Meeting** \u2013 Set up a meeting with the same settings (waiting room, recording, dual\u2011screen) as the QBR.  \n3. **Run Technical Test** \u2013 Invite a sample of presenters and IT support; test audio, video, screen\u2011share, and recording.  \n4. **Document Findings** \u2013 Capture any issues, resolution steps, and create a \u201cTechnical Run\u2011Book.\u201d  \n5. **Backup Plan** \u2013 Arrange a secondary platform and a dial\u2011in number; test fail\u2011over.  \n6. **Final Sign\u2011off** \u2013 IT Lead signs off that the environment is production\u2011ready.  \n\n**Milestone:** \u201cVideo\u2011link Test Sign\u2011off\u201d \u2013 technical environment cleared for live QBR (target\u202fdate\u202fMay\u202f10\u202f2025).  \n\n---\n\n## 4. Distribute Board Materials (Pre\u2011reads)  \nDeliver the finalized pre\u2011read pack to all board members and senior executives, respecting the five\u2011day distribution window.  \n\n**Artifact references:** none  \n\n### Reasoning  \nThe meeting is on May\u202f14\u202f2025; the user requires a five\u2011day pre\u2011read window, so distribution must occur no later than May\u202f9\u202f2025. Distribution cannot happen until the pre\u2011read pack is signed off (Outcome\u202f1) and the technical platform is validated (Outcome\u202f3) so that any access instructions are accurate.  \n\n### Approach  \n1. **Compile Distribution List** \u2013 Board Liaison confirms email addresses, preferred formats, and any accessibility requirements.  \n2. **Prepare Secure Delivery Mechanism** \u2013 Use encrypted email or a secure portal; generate unique access links.  \n3. **Send Materials** \u2013 Dispatch the pack with a cover note, agenda, and technical instructions (from Outcome\u202f3).  \n4. **Confirm Receipt** \u2013 Track read\u2011receipts; follow up with any non\u2011responders within 24\u202fhours.  \n5. **Log Distribution** \u2013 Update a distribution register with timestamps and acknowledgments.  \n\n**Milestone:** \u201cPre\u2011read Distribution Complete\u201d \u2013 all recipients have received and acknowledged the pack (target\u202fdate\u202fMay\u202f9\u202f2025).  \n\n---\n\n## 5. Collect Approvals & Sign\u2011offs  \nObtain formal approval from the Executive Sponsor, CFO, and Board Chair on the financial assumptions, capital\u2011allocation limit, and risk mitigation plan.  \n\n**Artifact references:** none  \n\n### Reasoning  \nEven after distribution, the QBR cannot proceed without executive sign\u2011off on key decisions (capital allocation, regulatory permitting). This outcome must follow distribution (Outcome\u202f4) but precede the meeting itself.  \n\n### Approach  \n1. **Send Approval Request** \u2013 Executive Sponsor circulates a concise approval memo referencing the pre\u2011read pack.  \n2. **Track Responses** \u2013 Project coordinator logs approvals; set automatic reminders for pending sign\u2011offs.  \n3. **Escalate if Needed** \u2013 If any approver delays beyond 48\u202fhours, the sponsor escalates to the next level.  \n4. **Document Final Approvals** \u2013 Store signed approval forms in the secure QBR folder.  \n\n**Milestone:** \u201cAll Approvals Received\u201d \u2013 documented sign\u2011offs from required executives (target\u202fdate\u202fMay\u202f12\u202f2025).  \n\n---\n\n## 6. Capture Post\u2011Meeting Action Items & Closeout  \nDocument decisions, assign owners, and establish follow\u2011up timelines for all action items generated during the QBR.  \n\n**Artifact references:** none  \n\n### Reasoning  \nThe QBR\u2019s purpose is to drive execution. Capturing action items promptly ensures accountability and aligns with the user\u2019s request for \u201cpost\u2011meeting action items.\u201d This outcome begins at the meeting\u2019s conclusion and must be completed shortly after to maintain momentum.  \n\n### Approach  \n1. **Live Capture** \u2013 A designated Scribe records decisions and action items in a shared tracker during the meeting.  \n2. **Validate with Participants** \u2013 Immediately after the meeting, the Scribe circulates the draft tracker for confirmation.  \n3. **Assign Owners & Due Dates** \u2013 Each action is linked to a responsible owner and realistic deadline (typically within 30\u202fdays).  \n4. **Distribute Final Tracker** \u2013 Send the finalized action\u2011item list to all participants and upload to the QBR repository.  \n5. **Schedule Follow\u2011up Review** \u2013 Set a post\u2011QBR status meeting (e.g., June\u202f15\u202f2025) to review progress.  \n\n**Milestone:** \u201cAction\u2011Item Tracker Signed\u2011off\u201d \u2013 all items validated and distributed (target\u202fdate\u202fMay\u202f16\u202f2025).  \n\n---\n\n# Breakdown  \n\n### Overall Timeline (Key Dates)  \n- **May\u202f1\u202f2025** \u2013 Kick\u2011off & scope confirmation (Outcome\u202f1)  \n- **May\u202f5\u202f2025** \u2013 Pre\u2011read Pack Sign\u2011off (Outcome\u202f1)  \n- **May\u202f6\u20118\u202f2025** \u2013 Department rehearsals (Outcome\u202f2)  \n- **May\u202f9\u202f2025** \u2013 Final dry\u2011run & Pre\u2011read Distribution (Outcomes\u202f2 &\u202f4)  \n- **May\u202f10\u202f2025** \u2013 Video\u2011link Test Sign\u2011off (Outcome\u202f3)  \n- **May\u202f12\u202f2025** \u2013 All executive approvals received (Outcome\u202f5)  \n- **May\u202f14\u202f2025** \u2013 QBR meeting (08:30\u201112:30\u202fET)  \n- **May\u202f16\u202f2025** \u2013 Action\u2011Item Tracker signed\u2011off (Outcome\u202f6)  \n- **June\u202f15\u202f2025** \u2013 Post\u2011QBR status review  \n\n---\n\n## 1. Finalize Q1\u202f2025 QBR Pre\u2011read Pack  \n\n1.1 **Kick\u2011off & Scope Confirmation** \u2013 Project Coordinator (Owner)  \n\u2003- Schedule 1\u2011hour kickoff meeting (Due\u202fMay\u202f1)  \n\u2003- Document scope, data sources, constraints  \n\n1.2 **Data Collection & Drafting**  \n\u2003- 1.2.1 Financial Deck \u2013 Finance Lead (Due\u202fMay\u202f2)  \n\u2003- 1.2.2 Market Analysis \u2013 Market Analyst (Due\u202fMay\u202f2)  \n\u2003- 1.2.3 Risk Register \u2013 Risk Manager (Due\u202fMay\u202f3) \u2013 embed regulatory permitting timeline  \n\u2003- 1.2.4 ESG Report \u2013 ESG Lead (Due\u202fMay\u202f3)  \n\n1.3 **Integrated Review** \u2013 Project Coordinator (Due\u202fMay\u202f4)  \n\u2003- Merge sections, verify $150\u202fM cap alignment, check formatting  \n\n1.4 **Internal Review Cycle** \u2013 Senior Reviewers (Finance VP, Market Head, Risk Officer, ESG Lead) (Due\u202fMay\u202f4)  \n\u2003- Collect comments via shared document  \n\n1.5 **Incorporate Feedback & Final Sign\u2011off** \u2013 Respective owners (Due\u202fMay\u202f5)  \n\u2003- Obtain email confirmation of approval  \n\n1.6 **Package for Distribution** \u2013 Project Coordinator (Due\u202fMay\u202f5)  \n\u2003- Export PDFs, create secure folder, generate checklist  \n\n*Dependencies:* 1.2 \u2192 1.3 \u2192 1.4 \u2192 1.5 \u2192 1.6  \n\n*Critical Path Milestone:* Pre\u2011read Pack Sign\u2011off (May\u202f5)  \n\n---\n\n## 2. Conduct Department Presentation Rehearsals  \n\n2.1 **Schedule Rehearsal Slots** \u2013 Project Coordinator (Due\u202fMay\u202f5)  \n\u2003- Book 30\u2011min slots May\u202f6\u20118  \n\n2.2 **Run\u2011throughs** \u2013 Each Department (Finance Lead, Market Analyst, Risk Manager, ESG Lead) (May\u202f6\u20118)  \n\u2003- Present, record timing, note issues  \n\n2.3 **Feedback Loop** \u2013 Project Coordinator (May\u202f6\u20118)  \n\u2003- Send feedback email, track revisions  \n\n2.4 **Final Dry\u2011Run (All\u2011Hands)** \u2013 All presenters + IT Support (May\u202f9)  \n\u2003- Verify slide order, transitions, Q&A flow  \n\n*Dependencies:* 1.6 must be completed before 2.2 (final slides)  \n\n*Critical Path Milestone:* Rehearsal Sign\u2011off (May\u202f9)  \n\n---\n\n## 3. Secure Video\u2011link Testing & Technical Readiness  \n\n3.1 **Select Platform & Licensing** \u2013 IT Lead (Due\u202fMay\u202f2)  \n\n3.2 **Create Test Meeting** \u2013 IT Lead (Due\u202fMay\u202f3)  \n\n3.3 **Run Technical Test** \u2013 IT Lead + presenters (May\u202f4)  \n\n3.4 **Document Findings & Run\u2011Book** \u2013 IT Lead (Due\u202fMay\u202f5)  \n\n3.5 **Backup Plan Setup** \u2013 IT Lead (Due\u202fMay\u202f6)  \n\n3.6 **Final Sign\u2011off** \u2013 IT Lead (Due\u202fMay\u202f10)  \n\n*Dependencies:* 2.4 (dry\u2011run) must occur before 3.3 to test actual slide set  \n\n*Critical Path Milestone:* Video\u2011link Test Sign\u2011off (May\u202f10)  \n\n---\n\n## 4. Distribute Board Materials (Pre\u2011reads)  \n\n4.1 **Compile Distribution List** \u2013 Board Liaison (Due\u202fMay\u202f5)  \n\n4.2 **Prepare Secure Delivery Mechanism** \u2013 IT Security (Due\u202fMay\u202f6)  \n\n4.3 **Send Materials** \u2013 Project Coordinator (Due\u202fMay\u202f9\u202f08:00\u202fET)  \n\n4.4 **Confirm Receipt** \u2013 Project Coordinator (May\u202f9\u201110)  \n\u2003- Follow\u2011up non\u2011responders within 24\u202fh  \n\n4.5 **Log Distribution** \u2013 Project Coordinator (May\u202f10)  \n\n*Dependencies:* 1.6 (pack ready) and 3.6 (technical instructions) must be complete before 4.3  \n\n*Critical Path Milestone:* Pre\u2011read Distribution Complete (May\u202f9)  \n\n---\n\n## 5. Collect Approvals & Sign\u2011offs  \n\n5.1 **Send Approval Request Memo** \u2013 Executive Sponsor (Due\u202fMay\u202f10)  \n\n5.2 **Track Responses** \u2013 Project Coordinator (May\u202f10\u201112)  \n\n5.3 **Escalate Delays** \u2013 Executive Sponsor (if needed, May\u202f11)  \n\n5.4 **Document Final Approvals** \u2013 Project Coordinator (Due\u202fMay\u202f12)  \n\n*Dependencies:* Distribution (4.3) must be done before approvers can review  \n\n*Critical Path Milestone:* All Approvals Received (May\u202f12)  \n\n---\n\n## 6. Capture Post\u2011Meeting Action Items & Closeout  \n\n6.1 **Live Capture (Scribe)** \u2013 Designated Scribe (During QBR, May\u202f14)  \n\n6.2 **Validate Draft Tracker** \u2013 All presenters & Executive Sponsor (May\u202f15)  \n\n6.3 **Assign Owners & Due Dates** \u2013 Project Coordinator (May\u202f15)  \n\n6.4 **Distribute Final Tracker** \u2013 Project Coordinator (May\u202f16)  \n\n6.5 **Schedule Follow\u2011up Review** \u2013 Executive Sponsor (May\u202f16)  \n\n*Dependencies:* QBR must occur; approvals (Outcome\u202f5) ensure decisions are authorized  \n\n*Critical Path Milestone:* Action\u2011Item Tracker Signed\u2011off (May\u202f16)  \n\n---\n\n### Risk Management (Cross\u2011Outcome)  \n\n| Risk | Owner | Mitigation | Contingency |\n|------|-------|------------|-------------|\n| Delay in financial data collection | Finance Lead | Request data from accounting 48\u202fh in advance | Use prior\u2011month provisional figures with disclaimer |\n| Platform incompatibility with board IT | IT Lead | Conduct compatibility test with a board member on May\u202f4 | Switch to secondary platform (already licensed) |\n| Approver unavailable during window | Executive Sponsor | Secure pre\u2011approval commitment in advance | Obtain written proxy or delegate authority |\n| Distribution email bounce\u2011backs | Board Liaison | Verify email list 48\u202fh before send | Use secure portal link as fallback |\n| Overrun of presentation time | Presenters | Enforce 5\u2011minute limit in rehearsals | Prepare \u201ccut\u2011off\u201d slide to skip if needed |\n\nEach risk is logged in the risk register (part of Outcome\u202f1) and reviewed during the daily status check (Project Coordinator).  \n\n---  \n\n**End of Work\u2011back Plan**.",
+  "plan": {
+    "id": "document-001",
+    "name": "Q1 2025 QBR Workback Plan",
+    "details": "Workback plan for Q1 2025 Quarterly Business Review covering pre\u2011read pack finalization, rehearsals, technical readiness, distribution, approvals, and post\u2011meeting closeout.",
+    "draft": true,
+    "participants": [
+      {
+        "name": "Project Coordinator",
+        "email": "pc@example.com",
+        "draft": true
+      },
+      {
+        "name": "Finance Lead",
+        "email": "finance.lead@example.com",
+        "draft": true
+      },
+      {
+        "name": "Market Analyst",
+        "email": "market.analyst@example.com",
+        "draft": true
+      },
+      {
+        "name": "Risk Manager",
+        "email": "risk.manager@example.com",
+        "draft": true
+      },
+      {
+        "name": "ESG Lead",
+        "email": "esg.lead@example.com",
+        "draft": true
+      },
+      {
+        "name": "Finance VP",
+        "email": "finance.vp@example.com",
+        "draft": true
+      },
+      {
+        "name": "Market Head",
+        "email": "market.head@example.com",
+        "draft": true
+      },
+      {
+        "name": "Risk Officer",
+        "email": "risk.officer@example.com",
+        "draft": true
+      },
+      {
+        "name": "IT Lead",
+        "email": "it.lead@example.com",
+        "draft": true
+      },
+      {
+        "name": "IT Security",
+        "email": "it.security@example.com",
+        "draft": true
+      },
+      {
+        "name": "Board Liaison",
+        "email": "board.liaison@example.com",
+        "draft": true
+      },
+      {
+        "name": "Executive Sponsor",
+        "email": "exec.sponsor@example.com",
+        "draft": true
+      },
+      {
+        "name": "Designated Scribe",
+        "email": "scribe@example.com",
+        "draft": true
+      }
+    ],
+    "references": [],
+    "deliverables": [],
+    "tasks": [
+      {
+        "id": "task-001",
+        "name": "Kick\u2011off & Scope Confirmation",
+        "draft": true,
+        "details": "Schedule 1\u2011hour kickoff meeting, document scope, data sources, and constraints.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-01",
+        "assignees": [
+          "pc@example.com"
+        ]
+      },
+      {
+        "id": "task-002",
+        "name": "Data Collection & Drafting",
+        "draft": true,
+        "details": "Collect data and draft each section of the pre\u2011read pack.",
+        "dependencies": [
+          "task-001"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-03",
+        "assignees": [
+          "pc@example.com"
+        ]
+      },
+      {
+        "id": "task-003",
+        "name": "Financial Deck Draft",
+        "draft": true,
+        "details": "Finance Lead drafts the financial deck.",
+        "dependencies": [
+          "task-001"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-02",
+        "assignees": [
+          "finance.lead@example.com"
+        ]
+      },
+      {
+        "id": "task-004",
+        "name": "Market Analysis Draft",
+        "draft": true,
+        "details": "Market Analyst drafts the market analysis.",
+        "dependencies": [
+          "task-001"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-02",
+        "assignees": [
+          "market.analyst@example.com"
+        ]
+      },
+      {
+        "id": "task-005",
+        "name": "Risk Register Draft",
+        "draft": true,
+        "details": "Risk Manager drafts the risk register.",
+        "dependencies": [
+          "task-001"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-03",
+        "assignees": [
+          "risk.manager@example.com"
+        ]
+      },
+      {
+        "id": "task-006",
+        "name": "ESG Report Draft",
+        "draft": true,
+        "details": "ESG Lead drafts the ESG report.",
+        "dependencies": [
+          "task-001"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-03",
+        "assignees": [
+          "esg.lead@example.com"
+        ]
+      },
+      {
+        "id": "task-007",
+        "name": "Integrated Review",
+        "draft": true,
+        "details": "Project Coordinator merges all drafted sections and performs integrated review.",
+        "dependencies": [
+          "task-003",
+          "task-004",
+          "task-005",
+          "task-006"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-04",
+        "assignees": [
+          "pc@example.com"
+        ]
+      },
+      {
+        "id": "task-008",
+        "name": "Internal Review Cycle",
+        "draft": true,
+        "details": "Senior reviewers (Finance VP, Market Head, Risk Officer, ESG Lead) review the integrated pack.",
+        "dependencies": [
+          "task-007"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-04",
+        "assignees": [
+          "finance.vp@example.com",
+          "market.head@example.com",
+          "risk.officer@example.com",
+          "esg.lead@example.com"
+        ]
+      },
+      {
+        "id": "task-009",
+        "name": "Incorporate Feedback & Final Sign\u2011off",
+        "draft": true,
+        "details": "Incorporate reviewer feedback and obtain final sign\u2011off on each section.",
+        "dependencies": [
+          "task-008"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-05",
+        "assignees": [
+          "pc@example.com"
+        ]
+      },
+      {
+        "id": "task-010",
+        "name": "Package for Distribution",
+        "draft": true,
+        "details": "Finalize the pre\u2011read pack and prepare it for distribution.",
+        "dependencies": [
+          "task-009"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-05",
+        "assignees": [
+          "pc@example.com"
+        ]
+      },
+      {
+        "id": "task-011",
+        "name": "Schedule Rehearsal Slots",
+        "draft": true,
+        "details": "Project Coordinator books rehearsal times for each presenter.",
+        "dependencies": [
+          "task-010"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-05",
+        "assignees": [
+          "pc@example.com"
+        ]
+      },
+      {
+        "id": "task-012",
+        "name": "Run\u2011throughs",
+        "draft": true,
+        "details": "Each department lead conducts a 5\u2011minute run\u2011through of their presentation.",
+        "dependencies": [
+          "task-011",
+          "task-010"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-08",
+        "assignees": [
+          "finance.lead@example.com",
+          "market.analyst@example.com",
+          "risk.manager@example.com",
+          "esg.lead@example.com"
+        ]
+      },
+      {
+        "id": "task-013",
+        "name": "Feedback Loop",
+        "draft": true,
+        "details": "Project Coordinator consolidates rehearsal feedback and shares with presenters.",
+        "dependencies": [
+          "task-012"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-08",
+        "assignees": [
+          "pc@example.com"
+        ]
+      },
+      {
+        "id": "task-014",
+        "name": "Final Dry\u2011Run (All\u2011Hands)",
+        "draft": true,
+        "details": "All presenters and IT support perform a final dry\u2011run of the full agenda.",
+        "dependencies": [
+          "task-013"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-09",
+        "assignees": [
+          "pc@example.com",
+          "it.lead@example.com"
+        ]
+      },
+      {
+        "id": "task-015",
+        "name": "Select Platform & Licensing",
+        "draft": true,
+        "details": "IT Lead selects the video platform and secures licensing.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-02",
+        "assignees": [
+          "it.lead@example.com"
+        ]
+      },
+      {
+        "id": "task-016",
+        "name": "Create Test Meeting",
+        "draft": true,
+        "details": "IT Lead creates a test meeting in the selected platform.",
+        "dependencies": [
+          "task-015"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-03",
+        "assignees": [
+          "it.lead@example.com"
+        ]
+      },
+      {
+        "id": "task-017",
+        "name": "Run Technical Test",
+        "draft": true,
+        "details": "IT Lead and presenters test the platform with actual slide set.",
+        "dependencies": [
+          "task-016",
+          "task-014"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-04",
+        "assignees": [
+          "it.lead@example.com",
+          "finance.lead@example.com",
+          "market.analyst@example.com",
+          "risk.manager@example.com",
+          "esg.lead@example.com"
+        ]
+      },
+      {
+        "id": "task-018",
+        "name": "Document Findings & Run\u2011Book",
+        "draft": true,
+        "details": "IT Lead documents technical test results and creates a run\u2011book.",
+        "dependencies": [
+          "task-017"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-05",
+        "assignees": [
+          "it.lead@example.com"
+        ]
+      },
+      {
+        "id": "task-019",
+        "name": "Backup Plan Setup",
+        "draft": true,
+        "details": "IT Lead configures secondary platform as a backup.",
+        "dependencies": [
+          "task-016"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-06",
+        "assignees": [
+          "it.lead@example.com"
+        ]
+      },
+      {
+        "id": "task-020",
+        "name": "Final Technical Sign\u2011off",
+        "draft": true,
+        "details": "IT Lead signs off on technical readiness after documentation and backup plan are complete.",
+        "dependencies": [
+          "task-018",
+          "task-019"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-10",
+        "assignees": [
+          "it.lead@example.com"
+        ]
+      },
+      {
+        "id": "task-021",
+        "name": "Compile Distribution List",
+        "draft": true,
+        "details": "Board Liaison verifies and finalizes the list of board members and stakeholders.",
+        "dependencies": [
+          "task-010",
+          "task-020"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-05",
+        "assignees": [
+          "board.liaison@example.com"
+        ]
+      },
+      {
+        "id": "task-022",
+        "name": "Prepare Secure Delivery Mechanism",
+        "draft": true,
+        "details": "IT Security sets up encrypted email or portal for distribution.",
+        "dependencies": [
+          "task-021",
+          "task-020"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-06",
+        "assignees": [
+          "it.security@example.com"
+        ]
+      },
+      {
+        "id": "task-023",
+        "name": "Send Materials",
+        "draft": true,
+        "details": "Project Coordinator sends the pre\u2011read pack to all recipients.",
+        "dependencies": [
+          "task-022",
+          "task-010",
+          "task-020"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-09T08:00:00Z",
+        "assignees": [
+          "pc@example.com"
+        ]
+      },
+      {
+        "id": "task-024",
+        "name": "Confirm Receipt",
+        "draft": true,
+        "details": "Project Coordinator follows up with any non\u2011responders within 24\u202fh.",
+        "dependencies": [
+          "task-023"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-10",
+        "assignees": [
+          "pc@example.com"
+        ]
+      },
+      {
+        "id": "task-025",
+        "name": "Log Distribution",
+        "draft": true,
+        "details": "Project Coordinator records distribution status in the log.",
+        "dependencies": [
+          "task-024"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-10",
+        "assignees": [
+          "pc@example.com"
+        ]
+      },
+      {
+        "id": "task-026",
+        "name": "Send Approval Request Memo",
+        "draft": true,
+        "details": "Executive Sponsor emails memo requesting formal approvals.",
+        "dependencies": [
+          "task-023"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-10",
+        "assignees": [
+          "exec.sponsor@example.com"
+        ]
+      },
+      {
+        "id": "task-027",
+        "name": "Track Responses",
+        "draft": true,
+        "details": "Project Coordinator monitors approval replies.",
+        "dependencies": [
+          "task-026"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-12",
+        "assignees": [
+          "pc@example.com"
+        ]
+      },
+      {
+        "id": "task-028",
+        "name": "Escalate Delays",
+        "draft": true,
+        "details": "Executive Sponsor escalates any pending approvals.",
+        "dependencies": [
+          "task-027"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-11",
+        "assignees": [
+          "exec.sponsor@example.com"
+        ]
+      },
+      {
+        "id": "task-029",
+        "name": "Document Final Approvals",
+        "draft": true,
+        "details": "Project Coordinator records all signed approvals.",
+        "dependencies": [
+          "task-027"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-12",
+        "assignees": [
+          "pc@example.com"
+        ]
+      },
+      {
+        "id": "task-030",
+        "name": "Live Capture (Scribe)",
+        "draft": true,
+        "details": "Designated Scribe records action items during the QBR.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-14",
+        "assignees": [
+          "scribe@example.com"
+        ]
+      },
+      {
+        "id": "task-031",
+        "name": "Validate Draft Tracker",
+        "draft": true,
+        "details": "All presenters review and validate the draft action\u2011item tracker.",
+        "dependencies": [
+          "task-030"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-15",
+        "assignees": [
+          "pc@example.com"
+        ]
+      },
+      {
+        "id": "task-032",
+        "name": "Assign Owners & Due Dates",
+        "draft": true,
+        "details": "Project Coordinator assigns owners and due dates to each action item.",
+        "dependencies": [
+          "task-031"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-15",
+        "assignees": [
+          "pc@example.com"
+        ]
+      },
+      {
+        "id": "task-033",
+        "name": "Distribute Final Tracker",
+        "draft": true,
+        "details": "Project Coordinator sends the finalized action\u2011item tracker to all stakeholders.",
+        "dependencies": [
+          "task-032"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-16",
+        "assignees": [
+          "pc@example.com"
+        ]
+      },
+      {
+        "id": "task-034",
+        "name": "Schedule Follow\u2011up Review",
+        "draft": true,
+        "details": "Executive Sponsor schedules the post\u2011QBR review meeting.",
+        "dependencies": [
+          "task-033"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-16",
+        "assignees": [
+          "exec.sponsor@example.com"
+        ]
+      },
+      {
+        "id": "task-011",
+        "name": "Schedule Rehearsal Slots",
+        "draft": true,
+        "details": "Project Coordinator books rehearsal times for each presenter.",
+        "dependencies": [
+          "task-010"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-05",
+        "assignees": [
+          "pc@example.com"
+        ]
+      },
+      {
+        "id": "task-012",
+        "name": "Run\u2011throughs",
+        "draft": true,
+        "details": "Each department conducts its 5\u2011minute rehearsal.",
+        "dependencies": [
+          "task-011",
+          "task-010"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-08",
+        "assignees": [
+          "finance.lead@example.com",
+          "market.analyst@example.com",
+          "risk.manager@example.com",
+          "esg.lead@example.com"
+        ]
+      },
+      {
+        "id": "task-013",
+        "name": "Feedback Loop",
+        "draft": true,
+        "details": "Project Coordinator consolidates rehearsal feedback.",
+        "dependencies": [
+          "task-012"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-08",
+        "assignees": [
+          "pc@example.com"
+        ]
+      },
+      {
+        "id": "task-014",
+        "name": "Final Dry\u2011Run (All\u2011Hands)",
+        "draft": true,
+        "details": "All presenters and IT support perform a full dry\u2011run.",
+        "dependencies": [
+          "task-013"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-09",
+        "assignees": [
+          "pc@example.com",
+          "it.lead@example.com"
+        ]
+      },
+      {
+        "id": "task-015",
+        "name": "Select Platform & Licensing",
+        "draft": true,
+        "details": "IT Lead selects compatible video platform and secures licensing.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-02",
+        "assignees": [
+          "it.lead@example.com"
+        ]
+      },
+      {
+        "id": "task-016",
+        "name": "Create Test Meeting",
+        "draft": true,
+        "details": "IT Lead creates a test meeting in the selected platform.",
+        "dependencies": [
+          "task-015"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-03",
+        "assignees": [
+          "it.lead@example.com"
+        ]
+      },
+      {
+        "id": "task-017",
+        "name": "Run Technical Test",
+        "draft": true,
+        "details": "IT Lead and presenters test the platform with actual slide set.",
+        "dependencies": [
+          "task-016",
+          "task-014"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-04",
+        "assignees": [
+          "it.lead@example.com",
+          "finance.lead@example.com",
+          "market.analyst@example.com",
+          "risk.manager@example.com",
+          "esg.lead@example.com"
+        ]
+      },
+      {
+        "id": "task-018",
+        "name": "Document Findings & Run\u2011Book",
+        "draft": true,
+        "details": "IT Lead documents technical test results and creates a run\u2011book.",
+        "dependencies": [
+          "task-017"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-05",
+        "assignees": [
+          "it.lead@example.com"
+        ]
+      },
+      {
+        "id": "task-019",
+        "name": "Backup Plan Setup",
+        "draft": true,
+        "details": "IT Lead configures secondary platform as a backup.",
+        "dependencies": [
+          "task-016"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-06",
+        "assignees": [
+          "it.lead@example.com"
+        ]
+      },
+      {
+        "id": "task-020",
+        "name": "Final Technical Sign\u2011off",
+        "draft": true,
+        "details": "IT Lead signs off on technical readiness after documentation and backup plan are complete.",
+        "dependencies": [
+          "task-018",
+          "task-019"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-10",
+        "assignees": [
+          "it.lead@example.com"
+        ]
+      },
+      {
+        "id": "task-021",
+        "name": "Compile Distribution List",
+        "draft": true,
+        "details": "Board Liaison verifies and finalizes the list of board members and stakeholders.",
+        "dependencies": [
+          "task-010",
+          "task-020"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-05",
+        "assignees": [
+          "board.liaison@example.com"
+        ]
+      },
+      {
+        "id": "task-022",
+        "name": "Prepare Secure Delivery Mechanism",
+        "draft": true,
+        "details": "IT Security sets up encrypted email or portal for distribution.",
+        "dependencies": [
+          "task-021",
+          "task-020"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-06",
+        "assignees": [
+          "it.security@example.com"
+        ]
+      },
+      {
+        "id": "task-023",
+        "name": "Send Materials",
+        "draft": true,
+        "details": "Project Coordinator sends the pre\u2011read pack to all recipients.",
+        "dependencies": [
+          "task-022",
+          "task-010",
+          "task-020"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-09T08:00:00Z",
+        "assignees": [
+          "pc@example.com"
+        ]
+      },
+      {
+        "id": "task-024",
+        "name": "Confirm Receipt",
+        "draft": true,
+        "details": "Project Coordinator follows up with any non\u2011responders within 24\u202fh.",
+        "dependencies": [
+          "task-023"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-10",
+        "assignees": [
+          "pc@example.com"
+        ]
+      },
+      {
+        "id": "task-025",
+        "name": "Log Distribution",
+        "draft": true,
+        "details": "Project Coordinator records distribution status in the log.",
+        "dependencies": [
+          "task-024"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-10",
+        "assignees": [
+          "pc@example.com"
+        ]
+      }
+    ],
+    "constraints": [
+      {
+        "type": "precedence",
+        "task_before": "task-010",
+        "task_after": "task-011"
+      },
+      {
+        "type": "precedence",
+        "task_before": "task-010",
+        "task_after": "task-021"
+      },
+      {
+        "type": "precedence",
+        "task_before": "task-020",
+        "task_after": "task-021"
+      },
+      {
+        "type": "precedence",
+        "task_before": "task-010",
+        "task_after": "task-023"
+      },
+      {
+        "type": "precedence",
+        "task_before": "task-023",
+        "task_after": "task-026"
+      },
+      {
+        "type": "precedence",
+        "task_before": "task-026",
+        "task_after": "task-027"
+      },
+      {
+        "type": "precedence",
+        "task_before": "task-027",
+        "task_after": "task-028"
+      },
+      {
+        "type": "precedence",
+        "task_before": "task-027",
+        "task_after": "task-029"
+      },
+      {
+        "type": "precedence",
+        "task_before": "task-030",
+        "task_after": "task-031"
+      },
+      {
+        "type": "precedence",
+        "task_before": "task-031",
+        "task_after": "task-032"
+      },
+      {
+        "type": "precedence",
+        "task_before": "task-032",
+        "task_after": "task-033"
+      },
+      {
+        "type": "precedence",
+        "task_before": "task-033",
+        "task_after": "task-034"
+      }
+    ]
+  }
+}

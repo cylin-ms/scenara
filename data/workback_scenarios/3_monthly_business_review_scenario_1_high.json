@@ -1,0 +1,1012 @@
+{
+  "scenario_name": "Nimbus Cloud Solutions \u2013 FY26 Mid\u2011Market Expansion MBR",
+  "scenario_number": 1,
+  "meeting_type": "Monthly Business Review",
+  "quality_level": "high",
+  "workback_prompt": "Generate a detailed work\u2011back plan for the 'Nimbus Cloud Solutions \u2013 FY26 Mid\u2011Market Expansion MBR' scenario. The plan should start from the meeting date (2025\u201112\u201104) and work backwards to today (T\u201130), outlining all tasks, owners, dependencies, durations, and milestones needed to prepare the presentation, validate data, secure approvals, and deliver the listed outputs on time. Include risk mitigation steps for data latency, engineering capacity, and compliance constraints.\n\nGenerate a HIGH QUALITY workback plan with these characteristics:\n- Comprehensive task coverage\n- Clear, actionable task descriptions\n- Well-defined dependencies\n- All tasks assigned to specific owners\n- Clear milestones with completion criteria\n- Realistic timelines with buffers\n- Proactive risk management\n- Complete deliverable list\n\nIMPORTANT: Generate a plan that naturally exhibits HIGH quality characteristics.\nDo not explicitly label the plan as \"high quality\" - let the quality emerge from the content.",
+  "generated_at": "2025-11-17T04:45:56.983369",
+  "analysis": "# Outcomes\n\n## 1. Final MBR Presentation Deck\nA polished slide deck that tells a clear story of the FY26 Mid\u2011Market Expansion, incorporates validated data, and is ready for delivery at the 2025\u201112\u201104 meeting.  \nArtifact references: *none*\n\n### Reasoning\nThe core deliverable for the meeting is the presentation deck. All upstream work (data validation, approvals, compliance checks) feeds into this artifact, making it the primary outcome.\n\n### Approach\n1. **Draft content** \u2013 Business\u2011lead, Marketing\u2011lead, and Finance\u2011lead collaborate to outline narrative and key metrics.  \n2. **Integrate visualizations** \u2013 Data\u2011analyst supplies charts; Engineering\u2011lead reviews technical accuracy.  \n3. **Internal review cycles** \u2013 Project\u2011lead circulates draft to owners for comment, incorporates feedback, and finalises styling.  \n4. **Executive sign\u2011off** \u2013 Executive sponsor reviews final deck and provides approval.  \n5. **Prepare meeting assets** \u2013 Export PDFs, create speaker notes, and upload to the shared repository.\n\nMilestone: *Final Deck Approved* \u2013 all comments resolved, executive sign\u2011off obtained (deadline\u202f2025\u201112\u201102).\n\n---\n\n## 2. Validated Data Set for FY26 Forecast\nA complete, cleaned, and cross\u2011checked data set covering market sizing, pipeline projections, and engineering capacity assumptions that underpins the presentation.  \nArtifact references: *none*\n\n### Reasoning\nAccurate data is the foundation of the story. The plan must allocate time for extraction, cleansing, validation, and sign\u2011off before the deck can be built.\n\n### Approach\n1. **Data extraction** \u2013 Data\u2011analyst pulls raw feeds from CRM, finance system, and capacity planning tools (start\u202f2025\u201110\u201123).  \n2. **Cleaning & transformation** \u2013 Apply standard ETL scripts; flag anomalies.  \n3. **Cross\u2011validation** \u2013 Finance\u2011lead reviews revenue assumptions; Engineering\u2011lead validates capacity numbers.  \n4. **Peer review** \u2013 Data\u2011analyst and Business\u2011lead perform a joint sanity check.  \n5. **Sign\u2011off** \u2013 Data\u2011governance owner signs the validated data package.\n\nMilestone: *Data Set Sign\u2011off* \u2013 all validation steps completed and documented (deadline\u202f2025\u201111\u201120).\n\n---\n\n## 3. Executive & Stakeholder Approvals\nFormal approvals from Finance, Engineering, Compliance, and the Executive Sponsor confirming that the forecast, assumptions, and recommendations are acceptable.  \nArtifact references: *none*\n\n### Reasoning\nThe presentation cannot be delivered without documented approvals. Each functional area must review and endorse the relevant sections.\n\n### Approach\n1. **Distribute review packets** \u2013 Send the validated data set and draft narrative to each owner (deadline\u202f2025\u201111\u201122).  \n2. **Collect feedback** \u2013 Owners provide comments within a 48\u2011hour window.  \n3. **Incorporate changes** \u2013 Project\u2011lead updates the deck and data documentation.  \n4. **Obtain signatures** \u2013 Use the approved sign\u2011off template; store signed copies in the project folder.\n\nMilestone: *All Approvals Collected* \u2013 signed sign\u2011off documents from Finance, Engineering, Compliance, and Executive Sponsor (deadline\u202f2025\u201111\u201127).\n\n---\n\n## 4. Compliance Review & Clearance\nA completed compliance check confirming that all data usage, forecast assumptions, and market messaging meet internal and regulatory standards.  \nArtifact references: *none*\n\n### Reasoning\nCompliance constraints are explicitly called out as a risk. Early engagement and a formal clearance are required to avoid last\u2011minute blockers.\n\n### Approach\n1. **Pre\u2011review briefing** \u2013 Compliance officer meets with Project\u2011lead to outline scope (2025\u201110\u201130).  \n2. **Document submission** \u2013 Provide data provenance, model assumptions, and slide content (2025\u201111\u201115).  \n3. **Review & feedback** \u2013 Compliance conducts review, returns findings within 3 business days.  \n4. **Remediation** \u2013 Address any identified gaps; obtain final clearance.\n\nMilestone: *Compliance Clearance Received* \u2013 documented sign\u2011off confirming no outstanding issues (deadline\u202f2025\u201111\u201124).\n\n---\n\n## 5. Engineering Capacity Commitment\nSecured engineering resources and a realistic capacity plan that supports the FY26 expansion targets presented in the MBR.  \nArtifact references: *none*\n\n### Reasoning\nEngineering capacity is a known risk. Early commitment ensures the forecast is realistic and that the presentation reflects achievable targets.\n\n### Approach\n1. **Capacity workshop** \u2013 Engineering manager runs a sizing session with product leads (2025\u201110\u201126).  \n2. **Draft capacity model** \u2013 Engineering manager produces a load forecast and resource allocation matrix.  \n3. **Review with Finance** \u2013 Align cost implications; adjust assumptions as needed.  \n4. **Finalize commitment** \u2013 Engineering manager signs off on the capacity plan.\n\nMilestone: *Engineering Capacity Plan Signed* \u2013 plan incorporated into the deck (deadline\u202f2025\u201111\u201110).\n\n---\n\n## 6. Risk Mitigation Plan\nA concise plan documenting mitigation actions for data latency, engineering capacity constraints, and compliance bottlenecks, plus contingency triggers.  \nArtifact references: *none*\n\n### Reasoning\nProactive risk management is required to safeguard the schedule. The plan should be ready early so that mitigation actions can be executed promptly.\n\n### Approach\n1. **Identify triggers** \u2013 Define early\u2011warning indicators for each risk (e.g., data refresh delay > 2 days).  \n2. **Assign owners** \u2013 Data\u2011analyst (latency), Engineering\u2011manager (capacity), Compliance\u2011officer (regulatory).  \n3. **Define actions** \u2013 Alternate data sources, buffer resources, fast\u2011track compliance review.  \n4. **Document & communicate** \u2013 Store in the project repository; review at each status meeting.\n\nMilestone: *Risk Mitigation Plan Approved* \u2013 signed off by Project\u2011lead and Executive sponsor (deadline\u202f2025\u201110\u201131).\n\n---\n\n# Breakdown\n\n### 1. Project Initiation (2025\u201110\u201118\u202f\u2192\u202f2025\u201110\u201122)\n- 1.1 Define scope & deliverables \u2013 **Project Lead** (2\u202fdays)  \n- 1.2 Assemble core team \u2013 **Project Lead** (1\u202fday)  \n- 1.3 Kick\u2011off meeting \u2013 **All owners** (1\u202fday)  \n\n### 2. Risk Mitigation Planning (2025\u201110\u201123\u202f\u2192\u202f2025\u201110\u201131)\n- 2.1 Draft risk register \u2013 **Project Lead** (2\u202fdays)  \n- 2.2 Conduct risk workshops (data, engineering, compliance) \u2013 **Data Analyst**, **Engineering Manager**, **Compliance Officer** (3\u202fdays)  \n- 2.3 Finalise mitigation actions & approval \u2013 **Project Lead**, **Executive Sponsor** (2\u202fdays)  \n- **Milestone:** Risk Mitigation Plan Approved (2025\u201110\u201131)  \n\n### 3. Engineering Capacity Commitment (2025\u201110\u201123\u202f\u2192\u202f2025\u201111\u201110)\n- 3.1 Capacity workshop \u2013 **Engineering Manager** (2025\u201110\u201126)  \n- 3.2 Draft capacity model \u2013 **Engineering Manager** (4\u202fdays)  \n- 3.3 Finance alignment \u2013 **Finance Lead** (2\u202fdays) \u2013 *Depends on 3.2*  \n- 3.4 Final sign\u2011off \u2013 **Engineering Manager** (1\u202fday) \u2013 *Depends on 3.3*  \n- **Milestone:** Engineering Capacity Plan Signed (2025\u201111\u201110)  \n\n### 4. Data Extraction & Validation (2025\u201110\u201123\u202f\u2192\u202f2025\u201111\u201120)\n- 4.1 Pull raw data sets \u2013 **Data Analyst** (2\u202fdays) \u2013 *Can run in parallel with 3.1*  \n- 4.2 Clean & transform data \u2013 **Data Analyst** (5\u202fdays) \u2013 *Depends on 4.1*  \n- 4.3 Cross\u2011validation with Finance \u2013 **Finance Lead** (3\u202fdays) \u2013 *Depends on 4.2*  \n- 4.4 Cross\u2011validation with Engineering \u2013 **Engineering Manager** (2\u202fdays) \u2013 *Depends on 4.2*  \n- 4.5 Peer review & sign\u2011off \u2013 **Data Governance Owner** (2\u202fdays) \u2013 *Depends on 4.3 & 4.4*  \n- **Milestone:** Data Set Sign\u2011off (2025\u201111\u201120)  \n\n### 5. Compliance Review (2025\u201111\u201115\u202f\u2192\u202f2025\u201111\u201124)\n- 5.1 Pre\u2011review briefing \u2013 **Compliance Officer** (1\u202fday) \u2013 *Depends on 4.5*  \n- 5.2 Submit documentation \u2013 **Project Lead** (1\u202fday) \u2013 *Depends on 5.1*  \n- 5.3 Compliance analysis \u2013 **Compliance Officer** (3\u202fdays) \u2013 *Depends on 5.2*  \n- 5.4 Remediation of findings \u2013 **Project Lead** & relevant owners (2\u202fdays) \u2013 *Depends on 5.3*  \n- 5.5 Final clearance sign\u2011off \u2013 **Compliance Officer** (1\u202fday) \u2013 *Depends on 5.4*  \n- **Milestone:** Compliance Clearance Received (2025\u201111\u201124)  \n\n### 6. Draft Presentation Development (2025\u201111\u201105\u202f\u2192\u202f2025\u201111\u201122)\n- 6.1 Outline narrative & key messages \u2013 **Business Lead**, **Marketing Lead**, **Finance Lead** (3\u202fdays) \u2013 *Can start after 3.4*  \n- 6.2 Create initial slide deck \u2013 **Marketing Lead** (4\u202fdays) \u2013 *Depends on 6.1*  \n- 6.3 Insert data visualizations \u2013 **Data Analyst** (2\u202fdays) \u2013 *Depends on 4.5*  \n- 6.4 Technical review of slides \u2013 **Engineering Manager** (1\u202fday) \u2013 *Depends on 6.3*  \n\n### 7. Review & Approval Cycle (2025\u201111\u201123\u202f\u2192\u202f2025\u201111\u201127)\n- 7.1 Distribute review packet \u2013 **Project Lead** (1\u202fday) \u2013 *Depends on 6.4*  \n- 7.2 Collect stakeholder feedback \u2013 **All owners** (2\u202fdays) \u2013 *Parallel*  \n- 7.3 Incorporate changes \u2013 **Project Lead** (2\u202fdays) \u2013 *Depends on 7.2*  \n- 7.4 Obtain executive sign\u2011off \u2013 **Executive Sponsor** (1\u202fday) \u2013 *Depends on 7.3*  \n- **Milestone:** All Approvals Collected (2025\u201111\u201127)  \n\n### 8. Final Presentation Preparation (2025\u201111\u201128\u202f\u2192\u202f2025\u201112\u201102)\n- 8.1 Polish design & speaker notes \u2013 **Marketing Lead** (2\u202fdays) \u2013 *Depends on 7.4*  \n- 8.2 Export final assets (PDF, deck, data appendix) \u2013 **Project Lead** (1\u202fday) \u2013 *Depends on 8.1*  \n- 8.3 Upload to shared repository & verify access \u2013 **Project Lead** (1\u202fday) \u2013 *Depends on 8.2*  \n\n### 9. Meeting Execution (2025\u201112\u201104)\n- 9.1 Conduct MBR presentation \u2013 **Project Lead** (lead) with **Business Lead** (presenter)  \n- 9.2 Capture meeting minutes & action items \u2013 **Project Coordinator** (1\u202fhour)  \n\n---\n\n**Dependencies Summary**\n\n- Data validation (4.x) must finish before compliance review (5.x) and before visualizations are added to the deck (6.3).  \n- Engineering capacity commitment (3.x) is needed early to shape forecast assumptions used in the narrative (6.1).  \n- Risk mitigation plan (2.x) is a prerequisite for all downstream work; its approval unlocks the rest of the schedule.  \n- Final approvals (7.x) cannot proceed until both data sign\u2011off (4.5) and compliance clearance (5.5) are in place.  \n\n**Buffers & Contingencies**\n\n- Each major workstream includes a 1\u2011day buffer after its critical path (e.g., data validation ends 2025\u201111\u201120, buffer to 2025\u201111\u201121).  \n- If data latency exceeds the buffer, the mitigation action is to use the latest stable snapshot (identified in 2.3) and flag any assumptions in the deck.  \n- Should engineering capacity be constrained, the contingency is to present a phased rollout scenario (prepared in 3.2) and seek executive guidance during the meeting.  \n\nThis work\u2011back plan provides a clear, actionable roadmap from today (2025\u201110\u201118) to the FY26 Mid\u2011Market Expansion MBR on 2025\u201112\u201104, ensuring all deliverables are produced on time, risks are mitigated, and responsibilities are transparent.",
+  "plan": {
+    "id": "document-001",
+    "name": "FY26 Mid\u2011Market Expansion MBR Workback Plan",
+    "details": "Work\u2011back plan covering all activities from project initiation (2025\u201110\u201118) to the MBR presentation on 2025\u201112\u201104. Includes deliverables, risk mitigation, data validation, compliance, and approval steps.",
+    "draft": true,
+    "participants": [
+      {
+        "name": "Project Lead",
+        "email": null,
+        "details": null,
+        "draft": true
+      },
+      {
+        "name": "Data Analyst",
+        "email": null,
+        "details": null,
+        "draft": true
+      },
+      {
+        "name": "Engineering Manager",
+        "email": null,
+        "details": null,
+        "draft": true
+      },
+      {
+        "name": "Finance Lead",
+        "email": null,
+        "details": null,
+        "draft": true
+      },
+      {
+        "name": "Business Lead",
+        "email": null,
+        "details": null,
+        "draft": true
+      },
+      {
+        "name": "Marketing Lead",
+        "email": null,
+        "details": null,
+        "draft": true
+      },
+      {
+        "name": "Compliance Officer",
+        "email": null,
+        "details": null,
+        "draft": true
+      },
+      {
+        "name": "Executive Sponsor",
+        "email": null,
+        "details": null,
+        "draft": true
+      },
+      {
+        "name": "Project Coordinator",
+        "email": null,
+        "details": null,
+        "draft": true
+      },
+      {
+        "name": "Data Governance Owner",
+        "email": null,
+        "details": null,
+        "draft": true
+      }
+    ],
+    "references": [],
+    "deliverables": [
+      {
+        "name": "Final MBR Presentation Deck",
+        "type": "powerpoint",
+        "id": "deliverable-001",
+        "draft": true,
+        "history": []
+      },
+      {
+        "name": "Validated Data Set for FY26 Forecast",
+        "type": "excel",
+        "id": "deliverable-002",
+        "draft": true,
+        "history": []
+      },
+      {
+        "name": "Risk Mitigation Plan",
+        "type": "word",
+        "id": "deliverable-003",
+        "draft": true,
+        "history": []
+      },
+      {
+        "name": "Engineering Capacity Plan",
+        "type": "word",
+        "id": "deliverable-004",
+        "draft": true,
+        "history": []
+      },
+      {
+        "name": "Compliance Clearance Document",
+        "type": "word",
+        "id": "deliverable-005",
+        "draft": true,
+        "history": []
+      }
+    ],
+    "tasks": [
+      {
+        "id": "task-001",
+        "name": "Define scope & deliverables",
+        "draft": true,
+        "details": "Project Lead defines the scope and list of deliverables (2\u202fdays).",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-10-20T00:00:00Z",
+        "assignees": [
+          "Project Lead"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002",
+        "name": "Assemble core team",
+        "draft": true,
+        "details": "Project Lead assembles the core project team (1\u202fday).",
+        "dependencies": [
+          "task-001"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-10-21T00:00:00Z",
+        "assignees": [
+          "Project Lead"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003",
+        "name": "Kick\u2011off meeting",
+        "draft": true,
+        "details": "All owners attend the project kick\u2011off meeting (1\u202fday).",
+        "dependencies": [
+          "task-002"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-10-22T00:00:00Z",
+        "assignees": [
+          "Project Lead",
+          "Data Analyst",
+          "Engineering Manager",
+          "Finance Lead",
+          "Business Lead",
+          "Marketing Lead",
+          "Compliance Officer",
+          "Executive Sponsor",
+          "Project Coordinator"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-004",
+        "name": "Project Initiation (phase complete)",
+        "draft": true,
+        "details": "Parent task representing completion of project initiation phase.",
+        "dependencies": [
+          "task-001",
+          "task-002",
+          "task-003"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-10-22T00:00:00Z",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-005",
+        "name": "Draft risk register",
+        "draft": true,
+        "details": "Project Lead drafts the initial risk register (2\u202fdays).",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-10-25T00:00:00Z",
+        "assignees": [
+          "Project Lead"
+        ],
+        "deliverables": [
+          "@deliverable[word]/deliverable-003"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-006",
+        "name": "Conduct risk workshops",
+        "draft": true,
+        "details": "Data Analyst, Engineering Manager and Compliance Officer run risk workshops (3\u202fdays).",
+        "dependencies": [
+          "task-005"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-10-28T00:00:00Z",
+        "assignees": [
+          "Data Analyst",
+          "Engineering Manager",
+          "Compliance Officer"
+        ],
+        "deliverables": [
+          "@deliverable[word]/deliverable-003"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-007",
+        "name": "Finalize mitigation actions & approval",
+        "draft": true,
+        "details": "Project Lead and Executive Sponsor finalize mitigation actions and obtain approval (2\u202fdays).",
+        "dependencies": [
+          "task-006"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-10-31T00:00:00Z",
+        "assignees": [
+          "Project Lead",
+          "Executive Sponsor"
+        ],
+        "deliverables": [
+          "@deliverable[word]/deliverable-003"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-008",
+        "name": "Risk Mitigation Planning (phase complete)",
+        "draft": true,
+        "details": "Parent task representing completion of risk mitigation planning phase.",
+        "dependencies": [
+          "task-005",
+          "task-006",
+          "task-007"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-10-31T00:00:00Z",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[word]/deliverable-003"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-009",
+        "name": "Capacity workshop",
+        "draft": true,
+        "details": "Engineering Manager conducts capacity workshop (2025\u201110\u201126).",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-10-26T00:00:00Z",
+        "assignees": [
+          "Engineering Manager"
+        ],
+        "deliverables": [
+          "@deliverable[word]/deliverable-004"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-010",
+        "name": "Draft capacity model",
+        "draft": true,
+        "details": "Engineering Manager drafts the capacity model (4\u202fdays).",
+        "dependencies": [
+          "task-009"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-10-31T00:00:00Z",
+        "assignees": [
+          "Engineering Manager"
+        ],
+        "deliverables": [
+          "@deliverable[word]/deliverable-004"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-011",
+        "name": "Finance alignment",
+        "draft": true,
+        "details": "Finance Lead aligns capacity model with finance (depends on draft capacity model, 2\u202fdays).",
+        "dependencies": [
+          "task-010"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-11-02T00:00:00Z",
+        "assignees": [
+          "Finance Lead"
+        ],
+        "deliverables": [
+          "@deliverable[word]/deliverable-004"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-012",
+        "name": "Final sign\u2011off (capacity)",
+        "draft": true,
+        "details": "Engineering Manager signs off on the capacity plan after finance alignment (1\u202fday).",
+        "dependencies": [
+          "task-011"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-11-03T00:00:00Z",
+        "assignees": [
+          "Engineering Manager"
+        ],
+        "deliverables": [
+          "@deliverable[word]/deliverable-004"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-013",
+        "name": "Engineering Capacity Commitment (phase complete)",
+        "draft": true,
+        "details": "Parent task representing completion of engineering capacity commitment phase.",
+        "dependencies": [
+          "task-009",
+          "task-010",
+          "task-011",
+          "task-012"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-11-03T00:00:00Z",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[word]/deliverable-004"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-014",
+        "name": "Pull raw data sets",
+        "draft": true,
+        "details": "Data Analyst pulls raw data (2\u202fdays).",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-10-25T00:00:00Z",
+        "assignees": [
+          "Data Analyst"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-015",
+        "name": "Clean & transform data",
+        "draft": true,
+        "details": "Data Analyst cleans and transforms the raw data (5\u202fdays).",
+        "dependencies": [
+          "task-014"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-10-31T00:00:00Z",
+        "assignees": [
+          "Data Analyst"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-016",
+        "name": "Cross\u2011validation with Finance",
+        "draft": true,
+        "details": "Finance Lead validates the transformed data with finance (3\u202fdays).",
+        "dependencies": [
+          "task-015"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-11-03T00:00:00Z",
+        "assignees": [
+          "Finance Lead"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-017",
+        "name": "Cross\u2011validation with Engineering",
+        "draft": true,
+        "details": "Engineering Manager validates the transformed data with engineering (2\u202fdays).",
+        "dependencies": [
+          "task-015"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-11-02T00:00:00Z",
+        "assignees": [
+          "Engineering Manager"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-018",
+        "name": "Peer review & sign\u2011off (data set)",
+        "draft": true,
+        "details": "Data Governance Owner reviews and signs off the validated data set (2\u202fdays).",
+        "dependencies": [
+          "task-016",
+          "task-017"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-11-05T00:00:00Z",
+        "assignees": [
+          "Data Governance Owner"
+        ],
+        "deliverables": [
+          "@deliverable[excel]/deliverable-002"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-019",
+        "name": "Data Extraction & Validation (phase complete)",
+        "draft": true,
+        "details": "Parent task representing completion of data extraction and validation phase.",
+        "dependencies": [
+          "task-014",
+          "task-015",
+          "task-016",
+          "task-017",
+          "task-018"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-11-05T00:00:00Z",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-020",
+        "name": "Pre\u2011review briefing",
+        "draft": true,
+        "details": "Compliance Officer conducts pre\u2011review briefing (depends on data sign\u2011off).",
+        "dependencies": [
+          "task-018"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-11-15T00:00:00Z",
+        "assignees": [
+          "Compliance Officer"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-021",
+        "name": "Submit documentation",
+        "draft": true,
+        "details": "Project Lead submits documentation for compliance review.",
+        "dependencies": [
+          "task-020"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-11-16T00:00:00Z",
+        "assignees": [
+          "Project Lead"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-022",
+        "name": "Compliance analysis",
+        "draft": true,
+        "details": "Compliance Officer analyses the submitted documentation (3\u202fdays).",
+        "dependencies": [
+          "task-021"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-11-20T00:00:00Z",
+        "assignees": [
+          "Compliance Officer"
+        ],
+        "deliverables": [
+          "@deliverable[word]/deliverable-005"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-023",
+        "name": "Remediation of findings",
+        "draft": true,
+        "details": "Project Lead and relevant owners remediate any compliance findings (2\u202fdays).",
+        "dependencies": [
+          "task-022"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-11-22T00:00:00Z",
+        "assignees": [
+          "Project Lead",
+          "Data Analyst",
+          "Engineering Manager",
+          "Finance Lead",
+          "Business Lead",
+          "Marketing Lead",
+          "Compliance Officer"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-024",
+        "name": "Final clearance sign\u2011off",
+        "draft": true,
+        "details": "Compliance Officer signs off the final clearance document (2025\u201111\u201124).",
+        "dependencies": [
+          "task-023"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-11-24T00:00:00Z",
+        "assignees": [
+          "Compliance Officer"
+        ],
+        "deliverables": [
+          "@deliverable[word]/deliverable-005"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-025",
+        "name": "Compliance Review (phase complete)",
+        "draft": true,
+        "details": "Parent task representing completion of compliance review phase.",
+        "dependencies": [
+          "task-020",
+          "task-021",
+          "task-022",
+          "task-023",
+          "task-024"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-11-24T00:00:00Z",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[word]/deliverable-005"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-026",
+        "name": "Outline narrative & key messages",
+        "draft": true,
+        "details": "Business Lead, Marketing Lead and Finance Lead outline narrative and key messages (depends on capacity sign\u2011off).",
+        "dependencies": [
+          "task-012"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-11-09T00:00:00Z",
+        "assignees": [
+          "Business Lead",
+          "Marketing Lead",
+          "Finance Lead"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-027",
+        "name": "Create initial slide deck",
+        "draft": true,
+        "details": "Marketing Lead creates the first version of the slide deck.",
+        "dependencies": [
+          "task-026"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-11-13T00:00:00Z",
+        "assignees": [
+          "Marketing Lead"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-028",
+        "name": "Insert data visualizations",
+        "draft": true,
+        "details": "Data Analyst adds data visualizations to the deck (depends on validated data set).",
+        "dependencies": [
+          "task-018"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-11-15T00:00:00Z",
+        "assignees": [
+          "Data Analyst"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-029",
+        "name": "Technical review of slides",
+        "draft": true,
+        "details": "Engineering Manager reviews slides for technical accuracy.",
+        "dependencies": [
+          "task-028"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-11-16T00:00:00Z",
+        "assignees": [
+          "Engineering Manager"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-030",
+        "name": "Draft Presentation Development (phase complete)",
+        "draft": true,
+        "details": "Parent task representing completion of draft presentation development.",
+        "dependencies": [
+          "task-026",
+          "task-027",
+          "task-028",
+          "task-029"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-11-16T00:00:00Z",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-031",
+        "name": "Distribute review packet",
+        "draft": true,
+        "details": "Project Lead distributes the review packet to all stakeholders.",
+        "dependencies": [
+          "task-029"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-11-23T00:00:00Z",
+        "assignees": [
+          "Project Lead"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-032",
+        "name": "Collect stakeholder feedback",
+        "draft": true,
+        "details": "All owners provide feedback on the draft deck (2\u202fdays).",
+        "dependencies": [
+          "task-031"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-11-25T00:00:00Z",
+        "assignees": [
+          "Project Lead",
+          "Data Analyst",
+          "Engineering Manager",
+          "Finance Lead",
+          "Business Lead",
+          "Marketing Lead",
+          "Compliance Officer",
+          "Executive Sponsor",
+          "Project Coordinator"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-033",
+        "name": "Incorporate changes",
+        "draft": true,
+        "details": "Project Lead incorporates feedback into the presentation.",
+        "dependencies": [
+          "task-032"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-11-27T00:00:00Z",
+        "assignees": [
+          "Project Lead"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-034",
+        "name": "Obtain executive sign\u2011off",
+        "draft": true,
+        "details": "Executive Sponsor signs off the final deck.",
+        "dependencies": [
+          "task-033"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-11-27T00:00:00Z",
+        "assignees": [
+          "Executive Sponsor"
+        ],
+        "deliverables": [
+          "@deliverable[powerpoint]/deliverable-001"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-035",
+        "name": "Review & Approval Cycle (phase complete)",
+        "draft": true,
+        "details": "Parent task representing completion of the review and approval phase.",
+        "dependencies": [
+          "task-031",
+          "task-032",
+          "task-033",
+          "task-034"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-11-27T00:00:00Z",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-036",
+        "name": "Polish design & speaker notes",
+        "draft": true,
+        "details": "Marketing Lead refines design and adds speaker notes (3\u202fdays).",
+        "dependencies": [
+          "task-034"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-11-30T00:00:00Z",
+        "assignees": [
+          "Marketing Lead"
+        ],
+        "deliverables": [
+          "@deliverable[powerpoint]/deliverable-001"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-037",
+        "name": "Export final assets",
+        "draft": true,
+        "details": "Project Lead exports the final PowerPoint and supporting files.",
+        "dependencies": [
+          "task-036"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-12-01T00:00:00Z",
+        "assignees": [
+          "Project Lead"
+        ],
+        "deliverables": [
+          "@deliverable[powerpoint]/deliverable-001"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-038",
+        "name": "Upload to shared repository & verify access",
+        "draft": true,
+        "details": "Project Lead uploads final assets to the shared repository and verifies access.",
+        "dependencies": [
+          "task-037"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-12-02T00:00:00Z",
+        "assignees": [
+          "Project Lead"
+        ],
+        "deliverables": [
+          "@deliverable[powerpoint]/deliverable-001"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-039",
+        "name": "Final Presentation Preparation (phase complete)",
+        "draft": true,
+        "details": "Parent task representing completion of final presentation preparation.",
+        "dependencies": [
+          "task-036",
+          "task-037",
+          "task-038"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-12-02T00:00:00Z",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[powerpoint]/deliverable-001"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-040",
+        "name": "Conduct presentation",
+        "draft": true,
+        "details": "Project Lead presents the final deck to the audience (2025\u201112\u201103).",
+        "dependencies": [
+          "task-039"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-12-03T00:00:00Z",
+        "assignees": [
+          "Project Lead"
+        ],
+        "deliverables": [
+          "@deliverable[powerpoint]/deliverable-001"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-040",
+        "name": "Meeting with stakeholders",
+        "draft": true,
+        "details": "Project Lead meets with stakeholders to discuss the final presentation.",
+        "dependencies": [
+          "task-040"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-12-03T00:00:00Z",
+        "assignees": [
+          "Project Lead"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-041",
+        "name": "Meeting with stakeholders (phase complete)",
+        "draft": true,
+        "details": "Parent task representing completion of stakeholder meeting.",
+        "dependencies": [
+          "task-040"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-12-03T00:00:00Z",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-042",
+        "name": "Finalize presentation",
+        "draft": true,
+        "details": "Project Lead finalises the presentation after stakeholder meeting.",
+        "dependencies": [
+          "task-041"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-12-03T00:00:00Z",
+        "assignees": [
+          "Project Lead"
+        ],
+        "deliverables": [
+          "@deliverable[powerpoint]/deliverable-001"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-043",
+        "name": "Finalize presentation (phase complete)",
+        "draft": true,
+        "details": "Parent task representing finalisation of the presentation.",
+        "dependencies": [
+          "task-042"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-12-03T00:00:00Z",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[powerpoint]/deliverable-001"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-044",
+        "name": "Conduct final presentation",
+        "draft": true,
+        "details": "Project Lead conducts the final presentation to the audience.",
+        "dependencies": [
+          "task-043"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-12-03T00:00:00Z",
+        "assignees": [
+          "Project Lead"
+        ],
+        "deliverables": [
+          "@deliverable[powerpoint]/deliverable-001"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-045",
+        "name": "Final presentation (complete)",
+        "draft": true,
+        "details": "Parent task representing completion of the entire presentation process.",
+        "dependencies": [
+          "task-044"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-12-03T00:00:00Z",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[powerpoint]/deliverable-001"
+        ],
+        "references": [],
+        "history": []
+      }
+    ]
+  }
+}

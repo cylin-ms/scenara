@@ -1,0 +1,53 @@
+{
+  "scenario_name": "Annual Planning Board Meeting \u2013 FY2025",
+  "company_context": "HelioTech Solutions, a San\u2011Francisco\u2011based SaaS platform that optimizes operations for utility\u2011scale renewable energy projects. The company is in a Series\u202fC round (US$120\u202fM raised) and is preparing for an IPO in FY2026. Executive team includes CEO Maya Patel, CFO Luis Ortega, CRO Daniel Kim, CTO Priya Nair, and VP of Legal & Governance Elena Rossi. The board is a mix of investors, independents, and senior executives.",
+  "meeting_event_details": "Monday, March 18, 2025 \u2013 09:00\u202fAM to 01:30\u202fPM (4.5\u202fhours) \u2013 HelioTech Headquarters, Boardroom\u202fA, 555 Market St, San\u202fFrancisco, CA 94105. Hybrid format with secure video\u2011conference link for remote directors.",
+  "stakeholders": [
+    "Maya Patel \u2013 Chief Executive Officer (presenter, strategic overview)",
+    "Luis Ortega \u2013 Chief Financial Officer (presenter, financials & budget)",
+    "Daniel Kim \u2013 Chief Revenue Officer (presenter, go\u2011to\u2011market strategy)",
+    "Priya Nair \u2013 Chief Technology Officer (presenter, product roadmap)",
+    "Elena Rossi \u2013 VP, Legal & Governance (presenter, compliance & board policies)",
+    "James Whitaker \u2013 Board Chair (lead the meeting, final approvals)",
+    "Sofia Alvarez \u2013 Lead Independent Director (audit & compensation committees)",
+    "Robert Chen \u2013 Venture Capital Partner, GreenCap Ventures (Series\u202fC investor)",
+    "Anita Desai \u2013 Venture Capital Partner, Impact Ventures (Series\u202fC investor)",
+    "Linda Gomez \u2013 Independent Director, former CFO of a public utility",
+    "Mark Thompson \u2013 Independent Director, former SEC senior advisor",
+    "Auditor Representative \u2013 Karen Liu, PwC (audit report presentation)",
+    "Compensation Committee Chair \u2013 Thomas Reed (compensation plan review)",
+    "Nominating & Governance Committee Chair \u2013 Valerie Brooks (charter updates)"
+  ],
+  "deliverables": [
+    "Approved FY2025 operating budget (total $210\u202fM) and capital allocation plan",
+    "Adopted 3\u2011year strategic plan (2025\u20112027) with key growth initiatives",
+    "Board resolution to authorize $30\u202fM Series\u202fD bridge financing",
+    "Audit report sign\u2011off and ratification of FY2024 financial statements",
+    "Compensation Committee recommendation for FY2025 executive equity refresh",
+    "Updated Nominating & Governance Committee charter and board succession plan",
+    "Action\u2011item register with owners, due dates, and status tracking"
+  ],
+  "success_criteria": [
+    "All agenda items completed within the 4.5\u2011hour window",
+    "Formal board resolutions recorded for budget, strategy, financing, and audit",
+    "No material objections raised; at least 90\u202f% of directors vote \u2018yes\u2019 on each resolution",
+    "Minutes drafted and distributed within 48\u202fhours of the meeting",
+    "Post\u2011meeting survey shows \u2265\u202f85\u202f% director satisfaction with meeting logistics and content",
+    "Compliance checklist (SEC, SOX, internal policies) signed off with zero open items"
+  ],
+  "constraints": [
+    "Total meeting time limited to 4.5\u202fhours; each presentation capped at 15\u202fminutes plus 5\u202fminutes Q&A",
+    "Budget approval cannot exceed $210\u202fM without a separate board vote",
+    "Series\u202fD bridge financing must be closed by June\u202f30,\u202f2025 to meet IPO timeline",
+    "Audit report must be finalized by March\u202f10,\u202f2025 to allow review at the meeting",
+    "All board materials must be distributed no later than March\u202f4,\u202f2025 (T\u201114) in a secure data\u2011room",
+    "Remote directors must have encrypted video\u2011conference access complying with SOC\u202f2 requirements"
+  ],
+  "workback_prompt": "Create a detailed work\u2011back plan for HelioTech Solutions' Annual Planning Board Meeting on March 18, 2025. The plan should list all tasks, owners, start and finish dates, dependencies, and key milestones needed to prepare board materials (financials, strategy deck, audit report, committee updates), distribute pre\u2011reads by March 4, secure video\u2011conference setup, rehearse presentations, collect director approvals, and capture minutes within 48\u202fhours. Include governance checkpoints (e.g., audit sign\u2011off, compliance review) and highlight any critical path items that could jeopardize the FY2025 budget approval, strategic plan adoption, or Series\u202fD financing authorization.",
+  "meeting_type": "Board Meeting (Annual Planning)",
+  "meeting_type_key": "10_board_meeting",
+  "scenario_number": 1,
+  "horizon": "T-90",
+  "complexity": "Very High",
+  "generated_at": "2025-11-17T07:55:25.201095"
+}

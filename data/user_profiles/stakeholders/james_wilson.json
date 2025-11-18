@@ -1,0 +1,159 @@
+{
+  "basic_info": {
+    "full_name": "James Wilson",
+    "age": 48,
+    "location": "San Francisco, CA, USA (Pacific Time - PT)",
+    "years_experience": 25,
+    "education": [
+      {
+        "degree": "B.S.",
+        "field": "Business Administration",
+        "institution": "University of Washington",
+        "year": 1998
+      },
+      {
+        "degree": "MBA",
+        "field": "Business Administration",
+        "institution": "Stanford Graduate School of Business",
+        "year": 2004
+      }
+    ]
+  },
+  "work_habits": {
+    "preferred_working_hours": "early bird (07:00‑12:00 PT) with flexible afternoon",
+    "peak_productivity_times": "08:00‑11:00 PT",
+    "communication_style": {
+      "async_preference": true,
+      "sync_preference": true,
+      "async_channels": [
+        "Slack",
+        "Email"
+      ],
+      "sync_channels": [
+        "Zoom",
+        "Teams"
+      ],
+      "expected_response_time_hours": 4
+    },
+    "meeting_preferences": {
+      "max_meetings_per_day": 3,
+      "preferred_meeting_length_minutes": 15,
+      "prefers_in_person_quarterly_offsites": true,
+      "generally_avoids_long_status_calls": true
+    },
+    "work_environment": "hybrid (3 days in office, 2 days remote)",
+    "focus_time_requirements": "two uninterrupted 90‑minute blocks each day"
+  },
+  "personality": {
+    "mbti": "ENTJ",
+    "decision_making_approach": "data‑driven with decisive execution",
+    "risk_tolerance": "moderate‑high (comfortable with calculated market expansion risks)",
+    "collaboration_style": "structured; sets clear objectives and drives cross‑functional alignment",
+    "stress_management_approach": "regular cardio exercise, mindfulness meditation, and delegation",
+    "conflict_resolution_style": "direct but diplomatic; uses fact‑based mediation"
+  },
+  "skills": {
+    "core_technical_skills": {
+      "CRM (Salesforce)": 9,
+      "Data Analytics (Tableau)": 7,
+      "Cloud Services (AWS basics)": 5,
+      "Revenue Operations Tools": 8
+    },
+    "leadership_abilities": {
+      "strategic_vision": 9,
+      "team_building": 8,
+      "change_management": 7,
+      "coaching_and_mentoring": 9
+    },
+    "domain_expertise_areas": [
+      "Enterprise SaaS sales",
+      "Channel partner management",
+      "Revenue operations",
+      "Negotiation and deal structuring"
+    ],
+    "learning_agility": 8,
+    "tools_proficiency": [
+      "Salesforce",
+      "HubSpot",
+      "Outlook/Office 365",
+      "Slack",
+      "Zoom",
+      "Tableau",
+      "PowerBI",
+      "G Suite"
+    ],
+    "languages_spoken": [
+      "English (native)",
+      "Spanish (conversational)"
+    ]
+  },
+  "performance": {
+    "task_completion_rate_percent": 92,
+    "quality_score_percent": 88,
+    "estimation_accuracy_percent": 81,
+    "multitasking_ability": 7,
+    "performance_under_pressure": 9
+  },
+  "availability": {
+    "available_hours_per_week": 45,
+    "timezone_and_working_hours": "PT, typically 07:00‑17:00 with flexibility for early calls",
+    "planned_time_off_days_per_year": 20,
+    "other_commitments": [
+      "Board member of a local tech nonprofit (quarterly meetings)",
+      "Speaker at industry conferences (2‑3 per year)"
+    ],
+    "travel_flexibility": "up to 30% of time, max 2 weeks per quarter"
+  },
+  "personal_factors": {
+    "family_status": "Married, two children (ages 12 and 9)",
+    "caregiving_responsibilities": "Occasional school drop‑offs/pick‑ups",
+    "commute_situation": "30‑minute drive to office; hybrid schedule reduces commute load",
+    "health_considerations": "Mild hypertension, manages with regular cardio workouts and annual check‑ups",
+    "career_motivation": "Passionate about scaling high‑growth tech companies and developing the next generation of sales leaders"
+  },
+  "project_impact": {
+    "reliability": 9,
+    "innovation_tendency": 6,
+    "documentation_quality": 8,
+    "mentorship_capability": 9,
+    "influence_level": 10
+  },
+  "collaboration": {
+    "meeting_frequency_preference": {
+      "executive_sync": "bi‑weekly 1‑hour strategic meeting",
+      "sales_ops_huddle": "weekly 30‑min stand‑up"
+    },
+    "communication_channels_preference": [
+      "Slack (async)",
+      "Email",
+      "Zoom (sync)"
+    ],
+    "feedback_style": "direct, data‑backed, constructive",
+    "knowledge_sharing_habits": [
+      "Quarterly sales playbook updates",
+      "Monthly lunch‑and‑learn sessions",
+      "Regular blog posts on internal knowledge base"
+    ],
+    "cross_team_collaboration_score": 8
+  },
+  "risk_factors": {
+    "potential_bottlenecks": "Tends to be the final decision‑maker on high‑value deals, which can create a single‑point‑of‑failure if unavailable",
+    "backup_person_needed": "Chief Revenue Officer (CRO) or Senior VP of Sales Operations",
+    "ramp_up_time_for_new_projects_weeks": 3,
+    "context_switching_tolerance": 5,
+    "burnout_risk_factors": [
+      "High travel load during product launches",
+      "Overcommitment to mentorship and speaking engagements",
+      "Occasional over‑extension on simultaneous strategic initiatives"
+    ]
+  },
+  "_metadata": {
+    "generated_at": "2025-11-17T15:08:52.168359",
+    "name": "James Wilson",
+    "role": "VP of Sales",
+    "seniority": "senior",
+    "company": "TechCorp",
+    "model": "gpt-oss:120b",
+    "provider": "ollama"
+  }
+}

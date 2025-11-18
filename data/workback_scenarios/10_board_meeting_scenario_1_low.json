@@ -1,0 +1,552 @@
+{
+  "scenario_name": "Annual Planning Board Meeting \u2013 FY2025",
+  "scenario_number": 1,
+  "meeting_type": "Board Meeting (Annual Planning)",
+  "quality_level": "low",
+  "workback_prompt": "Create a detailed work\u2011back plan for HelioTech Solutions' Annual Planning Board Meeting on March 18, 2025. The plan should list all tasks, owners, start and finish dates, dependencies, and key milestones needed to prepare board materials (financials, strategy deck, audit report, committee updates), distribute pre\u2011reads by March 4, secure video\u2011conference setup, rehearse presentations, collect director approvals, and capture minutes within 48\u202fhours. Include governance checkpoints (e.g., audit sign\u2011off, compliance review) and highlight any critical path items that could jeopardize the FY2025 budget approval, strategic plan adoption, or Series\u202fD financing authorization.\n\nGenerate a LOW QUALITY workback plan with these characteristics:\n- Missing key tasks or phases\n- Vague task descriptions\n- Few or no dependencies defined\n- Missing stakeholder assignments\n- No milestones or poorly defined milestones\n- Unrealistic timelines\n- No risk consideration\n- Minimal deliverables identified\n\nIMPORTANT: Generate a plan that naturally exhibits LOW quality characteristics.\nDo not explicitly label the plan as \"low quality\" - let the quality emerge from the content.",
+  "generated_at": "2025-11-17T07:57:47.498764",
+  "analysis": "# Outcomes\n\n## 1. Draft a high\u2011level work\u2011back schedule for the Annual Planning Board Meeting  \nCreate a single\u2011page outline that lists the major deliverables (financials, strategy deck, audit report, committee updates) together with approximate start\u2011 and finish\u2011dates, owners, and any obvious dependencies.  \nArtifact references: *none provided*\n\n### Reasoning  \nThe user\u2019s request centers on a \u201cwork\u2011back plan\u201d for the March\u202f18,\u202f2025 board meeting. The first logical outcome is to produce a skeletal schedule that captures the key deliverables and dates. Even though the user asked for a low\u2011quality version, the analysis must stay at a planning level and avoid delivering the final plan itself.\n\n### Approach  \n1. **Identify the core deliverables** \u2013 financial statements, strategy deck, audit report, committee updates, pre\u2011read distribution, video\u2011conference setup, rehearsal, director approvals, minutes capture.  \n2. **Assign provisional owners** \u2013 use generic role titles (e.g., \u201cFinance Lead,\u201d \u201cStrategy Owner,\u201d \u201cAudit Coordinator,\u201d \u201cIT Support\u201d).  \n3. **Sketch start/finish windows** \u2013 work backwards from the meeting date (Mar\u202f18) and the pre\u2011read deadline (Mar\u202f4) with broad buffers (e.g., \u201cearly February\u201d).  \n4. **Note obvious dependencies** \u2013 e.g., \u201caudit sign\u2011off before final financials are shared.\u201d Keep the dependency list minimal to reflect the requested low\u2011detail style.  \n5. **Capture a couple of milestones** \u2013 such as \u201cPre\u2011reads sent\u201d and \u201cBoard meeting held.\u201d  \n\n---\n\n## 2. Define governance checkpoints (audit sign\u2011off, compliance review)  \nList the two or three high\u2011level checkpoints that must occur before the board meeting, with tentative owners and dates.  \nArtifact references: *none provided*\n\n### Reasoning  \nThe user explicitly mentions governance checkpoints. Including them as a separate outcome ensures they are not omitted, even if the eventual plan will be vague.\n\n### Approach  \n1. **Audit sign\u2011off** \u2013 assign to \u201cAudit Lead,\u201d place it roughly one week before the pre\u2011read deadline.  \n2. **Compliance review** \u2013 assign to \u201cCompliance Officer,\u201d schedule it shortly after the audit sign\u2011off.  \n3. **Director approvals** \u2013 treat as a checkpoint after all materials are compiled.  \n\n---\n\n## 3. Identify critical\u2011path items that could affect budget, strategy, or financing decisions  \nHighlight the three items that, if delayed, would jeopardize FY\u202f2025 budget approval, strategic plan adoption, or Series\u202fD financing authorization.  \nArtifact references: *none provided*\n\n### Reasoning  \nThe request calls for \u201ccritical path items\u201d that could threaten major outcomes. Even in a low\u2011detail plan, it is useful to surface these high\u2011impact elements.\n\n### Approach  \n1. **Final financial package** \u2013 must be ready before pre\u2011reads.  \n2. **Audit report sign\u2011off** \u2013 required for budget credibility.  \n3. **Strategy deck approval** \u2013 essential for strategic plan adoption and financing narrative.  \n\n---\n\n## 4. Outline collaboration mechanisms among stakeholders  \nPropose a minimal set of meetings or communication channels to keep the owners aligned.  \nArtifact references: *none provided*\n\n### Reasoning  \nEffective collaboration is necessary to execute any work\u2011back plan, even a low\u2011quality one. Providing guidance on coordination helps the user start the process.\n\n### Approach  \n1. **Kick\u2011off email** \u2013 circulate the high\u2011level schedule to all owners.  \n2. **Weekly check\u2011in (informal)** \u2013 a short call or chat to surface any blockers.  \n3. **Ad\u2011hoc approvals** \u2013 use email threads for director sign\u2011offs.  \n\n---\n\n# Breakdown\n\n### Outcome\u202f1 \u2013 Draft a high\u2011level work\u2011back schedule  \n\n1. **Gather deliverable list**  \n   1.1. List financials, strategy deck, audit report, committee updates, pre\u2011reads, video\u2011conference, rehearsals, approvals, minutes.  \n2. **Assign provisional owners**  \n   2.1. Finance Lead \u2192 financials  \n   2.2. Strategy Owner \u2192 strategy deck  \n   2.3. Audit Coordinator \u2192 audit report  \n   2.4. Committee Leads \u2192 updates  \n   2.5. IT Support \u2192 video\u2011conference setup  \n   2.6. Operations Lead \u2192 rehearsals & minutes  \n3. **Sketch dates** (broad windows)  \n   3.1. Early Feb \u2013 start data collection  \n   3.2. Mid\u2011Feb \u2013 draft materials  \n   3.3. Late Feb \u2013 internal reviews  \n   3.4. Early Mar \u2013 finalize & send pre\u2011reads (target Mar\u202f4)  \n   3.5. Mar\u202f10\u201112 \u2013 rehearsals & video\u2011test  \n   3.6. Mar\u202f18 \u2013 board meeting  \n   3.7. Mar\u202f20\u201121 \u2013 minutes distribution  \n4. **Add minimal dependencies**  \n   4.1. Audit sign\u2011off \u2192 final financials  \n   4.2. Committee updates \u2192 strategy deck integration  \n5. **Insert two milestones**  \n   5.1. \u201cPre\u2011reads sent\u201d (Mar\u202f4)  \n   5.2. \u201cBoard meeting held\u201d (Mar\u202f18)  \n\n### Outcome\u202f2 \u2013 Define governance checkpoints  \n\n1. **Audit sign\u2011off** \u2013 assign to Audit Coordinator, schedule ~Feb\u202f25.  \n2. **Compliance review** \u2013 assign to Compliance Officer, schedule ~Feb\u202f28.  \n3. **Director approvals** \u2013 assign to Operations Lead, schedule ~Mar\u202f2.  \n\n### Outcome\u202f3 \u2013 Identify critical\u2011path items  \n\n1. **Financial package** \u2013 must be completed before audit sign\u2011off.  \n2. **Audit report** \u2013 must be signed off before pre\u2011reads.  \n3. **Strategy deck** \u2013 must be approved before rehearsals.  \n\n### Outcome\u202f4 \u2013 Outline collaboration mechanisms  \n\n1. **Kick\u2011off email** \u2013 distribute the high\u2011level schedule to all owners.  \n2. **Weekly informal check\u2011ins** \u2013 15\u2011minute call or chat, no formal agenda.  \n3. **Ad\u2011hoc email approvals** \u2013 directors sign off via reply\u2011all.  \n\n---\n\n*Note:* This outline purposefully leaves many details vague (e.g., exact dates, full dependency mapping, comprehensive stakeholder list) and omits some intermediate tasks, reflecting the low\u2011detail style requested. It provides a starting point that the team can flesh out, while still highlighting the most visible deliverables, owners, and high\u2011level timing. Collaboration should be kept lightweight to match the minimalistic nature of the plan.",
+  "plan": {
+    "id": "document-001",
+    "name": "Annual Planning Board Meeting Workback Plan",
+    "details": "Low\u2011detail work\u2011back schedule for the March\u202f18,\u202f2025 board meeting, including high\u2011level schedule, governance checkpoints, critical\u2011path items, and collaboration mechanisms.",
+    "draft": true,
+    "participants": [
+      {
+        "name": "Finance Lead",
+        "draft": true
+      },
+      {
+        "name": "Strategy Owner",
+        "draft": true
+      },
+      {
+        "name": "Audit Coordinator",
+        "draft": true
+      },
+      {
+        "name": "Committee Leads",
+        "draft": true
+      },
+      {
+        "name": "IT Support",
+        "draft": true
+      },
+      {
+        "name": "Operations Lead",
+        "draft": true
+      },
+      {
+        "name": "Compliance Officer",
+        "draft": true
+      }
+    ],
+    "references": [],
+    "deliverables": [
+      {
+        "id": "deliverable-001",
+        "name": "High\u2011level Work\u2011back Schedule",
+        "type": "word",
+        "draft": true,
+        "history": []
+      },
+      {
+        "id": "deliverable-002",
+        "name": "Governance Checkpoints Summary",
+        "type": "word",
+        "draft": true,
+        "history": []
+      },
+      {
+        "id": "deliverable-003",
+        "name": "Critical\u2011Path Items List",
+        "type": "word",
+        "draft": true,
+        "history": []
+      },
+      {
+        "id": "deliverable-004",
+        "name": "Collaboration Mechanisms Outline",
+        "type": "word",
+        "draft": true,
+        "history": []
+      }
+    ],
+    "tasks": [
+      {
+        "id": "task-001-1",
+        "name": "List financials, strategy deck, audit report, committee updates, pre\u2011reads, video\u2011conference, rehearsals, approvals, minutes",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-001",
+        "name": "Gather deliverable list",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-001-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[word]/deliverable-001"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002-1",
+        "name": "Finance Lead \u2192 financials",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002-2",
+        "name": "Strategy Owner \u2192 strategy deck",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-002-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002-3",
+        "name": "Audit Coordinator \u2192 audit report",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-002-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002-4",
+        "name": "Committee Leads \u2192 updates",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-002-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002-5",
+        "name": "IT Support \u2192 video\u2011conference setup",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-002-4"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002-6",
+        "name": "Operations Lead \u2192 rehearsals & minutes",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-002-5"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002",
+        "name": "Assign provisional owners",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-002-1",
+          "task-002-2",
+          "task-002-3",
+          "task-002-4",
+          "task-002-5",
+          "task-002-6"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003-1",
+        "name": "Early Feb \u2013 start data collection",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003-2",
+        "name": "Mid\u2011Feb \u2013 draft materials",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-003-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003-3",
+        "name": "Late Feb \u2013 internal reviews",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-003-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003-4",
+        "name": "Early Mar \u2013 finalize & send pre\u2011reads (target Mar\u202f4)",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-003-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003-5",
+        "name": "Mar\u202f10\u201112 \u2013 rehearsals & video\u2011test",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-003-4"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003-6",
+        "name": "Mar\u202f18 \u2013 board meeting",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-003-5"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003-7",
+        "name": "Mar\u202f20\u201121 \u2013 minutes distribution",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-003-6"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003",
+        "name": "Sketch dates (broad windows)",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-003-1",
+          "task-003-2",
+          "task-003-3",
+          "task-003-4",
+          "task-003-5",
+          "task-003-6",
+          "task-003-7"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-004-1",
+        "name": "Audit sign\u2011off \u2192 final financials",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-004-2",
+        "name": "Committee updates \u2192 strategy deck integration",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-004-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-004",
+        "name": "Add minimal dependencies",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-004-1",
+          "task-004-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-005-1",
+        "name": "Pre\u2011reads sent (Mar\u202f4)",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-005-2",
+        "name": "Board meeting held (Mar\u202f18)",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-005-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-005",
+        "name": "Insert two milestones",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-005-1",
+          "task-005-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-006",
+        "name": "Audit sign\u2011off",
+        "draft": true,
+        "details": "Assign to Audit Coordinator; schedule ~Feb\u202f25",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[word]/deliverable-002"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-007",
+        "name": "Compliance review",
+        "draft": true,
+        "details": "Assign to Compliance Officer; schedule ~Feb\u202f28",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-008",
+        "name": "Director approvals",
+        "draft": true,
+        "details": "Assign to Operations Lead; schedule ~Mar\u202f2",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-009",
+        "name": "Financial package",
+        "draft": true,
+        "details": "Must be completed before audit sign\u2011off",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[word]/deliverable-003"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-010",
+        "name": "Audit report",
+        "draft": true,
+        "details": "Must be signed off before pre\u2011reads",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-011",
+        "name": "Strategy deck",
+        "draft": true,
+        "details": "Must be approved before rehearsals",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-012",
+        "name": "Kick\u2011off email",
+        "draft": true,
+        "details": "Distribute high\u2011level schedule to all owners",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[word]/deliverable-004"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-013",
+        "name": "Weekly informal check\u2011ins",
+        "draft": true,
+        "details": "15\u2011minute call or chat, no formal agenda",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-014",
+        "name": "Ad\u2011hoc email approvals",
+        "draft": true,
+        "details": "Directors sign off via reply\u2011all",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      }
+    ],
+    "history": []
+  }
+}

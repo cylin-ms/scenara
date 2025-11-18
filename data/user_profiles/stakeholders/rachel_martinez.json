@@ -1,0 +1,178 @@
+{
+  "basic_info": {
+    "full_name": "Rachel Martinez",
+    "age": 48,
+    "location": {
+      "city": "San Francisco",
+      "state": "CA",
+      "country": "USA",
+      "timezone": "America/Los_Angeles"
+    },
+    "years_of_experience": 25,
+    "education": [
+      {
+        "degree": "Bachelor of Science",
+        "field": "Computer Science",
+        "institution": "Stanford University",
+        "year": 1999
+      },
+      {
+        "degree": "Master of Business Administration",
+        "field": "Business Administration",
+        "institution": "Harvard Business School",
+        "year": 2004
+      }
+    ]
+  },
+  "work_habits": {
+    "preferred_working_hours": "early bird (07:00‑16:00 PST)",
+    "peak_productivity_times": [
+      "08:00‑11:00",
+      "13:00‑14:30"
+    ],
+    "communication_style": {
+      "preference": "asynchronous with quick sync when needed",
+      "expected_response_time_hours": 4
+    },
+    "meeting_preferences": {
+      "max_meeting_time_per_day_hours": 2,
+      "prefers_short_standups": true,
+      "face_to_face_preference": "occasional (quarterly off‑site or when critical decisions)",
+      "meeting_free_focus_blocks_per_day": 2
+    },
+    "work_environment": "hybrid (3 days in office, 2 days remote)",
+    "focus_time_requirements": {
+      "blocks_per_day": 2,
+      "block_length_minutes": 90,
+      "do_not_disturb_policy": "enabled during focus blocks"
+    }
+  },
+  "personality": {
+    "mbti": "ENTJ",
+    "decision_making_approach": "data‑driven with strategic intuition; seeks stakeholder input but makes final call",
+    "risk_tolerance": "moderate‑high (willing to invest in bold product bets after rigorous validation)",
+    "collaboration_style": "strategic partnership; aligns cross‑functional teams around shared outcomes",
+    "stress_management_approach": "daily 5k run, mindfulness meditation, scheduled ‘quiet hour’ for decompression",
+    "conflict_resolution_style": "direct yet diplomatic; focuses on facts and future‑oriented solutions"
+  },
+  "skills": {
+    "core_technical_skills": {
+      "product_strategy": 9,
+      "data_analytics": 8,
+      "user_experience_design": 7,
+      "software_architecture": 6,
+      "ai_ml_fundamentals": 5
+    },
+    "leadership_abilities": {
+      "vision_setting": 9,
+      "people_development": 8,
+      "stakeholder_management": 9,
+      "change_management": 7,
+      "executive_presence": 8
+    },
+    "domain_expertise_areas": [
+      "SaaS enterprise platforms",
+      "cloud infrastructure (AWS, GCP)",
+      "enterprise AI/ML services",
+      "FinTech compliance products"
+    ],
+    "learning_agility": 9,
+    "tools_proficiency": [
+      "Jira",
+      "Confluence",
+      "Aha!",
+      "Tableau",
+      "Mixpanel",
+      "PowerBI",
+      "Slack",
+      "Zoom",
+      "Miro"
+    ],
+    "languages_spoken": [
+      "English (native)",
+      "Spanish (fluent)"
+    ]
+  },
+  "performance": {
+    "task_completion_rate_percent": 94,
+    "quality_score_percent": 92,
+    "estimation_accuracy_percent": 88,
+    "multitasking_ability": 7,
+    "performance_under_pressure": 9
+  },
+  "availability": {
+    "available_hours_per_week": 45,
+    "working_hours_local": "07:00‑16:00 PST",
+    "planned_time_off_days_per_year": 20,
+    "other_commitments": [
+      {
+        "role": "Board Member",
+        "organization": "TechForGood Non‑Profit",
+        "time_per_month_hours": 8
+      }
+    ],
+    "travel_flexibility": {
+      "percentage_of_time": 30,
+      "international_travel_quarterly": true
+    }
+  },
+  "personal_factors": {
+    "family_status": "Married with two teenage children (ages 15 and 17)",
+    "caregiving_responsibilities": "None",
+    "commute_situation": "30‑minute drive to office on hybrid days",
+    "health_considerations": {
+      "regular_exercise": "5k run 4×/week",
+      "known_conditions": "Occasional migraines (managed with medication)",
+      "sleep_habit": "7‑8 hrs/night"
+    },
+    "career_motivation": "Building world‑class products that shape industry standards and leave a lasting legacy"
+  },
+  "project_impact": {
+    "reliability": 9,
+    "innovation_tendency": 8,
+    "documentation_quality": 7,
+    "mentorship_capability": 9,
+    "influence_level": 10
+  },
+  "collaboration": {
+    "meeting_frequency_preference": {
+      "team_sync": "twice weekly (45‑min)",
+      "leadership_roundtable": "weekly (1‑hour)",
+      "ad_hoc_syncs": "as needed, capped at 30 min"
+    },
+    "communication_channels_preference": {
+      "async": "Slack, Confluence, email",
+      "sync": "Zoom, in‑person when on site"
+    },
+    "feedback_style": "direct with constructive framing; encourages rapid iteration",
+    "knowledge_sharing_habits": [
+      "writes monthly Product Deep‑Dive newsletter",
+      "hosts quarterly brown‑bag sessions on emerging tech",
+      "maintains a public roadmap in Aha!"
+    ],
+    "cross_team_collaboration_score": 9
+  },
+  "risk_factors": {
+    "potential_bottlenecks": [
+      "Overcommitment to strategic initiatives can delay tactical execution",
+      "Decision latency when data gaps exist"
+    ],
+    "backup_person_needed": "Deputy CPO – Anna Lee (covers day‑to‑day product ops)",
+    "ramp_up_time_for_new_projects_weeks": 4,
+    "context_switching_tolerance": 6,
+    "burnout_risk_factors": [
+      "High travel load during product launch cycles",
+      "Board responsibilities adding extra meetings",
+      "Balancing family commitments during school year"
+    ]
+  },
+  "_metadata": {
+    "generated_at": "2025-11-17T15:08:03.630832",
+    "name": "Rachel Martinez",
+    "role": "Chief Product Officer",
+    "seniority": "executive",
+    "company": "TechCorp",
+    "model": "gpt-oss:120b",
+    "provider": "ollama"
+  }
+}

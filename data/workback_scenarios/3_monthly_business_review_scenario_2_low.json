@@ -1,0 +1,426 @@
+{
+  "scenario_name": "Nimbus Cloud Solutions \u2013 Enterprise SaaS Monthly Business Review (MBR) \u2013 Product & Engineering",
+  "scenario_number": 2,
+  "meeting_type": "Monthly Business Review",
+  "quality_level": "low",
+  "workback_prompt": "Generate a detailed workback plan for the 'Nimbus Cloud Solutions \u2013 Enterprise SaaS Monthly Business Review (MBR) \u2013 Product & Engineering' scenario. The plan should start from T\u201130 (30 days before the meeting on 5\u202fDecember\u202f2025) and outline all tasks, owners, durations, dependencies, and required data sources needed to produce the deliverables listed. Include milestones for data extraction, deck creation, stakeholder reviews, budget approval steps, and contingency actions for the identified constraints. Format the output as a table or Gantt\u2011style list suitable for project tracking.\n\nGenerate a LOW QUALITY workback plan with these characteristics:\n- Missing key tasks or phases\n- Vague task descriptions\n- Few or no dependencies defined\n- Missing stakeholder assignments\n- No milestones or poorly defined milestones\n- Unrealistic timelines\n- No risk consideration\n- Minimal deliverables identified\n\nIMPORTANT: Generate a plan that naturally exhibits LOW quality characteristics.\nDo not explicitly label the plan as \"low quality\" - let the quality emerge from the content.",
+  "generated_at": "2025-11-17T04:48:09.264715",
+  "analysis": "**Nimbus Cloud Solutions \u2013 Enterprise SaaS Monthly Business Review (MBR) \u2013 Product & Engineering**  \n*Work\u2011back plan \u2013 starting T\u201130 (30\u202fdays before the meeting on\u202f5\u202fDec\u202f2025)*  \n\n| Day (relative to meeting) | Task / Milestone | Owner (if known) | Duration (days) | Dependencies | Required Data / Sources |\n|---------------------------|------------------|------------------|-----------------|--------------|--------------------------|\n| -30 | \u201cStart\u201d (kick\u2011off) | \u2013 | 1 | \u2013 | \u2013 |\n| -29 | Pull some data | Analyst | 2 | \u201cStart\u201d | Sales numbers, usage logs |\n| -27 | Prepare deck (rough) | PM | 5 | Pull some data | Data extracts, previous decks |\n| -22 | Review deck internally | Team lead | 1 | Prepare deck (rough) | Draft deck |\n| -21 | Update deck (quick fix) | PM | 2 | Review deck internally | Feedback notes |\n| -19 | Get budget numbers | Finance | 1 | \u2013 | Budget spreadsheet |\n| -18 | Add budget slide | PM | 1 | Get budget numbers | Budget numbers |\n| -17 | Send deck to stakeholder | \u2013 | 1 | Add budget slide | Draft deck |\n| -16 | Stakeholder review (quick) | Exec | 1 | Send deck to stakeholder | Deck |\n| -15 | Minor edits | PM | 1 | Stakeholder review (quick) | Comments |\n| -14 | Finalize deck | PM | 1 | Minor edits | Final deck |\n| -13 | Prepare talking points | \u2013 | 1 | Finalize deck | Deck |\n| -12 | Send final deck to meeting organizer | PM | 1 | Prepare talking points | Final deck |\n| -11 | \u201cMilestone: Data extraction complete\u201d | \u2013 | \u2013 | Pull some data | \u2013 |\n| -10 | \u201cMilestone: Deck ready\u201d | \u2013 | \u2013 | Finalize deck | \u2013 |\n| -9  | Contingency: If data missing, use old numbers | Analyst | 2 | Pull some data | Historical data |\n| -7  | Contingency: If budget not approved, skip slide | \u2013 | 1 | Get budget numbers | \u2013 |\n| -6  | Quick rehearsal | PM | 1 | Prepare talking points | Deck |\n| -5  | Final check | PM | 1 | Quick rehearsal | Deck |\n| -4  | Send reminder to attendees | Organizer | 1 | \u2013 | Meeting invite |\n| -3  | \u201cMilestone: Stakeholder sign\u2011off\u201d | Exec | \u2013 | Stakeholder review (quick) | \u2013 |\n| -2  | Last\u2011minute tweaks | PM | 1 | Final check | Deck |\n| -1  | Upload deck to shared drive | PM | 0.5 | Last\u2011minute tweaks | Final deck |\n| 0   | MBR meeting (5\u202fDec\u202f2025) | All | \u2013 | \u2013 | Deck, talking points |",
+  "plan": {
+    "id": "document-001",
+    "name": "Nimbus Cloud Solutions \u2013 Enterprise SaaS Monthly Business Review (MBR) \u2013 Product & Engineering",
+    "details": "Work\u2011back plan \u2013 starting T\u201130 (30\u202fdays before the meeting on\u202f5\u202fDec\u202f2025)",
+    "draft": true,
+    "participants": [
+      {
+        "name": "Analyst",
+        "email": null,
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "PM",
+        "email": null,
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Team lead",
+        "email": null,
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Finance",
+        "email": null,
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Exec",
+        "email": null,
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Organizer",
+        "email": null,
+        "details": "",
+        "draft": true
+      }
+    ],
+    "references": [],
+    "deliverables": [
+      {
+        "name": "Final Deck",
+        "type": "word",
+        "id": "deck-001",
+        "draft": true,
+        "history": []
+      }
+    ],
+    "tasks": [
+      {
+        "id": "task-001",
+        "name": "Start (kick\u2011off)",
+        "draft": true,
+        "details": "Owner: \u2013; Duration: 1 day; Required Data: \u2013",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002",
+        "name": "Pull some data",
+        "draft": true,
+        "details": "Owner: Analyst; Duration: 2 days; Required Data: Sales numbers, usage logs",
+        "dependencies": [
+          "task-001"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003",
+        "name": "Prepare deck (rough)",
+        "draft": true,
+        "details": "Owner: PM; Duration: 5 days; Required Data: Data extracts, previous decks",
+        "dependencies": [
+          "task-002"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-004",
+        "name": "Review deck internally",
+        "draft": true,
+        "details": "Owner: Team lead; Duration: 1 day; Required Data: Draft deck",
+        "dependencies": [
+          "task-003"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-005",
+        "name": "Update deck (quick fix)",
+        "draft": true,
+        "details": "Owner: PM; Duration: 2 days; Required Data: Feedback notes",
+        "dependencies": [
+          "task-004"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-006",
+        "name": "Get budget numbers",
+        "draft": true,
+        "details": "Owner: Finance; Duration: 1 day; Required Data: Budget spreadsheet",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-007",
+        "name": "Add budget slide",
+        "draft": true,
+        "details": "Owner: PM; Duration: 1 day; Required Data: Budget numbers",
+        "dependencies": [
+          "task-006"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-008",
+        "name": "Send deck to stakeholder",
+        "draft": true,
+        "details": "Owner: \u2013; Duration: 1 day; Required Data: Draft deck",
+        "dependencies": [
+          "task-007"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-009",
+        "name": "Stakeholder review (quick)",
+        "draft": true,
+        "details": "Owner: Exec; Duration: 1 day; Required Data: Deck",
+        "dependencies": [
+          "task-008"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-010",
+        "name": "Minor edits",
+        "draft": true,
+        "details": "Owner: PM; Duration: 1 day; Required Data: Comments",
+        "dependencies": [
+          "task-009"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-011",
+        "name": "Finalize deck",
+        "draft": true,
+        "details": "Owner: PM; Duration: 1 day; Required Data: Final deck",
+        "dependencies": [
+          "task-010"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[word]/deck-001"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-012",
+        "name": "Prepare talking points",
+        "draft": true,
+        "details": "Owner: \u2013; Duration: 1 day; Required Data: Deck",
+        "dependencies": [
+          "task-011"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-013",
+        "name": "Send final deck to meeting organizer",
+        "draft": true,
+        "details": "Owner: PM; Duration: 1 day; Required Data: Final deck",
+        "dependencies": [
+          "task-012"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[word]/deck-001"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-014",
+        "name": "Milestone: Data extraction complete",
+        "draft": true,
+        "details": "Owner: \u2013; Required Data: \u2013",
+        "dependencies": [
+          "task-002"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-015",
+        "name": "Milestone: Deck ready",
+        "draft": true,
+        "details": "Owner: \u2013; Required Data: \u2013",
+        "dependencies": [
+          "task-011"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-016",
+        "name": "Contingency: If data missing, use old numbers",
+        "draft": true,
+        "details": "Owner: Analyst; Duration: 2 days; Required Data: Historical data",
+        "dependencies": [
+          "task-002"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-017",
+        "name": "Contingency: If budget not approved, skip slide",
+        "draft": true,
+        "details": "Owner: \u2013; Duration: 1 day; Required Data: \u2013",
+        "dependencies": [
+          "task-006"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-018",
+        "name": "Quick rehearsal",
+        "draft": true,
+        "details": "Owner: PM; Duration: 1 day; Required Data: Deck",
+        "dependencies": [
+          "task-012"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-019",
+        "name": "Final check",
+        "draft": true,
+        "details": "Owner: PM; Duration: 1 day; Required Data: Deck",
+        "dependencies": [
+          "task-018"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-020",
+        "name": "Send reminder to attendees",
+        "draft": true,
+        "details": "Owner: Organizer; Duration: 1 day; Required Data: Meeting invite",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-021",
+        "name": "Milestone: Stakeholder sign\u2011off",
+        "draft": true,
+        "details": "Owner: Exec; Required Data: \u2013",
+        "dependencies": [
+          "task-009"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-022",
+        "name": "Last\u2011minute tweaks",
+        "draft": true,
+        "details": "Owner: PM; Duration: 1 day; Required Data: Deck",
+        "dependencies": [
+          "task-019"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-023",
+        "name": "Upload deck to shared drive",
+        "draft": true,
+        "details": "Owner: PM; Duration: 0.5 day; Required Data: Final deck",
+        "dependencies": [
+          "task-022"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[word]/deck-001"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-024",
+        "name": "MBR meeting (5\u202fDec\u202f2025)",
+        "draft": true,
+        "details": "Owner: All; Required Data: Deck, talking points",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[word]/deck-001"
+        ],
+        "references": [],
+        "history": []
+      }
+    ],
+    "history": []
+  }
+}

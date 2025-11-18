@@ -1,0 +1,141 @@
+{
+  "basic_info": {
+    "full_name": "Jamal Williams",
+    "age": 32,
+    "location": "Austin, TX, USA",
+    "timezone": "America/Chicago (UTC-6 / UTC-5 DST)",
+    "years_experience": 7,
+    "education": [
+      {
+        "degree": "B.S. Computer Science",
+        "institution": "University of Texas at Austin",
+        "year": 2015
+      },
+      {
+        "degree": "M.S. Information Systems",
+        "institution": "Texas A&M University",
+        "year": 2017
+      }
+    ]
+  },
+  "work_habits": {
+    "preferred_working_hours": "07:00-15:00",
+    "work_style": "early bird",
+    "peak_productivity_times": "08:00-11:30",
+    "communication_style": {
+      "preference": "asynchronous",
+      "response_time_expectation": "within 2 hours for Slack/email, immediate for stand‑up calls"
+    },
+    "meeting_preferences": "minimizes meetings; prefers short (15‑30 min) agenda‑driven sessions; open to video when needed",
+    "work_environment": "hybrid (3 days remote, 2 days in Austin office)",
+    "focus_time_requirements": "4 uninterrupted hours per day"
+  },
+  "personality": {
+    "mbti": "ISTJ",
+    "decision_making_approach": "data‑driven, prefers consensus after reviewing metrics",
+    "risk_tolerance": 5,
+    "collaboration_style": "structured and reliable; likes clear roles and responsibilities",
+    "stress_management_approach": "uses Pomodoro technique, short walks, and mindfulness apps",
+    "conflict_resolution_style": "calm mediator – seeks facts, proposes compromise"
+  },
+  "skills": {
+    "core_technical_skills": {
+      "AWS": 9,
+      "Docker": 8,
+      "Kubernetes": 8,
+      "Terraform": 7,
+      "GitLab CI/CD": 8,
+      "Linux Administration": 9,
+      "Python": 7,
+      "Bash/Shell Scripting": 8,
+      "Prometheus & Grafana": 7,
+      "Ansible": 6
+    },
+    "leadership_abilities": 6,
+    "domain_expertise_areas": [
+      "Cloud infrastructure automation",
+      "Container orchestration",
+      "CI/CD pipeline design",
+      "Observability & monitoring"
+    ],
+    "learning_agility": 8,
+    "tools_proficiency": [
+      "Git",
+      "Jenkins (basic)",
+      "GitLab",
+      "Slack",
+      "Microsoft Teams",
+      "Confluence",
+      "Jira",
+      "AWS CloudFormation",
+      "Helm"
+    ],
+    "languages_spoken": [
+      "English (native)",
+      "Spanish (conversational)"
+    ]
+  },
+  "performance": {
+    "task_completion_rate": 92,
+    "quality_score": 95,
+    "estimation_accuracy": 88,
+    "multitasking_ability": 7,
+    "performance_under_pressure": 8
+  },
+  "availability": {
+    "available_hours_per_week": 40,
+    "timezone": "America/Chicago",
+    "working_hours": "07:00-15:00 (CST)",
+    "planned_time_off_days_per_year": 15,
+    "other_commitments": "Weekly community DevOps meetup on Thursday evenings (1 hr)",
+    "travel_flexibility": "up to 20% of time; max 2 weeks per quarter for conferences or client sites"
+  },
+  "personal_factors": {
+    "family_status": "Married, no children",
+    "caregiving_responsibilities": "Occasional elder care for a parent (≈1 day/month)",
+    "commute_situation": "20‑minute drive to the Austin office; occasional car‑share",
+    "health_considerations": "Mild seasonal allergies; no chronic conditions",
+    "career_motivation": "Aiming to become Senior DevOps Lead; passionate about building scalable, resilient platforms"
+  },
+  "project_impact": {
+    "reliability": 9,
+    "innovation_tendency": 6,
+    "documentation_quality": 8,
+    "mentorship_capability": 7,
+    "influence_level": 6
+  },
+  "collaboration": {
+    "meeting_frequency_preference": "Daily 15‑min stand‑up; bi‑weekly sprint planning; monthly cross‑team sync",
+    "communication_channels_preference": [
+      "Slack",
+      "Microsoft Teams",
+      "Email"
+    ],
+    "feedback_style": "direct but constructive; prefers written follow‑up",
+    "knowledge_sharing_habits": "Maintains internal wiki pages, writes post‑mortem docs, hosts monthly brown‑bag sessions",
+    "cross_team_collaboration": 7
+  },
+  "risk_factors": {
+    "potential_bottlenecks": [
+      "Single point of knowledge on legacy Jenkins pipelines",
+      "Heavy reliance on one primary on‑call engineer during peak incidents"
+    ],
+    "backup_person_needed": "Alex Rivera (mid‑level DevOps Engineer)",
+    "ramp_up_time_weeks": 3,
+    "context_switching_tolerance": 6,
+    "burnout_risk_factors": [
+      "Extended on‑call rotations without relief",
+      "Tight release deadlines without buffer",
+      "Insufficient documentation for newly acquired services"
+    ]
+  },
+  "_metadata": {
+    "generated_at": "2025-11-17T15:19:16.174500",
+    "name": "Jamal Williams",
+    "role": "DevOps Engineer",
+    "seniority": "mid",
+    "company": "TechCorp",
+    "model": "gpt-oss:120b",
+    "provider": "ollama"
+  }
+}

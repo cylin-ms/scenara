@@ -1,0 +1,699 @@
+{
+  "scenario_name": "DataPulse Real\u2011Time Cohort Insights Feature Launch",
+  "scenario_number": 3,
+  "meeting_type": "Product Feature Launch",
+  "quality_level": "high",
+  "workback_prompt": "Generate a detailed 30\u2011day workback plan for the launch of DataPulse's Real\u2011Time Cohort Insights feature. Include weekly milestones, task owners, dependencies, critical path items, risk mitigation steps, and a launch\u2011day run\u2011book. Use the scenario information provided: product name, launch date (2026\u201101\u201114 10:00\u202fAM PST), cross\u2011functional team members, deliverables, success criteria, constraints, and launch channels (email series, blog post, in\u2011app banner, webinar, social media).\n\nGenerate a HIGH QUALITY workback plan with these characteristics:\n- Comprehensive task coverage\n- Clear, actionable task descriptions\n- Well-defined dependencies\n- All tasks assigned to specific owners\n- Clear milestones with completion criteria\n- Realistic timelines with buffers\n- Proactive risk management\n- Complete deliverable list\n\nIMPORTANT: Generate a plan that naturally exhibits HIGH quality characteristics.\nDo not explicitly label the plan as \"high quality\" - let the quality emerge from the content.",
+  "generated_at": "2025-11-17T05:37:45.358257",
+  "analysis": "# Outcomes  \n\n## 1. Feature Release Readiness  \nFinalize the product\u2011level deliverables so the Real\u2011Time Cohort Insights feature is technically stable, secure, and performance\u2011validated for launch.  \nArtifact references: *none*  \n\n### Reasoning  \nThe launch cannot proceed until the feature is production\u2011ready. The scenario lists \u201csuccess criteria\u201d that include functional correctness, latency\u202f<\u202f200\u202fms, and security compliance. Those criteria map directly to this outcome, making it a prerequisite for every marketing and customer\u2011facing activity.  \n\n### Approach  \n1. **Code Freeze & Branch Management** \u2013 lock the release branch and tag it.  \n2. **Functional QA** \u2013 execute test cases, capture defect metrics, and obtain sign\u2011off.  \n3. **Performance & Load Testing** \u2013 simulate real\u2011time cohort queries at expected peak volume; verify latency and scalability.  \n4. **Security Review** \u2013 run static analysis, penetration testing, and data\u2011privacy checks.  \n5. **Release Documentation** \u2013 compile release notes, version bump, and rollback plan.  \n6. **Sign\u2011off** \u2013 product manager and engineering lead formally approve the release package.  \n\nCritical path items: Code freeze, performance testing, security review.  \nRisk mitigation:  \n- **Buffer** \u2013 allocate 2\u202fdays after each testing phase for defect remediation.  \n- **Parallel defect triage** \u2013 QA lead works with engineers continuously to avoid bottlenecks.  \n\n---\n\n## 2. Marketing Communication Package  \nProduce all external\u2011facing assets (email series, blog post, in\u2011app banner, webinar slides, social\u2011media copy) that will announce and educate users about the new feature.  \nArtifact references: *none*  \n\n### Reasoning  \nThe launch channels listed in the scenario are the primary means of reaching customers. Deliverables must be ready **before** the launch date to allow scheduling and pre\u2011approval.  \n\n### Approach  \n1. **Content Outline** \u2013 product marketing drafts the messaging framework aligned to success criteria.  \n2. **Copywriting** \u2013 writers create email copy (3\u2011email drip), blog article, social posts (Twitter, LinkedIn, Facebook), and webinar script.  \n3. **Design** \u2013 designers produce visuals for email templates, banner graphics, and slide decks.  \n4. **Review Cycle** \u2013 legal, compliance, and brand teams review all assets; incorporate feedback.  \n5. **Scheduling** \u2013 marketing ops loads assets into automation platforms, sets send dates (email series starts 7\u202fdays before launch).  \n6. **Pre\u2011launch Teaser** \u2013 schedule a teaser social post 3\u202fdays prior to launch to build awareness.  \n\nCritical path items: Copywriting, design hand\u2011off, legal review.  \nRisk mitigation:  \n- **Parallel reviews** \u2013 send copy and design to legal simultaneously.  \n- **Fallback copy** \u2013 maintain \u201cstand\u2011by\u201d generic messaging in case of last\u2011minute approvals.  \n\n---\n\n## 3. Customer Enablement Materials  \nCreate internal and external support resources so customers can adopt the feature smoothly.  \nArtifact references: *none*  \n\n### Reasoning  \nSuccess criteria include \u201c\u2265\u202f30\u202f% of target users adopt within 30\u202fdays.\u201d Enablement materials (how\u2011to guides, FAQs, training videos) are essential to drive that adoption.  \n\n### Approach  \n1. **Technical Documentation** \u2013 product writer drafts a user guide and API reference (if applicable).  \n2. **Support FAQ** \u2013 support lead compiles anticipated questions from beta testers.  \n3. **Internal Training** \u2013 conduct a 30\u2011minute live walkthrough for sales, CS, and support teams.  \n4. **Self\u2011service Video** \u2013 produce a short (2\u2011minute) demo video for the in\u2011app banner link.  \n5. **Publish** \u2013 upload docs to the knowledge base, embed video in the banner, and distribute the FAQ to the support queue.  \n\nCritical path items: Technical documentation, internal training.  \nRisk mitigation:  \n- **Beta feedback loop** \u2013 incorporate beta tester comments before finalizing docs.  \n- **Version control** \u2013 keep docs in a shared repo to allow rapid updates post\u2011launch.  \n\n---\n\n## 4. Launch Operations Planning  \nDefine the launch\u2011day run\u2011book, monitoring dashboards, and incident\u2011response procedures.  \nArtifact references: *none*  \n\n### Reasoning  \nA coordinated launch requires a detailed run\u2011book that specifies who does what at each minute of the launch window (2026\u201101\u201114\u202f10:00\u202fAM\u202fPST). Monitoring and rapid response are needed to meet the \u201c\u2264\u202f5\u202f% error rate\u201d success metric.  \n\n### Approach  \n1. **Run\u2011book Draft** \u2013 operations lead outlines step\u2011by\u2011step actions (pre\u2011launch health check, feature toggle, post\u2011launch verification).  \n2. **Monitoring Setup** \u2013 configure real\u2011time dashboards for latency, error rates, and adoption metrics.  \n3. **Incident Response** \u2013 define escalation paths, on\u2011call roster, and rollback procedure.  \n4. **Dry\u2011run** \u2013 conduct a tabletop simulation 3\u202fdays before launch; walk through each run\u2011book step.  \n5. **Final Sign\u2011off** \u2013 engineering, product, and support leads approve the run\u2011book.  \n\nCritical path items: Monitoring setup, incident response plan.  \nRisk mitigation:  \n- **Redundancy** \u2013 assign a secondary on\u2011call engineer.  \n- **Rollback script** \u2013 test the feature toggle rollback in a staging environment.  \n\n---\n\n## 5. Stakeholder Alignment & Sign\u2011off  \nSecure formal approval from all functional leads that the launch is ready to proceed.  \nArtifact references: *none*  \n\n### Reasoning  \nGiven the cross\u2011functional nature of the launch, a single point of failure (missing sign\u2011off) can delay the go\u2011live. Aligning stakeholders early ensures that dependencies are visible and mitigated.  \n\n### Approach  \n1. **Kick\u2011off Review** \u2013 product manager hosts a launch readiness meeting (Day\u202f\u201130).  \n2. **Readiness Checklist** \u2013 circulate a checklist covering feature, marketing, enablement, and ops items.  \n3. **Status Updates** \u2013 weekly syncs (Day\u202f\u201123,\u202f\u201116,\u202f\u20119) to capture progress and blockers.  \n4. **Final Go/No\u2011Go** \u2013 convene a go\u2011live decision meeting 24\u202fhours before launch; capture written approval.  \n\nCritical path items: Final go/no\u2011go decision.  \nRisk mitigation:  \n- **Contingency window** \u2013 reserve a 48\u2011hour buffer before the launch date for any outstanding items.  \n\n---\n\n## 6. Launch Execution & Post\u2011Launch Monitoring  \nExecute the launch on schedule, monitor performance, and conduct a post\u2011mortem.  \nArtifact references: *none*  \n\n### Reasoning  \nThe launch day (2026\u201101\u201114\u202f10:00\u202fAM\u202fPST) is the culmination of all prior work. Immediate monitoring validates success criteria; a post\u2011mortem captures lessons for future releases.  \n\n### Approach  \n1. **Go\u2011Live** \u2013 at 10:00\u202fAM\u202fPST, operations toggles the feature on production per run\u2011book.  \n2. **Real\u2011time Monitoring** \u2013 watch dashboards for latency, error rate, and adoption spikes for the first 2\u202fhours.  \n3. **Communications** \u2013 marketing sends the first launch email; in\u2011app banner goes live; social posts are published.  \n4. **Issue Triage** \u2013 on\u2011call team follows the incident response plan for any anomalies.  \n5. **Adoption Tracking** \u2013 product analytics team tracks cohort usage against the 30\u202f% adoption target.  \n6. **Post\u2011Launch Review** \u2013 48\u202fhours after launch, hold a retrospective; document findings and action items.  \n\nCritical path items: Feature toggle, first\u2011hour monitoring, launch communications.  \nRisk mitigation:  \n- **Hot\u2011fix window** \u2013 keep engineering on standby for the first 4\u202fhours.  \n- **Communication fallback** \u2013 if email platform fails, have a manual send list ready.  \n\n---\n\n# Breakdown  \n\n### 1. Feature Release Readiness  \n1.1 Code Freeze (Day\u202f\u201130) \u2013 **Engineering Lead**  \n\u20031.1.1 Tag release branch \u2013 **DevOps Engineer** (Depends on 1.1)  \n1.2 Functional QA (Day\u202f\u201129\u202f\u2192\u202f\u201127) \u2013 **QA Lead**  \n\u20031.2.1 Execute test suite \u2013 **QA Engineers** (Can run in parallel)  \n\u20031.2.2 Log defects \u2013 **QA Lead** (Depends on 1.2.1)  \n1.3 Defect Remediation (Day\u202f\u201126\u202f\u2192\u202f\u201124) \u2013 **Engineering Team** (Depends on 1.2.2)  \n1.4 Performance & Load Testing (Day\u202f\u201123\u202f\u2192\u202f\u201121) \u2013 **Performance Engineer**  \n\u20031.4.1 Build test scripts \u2013 **Performance Engineer** (Depends on 1.3)  \n\u20031.4.2 Execute at 2\u00d7 expected load \u2013 **Performance Engineer** (Can run in parallel)  \n1.5 Security Review (Day\u202f\u201120\u202f\u2192\u202f\u201118) \u2013 **Security Lead**  \n\u20031.5.1 Static analysis \u2013 **Security Engineer** (Depends on 1.4)  \n\u20031.5.2 Pen\u2011test \u2013 **External Vendor** (Can run in parallel)  \n1.6 Release Documentation (Day\u202f\u201117\u202f\u2192\u202f\u201115) \u2013 **Product Manager** & **Technical Writer**  \n\u20031.6.1 Draft release notes \u2013 **Technical Writer** (Depends on 1.5)  \n\u20031.6.2 Review & finalize \u2013 **Product Manager** (Depends on 1.6.1)  \n1.7 Sign\u2011off (Day\u202f\u201114) \u2013 **Product Manager**, **Engineering Lead** (Depends on 1.6.2)  \n\n### 2. Marketing Communication Package  \n2.1 Messaging Framework (Day\u202f\u201130) \u2013 **Product Marketing Manager**  \n2.2 Copywriting (Day\u202f\u201129\u202f\u2192\u202f\u201125) \u2013 **Copywriter**  \n\u20032.2.1 Email series (3 emails) \u2013 **Copywriter** (Depends on 2.1)  \n\u20032.2.2 Blog post \u2013 **Copywriter** (Can run in parallel)  \n\u20032.2.3 Social copy \u2013 **Copywriter** (Can run in parallel)  \n\u20032.2.4 Webinar script \u2013 **Copywriter** (Can run in parallel)  \n2.3 Design (Day\u202f\u201124\u202f\u2192\u202f\u201120) \u2013 **Designer**  \n\u20032.3.1 Email templates \u2013 **Designer** (Depends on 2.2.1)  \n\u20032.3.2 Banner graphics \u2013 **Designer** (Depends on 2.2.3)  \n\u20032.3.3 Webinar slides \u2013 **Designer** (Depends on 2.2.4)  \n2.4 Legal & Compliance Review (Day\u202f\u201119\u202f\u2192\u202f\u201117) \u2013 **Legal Counsel**  \n\u20032.4.1 Review copy \u2013 **Legal Counsel** (Depends on 2.2)  \n\u20032.4.2 Review design \u2013 **Legal Counsel** (Depends on 2.3)  \n2.5 Incorporate Feedback (Day\u202f\u201116\u202f\u2192\u202f\u201114) \u2013 **Product Marketing Manager** & **Designer** (Depends on 2.4)  \n2.6 Scheduling & Automation (Day\u202f\u201113\u202f\u2192\u202f\u201111) \u2013 **Marketing Ops**  \n\u20032.6.1 Load emails into ESP, set send dates \u2013 **Marketing Ops** (Depends on 2.5)  \n\u20032.6.2 Queue social posts \u2013 **Social Media Manager** (Depends on 2.5)  \n2.7 Pre\u2011launch Teaser (Day\u202f\u201110) \u2013 **Social Media Manager** (Can run in parallel)  \n\n### 3. Customer Enablement Materials  \n3.1 Technical Guide Draft (Day\u202f\u201130\u202f\u2192\u202f\u201127) \u2013 **Technical Writer**  \n3.2 FAQ Compilation (Day\u202f\u201126\u202f\u2192\u202f\u201124) \u2013 **Support Lead** (Uses beta feedback)  \n3.3 Internal Training Deck (Day\u202f\u201123\u202f\u2192\u202f\u201121) \u2013 **Product Manager** & **Support Lead**  \n3.4 Demo Video Production (Day\u202f\u201120\u202f\u2192\u202f\u201118) \u2013 **Video Producer**  \n3.5 Publish to Knowledge Base (Day\u202f\u201117) \u2013 **Technical Writer** (Depends on 3.1)  \n3.6 Distribute Training (Day\u202f\u201116) \u2013 **Support Lead** (Live session for CS & Sales)  \n\n### 4. Launch Operations Planning  \n4.1 Run\u2011book Draft (Day\u202f\u201130\u202f\u2192\u202f\u201128) \u2013 **Launch Operations Lead**  \n4.2 Monitoring Dashboard Config (Day\u202f\u201127\u202f\u2192\u202f\u201125) \u2013 **Site Reliability Engineer**  \n4.3 Incident Response Plan (Day\u202f\u201124\u202f\u2192\u202f\u201122) \u2013 **Support Lead** & **Engineering Lead**  \n4.4 Dry\u2011run Simulation (Day\u202f\u201121) \u2013 **All Leads** (Depends on 4.1\u20114.3)  \n4.5 Run\u2011book Revision (Day\u202f\u201120\u202f\u2192\u202f\u201119) \u2013 **Launch Operations Lead** (Depends on 4.4)  \n4.6 Final Sign\u2011off (Day\u202f\u201118) \u2013 **Product Manager**, **Engineering Lead**, **Support Lead** (Depends on 4.5)  \n\n### 5. Stakeholder Alignment & Sign\u2011off  \n5.1 Kick\u2011off Review Meeting (Day\u202f\u201130) \u2013 **Product Manager** (Invites all leads)  \n5.2 Weekly Status Sync 1 (Day\u202f\u201123) \u2013 **Product Manager** (Depends on 5.1)  \n5.3 Weekly Status Sync 2 (Day\u202f\u201116) \u2013 **Product Manager** (Depends on 5.2)  \n5.4 Final Go/No\u2011Go Meeting (Day\u202f\u20111) \u2013 **Product Manager** (Depends on all prior outcomes)  \n5.5 Document Go/No\u2011Go Decision (Day\u202f\u20111) \u2013 **Product Manager** (Depends on 5.4)  \n\n### 6. Launch Execution & Post\u2011Launch Monitoring  \n6.1 Feature Toggle (2026\u201101\u201114\u202f10:00\u202fAM\u202fPST) \u2013 **Release Engineer** (Depends on 5.5)  \n6.2 First\u2011Hour Monitoring (2026\u201101\u201114\u202f10:00\u202f\u2192\u202f12:00\u202fPST) \u2013 **SRE Team** (Depends on 6.1)  \n6.3 Launch Email Send (2026\u201101\u201114\u202f10:05\u202fAM\u202fPST) \u2013 **Marketing Ops** (Depends on 6.1)  \n6.4 In\u2011app Banner Activation (2026\u201101\u201114\u202f10:05\u202fAM\u202fPST) \u2013 **Product Engineer** (Depends on 6.1)  \n6.5 Social Posts Publication (2026\u201101\u201114\u202f10:10\u202fAM\u202fPST) \u2013 **Social Media Manager** (Depends on 6.1)  \n6.6 Webinar Live (2026\u201101\u201114\u202f11:00\u202fAM\u202fPST) \u2013 **Webinar Host** (Depends on 6.1)  \n6.7 Issue Triage (First 4\u202fhours) \u2013 **On\u2011call Engineer** (Depends on 6.2)  \n6.8 Adoption Tracking (Day\u202f\u201113\u202f\u2192\u202f\u20110) \u2013 **Product Analyst** (Begins Day\u202f\u201113, continues post\u2011launch)  \n6.9 Post\u2011Launch Retrospective (2026\u201101\u201116) \u2013 **Product Manager** (Depends on 6.7 & 6.8)  \n6.10 Retrospective Document & Action Items (2026\u201101\u201117) \u2013 **Product Manager** (Depends on 6.9)  \n\n---  \n\n**Key Dependencies & Critical Path**  \n- **Code Freeze \u2192 Functional QA \u2192 Performance/Load \u2192 Security \u2192 Sign\u2011off** (Outcome\u202f1) is the longest technical chain.  \n- **Copywriting \u2192 Design \u2192 Legal Review \u2192 Scheduling** (Outcome\u202f2) runs in parallel but converges on Day\u202f\u201114, the latest date before the final go/no\u2011go.  \n- **Run\u2011book \u2192 Monitoring \u2192 Dry\u2011run \u2192 Final Sign\u2011off** (Outcome\u202f4) must be completed before Day\u202f\u20111.  \n- The **Final Go/No\u2011Go (Outcome\u202f5)** is the single gating decision that unlocks the launch\u2011day actions (Outcome\u202f6).  \n\n**Risk Mitigation Summary**  \n- Built\u2011in 2\u2011day buffers after each testing phase (Outcome\u202f1).  \n- Parallel legal and design reviews to avoid bottlenecks (Outcome\u202f2).  \n- Dry\u2011run simulation to surface hidden operational gaps (Outcome\u202f4).  \n- Secondary on\u2011call engineer and manual email fallback for launch day (Outcome\u202f6).  \n- 48\u2011hour contingency window before launch for any outstanding items (Outcome\u202f5).  \n\nBy following this work\u2011back structure, the cross\u2011functional team can clearly see what must be delivered, who owns each piece, how tasks interlock, and where to focus attention to keep the 30\u2011day countdown on track for a successful launch on **2026\u201101\u201114\u202f10:00\u202fAM\u202fPST**.",
+  "plan": {
+    "id": "document-001",
+    "name": "Real-Time Cohort Insights Launch Plan",
+    "details": "",
+    "draft": true,
+    "participants": [
+      {
+        "name": "Engineering Lead",
+        "draft": true
+      },
+      {
+        "name": "DevOps Engineer",
+        "draft": true
+      },
+      {
+        "name": "QA Lead",
+        "draft": true
+      },
+      {
+        "name": "QA Engineers",
+        "draft": true
+      },
+      {
+        "name": "Engineering Team",
+        "draft": true
+      },
+      {
+        "name": "Performance Engineer",
+        "draft": true
+      },
+      {
+        "name": "Security Lead",
+        "draft": true
+      },
+      {
+        "name": "Security Engineer",
+        "draft": true
+      },
+      {
+        "name": "External Vendor",
+        "draft": true
+      },
+      {
+        "name": "Product Manager",
+        "draft": true
+      },
+      {
+        "name": "Technical Writer",
+        "draft": true
+      },
+      {
+        "name": "Copywriter",
+        "draft": true
+      },
+      {
+        "name": "Product Marketing Manager",
+        "draft": true
+      },
+      {
+        "name": "Designer",
+        "draft": true
+      },
+      {
+        "name": "Legal Counsel",
+        "draft": true
+      },
+      {
+        "name": "Marketing Ops",
+        "draft": true
+      },
+      {
+        "name": "Social Media Manager",
+        "draft": true
+      },
+      {
+        "name": "Video Producer",
+        "draft": true
+      },
+      {
+        "name": "Launch Operations Lead",
+        "draft": true
+      },
+      {
+        "name": "Site Reliability Engineer",
+        "draft": true
+      },
+      {
+        "name": "Support Lead",
+        "draft": true
+      },
+      {
+        "name": "Release Engineer",
+        "draft": true
+      },
+      {
+        "name": "SRE Team",
+        "draft": true
+      },
+      {
+        "name": "On-call Engineer",
+        "draft": true
+      },
+      {
+        "name": "Product Analyst",
+        "draft": true
+      },
+      {
+        "name": "Webinar Host",
+        "draft": true
+      }
+    ],
+    "tasks": [
+      {
+        "id": "task-001",
+        "name": "Code Freeze",
+        "details": "Freeze code base for the release.",
+        "draft": true,
+        "state": "not-started",
+        "dependencies": []
+      },
+      {
+        "id": "task-002",
+        "name": "Tag release branch",
+        "details": "Create a tag for the release branch.",
+        "draft": true,
+        "state": "not-started",
+        "dependencies": [
+          "task-001"
+        ]
+      },
+      {
+        "id": "task-003",
+        "name": "Functional QA",
+        "details": "Perform functional quality assurance.",
+        "draft": true,
+        "state": "not-started",
+        "dependencies": []
+      },
+      {
+        "id": "task-004",
+        "name": "Execute test suite",
+        "details": "Run the test suite.",
+        "draft": true,
+        "state": "not-started",
+        "dependencies": [
+          "task-003"
+        ]
+      },
+      {
+        "id": "task-005",
+        "name": "Log defects",
+        "details": "Record any defects found during testing.",
+        "draft": true,
+        "state": "not-started",
+        "dependencies": [
+          "task-004"
+        ]
+      },
+      {
+        "id": "task-006",
+        "name": "Defect Remediation",
+        "details": "Fix defects identified in functional QA.",
+        "draft": true,
+        "state": "not-started",
+        "dependencies": [
+          "task-005"
+        ]
+      },
+      {
+        "id": "task-007",
+        "name": "Performance & Load Testing",
+        "details": "Run performance and load tests.",
+        "draft": true,
+        "state": "not-started",
+        "dependencies": []
+      },
+      {
+        "id": "task-008",
+        "name": "Build test scripts",
+        "details": "Create scripts for performance testing.",
+        "draft": true,
+        "state": "not-started",
+        "dependencies": [
+          "task-006"
+        ]
+      },
+      {
+        "id": "task-009",
+        "name": "Execute load test",
+        "details": "Run load test at 2\u00d7 expected load.",
+        "draft": true,
+        "state": "not-started",
+        "dependencies": [
+          "task-008"
+        ]
+      },
+      {
+        "id": "task-010",
+        "name": "Security Review",
+        "details": "Conduct security review of the product.",
+        "draft": true,
+        "state": "not-started",
+        "dependencies": []
+      },
+      {
+        "id": "task-011",
+        "name": "Static analysis",
+        "details": "Perform static code analysis.",
+        "draft": true,
+        "state": "not-started",
+        "dependencies": [
+          "task-007"
+        ]
+      },
+      {
+        "id": "task-012",
+        "name": "Pen-test",
+        "details": "External penetration testing.",
+        "draft": true,
+        "state": "not-started",
+        "dependencies": [
+          "task-007"
+        ]
+      },
+      {
+        "id": "task-013",
+        "name": "Release Documentation",
+        "details": "Prepare release documentation.",
+        "draft": true,
+        "state": "not-started",
+        "dependencies": []
+      },
+      {
+        "id": "task-014",
+        "name": "Draft release notes",
+        "details": "Write initial release notes.",
+        "draft": true,
+        "state": "not-started",
+        "dependencies": [
+          "task-010"
+        ]
+      },
+      {
+        "id": "task-015",
+        "name": "Review & finalize",
+        "details": "Review and finalize release notes.",
+        "draft": true,
+        "state": "not-started",
+        "dependencies": [
+          "task-014"
+        ]
+      },
+      {
+        "id": "task-016",
+        "name": "Sign-off",
+        "details": "Final technical sign\u2011off for the release.",
+        "draft": true,
+        "state": "not-started",
+        "dependencies": [
+          "task-015"
+        ]
+      },
+      {
+        "id": "task-017",
+        "name": "Messaging Framework",
+        "details": "Define messaging framework for marketing.",
+        "draft": true,
+        "state": "not-started",
+        "dependencies": []
+      },
+      {
+        "id": "task-018",
+        "name": "Copywriting",
+        "details": "Create copy for all marketing assets.",
+        "draft": true,
+        "state": "not-started",
+        "dependencies": []
+      },
+      {
+        "id": "task-019",
+        "name": "Email series",
+        "details": "Write email series content.",
+        "draft": true,
+        "state": "not-started",
+        "dependencies": [
+          "task-017"
+        ]
+      },
+      {
+        "id": "task-020",
+        "name": "Blog post",
+        "details": "Write blog post content.",
+        "draft": true,
+        "state": "not-started",
+        "dependencies": [
+          "task-017"
+        ]
+      },
+      {
+        "id": "task-021",
+        "name": "Social copy",
+        "details": "Write social media copy.",
+        "draft": true,
+        "state": "not-started",
+        "dependencies": [
+          "task-017"
+        ]
+      },
+      {
+        "id": "task-022",
+        "name": "Webinar script",
+        "details": "Write webinar script.",
+        "draft": true,
+        "state": "not-started",
+        "dependencies": [
+          "task-017"
+        ]
+      },
+      {
+        "id": "task-023",
+        "name": "Design",
+        "details": "Create design assets for marketing.",
+        "draft": true,
+        "state": "not-started",
+        "dependencies": []
+      },
+      {
+        "id": "task-024",
+        "name": "Email templates",
+        "details": "Design email templates.",
+        "draft": true,
+        "state": "not-started",
+        "dependencies": [
+          "task-019"
+        ]
+      },
+      {
+        "id": "task-025",
+        "name": "Banner graphics",
+        "details": "Design banner graphics.",
+        "draft": true,
+        "state": "not-started",
+        "dependencies": [
+          "task-021"
+        ]
+      },
+      {
+        "id": "task-026",
+        "name": "Webinar slides",
+        "details": "Design webinar presentation slides.",
+        "draft": true,
+        "state": "not-started",
+        "dependencies": [
+          "task-022"
+        ]
+      },
+      {
+        "id": "task-027",
+        "name": "Legal & Compliance Review",
+        "details": "Review marketing assets for legal compliance.",
+        "draft": true,
+        "state": "not-started",
+        "dependencies": []
+      },
+      {
+        "id": "task-028",
+        "name": "Review copy",
+        "details": "Legal review of all copy.",
+        "draft": true,
+        "state": "not-started",
+        "dependencies": [
+          "task-018"
+        ]
+      },
+      {
+        "id": "task-029",
+        "name": "Review design",
+        "details": "Legal review of design assets.",
+        "draft": true,
+        "state": "not-started",
+        "dependencies": [
+          "task-023"
+        ]
+      },
+      {
+        "id": "task-030",
+        "name": "Incorporate Feedback",
+        "details": "Incorporate legal and design feedback into assets.",
+        "draft": true,
+        "state": "not-started",
+        "dependencies": [
+          "task-028",
+          "task-029"
+        ]
+      },
+      {
+        "id": "task-031",
+        "name": "Scheduling & Automation",
+        "details": "Schedule and automate marketing communications.",
+        "draft": true,
+        "state": "not-started",
+        "dependencies": []
+      },
+      {
+        "id": "task-032",
+        "name": "Load emails",
+        "details": "Load emails into ESP and set send dates.",
+        "draft": true,
+        "state": "not-started",
+        "dependencies": [
+          "task-030"
+        ]
+      },
+      {
+        "id": "task-033",
+        "name": "Queue social posts",
+        "details": "Queue social media posts for publication.",
+        "draft": true,
+        "state": "not-started",
+        "dependencies": [
+          "task-030"
+        ]
+      },
+      {
+        "id": "task-034",
+        "name": "Pre-launch Teaser",
+        "details": "Publish pre\u2011launch teaser on social channels.",
+        "draft": true,
+        "state": "not-started",
+        "dependencies": []
+      },
+      {
+        "id": "task-035",
+        "name": "Technical Guide Draft",
+        "details": "Draft technical guide for the feature.",
+        "draft": true,
+        "state": "not-started",
+        "dependencies": []
+      },
+      {
+        "id": "task-036",
+        "name": "FAQ Compilation",
+        "details": "Compile FAQ for support and customers.",
+        "draft": true,
+        "state": "not-started",
+        "dependencies": []
+      },
+      {
+        "id": "task-037",
+        "name": "Internal Training Deck",
+        "details": "Create internal training deck for staff.",
+        "draft": true,
+        "state": "not-started",
+        "dependencies": []
+      },
+      {
+        "id": "task-038",
+        "name": "Demo Video Production",
+        "details": "Produce demo video for the feature.",
+        "draft": true,
+        "state": "not-started",
+        "dependencies": []
+      },
+      {
+        "id": "task-039",
+        "name": "Publish to Knowledge Base",
+        "details": "Publish technical guide to knowledge base.",
+        "draft": true,
+        "state": "not-started",
+        "dependencies": [
+          "task-035"
+        ]
+      },
+      {
+        "id": "task-040",
+        "name": "Distribute Training",
+        "details": "Conduct live training session for CS & Sales.",
+        "draft": true,
+        "state": "not-started",
+        "dependencies": []
+      },
+      {
+        "id": "task-041",
+        "name": "Run-book Draft",
+        "details": "Draft run\u2011book for launch day operations.",
+        "draft": true,
+        "state": "not-started",
+        "dependencies": []
+      },
+      {
+        "id": "task-042",
+        "name": "Monitoring Dashboard Config",
+        "details": "Configure monitoring dashboards.",
+        "draft": true,
+        "state": "not-started",
+        "dependencies": []
+      },
+      {
+        "id": "task-043",
+        "name": "Incident Response Plan",
+        "details": "Create incident response plan.",
+        "draft": true,
+        "state": "not-started",
+        "dependencies": []
+      },
+      {
+        "id": "task-044",
+        "name": "Dry-run Simulation",
+        "details": "Conduct dry\u2011run simulation with all leads.",
+        "draft": true,
+        "state": "not-started",
+        "dependencies": [
+          "task-041",
+          "task-042",
+          "task-043"
+        ]
+      },
+      {
+        "id": "task-045",
+        "name": "Run-book Revision",
+        "details": "Revise run\u2011book based on dry\u2011run findings.",
+        "draft": true,
+        "state": "not-started",
+        "dependencies": [
+          "task-044"
+        ]
+      },
+      {
+        "id": "task-046",
+        "name": "Final Sign-off",
+        "details": "Final operational sign\u2011off for launch.",
+        "draft": true,
+        "state": "not-started",
+        "dependencies": [
+          "task-045"
+        ]
+      },
+      {
+        "id": "task-047",
+        "name": "Kick-off Review Meeting",
+        "details": "Initial review meeting with all leads.",
+        "draft": true,
+        "state": "not-started",
+        "dependencies": []
+      },
+      {
+        "id": "task-048",
+        "name": "Weekly Status Sync 1",
+        "details": "First weekly status synchronization.",
+        "draft": true,
+        "state": "not-started",
+        "dependencies": [
+          "task-047"
+        ]
+      },
+      {
+        "id": "task-049",
+        "name": "Weekly Status Sync 2",
+        "details": "Second weekly status synchronization.",
+        "draft": true,
+        "state": "not-started",
+        "dependencies": [
+          "task-048"
+        ]
+      },
+      {
+        "id": "task-050",
+        "name": "Final Go/No-Go Meeting",
+        "details": "Final decision meeting before launch.",
+        "draft": true,
+        "state": "not-started",
+        "dependencies": [
+          "task-016",
+          "task-030",
+          "task-046",
+          "task-049"
+        ]
+      },
+      {
+        "id": "task-051",
+        "name": "Document Go/No-Go Decision",
+        "details": "Record the outcome of the Go/No\u2011Go meeting.",
+        "draft": true,
+        "state": "not-started",
+        "dependencies": [
+          "task-050"
+        ]
+      },
+      {
+        "id": "task-052",
+        "name": "Feature Toggle",
+        "details": "Toggle feature on launch day.",
+        "draft": true,
+        "state": "not-started",
+        "dependencies": [
+          "task-051"
+        ]
+      },
+      {
+        "id": "task-053",
+        "name": "First-Hour Monitoring",
+        "details": "Monitor system during the first hour after toggle.",
+        "draft": true,
+        "state": "not-started",
+        "dependencies": [
+          "task-052"
+        ]
+      },
+      {
+        "id": "task-054",
+        "name": "Launch Email Send",
+        "details": "Send launch email to customers.",
+        "draft": true,
+        "state": "not-started",
+        "dependencies": [
+          "task-052"
+        ]
+      },
+      {
+        "id": "task-055",
+        "name": "In-app Banner Activation",
+        "details": "Activate in\u2011app banner for the feature.",
+        "draft": true,
+        "state": "not-started",
+        "dependencies": [
+          "task-052"
+        ]
+      },
+      {
+        "id": "task-056",
+        "name": "Social Posts Publication",
+        "details": "Publish social media posts on launch day.",
+        "draft": true,
+        "state": "not-started",
+        "dependencies": [
+          "task-052"
+        ]
+      },
+      {
+        "id": "task-057",
+        "name": "Webinar Live",
+        "details": "Host live webinar presenting the new feature.",
+        "draft": true,
+        "state": "not-started",
+        "dependencies": [
+          "task-052"
+        ]
+      },
+      {
+        "id": "task-058",
+        "name": "Issue Triage",
+        "details": "Triage any issues during the first four hours.",
+        "draft": true,
+        "state": "not-started",
+        "dependencies": [
+          "task-053"
+        ]
+      },
+      {
+        "id": "task-059",
+        "name": "Adoption Tracking",
+        "details": "Track adoption metrics before and after launch.",
+        "draft": true,
+        "state": "not-started",
+        "dependencies": []
+      },
+      {
+        "id": "task-060",
+        "name": "Post-Launch Retrospective",
+        "details": "Conduct retrospective on launch performance.",
+        "draft": true,
+        "state": "not-started",
+        "dependencies": [
+          "task-058",
+          "task-059"
+        ]
+      },
+      {
+        "id": "task-061",
+        "name": "Retrospective Document & Action Items",
+        "details": "Document retrospective findings and define action items.",
+        "draft": true,
+        "state": "not-started",
+        "dependencies": [
+          "task-060"
+        ]
+      }
+    ],
+    "history": []
+  }
+}

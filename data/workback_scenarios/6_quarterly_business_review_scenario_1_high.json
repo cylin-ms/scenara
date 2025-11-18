@@ -1,0 +1,465 @@
+{
+  "scenario_name": "Apex Renewable Solutions \u2013 Q2 2025 Quarterly Business Review",
+  "scenario_number": 1,
+  "meeting_type": "Quarterly Business Review",
+  "quality_level": "high",
+  "workback_prompt": "Create a detailed work\u2011back plan for the Apex Renewable Solutions Q2\u202f2025 Quarterly Business Review. The plan should list all required pre\u2011reads, data collection, slide deck creation, review cycles, approvals, logistics (venue, hybrid tech, catering), stakeholder briefings, and decision\u2011making workshops. Include milestones, owners, start and finish dates, dependencies, and any risk mitigation steps needed to meet the constraints and success criteria outlined in the scenario.\n\nGenerate a HIGH QUALITY workback plan with these characteristics:\n- Comprehensive task coverage\n- Clear, actionable task descriptions\n- Well-defined dependencies\n- All tasks assigned to specific owners\n- Clear milestones with completion criteria\n- Realistic timelines with buffers\n- Proactive risk management\n- Complete deliverable list\n\nIMPORTANT: Generate a plan that naturally exhibits HIGH quality characteristics.\nDo not explicitly label the plan as \"high quality\" - let the quality emerge from the content.",
+  "generated_at": "2025-11-17T06:10:34.608899",
+  "analysis": "# Outcomes\n\n## Deliver Apex Renewable Solutions Q2\u202f2025 Quarterly Business Review\nA complete, approved QBR package (pre\u2011reads, slide deck, logistics, stakeholder briefings, and decision\u2011making workshops) ready for presentation on the scheduled QBR date.  \nArtifact references: none (plan created from the provided scenario)\n\n### Reasoning\nThe user\u2019s request centers on producing a single, cohesive deliverable \u2013 the Q2\u202f2025 Quarterly Business Review. All listed activities (data collection, slide creation, review cycles, approvals, logistics, briefings, workshops) are necessary prerequisites to that final deliverable. Grouping them under one primary outcome keeps the plan focused while allowing sub\u2011outcomes to capture the distinct work streams.\n\n### Approach\n1. **Define the QBR date and backward\u2011schedule from it** \u2013 set the \u201cQBR Presentation Day\u201d as the final milestone and work backwards to identify the latest possible start dates for each upstream activity.  \n2. **Segment work into logical streams** \u2013 data & analysis, content creation, review & approval, logistics, stakeholder engagement, and decision workshops.  \n3. **Assign owners** \u2013 map each stream to a responsible role (e.g., Business Analyst, Finance Lead, Marketing Designer, Operations Manager, Executive Sponsor, etc.).  \n4. **Add realistic durations and buffers** \u2013 incorporate at least a 1\u2011day buffer for hand\u2011offs and a 2\u2011day buffer for any external dependencies (catering, venue).  \n5. **Specify dependencies** \u2013 ensure that a downstream task cannot start until its upstream inputs are complete (e.g., slide deck creation depends on finalized data).  \n6. **Identify risks and mitigation** \u2013 for each stream note the most likely risk (data delay, review bottleneck, tech failure) and a concrete mitigation (early data request, parallel review tracks, backup AV equipment).  \n7. **Create milestones** \u2013 each major hand\u2011off (Data Pack Complete, Draft Deck Ready, Review Sign\u2011off, Logistics Locked, Briefings Completed, Workshop Ready) is defined with clear completion criteria.  \n8. **Document the work\u2011back schedule** \u2013 list start/finish dates, owners, dependencies, and risk steps in a tabular form within the breakdown.\n\nThe plan below follows this approach, providing a clear, actionable path to the QBR.\n\n## Breakdown\n```\nQBR Presentation Day (Milestone 7) \u2013 2025\u201107\u201115\n\u2502\n\u251c\u2500 Milestone 6: Decision\u2011Making Workshops Completed\n\u2502   \u2514\u2500 Task 6.1 \u2013 Conduct Workshop (Owner: Workshop Lead) \u2013 2025\u201107\u201113 \u2192 2025\u201107\u201114\n\u2502       Depends on: 5.3, 5.4\n\u2502\n\u251c\u2500 Milestone 5: Stakeholder Briefings Delivered\n\u2502   \u251c\u2500 Task 5.1 \u2013 Schedule Briefings (Owner: Executive Assistant) \u2013 2025\u201106\u201125 \u2192 2025\u201106\u201126\n\u2502   \u251c\u2500 Task 5.2 \u2013 Distribute Draft Deck for Briefing (Owner: Business Analyst) \u2013 2025\u201106\u201127 \u2192 2025\u201106\u201128\n\u2502   \u2502   Depends on: 4.3\n\u2502   \u2514\u2500 Task 5.3 \u2013 Conduct Briefings (Owner: Business Analyst) \u2013 2025\u201106\u201130 \u2192 2025\u201107\u201102\n\u2502       Depends on: 5.2\n\u2502\n\u251c\u2500 Milestone 4: All Approvals Secured\n\u2502   \u251c\u2500 Task 4.1 \u2013 Internal Review Cycle 1 (Owner: Finance Lead) \u2013 2025\u201106\u201110 \u2192 2025\u201106\u201112\n\u2502   \u2502   Depends on: 3.2\n\u2502   \u251c\u2500 Task 4.2 \u2013 Internal Review Cycle 2 (Owner: Marketing Lead) \u2013 2025\u201106\u201113 \u2192 2025\u201106\u201115\n\u2502   \u2502   Depends on: 4.1\n\u2502   \u2514\u2500 Task 4.3 \u2013 Executive Sign\u2011off (Owner: CEO) \u2013 2025\u201106\u201116 \u2192 2025\u201106\u201117\n\u2502       Depends on: 4.2\n\u2502\n\u251c\u2500 Milestone 3: Slide Deck Ready for Review\n\u2502   \u251c\u2500 Task 3.1 \u2013 Draft Slide Deck (Owner: Marketing Designer) \u2013 2025\u201105\u201130 \u2192 2025\u201106\u201105\n\u2502   \u2502   Depends on: 2.3\n\u2502   \u251c\u2500 Task 3.2 \u2013 Incorporate Review Comments (Owner: Marketing Designer) \u2013 2025\u201106\u201106 \u2192 2025\u201106\u201109\n\u2502   \u2502   Depends on: 4.1 (first review)\n\u2502   \u2514\u2500 Task 3.3 \u2013 Finalize Deck (Owner: Marketing Designer) \u2013 2025\u201106\u201110 \u2192 2025\u201106\u201112\n\u2502       Depends on: 4.2 (second review)\n\u2502\n\u251c\u2500 Milestone 2: Data Collection Completed\n\u2502   \u251c\u2500 Task 2.1 \u2013 Request Operational Metrics (Owner: Operations Analyst) \u2013 2025\u201105\u201101 \u2192 2025\u201105\u201103\n\u2502   \u251c\u2500 Task 2.2 \u2013 Gather Financial Results (Owner: Finance Analyst) \u2013 2025\u201105\u201101 \u2192 2025\u201105\u201104\n\u2502   \u251c\u2500 Task 2.3 \u2013 Compile Market & Regulatory Updates (Owner: Market Researcher) \u2013 2025\u201105\u201102 \u2192 2025\u201105\u201105\n\u2502   \u251c\u2500 Task 2.4 \u2013 Consolidate Data Package (Owner: Business Analyst) \u2013 2025\u201105\u201106 \u2192 2025\u201105\u201108\n\u2502   \u2502   Depends on: 2.1, 2.2, 2.3\n\u2502   \u2514\u2500 Task 2.5 \u2013 Validate Data Accuracy (Owner: Finance Lead) \u2013 2025\u201105\u201109 \u2192 2025\u201105\u201110\n\u2502       Depends on: 2.4\n\u2502\n\u251c\u2500 Milestone 1: Logistics Locked\n\u2502   \u251c\u2500 Task 1.1 \u2013 Reserve Venue (Owner: Operations Manager) \u2013 2025\u201104\u201125 \u2192 2025\u201104\u201126\n\u2502   \u251c\u2500 Task 1.2 \u2013 Procure Hybrid Technology (Owner: IT Lead) \u2013 2025\u201104\u201127 \u2192 2025\u201105\u201102\n\u2502   \u2502   Depends on: 1.1\n\u2502   \u251c\u2500 Task 1.3 \u2013 Arrange Catering (Owner: Procurement Lead) \u2013 2025\u201105\u201103 \u2192 2025\u201105\u201105\n\u2502   \u2502   Depends on: 1.1\n\u2502   \u2514\u2500 Task 1.4 \u2013 Distribute Logistics Pack (Venue, AV, Catering details) (Owner: Operations Manager) \u2013 2025\u201105\u201106 \u2192 2025\u201105\u201107\n\u2502       Depends on: 1.2, 1.3\n\u2502\n\u2514\u2500 Pre\u2011QBR Preparation (Kick\u2011off)\n    \u2514\u2500 Task 0.1 \u2013 QBR Kick\u2011off Meeting (Owner: Executive Sponsor) \u2013 2025\u201104\u201115 \u2192 2025\u201104\u201115\n        Sets scope, owners, success criteria.\n```\n\n### Milestone Details & Completion Criteria\n| Milestone | Completion Criteria | Owner (Overall) |\n|-----------|---------------------|-----------------|\n| **Milestone 1 \u2013 Logistics Locked** | Venue confirmed, hybrid AV tested, catering menu approved, logistics pack emailed to all participants. | Operations Manager |\n| **Milestone 2 \u2013 Data Collection Completed** | All required data sources delivered, consolidated data package validated, sign\u2011off from Finance Lead. | Business Analyst |\n| **Milestone 3 \u2013 Slide Deck Ready for Review** | Draft deck incorporates all data, follows branding guidelines, and is ready for internal review. | Marketing Designer |\n| **Milestone 4 \u2013 All Approvals Secured** | Finance, Marketing, and Executive sign\u2011offs recorded in the approval tracker. | Executive Sponsor |\n| **Milestone 5 \u2013 Stakeholder Briefings Delivered** | All key stakeholders (Board, Regional Heads, Investors) have attended briefings and received the briefing deck. | Business Analyst |\n| **Milestone 6 \u2013 Decision\u2011Making Workshops Completed** | Workshop agenda executed, decisions captured in a workshop summary, and action items assigned. | Workshop Lead |\n| **Milestone 7 \u2013 QBR Presentation Day** | Live QBR delivered on 2025\u201107\u201115 at the booked venue, with hybrid streaming functional and all participants able to join. | Executive Sponsor |\n\n### Risk Management & Mitigation Steps\n| Risk | Likelihood | Impact | Mitigation |\n|------|------------|--------|------------|\n| Delay in receiving operational metrics | Medium | High (pushes data collection) | Request metrics 2 weeks early; set up a daily status check with Operations Analyst. |\n| Conflicting reviewer availability (Finance/Marketing) | Medium | Medium | Pre\u2011schedule review windows in the kick\u2011off; use parallel review tracks where possible. |\n| Hybrid technology failure on QBR day | Low | Critical | Conduct a full AV test on 2025\u201106\u201120; have backup streaming platform and onsite tech support on standby. |\n| Catering menu not approved in time | Low | Medium | Provide two vetted menu options; obtain provisional approval by 2025\u201105\u201104. |\n| Decision\u2011making workshop participants unavailable | Medium | High | Send Doodle poll by 2025\u201106\u201101; lock workshop dates by 2025\u201106\u201110 and communicate agenda early. |\n| Last\u2011minute slide changes after executive sign\u2011off | Low | Medium | Enforce a \u201cno\u2011change after sign\u2011off\u201d policy; allow only minor typo fixes with documented exception. |\n\n### Communication Cadence\n| Meeting | Frequency | Participants | Purpose |\n|---------|-----------|--------------|---------|\n| QBR Steering Committee | Weekly (Mon) | Executive Sponsor, Operations Manager, Finance Lead, Marketing Lead, IT Lead | Status update, risk flagging, decision points |\n| Data Collection Sync | Bi\u2011weekly | Operations Analyst, Finance Analyst, Market Researcher, Business Analyst | Track data delivery, resolve gaps |\n| Review Cycle Check\u2011in | As needed (aligned with milestones) | Draft deck owner, reviewers | Ensure review comments are addressed promptly |\n| Logistics Coordination | Weekly (Wed) | Operations Manager, IT Lead, Procurement Lead | Confirm venue, AV, catering progress |\n| Stakeholder Briefing Prep | One\u2011off (day before briefings) | Business Analyst, Executive Sponsor | Final rehearsal of briefing delivery |\n| Workshop Prep | One\u2011off (2 days before workshop) | Workshop Lead, all decision makers | Review agenda, confirm attendance, test tech |\n\n--- \n\nThis work\u2011back plan provides a complete, actionable roadmap from the initial kick\u2011off to the QBR day, with clear owners, realistic timelines, dependencies, milestones, and proactive risk mitigation. Following it will enable Apex Renewable Solutions to meet the success criteria for the Q2\u202f2025 Quarterly Business Review.",
+  "plan": {
+    "id": "document-001",
+    "name": "Apex Renewable Solutions Q2\u202f2025 Quarterly Business Review Workback Plan",
+    "details": "Work\u2011back schedule from QBR Kick\u2011off (2025\u201104\u201115) through QBR Presentation Day (2025\u201107\u201115). Includes milestones, tasks, owners, dependencies, risks and communication cadence.",
+    "draft": true,
+    "participants": [
+      {
+        "name": "Workshop Lead",
+        "email": null,
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Executive Assistant",
+        "email": null,
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Business Analyst",
+        "email": null,
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Finance Lead",
+        "email": null,
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Marketing Lead",
+        "email": null,
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "CEO",
+        "email": null,
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Marketing Designer",
+        "email": null,
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Operations Analyst",
+        "email": null,
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Finance Analyst",
+        "email": null,
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Market Researcher",
+        "email": null,
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Operations Manager",
+        "email": null,
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "IT Lead",
+        "email": null,
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Procurement Lead",
+        "email": null,
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Executive Sponsor",
+        "email": null,
+        "details": "",
+        "draft": true
+      }
+    ],
+    "references": [],
+    "deliverables": [
+      {
+        "name": "Q2\u202f2025 Quarterly Business Review Package",
+        "type": "word",
+        "id": "deliverable-001",
+        "draft": true,
+        "history": []
+      }
+    ],
+    "tasks": [
+      {
+        "id": "task-001",
+        "name": "QBR Kick\u2011off Meeting",
+        "draft": true,
+        "details": "Sets scope, owners, success criteria.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-04-15T00:00:00Z",
+        "assignees": [
+          "Executive Sponsor"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002",
+        "name": "Reserve Venue",
+        "draft": true,
+        "details": "Book the physical venue for the QBR.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-04-26T00:00:00Z",
+        "assignees": [
+          "Operations Manager"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003",
+        "name": "Procure Hybrid Technology",
+        "draft": true,
+        "details": "Order and configure AV/hybrid streaming equipment.",
+        "dependencies": [
+          "task-002"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-02T00:00:00Z",
+        "assignees": [
+          "IT Lead"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-004",
+        "name": "Arrange Catering",
+        "draft": true,
+        "details": "Select menu and confirm catering for the event.",
+        "dependencies": [
+          "task-002"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-05T00:00:00Z",
+        "assignees": [
+          "Procurement Lead"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-005",
+        "name": "Distribute Logistics Pack",
+        "draft": true,
+        "details": "Email venue, AV, and catering details to all participants.",
+        "dependencies": [
+          "task-003",
+          "task-004"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-07T00:00:00Z",
+        "assignees": [
+          "Operations Manager"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-006",
+        "name": "Request Operational Metrics",
+        "draft": true,
+        "details": "Ask Operations Analyst to gather latest operational KPIs.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-03T00:00:00Z",
+        "assignees": [
+          "Operations Analyst"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-007",
+        "name": "Gather Financial Results",
+        "draft": true,
+        "details": "Collect Q2 financial statements and performance metrics.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-04T00:00:00Z",
+        "assignees": [
+          "Finance Analyst"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-008",
+        "name": "Compile Market & Regulatory Updates",
+        "draft": true,
+        "details": "Research market trends and regulatory changes affecting the business.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-05T00:00:00Z",
+        "assignees": [
+          "Market Researcher"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-009",
+        "name": "Consolidate Data Package",
+        "draft": true,
+        "details": "Combine operational, financial, and market data into a single package.",
+        "dependencies": [
+          "task-006",
+          "task-007",
+          "task-008"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-08T00:00:00Z",
+        "assignees": [
+          "Business Analyst"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-010",
+        "name": "Validate Data Accuracy",
+        "draft": true,
+        "details": "Finance Lead reviews and signs off on the consolidated data.",
+        "dependencies": [
+          "task-009"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-10T00:00:00Z",
+        "assignees": [
+          "Finance Lead"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-011",
+        "name": "Draft Slide Deck",
+        "draft": true,
+        "details": "Create initial QBR slide deck using validated data.",
+        "dependencies": [
+          "task-010"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-06-05T00:00:00Z",
+        "assignees": [
+          "Marketing Designer"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-012",
+        "name": "Internal Review Cycle 1",
+        "draft": true,
+        "details": "Finance Lead reviews the draft deck and provides comments.",
+        "dependencies": [
+          "task-011"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-06-12T00:00:00Z",
+        "assignees": [
+          "Finance Lead"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-013",
+        "name": "Incorporate Review Comments",
+        "draft": true,
+        "details": "Marketing Designer updates the deck based on Finance feedback.",
+        "dependencies": [
+          "task-012"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-06-09T00:00:00Z",
+        "assignees": [
+          "Marketing Designer"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-014",
+        "name": "Internal Review Cycle 2",
+        "draft": true,
+        "details": "Marketing Lead reviews the updated deck and provides final comments.",
+        "dependencies": [
+          "task-013"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-06-15T00:00:00Z",
+        "assignees": [
+          "Marketing Lead"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-015",
+        "name": "Finalize Deck",
+        "draft": true,
+        "details": "Marketing Designer incorporates final feedback and prepares the final version.",
+        "dependencies": [
+          "task-014"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-06-12T00:00:00Z",
+        "assignees": [
+          "Marketing Designer"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-016",
+        "name": "Executive Sign\u2011off",
+        "draft": true,
+        "details": "CEO reviews and formally approves the final deck.",
+        "dependencies": [
+          "task-015"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-06-17T00:00:00Z",
+        "assignees": [
+          "CEO"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-017",
+        "name": "Schedule Briefings",
+        "draft": true,
+        "details": "Executive Assistant books briefing slots with key stakeholders.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-06-26T00:00:00Z",
+        "assignees": [
+          "Executive Assistant"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-018",
+        "name": "Distribute Draft Deck for Briefing",
+        "draft": true,
+        "details": "Send the finalized deck to stakeholders ahead of briefings.",
+        "dependencies": [
+          "task-016"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-06-28T00:00:00Z",
+        "assignees": [
+          "Business Analyst"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-019",
+        "name": "Conduct Briefings",
+        "draft": true,
+        "details": "Present the deck to Board, Regional Heads, and Investors.",
+        "dependencies": [
+          "task-018"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-07-02T00:00:00Z",
+        "assignees": [
+          "Business Analyst"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-020",
+        "name": "Conduct Decision\u2011Making Workshops",
+        "draft": true,
+        "details": "Facilitate workshops to capture decisions and action items.",
+        "dependencies": [
+          "task-019"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-07-14T00:00:00Z",
+        "assignees": [
+          "Workshop Lead"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      }
+    ],
+    "history": []
+  }
+}

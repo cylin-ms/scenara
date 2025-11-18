@@ -1,0 +1,169 @@
+{
+  "basic_info": {
+    "full_name": "Tyler Jackson",
+    "age": 34,
+    "location": "Austin, TX, USA",
+    "timezone": "America/Chicago",
+    "years_experience": 9,
+    "education": [
+      {
+        "degree": "B.S. Computer Science",
+        "institution": "University of Texas at Austin",
+        "graduation_year": 2014
+      },
+      {
+        "degree": "MBA",
+        "institution": "McCombs School of Business, University of Texas at Austin",
+        "graduation_year": 2020
+      }
+    ]
+  },
+  "work_habits": {
+    "preferred_working_hours": "early bird (07:00‑15:00 CST)",
+    "peak_productivity_times": "08:00‑11:00 CST",
+    "communication_style": {
+      "preference": "asynchronous with scheduled synchronous check‑ins",
+      "average_response_time_minutes": 240
+    },
+    "meeting_preferences": "minimizes meetings; prefers 30‑minute stand‑ups and agenda‑driven sessions",
+    "work_environment": "hybrid (3 days remote, 2 days in Austin office)",
+    "focus_time_requirements_hours_per_day": 3.5
+  },
+  "personality": {
+    "mbti": "ENFJ",
+    "decision_making_approach": "collaborative, data‑informed but considers stakeholder impact",
+    "risk_tolerance": "moderate (willing to pilot new processes with measurable KPIs)",
+    "collaboration_style": "team‑oriented, encourages input from all levels",
+    "stress_management_approach": "daily 30‑minute run, mindfulness app, scheduled short breaks",
+    "conflict_resolution_style": "collaborative mediator, seeks win‑win solutions"
+  },
+  "skills": {
+    "core_technical_skills": [
+      {
+        "skill": "Salesforce CRM",
+        "rating": 9
+      },
+      {
+        "skill": "Gainsight CS Platform",
+        "rating": 9
+      },
+      {
+        "skill": "SQL Data Analysis",
+        "rating": 7
+      },
+      {
+        "skill": "Python Scripting",
+        "rating": 5
+      },
+      {
+        "skill": "SaaS Product Knowledge",
+        "rating": 8
+      }
+    ],
+    "leadership_abilities": 7,
+    "domain_expertise_areas": [
+      "B2B SaaS customer lifecycle",
+      "Churn reduction strategies",
+      "Renewal & expansion planning",
+      "Customer health scoring"
+    ],
+    "learning_agility": 8,
+    "tools_proficiency": [
+      {
+        "tool": "Gainsight",
+        "rating": 9
+      },
+      {
+        "tool": "Salesforce",
+        "rating": 9
+      },
+      {
+        "tool": "Tableau",
+        "rating": 7
+      },
+      {
+        "tool": "Slack",
+        "rating": 8
+      },
+      {
+        "tool": "Zoom",
+        "rating": 8
+      },
+      {
+        "tool": "Asana",
+        "rating": 7
+      }
+    ],
+    "languages_spoken": [
+      "English (native)",
+      "Spanish (conversational)"
+    ]
+  },
+  "performance": {
+    "task_completion_rate_percent": 94,
+    "quality_score_percent": 92,
+    "estimation_accuracy_percent": 88,
+    "multitasking_ability": 7,
+    "performance_under_pressure": 8
+  },
+  "availability": {
+    "available_hours_per_week": 40,
+    "timezone": "America/Chicago",
+    "working_hours": "Mon‑Fri 07:00‑16:00 CST",
+    "planned_time_off_days_per_year": 20,
+    "other_commitments": [
+      "Weekly industry webinar (1 h)",
+      "Volunteer tech mentor program (2 h/month)"
+    ],
+    "travel_flexibility": "up to 10% of time (≈1 week per quarter, domestic only)"
+  },
+  "personal_factors": {
+    "family_status": "married, one child (3 years old)",
+    "caregiving_responsibilities": "occasional (elder parent in another state, ~4 h/month)",
+    "commute_situation": "20‑minute drive to Austin office (average 15 min traffic)",
+    "health_considerations": "mild asthma (requires occasional inhaler use, no major impact)",
+    "career_motivation": "drive to improve customer outcomes, aspire to Senior CSM or Customer Success Lead role"
+  },
+  "project_impact": {
+    "reliability": 9,
+    "innovation_tendency": 6,
+    "documentation_quality": 8,
+    "mentorship_capability": 7,
+    "influence_level": 7
+  },
+  "collaboration": {
+    "meeting_frequency_preference": "weekly 1‑hour team sync; bi‑weekly 30‑min cross‑functional updates; ad‑hoc as needed",
+    "communication_channels_preference": [
+      "Slack (primary)",
+      "Email (secondary)",
+      "Microsoft Teams (video calls)",
+      "Asana comments (task updates)"
+    ],
+    "feedback_style": "direct but supportive; uses data to back observations",
+    "knowledge_sharing_habits": "writes weekly CS newsletter, maintains a shared best‑practices wiki, hosts monthly lunch‑and‑learns",
+    "cross_team_collaboration_rating": 8
+  },
+  "risk_factors": {
+    "potential_bottlenecks": [
+      "Dependence on Gainsight data integrity during large product releases",
+      "High client load in Q4 renewal season"
+    ],
+    "backup_person_needed": "Alex Rivera (Senior CSM, same region)",
+    "ramp_up_time_weeks_for_new_projects": 2,
+    "context_switching_tolerance": 6,
+    "burnout_risk_factors": [
+      "Extended focus blocks without scheduled breaks",
+      "Seasonal spikes in renewal negotiations",
+      "Balancing remote work with home caregiving duties"
+    ]
+  },
+  "_metadata": {
+    "generated_at": "2025-11-17T15:27:37.407050",
+    "name": "Tyler Jackson",
+    "role": "Customer Success Manager",
+    "seniority": "mid",
+    "company": "TechCorp",
+    "model": "gpt-oss:120b",
+    "provider": "ollama"
+  }
+}

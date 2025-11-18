@@ -1,0 +1,624 @@
+{
+  "scenario_name": "Quantum Analytics FY2025 Annual Kickoff \u2013 \u201cData\u2011Driven Horizons\u201d",
+  "scenario_number": 2,
+  "meeting_type": "Annual Kickoff Meeting",
+  "quality_level": "high",
+  "workback_prompt": "Using the detailed scenario above for Quantum Analytics' FY2025 Annual Kickoff (June 10\u201112, 2025, high\u2011complexity, T\u201160 planning horizon), create a comprehensive work\u2011back plan that lists every task, responsible owner, start and finish dates, dependencies, required resources, risk mitigation steps, and key milestones. Include sections for pre\u2011event planning (venue booking, speaker confirmations, travel logistics), event\u2011day execution (AV setup, catering, session facilitation), and post\u2011event wrap\u2011up (survey analysis, OKR finalization, financial close). Ensure the plan aligns with the budget, timeline, and success criteria provided.\n\nGenerate a HIGH QUALITY workback plan with these characteristics:\n- Comprehensive task coverage\n- Clear, actionable task descriptions\n- Well-defined dependencies\n- All tasks assigned to specific owners\n- Clear milestones with completion criteria\n- Realistic timelines with buffers\n- Proactive risk management\n- Complete deliverable list\n\nIMPORTANT: Generate a plan that naturally exhibits HIGH quality characteristics.\nDo not explicitly label the plan as \"high quality\" - let the quality emerge from the content.",
+  "generated_at": "2025-11-17T06:48:47.889788",
+  "analysis": "# Outcomes\n\n## 1. Pre\u2011Event Planning Completed  \nAll preparatory activities (venue, speakers, travel, AV, catering, communications, budget approval) are finished\u202f\u2013\u202fthe event is fully resourced, budget\u2011signed, and risk\u2011mitigated before the first kickoff day.  \nArtifact references: None  \n\n### Reasoning  \nThe user\u2019s request explicitly calls for a \u201cpre\u2011event planning\u201d section that covers venue booking, speaker confirmations, travel logistics, etc.\u202fThese activities must be completed before the event start date (June\u202f10\u202f2025) and therefore constitute a distinct outcome that can be measured by a \u201cready\u2011to\u2011run\u201d sign\u2011off checklist.\n\n### Approach  \n1. **Identify owners** for each work\u2011stream (Venue Lead, Speaker Lead, Travel Lead, AV Lead, Catering Lead, Communications Lead, Finance Owner).  \n2. **Create a master schedule** that works backward from June\u202f10, inserting realistic buffers (5\u20117\u202fdays for contract sign\u2011off, 3\u202fdays for travel confirmations, 2\u202fdays for AV test runs).  \n3. **Develop a risk register** for each work\u2011stream (e.g., venue double\u2011booking, speaker cancellation) and assign mitigation actions.  \n4. **Secure budget approval** early (by early\u2011April) to avoid funding delays.  \n5. **Run a pre\u2011event sign\u2011off meeting** (June\u202f5) where each owner confirms completion of their checklist items.  \n\n---\n\n## 2. Event\u2011Day Execution Successful  \nAll day\u2011of activities (AV setup, catering, session facilitation, live\u2011streaming, on\u2011site issue resolution) are delivered on schedule, meeting the success criteria defined for attendee experience and agenda adherence.  \nArtifact references: None  \n\n### Reasoning  \nThe user asked for an \u201cevent\u2011day execution\u201d section covering AV, catering, and facilitation.\u202fThese are the core deliverables that determine whether the kickoff runs smoothly, so they form a separate outcome measured by \u201cevent\u2011day checklist completed without critical incidents.\u201d\n\n### Approach  \n1. **Finalize a detailed day\u2011of run\u2011book** (timings, responsibilities, contact list) by June\u202f3.  \n2. **Conduct a full AV rehearsal** on June\u202f8 with the AV Lead and session moderators.  \n3. **Confirm catering deliveries** and dietary accommodations on June\u202f9.  \n4. **Assign on\u2011site \u201cissue\u2011response\u201d pods** (logistics, tech, guest services) with clear escalation paths.  \n5. **Capture real\u2011time status** via a shared dashboard; hold a brief \u201cmorning huddle\u201d on June\u202f10 to align all owners.  \n\n---\n\n## 3. Post\u2011Event Wrap\u2011up Completed  \nSurvey data is analyzed, FY2025 OKRs are finalized, financials are closed, and a final executive summary is delivered to leadership within the agreed post\u2011event window.  \nArtifact references: None  \n\n### Reasoning  \nThe user\u2019s \u201cpost\u2011event wrap\u2011up\u201d requirements (survey analysis, OKR finalization, financial close) are essential for measuring the event\u2019s impact and closing the project financially.\u202fThese deliverables are distinct, time\u2011bound, and can be validated by the presence of final reports and sign\u2011offs.\n\n### Approach  \n1. **Launch the attendee survey** immediately after the event (June\u202f13) and set a 7\u2011day response window.  \n2. **Assign the Analytics Team** to clean and analyze survey results, delivering insights by June\u202f22.  \n3. **Facilitate an OKR alignment workshop** (June\u202f24\u201125) with leadership to incorporate event outcomes into FY2025 OKRs.  \n4. **Reconcile all invoices** (venue, AV, catering, speaker fees) and obtain Finance sign\u2011off by July\u202f5.  \n5. **Produce a final executive briefing** (deck + financial summary) and present to the Steering Committee by July\u202f10.  \n\n---\n\n# Breakdown  \n\n---  \n\n## 1. Pre\u2011Event Planning Completed  \n\n| # | Task | Owner | Start | Finish | Dependencies | Resources | Risk Mitigation |\n|---|------|-------|-------|--------|--------------|-----------|-----------------|\n| 1.1 | Draft overall event charter (scope, budget, success criteria) | Event Lead | 2025\u201103\u201101 | 2025\u201103\u201105 | \u2013 | Charter template, FY2025 budget | Early executive review to catch scope creep |\n| 1.2 | Obtain budget approval (Finance Owner) | Finance Owner | 2025\u201103\u201106 | 2025\u201103\u201112 | 1.1 | Budget spreadsheet, CFO sign\u2011off | Escalate to CFO if >5\u202f% variance |\n| 1.3 | Identify and shortlist venue options (Venue Lead) | Venue Lead | 2025\u201103\u201106 | 2025\u201103\u201112 | 1.2 | Venue RFP, site\u2011visit schedule | Backup venue list prepared |\n| 1.4 | Negotiate venue contract and secure booking | Venue Lead | 2025\u201103\u201113 | 2025\u201103\u201120 | 1.3 | Legal counsel, contract template | Include cancellation clause, deposit escrow |\n| 1.5 | Confirm speaker lineup (Speaker Lead) | Speaker Lead | 2025\u201103\u201113 | 2025\u201104\u201102 | 1.2 | Speaker bios, invitation letters | Have 2 alternate speakers per slot |\n| 1.6 | Finalize speaker contracts & honoraria | Speaker Lead | 2025\u201104\u201103 | 2025\u201104\u201110 | 1.5 | Contract template, finance PO | Early payment schedule to avoid delays |\n| 1.7 | Collect travel & accommodation requirements (Travel Lead) | Travel Lead | 2025\u201104\u201101 | 2025\u201104\u201107 | 1.5 | Travel request form | Use preferred travel agency; contingency budget |\n| 1.8 | Book flights, hotels, ground transport | Travel Lead | 2025\u201104\u201108 | 2025\u201104\u201115 | 1.7 | Agency portal, corporate travel policy | Reserve flexible tickets; monitor for changes |\n| 1.9 | Define AV requirements per session (AV Lead) | AV Lead | 2025\u201104\u201101 | 2025\u201104\u201107 | 1.5 | Session agenda, AV spec sheet | Identify backup equipment suppliers |\n| 1.10 | Issue AV RFP and select vendor | AV Lead | 2025\u201104\u201108 | 2025\u201104\u201118 | 1.9 | Vendor list, evaluation matrix | Include SLA for on\u2011site support |\n| 1.11 | Confirm catering menu, dietary needs (Catering Lead) | Catering Lead | 2025\u201104\u201105 | 2025\u201104\u201112 | 1.2 | Catering brief, attendee list | Secure 2\u2011day buffer for menu changes |\n| 1.12 | Sign catering contract | Catering Lead | 2025\u201104\u201113 | 2025\u201104\u201115 | 1.11 | Contract template | Include service\u2011level guarantees |\n| 1.13 | Develop communications plan (invite, reminders, agenda) (Communications Lead) | Communications Lead | 2025\u201104\u201101 | 2025\u201104\u201120 | 1.2 | Email platform, branding assets | Draft review by Legal |\n| 1.14 | Send Save\u2011the\u2011Date email to all participants | Communications Lead | 2025\u201104\u201121 | 2025\u201104\u201121 | 1.13 | Email list | Track opens; follow up on non\u2011responders |\n| 1.15 | Create event website/portal (registration, FAQ) | Communications Lead | 2025\u201104\u201122 | 2025\u201105\u201105 | 1.13 | CMS, design assets | Perform usability test |\n| 1.16 | Open registration and collect attendee data | Communications Lead | 2025\u201105\u201106 | 2025\u201105\u201131 | 1.15 | Registration form, CRM | Set automated reminders |\n| 1.17 | Compile final attendee list (incl. dietary, accessibility) | Travel Lead | 2025\u201106\u201101 | 2025\u201106\u201102 | 1.16 | Spreadsheet, registration export | Verify against travel bookings |\n| 1.18 | Conduct pre\u2011event risk workshop (all leads) | Event Lead | 2025\u201105\u201115 | 2025\u201105\u201115 | 1.1\u20111.17 | Risk register template | Assign mitigation owners |\n| 1.19 | Obtain final sign\u2011off on pre\u2011event checklist | Event Lead | 2025\u201106\u201105 | 2025\u201106\u201105 | 1.4\u20111.18 | Sign\u2011off sheet | Contingency plan ready for any outstanding item |\n\n**Milestones**  \n- **M1 \u2013 Budget Approved** (2025\u201103\u201112)  \n- **M2 \u2013 Venue Contract Signed** (2025\u201103\u201120)  \n- **M3 \u2013 Speakers Confirmed** (2025\u201104\u201102)  \n- **M4 \u2013 Travel Booked** (2025\u201104\u201115)  \n- **M5 \u2013 AV Vendor Locked** (2025\u201104\u201118)  \n- **M6 \u2013 Catering Contract Signed** (2025\u201104\u201115)  \n- **M7 \u2013 Registration Closed** (2025\u201105\u201131)  \n- **M8 \u2013 Pre\u2011Event Sign\u2011off** (2025\u201106\u201105)  \n\n---  \n\n## 2. Event\u2011Day Execution Successful  \n\n| # | Task | Owner | Start | Finish | Dependencies | Resources | Risk Mitigation |\n|---|------|-------|-------|--------|--------------|-----------|-----------------|\n| 2.1 | Finalize day\u2011of run\u2011book (timeline, contacts) | Event Lead | 2025\u201105\u201120 | 2025\u201106\u201103 | 1.19 | Run\u2011book template, stakeholder input | Distribute to all owners 48\u202fh before event |\n| 2.2 | Load AV equipment on site (setup crew) | AV Lead | 2025\u201106\u201109 | 2025\u201106\u201109 | 1.10 | AV vendor crew, equipment list | Verify inventory against checklist |\n| 2.3 | Perform AV system test (audio, video, streaming) | AV Lead | 2025\u201106\u201108 | 2025\u201106\u201108 | 2.2 | Test scripts, speaker laptops | Have backup mixer & encoder on\u2011site |\n| 2.4 | Set up signage, registration desks, badge printers | Logistics Lead | 2025\u201106\u201109 | 2025\u201106\u201109 | 1.19 | Signage files, printers | Backup badge stock |\n| 2.5 | Confirm catering delivery times and setup | Catering Lead | 2025\u201106\u201109 | 2025\u201106\u201109 | 1.12 | Delivery schedule, service staff | On\u2011site tasting verification |\n| 2.6 | Conduct morning huddle (all leads) | Event Lead | 2025\u201106\u201110 | 2025\u201106\u201110 | 2.1 | Huddle agenda, status board | Immediate issue escalation path |\n| 2.7 | Open registration, distribute badges | Logistics Lead | 2025\u201106\u201110\u202f08:30 | 2025\u201106\u201110\u202f09:30 | 2.4 | Badge printer, staff | Queue management plan |\n| 2.8 | Run opening keynote (AV, moderator) | Session Lead (Keynote) | 2025\u201106\u201110\u202f09:45 | 2025\u201106\u201110\u202f10:30 | 2.3, 2.6 | Slides, clicker | Backup presenter on standby |\n| 2.9 | Manage concurrent breakout sessions (rooms, AV) | Session Leads (Breakouts) | 2025\u201106\u201110\u202f10:45 | 2025\u201106\u201110\u202f12:15 | 2.3 | Room schedules, AV kits | Quick\u2011swap plan for equipment failure |\n| 2.10 | Oversee lunch service (catering) | Catering Lead | 2025\u201106\u201110\u202f12:30 | 2025\u201106\u201110\u202f13:30 | 2.5 | Food stations, staff | Contingency menu for dietary issues |\n| 2.11 | Afternoon plenary (panel, live\u2011stream) | Session Lead (Plenary) | 2025\u201106\u201110\u202f13:45 | 2025\u201106\u201110\u202f15:15 | 2.3 | Streaming platform, panel bios | Backup internet connection |\n| 2.12 | Capture session recordings & upload to portal | AV Lead | 2025\u201106\u201110\u202f15:30 | 2025\u201106\u201110\u202f16:00 | 2.11 | Cloud storage, upload scripts | Redundant storage bucket |\n| 2.13 | Conduct day\u20111 debrief (lead team) | Event Lead | 2025\u201106\u201110\u202f17:00 | 2025\u201106\u201110\u202f17:30 | 2.12 | Debrief template | Identify day\u20111 corrective actions |\n| 2.14 | Repeat schedule for Day\u202f2 (June\u202f11) \u2013 same task IDs with updated dates | Event Lead | 2025\u201106\u201111\u202f08:30 | 2025\u201106\u201111\u202f17:30 | 2.13 | \u2013 | Apply Day\u20111 lessons |\n| 2.15 | Execute Day\u202f3 (June\u202f12) \u2013 final day, closing remarks, awards | Event Lead | 2025\u201106\u201112\u202f08:30 | 2025\u201106\u201112\u202f16:00 | 2.14 | \u2013 | Ensure all deliverables captured |\n| 2.16 | Close\u2011out on\u2011site (collect equipment, settle vendor invoices) | Logistics Lead | 2025\u201106\u201112\u202f16:30 | 2025\u201106\u201112\u202f18:00 | 2.15 | Check\u2011out forms, vendor contacts | Verify all assets returned |\n| 2.17 | Archive all media assets and distribute to communications | Communications Lead | 2025\u201106\u201113 | 2025\u201106\u201115 | 2.12, 2.16 | Media library, email list | Confirm copyright clearance |\n\n**Milestones**  \n- **M9 \u2013 AV Test Passed** (2025\u201106\u201108)  \n- **M10 \u2013 Registration Open** (2025\u201106\u201110\u202f08:30)  \n- **M11 \u2013 Opening Keynote Delivered** (2025\u201106\u201110\u202f10:30)  \n- **M12 \u2013 Day\u20111 Debrief Completed** (2025\u201106\u201110\u202f17:30)  \n- **M13 \u2013 All Sessions Recorded** (2025\u201106\u201112\u202f16:00)  \n- **M14 \u2013 On\u2011site Close\u2011out Finished** (2025\u201106\u201112\u202f18:00)  \n\n---  \n\n## 3. Post\u2011Event Wrap\u2011up Completed  \n\n| # | Task | Owner | Start | Finish | Dependencies | Resources | Risk Mitigation |\n|---|------|-------|-------|--------|--------------|-----------|-----------------|\n| 3.1 | Distribute post\u2011event survey link to attendees | Communications Lead | 2025\u201106\u201113 | 2025\u201106\u201113 | 2.17 | Survey platform, email list | Send reminder at day\u202f3 |\n| 3.2 | Monitor survey response rate; send follow\u2011ups | Communications Lead | 2025\u201106\u201114 | 2025\u201106\u201120 | 3.1 | Tracking dashboard | Incentivize completion (e.g., prize draw) |\n| 3.3 | Export raw survey data and clean dataset | Analytics Team | 2025\u201106\u201121 | 2025\u201106\u201122 | 3.2 | Excel/BI tool | Validate completeness |\n| 3.4 | Analyze survey results (sentiment, NPS, session ratings) | Analytics Team | 2025\u201106\u201123 | 2025\u201106\u201125 | 3.3 | Analysis template | Peer\u2011review findings |\n| 3.5 | Draft post\u2011event insights report (key wins, improvement areas) | Analytics Team | 2025\u201106\u201126 | 2025\u201106\u201128 | 3.4 | Report format | Include executive summary |\n| 3.6 | Convene OKR alignment workshop (leadership, event owners) | Event Lead | 2025\u201106\u201124 | 2025\u201106\u201125 | 3.4 | Workshop agenda, virtual room | Capture decisions in minutes |\n| 3.7 | Update FY2025 OKRs based on event outcomes | Leadership Team | 2025\u201106\u201126 | 2025\u201106\u201127 | 3.6 | OKR tracking tool | Review with Finance for budget impact |\n| 3.8 | Reconcile all event invoices (venue, AV, catering, travel, speakers) | Finance Owner | 2025\u201106\u201120 | 2025\u201107\u201105 | 2.16 | Invoice repository, PO system | Escalate overdue items early |\n| 3.9 | Prepare final financial close report (actual vs. budget) | Finance Owner | 2025\u201107\u201106 | 2025\u201107\u201108 | 3.8 | Financial software | Include variance explanations |\n| 3.10 | Assemble executive briefing deck (highlights, survey insights, OKRs, financials) | Communications Lead | 2025\u201107\u201109 | 2025\u201107\u201110 | 3.5, 3.7, 3.9 | Slide template | Pre\u2011review by CEO |\n| 3.11 | Present final briefing to Steering Committee | Event Lead | 2025\u201107\u201111 | 2025\u201107\u201111 | 3.10 | Meeting room, video\u2011conf | Capture action items for FY2025 |\n| 3.12 | Archive all project artefacts in corporate repository | Project Admin | 2025\u201107\u201112 | 2025\u201107\u201113 | 3.11 | Document management system | Verify access permissions |\n\n**Milestones**  \n- **M15 \u2013 Survey Closed** (2025\u201106\u201120)  \n- **M16 \u2013 Insights Report Delivered** (2025\u201106\u201128)  \n- **M17 \u2013 FY2025 OKRs Updated** (2025\u201106\u201127)  \n- **M18 \u2013 Financial Close Completed** (2025\u201107\u201108)  \n- **M19 \u2013 Executive Briefing Presented** (2025\u201107\u201111)  \n\n---  \n\n### Cross\u2011Outcome Dependencies & Buffers  \n\n| Dependency | From Outcome | To Outcome | Buffer |\n|------------|--------------|------------|--------|\n| Pre\u2011event sign\u2011off (1.19) | 1. Pre\u2011Event Planning Completed | 2. Event\u2011Day Execution Successful | 5\u202fdays (allows last\u2011minute adjustments) |\n| AV test pass (2.3) | 2. Event\u2011Day Execution Successful | 2. Event\u2011Day Execution Successful (Day\u202f2/3) | 1\u202fday (re\u2011test if needed) |\n| Survey closure (3.2) | 3. Post\u2011Event Wrap\u2011up Completed | 3. Post\u2011Event Wrap\u2011up Completed (analysis) | 3\u202fdays (reminder window) |\n| Invoice reconciliation (3.8) | 3. Post\u2011Event Wrap\u2011up Completed | 3. Post\u2011Event Wrap\u2011up Completed (financial close) | 2\u202fdays (review) |\n\n---  \n\n### High\u2011Level Timeline (Work\u2011Back View)\n\n| Date | Major Milestone |\n|------|-----------------|\n| **2025\u201103\u201101** | Event charter initiated |\n| **2025\u201103\u201112** | **M1 \u2013 Budget Approved** |\n| **2025\u201103\u201120** | **M2 \u2013 Venue Contract Signed** |\n| **2025\u201104\u201102** | **M3 \u2013 Speakers Confirmed** |\n| **2025\u201104\u201115** | **M4 \u2013 Travel Booked** |\n| **2025\u201104\u201118** | **M5 \u2013 AV Vendor Locked** |\n| **2025\u201104\u201115** | **M6 \u2013 Catering Contract Signed** |\n| **2025\u201105\u201131** | **M7 \u2013 Registration Closed** |\n| **2025\u201106\u201105** | **M8 \u2013 Pre\u2011Event Sign\u2011off** |\n| **2025\u201106\u201108** | **M9 \u2013 AV Test Passed** |\n| **2025\u201106\u201110\u202f08:30** | **M10 \u2013 Registration Open** |\n| **2025\u201106\u201110\u202f10:30** | **M11 \u2013 Opening Keynote Delivered** |\n| **2025\u201106\u201110\u202f17:30** | **M12 \u2013 Day\u20111 Debrief Completed** |\n| **2025\u201106\u201112\u202f16:00** | **M13 \u2013 All Sessions Recorded** |\n| **2025\u201106\u201112\u202f18:00** | **M14 \u2013 On\u2011site Close\u2011out Finished** |\n| **2025\u201106\u201120** | **M15 \u2013 Survey Closed** |\n| **2025\u201106\u201128** | **M16 \u2013 Insights Report Delivered** |\n| **2025\u201106\u201127** | **M17 \u2013 FY2025 OKRs Updated** |\n| **2025\u201107\u201108** | **M18 \u2013 Financial Close Completed** |\n| **2025\u201107\u201111** | **M19 \u2013 Executive Briefing Presented** |\n\n---  \n\n### Collaboration Model  \n\n| Work\u2011Stream | Primary Owner | Supporting Roles | Communication Cadence |\n|------------|---------------|------------------|-----------------------|\n| **Leadership & Governance** | Event Lead | Steering Committee, Finance Owner | Bi\u2011weekly steering calls; ad\u2011hoc for risk escalations |\n| **Venue & Logistics** | Venue Lead | Logistics Lead, Legal Counsel | Weekly status; daily check\u2011ins 2\u202fweeks before event |\n| **Content & Speakers** | Speaker Lead | Session Leads, Moderator(s) | Weekly content sync; final lock\u2011in 1\u202fweek prior |\n| **Travel & Hospitality** | Travel Lead | HR Partner (visa/clearance), Finance Owner | Bi\u2011weekly; intensive 2\u202fweeks before event |\n| **AV & Production** | AV Lead | IT Support, Vendor Tech | Weekly; daily rehearsal week |\n| **Catering & Hospitality** | Catering Lead | Facilities Manager | Weekly; final menu confirmation 5\u202fdays prior |\n| **Communications & Marketing** | Communications Lead | Branding Team, Survey Vendor | Weekly; daily during registration period |\n| **Analytics & OKR Alignment** | Analytics Team | Leadership Team | Post\u2011event: 3\u2011day sprint for analysis |\n| **Finance & Close\u2011out** | Finance Owner | Procurement, Vendor Managers | Weekly; final close\u2011out 2\u202fweeks after event |\n\nAll owners maintain a shared **Project Dashboard** (e.g., a cloud\u2011based Gantt/kanban board) that displays task status, owners, dependencies, and risk flags. The dashboard is reviewed in every steering call and updated in real time after each milestone.\n\n---  \n\n### Risk Management Summary  \n\n| Risk | Impact | Likelihood | Owner | Mitigation |\n|------|--------|------------|-------|------------|\n| Venue double\u2011booking or cancellation | High (event delay) | Low | Venue Lead | Secure contract with strong cancellation clause; identify backup venue in same city |\n| Speaker withdrawal <\u202f2\u202fweeks out | Medium | Medium | Speaker Lead | Maintain 2 alternates per slot; record sessions for backup playback |\n| AV equipment failure on day\u202f1 | High | Low | AV Lead | On\u2011site spare equipment; service contract with 24\u2011hr response |\n| Catering menu not meeting dietary restrictions | Medium | Low | Catering Lead | Collect dietary data early; confirm with caterer 5\u202fdays prior; have alternative meals ready |\n| Low survey response rate (<\u202f30\u202f%) | Medium | Medium | Communications Lead | Send reminders; offer incentive; embed survey link in post\u2011event email |\n| Invoice disputes delaying financial close | Medium | Low | Finance Owner | Pre\u2011event PO issuance; capture all change orders in real time; weekly invoice review |\n| Travel disruptions (weather, visa) | Medium | Low | Travel Lead | Book flexible tickets; monitor travel advisories; have remote participation option |\n\n---  \n\n**The plan above provides a complete, actionable work\u2011back schedule that maps every required task to an owner, dates, dependencies, resources, and risk mitigations, while also defining clear milestones that signal progress toward the three core outcomes (pre\u2011event readiness, flawless execution, and thorough post\u2011event closure).**",
+  "plan": {
+    "id": "document-001",
+    "name": "Event Kickoff Workback Plan",
+    "details": "Work\u2011back schedule covering pre\u2011event planning, execution, and post\u2011event wrap\u2011up.",
+    "draft": true,
+    "participants": [
+      {
+        "name": "Event Lead",
+        "email": null,
+        "details": null,
+        "draft": true
+      },
+      {
+        "name": "Finance Owner",
+        "email": null,
+        "details": null,
+        "draft": true
+      },
+      {
+        "name": "Venue Lead",
+        "email": null,
+        "details": null,
+        "draft": true
+      },
+      {
+        "name": "Speaker Lead",
+        "email": null,
+        "details": null,
+        "draft": true
+      },
+      {
+        "name": "Travel Lead",
+        "email": null,
+        "details": null,
+        "draft": true
+      },
+      {
+        "name": "AV Lead",
+        "email": null,
+        "details": null,
+        "draft": true
+      },
+      {
+        "name": "Catering Lead",
+        "email": null,
+        "details": null,
+        "draft": true
+      },
+      {
+        "name": "Communications Lead",
+        "email": null,
+        "details": null,
+        "draft": true
+      },
+      {
+        "name": "Logistics Lead",
+        "email": null,
+        "details": null,
+        "draft": true
+      },
+      {
+        "name": "Session Lead",
+        "email": null,
+        "details": null,
+        "draft": true
+      },
+      {
+        "name": "Analytics Team",
+        "email": null,
+        "details": null,
+        "draft": true
+      },
+      {
+        "name": "Leadership Team",
+        "email": null,
+        "details": null,
+        "draft": true
+      },
+      {
+        "name": "Project Admin",
+        "email": null,
+        "details": null,
+        "draft": true
+      }
+    ],
+    "references": [],
+    "deliverables": [],
+    "tasks": [
+      {
+        "id": "task-001",
+        "name": "Draft Event Charter",
+        "draft": true,
+        "details": "Owner: Event Lead. Start: 2025\u201103\u201101. Finish: 2025\u201103\u201101.",
+        "dependencies": [],
+        "coDependencies": [],
+        "state": "not-started",
+        "dueBy": "2025-03-01",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002",
+        "name": "Obtain Budget Approval",
+        "draft": true,
+        "details": "Owner: Finance Owner. Depends on Draft Event Charter. Start: 2025\u201103\u201101. Finish: 2025\u201103\u201112.",
+        "dependencies": [
+          "task-001"
+        ],
+        "coDependencies": [],
+        "state": "not-started",
+        "dueBy": "2025-03-12",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003",
+        "name": "Secure Venue Contract",
+        "draft": true,
+        "details": "Owner: Venue Lead. Depends on Budget Approval. Start: 2025\u201103\u201101. Finish: 2025\u201103\u201120.",
+        "dependencies": [
+          "task-002"
+        ],
+        "coDependencies": [],
+        "state": "not-started",
+        "dueBy": "2025-03-20",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-004",
+        "name": "Finalize Venue Contract",
+        "draft": true,
+        "details": "Owner: Venue Lead. Depends on Secure Venue Contract. Start: 2025\u201103\u201101. Finish: 2025\u201103\u201120.",
+        "dependencies": [
+          "task-003"
+        ],
+        "coDependencies": [],
+        "state": "not-started",
+        "dueBy": "2025-03-20",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-005",
+        "name": "Confirm Speakers",
+        "draft": true,
+        "details": "Owner: Speaker Lead. Depends on Budget Approval. Start: 2025\u201103\u201101. Finish: 2025\u201104\u201102.",
+        "dependencies": [
+          "task-002"
+        ],
+        "coDependencies": [],
+        "state": "not-started",
+        "dueBy": "2025-04-02",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-006",
+        "name": "Lock Speaker Contracts",
+        "draft": true,
+        "details": "Owner: Speaker Lead. Depends on Confirm Speakers. Start: 2025\u201104\u201102. Finish: 2025\u201104\u201102.",
+        "dependencies": [
+          "task-005"
+        ],
+        "coDependencies": [],
+        "state": "not-started",
+        "dueBy": "2025-04-02",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-007",
+        "name": "Collect Travel Requirements",
+        "draft": true,
+        "details": "Owner: Travel Lead. Depends on Confirm Speakers. Start: 2025\u201104\u201102. Finish: 2025\u201104\u201115.",
+        "dependencies": [
+          "task-005"
+        ],
+        "coDependencies": [],
+        "state": "not-started",
+        "dueBy": "2025-04-15",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-008",
+        "name": "Book Travel & Hospitality",
+        "draft": true,
+        "details": "Owner: Travel Lead. Depends on Collect Travel Requirements. Start: 2025\u201104\u201115. Finish: 2025\u201104\u201115.",
+        "dependencies": [
+          "task-007"
+        ],
+        "coDependencies": [],
+        "state": "not-started",
+        "dueBy": "2025-04-15",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-009",
+        "name": "Define AV Requirements",
+        "draft": true,
+        "details": "Owner: AV Lead. Depends on Confirm Speakers. Start: 2025\u201104\u201102. Finish: 2025\u201104\u201118.",
+        "dependencies": [
+          "task-005"
+        ],
+        "coDependencies": [],
+        "state": "not-started",
+        "dueBy": "2025-04-18",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-010",
+        "name": "Select AV Vendor",
+        "draft": true,
+        "details": "Owner: AV Lead. Depends on Define AV Requirements. Start: 2025\u201104\u201102. Finish: 2025\u201104\u201118.",
+        "dependencies": [
+          "task-009"
+        ],
+        "coDependencies": [],
+        "state": "not-started",
+        "dueBy": "2025-04-18",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-011",
+        "name": "Gather Dietary Restrictions",
+        "draft": true,
+        "details": "Owner: Catering Lead. Depends on Budget Approval. Start: 2025\u201104\u201102. Finish: 2025\u201104\u201115.",
+        "dependencies": [
+          "task-002"
+        ],
+        "coDependencies": [],
+        "state": "not-started",
+        "dueBy": "2025-04-15",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-012",
+        "name": "Finalize Catering Contract",
+        "draft": true,
+        "details": "Owner: Catering Lead. Depends on Gather Dietary Restrictions. Start: 2025\u201104\u201102. Finish: 2025\u201104\u201115.",
+        "dependencies": [
+          "task-011"
+        ],
+        "coDependencies": [],
+        "state": "not-started",
+        "dueBy": "2025-04-15",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-013",
+        "name": "Develop Communication Plan",
+        "draft": true,
+        "details": "Owner: Communications Lead. Depends on Budget Approval. Start: 2025\u201104\u201102. Finish: 2025\u201104\u201115.",
+        "dependencies": [
+          "task-002"
+        ],
+        "coDependencies": [],
+        "state": "not-started",
+        "dueBy": "2025-04-15",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-014",
+        "name": "Send Registration Open Notification",
+        "draft": true,
+        "details": "Owner: Communications Lead. Depends on Develop Communication Plan. Start: 2025\u201104\u201115. Finish: 2025\u201104\u201115.",
+        "dependencies": [
+          "task-013"
+        ],
+        "coDependencies": [],
+        "state": "not-started",
+        "dueBy": "2025-04-15",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-015",
+        "name": "Create Marketing Materials",
+        "draft": true,
+        "details": "Owner: Communications Lead. Depends on Develop Communication Plan. Start: 2025\u201104\u201102. Finish: 2025\u201104\u201115.",
+        "dependencies": [
+          "task-013"
+        ],
+        "coDependencies": [],
+        "state": "not-started",
+        "dueBy": "2025-04-15",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-016",
+        "name": "Open Registration Portal",
+        "draft": true,
+        "details": "Owner: Communications Lead. Depends on Create Marketing Materials. Start: 2025\u201104\u201115. Finish: 2025\u201105\u201131.",
+        "dependencies": [
+          "task-015"
+        ],
+        "coDependencies": [],
+        "state": "not-started",
+        "dueBy": "2025-05-31",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-017",
+        "name": "Close Registration",
+        "draft": true,
+        "details": "Owner: Communications Lead. Depends on Open Registration Portal. Start: 2025\u201105\u201131. Finish: 2025\u201106\u201105.",
+        "dependencies": [
+          "task-016"
+        ],
+        "coDependencies": [],
+        "state": "not-started",
+        "dueBy": "2025-06-05",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-018",
+        "name": "Pre\u2011Event Risk Review",
+        "draft": true,
+        "details": "Owner: Event Lead. Depends on all tasks 1.1\u20111.17. Start: 2025\u201105\u201101. Finish: 2025\u201106\u201105.",
+        "dependencies": [
+          "task-001",
+          "task-002",
+          "task-003",
+          "task-004",
+          "task-005",
+          "task-006",
+          "task-007",
+          "task-008",
+          "task-009",
+          "task-010",
+          "task-011",
+          "task-012",
+          "task-013",
+          "task-014",
+          "task-015",
+          "task-016",
+          "task-017"
+        ],
+        "coDependencies": [],
+        "state": "not-started",
+        "dueBy": "2025-06-05",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-019",
+        "name": "Final Pre\u2011Event Sign\u2011off",
+        "draft": true,
+        "details": "Owner: Event Lead. Depends on tasks 1.4\u20111.18. Start: 2025\u201106\u201105. Finish: 2025\u201106\u201105.",
+        "dependencies": [
+          "task-004",
+          "task-005",
+          "task-006",
+          "task-007",
+          "task-008",
+          "task-009",
+          "task-010",
+          "task-011",
+          "task-012",
+          "task-013",
+          "task-014",
+          "task-015",
+          "task-016",
+          "task-017",
+          "task-018"
+        ],
+        "coDependencies": [],
+        "state": "not-started",
+        "dueBy": "2025-06-05",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-020",
+        "name": "Finalize Event Schedule (Day\u202f1)",
+        "draft": true,
+        "details": "Owner: Event Lead. Depends on Final Pre\u2011Event Sign\u2011off. Start: 2025\u201106\u201110. Finish: 2025\u201106\u201110.",
+        "dependencies": [
+          "task-019"
+        ],
+        "coDependencies": [],
+        "state": "not-started",
+        "dueBy": "2025-06-10",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-021",
+        "name": "Setup AV Equipment",
+        "draft": true,
+        "details": "Owner: Logistics Lead. Depends on Select AV Vendor. Start: 2025\u201106\u201108. Finish: 2025\u201106\u201108.",
+        "dependencies": [
+          "task-010"
+        ],
+        "coDependencies": [],
+        "state": "not-started",
+        "dueBy": "2025-06-08",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-022",
+        "name": "Perform AV Test",
+        "draft": true,
+        "details": "Owner: AV Lead. Depends on Setup AV Equipment. Start: 2025\u201106\u201108. Finish: 2025\u201106\u201108.",
+        "dependencies": [
+          "task-021"
+        ],
+        "coDependencies": [],
+        "state": "not-started",
+        "dueBy": "2025-06-08",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-023",
+        "name": "Prepare On\u2011Site Logistics",
+        "draft": true,
+        "details": "Owner: Logistics Lead. Depends on Final Pre\u2011Event Sign\u2011off. Start: 2025\u201106\u201101. Finish: 2025\u201106\u201110.",
+        "dependencies": [
+          "task-019"
+        ],
+        "coDependencies": [],
+        "state": "not-started",
+        "dueBy": "2025-06-10",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-024",
+        "name": "Open Registration for Attendees",
+        "draft": true,
+        "details": "Owner: Communications Lead. Depends on Final Pre\u2011Event Sign\u2011off. Start: 2025\u201106\u201110. Finish: 2025\u201106\u201110.",
+        "dependencies": [
+          "task-019"
+        ],
+        "coDependencies": [],
+        "state": "not-started",
+        "dueBy": "2025-06-10",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-025",
+        "name": "Conduct Day\u202f1 Sessions",
+        "draft": true,
+        "details": "Owner: Session Lead. Depends on Final Pre\u2011Event Sign\u2011off. Start: 2025\u201106\u201110. Finish: 2025\u201106\u201110.",
+        "dependencies": [
+          "task-019"
+        ],
+        "coDependencies": [],
+        "state": "not-started",
+        "dueBy": "2025-06-10",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-026",
+        "name": "Capture Session Recordings",
+        "draft": true,
+        "details": "Owner: AV Lead. Depends on Conduct Day\u202f1 Sessions. Start: 2025\u201106\u201110. Finish: 2025\u201106\u201110.",
+        "dependencies": [
+          "task-022"
+        ],
+        "coDependencies": [],
+        "state": "not-started",
+        "dueBy": "2025-06-10",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-027",
+        "name": "Post\u2011Event Survey Distribution",
+        "draft": true,
+        "details": "Owner: Communications Lead. Depends on Capture Session Recordings. Start: 2025\u201106\u201110. Finish: 2025\u201106\u201110.",
+        "dependencies": [
+          "task-022"
+        ],
+        "coDependencies": [],
+        "state": "not-started",
+        "dueBy": "2025-06-10",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-037",
+        "name": "Prepare Post\u2011Event Survey",
+        "draft": true,
+        "details": "Owner: Communications Lead. Depends on Post\u2011Event Survey Distribution. Start: 2025\u201106\u201110. Finish: 2025\u201106\u201110.",
+        "dependencies": [
+          "task-036"
+        ],
+        "coDependencies": [],
+        "state": "not-started",
+        "dueBy": "2025-06-10",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-038",
+        "name": "Collect Survey Responses",
+        "draft": true,
+        "details": "Owner: Communications Lead. Depends on Prepare Post\u2011Event Survey. Start: 2025\u201106\u201110. Finish: 2025\u201106\u201110.",
+        "dependencies": [
+          "task-037"
+        ],
+        "coDependencies": [],
+        "state": "not-started",
+        "dueBy": "2025-06-10",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-039",
+        "name": "Analyze Survey Data",
+        "draft": true,
+        "details": "Owner: Analytics Team. Depends on Collect Survey Responses. Start: 2025\u201106\u201110. Finish: 2025\u201106\u201110.",
+        "dependencies": [
+          "task-038"
+        ],
+        "coDependencies": [],
+        "state": "not-started",
+        "dueBy": "2025-06-10",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-040",
+        "name": "Prepare Final Report",
+        "draft": true,
+        "details": "Owner: Event Lead. Depends on Analyze Survey Data. Start: 2025\u201106\u201110. Finish: 2025\u201106\u201110.",
+        "dependencies": [
+          "task-039"
+        ],
+        "coDependencies": [],
+        "state": "not-started",
+        "dueBy": "2025-06-10",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      }
+    ],
+    "history": []
+  }
+}

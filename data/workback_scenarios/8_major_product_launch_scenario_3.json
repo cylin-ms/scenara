@@ -1,0 +1,59 @@
+{
+  "scenario_name": "NimbusAI Enterprise 5.0 \u2013 Global AI\u2011Driven Business Intelligence Launch",
+  "company_context": "NimbusTech Solutions, a publicly\u2011traded ($12B) enterprise software company headquartered in San Francisco, is releasing NimbusAI Enterprise version 5.0, the next\u2011gen AI\u2011driven business intelligence platform for Fortune\u202f500 customers. The product adds generative\u2011AI insights, real\u2011time data mesh integration, and a low\u2011code analytics builder. Market opportunity: $4.2B TAM in AI\u2011augmented analytics, targeting a 12% market share within three years. Competitive positioning: differentiated by proprietary \u201cInsight Engine\u201d AI, SOC\u202f2\u2011type\u202fII compliance, and deep integration with major ERP/CRM partners (SAP, Salesforce, Oracle). Launch date: 2025\u201112\u201115, with a hybrid launch event at Moscone Center, San Francisco and a global webcast streamed to 30+ partner locations.",
+  "meeting_event_details": "Launch Event \u2013 \"NimbusAI Vision 2025\" \u2013 Date: 2025\u201112\u201115, Time: 09:00\u202f\u2013\u202f12:30\u202fPT (live at Moscone Center, Hall\u202fC, and streamed via Zoom Webinar to 30 partner sites). Duration: 3.5\u202fhours (keynote, product demo, customer panel, partner breakout, press Q&A). Pre\u2011event executive briefing: 2025\u201112\u201110, 14:00\u202f\u2013\u202f15:30\u202fPT, virtual. Post\u2011launch debrief: 2025\u201112\u201120, 10:00\u202f\u2013\u202f12:00\u202fPT, onsite at NimbusTech HQ, Mountain View.",
+  "stakeholders": [
+    "Sarah Patel \u2013 VP Product Management (overall product vision, launch sign\u2011off)",
+    "Michael Chen \u2013 Director of Engineering (RC build, technical readiness)",
+    "Aisha Al\u2011Mansouri \u2013 Senior Program Manager, Launch Office (workback coordination)",
+    "Ravi Kumar \u2013 Head of Marketing \u2013 Global Campaigns (demand generation, PR)",
+    "Laura G\u00f3mez \u2013 Director of Partner Enablement (partner training, co\u2011sell)",
+    "James O'Neill \u2013 Chief Revenue Officer (sales strategy, quota alignment)",
+    "Emily Wu \u2013 Senior Legal Counsel \u2013 Compliance & Contracts (GDPR, export controls)",
+    "Carlos Mendes \u2013 Pricing Strategy Lead (price tiering, ARR modeling)",
+    "Olivia Brooks \u2013 Customer Success Lead \u2013 Beta & Early\u2011Adopter Program",
+    "David Lee \u2013 Head of Finance \u2013 Budget & ROI tracking",
+    "Priya Singh \u2013 Director of Security & Compliance (SOC\u202f2, ISO\u202f27001)",
+    "Tom\u00e1s Rivera \u2013 Senior Solutions Architect \u2013 Partner Integration",
+    "Nina Patel \u2013 Global Events Manager (venue, logistics, webcast)",
+    "Markus Vogel \u2013 Data Operations Manager \u2013 Post\u2011launch monitoring dashboard"
+  ],
+  "deliverables": [
+    "Launch Playbook (timeline, roles, communication matrix)",
+    "Beta Program Report (feedback, defect backlog, upgrade intent)",
+    "Release Candidate v5.0 build and sign\u2011off checklist",
+    "Full set of marketing assets (press kit, demo videos, one\u2011pager decks, social assets)",
+    "Partner Enablement Kit (training modules, integration guides, co\u2011sell playbooks)",
+    "Legal & Compliance Sign\u2011off package (GDPR Data\u2011Processing Addendum, export license)",
+    "Pricing Model Document (tiered subscription, enterprise add\u2011ons, discount structures)",
+    "Executive Launch Event run\u2011of\u2011show and webcast production plan",
+    "Post\u2011Launch Monitoring Dashboard (uptime, adoption, NPS, usage analytics)",
+    "Financial Forecast & ROI Model (first\u2011year ARR, CAC, payback period)"
+  ],
+  "success_criteria": [
+    "Achieve $25\u202fM ARR within the first 12\u202fmonths post\u2011launch",
+    "Secure 80% upgrade conversion from beta customers to paid Enterprise licenses",
+    "Maintain \u2265\u202f95% system availability during the first 30\u202fdays",
+    "Net Promoter Score (NPS) \u2265\u202f50 from launch attendees and early adopters",
+    "Generate \u2265\u202f30 media mentions in top\u2011tier tech/enterprise publications within 2\u202fweeks",
+    "Onboard at least 5 strategic channel partners (SAP, Salesforce, Oracle, Microsoft, IBM) with co\u2011sell agreements signed before launch",
+    "Stay within the $8\u202fM launch budget (\u00b1\u202f5%)",
+    "Obtain all required legal/compliance approvals (GDPR, SOC\u202f2, export) by 2025\u201111\u201130"
+  ],
+  "constraints": [
+    "Total launch budget capped at $8\u202fM (including events, marketing spend, partner incentives)",
+    "All GDPR\u2011related data\u2011processing agreements must be signed by 2025\u201111\u201130",
+    "Partner integration APIs must be production\u2011ready by 2025\u201111\u201120 to support live demos",
+    "Engineering resources limited to 12\u202fFTEs for RC stabilization during the final 4\u202fweeks",
+    "Venue availability at Moscone Center only for the 2025\u201112\u201115 morning slot",
+    "Executive leadership availability for final sign\u2011off limited to two 2\u2011hour windows (2025\u201111\u201115 and 2025\u201112\u201101)",
+    "External dependency on Salesforce Einstein AI release (scheduled for 2025\u201111\u201110) for joint demo"
+  ],
+  "workback_prompt": "Create a detailed 90\u2011day workback plan for the NimbusAI Enterprise 5.0 global launch at NimbusTech Solutions. Include all major milestones (beta releases, RC sign\u2011off, legal/compliance approvals, partner enablement, marketing campaign rollout, launch event production, post\u2011launch monitoring), assign owners from the stakeholder list, define weekly deliverables, flag critical path items, and incorporate the budget, resource, and compliance constraints listed. Provide a Gantt\u2011style timeline, a risk\u2011mitigation matrix, and a communication cadence for internal and external audiences.",
+  "meeting_type": "Major Product Launch",
+  "meeting_type_key": "8_major_product_launch",
+  "scenario_number": 3,
+  "horizon": "T-90",
+  "complexity": "Very High",
+  "generated_at": "2025-11-17T07:18:57.600463"
+}

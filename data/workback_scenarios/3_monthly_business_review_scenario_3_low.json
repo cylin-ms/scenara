@@ -1,0 +1,207 @@
+{
+  "scenario_name": "Nimbus Cloud Solutions \u2013 Enterprise SaaS Division Monthly Business Review (Product)",
+  "scenario_number": 3,
+  "meeting_type": "Monthly Business Review",
+  "quality_level": "low",
+  "workback_prompt": "Generate a detailed workback plan for the 'Nimbus Cloud Solutions \u2013 Enterprise SaaS Division Monthly Business Review (Product)' scenario. The plan should start 30 days before the meeting (T\u201130) and list all tasks, owners, start/end dates, dependencies, required data pulls, review checkpoints, and risk mitigation steps needed to deliver the listed deliverables on time, stay within the budget constraints, and meet the success criteria. Include milestones for data validation, roadmap finalization, budget memo approval, and rehearsal of the presentation.\n\nGenerate a LOW QUALITY workback plan with these characteristics:\n- Missing key tasks or phases\n- Vague task descriptions\n- Few or no dependencies defined\n- Missing stakeholder assignments\n- No milestones or poorly defined milestones\n- Unrealistic timelines\n- No risk consideration\n- Minimal deliverables identified\n\nIMPORTANT: Generate a plan that naturally exhibits LOW quality characteristics.\nDo not explicitly label the plan as \"low quality\" - let the quality emerge from the content.",
+  "generated_at": "2025-11-17T04:56:30.658847",
+  "analysis": "# Outcomes\n\n## Monthly Business Review Presentation (Product)\nPrepare and deliver the Nimbus Cloud Solutions \u2013 Enterprise SaaS Division Monthly Business Review (Product) meeting materials and presentation.  \nArtifact references: *none*  \n\n### Reasoning\nThe core deliverable for the review is the presentation deck and supporting data. The user asked for a work\u2011back plan that starts 30\u202fdays before the meeting and includes tasks, owners, dates, dependencies, data pulls, checkpoints, and risk steps. This outcome captures the overall goal, even though the plan below is intentionally sparse and vague.\n\n### Approach\n1. List a handful of high\u2011level tasks that roughly span the 30\u2011day window.  \n2. Assign owners in a generic way (e.g., \u201cTeam Lead\u201d, \u201cAnalyst\u201d).  \n3. Provide start/end dates that are close together, without detailed sequencing.  \n4. Mention a couple of checkpoints (e.g., \u201cdata review\u201d) but do not tie them to specific tasks.  \n5. Include a few \u201cmilestones\u201d (e.g., \u201croadmap final\u201d) but keep their definitions vague.  \n6. Omit many intermediate steps, dependencies, stakeholder assignments, and risk mitigation details, as requested for a low\u2011quality plan.  \n\n## Breakdown\n\n| # | Task | Owner | Start | End | Dependencies | Data Pulls / Checkpoints | Milestones |\n|---|------|-------|-------|-----|--------------|--------------------------|------------|\n| 1 | Gather sales numbers | Analyst | T\u201130 | T\u201128 | \u2013 | Pull sales DB | \u2013 |\n| 2 | Update product roadmap | Product Owner | T\u201127 | T\u201125 | \u2013 | \u2013 | Roadmap final (approx.) |\n| 3 | Prepare budget memo | Finance Lead | T\u201124 | T\u201122 | \u2013 | Pull budget spreadsheet | Budget memo approval (rough) |\n| 4 | Build presentation deck | Team Lead | T\u201121 | T\u201118 | 1,2,3 | \u2013 | \u2013 |\n| 5 | Quick data validation | Analyst | T\u201117 | T\u201116 | 1 | Spot\u2011check numbers | Data validation (basic) |\n| 6 | Review deck internally | Team Lead | T\u201115 | T\u201113 | 4 | \u2013 | \u2013 |\n| 7 | Finalize deck | Team Lead | T\u201112 | T\u201110 | 5,6 | \u2013 | \u2013 |\n| 8\u202fRehearse presentation | Presenter | T\u20119 | T\u20118 | 7 | \u2013 | Rehearsal (informal) |\n| 9 | Send invites & agenda | Admin | T\u20117 | T\u20116 | \u2013 | \u2013 | \u2013 |\n| 10 | Conduct meeting | Presenter | T\u20110 | T\u20110 | 8 | \u2013 | Meeting held |\n\n### Notes\n- **Dependencies** are only loosely noted; many tasks could run in parallel but this is not detailed.  \n- **Stakeholder assignments** are generic; specific names or teams are not listed.  \n- **Milestones** are mentioned but lack clear criteria or sign\u2011offs.  \n- **Risk mitigation** is omitted entirely.  \n- **Timelines** are tight and unrealistic (e.g., building a full deck in three days).  \n\nThis plan gives a rough outline that meets the request for a low\u2011quality work\u2011back schedule while intentionally leaving out many critical planning elements.",
+  "plan": {
+    "id": "document-001",
+    "name": "Monthly Business Review Presentation (Product)",
+    "details": "Prepare and deliver the Nimbus Cloud Solutions \u2013 Enterprise SaaS Division Monthly Business Review (Product) meeting materials and presentation.",
+    "draft": true,
+    "participants": [
+      {
+        "name": "Analyst",
+        "draft": true
+      },
+      {
+        "name": "Product Owner",
+        "draft": true
+      },
+      {
+        "name": "Finance Lead",
+        "draft": true
+      },
+      {
+        "name": "Team Lead",
+        "draft": true
+      },
+      {
+        "name": "Presenter",
+        "draft": true
+      },
+      {
+        "name": "Admin",
+        "draft": true
+      }
+    ],
+    "references": [],
+    "deliverables": [
+      {
+        "id": "deck-001",
+        "name": "Monthly Business Review Presentation Deck",
+        "type": "powerpoint",
+        "draft": true,
+        "history": []
+      }
+    ],
+    "tasks": [
+      {
+        "id": "task-001",
+        "name": "Gather sales numbers",
+        "draft": true,
+        "details": "Owner: Analyst. Start: T\u201130. End: T\u201128. Data Pull: Pull sales DB.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002",
+        "name": "Update product roadmap",
+        "draft": true,
+        "details": "Owner: Product Owner. Start: T\u201127. End: T\u201125. Milestone: Roadmap final (approx.).",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003",
+        "name": "Prepare budget memo",
+        "draft": true,
+        "details": "Owner: Finance Lead. Start: T\u201124. End: T\u201122. Data Pull: Pull budget spreadsheet. Milestone: Budget memo approval (rough).",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-004",
+        "name": "Build presentation deck",
+        "draft": true,
+        "details": "Owner: Team Lead. Start: T\u201121. End: T\u201118.",
+        "dependencies": [
+          "task-001",
+          "task-002",
+          "task-003"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[powerpoint]/deck-001"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-005",
+        "name": "Quick data validation",
+        "draft": true,
+        "details": "Owner: Analyst. Start: T\u201117. End: T\u201116. Checkpoint: Spot\u2011check numbers. Milestone: Data validation (basic).",
+        "dependencies": [
+          "task-001"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-006",
+        "name": "Review deck internally",
+        "draft": true,
+        "details": "Owner: Team Lead. Start: T\u201115. End: T\u201113.",
+        "dependencies": [
+          "task-004"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-007",
+        "name": "Finalize deck",
+        "draft": true,
+        "details": "Owner: Team Lead. Start: T\u201112. End: T\u201110.",
+        "dependencies": [
+          "task-005",
+          "task-006"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[powerpoint]/deck-001"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-008",
+        "name": "Rehearse presentation",
+        "draft": true,
+        "details": "Owner: Presenter. Start: T\u20119. End: T\u20118.",
+        "dependencies": [
+          "task-007"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[powerpoint]/deck-001"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-009",
+        "name": "Send invites & agenda",
+        "draft": true,
+        "details": "Owner: Admin. Start: T\u20117. End: T\u20116.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-010",
+        "name": "Conduct meeting",
+        "draft": true,
+        "details": "Owner: Presenter. Start: T\u20110. End: T\u20110.",
+        "dependencies": [
+          "task-008"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[powerpoint]/deck-001"
+        ],
+        "references": [],
+        "history": []
+      }
+    ],
+    "history": []
+  }
+}

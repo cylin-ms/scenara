@@ -1,0 +1,687 @@
+{
+  "scenario_name": "2025 GlobalTech FY25 Sales & Product Innovation Kickoff",
+  "scenario_number": 1,
+  "meeting_type": "Annual Kickoff Meeting",
+  "quality_level": "high",
+  "workback_prompt": "Create a detailed work\u2011back plan for the 2025 GlobalTech FY25 Sales & Product Innovation Kickoff (June 10\u201112, 2025, Hyatt Regency Denver). Include all major work\u2011streams (strategy alignment, speaker coordination, venue & AV, catering, swag procurement, travel logistics, communications, on\u2011site execution, post\u2011event deliverables), key milestones, dependencies, owners, and estimated effort. Align the plan with the T\u201160 planning horizon, $120k budget, and the success criteria listed. Provide a Gantt\u2011style timeline (by week) and a risk mitigation matrix for the identified constraints.\n\nGenerate a HIGH QUALITY workback plan with these characteristics:\n- Comprehensive task coverage\n- Clear, actionable task descriptions\n- Well-defined dependencies\n- All tasks assigned to specific owners\n- Clear milestones with completion criteria\n- Realistic timelines with buffers\n- Proactive risk management\n- Complete deliverable list\n\nIMPORTANT: Generate a plan that naturally exhibits HIGH quality characteristics.\nDo not explicitly label the plan as \"high quality\" - let the quality emerge from the content.",
+  "generated_at": "2025-11-17T06:38:47.680604",
+  "analysis": "# Outcomes  \n\n## 1. Requirements & Success\u2011Criteria Consolidation  \nA single, vetted document that captures all event objectives, budget limits, success metrics, stakeholder expectations, and the list of required work\u2011streams.  \nArtifact references: *none*  \n\n### Reasoning  \nThe kickoff description already lists the major work\u2011streams, budget ($120\u202fk), T\u201160 planning horizon, and \u201csuccess criteria\u201d (though the exact metrics are not reproduced here). Before any schedule can be built, the team needs a concrete, shared understanding of what must be delivered and how success will be measured.  \n\n### Approach  \n1. **Identify stakeholders** \u2013 Event Sponsor, FY25 Sales Leadership, Product Innovation Lead, Finance, HR (for travel), Marketing/Communications, Facilities, and Vendor Management.  \n2. **Facilitate a 90\u2011minute \u201cScope\u2011Sync\u201d meeting** (virtual) to:  \n   - Review the high\u2011level brief (June\u202f10\u201112, 2025, Hyatt Regency Denver).  \n   - Capture each work\u2011stream\u2019s deliverables and acceptance criteria.  \n   - Record any hard constraints (e.g., venue lock\u2011in date, speaker contract deadlines).  \n3. **Document** the information in a \u201cEvent Requirements & Success\u2011Criteria\u201d doc, using a table that maps:  \n   - Work\u2011stream \u2192 Deliverable \u2192 Owner \u2192 Success Metric \u2192 Due Date.  \n4. **Circulate** for sign\u2011off (email approval or shared\u2011doc comment).  \n\n---\n\n## 2. High\u2011Level Work\u2011Back Schedule (Week\u2011by\u2011Week)  \nA Gantt\u2011style timeline (weekly granularity) that outlines all major milestones, dependencies, owners, and buffer periods from T\u201160 (early\u202fApril\u202f2025) to post\u2011event wrap\u2011up (late\u202fJune\u202f2025).  \nArtifact references: *none*  \n\n### Reasoning  \nThe user explicitly requests a \u201cGantt\u2011style timeline (by week)\u201d. Building this timeline requires first\u2011level sequencing of the work\u2011streams identified in Outcome\u202f1, then adding realistic effort estimates and buffers.  \n\n### Approach  \n1. **Create a master task list** using the work\u2011streams from Outcome\u202f1 (strategy alignment, speaker coordination, venue & AV, catering, swag, travel, communications, on\u2011site execution, post\u2011event deliverables).  \n2. **Estimate effort** for each task (person\u2011days) based on historical data or expert judgment.  \n3. **Identify critical dependencies** (e.g., venue contract must be signed before AV layout can be finalized).  \n4. **Map tasks to calendar weeks**:  \n   - Week\u202f\u201160 to\u202f\u201156 (early April) \u2013 strategy kickoff, budget approval, venue lock\u2011in.  \n   - \u2026 (continue through week\u202f\u20112, week\u202f\u20111, event week, and week\u202f+1 for post\u2011event).  \n5. **Insert buffers** (typically 10\u202f% of effort or at least one full week for high\u2011risk items).  \n6. **Populate a simple Gantt view** in a shared spreadsheet or project\u2011management tool (columns: Week\u202f1, Week\u202f2 \u2026; rows: tasks; cells: \u201cPlanned\u201d, \u201cIn\u2011Progress\u201d, \u201cComplete\u201d).  \n7. **Review** the draft schedule with all owners; adjust for resource conflicts.  \n\n---\n\n## 3. Detailed Work\u2011Back Plan (Task\u2011Level WBS)  \nA hierarchical Work Breakdown Structure that expands each major work\u2011stream into concrete, actionable tasks, assigns owners, defines completion criteria, and records effort estimates.  \nArtifact references: *none*  \n\n### Reasoning  \nThe user asks for \u201ccomprehensive task coverage, clear actionable task descriptions, well\u2011defined dependencies, all tasks assigned to specific owners, clear milestones with completion criteria, realistic timelines with buffers.\u201d A detailed WBS is the vehicle that delivers all of these elements.  \n\n### Approach  \n1. **Use Outcome\u202f1\u2019s consolidated list** as the top\u2011level nodes.  \n2. **For each work\u2011stream**, hold a short 30\u2011minute \u201cTask\u2011Definition\u201d session with the designated owner to break the stream into 5\u201110 sub\u2011tasks (e.g., Speaker Coordination \u2192 Identify speakers, Draft speaker brief, Secure contracts, Collect bios, Arrange travel, Confirm presentations).  \n3. **Document** each sub\u2011task with:  \n   - **Description** (action verb + object).  \n   - **Owner** (role, not a specific person unless already assigned).  \n   - **Effort** (person\u2011days).  \n   - **Milestone/Completion Criteria** (e.g., \u201cSpeaker contracts signed\u201d).  \n   - **Dependencies** (predecessor tasks).  \n4. **Validate** the WBS against the high\u2011level schedule (Outcome\u202f2) to ensure alignment.  \n5. **Store** the WBS in a shared, version\u2011controlled document (e.g., Google Sheet, Confluence page).  \n\n---\n\n## 4. Risk Mitigation Matrix  \nA table that lists identified constraints/risks, their impact, probability, mitigation actions, owners, and monitoring cadence.  \nArtifact references: *none*  \n\n### Reasoning  \nThe brief explicitly requests \u201ca risk mitigation matrix for the identified constraints.\u201d Risks such as venue availability, speaker cancellations, budget overruns, and travel disruptions must be captured early.  \n\n### Approach  \n1. **Brainstorm risks** during the \u201cScope\u2011Sync\u201d meeting (Outcome\u202f1) and the \u201cTask\u2011Definition\u201d sessions (Outcome\u202f3).  \n2. **Classify** each risk by:  \n   - **Impact** (High/Medium/Low).  \n   - **Probability** (High/Medium/Low).  \n3. **Define mitigation** (preventive) and contingency (reactive) actions, assign an owner, and set a review frequency (e.g., weekly risk review).  \n4. **Populate** a matrix with columns: Risk ID, Description, Impact, Probability, Owner, Mitigation, Contingency, Review Cadence, Status.  \n5. **Integrate** the matrix into the overall project dashboard for ongoing visibility.  \n\n---\n\n## 5. Final Deliverable Package  \nA compiled set of artefacts ready for executive sign\u2011off and distribution to the execution team:  \n- Requirements & Success\u2011Criteria document  \n- High\u2011level Gantt timeline (weekly)  \n- Detailed WBS (task list)  \n- Risk Mitigation Matrix  \n- Budget tracking sheet (aligned to $120\u202fk)  \n\nArtifact references: *none*  \n\n### Reasoning  \nThe user expects a \u201ccomplete deliverable list\u201d and \u201cpost\u2011event deliverables.\u201d Consolidating everything into a single package ensures clarity, auditability, and smooth hand\u2011off to on\u2011site teams.  \n\n### Approach  \n1. **Create a folder** in the shared drive with a clear naming convention (e.g., \u201cFY25_Kickoff_Plan_2025\u201d).  \n2. **Populate** the folder with the five artefacts, each with version numbers and last\u2011updated timestamps.  \n3. **Schedule a final review meeting** (owner: Event Lead) with all stakeholders to obtain sign\u2011off.  \n4. **Distribute** read\u2011only links to the execution team and archive the signed package for future reference.  \n\n---\n\n# Breakdown  \n\n## 1. Requirements & Success\u2011Criteria Consolidation  \n1.1 Identify all stakeholders (Event Sponsor, Sales Lead, Product Lead, Finance, HR, Marketing, Facilities, Vendor Management).  \n1.2 Draft agenda for \u201cScope\u2011Sync\u201d meeting.  \n1.3 Conduct \u201cScope\u2011Sync\u201d (90\u202fmin).  \n1.4 Capture work\u2011stream deliverables & success metrics in a table.  \n1.5 Review draft with each stakeholder (parallel).  \n1.6 Incorporate feedback and finalize document.  \n1.7 Obtain formal sign\u2011off (email/approval).  \n\n## 2. High\u2011Level Work\u2011Back Schedule (Gantt)  \n2.1 Extract top\u2011level tasks from Outcome\u202f1.  \n2.2 Estimate effort for each task (consult owners).  \n2.3 List dependencies (e.g., venue contract \u2192 AV design).  \n2.4 Map tasks to weeks (\u201160 to\u202f+2).  \n2.5 Add buffer weeks (minimum one week for high\u2011risk streams).  \n2.6 Build weekly Gantt view in spreadsheet.  \n2.7 Share draft schedule with owners for validation.  \n2.8 Revise based on feedback; lock schedule.  \n\n## 3. Detailed Work\u2011Back Plan (WBS)  \n3.1 Schedule \u201cTask\u2011Definition\u201d workshops (30\u202fmin each) with owners of:  \n\u2003- Strategy Alignment  \n\u2003- Speaker Coordination  \n\u2003- Venue & AV  \n\u2003- Catering  \n\u2003- Swag Procurement  \n\u2003- Travel Logistics  \n\u2003- Communications  \n\u2003- On\u2011site Execution  \n\u2003- Post\u2011event Deliverables  \n3.2 For each workshop:  \n\u20033.2.1 List sub\u2011tasks.  \n\u20033.2.2 Define description, owner, effort, completion criteria.  \n\u20033.2.3 Identify intra\u2011stream dependencies.  \n3.3 Consolidate all sub\u2011tasks into master WBS document.  \n3.4 Align WBS with high\u2011level schedule (Outcome\u202f2).  \n3.5 Review WBS with Event Lead; obtain approval.  \n\n## 4. Risk Mitigation Matrix  \n4.1 Compile risk list from Outcomes\u202f1 &\u202f3 meetings.  \n4.2 Score each risk (Impact \u00d7 Probability).  \n4.3 Define mitigation & contingency actions; assign owners.  \n4.4 Set risk\u2011review cadence (weekly).  \n4.5 Populate matrix template.  \n4.6 Add matrix to project dashboard; brief owners.  \n\n## 5. Final Deliverable Package  \n5.1 Create shared folder with naming convention.  \n5.2 Upload:  \n\u2003- Requirements & Success\u2011Criteria doc  \n\u2003- Weekly Gantt timeline  \n\u2003- Detailed WBS  \n\u2003- Risk Mitigation Matrix  \n\u2003- Budget tracking sheet (aligned to $120\u202fk).  \n5.3 Conduct final review meeting (30\u202fmin) with all stakeholders.  \n5.4 Capture sign\u2011off decisions; update version numbers.  \n5.5 Distribute read\u2011only links to execution team; archive signed package.  \n\n---  \n\n**Key Collaboration Points**  \n\n- **Weekly Syncs**: A 30\u2011minute status call (Event Lead) to surface blockers, confirm dependencies, and update the Gantt view.  \n- **Owner\u2011Driven Updates**: Each work\u2011stream owner updates their task status in the shared WBS sheet before the weekly sync.  \n- **Risk Review**: A standing risk\u2011review slot (15\u202fmin) on the same weekly sync ensures mitigation actions stay current.  \n- **Budget Gate**: Finance Owner reviews the budget tracking sheet after any major scope change; approval required before proceeding.  \n\nBy following this structured approach, the team can systematically translate the high\u2011level event brief into a fully fleshed\u2011out work\u2011back plan, maintain alignment across all functional owners, and proactively manage the limited $120\u202fk budget and T\u201160 timeline.",
+  "plan": {
+    "id": "document-001",
+    "name": "FY25 Kickoff Workback Plan",
+    "details": "Workback plan for the FY25 kickoff event covering requirements consolidation, high\u2011level schedule, detailed WBS, risk matrix, and final deliverable package.",
+    "draft": true,
+    "participants": [],
+    "references": [],
+    "deliverables": [
+      {
+        "id": "deliverable-001",
+        "name": "Requirements & Success\u2011Criteria Document",
+        "type": "word",
+        "draft": true,
+        "history": []
+      },
+      {
+        "id": "deliverable-002",
+        "name": "High\u2011Level Gantt Timeline (weekly)",
+        "type": "excel",
+        "draft": true,
+        "history": []
+      },
+      {
+        "id": "deliverable-003",
+        "name": "Detailed Work\u2011Back Plan (WBS)",
+        "type": "excel",
+        "draft": true,
+        "history": []
+      },
+      {
+        "id": "deliverable-004",
+        "name": "Risk Mitigation Matrix",
+        "type": "excel",
+        "draft": true,
+        "history": []
+      },
+      {
+        "id": "deliverable-005",
+        "name": "Budget Tracking Sheet",
+        "type": "excel",
+        "draft": true,
+        "history": []
+      }
+    ],
+    "tasks": [
+      {
+        "id": "task-001",
+        "name": "Requirements & Success\u2011Criteria Consolidation",
+        "draft": true,
+        "details": "Overall outcome for consolidating event requirements and success criteria.",
+        "dependencies": [
+          "task-002",
+          "task-003",
+          "task-004",
+          "task-005",
+          "task-006",
+          "task-007",
+          "task-008"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[word]/deliverable-001"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002",
+        "name": "Identify all stakeholders",
+        "draft": true,
+        "details": "Identify Event Sponsor, Sales Lead, Product Lead, Finance, HR, Marketing, Facilities, Vendor Management.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003",
+        "name": "Draft agenda for \u201cScope\u2011Sync\u201d meeting",
+        "draft": true,
+        "details": "Create agenda covering brief review, work\u2011stream deliverables, constraints.",
+        "dependencies": [
+          "task-002"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-004",
+        "name": "Conduct \u201cScope\u2011Sync\u201d (90\u202fmin)",
+        "draft": true,
+        "details": "Virtual meeting to review brief and capture deliverables and success metrics.",
+        "dependencies": [
+          "task-003"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-005",
+        "name": "Capture work\u2011stream deliverables & success metrics in a table",
+        "draft": true,
+        "details": "Populate table mapping work\u2011stream \u2192 deliverable \u2192 owner \u2192 success metric \u2192 due date.",
+        "dependencies": [
+          "task-004"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-006",
+        "name": "Review draft with each stakeholder (parallel)",
+        "draft": true,
+        "details": "Send draft to stakeholders for feedback.",
+        "dependencies": [
+          "task-005"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-007",
+        "name": "Incorporate feedback and finalize document",
+        "draft": true,
+        "details": "Update the Requirements & Success\u2011Criteria doc based on stakeholder input.",
+        "dependencies": [
+          "task-006"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-008",
+        "name": "Obtain formal sign\u2011off (email/approval)",
+        "draft": true,
+        "details": "Collect email approvals from all owners.",
+        "dependencies": [
+          "task-007"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[word]/deliverable-001"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-009",
+        "name": "High\u2011Level Work\u2011Back Schedule (Gantt)",
+        "draft": true,
+        "details": "Overall outcome for creating the weekly Gantt schedule.",
+        "dependencies": [
+          "task-010",
+          "task-011",
+          "task-012",
+          "task-013",
+          "task-014",
+          "task-015",
+          "task-016",
+          "task-017"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[excel]/deliverable-002"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-010",
+        "name": "Extract top\u2011level tasks from Outcome\u202f1",
+        "draft": true,
+        "details": "Derive high\u2011level tasks based on consolidated requirements.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-011",
+        "name": "Estimate effort for each task",
+        "draft": true,
+        "details": "Consult owners to estimate person\u2011days.",
+        "dependencies": [
+          "task-010"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-012",
+        "name": "List dependencies (e.g., venue contract \u2192 AV design)",
+        "draft": true,
+        "details": "Identify critical predecessor relationships.",
+        "dependencies": [
+          "task-011"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-013",
+        "name": "Map tasks to weeks (\u201160 to\u202f+2)",
+        "draft": true,
+        "details": "Assign each task to a calendar week.",
+        "dependencies": [
+          "task-012"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-014",
+        "name": "Add buffer weeks (minimum one week for high\u2011risk streams)",
+        "draft": true,
+        "details": "Insert contingency weeks into the schedule.",
+        "dependencies": [
+          "task-013"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-015",
+        "name": "Build weekly Gantt view in spreadsheet",
+        "draft": true,
+        "details": "Create Gantt chart with columns for weeks and rows for tasks.",
+        "dependencies": [
+          "task-014"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[excel]/deliverable-002"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-016",
+        "name": "Share draft schedule with owners for validation",
+        "draft": true,
+        "details": "Distribute Gantt view for review and feedback.",
+        "dependencies": [
+          "task-015"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-017",
+        "name": "Revise based on feedback; lock schedule",
+        "draft": true,
+        "details": "Incorporate changes and finalize the schedule.",
+        "dependencies": [
+          "task-016"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[excel]/deliverable-002"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-018",
+        "name": "Detailed Work\u2011Back Plan (WBS)",
+        "draft": true,
+        "details": "Overall outcome for producing the detailed WBS.",
+        "dependencies": [
+          "task-019",
+          "task-020",
+          "task-021",
+          "task-022",
+          "task-023",
+          "task-024",
+          "task-025"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[excel]/deliverable-003"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-019",
+        "name": "Schedule \u201cTask\u2011Definition\u201d workshops with owners",
+        "draft": true,
+        "details": "Arrange 30\u2011minute workshops for each work\u2011stream owner.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-020",
+        "name": "List sub\u2011tasks for each work\u2011stream",
+        "draft": true,
+        "details": "During workshops, enumerate all sub\u2011tasks needed.",
+        "dependencies": [
+          "task-019"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-021",
+        "name": "Define description, owner, effort, completion criteria",
+        "draft": true,
+        "details": "Document each sub\u2011task with clear details.",
+        "dependencies": [
+          "task-020"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-022",
+        "name": "Identify intra\u2011stream dependencies",
+        "draft": true,
+        "details": "Map dependencies among sub\u2011tasks within each work\u2011stream.",
+        "dependencies": [
+          "task-021"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-023",
+        "name": "Consolidate all sub\u2011tasks into master WBS document",
+        "draft": true,
+        "details": "Create a master WBS spreadsheet containing every sub\u2011task.",
+        "dependencies": [
+          "task-022"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[excel]/deliverable-003"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-024",
+        "name": "Align WBS with high\u2011level schedule (Outcome\u202f2)",
+        "draft": true,
+        "details": "Ensure WBS tasks are placed correctly in the Gantt schedule.",
+        "dependencies": [
+          "task-023"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [
+          "@deliverable[excel]/deliverable-002"
+        ],
+        "history": []
+      },
+      {
+        "id": "task-025",
+        "name": "Review WBS with Event Lead; obtain approval",
+        "draft": true,
+        "details": "Final review of the WBS and sign\u2011off.",
+        "dependencies": [
+          "task-024"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[excel]/deliverable-003"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-026",
+        "name": "Risk Mitigation Matrix",
+        "draft": true,
+        "details": "Overall outcome for creating the risk matrix.",
+        "dependencies": [
+          "task-027",
+          "task-028",
+          "task-029",
+          "task-030",
+          "task-031",
+          "task-032"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[excel]/deliverable-004"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-027",
+        "name": "Compile risk list from Outcomes\u202f1 &\u202f3 meetings",
+        "draft": true,
+        "details": "Gather risks identified during requirements and WBS workshops.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-028",
+        "name": "Score each risk (Impact \u00d7 Probability)",
+        "draft": true,
+        "details": "Assign severity and likelihood scores.",
+        "dependencies": [
+          "task-027"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-029",
+        "name": "Define mitigation & contingency actions; assign owners",
+        "draft": true,
+        "details": "Develop response plans for each risk.",
+        "dependencies": [
+          "task-028"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-030",
+        "name": "Set risk\u2011review cadence (weekly)",
+        "draft": true,
+        "details": "Establish a weekly review rhythm for the risk matrix.",
+        "dependencies": [
+          "task-029"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-031",
+        "name": "Populate matrix template",
+        "draft": true,
+        "details": "Enter risk scores and mitigation actions into the matrix.",
+        "dependencies": [
+          "task-030"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[excel]/deliverable-004"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-032",
+        "name": "Add matrix to project dashboard; brief owners",
+        "draft": true,
+        "details": "Make the risk matrix visible on the dashboard and inform owners.",
+        "dependencies": [
+          "task-031"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[excel]/deliverable-004"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-033",
+        "name": "Final Deliverable Package",
+        "draft": true,
+        "details": "Overall outcome for assembling and delivering the final package.",
+        "dependencies": [
+          "task-034",
+          "task-035",
+          "task-036",
+          "task-037",
+          "task-038"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[word]/deliverable-001",
+          "@deliverable[excel]/deliverable-002",
+          "@deliverable[excel]/deliverable-003",
+          "@deliverable[excel]/deliverable-004",
+          "@deliverable[excel]/deliverable-005"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-034",
+        "name": "Create shared folder with naming convention",
+        "draft": true,
+        "details": "Set up a cloud folder named per the event naming guidelines.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-035",
+        "name": "Upload deliverables",
+        "draft": true,
+        "details": "Place all final deliverables into the shared folder.",
+        "dependencies": [
+          "task-034"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[word]/deliverable-001",
+          "@deliverable[excel]/deliverable-002",
+          "@deliverable[excel]/deliverable-003",
+          "@deliverable[excel]/deliverable-004",
+          "@deliverable[excel]/deliverable-005"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-036",
+        "name": "Conduct final review meeting (30\u202fmin) with all stakeholders",
+        "draft": true,
+        "details": "Walk through the final package and obtain any last approvals.",
+        "dependencies": [
+          "task-035"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-037",
+        "name": "Capture sign\u2011off decisions; update version numbers",
+        "draft": true,
+        "details": "Record approvals and increment document versions.",
+        "dependencies": [
+          "task-036"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-038",
+        "name": "Distribute read\u2011only links to execution team; archive signed package",
+        "draft": true,
+        "details": "Share final deliverables and store the signed package for record.",
+        "dependencies": [
+          "task-037"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[word]/deliverable-001",
+          "@deliverable[excel]/deliverable-002",
+          "@deliverable[excel]/deliverable-003",
+          "@deliverable[excel]/deliverable-004",
+          "@deliverable[excel]/deliverable-005"
+        ],
+        "references": [],
+        "history": []
+      }
+    ],
+    "history": []
+  }
+}

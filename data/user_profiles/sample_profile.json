@@ -1,0 +1,171 @@
+{
+  "generated_at": "2025-11-17T14:55:40.636684",
+  "total_profiles": 1,
+  "profiles": [
+    {
+      "basic_info": {
+        "full_name": "Maya Anjali Patel",
+        "age": 38,
+        "location": "Austin, Texas, USA (CST)",
+        "years_of_experience": 15,
+        "education": [
+          {
+            "degree": "B.Sc. Computer Science",
+            "institution": "University of Texas at Austin",
+            "year": 2006
+          },
+          {
+            "degree": "M.Sc. Software Engineering",
+            "institution": "Georgia Institute of Technology",
+            "year": 2009
+          }
+        ]
+      },
+      "work_habits": {
+        "preferred_working_hours": "Early bird (08:00‑17:00 CST)",
+        "peak_productivity_times": [
+          "09:00‑11:00",
+          "14:00‑15:30"
+        ],
+        "communication_style": {
+          "async_preference": true,
+          "sync_preference": "brief stand‑ups",
+          "average_response_time_hours": 4
+        },
+        "meeting_preferences": {
+          "minimizes_meetings": true,
+          "preferred_meeting_length_minutes": 30,
+          "face_to_face_needed": "once per week (hybrid office day)"
+        },
+        "work_environment": "Hybrid (3 days remote, 2 days in office)",
+        "focus_time_requirements": {
+          "daily_blocks": 2,
+          "block_length_minutes": 120,
+          "protected_time_policy": "Do‑Not‑Disturb on Slack"
+        }
+      },
+      "personality": {
+        "myers_briggs_type": "INTJ",
+        "decision_making_approach": "Analytical with data‑driven trade‑off analysis",
+        "risk_tolerance": "Moderate",
+        "collaboration_style": "Mentor‑oriented team player",
+        "stress_management_approach": "Morning run (30 min) + weekly yoga; uses Pomodoro technique under pressure",
+        "conflict_resolution_style": "Collaborative – seeks win‑win and clarifies assumptions early"
+      },
+      "skills": {
+        "core_technical_skills": {
+          "Java": 9,
+          "Python": 8,
+          "Go": 7,
+          "JavaScript/React": 6,
+          "AWS": 9,
+          "Kubernetes": 8,
+          "Docker": 9,
+          "Microservices Architecture": 9,
+          "CI/CD (Jenkins, GitHub Actions)": 8,
+          "System Design": 9,
+          "Data Structures & Algorithms": 9,
+          "SQL/NoSQL (PostgreSQL, DynamoDB)": 8
+        },
+        "leadership_abilities": {
+          "team_leadership": 8,
+          "technical_architecture": 9,
+          "project_management": 7,
+          "people_development": 8
+        },
+        "domain_expertise_areas": [
+          "SaaS subscription billing",
+          "Usage‑based pricing engines",
+          "Customer analytics dashboards",
+          "Compliance (PCI‑DSS, GDPR) for SaaS platforms"
+        ],
+        "learning_agility": 9,
+        "tools_proficiency": [
+          "Git (GitHub, GitLab)",
+          "Jira",
+          "Confluence",
+          "Terraform",
+          "Grafana",
+          "Splunk",
+          "Slack",
+          "Zoom"
+        ],
+        "languages_spoken": [
+          "English (native)",
+          "Hindi (fluent)",
+          "Spanish (conversational)"
+        ]
+      },
+      "performance": {
+        "task_completion_rate_on_time_percent": 92,
+        "quality_consistency_error_free_percent": 96,
+        "estimation_accuracy": "±5 % (generally accurate)",
+        "multitasking_ability": "High",
+        "deadline_pressure_response": "Thrives",
+        "average_work_hours_per_week": 45
+      },
+      "availability": {
+        "regular_availability_hours_per_week": 30,
+        "timezone": "CST (UTC‑06:00)",
+        "vacation_pto_tendencies": "Moderate (3‑4 weeks per year, scheduled in advance)",
+        "other_commitments": [
+          "Quarterly speaking slot at SaaStr Annual",
+          "Maintainer of an open‑source Go library for rate‑limiting (≈5 hrs/week)",
+          "Mentor for a local women‑in‑tech coding bootcamp (2 hrs/month)"
+        ],
+        "travel_requirements": "Up to 5 days per quarter for client on‑site workshops"
+      },
+      "personal_factors": {
+        "family_status": "Married, two children (ages 6 & 9)",
+        "caregiving_responsibilities": "Provides weekly support for an elderly mother (≈4 hrs/week)",
+        "commute_time_minutes": 20,
+        "health_wellness_routine_impact": "Morning run + yoga improves focus; rarely takes sick days (<2 per year)",
+        "financial_motivation_level": "Moderate (focus on stability and ability to fund children’s education)",
+        "career_ambitions": "Become Director of Engineering within 3‑4 years; lead larger product groups"
+      },
+      "project_impact": {
+        "reliability_score": 9,
+        "innovation_contribution": "High (has filed 2 patents on usage‑based pricing models)",
+        "documentation_quality": "Excellent (maintains living architecture diagrams, automated API docs)",
+        "mentorship_capability": 8,
+        "blockers_dependencies_handling": "Proactive – logs blockers in Jira, escalates within 24 hrs",
+        "escalation_comfort_level": "High"
+      },
+      "collaboration": {
+        "typical_collaboration_frequency": "Daily stand‑ups, 2‑3 ad‑hoc syncs per week, weekly cross‑team demos",
+        "preferred_communication_channels": [
+          "Slack (async)",
+          "Zoom (short syncs)",
+          "Email (formal decisions)",
+          "Confluence (documentation)"
+        ],
+        "feedback_style": "Coaching – gives actionable suggestions, balances praise with improvement points",
+        "knowledge_sharing_tendency": "Very high – writes internal blog posts, runs monthly tech talks",
+        "cross_functional_effectiveness": "Strong – works well with product, design, data science, and ops teams"
+      },
+      "risk_factors": {
+        "potential_bottleneck_areas": [
+          "Deep domain expertise in subscription‑billing logic (few team members share this knowledge)",
+          "Availability during peak sprint weeks when she’s mentoring interns"
+        ],
+        "backup_redundancy_needs": "Assign a secondary senior engineer as knowledge‑share partner for billing services",
+        "training_ramp_up_time_new_areas_months": 1.5,
+        "context_switching_overhead": "Medium – handling 2‑3 concurrent tickets can add ~10 % time overhead",
+        "historical_project_challenge_patterns": [
+          "Scope creep on analytics dashboards",
+          "External payment‑gateway API latency spikes causing release delays"
+        ]
+      },
+      "metadata": {
+        "generated_at": "2025-11-17T14:55:40.633821",
+        "generator": "UserProfileGenerator",
+        "model": "gpt-oss:120b",
+        "provider": "ollama",
+        "role": "Software Engineer",
+        "seniority": "senior",
+        "industry": "SaaS Technology",
+        "company_size": "medium"
+      }
+    }
+  ]
+}

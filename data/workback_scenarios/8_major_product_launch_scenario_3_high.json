@@ -1,0 +1,665 @@
+{
+  "scenario_name": "NimbusAI Enterprise 5.0 \u2013 Global AI\u2011Driven Business Intelligence Launch",
+  "scenario_number": 3,
+  "meeting_type": "Major Product Launch",
+  "quality_level": "high",
+  "workback_prompt": "Create a detailed 90\u2011day workback plan for the NimbusAI Enterprise 5.0 global launch at NimbusTech Solutions. Include all major milestones (beta releases, RC sign\u2011off, legal/compliance approvals, partner enablement, marketing campaign rollout, launch event production, post\u2011launch monitoring), assign owners from the stakeholder list, define weekly deliverables, flag critical path items, and incorporate the budget, resource, and compliance constraints listed. Provide a Gantt\u2011style timeline, a risk\u2011mitigation matrix, and a communication cadence for internal and external audiences.\n\nGenerate a HIGH QUALITY workback plan with these characteristics:\n- Comprehensive task coverage\n- Clear, actionable task descriptions\n- Well-defined dependencies\n- All tasks assigned to specific owners\n- Clear milestones with completion criteria\n- Realistic timelines with buffers\n- Proactive risk management\n- Complete deliverable list\n\nIMPORTANT: Generate a plan that naturally exhibits HIGH quality characteristics.\nDo not explicitly label the plan as \"high quality\" - let the quality emerge from the content.",
+  "generated_at": "2025-11-17T07:26:05.683642",
+  "analysis": "# Outcomes\n\n## 1. Draft 90\u2011Day Workback Plan (document)  \nA single, version\u2011controlled document that lists every major milestone (beta releases, RC sign\u2011off, legal/compliance approvals, partner enablement, marketing rollout, launch\u2011event production, post\u2011launch monitoring), the weekly deliverables that feed each milestone, owners from the stakeholder list, dependencies, and buffer periods.  \n\n**Artifact references:** *none provided*  \n\n### Reasoning  \nThe user\u2019s primary request is a \u201cdetailed 90\u2011day workback plan\u201d.\u202fCreating a draft that captures all required elements is the logical first outcome; everything else (Gantt chart, risk matrix, communication cadence) will be derived from or attached to this core plan.  \n\n### Approach  \n1. **Collect baseline inputs** \u2013 stakeholder roster, budget caps, resource head\u2011counts, compliance constraints, and any existing launch\u2011related artefacts.  \n2. **Define milestone hierarchy** \u2013 list the seven high\u2011level milestones identified by the user and agree on concrete \u201ccompletion criteria\u201d for each (e.g., \u201cBeta 1 sign\u2011off by Product Owner, all critical bugs \u2264\u202fP1\u201d).  \n3. **Work backwards** from the launch date (Day\u202f0) to Day\u202f\u201190, allocating weekly slices to each milestone and inserting required buffer weeks (typically 10\u202f% of the total duration).  \n4. **Populate weekly deliverables** \u2013 for each week, write a concise, action\u2011oriented description (e.g., \u201cWeek\u202f\u20116: Legal drafts final review; Owner\u202f=\u202fCompliance Lead\u201d).  \n5. **Assign owners** \u2013 map every deliverable to a single accountable person from the stakeholder list; capture secondary reviewers where needed.  \n6. **Capture dependencies** \u2013 use \u201cDepends on\u201d notes to make the critical path visible.  \n7. **Iterate** \u2013 circulate the draft to all functional leads for comment (see Outcome\u202f5) and incorporate feedback.  \n8. **Lock version** \u2013 store in a shared repository with a clear version number (e.g.,\u202fv1.0).  \n\n---\n\n## 2. Detailed Gantt\u2011Style Timeline (visual)  \nA color\u2011coded Gantt chart that mirrors the workback plan, shows weekly bars, milestone markers, dependencies, and buffer zones.  \n\n**Artifact references:** *none provided*  \n\n### Reasoning  \nStakeholders need a visual schedule to quickly assess timing, overlaps, and the critical path. The Gantt chart is a direct deliverable that satisfies the user\u2019s \u201cGantt\u2011style timeline\u201d requirement.  \n\n### Approach  \n1. **Select a collaborative diagram tool** (e.g., shared spreadsheet with Gantt add\u2011on, or a cloud\u2011based project\u2011management board).  \n2. **Import the weekly deliverable list** from Outcome\u202f1.  \n3. **Create timeline bars** \u2013 each bar spans the weeks allocated to a deliverable; group bars under their parent milestone.  \n4. **Add milestone diamonds** at the end of each milestone bar, labeling completion criteria.  \n5. **Show dependencies** with arrows; highlight the critical path in a distinct color.  \n6. **Overlay buffers** as light\u2011shaded extensions on the right side of each milestone.  \n7. **Review with the core team** for visual clarity and accuracy; adjust sizing as needed.  \n8. **Publish** the final chart alongside the workback plan (linked in the same repository).  \n\n---\n\n## 3. Risk\u2011Mitigation Matrix  \nA tabular matrix that lists identified risks, impact/likelihood scores, mitigation actions, owners, and monitoring cadence.  \n\n**Artifact references:** *none provided*  \n\n### Reasoning  \nThe user explicitly asks for a \u201crisk\u2011mitigation matrix\u201d.\u202fRisks must be tied to milestones and deliverables, so the matrix will be built after the workback plan is stable.  \n\n### Approach  \n1. **Facilitate a risk\u2011identification workshop** (see Outcome\u202f5) with representatives from product, legal, compliance, partner, and marketing.  \n2. **Populate a risk register** \u2013 for each risk capture: description, affected milestone, impact (1\u20115), likelihood (1\u20115), and risk score (impact\u202f\u00d7\u202flikelihood).  \n3. **Prioritize** \u2013 sort by descending risk score; flag any risk with a score \u2265\u202f15 as \u201ccritical\u201d.  \n4. **Define mitigation actions** \u2013 concrete steps, owners, and due dates (aligned to weekly deliverables).  \n5. **Add monitoring cadence** \u2013 indicate how often the risk will be reviewed (e.g., weekly in the launch\u2011status meeting).  \n6. **Integrate** the matrix into the workback plan document as an appendix and reference it in the Gantt chart (critical\u2011path risks highlighted).  \n\n---\n\n## 4. Communication Cadence Plan (internal & external)  \nA schedule that specifies what information is shared, to whom, by whom, through which channel, and how often throughout the 90\u2011day window.  \n\n**Artifact references:** *none provided*  \n\n### Reasoning  \nEffective launch execution hinges on consistent communication. The user requests a \u201ccommunication cadence for internal and external audiences\u201d, making this a distinct outcome.  \n\n### Approach  \n1. **Identify audience groups** \u2013 internal (executive team, product, engineering, legal, sales, support) and external (partners, press, beta customers, regulatory bodies).  \n2. **Map information needs** \u2013 e.g., weekly status for internal leads, bi\u2011weekly partner enablement updates, monthly press briefings.  \n3. **Define communication formats** \u2013 status dashboards, email newsletters, partner portal posts, live Q&A sessions.  \n4. **Assign owners** \u2013 each cadence item gets a responsible communicator (e.g., \u201cProduct Marketing Lead \u2192 weekly internal status email\u201d).  \n5. **Create a cadence calendar** \u2013 a table or calendar view showing dates, audience, format, owner, and required inputs.  \n6. **Validate** with stakeholder leads to ensure no overload or gaps.  \n7. **Publish** alongside the workback plan; embed reminders in the project\u2011management tool.  \n\n---\n\n## 5. Stakeholder Alignment Workshop Summary  \nA concise document capturing decisions, open items, and action items from the initial alignment workshops that gathered inputs for the plan.  \n\n**Artifact references:** *none provided*  \n\n### Reasoning  \nBefore finalizing the plan, the team must align on scope, constraints, and ownership. Documenting this alignment provides traceability and reduces re\u2011work.  \n\n### Approach  \n1. **Schedule two workshops** \u2013 (a) \u201cScope & Constraints\u201d with product, legal, finance; (b) \u201cExecution & Communication\u201d with marketing, partner, ops.  \n2. **Facilitate structured agenda** \u2013 review launch objectives, confirm budget/resource limits, capture owner commitments, surface early risks.  \n3. **Record decisions** in a shared note\u2011taking tool; tag each decision with a responsible owner and due date.  \n4. **Compile a summary** \u2013 list of confirmed milestones, owner matrix, identified constraints, and open questions.  \n5. **Distribute** to all stakeholders for sign\u2011off; incorporate any resolved items into Outcomes\u202f1\u20114.  \n\n---\n\n## 6. Final Approval Sign\u2011off Package  \nA bundled set of the completed workback plan, Gantt chart, risk matrix, and communication cadence, together with a sign\u2011off sheet for executive approval.  \n\n**Artifact references:** *none provided*  \n\n### Reasoning  \nThe user\u2019s ultimate deliverable is a \u201chigh\u2011quality workback plan\u201d that must be formally approved before execution. Packaging all artefacts together streamlines the sign\u2011off process.  \n\n### Approach  \n1. **Assemble** the latest versions of Outcomes\u202f1\u20114 into a single folder or PDF bundle.  \n2. **Create a sign\u2011off sheet** \u2013 list each artefact, required approvers, and check\u2011boxes for \u201cReviewed\u201d and \u201cApproved\u201d.  \n3. **Route for approval** \u2013 send to the executive steering committee with a brief executive summary.  \n4. **Track responses** \u2013 use a shared tracker to monitor pending approvals; follow up on any objections.  \n5. **Lock final versions** \u2013 once all approvals are captured, mark the documents as \u201cFinal \u2013 Release\u202fv1.0\u201d.  \n6. **Communicate** the final package to the broader launch team (refer to Outcome\u202f4 for cadence).  \n\n---\n\n# Breakdown  \n\n### Phase\u202f1 \u2013 Initiation & Input Gathering (Weeks\u202f\u201112\u202fto\u202f\u201110)  \n1.1. **Kick\u2011off meeting** \u2013 introduce launch objective, assign a temporary launch coordinator.  \n1.2. **Collect stakeholder list** \u2013 request org chart, role descriptions, and contact details.  \n1.3. **Gather constraints** \u2013 budget ceiling, head\u2011count limits, compliance windows.  \n1.4. **Schedule Stakeholder Alignment Workshops** (Outcome\u202f5).  \n\n### Phase\u202f2 \u2013 Alignment Workshops (Weeks\u202f\u201110\u202fto\u202f\u20119)  \n2.1. **Run \u201cScope & Constraints\u201d workshop** \u2013 capture decisions, open items.  \n2.2. **Run \u201cExecution & Communication\u201d workshop** \u2013 capture owner commitments, communication preferences.  \n2.3. **Produce Workshop Summary** (Outcome\u202f5).  \n\n### Phase\u202f3 \u2013 Milestone & Deliverable Definition (Weeks\u202f\u20119\u202fto\u202f\u20117)  \n3.1. **Define high\u2011level milestones** \u2013 beta releases, RC sign\u2011off, legal approvals, partner enablement, marketing rollout, launch\u2011event production, post\u2011launch monitoring.  \n3.2. **Agree on completion criteria** for each milestone (e.g., \u201cAll critical bugs resolved; QA sign\u2011off\u201d).  \n3.3. **Work backwards** from launch date to allocate weekly windows, inserting 10\u202f% buffer weeks.  \n\n### Phase\u202f4 \u2013 Draft Workback Plan (Weeks\u202f\u20117\u202fto\u202f\u20115)  \n4.1. **Populate weekly deliverable list** \u2013 concise, action\u2011oriented descriptions.  \n4.2. **Assign owners** \u2013 map each deliverable to a single accountable stakeholder.  \n4.3. **Document dependencies** \u2013 annotate \u201cDepends on\u201d for each task.  \n4.4. **Create Draft Workback Plan document** (Outcome\u202f1).  \n4.5. **Circulate draft** to functional leads for review (feedback loop).  \n\n### Phase\u202f5 \u2013 Risk Identification & Mitigation (Weeks\u202f\u20115\u202fto\u202f\u20114)  \n5.1. **Facilitate risk\u2011identification session** (drawn from Outcome\u202f5 participants).  \n5.2. **Populate risk register** \u2013 impact, likelihood, score.  \n5.3. **Prioritize and define mitigation actions**.  \n5.4. **Produce Risk\u2011Mitigation Matrix** (Outcome\u202f3).  \n\n### Phase\u202f6 \u2013 Communication Cadence Design (Weeks\u202f\u20114\u202fto\u202f\u20113)  \n6.1. **Map audience groups** and information needs.  \n6.2. **Define cadence items** \u2013 frequency, format, owner.  \n6.3. **Create cadence calendar** (Outcome\u202f4).  \n\n### Phase\u202f7 \u2013 Visual Schedule (Gantt) Production (Weeks\u202f\u20113\u202fto\u202f\u20112)  \n7.1. **Select collaborative Gantt tool**.  \n7.2. **Import weekly deliverables** from Outcome\u202f1.  \n7.3. **Add milestone markers, dependencies, buffers**.  \n7.4. **Review visual with core team**; adjust for clarity.  \n7.5. **Finalize Gantt\u2011style timeline** (Outcome\u202f2).  \n\n### Phase\u202f8 \u2013 Consolidation & Review (Week\u202f\u20112)  \n8.1. **Integrate all artefacts** (plan, Gantt, risk matrix, cadence) into a single folder.  \n8.2. **Prepare Executive Summary** \u2013 high\u2011level view of schedule, critical path, top\u20113 risks.  \n\n### Phase\u202f9 \u2013 Final Approval & Publication (Week\u202f\u20111)  \n9.1. **Create Sign\u2011off Sheet** (Outcome\u202f6).  \n9.2. **Route package to executive steering committee**.  \n9.3. **Track approvals**, follow\u2011up on any pending items.  \n9.4. **Lock final versions** as \u201cRelease\u202fv1.0\u201d.  \n9.5. **Communicate launch\u2011plan availability** using the cadence defined in Outcome\u202f4.  \n\n### Phase\u202f10 \u2013 Launch Execution (Day\u202f0 onward) \u2013 *outside scope of plan creation*  \n10.1. **Activate weekly status meetings** \u2013 use the workback plan as the baseline.  \n10.2. **Monitor risk matrix** \u2013 trigger mitigations as needed.  \n10.3. **Update stakeholders** per cadence.  \n\n---  \n\n**Key Collaboration Tips**  \n\n- **RACI\u2011style ownership** \u2013 for every deliverable, record a single **Responsible** person, a **Accountable** approver, and optional **Consulted**/**Informed** parties.  \n- **Shared workspace** \u2013 keep all artefacts in a version\u2011controlled folder (e.g., cloud drive with edit history).  \n- **Regular syncs** \u2013 schedule a 30\u2011minute \u201cLaunch\u2011Status Stand\u2011up\u201d each Monday to surface blockers; align this with the communication cadence.  \n- **Transparent risk tracking** \u2013 embed the risk matrix in the weekly status dashboard so the entire team sees risk status in real time.  \n- **Buffer awareness** \u2013 when a buffer week is consumed, flag it immediately in the status meeting and re\u2011evaluate downstream dates.  \n\nFollowing this structured approach will enable the team to produce a comprehensive, actionable 90\u2011day workback plan that meets all of the user\u2019s specifications while ensuring clear ownership, realistic timing, and proactive risk management.",
+  "plan": {
+    "id": "document-001",
+    "name": "90\u2011Day Launch Workback Plan",
+    "details": "Comprehensive plan covering milestones, weekly deliverables, owners, dependencies, risk matrix, communication cadence, and final sign\u2011off package for the product launch.",
+    "draft": true,
+    "participants": [
+      {
+        "name": "You",
+        "email": "",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "System",
+        "email": "",
+        "details": "",
+        "draft": true
+      }
+    ],
+    "references": [],
+    "deliverables": [
+      {
+        "id": "deliverable-001",
+        "name": "Draft 90\u2011Day Workback Plan",
+        "type": "word",
+        "draft": true,
+        "history": []
+      },
+      {
+        "id": "deliverable-002",
+        "name": "Detailed Gantt\u2011Style Timeline",
+        "type": "gantt",
+        "draft": true,
+        "history": []
+      },
+      {
+        "id": "deliverable-003",
+        "name": "Risk\u2011Mitigation Matrix",
+        "type": "excel",
+        "draft": true,
+        "history": []
+      },
+      {
+        "id": "deliverable-004",
+        "name": "Communication Cadence Plan",
+        "type": "word",
+        "draft": true,
+        "history": []
+      },
+      {
+        "id": "deliverable-005",
+        "name": "Stakeholder Alignment Workshop Summary",
+        "type": "word",
+        "draft": true,
+        "history": []
+      },
+      {
+        "id": "deliverable-006",
+        "name": "Final Approval Sign\u2011off Package",
+        "type": "pdf",
+        "draft": true,
+        "history": []
+      }
+    ],
+    "tasks": [
+      {
+        "id": "task-001",
+        "name": "Kick\u2011off meeting",
+        "details": "Introduce launch objective and assign a temporary launch coordinator.",
+        "draft": true,
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002",
+        "name": "Collect stakeholder list",
+        "details": "Request org chart, role descriptions, and contact details.",
+        "draft": true,
+        "dependencies": [
+          "task-001"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003",
+        "name": "Gather constraints",
+        "details": "Identify budget ceiling, head\u2011count limits, and compliance windows.",
+        "draft": true,
+        "dependencies": [
+          "task-002"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-004",
+        "name": "Schedule Stakeholder Alignment Workshops",
+        "details": "Set dates for workshops that will produce Outcome\u202f5.",
+        "draft": true,
+        "dependencies": [
+          "task-003"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-005",
+        "name": "Run \u201cScope & Constraints\u201d workshop",
+        "details": "Capture decisions and open items related to scope and constraints.",
+        "draft": true,
+        "dependencies": [
+          "task-004"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-006",
+        "name": "Run \u201cExecution & Communication\u201d workshop",
+        "details": "Capture owner commitments and communication preferences.",
+        "draft": true,
+        "dependencies": [
+          "task-005"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-007",
+        "name": "Produce Workshop Summary",
+        "details": "Compile decisions, open items, and action items into Outcome\u202f5.",
+        "draft": true,
+        "dependencies": [
+          "task-006"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [
+          "@deliverable[word]/deliverable-005"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-008",
+        "name": "Define high\u2011level milestones",
+        "details": "List beta releases, RC sign\u2011off, legal approvals, partner enablement, marketing rollout, launch\u2011event production, post\u2011launch monitoring.",
+        "draft": true,
+        "dependencies": [
+          "task-007"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-009",
+        "name": "Agree on completion criteria",
+        "details": "Set concrete criteria for each milestone (e.g., all critical bugs resolved).",
+        "draft": true,
+        "dependencies": [
+          "task-008"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-010",
+        "name": "Work backwards to allocate weekly windows and buffers",
+        "details": "Starting from launch date, allocate weekly slices and insert 10\u202f% buffer weeks.",
+        "draft": true,
+        "dependencies": [
+          "task-009"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-011",
+        "name": "Populate weekly deliverable list",
+        "details": "Write concise, action\u2011oriented descriptions for each week.",
+        "draft": true,
+        "dependencies": [
+          "task-010"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-012",
+        "name": "Assign owners",
+        "details": "Map each deliverable to a single accountable stakeholder.",
+        "draft": true,
+        "dependencies": [
+          "task-011"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-013",
+        "name": "Document dependencies",
+        "details": "Annotate \u201cDepends on\u201d notes for each task.",
+        "draft": true,
+        "dependencies": [
+          "task-012"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-014",
+        "name": "Create Draft Workback Plan document",
+        "details": "Produce Outcome\u202f1 as a version\u2011controlled document.",
+        "draft": true,
+        "dependencies": [
+          "task-013"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [
+          "@deliverable[word]/deliverable-001"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-015",
+        "name": "Circulate draft for review",
+        "details": "Send the draft to functional leads for comment and incorporate feedback.",
+        "draft": true,
+        "dependencies": [
+          "task-014"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-016",
+        "name": "Facilitate risk\u2011identification session",
+        "details": "Run a workshop with participants from Outcome\u202f5 to surface risks.",
+        "draft": true,
+        "dependencies": [
+          "task-015"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-017",
+        "name": "Populate risk register",
+        "details": "Capture description, impact, likelihood, score for each risk.",
+        "draft": true,
+        "dependencies": [
+          "task-016"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-018",
+        "name": "Prioritize and define mitigation actions",
+        "details": "Sort risks by score and assign mitigation steps, owners, due dates.",
+        "draft": true,
+        "dependencies": [
+          "task-017"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-019",
+        "name": "Produce Risk\u2011Mitigation Matrix",
+        "details": "Create Outcome\u202f3 as a tabular matrix.",
+        "draft": true,
+        "dependencies": [
+          "task-018"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [
+          "@deliverable[excel]/deliverable-003"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-020",
+        "name": "Map audience groups and information needs",
+        "details": "Identify who needs what information for communication cadence.",
+        "draft": true,
+        "dependencies": [
+          "task-019"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-021",
+        "name": "Define cadence items",
+        "details": "Specify regular syncs, stand\u2011ups, and reporting mechanisms.",
+        "draft": true,
+        "dependencies": [
+          "task-020"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-022",
+        "name": "Create cadence calendar",
+        "details": "Produce Outcome\u202f4 as a communication cadence plan.",
+        "draft": true,
+        "dependencies": [
+          "task-021"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [
+          "@deliverable[word]/deliverable-004"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-023",
+        "name": "Select collaborative Gantt tool",
+        "details": "Choose a version\u2011controlled visual tool for the timeline.",
+        "draft": true,
+        "dependencies": [
+          "task-022"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-024",
+        "name": "Import weekly deliverables",
+        "details": "Load the weekly list from the Draft Workback Plan into the Gantt tool.",
+        "draft": true,
+        "dependencies": [
+          "task-023"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-025",
+        "name": "Add milestone markers, dependencies, buffers",
+        "details": "Enhance the visual with all required timeline elements.",
+        "draft": true,
+        "dependencies": [
+          "task-024"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-026",
+        "name": "Review visual with core team",
+        "details": "Obtain feedback on the Gantt visual before finalization.",
+        "draft": true,
+        "dependencies": [
+          "task-025"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-027",
+        "name": "Finalize Gantt\u2011style timeline",
+        "details": "Produce Outcome\u202f2 as the detailed timeline.",
+        "draft": true,
+        "dependencies": [
+          "task-026"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [
+          "@deliverable[gantt]/deliverable-002"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-028",
+        "name": "Integrate all artefacts into folder",
+        "details": "Combine all deliverables into a version\u2011controlled folder.",
+        "draft": true,
+        "dependencies": [
+          "task-027"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-029",
+        "name": "Prepare Executive Summary",
+        "details": "Draft a concise summary for executive review.",
+        "draft": true,
+        "dependencies": [
+          "task-028"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-030",
+        "name": "Create Sign\u2011off Sheet",
+        "details": "Produce the sign\u2011off document for Outcome\u202f6.",
+        "draft": true,
+        "dependencies": [
+          "task-029"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-031",
+        "name": "Route package to executive steering committee",
+        "details": "Send the final package for review and approval.",
+        "draft": true,
+        "dependencies": [
+          "task-030"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [
+          "@deliverable[pdf]/deliverable-006"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-032",
+        "name": "Track approvals and follow\u2011up",
+        "details": "Monitor sign\u2011off status and address any outstanding items.",
+        "draft": true,
+        "dependencies": [
+          "task-031"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-033",
+        "name": "Lock final versions",
+        "details": "Mark all artefacts as final and freeze the repository.",
+        "draft": true,
+        "dependencies": [
+          "task-032"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-034",
+        "name": "Communicate launch\u2011plan availability",
+        "details": "Notify the team of the final approved package per the communication cadence.",
+        "draft": true,
+        "dependencies": [
+          "task-033"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      }
+    ],
+    "history": []
+  }
+}

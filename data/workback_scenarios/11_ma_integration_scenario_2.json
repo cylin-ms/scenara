@@ -1,0 +1,147 @@
+{
+  "scenario_name": "AstraTech\u2011MedPulse Enterprise Integration (Extreme Complexity)",
+  "company_context": "Acquirer: **AstraTech Solutions** \u2013 Global enterprise\u2011software & cloud services leader (SaaS, AI, data\u2011analytics) with $12B FY2025 revenue, 22,000 employees, HQ in Seattle, WA.\\nTarget: **MedPulse Health** \u2013 Digital health platform providing integrated EHR, tele\u2011health, and patient\u2011engagement tools. 800 employees, $250M FY2025 revenue, headquartered in Boston, MA.\\nLegal close date: **31\u202fDec\u202f2025**.\\nIntegration kickoff: **10\u202fJan\u202f2026** (Day\u202f0).\\nIntegration team (22 members) covering HR, IT, Finance, Product, Sales, Operations, Legal, Change Management and Communications.\\nKey workstreams: HR (talent retention, benefits harmonisation), IT (cloud migration, data\u2011security, HIPAA compliance), Finance (reporting, cost\u2011synergy tracking), Product (road\u2011map alignment, platform integration), Sales (account transition, cross\u2011sell enablement), Operations (process standardisation, supply\u2011chain).\\nDay\u20111 priorities:\\n- Publish unified \u201cDay\u20111\u201d communication from CEOs.\\n- Secure HIPAA\u2011compliant data\u2011center cut\u2011over (no downtime >5\u202fmin).\\n- Activate joint finance reporting system (SAP S/4HANA).\\n- Freeze hiring & compensation changes pending HR integration plan.\\n- Transfer top\u201110 MedPulse accounts to AstraTech sales enablement tools.\\n- Deploy temporary \u201cIntegration Command Center\u201d.\\n100\u2011day focus:\\n- Capture $45M cost synergies (head\u2011count rationalisation, cloud\u2011cost optimisation, procurement).\\n- Initiate $30M revenue synergies (cross\u2011sell of AstraTech AI analytics to MedPulse clients).\\n- Complete full product\u2011platform integration and launch joint roadmap.\\n- Achieve >95% employee retention and >90% customer NPS post\u2011integration.\\nCultural considerations: AstraTech\u2019s fast\u2011paced, data\u2011driven, \u201cmove\u2011fast\u201d culture vs. MedPulse\u2019s patient\u2011centric, highly regulated, consensus\u2011driven environment. Integration plan includes cultural\u2011alignment workshops, \u201cHealth\u2011Tech Innovation Labs\u201d, and a joint \u201cValues Charter\u201d.\\nSynergy targets: $45M cumulative cost synergies by FY2027; $30M incremental revenue synergies by FY2028.\\nCommunication strategy: CEO town\u2011hall (Day\u202f0), weekly Integration Newsletter, dedicated intranet portal \u201cAstraPulse Hub\u201d, bi\u2011weekly stakeholder briefings, and a 24\u2011hour \u201cAsk\u2011Me\u2011Anything\u201d channel with integration leads.",
+  "meeting_event_details": "Integration Kick\u2011off Steering Committee Meeting \u2013 **Date:** 10\u202fJan\u202f2026, **Time:** 09:00\u201112:00\u202fEST, **Duration:** 3\u202fhours, **Location:** AstraTech HQ, 5th\u2011Floor Executive Boardroom, Seattle, WA (virtual dial\u2011in for MedPulse execs).",
+  "stakeholders": [
+    {
+      "name": "Laura Chen",
+      "role": "Chief Executive Officer \u2013 AstraTech Solutions",
+      "responsibility": "Overall strategic direction, public messaging, final decision authority."
+    },
+    {
+      "name": "David Ramirez",
+      "role": "Vice President, Integration Management Office (IMO)",
+      "responsibility": "Lead integration governance, own integration charter, track milestones."
+    },
+    {
+      "name": "Michael Patel",
+      "role": "Chief Financial Officer \u2013 AstraTech",
+      "responsibility": "Finance workstream lead, synergy tracking, reporting to board."
+    },
+    {
+      "name": "Emily O'Connor",
+      "role": "Director, Finance Integration \u2013 AstraTech",
+      "responsibility": "Design combined reporting, manage cost\u2011synergy capture."
+    },
+    {
+      "name": "Sofia Alvarez",
+      "role": "Senior HR Business Partner \u2013 AstraTech",
+      "responsibility": "HR workstream lead, talent retention, benefits harmonisation."
+    },
+    {
+      "name": "Rajesh Gupta",
+      "role": "Chief Information Officer \u2013 AstraTech",
+      "responsibility": "IT workstream lead, cloud migration, security compliance."
+    },
+    {
+      "name": "Jenna Liu",
+      "role": "Vice President, Product Management \u2013 AstraTech",
+      "responsibility": "Product workstream lead, roadmap alignment, platform integration."
+    },
+    {
+      "name": "Tom Becker",
+      "role": "Senior Vice President, Global Sales \u2013 AstraTech",
+      "responsibility": "Sales workstream lead, account transition, cross\u2011sell enablement."
+    },
+    {
+      "name": "Karen O'Malley",
+      "role": "Director, Operations Excellence \u2013 AstraTech",
+      "responsibility": "Operations workstream lead, process standardisation."
+    },
+    {
+      "name": "Andrew Whitaker",
+      "role": "General Counsel \u2013 AstraTech",
+      "responsibility": "Legal compliance, HIPAA oversight, merger documentation."
+    },
+    {
+      "name": "Nina Svensson",
+      "role": "Change Management Lead \u2013 AstraTech",
+      "responsibility": "Cultural integration, employee engagement, training rollout."
+    },
+    {
+      "name": "Mark Daniels",
+      "role": "Head of Corporate Communications \u2013 AstraTech",
+      "responsibility": "Communication strategy, town\u2011halls, newsletters."
+    },
+    {
+      "name": "Dr. Alan Brooks",
+      "role": "Chief Executive Officer \u2013 MedPulse Health",
+      "responsibility": "Represent target leadership, champion cultural alignment."
+    },
+    {
+      "name": "Rebecca Lin",
+      "role": "Chief Technology Officer \u2013 MedPulse Health",
+      "responsibility": "MedPulse IT liaison, data migration validation."
+    },
+    {
+      "name": "Carlos Mendes",
+      "role": "Vice President, Sales \u2013 MedPulse Health",
+      "responsibility": "MedPulse sales integration, key account hand\u2011off."
+    },
+    {
+      "name": "Laura Patel",
+      "role": "HR Director \u2013 MedPulse Health",
+      "responsibility": "MedPulse talent retention, benefits mapping."
+    },
+    {
+      "name": "James O'Leary",
+      "role": "Finance Controller \u2013 MedPulse Health",
+      "responsibility": "MedPulse finance data extraction, audit support."
+    },
+    {
+      "name": "Megan Torres",
+      "role": "Product Owner \u2013 MedPulse Health",
+      "responsibility": "Product feature mapping, roadmap sync."
+    },
+    {
+      "name": "Victor Huang",
+      "role": "Operations Manager \u2013 MedPulse Health",
+      "responsibility": "Clinical operations continuity, process hand\u2011over."
+    },
+    {
+      "name": "Sanjay Patel",
+      "role": "IT Security Lead \u2013 MedPulse Health",
+      "responsibility": "HIPAA compliance verification during migration."
+    }
+  ],
+  "deliverables": [
+    "Integration Charter signed by both CEOs (by 15\u202fJan\u202f2026).",
+    "Day\u20111 Communication Pack (CEO letter, FAQ, org\u2011chart) ready for release (09:30\u202fEST, 10\u202fJan).",
+    "30\u201160\u201190 Day Integration Roadmap (PowerPoint) approved by IMO (by 20\u202fJan).",
+    "Synergy Tracking Dashboard (Power BI) live with baseline data (by 31\u202fJan).",
+    "Combined Organizational Structure & Role\u2011Assignment Matrix (by 05\u202fFeb).",
+    "IT Cloud Migration Plan with cut\u2011over schedule, rollback procedures, and HIPAA audit checklist (by 12\u202fFeb).",
+    "Product Integration Blueprint \u2013 joint roadmap, feature de\u2011duplication, go\u2011to\u2011market plan (by 28\u202fFeb).",
+    "Sales Account Transition Playbook \u2013 top\u201120 accounts, cross\u2011sell scripts, CRM data migration (by 15\u202fMar).",
+    "HR Benefits Harmonisation Guide and Retention Bonus Program (by 22\u202fMar).",
+    "Risk Register & Mitigation Log (continuous, first version by 10\u202fJan).",
+    "Weekly Integration Status Report (distributed every Friday)."
+  ],
+  "success_criteria": [
+    "Complete all Day\u20111 activities with <5\u202fmin system downtime and 100% critical\u2011process continuity.",
+    "Achieve \u226595% employee retention (baseline 800 MedPulse staff) through 6\u202fmonths post\u2011close.",
+    "Capture at least $30M of the $45M cost\u2011synergy target by end of FY2027 (66%).",
+    "Launch joint product roadmap and release first integrated feature by 30\u202fJun\u202f2026.",
+    "Cross\u2011sell revenue of $10M from AstraTech analytics to MedPulse client base by 31\u202fDec\u202f2026.",
+    "Maintain HIPAA compliance audit score \u2265 95% after IT migration.",
+    "Customer Net Promoter Score (NPS) \u2265 90% for combined offering within 90\u202fdays of integration.",
+    "Integration budget not to exceed $12M (excluding transaction fees).",
+    "All key stakeholder briefings delivered on schedule (\u226590% on\u2011time)."
+  ],
+  "constraints": [
+    "IT cloud migration must be completed within 45\u202fdays of kickoff to meet contractual SLA with third\u2011party provider.",
+    "Integration budget capped at $12M; any overruns require board approval.",
+    "MedPulse\u2019s HIPAA\u2011covered data cannot be transferred to non\u2011certified environments; must use AstraTech\u2019s FedRAMP\u2011authorized cloud region.",
+    "Key executives (CEO, CFO) unavailable 24\u201128\u202fDec\u202f2025 (holiday); all pre\u2011close approvals must be secured by 20\u202fDec.",
+    "Dependency on MedPulse\u2019s legacy EHR vendor for data export windows (two 8\u2011hour windows in Jan).",
+    "Regulatory filing deadline \u2013 antitrust clearance must be obtained by 15\u202fNov\u202f2025; any delay pushes legal close date.",
+    "Limited availability of MedPulse\u2019s senior sales team (Q1 sales quota period)."
+  ],
+  "workback_prompt": "Create a detailed, day\u2011by\u2011day workback plan for the AstraTech Solutions \u2013 MedPulse Health integration described above. The plan should cover all key workstreams (HR, IT, Finance, Product, Sales, Operations), map each deliverable to a specific date, assign owners from the stakeholder list, identify dependencies, flag critical path items, and embed the Day\u20111 and 100\u2011day priorities. Include risk mitigation actions, budget checkpoints, and communication milestones. Output the plan in a table format suitable for the Integration Management Office to track progress against the success criteria and constraints.",
+  "meeting_type": "M&A Integration Planning",
+  "meeting_type_key": "11_ma_integration",
+  "scenario_number": 2,
+  "horizon": "T-90+",
+  "complexity": "Extreme",
+  "generated_at": "2025-11-17T08:16:59.377459"
+}

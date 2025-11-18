@@ -1,0 +1,809 @@
+{
+  "scenario_name": "VisionEdge Squad \u2013 Real\u2011Time Object Detection API Launch (8\u2011week mission)",
+  "scenario_number": 2,
+  "meeting_type": "Squad Mission Planning",
+  "quality_level": "low",
+  "workback_prompt": "Generate a detailed workback plan for the VisionEdge Squad mission to launch the real\u2011time object detection API for edge devices. Include all milestones (T\u201156, T\u201142, T\u201128, T\u201114, T\u20110), weekly tasks, owners, dependencies (e.g., Azure IoT Hub SDK v3.2), resource allocations, risk mitigation, and deliverable dates. Align each task with the success metrics and constraints listed, and format the plan as a Gantt\u2011style table with clear start/end dates, effort estimates, and required approvals.\n\nGenerate a LOW QUALITY workback plan with these characteristics:\n- Missing key tasks or phases\n- Vague task descriptions\n- Few or no dependencies defined\n- Missing stakeholder assignments\n- No milestones or poorly defined milestones\n- Unrealistic timelines\n- No risk consideration\n- Minimal deliverables identified\n\nIMPORTANT: Generate a plan that naturally exhibits LOW quality characteristics.\nDo not explicitly label the plan as \"low quality\" - let the quality emerge from the content.",
+  "generated_at": "2025-11-17T05:46:54.035066",
+  "analysis": "# Outcomes\n\n## 1. Clarify the VisionEdge Squad mission and success metrics  \nCreate a concise statement of the mission (real\u2011time object detection API for edge devices) together with the quantitative success metrics and any hard constraints (e.g., latency\u202f\u2264\u202f50\u202fms, supported devices\u202f\u2265\u202f3, compliance with Azure IoT Hub SDK\u202fv3.2).  \nArtifact references: none (derived from the user\u2019s description).\n\n### Reasoning  \nThe workback plan can only be useful if every downstream task is tied to a clearly\u2011stated mission and measurable outcomes. The user\u2019s prompt already lists \u201csuccess metrics and constraints\u201d; turning those into a single reference point prevents drift later in the schedule.\n\n### Approach  \n1. **Gather existing documentation** \u2013 pull any vision statements, product requirement briefs, or stakeholder emails that mention the mission.  \n2. **Summarise metrics** \u2013 list each metric (latency, device count, SDK version, etc.) in a table.  \n3. **Validate with stakeholders** \u2013 circulate the summary to the product owner, engineering lead, and the Azure IoT integration contact for sign\u2011off.  \n4. **Store as a living document** \u2013 place the final version in a shared location (e.g., a project wiki) and link it in all future planning artifacts.\n\n---\n\n## 2. Define concrete milestones (T\u201156, T\u201142, T\u201128, T\u201114, T\u20110)  \nTranslate the high\u2011level milestone labels into specific, measurable deliverables (e.g., \u201cT\u201156 \u2013 Architecture sign\u2011off\u201d, \u201cT\u20110 \u2013 Production release\u201d).  \n\n### Reasoning  \nThe user explicitly requests milestones at those intervals. Without concrete definitions, the Gantt\u2011style table will lack anchor points, making it impossible to schedule tasks or track progress.\n\n### Approach  \n1. **Map each milestone to a key deliverable** \u2013 use the mission statement and success metrics to decide what must be completed by each date.  \n2. **Set acceptance criteria** \u2013 for each milestone, list the criteria that will be used to declare it complete (e.g., \u201cAll core API endpoints implemented and unit\u2011tested\u201d).  \n3. **Identify required approvals** \u2013 note which stakeholder(s) must sign off at each milestone (e.g., Architecture Review Board, Security Review).  \n4. **Document in a milestone matrix** \u2013 include columns for Milestone, Date (relative to launch), Deliverable, Acceptance Criteria, Approver(s).\n\n---\n\n## 3. Identify all work streams and weekly tasks  \nBreak the overall effort into logical work streams (e.g., Architecture, SDK Integration, Model Development, Edge\u2011Device Testing, Documentation, Release Management) and enumerate the weekly tasks required to progress each stream.\n\n### Reasoning  \nA workback plan needs a granular task list that can be plotted on a timeline. Grouping tasks into work streams makes it easier to assign owners, track dependencies, and balance effort across weeks.\n\n### Approach  \n1. **Brainstorm with the squad** \u2013 hold a short \u201ctask\u2011identification\u201d session with representatives from each functional area.  \n2. **Create a high\u2011level backlog** \u2013 list every activity that moves the product from concept to launch (e.g., \u201cSelect object\u2011detection model\u201d, \u201cImplement Azure IoT Hub SDK wrapper\u201d).  \n3. **Chunk into weekly buckets** \u2013 assign each activity to a week number relative to T\u20110, ensuring a roughly even distribution of effort.  \n4. **Capture in a task register** \u2013 columns: Week, Work Stream, Task Description, Estimated Effort (person\u2011days), Owner (initially \u201cTBD\u201d).\n\n---\n\n## 4. Assign owners and resource allocations  \nFor each task, determine the responsible individual or team and the amount of capacity they will dedicate during the assigned week.\n\n### Reasoning  \nClear ownership eliminates ambiguity and enables realistic capacity planning. The user explicitly asked for owners and resource allocations.\n\n### Approach  \n1. **Map skill sets to work streams** \u2013 list squad members, their primary expertise, and current allocation percentages.  \n2. **Allocate capacity** \u2013 for each week, ensure the sum of assigned effort does not exceed each person\u2019s available capacity (e.g., 5\u202fperson\u2011days per week).  \n3. **Record in the task register** \u2013 fill the \u201cOwner\u201d and \u201cResource Allocation\u201d columns.  \n4. **Confirm with the team** \u2013 circulate the draft allocation for feedback and adjust for vacations, competing projects, or skill gaps.\n\n---\n\n## 5. Define dependencies (including Azure IoT Hub SDK\u202fv3.2)  \nIdentify logical and technical dependencies between tasks, with special attention to the required Azure IoT Hub SDK version.\n\n### Reasoning  \nDependencies drive the sequencing of work and are essential for a Gantt\u2011style representation. Missing or vague dependencies lead to schedule slips.\n\n### Approach  \n1. **Review each task** \u2013 ask \u201cWhat must be completed before this can start?\u201d  \n2. **Document predecessor relationships** \u2013 add a \u201cDepends On\u201d column to the task register (e.g., \u201cEdge\u2011Device Test\u202f\u2190\u202fSDK Integration\u201d).  \n3. **Highlight critical external dependencies** \u2013 create a separate list for items outside the squad\u2019s control (e.g., \u201cAzure IoT Hub SDK\u202fv3.2 release\u201d).  \n4. **Validate with technical leads** \u2013 ensure no hidden dependencies are omitted.\n\n---\n\n## 6. Estimate effort, set realistic timelines, and build the Gantt\u2011style table  \nPopulate start/end dates, effort estimates, and required approvals for every task, then render them as a Gantt\u2011style schedule.\n\n### Reasoning  \nThe user explicitly wants a Gantt\u2011style table with dates, effort, and approvals. Accurate effort estimates and realistic timelines are needed to avoid the \u201cunrealistic timelines\u201d pitfall.\n\n### Approach  \n1. **Convert weekly buckets to calendar dates** \u2013 decide on a launch date (T\u20110) and count back 56\u202fweeks to set T\u201156, etc.  \n2. **Assign start/end dates per task** \u2013 based on the week assignment and dependencies.  \n3. **Add effort columns** \u2013 use the previously estimated person\u2011days.  \n4. **Insert approval gates** \u2013 note where a sign\u2011off is required (e.g., after \u201cArchitecture sign\u2011off\u201d).  \n5. **Create the table** \u2013 use a spreadsheet or project\u2011management tool that can display bars for each task (start\u2011date \u2192 end\u2011date).  \n6. **Review for feasibility** \u2013 check that no resource is over\u2011allocated and that critical path tasks have sufficient slack.\n\n---\n\n## 7. Identify risks and mitigation actions  \nList potential project risks (technical, resource, schedule, external) and define mitigation or contingency plans.\n\n### Reasoning  \nThe prompt mentions \u201crisk mitigation\u201d. Even a low\u2011quality plan should surface at least a few high\u2011impact risks to avoid surprise failures.\n\n### Approach  \n1. **Facilitate a risk\u2011identification workshop** \u2013 involve product, engineering, and operations leads.  \n2. **Categorise risks** \u2013 e.g., \u201cTechnical (SDK compatibility)\u201d, \u201cResource (key person availability)\u201d, \u201cSchedule (dependency on external release)\u201d.  \n3. **Assess impact and probability** \u2013 assign a simple rating (High/Medium/Low).  \n4. **Define mitigation actions** \u2013 for each risk, note a concrete step (e.g., \u201cEarly prototype with SDK\u202fv3.2 beta\u201d).  \n5. **Add to the plan** \u2013 create a risk register and link mitigation tasks back to the main schedule where appropriate.\n\n---\n\n## 8. Establish governance and approval workflow  \nDefine who must approve each milestone and any major deliverable, and set up a lightweight governance cadence (e.g., weekly stand\u2011ups, milestone reviews).\n\n### Reasoning  \nApprovals are a required column in the Gantt table, and clear governance prevents bottlenecks.\n\n### Approach  \n1. **List approvers per milestone** \u2013 e.g., Architecture Review Board for T\u201156, Product Owner for T\u201128.  \n2. **Schedule review meetings** \u2013 add calendar invites for each approval gate at least one week before the milestone date.  \n3. **Document the approval process** \u2013 specify required artifacts (design docs, test reports) and the sign\u2011off method (email, shared doc).  \n4. **Communicate to the squad** \u2013 ensure everyone knows when their work will be reviewed and who to contact for clarifications.\n\n---\n\n# Breakdown\n\n```\n1. Clarify mission & metrics\n   1.1 Gather existing docs\n   1.2 Summarise metrics in table\n   1.3 Validate with stakeholders\n   1.4 Store as living doc\n\n2. Define concrete milestones\n   2.1 Map T\u201156\u2011T\u20110 to deliverables\n   2.2 Set acceptance criteria\n   2.3 Identify required approvals\n   2.4 Document milestone matrix\n\n3. Identify work streams & weekly tasks\n   3.1 Conduct task\u2011identification session\n   3.2 Build high\u2011level backlog\n   3.3 Chunk activities into weekly buckets\n   3.4 Populate task register (Week, Stream, Description, Effort, Owner TBD)\n\n4. Assign owners & resource allocations\n   4.1 List squad members & skill sets\n   4.2 Allocate weekly capacity\n   4.3 Fill Owner & Allocation in task register\n   4.4 Review & adjust with team\n\n5. Define dependencies\n   5.1 Review each task for predecessor(s)\n   5.2 Add \u201cDepends On\u201d column\n   5.3 List external dependencies (e.g., Azure IoT Hub SDK\u202fv3.2)\n   5.4 Validate with technical leads\n\n6. Estimate effort, set timelines, build Gantt table\n   6.1 Choose launch date (T\u20110) \u2192 compute calendar dates for T\u201156\u2011T\u201114\n   6.2 Assign start/end dates per task (respecting dependencies)\n   6.3 Add effort (person\u2011days) and approval gates\n   6.4 Create Gantt\u2011style table in spreadsheet/project tool\n   6.5 Review for resource overload & critical\u2011path slack\n\n7. Identify risks & mitigation\n   7.1 Run risk\u2011identification workshop\n   7.2 Categorise & rate risks\n   7.3 Define mitigation actions\n   7.4 Record in risk register & link to schedule where needed\n\n8. Establish governance & approval workflow\n   8.1 List approvers per milestone\n   8.2 Schedule milestone review meetings\n   8.3 Document approval artifacts & process\n   8.4 Communicate cadence to squad\n```\n\n**Dependencies between outcomes**  \n- Outcome\u202f2 depends on Outcome\u202f1 (mission & metrics must be clear before milestones can be defined).  \n- Outcome\u202f3 depends on Outcome\u202f2 (milestones provide the anchor dates for weekly task bucketing).  \n- Outcome\u202f4 depends on Outcome\u202f3 (tasks must exist before owners can be assigned).  \n- Outcome\u202f5 depends on Outcome\u202f3 (tasks are needed to identify dependencies).  \n- Outcome\u202f6 depends on Outcomes\u202f3\u20115 (tasks, owners, and dependencies feed the schedule).  \n- Outcome\u202f7 can run in parallel with Outcome\u202f6 but should be reviewed before finalising the Gantt table.  \n- Outcome\u202f8 runs throughout; key approval dates are defined in Outcome\u202f2 and referenced in Outcome\u202f6.  \n\nBy following this structured approach, the VisionEdge Squad can collaboratively build a workback plan that meets the requested format while ensuring clarity, realistic scheduling, and stakeholder alignment.",
+  "plan": {
+    "id": "document-001",
+    "name": "VisionEdge Squad Workback Plan",
+    "details": "Workback plan for the VisionEdge Squad to deliver a real\u2011time object detection API for edge devices, including mission clarification, milestones, work streams, owners, dependencies, effort estimates, Gantt schedule, risks, and governance.",
+    "draft": true,
+    "participants": [
+      {
+        "name": "you",
+        "email": "you@example.com",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "system",
+        "email": "system@example.com",
+        "details": "",
+        "draft": true
+      }
+    ],
+    "references": [],
+    "deliverables": [
+      {
+        "name": "Mission Statement & Metrics Document",
+        "type": "word",
+        "id": "deliverable-001",
+        "draft": true,
+        "history": []
+      },
+      {
+        "name": "Milestone Matrix",
+        "type": "excel",
+        "id": "deliverable-002",
+        "draft": true,
+        "history": []
+      },
+      {
+        "name": "Task Register",
+        "type": "excel",
+        "id": "deliverable-003",
+        "draft": true,
+        "history": []
+      },
+      {
+        "name": "Gantt Schedule",
+        "type": "excel",
+        "id": "deliverable-004",
+        "draft": true,
+        "history": []
+      },
+      {
+        "name": "Risk Register",
+        "type": "excel",
+        "id": "deliverable-005",
+        "draft": true,
+        "history": []
+      }
+    ],
+    "tasks": [
+      {
+        "id": "task-001",
+        "name": "Clarify mission & metrics",
+        "draft": true,
+        "details": "Create a concise mission statement and define quantitative success metrics and constraints.",
+        "dependencies": [
+          "task-001-1",
+          "task-001-2",
+          "task-001-3",
+          "task-001-4"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-001-1",
+        "name": "Gather existing documentation",
+        "draft": true,
+        "details": "Pull any vision statements, product requirement briefs, or stakeholder emails that mention the mission.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-001-2",
+        "name": "Summarise metrics in table",
+        "draft": true,
+        "details": "List each metric (latency \u226450\u202fms, supported devices \u22653, Azure IoT Hub SDK v3.2, etc.) in a table.",
+        "dependencies": [
+          "task-001-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-001-3",
+        "name": "Validate with stakeholders",
+        "draft": true,
+        "details": "Circulate the summary to product owner, engineering lead, and Azure IoT integration contact for sign\u2011off.",
+        "dependencies": [
+          "task-001-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-001-4",
+        "name": "Store as living document",
+        "draft": true,
+        "details": "Place the final version in a shared location (e.g., project wiki) and link it in future artifacts.",
+        "dependencies": [
+          "task-001-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [
+          "@deliverable[word]/deliverable-001"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002",
+        "name": "Define concrete milestones",
+        "draft": true,
+        "details": "Translate high\u2011level milestone labels into specific, measurable deliverables.",
+        "dependencies": [
+          "task-001",
+          "task-002-1",
+          "task-002-2",
+          "task-002-3",
+          "task-002-4"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002-1",
+        "name": "Map T\u201156\u2011T\u20110 to deliverables",
+        "draft": true,
+        "details": "Identify key deliverable for each milestone based on mission and success metrics.",
+        "dependencies": [
+          "task-001"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002-2",
+        "name": "Set acceptance criteria",
+        "draft": true,
+        "details": "Define criteria that will be used to declare each milestone complete.",
+        "dependencies": [
+          "task-002-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002-3",
+        "name": "Identify required approvals",
+        "draft": true,
+        "details": "Note which stakeholder(s) must sign off at each milestone.",
+        "dependencies": [
+          "task-002-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002-4",
+        "name": "Document milestone matrix",
+        "draft": true,
+        "details": "Create a matrix with columns for Milestone, Date, Deliverable, Acceptance Criteria, Approver(s).",
+        "dependencies": [
+          "task-002-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [
+          "@deliverable[excel]/deliverable-002"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003",
+        "name": "Identify work streams & weekly tasks",
+        "draft": true,
+        "details": "Break the effort into logical work streams and enumerate weekly tasks.",
+        "dependencies": [
+          "task-002",
+          "task-003-1",
+          "task-003-2",
+          "task-003-3",
+          "task-003-4"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003-1",
+        "name": "Conduct task\u2011identification session",
+        "draft": true,
+        "details": "Hold a short session with representatives from each functional area.",
+        "dependencies": [
+          "task-002"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003-2",
+        "name": "Build high\u2011level backlog",
+        "draft": true,
+        "details": "List every activity that moves the product from concept to launch.",
+        "dependencies": [
+          "task-003-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003-3",
+        "name": "Chunk activities into weekly buckets",
+        "draft": true,
+        "details": "Assign each activity to a week number relative to T\u20110, balancing effort.",
+        "dependencies": [
+          "task-003-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003-4",
+        "name": "Populate task register",
+        "draft": true,
+        "details": "Create a register with columns: Week, Work Stream, Description, Effort, Owner (TBD).",
+        "dependencies": [
+          "task-003-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [
+          "@deliverable[excel]/deliverable-003"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-004",
+        "name": "Assign owners & resource allocations",
+        "draft": true,
+        "details": "Determine responsible individuals/teams and capacity for each task.",
+        "dependencies": [
+          "task-003",
+          "task-004-1",
+          "task-004-2",
+          "task-004-3",
+          "task-004-4"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-004-1",
+        "name": "List squad members & skill sets",
+        "draft": true,
+        "details": "Document each member\u2019s expertise and current allocation percentages.",
+        "dependencies": [
+          "task-003"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-004-2",
+        "name": "Allocate weekly capacity",
+        "draft": true,
+        "details": "Ensure assigned effort does not exceed each person\u2019s available capacity.",
+        "dependencies": [
+          "task-004-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-004-3",
+        "name": "Fill Owner & Allocation in task register",
+        "draft": true,
+        "details": "Update the task register with owners and capacity allocations.",
+        "dependencies": [
+          "task-004-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-004-4",
+        "name": "Review & adjust with team",
+        "draft": true,
+        "details": "Circulate the allocation plan for feedback and make adjustments.",
+        "dependencies": [
+          "task-004-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-005",
+        "name": "Define dependencies",
+        "draft": true,
+        "details": "Add predecessor information to each task, including external dependencies.",
+        "dependencies": [
+          "task-003",
+          "task-005-1",
+          "task-005-2",
+          "task-005-3",
+          "task-005-4"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-005-1",
+        "name": "Review each task for predecessor(s)",
+        "draft": true,
+        "details": "Identify predecessor tasks for every item in the task register.",
+        "dependencies": [
+          "task-003"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-005-2",
+        "name": "Add \u201cDepends On\u201d column",
+        "draft": true,
+        "details": "Add a column to the task register to capture dependency information.",
+        "dependencies": [
+          "task-005-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-005-3",
+        "name": "List external dependencies",
+        "draft": true,
+        "details": "Document external dependencies such as Azure IoT Hub SDK v3.2.",
+        "dependencies": [
+          "task-005-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-005-4",
+        "name": "Validate with technical leads",
+        "draft": true,
+        "details": "Confirm dependency mapping with technical leads.",
+        "dependencies": [
+          "task-005-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-006",
+        "name": "Estimate effort, set timelines, build Gantt schedule",
+        "draft": true,
+        "details": "Estimate effort, assign dates, and produce the Gantt schedule.",
+        "dependencies": [
+          "task-003",
+          "task-004",
+          "task-005",
+          "task-006-1",
+          "task-006-2",
+          "task-006-3",
+          "task-006-4",
+          "task-006-5",
+          "task-007"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-006-1",
+        "name": "Choose launch date",
+        "draft": true,
+        "details": "Select a launch date and define the overall timeline.",
+        "dependencies": [
+          "task-003",
+          "task-004",
+          "task-005"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-006-2",
+        "name": "Assign start/end dates per task",
+        "draft": true,
+        "details": "Map each task to start and end dates based on the weekly plan.",
+        "dependencies": [
+          "task-006-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-006-3",
+        "name": "Add effort and approval gates",
+        "draft": true,
+        "details": "Include effort estimates and required approval points for each milestone.",
+        "dependencies": [
+          "task-006-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-006-4",
+        "name": "Create Gantt\u2011style table",
+        "draft": true,
+        "details": "Produce the final Gantt schedule linking tasks, owners, and milestones.",
+        "dependencies": [
+          "task-006-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [
+          "@deliverable[excel]/deliverable-004"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-006-5",
+        "name": "Review for resource overload",
+        "draft": true,
+        "details": "Validate that the schedule respects capacity and does not overload resources.",
+        "dependencies": [
+          "task-006-4",
+          "task-007-4"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-007",
+        "name": "Identify risks & mitigation",
+        "draft": true,
+        "details": "Run risk workshops, rate risks, define mitigations, and record them.",
+        "dependencies": [
+          "task-006",
+          "task-007-1",
+          "task-007-2",
+          "task-007-3",
+          "task-007-4"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-007-1",
+        "name": "Run risk\u2011identification workshop",
+        "draft": true,
+        "details": "Facilitate a workshop to surface potential risks.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-007-2",
+        "name": "Categorise & rate risks",
+        "draft": true,
+        "details": "Classify risks and assign severity/likelihood ratings.",
+        "dependencies": [
+          "task-007-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-007-3",
+        "name": "Define mitigation actions",
+        "draft": true,
+        "details": "Specify mitigation strategies for each identified risk.",
+        "dependencies": [
+          "task-007-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-007-4",
+        "name": "Record in risk register",
+        "draft": true,
+        "details": "Document risks and mitigations in a structured register.",
+        "dependencies": [
+          "task-007-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [
+          "@deliverable[excel]/deliverable-005"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-008",
+        "name": "Establish governance & approval workflow",
+        "draft": true,
+        "details": "Define governance processes and approval meeting cadence.",
+        "dependencies": [
+          "task-002",
+          "task-008-1",
+          "task-008-2",
+          "task-008-3",
+          "task-008-4"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-008-1",
+        "name": "List approvers per milestone",
+        "draft": true,
+        "details": "Create a list of approvers for each milestone based on the milestone matrix.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-008-2",
+        "name": "Schedule milestone review meetings",
+        "draft": true,
+        "details": "Set up calendar invites for each milestone review.",
+        "dependencies": [
+          "task-008-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-008-3",
+        "name": "Document approval artifacts & process",
+        "draft": true,
+        "details": "Write down the required artifacts and the approval workflow for each milestone.",
+        "dependencies": [
+          "task-008-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-008-4",
+        "name": "Communicate cadence to squad",
+        "draft": true,
+        "details": "Share the governance schedule and expectations with the entire squad.",
+        "dependencies": [
+          "task-008-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      }
+    ],
+    "history": []
+  }
+}

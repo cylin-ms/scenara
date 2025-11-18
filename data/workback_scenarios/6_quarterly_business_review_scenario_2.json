@@ -1,0 +1,51 @@
+{
+  "scenario_name": "Q2 2025 Board Quarterly Business Review \u2013 Helios Renewable Energy Inc.",
+  "company_context": "Helios Renewable Energy Inc. (NASDAQ: HRE) is a vertically integrated renewable\u2011energy company operating utility\u2011scale solar and wind farms in North America, Europe, and emerging markets. The company\u2019s executive team is organized into four pillars \u2013 Generation Operations, Project Development, Corporate Finance & Strategy, and Enterprise Services (HR, Legal, ESG). The Q2 Business Review is the first full\u2011quarter review after the FY24\u201125 strategic refresh and follows a $300\u202fM acquisition of a European on\u2011shore wind portfolio.",
+  "meeting_event_details": "Date: Thursday, 12 June 2025\nTime: 08:30\u202f\u2013\u202f12:30\u202fLocal (Pacific Time)\nDuration: 4\u202fhours (half\u2011day)\nLocation: Helios Headquarters \u2013 Boardroom A, 500 Energy Way, San Francisco, CA 94105. Remote participants will join via a secure, encrypted video\u2011conferencing platform (Zoom Enterprise with end\u2011to\u2011end encryption).",
+  "stakeholders": [
+    "Laura Chen \u2013 Chair of the Board (Independent Director, former CEO of a Fortune\u2011500 utility)",
+    "Mark Patel \u2013 Board Member, CFO of a global infrastructure fund",
+    "Dr. Elena Garc\u00eda \u2013 Board Member, Professor of Sustainable Energy at MIT",
+    "James O\u2019Leary \u2013 Chief Executive Officer (CEO)",
+    "Sofia Martinez \u2013 Chief Financial Officer (CFO)",
+    "Ravi Singh \u2013 Chief Operating Officer (COO), Generation Operations",
+    "Aisha Al\u2011Mansour \u2013 Chief Strategy Officer (CSO)",
+    "Derek Liu \u2013 Chief Revenue Officer (CRO), Sales & Marketing",
+    "Nina Kovacs \u2013 Vice President, Project Development",
+    "Thomas Becker \u2013 Vice President, Product & Technology (Energy Storage)",
+    "Karen Whitfield \u2013 Senior Vice President, Human Resources",
+    "Michael O\u2019Brien \u2013 General Counsel",
+    "Olivia Reed \u2013 Director, ESG & Sustainability",
+    "Board Secretary \u2013 Lisa Huang (facilitates documentation and voting)"
+  ],
+  "deliverables": [
+    "Approved Q2 2025 financial results package (income statement, balance sheet, cash\u2011flow statement).",
+    "Board decision on the $200\u202fM capex allocation for Phase\u202f2 of the Southwest Solar Expansion.",
+    "Go/No\u2011Go vote on the proposed acquisition of GreenWind AG (\u20ac150\u202fM).",
+    "Updated 2025\u20112026 Strategic Plan with revised market\u2011entry roadmap for South\u2011East Asia.",
+    "Board\u2011approved ESG targets for 2026 (carbon\u2011intensity reduction, diversity metrics, renewable\u2011energy\u2011certificate commitments).",
+    "Action\u2011item register with owners, deadlines, and required resources."
+  ],
+  "success_criteria": [
+    "All five strategic decisions are voted on and recorded with a minimum 75\u202f% affirmative vote threshold.",
+    "Financial results are signed off by the CFO and Board Chair within the meeting timeframe.",
+    "The updated Strategic Plan receives board endorsement and is uploaded to the internal portal within 24\u202fhours.",
+    "Minutes and action\u2011item register are distributed to all participants within 48\u202fhours of meeting close.",
+    "No critical data gaps identified in pre\u2011read materials; all participants confirm receipt and understanding prior to the meeting."
+  ],
+  "constraints": [
+    "Meeting must not exceed 4\u202fhours; any overruns require a follow\u2011up session.",
+    "Capex allocation cannot exceed $500\u202fM total for FY2025\u201126 without a separate budget amendment.",
+    "Regulatory filing deadline for the GreenWind acquisition is 30\u202fJune\u202f2025 \u2013 decision must be finalized by 12\u202fJune\u202f2025.",
+    "All pre\u2011reads must be distributed no later than 5\u202fJune\u202f2025 to satisfy the 7\u2011day review window.",
+    "Board members must sign the updated Confidentiality Agreement by 3\u202fJune\u202f2025.",
+    "Remote participants require two\u2011factor authentication and a secure VPN connection."
+  ],
+  "workback_prompt": "Generate a detailed work\u2011back plan for Helios Renewable Energy Inc.'s Q2 2025 Board Quarterly Business Review. Include all preparatory activities (pre\u2011read compilation, data validation, deck creation, logistics, voting procedures, post\u2011meeting follow\u2011up), assign owners, estimate durations, identify dependencies, and map milestones against the constraints (pre\u2011read distribution by 5\u202fJune, confidentiality agreements signed by 3\u202fJune, acquisition decision deadline 30\u202fJune). The plan should ensure the meeting stays within the 4\u2011hour limit, all strategic decisions are voted on, and deliverables are produced on schedule.",
+  "meeting_type": "Quarterly Business Review",
+  "meeting_type_key": "6_quarterly_business_review",
+  "scenario_number": 2,
+  "horizon": "T-60",
+  "complexity": "Very High",
+  "generated_at": "2025-11-17T06:11:03.018572"
+}

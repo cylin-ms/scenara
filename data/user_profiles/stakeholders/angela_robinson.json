@@ -1,0 +1,143 @@
+{
+  "basic_info": {
+    "full_name": "Angela Robinson",
+    "age": 35,
+    "location": "Austin, Texas, USA",
+    "timezone": "America/Chicago",
+    "years_experience": 10,
+    "education": [
+      {
+        "degree": "Bachelor of Arts",
+        "major": "Business Administration",
+        "institution": "University of Texas at Austin",
+        "year": 2007
+      },
+      {
+        "degree": "Master of Business Administration",
+        "major": "Human Resources Management",
+        "institution": "Northwestern University – Kellogg School of Management",
+        "year": 2012
+      },
+      {
+        "certification": "SHRM Certified Professional (SHRM‑CP)",
+        "year": 2014
+      }
+    ]
+  },
+  "work_habits": {
+    "preferred_working_hours": "07:00-15:00 CST (early bird)",
+    "peak_productivity_times": "08:00-11:00 CST",
+    "communication_style": "Async‑first, with brief synchronous syncs when needed",
+    "response_time_expectation": "Within 4 business hours",
+    "meeting_preferences": "Limits to 2–3 meetings per day, prefers video with agenda, blocks out focus time",
+    "work_environment": "Hybrid (3 days in office, 2 days remote)",
+    "focus_time_requirements": "Needs 2–3 uninterrupted 90‑minute blocks per day"
+  },
+  "personality": {
+    "mbti": "ENFJ",
+    "decision_making_approach": "Collaborative, data‑informed, seeks stakeholder buy‑in",
+    "risk_tolerance": "Moderate – comfortable with calculated HR initiatives",
+    "collaboration_style": "Inclusive, consensus‑building, values diverse perspectives",
+    "stress_management_approach": "Daily morning run, mindfulness meditation, scheduled breaks",
+    "conflict_resolution_style": "Collaborative problem‑solving, aims for win‑win outcomes"
+  },
+  "skills": {
+    "core_technical_skills": {
+      "Workday HRIS": 9,
+      "HR Analytics (Excel/PowerBI)": 7,
+      "Employment Law Knowledge": 8,
+      "Talent Acquisition Strategy": 6,
+      "Change Management": 8,
+      "Compensation Modeling": 7
+    },
+    "leadership_abilities": 8,
+    "domain_expertise_areas": [
+      "Employee Relations",
+      "Performance Management",
+      "Talent Development",
+      "Diversity, Equity & Inclusion (DEI)",
+      "HR Analytics"
+    ],
+    "learning_agility": 8,
+    "tools_proficiency": [
+      "Workday",
+      "SAP SuccessFactors (basic)",
+      "Microsoft Office Suite",
+      "PowerBI",
+      "Slack",
+      "Microsoft Teams",
+      "Asana"
+    ],
+    "languages_spoken": [
+      "English (native)",
+      "Spanish (conversational)"
+    ]
+  },
+  "performance": {
+    "task_completion_rate": 93,
+    "quality_score": 95,
+    "estimation_accuracy": 88,
+    "multitasking_ability": 7,
+    "performance_under_pressure": 8
+  },
+  "availability": {
+    "available_hours_per_week": 38,
+    "timezone": "America/Chicago",
+    "working_hours": "07:00-15:00 CST",
+    "planned_time_off_days_per_year": 25,
+    "other_commitments": [
+      "Weekly 1‑hour professional‑development webinar",
+      "Community‑center volunteer (2 hrs/month)"
+    ],
+    "travel_flexibility": "Up to 25% travel (1–2 weeks per quarter) for HR conferences and site visits"
+  },
+  "personal_factors": {
+    "family_status": "Married, one child (4 years old)",
+    "caregiving_responsibilities": "Primary childcare; no elder‑care duties",
+    "commute_situation": "20‑minute drive to Austin office; hybrid schedule reduces commuting load",
+    "health_considerations": "Mild seasonal allergies; attends gym 3 times/week",
+    "career_motivation": "Aspires to HR Director role, focusing on strategic workforce planning and expanding DEI impact"
+  },
+  "project_impact": {
+    "reliability": 9,
+    "innovation_tendency": 7,
+    "documentation_quality": 8,
+    "mentorship_capability": 8,
+    "influence_level": 7
+  },
+  "collaboration": {
+    "meeting_frequency_preference": "2–3 short meetings per day (max 30 min each)",
+    "communication_channels_preference": [
+      "Slack (instant messaging)",
+      "Email (formal/record)",
+      "Microsoft Teams (video calls)",
+      "Asana (task tracking)"
+    ],
+    "feedback_style": "Direct yet empathetic; focuses on behavior and outcomes",
+    "knowledge_sharing_habits": "Writes concise summary docs, hosts monthly brown‑bag sessions, contributes to internal wiki",
+    "cross_team_collaboration": 8
+  },
+  "risk_factors": {
+    "potential_bottlenecks": [
+      "Primary owner of DEI reporting – limited backup",
+      "High dependency on Angela for HR analytics dashboards"
+    ],
+    "backup_person_needed": "Senior HR Analyst – Mike Patel",
+    "ramp_up_time_weeks": 3,
+    "context_switching_tolerance": 6,
+    "burnout_risk_factors": [
+      "Quarterly reporting spikes",
+      "Tight project deadlines combined with meeting load",
+      "Balancing remote/hybrid schedule with childcare"
+    ]
+  },
+  "_metadata": {
+    "generated_at": "2025-11-17T15:34:16.651557",
+    "name": "Angela Robinson",
+    "role": "HR Business Partner",
+    "seniority": "mid",
+    "company": "TechCorp",
+    "model": "gpt-oss:120b",
+    "provider": "ollama"
+  }
+}

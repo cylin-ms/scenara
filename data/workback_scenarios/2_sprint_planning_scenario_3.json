@@ -1,0 +1,47 @@
+{
+  "scenario_name": "CareConnect Squad Sprint 7 Planning (Patient Portal Enhancements)",
+  "company_context": "Nimbus HealthTech \u2013 a mid\u2011size digital health company building a SaaS patient portal used by 250+ healthcare providers. The CareConnect Squad owns the core patient\u2011facing experience (appointments, messaging, lab results) and reports to the Product Management Office for the Patient Engagement product line.",
+  "meeting_event_details": "Monday, 5\u202fMay\u202f2025, 09:00\u201110:30\u202fAM EST (90\u202fminutes) \u2013 Zoom link (zoom.us/j/987654321) with optional hybrid attendance in Conference Room\u202fB, 3rd\u202fFloor, HQ. Sprint length: 2\u202fweeks (Monday\u202f6\u202fMay\u202f\u2013\u202fFriday\u202f19\u202fMay\u202f2025).",
+  "stakeholders": [
+    "Lena Ortiz \u2013 Product Owner (PO), CareConnect Squad \u2013 defines backlog priority and acceptance criteria.",
+    "Ravi Patel \u2013 Engineering Lead \u2013 coordinates development effort and technical risk.",
+    "Maya Chen \u2013 Front\u2011End Engineer (React/TypeScript).",
+    "Javier Gomez \u2013 Back\u2011End Engineer (Node.js, GraphQL).",
+    "Priya Singh \u2013 QA Lead \u2013 owns test strategy and release readiness.",
+    "Sofia Alvarez \u2013 UX Designer \u2013 delivers UI mock\u2011ups and accessibility specs.",
+    "Tom Whitaker \u2013 Scrum Master \u2013 facilitates ceremony and removes impediments.",
+    "Ethan Brooks \u2013 Security Analyst (InfoSec) \u2013 will perform the mandatory security review.",
+    "Laura Kim \u2013 LabPartner Integration Manager \u2013 external stakeholder for lab results API."
+  ],
+  "deliverables": [
+    "Feature: Appointment Booking Flow v2 \u2013 add multi\u2011provider selection and calendar sync.",
+    "Feature: Secure Messaging UI redesign \u2013 new conversation list, read receipts, and dark\u2011mode support.",
+    "Feature: Lab Results Integration API \u2013 consume LabPartner\u2019s FHIR endpoint and display results in patient dashboard.",
+    "Task: Accessibility audit for Patient Dashboard \u2013 achieve WCAG\u202f2.1 AA compliance for all new UI components.",
+    "Task: Automated regression test suite \u2013 add 30 new end\u2011to\u2011end Cypress tests covering the above features.",
+    "Documentation: Updated release notes and user guide sections for the new appointment and messaging flows."
+  ],
+  "success_criteria": [
+    "All three feature stories reach \u2018Done\u2019 status with PO sign\u2011off by sprint end.",
+    "Unit test coverage \u2265\u202f95\u202f% for new code; end\u2011to\u2011end test pass rate \u2265\u202f98\u202f%.",
+    "Zero critical or high\u2011severity bugs reported after the sprint\u2019s QA sign\u2011off.",
+    "Performance: new appointment booking API response <\u202f200\u202fms (95th percentile).",
+    "Accessibility audit score \u2265\u202f90\u202f% (WCAG\u202fAA) for the updated dashboard.",
+    "Security review completed and no blockers raised by InfoSec."
+  ],
+  "constraints": [
+    "Sprint duration fixed at 2\u202fweeks \u2013 no scope creep beyond the listed deliverables.",
+    "Budget does not allow external contractors; all work must be done by the current squad members.",
+    "Dependency: LabPartner\u2019s FHIR endpoint must be available in the sandbox environment by 8\u202fMay\u202f2025.",
+    "Design assets for the messaging UI must be delivered by Sofia Alvarez no later than 7\u202fMay\u202f2025.",
+    "Security review can only start after the API is merged to the \u2018release\u2011candidate\u2019 branch (expected 15\u202fMay\u202f2025).",
+    "Team members have pre\u2011approved PTO: Maya Chen (6\u202fMay), Priya Singh (13\u202fMay)."
+  ],
+  "workback_prompt": "Generate a detailed workback plan for the CareConnect Squad's Sprint 7 (2\u2011week) planning scenario described above. The plan should break down each deliverable into weekly milestones, identify critical path tasks, assign owners, list required dependencies (including external LabPartner API and design assets), outline risk mitigation for known blockers (e.g., PTO, security review timing), and provide a timeline view (day\u2011by\u2011day) that ensures all success criteria are met by the sprint end on 19\u202fMay\u202f2025.",
+  "meeting_type": "Sprint Planning Meeting",
+  "meeting_type_key": "2_sprint_planning",
+  "scenario_number": 3,
+  "horizon": "T-14",
+  "complexity": "Medium",
+  "generated_at": "2025-11-17T04:32:40.193705"
+}

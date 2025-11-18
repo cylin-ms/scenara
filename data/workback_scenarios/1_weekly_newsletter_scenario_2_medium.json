@@ -1,0 +1,596 @@
+{
+  "scenario_name": "Weekly GreenPulse Customer Success Newsletter",
+  "scenario_number": 2,
+  "meeting_type": "Weekly Team Newsletter",
+  "quality_level": "medium",
+  "workback_prompt": "Create a detailed workback plan for the 'Weekly GreenPulse Customer Success Newsletter' at EcoTech Solutions. The plan should start from the send date (Friday, November 29, 2025, 09:00\u202fAM PST) and work backwards, covering all tasks, owners, durations, dependencies, and milestones needed to meet the deadline and success criteria outlined in the scenario. Include steps for content drafting, stakeholder reviews, design asset creation, approval workflow, email build, testing, analytics setup, and post\u2011send reporting. Highlight any risk mitigation actions for the constraints (budget, compliance, and product\u2011release dependencies).\n\nGenerate a MEDIUM QUALITY workback plan with these characteristics:\n- Most major tasks present but some gaps\n- Reasonable task descriptions\n- Some dependencies defined\n- Most tasks have owners\n- Milestones present but may lack detail\n- Generally realistic timelines\n- Some consideration of risks\n- Key deliverables identified\n\nIMPORTANT: Generate a plan that naturally exhibits MEDIUM quality characteristics.\nDo not explicitly label the plan as \"medium quality\" - let the quality emerge from the content.",
+  "generated_at": "2025-11-17T04:04:06.219539",
+  "analysis": "# Outcomes\n\n## Newsletter Send (Friday\u202fNov\u202f29\u202f2025\u202f09:00\u202fAM\u202fPST)\nFinal distribution of the Weekly GreenPulse Customer Success Newsletter to the subscriber list.  \nArtifact references: *(none)*\n\n### Reasoning\nThe send date is the fixed deadline given in the scenario. All upstream work must be completed and verified before this moment, making it the primary outcome that drives the entire work\u2011back schedule.\n\n### Approach\n1. Confirm the final email file and tracking parameters are loaded into the ESP (Email Service Provider).  \n2. Verify the send queue is scheduled for the exact timestamp.  \n3. Ensure compliance sign\u2011off is recorded in the ESP\u2019s audit log.  \n4. Capture a \u201csend\u2011ready\u201d checkpoint as a milestone that triggers the post\u2011send reporting window.\n\n---\n\n## Content Draft Approved (Wednesday\u202fNov\u202f27\u202f2025)\nStakeholder\u2011approved copy for all newsletter sections (lead article, product updates, tips, CTA).  \nArtifact references: *(none)*\n\n### Reasoning\nContent must be locked at least two days before send to allow design, build, and testing. The scenario lists \u201ccontent drafting\u201d and \u201cstakeholder reviews\u201d as required steps.\n\n### Approach\n- Writer delivers first draft to the Content Lead (Day\u202f\u2011\u202f5).  \n- Content Lead circulates draft to Product Marketing, Compliance, and Customer Success leads for review (Day\u202f\u2011\u202f4).  \n- Collect feedback, incorporate changes, and obtain formal sign\u2011off (Day\u202f\u2011\u202f3).  \n- Document approval in the shared tracker; mark the milestone \u201cContent Draft Approved\u201d.\n\n---\n\n## Design Assets Completed (Tuesday\u202fNov\u202f26\u202f2025)\nAll visual elements (header image, icons, product screenshots, brand\u2011compliant templates) are finalized and exported.  \nArtifact references: *(none)*\n\n### Reasoning\nDesign must be ready before the email is built. The plan calls for \u201cdesign asset creation\u201d and a subsequent \u201capproval workflow\u201d.\n\n### Approach\n- Designer creates initial mock\u2011ups based on the approved copy (Day\u202f\u2011\u202f6).  \n- Conduct a quick internal review with Brand & Marketing (Day\u202f\u2011\u202f5).  \n- Iterate and export final assets in web\u2011ready formats (Day\u202f\u2011\u202f4).  \n- Store assets in the project folder and link them in the email build spec.\n\n---\n\n## Approval Workflow Completed (Monday\u202fNov\u202f25\u202f2025)\nAll required sign\u2011offs (Compliance, Legal, Product Marketing, Customer Success) are captured.  \nArtifact references: *(none)*\n\n### Reasoning\nThe scenario stresses compliance and product\u2011release dependencies. A consolidated approval step reduces risk of last\u2011minute rework.\n\n### Approach\n- Compile the final copy and design assets into a review package.  \n- Distribute to each approver with a 24\u2011hour deadline.  \n- Track responses in the approval tracker; follow up on any pending items.  \n- Once all approvals are logged, mark the \u201cApproval Workflow Completed\u201d milestone.\n\n---\n\n## Email Build & QA Finished (Friday\u202fNov\u202f22\u202f2025)\nFully assembled HTML email, integrated with tracking, and passed functional & rendering QA.  \nArtifact references: *(none)*\n\n### Reasoning\nThe email must be built after content and design are locked, then tested across devices and ESP preview tools before scheduling.\n\n### Approach\n- Email Developer imports copy and assets into the template (Day\u202f\u2011\u202f9).  \n- Add dynamic tags, UTM parameters, and accessibility attributes.  \n- Conduct internal QA (spell\u2011check, link validation).  \n- Run cross\u2011client rendering tests (Litmus/Email on Acid) and fix any issues.  \n- Upload final HTML to the ESP and tag as \u201cReady for Send\u201d.\n\n---\n\n## Analytics & Tracking Setup (Thursday\u202fNov\u202f21\u202f2025)\nAll reporting metrics (open, click, conversion, unsubscribe) are configured in the ESP and BI dashboard.  \nArtifact references: *(none)*\n\n### Reasoning\nAnalytics must be ready before the email is sent to capture data from the first moment. The scenario lists \u201canalytics setup\u201d as a required task.\n\n### Approach\n- Define KPI list with Customer Success leadership.  \n- Create UTM conventions and embed them in the email content.  \n- Set up ESP tracking (open pixels, click redirects).  \n- Build a dashboard in the reporting tool; test with a sandbox send.\n\n---\n\n## Post\u2011Send Report Delivered (Monday\u202fDec\u202f2\u202f2025)\nPerformance summary shared with stakeholders, including insights and recommendations for the next issue.  \nArtifact references: *(none)*\n\n### Reasoning\nThe scenario calls for \u201cpost\u2011send reporting.\u201d Delivering the report within a few days keeps the team aligned for the next newsletter cycle.\n\n### Approach\n- Extract raw data from the ESP and BI dashboard (Day\u202f+\u202f1).  \n- Compile metrics, compare against benchmarks, and note any compliance or deliverability issues.  \n- Draft a brief report and circulate to Product, Marketing, and Customer Success leads (Day\u202f+\u202f2).  \n- Incorporate feedback and publish the final version (Day\u202f+\u202f3).\n\n---\n\n## Breakdown\n```\n1. Content Drafting\n   1.1 Writer creates first draft (Owner: Content Writer, Duration: 1 day, Depends on: None)\n   1.2 Content Lead reviews draft (Owner: Content Lead, Duration: 0.5 day, Depends on: 1.1)\n   1.3 Stakeholder reviews (Product Marketing, Compliance, Customer Success) (Owners: PM Lead, Compliance Officer, CS Lead, Duration: 1 day, Depends on: 1.2)\n   1.4 Incorporate feedback & finalize copy (Owner: Content Writer, Duration: 0.5 day, Depends on: 1.3)\n   1.5 Formal sign\u2011off recorded (Owner: Content Lead, Duration: 0.25 day, Depends on: 1.4) \u2192 Milestone: Content Draft Approved (Wed\u202fNov\u202f27)\n\n2. Design Asset Creation\n   2.1 Designer drafts mock\u2011ups (Owner: Graphic Designer, Duration: 1 day, Depends on: 1.4)\n   2.2 Internal brand review (Owner: Brand Manager, Duration: 0.5 day, Depends on: 2.1)\n   2.3 Revise & export final assets (Owner: Graphic Designer, Duration: 0.5 day, Depends on: 2.2) \u2192 Milestone: Design Assets Completed (Tue\u202fNov\u202f26)\n\n3. Consolidated Approval Workflow\n   3.1 Package copy + assets for approval (Owner: Content Lead, Duration: 0.25 day, Depends on: 1.5 & 2.3)\n   3.2 Distribute to approvers (Compliance, Legal, Product Marketing, CS) (Owner: Project Coordinator, Duration: 0.25 day, Depends on: 3.1)\n   3.3 Collect sign\u2011offs (Owners: each approver, Duration: 1 day, Depends on: 3.2)\n   3.4 Log approvals in tracker (Owner: Project Coordinator, Duration: 0.25 day, Depends on: 3.3) \u2192 Milestone: Approval Workflow Completed (Mon\u202fNov\u202f25)\n\n4. Email Build & QA\n   4.1 Developer imports copy & assets into template (Owner: Email Developer, Duration: 1 day, Depends on: 3.4)\n   4.2 Add tracking tags & accessibility markup (Owner: Email Developer, Duration: 0.5 day, Depends on: 4.1)\n   4.3 Internal functional QA (Owner: QA Lead, Duration: 0.5 day, Depends on: 4.2)\n   4.4 Cross\u2011client rendering tests (Owner: QA Lead, Duration: 0.5 day, Depends on: 4.3)\n   4.5 Fix issues & finalize HTML (Owner: Email Developer, Duration: 0.5 day, Depends on: 4.4)\n   4.6 Upload to ESP & schedule send (Owner: Email Ops, Duration: 0.25 day, Depends on: 4.5) \u2192 Milestone: Email Build & QA Finished (Fri\u202fNov\u202f22)\n\n5. Analytics & Tracking Setup\n   5.1 Define KPIs & UTM scheme (Owner: Analytics Lead, Duration: 0.25 day, Depends on: 1.5)\n   5.2 Configure ESP tracking (Owner: Email Ops, Duration: 0.25 day, Depends on: 5.1)\n   5.3 Build BI dashboard (Owner: Data Analyst, Duration: 0.5 day, Depends on: 5.2) \u2192 Milestone: Analytics & Tracking Setup (Thu\u202fNov\u202f21)\n\n6. Final Send Preparation\n   6.1 Verify compliance logs in ESP (Owner: Compliance Officer, Duration: 0.25 day, Depends on: 3.4)\n   6.2 Conduct final \u201csend\u2011ready\u201d checklist (Owner: Project Coordinator, Duration: 0.25 day, Depends on: 6.1 & 4.6)\n   6.3 Schedule send for 09:00\u202fAM PST (Owner: Email Ops, Duration: 0.1 day, Depends on: 6.2) \u2192 Milestone: Newsletter Send (Fri\u202fNov\u202f29\u202f09:00\u202fAM)\n\n7. Post\u2011Send Reporting\n   7.1 Extract performance data (Owner: Data Analyst, Duration: 0.5 day, Depends on: 6.3)\n   7.2 Draft performance report (Owner: CS Lead, Duration: 0.5 day, Depends on: 7.1)\n   7.3 Review & incorporate stakeholder feedback (Owner: Project Coordinator, Duration: 0.25 day, Depends on: 7.2)\n   7.4 Publish final report (Owner: CS Lead, Duration: 0.25 day, Depends on: 7.3) \u2192 Milestone: Post\u2011Send Report Delivered (Mon\u202fDec\u202f2)\n\nRisk Mitigation Actions (cross\u2011cutting)\n- Budget constraint: Use existing brand assets where possible; limit external vendor spend to a maximum of $2,000 (Owner: Finance Lead, Duration: Ongoing).\n- Compliance risk: Schedule a compliance pre\u2011review (Day\u202f\u2011\u202f8) to catch regulatory language early; keep a compliance checklist attached to the approval tracker.\n- Product\u2011release dependency: Align content finalization with product release calendar; if a release is delayed, flag the issue in step 1.3 and trigger a contingency copy (Owner: Product Marketing Lead).\n- Resource conflict: Identify backup resources for design (secondary designer) and email build (second developer) in case of illness (Owner: Project Coordinator, Duration: 0.1 day, Depends on: Project kickoff).\n```\n\n*The plan above follows a work\u2011back schedule from the fixed send date, lists owners, estimated durations, key dependencies, and milestones, and highlights risk\u2011mitigation actions for budget, compliance, and product\u2011release constraints.*",
+  "plan": {
+    "id": "document-001",
+    "name": "Weekly GreenPulse Newsletter Workback Plan",
+    "details": "Workback schedule for the Weekly GreenPulse Customer Success Newsletter, covering content drafting, design, approvals, email build, analytics setup, final send preparation, and post\u2011send reporting.",
+    "draft": true,
+    "participants": [
+      {
+        "name": "Content Writer",
+        "email": "",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Content Lead",
+        "email": "",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Product Marketing Lead",
+        "email": "",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Compliance Officer",
+        "email": "",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Customer Success Lead",
+        "email": "",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Graphic Designer",
+        "email": "",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Brand Manager",
+        "email": "",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Project Coordinator",
+        "email": "",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Email Developer",
+        "email": "",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "QA Lead",
+        "email": "",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Email Ops",
+        "email": "",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Analytics Lead",
+        "email": "",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Data Analyst",
+        "email": "",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Finance Lead",
+        "email": "",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Legal",
+        "email": "",
+        "details": "",
+        "draft": true
+      }
+    ],
+    "references": [],
+    "deliverables": [
+      {
+        "name": "Content Draft Approved",
+        "type": "word",
+        "id": "deliverable-001",
+        "draft": true,
+        "history": []
+      },
+      {
+        "name": "Design Assets Completed",
+        "type": "word",
+        "id": "deliverable-002",
+        "draft": true,
+        "history": []
+      },
+      {
+        "name": "Approval Workflow Completed",
+        "type": "word",
+        "id": "deliverable-003",
+        "draft": true,
+        "history": []
+      },
+      {
+        "name": "Email Build & QA Finished",
+        "type": "word",
+        "id": "deliverable-004",
+        "draft": true,
+        "history": []
+      },
+      {
+        "name": "Analytics & Tracking Setup",
+        "type": "word",
+        "id": "deliverable-005",
+        "draft": true,
+        "history": []
+      },
+      {
+        "name": "Newsletter Send",
+        "type": "word",
+        "id": "deliverable-006",
+        "draft": true,
+        "history": []
+      },
+      {
+        "name": "Post\u2011Send Report Delivered",
+        "type": "word",
+        "id": "deliverable-007",
+        "draft": true,
+        "history": []
+      }
+    ],
+    "tasks": [
+      {
+        "id": "task-001",
+        "name": "Writer creates first draft",
+        "draft": true,
+        "details": "Content Writer drafts the initial newsletter copy.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002",
+        "name": "Content Lead reviews draft",
+        "draft": true,
+        "details": "Content Lead performs an initial review of the first draft.",
+        "dependencies": [
+          "task-001"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003",
+        "name": "Stakeholder reviews (Product Marketing, Compliance, Customer Success)",
+        "draft": true,
+        "details": "Product Marketing Lead, Compliance Officer, and Customer Success Lead review the draft and provide feedback.",
+        "dependencies": [
+          "task-002"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-004",
+        "name": "Incorporate feedback & finalize copy",
+        "draft": true,
+        "details": "Content Writer incorporates stakeholder feedback and finalizes the copy.",
+        "dependencies": [
+          "task-003"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-005",
+        "name": "Formal sign\u2011off recorded",
+        "draft": true,
+        "details": "Content Lead records formal sign\u2011off for the finalized copy.",
+        "dependencies": [
+          "task-004"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[word]/deliverable-001"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-006",
+        "name": "Designer drafts mock\u2011ups",
+        "draft": true,
+        "details": "Graphic Designer creates initial design mock\u2011ups based on approved copy.",
+        "dependencies": [
+          "task-004"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-007",
+        "name": "Internal brand review",
+        "draft": true,
+        "details": "Brand Manager reviews the design mock\u2011ups for brand compliance.",
+        "dependencies": [
+          "task-006"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-008",
+        "name": "Revise & export final assets",
+        "draft": true,
+        "details": "Graphic Designer revises designs based on brand feedback and exports final assets.",
+        "dependencies": [
+          "task-007"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[word]/deliverable-002"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-009",
+        "name": "Package copy + assets for approval",
+        "draft": true,
+        "details": "Content Lead compiles finalized copy and design assets into a review package.",
+        "dependencies": [
+          "task-005",
+          "task-008"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-010",
+        "name": "Distribute to approvers",
+        "draft": true,
+        "details": "Project Coordinator sends the review package to Compliance, Legal, Product Marketing, and Customer Success approvers.",
+        "dependencies": [
+          "task-009"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-011",
+        "name": "Collect sign\u2011offs",
+        "draft": true,
+        "details": "Each approver reviews the package and provides sign\u2011off.",
+        "dependencies": [
+          "task-010"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-012",
+        "name": "Log approvals in tracker",
+        "draft": true,
+        "details": "Project Coordinator logs all received approvals in the approval tracker.",
+        "dependencies": [
+          "task-011"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[word]/deliverable-003"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-013",
+        "name": "Developer imports copy & assets into template",
+        "draft": true,
+        "details": "Email Developer builds the HTML email using the approved copy and design assets.",
+        "dependencies": [
+          "task-012"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-014",
+        "name": "Add tracking tags & accessibility markup",
+        "draft": true,
+        "details": "Email Developer adds UTM parameters, open pixels, and accessibility attributes.",
+        "dependencies": [
+          "task-013"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-015",
+        "name": "Internal functional QA",
+        "draft": true,
+        "details": "QA Lead performs functional QA: spell\u2011check, link validation, etc.",
+        "dependencies": [
+          "task-014"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-016",
+        "name": "Cross\u2011client rendering tests",
+        "draft": true,
+        "details": "QA Lead runs rendering tests across email clients and devices.",
+        "dependencies": [
+          "task-015"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-017",
+        "name": "Fix issues & finalize HTML",
+        "draft": true,
+        "details": "Email Developer resolves any rendering or functional issues identified in testing.",
+        "dependencies": [
+          "task-016"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-018",
+        "name": "Upload to ESP & schedule send",
+        "draft": true,
+        "details": "Email Ops uploads the final HTML to the ESP and schedules the send.",
+        "dependencies": [
+          "task-017"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[word]/deliverable-004"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-019",
+        "name": "Define KPIs & UTM scheme",
+        "draft": true,
+        "details": "Analytics Lead defines key performance indicators and UTM naming conventions.",
+        "dependencies": [
+          "task-005"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-020",
+        "name": "Configure ESP tracking",
+        "draft": true,
+        "details": "Email Ops configures open, click, and conversion tracking in the ESP.",
+        "dependencies": [
+          "task-019"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-021",
+        "name": "Build BI dashboard",
+        "draft": true,
+        "details": "Data Analyst builds a BI dashboard to surface newsletter performance metrics.",
+        "dependencies": [
+          "task-020"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[word]/deliverable-005"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-022",
+        "name": "Verify compliance logs in ESP",
+        "draft": true,
+        "details": "Compliance Officer checks that all compliance sign\u2011offs are recorded in the ESP audit log.",
+        "dependencies": [
+          "task-012"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-023",
+        "name": "Conduct final \u201csend\u2011ready\u201d checklist",
+        "draft": true,
+        "details": "Project Coordinator runs the final send\u2011ready checklist covering build, approvals, and scheduling.",
+        "dependencies": [
+          "task-022",
+          "task-018"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-024",
+        "name": "Schedule send for 09:00\u202fAM PST",
+        "draft": true,
+        "details": "Email Ops schedules the newsletter send for the specified timestamp.",
+        "dependencies": [
+          "task-023"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[word]/deliverable-006"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-025",
+        "name": "Extract performance data",
+        "draft": true,
+        "details": "Data Analyst extracts raw performance data from the ESP after the send.",
+        "dependencies": [
+          "task-024"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-026",
+        "name": "Draft performance report",
+        "draft": true,
+        "details": "Data Analyst drafts the post\u2011send performance report.",
+        "dependencies": [
+          "task-025"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-027",
+        "name": "Review & incorporate stakeholder feedback",
+        "draft": true,
+        "details": "Project Coordinator gathers stakeholder feedback on the draft report and incorporates changes.",
+        "dependencies": [
+          "task-026"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-028",
+        "name": "Publish final report",
+        "draft": true,
+        "details": "Data Analyst publishes the final post\u2011send performance report.",
+        "dependencies": [
+          "task-027"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[word]/deliverable-007"
+        ],
+        "references": [],
+        "history": []
+      }
+    ],
+    "history": []
+  }
+}

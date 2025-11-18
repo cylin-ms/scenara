@@ -1,0 +1,146 @@
+{
+  "basic_info": {
+    "full_name": "Christopher Davis",
+    "age": 45,
+    "location": "Seattle, WA, USA",
+    "timezone": "America/Los_Angeles",
+    "years_experience": 20,
+    "education": [
+      {
+        "degree": "B.S.",
+        "field": "Computer Science",
+        "institution": "University of Washington",
+        "year": 2002
+      },
+      {
+        "degree": "M.B.A.",
+        "field": "Business Administration",
+        "institution": "Seattle University",
+        "year": 2006
+      }
+    ]
+  },
+  "work_habits": {
+    "preferred_working_hours": "early bird (07:00‑16:00 PST)",
+    "peak_productivity_times": [
+      "08:00‑11:00",
+      "13:00‑14:30"
+    ],
+    "communication_style": "prefers asynchronous communication with brief synchronous check‑ins",
+    "response_time_expectation": "within 4 business hours for non‑urgent messages, <30 min for urgent",
+    "meeting_preferences": "limits to 2 meetings per day, favors 30‑minute stand‑ups, quarterly face‑to‑face off‑sites",
+    "work_environment": "hybrid (3 days remote, 2 days in office)",
+    "focus_time_requirements": "needs 2‑3 hour uninterrupted blocks daily, scheduled via calendar"
+  },
+  "personality": {
+    "mbti": "ENTJ",
+    "decision_making_approach": "data‑driven, incorporates stakeholder input, uses ROI modeling",
+    "risk_tolerance": "moderate‑high (willing to pilot new CS methodologies)",
+    "collaboration_style": "strategic partnership, sets clear objectives and delegates authority",
+    "stress_management_approach": "daily 30‑minute run, mindfulness app, weekly coaching session",
+    "conflict_resolution_style": "collaborative problem‑solving, seeks win‑win outcomes"
+  },
+  "skills": {
+    "core_technical_skills": {
+      "SaaS_platform_architecture": 9,
+      "CRM_(Salesforce)": 9,
+      "Customer_Success_software_(Gainsight)": 8,
+      "Data_Analytics_(Tableau/SQL)": 8,
+      "API_Integration": 7,
+      "Project_Management_(Asana)": 8
+    },
+    "leadership_abilities": {
+      "vision_setting": 9,
+      "people_development": 8,
+      "change_management": 7,
+      "cross_functional_influence": 9,
+      "operational_execution": 8
+    },
+    "domain_expertise_areas": [
+      "Customer Success strategy",
+      "Enterprise SaaS subscription economics",
+      "Renewal & expansion processes",
+      "Customer health scoring",
+      "Voice of the Customer programs"
+    ],
+    "learning_agility": 9,
+    "tools_proficiency": {
+      "Gainsight": 9,
+      "Salesforce": 9,
+      "Tableau": 8,
+      "Asana": 8,
+      "Slack": 9,
+      "Zoom": 9,
+      "Microsoft_Office_Suite": 9
+    },
+    "languages_spoken": [
+      "English (native)",
+      "Spanish (conversational)"
+    ]
+  },
+  "performance": {
+    "task_completion_rate": 93,
+    "quality_score": 96,
+    "estimation_accuracy": 88,
+    "multitasking_ability": 7,
+    "performance_under_pressure": 9
+  },
+  "availability": {
+    "available_hours_per_week": 45,
+    "timezone": "America/Los_Angeles",
+    "typical_working_hours": "07:00‑16:00 PST",
+    "planned_time_off_days_per_year": 20,
+    "other_commitments": "Board member of Seattle Tech Non‑Profit (≈5 hrs/month)",
+    "travel_flexibility": "up to 15 % of time (~2 weeks/year, mostly domestic conferences and key customer visits)"
+  },
+  "personal_factors": {
+    "family_status": "Married, two children (ages 9 and 12)",
+    "caregiving_responsibilities": "Weekly school pickups, occasional weekend activities",
+    "commute_situation": "30‑minute drive to office, uses car‑pool on office days",
+    "health_considerations": "Generally healthy, runs 3×/week, monitors blood pressure",
+    "career_motivation": "Build a world‑class Customer Success organization, mentor the next generation of leaders, leave a measurable impact on ARR growth"
+  },
+  "project_impact": {
+    "reliability": 9,
+    "innovation_tendency": 8,
+    "documentation_quality": 7,
+    "mentorship_capability": 9,
+    "influence_level": 9
+  },
+  "collaboration": {
+    "meeting_frequency_preference": "Twice‑weekly one‑on‑ones with direct reports, weekly cross‑functional sync, monthly all‑hands",
+    "communication_channels_preference": [
+      "Slack (primary)",
+      "Email (for formal follow‑ups)",
+      "Asana (task updates)",
+      "Zoom (video when needed)"
+    ],
+    "feedback_style": "direct but constructive, framed with data and growth focus",
+    "knowledge_sharing_habits": "writes monthly CS Playbook updates, hosts quarterly brown‑bag sessions, maintains a shared Confluence knowledge base",
+    "cross_team_collaboration": 8
+  },
+  "risk_factors": {
+    "potential_bottlenecks": [
+      "High dependence on his strategic vision can delay tactical decisions",
+      "Limited bandwidth for deep technical troubleshooting",
+      "Meeting overload during product launch cycles"
+    ],
+    "backup_person_needed": "Emily Chen, Senior Manager of Customer Success",
+    "ramp_up_time_for_new_projects_weeks": 3,
+    "context_switching_tolerance": 6,
+    "burnout_risk_factors": [
+      "Frequent high‑stakes stakeholder meetings",
+      "Travel combined with family commitments",
+      "Perfectionist tendency on documentation"
+    ]
+  },
+  "_metadata": {
+    "generated_at": "2025-11-17T15:13:28.522905",
+    "name": "Christopher Davis",
+    "role": "Director of Customer Success",
+    "seniority": "senior",
+    "company": "TechCorp",
+    "model": "gpt-oss:120b",
+    "provider": "ollama"
+  }
+}

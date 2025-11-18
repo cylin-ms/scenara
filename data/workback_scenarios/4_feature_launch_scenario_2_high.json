@@ -1,0 +1,512 @@
+{
+  "scenario_name": "DataPulse AI Insights Feature Launch \u2013 Acme Analytics",
+  "scenario_number": 2,
+  "meeting_type": "Product Feature Launch",
+  "quality_level": "high",
+  "workback_prompt": "Create a detailed workback plan for the **DataPulse AI Insights** feature launch at Acme Analytics. The launch is scheduled for **2025-12-15 10:00\u202fAM\u202fPST** and follows a T\u201130 planning horizon. Include all phases (strategy, development, QA, documentation, marketing, sales enablement, support readiness, launch day execution, post\u2011launch monitoring). Break down tasks by week, assign owners (using the stakeholder list provided), indicate dependencies, critical path items, risk mitigation steps, and required approvals. Provide a Gantt\u2011style timeline, a RACI matrix, and a checklist of go/no\u2011go criteria for the launch day. Use the scenario details above (company context, deliverables, success criteria, constraints) to ensure the plan is realistic and actionable.\n\nGenerate a HIGH QUALITY workback plan with these characteristics:\n- Comprehensive task coverage\n- Clear, actionable task descriptions\n- Well-defined dependencies\n- All tasks assigned to specific owners\n- Clear milestones with completion criteria\n- Realistic timelines with buffers\n- Proactive risk management\n- Complete deliverable list\n\nIMPORTANT: Generate a plan that naturally exhibits HIGH quality characteristics.\nDo not explicitly label the plan as \"high quality\" - let the quality emerge from the content.",
+  "generated_at": "2025-11-17T05:26:31.504684",
+  "analysis": "# Outcomes\n\n## 1. Comprehensive Workback Plan for the **DataPulse AI Insights** launch  \nA single, consolidated document that enumerates every task required from the start of the T\u201130 window (2025\u201111\u201115) through post\u2011launch monitoring, organized by week, with explicit owners, dependencies, critical\u2011path identification, risk\u2011mitigation actions, and required approvals.  \nArtifact references: *none provided*  \n\n### Reasoning  \nThe user\u2019s primary request is a \u201cdetailed workback plan\u201d that covers all phases (strategy, development, QA, documentation, marketing, sales enablement, support readiness, launch\u2011day execution, post\u2011launch monitoring). Delivering a single, structured plan that meets every listed requirement satisfies the core objective and serves as the source for the timeline, RACI matrix, and go/no\u2011go checklist.\n\n### Approach  \n1. **Define the planning horizon** \u2013 T\u201130 starts on 2025\u201111\u201115; the launch is on 2025\u201112\u201115 10:00\u202fAM\u202fPST.  \n2. **Create a weekly skeleton** (Week\u202f\u201130 to Week\u202f\u20111, plus Week\u202f+1 for post\u2011launch).  \n3. **Populate each week with phase\u2011specific tasks** (e.g., \u201cFinalize value\u2011prop messaging\u201d under Strategy, \u201cComplete API integration\u201d under Development).  \n4. **Assign owners** by referencing the stakeholder list supplied to the team (placeholders such as *Product Owner*, *Engineering Lead*, *QA Manager*, *Documentation Lead*, *Marketing Manager*, *Sales Enablement Lead*, *Support Manager*, *Release Manager*).  \n5. **Identify dependencies** \u2013 e.g., development tasks must finish before QA can start; documentation depends on feature freeze.  \n6. **Mark critical\u2011path items** \u2013 tasks whose delay directly pushes the launch date (feature freeze, final regression test, release sign\u2011off).  \n7. **Add risk\u2011mitigation steps** to each high\u2011risk task (buffer weeks, parallel testing, contingency resources).  \n8. **Specify approval gates** (e.g., \u201cProduct Sign\u2011off\u201d, \u201cSecurity Review Approval\u201d, \u201cMarketing Campaign Go\u2011ahead\u201d).  \n9. **Compile the above into a tabular workback plan** that can be exported to project\u2011management tools.  \n\n---\n\n## 2. Gantt\u2011style Timeline (textual representation)  \nA week\u2011by\u2011week visual schedule that maps the tasks from Outcome\u202f1 onto a timeline, highlights dependencies, and flags the critical path.  \nArtifact references: *none provided*  \n\n### Reasoning  \nThe user explicitly asks for \u201ca Gantt\u2011style timeline\u201d. Providing a textual Gantt (bars represented by week ranges) satisfies the request while remaining within the constraints of a plain\u2011text response.\n\n### Approach  \n1. **Translate the weekly task list** from Outcome\u202f1 into start\u2011/end\u2011week pairs.  \n2. **Render each task as a bar** using a simple markdown table or ASCII bar notation (e.g., `\u25a0\u25a0\u25a0\u25a0` for weeks\u202f\u201130\u2011\u201125).  \n3. **Overlay dependency arrows** using notation such as \u201c\u2192\u201d.  \n4. **Highlight critical\u2011path bars** (e.g., bold or prefix with `*`).  \n5. **Include a legend** that explains symbols, buffers, and milestones.  \n\n---\n\n## 3. RACI Matrix for all launch activities  \nA matrix that maps every major activity (rows) to the responsible (R), accountable (A), consulted (C), and informed (I) stakeholders (columns).  \nArtifact references: *none provided*  \n\n### Reasoning  \nA RACI matrix is explicitly requested (\u201cProvide a \u2026 RACI matrix\u201d). It is essential for clarity on ownership and for preventing bottlenecks during the tight T\u201130 schedule.\n\n### Approach  \n1. **List all high\u2011level activities** (e.g., \u201cDefine launch strategy\u201d, \u201cFeature development\u201d, \u201cRegression testing\u201d, \u201cCreate launch assets\u201d, \u201cSales enablement training\u201d, \u201cSupport run\u2011books\u201d, \u201cFinal release sign\u2011off\u201d, \u201cLaunch day monitoring\u201d).  \n2. **Populate the matrix** using the stakeholder list (placeholders where the list is not supplied).  \n3. **Validate that each activity has exactly one \u201cA\u201d** and at least one \u201cR\u201d.  \n4. **Add notes for any shared responsibilities** that may require coordination meetings.  \n\n---\n\n## 4. Launch\u2011Day Go/No\u2011Go Checklist  \nA concise, binary checklist that the Release Manager (or designated gatekeeper) uses at 09:30\u202fAM\u202fPST on 2025\u201112\u201115 to confirm readiness across all domains before the 10:00\u202fAM launch.  \nArtifact references: *none provided*  \n\n### Reasoning  \nThe user asks for \u201ca checklist of go/no\u2011go criteria for the launch day\u201d. This checklist is the final decision gate and must be directly derived from the workback plan\u2019s completion criteria and approvals.\n\n### Approach  \n1. **Extract completion criteria** from each phase (e.g., \u201cAll critical bugs \u2264\u202fP1 resolved\u201d, \u201cMarketing assets approved\u201d, \u201cSupport on\u2011call roster confirmed\u201d).  \n2. **Translate each criterion into a yes/no item** with a reference to the responsible owner.  \n3. **Add a \u201cFinal Release Sign\u2011off\u201d line** that requires the accountable stakeholder\u2019s signature.  \n4. **Provide a simple \u201cGo\u201d / \u201cNo\u2011Go\u201d decision rule** (all items must be \u201cYes\u201d to proceed).  \n\n---\n\n# Breakdown\n\n## Outcome\u202f1 \u2013 Comprehensive Workback Plan  \n\n| Week (relative to launch) | Phase | Task | Owner* | Dependencies | Critical Path? | Risk Mitigation / Buffer | Approval Needed |\n|---|---|---|---|---|---|---|---|\n| **\u201130\u202f(2025\u201111\u201115\u202f\u2013\u202f11\u201121)** | Strategy | Conduct launch kickoff meeting; align success criteria | Product Owner | \u2013 | Yes | Record decisions for later sign\u2011off | Product Steering Committee |\n|  | Strategy | Finalize market positioning & value\u2011prop messaging | Marketing Manager | Kickoff meeting | No | Review with Sales Enablement | Marketing Lead |\n|  | Development | Freeze feature scope (Feature Freeze) | Engineering Lead | Kickoff meeting | Yes | Add 1\u2011day buffer before code\u2011freeze | Product Owner |\n|  | Development | Set up development environment & CI pipelines | Engineering Lead | \u2013 | No | Parallel with kickoff | \u2013 |\n| **\u201129\u202f(2025\u201111\u201122\u202f\u2013\u202f11\u201128)** | Development | Implement core AI inference engine | Engineering Team | Feature Freeze | Yes | Allocate 2\u2011day contingency | \u2013 |\n|  | Development | Build API endpoints for data export | Engineering Team | Core engine | No | Parallel with UI work | \u2013 |\n|  | Documentation | Draft initial feature spec doc | Documentation Lead | Feature Freeze | No | Review after spec finalization | \u2013 |\n| **\u201128\u202f(2025\u201111\u201129\u202f\u2013\u202f12\u201105)** | Development | UI/UX design hand\u2011off & prototyping | Design Lead | Core engine | No | Conduct design review early | Design Review Board |\n|  | QA | Define test plan & test cases | QA Manager | Feature spec draft | No | Review with Development | \u2013 |\n|  | Marketing | Create launch asset brief (blog, email, demo video) | Marketing Manager | Positioning doc | No | Buffer 3\u202fdays for creative | \u2013 |\n| **\u201127\u202f(2025\u201112\u201106\u202f\u2013\u202f12\u201112)** | Development | Complete UI implementation | Engineering Team | Prototypes | Yes | Add 1\u2011day buffer for UI bugs | \u2013 |\n|  | QA | Execute functional testing (smoke) | QA Team | UI complete | Yes | Parallel with regression prep | \u2013 |\n|  | Documentation | Populate user guide & release notes | Documentation Lead | UI & API complete | No | Peer review 2\u202fdays before freeze | Documentation Review |\n|  | Support | Draft support run\u2011books & escalation matrix | Support Manager | Feature spec, known issues | No | Conduct tabletop exercise | Support Lead |\n| **\u201126\u202f(2025\u201112\u201113\u202f\u2013\u202f12\u201119)** | QA | Perform full regression testing | QA Team | All code complete | Yes | Allocate 2\u202fdays for defect triage | QA Sign\u2011off |\n|  | Development | Address regression defects (P1/P2) | Engineering Team | Regression testing | Yes | Prioritize critical fixes | \u2013 |\n|  | Marketing | Finalize launch assets (video edit, email copy) | Marketing Manager | Asset brief | No | Review with Legal (if needed) | Marketing Approval |\n|  | Sales Enablement | Build sales playbook & demo script | Sales Enablement Lead | Positioning, feature guide | No | Conduct internal dry\u2011run | Sales Lead |\n| **\u201125\u202f(2025\u201112\u201120\u202f\u2013\u202f12\u201126)** | QA | Security & compliance review | Security Lead | Final build | Yes | External audit buffer 1\u202fday | Security Sign\u2011off |\n|  | Documentation | Publish user guide to portal | Documentation Lead | Release notes final | No | Verify links, accessibility | Documentation Approval |\n|  | Support | Conduct support readiness drill | Support Manager | Run\u2011books | No | Record lessons, adjust | Support Sign\u2011off |\n|  | Marketing | Schedule email blast & social posts | Marketing Manager | Assets approved | No | Set automated send for 09:00\u202fAM PST | Marketing Ops |\n| **\u201124\u202f(2025\u201112\u201127\u202f\u2013\u202f2025\u201101\u201102)** | Release Management | Create release package & rollback plan | Release Manager | All binaries, docs | Yes | Store in immutable storage | Release Manager |\n|  | Release Management | Obtain final release sign\u2011off (Product, QA, Security) | Release Manager | All approvals | Yes | Consolidate signatures 1\u202fday prior | Executive Sponsor |\n|  **Launch Day (2025\u201112\u201115\u202f10:00\u202fAM\u202fPST)** | Launch Execution | Execute release to production | Release Manager | Release package | Yes | Automated health\u2011check script | Release Sign\u2011off |\n|  | Monitoring | Real\u2011time metrics dashboard activation | Ops Lead | Release execution | Yes | Define alert thresholds | Ops Lead |\n|  | Communications | Publish blog post & notify customers | Marketing Manager | Assets live | No | Pre\u2011write announcement for quick post | Marketing Lead |\n| **+1\u202fWeek (2025\u201112\u201116\u202f\u2013\u202f12\u201122)** | Post\u2011Launch | Collect usage analytics & early feedback | Product Analyst | Monitoring data | No | Schedule daily syncs for 3\u202fdays | Product Owner |\n|  | Support | Review support tickets, update FAQs | Support Manager | Support readiness drill | No | Prioritize P1 tickets | Support Lead |\n|  | Marketing | Run post\u2011launch email nurture | Marketing Manager | Launch announcement sent | No | Measure open/click rates | Marketing Lead |\n|  | Product | Conduct retrospective & document lessons learned | Product Owner | All activities completed | No | Archive artefacts, update roadmap | Executive Sponsor |\n\n\\* **Owner** placeholders should be replaced with the actual individuals from the stakeholder list supplied to the project.\n\n### Critical\u2011Path Summary\n- Feature Freeze (Week\u202f\u201130) \u2192 Core Development (Weeks\u202f\u201129 to\u202f\u201127) \u2192 Full Regression Testing (Week\u202f\u201126) \u2192 Security Review (Week\u202f\u201125) \u2192 Release Package & Final Sign\u2011off (Week\u202f\u201124) \u2192 Production Release (Launch Day).  \nAny delay in these steps pushes the launch date.\n\n### Risk\u2011Mitigation Highlights\n| Risk | Mitigation |\n|---|---|\n| Scope creep after Feature Freeze | Strict change\u2011control board; only emergency fixes allowed |\n| Regression defects exceed capacity | Allocate 2\u2011day buffer; have \u201cbug\u2011bash\u201d sprint on Week\u202f\u201126 |\n| Marketing asset delays | Early asset brief; parallel creative and copy development |\n| Support overload on launch day | Pre\u2011staffed on\u2011call roster; automated triage scripts |\n| Release rollback failure | Pre\u2011tested rollback script; immutable backup snapshot |\n\n### Required Approvals (Gate Review Timeline)\n| Gate | Required Sign\u2011offs | Timing |\n|---|---|---|\n| Strategy Alignment | Product Owner, Marketing Lead | End of Week\u202f\u201130 |\n| Feature Freeze Confirmation | Engineering Lead, Product Owner | Start of Week\u202f\u201129 |\n| QA Sign\u2011off | QA Manager | End of Week\u202f\u201126 |\n| Security Sign\u2011off | Security Lead | End of Week\u202f\u201125 |\n| Release Sign\u2011off | Release Manager, Product Owner, Executive Sponsor | End of Week\u202f\u201124 |\n| Launch\u2011Day Go/No\u2011Go | Release Manager (final checklist) | 09:30\u202fAM PST, 2025\u201112\u201115 |\n\n---\n\n## Outcome\u202f2 \u2013 Gantt\u2011style Timeline (textual)\n\n```\nWeek  -30  -29  -28  -27  -26  -25  -24  Launch  +1\n|------|------|------|------|------|------|------|------|------|\nStrategy          \u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\nFeature Freeze                 \u2588\u2588\u2588\nCore Development                \u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\nUI Implementation                \u2588\u2588\u2588\u2588\nQA Functional Test                \u2588\u2588\u2588\nRegression Testing                 \u2588\u2588\u2588\nSecurity Review                     \u2588\nRelease Package & Sign\u2011off           \u2588\u2588\u2588\nLaunch Execution                        \u2588\nPost\u2011Launch Monitoring                     \u2588\u2588\u2588\u2588\n```\n\n*Bars (\u2588) indicate the weeks a task is active.*  \n**Critical\u2011path bars** are bolded (Feature Freeze \u2192 Core Development \u2192 Regression Testing \u2192 Security Review \u2192 Release Package \u2192 Launch).  \n\n**Legend**  \n- **\u2588** \u2013 Planned work week  \n- **Bold** \u2013 Critical\u2011path activity  \n- **\u2192** \u2013 Dependency (shown in the table above)  \n\n---\n\n## Outcome\u202f3 \u2013 RACI Matrix\n\n| Activity | Product Owner | Engineering Lead | QA Manager | Documentation Lead | Marketing Manager | Sales Enablement Lead | Support Manager | Release Manager | Security Lead |\n|---|---|---|---|---|---|---|---|---|---|\n| Define launch strategy | **A** / R | C | C | I | C | I | I | I | I |\n| Feature freeze decision | **A** | **R** | C | I | I | I | I | I | I |\n| Core development | I | **A** / R | C | I | I | I | I | I | I |\n| UI/UX design | I | C | I | I | C | I | I | I | I |\n| QA test plan | I | C | **A** / R | I | I | I | I | I | I |\n| Functional testing | I | C | **R** | I | I | I | I | I | I |\n| Regression testing | I | C | **A** / R | I | I | I | I | I | I |\n| Security review | I | I | I | I | I | I | I | I | **A** / R |\n| Documentation authoring | I | I | I | **A** / R | C | C | I | I | I |\n| Marketing asset creation | I | I | I | I | **A** / R | C | I | I | I |\n| Sales enablement playbook | I | I | I | I | C | **A** / R | I | I | I |\n| Support run\u2011book | I | I | I | I | I | I | **A** / R | I | I |\n| Release package & rollback plan | I | I | I | I | I | I | I | **A** / R | I |\n| Final release sign\u2011off | **A** | C | C | C | C | C | C | **R** | C |\n| Launch\u2011day execution | I | I | I | I | I | I | I | **A** / R | I |\n| Post\u2011launch monitoring | I | I | I | I | I | I | I | I | I |\n\n*R = Responsible, A = Accountable, C = Consulted, I = Informed.*\n\n---\n\n## Outcome\u202f4 \u2013 Launch\u2011Day Go/No\u2011Go Checklist\n\n| # | Item (Yes/No) | Owner | Reference |\n|---|---------------|-------|-----------|\n| 1 | All critical (P1) defects resolved and verified | QA Manager | Outcome\u202f1, Regression Testing |\n| 2 | Release package checksum verified; rollback plan approved | Release Manager | Outcome\u202f1, Release Package |\n| 3 | Security sign\u2011off obtained | Security Lead | Outcome\u202f1, Security Review |\n| 4 | Documentation (user guide & release notes) published and linked | Documentation Lead | Outcome\u202f1, Documentation |\n| 5 | Marketing assets (blog, email, social) scheduled and approved | Marketing Manager | Outcome\u202f1, Marketing Asset Creation |\n| 6 | Sales enablement team trained; playbook distributed | Sales Enablement Lead | Outcome\u202f1, Sales Enablement |\n| 7 | Support on\u2011call roster confirmed; run\u2011books accessible | Support Manager | Outcome\u202f1, Support Run\u2011book |\n| 8 | Monitoring dashboard live; alert thresholds set | Ops Lead | Outcome\u202f2, Monitoring |\n| 9 | Final release sign\u2011off signature collected | Release Manager | Outcome\u202f1, Final Release Sign\u2011off |\n| 10 | No outstanding approval pending (Product, QA, Security) | Product Owner | Outcome\u202f1, Approvals |\n\n**Decision Rule:** If **all items are \u201cYes\u201d**, the launch proceeds (Go). Any \u201cNo\u201d requires immediate remediation or postponement (No\u2011Go).  \n\n--- \n\n**Next Steps for the Team**  \n1. Populate the placeholder owners with names from the stakeholder list.  \n2. Load the workback plan (Outcome\u202f1) into the project\u2011management tool of choice to enable tracking and automated notifications.  \n3. Generate the visual Gantt chart using the week ranges provided (Outcome\u202f2).  \n4. Distribute the RACI matrix (Outcome\u202f3) to all participants for confirmation.  \n5. Review the Go/No\u2011Go checklist with the Release Manager and schedule a dry\u2011run meeting 24\u202fhours before launch.  \n\nFollowing this structured approach ensures every required phase is covered, dependencies are respected, critical\u2011path risks are mitigated, and the launch can be executed with confidence on **2025\u201112\u201115\u202f10:00\u202fAM\u202fPST**.",
+  "plan": {
+    "id": "document-001",
+    "name": "DataPulse AI Insights Launch Workback Plan",
+    "details": "Comprehensive workback plan covering all phases from T\u201130 (2025\u201111\u201115) through post\u2011launch monitoring for the DataPulse AI Insights launch on 2025\u201112\u201115 10:00\u202fAM\u202fPST.",
+    "draft": true,
+    "participants": [
+      {
+        "name": "Product Owner",
+        "draft": true
+      },
+      {
+        "name": "Marketing Manager",
+        "draft": true
+      },
+      {
+        "name": "Engineering Lead",
+        "draft": true
+      },
+      {
+        "name": "Engineering Team",
+        "draft": true
+      },
+      {
+        "name": "Documentation Lead",
+        "draft": true
+      },
+      {
+        "name": "Design Lead",
+        "draft": true
+      },
+      {
+        "name": "QA Manager",
+        "draft": true
+      },
+      {
+        "name": "Support Manager",
+        "draft": true
+      },
+      {
+        "name": "Sales Enablement Lead",
+        "draft": true
+      },
+      {
+        "name": "Security Lead",
+        "draft": true
+      },
+      {
+        "name": "Release Manager",
+        "draft": true
+      },
+      {
+        "name": "Ops Lead",
+        "draft": true
+      },
+      {
+        "name": "Product Analyst",
+        "draft": true
+      }
+    ],
+    "references": [],
+    "deliverables": [],
+    "tasks": [
+      {
+        "id": "task-001",
+        "name": "Conduct launch kickoff meeting; align success criteria",
+        "draft": true,
+        "details": "Kickoff meeting to align all stakeholders on launch objectives, success metrics, and timeline.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": []
+      },
+      {
+        "id": "task-002",
+        "name": "Finalize market positioning & value\u2011prop messaging",
+        "draft": true,
+        "details": "Develop final positioning statements and value\u2011prop messaging for external communications.",
+        "dependencies": [
+          "task-001"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": []
+      },
+      {
+        "id": "task-003",
+        "name": "Freeze feature scope (Feature Freeze)",
+        "draft": true,
+        "details": "Lock the set of features that will be included in the launch release.",
+        "dependencies": [
+          "task-001"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": []
+      },
+      {
+        "id": "task-004",
+        "name": "Set up development environment & CI pipelines",
+        "draft": true,
+        "details": "Provision dev environments, configure CI/CD pipelines, and ensure build automation is operational.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": []
+      },
+      {
+        "id": "task-005",
+        "name": "Implement core AI inference engine",
+        "draft": true,
+        "details": "Develop the core AI inference functionality that powers DataPulse insights.",
+        "dependencies": [
+          "task-003",
+          "task-004"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": []
+      },
+      {
+        "id": "task-006",
+        "name": "Build API endpoints for data export",
+        "draft": true,
+        "details": "Create RESTful APIs to allow customers to export AI\u2011generated insights.",
+        "dependencies": [
+          "task-005"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": []
+      },
+      {
+        "id": "task-007",
+        "name": "Draft initial feature spec doc",
+        "draft": true,
+        "details": "Write a detailed feature specification document for engineering and QA reference.",
+        "dependencies": [
+          "task-003"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": []
+      },
+      {
+        "id": "task-008",
+        "name": "UI/UX design hand\u2011off & prototyping",
+        "draft": true,
+        "details": "Transfer design assets to engineering and create interactive prototypes.",
+        "dependencies": [
+          "task-005"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": []
+      },
+      {
+        "id": "task-009",
+        "name": "Define test plan & test cases",
+        "draft": true,
+        "details": "Develop a comprehensive QA test plan and individual test cases based on the feature spec.",
+        "dependencies": [
+          "task-007"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": []
+      },
+      {
+        "id": "task-010",
+        "name": "Create launch asset brief (blog, email, demo video)",
+        "draft": true,
+        "details": "Outline the content and schedule for launch\u2011day marketing assets.",
+        "dependencies": [
+          "task-002"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": []
+      },
+      {
+        "id": "task-011",
+        "name": "Complete UI implementation",
+        "draft": true,
+        "details": "Develop the front\u2011end UI components based on the handed\u2011off designs.",
+        "dependencies": [
+          "task-008"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": []
+      },
+      {
+        "id": "task-012",
+        "name": "Execute functional testing (smoke)",
+        "draft": true,
+        "details": "Run initial smoke tests to verify basic functionality of the core engine and UI.",
+        "dependencies": [
+          "task-011"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": []
+      },
+      {
+        "id": "task-013",
+        "name": "Populate user guide & release notes",
+        "draft": true,
+        "details": "Author user\u2011facing documentation and release notes based on completed features and APIs.",
+        "dependencies": [
+          "task-011",
+          "task-006"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": []
+      },
+      {
+        "id": "task-014",
+        "name": "Draft support run\u2011books & escalation matrix",
+        "draft": true,
+        "details": "Create support run\u2011books, escalation procedures, and on\u2011call schedules.",
+        "dependencies": [
+          "task-007"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": []
+      },
+      {
+        "id": "task-015",
+        "name": "Perform full regression testing",
+        "draft": true,
+        "details": "Execute comprehensive regression tests covering all integrated components.",
+        "dependencies": [
+          "task-012"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": []
+      },
+      {
+        "id": "task-016",
+        "name": "Address regression defects (P1/P2)",
+        "draft": true,
+        "details": "Fix and verify all high\u2011priority defects identified during regression testing.",
+        "dependencies": [
+          "task-015"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": []
+      },
+      {
+        "id": "task-017",
+        "name": "Finalize launch assets (video edit, email copy)",
+        "draft": true,
+        "details": "Complete production\u2011ready marketing assets and obtain final approvals.",
+        "dependencies": [
+          "task-010"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": []
+      },
+      {
+        "id": "task-018",
+        "name": "Build sales playbook & demo script",
+        "draft": true,
+        "details": "Develop a sales enablement playbook and demo script for the sales team.",
+        "dependencies": [
+          "task-002"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": []
+      },
+      {
+        "id": "task-019",
+        "name": "Security & compliance review",
+        "draft": true,
+        "details": "Perform security sign\u2011off and compliance checks on the final build.",
+        "dependencies": [
+          "task-016"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": []
+      },
+      {
+        "id": "task-020",
+        "name": "Publish user guide to portal",
+        "draft": true,
+        "details": "Upload the finalized user guide and release notes to the customer portal.",
+        "dependencies": [
+          "task-013"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": []
+      },
+      {
+        "id": "task-021",
+        "name": "Conduct support readiness drill",
+        "draft": true,
+        "details": "Run a full support drill to validate run\u2011books and on\u2011call processes.",
+        "dependencies": [
+          "task-014"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": []
+      },
+      {
+        "id": "task-022",
+        "name": "Schedule email blast & social posts",
+        "draft": true,
+        "details": "Set the schedule for marketing email and social media announcements.",
+        "dependencies": [
+          "task-017"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": []
+      },
+      {
+        "id": "task-023",
+        "name": "Create release package & rollback plan",
+        "draft": true,
+        "details": "Assemble the final build artifacts, generate checksums, and document rollback procedures.",
+        "dependencies": [
+          "task-016",
+          "task-020"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": []
+      },
+      {
+        "id": "task-024",
+        "name": "Obtain final release sign\u2011off (Product, QA, Security)",
+        "draft": true,
+        "details": "Collect signatures from Product Owner, QA, and Security to authorize the launch.",
+        "dependencies": [
+          "task-023",
+          "task-019"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": []
+      },
+      {
+        "id": "task-025",
+        "name": "Execute release to production",
+        "draft": true,
+        "details": "Deploy the release package to the production environment.",
+        "dependencies": [
+          "task-024"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": []
+      },
+      {
+        "id": "task-026",
+        "name": "Real\u2011time metrics dashboard activation",
+        "draft": true,
+        "details": "Enable the live monitoring dashboard and configure alert thresholds.",
+        "dependencies": [
+          "task-025"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": []
+      },
+      {
+        "id": "task-027",
+        "name": "Publish blog post & notify customers",
+        "draft": true,
+        "details": "Release the launch blog post and send notifications to customers.",
+        "dependencies": [
+          "task-025",
+          "task-017"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": []
+      },
+      {
+        "id": "task-028",
+        "name": "Collect usage analytics & early feedback",
+        "draft": true,
+        "details": "Gather early usage data and customer feedback during the first post\u2011launch week.",
+        "dependencies": [
+          "task-026"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": []
+      },
+      {
+        "id": "task-029",
+        "name": "Review support tickets, update FAQs",
+        "draft": true,
+        "details": "Analyze support tickets from launch day and refresh FAQ content.",
+        "dependencies": [
+          "task-025"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": []
+      },
+      {
+        "id": "task-030",
+        "name": "Run post\u2011launch email nurture",
+        "draft": true,
+        "details": "Execute the scheduled post\u2011launch email nurture campaign.",
+        "dependencies": [
+          "task-025",
+          "task-022"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": []
+      },
+      {
+        "id": "task-031",
+        "name": "Conduct retrospective & document lessons learned",
+        "draft": true,
+        "details": "Hold a retrospective meeting, capture lessons learned, and update the workback plan for future releases.",
+        "dependencies": [
+          "task-028",
+          "task-029",
+          "task-030"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": []
+      }
+    ],
+    "history": []
+  }
+}

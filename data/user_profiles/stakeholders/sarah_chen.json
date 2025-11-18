@@ -1,0 +1,170 @@
+{
+  "basic_info": {
+    "full_name": "Sarah Mei Chen",
+    "age": 48,
+    "location": {
+      "city": "San Francisco",
+      "state": "CA",
+      "country": "USA",
+      "timezone": "America/Los_Angeles"
+    },
+    "years_of_experience": 25,
+    "education": [
+      {
+        "degree": "B.S. Computer Science",
+        "institution": "University of California, Berkeley",
+        "year": 1997,
+        "honors": "Magna Cum Laude"
+      },
+      {
+        "degree": "M.B.A. (Technology Management)",
+        "institution": "Stanford Graduate School of Business",
+        "year": 2002,
+        "honors": "Dean's List"
+      },
+      {
+        "degree": "Executive Program in Artificial Intelligence",
+        "institution": "MIT Sloan School of Management",
+        "year": 2015,
+        "honors": null
+      }
+    ]
+  },
+  "work_habits": {
+    "preferred_working_hours": "06:00-14:00 (PST) – early bird",
+    "peak_productivity_times": [
+      "06:30-09:30",
+      "13:00-14:00"
+    ],
+    "communication_style": {
+      "async_preference": true,
+      "sync_preference": false,
+      "expected_response_time": "within 4 business hours"
+    },
+    "meeting_preferences": {
+      "minimizes_meetings": true,
+      "prefers_short_stand‑ups": true,
+      "max_meeting_time_per_day_minutes": 90,
+      "face_to_face_preference": "quarterly executive retreats; otherwise video"
+    },
+    "work_environment": "Hybrid (2 days in office, 3 days remote)",
+    "focus_time_requirements": {
+      "daily_uninterrupted_focus_hours": 3,
+      "preferred_time_blocks": [
+        "06:30-09:30",
+        "13:00-14:00"
+      ]
+    }
+  },
+  "personality": {
+    "mbti": "ENTJ",
+    "decision_making_approach": "Data‑driven with strategic intuition; seeks rapid consensus from senior leaders",
+    "risk_tolerance": "Moderate‑high – comfortable with calculated bets in emerging tech",
+    "collaboration_style": "Directive yet empowering; sets clear goals and delegates authority",
+    "stress_management_approach": "Scheduled micro‑breaks, mindfulness meditation (10 min daily), and delegating non‑core tasks",
+    "conflict_resolution_style": "Direct problem‑solving; addresses issues early with facts and a focus on outcomes"
+  },
+  "skills": {
+    "core_technical_skills": {
+      "cloud_architecture (AWS/Azure)": 8,
+      "machine_learning_ops": 7,
+      "software_product_lifecycle": 9,
+      "data_analytics": 7,
+      "cybersecurity_basics": 6
+    },
+    "leadership_abilities": {
+      "vision_setting": 10,
+      "team_building": 9,
+      "financial_acumen": 8,
+      "change_management": 9,
+      "public_speaking": 8
+    },
+    "domain_expertise_areas": [
+      "Enterprise SaaS platforms",
+      "AI‑enabled products",
+      "Digital transformation strategy",
+      "Global go‑to‑market execution"
+    ],
+    "learning_agility": 9,
+    "tools_proficiency": [
+      "Jira & Confluence",
+      "Asana",
+      "Tableau",
+      "PowerBI",
+      "Slack",
+      "Microsoft Teams",
+      "Zoom"
+    ],
+    "languages_spoken": [
+      "English (native)",
+      "Mandarin (fluent)",
+      "Cantonese (conversational)"
+    ]
+  },
+  "performance": {
+    "task_completion_rate_percent": 94,
+    "quality_score_percent": 92,
+    "estimation_accuracy_percent": 88,
+    "multitasking_ability": 7,
+    "performance_under_pressure": 9
+  },
+  "availability": {
+    "available_hours_per_week": 55,
+    "timezone_and_working_hours": "PST; core hours 06:00‑14:00, flexible for cross‑regional syncs",
+    "planned_time_off_days_per_year": 22,
+    "other_commitments": [
+      "Board member – GreenTech Innovations (quarterly)",
+      "Mentor – Stanford Start‑Up Accelerator (monthly)",
+      "Industry conference speaker (3‑4 events per year)"
+    ],
+    "travel_flexibility": "High – can travel up to 30 days per quarter, prefers strategic visits to key offices"
+  },
+  "personal_factors": {
+    "family_status": "Married, two teenage children (15 & 17)",
+    "caregiving_responsibilities": "Limited – occasional weekend school events",
+    "commute_situation": "No daily commute (home office 3 days/week); 15‑minute drive on office days",
+    "health_considerations": "Mild hypertension managed with medication and regular cardio; avoids late‑night work",
+    "career_motivation": "Passionate about building products that scale globally and leave a lasting societal impact; driven by mentorship and legacy"
+  },
+  "project_impact": {
+    "reliability": 9,
+    "innovation_tendency": 8,
+    "documentation_quality": 7,
+    "mentorship_capability": 9,
+    "influence_level": 10
+  },
+  "collaboration": {
+    "meeting_frequency_preference": "Bi‑weekly executive sync; ad‑hoc when critical decisions arise",
+    "communication_channels_preference": [
+      "Slack (async updates)",
+      "Email for formal decisions",
+      "Zoom for strategic workshops"
+    ],
+    "feedback_style": "Direct but diplomatic – focuses on behavior and results, offers actionable next steps",
+    "knowledge_sharing_habits": "Publishes quarterly internal whitepapers; hosts monthly ‘Ask the CEO’ office hours",
+    "cross_team_collaboration": 9
+  },
+  "risk_factors": {
+    "potential_bottlenecks": [
+      "High reliance on Sarah for final strategic sign‑off can delay time‑sensitive launches",
+      "Limited bandwidth during peak product release cycles (June‑July)"
+    ],
+    "backup_person_needed": "Chief Operating Officer (CIO – Alex Ramirez) to act as interim decision authority",
+    "ramp_up_time_for_new_projects_weeks": 4,
+    "context_switching_tolerance": 6,
+    "burnout_risk_factors": [
+      "Extended periods of crisis management (e.g., major outage)",
+      "Travel overload during back‑to‑back conferences",
+      "Insufficient delegation of operational details"
+    ]
+  },
+  "_metadata": {
+    "generated_at": "2025-11-17T15:05:19.941738",
+    "name": "Sarah Chen",
+    "role": "CEO",
+    "seniority": "executive",
+    "company": "TechCorp",
+    "model": "gpt-oss:120b",
+    "provider": "ollama"
+  }
+}

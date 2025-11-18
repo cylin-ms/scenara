@@ -1,0 +1,961 @@
+{
+  "scenario_name": "Helios Energy Solutions Q1\u202f2025 Quarterly Business Review",
+  "scenario_number": 3,
+  "meeting_type": "Quarterly Business Review",
+  "quality_level": "medium",
+  "workback_prompt": "Generate a detailed work\u2011back plan for the Helios Energy Solutions Q1\u202f2025 Quarterly Business Review. Include all tasks required to prepare pre\u2011reads (financial deck, market analysis, risk register, ESG report), coordinate department presentations, secure video\u2011link testing, distribute board materials, collect approvals, and capture post\u2011meeting action items. Identify owners, dependencies, critical path milestones, and deadlines that align with the meeting date of May\u202f14\u202f2025 (08:30\u202f\u2013\u202f12:30\u202fET). Account for constraints such as the $150\u202fM capital\u2011allocation cap, regulatory permitting timeline, and the five\u2011day pre\u2011read distribution window.\n\nGenerate a MEDIUM QUALITY workback plan with these characteristics:\n- Most major tasks present but some gaps\n- Reasonable task descriptions\n- Some dependencies defined\n- Most tasks have owners\n- Milestones present but may lack detail\n- Generally realistic timelines\n- Some consideration of risks\n- Key deliverables identified\n\nIMPORTANT: Generate a plan that naturally exhibits MEDIUM quality characteristics.\nDo not explicitly label the plan as \"medium quality\" - let the quality emerge from the content.",
+  "generated_at": "2025-11-17T06:25:44.062459",
+  "analysis": "# Outcomes\n\n## 1. Consolidated Q1\u202f2025 Pre\u2011Read Package  \nA single, board\u2011ready PDF bundle that includes the Financial Deck, Market Analysis, Risk Register, and ESG Report.  \nArtifact references: *(none provided)*  \n\n### Reasoning  \nThe user explicitly asked for \u201cpre\u2011reads (financial deck, market analysis, risk register, ESG report)\u201d to be prepared and distributed. Bundling them into one package is the typical deliverable for a Quarterly Business Review (QBR) and serves as the primary input for the meeting.\n\n### Approach  \n1. **Collect source materials** from Finance, Strategy, Risk, and ESG owners.  \n2. **Standardise formatting** (cover page, table of contents, page numbers, confidentiality footer).  \n3. **Perform a quick content review** for consistency (e.g., capital\u2011allocation cap reflected in the financial deck).  \n4. **Combine PDFs** into the Consolidated Pre\u2011Read Package.  \n5. **Version\u2011control** the package (e.g., \u201cQ1\u20112025\u2011PreRead\u2011v1.0\u201d).  \n\n*Key milestones*:  \n- Draft package ready \u2013\u202fMay\u202f3\u202f2025  \n- Final sign\u2011off \u2013\u202fMay\u202f9\u202f2025 (allows 5\u2011day distribution window)\n\n---\n\n## 2. Department Presentation Slides  \nSlide decks for each presenting department (Finance, Market Strategy, Risk Management, ESG, Operations) that will be shown during the QBR.  \n\n### Reasoning  \nThe request includes \u201ccoordinate department presentations.\u201d Each department must have a slide deck that aligns with the pre\u2011read content and fits within the 4\u2011hour meeting window.\n\n### Approach  \n1. **Define slide\u2011deck outline** (time allocation, slide count) \u2013\u202fApril\u202f24.  \n2. **Assign deck owners** (e.g., Finance Lead, Market Lead).  \n3. **Draft slides** using the pre\u2011read data as source.  \n4. **Peer\u2011review within department** \u2013\u202fMay\u202f2.  \n5. **Integrate into master meeting agenda** \u2013\u202fMay\u202f4.  \n\n*Key milestones*:  \n- Draft decks completed \u2013\u202fMay\u202f2\u202f2025  \n- Final decks locked \u2013\u202fMay\u202f8\u202f2025 (allows one\u2011day buffer for formatting)\n\n---\n\n## 3. Video\u2011Link Test Completion  \nSuccessful end\u2011to\u2011end test of the virtual\u2011meeting platform (video, audio, screen\u2011share) for all remote participants.  \n\n### Reasoning  \n\u201cSecure video\u2011link testing\u201d is a required task to avoid technical disruption on the meeting day.\n\n### Approach  \n1. **Select platform** (e.g., Teams, Zoom) and reserve the link \u2013\u202fApril\u202f20.  \n2. **Create test\u2011call schedule** with at least one representative from each department and the board liaison \u2013\u202fMay\u202f1.  \n3. **Run test call** \u2013\u202fMay\u202f5.  \n4. **Document any issues** and remediate (e.g., firewall, bandwidth) \u2013\u202fMay\u202f6.  \n5. **Confirm final readiness** \u2013\u202fMay\u202f7.  \n\n*Key milestones*:  \n- Test call completed \u2013\u202fMay\u202f5\u202f2025  \n- Issue\u2011resolution sign\u2011off \u2013\u202fMay\u202f7\u202f2025  \n\n---\n\n## 4. Board Materials Distribution  \nElectronic delivery of the Consolidated Pre\u2011Read Package and the meeting agenda to all board members.  \n\n### Reasoning  \nThe user notes a \u201cfive\u2011day pre\u2011read distribution window.\u201d Distribution must occur no later than five business days before the May\u202f14 meeting.\n\n### Approach  \n1. **Compile distribution list** (board emails, external counsel) \u2013\u202fMay\u202f6.  \n2. **Upload pre\u2011read package** to secure board portal.  \n3. **Send notification email** with download instructions \u2013\u202fMay\u202f9 (exactly five business days prior).  \n4. **Track receipt acknowledgments** \u2013\u202fMay\u202f10\u201112.  \n\n*Key milestones*:  \n- Distribution email sent \u2013\u202fMay\u202f9\u202f2025  \n- Receipt confirmation deadline \u2013\u202fMay\u202f12\u202f2025  \n\n---\n\n## 5. Approvals Collection  \nFormal sign\u2011off from CFO, Chief Risk Officer, ESG Lead, and the Board Liaison on the final pre\u2011read package and presentation decks.  \n\n### Reasoning  \n\u201cCollect approvals\u201d is a distinct deliverable before distribution. Approvals must be captured to satisfy governance and the $150\u202fM capital\u2011allocation cap.\n\n### Approach  \n1. **Distribute draft package** to approvers \u2013\u202fMay\u202f3.  \n2. **Schedule brief review calls** (30\u202fmin each) \u2013\u202fMay\u202f4\u20116.  \n3. **Incorporate feedback** \u2013\u202fMay\u202f7\u20118.  \n4. **Obtain electronic sign\u2011off** (e\u2011signature or email) \u2013\u202fMay\u202f9.  \n\n*Key milestones*:  \n- All approvals received \u2013\u202fMay\u202f9\u202f2025  \n\n---\n\n## 6. Post\u2011Meeting Action\u2011Item Register  \nA tracked list of decisions, owners, and due dates that arise from the QBR, to be shared with the executive team within two business days after the meeting.  \n\n### Reasoning  \nCapturing \u201cpost\u2011meeting action items\u201d is essential for accountability and follow\u2011through.\n\n### Approach  \n1. **Assign a note\u2011taker** (Executive Assistant) for the live meeting \u2013\u202fMay\u202f14.  \n2. **Populate Action\u2011Item Register** during the meeting (decision, owner, deadline).  \n3. **Validate register with meeting chair** immediately after the session.  \n4. **Distribute register** to all participants \u2013\u202fMay\u202f16.  \n\n*Key milestones*:  \n- Draft register completed \u2013\u202fMay\u202f15\u202f2025  \n- Final register distributed \u2013\u202fMay\u202f16\u202f2025  \n\n---\n\n## 7. Capital\u2011Allocation Confirmation (\u2264\u202f$150\u202fM)  \nVerification that the total capital requests presented in the QBR do not exceed the $150\u202fM cap and that any excess is flagged for senior\u2011leadership review.  \n\n### Reasoning  \nThe $150\u202fM cap is a hard constraint that must be reflected in the financial deck and approved before board distribution.\n\n### Approach  \n1. **Aggregate capital\u2011request line items** from Finance and Operations \u2013\u202fApril\u202f28.  \n2. **Run cap\u2011check calculation** \u2013\u202fApril\u202f30.  \n3. **If >\u202f$150\u202fM, prepare mitigation options** (re\u2011prioritisation, phased spend) \u2013\u202fMay\u202f1\u20112.  \n4. **Include cap\u2011status slide** in the Financial Deck \u2013\u202fMay\u202f2.  \n5. **Obtain CFO sign\u2011off** \u2013\u202fMay\u202f8.  \n\n*Key milestones*:  \n- Cap\u2011check sign\u2011off \u2013\u202fMay\u202f8\u202f2025  \n\n---\n\n## 8. Regulatory Permitting Timeline Update  \nA concise status update on any pending permits that could affect Q1\u202f2025 initiatives, to be embedded in the Risk Register and highlighted in the presentation.  \n\n### Reasoning  \nThe user mentions \u201cregulatory permitting timeline\u201d as a constraint that must be reflected in risk assessments.\n\n### Approach  \n1. **Gather latest permit status** from Legal/Regulatory Affairs \u2013\u202fApril\u202f25.  \n2. **Map permitting milestones** against Q1 deliverables.  \n3. **Identify at\u2011risk items** and add to Risk Register \u2013\u202fMay\u202f1.  \n4. **Create a one\u2011slide summary** for the presentation \u2013\u202fMay\u202f3.  \n\n*Key milestones*:  \n- Permitting update incorporated \u2013\u202fMay\u202f3\u202f2025  \n\n---\n\n# Breakdown\n\n### 1. Consolidated Q1\u202f2025 Pre\u2011Read Package\n1.1. Request source files from owners (Finance, Market, Risk, ESG) \u2013\u202fOwner: Executive Assistant \u2013\u202fDue\u202fApr\u202f24  \n1.2. Review content for consistency with $150\u202fM cap & permitting status \u2013\u202fOwner: CFO Office \u2013\u202fDepends on 1.1 \u2013\u202fDue\u202fApr\u202f28  \n1.3. Apply standard template (cover, TOC, footers) \u2013\u202fOwner: Corporate Communications \u2013\u202fDepends on 1.2 \u2013\u202fDue\u202fMay\u202f1  \n1.4. Combine PDFs into single bundle, assign version \u2013\u202fOwner: EA \u2013\u202fDepends on 1.3 \u2013\u202fDue\u202fMay\u202f3  \n1.5. Internal QA (spell\u2011check, page\u2011order) \u2013\u202fOwner: QA Lead \u2013\u202fDepends on 1.4 \u2013\u202fDue\u202fMay\u202f4  \n\n### 2. Department Presentation Slides\n2.1. Define slide\u2011deck outline & timing \u2013\u202fOwner: QBR Coordinator \u2013\u202fDue\u202fApr\u202f24  \n2.2. Distribute outline to department leads \u2013\u202fDue\u202fApr\u202f25  \n2.3. Draft slides (Finance, Market, Risk, ESG, Ops) \u2013\u202fOwner: Respective Dept Leads \u2013\u202fDepends on 2.1 \u2013\u202fDue\u202fMay\u202f2  \n2.4. Internal peer\u2011review within each department \u2013\u202fOwner: Dept Leads \u2013\u202fDepends on 2.3 \u2013\u202fDue\u202fMay\u202f2 (afternoon)  \n2.5. Consolidate decks into master agenda deck \u2013\u202fOwner: QBR Coordinator \u2013\u202fDepends on 2.4 \u2013\u202fDue\u202fMay\u202f4  \n\n### 3. Video\u2011Link Test Completion\n3.1. Reserve virtual\u2011meeting link & configure settings \u2013\u202fOwner: IT Services \u2013\u202fDue\u202fApr\u202f20  \n3.2. Identify test participants (one per department + board liaison) \u2013\u202fOwner: QBR Coordinator \u2013\u202fDue\u202fMay\u202f1  \n3.3. Conduct test call \u2013\u202fOwner: IT Services \u2013\u202fDepends on 3.2 \u2013\u202fDue\u202fMay\u202f5  \n3.4. Document issues & remediate (network, access) \u2013\u202fOwner: IT Services \u2013\u202fDepends on 3.3 \u2013\u202fDue\u202fMay\u202f6  \n3.5. Final readiness sign\u2011off \u2013\u202fOwner: IT Services \u2013\u202fDepends on 3.4 \u2013\u202fDue\u202fMay\u202f7  \n\n### 4. Board Materials Distribution\n4.1. Compile secure board\u2011portal access list \u2013\u202fOwner: Legal \u2013\u202fDue\u202fMay\u202f6  \n4.2. Upload final pre\u2011read package & agenda \u2013\u202fOwner: EA \u2013\u202fDepends on 1.5 & 2.5 \u2013\u202fDue\u202fMay\u202f8  \n4.3. Send distribution email with instructions \u2013\u202fOwner: EA \u2013\u202fDepends on 4.2 \u2013\u202fDue\u202fMay\u202f9  \n4.4. Track acknowledgments (read\u2011receipts) \u2013\u202fOwner: EA \u2013\u202fDepends on 4.3 \u2013\u202fDue\u202fMay\u202f12  \n\n### 5. Approvals Collection\n5.1. Distribute draft package to approvers \u2013\u202fOwner: CFO Office \u2013\u202fDue\u202fMay\u202f3  \n5.2. Schedule 30\u2011min review calls \u2013\u202fOwner: Executive Assistant \u2013\u202fDue\u202fMay\u202f4  \n5.3. Collect feedback & incorporate \u2013\u202fOwner: Dept Leads \u2013\u202fDepends on 5.2 \u2013\u202fDue\u202fMay\u202f8  \n5.4. Obtain electronic sign\u2011off (CFO, CRO, ESG Lead, Board Liaison) \u2013\u202fOwner: CFO Office \u2013\u202fDepends on 5.3 \u2013\u202fDue\u202fMay\u202f9  \n\n### 6. Post\u2011Meeting Action\u2011Item Register\n6.1. Assign live note\u2011taker \u2013\u202fOwner: QBR Coordinator \u2013\u202fDue\u202fMay\u202f13  \n6.2. Populate register during meeting \u2013\u202fOwner: Note\u2011taker \u2013\u202fDepends on meeting start \u2013\u202fMay\u202f14 (ongoing)  \n6.3. Validate register with meeting chair \u2013\u202fOwner: QBR Coordinator \u2013\u202fMay\u202f15  \n6.4. Distribute final register \u2013\u202fOwner: EA \u2013\u202fDue\u202fMay\u202f16  \n\n### 7. Capital\u2011Allocation Confirmation\n7.1. Gather all capital\u2011request line items \u2013\u202fOwner: Finance Manager \u2013\u202fDue\u202fApr\u202f28  \n7.2. Run cap\u2011check calculation (\u2264\u202f$150\u202fM) \u2013\u202fOwner: Finance Analyst \u2013\u202fDepends on 7.1 \u2013\u202fDue\u202fApr\u202f30  \n7.3. If over cap, develop mitigation options \u2013\u202fOwner: CFO Office \u2013\u202fDepends on 7.2 \u2013\u202fDue\u202fMay\u202f2  \n7.4. Insert cap\u2011status slide into Financial Deck \u2013\u202fOwner: Finance Lead \u2013\u202fDepends on 7.3 \u2013\u202fDue\u202fMay\u202f2  \n7.5. CFO sign\u2011off on cap compliance \u2013\u202fOwner: CFO \u2013\u202fDepends on 7.4 \u2013\u202fDue\u202fMay\u202f8  \n\n### 8. Regulatory Permitting Timeline Update\n8.1. Request latest permit status from Legal/Regulatory \u2013\u202fOwner: Regulatory Lead \u2013\u202fDue\u202fApr\u202f25  \n8.2. Map permitting milestones to Q1 initiatives \u2013\u202fOwner: Risk Manager \u2013\u202fDepends on 8.1 \u2013\u202fDue\u202fApr\u202f28  \n8.3. Update Risk Register with permitting risks \u2013\u202fOwner: Risk Manager \u2013\u202fDepends on 8.2 \u2013\u202fDue\u202fMay\u202f1  \n8.4. Create permitting\u2011status slide \u2013\u202fOwner: Risk Manager \u2013\u202fDepends on 8.3 \u2013\u202fDue\u202fMay\u202f3  \n\n---\n\n### Critical Path Summary\n| Milestone | Latest Finish | Dependent Outcomes |\n|-----------|---------------|--------------------|\n| Capital\u2011Allocation Confirmation (7.5) | May\u202f8 | 1.4, 2.5, 5.4 |\n| Approvals Collection (5.4) | May\u202f9 | 1.5, 2.5 |\n| Consolidated Pre\u2011Read Package (1.5) | May\u202f4 | \u2013 |\n| Department Decks Locked (2.5) | May\u202f8 | \u2013 |\n| Video\u2011Link Test Sign\u2011off (3.5) | May\u202f7 | \u2013 |\n| Board Distribution (4.3) | May\u202f9 | 1.5, 2.5, 5.4 |\n| Meeting Day (May\u202f14) | \u2013 | All prior tasks |\n\nIf any critical\u2011path task slips (e.g., capital\u2011allocation sign\u2011off), downstream activities (approvals, distribution) will be delayed, threatening the five\u2011day distribution window. Early buffer (e.g., completing capital\u2011check by Apr\u202f30) mitigates this risk.\n\n### High\u2011Level Risks & Mitigations\n| Risk | Impact | Likelihood | Mitigation |\n|------|--------|------------|------------|\n| Capital requests exceed $150\u202fM | Meeting postponement or agenda revision | Medium | Run cap\u2011check early (Apr\u202f30) and prepare mitigation options (re\u2011prioritisation) |\n| Permitting delays affect risk narrative | Inaccurate risk register | Low | Obtain latest status by Apr\u202f25; flag any pending items for senior review |\n| Video\u2011link technical failure on meeting day | Disruption of remote participation | Low | Conduct test by May\u202f5 and have backup dial\u2011in ready |\n| Late approvals from senior leaders | Missed distribution deadline | Medium | Schedule review calls with buffer (May\u202f4\u20116) and set firm sign\u2011off deadline (May\u202f9) |\n| Board members do not acknowledge receipt | Potential compliance issue | Low | Track acknowledgments and follow up individually by May\u202f12 |\n\nBy following the work\u2011back schedule above, Helios Energy Solutions can confidently meet the May\u202f14\u202f2025 Q1 Business Review deadline while respecting the capital\u2011allocation cap, permitting constraints, and the required five\u2011day pre\u2011read distribution window.",
+  "plan": {
+    "id": "document-001",
+    "name": "Q1 2025 Helios Energy Solutions QBR Workback Plan",
+    "details": "Workback schedule for the Q1 2025 Quarterly Business Review covering pre\u2011read package, department decks, video\u2011link testing, board distribution, approvals, post\u2011meeting action items, capital\u2011allocation confirmation, and regulatory permitting timeline update.",
+    "draft": true,
+    "participants": [
+      {
+        "name": "Executive Assistant",
+        "email": "ea@example.com",
+        "draft": true
+      },
+      {
+        "name": "CFO Office",
+        "email": "cfooffice@example.com",
+        "draft": true
+      },
+      {
+        "name": "Corporate Communications",
+        "email": "comms@example.com",
+        "draft": true
+      },
+      {
+        "name": "QA Lead",
+        "email": "qa@example.com",
+        "draft": true
+      },
+      {
+        "name": "QBR Coordinator",
+        "email": "qbrcoord@example.com",
+        "draft": true
+      },
+      {
+        "name": "IT Services",
+        "email": "it@example.com",
+        "draft": true
+      },
+      {
+        "name": "Legal",
+        "email": "legal@example.com",
+        "draft": true
+      },
+      {
+        "name": "Finance Manager",
+        "email": "finmgr@example.com",
+        "draft": true
+      },
+      {
+        "name": "Finance Analyst",
+        "email": "finanalyst@example.com",
+        "draft": true
+      },
+      {
+        "name": "Finance Lead",
+        "email": "finlead@example.com",
+        "draft": true
+      },
+      {
+        "name": "CFO",
+        "email": "cfo@example.com",
+        "draft": true
+      },
+      {
+        "name": "Chief Risk Officer",
+        "email": "cro@example.com",
+        "draft": true
+      },
+      {
+        "name": "ESG Lead",
+        "email": "esglead@example.com",
+        "draft": true
+      },
+      {
+        "name": "Board Liaison",
+        "email": "boardliaison@example.com",
+        "draft": true
+      },
+      {
+        "name": "Regulatory Lead",
+        "email": "reglead@example.com",
+        "draft": true
+      },
+      {
+        "name": "Risk Manager",
+        "email": "riskmgr@example.com",
+        "draft": true
+      }
+    ],
+    "references": [],
+    "deliverables": [
+      {
+        "name": "Consolidated Q1 2025 Pre\u2011Read Package",
+        "type": "pdf",
+        "id": "deliverable-001",
+        "draft": true,
+        "history": []
+      },
+      {
+        "name": "Department Presentation Slides",
+        "type": "powerpoint",
+        "id": "deliverable-002",
+        "draft": true,
+        "history": []
+      },
+      {
+        "name": "Video\u2011Link Test Completion Report",
+        "type": "document",
+        "id": "deliverable-003",
+        "draft": true,
+        "history": []
+      },
+      {
+        "name": "Board Materials Distribution Package",
+        "type": "email",
+        "id": "deliverable-004",
+        "draft": true,
+        "history": []
+      },
+      {
+        "name": "Approvals Sign\u2011off Document",
+        "type": "document",
+        "id": "deliverable-005",
+        "draft": true,
+        "history": []
+      },
+      {
+        "name": "Post\u2011Meeting Action\u2011Item Register",
+        "type": "excel",
+        "id": "deliverable-006",
+        "draft": true,
+        "history": []
+      },
+      {
+        "name": "Capital\u2011Allocation Confirmation",
+        "type": "document",
+        "id": "deliverable-007",
+        "draft": true,
+        "history": []
+      },
+      {
+        "name": "Regulatory Permitting Timeline Update",
+        "type": "slide",
+        "id": "deliverable-008",
+        "draft": true,
+        "history": []
+      }
+    ],
+    "tasks": [
+      {
+        "id": "task-001",
+        "name": "Consolidated Q1 2025 Pre\u2011Read Package",
+        "draft": true,
+        "details": "Create a board\u2011ready PDF bundle containing Financial Deck, Market Analysis, Risk Register, and ESG Report.",
+        "dependencies": [
+          "task-001-4",
+          "task-001-5"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-04",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[pdf]/deliverable-001"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-001-1",
+        "name": "Request source files from owners (Finance, Market, Risk, ESG)",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-04-24",
+        "assignees": [
+          "ea@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-001-2",
+        "name": "Review content for consistency with $150\u202fM cap & permitting status",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-001-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-04-28",
+        "assignees": [
+          "cfooffice@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-001-3",
+        "name": "Apply standard template (cover, TOC, footers)",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-001-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-01",
+        "assignees": [
+          "comms@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-001-4",
+        "name": "Combine PDFs into consolidated package",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-001-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-03",
+        "assignees": [
+          "ea@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-001-5",
+        "name": "Internal QA of the pre\u2011read package",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-001-4"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-04",
+        "assignees": [
+          "qa@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002",
+        "name": "Department Presentation Slides",
+        "draft": true,
+        "details": "Prepare and lock department decks for the QBR.",
+        "dependencies": [
+          "task-002-4",
+          "task-002-5"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-08",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[powerpoint]/deliverable-002"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002-1",
+        "name": "Define deck scope and assign owners",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-04-24",
+        "assignees": [
+          "qbrcoord@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002-2",
+        "name": "Gather content from each department lead",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-002-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-04-28",
+        "assignees": [
+          "finlead@example.com",
+          "esglead@example.com",
+          "riskmgr@example.com",
+          "boardliaison@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002-3",
+        "name": "Create draft slides for each department",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-002-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-03",
+        "assignees": [
+          "finlead@example.com",
+          "esglead@example.com",
+          "riskmgr@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002-4",
+        "name": "Review and consolidate department slides",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-002-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-03",
+        "assignees": [
+          "qbrcoord@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002-5",
+        "name": "Department decks locked",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-002-4"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-08",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003",
+        "name": "Video\u2011Link Test Completion",
+        "draft": true,
+        "details": "Test and certify the video\u2011link platform for remote participants.",
+        "dependencies": [
+          "task-003-4",
+          "task-003-5"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-05",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[document]/deliverable-003"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003-1",
+        "name": "Reserve virtual meeting platform and generate dial\u2011in details",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-04-24",
+        "assignees": [
+          "it@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003-2",
+        "name": "Configure video\u2011link settings and test connectivity",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-003-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-04-28",
+        "assignees": [
+          "it@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003-3",
+        "name": "Document test results and capture screenshots",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-003-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-01",
+        "assignees": [
+          "it@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003-4",
+        "name": "Validate backup dial\u2011in and contingency plan",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-003-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-05",
+        "assignees": [
+          "it@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003-5",
+        "name": "Video\u2011Link Test sign\u2011off",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-003-4"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-07",
+        "assignees": [
+          "it@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-004",
+        "name": "Board Materials Distribution",
+        "draft": true,
+        "details": "Distribute the finalized pre\u2011read package and decks to board members.",
+        "dependencies": [
+          "task-004-3",
+          "task-004-4"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-09",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[email]/deliverable-004"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-004-1",
+        "name": "Prepare distribution list and verify board member contacts",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-04-24",
+        "assignees": [
+          "legal@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-004-2",
+        "name": "Upload finalized pre\u2011read package and decks to board portal",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-03",
+        "assignees": [
+          "ea@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-004-3",
+        "name": "Send distribution email to board members",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-004-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-09",
+        "assignees": [
+          "ea@example.com"
+        ],
+        "deliverables": [
+          "@deliverable[email]/deliverable-004"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-004-4",
+        "name": "Track acknowledgments and follow up on missing receipts",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-004-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-12",
+        "assignees": [
+          "ea@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-005",
+        "name": "Approvals Collection",
+        "draft": true,
+        "details": "Obtain sign\u2011off from senior leaders on the final pre\u2011read package and decks.",
+        "dependencies": [
+          "task-005-3",
+          "task-005-4"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-09",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[document]/deliverable-005"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-005-1",
+        "name": "Distribute draft package for review",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-04",
+        "assignees": [
+          "cfooffice@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-005-2",
+        "name": "Collect feedback from CFO, CRO, ESG Lead, Board Liaison",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-005-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-06",
+        "assignees": [
+          "cfo@example.com",
+          "cro@example.com",
+          "esglead@example.com",
+          "boardliaison@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-005-3",
+        "name": "Incorporate feedback and finalize documents",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-005-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-08",
+        "assignees": [
+          "ea@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-005-4",
+        "name": "Obtain final sign\u2011off from all senior leaders",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-005-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-09",
+        "assignees": [
+          "cfo@example.com",
+          "cro@example.com",
+          "esglead@example.com",
+          "boardliaison@example.com"
+        ],
+        "deliverables": [
+          "@deliverable[document]/deliverable-005"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-006",
+        "name": "Post\u2011Meeting Action\u2011Item Register",
+        "draft": true,
+        "details": "Compile and distribute the register of action items identified during the QBR.",
+        "dependencies": [
+          "task-006-3",
+          "task-006-4"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-14",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[excel]/deliverable-006"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-006-1",
+        "name": "Assign note\u2011taker for meeting",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-14",
+        "assignees": [
+          "ea@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-006-2",
+        "name": "Capture decisions and action items during meeting",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-006-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-14",
+        "assignees": [
+          "ea@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-006-3",
+        "name": "Validate register with department leads",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-006-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-14",
+        "assignees": [
+          "finlead@example.com",
+          "esglead@example.com",
+          "riskmgr@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-006-4",
+        "name": "Distribute final Action\u2011Item Register",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-006-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-14",
+        "assignees": [
+          "ea@example.com"
+        ],
+        "deliverables": [
+          "@deliverable[excel]/deliverable-006"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-007",
+        "name": "Capital\u2011Allocation Confirmation",
+        "draft": true,
+        "details": "Confirm that total capital requests do not exceed the $150\u202fM cap and embed the confirmation in the QBR materials.",
+        "dependencies": [
+          "task-007-4",
+          "task-007-5"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-08",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[document]/deliverable-007"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-007-1",
+        "name": "Gather capital request data from all departments",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-04-24",
+        "assignees": [
+          "finmgr@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-007-2",
+        "name": "Analyze total capital requests against $150\u202fM cap",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-007-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-04-28",
+        "assignees": [
+          "finanalyst@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-007-3",
+        "name": "Prepare mitigation options for excess requests",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-007-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-01",
+        "assignees": [
+          "finlead@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-007-4",
+        "name": "Update decks and agenda with capital\u2011allocation confirmation",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-007-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-08",
+        "assignees": [
+          "finlead@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-007-5",
+        "name": "Final sign\u2011off on capital\u2011allocation confirmation",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-007-4"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-08",
+        "assignees": [
+          "cfo@example.com"
+        ],
+        "deliverables": [
+          "@deliverable[document]/deliverable-007"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-008",
+        "name": "Regulatory Permitting Timeline Update",
+        "draft": true,
+        "details": "Update risk register and create a slide showing the status of regulatory permits for Q1 initiatives.",
+        "dependencies": [
+          "task-008-3",
+          "task-008-4"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-03",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[document]/deliverable-008"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-008-1",
+        "name": "Identify all permits required for Q1 projects",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-04-24",
+        "assignees": [
+          "legal@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-008-2",
+        "name": "Collect current status and expected dates from regulatory affairs",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-008-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-04-28",
+        "assignees": [
+          "legal@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-008-3",
+        "name": "Update risk register with permitting timelines",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-008-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-01",
+        "assignees": [
+          "riskmgr@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-008-4",
+        "name": "Create permitting status slide for QBR deck",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-008-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-03",
+        "assignees": [
+          "riskmgr@example.com"
+        ],
+        "deliverables": [
+          "@deliverable[document]/deliverable-008"
+        ],
+        "references": [],
+        "history": []
+      }
+    ]
+  }
+}

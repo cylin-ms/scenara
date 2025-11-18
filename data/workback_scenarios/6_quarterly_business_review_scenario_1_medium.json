@@ -1,0 +1,571 @@
+{
+  "scenario_name": "Apex Renewable Solutions \u2013 Q2 2025 Quarterly Business Review",
+  "scenario_number": 1,
+  "meeting_type": "Quarterly Business Review",
+  "quality_level": "medium",
+  "workback_prompt": "Create a detailed work\u2011back plan for the Apex Renewable Solutions Q2\u202f2025 Quarterly Business Review. The plan should list all required pre\u2011reads, data collection, slide deck creation, review cycles, approvals, logistics (venue, hybrid tech, catering), stakeholder briefings, and decision\u2011making workshops. Include milestones, owners, start and finish dates, dependencies, and any risk mitigation steps needed to meet the constraints and success criteria outlined in the scenario.\n\nGenerate a MEDIUM QUALITY workback plan with these characteristics:\n- Most major tasks present but some gaps\n- Reasonable task descriptions\n- Some dependencies defined\n- Most tasks have owners\n- Milestones present but may lack detail\n- Generally realistic timelines\n- Some consideration of risks\n- Key deliverables identified\n\nIMPORTANT: Generate a plan that naturally exhibits MEDIUM quality characteristics.\nDo not explicitly label the plan as \"medium quality\" - let the quality emerge from the content.",
+  "generated_at": "2025-11-17T06:08:08.109542",
+  "analysis": "# Outcomes\n\n## 1. Pre\u2011reads Pack Completed  \nA complete set of pre\u2011read documents (executive summary, market outlook, portfolio performance, risk register) is ready for distribution to all participants.  \nArtifact references: None  \n\n### Reasoning  \nThe scenario lists \u201call required pre\u2011reads\u201d as a core deliverable. Delivering them early gives participants time to review before the QBR and supports informed discussion in later workshops.  \n\n### Approach  \n1. Identify required pre\u2011read topics (executive summary, market outlook, portfolio performance, risk register, FY\u201124\u201125 financials).  \n2. Assign owners for each topic (e.g., Strategy Lead, Market Analyst, Finance Manager, Risk Officer).  \n3. Set a draft\u2011by date that allows at least one review cycle (\u2248\u202f10\u202fbusiness days before distribution).  \n4. Consolidate drafts into a single PDF pack, apply branding, and upload to the shared drive.  \n5. Send a distribution email with a clear read\u2011by deadline (typically 3\u202fbusiness days before the QBR).  \n\n**Risk mitigation** \u2013 If a draft is delayed, the owner escalates to the QBR Lead who can re\u2011prioritise other work or allocate a backup writer.\n\n---\n\n## 2. Data Collection Completed  \nAll quantitative data (production metrics, revenue, OPEX, CAPEX, ESG scores) needed for the slide deck is gathered, validated, and stored in a central repository.  \nArtifact references: None  \n\n### Reasoning  \nAccurate data underpins the slide deck and decision\u2011making workshops. The plan must therefore include a dedicated data\u2011collection phase with validation steps.  \n\n### Approach  \n1. Define data sets required (e.g., MW generated, capacity factor, revenue by region, cost per MWh, ESG KPI trends).  \n2. Assign data owners (Operations Manager, Finance Controller, ESG Lead).  \n3. Create a data\u2011request checklist and share with owners (start\u202f\u2011\u202fMay\u202f1).  \n4. Collect raw extracts, run validation scripts, and resolve discrepancies (target finish\u202f\u2011\u202fMay\u202f10).  \n5. Store cleaned data in the \u201cQBR\u20112025\u2011Q2\u201d folder with version control.  \n\n**Risk mitigation** \u2013 If validation reveals gaps, trigger a \u201cdata\u2011gap\u2011triage\u201d meeting (owner: QBR Lead) to decide on estimation vs. postponement.\n\n---\n\n## 3. Slide Deck Draft Ready  \nA first\u2011draft slide deck containing agenda, key insights, performance charts, and recommended actions is produced.  \nArtifact references: None  \n\n### Reasoning  \nThe slide deck is the central artefact for the QBR. The plan must allocate time for creation, internal review, and iteration.  \n\n### Approach  \n1. Outline deck structure (agenda, executive summary, market outlook, portfolio performance, financials, risk & mitigation, strategic options, next steps).  \n2. Assign slide owners (e.g., Strategy Lead for market outlook, Finance Manager for financials).  \n3. Build slides using the validated data (start\u202f\u2011\u202fMay\u202f11, finish\u202f\u2011\u202fMay\u202f20).  \n4. Apply corporate template and ensure accessibility standards.  \n5. Upload draft to the \u201cReview\u201d sub\u2011folder for the first review cycle.  \n\n**Risk mitigation** \u2013 If a slide owner cannot meet the deadline, the QBR Lead re\u2011allocates content to a backup owner and updates the schedule.\n\n---\n\n## 4. Review & Approval Cycle Completed  \nTwo rounds of internal review and final sign\u2011off from senior leadership are achieved.  \nArtifact references: None  \n\n### Reasoning  \nThe scenario specifies \u201creview cycles, approvals.\u201d A structured two\u2011round review (peer + leadership) ensures quality and alignment.  \n\n### Approach  \n1. **Round\u202f1 (Peer Review)** \u2013 Distribute draft to core team (strategy, finance, ops, ESG) \u2013 review window May\u202f21\u2011May\u202f24. Collect comments in a shared tracker.  \n2. **Incorporate Feedback** \u2013 Deck owner consolidates changes (May\u202f25\u2011May\u202f27).  \n3. **Round\u202f2 (Leadership Review)** \u2013 Send revised deck to VP\u2011Level sponsors (May\u202f28\u2011May\u202f30). Capture sign\u2011off in the tracker.  \n4. **Final Sign\u2011off** \u2013 QBR Lead obtains written approval from the CEO or designated executive (deadline June\u202f2).  \n\n**Risk mitigation** \u2013 If leadership feedback is extensive, schedule a \u201cfast\u2011track\u201d alignment call (owner: QBR Lead) to resolve issues within the same day.\n\n---\n\n## 5. Logistics Arranged  \nVenue, hybrid technology, catering, and on\u2011site support are booked and confirmed.  \nArtifact references: None  \n\n### Reasoning  \nSuccessful execution of a hybrid QBR depends on venue and tech logistics. The plan must capture these tasks and their dependencies on the final agenda and attendance list.  \n\n### Approach  \n1. Confirm attendee list and hybrid participation ratio (owner: Event Coordinator, due\u202f\u2011\u202fJune\u202f1).  \n2. Book a conference room with AV capacity (owner: Facilities Manager, due\u202f\u2011\u202fJune\u202f3).  \n3. Engage a hybrid\u2011meeting vendor (video\u2011capture, streaming, remote mic) and run a tech\u2011check (owner: IT Lead, due\u202f\u2011\u202fJune\u202f7).  \n4. Order catering (breakfast, lunch, coffee breaks) with dietary notes (owner: Procurement, due\u202f\u2011\u202fJune\u202f5).  \n5. Prepare on\u2011site signage, name tags, and a backup laptop kit (owner: Office Services, due\u202f\u2011\u202fJune\u202f9).  \n\n**Risk mitigation** \u2013 Maintain a list of alternate venues and vendors; if the primary venue cancels, switch to the backup within 24\u202fhours.\n\n---\n\n## 6. Stakeholder Briefings Delivered  \nOne\u2011on\u2011one or small\u2011group briefings with key stakeholders (board members, major investors, senior ops) are completed before the QBR.  \nArtifact references: None  \n\n### Reasoning  \nThe scenario calls for \u201cstakeholder briefings.\u201d These sessions align expectations and surface concerns that can be addressed in the QBR.  \n\n### Approach  \n1. Identify high\u2011impact stakeholders (Board Chair, Lead Investor, Regional Ops Heads).  \n2. Schedule 30\u2011minute briefing slots (owner: Executive Assistant, due\u202f\u2011\u202fJune\u202f4).  \n3. Prepare a concise briefing deck (tailored version of the QBR deck).  \n4. Conduct briefings (June\u202f5\u2011June\u202f9) and capture any additional data requests or discussion points.  \n\n**Risk mitigation** \u2013 If a stakeholder is unavailable, offer a recorded briefing plus a follow\u2011up Q&A window.\n\n---\n\n## 7. Decision\u2011Making Workshop Executed  \nA facilitated workshop during the QBR to decide on strategic actions (e.g., new project approvals, capital allocation) is run successfully.  \nArtifact references: None  \n\n### Reasoning  \nThe QBR includes \u201cdecision\u2011making workshops.\u201d This outcome ensures that the meeting produces actionable decisions rather than just status updates.  \n\n### Approach  \n1. Define workshop objectives and decision criteria (owner: Strategy Lead, due\u202f\u2011\u202fJune\u202f10).  \n2. Design facilitation materials (decision matrix, voting cards, breakout group instructions).  \n3. Assign a neutral facilitator (owner: External Consultant, confirmed by June\u202f12).  \n4. Conduct the workshop as part of the QBR agenda (June\u202f20).  \n5. Record decisions in a formal decision log and circulate for sign\u2011off (owner: QBR Lead, by June\u202f22).  \n\n**Risk mitigation** \u2013 Prepare a \u201ccontingency agenda\u201d in case the workshop runs over time; have a backup facilitator briefed.\n\n---\n\n## 8. Final QBR Presentation Delivered  \nThe completed QBR is presented to all participants, with all materials archived and post\u2011meeting actions assigned.  \nArtifact references: None  \n\n### Reasoning  \nThe ultimate deliverable is the live QBR session and the associated post\u2011meeting follow\u2011up.  \n\n### Approach  \n1. Re\u2011run a final technical rehearsal (owner: IT Lead, June\u202f18).  \n2. Deliver the QBR on the scheduled date (June\u202f20).  \n3. Capture meeting minutes and action items in real time (owner: Meeting Scribe).  \n4. Within 48\u202fhours, distribute the final slide deck, minutes, and action\u2011item tracker (owner: QBR Lead, by June\u202f22).  \n\n**Risk mitigation** \u2013 Have a backup presenter and a secondary streaming link ready; assign a \u201con\u2011call\u201d IT resource for live issues.\n\n---\n\n# Breakdown\n\n```\n1. Pre\u2011reads Pack Completed\n   1.1 Define pre\u2011read topics ........................................ Owner: QBR Lead   Start: 2025\u201104\u201128  Finish: 2025\u201104\u201130\n   1.2 Assign owners for each topic .................................. Owner: QBR Lead   Start: 2025\u201104\u201128  Finish: 2025\u201104\u201130\n   1.3 Draft individual sections ...................................... Owner: Topic Owners   Start: 2025\u201105\u201101  Finish: 2025\u201105\u201107\n   1.4 Consolidate into PDF pack ...................................... Owner: QBR Lead   Start: 2025\u201105\u201108  Finish: 2025\u201105\u201109\n   1.5 Distribute to participants ...................................... Owner: QBR Lead   Start: 2025\u201105\u201110  Finish: 2025\u201105\u201110\n   Depends on: 2. Data Collection Completed (for data\u2011heavy sections)\n\n2. Data Collection Completed\n   2.1 Define required data sets ...................................... Owner: QBR Lead   Start: 2025\u201104\u201128  Finish: 2025\u201104\u201130\n   2.2 Issue data\u2011request checklist ................................... Owner: QBR Lead   Start: 2025\u201104\u201128  Finish: 2025\u201104\u201130\n   2.3 Collect raw extracts ............................................ Owner: Data Owners   Start: 2025\u201105\u201101  Finish: 2025\u201105\u201105\n   2.4 Validate and clean data ........................................ Owner: Data Owners   Start: 2025\u201105\u201106  Finish: 2025\u201105\u201110\n   2.5 Store cleaned data in repository ................................ Owner: QBR Lead   Start: 2025\u201105\u201110  Finish: 2025\u201105\u201110\n\n3. Slide Deck Draft Ready\n   3.1 Outline deck structure ......................................... Owner: QBR Lead   Start: 2025\u201105\u201101  Finish: 2025\u201105\u201103\n   3.2 Assign slide owners ............................................ Owner: QBR Lead   Start: 2025\u201105\u201101  Finish: 2025\u201105\u201103\n   3.3 Build slides using validated data .............................. Owner: Slide Owners   Start: 2025\u201105\u201111  Finish: 2025\u201105\u201120\n   3.4 Apply template & accessibility checks .......................... Owner: Design Lead   Start: 2025\u201105\u201121  Finish: 2025\u201105\u201122\n   3.5 Upload draft for review ........................................ Owner: QBR Lead   Start: 2025\u201105\u201122  Finish: 2025\u201105\u201122\n   Depends on: 2. Data Collection Completed\n\n4. Review & Approval Cycle Completed\n   4.1 Distribute draft for Peer Review ............................... Owner: QBR Lead   Start: 2025\u201105\u201121  Finish: 2025\u201105\u201121\n   4.2 Collect peer comments .......................................... Owner: QBR Lead   Start: 2025\u201105\u201121  Finish: 2025\u201105\u201124\n   4.3 Incorporate Peer Feedback ...................................... Owner: Slide Owners   Start: 2025\u201105\u201125  Finish: 2025\u201105\u201127\n   4.4 Distribute revised deck to Leadership .......................... Owner: QBR Lead   Start: 2025\u201105\u201128  Finish: 2025\u201105\u201128\n   4.5 Capture Leadership sign\u2011off ..................................... Owner: QBR Lead   Start: 2025\u201105\u201128  Finish: 2025\u201106\u201102\n\n5. Logistics Arranged\n   5.1 Confirm attendee list & hybrid ratio ........................... Owner: Event Coordinator   Start: 2025\u201106\u201101  Finish: 2025\u201106\u201101\n   5.2 Book venue & AV room .......................................... Owner: Facilities Manager   Start: 2025\u201106\u201103  Finish: 2025\u201106\u201103\n   5.3 Contract hybrid\u2011tech vendor & schedule test run ............... Owner: IT Lead   Start: 2025\u201106\u201104  Finish: 2025\u201106\u201107\n   5.4 Order catering (dietary notes) ................................ Owner: Procurement   Start: 2025\u201106\u201105  Finish: 2025\u201106\u201105\n   5.5 Prepare on\u2011site support kit (signage, laptops) ................. Owner: Office Services   Start: 2025\u201106\u201108  Finish: 2025\u201106\u201109\n\n6. Stakeholder Briefings Delivered\n   6.1 Identify key stakeholders ...................................... Owner: QBR Lead   Start: 2025\u201105\u201128  Finish: 2025\u201105\u201128\n   6.2 Schedule briefing slots ........................................ Owner: Executive Assistant   Start: 2025\u201106\u201101  Finish: 2025\u201106\u201104\n   6.3 Prepare briefing deck (tailored) .............................. Owner: Slide Owners   Start: 2025\u201106\u201102  Finish: 2025\u201106\u201104\n   6.4 Conduct briefings .............................................. Owner: QBR Lead & Topic Owners   Start: 2025\u201106\u201105  Finish: 2025\u201106\u201109\n   6.5 Capture follow\u2011up items ......................................... Owner: QBR Lead   Start: 2025\u201106\u201109  Finish: 2025\u201106\u201109\n   Depends on: 4. Review & Approval Cycle Completed (to ensure final content)\n\n7. Decision\u2011Making Workshop Executed\n   7.1 Define workshop objectives & decision criteria ................. Owner: Strategy Lead   Start: 2025\u201106\u201110  Finish: 2025\u201106\u201110\n   7.2 Design facilitation materials (matrix, voting cards) .......... Owner: Strategy Lead   Start: 2025\u201106\u201111  Finish: 2025\u201106\u201112\n   7.3 Confirm external facilitator ................................... Owner: QBR Lead   Start: 2025\u201106\u201112  Finish: 2025\u201106\u201112\n   7.4 Run workshop (part of QBR agenda) ............................. Owner: Facilitator   Start: 2025\u201106\u201120  Finish: 2025\u201106\u201120\n   7.5 Record decisions in decision log ................................ Owner: QBR Lead   Start: 2025\u201106\u201121  Finish: 2025\u201106\u201122\n   Depends on: 4. Review & Approval Cycle Completed\n\n8. Final QBR Presentation Delivered\n   8.1 Technical rehearsal (AV, streaming) ............................ Owner: IT Lead   Start: 2025\u201106\u201118  Finish: 2025\u201106\u201118\n   8.2 Deliver live QBR (presentation + workshop) ..................... Owner: Presenters   Start: 2025\u201106\u201120  Finish: 2025\u201106\u201120\n   8.3 Capture minutes & action items ................................ Owner: Meeting Scribe   Start: 2025\u201106\u201120  Finish: 2025\u201106\u201120\n   8.4 Distribute final deck, minutes, action\u2011item tracker .............. Owner: QBR Lead   Start: 2025\u201106\u201122  Finish: 2025\u201106\u201122\n   8.5 Archive all QBR artifacts ...................................... Owner: QBR Lead   Start: 2025\u201106\u201123  Finish: 2025\u201106\u201123\n   Depends on: 5. Logistics Arranged, 6. Stakeholder Briefings Delivered, 7. Decision\u2011Making Workshop Executed\n```",
+  "plan": {
+    "id": "document-001",
+    "name": "QBR 2025 Workback Plan",
+    "details": "",
+    "draft": true,
+    "participants": [],
+    "references": [],
+    "deliverables": [],
+    "tasks": [
+      {
+        "id": "task-001-1",
+        "name": "Define pre\u2011read topics",
+        "draft": true,
+        "details": "Identify required pre\u2011read topics (executive summary, market outlook, portfolio performance, risk register, FY\u201124\u201125 financials). Owner: QBR Lead. Start: 2025\u201104\u201128 Finish: 2025\u201104\u201130",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-001-2",
+        "name": "Assign owners for each topic",
+        "draft": true,
+        "details": "Assign owners for each pre\u2011read topic. Owner: QBR Lead. Start: 2025\u201104\u201128 Finish: 2025\u201104\u201130",
+        "dependencies": [
+          "task-001-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-001-3",
+        "name": "Draft individual sections",
+        "draft": true,
+        "details": "Topic owners draft their sections. Owner: Topic Owners. Start: 2025\u201105\u201101 Finish: 2025\u201105\u201107",
+        "dependencies": [
+          "task-001-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-001-4",
+        "name": "Consolidate into PDF pack",
+        "draft": true,
+        "details": "Combine drafts into a single PDF, apply branding. Owner: QBR Lead. Start: 2025\u201105\u201108 Finish: 2025\u201105\u201109",
+        "dependencies": [
+          "task-001-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-001-5",
+        "name": "Distribute to participants",
+        "draft": true,
+        "details": "Send distribution email with read\u2011by deadline. Owner: QBR Lead. Start: 2025\u201105\u201110 Finish: 2025\u201105\u201110",
+        "dependencies": [
+          "task-001-4"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-001",
+        "name": "Pre\u2011reads Pack Completed",
+        "draft": true,
+        "details": "A complete set of pre\u2011read documents is ready for distribution to all participants.",
+        "dependencies": [
+          "task-001-1",
+          "task-001-2",
+          "task-001-3",
+          "task-001-4",
+          "task-001-5",
+          "task-002"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-002-1",
+        "name": "Define required data sets",
+        "draft": true,
+        "details": "Identify required data sets for collection. Owner: QBR Lead. Start: 2025\u201104\u201128 Finish: 2025\u201104\u201130",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-002-2",
+        "name": "Issue data\u2011request checklist",
+        "draft": true,
+        "details": "Create and issue data\u2011request checklist to data owners. Owner: QBR Lead. Start: 2025\u201104\u201128 Finish: 2025\u201104\u201130",
+        "dependencies": [
+          "task-002-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-002-3",
+        "name": "Collect raw extracts",
+        "draft": true,
+        "details": "Collect raw data extracts from sources. Owner: Data Owners. Start: 2025\u201105\u201101 Finish: 2025\u201105\u201105",
+        "dependencies": [
+          "task-002-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-002-4",
+        "name": "Validate and clean data",
+        "draft": true,
+        "details": "Validate and clean collected data. Owner: Data Owners. Start: 2025\u201105\u201106 Finish: 2025\u201105\u201110",
+        "dependencies": [
+          "task-002-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-002-5",
+        "name": "Store cleaned data",
+        "draft": true,
+        "details": "Store cleaned data in the repository. Owner: Data Owners. Start: 2025\u201105\u201111 Finish: 2025\u201105\u201112",
+        "dependencies": [
+          "task-002-4"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-002",
+        "name": "Data Collection Completed",
+        "draft": true,
+        "details": "All required data have been collected, validated and stored.",
+        "dependencies": [
+          "task-002-1",
+          "task-002-2",
+          "task-002-3",
+          "task-002-4",
+          "task-002-5"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-003-1",
+        "name": "Outline deck structure",
+        "draft": true,
+        "details": "Create outline for slide deck. Owner: QBR Lead. Start: 2025\u201104\u201128 Finish: 2025\u201104\u201130",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-003-2",
+        "name": "Assign slide owners",
+        "draft": true,
+        "details": "Assign owners for each slide. Owner: QBR Lead. Start: 2025\u201104\u201128 Finish: 2025\u201104\u201130",
+        "dependencies": [
+          "task-003-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-003-3",
+        "name": "Build slides using validated data",
+        "draft": true,
+        "details": "Topic owners build slides using validated data. Owner: Slide Owners. Start: 2025\u201105\u201101 Finish: 2025\u201105\u201105",
+        "dependencies": [
+          "task-003-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-003-4",
+        "name": "Apply template & accessibility checks",
+        "draft": true,
+        "details": "Apply template and perform accessibility checks. Owner: IT Lead. Start: 2025\u201105\u201106 Finish: 2025\u201105\u201107",
+        "dependencies": [
+          "task-003-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-003-5",
+        "name": "Upload draft for review",
+        "draft": true,
+        "details": "Upload the draft deck for review. Owner: QBR Lead. Start: 2025\u201105\u201108 Finish: 2025\u201105\u201108",
+        "dependencies": [
+          "task-003-4"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-003",
+        "name": "Slide Deck Draft Ready",
+        "draft": true,
+        "details": "A draft slide deck is prepared and ready for review.",
+        "dependencies": [
+          "task-003-1",
+          "task-003-2",
+          "task-003-3",
+          "task-003-4",
+          "task-003-5",
+          "task-002"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-004-1",
+        "name": "Distribute draft for Peer Review",
+        "draft": true,
+        "details": "Distribute draft deck to reviewers. Owner: QBR Lead. Start: 2025\u201106\u201101 Finish: 2025\u201106\u201101",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-004-2",
+        "name": "Collect peer comments",
+        "draft": true,
+        "details": "Collect comments from peer reviewers. Owner: QBR Lead. Start: 2025\u201106\u201102 Finish: 2025\u201106\u201104",
+        "dependencies": [
+          "task-004-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-004-3",
+        "name": "Incorporate Peer Feedback",
+        "draft": true,
+        "details": "Incorporate peer feedback into the deck. Owner: QBR Lead. Start: 2025\u201106\u201105 Finish: 2025\u201106\u201107",
+        "dependencies": [
+          "task-004-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-004-4",
+        "name": "Distribute revised deck to Leadership",
+        "draft": true,
+        "details": "Send revised deck to leadership for final approval. Owner: QBR Lead. Start: 2025\u201106\u201108 Finish: 2025\u201106\u201108",
+        "dependencies": [
+          "task-004-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-004-5",
+        "name": "Capture Leadership sign\u2011off",
+        "draft": true,
+        "details": "Obtain and record leadership sign\u2011off. Owner: QBR Lead. Start: 2025\u201106\u201109 Finish: 2025\u201106\u201109",
+        "dependencies": [
+          "task-004-4"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-004",
+        "name": "Review & Approval Cycle Completed",
+        "draft": true,
+        "details": "The slide deck has passed peer review and received leadership sign\u2011off.",
+        "dependencies": [
+          "task-004-1",
+          "task-004-2",
+          "task-004-3",
+          "task-004-4",
+          "task-004-5"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-005-1",
+        "name": "Confirm attendee list & hybrid ratio",
+        "draft": true,
+        "details": "Confirm final attendee list and hybrid participation details. Owner: Event Coordinator. Start: 2025\u201106\u201101 Finish: 2025\u201106\u201101",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-005-2",
+        "name": "Book venue & AV room",
+        "draft": true,
+        "details": "Reserve venue and AV equipment. Owner: Office Services. Start: 2025\u201106\u201102 Finish: 2025\u201106\u201102",
+        "dependencies": [
+          "task-005-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-005-3",
+        "name": "Contract hybrid\u2011tech vendor & schedule test run",
+        "draft": true,
+        "details": "Engage hybrid\u2011tech vendor and schedule test run. Owner: IT Lead. Start: 2025\u201106\u201103 Finish: 2025\u201106\u201107",
+        "dependencies": [
+          "task-005-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-005-4",
+        "name": "Order catering (dietary notes)",
+        "draft": true,
+        "details": "Place catering order with dietary requirements. Owner: Procurement. Start: 2025\u201106\u201105 Finish: 2025\u201106\u201105",
+        "dependencies": [
+          "task-005-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-005-5",
+        "name": "Prepare on\u2011site support kit (signage, laptops)",
+        "draft": true,
+        "details": "Assemble on\u2011site support materials. Owner: Office Services. Start: 2025\u201106\u201108 Finish: 2025\u201106\u201109",
+        "dependencies": [
+          "task-005-4"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-005",
+        "name": "Logistics Arranged",
+        "draft": true,
+        "details": "All logistical elements for the QBR are in place.",
+        "dependencies": [
+          "task-005-1",
+          "task-005-2",
+          "task-005-3",
+          "task-005-4",
+          "task-005-5"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-006-1",
+        "name": "Identify key stakeholders",
+        "draft": true,
+        "details": "Identify key stakeholders for briefings. Owner: QBR Lead. Start: 2025\u201105\u201128 Finish: 2025\u201105\u201128",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-006-2",
+        "name": "Schedule briefing slots",
+        "draft": true,
+        "details": "Schedule briefing slots with stakeholders. Owner: Executive Assistant. Start: 2025\u201106\u201101 Finish: 2025\u201106\u201104",
+        "dependencies": [
+          "task-006-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-006-3",
+        "name": "Prepare briefing deck (tailored)",
+        "draft": true,
+        "details": "Prepare a tailored briefing deck. Owner: Slide Owners. Start: 2025\u201106\u201102 Finish: 2025\u201106\u201104",
+        "dependencies": [
+          "task-006-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-006-4",
+        "name": "Conduct briefings",
+        "draft": true,
+        "details": "Conduct stakeholder briefings. Owner: QBR Lead & Topic Owners. Start: 2025\u201106\u201105 Finish: 2025\u201106\u201109",
+        "dependencies": [
+          "task-006-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-006-5",
+        "name": "Capture follow\u2011up items",
+        "draft": true,
+        "details": "Capture follow\u2011up items from briefings. Owner: QBR Lead. Start: 2025\u201106\u201109 Finish: 2025\u201106\u201109",
+        "dependencies": [
+          "task-006-4"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-006",
+        "name": "Stakeholder Briefings Delivered",
+        "draft": true,
+        "details": "All stakeholder briefings have been completed and follow\u2011up items captured.",
+        "dependencies": [
+          "task-006-1",
+          "task-006-2",
+          "task-006-3",
+          "task-006-4",
+          "task-006-5",
+          "task-004"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-007-1",
+        "name": "Define workshop objectives & decision criteria",
+        "draft": true,
+        "details": "Define workshop objectives and decision criteria. Owner: Strategy Lead. Start: 2025\u201106\u201110 Finish: 2025\u201106\u201110",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-007-2",
+        "name": "Design facilitation materials (matrix, voting cards)",
+        "draft": true,
+        "details": "Create facilitation materials. Owner: Strategy Lead. Start: 2025\u201106\u201111 Finish: 2025\u201106\u201112",
+        "dependencies": [
+          "task-007-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-007-3",
+        "name": "Confirm external facilitator",
+        "draft": true,
+        "details": "Confirm external facilitator for workshop. Owner: QBR Lead. Start: 2025\u201106\u201112 Finish: 2025\u201106\u201112",
+        "dependencies": [
+          "task-007-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-007-4",
+        "name": "Run workshop (part of QBR agenda)",
+        "draft": true,
+        "details": "Execute the decision\u2011making workshop during the QBR. Owner: Facilitator. Start: 2025\u201106\u201120 Finish: 2025\u201106\u201120",
+        "dependencies": [
+          "task-007-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-007-5",
+        "name": "Record decisions in decision log",
+        "draft": true,
+        "details": "Record workshop decisions in the decision log. Owner: QBR Lead. Start: 2025\u201106\u201121 Finish: 2025\u201106\u201122",
+        "dependencies": [
+          "task-007-4"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-007",
+        "name": "Decision\u2011Making Workshop Executed",
+        "draft": true,
+        "details": "The decision\u2011making workshop has been executed and decisions recorded.",
+        "dependencies": [
+          "task-007-1",
+          "task-007-2",
+          "task-007-3",
+          "task-007-4",
+          "task-007-5",
+          "task-004"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-008-1",
+        "name": "Technical rehearsal (AV, streaming)",
+        "draft": true,
+        "details": "Perform technical rehearsal of AV and streaming. Owner: IT Lead. Start: 2025\u201106\u201118 Finish: 2025\u201106\u201118",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-008-2",
+        "name": "Deliver live QBR (presentation + workshop)",
+        "draft": true,
+        "details": "Deliver the live QBR presentation and workshop. Owner: Presenters. Start: 2025\u201106\u201120 Finish: 2025\u201106\u201120",
+        "dependencies": [
+          "task-008-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-008-3",
+        "name": "Capture minutes & action items",
+        "draft": true,
+        "details": "Capture meeting minutes and action items. Owner: Meeting Scribe. Start: 2025\u201106\u201120 Finish: 2025\u201106\u201120",
+        "dependencies": [
+          "task-008-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-008-4",
+        "name": "Distribute final deck, minutes, action\u2011item tracker",
+        "draft": true,
+        "details": "Distribute final deck, minutes and action\u2011item tracker. Owner: QBR Lead. Start: 2025\u201106\u201122 Finish: 2025\u201106\u201122",
+        "dependencies": [
+          "task-008-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-008-5",
+        "name": "Archive all QBR artifacts",
+        "draft": true,
+        "details": "Archive all QBR artifacts. Owner: QBR Lead. Start: 2025\u201106\u201123 Finish: 2025\u201106\u201123",
+        "dependencies": [
+          "task-008-4"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-008",
+        "name": "Final QBR Presentation Delivered",
+        "draft": true,
+        "details": "The final QBR presentation, including workshop, has been delivered and all artifacts archived.",
+        "dependencies": [
+          "task-008-1",
+          "task-008-2",
+          "task-008-3",
+          "task-008-4",
+          "task-008-5",
+          "task-005",
+          "task-007"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      }
+    ],
+    "system_message": "You are ChatGPT, a large language model trained by OpenAI."
+  }
+}

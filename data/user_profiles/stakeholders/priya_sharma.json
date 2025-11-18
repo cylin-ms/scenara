@@ -1,0 +1,163 @@
+{
+  "basic_info": {
+    "full_name": "Priya Sharma",
+    "age": 38,
+    "location": "Austin, Texas, USA",
+    "timezone": "America/Chicago (UTC-6 / UTC-5 DST)",
+    "years_experience": 15,
+    "education": [
+      {
+        "degree": "B.Tech",
+        "field": "Computer Science",
+        "institution": "Indian Institute of Technology Delhi",
+        "year": 2007
+      },
+      {
+        "degree": "M.S.",
+        "field": "Software Engineering",
+        "institution": "Stanford University",
+        "year": 2010
+      }
+    ]
+  },
+  "work_habits": {
+    "preferred_working_hours": "Early bird (8:00 AM – 4:00 PM CT)",
+    "peak_productivity_times": [
+      "9:00 AM – 11:00 AM",
+      "2:00 PM – 3:00 PM"
+    ],
+    "communication_style": {
+      "async_preference": true,
+      "sync_preference": "for urgent issues",
+      "average_response_time_hours": 2
+    },
+    "meeting_preferences": {
+      "max_meetings_per_week": 2,
+      "preferred_meeting_length_minutes": [
+        15,
+        30
+      ],
+      "prefers_video": false,
+      "meeting_type": "short stand‑ups or decision‑making syncs"
+    },
+    "work_environment": "Hybrid (3 days in office, 2 days remote)",
+    "focus_time_requirements": {
+      "daily_blocks_hours": 2,
+      "do_not_disturb_policy": true
+    }
+  },
+  "personality": {
+    "mbti": "ENTJ",
+    "decision_making_approach": "Data‑driven with stakeholder input; balances long‑term vision and short‑term feasibility",
+    "risk_tolerance": 6,
+    "collaboration_style": "Collaborative but decisive; drives consensus while keeping momentum",
+    "stress_management_approach": "Morning run, yoga 3×/week, Pomodoro technique, regular short breaks",
+    "conflict_resolution_style": "Direct and empathetic; focuses on facts and mutually beneficial outcomes"
+  },
+  "skills": {
+    "core_technical_skills": {
+      "Java": 9,
+      "Python": 8,
+      "Go": 7,
+      "AWS Cloud Architecture": 9,
+      "Microservices Design": 8,
+      "CI/CD (Jenkins, GitHub Actions)": 8,
+      "Distributed Systems": 8,
+      "Data Engineering (Kafka, Spark)": 7,
+      "React (Frontend)": 6
+    },
+    "leadership_abilities": {
+      "team_leadership": 9,
+      "project_management": 8,
+      "strategic_planning": 7,
+      "stakeholder_management": 8
+    },
+    "domain_expertise_areas": [
+      "FinTech payments",
+      "Real‑time fraud detection",
+      "Cloud migration at scale",
+      "Scalable REST/GraphQL APIs"
+    ],
+    "learning_agility": 9,
+    "tools_proficiency": [
+      "Git",
+      "Jira",
+      "Confluence",
+      "Docker",
+      "Kubernetes",
+      "Terraform",
+      "Splunk",
+      "Grafana"
+    ],
+    "languages_spoken": [
+      "English (fluent)",
+      "Hindi (native)",
+      "Spanish (basic conversational)"
+    ]
+  },
+  "performance": {
+    "task_completion_rate_percent": 94,
+    "quality_score_percent": 92,
+    "estimation_accuracy_percent": 88,
+    "multitasking_ability": 7,
+    "performance_under_pressure": 8
+  },
+  "availability": {
+    "available_hours_per_week": 40,
+    "timezone_and_working_hours": "CT (UTC-6) 8:00 AM – 4:00 PM, flexible +/-1 hour",
+    "planned_time_off_days_per_year": 20,
+    "other_commitments": [
+      "Weekly yoga class (Mon 6 PM)",
+      "Monthly community tech meetup (first Thursday)"
+    ],
+    "travel_flexibility": "Open to up to 10% travel (≈2 weeks/quarter), prefers short trips"
+  },
+  "personal_factors": {
+    "family_status": "Married, one child (6 years old)",
+    "caregiving_responsibilities": "Occasional elder‑care for parents (2‑4 hrs/month)",
+    "commute_situation": "30‑minute drive to TechCorp Austin office",
+    "health_considerations": "Mild hypertension; monitors blood pressure via smartwatch",
+    "career_motivation": "Drive to lead large‑scale impact, mentor next‑gen engineers, shape product strategy"
+  },
+  "project_impact": {
+    "reliability": 9,
+    "innovation_tendency": 8,
+    "documentation_quality": 9,
+    "mentorship_capability": 9,
+    "influence_level": 8
+  },
+  "collaboration": {
+    "meeting_frequency_preference": "Bi‑weekly team sync; ad‑hoc when critical decisions arise",
+    "communication_channels_preference": [
+      "Slack (async)",
+      "Email",
+      "Zoom (sync for deep‑dive calls)"
+    ],
+    "feedback_style": "Direct but constructive; balances candor with coaching",
+    "knowledge_sharing_habits": "Writes internal blog posts, runs brown‑bag sessions, maintains detailed Confluence pages",
+    "cross_team_collaboration": 8
+  },
+  "risk_factors": {
+    "potential_bottlenecks": [
+      "Single point of knowledge on legacy payment engine",
+      "Limited bandwidth during high‑priority release cycles"
+    ],
+    "backup_person_needed": "Senior Engineer Alex Patel (backend lead)",
+    "ramp_up_time_weeks": 3,
+    "context_switching_tolerance": 6,
+    "burnout_risk_factors": [
+      "Extended periods of uninterrupted focus without breaks",
+      "High meeting load",
+      "Travel combined with family commitments"
+    ]
+  },
+  "_metadata": {
+    "generated_at": "2025-11-17T15:17:16.112961",
+    "name": "Priya Sharma",
+    "role": "Senior Software Engineer",
+    "seniority": "senior",
+    "company": "TechCorp",
+    "model": "gpt-oss:120b",
+    "provider": "ollama"
+  }
+}

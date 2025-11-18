@@ -1,0 +1,441 @@
+{
+  "scenario_name": "Nimbus Cloud Solutions \u2013 FY26 Mid\u2011Market Expansion MBR",
+  "scenario_number": 1,
+  "meeting_type": "Monthly Business Review",
+  "quality_level": "medium",
+  "workback_prompt": "Generate a detailed work\u2011back plan for the 'Nimbus Cloud Solutions \u2013 FY26 Mid\u2011Market Expansion MBR' scenario. The plan should start from the meeting date (2025\u201112\u201104) and work backwards to today (T\u201130), outlining all tasks, owners, dependencies, durations, and milestones needed to prepare the presentation, validate data, secure approvals, and deliver the listed outputs on time. Include risk mitigation steps for data latency, engineering capacity, and compliance constraints.\n\nGenerate a MEDIUM QUALITY workback plan with these characteristics:\n- Most major tasks present but some gaps\n- Reasonable task descriptions\n- Some dependencies defined\n- Most tasks have owners\n- Milestones present but may lack detail\n- Generally realistic timelines\n- Some consideration of risks\n- Key deliverables identified\n\nIMPORTANT: Generate a plan that naturally exhibits MEDIUM quality characteristics.\nDo not explicitly label the plan as \"medium quality\" - let the quality emerge from the content.",
+  "generated_at": "2025-11-17T04:41:35.302644",
+  "analysis": "# Outcomes  \n\n## 1. Final MBR Presentation Deck  \nA polished slide deck that tells the FY26 Mid\u2011Market Expansion story, includes validated market sizing, financial forecasts, engineering capacity assumptions, and compliance considerations.  \nArtifact references: none  \n\n### Reasoning  \nThe meeting on **2025\u201112\u201104** is the primary delivery point; the deck is the central output that the audience will use to make decisions. All upstream activities (data validation, capacity assessment, compliance sign\u2011off) feed into the deck, so it is defined as a distinct outcome.  \n\n### Approach  \n1. **Draft creation** \u2013 Marketing Manager assembles narrative, visuals, and initial data tables.  \n2. **Iterative reviews** \u2013 Program Manager, Finance Lead, and Engineering Lead each provide focused feedback.  \n3. **Incorporate feedback** \u2013 Presenter updates slides, ensuring consistency with validated data and approved assumptions.  \n4. **Final sign\u2011off** \u2013 VP of Sales (or equivalent) formally approves the deck.  \n5. **Distribution** \u2013 PM uploads the final version to the shared drive and circulates it to meeting participants.  \n\n---\n\n## 2. Validated Market Data Package  \nA collection of market sizing, growth rates, and competitive intelligence that has been cleaned, reconciled, and approved for use in the deck.  \n\n### Reasoning  \nAccurate data is a prerequisite for credibility. The scenario explicitly calls for \u201cvalidate data,\u201d so a separate outcome captures the data\u2011validation effort and its sign\u2011off.  \n\n### Approach  \n1. **Data collection** \u2013 Market Analyst gathers raw sources (IDC, Gartner, internal pipeline).  \n2. **Data cleaning** \u2013 Data Engineer removes duplicates, aligns time\u2011frames, and flags gaps.  \n3. **Quality check** \u2013 Analyst runs sanity\u2011checks (e.g., cross\u2011year growth consistency).  \n4. **Peer review** \u2013 Finance Lead reviews assumptions; Engineering Lead checks impact on capacity forecasts.  \n5. **Approval** \u2013 Program Manager signs the package as \u201cvalidated.\u201d  \n\n---\n\n## 3. Engineering Capacity Confirmation  \nA documented statement of available engineering resources, projected headcount, and any constraints that affect the FY26 expansion plan.  \n\n### Reasoning  \nThe plan must be realistic; without confirmed capacity the financial forecasts could be invalid. The scenario mentions \u201cengineering capacity\u201d as a risk, so we treat its confirmation as an outcome.  \n\n### Approach  \n1. **Capacity inventory** \u2013 Engineering Lead compiles current headcount, backlog, and upcoming releases.  \n2. **Demand modeling** \u2013 Product Manager maps FY26 expansion requirements onto the inventory.  \n3. **Gap analysis** \u2013 Identify shortfalls and potential hiring or re\u2011allocation needs.  \n4. **Sign\u2011off** \u2013 Engineering Lead authorizes the capacity statement, which is then attached to the deck.  \n\n---\n\n## 4. Compliance Review Clearance  \nFormal confirmation that the FY26 expansion assumptions, data usage, and presentation materials meet internal and external compliance requirements.  \n\n### Reasoning  \nCompliance constraints are listed as a risk. Securing clearance before the meeting avoids last\u2011minute blockers.  \n\n### Approach  \n1. **Scope definition** \u2013 Compliance Officer outlines applicable regulations (e.g., data privacy, export controls).  \n2. **Document review** \u2013 Officer reviews the Market Data Package, financial models, and slide content.  \n3. **Remediation** \u2013 Analyst/PM address any flagged issues (e.g., anonymize data).  \n4. **Clearance issuance** \u2013 Compliance Officer signs off; the clearance log is attached to the final deck.  \n\n---\n\n## Breakdown  \n\n### 1. Final MBR Presentation Deck  \n\n| # | Task | Owner | Duration (days) | Dependencies |\n|---|------|-------|-----------------|--------------|\n| 1.1 | Draft slide deck (outline, narrative, initial visuals) | Marketing Manager | 3 (\u201113\u202f\u2192\u202f\u201111) | 2.1 (Validated Data) |\n| 1.2 | First internal review (PM, Finance Lead) | Program Manager | 1 (\u201110) | 1.1 |\n| 1.3 | Engineering review (capacity assumptions) | Engineering Lead | 1 (\u20119) | 1.2, 3.4 |\n| 1.4 | Incorporate review feedback | Presenter | 2 (\u20118\u202f\u2192\u202f\u20117) | 1.2, 1.3 |\n| 1.5 | Final executive sign\u2011off | VP of Sales | 1 (\u20116) | 1.4, 4.4 |\n| 1.6 | Upload & distribute final deck | Program Manager | 1 (\u20115) | 1.5 |\n\n### 2. Validated Market Data Package  \n\n| # | Task | Owner | Duration (days) | Dependencies |\n|---|------|-------|-----------------|--------------|\n| 2.1 | Collect raw market data (IDC, Gartner, internal) | Market Analyst | 3 (\u201127\u202f\u2192\u202f\u201125) | \u2014 |\n| 2.2 | Clean & align data sets | Data Engineer | 2 (\u201124\u202f\u2192\u202f\u201123) | 2.1 |\n| 2.3 | Perform sanity\u2011checks & reconcile gaps | Market Analyst | 2 (\u201122\u202f\u2192\u202f\u201121) | 2.2 |\n| 2.4 | Peer review (Finance & Engineering) | Finance Lead / Engineering Lead | 1 (\u201120) | 2.3 |\n| 2.5 | Formal validation sign\u2011off | Program Manager | 1 (\u201119) | 2.4 |\n\n### 3. Engineering Capacity Confirmation  \n\n| # | Task | Owner | Duration (days) | Dependencies |\n|---|------|-------|-----------------|--------------|\n| 3.1 | Inventory current engineering headcount & backlog | Engineering Lead | 2 (\u201119\u202f\u2192\u202f\u201118) | \u2014 |\n| 3.2 | Model FY26 capacity demand based on expansion plan | Product Manager | 1 (\u201117) | 3.1 |\n| 3.3 | Gap analysis & mitigation options (hire, re\u2011assign) | Engineering Lead | 1 (\u201116) | 3.2 |\n| 3.4 | Capacity confirmation sign\u2011off | Engineering Lead | 1 (\u201115) | 3.3 |\n\n### 4. Compliance Review Clearance  \n\n| # | Task | Owner | Duration (days) | Dependencies |\n|---|------|-------|-----------------|--------------|\n| 4.1 | Define compliance scope (privacy, export, financial disclosure) | Compliance Officer | 1 (\u201114) | \u2014 |\n| 4.2 | Review Market Data Package & financial models | Compliance Officer | 2 (\u201113\u202f\u2192\u202f\u201112) | 2.5 |\n| 4.3 | Address remediation items (anonymize, adjust language) | Analyst / PM | 1 (\u201111) | 4.2 |\n| 4.4 | Issue compliance clearance | Compliance Officer | 1 (\u201110) | 4.3 |\n\n### 5. Risk Mitigation Activities (cross\u2011cutting)  \n\n| # | Task | Owner | Duration (days) | Dependencies |\n|---|------|-------|-----------------|--------------|\n| 5.1 | Data latency monitoring (set alerts on source feeds) | Data Engineer | Ongoing (\u201130\u202f\u2192\u202f\u20111) | \u2014 |\n| 5.2 | Engineering capacity buffer planning (identify 10\u202f% slack) | Engineering Lead | 1 (\u201116) | 3.3 |\n| 5.3 | Compliance contingency checklist (pre\u2011approved language bank) | Compliance Officer | 1 (\u201114) | 4.1 |\n| 5.4 | Daily stand\u2011up to surface blockers (PM) | Program Manager | Daily (\u201130\u202f\u2192\u202f\u20111) | \u2014 |\n\n### 6. Milestones  \n\n| Milestone | Target Date | Owner | Dependencies |\n|-----------|-------------|-------|--------------|\n| Data Collection Complete | 2025\u201111\u201125 (\u20119) | Market Analyst | 2.1 |\n| Market Data Validated | 2025\u201111\u201119 (\u201115) | Program Manager | 2.5 |\n| Engineering Capacity Confirmed | 2025\u201111\u201115 (\u201119) | Engineering Lead | 3.4 |\n| Compliance Clearance Received | 2025\u201111\u201116 (\u201118) | Compliance Officer | 4.4 |\n| Draft Deck Completed | 2025\u201111\u201113 (\u201121) | Marketing Manager | 1.1 |\n| Executive Sign\u2011off | 2025\u201111\u201128 (\u20116) | VP of Sales | 1.5 |\n| Final Deck Distributed | 2025\u201111\u201129 (\u20115) | Program Manager | 1.6 |\n| MBR Meeting (Delivery) | 2025\u201112\u201104 | \u2014 | All outcomes completed |\n\n---  \n\n**Notes on collaboration**  \n\n* **Program Manager** acts as the central coordinator, running the daily stand\u2011up (5.4) and tracking dependencies across outcomes.  \n* **Subject\u2011matter owners** (Market Analyst, Engineering Lead, Compliance Officer) are responsible for delivering their validation or clearance artifacts and flagging any risk that could affect downstream tasks.  \n* **Iterative reviews** ensure that feedback loops are short (typically 1\u202fday) and that no single task becomes a bottleneck.  \n* **Risk mitigation tasks** run in parallel with the main work stream, providing early warning signals for data latency, capacity shortfalls, or compliance issues.  \n\nBy following this backward\u2011looking schedule, the team can confirm data, secure capacity and compliance, produce a polished deck, and enter the FY26 Mid\u2011Market Expansion MBR meeting fully prepared.",
+  "plan": {
+    "id": "document-001",
+    "name": "FY26 Mid-Market Expansion Workback Plan",
+    "details": "Backward\u2011looking schedule to deliver the Final MBR Presentation Deck, Validated Market Data Package, Engineering Capacity Confirmation, and Compliance Review Clearance before the FY26 Mid\u2011Market Expansion MBR meeting on 2025\u201112\u201104.",
+    "draft": true,
+    "participants": [
+      {
+        "name": "Marketing Manager",
+        "draft": true
+      },
+      {
+        "name": "Program Manager",
+        "draft": true
+      },
+      {
+        "name": "Finance Lead",
+        "draft": true
+      },
+      {
+        "name": "Engineering Lead",
+        "draft": true
+      },
+      {
+        "name": "VP of Sales",
+        "draft": true
+      },
+      {
+        "name": "Market Analyst",
+        "draft": true
+      },
+      {
+        "name": "Data Engineer",
+        "draft": true
+      },
+      {
+        "name": "Product Manager",
+        "draft": true
+      },
+      {
+        "name": "Compliance Officer",
+        "draft": true
+      },
+      {
+        "name": "Presenter",
+        "draft": true
+      },
+      {
+        "name": "Analyst",
+        "draft": true
+      }
+    ],
+    "references": [],
+    "deliverables": [
+      {
+        "id": "deliverable-001",
+        "name": "Final MBR Presentation Deck",
+        "type": "powerpoint",
+        "draft": true,
+        "history": []
+      },
+      {
+        "id": "deliverable-002",
+        "name": "Validated Market Data Package",
+        "type": "word",
+        "draft": true,
+        "history": []
+      },
+      {
+        "id": "deliverable-003",
+        "name": "Engineering Capacity Confirmation",
+        "type": "word",
+        "draft": true,
+        "history": []
+      },
+      {
+        "id": "deliverable-004",
+        "name": "Compliance Review Clearance",
+        "type": "word",
+        "draft": true,
+        "history": []
+      }
+    ],
+    "tasks": [
+      {
+        "id": "task-001",
+        "name": "Draft slide deck (outline, narrative, initial visuals)",
+        "draft": true,
+        "details": "Marketing Manager assembles narrative, visuals, and initial data tables.",
+        "dependencies": [
+          "task-007"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002",
+        "name": "First internal review (PM, Finance Lead)",
+        "draft": true,
+        "details": "Program Manager conducts first internal review.",
+        "dependencies": [
+          "task-001"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003",
+        "name": "Engineering review (capacity assumptions)",
+        "draft": true,
+        "details": "Engineering Lead reviews capacity assumptions in the deck.",
+        "dependencies": [
+          "task-002",
+          "task-015"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-004",
+        "name": "Incorporate review feedback",
+        "draft": true,
+        "details": "Presenter updates slides with feedback from internal reviews.",
+        "dependencies": [
+          "task-002",
+          "task-003"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-005",
+        "name": "Final executive sign\u2011off",
+        "draft": true,
+        "details": "VP of Sales formally approves the final deck.",
+        "dependencies": [
+          "task-004",
+          "task-019"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-006",
+        "name": "Upload & distribute final deck",
+        "draft": true,
+        "details": "Program Manager uploads the final version to the shared drive and circulates it.",
+        "dependencies": [
+          "task-005"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[powerpoint]/deliverable-001"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-007",
+        "name": "Collect raw market data (IDC, Gartner, internal)",
+        "draft": true,
+        "details": "Market Analyst gathers raw sources.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-008",
+        "name": "Clean & align data sets",
+        "draft": true,
+        "details": "Data Engineer removes duplicates, aligns time\u2011frames, and flags gaps.",
+        "dependencies": [
+          "task-007"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-009",
+        "name": "Perform sanity\u2011checks & reconcile gaps",
+        "draft": true,
+        "details": "Market Analyst runs sanity\u2011checks and reconciles gaps.",
+        "dependencies": [
+          "task-008"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-010",
+        "name": "Peer review (Finance & Engineering)",
+        "draft": true,
+        "details": "Finance Lead and Engineering Lead review the cleaned data.",
+        "dependencies": [
+          "task-009"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-011",
+        "name": "Formal validation sign\u2011off",
+        "draft": true,
+        "details": "Program Manager signs off the validated market data package.",
+        "dependencies": [
+          "task-010"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[word]/deliverable-002"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-012",
+        "name": "Inventory current engineering headcount & backlog",
+        "draft": true,
+        "details": "Engineering Lead compiles current headcount, backlog, and upcoming releases.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-013",
+        "name": "Model FY26 capacity demand based on expansion plan",
+        "draft": true,
+        "details": "Product Manager maps FY26 expansion requirements onto the inventory.",
+        "dependencies": [
+          "task-012"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-014",
+        "name": "Gap analysis & mitigation options (hire, re\u2011assign)",
+        "draft": true,
+        "details": "Engineering Lead identifies shortfalls and mitigation options.",
+        "dependencies": [
+          "task-013"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-015",
+        "name": "Capacity confirmation sign\u2011off",
+        "draft": true,
+        "details": "Engineering Lead authorizes the capacity statement.",
+        "dependencies": [
+          "task-014"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[word]/deliverable-003"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-016",
+        "name": "Define compliance scope (privacy, export, financial disclosure)",
+        "draft": true,
+        "details": "Compliance Officer outlines applicable regulations.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-017",
+        "name": "Review Market Data Package & financial models",
+        "draft": true,
+        "details": "Compliance Officer reviews the validated data package and financial models.",
+        "dependencies": [
+          "task-011"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-018",
+        "name": "Address remediation items (anonymize, adjust language)",
+        "draft": true,
+        "details": "Analyst / PM address any compliance issues flagged.",
+        "dependencies": [
+          "task-017"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-019",
+        "name": "Issue compliance clearance",
+        "draft": true,
+        "details": "Compliance Officer signs off and issues the clearance.",
+        "dependencies": [
+          "task-018"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[word]/deliverable-004"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-020",
+        "name": "Data latency monitoring (set alerts on source feeds)",
+        "draft": true,
+        "details": "Data Engineer sets up ongoing alerts for data latency.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-021",
+        "name": "Engineering capacity buffer planning (identify 10\u202f% slack)",
+        "draft": true,
+        "details": "Engineering Lead identifies a buffer in capacity planning.",
+        "dependencies": [
+          "task-014"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-022",
+        "name": "Compliance contingency checklist (pre\u2011approved language bank)",
+        "draft": true,
+        "details": "Compliance Officer creates a checklist of pre\u2011approved language.",
+        "dependencies": [
+          "task-016"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-023",
+        "name": "Daily stand\u2011up to surface blockers (PM)",
+        "draft": true,
+        "details": "Program Manager runs daily stand\u2011up meetings.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      }
+    ],
+    "history": []
+  }
+}

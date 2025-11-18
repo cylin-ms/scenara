@@ -1,0 +1,149 @@
+[
+  {
+    "scenario_name": "Azure Cognitive Search Relevance Boost Squad Mission (8\u2011week cycle)",
+    "company_context": "Microsoft \u2013 Azure Cloud division \u2013 Azure Cognitive Search product team. The squad operates under the MMM (Mission\u2011Milestones\u2011Metrics) framework and reports to the Azure AI & Search Platform group. The squad\u2019s charter is to embed next\u2011gen AI ranking into the Azure Search service to increase enterprise adoption and drive Azure revenue growth.",
+    "meeting_event_details": "Squad Mission Planning Meeting \u2013 2025\u201109\u201102, 10:00\u202fAM\u202fPST (UTC\u201108:00), 90\u202fminutes, Microsoft Teams (meeting link: https://teams.microsoft.com/l/meetup\u2011join/...). Attendees: all squad members and the Azure Search Platform PMO. The meeting will be recorded and minutes posted to the squad\u2019s SharePoint site.",
+    "stakeholders": [
+      "Priya Patel \u2013 Senior Product Manager (DRI \u2013 Directly Responsible Individual)",
+      "Alex Chen \u2013 Engineering Lead (Principal Software Engineer, Search Core)",
+      "Maya Singh \u2013 Data Science Lead (Senior Data Scientist, Ranking Models)",
+      "Luis Gomez \u2013 UX Lead (Principal Designer, Search UI/UX)",
+      "Ravi Kumar \u2013 QA Lead (Senior Test Engineer)",
+      "Jenna Lee \u2013 Program Manager, Azure AI Platform (dependency manager)",
+      "Tom O'Connor \u2013 Finance Business Partner (budget oversight)",
+      "Sofia Alvarez \u2013 Compliance Officer (GDPR & data\u2011privacy)",
+      "Mike Reynolds \u2013 VP, Azure AI & Search (executive sponsor)"
+    ],
+    "deliverables": [
+      "1. Data ingestion pipeline for click\u2011through and relevance feedback (Azure Data Factory + Synapse).",
+      "2. Baseline relevance benchmark suite (NDCG@10, MAP) on the public MS MARCO dataset and internal enterprise logs.",
+      "3. Prototype AI\u2011reranking model (Transformer\u2011based) trained in Azure ML v2, with reproducible notebooks.",
+      "4. API extension \u2013 `/search/v2/rerank` endpoint with Swagger spec and integration tests.",
+      "5. UI mock\u2011ups and interactive prototype for the Azure Portal search results page (Figma files).",
+      "6. Automated test suite (unit, integration, performance) achieving \u226595\u202f% code coverage.",
+      "7. Beta rollout package (Helm chart, deployment scripts) for Azure Marketplace customers.",
+      "8. Final release documentation, migration guide, and internal training deck.",
+      "9. Post\u2011release performance report (metrics vs. baseline, latency, cost analysis)."
+    ],
+    "success_criteria": [
+      "\u2022 \u226515\u202f% lift in NDCG@10 on the enterprise query set versus the current BM25 baseline.",
+      "\u2022 \u226410\u202f% increase in 99th\u2011percentile query latency (target \u2264200\u202fms additional latency).",
+      "\u2022 \u226580\u202f% of beta customers report \u201cImproved relevance\u201d in the post\u2011beta survey (minimum 30 responses).",
+      "\u2022 \u226595\u202f% automated test coverage across new code paths.",
+      "\u2022 Release on schedule (Week\u202f8) within the allocated $250\u202fk budget.",
+      "\u2022 No GDPR compliance violations; all data used is anonymized per policy.",
+      "\u2022 Demonstrated cost\u2011per\u2011query increase \u22645\u202f% relative to baseline."
+    ],
+    "constraints": [
+      "Time: Fixed 8\u2011week window (T\u201142 to T\u201156).",
+      "Budget: $250,000 total (cloud compute, contractor hours, licensing).",
+      "Compute: Limited to 200\u202fGPU\u2011hours per week on Azure ML due to shared quota.",
+      "Dependencies: Must integrate with Azure ML v2 pipeline (release scheduled for T\u201148) and the upcoming Azure Search SDK v3 (target GA at T\u201150).",
+      "Compliance: All training data must be GDPR\u2011scrubbed; privacy review required before model export.",
+      "Resource availability: Two senior engineers (Alex & Priya) will be on the Azure AI Platform migration project during Weeks\u202f5\u20116, reducing capacity.",
+      "External stakeholder sign\u2011off: Beta customers must approve the test plan by Week\u202f3."
+    ],
+    "workback_prompt": "Generate a detailed work\u2011back plan for the 'Azure Cognitive Search Relevance Boost Squad Mission' (8\u2011week cycle) using the MMM framework. Include weekly tasks, owners, dependencies, risk mitigations, and required artifacts for each milestone (Weeks\u202f2,\u202f4,\u202f6,\u202f8). Align the plan with the success criteria, constraints, and the company\u2019s AI\u2011first Azure strategy. Output the plan in a tabular format (Week, Milestone, Deliverable, Owner, Dependencies, Risks, Mitigation).",
+    "meeting_type": "Squad Mission Planning",
+    "meeting_type_key": "5_squad_mission",
+    "scenario_number": 1,
+    "horizon": "T-42 to T-56",
+    "complexity": "Medium-High",
+    "generated_at": "2025-11-17T05:38:16.762390"
+  },
+  {
+    "scenario_name": "VisionEdge Squad \u2013 Real\u2011Time Object Detection API Launch (8\u2011week mission)",
+    "company_context": "Microsoft Azure \u2013 Azure AI Vision team. The VisionEdge Squad (6\u20118 members) is part of the Azure AI platform, operating under the MMM (Mission\u2011Metrics\u2011Milestones) framework. Mission statement: \u201cDeliver a low\u2011latency, high\u2011accuracy real\u2011time object\u2011detection API for edge devices that expands Azure AI\u2019s edge portfolio and drives 5,000 new developer sign\u2011ups in the first month.\u201d Duration: 8 weeks (T\u201156 to T\u20110). DRI: Priya Patel (Senior Program Manager, Azure AI Vision). Squad members: Alex Chen (Lead Software Engineer), Maya Singh (Data Scientist), Luis Gomez (UX Designer), Fatima Al\u2011Mansour (Cloud Infrastructure Engineer), Jenna Lee (QA Lead), Raj Patel (Partner Engineer \u2013 Azure IoT Hub). Cross\u2011functional roles include PM, Software Engineers, Cloud Engineers, UX, Data Science, QA, and Partner Engineering. Key milestones every 2 weeks: \u2022 Week\u202f2 (T\u201142): Requirements freeze & design sign\u2011off \u2022 Week\u202f4 (T\u201128): MVP prototype & internal demo \u2022 Week\u202f6 (T\u201114): Beta release to 20 pilot customers \u2022 Week\u202f8 (T\u20110): General Availability launch with full SDKs and launch marketing pack. Success metrics (quantitative): \u2022 End\u2011to\u2011end inference latency \u2264\u202f30\u202fms on Azure Edge VM \u2022 Model mAP \u2265\u202f92\u202f% on Edge\u2011device benchmark set \u2022 Cost per inference \u2264\u202f$0.001 \u2022 5,000+ active developer accounts within 30\u202fdays of GA \u2022 NPS \u2265\u202f70 from beta participants. The mission directly supports Microsoft\u2019s FY25 strategy to grow Azure AI revenue by 15\u202f% and to lead the edge\u2011computing market while meeting sustainability targets (\u2264\u202f0.5\u202fkg CO\u2082 per 1\u202fM inferences).",
+    "meeting_event_details": "Squad Mission Planning Meeting \u2013 Monday, 09 Sep 2025, 10:00\u202fAM \u2013 11:30\u202fAM PST (90\u202fmin). Location: Microsoft Teams (primary) + Azure West Conference Room 3B (secondary for in\u2011person attendees). Agenda: review mission statement, confirm milestones, assign owners, surface dependencies, and capture success metrics.",
+    "stakeholders": [
+      "Priya Patel \u2013 Senior Program Manager (DRI) \u2013 owns overall mission success, timeline, and stakeholder alignment.",
+      "Alex Chen \u2013 Lead Software Engineer \u2013 responsible for API design, implementation, and performance tuning.",
+      "Maya Singh \u2013 Data Scientist \u2013 builds and validates the object\u2011detection model, defines accuracy metrics.",
+      "Luis Gomez \u2013 UX Designer \u2013 creates developer portal UI/UX, documentation layout, and onboarding flow.",
+      "Fatima Al\u2011Mansour \u2013 Cloud Infrastructure Engineer \u2013 provisions Edge VM scale\u2011sets, ensures cost targets.",
+      "Jenna Lee \u2013 QA Lead \u2013 defines test plan, runs automated & manual validation, signs off release quality.",
+      "Raj Patel \u2013 Partner Engineer (Azure IoT Hub) \u2013 coordinates dependency on IoT Hub SDK v3.2 release.",
+      "Ellen Zhou \u2013 Marketing Program Manager \u2013 prepares launch communications, blog, and dev\u2011community outreach."
+    ],
+    "deliverables": [
+      "VisionEdge API Specification (v1.0) \u2013 functional and non\u2011functional requirements document.",
+      "Edge\u2011optimized object\u2011detection model (ONNX format) with training pipeline scripts.",
+      "C# and Python SDKs (v1.0) with sample code and CI/CD pipelines.",
+      "Developer portal UI mockups and final responsive web pages.",
+      "Performance benchmark report (latency, accuracy, cost) against Azure Edge VM SKUs.",
+      "Beta test report \u2013 feedback summary, NPS score, and defect backlog.",
+      "GA launch package \u2013 release notes, migration guide, marketing assets, and internal rollout checklist."
+    ],
+    "success_criteria": [
+      "Latency \u2264\u202f30\u202fms measured on Azure Edge VM Standard_E2s_v3 under 100\u202fconcurrent requests.",
+      "Mean Average Precision (mAP) \u2265\u202f92\u202f% on the EdgeBench validation set.",
+      "Cost per inference \u2264\u202f$0.001 when run at 1\u202fM inferences per day.",
+      "\u2265\u202f5,000 unique developer accounts created and at least 1,000 active daily users within 30\u202fdays of GA.",
+      "Net Promoter Score (NPS) \u2265\u202f70 from the beta cohort of 20 pilot customers.",
+      "Zero critical defects (Severity\u20111) at GA release; all Severity\u20112 defects resolved before launch.",
+      "Launch marketing campaign reaches \u2265\u202f200,000 impressions and generates \u2265\u202f2,000 click\u2011throughs to the developer portal."
+    ],
+    "constraints": [
+      "Total mission budget capped at $500,000 (including cloud consumption, contractor licenses, and marketing spend).",
+      "Must comply with GDPR and Microsoft Responsible AI standards \u2013 model documentation and data handling reviewed by Legal/Risk by Week\u202f4.",
+      "Dependency on Azure IoT Hub SDK v3.2 (scheduled release T\u201130); any delay pushes MVP prototype deadline.",
+      "Only two full\u2011time software engineers (Alex Chen + a contractor) allocated due to concurrent Azure Synapse project.",
+      "Launch must occur before the end of FY25 Q4 (31 Oct 2025) to count toward Azure AI revenue targets.",
+      "All code must pass Microsoft Secure Development Lifecycle (SDL) checks before GA."
+    ],
+    "workback_prompt": "Generate a detailed workback plan for the VisionEdge Squad mission to launch the real\u2011time object detection API for edge devices. Include all milestones (T\u201156, T\u201142, T\u201128, T\u201114, T\u20110), weekly tasks, owners, dependencies (e.g., Azure IoT Hub SDK v3.2), resource allocations, risk mitigation, and deliverable dates. Align each task with the success metrics and constraints listed, and format the plan as a Gantt\u2011style table with clear start/end dates, effort estimates, and required approvals.",
+    "meeting_type": "Squad Mission Planning",
+    "meeting_type_key": "5_squad_mission",
+    "scenario_number": 2,
+    "horizon": "T-42 to T-56",
+    "complexity": "Medium-High",
+    "generated_at": "2025-11-17T05:43:31.881541"
+  },
+  {
+    "scenario_name": "Project Aurora \u2013 AI\u2011Powered Search Optimization Squad Mission",
+    "company_context": "Microsoft Azure AI division, Cloud Search product team. The squad is part of the Azure Cognitive Search group, tasked with integrating a new large\u2011language\u2011model (LLM) based relevance engine into the existing search service. The team follows the MMM (Mission\u2011Milestone\u2011Metric) framework and operates as a cross\u2011functional, autonomous squad of 7 members.",
+    "meeting_event_details": "2025-12-02, 10:00\u202fAM \u2013 11:00\u202fAM PST, 60\u2011minute virtual kickoff via Microsoft Teams (Meeting ID: 274 819 562). All squad members and key stakeholders are required to attend.",
+    "stakeholders": [
+      "Priya Patel \u2013 Directly Responsible Individual (DRI), Senior Product Manager \u2013 owns mission success, defines scope, and prioritizes backlog.",
+      "Liam O'Connor \u2013 Engineering Lead, Senior Software Engineer \u2013 responsible for architecture, code quality, and delivery of the LLM inference service.",
+      "Aisha Rahman \u2013 UX Lead, Interaction Designer \u2013 designs UI/UX for the new relevance controls and admin dashboards.",
+      "Dr. Chen Wu \u2013 Data Science Lead, Principal Data Scientist \u2013 builds and validates the LLM relevance model, defines evaluation metrics.",
+      "Ravi Kumar \u2013 Security & Compliance Engineer \u2013 ensures the solution meets Azure security baselines and GDPR/CCPA requirements.",
+      "Megan Liu \u2013 Marketing & Go\u2011to\u2011Market Manager \u2013 creates launch messaging, beta program plan, and adoption tracking.",
+      "Jenna Torres \u2013 Program Manager, Azure Cloud Infra \u2013 coordinates dependencies on compute quota, networking, and storage provisioning."
+    ],
+    "deliverables": [
+      "Mission Charter (incl. scope, success metrics, risk register) \u2013 due T+2 weeks.",
+      "Technical Architecture Document and API spec for the LLM relevance service \u2013 due T+2 weeks.",
+      "High\u2011fidelity UI mockups and interaction flow for relevance controls \u2013 due T+4 weeks.",
+      "Prototype LLM model trained on Azure Search logs with baseline relevance score \u2013 due T+4 weeks.",
+      "Beta\u2011ready integrated service (CI/CD pipeline, automated tests, security hardening) deployed to Azure staging \u2013 due T+6 weeks.",
+      "Beta program plan, pilot customer list, and success measurement framework \u2013 due T+6 weeks.",
+      "General Availability (GA) release package: code, documentation, rollout checklist, and post\u2011launch monitoring dashboard \u2013 due T+8 weeks."
+    ],
+    "success_criteria": [
+      "Achieve \u226520\u202f% reduction in average query latency for relevance\u2011enhanced searches in the beta environment.",
+      "Increase relevance\u2011score (NDCG@10) by \u226515\u202f% compared with the existing BM25 baseline on a held\u2011out test set.",
+      "Onboard at least 5 strategic enterprise customers into the beta program within 2 weeks of beta launch.",
+      "Maintain 99.9\u202f% availability of the LLM inference endpoint during the beta period.",
+      "Pass all Azure security compliance scans (Microsoft Secure Development Lifecycle) with zero critical findings.",
+      "Deliver GA on schedule (T+8 weeks) within the allocated $250k budget.",
+      "Post\u2011launch adoption: \u226530\u202f% of Azure Search customers enable the new relevance feature within 30 days of GA."
+    ],
+    "constraints": [
+      "Total budget capped at $250,000 (includes cloud compute, third\u2011party model licensing, and contractor UX work).",
+      "Compute quota for GPU\u2011accelerated VMs must be secured from the Cloud Infra team by T+1 week.",
+      "All data used for model training must be anonymized and stored in a compliant Azure Blob container (RG\u2011azsearch\u2011ml).",
+      "Dependency on the Azure Identity team for token\u2011based authentication integration \u2013 delivery expected by T+3 weeks.",
+      "Legal review of the external model licensing agreement must be completed before any production deployment (deadline T+5 weeks).",
+      "Team members are allocated 75\u202f% of their time to this mission; other commitments must not exceed 25\u202f%."
+    ],
+    "workback_prompt": "Generate a detailed 8\u2011week workback plan for the 'Project Aurora \u2013 AI\u2011Powered Search Optimization' squad mission. Include bi\u2011weekly milestones, owners, required inputs/outputs for each milestone, risk mitigation actions, and a timeline view. Align each deliverable and success metric with the mission charter, and reference the constraints (budget, compute quota, legal review, and cross\u2011team dependencies). Use the MMM framework (Mission, Milestone, Metric) to structure the plan and provide a concise executive summary for senior leadership.",
+    "meeting_type": "Squad Mission Planning",
+    "meeting_type_key": "5_squad_mission",
+    "scenario_number": 3,
+    "horizon": "T-42 to T-56",
+    "complexity": "Medium-High",
+    "generated_at": "2025-11-17T05:54:48.561815"
+  }
+]

@@ -9,9 +9,22 @@ import os
 import sys
 import json
 from typing import Optional, Dict, Any
-import ollama
-import openai
-from anthropic import Anthropic
+
+# Import providers lazily to avoid requiring all dependencies
+try:
+    import ollama
+except ImportError:
+    ollama = None
+
+try:
+    import openai
+except ImportError:
+    openai = None
+
+try:
+    from anthropic import Anthropic
+except ImportError:
+    Anthropic = None
 
 class LLMAPIClient:
     def __init__(self):
@@ -21,18 +34,21 @@ class LLMAPIClient:
     def configure_clients(self):
         """Configure API clients for different providers"""
         # Ollama (local) - default client
-        self.ollama_client = ollama.Client()
+        if ollama:
+            self.ollama_client = ollama.Client()
+        else:
+            self.ollama_client = None
         
         # OpenAI
         openai_key = os.getenv('OPENAI_API_KEY')
-        if openai_key:
+        if openai_key and openai:
             self.openai_client = openai.OpenAI(api_key=openai_key)
         else:
             self.openai_client = None
         
         # Anthropic
         anthropic_key = os.getenv('ANTHROPIC_API_KEY')
-        if anthropic_key:
+        if anthropic_key and Anthropic:
             self.anthropic_client = Anthropic(api_key=anthropic_key)
         else:
             self.anthropic_client = None
@@ -69,6 +85,9 @@ class LLMAPIClient:
     
     def _query_ollama(self, prompt: str, model: str, image_path: Optional[str] = None, base_url: Optional[str] = None, temperature: Optional[float] = None, timeout: Optional[float] = None) -> str:
         """Query Ollama local or remote LLM"""
+        if not ollama:
+            raise ImportError("ollama module not installed. Install with: pip install ollama")
+        
         try:
             # Get or create client for this base_url
             if base_url:

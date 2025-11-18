@@ -1,0 +1,50 @@
+{
+  "scenario_name": "TechNova AI Solutions \u2013 2025 Global Product Innovation Annual Kickoff",
+  "company_context": "TechNova AI Solutions is a mid\u2011size (\u2248850 employees) SaaS company specializing in AI\u2011driven workflow automation for enterprise customers. The Global Product Innovation (GPI) team consists of 120 members across three sub\u2011teams: Core Platform (45), Industry Solutions (50), and Customer Success Engineering (25). The GPI team reports to the VP of Product and collaborates closely with Engineering, Sales, Marketing, and Legal.",
+  "meeting_event_details": "June 10\u201112, 2025 (3 days) \u2013 Aspen Mountain Resort, Snowmass, Colorado, USA. \nDay\u202f1 (June\u202f10) 08:30\u201118:00 \u2013 Strategy & Vision. \nDay\u202f2 (June\u202f11) 09:00\u201119:00 \u2013 Roadmap Workshops & Cross\u2011Team Hackathon. \nDay\u202f3 (June\u202f12) 09:00\u201115:00 \u2013 OKR Alignment, Team\u2011Building Activities, Closing Ceremony. \nAll sessions are in the Grand Ballroom (capacity 200) with breakout rooms on each floor. Evening networking receptions are held in the resort\u2019s Alpine Lounge.",
+  "stakeholders": [
+    "Maya Patel \u2013 Chief Executive Officer \u2013 Executive sponsor, final approval of budget and strategic direction",
+    "Carlos Ramirez \u2013 Chief Technology Officer \u2013 Keynote speaker on technology trends, oversees technical feasibility reviews",
+    "Leah Chen \u2013 Vice President, Product \u2013 Owner of the kickoff agenda, leads roadmap presentations",
+    "Rohan Singh \u2013 Director, Core Platform \u2013 Facilitates Core Platform breakout sessions",
+    "Aisha Al\u2011Mansour \u2013 Director, Industry Solutions \u2013 Leads industry\u2011specific workshops",
+    "Diego Torres \u2013 Director, Customer Success Engineering \u2013 Coordinates customer\u2011centric demos and success metrics",
+    "Natalie Brooks \u2013 Senior Program Manager, GPI \u2013 Responsible for logistics, vendor management, and on\u2011site execution",
+    "Jenna Lee \u2013 Head of People & Culture \u2013 Designs team\u2011building activities and ensures DEI considerations",
+    "Markus Vogel \u2013 AV & Production Lead (External Vendor) \u2013 Manages all audio\u2011visual and live\u2011streaming needs",
+    "Sofia Alvarez \u2013 Marketing Communications Manager \u2013 Produces event swag, branding, and post\u2011event communications"
+  ],
+  "deliverables": [
+    "Master Kickoff Deck (PDF) containing vision, market insights, and strategic priorities",
+    "2025 Product Roadmap (interactive PDF) approved by all sub\u2011team leads",
+    "GPI OKR Sheet (Google Sheet) with measurable objectives for Q1\u2011Q4 2025",
+    "Recorded video of all keynote and breakout sessions (uploaded to internal LMS)",
+    "Post\u2011event Survey Report (PDF) with Net Promoter Score and actionable feedback",
+    "Action\u2011Item Tracker (Jira) with owners, due dates, and status for each initiative identified during the hackathon",
+    "Swag Kit (branded notebook, reusable water bottle, RFID badge holder) delivered to each attendee"
+  ],
+  "success_criteria": [
+    "\u2265 95% of invited GPI team members attend in\u2011person (target 115/120)",
+    "Average session satisfaction rating \u2265 4.5/5 on post\u2011event survey",
+    "Product Roadmap receives formal sign\u2011off from all three sub\u2011team directors by June\u202f15",
+    "At least 3 cross\u2011functional initiatives (e.g., joint feature pilots) are defined and entered into the Action\u2011Item Tracker",
+    "Event stays within the approved budget of $150,000 (\u00b15%)",
+    "Net Promoter Score (NPS) for the kickoff \u2265 70",
+    "All recorded sessions uploaded and accessible within 48\u202fhours after the event"
+  ],
+  "constraints": [
+    "Total budget capped at $150,000 (venue, travel, catering, AV, swag, and contingency)",
+    "Venue capacity limited to 200 attendees \u2013 must manage room assignments and social\u2011distancing signage",
+    "Travel restrictions for two international team members (require visa processing by May\u202f15)",
+    "All deliverables must be finalized within a T\u201160 planning horizon (i.e., 60 days before June\u202f10)",
+    "AV setup must support simultaneous live\u2011stream to remote participants in three time zones (EST, PST, GMT)",
+    "Swag items must be sourced from sustainable vendors and comply with the company\u2019s ESG policy"
+  ],
+  "workback_prompt": "Generate a detailed workback plan for the 'TechNova AI Solutions \u2013 2025 Global Product Innovation Annual Kickoff' scenario. Include all major milestones, tasks, owners, dependencies, and dates starting from today (T\u201160) through the event dates (June 10\u201112, 2025) and post\u2011event deliverable deadlines. Highlight critical path items, risk mitigation steps, and required approvals. The plan should be formatted as a table or Gantt\u2011style list suitable for import into a project\u2011management tool.",
+  "meeting_type": "Annual Kickoff Meeting",
+  "meeting_type_key": "7_annual_kickoff",
+  "scenario_number": 3,
+  "horizon": "T-60",
+  "complexity": "High",
+  "generated_at": "2025-11-17T06:49:17.921626"
+}

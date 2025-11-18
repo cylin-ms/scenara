@@ -1,0 +1,70 @@
+{
+  "scenario_name": "Nimbus Cloud Solutions \u2013 Enterprise SaaS Monthly Business Review (MBR) \u2013 Product & Engineering",
+  "company_context": "Nimbus Cloud Solutions (NASDAQ: NCS) is a mid\u2011size enterprise SaaS provider focused on cloud\u2011native collaboration and data\u2011analytics platforms for Fortune 500 customers. The Enterprise SaaS Platform division (\u22481,200 FTE) is organized into Product Management, Engineering, Data Science, and Customer Success. The Product & Engineering leadership team is presenting the monthly business review to the executive suite.",
+  "meeting_event_details": "Date: Tuesday, 5\u202fDecember\u202f2025\nTime: 10:00\u202fAM \u2013 11:30\u202fAM\u202fPST (90\u202fminutes)\nLocation: Executive Boardroom, 23rd Floor, Nimbus HQ, San Francisco + Zoom (Meeting ID: 947\u202f862\u202f321)\nAgenda: 1) Business performance snapshot, 2) Product roadmap health, 3) Engineering delivery metrics, 4) Key challenges & opportunities, 5) Decision items & next steps.",
+  "stakeholders": [
+    {
+      "name": "Maya Patel",
+      "role": "Chief Executive Officer (CEO)",
+      "responsibility": "Overall business strategy, final decision authority"
+    },
+    {
+      "name": "Daniel Liu",
+      "role": "Chief Financial Officer (CFO)",
+      "responsibility": "Financial health, budget approvals"
+    },
+    {
+      "name": "Elena Garcia",
+      "role": "Chief Revenue Officer (CRO)",
+      "responsibility": "Revenue targets, go\u2011to\u2011market alignment"
+    },
+    {
+      "name": "Alex Chen",
+      "role": "Senior Vice President, Product & Growth",
+      "responsibility": "Product vision, market positioning"
+    },
+    {
+      "name": "Priya Singh",
+      "role": "Vice President, Engineering",
+      "responsibility": "Engineering delivery, technical debt, platform reliability"
+    },
+    {
+      "name": "Omar Hassan",
+      "role": "Head of Data & Analytics",
+      "responsibility": "Data integrity, reporting pipelines"
+    },
+    {
+      "name": "Lena Wu",
+      "role": "Director, Customer Success",
+      "responsibility": "Churn, NPS, upsell opportunities"
+    }
+  ],
+  "deliverables": [
+    "Updated 12\u2011month product roadmap with prioritized AI\u2011enhanced features and associated resource estimates",
+    "Revised pricing & packaging model for SMB tier to address churn",
+    "Action plan to reduce SMB churn by 15\u202f% YoY, including ownership, milestones, and KPI targets",
+    "Q1\u202f2026 financial forecast (ARR, OPEX, CAPEX) reflecting roadmap decisions",
+    "Decision log capturing executive approvals for budget allocation ($5\u202fM cap for AI integration) and partnership commitments with Microsoft Azure"
+  ],
+  "success_criteria": [
+    "Executive sign\u2011off on the revised roadmap and budget within the 90\u2011minute session",
+    "Clear assignment of owners for each churn\u2011reduction initiative with start dates",
+    "Agreement on a target NPS increase of +5 points by end\u2011Q2\u202f2026",
+    "Commitment to a go\u2011to\u2011market launch window for the first AI feature by 30\u202fApril\u202f2026",
+    "All required data visualizations (ARR, churn, feature adoption, engineering velocity) presented without data\u2011quality issues"
+  ],
+  "constraints": [
+    "Total incremental budget for new AI features limited to $5\u202fM for FY\u202f2026",
+    "Engineering capacity constrained to 80\u202f% of current velocity due to ongoing platform migration",
+    "Data refresh latency: reporting data must be no older than 24\u202fhours; any older data must be flagged",
+    "Dependency on Microsoft Azure partnership agreement finalization by 15\u202fDecember\u202f2025",
+    "Presentation deck must be finalized and distributed to executives at least 24\u202fhours before the meeting"
+  ],
+  "workback_prompt": "Generate a detailed workback plan for the 'Nimbus Cloud Solutions \u2013 Enterprise SaaS Monthly Business Review (MBR) \u2013 Product & Engineering' scenario. The plan should start from T\u201130 (30 days before the meeting on 5\u202fDecember\u202f2025) and outline all tasks, owners, durations, dependencies, and required data sources needed to produce the deliverables listed. Include milestones for data extraction, deck creation, stakeholder reviews, budget approval steps, and contingency actions for the identified constraints. Format the output as a table or Gantt\u2011style list suitable for project tracking.",
+  "meeting_type": "Monthly Business Review",
+  "meeting_type_key": "3_monthly_business_review",
+  "scenario_number": 2,
+  "horizon": "T-30",
+  "complexity": "High",
+  "generated_at": "2025-11-17T04:46:25.023583"
+}

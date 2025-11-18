@@ -1,0 +1,357 @@
+{
+  "scenario_name": "Weekly GreenPulse Customer Success Newsletter",
+  "scenario_number": 2,
+  "meeting_type": "Weekly Team Newsletter",
+  "quality_level": "low",
+  "workback_prompt": "Create a detailed workback plan for the 'Weekly GreenPulse Customer Success Newsletter' at EcoTech Solutions. The plan should start from the send date (Friday, November 29, 2025, 09:00\u202fAM PST) and work backwards, covering all tasks, owners, durations, dependencies, and milestones needed to meet the deadline and success criteria outlined in the scenario. Include steps for content drafting, stakeholder reviews, design asset creation, approval workflow, email build, testing, analytics setup, and post\u2011send reporting. Highlight any risk mitigation actions for the constraints (budget, compliance, and product\u2011release dependencies).\n\nGenerate a LOW QUALITY workback plan with these characteristics:\n- Missing key tasks or phases\n- Vague task descriptions\n- Few or no dependencies defined\n- Missing stakeholder assignments\n- No milestones or poorly defined milestones\n- Unrealistic timelines\n- No risk consideration\n- Minimal deliverables identified\n\nIMPORTANT: Generate a plan that naturally exhibits LOW quality characteristics.\nDo not explicitly label the plan as \"low quality\" - let the quality emerge from the content.",
+  "generated_at": "2025-11-17T04:01:24.019370",
+  "analysis": "**Analysis & Guidance**\n\nBelow is a structured analysis that helps you **break down** the creation of a work\u2011back plan for the *Weekly GreenPulse Customer Success Newsletter* at EcoTech Solutions. It outlines the key outcomes you\u2019ll need, the reasoning behind each, and a high\u2011level approach you can follow. By following this framework you can assemble the plan yourself, tailoring the level of detail (or lack\u2011of\u2011detail) to match the \u201clow\u2011quality\u201d characteristics you described.\n\n---\n\n# Outcomes\n\n## 1. Draft Work\u2011Back Schedule (date\u2011based list of tasks)\nA simple table that starts from the send date (Friday\u202fNov\u202f29\u202f2025\u202f09:00\u202fAM\u202fPST) and lists tasks in reverse order.  \nArtifact references: *None needed \u2013 created from scratch.*\n\n### Reasoning\nThe core deliverable requested is a work\u2011back plan. The schedule is the primary artifact that will be shared with the team.\n\n### Approach\n1. Open a spreadsheet or document.  \n2. Create a column for \u201cTask,\u201d \u201cOwner (optional),\u201d \u201cDuration,\u201d \u201cDependency (optional),\u201d and \u201cNotes.\u201d  \n3. Add rows for each major activity (content draft, stakeholder review, design, approval, build, test, analytics, reporting).  \n4. Work backwards from the send date, subtracting rough durations (e.g., \u201c1 day,\u201d \u201c2\u202fdays\u201d).  \n5. Leave many cells blank or vague to meet the low\u2011quality requirement.\n\n---\n\n## 2. Identify Rough Task Descriptions\nA list of brief, generic task names without detailed scope.  \nArtifact references: *None needed.*\n\n### Reasoning\nThe user asked for \u201cvague task descriptions\u201d and missing detail. Providing a short list satisfies that need while still giving a skeleton to flesh out later.\n\n### Approach\n1. Write one\u2011line titles such as \u201cWrite content,\u201d \u201cReview,\u201d \u201cCreate assets,\u201d etc.  \n2. Avoid specifics like \u201cInterview product team about release\u202fX.2.\u201d  \n3. Do not attach detailed acceptance criteria.\n\n---\n\n## 3. Minimal Owner Assignment\nA column with a few placeholder owners (e.g., \u201cTeam Lead\u201d) and many blanks.  \nArtifact references: *None needed.*\n\n### Reasoning\nThe request calls for \u201cfew or no stakeholder assignments.\u201d Including only a couple of generic owners meets that while still indicating that ownership exists somewhere.\n\n### Approach\n1. Assign \u201cContent Lead\u201d to the drafting row, \u201cDesign Lead\u201d to the asset row.  \n2. Leave the rest empty or use \u201cTBD.\u201d  \n3. Do not specify email addresses, team names, or roles beyond the generic label.\n\n---\n\n## 4. Basic Milestones (or poorly defined)\nTwo or three high\u2011level markers such as \u201cDraft ready\u201d and \u201cSend.\u201d  \nArtifact references: *None needed.*\n\n### Reasoning\nMilestones are required by the scenario, but the user wants them to be poorly defined. A couple of vague milestones satisfy this.\n\n### Approach\n1. Insert a milestone row labelled \u201cDraft complete\u201d placed a few days before send.  \n2. Insert another labeled \u201cNewsletter sent.\u201d  \n3. Do not add intermediate checkpoints (e.g., \u201cDesign sign\u2011off\u201d) or dates beyond the obvious.\n\n---\n\n## 5. Simplified Dependency Mapping\nOnly a handful of obvious dependencies (e.g., \u201cDesign after draft\u201d).  \nArtifact references: *None needed.*\n\n### Reasoning\nThe user wants \u201cfew or no dependencies defined.\u201d Adding just one or two simple links keeps the plan minimal.\n\n### Approach\n1. For the \u201cCreate assets\u201d task, note \u201cDepends on Draft.\u201d  \n2. For the \u201cEmail build\u201d task, note \u201cDepends on Assets.\u201d  \n3. Leave all other tasks without dependency notes.\n\n---\n\n## 6. Risk Note (optional, minimal)\nA single bullet point acknowledging a generic risk such as \u201cbudget constraints may affect design time.\u201d  \nArtifact references: *None needed.*\n\n### Reasoning\nEven a low\u2011quality plan should at least hint at risk, satisfying the scenario\u2019s mention of \u201crisk mitigation actions\u201d while keeping it vague.\n\n### Approach\n1. Add a \u201cRisks\u201d section with one short line.  \n2. Do not elaborate on mitigation steps, owners, or impact levels.\n\n---\n\n# Breakdown (Work\u2011Breakdown Structure)\n\n```\n1. Draft Work\u2011Back Schedule\n   1.1 Open a new spreadsheet/document\n   1.2 Create columns: Task, Owner, Duration, Dependency, Notes\n   1.3 Populate rows with high\u2011level tasks (see Outcome\u202f2)\n   1.4 Work backwards from send date, subtracting rough days\n   1.5 Leave many cells blank or vague\n\n2. Identify Rough Task Descriptions\n   2.1 List generic tasks:\n       \u2022 Write content\n       \u2022 Review draft\n       \u2022 Create design assets\n       \u2022 Approve newsletter\n       \u2022 Build email\n       \u2022 Test send\n       \u2022 Set up analytics\n       \u2022 Post\u2011send report\n   2.2 Keep each description to one line, no sub\u2011tasks\n\n3. Minimal Owner Assignment\n   3.1 Assign \u201cContent Lead\u201d to \u201cWrite content\u201d\n   3.2 Assign \u201cDesign Lead\u201d to \u201cCreate design assets\u201d\n   3.3 Mark remaining Owner cells as \u201cTBD\u201d or leave blank\n\n4. Basic Milestones\n   4.1 Add milestone \u201cDraft complete\u201d (date loosely defined)\n   4.2 Add milestone \u201cNewsletter sent\u201d (actual send date)\n\n5. Simplified Dependency Mapping\n   5.1 Note \u201cCreate design assets\u201d depends on \u201cWrite content\u201d\n   5.2 Note \u201cBuild email\u201d depends on \u201cCreate design assets\u201d\n   5.3 No other dependencies listed\n\n6. Risk Note (optional)\n   6.1 Add bullet: \u201cBudget constraints may limit design resources\u201d\n```\n\n**Dependencies (explicitly noted)**  \n- 5.1 depends on 2.1 (content task)  \n- 5.2 depends on 2.1 (design task)\n\n**Parallel possibilities (implicitly allowed)**  \n- Tasks without listed dependencies (e.g., \u201cAnalytics setup,\u201d \u201cPost\u2011send report\u201d) can be started at any time.\n\n---\n\n### How to Use This Guidance\n\n1. **Copy the structure** into your preferred tool (Excel, Google Sheets, a wiki page).  \n2. **Fill in dates** by subtracting the rough durations you chose (e.g., \u201c1\u202fday\u201d for each task).  \n3. **Leave gaps** where you want the plan to stay vague (no owners, no detailed durations).  \n4. **Share** the draft with the team; because it\u2019s intentionally low\u2011detail, expect follow\u2011up questions that you can address later.  \n5. **Iterate** only if you need to add more detail for compliance or budgeting \u2013 otherwise keep it as\u2011is to meet the low\u2011quality brief.\n\n---\n\nBy following this high\u2011level approach you\u2019ll produce a work\u2011back plan that meets the user\u2019s request for a **low\u2011quality** artifact while still adhering to the system instruction to provide guidance rather than the final deliverable. Feel free to adjust the level of vagueness, missing tasks, or owner assignments to better match the exact tone you need.",
+  "plan": {
+    "id": "document-001",
+    "name": "Weekly GreenPulse Customer Success Newsletter Work\u2011Back Plan",
+    "details": "Low\u2011detail work\u2011back plan for the Weekly GreenPulse Customer Success Newsletter at EcoTech Solutions.",
+    "draft": true,
+    "participants": [
+      {
+        "name": "you",
+        "draft": true
+      }
+    ],
+    "references": [],
+    "deliverables": [],
+    "tasks": [
+      {
+        "id": "task-001-1",
+        "name": "Open a new spreadsheet/document",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-001-2",
+        "name": "Create columns: Task, Owner, Duration, Dependency, Notes",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-001-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-001-3",
+        "name": "Populate rows with high\u2011level tasks (see Outcome\u202f2)",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-001-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-001-4",
+        "name": "Work backwards from send date, subtracting rough days",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-001-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-001-5",
+        "name": "Leave many cells blank or vague",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-001-4"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-001",
+        "name": "Draft Work\u2011Back Schedule",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-001-1",
+          "task-001-2",
+          "task-001-3",
+          "task-001-4",
+          "task-001-5"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002-1",
+        "name": "List generic tasks: Write content, Review draft, Create design assets, Approve newsletter, Build email, Test send, Set up analytics, Post\u2011send report",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002-2",
+        "name": "Keep each description to one line, no sub\u2011tasks",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-002-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002",
+        "name": "Identify Rough Task Descriptions",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-002-1",
+          "task-002-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003-1",
+        "name": "Assign \u201cContent Lead\u201d to \u201cWrite content\u201d",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003-2",
+        "name": "Assign \u201cDesign Lead\u201d to \u201cCreate design assets\u201d",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-003-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003-3",
+        "name": "Mark remaining Owner cells as \u201cTBD\u201d or leave blank",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-003-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003",
+        "name": "Minimal Owner Assignment",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-003-1",
+          "task-003-2",
+          "task-003-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-004-1",
+        "name": "Add milestone \u201cDraft complete\u201d (date loosely defined)",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-004-2",
+        "name": "Add milestone \u201cNewsletter sent\u201d (actual send date)",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-004-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-004",
+        "name": "Basic Milestones",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-004-1",
+          "task-004-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-005-1",
+        "name": "Note \u201cCreate design assets\u201d depends on \u201cWrite content\u201d",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-002-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-005-2",
+        "name": "Note \u201cBuild email\u201d depends on \u201cCreate design assets\u201d",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-005-1",
+          "task-002-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-005-3",
+        "name": "No other dependencies listed",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-005-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-005",
+        "name": "Simplified Dependency Mapping",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-005-1",
+          "task-005-2",
+          "task-005-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-006-1",
+        "name": "Add bullet: \u201cBudget constraints may limit design resources\u201d",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-006",
+        "name": "Risk Note (optional)",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-006-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      }
+    ],
+    "history": []
+  }
+}

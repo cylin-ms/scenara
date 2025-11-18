@@ -1,0 +1,152 @@
+{
+  "basic_info": {
+    "full_name": "Michelle Garcia",
+    "age": 38,
+    "location": "Austin, Texas, USA (Central Time - CT)",
+    "years_of_experience": 12,
+    "education_background": [
+      {
+        "degree": "Bachelor of Science",
+        "field": "Computer Science",
+        "institution": "University of Texas at Austin",
+        "year": 2009
+      },
+      {
+        "degree": "Master of Science",
+        "field": "Software Engineering",
+        "institution": "Georgia Institute of Technology",
+        "year": 2012
+      }
+    ]
+  },
+  "work_habits": {
+    "preferred_working_hours": "8:00 AM – 4:00 PM CT (early bird)",
+    "peak_productivity_times": [
+      "9:00 AM – 11:00 AM CT",
+      "2:00 PM – 3:30 PM CT"
+    ],
+    "communication_style": {
+      "preference": "asynchronous with quick syncs when needed",
+      "expected_response_time_hours": 4
+    },
+    "meeting_preferences": {
+      "meeting_minimizer": true,
+      "max_meeting_time_per_week_hours": 2,
+      "prefers_face_to_face": "Hybrid – in‑person when on office days"
+    },
+    "work_environment": "Hybrid (3 days office, 2 days remote)",
+    "focus_time_requirements": "Blocks of 3–4 hours daily, protected via calendar"
+  },
+  "personality": {
+    "mbti": "ENTJ",
+    "decision_making_approach": "Data‑driven but seeks team input before final sign‑off",
+    "risk_tolerance": "Moderate – prefers mitigated risk with clear fallback plans",
+    "collaboration_style": "Structured; sets clear agendas and outcomes",
+    "stress_management_approach": "Morning runs, weekly yoga, short mindfulness breaks",
+    "conflict_resolution_style": "Collaborative problem solving, aims for win‑win outcomes"
+  },
+  "skills": {
+    "core_technical_skills": {
+      "cloud_architecture (AWS/GCP)": 9,
+      "microservices_design": 8,
+      "ci/cd_pipeline (Jenkins, GitHub Actions)": 8,
+      "data_engineering (Spark, Snowflake)": 7,
+      "frontend_react": 6,
+      "infrastructure_as_code (Terraform)": 8,
+      "containerization (Docker, Kubernetes)": 8
+    },
+    "leadership_abilities": 8,
+    "domain_expertise_areas": [
+      "SaaS platform engineering",
+      "FinTech compliance and security",
+      "Scalable payment processing"
+    ],
+    "learning_agility": 8,
+    "tools_proficiency": [
+      "Jira",
+      "Confluence",
+      "GitHub",
+      "Slack",
+      "Microsoft Teams",
+      "Terraform",
+      "Docker",
+      "Kubernetes",
+      "Grafana"
+    ],
+    "languages_spoken": [
+      "English (native)",
+      "Spanish (conversational)"
+    ]
+  },
+  "performance": {
+    "task_completion_rate_percent": 93,
+    "quality_score_percent": 96,
+    "estimation_accuracy_percent": 85,
+    "multitasking_ability": 6,
+    "performance_under_pressure": 8
+  },
+  "availability": {
+    "available_hours_per_week": 40,
+    "timezone_and_working_hours": "CT (8:00 AM – 5:00 PM)",
+    "planned_time_off_days_per_year": 20,
+    "other_commitments": [
+      "Quarterly speaking engagement at local tech meetups",
+      "Monthly industry webinar attendance (2‑3 hrs)"
+    ],
+    "travel_flexibility": "Up to 10% of time (~4 weeks/year), mostly for client workshops"
+  },
+  "personal_factors": {
+    "family_status": "Married, two children (ages 5 and 2)",
+    "caregiving_responsibilities": "Morning school drop‑offs and occasional after‑school care",
+    "commute_situation": "30‑minute drive to TechCorp Austin campus",
+    "health_considerations": "Generally healthy; runs 3×/week, attends weekly yoga",
+    "career_motivation": "Drive to build high‑impact products, mentor the next generation of engineers, and progress toward senior director role"
+  },
+  "project_impact": {
+    "reliability": 9,
+    "innovation_tendency": 7,
+    "documentation_quality": 8,
+    "mentorship_capability": 9,
+    "influence_level": 8
+  },
+  "collaboration": {
+    "meeting_frequency_preference": {
+      "team_sync": "Weekly 1‑hour stand‑up",
+      "cross_team_sync": "Bi‑weekly 30‑minute alignment"
+    },
+    "communication_channels_preference": [
+      "Slack for quick questions",
+      "Email for formal decisions",
+      "Confluence for specs & documentation"
+    ],
+    "feedback_style": "Direct yet diplomatic; focuses on actionable items",
+    "knowledge_sharing_habits": [
+      "Writes monthly internal blog posts",
+      "Leads quarterly brown‑bag sessions",
+      "Maintains a shared “best‑practices” Confluence space"
+    ],
+    "cross_team_collaboration_score": 7
+  },
+  "risk_factors": {
+    "potential_bottlenecks": [
+      "High dependency on her for release coordination",
+      "Meeting overload during sprint planning periods"
+    ],
+    "backup_person_needed": "Senior Lead Engineer – Alex Patel",
+    "ramp_up_time_for_new_projects_weeks": 2,
+    "context_switching_tolerance": 5,
+    "burnout_risk_factors": [
+      "Balancing caregiving duties with peak project phases",
+      "Excessive unstructured meeting invitations"
+    ]
+  },
+  "_metadata": {
+    "generated_at": "2025-11-17T15:14:12.944423",
+    "name": "Michelle Garcia",
+    "role": "Engineering Manager",
+    "seniority": "mid",
+    "company": "TechCorp",
+    "model": "gpt-oss:120b",
+    "provider": "ollama"
+  }
+}

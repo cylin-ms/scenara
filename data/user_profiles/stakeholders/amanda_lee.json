@@ -1,0 +1,135 @@
+{
+  "basic_info": {
+    "full_name": "Amanda Lee",
+    "age": 42,
+    "location": "Seattle, WA, USA (Pacific Time - PT)",
+    "years_of_experience": 18,
+    "education": [
+      {
+        "degree": "B.S. Computer Science",
+        "institution": "Stanford University",
+        "year": 2005
+      },
+      {
+        "degree": "MBA",
+        "institution": "Harvard Business School",
+        "year": 2009
+      }
+    ]
+  },
+  "work_habits": {
+    "preferred_working_hours": "Early bird (7:00‑11:00 AM PT)",
+    "peak_productivity_times": "8:00‑11:00 AM PT",
+    "communication_style": "Prefers async updates; typically replies within 4 business hours",
+    "meeting_preferences": "Limits to 6 meetings/week, favors 30‑minute stand‑ups and quarterly face‑to‑face strategy workshops",
+    "work_environment": "Hybrid (3 days remote, 2 days in office)",
+    "focus_time_requirements": "Blocks 2‑3 hours daily for deep work; uses calendar “Do Not Disturb” slots"
+  },
+  "personality": {
+    "mbti": "ENTJ",
+    "decision_making_approach": "Data‑driven, aligns stakeholders via RACI matrix before final sign‑off",
+    "risk_tolerance": "Moderate – leans toward calculated risk with clear mitigation plans",
+    "collaboration_style": "Strategic partner; empowers cross‑functional autonomy while maintaining clear KPIs",
+    "stress_management_approach": "Morning meditation (15 min), scheduled micro‑breaks, delegation of non‑critical tasks",
+    "conflict_resolution_style": "Direct yet diplomatic; seeks win‑win outcomes through fact‑based discussion"
+  },
+  "skills": {
+    "core_technical_skills": {
+      "Product Roadmapping": 9,
+      "Agile Methodologies": 9,
+      "Data Analytics (SQL, Python)": 8,
+      "Cloud Platforms (AWS, GCP)": 7,
+      "UX/UI Principles": 6,
+      "APIs & Microservices": 7
+    },
+    "leadership_abilities": {
+      "Strategic Vision": 9,
+      "People Management": 8,
+      "Change Management": 7,
+      "Stakeholder Influence": 8,
+      "Talent Development": 9
+    },
+    "domain_expertise_areas": [
+      "Enterprise SaaS",
+      "AI/ML Platform Products",
+      "Cybersecurity Solutions"
+    ],
+    "learning_agility": 9,
+    "tools_proficiency": [
+      "Jira",
+      "Confluence",
+      "Aha!",
+      "Tableau",
+      "Slack",
+      "Microsoft Teams",
+      "Google Workspace",
+      "Miro"
+    ],
+    "languages_spoken": [
+      "English (native)",
+      "Mandarin (conversational)"
+    ]
+  },
+  "performance": {
+    "task_completion_rate": 94,
+    "quality_score": 92,
+    "estimation_accuracy": 88,
+    "multitasking_ability": 7,
+    "performance_under_pressure": 8
+  },
+  "availability": {
+    "available_hours_per_week": 45,
+    "timezone_and_working_hours": "Pacific Time (7:00‑17:00 PT)",
+    "planned_time_off_days_per_year": 25,
+    "other_commitments": [
+      "Quarterly industry conference speaking (2 days/year)",
+      "Mentorship program (4 hours/month)"
+    ],
+    "travel_flexibility": "Up to 15% of time (≈5 days per quarter), primarily domestic"
+  },
+  "personal_factors": {
+    "family_status": "Married, two children (8 y/o and 5 y/o)",
+    "caregiving_responsibilities": "School pick‑up evenings twice per week; occasional weekend activities",
+    "commute_situation": "0 (remote 3 days, 20‑minute drive to office on office days)",
+    "health_considerations": "Mild seasonal allergies; regular fitness routine (3 times/week)",
+    "career_motivation": "Passionate about building globally‑scalable products and mentoring the next generation of product leaders"
+  },
+  "project_impact": {
+    "reliability": 9,
+    "innovation_tendency": 8,
+    "documentation_quality": 8,
+    "mentorship_capability": 9,
+    "influence_level": 9
+  },
+  "collaboration": {
+    "meeting_frequency_preference": "Bi‑weekly strategic sync, weekly 30‑min stand‑up, ad‑hoc as needed",
+    "communication_channels_preference": [
+      "Slack (async)",
+      "Email (formal)",
+      "Zoom (sync)"
+    ],
+    "feedback_style": "Direct, data‑backed, balanced with empathy",
+    "knowledge_sharing_habits": "Monthly brown‑bag sessions, regular internal wiki contributions, recorded demo videos",
+    "cross_team_collaboration_score": 8
+  },
+  "risk_factors": {
+    "potential_bottlenecks": "Heavy reliance on deep‑focus blocks can be disrupted by unexpected meetings; limited availability during school pick‑up hours",
+    "backup_person_needed": "Associate Director of Product Management – Jordan Patel",
+    "ramp_up_time_new_projects_weeks": 3,
+    "context_switching_tolerance": 6,
+    "burnout_risk_factors": [
+      "High project load during major product launches",
+      "Tendency to over‑commit to cross‑functional initiatives",
+      "Limited personal downtime in Q4 fiscal year"
+    ]
+  },
+  "_metadata": {
+    "generated_at": "2025-11-17T15:12:41.301160",
+    "name": "Amanda Lee",
+    "role": "Director of Product Management",
+    "seniority": "senior",
+    "company": "TechCorp",
+    "model": "gpt-oss:120b",
+    "provider": "ollama"
+  }
+}

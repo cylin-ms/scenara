@@ -1,0 +1,51 @@
+{
+  "scenario_name": "Quantum Analytics FY2025 Annual Kickoff \u2013 \u201cData\u2011Driven Horizons\u201d",
+  "company_context": "Quantum Analytics is a mid\u2011size SaaS company (350 employees) that provides advanced data\u2011analytics platforms to large financial institutions. The Product & Engineering organization consists of 80 members across three squads (Core Platform, AI Insights, and Client Integrations) and reports to VP of Product, Maya Patel. The FY2025 Annual Kickoff is the flagship event for aligning strategy, launching the product roadmap, and strengthening cross\u2011functional collaboration.",
+  "meeting_event_details": "June 10\u201112, 2025 (Thursday\u2011Saturday) \u2022 09:00\u201117:00 each day \u2022 Venue: The Lodge at Pebble Beach, 1700 17th St, Pebble Beach, CA 93953 \u2022 Theme: \u201cData\u2011Driven Horizons\u201d \u2022 Objectives: (1) Communicate FY2025 corporate and product strategy, (2) Finalize OKRs for all squads, (3) Introduce the new AI\u2011Insights product line, (4) Foster team cohesion through off\u2011site activities, (5) Capture actionable feedback for continuous improvement.",
+  "stakeholders": [
+    "Ethan Reynolds \u2013 CEO \u2013 Sets overall vision, delivers opening keynote, approves budget.",
+    "Maya Patel \u2013 VP of Product \u2013 Owns agenda, leads product roadmap presentation, signs off on OKRs.",
+    "Liam O'Connor \u2013 CTO \u2013 Presents technology strategy, oversees technical deep\u2011dive sessions.",
+    "Sofia Martinez \u2013 Director of Sales \u2013 Shares market outlook, revenue targets, and sales enablement plan.",
+    "Ravi Singh \u2013 Head of Customer Success \u2013 Presents NPS goals, key client stories, and support roadmap.",
+    "Dr. Elena Kwon \u2013 External Industry Analyst (Guest Speaker) \u2013 Provides market trend insights.",
+    "Olivia Chen \u2013 Senior Program Manager (Event Lead) \u2013 Coordinates logistics, vendor contracts, and on\u2011site execution.",
+    "Jamal Brooks \u2013 Lead Designer \u2013 Designs visual assets, swag, and presentation templates.",
+    "Karen Liu \u2013 HR Business Partner \u2013 Organizes team\u2011building activities and DEI workshops.",
+    "Victor Alvarez \u2013 Finance Manager \u2013 Tracks budget, invoices, and cost variance."
+  ],
+  "deliverables": [
+    "Master kickoff agenda and detailed run\u2011of\u2011show (PDF).",
+    "FY2025 corporate strategy deck (PowerPoint).",
+    "Product roadmap presentation with timelines and feature owners (PowerPoint).",
+    "OKR workbook for each squad (Google Sheet) signed off by squad leads.",
+    "Recorded video of all sessions uploaded to internal LMS.",
+    "Post\u2011event survey report with Net Promoter Score and action items.",
+    "Swag package (branded notebook, reusable water bottle, laptop stickers) delivered to each attendee.",
+    "Final expense report vs. $150,000 budget cap."
+  ],
+  "success_criteria": [
+    "\u2265 95% of invited team members attend in person or via live stream.",
+    "Average post\u2011event satisfaction rating \u2265 4.5/5.",
+    "All squad OKRs approved and uploaded within 48\u202fhours of event close.",
+    "Budget variance \u2264\u202f5% of the $150k cap.",
+    "Net Promoter Score (NPS) for the event \u2265\u202f70.",
+    "\u2265\u202f80% of participants complete the post\u2011event survey.",
+    "Zero critical AV or catering incidents reported."
+  ],
+  "constraints": [
+    "Total event budget limited to $150,000 (venue, travel, catering, AV, swag).",
+    "Venue contract must be signed by March\u202f31, 2025.",
+    "All travel arrangements must comply with the company\u2019s new carbon\u2011offset policy.",
+    "Key speakers (CEO, CTO, VP of Product) have limited availability \u2013 must lock speaking slots by April\u202f15.",
+    "COVID\u201119 contingency plan required: hybrid streaming capacity for up to 30 remote participants.",
+    "Swag must be sourced from vendors with a minimum 30% women\u2011owned or minority\u2011owned business participation."
+  ],
+  "workback_prompt": "Using the detailed scenario above for Quantum Analytics' FY2025 Annual Kickoff (June 10\u201112, 2025, high\u2011complexity, T\u201160 planning horizon), create a comprehensive work\u2011back plan that lists every task, responsible owner, start and finish dates, dependencies, required resources, risk mitigation steps, and key milestones. Include sections for pre\u2011event planning (venue booking, speaker confirmations, travel logistics), event\u2011day execution (AV setup, catering, session facilitation), and post\u2011event wrap\u2011up (survey analysis, OKR finalization, financial close). Ensure the plan aligns with the budget, timeline, and success criteria provided.",
+  "meeting_type": "Annual Kickoff Meeting",
+  "meeting_type_key": "7_annual_kickoff",
+  "scenario_number": 2,
+  "horizon": "T-60",
+  "complexity": "High",
+  "generated_at": "2025-11-17T06:39:17.787428"
+}

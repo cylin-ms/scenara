@@ -1,0 +1,86 @@
+{
+  "scenario_name": "DataPulse Real\u2011Time Cohort Insights Feature Launch",
+  "company_context": "DataPulse Inc., a mid\u2011size SaaS company in the Marketing Analytics space. The product is a cloud\u2011based analytics platform used by B2B marketers to track campaign performance. The new feature, Real\u2011Time Cohort Insights, adds live, segment\u2011level analytics with predictive churn scoring. The launch is being coordinated by the Growth Product Team (Product, Engineering, Marketing, Sales, Customer Success, Finance).",
+  "meeting_event_details": "2025\u201112\u201115, 09:00\u202fAM \u2013 11:00\u202fAM PST (2\u202fhours), hybrid: Zoom link (https://zoom.us/j/987654321) and Conference Room\u202fB, 3rd Floor, DataPulse HQ, San Francisco. Agenda: final review of launch checklist, assign owners, confirm dependencies, and lock launch\u2011day schedule.",
+  "stakeholders": [
+    {
+      "name": "Maya Patel",
+      "role": "Senior Product Manager \u2013 Growth",
+      "responsibility": "Overall feature ownership, launch timeline, success metrics."
+    },
+    {
+      "name": "Liam O'Connor",
+      "role": "Engineering Lead \u2013 Backend",
+      "responsibility": "Finalize API, ensure scalability, coordinate data\u2011pipeline upgrade."
+    },
+    {
+      "name": "Sofia Ramirez",
+      "role": "Principal Front\u2011End Engineer",
+      "responsibility": "In\u2011app UI rollout, performance testing, bug triage."
+    },
+    {
+      "name": "Jenna Lee",
+      "role": "Director of Marketing",
+      "responsibility": "Go\u2011to\u2011market strategy, messaging, content creation, paid media plan."
+    },
+    {
+      "name": "Carlos Mendes",
+      "role": "Sales Enablement Manager",
+      "responsibility": "Sales training, demo scripts, pricing updates, pipeline forecasting."
+    },
+    {
+      "name": "Aisha Khan",
+      "role": "Customer Success Lead",
+      "responsibility": "Support documentation, training webinars, post\u2011launch support readiness."
+    },
+    {
+      "name": "Ravi Singh",
+      "role": "Data Analyst \u2013 Product Analytics",
+      "responsibility": "Define success metrics, set up tracking tags, build launch dashboard."
+    },
+    {
+      "name": "Emily Chen",
+      "role": "Finance Operations Analyst",
+      "responsibility": "Budget tracking, ROI modeling, compliance sign\u2011off."
+    }
+  ],
+  "deliverables": [
+    "Feature Specification Document (v2.0) \u2013 includes user stories, API contracts, performance SLAs.",
+    "API Reference Guide (Markdown) \u2013 published to internal developer portal.",
+    "Customer User Guide \u2013 PDF and HTML version covering setup, interpretation, and troubleshooting.",
+    "FAQ & Release Notes \u2013 for support portal and in\u2011app announcement.",
+    "Training Deck for Sales & CS \u2013 30\u2011slide PowerPoint with demo flow and objection handling.",
+    "Live Demo Video (2\u202fmin) \u2013 hosted on Vimeo, embedded in blog post.",
+    "Blog Post \u2013 \u201cIntroducing Real\u2011Time Cohort Insights\u201d (800\u2011word copy, SEO\u2011optimized).",
+    "Email Campaign \u2013 3\u2011part series (announcement, use\u2011case spotlight, CTA to webinar).",
+    "In\u2011App Banner & Modal \u2013 localized for EN, ES, FR.",
+    "Webinar Presentation & Registration Page \u2013 scheduled for launch day, 45\u202fmin.",
+    "Pricing Update Sheet \u2013 reflects new tier add\u2011on pricing ($199/mo per 10\u202fM events).",
+    "Analytics Tracking Plan \u2013 event schema, GA4 & Mixpanel configurations, success\u2011metric dashboard.",
+    "Compliance Sign\u2011off Checklist \u2013 completed by Legal & Security teams."
+  ],
+  "success_criteria": [
+    "\u2265\u202f20\u202f% of existing enterprise customers enable the feature within 30\u202fdays of launch.",
+    "Generate $750\u202fk in incremental ARR (\u2248\u202f5\u202f% of total ARR) from new add\u2011on subscriptions in the first quarter.",
+    "Feature\u2011specific NPS \u2265\u202f45 (survey sent 2\u202fweeks post\u2011launch).",
+    "Support tickets related to the feature \u2264\u202f5 per week during the first month.",
+    "\u2265\u202f80\u202f% of the sales team complete the mandatory training module within 10\u202fdays of launch.",
+    "Webinar attendance \u2265\u202f200 registrants with \u2265\u202f30\u202f% live attendance.",
+    "Marketing email open rate \u2265\u202f35\u202f% and click\u2011through rate \u2265\u202f8\u202f%."
+  ],
+  "constraints": [
+    "Total launch\u2011marketing budget capped at $150,000 (includes paid media, content production, and webinar platform).",
+    "Engineering resources limited to 2 backend devs and 1 front\u2011end dev for the final two weeks before launch.",
+    "Feature depends on the Data Pipeline v3.2 upgrade, scheduled for completion by 2025\u201112\u201110; any delay pushes launch.",
+    "Compliance review (SOC\u202f2 Type\u202fII) must be signed off by 2025\u201112\u201112; failure adds a 5\u2011day risk buffer.",
+    "All customer\u2011facing copy must be localized into Spanish and French by 2025\u201112\u201120.",
+    "Risk of performance degradation under >\u202f1\u202fM concurrent events; load\u2011test threshold must be met before go\u2011live."
+  ],
+  "workback_prompt": "Generate a detailed 30\u2011day workback plan for the launch of DataPulse's Real\u2011Time Cohort Insights feature. Include weekly milestones, task owners, dependencies, critical path items, risk mitigation steps, and a launch\u2011day run\u2011book. Use the scenario information provided: product name, launch date (2026\u201101\u201114 10:00\u202fAM PST), cross\u2011functional team members, deliverables, success criteria, constraints, and launch channels (email series, blog post, in\u2011app banner, webinar, social media).",
+  "meeting_type": "Product Feature Launch",
+  "meeting_type_key": "4_feature_launch",
+  "scenario_number": 3,
+  "horizon": "T-30",
+  "complexity": "High",
+  "generated_at": "2025-11-17T05:27:09.027121"
+}

@@ -1,0 +1,45 @@
+{
+  "scenario_name": "CareConnect Squad Sprint 7 Planning (Patient Portal Enhancements)",
+  "company_context": "Nimbus Health is a mid\u2011size digital health platform (\u2248350 employees) focused on patient\u2011centric tools. The CareConnect Squad builds the web\u2011based Patient Portal used by ~200k patients to view appointments, labs, and medication information. The squad reports to the Product Management org for the Patient Experience product line.",
+  "meeting_event_details": "Date: Monday, 14 Oct 2025\nTime: 09:00 \u2013 10:30 PT (90\u202fmin)\nLocation: Zoom meeting (ID: 842\u2011923\u2011571) + physical room \"Blue\u20113\" at Nimbus HQ, San Francisco (for on\u2011site members).\nAgenda: Review backlog, finalize sprint goal, confirm capacity, surface dependencies/blockers, and agree on Definition of Done.",
+  "stakeholders": [
+    "Aisha Patel \u2013 Product Manager (CareConnect Squad) \u2013 owns sprint goal, prioritisation, and stakeholder communication.",
+    "Ravi Kumar \u2013 Lead Front\u2011End Engineer \u2013 responsible for UI implementation and integration with API v3.",
+    "Leila Chen \u2013 Back\u2011End Engineer \u2013 owns API contract and data\u2011privacy compliance checks.",
+    "Megan O'Neill \u2013 UX/UI Designer \u2013 delivers high\u2011fidelity mockups and design specs.",
+    "Javier Torres \u2013 QA Lead \u2013 creates test strategy, automates regression suites, and validates acceptance criteria.",
+    "Samir Gupta \u2013 DevOps Engineer \u2013 ensures CI/CD pipeline readiness and staging environment stability.",
+    "Elena Rossi \u2013 Legal & Compliance Analyst \u2013 reviews notification content for HIPAA/PHI compliance.",
+    "Tom Whitaker \u2013 Engineering Manager \u2013 tracks capacity, removes impediments, and approves overtime budget."
+  ],
+  "deliverables": [
+    "Sprint backlog in Jira with 12 user stories (total 68 story points) and clear acceptance criteria.",
+    "Sprint Goal: \"Enable patients to self\u2011service appointment changes and receive timely lab result notifications while improving medication list usability.\"",
+    "High\u2011fidelity mockups for the new Appointment Reschedule flow and Medication List redesign (Figma links).",
+    "Updated API contract (OpenAPI spec) for Lab Results Notification endpoint (v3).",
+    "Test plan document covering functional, regression, and performance tests for all stories.",
+    "Definition of Done checklist signed off by all squad members.",
+    "Draft release notes template for the upcoming production deployment."
+  ],
+  "success_criteria": [
+    "At least 10 of the 12 planned stories (\u226580\u202f% of story points) reach Done by sprint end.",
+    "Zero critical or high\u2011severity bugs escape to production.",
+    "Lab Results Notification passes performance test: <200\u202fms latency for 1,000 concurrent users.",
+    "User\u2011experience rating from internal beta testers \u22654.5/5 for the new Appointment Reschedule flow.",
+    "Legal sign\u2011off on notification content obtained no later than 20 Oct 2025."
+  ],
+  "constraints": [
+    "Budget allows a maximum of 8 overtime hours per engineer for the sprint (approved by Engineering Manager).",
+    "API v3 delivery from the Core Services team is a hard dependency; must be merged by 18 Oct 2025.",
+    "HIPAA compliance review must be completed before any code touching PHI is merged to main.",
+    "Design assets must be finalised 2 business days before development starts (by 16 Oct 2025).",
+    "Sprint length is fixed at 2 weeks (14 Oct \u2013 27 Oct 2025) due to quarterly release cadence."
+  ],
+  "workback_prompt": "Create a detailed workback plan for Nimbus Health's CareConnect Squad Sprint 7 (14 Oct \u2013 27 Oct 2025). Include all tasks needed to deliver the sprint goal, assign owners, estimate effort, identify critical path items, and map each deliverable to the success criteria and constraints listed in the scenario. Output the plan as a table with columns: Task, Owner, Estimated Effort (hours), Start Date, End Date, Dependencies, Success Metric Alignment.",
+  "meeting_type": "Sprint Planning Meeting",
+  "meeting_type_key": "2_sprint_planning",
+  "scenario_number": 2,
+  "horizon": "T-14",
+  "complexity": "Medium",
+  "generated_at": "2025-11-17T04:24:56.862830"
+}

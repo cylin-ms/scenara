@@ -1,0 +1,145 @@
+{
+  "basic_info": {
+    "full_name": "Jessica Taylor",
+    "age": 34,
+    "location": "Austin, Texas, USA",
+    "timezone": "CST (UTC-6)",
+    "years_experience": 9,
+    "education": [
+      {
+        "degree": "B.A. Marketing",
+        "institution": "University of Texas at Austin",
+        "year": 2014
+      },
+      {
+        "degree": "MBA, Marketing",
+        "institution": "Northwestern University – Kellogg School of Management",
+        "year": 2018
+      }
+    ]
+  },
+  "work_habits": {
+    "preferred_working_hours": "08:00-16:00 (early bird, flexible within +/-1 hour)",
+    "peak_productivity_times": [
+      "09:00-11:00",
+      "14:00-15:00"
+    ],
+    "communication_style": {
+      "async_preference": true,
+      "expected_response_time_hours": 2,
+      "sync_preference": "urgent matters via video call"
+    },
+    "meeting_preferences": {
+      "meeting_length_limit_minutes": 30,
+      "prefers_video": true,
+      "blocks_focus_time": "10:00-13:00 (3 hrs uninterrupted)",
+      "minimizes_meetings": true
+    },
+    "work_environment": "Hybrid (3 days remote, 2 days in Austin office)",
+    "focus_time_requirements_hours_per_day": 3
+  },
+  "personality": {
+    "mbti": "ENFJ",
+    "decision_making_approach": "Data‑informed with stakeholder input; balances intuition and analytics",
+    "risk_tolerance": "Moderate",
+    "collaboration_style": "Inclusive, encourages brainstorming and cross‑functional input",
+    "stress_management_approach": "Scheduled short breaks, mindfulness apps, and short walks",
+    "conflict_resolution_style": "Collaborative problem solving, seeks win‑win outcomes"
+  },
+  "skills": {
+    "core_technical_skills": {
+      "SEO": 8,
+      "SEM": 7,
+      "Marketing Automation": 9,
+      "Data Analysis": 8,
+      "Content Strategy": 7,
+      "CRM Management": 8,
+      "A/B Testing": 7,
+      "Social Media Advertising": 8
+    },
+    "leadership_abilities": 7,
+    "domain_expertise_areas": [
+      "B2B SaaS",
+      "Cloud Services",
+      "Enterprise Software"
+    ],
+    "learning_agility": 9,
+    "tools_proficiency": {
+      "HubSpot": 9,
+      "Marketo": 8,
+      "Google Analytics": 9,
+      "Tableau": 7,
+      "Salesforce": 8,
+      "Asana": 8,
+      "Slack": 9,
+      "Adobe Creative Suite": 6
+    },
+    "languages_spoken": [
+      "English (native)",
+      "Spanish (conversational)"
+    ]
+  },
+  "performance": {
+    "task_completion_rate_percent": 94,
+    "quality_score_percent": 92,
+    "estimation_accuracy_percent": 88,
+    "multitasking_ability": 7,
+    "performance_under_pressure": 8
+  },
+  "availability": {
+    "available_hours_per_week": 38,
+    "timezone_and_working_hours": "CST (08:00‑16:00)",
+    "planned_time_off_days_per_year": 20,
+    "other_commitments": [
+      "Monthly Marketing Association meetup (2 hrs)",
+      "Quarterly industry conference speaking slot"
+    ],
+    "travel_flexibility": "Up to 20% of time (≈4 weeks/year, domestic and occasional international"
+  },
+  "personal_factors": {
+    "family_status": "Married, no children",
+    "caregiving_responsibilities": "None",
+    "commute_situation": "30‑minute drive to office (when on‑site)",
+    "health_considerations": "Mild seasonal allergies, generally healthy",
+    "career_motivation": "Aim to become Director of Marketing within 3‑4 years and lead enterprise‑wide product launches"
+  },
+  "project_impact": {
+    "reliability": 9,
+    "innovation_tendency": 8,
+    "documentation_quality": 8,
+    "mentorship_capability": 7,
+    "influence_level": 8
+  },
+  "collaboration": {
+    "meeting_frequency_preference": "Weekly team sync + ad‑hoc; max 2 hrs of meetings per day",
+    "communication_channels_preference": {
+      "quick_messages": "Slack",
+      "formal": "Email",
+      "task_updates": "Asana",
+      "video_calls": "Zoom"
+    },
+    "feedback_style": "Direct yet supportive; prefers data‑backed feedback",
+    "knowledge_sharing_habits": "Runs monthly lunch‑and‑learn, maintains shared playbooks in Confluence",
+    "cross_team_collaboration_score": 8
+  },
+  "risk_factors": {
+    "potential_bottlenecks": "Heavy reliance on data extraction from legacy CRM, which can delay campaign reporting",
+    "backup_person_needed": "Marketing Analyst (Sarah Lee) can cover data‑related tasks",
+    "ramp_up_time_for_new_projects_weeks": 3,
+    "context_switching_tolerance": 6,
+    "burnout_risk_factors": [
+      "High meeting load during launch weeks",
+      "Tight deadlines",
+      "Tendency to overcommit to cross‑functional initiatives"
+    ]
+  },
+  "_metadata": {
+    "generated_at": "2025-11-17T15:15:46.975708",
+    "name": "Jessica Taylor",
+    "role": "Marketing Manager",
+    "seniority": "mid",
+    "company": "TechCorp",
+    "model": "gpt-oss:120b",
+    "provider": "ollama"
+  }
+}

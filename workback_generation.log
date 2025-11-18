@@ -1,0 +1,96 @@
+Creating Ollama client for http://192.168.2.204:11434
+Querying http://192.168.2.204:11434 with model gpt-oss:120b (timeout: 300.0s)...
+Creating Ollama client for http://192.168.2.204:11434
+Querying http://192.168.2.204:11434 with model gpt-oss:120b (timeout: 300.0s)...
+Querying http://192.168.2.204:11434 with model gpt-oss:120b (timeout: 180.0s)...
+Creating Ollama client for http://192.168.2.204:11434
+Querying http://192.168.2.204:11434 with model gpt-oss:120b (timeout: 300.0s)...
+Querying http://192.168.2.204:11434 with model gpt-oss:120b (timeout: 180.0s)...
+Creating Ollama client for http://192.168.2.204:11434
+Querying http://192.168.2.204:11434 with model gpt-oss:120b (timeout: 300.0s)...
+Querying http://192.168.2.204:11434 with model gpt-oss:120b (timeout: 180.0s)...
+🔧 Initialized ScenarioGenerator
+   Model: gpt-oss:120b
+   Ollama Host: http://192.168.2.204:11434
+   Output: data/workback_scenarios
+
+
+================================================================================
+WORKBACK PLAN TEST SCENARIO GENERATION
+================================================================================
+Meeting types: 1
+Scenarios per type: 1
+Total scenarios: 1
+Plans per scenario: 3 (low, medium, high)
+Total plans: 3
+Model: gpt-oss:120b
+Output directory: data/workback_scenarios
+
+================================================================================
+Meeting Type: Weekly Team Newsletter
+Horizon: T-7 | Complexity: Low
+================================================================================
+
+────────────────────────────────────────────────────────────────────────────────
+📋 Scenario 1 of 1
+────────────────────────────────────────────────────────────────────────────────
+
+================================================================================
+Generating Scenario 1 for Weekly Team Newsletter
+  Horizon: T-7 | Complexity: Low
+================================================================================
+📝 Calling LLM to generate realistic scenario context...
+⚙️  Querying gpt-oss:120b at http://192.168.2.204:11434...
+📄 Parsing JSON response...
+✅ Scenario generated: EcoTech Sustainability Team Weekly Newsletter
+   Company: EcoTech Solutions is a mid‑size cleantech company (≈850 employees) that provides...
+   Stakeholders: 4
+   Deliverables: 4
+💾 Saved scenario to: 1_weekly_newsletter_scenario_1.json
+
+  🎯 Generating 3 workback plans (low, medium, high quality):
+  🔄 Generating LOW quality plan...
+     Model: gpt-oss:120b at http://192.168.2.204:11434
+     Stage 1: Analysis with reasoning model...
+Stage 1: Generating analysis with gpt-oss:120b on remote Ollama...
+Stage 2: Converting to structured JSON with gpt-oss:120b...
+     Stage 2: Structuring to JSON...
+  ✅ LOW plan complete
+     Tasks: 25
+     Milestones: 0
+     Participants: 0
+     💾 Saved: 1_weekly_newsletter_scenario_1_low.json
+  🔄 Generating MEDIUM quality plan...
+     Model: gpt-oss:120b at http://192.168.2.204:11434
+     Stage 1: Analysis with reasoning model...
+Stage 1: Generating analysis with gpt-oss:120b on remote Ollama...
+Stage 2: Converting to structured JSON with gpt-oss:120b...
+     Stage 2: Structuring to JSON...
+  ✅ MEDIUM plan complete
+     Tasks: 39
+     Milestones: 0
+     Participants: 11
+     💾 Saved: 1_weekly_newsletter_scenario_1_medium.json
+  🔄 Generating HIGH quality plan...
+     Model: gpt-oss:120b at http://192.168.2.204:11434
+     Stage 1: Analysis with reasoning model...
+Stage 1: Generating analysis with gpt-oss:120b on remote Ollama...
+Stage 2: Converting to structured JSON with gpt-oss:120b...
+     Stage 2: Structuring to JSON...
+  ✅ HIGH plan complete
+     Tasks: 15
+     Milestones: 0
+     Participants: 10
+     💾 Saved: 1_weekly_newsletter_scenario_1_high.json
+
+📦 Saved all 1 scenarios for Weekly Team Newsletter
+   File: 1_weekly_newsletter_all_scenarios.json
+
+
+================================================================================
+GENERATION COMPLETE
+================================================================================
+Total scenarios generated: 1
+Total plans generated: 3
+Master index: data/workback_scenarios/master_index.json
+Output directory: data/workback_scenarios

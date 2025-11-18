@@ -1,0 +1,161 @@
+[
+  {
+    "scenario_name": "Nimbus Cloud Solutions \u2013 FY26 Mid\u2011Market Expansion MBR",
+    "company_context": "Nimbus Cloud Solutions (NASDAQ: NCS) is a global enterprise SaaS provider focused on cloud\u2011based infrastructure management and AI\u2011driven analytics. The presentation is delivered by the Product & Go\u2011to\u2011Market (GTM) team within the Enterprise SaaS Division. The team is organized into Product Management (3 PMs), Marketing (2 MMs), Sales Enablement (2 SEs), and Revenue Operations (1 RevOps analyst). The division targets $1.2B ARR for FY26, with a strategic push into the mid\u2011market segment (companies $50\u2011$500M ARR).",
+    "meeting_event_details": "Date: 2025\u201112\u201104 (Friday)\nTime: 10:00\u202fAM \u2013 11:30\u202fAM Pacific Time (90\u202fmin)\nLocation: Nimbus HQ \u2013 Conference Room Orion (Hybrid \u2013 Zoom link: https://zoom.nimbuscloud.com/MBR\u2011Dec4)\nAgenda: 1) FY25 performance recap, 2) Mid\u2011market opportunity analysis, 3) New AI\u2011Analytics module launch plan, 4) FY26 roadmap & budget request, 5) Q&A & decision items.",
+    "stakeholders": [
+      "Laura Chen \u2013 Chief Executive Officer (CEO) \u2013 overall business direction & final approval",
+      "Mark Patel \u2013 Chief Revenue Officer (CRO) \u2013 revenue targets & sales strategy",
+      "Sofia Ramirez \u2013 Senior Vice President, Sales \u2013 oversees North America & EMEA sales orgs",
+      "Ethan Liu \u2013 Vice President, Product Management \u2013 owns product roadmap & feature prioritization",
+      "Priya Desai \u2013 Vice President, Marketing \u2013 responsible for demand generation & positioning",
+      "James O'Connor \u2013 Chief Financial Officer (CFO) \u2013 budget authority & financial modeling",
+      "Rita Gomez \u2013 Director, Revenue Operations \u2013 data integrity, forecasting, KPI reporting",
+      "Alexei Volkov \u2013 VP, Engineering \u2013 capacity planning & delivery timelines"
+    ],
+    "deliverables": [
+      "Updated FY26 Product Roadmap (incl. AI\u2011Analytics module release schedule)",
+      "Revised Mid\u2011Market Pricing & Packaging model (with tiered ARR targets)",
+      "Go\u2011to\u2011Market Action Plan \u2013 12\u2011month campaign calendar, lead\u2011to\u2011opportunity conversion targets",
+      "ARR Forecast Add\u2011On for Mid\u2011Market (+$120M) with assumptions and sensitivity analysis",
+      "Resource Allocation Matrix \u2013 engineering capacity, sales headcount, marketing spend",
+      "Executive Decision Log \u2013 approved budget increase ($2.0M) and owners for each initiative"
+    ],
+    "success_criteria": [
+      "Executive sign\u2011off on FY26 roadmap and $2M incremental budget by meeting end",
+      "Consensus on three concrete mid\u2011market KPIs: 30% YoY pipeline growth, 15% win\u2011rate lift, churn \u2264 5% for new segment",
+      "All data sources (Salesforce, Gainsight, Tableau, Snowflake) refreshed and validated within 48\u202fh prior to meeting",
+      "Action items assigned with clear owners and due dates (\u2264\u202f2\u202fweeks for first deliverable)",
+      "Post\u2011meeting NPS from attendees \u2265 8/10 indicating clarity and confidence in plan"
+    ],
+    "constraints": [
+      "Total incremental budget cannot exceed $5M for FY26 (company\u2011wide cap)",
+      "Engineering capacity is limited to 80% of current sprint velocity due to legacy platform migration",
+      "Data latency: Salesforce and Gainsight extracts are only available with a 48\u2011hour lag",
+      "Decision must be finalized before the Board of Directors meeting on 2026\u201101\u201115",
+      "Compliance review required for new AI\u2011Analytics data handling (GDPR & CCPA) \u2013 must be completed by 2025\u201112\u201120"
+    ],
+    "workback_prompt": "Generate a detailed work\u2011back plan for the 'Nimbus Cloud Solutions \u2013 FY26 Mid\u2011Market Expansion MBR' scenario. The plan should start from the meeting date (2025\u201112\u201104) and work backwards to today (T\u201130), outlining all tasks, owners, dependencies, durations, and milestones needed to prepare the presentation, validate data, secure approvals, and deliver the listed outputs on time. Include risk mitigation steps for data latency, engineering capacity, and compliance constraints.",
+    "meeting_type": "Monthly Business Review",
+    "meeting_type_key": "3_monthly_business_review",
+    "scenario_number": 1,
+    "horizon": "T-30",
+    "complexity": "High",
+    "generated_at": "2025-11-17T04:38:54.058759"
+  },
+  {
+    "scenario_name": "Nimbus Cloud Solutions \u2013 Enterprise SaaS Monthly Business Review (MBR) \u2013 Product & Engineering",
+    "company_context": "Nimbus Cloud Solutions (NASDAQ: NCS) is a mid\u2011size enterprise SaaS provider focused on cloud\u2011native collaboration and data\u2011analytics platforms for Fortune 500 customers. The Enterprise SaaS Platform division (\u22481,200 FTE) is organized into Product Management, Engineering, Data Science, and Customer Success. The Product & Engineering leadership team is presenting the monthly business review to the executive suite.",
+    "meeting_event_details": "Date: Tuesday, 5\u202fDecember\u202f2025\nTime: 10:00\u202fAM \u2013 11:30\u202fAM\u202fPST (90\u202fminutes)\nLocation: Executive Boardroom, 23rd Floor, Nimbus HQ, San Francisco + Zoom (Meeting ID: 947\u202f862\u202f321)\nAgenda: 1) Business performance snapshot, 2) Product roadmap health, 3) Engineering delivery metrics, 4) Key challenges & opportunities, 5) Decision items & next steps.",
+    "stakeholders": [
+      {
+        "name": "Maya Patel",
+        "role": "Chief Executive Officer (CEO)",
+        "responsibility": "Overall business strategy, final decision authority"
+      },
+      {
+        "name": "Daniel Liu",
+        "role": "Chief Financial Officer (CFO)",
+        "responsibility": "Financial health, budget approvals"
+      },
+      {
+        "name": "Elena Garcia",
+        "role": "Chief Revenue Officer (CRO)",
+        "responsibility": "Revenue targets, go\u2011to\u2011market alignment"
+      },
+      {
+        "name": "Alex Chen",
+        "role": "Senior Vice President, Product & Growth",
+        "responsibility": "Product vision, market positioning"
+      },
+      {
+        "name": "Priya Singh",
+        "role": "Vice President, Engineering",
+        "responsibility": "Engineering delivery, technical debt, platform reliability"
+      },
+      {
+        "name": "Omar Hassan",
+        "role": "Head of Data & Analytics",
+        "responsibility": "Data integrity, reporting pipelines"
+      },
+      {
+        "name": "Lena Wu",
+        "role": "Director, Customer Success",
+        "responsibility": "Churn, NPS, upsell opportunities"
+      }
+    ],
+    "deliverables": [
+      "Updated 12\u2011month product roadmap with prioritized AI\u2011enhanced features and associated resource estimates",
+      "Revised pricing & packaging model for SMB tier to address churn",
+      "Action plan to reduce SMB churn by 15\u202f% YoY, including ownership, milestones, and KPI targets",
+      "Q1\u202f2026 financial forecast (ARR, OPEX, CAPEX) reflecting roadmap decisions",
+      "Decision log capturing executive approvals for budget allocation ($5\u202fM cap for AI integration) and partnership commitments with Microsoft Azure"
+    ],
+    "success_criteria": [
+      "Executive sign\u2011off on the revised roadmap and budget within the 90\u2011minute session",
+      "Clear assignment of owners for each churn\u2011reduction initiative with start dates",
+      "Agreement on a target NPS increase of +5 points by end\u2011Q2\u202f2026",
+      "Commitment to a go\u2011to\u2011market launch window for the first AI feature by 30\u202fApril\u202f2026",
+      "All required data visualizations (ARR, churn, feature adoption, engineering velocity) presented without data\u2011quality issues"
+    ],
+    "constraints": [
+      "Total incremental budget for new AI features limited to $5\u202fM for FY\u202f2026",
+      "Engineering capacity constrained to 80\u202f% of current velocity due to ongoing platform migration",
+      "Data refresh latency: reporting data must be no older than 24\u202fhours; any older data must be flagged",
+      "Dependency on Microsoft Azure partnership agreement finalization by 15\u202fDecember\u202f2025",
+      "Presentation deck must be finalized and distributed to executives at least 24\u202fhours before the meeting"
+    ],
+    "workback_prompt": "Generate a detailed workback plan for the 'Nimbus Cloud Solutions \u2013 Enterprise SaaS Monthly Business Review (MBR) \u2013 Product & Engineering' scenario. The plan should start from T\u201130 (30 days before the meeting on 5\u202fDecember\u202f2025) and outline all tasks, owners, durations, dependencies, and required data sources needed to produce the deliverables listed. Include milestones for data extraction, deck creation, stakeholder reviews, budget approval steps, and contingency actions for the identified constraints. Format the output as a table or Gantt\u2011style list suitable for project tracking.",
+    "meeting_type": "Monthly Business Review",
+    "meeting_type_key": "3_monthly_business_review",
+    "scenario_number": 2,
+    "horizon": "T-30",
+    "complexity": "High",
+    "generated_at": "2025-11-17T04:46:25.023583"
+  },
+  {
+    "scenario_name": "Nimbus Cloud Solutions \u2013 Enterprise SaaS Division Monthly Business Review (Product)",
+    "company_context": "Nimbus Cloud Solutions (NASDAQ: NCS) is a global provider of enterprise SaaS platforms for data analytics and AI-driven insights. The Enterprise SaaS Division serves Fortune 500 customers across North America, EMEA, and APAC. The Product Management team (30 FTE) reports to the SVP of Product and works cross\u2011functionally with Engineering, Sales, Marketing, and Customer Success. This month the team is launching the next\u2011gen AI Analytics Module (AIM) and addressing rising churn in the SMB segment.",
+    "meeting_event_details": "Date: 2025-12-05 (Tuesday)\\nTime: 10:00\u202fAM \u2013 11:30\u202fAM Pacific Time\\nDuration: 90 minutes\\nLocation: Nimbus HQ \u2013 Boardroom B (San Francisco) with Zoom hybrid link (Meeting ID: 945 672 1234)\\nPlanning Horizon: T\u201130 (workback plan must start 30 days before the meeting)",
+    "stakeholders": [
+      "Laura Chen \u2013 SVP, Product (Owner of agenda & decision authority)",
+      "Mark Patel \u2013 VP, Engineering (Technical feasibility & resource allocation)",
+      "Rita Gomez \u2013 CFO (Budget & financial impact)",
+      "James O'Neil \u2013 CEO (Strategic alignment)",
+      "Sofia Alvarez \u2013 Director, Product Management (Presenter, roadmap owner)",
+      "Ethan Liu \u2013 Head of Data Analytics (Data extraction & dashboard preparation)",
+      "Nina Patel \u2013 VP, Customer Success (Churn insights)",
+      "Carlos Mendes \u2013 VP, Sales (Revenue pipeline)",
+      "Olivia Reed \u2013 Director, Marketing (Go\u2011to\u2011market messaging)"
+    ],
+    "deliverables": [
+      "Updated 12\u2011month product roadmap highlighting AI Analytics Module milestones",
+      "Revised go\u2011to\u2011market launch plan for AIM (incl. pricing, positioning, partner enablement)",
+      "Churn reduction action plan for SMB segment (3 prioritized initiatives with owners & timelines)",
+      "Executive KPI dashboard (ARR, YoY growth, net new logo pipeline, churn %, NPS, feature adoption) refreshed with data as of 2025\u201111\u201130",
+      "Budget request memo for FY26 (additional $2M for AIM development & marketing spend)",
+      "Risk register for AIM launch (technical, compliance, market adoption) with mitigation actions"
+    ],
+    "success_criteria": [
+      "Executive sign\u2011off on the revised product roadmap and FY26 budget within the 90\u2011minute session",
+      "Consensus on at least three concrete SMB churn initiatives with assigned owners",
+      "KPI dashboard accuracy \u2265 95% (validated against source systems)",
+      "Meeting stays on schedule (\u2264 5 minutes overrun)",
+      "All data sources delivered at least 48\u202fhours before the meeting for validation"
+    ],
+    "constraints": [
+      "FY26 product development budget capped at $2M for the AI Analytics Module",
+      "Data extraction from Salesforce, Gainsight, Snowflake, and Amplitude has a 48\u2011hour latency window",
+      "Engineering resources for AIM are 70% allocated to existing Q4 releases \u2013 requires re\u2011prioritization",
+      "All customer\u2011facing features must comply with GDPR and CCPA; compliance review must be completed by 2025\u201111\u201120",
+      "Presentation must be compatible with both in\u2011room AV system and Zoom screen share (no proprietary software)"
+    ],
+    "workback_prompt": "Generate a detailed workback plan for the 'Nimbus Cloud Solutions \u2013 Enterprise SaaS Division Monthly Business Review (Product)' scenario. The plan should start 30 days before the meeting (T\u201130) and list all tasks, owners, start/end dates, dependencies, required data pulls, review checkpoints, and risk mitigation steps needed to deliver the listed deliverables on time, stay within the budget constraints, and meet the success criteria. Include milestones for data validation, roadmap finalization, budget memo approval, and rehearsal of the presentation.",
+    "meeting_type": "Monthly Business Review",
+    "meeting_type_key": "3_monthly_business_review",
+    "scenario_number": 3,
+    "horizon": "T-30",
+    "complexity": "High",
+    "generated_at": "2025-11-17T04:55:13.612697"
+  }
+]

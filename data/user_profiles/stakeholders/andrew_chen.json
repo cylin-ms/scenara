@@ -1,0 +1,157 @@
+{
+  "basic_info": {
+    "full_name": "Andrew Chen",
+    "age": 38,
+    "location": "San Francisco, CA, USA (PST)",
+    "years_experience": 15,
+    "education": [
+      {
+        "degree": "B.S.",
+        "field": "Computer Science",
+        "institution": "University of California, Berkeley",
+        "year": 2007
+      },
+      {
+        "degree": "M.B.A.",
+        "field": "Marketing",
+        "institution": "Stanford Graduate School of Business",
+        "year": 2012
+      }
+    ]
+  },
+  "work_habits": {
+    "preferred_working_hours": "flexible (core 9am-3pm PST, early start optional)",
+    "peak_productivity_times": [
+      "8:00-11:00 PST",
+      "14:00-16:00 PST"
+    ],
+    "communication_style": {
+      "async_preference": true,
+      "sync_preference": "brief stand‑ups",
+      "average_response_time": "within 2 hours"
+    },
+    "meeting_preferences": {
+      "minimizes_meetings": true,
+      "prefers_one‑on‑one": true,
+      "max_meeting_time_per_day": "2 hours"
+    },
+    "work_environment": "hybrid (3 days remote, 2 days in office)",
+    "focus_time_requirements": "2‑3 blocks of 90 minutes daily, protected via calendar"
+  },
+  "personality": {
+    "mbti": "ENTJ",
+    "decision_making_approach": "data‑driven with rapid iteration; seeks consensus when stakes high",
+    "risk_tolerance": 7,
+    "collaboration_style": "assertive leader, encourages cross‑functional ownership",
+    "stress_management_approach": "structured planning, regular exercise, short mindfulness breaks",
+    "conflict_resolution_style": "direct but diplomatic, focuses on facts and shared goals"
+  },
+  "skills": {
+    "core_technical_skills": {
+      "SQL": 9,
+      "Python": 8,
+      "A/B testing frameworks": 9,
+      "Growth analytics (Amplitude, Mixpanel)": 9,
+      "Marketing automation (HubSpot, Marketo)": 8,
+      "Data visualization (Tableau, Looker)": 8,
+      "CRM (Salesforce)": 7,
+      "Web analytics (GA4)": 9,
+      "Product management tools (Jira, Asana)": 8,
+      "Statistical analysis (R, Bayesian methods)": 7
+    },
+    "leadership_abilities": {
+      "strategic_vision": 9,
+      "team_building": 8,
+      "stakeholder_management": 9,
+      "budget_management": 8,
+      "coaching_mentoring": 7
+    },
+    "domain_expertise_areas": [
+      "SaaS acquisition funnels",
+      "Retention & churn reduction",
+      "Freemium to paid conversion",
+      "International market expansion"
+    ],
+    "learning_agility": 9,
+    "tools_proficiency": [
+      "Amplitude",
+      "Mixpanel",
+      "Google Optimize",
+      "Optimizely",
+      "Segment",
+      "Looker",
+      "Tableau",
+      "Slack",
+      "Notion",
+      "Miro"
+    ],
+    "languages_spoken": [
+      "English (native)",
+      "Mandarin (conversational)"
+    ]
+  },
+  "performance": {
+    "task_completion_rate": 94,
+    "quality_score": 92,
+    "estimation_accuracy": 88,
+    "multitasking_ability": 7,
+    "performance_under_pressure": 8
+  },
+  "availability": {
+    "available_hours_per_week": 45,
+    "timezone_and_working_hours": "PST, core 9am‑4pm with flexibility",
+    "planned_time_off_days_per_year": 20,
+    "other_commitments": [
+      "Quarterly board advisory for a fintech startup (5 hrs/month)",
+      "Monthly industry conference speaking (2 days/quarter)"
+    ],
+    "travel_flexibility": "up to 10% travel (≈5 days per quarter), prefers virtual when possible"
+  },
+  "personal_factors": {
+    "family_status": "married, two children (ages 4 and 7)",
+    "caregiving_responsibilities": "shared with spouse; occasional school pick‑up duties",
+    "commute_situation": "0 (remote days); 30‑minute drive on office days",
+    "health_considerations": "runs 3×/week, monitors blood pressure; occasional lower back strain from long sitting",
+    "career_motivation": "build scalable growth engines, mentor next‑gen leaders, eventually transition to VP of Growth"
+  },
+  "project_impact": {
+    "reliability": 9,
+    "innovation_tendency": 8,
+    "documentation_quality": 7,
+    "mentorship_capability": 7,
+    "influence_level": 9
+  },
+  "collaboration": {
+    "meeting_frequency_preference": "bi‑weekly sprint reviews, weekly 30‑min sync with product, ad‑hoc when data needed",
+    "communication_channels_preference": {
+      "primary": "Slack (threads)",
+      "secondary": "Email",
+      "tertiary": "Notion docs"
+    },
+    "feedback_style": "direct, data‑backed, balanced with positive reinforcement",
+    "knowledge_sharing_habits": "writes weekly growth postmortems, hosts monthly brown‑bag sessions, maintains shared dashboards",
+    "cross_team_collaboration_score": 9
+  },
+  "risk_factors": {
+    "potential_bottlenecks": [
+      "dependency on data engineering for raw event pipelines",
+      "limited bandwidth during major product launches"
+    ],
+    "backup_person_needed": "Senior Growth Analyst (Emily Rivera) for day‑to‑day experiment execution",
+    "ramp_up_time_for_new_projects_weeks": 3,
+    "context_switching_tolerance": 6,
+    "burnout_risk_factors": [
+      "high meeting load during launch weeks",
+      "overcommitment to external advisory roles"
+    ]
+  },
+  "_metadata": {
+    "generated_at": "2025-11-17T15:29:21.210620",
+    "name": "Andrew Chen",
+    "role": "Growth Marketing Lead",
+    "seniority": "senior",
+    "company": "TechCorp",
+    "model": "gpt-oss:120b",
+    "provider": "ollama"
+  }
+}

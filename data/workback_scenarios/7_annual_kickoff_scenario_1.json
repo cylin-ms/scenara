@@ -1,0 +1,53 @@
+{
+  "scenario_name": "2025 GlobalTech FY25 Sales & Product Innovation Kickoff",
+  "company_context": "GlobalTech Solutions is a mid\u2011size (\u22481,200 employees) technology firm specializing in cloud\u2011based SaaS platforms for the financial services sector. The FY25 Kickoff is hosted by the GlobalTech Go\u2011to\u2011Market (GTM) organization, which includes 150 members across Product Management, Sales, Marketing, Customer Success, and Operations. The GTM team reports to the Chief Commercial Officer and is structured into three product lines (Core Banking, Risk Analytics, and Payments) plus a cross\u2011functional Enablement squad.",
+  "meeting_event_details": "June 10\u201112, 2025 (3 days). Day\u202f1: 08:00\u201118:00, Day\u202f2: 08:30\u201119:00, Day\u202f3: 09:00\u201116:00. Venue: Hyatt Regency Denver, 650 17th Street, Denver, CO \u2013 Main Ballroom for plenary sessions, three breakout rooms (North, South, West), and the rooftop terrace for the welcome reception. All times are Mountain Daylight Time (MDT).",
+  "stakeholders": [
+    "Laura Martinez \u2013 Chief Executive Officer (overall sponsor, opening keynote)",
+    "Raj Patel \u2013 Chief Financial Officer (budget sign\u2011off, FY25 financial outlook)",
+    "Megan O'Connor \u2013 Chief Commercial Officer (event owner, success metrics)",
+    "Diego Alvarez \u2013 VP, Product Management (product line strategy presentations)",
+    "Sofia Liu \u2013 VP, Global Sales (sales targets and enablement plan)",
+    "Ethan Brooks \u2013 VP, Marketing (brand and demand\u2011gen roadmap)",
+    "Nina Gupta \u2013 Director, Customer Success (customer insights session)",
+    "Tommy Reed \u2013 Senior Program Manager, Events (logistics lead)",
+    "Karen Whitfield \u2013 HR Business Partner (team\u2011building activities)",
+    "Alexis Chen \u2013 External Keynote Speaker, Gartner Analyst (industry trends)",
+    "Javier Morales \u2013 AV & Production Lead (live\u2011streaming, recording)",
+    "Olivia Bennett \u2013 Procurement Lead (catering, swag, contracts)"
+  ],
+  "deliverables": [
+    "Master Kickoff Deck (incl. agenda, speaker bios, branding)",
+    "FY25 GTM Strategic Roadmap (PDF & interactive PowerPoint)",
+    "Product Launch Playbook for the new Payments API (docx)",
+    "Cross\u2011functional OKR matrix (Excel) with owners and timelines",
+    "Recorded video of all plenary sessions uploaded to the internal LMS",
+    "Post\u2011event Survey Report (response rate, NPS, qualitative feedback)",
+    "Event Logistics Pack (venue contracts, floor plan, catering menus, swag inventory)",
+    "Budget Reconciliation Report (actual vs. planned spend)"
+  ],
+  "success_criteria": [
+    "\u2265\u202f95\u202f% of invited GTM team members attend in\u2011person or via live stream",
+    "Overall event satisfaction score \u2265\u202f4.5/5 on post\u2011event survey",
+    "Net Promoter Score (NPS) for the kickoff \u2265\u202f70",
+    "At least 3 new cross\u2011functional initiatives identified and documented in the OKR matrix",
+    "All key deliverables (roadmap, playbook, OKRs) completed and shared within 5 business days after the event",
+    "Event executed within the approved budget of $120,000 (\u00b1\u202f5\u202f%)",
+    "Zero critical AV or catering incidents reported during the three days"
+  ],
+  "constraints": [
+    "Planning horizon T\u201160 (finalized plan must be locked by April 11, 2025)",
+    "Total budget capped at $120,000, inclusive of venue, catering, AV, travel subsidies, and swag",
+    "Venue capacity limited to 200 on\u2011site attendees; remote participation limited to 50 concurrent streams",
+    "All external vendors must be vetted through GlobalTech\u2019s preferred supplier list",
+    "COVID\u201119 contingency: must have a backup virtual\u2011only format ready within 48\u202fhours of any health\u2011related restriction",
+    "Swag items must be ESG\u2011compliant (recyclable packaging, no single\u2011use plastics)"
+  ],
+  "workback_prompt": "Create a detailed work\u2011back plan for the 2025 GlobalTech FY25 Sales & Product Innovation Kickoff (June 10\u201112, 2025, Hyatt Regency Denver). Include all major work\u2011streams (strategy alignment, speaker coordination, venue & AV, catering, swag procurement, travel logistics, communications, on\u2011site execution, post\u2011event deliverables), key milestones, dependencies, owners, and estimated effort. Align the plan with the T\u201160 planning horizon, $120k budget, and the success criteria listed. Provide a Gantt\u2011style timeline (by week) and a risk mitigation matrix for the identified constraints.",
+  "meeting_type": "Annual Kickoff Meeting",
+  "meeting_type_key": "7_annual_kickoff",
+  "scenario_number": 1,
+  "horizon": "T-60",
+  "complexity": "High",
+  "generated_at": "2025-11-17T06:30:33.955484"
+}

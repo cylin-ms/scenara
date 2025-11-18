@@ -1,0 +1,983 @@
+{
+  "scenario_name": "Nimbus Cloud Solutions \u2013 Enterprise SaaS Monthly Business Review (MBR) \u2013 Product & Engineering",
+  "scenario_number": 2,
+  "meeting_type": "Monthly Business Review",
+  "quality_level": "high",
+  "workback_prompt": "Generate a detailed workback plan for the 'Nimbus Cloud Solutions \u2013 Enterprise SaaS Monthly Business Review (MBR) \u2013 Product & Engineering' scenario. The plan should start from T\u201130 (30 days before the meeting on 5\u202fDecember\u202f2025) and outline all tasks, owners, durations, dependencies, and required data sources needed to produce the deliverables listed. Include milestones for data extraction, deck creation, stakeholder reviews, budget approval steps, and contingency actions for the identified constraints. Format the output as a table or Gantt\u2011style list suitable for project tracking.\n\nGenerate a HIGH QUALITY workback plan with these characteristics:\n- Comprehensive task coverage\n- Clear, actionable task descriptions\n- Well-defined dependencies\n- All tasks assigned to specific owners\n- Clear milestones with completion criteria\n- Realistic timelines with buffers\n- Proactive risk management\n- Complete deliverable list\n\nIMPORTANT: Generate a plan that naturally exhibits HIGH quality characteristics.\nDo not explicitly label the plan as \"high quality\" - let the quality emerge from the content.",
+  "generated_at": "2025-11-17T04:54:46.378173",
+  "analysis": "# Outcomes  \n\n## 1. Consolidated Data Package \u2013 Product & Engineering KPI, Financial & Operational Metrics  \n**Brief description** \u2013 All quantitative inputs required for the MBR (usage, reliability, cost\u2011to\u2011serve, forecast vs. actual, engineering velocity, incident count, churn, ARR uplift, etc.) are extracted, validated, and packaged in a shared repository.  \n**Artifact references:** none supplied  \n\n### Reasoning  \nThe meeting deck cannot be built until the underlying numbers are reliable. The user explicitly asked for \u201cmilestones for data extraction\u201d and listed \u201crequired data sources\u201d \u2013 therefore the first outcome must be the delivery of a complete, validated data set.  \n\n### Approach  \n1. **Identify data owners** for each metric (Product Ops, Finance, Engineering Analytics, Cloud Cost Team).  \n2. **Create extraction scripts / queries** against the source systems (usage DB, incident tracker, CI/CD dashboards, billing system).  \n3. **Run a \u201cdata health check\u201d** (completeness, freshness, reconciliation with prior month).  \n4. **Store results** in a version\u2011controlled folder (e.g., `MBR/2025-12/DataPackage`).  \n5. **Sign\u2011off** by the data owners that the numbers are final.  \n\n---\n\n## 2. MBR Presentation Deck \u2013 Product & Engineering  \n**Brief description** \u2013 A slide deck that tells the story of the month\u2019s performance, highlights risks, and outlines FY26 investment requests.  \n\n### Reasoning  \nThe core deliverable for the meeting is the deck. The user asked for \u201cdeck creation\u201d milestones and a \u201ccomplete deliverable list,\u201d so the deck is a distinct outcome.  \n\n### Approach  \n1. **Outline** the deck structure (Executive Summary, KPI Snapshot, Product Highlights, Engineering Health, Financial Impact, FY26 Roadmap, Risks & Mitigations).  \n2. **Populate** each section with data from the Consolidated Data Package.  \n3. **Design** visual elements (charts, heat\u2011maps) using the corporate template.  \n4. **Iterate** through internal reviews (Product Lead, Engineering Lead, Finance Lead).  \n5. **Lock** the final version in the shared drive (`MBR/2025-12/Deck_Final.pptx`).  \n\n---\n\n## 3. Stakeholder Review & Sign\u2011off  \n**Brief description** \u2013 Formal review cycles with Product Leadership, Engineering Leadership, Finance, and Executive Sponsors, culminating in written sign\u2011off that the deck is ready for presentation.  \n\n### Reasoning  \nThe user requested \u201cstakeholder reviews\u201d and \u201cbudget approval steps.\u201d A sign\u2011off outcome captures both the content validation and the budget request endorsement.  \n\n### Approach  \n1. **Distribute** the draft deck to reviewers with a review checklist.  \n2. **Collect** feedback in a centralized tracker.  \n3. **Address** all comments, update the deck, and re\u2011circulate if needed.  \n4. **Obtain** written approvals (email or document) from each stakeholder group.  \n\n---\n\n## 4. FY26 Budget Approval for Product & Engineering Initiatives  \n**Brief description** \u2013 Secure executive approval for the FY26 investment plan presented in the MBR, including any additional funding needed for identified constraints.  \n\n### Reasoning  \nBudget approval is a separate milestone that must be completed before the meeting to allow the presenter to reference approved numbers.  \n\n### Approach  \n1. **Extract** the FY26 budget request from the deck (slide 9).  \n2. **Prepare** a one\u2011page executive summary of the request.  \n3. **Present** the request to the Finance Steering Committee (virtual).  \n4. **Record** the approval decision and any conditional actions.  \n\n---\n\n## 5. Contingency Plan & Risk Mitigation Documentation  \n**Brief description** \u2013 A concise plan that outlines fallback actions for the identified constraints (e.g., data latency, resource unavailability, last\u2011minute scope changes).  \n\n### Reasoning  \nThe user explicitly asked for \u201ccontingency actions for the identified constraints.\u201d A documented plan ensures the team can react quickly if a risk materialises.  \n\n### Approach  \n1. **List** each high\u2011impact risk identified during planning.  \n2. **Define** trigger criteria, responsible owner, and mitigation steps.  \n3. **Store** the plan alongside the deck (`MBR/2025-12/ContingencyPlan.docx`).  \n4. **Brief** the meeting facilitator on the plan the day before the MBR.  \n\n---  \n\n# Breakdown  \n\n```\nT\u201130 = 5\u202fNov\u202f2025   (30 days before 5\u202fDec\u202f2025 meeting)\n```\n\n| ID | Task | Owner | Start | Duration (days) | End | Dependencies | Required Data Sources | Milestone / Deliverable |\n|----|------|-------|-------|-----------------|-----|--------------|-----------------------|------------------------|\n| **1** | **Kick\u2011off & Planning** | PM \u2013 Alex Rivera | 5\u202fNov | 1 | 5\u202fNov | \u2013 | \u2013 | Kick\u2011off meeting held; project charter signed |\n| **1.1** | Identify metric owners & data owners | PM | 5\u202fNov | 1 | 5\u202fNov | \u2013 | \u2013 | Owner matrix completed |\n| **1.2** | Create data extraction inventory (list of systems, tables, APIs) | Data Lead \u2013 Priya Shah | 5\u202fNov | 1 | 5\u202fNov | 1.1 | \u2013 | Inventory doc (`DataInventory.xlsx`) |\n| **2** | **Data Extraction & Validation** | Data Lead \u2013 Priya Shah | 6\u202fNov | 5 | 10\u202fNov | 1.2 | Usage DB, Incident Tracker, CI/CD Dashboard, Billing System, Finance ERP | Raw data extracts stored (`/DataPackage/Raw`) |\n| **2.1** | Write / update extraction scripts | Data Engineer \u2013 Marco Liu | 6\u202fNov | 2 | 7\u202fNov | \u2013 | Source system APIs/SQL | Scripts in repo |\n| **2.2** | Run extracts for all metrics | Data Engineer | 8\u202fNov | 1 | 8\u202fNov | 2.1 | Same as above | Extract files (`*.csv`) |\n| **2.3** | Data health\u2011check (completeness, outlier detection) | Data Analyst \u2013 Sara Kim | 9\u202fNov | 1 | 9\u202fNov | 2.2 | Extract files | Validation report (`DataHealthCheck.pdf`) |\n| **2.4** | Owner sign\u2011off of validated data | Metric Owners (Product Ops, Finance, Eng Ops) | 10\u202fNov | 1 | 10\u202fNov | 2.3 | Validation report | Signed off data package (`DataPackage_Validated.zip`) |\n| **3** | **Deck Outline & Content Draft** | Deck Owner \u2013 Michael Chen (Product Lead) | 11\u202fNov | 3 | 13\u202fNov | 2.4 | Validated data package | Deck outline (`Deck_Outline.docx`) |\n| **3.1** | Draft Executive Summary slide | Michael Chen | 11\u202fNov | 1 | 11\u202fNov | \u2013 | \u2013 | Slide 1 draft |\n| **3.2** | Populate KPI Snapshot slides (charts, tables) | Sara Kim (Data Analyst) | 12\u202fNov | 1 | 12\u202fNov | 2.4 | Validated data | Slides 2\u20114 |\n| **3.3** | Draft Product Highlights narrative | Product Manager \u2013 Lina Ortiz | 12\u202fNov | 1 | 12\u202fNov | 2.4 | Product release notes, usage data | Slides 5\u20117 |\n| **3.4** | Draft Engineering Health (velocity, incidents, reliability) | Eng Ops Lead \u2013 Ravi Patel | 13\u202fNov | 1 | 13\u202fNov | 2.4 | Incident tracker, CI/CD metrics | Slides 8\u201110 |\n| **3.5** | Draft FY26 Budget & Investment request slides | Finance Lead \u2013 Elena G\u00f3mez | 13\u202fNov | 1 | 13\u202fNov | 2.4 | Finance ERP, forecast model | Slides 11\u201112 |\n| **4** | **Design & Visual Polish** | Designer \u2013 Zoe Martinez | 14\u202fNov | 2 | 15\u202fNov | 3.1\u20113.5 | Corporate slide template | Deck with visual design (`Deck_DesignDraft.pptx`) |\n| **5** | **Internal Review Cycle 1** | Review Lead \u2013 Alex Rivera | 16\u202fNov | 2 | 17\u202fNov | 4 | Deck_DesignDraft | Review comments tracker |\n| **5.1** | Distribute deck to Product & Engineering leads | Alex Rivera | 16\u202fNov | \u2013 | \u2013 | \u2013 | \u2013 | Deck sent |\n| **5.2** | Collect feedback (comment sheet) | Alex Rivera | 17\u202fNov | \u2013 | \u2013 | \u2013 | \u2013 | Consolidated feedback (`Feedback_Round1.xlsx`) |\n| **6** | **Incorporate Feedback & Refine** | Deck Owner \u2013 Michael Chen | 18\u202fNov | 2 | 19\u202fNov | 5.2 | Feedback_Round1 | Updated deck (`Deck_Round1.pptx`) |\n| **7** | **Stakeholder Review Cycle 2 (Leadership Sign\u2011off)** | Review Lead \u2013 Alex Rivera | 20\u202fNov | 3 | 22\u202fNov | 6 | Deck_Round1 | Sign\u2011off emails |\n| **7.1** | Send deck to Product VP, Eng VP, Finance Director | Alex Rivera | 20\u202fNov | \u2013 | \u2013 | \u2013 | \u2013 | Email sent |\n| **7.2** | Capture approvals (PDF of signed email chain) | Alex Rivera | 22\u202fNov | \u2013 | \u2013 | \u2013 | \u2013 | Approval package (`Leadership_Signoff.pdf`) |\n| **8** | **Budget Approval Process** | Finance Lead \u2013 Elena G\u00f3mez | 23\u202fNov | 4 | 26\u202fNov | 7.2 | FY26 budget slide, finance model | Budget approval memo (`Budget_Approval.pdf`) |\n| **8.1** | Prepare one\u2011page executive summary | Elena G\u00f3mez | 23\u202fNov | 1 | 23\u202fNov | \u2013 | Budget slide | Exec summary (`FY26_Budget_ExecSummary.docx`) |\n| **8.2** | Present to Finance Steering Committee (virtual) | Elena G\u00f3mez | 24\u202fNov | 1 | 24\u202fNov | 8.1 | Exec summary | Meeting minutes |\n| **8.3** | Record decision & any conditional actions | Elena G\u00f3mez | 25\u201126\u202fNov | 2 | 26\u202fNov | 8.2 | \u2013 | Decision record (`Budget_Decision.pdf`) |\n| **9** | **Contingency Plan Development** | Risk Owner \u2013 Alex Rivera | 27\u202fNov | 2 | 28\u202fNov | 7.2 | Risk register (created during planning) | ContingencyPlan.docx |\n| **9.1** | Identify top\u20113 constraints (data latency, resource gap, scope creep) | Alex Rivera | 27\u202fNov | \u2013 | \u2013 | \u2013 | \u2013 | List compiled |\n| **9.2** | Define trigger criteria, owner, mitigation steps | Alex Rivera | 27\u201128\u202fNov | \u2013 | \u2013 | \u2013 | \u2013 | Document completed |\n| **10** | **Final Deck Lock & Distribution** | Deck Owner \u2013 Michael Chen | 29\u202fNov | 2 | 30\u202fNov | 8.3, 9.2 | Approved deck, budget memo, contingency plan | Final deck (`Deck_Final.pptx`) |\n| **10.1** | Insert approved budget numbers & contingency slide | Michael Chen | 29\u202fNov | \u2013 | \u2013 | \u2013 | \u2013 | Updated deck |\n| **10.2** | Store final assets in shared MBR folder, set permissions | Alex Rivera | 30\u202fNov | \u2013 | \u2013 | \u2013 | \u2013 | Folder ready (`/MBR/2025-12/`) |\n| **11** | **Pre\u2011Meeting Dry Run** | Presenter \u2013 Michael Chen | 1\u202fDec | 1 | 1\u202fDec | 10.2 | Final deck | Dry\u2011run recording |\n| **12** | **Meeting Day \u2013 Presentation** | Presenter \u2013 Michael Chen | 5\u202fDec | \u2013 | 5\u202fDec | \u2013 | Final deck, backup PDF | Successful MBR delivery |\n| **13** | **Post\u2011Meeting Follow\u2011Up** | PM \u2013 Alex Rivera | 6\u202fDec | 2 | 7\u202fDec | 12 | Action items list from meeting | Follow\u2011up email with next\u2011steps |\n\n### Milestones & Completion Criteria  \n\n| Milestone | Target Date | Completion Criteria |\n|-----------|-------------|---------------------|\n| Kick\u2011off & charter signed | 5\u202fNov | Meeting minutes + charter doc |\n| Data extraction & validation sign\u2011off | 10\u202fNov | Signed `DataPackage_Validated.zip` |\n| Draft deck outline completed | 13\u202fNov | `Deck_Outline.docx` approved |\n| Visual design draft ready | 15\u202fNov | `Deck_DesignDraft.pptx` uploaded |\n| First internal review completed | 17\u202fNov | Feedback tracker populated |\n| Leadership sign\u2011off obtained | 22\u202fNov | `Leadership_Signoff.pdf` |\n| FY26 budget approved | 26\u202fNov | `Budget_Approval.pdf` |\n| Contingency plan documented | 28\u202fNov | `ContingencyPlan.docx` |\n| Final deck locked | 30\u202fNov | `Deck_Final.pptx` in shared folder |\n| Dry\u2011run completed | 1\u202fDec | Recording stored, presenter sign\u2011off |\n| MBR presented | 5\u202fDec | Meeting minutes & slide deck archived |\n| Post\u2011meeting action items circulated | 7\u202fDec | Email with `ActionItems.xlsx` |\n\n### Risk Management & Contingency Actions  \n\n| Risk | Likelihood | Impact | Trigger | Owner | Mitigation / Contingency |\n|------|------------|--------|---------|-------|--------------------------|\n| Data latency / missing source | Medium | High | Extraction fails > 1\u202fday before deadline | Priya Shah (Data Lead) | Have a \u201csnapshot\u201d backup from prior month; if still missing, use provisional estimates with clear disclaimer |\n| Key stakeholder unavailable for sign\u2011off | Low | High | No response > 48\u202fh after request | Alex Rivera (PM) | Escalate to their manager; prepare a \u201cpre\u2011approved\u201d version for provisional use |\n| Budget request rejected | Low | High | Finance Steering Committee votes \u201cconditional\u201d | Elena G\u00f3mez (Finance) | Prepare alternative funding scenarios (re\u2011scope, phased spend) and attach to contingency plan |\n| Presentation deck corrupted | Low | Medium | File fails to open on meeting day | Michael Chen (Presenter) | Keep a PDF backup and a copy on a secondary drive; test on meeting room hardware the day before |\n| Resource conflict (engineer on\u2011call) | Medium | Medium | Engineer unavailable for data validation | Ravi Patel (Eng Ops) | Cross\u2011train a secondary analyst (Sara Kim) to verify metrics |\n\n---  \n\n**How to use this plan**  \n\n1. **Load the table into your project\u2011tracking tool** (e.g., Smartsheet, MS Project, Jira).  \n2. **Assign the owners** listed in the \u201cOwner\u201d column.  \n3. **Set the start/end dates** as shown; the tool will automatically calculate dependencies.  \n4. **Mark each milestone** as \u201cDone\u201d only when the completion criteria are satisfied.  \n5. **Review the risk register** weekly; if a trigger occurs, activate the corresponding contingency step.  \n\nFollowing this work\u2011back schedule will deliver a validated data set, a polished deck, stakeholder approvals, budget sign\u2011off, and a ready\u2011to\u2011present MBR on **5\u202fDecember\u202f2025** with built\u2011in buffers and risk mitigations.",
+  "plan": {
+    "id": "document-001",
+    "name": "MBR Workback Plan",
+    "details": "Workback schedule to deliver a validated data package, presentation deck, stakeholder sign\u2011offs, FY26 budget approval, contingency plan and final MBR presentation on 5\u202fDecember\u202f2025.",
+    "draft": true,
+    "participants": [
+      {
+        "name": "Alex Rivera",
+        "email": "alex.rivera@example.com",
+        "draft": true
+      },
+      {
+        "name": "Priya Shah",
+        "email": "priya.shah@example.com",
+        "draft": true
+      },
+      {
+        "name": "Marco Liu",
+        "email": "marco.liu@example.com",
+        "draft": true
+      },
+      {
+        "name": "Sara Kim",
+        "email": "sara.kim@example.com",
+        "draft": true
+      },
+      {
+        "name": "Michael Chen",
+        "email": "michael.chen@example.com",
+        "draft": true
+      },
+      {
+        "name": "Zoe Martinez",
+        "email": "zoe.martinez@example.com",
+        "draft": true
+      },
+      {
+        "name": "Elena G\u00f3mez",
+        "email": "elena.gomez@example.com",
+        "draft": true
+      },
+      {
+        "name": "Ravi Patel",
+        "email": "ravi.patel@example.com",
+        "draft": true
+      },
+      {
+        "name": "Lina Ortiz",
+        "email": "lina.ortiz@example.com",
+        "draft": true
+      }
+    ],
+    "references": [],
+    "deliverables": [
+      {
+        "id": "deliverable-001",
+        "name": "DataInventory.xlsx",
+        "type": "excel",
+        "draft": true
+      },
+      {
+        "id": "deliverable-002",
+        "name": "DataPackage_Validated.zip",
+        "type": "file",
+        "draft": true
+      },
+      {
+        "id": "deliverable-003",
+        "name": "Deck_Outline.docx",
+        "type": "word",
+        "draft": true
+      },
+      {
+        "id": "deliverable-004",
+        "name": "Deck_DesignDraft.pptx",
+        "type": "powerpoint",
+        "draft": true
+      },
+      {
+        "id": "deliverable-005",
+        "name": "Deck_Final.pptx",
+        "type": "powerpoint",
+        "draft": true
+      },
+      {
+        "id": "deliverable-006",
+        "name": "ContingencyPlan.docx",
+        "type": "word",
+        "draft": true
+      },
+      {
+        "id": "deliverable-007",
+        "name": "Budget_Approval.pdf",
+        "type": "pdf",
+        "draft": true
+      },
+      {
+        "id": "deliverable-008",
+        "name": "FY26_Budget_ExecSummary.docx",
+        "type": "word",
+        "draft": true
+      },
+      {
+        "id": "deliverable-009",
+        "name": "ActionItems.xlsx",
+        "type": "excel",
+        "draft": true
+      },
+      {
+        "id": "deliverable-010",
+        "name": "DataHealthCheck.pdf",
+        "type": "pdf",
+        "draft": true
+      }
+    ],
+    "tasks": [
+      {
+        "id": "task-001",
+        "name": "Kick\u2011off & Planning",
+        "draft": true,
+        "details": "Kick\u2011off meeting held; project charter signed.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "alex.rivera@example.com"
+        ]
+      },
+      {
+        "id": "task-002",
+        "name": "Identify metric owners & data owners",
+        "draft": true,
+        "details": "Owner matrix completed.",
+        "dependencies": [
+          "task-001"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "alex.rivera@example.com"
+        ]
+      },
+      {
+        "id": "task-003",
+        "name": "Create data extraction inventory",
+        "draft": true,
+        "details": "Inventory doc (DataInventory.xlsx) created.",
+        "dependencies": [
+          "task-002"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "priya.shah@example.com"
+        ],
+        "deliverables": [
+          "@deliverable[excel]/deliverable-001"
+        ]
+      },
+      {
+        "id": "task-004",
+        "name": "Data Extraction & Validation",
+        "draft": true,
+        "details": "Raw data extracts stored in /DataPackage/Raw.",
+        "dependencies": [
+          "task-003"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "priya.shah@example.com"
+        ]
+      },
+      {
+        "id": "task-005",
+        "name": "Write / update extraction scripts",
+        "draft": true,
+        "details": "Scripts added to repository.",
+        "dependencies": [
+          "task-003"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "marco.liu@example.com"
+        ]
+      },
+      {
+        "id": "task-006",
+        "name": "Run extracts for all metrics",
+        "draft": true,
+        "details": "Extraction run against all sources.",
+        "dependencies": [
+          "task-005"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "priya.shah@example.com"
+        ]
+      },
+      {
+        "id": "task-007",
+        "name": "Data health\u2011check",
+        "draft": true,
+        "details": "Data quality validated; report generated.",
+        "dependencies": [
+          "task-006"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "sara.kim@example.com"
+        ],
+        "deliverables": [
+          "@deliverable[pdf]/deliverable-010"
+        ]
+      },
+      {
+        "id": "task-008",
+        "name": "Owner sign\u2011off of validated data",
+        "draft": true,
+        "details": "Signed DataPackage_Validated.zip obtained.",
+        "dependencies": [
+          "task-007"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "priya.shah@example.com"
+        ],
+        "deliverables": [
+          "@deliverable[file]/deliverable-002"
+        ]
+      },
+      {
+        "id": "task-009",
+        "name": "Deck Outline & Content Draft",
+        "draft": true,
+        "details": "Deck outline (Deck_Outline.docx) approved.",
+        "dependencies": [
+          "task-008"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "michael.chen@example.com"
+        ],
+        "deliverables": [
+          "@deliverable[word]/deliverable-003"
+        ]
+      },
+      {
+        "id": "task-010",
+        "name": "Draft Executive Summary slide",
+        "draft": true,
+        "details": "Executive summary slide prepared.",
+        "dependencies": [
+          "task-009"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "michael.chen@example.com"
+        ]
+      },
+      {
+        "id": "task-011",
+        "name": "Populate KPI Snapshot slides",
+        "draft": true,
+        "details": "KPI slides populated with validated metrics.",
+        "dependencies": [
+          "task-009"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "sara.kim@example.com"
+        ]
+      },
+      {
+        "id": "task-012",
+        "name": "Draft Product Highlights narrative",
+        "draft": true,
+        "details": "Product highlights narrative completed.",
+        "dependencies": [
+          "task-009"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "lina.ortiz@example.com"
+        ]
+      },
+      {
+        "id": "task-013",
+        "name": "Draft Engineering Health slides",
+        "draft": true,
+        "details": "Engineering health slides prepared.",
+        "dependencies": [
+          "task-009"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "ravi.patel@example.com"
+        ]
+      },
+      {
+        "id": "task-014",
+        "name": "Draft FY26 Budget & Investment request slides",
+        "draft": true,
+        "details": "Budget request slides created.",
+        "dependencies": [
+          "task-009"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "elena.gomez@example.com"
+        ]
+      },
+      {
+        "id": "task-015",
+        "name": "Design & Visual Polish",
+        "draft": true,
+        "details": "Visual design draft (Deck_DesignDraft.pptx) uploaded.",
+        "dependencies": [
+          "task-010",
+          "task-011",
+          "task-012",
+          "task-013",
+          "task-014"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "zoe.martinez@example.com"
+        ],
+        "deliverables": [
+          "@deliverable[powerpoint]/deliverable-004"
+        ]
+      },
+      {
+        "id": "task-016",
+        "name": "Internal Review Cycle 1",
+        "draft": true,
+        "details": "First internal review completed; feedback tracker populated.",
+        "dependencies": [
+          "task-015"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "alex.rivera@example.com"
+        ]
+      },
+      {
+        "id": "task-017",
+        "name": "Distribute deck to Product & Engineering leads",
+        "draft": true,
+        "details": "Deck sent to product and engineering leads.",
+        "dependencies": [
+          "task-016"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "alex.rivera@example.com"
+        ]
+      },
+      {
+        "id": "task-018",
+        "name": "Collect feedback",
+        "draft": true,
+        "details": "Feedback tracker populated with comments.",
+        "dependencies": [
+          "task-017"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "alex.rivera@example.com"
+        ]
+      },
+      {
+        "id": "task-019",
+        "name": "Incorporate Feedback & Refine",
+        "draft": true,
+        "details": "Revised deck incorporated with feedback.",
+        "dependencies": [
+          "task-018"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "michael.chen@example.com"
+        ]
+      },
+      {
+        "id": "task-020",
+        "name": "Stakeholder Review Cycle 2",
+        "draft": true,
+        "details": "Leadership sign\u2011off obtained.",
+        "dependencies": [
+          "task-019"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "alex.rivera@example.com"
+        ]
+      },
+      {
+        "id": "task-021",
+        "name": "Send deck to Product VP, Eng VP, Finance Director",
+        "draft": true,
+        "details": "Deck sent to senior stakeholders.",
+        "dependencies": [
+          "task-020"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "alex.rivera@example.com"
+        ]
+      },
+      {
+        "id": "task-022",
+        "name": "Capture approvals",
+        "draft": true,
+        "details": "Leadership approvals compiled into Leadership_Signoff.pdf.",
+        "dependencies": [
+          "task-021"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "alex.rivera@example.com"
+        ]
+      },
+      {
+        "id": "task-023",
+        "name": "FY26 Budget Approval Process",
+        "draft": true,
+        "details": "Budget approved; approval document stored.",
+        "dependencies": [
+          "task-022"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "elena.gomez@example.com"
+        ],
+        "deliverables": [
+          "@deliverable[pdf]/deliverable-007"
+        ]
+      },
+      {
+        "id": "task-024",
+        "name": "Prepare one\u2011page executive summary",
+        "draft": true,
+        "details": "Executive summary (FY26_Budget_ExecSummary.docx) prepared.",
+        "dependencies": [
+          "task-023"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "elena.gomez@example.com"
+        ],
+        "deliverables": [
+          "@deliverable[word]/deliverable-008"
+        ]
+      },
+      {
+        "id": "task-025",
+        "name": "Present to Finance Steering Committee",
+        "draft": true,
+        "details": "Presentation to Finance Steering Committee completed.",
+        "dependencies": [
+          "task-024"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "elena.gomez@example.com"
+        ]
+      },
+      {
+        "id": "task-026",
+        "name": "Record decision / conditional vote",
+        "draft": true,
+        "details": "Decision recorded in Budget_Approval.pdf.",
+        "dependencies": [
+          "task-025"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "elena.gomez@example.com"
+        ]
+      },
+      {
+        "id": "task-027",
+        "name": "Contingency Plan Development",
+        "draft": true,
+        "details": "Contingency plan documented (ContingencyPlan.docx).",
+        "dependencies": [
+          "task-022"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "alex.rivera@example.com"
+        ],
+        "deliverables": [
+          "@deliverable[word]/deliverable-006"
+        ]
+      },
+      {
+        "id": "task-028",
+        "name": "Identify top\u20113 constraints",
+        "draft": true,
+        "details": "Top three constraints listed.",
+        "dependencies": [
+          "task-027"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "alex.rivera@example.com"
+        ]
+      },
+      {
+        "id": "task-029",
+        "name": "Define trigger criteria and mitigation steps",
+        "draft": true,
+        "details": "Trigger criteria and mitigation steps defined.",
+        "dependencies": [
+          "task-028"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "alex.rivera@example.com"
+        ]
+      },
+      {
+        "id": "task-030",
+        "name": "Final Deck Lock & Distribution",
+        "draft": true,
+        "details": "Final deck (Deck_Final.pptx) locked and stored in shared folder.",
+        "dependencies": [
+          "task-022",
+          "task-026",
+          "task-029"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "michael.chen@example.com"
+        ],
+        "deliverables": [
+          "@deliverable[powerpoint]/deliverable-005"
+        ]
+      },
+      {
+        "id": "task-031",
+        "name": "Insert approved budget numbers & contingency slide",
+        "draft": true,
+        "details": "Budget numbers and contingency slide added to final deck.",
+        "dependencies": [
+          "task-030"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "michael.chen@example.com"
+        ]
+      },
+      {
+        "id": "task-032",
+        "name": "Store final assets",
+        "draft": true,
+        "details": "All final assets copied to secondary drive and tested.",
+        "dependencies": [
+          "task-031"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "michael.chen@example.com"
+        ]
+      },
+      {
+        "id": "task-033",
+        "name": "Pre\u2011Meeting Dry Run",
+        "draft": true,
+        "details": "Dry\u2011run completed; recording stored.",
+        "dependencies": [
+          "task-032"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "michael.chen@example.com"
+        ]
+      },
+      {
+        "id": "task-034",
+        "name": "MBR Presentation (5\u202fDecember\u202f2025)",
+        "draft": true,
+        "details": "Meeting minutes and slide deck archived.",
+        "dependencies": [
+          "task-032",
+          "task-033"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "michael.chen@example.com"
+        ]
+      },
+      {
+        "id": "task-035",
+        "name": "Post\u2011Meeting Follow\u2011Up",
+        "draft": true,
+        "details": "Action items circulated (ActionItems.xlsx).",
+        "dependencies": [
+          "task-034"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "alex.rivera@example.com"
+        ],
+        "deliverables": [
+          "@deliverable[excel]/deliverable-009"
+        ]
+      },
+      {
+        "id": "task-005",
+        "name": "Write / update extraction scripts",
+        "draft": true,
+        "details": "Scripts added to repository.",
+        "dependencies": [
+          "task-003"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "marco.liu@example.com"
+        ]
+      },
+      {
+        "id": "task-006",
+        "name": "Run extracts for all metrics",
+        "draft": true,
+        "details": "Extraction run against all sources completed.",
+        "dependencies": [
+          "task-005"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "priya.shah@example.com"
+        ]
+      },
+      {
+        "id": "task-007",
+        "name": "Data health\u2011check",
+        "draft": true,
+        "details": "Data health\u2011check report (DataHealthCheck.pdf) generated.",
+        "dependencies": [
+          "task-006"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "sara.kim@example.com"
+        ],
+        "deliverables": [
+          "@deliverable[pdf]/deliverable-010"
+        ]
+      },
+      {
+        "id": "task-008",
+        "name": "Owner sign\u2011off of validated data",
+        "draft": true,
+        "details": "Validated data package signed off by metric owners.",
+        "dependencies": [
+          "task-007"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "priya.shah@example.com"
+        ],
+        "deliverables": [
+          "@deliverable[file]/deliverable-002"
+        ]
+      },
+      {
+        "id": "task-009",
+        "name": "Deck Outline & Content Draft",
+        "draft": true,
+        "details": "Deck outline (Deck_Outline.docx) approved.",
+        "dependencies": [
+          "task-008"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "michael.chen@example.com"
+        ],
+        "deliverables": [
+          "@deliverable[word]/deliverable-003"
+        ]
+      },
+      {
+        "id": "task-010",
+        "name": "Draft Executive Summary slide",
+        "draft": true,
+        "details": "Executive summary slide prepared.",
+        "dependencies": [
+          "task-009"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "michael.chen@example.com"
+        ]
+      },
+      {
+        "id": "task-011",
+        "name": "Populate KPI Snapshot slides",
+        "draft": true,
+        "details": "KPI slides populated with validated metrics.",
+        "dependencies": [
+          "task-009"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "sara.kim@example.com"
+        ]
+      },
+      {
+        "id": "task-012",
+        "name": "Draft Product Highlights narrative",
+        "draft": true,
+        "details": "Product highlights narrative completed.",
+        "dependencies": [
+          "task-009"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "lina.ortiz@example.com"
+        ]
+      },
+      {
+        "id": "task-013",
+        "name": "Draft Engineering Health slides",
+        "draft": true,
+        "details": "Engineering health slides prepared.",
+        "dependencies": [
+          "task-009"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "ravi.patel@example.com"
+        ]
+      },
+      {
+        "id": "task-014",
+        "name": "Draft FY26 Budget & Investment request slides",
+        "draft": true,
+        "details": "Budget request slides created.",
+        "dependencies": [
+          "task-009"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "elena.gomez@example.com"
+        ]
+      },
+      {
+        "id": "task-015",
+        "name": "Design & Visual Polish",
+        "draft": true,
+        "details": "Visual design draft (Deck_DesignDraft.pptx) uploaded.",
+        "dependencies": [
+          "task-010",
+          "task-011",
+          "task-012",
+          "task-013",
+          "task-014"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "zoe.martinez@example.com"
+        ],
+        "deliverables": [
+          "@deliverable[powerpoint]/deliverable-004"
+        ]
+      },
+      {
+        "id": "task-016",
+        "name": "Internal Review Cycle 1",
+        "draft": true,
+        "details": "First internal review completed; feedback tracker populated.",
+        "dependencies": [
+          "task-015"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "alex.rivera@example.com"
+        ]
+      },
+      {
+        "id": "task-017",
+        "name": "Distribute deck to Product & Engineering leads",
+        "draft": true,
+        "details": "Deck distributed to leads for review.",
+        "dependencies": [
+          "task-016"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "alex.rivera@example.com"
+        ]
+      },
+      {
+        "id": "task-018",
+        "name": "Collect feedback",
+        "draft": true,
+        "details": "Feedback tracker populated with comments.",
+        "dependencies": [
+          "task-017"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "alex.rivera@example.com"
+        ]
+      },
+      {
+        "id": "task-019",
+        "name": "Incorporate Feedback & Refine",
+        "draft": true,
+        "details": "Revised deck incorporated with feedback.",
+        "dependencies": [
+          "task-018"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "michael.chen@example.com"
+        ]
+      },
+      {
+        "id": "task-020",
+        "name": "Stakeholder Review Cycle 2",
+        "draft": true,
+        "details": "Leadership sign\u2011off obtained.",
+        "dependencies": [
+          "task-019"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "alex.rivera@example.com"
+        ]
+      },
+      {
+        "id": "task-021",
+        "name": "Send deck to Product VP, Eng VP, Finance Director",
+        "draft": true,
+        "details": "Deck sent to senior stakeholders.",
+        "dependencies": [
+          "task-020"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "alex.rivera@example.com"
+        ]
+      },
+      {
+        "id": "task-022",
+        "name": "Capture approvals",
+        "draft": true,
+        "details": "Leadership approvals compiled into Leadership_Signoff.pdf.",
+        "dependencies": [
+          "task-021"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "alex.rivera@example.com"
+        ]
+      },
+      {
+        "id": "task-023",
+        "name": "FY26 Budget Approval Process",
+        "draft": true,
+        "details": "Budget approved; approval document stored.",
+        "dependencies": [
+          "task-022"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "elena.gomez@example.com"
+        ],
+        "deliverables": [
+          "@deliverable[pdf]/deliverable-007"
+        ]
+      },
+      {
+        "id": "task-024",
+        "name": "Prepare one\u2011page executive summary",
+        "draft": true,
+        "details": "Executive summary (FY26_Budget_ExecSummary.docx) prepared.",
+        "dependencies": [
+          "task-023"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "elena.gomez@example.com"
+        ],
+        "deliverables": [
+          "@deliverable[word]/deliverable-008"
+        ]
+      },
+      {
+        "id": "task-025",
+        "name": "Present to Finance Steering Committee",
+        "draft": true,
+        "details": "Presentation to Finance Steering Committee completed.",
+        "dependencies": [
+          "task-024"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "elena.gomez@example.com"
+        ]
+      },
+      {
+        "id": "task-026",
+        "name": "Record decision / conditional vote",
+        "draft": true,
+        "details": "Decision recorded in Budget_Approval.pdf.",
+        "dependencies": [
+          "task-025"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "elena.gomez@example.com"
+        ]
+      }
+    ],
+    "history": []
+  }
+}

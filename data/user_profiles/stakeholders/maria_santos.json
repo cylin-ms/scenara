@@ -1,0 +1,136 @@
+{
+  "basic_info": {
+    "full_name": "Maria Santos",
+    "age": 32,
+    "location": "Lisbon, Portugal",
+    "timezone": "Europe/Lisbon (UTC+0)",
+    "years_experience": 8,
+    "education": {
+      "degree": "M.Sc. Computer Science",
+      "institution": "Universidade Nova de Lisboa",
+      "graduation_year": 2016
+    }
+  },
+  "work_habits": {
+    "preferred_working_hours": "08:00-16:00",
+    "peak_productivity_times": "09:30-12:30",
+    "communication_style": {
+      "async_preference": true,
+      "sync_preference": false,
+      "average_response_time_minutes": 45
+    },
+    "meeting_preferences": {
+      "frequency": "minimizes meetings, prefers 30‑minute stand‑ups and bi‑weekly sprint reviews",
+      "format": "video calls when necessary, otherwise async updates"
+    },
+    "work_environment": "Hybrid (3 days remote, 2 days office in Porto office)",
+    "focus_time_requirements": "2‑3 blocks of 90 minutes per day, protected via calendar"
+  },
+  "personality": {
+    "mbti": "ISTJ",
+    "decision_making_approach": "Data‑driven, prefers evidence and documented criteria before committing",
+    "risk_tolerance": "Low to moderate – avoids flaky test strategies, favors stable frameworks",
+    "collaboration_style": "Structured contributor – provides clear artifacts and follows up on action items",
+    "stress_management_approach": "Scheduled micro‑breaks, uses Pomodoro technique, practices mindfulness for 10 minutes daily",
+    "conflict_resolution_style": "Collaborative – seeks win‑win solutions, escalates only when impact is critical"
+  },
+  "skills": {
+    "core_technical_skills": {
+      "Java": 8,
+      "Python": 7,
+      "Selenium WebDriver": 9,
+      "Cypress": 7,
+      "REST API testing (Postman, RestAssured)": 8,
+      "CI/CD pipelines (Jenkins, GitHub Actions)": 7,
+      "Docker": 6,
+      "Performance testing (JMeter)": 5,
+      "SQL": 7,
+      "Git": 9
+    },
+    "leadership_abilities": 6,
+    "domain_expertise_areas": [
+      "E‑commerce platforms",
+      "Payment gateway integrations",
+      "Micro‑services architecture"
+    ],
+    "learning_agility": 8,
+    "tools_proficiency": [
+      "Jira",
+      "Confluence",
+      "TestRail",
+      "Allure Reports",
+      "GitHub",
+      "Slack",
+      "Microsoft Teams"
+    ],
+    "languages_spoken": [
+      "Portuguese (native)",
+      "English (fluent)",
+      "Spanish (conversational)"
+    ]
+  },
+  "performance": {
+    "task_completion_rate_percent": 92,
+    "quality_score_percent": 96,
+    "estimation_accuracy_percent": 88,
+    "multitasking_ability": 6,
+    "performance_under_pressure": 7
+  },
+  "availability": {
+    "available_hours_per_week": 36,
+    "timezone_and_working_hours": "UTC+0, typically 08:00‑16:00 local time (flexible +/- 1 hour)",
+    "planned_time_off_days_per_year": 25,
+    "other_commitments": [
+      "Weekly Portuguese language meetup (2 hrs)",
+      "Quarterly tech conference speaking slot (preparation time ~8 hrs)"
+    ],
+    "travel_flexibility": "Can travel up to 3 days per quarter for onsite workshops or client demos"
+  },
+  "personal_factors": {
+    "family_status": "Married, no children",
+    "caregiving_responsibilities": "None",
+    "commute_situation": "30‑minute train ride to Porto office on hybrid days",
+    "health_considerations": "Mild asthma – avoids prolonged exposure to heavy dust; prefers ergonomic workstation",
+    "career_motivation": "Aiming to become a Test Automation Lead within 2‑3 years, driven by passion for building robust CI pipelines and mentoring junior engineers"
+  },
+  "project_impact": {
+    "reliability": 9,
+    "innovation_tendency": 6,
+    "documentation_quality": 8,
+    "mentorship_capability": 7,
+    "influence_level": 5
+  },
+  "collaboration": {
+    "meeting_frequency_preference": "One 30‑minute sync per sprint (Monday), optional ad‑hoc when blockers arise",
+    "communication_channels_preference": [
+      "Slack for quick questions",
+      "Confluence for detailed documentation",
+      "Jira comments for task‑specific discussions"
+    ],
+    "feedback_style": "Direct but diplomatic – provides actionable points and acknowledges good work",
+    "knowledge_sharing_habits": "Maintains a shared ‘Automation Best Practices’ Confluence space, runs monthly brown‑bag sessions on new tools",
+    "cross_team_collaboration_rating": 7
+  },
+  "risk_factors": {
+    "potential_bottlenecks": [
+      "Heavy reliance on a single Selenium test suite; any framework instability can stall releases",
+      "Limited capacity for parallel test execution due to shared CI resources"
+    ],
+    "backup_person_needed": "Junior Automation Engineer (Lucas Ferreira) – currently being cross‑trained",
+    "ramp_up_time_for_new_projects_weeks": 3,
+    "context_switching_tolerance": 5,
+    "burnout_risk_factors": [
+      "High meeting load during release weeks",
+      "Extended periods of on‑call for test failures"
+    ]
+  },
+  "_metadata": {
+    "generated_at": "2025-11-17T15:25:39.345660",
+    "name": "Maria Santos",
+    "role": "Test Automation Engineer",
+    "seniority": "mid",
+    "company": "TechCorp",
+    "model": "gpt-oss:120b",
+    "provider": "ollama"
+  }
+}

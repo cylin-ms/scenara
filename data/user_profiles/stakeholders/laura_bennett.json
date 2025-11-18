@@ -1,0 +1,150 @@
+{
+  "basic_info": {
+    "full_name": "Laura Bennett",
+    "age": 38,
+    "location": "Austin, TX, USA (Central Time - UTC-6)",
+    "years_experience": 15,
+    "education": [
+      {
+        "degree": "B.Sc. Computer Science",
+        "institution": "University of Texas at Austin",
+        "year": 2006
+      },
+      {
+        "degree": "M.S. Software Engineering",
+        "institution": "Georgia Tech",
+        "year": 2009
+      }
+    ]
+  },
+  "work_habits": {
+    "preferred_working_hours": "flexible, with core hours 8am-12pm CST",
+    "peak_productivity_times": [
+      "9am-11am CST",
+      "2pm-4pm CST"
+    ],
+    "communication_style": {
+      "async_preference": true,
+      "sync_preference": true,
+      "average_response_time": "within 2 hours during work hours"
+    },
+    "meeting_preferences": {
+      "meeting_frequency": "low to moderate",
+      "prefers": "short, agenda‑driven meetings",
+      "video_on": true
+    },
+    "work_environment": "hybrid (3 days remote, 2 days office)",
+    "focus_time_requirements": "2‑3 blocks of 90 minutes per day, protected"
+  },
+  "personality": {
+    "mbti": "ENTJ",
+    "decision_making_approach": "data‑driven, consultative but decisive",
+    "risk_tolerance": 6,
+    "collaboration_style": "structured, encourages cross‑functional input",
+    "stress_management_approach": "regular exercise, mindfulness breaks, delegation",
+    "conflict_resolution_style": "direct yet empathetic, seeks win‑win"
+  },
+  "skills": {
+    "core_technical_skills": {
+      "test_automation": 9,
+      "performance_testing": 7,
+      "security_testing": 6,
+      "API_testing": 8,
+      "CI/CD_pipelines": 8,
+      "SQL": 7,
+      "Python": 8,
+      "JavaScript": 7
+    },
+    "leadership_abilities": {
+      "team_building": 9,
+      "strategic_planning": 8,
+      "coaching": 8,
+      "stakeholder_management": 7,
+      "change_management": 6
+    },
+    "domain_expertise_areas": [
+      "FinTech platforms",
+      "SaaS enterprise applications",
+      "Cloud‑native microservices"
+    ],
+    "learning_agility": 8,
+    "tools_proficiency": [
+      "Selenium",
+      "Cypress",
+      "JMeter",
+      "Postman",
+      "Jenkins",
+      "GitLab CI",
+      "Jira",
+      "Confluence",
+      "TestRail",
+      "Docker"
+    ],
+    "languages_spoken": [
+      "English (native)",
+      "Spanish (conversational)"
+    ]
+  },
+  "performance": {
+    "task_completion_rate": 93,
+    "quality_score": 96,
+    "estimation_accuracy": 88,
+    "multitasking_ability": 7,
+    "performance_under_pressure": 8
+  },
+  "availability": {
+    "available_hours_per_week": 45,
+    "timezone_and_working_hours": "CST, core 8am-12pm, flexible till 6pm",
+    "planned_time_off_days_per_year": 25,
+    "other_commitments": [
+      "monthly industry webinar speaker (2 hrs)",
+      "quarterly mentorship program"
+    ],
+    "travel_flexibility": "willing to travel up to 10% of time (~5 days per quarter) for onsite workshops"
+  },
+  "personal_factors": {
+    "family_status": "married, two children (ages 5 and 8)",
+    "caregiving_responsibilities": "shared parenting, occasional school pick‑ups",
+    "commute_situation": "0 miles (home office), 30‑minute drive to office on office days",
+    "health_considerations": "mild hypertension managed with medication, regular cardio",
+    "career_motivation": "drive to build high‑quality, scalable QA processes and mentor next generation of testers"
+  },
+  "project_impact": {
+    "reliability": 9,
+    "innovation_tendency": 7,
+    "documentation_quality": 9,
+    "mentorship_capability": 9,
+    "influence_level": 8
+  },
+  "collaboration": {
+    "meeting_frequency_preference": "once per week team sync, ad‑hoc as needed",
+    "communication_channels_preference": [
+      "Slack (async)",
+      "Teams (sync)",
+      "email for formal docs"
+    ],
+    "feedback_style": "direct but constructive, balances data with empathy",
+    "knowledge_sharing_habits": "writes monthly internal blog, runs quarterly lunch‑and‑learn",
+    "cross_team_collaboration": 8
+  },
+  "risk_factors": {
+    "potential_bottlenecks": "relies heavily on her deep domain knowledge; absence could delay critical release decisions",
+    "backup_person_needed": "Senior QA Engineer Alex Martinez (trained as deputy)",
+    "ramp_up_time_for_new_projects_weeks": 3,
+    "context_switching_tolerance": 5,
+    "burnout_risk_factors": [
+      "high meeting load during release crunch",
+      "balancing family commitments",
+      "persistent high‑stakes decisions"
+    ]
+  },
+  "_metadata": {
+    "generated_at": "2025-11-17T15:24:21.296311",
+    "name": "Laura Bennett",
+    "role": "QA Lead",
+    "seniority": "senior",
+    "company": "TechCorp",
+    "model": "gpt-oss:120b",
+    "provider": "ollama"
+  }
+}

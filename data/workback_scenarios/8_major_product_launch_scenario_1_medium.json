@@ -1,0 +1,820 @@
+{
+  "scenario_name": "Nimbus AI Platform v3.2 Enterprise Launch",
+  "scenario_number": 1,
+  "meeting_type": "Major Product Launch",
+  "quality_level": "medium",
+  "workback_prompt": "Create a detailed 90\u2011day workback plan for Nimbus Cloud Solutions' launch of Nimbus AI Platform v3.2 (Enterprise AI platform with FedRAMP, GDPR, HIPAA compliance). Include all major milestones: beta program (T\u201160), release candidate freeze (T\u201130), compliance audit sign\u2011off (T\u201125), pricing approval (T\u201120), partner certification (T\u201115), launch event preparation (T\u20115), and post\u2011launch monitoring (T\u202f+\u202f90). Map each deliverable, assign owners from the stakeholder list, specify required resources, dependencies, critical path tasks, risk mitigation, and success\u2011criteria tracking. Provide a week\u2011by\u2011week timeline, key decision gates, and a budget\u2011tracking summary that respects the $5\u202fM cap and the listed constraints.\n\nGenerate a MEDIUM QUALITY workback plan with these characteristics:\n- Most major tasks present but some gaps\n- Reasonable task descriptions\n- Some dependencies defined\n- Most tasks have owners\n- Milestones present but may lack detail\n- Generally realistic timelines\n- Some consideration of risks\n- Key deliverables identified\n\nIMPORTANT: Generate a plan that naturally exhibits MEDIUM quality characteristics.\nDo not explicitly label the plan as \"medium quality\" - let the quality emerge from the content.",
+  "generated_at": "2025-11-17T07:00:08.551650",
+  "analysis": "# Outcomes\n\n## 1. Draft 90\u2011day work\u2011back plan for Nimbus AI Platform\u202fv3.2  \nA comprehensive document that maps every major milestone (beta program, RC freeze, compliance audit, pricing approval, partner certification, launch\u2011event prep, post\u2011launch monitoring) to weekly deliverables, owners, required resources, dependencies, critical\u2011path tasks, risk\u2011mitigation actions, success\u2011criteria, and a high\u2011level budget\u2011tracking summary that stays within the $5\u202fM ceiling.  \n\n### Reasoning  \nThe user\u2019s primary request is a detailed, week\u2011by\u2011week work\u2011back plan that includes all of the listed milestones, owners, resources, dependencies, risk considerations, and a budget summary. Delivering this document is the central outcome; everything else (validation, risk register, communication framework) supports its quality and acceptance.\n\n### Approach  \n1. **Collect baseline inputs** \u2013 gather the stakeholder list, existing budget allocations, compliance requirements (FedRAMP, GDPR, HIPAA), and any pre\u2011existing schedules or constraints.  \n2. **Define milestone\u2011level deliverables** \u2013 for each of the seven milestones, enumerate the concrete outputs (e.g., \u201cBeta\u2011program enrollment list\u201d, \u201cRC\u2011freeze sign\u2011off memo\u201d).  \n3. **Identify owners and resources** \u2013 map each deliverable to a responsible owner (product manager, compliance lead, finance, partner\u2011enablement, marketing, etc.) and list required resources (person\u2011hours, tooling, external audit firms, cloud\u2011capacity).  \n4. **Map dependencies and critical path** \u2013 draw a simple dependency matrix that shows which deliverables must precede others (e.g., compliance\u2011audit sign\u2011off must occur before pricing approval). Highlight the longest chain of dependent tasks as the critical path.  \n5. **Create a week\u2011by\u2011week schedule** \u2013 start from the launch date (T\u202f=\u202f0) and work backwards, allocating each deliverable to a specific week (T\u201160 \u2026 T\u20115) while respecting dependencies and resource constraints.  \n6. **Add risk\u2011mitigation notes** \u2013 for each major task, list one or two high\u2011impact risks and a mitigation action (e.g., \u201cAudit schedule slip \u2192 secure backup audit firm\u201d).  \n7. **Define success\u2011criteria** \u2013 attach measurable indicators to each milestone (e.g., \u201c\u2265\u202f80\u202f% beta participants complete onboarding within 2 weeks\u201d).  \n8. **Draft budget\u2011tracking summary** \u2013 allocate the $5\u202fM cap across major work\u2011streams (development, compliance, partner enablement, marketing, contingency) and embed a simple tracking table that can be updated as actual spend is recorded.  \n9. **Iterate with key owners** \u2013 circulate the draft for feedback, incorporate changes, and finalize the plan.\n\n---\n\n## 2. Stakeholder validation and sign\u2011off of the work\u2011back plan  \nA formal approval from all owners (product, compliance, finance, partner, marketing, operations) confirming that the schedule, resources, and risks are realistic and that they commit to their responsibilities.  \n\n### Reasoning  \nA plan without stakeholder buy\u2011in is unlikely to be executed as written. The user\u2019s constraints (budget cap, compliance deadlines) require explicit commitment from each functional owner.\n\n### Approach  \n1. **Prepare a concise briefing deck** \u2013 summarise the plan\u2019s key dates, owners, budget, and top risks.  \n2. **Schedule a joint review meeting** \u2013 invite all owners and a senior sponsor to act as a decision gate.  \n3. **Collect feedback in a shared document** \u2013 allow owners to comment on feasibility, resource gaps, or risk concerns.  \n4. **Resolve open items** \u2013 assign a small \u201cplan\u2011owner\u201d (e.g., program manager) to address each comment within 2\u20113 business days.  \n5. **Obtain formal sign\u2011off** \u2013 capture electronic approvals (e.g., signed PDF, approval workflow) and archive them alongside the plan.\n\n---\n\n## 3. Budget\u2011tracking template aligned with the $5\u202fM cap  \nA reusable spreadsheet or lightweight tracking tool that breaks down the $5\u202fM budget by work\u2011stream, links each line\u2011item to a specific milestone, and supports variance reporting.  \n\n### Reasoning  \nThe user explicitly requests a budget\u2011tracking summary that respects the $5\u202fM limit. A template enables ongoing financial governance throughout the 90\u2011day window.\n\n### Approach  \n1. **Identify cost categories** \u2013 development, compliance audit fees, partner certification, marketing/events, contingency.  \n2. **Allocate planned spend** \u2013 use the work\u2011back plan\u2019s resource estimates to assign dollar amounts to each weekly deliverable.  \n3. **Build variance fields** \u2013 planned vs. actual, % variance, and a \u201cbudget\u2011at\u2011risk\u201d flag.  \n4. **Link to owners** \u2013 each cost line is assigned to a financial owner (e.g., finance lead).  \n5. **Define reporting cadence** \u2013 weekly update meeting and a mid\u2011point (T\u201145) budget health review.\n\n---\n\n## 4. Risk register for the Nimbus AI Platform\u202fv3.2 launch  \nA structured list of identified risks, their probability/impact scores, mitigation actions, owners, and status\u2011tracking fields.  \n\n### Reasoning  \nRisks such as audit schedule delays, partner certification bottlenecks, or pricing approval hold\u2011ups can jeopardize the critical path. A living risk register supports proactive management.\n\n### Approach  \n1. **Brainstorm risks with owners** \u2013 during the plan\u2011validation meeting, capture top\u20115 risks per work\u2011stream.  \n2. **Score each risk** \u2013 use a simple 1\u20115 scale for likelihood and impact.  \n3. **Assign mitigation owners** \u2013 the same owner responsible for the related deliverable.  \n4. **Set review frequency** \u2013 weekly risk\u2011review slot within the overall status meeting.  \n5. **Update status** \u2013 \u201cOpen\u201d, \u201cMitigated\u201d, \u201cClosed\u201d, with notes on any changes.\n\n---\n\n## 5. Communication & governance framework for collaboration  \nA lightweight set of meeting cadences, decision\u2011gate definitions, and shared collaboration spaces that enable the cross\u2011functional team to stay aligned throughout the 90\u2011day period.  \n\n### Reasoning  \nEffective collaboration is essential to keep the plan on track, especially given the many owners and dependencies. Formalizing communication reduces ambiguity and ensures timely decisions at each gate.\n\n### Approach  \n1. **Define meeting rhythm** \u2013 weekly status sync (all owners), bi\u2011weekly deep\u2011dive (focus on high\u2011risk work\u2011streams), and milestone gates (e.g., \u201cBeta\u2011program gate at T\u201155\u201d).  \n2. **Select collaboration tools** \u2013 a shared drive for documents, a project board for tasks, and a chat channel for quick questions.  \n3. **Document decision\u2011gate criteria** \u2013 for each milestone, list the required approvals or deliverables that must be satisfied before proceeding.  \n4. **Assign a program manager** \u2013 central point for agenda setting, minutes, and action\u2011item tracking.  \n5. **Establish escalation path** \u2013 senior sponsor contact for issues that cannot be resolved within the weekly sync.\n\n---\n\n# Breakdown\n\n### Outcome\u202f1 \u2013 Draft 90\u2011day work\u2011back plan\n1. **Gather inputs**  \n   1.1. Request stakeholder list & contact info \u2192\u202fOwner: Program Manager  \n   1.2. Collect existing budget allocations & constraints \u2192\u202fOwner: Finance Lead  \n   1.3. Compile compliance requirement check\u2011lists (FedRAMP, GDPR, HIPAA) \u2192\u202fOwner: Compliance Lead  \n\n2. **Define milestone deliverables**  \n   2.1. Beta program \u2013 enrollment list, feedback framework \u2192\u202fOwner: Product Manager  \n   2.2. RC freeze \u2013 code\u2011freeze sign\u2011off, test\u2011suite status \u2192\u202fOwner: Engineering Lead  \n   2.3. Compliance audit \u2013 audit plan, evidence package \u2192\u202fOwner: Compliance Lead  \n   2.4. Pricing approval \u2013 pricing model, finance sign\u2011off \u2192\u202fOwner: Finance Lead  \n   2.5. Partner certification \u2013 partner enablement kit, certification test \u2192\u202fOwner: Partner Enablement Lead  \n   2.6. Launch event \u2013 agenda, speaker deck, venue logistics \u2192\u202fOwner: Marketing Lead  \n   2.7. Post\u2011launch monitoring \u2013 KPI dashboard, support escalation plan \u2192\u202fOwner: Operations Lead  \n\n3. **Map owners & resources** \u2013 create a matrix linking each deliverable to responsible owner, required FTEs, external vendors, and tools.  \n\n4. **Identify dependencies & critical path**  \n   4.1. List prerequisite relationships (e.g., 2.3 \u2192 2.4)  \n   4.2. Highlight longest dependent chain (Beta \u2192 RC freeze \u2192 Compliance audit \u2192 Pricing \u2192 Launch)  \n\n5. **Build week\u2011by\u2011week schedule (T\u201160\u202f\u2192\u202fT\u202f+\u202f90)**  \n   5.1. Allocate each deliverable to a specific week, respecting dependencies.  \n   5.2. Insert buffer weeks for high\u2011risk items (audit, partner cert).  \n\n6. **Add risk\u2011mitigation notes** \u2013 for each major task, draft one primary risk and mitigation.  \n\n7. **Define success\u2011criteria** \u2013 attach measurable targets (e.g., \u201c\u2265\u202f90\u202f% beta feedback received by T\u201145\u201d).  \n\n8. **Draft budget\u2011tracking summary** \u2013 allocate $5\u202fM across work\u2011streams, embed in the plan.  \n\n9. **Internal review** \u2013 circulate draft to owners for comments (2\u2011day window).  \n\n10. **Incorporate feedback & finalize** \u2013 produce final version, store in shared repository.  \n\n### Outcome\u202f2 \u2013 Stakeholder validation & sign\u2011off\n1. Create briefing deck (summary of plan).  \n2. Schedule joint review meeting (T\u201155).  \n3. Collect written comments in shared doc.  \n4. Resolve open items (assigned to Program Manager).  \n5. Capture electronic approvals (e.g., DocuSign).  \n\n### Outcome\u202f3 \u2013 Budget\u2011tracking template\n1. List cost categories & assign budget caps.  \n2. Link each cost line to a milestone/week.  \n3. Build variance columns (Planned, Actual, %\u0394).  \n4. Assign financial owners.  \n5. Set weekly update process (via status sync).  \n\n### Outcome\u202f4 \u2013 Risk register\n1. Conduct risk\u2011brainstorm during validation meeting.  \n2. Score each risk (Likelihood \u00d7 Impact).  \n3. Record mitigation actions & owners.  \n4. Add status column (Open/Mitigated/Closed).  \n5. Review weekly in status sync.  \n\n### Outcome\u202f5 \u2013 Communication & governance framework\n1. Define meeting cadences (weekly sync, bi\u2011weekly deep\u2011dive, milestone gates).  \n2. Choose collaboration spaces (shared drive, project board, chat channel).  \n3. Document gate criteria for each milestone.  \n4. Appoint Program Manager as central coordinator.  \n5. Outline escalation path to senior sponsor.  \n\n**Dependencies across outcomes**  \n- Outcome\u202f1 must be completed before Outcome\u202f2 (validation).  \n- Outcome\u202f3 (budget template) is created in parallel with Outcome\u202f1 but requires final budget numbers from Outcome\u202f1.  \n- Outcome\u202f4 (risk register) is populated during Outcome\u202f2\u2019s validation meeting.  \n- Outcome\u202f5 (governance) is established early (Week\u202f1) and supports all subsequent outcomes.  \n\n---  \n\nBy following this structured approach\u2014starting with solid input gathering, then iteratively defining deliverables, owners, dependencies, and risk controls\u2014the team can collaboratively produce a realistic 90\u2011day work\u2011back plan that meets the launch timeline, stays within budget, and secures the necessary stakeholder commitments. Regular cadence meetings, clear decision gates, and a living risk/budget register will keep the program on track and enable rapid response to any emerging issues.",
+  "plan": {
+    "id": "document-001",
+    "name": "Nimbus AI Platform v3.2 90\u2011day Work\u2011back Plan",
+    "details": "Execution plan containing tasks to draft the 90\u2011day work\u2011back plan, obtain stakeholder sign\u2011off, create budget template, risk register, and communication framework.",
+    "draft": true,
+    "participants": [
+      {
+        "name": "Program Manager",
+        "email": "you",
+        "details": "Owner of overall coordination and primary assignee for most tasks.",
+        "draft": true
+      },
+      {
+        "name": "Finance Lead",
+        "email": "finance.lead@example.com",
+        "details": "Responsible for budget inputs and pricing approval.",
+        "draft": true
+      },
+      {
+        "name": "Compliance Lead",
+        "email": "compliance.lead@example.com",
+        "details": "Handles compliance check\u2011lists and audit deliverables.",
+        "draft": true
+      },
+      {
+        "name": "Product Manager",
+        "email": "product.manager@example.com",
+        "details": "Owner of beta\u2011program deliverables.",
+        "draft": true
+      },
+      {
+        "name": "Engineering Lead",
+        "email": "engineering.lead@example.com",
+        "details": "Owner of RC\u2011freeze deliverables.",
+        "draft": true
+      },
+      {
+        "name": "Partner Enablement Lead",
+        "email": "partner.enablement@example.com",
+        "details": "Owner of partner\u2011certification deliverables.",
+        "draft": true
+      },
+      {
+        "name": "Marketing Lead",
+        "email": "marketing.lead@example.com",
+        "details": "Owner of launch\u2011event deliverables.",
+        "draft": true
+      },
+      {
+        "name": "Operations Lead",
+        "email": "operations.lead@example.com",
+        "details": "Owner of post\u2011launch monitoring deliverables.",
+        "draft": true
+      }
+    ],
+    "references": [],
+    "deliverables": [
+      {
+        "name": "Draft 90\u2011day work\u2011back plan",
+        "type": "word",
+        "id": "plan-001",
+        "draft": true,
+        "history": []
+      },
+      {
+        "name": "Briefing deck",
+        "type": "powerpoint",
+        "id": "deck-001",
+        "draft": true,
+        "history": []
+      },
+      {
+        "name": "Budget\u2011tracking template",
+        "type": "excel",
+        "id": "budget-001",
+        "draft": true,
+        "history": []
+      },
+      {
+        "name": "Risk register",
+        "type": "excel",
+        "id": "risk-001",
+        "draft": true,
+        "history": []
+      },
+      {
+        "name": "Communication & governance framework",
+        "type": "word",
+        "id": "gov-001",
+        "draft": true,
+        "history": []
+      }
+    ],
+    "tasks": [
+      {
+        "id": "task-001",
+        "name": "Request stakeholder list & contact info",
+        "details": "Gather the complete list of stakeholders and their contact information.",
+        "draft": true,
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002",
+        "name": "Collect existing budget allocations & constraints",
+        "details": "Obtain current budget allocations, spend constraints, and any earmarked funds.",
+        "draft": true,
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "finance.lead@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003",
+        "name": "Compile compliance requirement check\u2011lists",
+        "details": "Gather FedRAMP, GDPR, HIPAA check\u2011lists and related documentation.",
+        "draft": true,
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "compliance.lead@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-004",
+        "name": "Define Beta program deliverables",
+        "details": "Create enrollment list and feedback framework for the beta program.",
+        "draft": true,
+        "dependencies": [
+          "task-001",
+          "task-002",
+          "task-003"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "product.manager@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-005",
+        "name": "Define RC freeze deliverables",
+        "details": "Specify code\u2011freeze sign\u2011off memo and test\u2011suite status requirements.",
+        "draft": true,
+        "dependencies": [
+          "task-001",
+          "task-002",
+          "task-003"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "engineering.lead@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-006",
+        "name": "Define Compliance audit deliverables",
+        "details": "Create audit plan and evidence package for compliance audit.",
+        "draft": true,
+        "dependencies": [
+          "task-001",
+          "task-002",
+          "task-003"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "compliance.lead@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-007",
+        "name": "Define Pricing approval deliverables",
+        "details": "Develop pricing model and obtain finance sign\u2011off.",
+        "draft": true,
+        "dependencies": [
+          "task-001",
+          "task-002",
+          "task-003"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "finance.lead@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-008",
+        "name": "Define Partner certification deliverables",
+        "details": "Prepare partner enablement kit and certification test.",
+        "draft": true,
+        "dependencies": [
+          "task-001",
+          "task-002",
+          "task-003"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "partner.enablement@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-009",
+        "name": "Define Launch event deliverables",
+        "details": "Create agenda, speaker deck, and venue logistics for launch event.",
+        "draft": true,
+        "dependencies": [
+          "task-001",
+          "task-002",
+          "task-003"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "marketing.lead@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-010",
+        "name": "Define Post\u2011launch monitoring deliverables",
+        "details": "Build KPI dashboard and support escalation plan.",
+        "draft": true,
+        "dependencies": [
+          "task-001",
+          "task-002",
+          "task-003"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "operations.lead@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-011",
+        "name": "Map owners & resources matrix",
+        "details": "Create a matrix linking each deliverable to its owner and required resources.",
+        "draft": true,
+        "dependencies": [
+          "task-004",
+          "task-005",
+          "task-006",
+          "task-007",
+          "task-008",
+          "task-009",
+          "task-010"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-012",
+        "name": "Identify dependencies & critical path",
+        "details": "Analyze milestone inter\u2011dependencies and highlight the critical path.",
+        "draft": true,
+        "dependencies": [
+          "task-011"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-013",
+        "name": "List prerequisite relationships",
+        "details": "Document all prerequisite relationships between milestones.",
+        "draft": true,
+        "dependencies": [
+          "task-012"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-014",
+        "name": "Highlight longest dependent chain",
+        "details": "Identify and highlight the longest chain of dependent milestones.",
+        "draft": true,
+        "dependencies": [
+          "task-012"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-015",
+        "name": "Build week\u2011by\u2011week schedule \u2013 allocate deliverables",
+        "details": "Create a detailed week\u2011by\u2011week schedule assigning each deliverable to a specific week.",
+        "draft": true,
+        "dependencies": [
+          "task-011",
+          "task-012"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-016",
+        "name": "Insert buffer weeks for high\u2011risk items",
+        "details": "Add buffer weeks in the schedule to accommodate high\u2011risk activities.",
+        "draft": true,
+        "dependencies": [
+          "task-015"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-017",
+        "name": "Add risk\u2011mitigation notes",
+        "details": "Document risk\u2011mitigation strategies for each milestone.",
+        "draft": true,
+        "dependencies": [
+          "task-016"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-018",
+        "name": "Define success\u2011criteria",
+        "details": "Establish measurable success criteria for each milestone.",
+        "draft": true,
+        "dependencies": [
+          "task-017"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-019",
+        "name": "Draft budget\u2011tracking summary",
+        "details": "Create a summary of the $100M budget allocation across milestones.",
+        "draft": true,
+        "dependencies": [
+          "task-018"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [
+          "@plan-001"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-020",
+        "name": "Internal review \u2013 circulate draft to owners",
+        "details": "Distribute the draft plan to all leads for a 2\u2011day comment period.",
+        "draft": true,
+        "dependencies": [
+          "task-019"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-021",
+        "name": "Incorporate feedback & finalize plan",
+        "details": "Integrate stakeholder comments and store the final plan in the shared repository.",
+        "draft": true,
+        "dependencies": [
+          "task-020"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [
+          "@plan-001"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-022",
+        "name": "Create briefing deck",
+        "details": "Develop a PowerPoint briefing deck summarizing the work\u2011back plan.",
+        "draft": true,
+        "dependencies": [
+          "task-021"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [
+          "@deck-001"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-023",
+        "name": "Schedule joint review meeting (T\u201155)",
+        "details": "Set up the stakeholder validation meeting at T\u201155.",
+        "draft": true,
+        "dependencies": [
+          "task-022"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-024",
+        "name": "Collect written comments in shared doc",
+        "details": "Gather all stakeholder comments in a shared document.",
+        "draft": true,
+        "dependencies": [
+          "task-023"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-025",
+        "name": "Resolve open items",
+        "details": "Address all open issues identified during the validation meeting.",
+        "draft": true,
+        "dependencies": [
+          "task-024"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-026",
+        "name": "Capture electronic approvals",
+        "details": "Obtain signed electronic approvals from all stakeholders.",
+        "draft": true,
+        "dependencies": [
+          "task-025"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-027",
+        "name": "List cost categories & assign budget caps",
+        "details": "Identify all cost categories and allocate caps within the $100M budget.",
+        "draft": true,
+        "dependencies": [
+          "task-019"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [
+          "@budget-001"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-028",
+        "name": "Link each cost line to a milestone/week",
+        "details": "Map each budget line item to the corresponding milestone and week.",
+        "draft": true,
+        "dependencies": [
+          "task-027"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-029",
+        "name": "Build variance columns",
+        "details": "Add columns to track budget variance (planned vs actual).",
+        "draft": true,
+        "dependencies": [
+          "task-028"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-030",
+        "name": "Assign financial owners",
+        "details": "Designate owners for each cost category.",
+        "draft": true,
+        "dependencies": [
+          "task-029"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-031",
+        "name": "Set weekly update process",
+        "details": "Define the process for weekly budget updates and reporting.",
+        "draft": true,
+        "dependencies": [
+          "task-030"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-032",
+        "name": "Conduct risk\u2011brainstorm during validation meeting",
+        "details": "Facilitate a risk\u2011identification session during the stakeholder validation meeting.",
+        "draft": true,
+        "dependencies": [
+          "task-026"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [
+          "@risk-001"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-033",
+        "name": "Score each risk",
+        "details": "Assign probability and impact scores to identified risks.",
+        "draft": true,
+        "dependencies": [
+          "task-032"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-034",
+        "name": "Record mitigation actions & owners",
+        "details": "Document mitigation strategies and assign owners for each risk.",
+        "draft": true,
+        "dependencies": [
+          "task-033"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-035",
+        "name": "Add status column",
+        "details": "Add a status column to track risk resolution progress.",
+        "draft": true,
+        "dependencies": [
+          "task-034"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-036",
+        "name": "Review weekly in status sync",
+        "details": "Incorporate risk register review into the weekly status sync.",
+        "draft": true,
+        "dependencies": [
+          "task-035"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-037",
+        "name": "Define meeting cadences",
+        "details": "Establish regular meeting cadence for the project (e.g., weekly sync, milestone reviews).",
+        "draft": true,
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [
+          "@gov-001"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-038",
+        "name": "Choose collaboration spaces",
+        "details": "Select tools for document sharing, issue tracking, and communication (e.g., Confluence, SharePoint).",
+        "draft": true,
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-039",
+        "name": "Document gate criteria for each milestone",
+        "details": "Define exit criteria for each milestone to ensure readiness for the next phase.",
+        "draft": true,
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-040",
+        "name": "Appoint Program Manager as central coordinator",
+        "details": "Formally assign the Program Manager as the central point of contact.",
+        "draft": true,
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-041",
+        "name": "Outline escalation path to senior sponsor",
+        "details": "Define the escalation hierarchy and contact points for issues requiring senior sponsor attention.",
+        "draft": true,
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      }
+    ],
+    "history": []
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "basic_info": {
+    "full_name": "Sophie Zhang",
+    "age": 31,
+    "location": "Seattle, WA, USA",
+    "timezone": "America/Los_Angeles (UTC-8 / UTC-7 DST)",
+    "years_of_experience": 8,
+    "education": [
+      {
+        "degree": "B.Sc. Computer Science",
+        "institution": "University of Washington",
+        "year_graduated": 2015
+      },
+      {
+        "degree": "M.Sc. Software Engineering",
+        "institution": "Stanford University",
+        "year_graduated": 2017
+      }
+    ]
+  },
+  "work_habits": {
+    "preferred_working_hours": "flexible, with a strong preference for early mornings (07:00‑12:00)",
+    "peak_productivity_times": "08:00‑11:00 (deep‑focus coding) and 14:00‑16:00 (design reviews)",
+    "communication_style": {
+      "async_preference": true,
+      "sync_preference": false,
+      "expected_response_time_hours": 4
+    },
+    "meeting_preferences": {
+      "minimizes_meetings": true,
+      "prefers_short_syncs": "15‑minute stand‑ups",
+      "face_to_face_preference": "Hybrid – in‑person for sprint retrospectives"
+    },
+    "work_environment": "Hybrid (3 days remote, 2 days office per week)",
+    "focus_time_requirements": "Blocks of 90‑120 minutes, protected by “Do Not Disturb” status"
+  },
+  "personality": {
+    "mbti": "INTJ",
+    "decision_making_approach": "Data‑driven with a strategic long‑term view; seeks stakeholder input but makes final call after analysis",
+    "risk_tolerance": "Moderate – comfortable with calculated technical risk, avoids high‑impact production outages",
+    "collaboration_style": "Structured; contributes thoughtful written input, prefers clear agendas",
+    "stress_management_approach": "Uses Pomodoro technique, short walks, and weekly mindfulness sessions",
+    "conflict_resolution_style": "Direct but diplomatic; focuses on facts and proposes actionable compromises"
+  },
+  "skills": {
+    "core_technical_skills": {
+      "Java": 9,
+      "Kotlin": 8,
+      "Python": 7,
+      "JavaScript/TypeScript": 7,
+      "React": 6,
+      "Spring Boot": 9,
+      "Docker": 8,
+      "Kubernetes": 7,
+      "SQL (PostgreSQL)": 8,
+      "NoSQL (MongoDB)": 6,
+      "CI/CD (Jenkins, GitHub Actions)": 8,
+      "Cloud (AWS)": 7
+    },
+    "leadership_abilities": 6,
+    "domain_expertise_areas": [
+      "FinTech payment processing",
+      "Micro‑service architecture",
+      "Scalable API design"
+    ],
+    "learning_agility": 8,
+    "tools_proficiency": [
+      "IntelliJ IDEA",
+      "VS Code",
+      "Git",
+      "Jira",
+      "Confluence",
+      "Slack",
+      "Miro"
+    ],
+    "languages_spoken": [
+      "English (native)",
+      "Mandarin (fluent)",
+      "Spanish (conversational)"
+    ]
+  },
+  "performance": {
+    "task_completion_rate": 93,
+    "quality_score": 96,
+    "estimation_accuracy": 88,
+    "multitasking_ability": 5,
+    "performance_under_pressure": 7
+  },
+  "availability": {
+    "available_hours_per_week": 38,
+    "timezone_and_working_hours": "Pacific Time, typically 07:00‑17:00 with 1‑hour lunch break",
+    "planned_time_off_days_per_year": 22,
+    "other_commitments": [
+      "Weekly tech‑talk meetup (2 hrs)",
+      "Mentoring junior developers (4 hrs/month)"
+    ],
+    "travel_flexibility": "Can travel up to 3 days per quarter for on‑site workshops or conferences"
+  },
+  "personal_factors": {
+    "family_status": "Married, no children",
+    "caregiving_responsibilities": "Occasional weekend support for elderly parents living nearby",
+    "commute_situation": "15‑minute drive to office; uses hybrid model to reduce commuting stress",
+    "health_considerations": "Mild asthma – prefers indoor air‑quality‑controlled spaces, takes short breaks for breathing exercises",
+    "career_motivation": "Aims to become a Staff Engineer within 3‑4 years, driven by solving complex scalability challenges and influencing architecture decisions"
+  },
+  "project_impact": {
+    "reliability": 9,
+    "innovation_tendency": 6,
+    "documentation_quality": 8,
+    "mentorship_capability": 7,
+    "influence_level": 7
+  },
+  "collaboration": {
+    "meeting_frequency_preference": "Bi‑weekly sprint planning, daily 15‑min stand‑up, optional ad‑hoc syncs",
+    "communication_channels_preference": [
+      "Slack (async)",
+      "Confluence (docs)",
+      "Jira (task tracking)"
+    ],
+    "feedback_style": "Direct yet constructive; provides specific examples and actionable suggestions",
+    "knowledge_sharing_habits": "Writes post‑mortem summaries, contributes to internal wiki, runs quarterly brown‑bag sessions",
+    "cross_team_collaboration": 8
+  },
+  "risk_factors": {
+    "potential_bottlenecks": [
+      "Heavy reliance on deep‑focus periods – interruptions can cause schedule slip",
+      "Moderate multitasking ability – simultaneous context switches may reduce estimation accuracy"
+    ],
+    "backup_person_needed": "John Patel (Senior Backend Engineer) – familiar with the same micro‑service domain",
+    "ramp_up_time_weeks": 3,
+    "context_switching_tolerance": 4,
+    "burnout_risk_factors": [
+      "Extended periods of uninterrupted deep work without scheduled breaks",
+      "High self‑imposed quality standards leading to overtime during release cycles"
+    ]
+  },
+  "_metadata": {
+    "generated_at": "2025-11-17T15:18:28.471919",
+    "name": "Sophie Zhang",
+    "role": "Software Engineer",
+    "seniority": "mid",
+    "company": "TechCorp",
+    "model": "gpt-oss:120b",
+    "provider": "ollama"
+  }
+}

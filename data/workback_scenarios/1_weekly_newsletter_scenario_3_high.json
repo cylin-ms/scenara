@@ -1,0 +1,571 @@
+{
+  "scenario_name": "DataPulse Marketing Analytics Weekly Newsletter (Week of Nov\u202f18\u202f2025)",
+  "scenario_number": 3,
+  "meeting_type": "Weekly Team Newsletter",
+  "quality_level": "high",
+  "workback_prompt": "Generate a detailed workback plan for the 'DataPulse Marketing Analytics Weekly Newsletter (Week of Nov\u202f18\u202f2025)' scenario. Include all tasks, owners, start/end dates, and dependencies, working backwards from the final publishing deadline of Friday, 15\u202fNov\u202f2025 at 12:00\u202fPM. Account for the T\u20117 planning horizon, stakeholder sign\u2011offs, data\u2011privacy checks, and the constraints listed.\n\nGenerate a HIGH QUALITY workback plan with these characteristics:\n- Comprehensive task coverage\n- Clear, actionable task descriptions\n- Well-defined dependencies\n- All tasks assigned to specific owners\n- Clear milestones with completion criteria\n- Realistic timelines with buffers\n- Proactive risk management\n- Complete deliverable list\n\nIMPORTANT: Generate a plan that naturally exhibits HIGH quality characteristics.\nDo not explicitly label the plan as \"high quality\" - let the quality emerge from the content.",
+  "generated_at": "2025-11-17T04:15:06.826753",
+  "analysis": "# Outcomes\n\n## Complete Workback Plan for the \u201cDataPulse Marketing Analytics Weekly Newsletter (Week of\u202fNov\u202f18\u202f2025)\u201d\nA single, share\u2011able document (e.g., Google Sheet or Confluence page) that lists every task required to deliver the newsletter, assigns a responsible owner, defines realistic start\u2011 and end\u2011dates (working backwards from the publishing deadline of **Friday\u202f15\u202fNov\u202f2025\u202f12:00\u202fPM**), captures all dependencies, highlights key milestones, and includes a concise risk\u2011mitigation register.\n\n*Artifact references: none provided*  \n\n### Reasoning\nThe user\u2019s request is to **produce** a workback plan, but the instruction set for this assistant requires us to **advise** on how to create that plan rather than delivering the finished schedule itself.  Therefore the primary outcome is the **deliverable that the user will create** \u2013 a complete workback plan \u2013 and the guidance below explains how to assemble it, who should be involved, what information is needed, and how to structure the plan so that it naturally satisfies the quality criteria the user listed (comprehensive coverage, clear owners, dependencies, buffers, risk management, etc.).\n\n### Approach\nThe approach is broken into three phases that mirror a typical \u201cback\u2011to\u2011front\u201d planning cycle:\n\n| Phase | Goal | Core Activities | Primary Owner(s) |\n|-------|------|-----------------|------------------|\n| **1. Initiation & Scope Definition** | Agree on newsletter objectives, audience, and constraints. | \u2022 Convene kickoff (T\u20117) meeting  <br>\u2022 Capture stakeholder list and sign\u2011off matrix  <br>\u2022 Document data\u2011privacy requirements and any regulatory constraints  <br>\u2022 Define the final publishing deadline (already known) and any intermediate milestones (e.g., \u201cContent Freeze\u201d, \u201cDesign Freeze\u201d). | Newsletter Lead (NL) |\n| **2. Detailed Workback Construction** | Translate scope into concrete tasks, owners, dates, and dependencies. | \u2022 List all functional work streams (Data Gathering, Content Creation, Design, Legal/Privacy Review, Editorial Review, QA, Publishing).  <br>\u2022 For each work stream, break down into granular tasks (e.g., \u201cExtract weekly KPI dataset\u201d, \u201cWrite executive summary\u201d).  <br>\u2022 Assign owners (Data Analyst, Content Writer, Designer, Legal Officer, Marketing Manager, QA Specialist).  <br>\u2022 Starting from the publishing deadline, work backwards to set **end dates** for each task, then allocate realistic **duration** (including buffers) to compute **start dates**.  <br>\u2022 Capture dependencies (e.g., \u201cDesign Freeze\u201d depends on \u201cContent Freeze\u201d).  <br>\u2022 Populate the plan template (spreadsheet or table) with columns: Task ID, Description, Owner, Start\u202fDate, End\u202fDate, Duration, Dependencies, Milestone Flag, Completion Criteria. | NL + Project Scheduler (PS) |\n| **3. Review, Risk Register, and Baseline** | Validate the plan, surface risks, and obtain formal sign\u2011offs. | \u2022 Distribute draft plan to all owners for feedback (minimum 48\u202fh).  <br>\u2022 Conduct a risk\u2011identification workshop (focus on data\u2011privacy, resource availability, last\u2011minute content changes).  <br>\u2022 Add a \u201cRisk\u201d column (Risk ID, Description, Impact, Likelihood, Mitigation, Owner).  <br>\u2022 Obtain stakeholder sign\u2011off on the baseline plan (e\u2011signature or approval comment).  <br>\u2022 Store the final plan in the shared repository and set up a read\u2011only view for broader teams. | NL, Legal/Privacy Officer (LPO), Marketing Manager (MM), All Task Owners |\n\nThe **output** of Phase\u202f2 is the actual workback schedule; Phase\u202f3 ensures it meets the user\u2019s quality expectations (clear milestones, buffers, risk management, stakeholder approval).  \n\nBelow is a **high\u2011level work breakdown structure (WBS)** that the user can copy into their chosen tool and flesh out with dates, owners, and dependencies.\n\n---\n\n## Breakdown\n\n### 1. Initiation & Scope Definition\n1.1. **Kickoff meeting (T\u20117)** \u2013\u202fSchedule and run a 60\u2011minute meeting to align on objectives, audience, and constraints.  \n\u2003*Owner: Newsletter Lead*  \n\u2003*Dependencies: None*  \n\n1.2. **Stakeholder register & sign\u2011off matrix** \u2013\u202fList all required approvers (e.g., Head of Marketing, Data Governance Lead, Legal).  \n\u2003*Owner: Newsletter Lead*  \n\u2003*Depends on: 1.1*  \n\n1.3. **Document data\u2011privacy & compliance requirements** \u2013\u202fCapture any GDPR/CCPA checks, internal data\u2011usage policies, and required privacy\u2011review steps.  \n\u2003*Owner: Data Privacy Officer*  \n\u2003*Depends on: 1.2*  \n\n1.4. **Define milestone dates** \u2013\u202fSet \u201cContent Freeze\u201d, \u201cDesign Freeze\u201d, \u201cLegal Sign\u2011off\u201d, \u201cFinal QA\u201d, and \u201cPublish\u201d milestones.  \n\u2003*Owner: Newsletter Lead*  \n\u2003*Depends on: 1.2, 1.3*  \n\n### 2. Detailed Workback Construction\n> **Note:** All dates are calculated **backwards** from the final publishing deadline (Fri\u202f15\u202fNov\u202f2025\u202f12:00\u202fPM).  A typical buffer of **\u00bd\u202fday** is added before each hand\u2011off; critical\u2011path tasks receive an extra **1\u2011day** buffer.\n\n| ID | Task Description | Owner | Duration (incl. buffer) | End\u202fDate (calc.) | Start\u202fDate | Depends on |\n|----|------------------|-------|------------------------|------------------|------------|------------|\n| 2.1 | Extract weekly KPI dataset (SQL/BI) | Data Analyst | 1\u202fday | Tue\u202f11\u202fNov\u202f2025\u202f09:00\u202fAM | Mon\u202f10\u202fNov\u202f2025\u202f09:00\u202fAM | 1.4 (Design Freeze) |\n| 2.2 | Validate data accuracy & privacy tagging | Data Analyst + Privacy Officer | 1\u202fday | Wed\u202f12\u202fNov\u202f2025\u202f09:00\u202fAM | Tue\u202f11\u202fNov\u202f2025\u202f09:00\u202fAM | 2.1 |\n| 2.3 | Draft executive summary & key insights | Content Writer | 1\u202fday | Thu\u202f13\u202fNov\u202f2025\u202f09:00\u202fAM | Wed\u202f12\u202fNov\u202f2025\u202f09:00\u202fAM | 2.2 |\n| 2.4 | Write individual article sections (3\u20114 pieces) | Content Writer | 1\u202fday | Thu\u202f13\u202fNov\u202f2025\u202f05:00\u202fPM | Thu\u202f13\u202fNov\u202f2025\u202f09:00\u202fAM | 2.3 |\n| 2.5 **(Milestone \u2013 Content Freeze)** | All copy completed, ready for design hand\u2011off | Newsletter Lead | \u2013 | Thu\u202f13\u202fNov\u202f2025\u202f05:00\u202fPM | \u2013 | 2.4 |\n| 2.6 | Create visual assets (charts, infographics) | Designer | 1\u202fday | Fri\u202f14\u202fNov\u202f2025\u202f09:00\u202fAM | Thu\u202f13\u202fNov\u202f2025\u202f05:00\u202fPM | 2.2 |\n| 2.7 | Layout newsletter in template (HTML & PDF) | Designer | 1\u202fday | Fri\u202f14\u202fNov\u202f2025\u202f03:00\u202fPM | Fri\u202f14\u202fNov\u202f2025\u202f09:00\u202fAM | 2.5, 2.6 |\n| 2.8 **(Milestone \u2013 Design Freeze)** | Layout finalised, no further visual changes | Newsletter Lead | \u2013 | Fri\u202f14\u202fNov\u202f2025\u202f03:00\u202fPM | \u2013 | 2.7 |\n| 2.9 | Legal & privacy review of final copy & assets | Legal/Privacy Officer | \u00bd\u202fday | Fri\u202f14\u202fNov\u202f2025\u202f05:00\u202fPM | Fri\u202f14\u202fNov\u202f2025\u202f03:00\u202fPM | 2.8 |\n| 2.10 **(Milestone \u2013 Legal Sign\u2011off)** | All compliance approvals obtained | Newsletter Lead | \u2013 | Fri\u202f14\u202fNov\u202f2025\u202f05:00\u202fPM | \u2013 | 2.9 |\n| 2.11 | Internal editorial review (tone, branding) | Marketing Manager | \u00bd\u202fday | Fri\u202f14\u202fNov\u202f2025\u202f07:00\u202fPM | Fri\u202f14\u202fNov\u202f2025\u202f05:00\u202fPM | 2.10 |\n| 2.12 | QA testing (render across email clients, link checks) | QA Specialist | \u00bd\u202fday | Sat\u202f15\u202fNov\u202f2025\u202f08:00\u202fAM | Fri\u202f14\u202fNov\u202f2025\u202f07:00\u202fPM | 2.11 |\n| 2.13 **(Milestone \u2013 Final QA Complete)** | Newsletter passes all QA criteria | Newsletter Lead | \u2013 | Sat\u202f15\u202fNov\u202f2025\u202f08:00\u202fAM | \u2013 | 2.12 |\n| 2.14 | Schedule send in marketing automation platform | Marketing Ops | \u00bd\u202fday | Sat\u202f15\u202fNov\u202f2025\u202f10:00\u202fAM | Sat\u202f15\u202fNov\u202f2025\u202f08:00\u202fAM | 2.13 |\n| 2.15 | Publish (send) newsletter | Marketing Ops | 0\u202fh (execution) | Fri\u202f15\u202fNov\u202f2025\u202f12:00\u202fPM | Fri\u202f15\u202fNov\u202f2025\u202f12:00\u202fPM | 2.14 |\n\n#### Additional Supporting Tasks\n- **2.A**\u202fCreate \u201cStakeholder Communication Plan\u201d (owner: NL) \u2013\u202fDefine when status updates are sent (e.g., daily stand\u2011up, end\u2011of\u2011day summary).  \n- **2.B**\u202fMaintain \u201cRisk Register\u201d (owner: NL) \u2013\u202fLog identified risks, owners, mitigation actions; review at each milestone.  \n- **2.C**\u202fArchive previous newsletter assets (owner: Designer) \u2013\u202fEnsures version control and re\u2011use of graphics.  \n\n### 3. Review, Risk Register, and Baseline\n3.1. **Distribute draft workback plan** to all owners \u2192 collect comments (48\u202fh).  \n\u2003*Owner: Newsletter Lead*  \n\u2003*Depends on: 2.*  \n\n3.2. **Risk\u2011identification workshop** (30\u202fmin) \u2013\u202fFocus on data\u2011privacy, resource overlap (e.g., Designer also supporting other campaigns), and last\u2011minute content changes.  \n\u2003*Owner: Newsletter Lead + LPO*  \n\u2003*Depends on: 3.1*  \n\n3.3. **Populate Risk Register** (columns: ID, Description, Impact, Likelihood, Mitigation, Owner).  \n\u2003*Owner: Newsletter Lead*  \n\u2003*Depends on: 3.2*  \n\n3.4. **Stakeholder sign\u2011off** \u2013\u202fObtain formal approval of the baseline plan (e\u2011signature or approval comment in the shared doc).  \n\u2003*Owner: Newsletter Lead*  \n\u2003*Depends on: 3.3*  \n\n3.5. **Store final plan** in shared repository (e.g., Confluence page with read\u2011only view).  \n\u2003*Owner: Newsletter Lead*  \n\u2003*Depends on: 3.4*  \n\n---\n\n## How Teams Should Collaborate\n\n| Collaboration Mechanism | When to Use | Key Participants | Suggested Cadence |\n|--------------------------|-------------|-------------------|-------------------|\n| **Kickoff / Milestone Calls** | At T\u20117, and at each milestone (Content Freeze, Design Freeze, Legal Sign\u2011off) | NL, Data Analyst, Content Writer, Designer, LPO, MM, QA | 30\u201145\u202fmin video call |\n| **Daily Stand\u2011up (15\u202fmin)** | Throughout the 7\u2011day execution window (Nov\u202f8\u201114) | All task owners | Quick status, blockers, next steps |\n| **Shared Tracker (Spreadsheet/Confluence)** | Continuous \u2013 the single source of truth for dates, owners, dependencies | All owners (read/write as appropriate) | Real\u2011time updates |\n| **Risk Review Slack Channel** | Immediate when a new risk emerges | NL, LPO, MM, any owner impacted | As\u2011needed, with alerts for high\u2011impact items |\n| **Final Review Meeting** | After 2.13 (Final QA) | NL, MM, LPO, Ops | 30\u202fmin to confirm publish readiness |\n\n### Proactive Risk Management Tips\n- **Data\u2011Privacy Gate** (Task\u202f2.9) must be completed **before** any external distribution; schedule the privacy officer early in the window to avoid a last\u2011minute bottleneck.  \n- **Resource Contention**: If the Designer is also supporting a concurrent campaign, add a **1\u2011day buffer** before the Design Freeze (already reflected in the \u00bd\u2011day buffer on Task\u202f2.6).  \n- **Content Change Freeze**: Communicate the \u201cno\u2011new\u2011content after Content Freeze\u201d rule in the kickoff and enforce it via the shared tracker.  \n- **Backup Send\u2011Time**: If the marketing automation platform experiences downtime, have a **contingency slot** (e.g., 14\u202fNov\u202f2025\u202f04:00\u202fPM) ready; note this in the risk register.\n\n---\n\n### Deliverable Checklist (to be attached to the final plan)\n\n| Deliverable | Description | Completion Criteria |\n|-------------|-------------|----------------------|\n| Scope Document | Objectives, audience, constraints | Signed by NL & MM |\n| Stakeholder Register | List with roles & contact info | Verified against org chart |\n| Workback Schedule | Table of tasks, owners, dates, dependencies | All dates aligned with publishing deadline |\n| Milestone Sign\u2011off Log | Timestamped approvals for Content Freeze, Design Freeze, Legal Sign\u2011off | PDF of signed emails or platform approvals |\n| Risk Register | Identified risks + mitigation actions | Reviewed at each milestone |\n| Final Newsletter Assets | HTML email, PDF, analytics tracking tags | Passes QA checklist |\n| Publish Confirmation | Screenshot of successful send in automation tool | Timestamp \u2264 12:00\u202fPM\u202f15\u202fNov\u202f2025 |\n\nBy following the three\u2011phase approach, populating the detailed WBS above, and using the collaboration mechanisms and risk\u2011management practices outlined, the team will be able to **produce a high\u2011quality workback plan** that meets all of the user\u2019s stated requirements without having to guess at specific tools or technologies.",
+  "plan": {
+    "id": "document-001",
+    "name": "DataPulse Marketing Analytics Weekly Newsletter Workback Plan",
+    "details": "Workback plan for the DataPulse Marketing Analytics Weekly Newsletter (Week of Nov\u202f18\u202f2025) delivering a complete schedule, owners, dependencies, milestones and risk register.",
+    "draft": true,
+    "participants": [
+      {
+        "name": "Newsletter Lead",
+        "email": "nl@example.com",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Data Analyst",
+        "email": "da@example.com",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Data Privacy Officer",
+        "email": "dpo@example.com",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Content Writer",
+        "email": "cw@example.com",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Designer",
+        "email": "des@example.com",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Legal/Privacy Officer",
+        "email": "lpo@example.com",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Marketing Manager",
+        "email": "mm@example.com",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "QA Specialist",
+        "email": "qa@example.com",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Marketing Ops",
+        "email": "mo@example.com",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Project Scheduler",
+        "email": "ps@example.com",
+        "details": "",
+        "draft": true
+      }
+    ],
+    "references": [],
+    "deliverables": [
+      {
+        "name": "Workback Schedule",
+        "type": "excel",
+        "id": "deliverable-001",
+        "draft": true,
+        "history": []
+      },
+      {
+        "name": "Risk Register",
+        "type": "excel",
+        "id": "deliverable-002",
+        "draft": true,
+        "history": []
+      },
+      {
+        "name": "Final Newsletter Assets (HTML & PDF)",
+        "type": "word",
+        "id": "deliverable-003",
+        "draft": true,
+        "history": []
+      }
+    ],
+    "tasks": [
+      {
+        "id": "task-001",
+        "name": "Kickoff meeting (T\u20117)",
+        "draft": true,
+        "details": "Schedule and run a 60\u2011minute meeting to align on objectives, audience, and constraints.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "nl@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002",
+        "name": "Stakeholder register & sign\u2011off matrix",
+        "draft": true,
+        "details": "List all required approvers (e.g., Head of Marketing, Data Governance Lead, Legal).",
+        "dependencies": [
+          "task-001"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "nl@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003",
+        "name": "Document data\u2011privacy & compliance requirements",
+        "draft": true,
+        "details": "Capture GDPR/CCPA checks, internal data\u2011usage policies, and required privacy\u2011review steps.",
+        "dependencies": [
+          "task-002"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "dpo@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-004",
+        "name": "Define milestone dates",
+        "draft": true,
+        "details": "Set Content Freeze, Design Freeze, Legal Sign\u2011off, Final QA, and Publish milestones.",
+        "dependencies": [
+          "task-002",
+          "task-003"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "nl@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-005",
+        "name": "Extract weekly KPI dataset (SQL/BI)",
+        "draft": true,
+        "details": "Pull the required data for the newsletter.",
+        "dependencies": [
+          "task-004"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "da@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-006",
+        "name": "Validate data accuracy & privacy tagging",
+        "draft": true,
+        "details": "Ensure data is correct and tagged for privacy compliance.",
+        "dependencies": [
+          "task-005"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "da@example.com",
+          "dpo@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-007",
+        "name": "Draft executive summary & key insights",
+        "draft": true,
+        "details": "Write the high\u2011level overview of the week\u2019s analytics.",
+        "dependencies": [
+          "task-006"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "cw@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-008",
+        "name": "Write individual article sections (3\u20114 pieces)",
+        "draft": true,
+        "details": "Develop the body content for the newsletter.",
+        "dependencies": [
+          "task-007"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "cw@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-009",
+        "name": "Milestone \u2013 Content Freeze",
+        "draft": true,
+        "details": "All copy completed, ready for design hand\u2011off.",
+        "dependencies": [
+          "task-008"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "nl@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-010",
+        "name": "Create visual assets (charts, infographics)",
+        "draft": true,
+        "details": "Design charts and graphics needed for the newsletter.",
+        "dependencies": [
+          "task-006"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "des@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-011",
+        "name": "Layout newsletter in template (HTML & PDF)",
+        "draft": true,
+        "details": "Assemble copy and visuals into the final email format.",
+        "dependencies": [
+          "task-009",
+          "task-010"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "des@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-012",
+        "name": "Milestone \u2013 Design Freeze",
+        "draft": true,
+        "details": "Layout finalised, no further visual changes.",
+        "dependencies": [
+          "task-011"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "nl@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-013",
+        "name": "Legal & privacy review of final copy & assets",
+        "draft": true,
+        "details": "Obtain compliance approvals before distribution.",
+        "dependencies": [
+          "task-012"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "lpo@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-014",
+        "name": "Milestone \u2013 Legal Sign\u2011off",
+        "draft": true,
+        "details": "All compliance approvals obtained.",
+        "dependencies": [
+          "task-013"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "nl@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-015",
+        "name": "Internal editorial review (tone, branding)",
+        "draft": true,
+        "details": "Marketing Manager checks final copy for brand consistency.",
+        "dependencies": [
+          "task-014"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "mm@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-016",
+        "name": "QA testing (render across email clients, link checks)",
+        "draft": true,
+        "details": "QA Specialist validates technical quality of the newsletter.",
+        "dependencies": [
+          "task-015"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "qa@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-017",
+        "name": "Milestone \u2013 Final QA Complete",
+        "draft": true,
+        "details": "QA passed and ready for scheduling.",
+        "dependencies": [
+          "task-016"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "nl@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-018",
+        "name": "Schedule send in marketing automation platform",
+        "draft": true,
+        "details": "Set the send time in the automation tool.",
+        "dependencies": [
+          "task-017"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "mo@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-019",
+        "name": "Publish (send) newsletter",
+        "draft": true,
+        "details": "Execute the send no later than 12:00\u202fPM\u202f15\u202fNov\u202f2025.",
+        "dependencies": [
+          "task-018"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "mo@example.com"
+        ],
+        "deliverables": [
+          "@deliverable[word]/deliverable-003"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-020",
+        "name": "Create Stakeholder Communication Plan",
+        "draft": true,
+        "details": "Define how and when stakeholders will be updated.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "nl@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-021",
+        "name": "Maintain Risk Register",
+        "draft": true,
+        "details": "Ongoing risk register to be updated throughout the project.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "nl@example.com"
+        ],
+        "deliverables": [
+          "@deliverable[excel]/deliverable-002"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-022",
+        "name": "Archive previous newsletter assets",
+        "draft": true,
+        "details": "Store older HTML/PDF assets for reference.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "des@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-023",
+        "name": "Distribute draft workback plan",
+        "draft": true,
+        "details": "Share the completed schedule with all team members for review.",
+        "dependencies": [
+          "task-019"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "nl@example.com"
+        ],
+        "deliverables": [
+          "@deliverable[excel]/deliverable-001"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-024",
+        "name": "Risk\u2011identification workshop",
+        "draft": true,
+        "details": "Facilitate a workshop to capture risks and mitigation actions.",
+        "dependencies": [
+          "task-023"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "nl@example.com",
+          "lpo@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-025",
+        "name": "Populate Risk Register",
+        "draft": true,
+        "details": "Enter identified risks and mitigation steps into the register.",
+        "dependencies": [
+          "task-024"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "nl@example.com"
+        ],
+        "deliverables": [
+          "@deliverable[excel]/deliverable-002"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-026",
+        "name": "Stakeholder sign\u2011off",
+        "draft": true,
+        "details": "Obtain final approvals for the workback schedule and assets.",
+        "dependencies": [
+          "task-025"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "nl@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-027",
+        "name": "Store final plan",
+        "draft": true,
+        "details": "Archive the completed workback schedule, risk register, and assets.",
+        "dependencies": [
+          "task-026"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "nl@example.com"
+        ],
+        "deliverables": [
+          "@deliverable[excel]/deliverable-001",
+          "@deliverable[excel]/deliverable-002",
+          "@deliverable[word]/deliverable-003"
+        ],
+        "references": [],
+        "history": []
+      }
+    ],
+    "history": []
+  }
+}

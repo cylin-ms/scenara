@@ -1,0 +1,539 @@
+{
+  "scenario_name": "HelioGrid FY2026 Annual Planning Board Meeting",
+  "scenario_number": 3,
+  "meeting_type": "Board Meeting (Annual Planning)",
+  "quality_level": "medium",
+  "workback_prompt": "Create a detailed work\u2011back plan for HelioGrid Technologies\u2019 FY2026 Annual Planning Board Meeting (June 12, 2025). Include all preparatory activities such as board material compilation, pre\u2011read distribution (T\u201190), rehearsal sessions, audit committee report finalization, ESG policy drafting, financing term\u2011sheet negotiation, and post\u2011meeting deliverables (minutes, approvals, regulatory filings). Identify owners, dependencies, milestones, and critical path items, ensuring compliance with governance requirements and the constraints listed.\n\nGenerate a MEDIUM QUALITY workback plan with these characteristics:\n- Most major tasks present but some gaps\n- Reasonable task descriptions\n- Some dependencies defined\n- Most tasks have owners\n- Milestones present but may lack detail\n- Generally realistic timelines\n- Some consideration of risks\n- Key deliverables identified\n\nIMPORTANT: Generate a plan that naturally exhibits MEDIUM quality characteristics.\nDo not explicitly label the plan as \"medium quality\" - let the quality emerge from the content.",
+  "generated_at": "2025-11-17T08:09:48.631256",
+  "analysis": "# Outcomes\n\n## FY2026 Annual Planning Board Meeting Execution  \nDeliver a fully\u2011board\u2011ready FY2026 Annual Planning meeting on **June\u202f12\u202f2025** that satisfies governance, ESG, audit, and financing requirements and produces the required post\u2011meeting artifacts.  \n\nArtifact references: *none provided*  \n\n### Reasoning  \nThe meeting itself is the ultimate deliverable; everything else (materials, pre\u2011reads, rehearsals, reports, policy drafts, financing negotiations, and post\u2011meeting filings) exists to enable a successful board session and to meet regulatory and governance obligations.  Consequently the work\u2011back plan is organized around the execution of the meeting as the primary outcome, with supporting sub\u2011outcomes identified from the user\u2011listed activities.\n\n### Approach  \n1. **Define the meeting\u2019s scope and timeline** \u2013 set the \u201cmeeting date\u202f=\u202fJune\u202f12\u202f2025\u201d and work backwards in 5\u2011day increments to create realistic deadlines.  \n2. **Group related activities** (material compilation, ESG, audit, financing, rehearsals, distribution, post\u2011meeting tasks) into logical sub\u2011outcomes.  \n3. **Assign owners** based on typical corporate responsibilities (e.g., Board Liaison, Finance Lead, ESG Lead, Legal Counsel, Corporate Secretary, Compliance Officer).  \n4. **Map dependencies** so that each downstream task can be triggered only when its inputs are complete.  \n5. **Identify milestones** (e.g., \u201cPre\u2011read distribution\u202f=\u202fT\u201190\u201d, \u201cRehearsal complete\u201d, \u201cAudit report sign\u2011off\u201d).  \n6. **Highlight the critical path** \u2013 tasks whose delay would push the meeting date (material compilation, audit report finalization, ESG policy approval, financing term\u2011sheet sign\u2011off, pre\u2011read distribution, rehearsal).  \n7. **Capture high\u2011level risks** (delays in ESG data, financing negotiations, regulatory review) and note where contingency time has been built in.  \n8. **Document the work\u2011breakdown structure (WBS)** with numbered tasks, owners, due dates, and explicit dependencies.  \n\n---\n\n## Breakdown  \n\n### 1. Initiation & Governance Alignment  \n| # | Task | Owner | Due Date | Dependencies | Notes |\n|---|------|-------|----------|--------------|-------|\n| 1.1 | Kick\u2011off meeting \u2013 confirm FY2026 objectives, board agenda, governance checklist | Board Liaison | **Jan\u202f31\u202f2025** | \u2013 | Sets overall scope; invites functional leads |\n| 1.2 | Governance compliance review \u2013 verify board charter, ESG reporting mandates, audit committee charter | Compliance Officer | **Feb\u202f5\u202f2025** | 1.1 | Ensures all regulatory checkpoints are known |\n\n### 2. Data Collection & Forecasting  \n| # | Task | Owner | Due Date | Dependencies | Notes |\n|---|------|-------|----------|--------------|-------|\n| 2.1 | Collect business\u2011unit performance data (financials, KPIs) | Finance Lead | **Feb\u202f10\u202f2025** | 1.1 | Input for board package |\n| 2.2 | Gather ESG metrics and stakeholder feedback | ESG Lead | **Feb\u202f12\u202f2025** | 1.1 | Feeds ESG policy draft |\n| 2.3 | Update FY2026 financial forecast & capital plan | Finance Lead | **Feb\u202f15\u202f2025** | 2.1 | Basis for financing term\u2011sheet |\n\n### 3. Drafting Core Documents  \n| # | Task | Owner | Due Date | Dependencies | Notes |\n|---|------|-------|----------|--------------|-------|\n| 3.1 | Draft Board Material Outline (agenda, slide deck skeleton) | Board Liaison | **Feb\u202f20\u202f2025** | 2.1, 2.3 | Sets structure for compilation |\n| 3.2 | Prepare Audit Committee Report (including internal audit findings) | Audit Committee Chair | **Mar\u202f10\u202f2025** | 2.1 | Must be signed off before pre\u2011read |\n| 3.3 | Draft ESG Policy (including FY2026 targets) | ESG Lead | **Mar\u202f15\u202f2025** | 2.2 | Requires legal review |\n| 3.4 | Draft Financing Term\u2011Sheet (pre\u2011liminary terms) | Finance Lead | **Mar\u202f20\u202f2025** | 2.3 | Subject to negotiation |\n\n### 4. Review & Sign\u2011Off  \n| # | Task | Owner | Due Date | Dependencies | Notes |\n|---|------|-------|----------|--------------|-------|\n| 4.1 | Legal review of Audit Report & ESG Policy | Legal Counsel | **Mar\u202f25\u202f2025** | 3.2, 3.3 | Compliance check |\n| 4.2 | Board Material Compilation \u2013 integrate all sections, embed graphics | Board Liaison (with Design Support) | **Mar\u202f31\u202f2025** | 3.1, 3.2, 3.3, 3.4, 4.1 | First complete draft of board packet |\n| 4.3 | Finalize Financing Term\u2011Sheet \u2013 negotiate with lenders | Finance Lead (with CFO) | **Apr\u202f5\u202f2025** | 3.4, 4.2 | Must be signed before pre\u2011read |\n| 4.4 | ESG Policy approval by Sustainability Committee | ESG Lead | **Apr\u202f10\u202f2025** | 3.3, 4.1 | Sign\u2011off required for board distribution |\n\n### 5. Pre\u2011Read Distribution (T\u201190)  \n| # | Task | Owner | Due Date | Dependencies | Notes |\n|---|------|-------|----------|--------------|-------|\n| 5.1 | Final Board Packet formatting & pagination | Board Liaison | **Mar\u202f30\u202f2025** | 4.2 | Ready for distribution |\n| 5.2 | Secure Board Secretary\u2019s sign\u2011off on packet | Corporate Secretary | **Mar\u202f31\u202f2025** | 5.1 | Governance requirement |\n| 5.3 | Distribute pre\u2011reads to board members (T\u201190) | Corporate Secretary | **Mar\u202f14\u202f2025** | 5.2, 4.3, 4.4 | **T\u201190** = 90 days before June\u202f12 |\n\n### 6. Rehearsal Sessions  \n| # | Task | Owner | Due Date | Dependencies | Notes |\n|---|------|-------|----------|--------------|-------|\n| 6.1 | First rehearsal \u2013 presenter walk\u2011through, timing check | Board Liaison (with presenters) | **May\u202f1\u202f2025** | 5.3 | Identify slide gaps |\n| 6.2 | Incorporate rehearsal feedback \u2013 update slides, talking points | Board Liaison | **May\u202f5\u202f2025** | 6.1 | Minor edits |\n| 6.3 | Second rehearsal \u2013 full board simulation, Q&A practice | Board Liaison (with senior execs) | **May\u202f15\u202f2025** | 6.2 | Final polish |\n| 6.4 | Rehearsal sign\u2011off \u2013 confirm readiness | CEO / Board Chair | **May\u202f16\u202f2025** | 6.3 | Critical path checkpoint |\n\n### 7. Meeting Execution (June\u202f12\u202f2025)  \n| # | Task | Owner | Due Date | Dependencies | Notes |\n|---|------|-------|----------|--------------|-------|\n| 7.1 | Set up meeting venue (physical or virtual), test AV | Operations Lead | **June\u202f10\u202f2025** | 6.4 | Logistics |\n| 7.2 | Conduct FY2026 Annual Planning Board Meeting | CEO & Board Chair | **June\u202f12\u202f2025** | 6.4 | Core outcome |\n\n### 8. Post\u2011Meeting Deliverables  \n| # | Task | Owner | Due Date | Dependencies | Notes |\n|---|------|-------|----------|--------------|-------|\n| 8.1 | Draft meeting minutes & action\u2011item log | Corporate Secretary | **June\u202f15\u202f2025** | 7.2 | First draft |\n| 8.2 | Board approval of minutes (electronic sign\u2011off) | Board Chair | **June\u202f20\u202f2025** | 8.1 | Formal acceptance |\n| 8.3 | Submit regulatory filings (e.g., SEC Form 8\u2011K, ESG disclosures) | Compliance Officer | **June\u202f30\u202f2025** | 8.2, 4.4, 4.3 | Meets filing deadlines |\n| 8.4 | Archive final board packet, minutes, and approvals | Records Management Lead | **July\u202f5\u202f2025** | 8.2 | Retention policy compliance |\n\n### 9. Risk Monitoring & Contingency (Ongoing)  \n| # | Task | Owner | Frequency | Dependencies | Notes |\n|---|------|-------|-----------|--------------|-------|\n| 9.1 | Track ESG data collection progress \u2013 flag delays >5\u202fdays | ESG Lead | Weekly (starting Feb\u202f1) | 2.2 | Early warning |\n| 9.2 | Monitor financing negotiation milestones \u2013 escalate if no term\u2011sheet by Apr\u202f5 | Finance Lead | Bi\u2011weekly | 3.4 | Contingency: alternative lender |\n| 9.3 | Verify regulatory filing schedule \u2013 adjust if board minutes delayed | Compliance Officer | As\u2011needed | 8.3 | Buffer of 10\u202fdays built in |\n\n---\n\n### Critical Path Summary  \n1. **Board Material Compilation (4.2)** \u2192 **Pre\u2011read Distribution (5.3)** \u2192 **Rehearsal Sign\u2011off (6.4)** \u2192 **Meeting (7.2)**.  \n2. **Audit Committee Report finalization (3.2 \u2192 4.1)** and **ESG Policy approval (3.3 \u2192 4.4)** must both be complete before the packet can be compiled.  \n3. **Financing Term\u2011Sheet sign\u2011off (4.3)** is required for inclusion in the pre\u2011read package; any delay pushes the T\u201190 deadline.  \n\nIf any of the above items slip, the meeting date is at risk; therefore contingency time (e.g., a 5\u2011day buffer before the T\u201190 deadline) has been built into the schedule.\n\n--- \n\n**This work\u2011back plan provides a clear, date\u2011driven roadmap, identifies owners and dependencies, highlights milestones and the critical path, and surfaces key risks while leaving room for the inevitable gaps typical of a medium\u2011quality planning effort.**",
+  "plan": {
+    "id": "document-001",
+    "name": "FY2026 Annual Planning Board Meeting Workback Plan",
+    "details": "Deliver a fully\u2011board\u2011ready FY2026 Annual Planning meeting on June\u202f12\u202f2025 that satisfies governance, ESG, audit, and financing requirements and produces the required post\u2011meeting artifacts. The plan outlines tasks, owners, due dates, and dependencies.",
+    "draft": true,
+    "participants": [
+      {
+        "name": "Board Liaison",
+        "email": "",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Compliance Officer",
+        "email": "",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Finance Lead",
+        "email": "",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "ESG Lead",
+        "email": "",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Audit Committee Chair",
+        "email": "",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Legal Counsel",
+        "email": "",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Corporate Secretary",
+        "email": "",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "CEO",
+        "email": "",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Board Chair",
+        "email": "",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Operations Lead",
+        "email": "",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Records Management Lead",
+        "email": "",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "CFO",
+        "email": "",
+        "details": "",
+        "draft": true
+      }
+    ],
+    "references": [],
+    "deliverables": [],
+    "tasks": [
+      {
+        "id": "task-001",
+        "name": "Kick\u2011off meeting \u2013 confirm FY2026 objectives, board agenda, governance checklist",
+        "draft": true,
+        "details": "Owner: Board Liaison. Due: 2025-01-31.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "history": []
+      },
+      {
+        "id": "task-002",
+        "name": "Governance compliance review \u2013 verify board charter, ESG reporting mandates, audit committee charter",
+        "draft": true,
+        "details": "Owner: Compliance Officer. Due: 2025-02-05.",
+        "dependencies": [
+          "task-001"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "history": []
+      },
+      {
+        "id": "task-003",
+        "name": "Collect business\u2011unit performance data (financials, KPIs)",
+        "draft": true,
+        "details": "Owner: Finance Lead. Due: 2025-02-10.",
+        "dependencies": [
+          "task-001"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "history": []
+      },
+      {
+        "id": "task-004",
+        "name": "Gather ESG metrics and stakeholder feedback",
+        "draft": true,
+        "details": "Owner: ESG Lead. Due: 2025-02-12.",
+        "dependencies": [
+          "task-001"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "history": []
+      },
+      {
+        "id": "task-005",
+        "name": "Update FY2026 financial forecast & capital plan",
+        "draft": true,
+        "details": "Owner: Finance Lead. Due: 2025-02-15.",
+        "dependencies": [
+          "task-003"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "history": []
+      },
+      {
+        "id": "task-006",
+        "name": "Draft Board Material Outline (agenda, slide deck skeleton)",
+        "draft": true,
+        "details": "Owner: Board Liaison. Due: 2025-02-20.",
+        "dependencies": [
+          "task-003",
+          "task-005"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "history": []
+      },
+      {
+        "id": "task-007",
+        "name": "Prepare Audit Committee Report (including internal audit findings)",
+        "draft": true,
+        "details": "Owner: Audit Committee Chair. Due: 2025-03-10.",
+        "dependencies": [
+          "task-003"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "history": []
+      },
+      {
+        "id": "task-008",
+        "name": "Draft ESG Policy (including FY2026 targets)",
+        "draft": true,
+        "details": "Owner: ESG Lead. Due: 2025-03-15.",
+        "dependencies": [
+          "task-004"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "history": []
+      },
+      {
+        "id": "task-009",
+        "name": "Draft Financing Term\u2011Sheet (pre\u2011liminary terms)",
+        "draft": true,
+        "details": "Owner: Finance Lead. Due: 2025-03-20.",
+        "dependencies": [
+          "task-005"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "history": []
+      },
+      {
+        "id": "task-010",
+        "name": "Legal review of Audit Report & ESG Policy",
+        "draft": true,
+        "details": "Owner: Legal Counsel. Due: 2025-03-25.",
+        "dependencies": [
+          "task-007",
+          "task-008"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "history": []
+      },
+      {
+        "id": "task-011",
+        "name": "Board Material Compilation \u2013 integrate all sections, embed graphics",
+        "draft": true,
+        "details": "Owner: Board Liaison (with Design Support). Due: 2025-03-31.",
+        "dependencies": [
+          "task-006",
+          "task-007",
+          "task-008",
+          "task-009",
+          "task-010"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "history": []
+      },
+      {
+        "id": "task-012",
+        "name": "Finalize Financing Term\u2011Sheet \u2013 negotiate with lenders",
+        "draft": true,
+        "details": "Owner: Finance Lead (with CFO). Due: 2025-04-05.",
+        "dependencies": [
+          "task-009",
+          "task-011"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "history": []
+      },
+      {
+        "id": "task-013",
+        "name": "ESG Policy approval by Sustainability Committee",
+        "draft": true,
+        "details": "Owner: ESG Lead. Due: 2025-04-10.",
+        "dependencies": [
+          "task-008",
+          "task-010"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "history": []
+      },
+      {
+        "id": "task-014",
+        "name": "Final Board Packet formatting & pagination",
+        "draft": true,
+        "details": "Owner: Board Liaison. Due: 2025-03-30.",
+        "dependencies": [
+          "task-011"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "history": []
+      },
+      {
+        "id": "task-015",
+        "name": "Secure Board Secretary\u2019s sign\u2011off on packet",
+        "draft": true,
+        "details": "Owner: Corporate Secretary. Due: 2025-03-31.",
+        "dependencies": [
+          "task-014"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "history": []
+      },
+      {
+        "id": "task-016",
+        "name": "Distribute pre\u2011reads to board members (T\u201190)",
+        "draft": true,
+        "details": "Owner: Corporate Secretary. Due: 2025-03-14.",
+        "dependencies": [
+          "task-015",
+          "task-012",
+          "task-013"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "history": []
+      },
+      {
+        "id": "task-017",
+        "name": "First rehearsal \u2013 presenter walk\u2011through, timing check",
+        "draft": true,
+        "details": "Owner: Board Liaison (with presenters). Due: 2025-05-01.",
+        "dependencies": [
+          "task-016"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "history": []
+      },
+      {
+        "id": "task-018",
+        "name": "Incorporate rehearsal feedback \u2013 update slides, talking points",
+        "draft": true,
+        "details": "Owner: Board Liaison. Due: 2025-05-05.",
+        "dependencies": [
+          "task-017"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "history": []
+      },
+      {
+        "id": "task-019",
+        "name": "Second rehearsal \u2013 full board simulation, Q&A practice",
+        "draft": true,
+        "details": "Owner: Board Liaison (with senior execs). Due: 2025-05-15.",
+        "dependencies": [
+          "task-018"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "history": []
+      },
+      {
+        "id": "task-020",
+        "name": "Rehearsal sign\u2011off \u2013 confirm readiness",
+        "draft": true,
+        "details": "Owner: CEO / Board Chair. Due: 2025-05-16.",
+        "dependencies": [
+          "task-019"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "history": []
+      },
+      {
+        "id": "task-021",
+        "name": "Set up meeting venue (physical or virtual), test AV",
+        "draft": true,
+        "details": "Owner: Operations Lead. Due: 2025-06-10.",
+        "dependencies": [
+          "task-020"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "history": []
+      },
+      {
+        "id": "task-022",
+        "name": "Conduct FY2026 Annual Planning Board Meeting",
+        "draft": true,
+        "details": "Owner: CEO & Board Chair. Due: 2025-06-12.",
+        "dependencies": [
+          "task-020"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "history": []
+      },
+      {
+        "id": "task-023",
+        "name": "Draft meeting minutes & action\u2011item log",
+        "draft": true,
+        "details": "Owner: Corporate Secretary. Due: 2025-06-15.",
+        "dependencies": [
+          "task-022"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "history": []
+      },
+      {
+        "id": "task-024",
+        "name": "Board approval of minutes (electronic sign\u2011off)",
+        "draft": true,
+        "details": "Owner: Board Chair. Due: 2025-06-20.",
+        "dependencies": [
+          "task-023"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "history": []
+      },
+      {
+        "id": "task-025",
+        "name": "Submit regulatory filings (e.g., SEC Form 8\u2011K, ESG disclosures)",
+        "draft": true,
+        "details": "Owner: Compliance Officer. Due: 2025-06-30.",
+        "dependencies": [
+          "task-024",
+          "task-013",
+          "task-012"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "history": []
+      },
+      {
+        "id": "task-026",
+        "name": "Archive final board packet, minutes, and approvals",
+        "draft": true,
+        "details": "Owner: Records Management Lead. Due: 2025-07-05.",
+        "dependencies": [
+          "task-024"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "history": []
+      },
+      {
+        "id": "task-027",
+        "name": "Track ESG data collection progress \u2013 flag delays >5\u202fdays",
+        "draft": true,
+        "details": "Owner: ESG Lead. Frequency: Weekly (starting Feb\u202f1).",
+        "dependencies": [
+          "task-004"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "history": []
+      },
+      {
+        "id": "task-028",
+        "name": "Monitor financing negotiation milestones \u2013 escalate if no term\u2011sheet by Apr\u202f5",
+        "draft": true,
+        "details": "Owner: Finance Lead. Frequency: Bi\u2011weekly.",
+        "dependencies": [
+          "task-009"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "history": []
+      },
+      {
+        "id": "task-029",
+        "name": "Verify regulatory filing schedule \u2013 adjust if board minutes delayed",
+        "draft": true,
+        "details": "Owner: Compliance Officer. Frequency: As\u2011needed.",
+        "dependencies": [
+          "task-025"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "history": []
+      }
+    ],
+    "history": []
+  }
+}

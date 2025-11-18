@@ -1,0 +1,197 @@
+[
+  {
+    "scenario_name": "Nimbus Analytics \u2013 Real\u2011Time Cohort Attribution Dashboard Launch",
+    "company_context": "Nimbus Analytics is a SaaS company (Series B, $120M ARR) that provides advanced analytics for mid\u2011market e\u2011commerce merchants. The new feature, **Real\u2011Time Cohort Attribution Dashboard**, lets product managers view live cohort performance, attribute revenue to marketing channels instantly, and run A/B tests on the fly. Target customers are e\u2011commerce brands with >$5M annual revenue that need faster insight into marketing ROI. Value proposition: \"Turn marketing spend into real\u2011time revenue insights, so you can optimize campaigns before the day ends.\"",
+    "meeting_event_details": "Launch Readiness Review \u2013 2025\u201111\u201117, 09:00\u201110:30\u202fAM PST (90\u202fmin) via Zoom (Meeting ID: 842\u202f123\u202f4567). Follow\u2011up syncs are scheduled weekly on Thursdays at 14:00\u202fUTC until launch. The official public launch is scheduled for **2025\u201112\u201115 at 10:00\u202fAM PST** (Pacific Time), streamed live on the company\u2019s YouTube channel and recorded for on\u2011demand.",
+    "stakeholders": [
+      "Lena Ortiz \u2013 Senior Product Manager (Feature owner, defines scope, success metrics)",
+      "Raj Patel \u2013 Engineering Lead, Backend (Responsible for data pipeline integration, performance testing)",
+      "Mia Chen \u2013 QA Lead (Test plan, regression suite, release gate)",
+      "Sofia Delgado \u2013 Marketing Manager (Go\u2011to\u2011market strategy, content creation, email & social)",
+      "Tom Becker \u2013 Demand Generation Lead (Paid media, webinar promotion, ABM list)",
+      "Jordan Lee \u2013 Sales Enablement Manager (Sales playbook, training, demo scripts)",
+      "Aisha Khan \u2013 Customer Support Manager (Support playbook, tier\u20111 FAQ, escalation matrix)",
+      "Ethan Ross \u2013 Finance Analyst (Launch budget tracking, ROI reporting)",
+      "Nina Patel \u2013 Data Engineering Manager (Upstream data pipeline release, dependency coordination)",
+      "Legal & Compliance \u2013 Carla Mendes (Data privacy review, GDPR/CCPA sign\u2011off)"
+    ],
+    "deliverables": [
+      "Feature Specification Document (v2.3) \u2013 finalized 2025\u201111\u201120",
+      "Technical Architecture Diagram \u2013 2025\u201111\u201122",
+      "API Reference Update (including new cohort endpoints) \u2013 2025\u201112\u201101",
+      "User Guide (PDF & HTML) \u2013 2025\u201112\u201103",
+      "In\u2011App Help Tooltip Content \u2013 2025\u201112\u201104",
+      "Release Notes (internal & external) \u2013 2025\u201112\u201107",
+      "Training Video (5\u202fmin walkthrough) \u2013 2025\u201112\u201105",
+      "Internal Training Deck for Sales & Support \u2013 2025\u201112\u201106",
+      "Sales Playbook (use\u2011cases, objection handling) \u2013 2025\u201112\u201106",
+      "Support Playbook (triage flow, escalation matrix) \u2013 2025\u201112\u201106",
+      "Email Campaign Copy (teaser, launch, follow\u2011up) \u2013 2025\u201112\u201108",
+      "Blog Post (feature announcement) \u2013 2025\u201112\u201109",
+      "In\u2011App Announcement Banner (copy & design) \u2013 2025\u201112\u201110",
+      "Webinar Deck & Registration Page (Live demo) \u2013 2025\u201112\u201111",
+      "Paid Media Assets (LinkedIn, Google Display) \u2013 2025\u201112\u201112",
+      "Performance Load Test Report \u2013 2025\u201112\u201101",
+      "Compliance Sign\u2011off Certificate \u2013 2025\u201112\u201102"
+    ],
+    "success_criteria": [
+      "30\u202f% of existing customers adopt the dashboard within 60\u202fdays of launch",
+      "Feature NPS \u2265\u202f45 (survey sent 30\u202fdays post\u2011launch)",
+      "Generate $500\u202fk incremental ARR in the first 90\u202fdays",
+      "Reduce churn among target segment by 5\u202f% YoY",
+      "Support tickets related to the feature \u2264\u202f2 per 100 active users in the first 30\u202fdays",
+      "System latency \u2264\u202f200\u202fms for real\u2011time cohort queries under peak load",
+      "Achieve 80\u202f% completion rate for sales & support training modules"
+    ],
+    "constraints": [
+      "Total launch budget capped at $150\u202fk (marketing spend, content production, vendor fees)",
+      "Feature depends on upstream data pipeline (Data Lake v3) release \u2013 must be in production by 2025\u201112\u201101",
+      "Performance testing must certify <\u202f200\u202fms latency; any regression triggers a release hold",
+      "Legal compliance review (GDPR/CCPA) must be signed off before any public communication",
+      "Engineering resources limited to 2 full\u2011time devs and 1 QA engineer for the final sprint",
+      "Risk: Potential data latency spikes during high\u2011traffic holiday season (Nov\u2011Dec)",
+      "Risk: Incomplete sales enablement could delay customer demos, impacting adoption"
+    ],
+    "workback_prompt": "Create a detailed workback plan for Nimbus Analytics' Real\u2011Time Cohort Attribution Dashboard launch. The plan should cover a T\u201130 horizon (starting 2025\u201111\u201115) with high complexity, listing all milestones, owners, dependencies, risk mitigation steps, and required resources to deliver the listed deliverables, meet the success criteria, and stay within the constraints.",
+    "meeting_type": "Product Feature Launch",
+    "meeting_type_key": "4_feature_launch",
+    "scenario_number": 1,
+    "horizon": "T-30",
+    "complexity": "High",
+    "generated_at": "2025-11-17T05:02:35.028554"
+  },
+  {
+    "scenario_name": "DataPulse AI Insights Feature Launch \u2013 Acme Analytics",
+    "company_context": "Acme Analytics is a SaaS company in the Business Intelligence space serving mid\u2011market SaaS and e\u2011commerce firms. The product, Acme Dashboard, provides real\u2011time visualizations and reporting. The new feature, **DataPulse AI Insights**, adds AI\u2011driven predictive forecasts, anomaly detection, and automated insight cards directly into existing dashboards. Target customers are data analysts, product managers, and growth teams who need faster, more accurate forward\u2011looking metrics. Value proposition: cut time\u2011to\u2011insight by 50% and improve forecast accuracy by 20% versus manual methods. The launch is high\u2011complexity (AI model validation, data pipeline scaling, compliance) and follows a T\u201130 workback schedule.",
+    "meeting_event_details": "Kickoff Launch Planning Meeting \u2013 2025-11-15, 09:00\u202fAM\u202fPST (UTC\u20118), 2\u2011hour duration, Acme Headquarters Conference Room A (Hybrid: in\u2011person + Zoom link: https://zoom.acme.com/launch\u2011kickoff). Agenda: review feature scope, assign responsibilities, confirm timeline, identify dependencies and risks.",
+    "stakeholders": [
+      "Maya Patel \u2013 Senior Director of Product Management (Feature Owner, defines scope, approves go\u2011to\u2011market strategy)",
+      "Carlos Ruiz \u2013 Principal Engineer, AI Platform (Engineering Lead, responsible for model deployment, performance testing, and data pipeline readiness)",
+      "Priya Singh \u2013 Head of Marketing (Marketing Lead, creates positioning, messaging, demand generation plan, and launch communications)",
+      "Jordan Lee \u2013 VP of Sales (Sales Lead, builds sales enablement, pricing, and quota planning)",
+      "Elena Gomez \u2013 Director of Customer Success (Support Lead, designs support playbook, training, and post\u2011launch monitoring)",
+      "Tom Whitaker \u2013 Program Manager, Launch Office (Launch Coordinator, tracks milestones, facilitates cross\u2011functional sync, manages budget)"
+    ],
+    "deliverables": [
+      "Feature Requirements Document (FRD) \u2013 finalized by 2025-11-20",
+      "Technical Architecture & Deployment Checklist \u2013 2025-11-22",
+      "AI Model Validation Report (accuracy, bias, GDPR compliance) \u2013 2025-12-01",
+      "Release Notes & Product Update Blog Draft \u2013 2025-12-08",
+      "Customer\u2011Facing User Guide (PDF) and Quick\u2011Start Video \u2013 2025-12-10",
+      "In\u2011App Announcement Banner copy & design assets \u2013 2025-12-12",
+      "Email Campaign (teaser, launch, follow\u2011up) \u2013 2025-12-13",
+      "Sales Enablement Deck + Pricing FAQ \u2013 2025-12-09",
+      "Support Playbook (triage flow, escalation matrix) \u2013 2025-12-10",
+      "Webinar Script & Slides for \u201cLive Demo of DataPulse AI Insights\u201d \u2013 2025-12-14",
+      "LinkedIn Sponsored Content assets \u2013 2025-12-13"
+    ],
+    "success_criteria": [
+      "At least 20% of existing customers enable DataPulse AI Insights within 30\u202fdays of launch",
+      "Net Promoter Score (NPS) for the new feature \u2265\u202f45 in the first survey window",
+      "Generate $500,000 incremental ARR from upsells and new logos in Q1\u202f2026",
+      "Reduce churn among target segment by 5% YoY attributable to the new feature",
+      "Support tickets related to DataPulse AI Insights \u2264\u202f5% of total support volume in the first month",
+      "Achieve \u2265\u202f30% email open rate and \u2265\u202f8% click\u2011through rate on launch announcement"
+    ],
+    "constraints": [
+      "Total launch marketing budget capped at $150,000",
+      "AI model must receive GDPR\u2011compliant data processing certification by 2025-12-01",
+      "Engineering bandwidth limited to 2 full\u2011time engineers for final QA and hot\u2011fixes after 2025-12-05",
+      "All customer\u2011facing documentation must be approved by Legal and Compliance by 2025-12-08",
+      "Launch must not conflict with the scheduled release of Acme Dashboard v3.2 on 2025-12-20"
+    ],
+    "workback_prompt": "Create a detailed workback plan for the **DataPulse AI Insights** feature launch at Acme Analytics. The launch is scheduled for **2025-12-15 10:00\u202fAM\u202fPST** and follows a T\u201130 planning horizon. Include all phases (strategy, development, QA, documentation, marketing, sales enablement, support readiness, launch day execution, post\u2011launch monitoring). Break down tasks by week, assign owners (using the stakeholder list provided), indicate dependencies, critical path items, risk mitigation steps, and required approvals. Provide a Gantt\u2011style timeline, a RACI matrix, and a checklist of go/no\u2011go criteria for the launch day. Use the scenario details above (company context, deliverables, success criteria, constraints) to ensure the plan is realistic and actionable.",
+    "meeting_type": "Product Feature Launch",
+    "meeting_type_key": "4_feature_launch",
+    "scenario_number": 2,
+    "horizon": "T-30",
+    "complexity": "High",
+    "generated_at": "2025-11-17T05:16:41.598227"
+  },
+  {
+    "scenario_name": "DataPulse Real\u2011Time Cohort Insights Feature Launch",
+    "company_context": "DataPulse Inc., a mid\u2011size SaaS company in the Marketing Analytics space. The product is a cloud\u2011based analytics platform used by B2B marketers to track campaign performance. The new feature, Real\u2011Time Cohort Insights, adds live, segment\u2011level analytics with predictive churn scoring. The launch is being coordinated by the Growth Product Team (Product, Engineering, Marketing, Sales, Customer Success, Finance).",
+    "meeting_event_details": "2025\u201112\u201115, 09:00\u202fAM \u2013 11:00\u202fAM PST (2\u202fhours), hybrid: Zoom link (https://zoom.us/j/987654321) and Conference Room\u202fB, 3rd Floor, DataPulse HQ, San Francisco. Agenda: final review of launch checklist, assign owners, confirm dependencies, and lock launch\u2011day schedule.",
+    "stakeholders": [
+      {
+        "name": "Maya Patel",
+        "role": "Senior Product Manager \u2013 Growth",
+        "responsibility": "Overall feature ownership, launch timeline, success metrics."
+      },
+      {
+        "name": "Liam O'Connor",
+        "role": "Engineering Lead \u2013 Backend",
+        "responsibility": "Finalize API, ensure scalability, coordinate data\u2011pipeline upgrade."
+      },
+      {
+        "name": "Sofia Ramirez",
+        "role": "Principal Front\u2011End Engineer",
+        "responsibility": "In\u2011app UI rollout, performance testing, bug triage."
+      },
+      {
+        "name": "Jenna Lee",
+        "role": "Director of Marketing",
+        "responsibility": "Go\u2011to\u2011market strategy, messaging, content creation, paid media plan."
+      },
+      {
+        "name": "Carlos Mendes",
+        "role": "Sales Enablement Manager",
+        "responsibility": "Sales training, demo scripts, pricing updates, pipeline forecasting."
+      },
+      {
+        "name": "Aisha Khan",
+        "role": "Customer Success Lead",
+        "responsibility": "Support documentation, training webinars, post\u2011launch support readiness."
+      },
+      {
+        "name": "Ravi Singh",
+        "role": "Data Analyst \u2013 Product Analytics",
+        "responsibility": "Define success metrics, set up tracking tags, build launch dashboard."
+      },
+      {
+        "name": "Emily Chen",
+        "role": "Finance Operations Analyst",
+        "responsibility": "Budget tracking, ROI modeling, compliance sign\u2011off."
+      }
+    ],
+    "deliverables": [
+      "Feature Specification Document (v2.0) \u2013 includes user stories, API contracts, performance SLAs.",
+      "API Reference Guide (Markdown) \u2013 published to internal developer portal.",
+      "Customer User Guide \u2013 PDF and HTML version covering setup, interpretation, and troubleshooting.",
+      "FAQ & Release Notes \u2013 for support portal and in\u2011app announcement.",
+      "Training Deck for Sales & CS \u2013 30\u2011slide PowerPoint with demo flow and objection handling.",
+      "Live Demo Video (2\u202fmin) \u2013 hosted on Vimeo, embedded in blog post.",
+      "Blog Post \u2013 \u201cIntroducing Real\u2011Time Cohort Insights\u201d (800\u2011word copy, SEO\u2011optimized).",
+      "Email Campaign \u2013 3\u2011part series (announcement, use\u2011case spotlight, CTA to webinar).",
+      "In\u2011App Banner & Modal \u2013 localized for EN, ES, FR.",
+      "Webinar Presentation & Registration Page \u2013 scheduled for launch day, 45\u202fmin.",
+      "Pricing Update Sheet \u2013 reflects new tier add\u2011on pricing ($199/mo per 10\u202fM events).",
+      "Analytics Tracking Plan \u2013 event schema, GA4 & Mixpanel configurations, success\u2011metric dashboard.",
+      "Compliance Sign\u2011off Checklist \u2013 completed by Legal & Security teams."
+    ],
+    "success_criteria": [
+      "\u2265\u202f20\u202f% of existing enterprise customers enable the feature within 30\u202fdays of launch.",
+      "Generate $750\u202fk in incremental ARR (\u2248\u202f5\u202f% of total ARR) from new add\u2011on subscriptions in the first quarter.",
+      "Feature\u2011specific NPS \u2265\u202f45 (survey sent 2\u202fweeks post\u2011launch).",
+      "Support tickets related to the feature \u2264\u202f5 per week during the first month.",
+      "\u2265\u202f80\u202f% of the sales team complete the mandatory training module within 10\u202fdays of launch.",
+      "Webinar attendance \u2265\u202f200 registrants with \u2265\u202f30\u202f% live attendance.",
+      "Marketing email open rate \u2265\u202f35\u202f% and click\u2011through rate \u2265\u202f8\u202f%."
+    ],
+    "constraints": [
+      "Total launch\u2011marketing budget capped at $150,000 (includes paid media, content production, and webinar platform).",
+      "Engineering resources limited to 2 backend devs and 1 front\u2011end dev for the final two weeks before launch.",
+      "Feature depends on the Data Pipeline v3.2 upgrade, scheduled for completion by 2025\u201112\u201110; any delay pushes launch.",
+      "Compliance review (SOC\u202f2 Type\u202fII) must be signed off by 2025\u201112\u201112; failure adds a 5\u2011day risk buffer.",
+      "All customer\u2011facing copy must be localized into Spanish and French by 2025\u201112\u201120.",
+      "Risk of performance degradation under >\u202f1\u202fM concurrent events; load\u2011test threshold must be met before go\u2011live."
+    ],
+    "workback_prompt": "Generate a detailed 30\u2011day workback plan for the launch of DataPulse's Real\u2011Time Cohort Insights feature. Include weekly milestones, task owners, dependencies, critical path items, risk mitigation steps, and a launch\u2011day run\u2011book. Use the scenario information provided: product name, launch date (2026\u201101\u201114 10:00\u202fAM PST), cross\u2011functional team members, deliverables, success criteria, constraints, and launch channels (email series, blog post, in\u2011app banner, webinar, social media).",
+    "meeting_type": "Product Feature Launch",
+    "meeting_type_key": "4_feature_launch",
+    "scenario_number": 3,
+    "horizon": "T-30",
+    "complexity": "High",
+    "generated_at": "2025-11-17T05:27:09.027121"
+  }
+]

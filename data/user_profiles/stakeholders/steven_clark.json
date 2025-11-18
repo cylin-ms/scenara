@@ -1,0 +1,136 @@
+{
+  "basic_info": {
+    "full_name": "Steven Clark",
+    "age": 36,
+    "location": "Austin, Texas, USA",
+    "timezone": "America/Chicago (CST)",
+    "years_experience": 12,
+    "education": [
+      {
+        "degree": "B.S. Business Administration",
+        "institution": "University of Texas at Austin",
+        "year": 2009
+      },
+      {
+        "degree": "MBA",
+        "institution": "University of Texas at Austin – McCombs School of Business",
+        "year": 2013
+      }
+    ]
+  },
+  "work_habits": {
+    "preferred_working_hours": "Early bird (08:00‑16:00 CST)",
+    "peak_productivity_times": "09:00‑11:00 CST",
+    "communication_style": "Primarily async with brief syncs when needed",
+    "response_time_expectation": "Within 2 business hours for email/Slack, immediate for urgent chat",
+    "meeting_preferences": "Limits meetings to ≤2 hours per day; prefers 30‑minute stand‑ups and weekly 1‑hour strategy sessions",
+    "work_environment": "Hybrid (2 office days, 3 remote days per week)",
+    "focus_time_requirements": "Three 2‑hour focus blocks per week, protected from meetings"
+  },
+  "personality": {
+    "mbti": "ENTJ",
+    "decision_making_approach": "Data‑driven with stakeholder input; favors structured analysis before committing",
+    "risk_tolerance": "Moderate – willing to pilot new sourcing tools but seeks measurable ROI",
+    "collaboration_style": "Structured and goal‑oriented; sets clear expectations and follows up",
+    "stress_management_approach": "Morning run, weekly yoga, and scheduled micro‑breaks",
+    "conflict_resolution_style": "Collaborative problem‑solving; seeks win‑win outcomes"
+  },
+  "skills": {
+    "core_technical_skills": {
+      "Applicant Tracking Systems (iCIMS, Lever, Greenhouse)": 9,
+      "Data Analytics (SQL, Tableau)": 6,
+      "Recruitment Marketing": 7,
+      "Employer Branding": 7,
+      "AI‑assisted Sourcing Tools": 6
+    },
+    "leadership_abilities": {
+      "Team Coaching": 8,
+      "Stakeholder Management": 9,
+      "Strategic Planning": 8,
+      "Change Management": 6
+    },
+    "domain_expertise_areas": [
+      "Technology hiring (software, hardware, data science)",
+      "Engineering role pipelines",
+      "Diversity & Inclusion recruiting",
+      "Campus and early‑career talent"
+    ],
+    "learning_agility": 8,
+    "tools_proficiency": [
+      "iCIMS",
+      "Lever",
+      "Greenhouse",
+      "LinkedIn Recruiter",
+      "Workday",
+      "Tableau",
+      "Microsoft Teams",
+      "Slack"
+    ],
+    "languages_spoken": [
+      "English (native)",
+      "Spanish (conversational)"
+    ]
+  },
+  "performance": {
+    "task_completion_rate": 94,
+    "quality_score": 92,
+    "estimation_accuracy": 88,
+    "multitasking_ability": 7,
+    "performance_under_pressure": 8
+  },
+  "availability": {
+    "available_hours_per_week": 38,
+    "timezone_and_working_hours": "CST – 08:00‑16:00 (with 2‑hour daily focus block)",
+    "planned_time_off_days_per_year": 20,
+    "other_commitments": "Speaker at two industry conferences per year; occasional mentoring webinars",
+    "travel_flexibility": "Up to 25 % travel (recruiting events, university tours)"
+  },
+  "personal_factors": {
+    "family_status": "Married, one child (3 years old)",
+    "caregiving_responsibilities": "Morning childcare drop‑off/pick‑up 3‑4 days per week",
+    "commute_situation": "30‑minute drive to office; uses hybrid schedule to reduce commuting",
+    "health_considerations": "Mild hypertension – monitors BP, regular check‑ups, maintains exercise routine",
+    "career_motivation": "Build high‑performing engineering teams, progress to Director of Talent Acquisition"
+  },
+  "project_impact": {
+    "reliability": 9,
+    "innovation_tendency": 7,
+    "documentation_quality": 8,
+    "mentorship_capability": 9,
+    "influence_level": 8
+  },
+  "collaboration": {
+    "meeting_frequency_preference": "Twice‑weekly 30‑minute sync with hiring managers; weekly 1‑hour talent‑ops stand‑up",
+    "communication_channels_preference": [
+      "Slack",
+      "Email",
+      "Microsoft Teams"
+    ],
+    "feedback_style": "Direct but supportive; balances candidness with empathy",
+    "knowledge_sharing_habits": "Hosts monthly lunch‑and‑learns; contributes to internal recruiting wiki",
+    "cross_team_collaboration": 8
+  },
+  "risk_factors": {
+    "potential_bottlenecks": [
+      "Delayed feedback from hiring managers during peak hiring cycles",
+      "Limited capacity when multiple senior roles open simultaneously"
+    ],
+    "backup_person_needed": "Senior TA Specialist – Maria Lopez",
+    "ramp_up_time_weeks": 3,
+    "context_switching_tolerance": 6,
+    "burnout_risk_factors": [
+      "Extended high‑volume hiring periods",
+      "Insufficient protected focus time",
+      "Erosion of work‑life boundaries due to remote flexibility"
+    ]
+  },
+  "_metadata": {
+    "generated_at": "2025-11-17T15:35:03.259624",
+    "name": "Steven Clark",
+    "role": "Talent Acquisition Manager",
+    "seniority": "mid",
+    "company": "TechCorp",
+    "model": "gpt-oss:120b",
+    "provider": "ollama"
+  }
+}

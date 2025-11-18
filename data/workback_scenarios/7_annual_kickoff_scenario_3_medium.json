@@ -1,0 +1,660 @@
+{
+  "scenario_name": "TechNova AI Solutions \u2013 2025 Global Product Innovation Annual Kickoff",
+  "scenario_number": 3,
+  "meeting_type": "Annual Kickoff Meeting",
+  "quality_level": "medium",
+  "workback_prompt": "Generate a detailed workback plan for the 'TechNova AI Solutions \u2013 2025 Global Product Innovation Annual Kickoff' scenario. Include all major milestones, tasks, owners, dependencies, and dates starting from today (T\u201160) through the event dates (June 10\u201112, 2025) and post\u2011event deliverable deadlines. Highlight critical path items, risk mitigation steps, and required approvals. The plan should be formatted as a table or Gantt\u2011style list suitable for import into a project\u2011management tool.\n\nGenerate a MEDIUM QUALITY workback plan with these characteristics:\n- Most major tasks present but some gaps\n- Reasonable task descriptions\n- Some dependencies defined\n- Most tasks have owners\n- Milestones present but may lack detail\n- Generally realistic timelines\n- Some consideration of risks\n- Key deliverables identified\n\nIMPORTANT: Generate a plan that naturally exhibits MEDIUM quality characteristics.\nDo not explicitly label the plan as \"medium quality\" - let the quality emerge from the content.",
+  "generated_at": "2025-11-17T06:52:38.320655",
+  "analysis": "# Outcomes\n\n## 1. Draft the \u201cTechNova AI Solutions \u2013 2025 Global Product Innovation Annual Kickoff\u201d work\u2011back plan\nCreate a structured, table\u2011style (or Gantt\u2011compatible) document that lists all major milestones, tasks, owners, dependencies, start/end dates (from\u202fT\u201160\u202fto\u202fpost\u2011event\u202fdeliverables), critical\u2011path items, risk\u2011mitigation actions, and required approvals.  \nArtifact references: *none provided*  \n\n### Reasoning\nThe user\u2019s primary request is a complete work\u2011back schedule. Delivering a draft that meets the \u201cmedium\u2011quality\u201d description (major tasks present, reasonable detail, some gaps) is the central outcome. All subsequent activities (validation, approvals, export) depend on having this draft.\n\n### Approach\n1. **Set the time horizon** \u2013\u202fToday is T\u201160 (approximately\u202fApril\u202f11\u202f2025). The event runs\u202fJune\u202f10\u201112\u202f2025, with post\u2011event deliverables due through\u202fJuly\u202f31\u202f2025.  \n2. **Identify major phases** \u2013\u202fPlanning\u202f\u2192\u202fPre\u2011event preparation\u202f\u2192\u202fEvent execution\u202f\u2192\u202fPost\u2011event wrap\u2011up.  \n3. **Populate high\u2011level milestones** for each phase (e.g., \u201cKickoff planning charter approved\u201d, \u201cVenue contract signed\u201d, \u201cSpeaker deck finalised\u201d, \u201cLive\u2011event day\u20111\u20113\u201d, \u201cPost\u2011event analytics report\u201d).  \n4. **Add representative tasks** under each milestone (e.g., \u201cDefine event agenda\u201d, \u201cSecure keynote speaker\u201d, \u201cDevelop branding assets\u201d).  \n5. **Assign owners** using typical roles (Program Lead, Marketing Manager, Logistics Coordinator, Content Owner, IT Ops, Finance).  \n6. **Define dependencies** where logical (e.g., \u201cVenue contract signed\u201d must precede \u201cAV equipment order\u201d).  \n7. **Mark critical\u2011path tasks** (those whose delay pushes the event date) \u2013 usually venue booking, speaker confirmation, and final agenda sign\u2011off.  \n8. **Insert risk\u2011mitigation steps** next to high\u2011risk tasks (e.g., \u201cAlternative venue identified\u201d, \u201cBackup speaker pool\u201d).  \n9. **Add approval gates** (e.g., \u201cBudget sign\u2011off\u201d, \u201cLegal review of contracts\u201d).  \n10. **Format** the output as a CSV\u2011friendly table (columns: ID, Phase, Milestone, Task, Owner, Start, End, Duration, Depends\u202fOn, Critical\u202fPath, Risk\u202fMitigation, Approval). This can be imported directly into most PM tools (MS Project, Smartsheet, Asana, etc.).  \n\n---\n\n## 2. Validate the draft plan with key stakeholders\nConduct a focused review session with the core team to confirm task completeness, ownership, dates, and dependencies; capture any missing items or adjustments.  \n\n### Reasoning\nA medium\u2011quality plan will inevitably have gaps. Early stakeholder validation helps surface missing tasks (e.g., \u201cAccessibility compliance check\u201d) and ensures owners are realistic about timelines. This outcome is necessary before formal approvals.\n\n### Approach\n1. **Distribute the draft** to all identified owners at least\u202fT\u201155\u202f(\u2248\u202fApril\u202f16).  \n2. **Schedule a 90\u2011minute virtual review** (T\u201153\u202f\u2248\u202fApril\u202f18) with the Program Lead, Marketing, Logistics, Content, IT, Finance, and Legal representatives.  \n3. **Collect feedback** via a shared spreadsheet or comment\u2011enabled document.  \n4. **Update the plan** to incorporate agreed changes, noting any new dependencies or risk items.  \n\n---\n\n## 3. Secure formal approvals for the finalized plan\nObtain sign\u2011off from senior leadership (e.g., VP of Product Innovation) and Finance on budget\u2011related milestones, and from Legal on contractual items.  \n\n### Reasoning\nThe user explicitly requests \u201crequired approvals.\u201d Without these, the plan cannot be executed. Approvals also lock in the critical\u2011path dates, making the schedule reliable.\n\n### Approach\n1. **Prepare an executive summary** (one\u2011page) highlighting critical\u2011path dates, total budget, and top risks.  \n2. **Route the summary and full plan** through the organization\u2019s approval workflow (e.g., SharePoint approval chain) by\u202fT\u201145\u202f(\u2248\u202fApril\u202f30).  \n3. **Track approval status** in a simple RACI matrix attached to the plan.  \n4. **Escalate any pending items** to the Program Lead for resolution no later than\u202fT\u201140\u202f(\u2248\u202fMay\u202f5).  \n\n---\n\n## 4. Export the approved plan into the chosen project\u2011management tool\nLoad the CSV/table into the tool, configure Gantt view, assign owners, and set up automated reminders for upcoming tasks and approvals.  \n\n### Reasoning\nThe user wants a format \u201csuitable for import into a project\u2011management tool.\u201d This final step translates the documented plan into an actionable schedule that the team can track day\u2011to\u2011day.\n\n### Approach\n1. **Select the PM tool** (e.g., Smartsheet, Asana, MS Project) based on existing organizational standards.  \n2. **Map table columns** to the tool\u2019s fields (Task Name, Owner, Start, End, Predecessor, Milestone flag, Custom fields for Risk & Approval).  \n3. **Import the CSV** by\u202fT\u201135\u202f(\u2248\u202fMay\u202f10).  \n4. **Verify data integrity** (dates, dependencies) and adjust any formatting issues.  \n5. **Enable notifications** for critical\u2011path tasks and risk\u2011mitigation checkpoints.  \n6. **Communicate the live schedule** to all owners with a brief onboarding note.  \n\n---\n\n## 5. Monitor execution and capture post\u2011event deliverables\nTrack task completion through the event dates, ensure risk\u2011mitigation actions are executed, and collect the final deliverables (e.g., event video, analytics report) by their deadlines.  \n\n### Reasoning\nThe work\u2011back plan extends beyond the event itself. Monitoring ensures that the \u201cpost\u2011event deliverable deadlines\u201d are met and that any issues encountered during execution are logged for future improvements.\n\n### Approach\n1. **Set up a weekly status meeting** (starting\u202fT\u201130\u202f\u2248\u202fMay\u202f15) to review progress against the schedule.  \n2. **Use the PM tool\u2019s dashboard** to flag overdue critical\u2011path items.  \n3. **Confirm completion of risk\u2011mitigation steps** before each major milestone (e.g., verify backup venue contract 2 weeks prior to event).  \n4. **Collect post\u2011event artifacts** (recordings, attendee survey results, financial reconciliation) by the defined deadlines (e.g.,\u202fJuly\u202f15\u202ffor video edit,\u202fJuly\u202f31\u202ffor final report).  \n5. **Close out the project** with a lessons\u2011learned document and archive the plan.  \n\n---\n\n# Breakdown\n\n```\n1. Draft Work\u2011back Plan\n   1.1 Define time horizon (T\u201160 to post\u2011event)\n   1.2 Identify major phases\n   1.3 List high\u2011level milestones\n   1.4 Populate representative tasks\n   1.5 Assign owners\n   1.6 Define dependencies\n   1.7 Flag critical\u2011path items\n   1.8 Add risk\u2011mitigation actions\n   1.9 Insert approval gates\n   1.10 Format as CSV/Gantt table\n   Depends on: none\n   Can run in parallel with: 2. Stakeholder validation (once draft is shared)\n\n2. Validate Draft with Stakeholders\n   2.1 Distribute draft to owners (T\u201155)\n   2.2 Schedule review meeting (T\u201153)\n   2.3 Collect feedback\n   2.4 Update plan with changes\n   Depends on: 1. Draft Work\u2011back Plan\n   Can run in parallel with: 3. Secure approvals (after updated plan)\n\n3. Secure Formal Approvals\n   3.1 Prepare executive summary\n   3.2 Route plan through approval workflow (T\u201145)\n   3.3 Track approval status (RACI matrix)\n   3.4 Escalate pending items (T\u201140)\n   Depends on: 2. Validate Draft with Stakeholders\n   Critical\u2011path: 3.2 (delays push all downstream dates)\n\n4. Export to Project\u2011Management Tool\n   4.1 Select PM tool\n   4.2 Map columns to tool fields\n   4.3 Import CSV (T\u201135)\n   4.4 Verify data integrity\n   4.5 Enable notifications & reminders\n   4.6 Communicate live schedule to owners\n   Depends on: 3. Secure Formal Approvals\n   Critical\u2011path: 4.3 (must be completed before teams can start execution)\n\n5. Execute & Monitor (Event Phase)\n   5.1 Weekly status meetings (starting T\u201130)\n   5.2 Dashboard tracking of critical\u2011path tasks\n   5.3 Execute risk\u2011mitigation actions before each milestone\n   5.4 Live event execution (June\u202f10\u201112)\n   Depends on: 4. Export to PM Tool\n   Critical\u2011path: 5.4 (event dates are fixed)\n\n6. Post\u2011Event Deliverables\n   6.1 Collect video recordings (deadline July\u202f15)\n   6.2 Compile attendee survey & analytics (deadline July\u202f20)\n   6.3 Final financial reconciliation (deadline July\u202f31)\n   6.4 Produce final report & archive artifacts\n   Depends on: 5. Execute & Monitor\n   Risk mitigation: early hand\u2011off of raw assets to editing team\n```\n\n*Key Critical\u2011Path Items* are highlighted in steps **1.7**, **3.2**, **4.3**, and **5.4**.  \n*Major Risks* (venue lock\u2011in, speaker availability, technical platform stability) are addressed in the risk\u2011mitigation rows of the plan and reinforced during weekly monitoring.  \n\nThis analysis gives you a clear roadmap for creating, validating, approving, importing, and executing a medium\u2011quality work\u2011back schedule that meets the user\u2019s requirements while allowing for collaborative refinement and risk management.",
+  "plan": {
+    "id": "document-001",
+    "name": "TechNova AI Solutions \u2013 2025 Global Product Innovation Annual Kickoff Work\u2011back Plan",
+    "details": "Medium\u2011quality work\u2011back schedule covering drafting, validation, approvals, import into a PM tool, execution, and post\u2011event deliverables.",
+    "draft": true,
+    "participants": [
+      {
+        "name": "you",
+        "email": "you@example.com",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "system",
+        "email": "",
+        "details": "",
+        "draft": true
+      }
+    ],
+    "references": [],
+    "deliverables": [
+      {
+        "id": "deliverable-001",
+        "name": "Event Video Recordings",
+        "type": "video",
+        "draft": true,
+        "history": []
+      },
+      {
+        "id": "deliverable-002",
+        "name": "Attendee Survey & Analytics Report",
+        "type": "word",
+        "draft": true,
+        "history": []
+      },
+      {
+        "id": "deliverable-003",
+        "name": "Final Financial Reconciliation",
+        "type": "excel",
+        "draft": true,
+        "history": []
+      },
+      {
+        "id": "deliverable-004",
+        "name": "Final Project Report",
+        "type": "word",
+        "draft": true,
+        "history": []
+      }
+    ],
+    "tasks": [
+      {
+        "id": "task-001",
+        "name": "Draft Work\u2011back Plan",
+        "draft": true,
+        "details": "Create a structured, table\u2011style work\u2011back schedule covering all phases.",
+        "dependencies": [
+          "task-001-1",
+          "task-001-2",
+          "task-001-3",
+          "task-001-4",
+          "task-001-5",
+          "task-001-6",
+          "task-001-7",
+          "task-001-8",
+          "task-001-9",
+          "task-001-10"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-001-1",
+        "name": "Define time horizon (T\u201160 to post\u2011event)",
+        "draft": true,
+        "details": "Set the planning horizon from today (T\u201160) through post\u2011event deliverables.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-001-2",
+        "name": "Identify major phases",
+        "draft": true,
+        "details": "Outline Planning, Pre\u2011event, Event execution, Post\u2011event phases.",
+        "dependencies": [
+          "task-001-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-001-3",
+        "name": "List high\u2011level milestones",
+        "draft": true,
+        "details": "Create milestone list for each phase.",
+        "dependencies": [
+          "task-001-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-001-4",
+        "name": "Populate representative tasks",
+        "draft": true,
+        "details": "Add sample tasks under each milestone.",
+        "dependencies": [
+          "task-001-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-001-5",
+        "name": "Assign owners",
+        "draft": true,
+        "details": "Map typical roles (Program Lead, Marketing, Logistics, etc.) to tasks.",
+        "dependencies": [
+          "task-001-4"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-001-6",
+        "name": "Define dependencies",
+        "draft": true,
+        "details": "Specify logical predecessor relationships.",
+        "dependencies": [
+          "task-001-5"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-001-7",
+        "name": "Flag critical\u2011path items",
+        "draft": true,
+        "details": "Mark tasks whose delay would push the event date.",
+        "dependencies": [
+          "task-001-6"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-001-8",
+        "name": "Add risk\u2011mitigation actions",
+        "draft": true,
+        "details": "Include contingency steps for high\u2011risk tasks.",
+        "dependencies": [
+          "task-001-7"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-001-9",
+        "name": "Insert approval gates",
+        "draft": true,
+        "details": "Define budget, legal, and executive sign\u2011off points.",
+        "dependencies": [
+          "task-001-8"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-001-10",
+        "name": "Format as CSV/Gantt table",
+        "draft": true,
+        "details": "Prepare a CSV\u2011friendly table for import into PM tools.",
+        "dependencies": [
+          "task-001-9"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002",
+        "name": "Validate Draft with Stakeholders",
+        "draft": true,
+        "details": "Review the draft plan with owners and incorporate feedback.",
+        "dependencies": [
+          "task-001",
+          "task-002-1",
+          "task-002-2",
+          "task-002-3",
+          "task-002-4"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002-1",
+        "name": "Distribute draft to owners (T\u201155)",
+        "draft": true,
+        "details": "Send the draft plan to all identified owners by T\u201155.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002-2",
+        "name": "Schedule review meeting (T\u201153)",
+        "draft": true,
+        "details": "Arrange a 90\u2011minute virtual session with core team.",
+        "dependencies": [
+          "task-002-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002-3",
+        "name": "Collect feedback",
+        "draft": true,
+        "details": "Gather comments via shared spreadsheet or document.",
+        "dependencies": [
+          "task-002-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002-4",
+        "name": "Update plan with changes",
+        "draft": true,
+        "details": "Incorporate agreed\u2011upon adjustments and note new dependencies.",
+        "dependencies": [
+          "task-002-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003",
+        "name": "Secure Formal Approvals",
+        "draft": true,
+        "details": "Obtain sign\u2011off from senior leadership, finance, and legal.",
+        "dependencies": [
+          "task-002",
+          "task-003-1",
+          "task-003-2",
+          "task-003-3",
+          "task-003-4"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003-1",
+        "name": "Prepare executive summary",
+        "draft": true,
+        "details": "One\u2011page overview of critical\u2011path dates, budget, and top risks.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003-2",
+        "name": "Route plan through approval workflow (T\u201145)",
+        "draft": true,
+        "details": "Submit plan and summary via SharePoint approval chain.",
+        "dependencies": [
+          "task-003-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003-3",
+        "name": "Track approval status (RACI matrix)",
+        "draft": true,
+        "details": "Maintain a matrix of approvers and their sign\u2011off status.",
+        "dependencies": [
+          "task-003-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003-4",
+        "name": "Escalate pending items (T\u201140)",
+        "draft": true,
+        "details": "Raise any outstanding approvals to the Program Lead by T\u201140.",
+        "dependencies": [
+          "task-003-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-004",
+        "name": "Export to Project\u2011Management Tool",
+        "draft": true,
+        "details": "Import the CSV schedule into the chosen PM platform and finalize details.",
+        "dependencies": [
+          "task-003",
+          "task-004-1",
+          "task-004-2",
+          "task-004-3",
+          "task-004-4",
+          "task-004-5",
+          "task-004-6"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-004-1",
+        "name": "Select PM tool",
+        "draft": true,
+        "details": "Choose the appropriate project\u2011management software.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-004-2",
+        "name": "Import CSV into tool",
+        "draft": true,
+        "details": "Load the CSV table into the selected PM platform.",
+        "dependencies": [
+          "task-004-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-004-3",
+        "name": "Configure task owners and timelines",
+        "draft": true,
+        "details": "Assign resources and set start/end dates in the tool.",
+        "dependencies": [
+          "task-004-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-004-4",
+        "name": "Set up notifications and reminders",
+        "draft": true,
+        "details": "Enable automated alerts for upcoming milestones.",
+        "dependencies": [
+          "task-004-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-004-5",
+        "name": "Validate import accuracy",
+        "draft": true,
+        "details": "Confirm that all tasks, dependencies, and deliverables transferred correctly.",
+        "dependencies": [
+          "task-004-4"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-004-6",
+        "name": "Finalize PM\u2011tool configuration",
+        "draft": true,
+        "details": "Complete any remaining setup steps and lock the schedule.",
+        "dependencies": [
+          "task-004-5"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-005",
+        "name": "Execute & Monitor (Event Phase)",
+        "draft": true,
+        "details": "Carry out the event according to the approved plan and monitor progress.",
+        "dependencies": [
+          "task-004",
+          "task-005-1",
+          "task-005-2",
+          "task-005-3",
+          "task-005-4"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-005-1",
+        "name": "Weekly status updates",
+        "draft": true,
+        "details": "Provide regular progress reports to the core team.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-005-2",
+        "name": "Monitor critical\u2011path tasks",
+        "draft": true,
+        "details": "Track items whose delay could affect the event date.",
+        "dependencies": [
+          "task-005-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-005-3",
+        "name": "Adjust schedule as needed",
+        "draft": true,
+        "details": "Re\u2011plan any tasks that fall behind schedule.",
+        "dependencies": [
+          "task-005-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-005-4",
+        "name": "Execute event activities",
+        "draft": true,
+        "details": "Carry out all event\u2011day tasks, ensuring approvals and contingencies are in place.",
+        "dependencies": [
+          "task-005-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-006",
+        "name": "Post\u2011Event Deliverables",
+        "draft": true,
+        "details": "Collect and hand over all final outputs after the event.",
+        "dependencies": [
+          "task-005",
+          "task-006-1",
+          "task-006-2",
+          "task-006-3",
+          "task-006-4"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-006-1",
+        "name": "Collect event video recordings (deadline T\u20110)",
+        "draft": true,
+        "details": "Gather all video recordings of the event.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable-001"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-006-2",
+        "name": "Compile attendee survey & analytics report (deadline T\u20110)",
+        "draft": true,
+        "details": "Analyze feedback and produce the analytics report.",
+        "dependencies": [
+          "task-006-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable-002"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-006-3",
+        "name": "Finalize financial reconciliation (deadline T\u20110)",
+        "draft": true,
+        "details": "Complete the financial close\u2011out spreadsheet.",
+        "dependencies": [
+          "task-006-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable-003"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-006-4",
+        "name": "Prepare final project report (deadline T\u20110)",
+        "draft": true,
+        "details": "Assemble the final comprehensive report for archiving.",
+        "dependencies": [
+          "task-006-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable-004"
+        ],
+        "references": [],
+        "history": []
+      }
+    ],
+    "history": []
+  }
+}

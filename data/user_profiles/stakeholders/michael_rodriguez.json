@@ -1,0 +1,138 @@
+{
+  "basic_info": {
+    "full_name": "Michael Rodriguez",
+    "age": 48,
+    "location": "San Francisco, CA, USA",
+    "timezone": "UTC-8 (Pacific Time)",
+    "years_experience": 25,
+    "education": [
+      {
+        "degree": "B.S. Computer Science",
+        "institution": "Massachusetts Institute of Technology",
+        "year": 1999
+      },
+      {
+        "degree": "MBA, Technology Management",
+        "institution": "Stanford University",
+        "year": 2005
+      }
+    ]
+  },
+  "work_habits": {
+    "preferred_working_hours": "07:00-15:00 (PST)",
+    "peak_productivity_times": "08:00-11:00",
+    "communication_style": {
+      "preference": "asynchronous for most updates, synchronous for decisions",
+      "response_time_expectation": "within 4 business hours on weekdays"
+    },
+    "meeting_preferences": "minimizes meetings; prefers 30‑minute stand‑ups, bi‑weekly strategy syncs, and quarterly off‑site workshops; blocks 2‑hour focus windows on Tuesdays and Thursdays",
+    "work_environment": "Hybrid (2 days in office, 3 days remote)",
+    "focus_time_requirements": "3‑4 hours of uninterrupted work per day"
+  },
+  "personality": {
+    "mbti": "ENTJ",
+    "decision_making_approach": "data‑driven with rapid consensus building; escalates only when strategic impact > $5M",
+    "risk_tolerance": "moderate – willing to pilot emerging tech but requires clear mitigation plans",
+    "collaboration_style": "directive yet inclusive; sets clear objectives and empowers leads to own execution",
+    "stress_management_approach": "daily 30‑minute meditation, scheduled exercise, and strict work‑life boundaries on weekends",
+    "conflict_resolution_style": "assertive problem‑solving; focuses on facts and mutually beneficial outcomes"
+  },
+  "skills": {
+    "core_technical_skills": {
+      "cloud_architecture (AWS, GCP)": 9,
+      "microservices_design": 9,
+      "devops_ci_cd": 8,
+      "data_engineering": 7,
+      "machine_learning_ops": 6,
+      "cybersecurity": 7,
+      "legacy_system_migration": 8
+    },
+    "leadership_abilities": 9,
+    "domain_expertise_areas": [
+      "Enterprise SaaS platforms",
+      "Scalable infrastructure",
+      "Product engineering strategy",
+      "Technical debt reduction"
+    ],
+    "learning_agility": 8,
+    "tools_proficiency": [
+      "Jira",
+      "Confluence",
+      "GitHub",
+      "Terraform",
+      "Kubernetes",
+      "Datadog",
+      "Slack"
+    ],
+    "languages_spoken": [
+      "English (native)",
+      "Spanish (fluent)"
+    ]
+  },
+  "performance": {
+    "task_completion_rate": 93,
+    "quality_score": 91,
+    "estimation_accuracy": 88,
+    "multitasking_ability": 7,
+    "performance_under_pressure": 9
+  },
+  "availability": {
+    "available_hours_per_week": 45,
+    "timezone_and_working_hours": "Pacific Time, 07:00‑15:00 (core hours) with flexibility for urgent matters",
+    "planned_time_off_days_per_year": 25,
+    "other_commitments": [
+      "Quarterly board advisory role (2‑3 days per quarter)",
+      "Mentorship program for senior engineers (2 hrs/week)"
+    ],
+    "travel_flexibility": "moderate – up to 15% travel, typically 6 weeks per year for conferences and client visits"
+  },
+  "personal_factors": {
+    "family_status": "Married, two children (ages 15 and 17)",
+    "caregiving_responsibilities": "Occasional weekend school events and holiday travel",
+    "commute_situation": "Short 10‑minute drive to office; prefers public transit on rainy days",
+    "health_considerations": "Mild hypertension, manages with regular cardio and annual check‑ups",
+    "career_motivation": "Passionate about driving digital transformation at scale, building high‑performing engineering cultures, and leaving a legacy of resilient, future‑proof platforms"
+  },
+  "project_impact": {
+    "reliability": 9,
+    "innovation_tendency": 8,
+    "documentation_quality": 7,
+    "mentorship_capability": 8,
+    "influence_level": 9
+  },
+  "collaboration": {
+    "meeting_frequency_preference": "Weekly 30‑minute sync with direct reports; quarterly all‑hands; ad‑hoc as needed",
+    "communication_channels_preference": [
+      "Slack (async)",
+      "Zoom (strategic syncs)",
+      "Email (formal decisions)",
+      "Confluence (documentation)"
+    ],
+    "feedback_style": "direct but diplomatic; combines data points with growth suggestions",
+    "knowledge_sharing_habits": "writes monthly technical deep‑dives, hosts quarterly brown‑bag sessions, maintains a shared architecture repository",
+    "cross_team_collaboration": 8
+  },
+  "risk_factors": {
+    "potential_bottlenecks": [
+      "Decision latency on cross‑functional budget approvals",
+      "Dependency on legacy data pipelines during migration phases"
+    ],
+    "backup_person_needed": "Sofia Patel, VP of Engineering – Cloud Services",
+    "ramp_up_time_for_new_projects_weeks": 3,
+    "context_switching_tolerance": 6,
+    "burnout_risk_factors": [
+      "Extended product launch cycles with high meeting load",
+      "Insufficient protected focus time during peak release periods",
+      "Travel spikes during conference season"
+    ]
+  },
+  "_metadata": {
+    "generated_at": "2025-11-17T15:06:00.516744",
+    "name": "Michael Rodriguez",
+    "role": "CTO",
+    "seniority": "executive",
+    "company": "TechCorp",
+    "model": "gpt-oss:120b",
+    "provider": "ollama"
+  }
+}

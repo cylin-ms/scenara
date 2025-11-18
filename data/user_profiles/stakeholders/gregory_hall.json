@@ -1,0 +1,150 @@
+{
+  "basic_info": {
+    "full_name": "Gregory Hall",
+    "age": 34,
+    "location": "Austin, Texas, USA",
+    "timezone": "Central Standard Time (UTC-6)",
+    "years_experience": 10,
+    "education": {
+      "degree": "B.S. Computer Science",
+      "institution": "University of Texas at Austin",
+      "graduation_year": 2014
+    }
+  },
+  "work_habits": {
+    "preferred_working_hours": "07:00-15:00 CST (flexible +/-1 hour)",
+    "peak_productivity_times": [
+      "08:00-11:00"
+    ],
+    "communication_style": {
+      "async_preference": true,
+      "sync_preference": false,
+      "typical_response_time": "Within 2 hours during work hours"
+    },
+    "meeting_preferences": {
+      "frequency": "minimize meetings",
+      "prefers": "short stand‑ups (15 min) and async updates",
+      "max_meetings_per_day": 2
+    },
+    "work_environment": "Hybrid (3 days remote, 2 days office)",
+    "focus_time_requirements": "2 blocks of 90 min deep work per day"
+  },
+  "personality": {
+    "mbti": "ISTJ",
+    "decision_making_approach": "Data‑driven, prefers consensus after analysis",
+    "risk_tolerance": "Moderate",
+    "collaboration_style": "Structured, prefers clear roles and documented processes",
+    "stress_management": "Regular short walks, Pomodoro breaks, weekly gym sessions",
+    "conflict_resolution_style": "Calm, fact‑based mediation"
+  },
+  "skills": {
+    "core_technical_skills": [
+      {
+        "skill": "Windows Server Administration",
+        "rating": 9
+      },
+      {
+        "skill": "Active Directory",
+        "rating": 8
+      },
+      {
+        "skill": "PowerShell scripting",
+        "rating": 8
+      },
+      {
+        "skill": "Linux (Ubuntu/CentOS)",
+        "rating": 7
+      },
+      {
+        "skill": "Network troubleshooting",
+        "rating": 8
+      },
+      {
+        "skill": "SQL (MySQL, MS SQL)",
+        "rating": 7
+      },
+      {
+        "skill": "Ticketing systems (Jira Service Management)",
+        "rating": 9
+      }
+    ],
+    "leadership_abilities": 7,
+    "domain_expertise_areas": [
+      "Enterprise IT support",
+      "SaaS product onboarding",
+      "Security compliance (ISO 27001)"
+    ],
+    "learning_agility": 8,
+    "tools_proficiency": [
+      "Jira Service Management",
+      "Confluence",
+      "Microsoft Teams",
+      "Slack",
+      "Zoom",
+      "ServiceNow",
+      "Git"
+    ],
+    "languages_spoken": [
+      "English (native)",
+      "Spanish (conversational)"
+    ]
+  },
+  "performance": {
+    "task_completion_rate": 94,
+    "quality_score": 96,
+    "estimation_accuracy": 88,
+    "multitasking_ability": 7,
+    "performance_under_pressure": 8
+  },
+  "availability": {
+    "available_hours_per_week": 38,
+    "timezone_and_working_hours": "CST, typically 07:00‑15:00",
+    "planned_time_off_days_per_year": 20,
+    "other_commitments": "Volunteer mentor for local coding bootcamp (4 hrs/month)",
+    "travel_flexibility": "Up to 15% travel (≈1 week per quarter)"
+  },
+  "personal_factors": {
+    "family_status": "Married, one child (3 years old)",
+    "caregiving_responsibilities": "Evenings/weekends childcare",
+    "commute_situation": "30‑minute drive to office on hybrid days",
+    "health_considerations": "Mild lower‑back soreness, mitigated by ergonomic setup and regular stretching",
+    "career_motivation": "Progress to Senior Technical Support Manager; passion for building high‑performing teams"
+  },
+  "project_impact": {
+    "reliability": 9,
+    "innovation_tendency": 6,
+    "documentation_quality": 8,
+    "mentorship_capability": 8,
+    "influence_level": 7
+  },
+  "collaboration": {
+    "meeting_frequency_preference": "2‑3 short syncs per week, otherwise async",
+    "communication_channels_preference": [
+      "Slack (instant)",
+      "Email (formal)",
+      "Confluence (docs)"
+    ],
+    "feedback_style": "Direct but diplomatic, preferring actionable points",
+    "knowledge_sharing_habits": "Writes detailed post‑mortems, runs monthly lunch‑and‑learns",
+    "cross_team_collaboration": 7
+  },
+  "risk_factors": {
+    "potential_bottlenecks": "Heavy reliance on his deep product knowledge for escalations",
+    "backup_person_needed": "Senior Support Engineer (Alex Rivera)",
+    "ramp_up_time_weeks": 2,
+    "context_switching_tolerance": 5,
+    "burnout_risk_factors": [
+      "Extended periods of uninterrupted high ticket volume",
+      "Limited personal downtime during product releases"
+    ]
+  },
+  "_metadata": {
+    "generated_at": "2025-11-17T15:32:10.383909",
+    "name": "Gregory Hall",
+    "role": "Technical Support Lead",
+    "seniority": "mid",
+    "company": "TechCorp",
+    "model": "gpt-oss:120b",
+    "provider": "ollama"
+  }
+}

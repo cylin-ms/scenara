@@ -1,0 +1,141 @@
+{
+  "basic_info": {
+    "full_name": "Kevin Brown",
+    "age": 45,
+    "location": "Seattle, WA, USA",
+    "timezone": "America/Los_Angeles (UTC-8)",
+    "years_experience": 22,
+    "education": [
+      {
+        "degree": "B.S. Computer Science",
+        "institution": "University of Washington",
+        "year": 2002
+      },
+      {
+        "degree": "M.S. Software Engineering",
+        "institution": "Stanford University",
+        "year": 2005
+      }
+    ]
+  },
+  "work_habits": {
+    "preferred_working_hours": "07:00-15:00 PST (early bird)",
+    "peak_productivity_times": "08:00-11:00 PST",
+    "communication_style": "Async‑first, with brief syncs when needed",
+    "response_time_expectation": "Within 4 business hours for async messages",
+    "meeting_preferences": "Limit to 2 meetings per day; prefers 15‑minute stand‑ups; avoids large, unstructured meetings",
+    "work_environment": "Hybrid (3 days office, 2 days remote)",
+    "focus_time_requirements": "3‑4 hours of uninterrupted focus each workday"
+  },
+  "personality": {
+    "mbti": "ENTJ",
+    "decision_making_approach": "Data‑driven with stakeholder input; uses weighted scoring matrices",
+    "risk_tolerance": "Moderate‑high (willing to pilot new tech if ROI justified)",
+    "collaboration_style": "Structured, cross‑functional; sets clear RACI matrices",
+    "stress_management_approach": "Morning run, weekly mindfulness session, regular vacation blocks",
+    "conflict_resolution_style": "Collaborative problem‑solving; seeks win‑win outcomes"
+  },
+  "skills": {
+    "core_technical_skills": {
+      "cloud_architecture": 9,
+      "distributed_systems": 9,
+      "microservices_design": 8,
+      "devops_ci_cd": 8,
+      "data_engineering": 7,
+      "security_best_practices": 7,
+      "ai_ml_basics": 6
+    },
+    "leadership_abilities": {
+      "strategic_vision": 9,
+      "people_management": 8,
+      "budgeting_and_finance": 7,
+      "stakeholder_management": 8,
+      "talent_acquisition": 8
+    },
+    "domain_expertise_areas": [
+      "SaaS platform scaling",
+      "FinTech compliance",
+      "Real‑time data pipelines"
+    ],
+    "learning_agility": 9,
+    "tools_proficiency": [
+      "AWS (EC2, Lambda, S3, RDS)",
+      "Kubernetes",
+      "Terraform",
+      "Jenkins",
+      "GitHub",
+      "Jira",
+      "Confluence",
+      "Tableau"
+    ],
+    "languages_spoken": [
+      "English (native)",
+      "Spanish (conversational)"
+    ]
+  },
+  "performance": {
+    "task_completion_rate": 95,
+    "quality_score": 93,
+    "estimation_accuracy": 88,
+    "multitasking_ability": 7,
+    "performance_under_pressure": 8
+  },
+  "availability": {
+    "available_hours_per_week": 45,
+    "timezone": "America/Los_Angeles (UTC-8)",
+    "working_hours": "07:00-16:00 PST",
+    "planned_time_off_days_per_year": 20,
+    "other_commitments": [
+      "Board member of Seattle Tech Non‑Profit"
+    ],
+    "travel_flexibility": "Moderate (up to 15% travel, primarily conferences and client visits)"
+  },
+  "personal_factors": {
+    "family_status": "Married, two children (ages 9 and 12)",
+    "caregiving_responsibilities": "Occasional weekend childcare for parents",
+    "commute_situation": "30‑minute drive to TechCorp Seattle campus",
+    "health_considerations": "Mild hypertension, monitors blood pressure via wearable",
+    "career_motivation": "Passion for building scalable platforms and mentoring the next generation of engineering leaders"
+  },
+  "project_impact": {
+    "reliability": 9,
+    "innovation_tendency": 8,
+    "documentation_quality": 7,
+    "mentorship_capability": 9,
+    "influence_level": 9
+  },
+  "collaboration": {
+    "meeting_frequency_preference": "2‑3 short syncs per week + weekly 1‑hour team stand‑up",
+    "communication_channels_preference": [
+      "Slack (async)",
+      "Email",
+      "Zoom (scheduled video calls)"
+    ],
+    "feedback_style": "Direct yet respectful; prefers data‑backed observations",
+    "knowledge_sharing_habits": "Writes monthly technical blog posts, hosts quarterly brown‑bag sessions, maintains internal wiki",
+    "cross_team_collaboration": 8
+  },
+  "risk_factors": {
+    "potential_bottlenecks": [
+      "Decision latency during cross‑department alignment",
+      "Dependence on legacy monolith migration timeline"
+    ],
+    "backup_person_needed": "Senior Engineering Manager – Alex Patel",
+    "ramp_up_time_weeks": 4,
+    "context_switching_tolerance": 6,
+    "burnout_risk_factors": [
+      "High meeting load during release cycles",
+      "Extended periods of crisis management",
+      "Limited delegation during strategic planning phases"
+    ]
+  },
+  "_metadata": {
+    "generated_at": "2025-11-17T15:11:53.386322",
+    "name": "Kevin Brown",
+    "role": "Director of Engineering",
+    "seniority": "senior",
+    "company": "TechCorp",
+    "model": "gpt-oss:120b",
+    "provider": "ollama"
+  }
+}

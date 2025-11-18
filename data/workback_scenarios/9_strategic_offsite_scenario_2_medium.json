@@ -1,0 +1,929 @@
+{
+  "scenario_name": "Apex BioSolutions \u2013 2025 Strategic Planning Offsite",
+  "scenario_number": 2,
+  "meeting_type": "Strategic Planning Offsite",
+  "quality_level": "medium",
+  "workback_prompt": "Generate a detailed work\u2011back plan for the Apex BioSolutions 2025 Strategic Planning Offsite (June 10\u201112, 2025, Aspen, CO). Include all pre\u2011work deliverables (market research, financial models, SWOT, customer insights), facilitator preparation, agenda\u2011by\u2011hour, logistics (travel, lodging, tech setup), decision\u2011gate reviews, post\u2011offsite communication (Board brief, town\u2011hall, action\u2011item tracker), and risk mitigation steps. Align tasks with the constraints (budget $150K, pre\u2011work deadline May 28, external advisor availability) and success criteria (priority definition, OKR consensus, CAR\u2011NK decision, budget sign\u2011off, communication rollout). Output a timeline with owners, due dates, dependencies, and required resources.\n\nGenerate a MEDIUM QUALITY workback plan with these characteristics:\n- Most major tasks present but some gaps\n- Reasonable task descriptions\n- Some dependencies defined\n- Most tasks have owners\n- Milestones present but may lack detail\n- Generally realistic timelines\n- Some consideration of risks\n- Key deliverables identified\n\nIMPORTANT: Generate a plan that naturally exhibits MEDIUM quality characteristics.\nDo not explicitly label the plan as \"medium quality\" - let the quality emerge from the content.",
+  "generated_at": "2025-11-17T07:41:05.628392",
+  "analysis": "# Outcomes\n\n## 1. Pre\u2011work Deliverables Completed  \nAll research, analysis, and insight packages required for the off\u2011site are finished, reviewed, and stored in the shared drive by the pre\u2011work deadline.  \nArtifact references: *none*  \n\n### Reasoning  \nThe off\u2011site cannot progress without market research, financial models, SWOT analysis, and customer insights. The user explicitly set a **pre\u2011work deadline\u202fMay\u202f28** and listed these items as required inputs.  \n\n### Approach  \n1. **Assign owners** for each deliverable (e.g., Market Research\u202f\u2013\u202fVP\u202fMarket; Financial Model\u202f\u2013\u202fFinance Lead; SWOT\u202f\u2013\u202fStrategy Manager; Customer Insights\u202f\u2013\u202fCustomer\u2011Experience Lead).  \n2. **Create a delivery schedule** that back\u2011dates from May\u202f28, adding a 2\u2011day internal review buffer.  \n3. **Engage the external advisor** early (by\u202fMay\u202f5) to confirm availability for a joint review on\u202fMay\u202f24\u201125.  \n4. **Store outputs** in a pre\u2011defined folder structure (e.g., `\\\\Apex\\Offsite\\PreWork\\`) and circulate a \u201cPre\u2011work Completion\u201d email to all participants.  \n\n## 2. Logistics Package Finalized  \nTravel, lodging, venue contracts, technology requirements, and on\u2011site services are booked, confirmed, and documented.  \n\n### Reasoning  \nLogistics must be locked in well before the off\u2011site to stay within the **$150\u202fK budget** and to avoid last\u2011minute cost overruns.  \n\n### Approach  \n1. **Budget owner** (Finance Lead) allocates a $30\u202fK contingency line.  \n2. **Travel coordinator** (Operations Manager) books flights and ground transport by **May\u202f10**.  \n3. **Lodging & venue** (HR Lead) secures the Aspen hotel and meeting rooms by **May\u202f12**, negotiating a group rate.  \n4. **Tech lead** (IT Manager) inventories required AV equipment, arranges on\u2011site support, and confirms Wi\u2011Fi bandwidth by **May\u202f15**.  \n5. Compile a **Logistics Checklist** and distribute to all attendees (due\u202fMay\u202f18).  \n\n## 3. Facilitator & Agenda Package Ready  \nFacilitator brief, hour\u2011by\u2011hour agenda, and supporting materials are prepared, reviewed, and shared with the external advisor.  \n\n### Reasoning  \nA clear agenda and a prepared facilitator are essential for meeting the **success criteria** (priority definition, OKR consensus, CAR\u2011NK decision).  \n\n### Approach  \n1. **Facilitator (External Advisor)** confirms availability by **May\u202f5** and receives a brief on objectives.  \n2. **Agenda Owner** (VP Strategy) drafts a detailed agenda (including buffer times) by **May\u202f15**.  \n3. **Facilitator preparation** (external advisor + internal co\u2011facilitator) reviews agenda and creates slide decks by **May\u202f22**.  \n4. Conduct a **dry\u2011run** with the core planning team on **May\u202f26** to validate timing and decision gates.  \n\n## 4. Decision\u2011Gate Review Process Executed  \nTwo formal decision\u2011gate meetings (pre\u2011offsite gate and post\u2011offsite gate) are held to secure OKR consensus, CAR\u2011NK decision, and budget sign\u2011off.  \n\n### Reasoning  \nDecision gates provide the governance checkpoints required by the success criteria and ensure that the off\u2011site outcomes are ratified before execution.  \n\n### Approach  \n1. **Pre\u2011offsite gate** (May\u202f27) \u2013 Review pre\u2011work deliverables, budget assumptions, and agenda with the Executive Steering Committee. Owner: Strategy Manager.  \n2. **Post\u2011offsite gate** (June\u202f14) \u2013 Review off\u2011site decisions, final OKRs, and action\u2011item tracker with the Board. Owner: VP Strategy.  \n\n## 5. Off\u2011site Execution (June\u202f10\u201112)  \n\n### Reasoning  \nThe core event where strategic priorities are defined, OKRs are agreed, and CAR\u2011NK decision is made.  \n\n### Approach  \n1. **Day\u2011by\u2011day run\u2011sheet** (owner: Operations Manager) aligns each hour with the agenda.  \n2. **On\u2011site logistics lead** (HR Lead) ensures meals, tech, and room setups are ready each morning.  \n3. **Facilitator** drives discussions, captures decisions, and tracks time.  \n4. **Note\u2011taker** (Strategy Analyst) records outcomes in a live document shared with all participants.  \n\n## 6. Post\u2011offsite Communication & Action\u2011Item Tracker  \n\n### Reasoning  \nTimely communication of decisions and a clear tracker are needed for **communication rollout** and to keep momentum.  \n\n### Approach  \n1. **Board brief** (VP Strategy) drafted by **June\u202f13**, reviewed by CFO, and sent June\u202f14.  \n2. **Town\u2011hall presentation** (HR Lead) prepared by **June\u202f15**, delivered June\u202f16.  \n3. **Action\u2011item tracker** (Project Office) populated by **June\u202f13**, assigned owners, and uploaded to the shared drive.  \n4. **Weekly status update** (Project Office) circulated for 8\u202fweeks post\u2011offsite.  \n\n## 7. Risk Mitigation & Monitoring  \n\n### Reasoning  \nRisks (budget overruns, advisor availability, travel disruptions) could jeopardize the off\u2011site.  \n\n### Approach  \n1. **Risk register** (Risk Owner \u2013 VP Operations) created by **May\u202f5** with mitigation actions.  \n2. **Contingency budget** (Finance Lead) earmarked for travel/venue changes.  \n3. **Backup facilitator** (Internal Senior Manager) identified by **May\u202f10**.  \n4. **Daily check\u2011ins** during the off\u2011site to surface emerging issues.  \n\n# Breakdown\n\n```\n1. Pre\u2011work Deliverables Completed\n   1.1 Market Research \u2013 Owner: VP Market \u2013 Due 5/20\n        1.1.1 Define scope (5/5) \u2192 Depends on: Kick\u2011off meeting (4/30)\n        1.1.2 Collect data (5/10\u20115/15)\n        1.1.3 Draft report (5/16\u20115/18)\n        1.1.4 Internal review (5/19\u20115/20)\n   1.2 Financial Models \u2013 Owner: Finance Lead \u2013 Due 5/22\n        1.2.1 Gather FY24 results (5/5\u20115/7)\n        1.2.2 Build scenarios (5/8\u20115/15)\n        1.2.3 Review with CFO (5/18\u20115/20)\n        1.2.4 Finalize (5/21\u20115/22)\n   1.3 SWOT Analysis \u2013 Owner: Strategy Manager \u2013 Due 5/24\n        1.3.1 Workshop with senior leaders (5/12\u20115/13)\n        1.3.2 Draft SWOT (5/14\u20115/18)\n        1.3.3 External advisor input (5/20\u20115/22)\n        1.3.4 Final version (5/23\u20115/24)\n   1.4 Customer Insights \u2013 Owner: CX Lead \u2013 Due 5/26\n        1.4.1 Survey design (5/5\u20115/7)\n        1.4.2 Field survey (5/8\u20115/15)\n        1.4.3 Analyze results (5/16\u20115/22)\n        1.4.4 Report (5/23\u20115/26)\n   1.5 Consolidate Pre\u2011work Package \u2013 Owner: Strategy Manager \u2013 Due 5/28\n        1.5.1 Upload to shared drive (5/27)\n        1.5.2 Send completion email (5/28)\n\n2. Logistics Package Finalized\n   2.1 Budget allocation & contingency \u2013 Owner: Finance Lead \u2013 Due 5/08\n   2.2 Travel bookings \u2013 Owner: Operations Manager \u2013 Due 5/10\n   2.3 Venue & lodging contracts \u2013 Owner: HR Lead \u2013 Due 5/12\n   2.4 AV & tech requirements \u2013 Owner: IT Manager \u2013 Due 5/15\n   2.5 Logistics checklist distribution \u2013 Owner: Operations Manager \u2013 Due 5/18\n\n3. Facilitator & Agenda Package Ready\n   3.1 External advisor availability confirmation \u2013 Owner: VP Strategy \u2013 Due 5/05\n   3.2 Draft agenda (hour\u2011by\u2011hour) \u2013 Owner: VP Strategy \u2013 Due 5/15\n   3.3 Facilitator slide deck & materials \u2013 Owner: External Advisor & Co\u2011facilitator \u2013 Due 5/22\n   3.4 Dry\u2011run session \u2013 Owner: Strategy Manager \u2013 Due 5/26\n\n4. Decision\u2011Gate Review Process Executed\n   4.1 Pre\u2011offsite gate meeting \u2013 Owner: Strategy Manager \u2013 Due 5/27\n        4.1.1 Prepare gate deck (5/24\u20115/26)\n        4.1.2 Secure Exec Committee attendance (5/20)\n   4.2 Post\u2011offsite gate meeting \u2013 Owner: VP Strategy \u2013 Due 6/14\n        4.2.1 Compile off\u2011site outcomes (6/13)\n        4.2.2 Present to Board (6/14)\n\n5. Off\u2011site Execution (June\u202f10\u201112)\n   5.1 Run\u2011sheet creation \u2013 Owner: Operations Manager \u2013 Due 6/01\n   5.2 On\u2011site logistics coordination \u2013 Owner: HR Lead \u2013 Ongoing 6/10\u20116/12\n   5.3 Facilitation \u2013 Owner: External Advisor \u2013 Ongoing 6/10\u20116/12\n   5.4 Live documentation \u2013 Owner: Strategy Analyst \u2013 Ongoing 6/10\u20116/12\n   5.5 Decision capture (priority, OKRs, CAR\u2011NK) \u2013 Owner: VP Strategy \u2013 Ongoing 6/10\u20116/12\n\n6. Post\u2011offsite Communication & Action\u2011Item Tracker\n   6.1 Board brief draft \u2013 Owner: VP Strategy \u2013 Due 6/13\n   6.2 Town\u2011hall deck \u2013 Owner: HR Lead \u2013 Due 6/15\n   6.3 Action\u2011item tracker population \u2013 Owner: Project Office \u2013 Due 6/13\n   6.4 Weekly status updates \u2013 Owner: Project Office \u2013 Start 6/20 (8\u202fweeks)\n\n7. Risk Mitigation & Monitoring\n   7.1 Risk register creation \u2013 Owner: VP Operations \u2013 Due 5/05\n   7.2 Contingency budget approval \u2013 Owner: Finance Lead \u2013 Due 5/08\n   7.3 Backup facilitator identification \u2013 Owner: VP Strategy \u2013 Due 5/10\n   7.4 Daily risk check\u2011ins during off\u2011site \u2013 Owner: Operations Manager \u2013 6/10\u20116/12\n   7.5 Post\u2011offsite risk review \u2013 Owner: VP Operations \u2013 Due 6/20\n```\n\n**Key Milestones**\n\n| Milestone | Target Date | Owner |\n|-----------|-------------|-------|\n| Pre\u2011work package complete | 05/28 | Strategy Manager |\n| Logistics locked in | 05/18 | Operations Manager |\n| Facilitator & agenda ready | 05/26 | VP Strategy |\n| Pre\u2011offsite decision gate | 05/27 | Strategy Manager |\n| Off\u2011site kickoff | 06/10 | Operations Manager |\n| CAR\u2011NK decision signed | 06/12 | VP Strategy |\n| Board brief sent | 06/14 | VP Strategy |\n| Town\u2011hall delivered | 06/16 | HR Lead |\n| Action\u2011item tracker live | 06/13 | Project Office |\n| First weekly status update | 06/20 | Project Office |\n\n**Resource Summary**\n\n| Resource | Quantity / Budget | Allocation |\n|----------|-------------------|------------|\n| External advisor (facilitation) | 3\u202fdays @ $5,000/day | $15,000 |\n| Venue & lodging (30\u202fperson\u2011nights) | $90,000 | Aspen hotel contract |\n| Travel (airfare & ground) | $20,000 | Ops budget |\n| AV & tech rentals | $10,000 | IT budget |\n| Contingency | $15,000 | Finance reserve |\n| Internal staff time (estimated) | 200\u202fhrs | Across functional leads |\n\n**Risk Highlights**\n\n- **Advisor availability** \u2013 mitigated by early confirmation and backup internal facilitator.  \n- **Budget overrun** \u2013 controlled via line\u2011item caps and a $15\u202fK contingency.  \n- **Travel disruptions (weather)** \u2013 include flexible ticket policies and a secondary airport option.  \n- **Decision\u2011gate delays** \u2013 schedule gate meetings with senior leaders at least two weeks in advance; set clear agenda and pre\u2011reads.  \n\nBy following this work\u2011back structure, the team can keep the off\u2011site on schedule, stay within the $150\u202fK budget, and meet all defined success criteria. Collaboration is enabled through clear ownership, shared repositories, and regular status checkpoints.",
+  "plan": {
+    "id": "document-001",
+    "name": "Off\u2011site Planning Workback Plan",
+    "details": "Workback plan for the Apex off\u2011site covering pre\u2011work, logistics, facilitation, decision gates, execution, post\u2011off\u2011site communication and risk monitoring.",
+    "draft": true,
+    "participants": [
+      {
+        "name": "VP Market",
+        "draft": true
+      },
+      {
+        "name": "Finance Lead",
+        "draft": true
+      },
+      {
+        "name": "Strategy Manager",
+        "draft": true
+      },
+      {
+        "name": "CX Lead",
+        "draft": true
+      },
+      {
+        "name": "Operations Manager",
+        "draft": true
+      },
+      {
+        "name": "HR Lead",
+        "draft": true
+      },
+      {
+        "name": "IT Manager",
+        "draft": true
+      },
+      {
+        "name": "VP Strategy",
+        "draft": true
+      },
+      {
+        "name": "External Advisor",
+        "draft": true
+      },
+      {
+        "name": "Co\u2011facilitator",
+        "draft": true
+      },
+      {
+        "name": "Strategy Analyst",
+        "draft": true
+      },
+      {
+        "name": "Project Office",
+        "draft": true
+      },
+      {
+        "name": "VP Operations",
+        "draft": true
+      },
+      {
+        "name": "CFO",
+        "draft": true
+      }
+    ],
+    "references": [],
+    "deliverables": [],
+    "tasks": [
+      {
+        "id": "task-001",
+        "name": "Pre\u2011work Deliverables Completed",
+        "draft": true,
+        "details": "All research, analysis, and insight packages required for the off\u2011site are finished, reviewed, and stored by the pre\u2011work deadline.",
+        "dependencies": [
+          "task-008",
+          "task-013",
+          "task-018",
+          "task-023",
+          "task-028"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-002",
+        "name": "Logistics Package Finalized",
+        "draft": true,
+        "details": "Travel, lodging, venue contracts, technology requirements, and on\u2011site services are booked, confirmed, and documented.",
+        "dependencies": [
+          "task-031",
+          "task-032",
+          "task-033",
+          "task-034",
+          "task-035"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-003",
+        "name": "Facilitator & Agenda Package Ready",
+        "draft": true,
+        "details": "Facilitator brief, hour\u2011by\u2011hour agenda, and supporting materials are prepared, reviewed, and shared with the external advisor.",
+        "dependencies": [
+          "task-036",
+          "task-037",
+          "task-038",
+          "task-039"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-004",
+        "name": "Decision\u2011Gate Review Process Executed",
+        "draft": true,
+        "details": "Two formal decision\u2011gate meetings (pre\u2011offsite and post\u2011offsite) are held to secure OKR consensus, CAR\u2011NK decision, and budget sign\u2011off.",
+        "dependencies": [
+          "task-040",
+          "task-043"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-005",
+        "name": "Off\u2011site Execution (June\u202f10\u201112)",
+        "draft": true,
+        "details": "Core event where strategic priorities are defined, OKRs are agreed, and CAR\u2011NK decision is made.",
+        "dependencies": [
+          "task-046",
+          "task-047",
+          "task-048",
+          "task-049",
+          "task-050"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-006",
+        "name": "Post\u2011off\u2011site Communication & Action\u2011Item Tracker",
+        "draft": true,
+        "details": "Board brief, town\u2011hall presentation, action\u2011item tracker and weekly status updates are produced and distributed.",
+        "dependencies": [
+          "task-051",
+          "task-052",
+          "task-053",
+          "task-054"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-007",
+        "name": "Risk Mitigation & Monitoring",
+        "draft": true,
+        "details": "Risk register creation, contingency budget, backup facilitator, daily risk check\u2011ins and post\u2011off\u2011site risk review.",
+        "dependencies": [
+          "task-055",
+          "task-056",
+          "task-057",
+          "task-058",
+          "task-059"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-008",
+        "name": "Market Research \u2013 Owner: VP Market \u2013 Due 5/20",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-009",
+          "task-010",
+          "task-011",
+          "task-012"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-009",
+        "name": "Define scope (5/5) \u2013 Depends on Kick\u2011off meeting (4/30)",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-010",
+        "name": "Collect data (5/10\u20115/15)",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-009"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-011",
+        "name": "Draft report (5/16\u20115/18)",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-010"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-012",
+        "name": "Internal review (5/19\u20115/20)",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-011"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-013",
+        "name": "Financial Models \u2013 Owner: Finance Lead \u2013 Due 5/22",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-014",
+          "task-015",
+          "task-016",
+          "task-017"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-014",
+        "name": "Gather FY24 results (5/5\u20115/7)",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-015",
+        "name": "Build scenarios (5/8\u20115/15)",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-014"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-016",
+        "name": "Review with CFO (5/18\u20115/20)",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-015"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-017",
+        "name": "Finalize (5/21\u20115/22)",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-016"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-018",
+        "name": "SWOT Analysis \u2013 Owner: Strategy Manager \u2013 Due 5/24",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-019",
+          "task-020",
+          "task-021",
+          "task-022"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-019",
+        "name": "Workshop with senior leaders (5/12\u20115/13)",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-020",
+        "name": "Draft SWOT (5/14\u20115/18)",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-019"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-021",
+        "name": "External advisor input (5/20\u20115/22)",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-020"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-022",
+        "name": "Final version (5/23\u20115/24)",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-021"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-018",
+        "name": "SWOT Analysis \u2013 Owner: Strategy Manager \u2013 Due 5/24",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-019",
+          "task-020",
+          "task-021",
+          "task-022"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-023",
+        "name": "Customer Insights \u2013 Owner: CX Lead \u2013 Due 5/26",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-024",
+          "task-025",
+          "task-026",
+          "task-027"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-024",
+        "name": "Survey design (5/5\u20115/7)",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-025",
+        "name": "Field survey (5/8\u20115/15)",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-024"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-026",
+        "name": "Analyze results (5/16\u20115/22)",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-025"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-027",
+        "name": "Report (5/23\u20115/26)",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-026"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-028",
+        "name": "Consolidate Pre\u2011work Package \u2013 Owner: Strategy Manager \u2013 Due 5/28",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-029",
+          "task-030"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-029",
+        "name": "Upload to shared drive (5/27)",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-030",
+        "name": "Send completion email (5/28)",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-029"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-031",
+        "name": "Budget allocation & contingency \u2013 Owner: Finance Lead \u2013 Due 5/08",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-032",
+        "name": "Travel bookings \u2013 Owner: Operations Manager \u2013 Due 5/10",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-033",
+        "name": "Venue & lodging contracts \u2013 Owner: HR Lead \u2013 Due 5/12",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-034",
+        "name": "AV & tech requirements \u2013 Owner: IT Manager \u2013 Due 5/15",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-035",
+        "name": "Logistics checklist distribution \u2013 Owner: Operations Manager \u2013 Due 5/18",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-036",
+        "name": "External advisor availability confirmation \u2013 Owner: VP Strategy \u2013 Due 5/05",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-037",
+        "name": "Draft agenda (hour\u2011by\u2011hour) \u2013 Owner: VP Strategy \u2013 Due 5/15",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-038",
+        "name": "Facilitator slide deck & materials \u2013 Owner: External Advisor & Co\u2011facilitator \u2013 Due 5/22",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-039",
+        "name": "Dry\u2011run session \u2013 Owner: Strategy Manager \u2013 Due 5/26",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-040",
+        "name": "Pre\u2011offsite gate meeting \u2013 Owner: Strategy Manager \u2013 Due 5/27",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-041",
+          "task-042"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-041",
+        "name": "Prepare gate deck (5/24\u20115/26)",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-042",
+        "name": "Secure Exec Committee attendance (5/20)",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-043",
+        "name": "Post\u2011offsite gate meeting \u2013 Owner: VP Strategy \u2013 Due 6/14",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-044",
+          "task-045"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-044",
+        "name": "Compile off\u2011site outcomes (6/13)",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-045",
+        "name": "Present to Board (6/14)",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-044"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-046",
+        "name": "Run\u2011sheet creation \u2013 Owner: Operations Manager \u2013 Due 6/01",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-047",
+        "name": "On\u2011site logistics coordination \u2013 Owner: HR Lead \u2013 Ongoing 6/10\u20116/12",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-048",
+        "name": "Facilitation \u2013 Owner: External Advisor \u2013 Ongoing 6/10\u20116/12",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-049",
+        "name": "Live documentation \u2013 Owner: Strategy Analyst \u2013 Ongoing 6/10\u20116/12",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-050",
+        "name": "Decision capture (priority, OKRs, CAR\u2011NK) \u2013 Owner: VP Strategy \u2013 Ongoing 6/10\u20116/12",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-051",
+        "name": "Board brief draft \u2013 Owner: VP Strategy \u2013 Due 6/13",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-052",
+        "name": "Town\u2011hall deck \u2013 Owner: HR Lead \u2013 Due 6/15",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-053",
+        "name": "Action\u2011item tracker population \u2013 Owner: Project Office \u2013 Due 6/13",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-054",
+        "name": "Weekly status updates \u2013 Owner: Project Office \u2013 Start 6/20 (8 weeks)",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-055",
+        "name": "Risk register creation \u2013 Owner: VP Operations \u2013 Due 5/05",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-056",
+        "name": "Contingency budget approval \u2013 Owner: Finance Lead \u2013 Due 5/08",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-057",
+        "name": "Backup facilitator identification \u2013 Owner: VP Strategy \u2013 Due 5/10",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-058",
+        "name": "Daily risk check\u2011ins during off\u2011site \u2013 Owner: Operations Manager \u2013 6/10\u20116/12",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-059",
+        "name": "Post\u2011off\u2011site risk review \u2013 Owner: VP Operations \u2013 Due 6/20",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-031",
+        "name": "Budget allocation & contingency \u2013 Owner: Finance Lead \u2013 Due 5/08",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-032",
+        "name": "Travel bookings \u2013 Owner: Operations Manager \u2013 Due 5/10",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-033",
+        "name": "Venue & lodging contracts \u2013 Owner: HR Lead \u2013 Due 5/12",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-034",
+        "name": "AV & tech requirements \u2013 Owner: IT Manager \u2013 Due 5/15",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-035",
+        "name": "Logistics checklist distribution \u2013 Owner: Operations Manager \u2013 Due 5/18",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-036",
+        "name": "External advisor availability confirmation \u2013 Owner: VP Strategy \u2013 Due 5/05",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-037",
+        "name": "Draft agenda (hour\u2011by\u2011hour) \u2013 Owner: VP Strategy \u2013 Due 5/15",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-038",
+        "name": "Facilitator slide deck & materials \u2013 Owner: External Advisor & Co\u2011facilitator \u2013 Due 5/22",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-039",
+        "name": "Dry\u2011run session \u2013 Owner: Strategy Manager \u2013 Due 5/26",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-040",
+        "name": "Pre\u2011offsite gate meeting \u2013 Owner: Strategy Manager \u2013 Due 5/27",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-041",
+          "task-042"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-041",
+        "name": "Prepare gate deck (5/24\u20115/26)",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-042",
+        "name": "Secure Exec Committee attendance (5/20)",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-043",
+        "name": "Post\u2011offsite gate meeting \u2013 Owner: VP Strategy \u2013 Due 6/14",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-044",
+          "task-045"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-044",
+        "name": "Compile off\u2011site outcomes (6/13)",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-045",
+        "name": "Present to Board (6/14)",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-044"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-046",
+        "name": "Run\u2011sheet creation \u2013 Owner: Operations Manager \u2013 Due 6/01",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-047",
+        "name": "On\u2011site logistics coordination \u2013 Owner: HR Lead \u2013 Ongoing 6/10\u20116/12",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-048",
+        "name": "Facilitation \u2013 Owner: External Advisor \u2013 Ongoing 6/10\u20116/12",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-049",
+        "name": "Live documentation \u2013 Owner: Strategy Analyst \u2013 Ongoing 6/10\u20116/12",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-050",
+        "name": "Decision capture (priority, OKRs, CAR\u2011NK) \u2013 Owner: VP Strategy \u2013 Ongoing 6/10\u20116/12",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-051",
+        "name": "Board brief draft \u2013 Owner: VP Strategy \u2013 Due 6/13",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-052",
+        "name": "Town\u2011hall deck \u2013 Owner: HR Lead \u2013 Due 6/15",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-053",
+        "name": "Action\u2011item tracker population \u2013 Owner: Project Office \u2013 Due 6/13",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-054",
+        "name": "Weekly status updates \u2013 Owner: Project Office \u2013 Start 6/20 (8 weeks)",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-036",
+        "name": "External advisor availability confirmation \u2013 Owner: VP Strategy \u2013 Due 5/05",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-037",
+        "name": "Draft agenda (hour\u2011by\u2011hour) \u2013 Owner: VP Strategy \u2013 Due 5/15",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-038",
+        "name": "Facilitator slide deck & materials \u2013 Owner: External Advisor & Co\u2011facilitator \u2013 Due 5/22",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-039",
+        "name": "Dry\u2011run session \u2013 Owner: Strategy Manager \u2013 Due 5/26",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-055",
+        "name": "Risk register creation \u2013 Owner: VP Operations \u2013 Due 5/05",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-056",
+        "name": "Contingency budget approval \u2013 Owner: Finance Lead \u2013 Due 5/08",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-057",
+        "name": "Backup facilitator identification \u2013 Owner: VP Strategy \u2013 Due 5/10",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-058",
+        "name": "Daily risk check\u2011ins during off\u2011site \u2013 Owner: Operations Manager \u2013 6/10\u20116/12",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-059",
+        "name": "Post\u2011offsite risk review \u2013 Owner: VP Operations \u2013 Due 6/20",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "state": "not-started"
+      }
+    ],
+    "history": []
+  }
+}

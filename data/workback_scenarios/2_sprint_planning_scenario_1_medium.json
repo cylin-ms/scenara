@@ -1,0 +1,928 @@
+{
+  "scenario_name": "Q3 Sprint\u202f5 Planning \u2013 Mobile Payments Checkout Revamp",
+  "scenario_number": 1,
+  "meeting_type": "Sprint Planning Meeting",
+  "quality_level": "medium",
+  "workback_prompt": "Create a detailed work\u2011back plan for FinTechCo's Velocity Payments Squad Sprint\u202f5 (2025\u201112\u201102 planning meeting). The plan should break down each deliverable into weekly tasks, assign owners, list required approvals, identify critical path items (API v2 release, design hand\u2011off, PCI compliance review), and include milestones for testing, beta release, and production deployment. Include buffer time for unforeseen blockers and ensure the plan respects the $45k budget and PCI\u202fDSS\u202f4.0 compliance requirements.\n\nGenerate a MEDIUM QUALITY workback plan with these characteristics:\n- Most major tasks present but some gaps\n- Reasonable task descriptions\n- Some dependencies defined\n- Most tasks have owners\n- Milestones present but may lack detail\n- Generally realistic timelines\n- Some consideration of risks\n- Key deliverables identified\n\nIMPORTANT: Generate a plan that naturally exhibits MEDIUM quality characteristics.\nDo not explicitly label the plan as \"medium quality\" - let the quality emerge from the content.",
+  "generated_at": "2025-11-17T04:21:53.856897",
+  "analysis": "# Outcomes\n\n## 1. API\u202fv2 Release (Core payment\u2011processing API)  \nDeliver a production\u2011ready API\u202fv2 that supports the new Velocity Payments features and meets PCI\u202fDSS\u202f4.0 security requirements.  \n\n**Artifact references:** none (derived from user brief)\n\n### Reasoning  \nThe user explicitly listed \u201cAPI v2 release\u201d as a critical\u2011path item. Without this component the downstream design hand\u2011off, testing, and beta release cannot proceed, so it must be an Outcome with its own set of tasks, approvals, and owners.\n\n### Approach  \n1. **Scope & specification finalisation** \u2013 Product Owner and API Engineer confirm the functional and security specs.  \n2. **Development sprint** \u2013 API Engineer (lead) with two backend developers builds the endpoints.  \n3. **Internal security review** \u2013 Security Engineer conducts a code\u2011level PCI\u2011DSS\u202f4.0 checklist review.  \n4. **Compliance sign\u2011off** \u2013 Compliance Lead obtains PCI\u202fDSS\u202f4.0 approval from the Compliance Committee.  \n5. **Staging deployment & smoke test** \u2013 Release Manager pushes to staging; QA Lead runs smoke tests.  \n6. **Release to production** \u2013 After sign\u2011off, Release Manager schedules the production cut\u2011over.  \n\nBuffer time of 2\u202fdays is built after the security review to absorb any remediation work. The total cost is tracked against the $45\u202fk budget (see budget note in the breakdown).\n\n---\n\n## 2. Design Hand\u2011off (UX/UI & integration diagrams)  \nProvide the finalized UI/UX designs and integration diagrams to the development team, ensuring they reflect the new API capabilities and PCI\u2011compliant flows.  \n\n**Artifact references:** none\n\n### Reasoning  \n\u201cDesign hand\u2011off\u201d is another critical\u2011path item. It must be completed before developers can start detailed implementation and before testing can be meaningfully scripted.\n\n### Approach  \n1. **Finalize wireframes & high\u2011fidelity mocks** \u2013 UX Designer with Product Owner.  \n2. **Create integration diagrams** \u2013 Solution Architect maps UI actions to API\u202fv2 calls.  \n3. **Design review meeting** \u2013 All squad members (Product, Tech Lead, Compliance Lead) confirm that designs respect PCI\u2011DSS\u202f4.0 constraints (e.g., no sensitive data stored on client).  \n4. **Formal hand\u2011off package** \u2013 UX Designer uploads assets to the shared repository; Tech Lead signs off as \u201cdesign ready\u201d.  \n\nA 1\u2011day buffer is added after the review to incorporate any last\u2011minute compliance feedback.\n\n---\n\n## 3. PCI\u202fDSS\u202f4.0 Compliance Review  \nObtain formal approval that the new Velocity Payments feature set, including API\u202fv2 and UI flows, satisfies PCI\u202fDSS\u202f4.0 requirements.  \n\n**Artifact references:** none\n\n### Reasoning  \nPCI compliance is a mandatory gate before any beta or production release. It is listed as a critical\u2011path item, so it must be tracked as a separate Outcome with its own approvals and owners.\n\n### Approach  \n1. **Self\u2011assessment checklist** \u2013 Compliance Lead completes the PCI\u202fDSS\u202f4.0 self\u2011assessment based on design and implementation artifacts.  \n2. **External audit (if required)** \u2013 Schedule a brief audit with the external PCI auditor (optional, depending on risk appetite).  \n3. **Remediation** \u2013 Development team addresses any findings (typically 1\u20132\u202fdays).  \n4. **Final sign\u2011off** \u2013 Compliance Committee issues the \u201cPCI\u202fDSS\u202f4.0 Approved\u201d certificate.  \n\nA 2\u2011day buffer is placed after the audit to allow for any remediation.\n\n---\n\n## 4. Integrated Testing Cycle (Unit \u2192 Integration \u2192 End\u2011to\u2011End)  \nExecute a full testing suite covering unit, integration, and end\u2011to\u2011end scenarios, confirming that the system works end\u2011to\u2011end and remains PCI compliant.  \n\n**Artifact references:** none\n\n### Reasoning  \nTesting is required to reach the \u201cbeta release\u201d milestone. The plan must include weekly testing tasks, owners, and dependencies on the API release and design hand\u2011off.\n\n### Approach  \n1. **Test plan creation** \u2013 QA Lead drafts test cases aligned with functional specs and PCI controls.  \n2. **Unit testing** \u2013 Developers write/execute unit tests during development (continuous).  \n3. **Integration testing** \u2013 QA Lead runs integration tests once API\u202fv2 is in staging and designs are handed off.  \n4. **End\u2011to\u2011end (E2E) testing** \u2013 QA Lead runs automated E2E scripts covering the full payment flow.  \n5. **Defect triage** \u2013 Tech Lead prioritises any failures; developers fix within the same sprint.  \n\nA 1\u2011day buffer is kept after each testing phase to address any high\u2011severity defects.\n\n---\n\n## 5. Beta Release (Limited internal/external users)  \nDeploy the new Velocity Payments feature to a controlled group of beta users for real\u2011world validation.  \n\n**Artifact references:** none\n\n### Reasoning  \nBeta release is a milestone that follows testing and PCI sign\u2011off. It provides an opportunity to surface usability or security issues before full production rollout.\n\n### Approach  \n1. **Beta environment provisioning** \u2013 Release Manager creates a separate environment mirroring production.  \n2. **User selection & communication** \u2013 Product Owner identifies beta participants and sends onboarding instructions.  \n3. **Beta deployment** \u2013 Release Manager pushes the release candidate; QA Lead monitors health metrics.  \n4. **Feedback collection** \u2013 Product Owner aggregates feedback; Tech Lead assesses impact.  \n\nA 2\u2011day buffer is added after beta to incorporate any quick\u2011fix changes.\n\n---\n\n## 6. Production Deployment (Go\u2011Live)  \nLaunch the Velocity Payments feature to all customers, ensuring smooth cut\u2011over and post\u2011deployment monitoring.  \n\n**Artifact references:** none\n\n### Reasoning  \nThe final outcome of the sprint is the production deployment. It depends on all prior outcomes (API release, design hand\u2011off, PCI approval, testing, beta validation).\n\n### Approach  \n1. **Release plan sign\u2011off** \u2013 All squad leads (Product, Tech, Compliance, Release) approve the go\u2011live checklist.  \n2. **Production rollout** \u2013 Release Manager schedules the deployment window (preferably low\u2011traffic period).  \n3. **Post\u2011deployment monitoring** \u2013 Ops Engineer watches key metrics (latency, error rates, PCI audit logs) for 48\u202fhours.  \n4. **Rollback contingency** \u2013 Documented rollback steps ready; Release Manager can trigger if critical issues arise.  \n\nA 1\u2011day buffer is reserved after go\u2011live for any immediate hot\u2011fixes.\n\n---\n\n## 7. Budget & Resource Tracking  \nMaintain visibility that the sprint\u2019s total spend does not exceed the $45\u202fk limit while delivering all required outcomes.  \n\n**Artifact references:** none\n\n### Reasoning  \nThe user explicitly called out a $45\u202fk budget constraint. Tracking this as an Outcome ensures the plan includes regular cost reviews.\n\n### Approach  \n1. **Initial cost estimate** \u2013 Finance Analyst (or Product Owner) breaks down labor and any external audit fees.  \n2. **Weekly spend review** \u2013 At each sprint stand\u2011up, the team compares actual spend to forecast.  \n3. **Variance mitigation** \u2013 If projected spend > $45\u202fk, re\u2011prioritise low\u2011impact tasks or negotiate scope reduction.  \n\nA small contingency of $2\u202fk is built into the estimate to absorb minor overruns.\n\n---\n\n# Breakdown\n\n```\nSprint 5 (2025\u201112\u201102 planning) \u2192 5 weeks (ending 2025\u201112\u201131)\nWeek 0 (Planning) \u2013 2025\u201112\u201102\nWeek 1 \u2013 2025\u201112\u201103 to 2025\u201112\u201109\nWeek 2 \u2013 2025\u201112\u201110 to 2025\u201112\u201116\nWeek 3 \u2013 2025\u201112\u201117 to 2025\u201112\u201123\nWeek 4 \u2013 2025\u201112\u201124 to 2025\u201112\u201130\nWeek 5 \u2013 2025\u201112\u201131 (buffer & final sign\u2011off)\n```\n\n### 1. Planning & Kick\u2011off (Week\u202f0)\n- 1.1. Sprint planning meeting \u2013 **Product Owner** (owner)  \n- 1.2. Agree on budget baseline \u2013 **Finance Analyst** (owner)  \n- 1.3. Identify owners for each Outcome \u2013 **Tech Lead** (owner)  \n\n### 2. API\u202fv2 Development (Weeks\u202f1\u20112)\n- 2.1. Finalise API spec (functional + PCI controls) \u2013 **Product Owner / API Engineer**  \n- 2.2. Implement endpoints (dev\u20111, dev\u20112) \u2013 **API Engineer**  \n- 2.3. Unit test creation \u2013 **Developers** (continuous)  \n- 2.4. Internal security review \u2013 **Security Engineer**  \n- 2.5. Buffer: security remediation (2\u202fdays) \u2013 **Developers**  \n\n*Depends on: 1.1\u20131.3*  \n\n### 3. Design Hand\u2011off (Weeks\u202f1\u20112)\n- 3.1. Complete high\u2011fidelity mockups \u2013 **UX Designer**  \n- 3.2. Produce integration diagrams \u2013 **Solution Architect**  \n- 3.3. Design review meeting (PCI constraints) \u2013 **Product Owner, Tech Lead, Compliance Lead**  \n- 3.4. Package & upload assets \u2013 **UX Designer**  \n\n*Can run in parallel with 2.1\u20132.5*  \n\n### 4. PCI\u202fDSS\u202f4.0 Review (Weeks\u202f2\u20113)\n- 4.1. Self\u2011assessment checklist \u2013 **Compliance Lead**  \n- 4.2. External auditor session (if needed) \u2013 **Compliance Lead**  \n- 4.3. Remediation of findings \u2013 **Developers / Security Engineer** (2\u202fdays buffer)  \n- 4.4. Final PCI sign\u2011off \u2013 **Compliance Committee**  \n\n*Depends on: 2.4 (security review) & 3.3 (design review)*  \n\n### 5. Integrated Testing Cycle (Weeks\u202f3\u20114)\n- 5.1. Draft test plan \u2013 **QA Lead**  \n- 5.2. Run integration tests (API\u202fv2 in staging, design assets) \u2013 **QA Lead**  \n- 5.3. Execute E2E tests \u2013 **QA Lead**  \n- 5.4. Defect triage & fix \u2013 **Tech Lead + Developers**  \n- 5.5. Buffer for high\u2011severity fixes \u2013 **Developers** (1\u202fday)  \n\n*Depends on: 2.5 (API ready) & 3.4 (design hand\u2011off) & 4.4 (PCI approved)*  \n\n### 6. Beta Release (Week\u202f4)\n- 6.1. Provision beta environment \u2013 **Release Manager**  \n- 6.2. Select beta participants & send onboarding \u2013 **Product Owner**  \n- 6.3. Deploy to beta \u2013 **Release Manager**  \n- 6.4. Monitor beta health & collect feedback \u2013 **Ops Engineer / Product Owner**  \n- 6.5. Buffer for quick fixes \u2013 **Developers** (2\u202fdays)  \n\n*Depends on: 5.4 (defects resolved)*  \n\n### 7. Production Deployment (Week\u202f5)\n- 7.1. Final go\u2011live checklist sign\u2011off \u2013 **All leads**  \n- 7.2. Schedule production window \u2013 **Release Manager**  \n- 7.3. Deploy to production \u2013 **Release Manager**  \n- 7.4. Post\u2011deployment monitoring (48\u202fh) \u2013 **Ops Engineer**  \n- 7.5. Buffer for hot\u2011fixes \u2013 **Developers** (1\u202fday)  \n\n*Depends on: 6.4 (beta validation)*  \n\n### 8. Budget & Risk Tracking (Ongoing)\n- 8.1. Weekly spend review \u2013 **Product Owner** (stand\u2011up)  \n- 8.2. Update risk register (resource constraints, compliance delays) \u2013 **Tech Lead**  \n- 8.3. Contingency spend approval if needed \u2013 **Finance Analyst**  \n\n*Runs in parallel with all other tasks.*\n\n---\n\n## Risk Highlights & Mitigations (Medium\u2011quality level)\n\n| Risk | Impact | Likelihood | Mitigation |\n|------|--------|------------|------------|\n| PCI audit findings require major re\u2011architecture | High | Medium | Early security review (2.4) and design PCI check (3.3) to catch issues early. |\n| API\u202fv2 development overruns budget | High | Low | Weekly budget tracking (8.1) and built\u2011in $2\u202fk contingency. |\n| Design hand\u2011off delayed due to late UI decisions | Medium | Medium | Fixed design review meeting (3.3) with clear deadline; buffer day after. |\n| Beta user recruitment shortfall | Medium | Low | Product Owner pre\u2011identifies backup participants; buffer time for onboarding. |\n| Production deployment window conflicts with holiday traffic | Medium | Medium | Schedule go\u2011live on low\u2011traffic day (e.g., weekend) and confirm with Ops. |\n\n---\n\n**Note on Quality Level** \u2013 The plan lists the major deliverables, owners, approvals, dependencies, and buffers, while leaving a few lower\u2011detail gaps (e.g., exact cost breakdown, specific test case titles). This matches the requested medium\u2011quality characteristics.",
+  "plan": {
+    "id": "document-001",
+    "name": "Sprint 5 Workback Plan",
+    "details": "Workback plan for Sprint 5 (2025-12-02 to 2025-12-31) covering API v2 release, design hand\u2011off, PCI DSS 4.0 compliance, testing, beta release, production deployment and budget tracking.",
+    "draft": true,
+    "participants": [
+      {
+        "name": "Product Owner",
+        "email": "productowner@example.com",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Finance Analyst",
+        "email": "finance@example.com",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Tech Lead",
+        "email": "techlead@example.com",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "API Engineer",
+        "email": "apiengineer@example.com",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Developer 1",
+        "email": "dev1@example.com",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Developer 2",
+        "email": "dev2@example.com",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Security Engineer",
+        "email": "security@example.com",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "UX Designer",
+        "email": "uxdesigner@example.com",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Solution Architect",
+        "email": "architect@example.com",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Compliance Lead",
+        "email": "compliancelead@example.com",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Compliance Committee",
+        "email": "compliancecommittee@example.com",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "QA Lead",
+        "email": "qalead@example.com",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Release Manager",
+        "email": "releasemanager@example.com",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Ops Engineer",
+        "email": "ops@example.com",
+        "details": "",
+        "draft": true
+      }
+    ],
+    "references": [],
+    "deliverables": [],
+    "tasks": [
+      {
+        "id": "task-001",
+        "name": "Sprint planning meeting",
+        "draft": true,
+        "details": "Kick\u2011off meeting to align on sprint goals.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "productowner@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002",
+        "name": "Agree on budget baseline",
+        "draft": true,
+        "details": "Establish the $45\u202fk budget baseline for the sprint.",
+        "dependencies": [
+          "task-001"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "finance@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003",
+        "name": "Identify owners for each Outcome",
+        "draft": true,
+        "details": "Assign outcome owners (Product, Tech, Compliance, Release, etc.).",
+        "dependencies": [
+          "task-002"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "techlead@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-004",
+        "name": "Finalize API spec (functional + PCI controls)",
+        "draft": true,
+        "details": "Product Owner and API Engineer confirm functional and security specifications.",
+        "dependencies": [
+          "task-001",
+          "task-002",
+          "task-003"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "productowner@example.com",
+          "apiengineer@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-005",
+        "name": "Implement API endpoints",
+        "draft": true,
+        "details": "API Engineer leads development with two backend developers.",
+        "dependencies": [
+          "task-004"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "apiengineer@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-006",
+        "name": "Unit test creation (continuous)",
+        "draft": true,
+        "details": "Developers write and run unit tests alongside implementation.",
+        "dependencies": [
+          "task-005"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "dev1@example.com",
+          "dev2@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-007",
+        "name": "Internal security review",
+        "draft": true,
+        "details": "Security Engineer conducts PCI\u2011DSS\u202f4.0 checklist review of the code.",
+        "dependencies": [
+          "task-005"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "security@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-008",
+        "name": "Security remediation buffer",
+        "draft": true,
+        "details": "Developers address any findings from the internal security review.",
+        "dependencies": [
+          "task-007"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "dev1@example.com",
+          "dev2@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-009",
+        "name": "Complete high\u2011fidelity mockups",
+        "draft": true,
+        "details": "UX Designer produces final UI designs.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "uxdesigner@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-010",
+        "name": "Produce integration diagrams",
+        "draft": true,
+        "details": "Solution Architect creates diagrams showing API\u2011design integration.",
+        "dependencies": [
+          "task-009"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "architect@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-011",
+        "name": "Design review meeting",
+        "draft": true,
+        "details": "Product Owner, Tech Lead and Compliance Lead review designs and PCI considerations.",
+        "dependencies": [
+          "task-009",
+          "task-010"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "productowner@example.com",
+          "techlead@example.com",
+          "compliancelead@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-012",
+        "name": "Package & upload assets",
+        "draft": true,
+        "details": "UX Designer packages final mockups and integration diagrams for delivery.",
+        "dependencies": [
+          "task-011"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "uxdesigner@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-013",
+        "name": "Self\u2011assessment checklist",
+        "draft": true,
+        "details": "Compliance Lead completes PCI\u2011DSS self\u2011assessment based on API and design outputs.",
+        "dependencies": [
+          "task-007",
+          "task-011"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "compliancelead@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-014",
+        "name": "External auditor session",
+        "draft": true,
+        "details": "Compliance Lead coordinates with external auditor for PCI review.",
+        "dependencies": [
+          "task-013"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "compliancelead@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-015",
+        "name": "Remediation of findings",
+        "draft": true,
+        "details": "Developers and Security Engineer address any issues raised by the auditor.",
+        "dependencies": [
+          "task-014"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "dev1@example.com",
+          "dev2@example.com",
+          "security@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-016",
+        "name": "Final PCI sign\u2011off",
+        "draft": true,
+        "details": "Compliance Committee formally approves PCI\u2011DSS compliance.",
+        "dependencies": [
+          "task-015"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "compliancecommittee@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-017",
+        "name": "Draft test plan",
+        "draft": true,
+        "details": "QA Lead creates test plan after API, design and PCI approvals.",
+        "dependencies": [
+          "task-008",
+          "task-012",
+          "task-016"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "qalead@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-018",
+        "name": "Run integration tests",
+        "draft": true,
+        "details": "QA Lead executes integration test suite against the API.",
+        "dependencies": [
+          "task-017"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "qalead@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-019",
+        "name": "Execute E2E tests",
+        "draft": true,
+        "details": "QA Lead runs end\u2011to\u2011end test scenarios.",
+        "dependencies": [
+          "task-018"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "qalead@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-020",
+        "name": "Defect triage & fix",
+        "draft": true,
+        "details": "Tech Lead coordinates fixing of any defects found during testing.",
+        "dependencies": [
+          "task-019"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "techlead@example.com",
+          "dev1@example.com",
+          "dev2@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-021",
+        "name": "Buffer for high\u2011severity fixes",
+        "draft": true,
+        "details": "Allocated day to address any high\u2011severity issues after testing.",
+        "dependencies": [
+          "task-020"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "dev1@example.com",
+          "dev2@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-022",
+        "name": "Provision beta environment",
+        "draft": true,
+        "details": "Release Manager sets up the beta deployment infrastructure.",
+        "dependencies": [
+          "task-020"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "releasemanager@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-023",
+        "name": "Select beta participants & send onboarding",
+        "draft": true,
+        "details": "Product Owner identifies and contacts beta users.",
+        "dependencies": [
+          "task-022"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "productowner@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-024",
+        "name": "Deploy to beta",
+        "draft": true,
+        "details": "Release Manager pushes the build to the beta environment.",
+        "dependencies": [
+          "task-023"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "releasemanager@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-025",
+        "name": "Monitor beta health & collect feedback",
+        "draft": true,
+        "details": "Ops Engineer and Product Owner track beta performance and gather user feedback.",
+        "dependencies": [
+          "task-024"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "ops@example.com",
+          "productowner@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-026",
+        "name": "Buffer for quick fixes",
+        "draft": true,
+        "details": "Allocated day to address any issues discovered during beta.",
+        "dependencies": [
+          "task-025"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "dev1@example.com",
+          "dev2@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-027",
+        "name": "Final go\u2011live checklist sign\u2011off",
+        "draft": true,
+        "details": "All leads (Product, Tech, Compliance, Release) approve readiness for production.",
+        "dependencies": [
+          "task-026"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "productowner@example.com",
+          "techlead@example.com",
+          "compliancelead@example.com",
+          "releasemanager@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-028",
+        "name": "Schedule production window",
+        "draft": true,
+        "details": "Release Manager confirms the production deployment slot.",
+        "dependencies": [
+          "task-027"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "releasemanager@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-029",
+        "name": "Deploy to production",
+        "draft": true,
+        "details": "Release Manager performs the production rollout.",
+        "dependencies": [
+          "task-028"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "releasemanager@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-030",
+        "name": "Post\u2011deployment monitoring",
+        "draft": true,
+        "details": "Ops Engineer monitors production stability after go\u2011live.",
+        "dependencies": [
+          "task-029"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "ops@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-031",
+        "name": "Buffer for hot\u2011fixes",
+        "draft": true,
+        "details": "Allocated day to apply any urgent fixes post\u2011deployment.",
+        "dependencies": [
+          "task-030"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "dev1@example.com",
+          "dev2@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-032",
+        "name": "Weekly spend review",
+        "draft": true,
+        "details": "Product Owner reviews actual spend versus budget each week.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "productowner@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-033",
+        "name": "Update risk register",
+        "draft": true,
+        "details": "Tech Lead updates the risk register with current issues.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "techlead@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-034",
+        "name": "Contingency spend approval",
+        "draft": true,
+        "details": "Finance Analyst approves any additional budget needed.",
+        "dependencies": [
+          "task-032"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "finance@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-009",
+        "name": "Complete high\u2011fidelity mockups",
+        "draft": true,
+        "details": "UX Designer produces final UI mockups.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "uxdesigner@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-010",
+        "name": "Produce integration diagrams",
+        "draft": true,
+        "details": "Solution Architect creates diagrams linking API and UI.",
+        "dependencies": [
+          "task-009"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "architect@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-011",
+        "name": "Design review meeting",
+        "draft": true,
+        "details": "Product Owner, Tech Lead and Compliance Lead review designs and PCI considerations.",
+        "dependencies": [
+          "task-009",
+          "task-010"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "productowner@example.com",
+          "techlead@example.com",
+          "compliancelead@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-012",
+        "name": "Package & upload assets",
+        "draft": true,
+        "details": "UX Designer packages final mockups and diagrams for delivery.",
+        "dependencies": [
+          "task-011"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "uxdesigner@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-013",
+        "name": "Self\u2011assessment checklist",
+        "draft": true,
+        "details": "Compliance Lead completes PCI\u2011DSS self\u2011assessment based on API and design outputs.",
+        "dependencies": [
+          "task-007",
+          "task-011"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "compliancelead@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-014",
+        "name": "External auditor session",
+        "draft": true,
+        "details": "Compliance Lead coordinates with external auditor for PCI review.",
+        "dependencies": [
+          "task-013"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "compliancelead@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-015",
+        "name": "Remediation of findings",
+        "draft": true,
+        "details": "Developers and Security Engineer fix issues identified by the auditor.",
+        "dependencies": [
+          "task-014"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "dev1@example.com",
+          "dev2@example.com",
+          "security@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-016",
+        "name": "Final PCI sign\u2011off",
+        "draft": true,
+        "details": "Compliance Committee formally approves PCI compliance.",
+        "dependencies": [
+          "task-015"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "compliancecommittee@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-017",
+        "name": "Draft test plan",
+        "draft": true,
+        "details": "QA Lead creates detailed test plan after API, design and PCI approvals.",
+        "dependencies": [
+          "task-008",
+          "task-012",
+          "task-016"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "qalead@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-018",
+        "name": "Run integration tests",
+        "draft": true,
+        "details": "QA Lead executes integration test suite.",
+        "dependencies": [
+          "task-017"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "qalead@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-019",
+        "name": "Execute E2E tests",
+        "draft": true,
+        "details": "QA Lead runs end\u2011to\u2011end test scenarios.",
+        "dependencies": [
+          "task-018"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "qalead@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-020",
+        "name": "Defect triage & fix",
+        "draft": true,
+        "details": "Tech Lead coordinates fixing of defects uncovered during testing.",
+        "dependencies": [
+          "task-019"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "techlead@example.com",
+          "dev1@example.com",
+          "dev2@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-021",
+        "name": "Buffer for high\u2011severity fixes",
+        "draft": true,
+        "details": "Allocated day to address any critical issues after defect triage.",
+        "dependencies": [
+          "task-020"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "dev1@example.com",
+          "dev2@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      }
+    ],
+    "history": []
+  }
+}

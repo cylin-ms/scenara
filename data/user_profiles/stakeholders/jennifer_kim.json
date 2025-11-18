@@ -1,0 +1,156 @@
+{
+  "basic_info": {
+    "full_name": "Jennifer Kim",
+    "age": 48,
+    "location": "San Francisco, CA, USA",
+    "timezone": "America/Los_Angeles (PST/PDT)",
+    "years_experience": 25,
+    "education": [
+      {
+        "degree": "B.S. Computer Science",
+        "institution": "University of California, Berkeley",
+        "year": 1998
+      },
+      {
+        "degree": "M.S. Electrical Engineering",
+        "institution": "Stanford University",
+        "year": 2000
+      },
+      {
+        "degree": "MBA, Technology Management",
+        "institution": "Harvard Business School",
+        "year": 2006
+      }
+    ]
+  },
+  "work_habits": {
+    "preferred_working_hours": "7:00 am – 4:00 pm PST (core), with flexibility for early calls with Asia Pacific teams",
+    "peak_productivity_times": "7:30 am – 10:30 am",
+    "communication_style": {
+      "async_preference": true,
+      "sync_preference": "brief daily stand‑ups (15 min) and weekly strategy syncs",
+      "average_response_time": "within 2 hours during workday"
+    },
+    "meeting_preferences": {
+      "minimizes_meetings": true,
+      "prefers_short_structured_meetings": true,
+      "face_to_face": "quarterly off‑site retreats; otherwise video",
+      "meeting_free_focus_blocks_per_day": 2
+    },
+    "work_environment": "Hybrid (3 days in office, 2 days remote)",
+    "focus_time_requirements": "minimum 3 hours of uninterrupted focus per day"
+  },
+  "personality": {
+    "mbti": "ENTJ",
+    "decision_making_approach": "Data‑driven with strategic intuition; prefers consensus after rapid analysis",
+    "risk_tolerance": "Moderate‑high (willing to pilot emerging tech but requires mitigation plans)",
+    "collaboration_style": "Directive yet empowering; sets clear goals and delegates authority",
+    "stress_management_approach": "Scheduled micro‑breaks, mindfulness meditation, and delegating non‑critical tasks",
+    "conflict_resolution_style": "Direct but diplomatic; focuses on facts and future‑oriented solutions"
+  },
+  "skills": {
+    "core_technical_skills": {
+      "software_architecture": 9,
+      "cloud_infrastructure (AWS/GCP)": 8,
+      "microservices_design": 9,
+      "machine_learning_ops": 7,
+      "security_engineering": 7,
+      "devops_cicd": 8,
+      "data_engineering": 6
+    },
+    "leadership_abilities": {
+      "strategic_vision": 9,
+      "team_building": 8,
+      "change_management": 8,
+      "budget_management": 7,
+      "executive_communication": 9,
+      "coaching_mentorship": 7
+    },
+    "domain_expertise_areas": [
+      "Enterprise SaaS platforms",
+      "FinTech compliance systems",
+      "AI‑enabled product pipelines",
+      "Scalable distributed systems"
+    ],
+    "learning_agility": 9,
+    "tools_proficiency": [
+      "Jira/Confluence",
+      "GitHub/GitLab",
+      "Terraform",
+      "Kubernetes",
+      "Datadog",
+      "Tableau",
+      "Slack"
+    ],
+    "languages_spoken": [
+      "English (native)",
+      "Korean (fluent)",
+      "Mandarin (conversational)"
+    ]
+  },
+  "performance": {
+    "task_completion_rate": 94,
+    "quality_score": 92,
+    "estimation_accuracy": 88,
+    "multitasking_ability": 7,
+    "performance_under_pressure": 9
+  },
+  "availability": {
+    "available_hours_per_week": 45,
+    "timezone_and_working_hours": "PST/PDT, core 7 am‑4 pm with occasional early calls for APAC",
+    "planned_time_off_days_per_year": 20,
+    "other_commitments": [
+      "Board member of a local non‑profit STEM education org (quarterly meetings)",
+      "Guest lecturer at Stanford (2 lectures per semester)"
+    ],
+    "travel_flexibility": "Up to 30 % of time, typically 2 weeks per quarter for client visits and conferences"
+  },
+  "personal_factors": {
+    "family_status": "Married, two teenage children (15 & 17)",
+    "caregiving_responsibilities": "None currently; occasional weekend school events",
+    "commute_situation": "15‑minute drive to office; uses electric bike on remote days",
+    "health_considerations": "Mild hypertension managed with medication and regular exercise",
+    "career_motivation": "Passionate about building resilient, ethical technology at scale and mentoring the next generation of engineering leaders"
+  },
+  "project_impact": {
+    "reliability": 9,
+    "innovation_tendency": 8,
+    "documentation_quality": 8,
+    "mentorship_capability": 7,
+    "influence_level": 9
+  },
+  "collaboration": {
+    "meeting_frequency_preference": "Bi‑weekly deep‑dive reviews; weekly 15‑min stand‑ups",
+    "communication_channels_preference": [
+      "Slack (async)",
+      "Email for formal decisions",
+      "Miro for visual brainstorming"
+    ],
+    "feedback_style": "Direct with data backing; provides actionable next steps",
+    "knowledge_sharing_habits": "Monthly tech‑talks, quarterly white‑papers, maintains a public engineering blog",
+    "cross_team_collaboration": 8
+  },
+  "risk_factors": {
+    "potential_bottlenecks": [
+      "Heavy reliance on Jennifer for final architectural sign‑off can delay delivery if she is overloaded",
+      "Limited depth in data‑engineering within her immediate reports"
+    ],
+    "backup_person_needed": "Senior Director of Platform Engineering (Alex Rivera) to cover critical decisions during her absence",
+    "ramp_up_time_weeks": 4,
+    "context_switching_tolerance": 6,
+    "burnout_risk_factors": [
+      "High expectations from executive leadership",
+      "Concurrent board and lecturing commitments",
+      "Mild health condition requiring regular monitoring"
+    ]
+  },
+  "_metadata": {
+    "generated_at": "2025-11-17T15:06:37.675547",
+    "name": "Jennifer Kim",
+    "role": "VP of Engineering",
+    "seniority": "executive",
+    "company": "TechCorp",
+    "model": "gpt-oss:120b",
+    "provider": "ollama"
+  }
+}

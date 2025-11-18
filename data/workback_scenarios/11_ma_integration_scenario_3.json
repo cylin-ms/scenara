@@ -1,0 +1,63 @@
+{
+  "scenario_name": "Apex BioPharma \u2013 NeuroGenix Therapeutics Integration (Extreme Complexity)",
+  "company_context": "Acquiring Company: **Apex BioPharma Inc.**, a global, publicly\u2011traded (NASDAQ: APBX) biopharmaceutical leader focused on oncology and immunology with $12B FY2024 revenue and 18,000 employees worldwide. Target Company: **NeuroGenix Therapeutics Ltd.**, a privately\u2011held European biotech specializing in neuro\u2011degenerative disease pipelines, ~1,200 employees, $850M FY2024 revenue, headquartered in Basel, Switzerland. Legal Close Date: **2025\u201112\u201115**. Integration Kickoff Date (Day\u202f0): **2025\u201112\u201120**. Integration Team (22 members) spans the following workstreams: HR, IT, Finance, Product Development, Sales & Marketing, Operations & Manufacturing, Regulatory Affairs, Legal & Compliance, Change Management, Integration PMO. Day\u20111 Priorities: payroll & benefits go\u2011live, core ERP (SAP) data migration, unified finance reporting, immediate customer communication, critical IT security cut\u2011over, joint leadership town\u2011hall. 100\u2011Day Plan Focus: capture $120M cost synergies, launch combined pipeline review, align sales territories, harmonize manufacturing sites, embed cultural integration initiatives. Cultural Considerations: Apex operates a US\u2011centric, data\u2011driven, hierarchical model; NeuroGenix has a European, collaborative, research\u2011first culture with strong autonomy. Synergy Targets: $120M cumulative cost synergies by Year\u202f2; $200M incremental revenue synergies by Year\u202f3. Communication Strategy: CEO\u2011led global town\u2011hall (Day\u202f1), weekly integration newsletters, dedicated intranet portal \u201cOneApex\u201d, quarterly external press releases, bilingual (English/German) updates for European staff.",
+  "meeting_event_details": "Integration Kickoff Meeting \u2013 **2025\u201112\u201120**, 09:00\u201112:00\u202fEST (3\u202fhours), Apex BioPharma Headquarters, New York City, 45th Floor \u2013 Conference Room \u201cSkyline\u201d. Virtual dial\u2011in via Teams for European participants. Agenda: integration charter review, workstream charters, Day\u20111 readiness status, risk register, communication rollout, Q&A.",
+  "stakeholders": [
+    "Dr. Maya Patel \u2013 Chief Executive Officer (Apex) \u2013 Overall integration sponsor",
+    "John Liu \u2013 Chief Financial Officer (Apex) \u2013 Finance & synergy tracking",
+    "Sofia Ramirez \u2013 Head of M&A (Apex) \u2013 Deal execution & governance",
+    "Michael O'Connor \u2013 Integration Lead (Apex) \u2013 PMO & overall schedule",
+    "Laura Chen \u2013 HR Lead (Apex) \u2013 Workforce alignment, retention, benefits",
+    "Raj Patel \u2013 IT Lead (Apex) \u2013 ERP migration, cybersecurity, infrastructure",
+    "Emily Grant \u2013 Finance Lead (Apex) \u2013 Consolidated reporting, accounting policies",
+    "Dr. Sven Keller \u2013 Product Development Lead (Apex) \u2013 Pipeline integration",
+    "Carlos Mendes \u2013 Sales & Marketing Lead (Apex) \u2013 Territory mapping, cross\u2011sell",
+    "Anita Singh \u2013 Operations & Manufacturing Lead (Apex) \u2013 Site rationalization",
+    "Dr. Ingrid Novak \u2013 Regulatory Affairs Lead (Apex) \u2013 FDA/EMA compliance",
+    "Thomas Greene \u2013 General Counsel (Apex) \u2013 Legal & compliance oversight",
+    "Rachel Adams \u2013 Change Management Lead (Apex) \u2013 Cultural integration, training",
+    "Diana Torres \u2013 Communications Lead (Apex) \u2013 Internal & external messaging",
+    "Victor Huang \u2013 PMO Lead (Apex) \u2013 Project controls, reporting",
+    "Dr. Markus Weber \u2013 CEO (NeuroGenix) \u2013 Target company sponsor",
+    "Claudia M\u00fcller \u2013 CFO (NeuroGenix) \u2013 Finance transition partner",
+    "Lars Berg \u2013 Head of R&D (NeuroGenix) \u2013 Pipeline stewardship",
+    "Sophie Dubois \u2013 HR Director (NeuroGenix) \u2013 Employee engagement",
+    "Johan Svensson \u2013 IT Director (NeuroGenix) \u2013 Legacy system hand\u2011over"
+  ],
+  "deliverables": [
+    "Integration Charter signed by both CEOs",
+    "Day\u20111 Readiness Checklist (HR, IT, Finance, Legal) with sign\u2011off",
+    "30\u201160\u201190 Day Milestone Schedule per workstream",
+    "Synergy Tracking Model (cost & revenue) in PowerBI",
+    "Cultural Integration Playbook (workshops, onboarding, metrics)",
+    "Comprehensive Communication Plan (internal, external, bilingual)",
+    "IT Migration Plan (SAP S/4HANA cut\u2011over, data validation, security)",
+    "Finance Consolidation Blueprint (GAAP/IFRS alignment, reporting calendar)",
+    "Regulatory Transition Checklist (clinical trial continuity, filings)",
+    "Risk Register with mitigation actions and owners"
+  ],
+  "success_criteria": [
+    "All Day\u20111 tasks completed within 48\u202fhours of legal close with zero critical incidents",
+    "\u226590\u202f% employee retention in the first 30\u202fdays post\u2011close",
+    "$50\u202fM of cost synergies realized by Day\u202f100",
+    "Zero disruption to ongoing clinical trials and regulatory submissions",
+    "IT systems fully operational (SAP, CRM) with <2\u202f% error rate in first month",
+    "Stakeholder satisfaction score \u226585\u202f% in post\u2011kickoff survey",
+    "All external communications released on schedule with positive media sentiment"
+  ],
+  "constraints": [
+    "Legal close must occur by 2025\u201112\u201115; integration kickoff no later than 2025\u201112\u201120",
+    "Integration budget capped at $10\u202fM (excluding transaction fees)",
+    "Both companies must maintain compliance with FDA, EMA, and GDPR throughout integration",
+    "Limited overlap of ERP systems \u2013 Apex SAP S/4HANA vs. NeuroGenix legacy Oracle; migration must be phased",
+    "Ongoing Phase\u202fIII clinical trials cannot be paused; data integrity must be preserved",
+    "Key talent in NeuroGenix R&D identified as retention risk \u2013 must be addressed in Day\u20111 plan"
+  ],
+  "workback_prompt": "Create a detailed workback plan for the Apex BioPharma \u2013 NeuroGenix Therapeutics integration scenario described above. The plan should cover all workstreams (HR, IT, Finance, Product Development, Sales & Marketing, Operations & Manufacturing, Regulatory Affairs, Legal & Compliance, Change Management, PMO), list day\u20111 priorities, outline 30\u201160\u201190\u2011day milestones, allocate resources (15\u201130 integration team members), identify risks and mitigation actions, define communication cadence (town\u2011halls, newsletters, intranet updates), and include metrics to track progress toward the $120M cost\u2011synergy and $200M revenue\u2011synergy targets.",
+  "meeting_type": "M&A Integration Planning",
+  "meeting_type_key": "11_ma_integration",
+  "scenario_number": 3,
+  "horizon": "T-90+",
+  "complexity": "Extreme",
+  "generated_at": "2025-11-17T08:24:13.545147"
+}

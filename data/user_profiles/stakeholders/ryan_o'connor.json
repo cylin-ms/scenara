@@ -1,0 +1,145 @@
+{
+  "basic_info": {
+    "full_name": "Ryan O'Connor",
+    "age": 38,
+    "location": "Boston, MA, USA",
+    "timezone": "America/New_York (UTC-5)",
+    "years_experience": 12,
+    "education": [
+      {
+        "degree": "B.Sc. Computer Science",
+        "institution": "University of Massachusetts Amherst",
+        "year": 2008
+      },
+      {
+        "degree": "M.Sc. Data Science",
+        "institution": "Carnegie Mellon University",
+        "year": 2010
+      }
+    ]
+  },
+  "work_habits": {
+    "preferred_working_hours": "Early bird (07:00‑16:00 local time)",
+    "peak_productivity_times": "08:00‑11:00",
+    "communication_style": "Async‑first, prefers written updates",
+    "response_time_expectation": "Typically within 4 hours on weekdays",
+    "meeting_preferences": "Limits to 2‑3 scheduled meetings per week; prefers 15‑minute stand‑ups and agenda‑driven sessions",
+    "work_environment": "Hybrid – 3 days in office (Boston HQ), 2 days remote",
+    "focus_time_requirements": "4‑5 hours of uninterrupted focus per day, usually in the morning"
+  },
+  "personality": {
+    "mbti": "INTJ",
+    "decision_making_approach": "Data‑driven with a strategic long‑term view; consults stakeholders for high‑impact choices",
+    "risk_tolerance": "Moderate – comfortable with experimental models but requires validation before production",
+    "collaboration_style": "Selective collaborator; deep‑dives with small expert groups rather than large crowds",
+    "stress_management_approach": "Scheduled micro‑breaks, short walks, and weekly yoga session",
+    "conflict_resolution_style": "Direct yet diplomatic; focuses on facts and seeks win‑win outcomes"
+  },
+  "skills": {
+    "core_technical_skills": {
+      "Python": 10,
+      "R": 7,
+      "SQL": 9,
+      "Machine Learning": 9,
+      "Deep Learning": 8,
+      "Statistics": 9,
+      "Data Visualization": 8,
+      "Big Data (Spark)": 7,
+      "Cloud (AWS)": 8,
+      "A/B Testing": 8
+    },
+    "leadership_abilities": 8,
+    "domain_expertise_areas": [
+      "E‑commerce recommendation systems",
+      "Fraud detection",
+      "Marketing mix modeling",
+      "Customer lifetime value forecasting"
+    ],
+    "learning_agility": 9,
+    "tools_proficiency": {
+      "Jupyter Notebook": 9,
+      "Git": 8,
+      "Docker": 7,
+      "Airflow": 7,
+      "Tableau": 7,
+      "PowerBI": 6,
+      "Kubernetes": 6,
+      "Confluence": 8,
+      "Slack": 9
+    },
+    "languages_spoken": [
+      "English (native)",
+      "Spanish (conversational)"
+    ]
+  },
+  "performance": {
+    "task_completion_rate": 93,
+    "quality_score": 96,
+    "estimation_accuracy": 88,
+    "multitasking_ability": 7,
+    "performance_under_pressure": 8
+  },
+  "availability": {
+    "available_hours_per_week": 45,
+    "timezone": "America/New_York (UTC-5)",
+    "typical_working_hours": "07:00‑16:00 EST",
+    "planned_time_off_days_per_year": 20,
+    "other_commitments": [
+      "Quarterly industry conference speaker (≈2 days/year)",
+      "Mentorship program (monthly 2‑hour sessions)"
+    ],
+    "travel_flexibility": "Moderate – up to 10% travel (≈5 weeks/year), prefers short trips"
+  },
+  "personal_factors": {
+    "family_status": "Married, two children (ages 5 and 2)",
+    "caregiving_responsibilities": "Shared with spouse; occasional morning childcare duties",
+    "commute_situation": "30‑minute drive to Boston office, occasional traffic delays",
+    "health_considerations": "Mild hypertension, managed with medication and lifestyle; avoids late‑night work",
+    "career_motivation": "Desire to shape AI strategy at scale, mentor the next generation, and deliver measurable business impact"
+  },
+  "project_impact": {
+    "reliability": 9,
+    "innovation_tendency": 8,
+    "documentation_quality": 8,
+    "mentorship_capability": 9,
+    "influence_level": 8
+  },
+  "collaboration": {
+    "meeting_frequency_preference": "Bi‑weekly team sync + ad‑hoc when needed; avoids daily meetings",
+    "communication_channels_preference": [
+      "Slack (primary)",
+      "Email (for formal updates)",
+      "Confluence (documentation)",
+      "Jira (task tracking)"
+    ],
+    "feedback_style": "Direct but diplomatic; provides data‑backed suggestions",
+    "knowledge_sharing_habits": "Publishes detailed Jupyter notebooks, writes quarterly white‑papers, runs monthly brown‑bag talks",
+    "cross_team_collaboration": 8
+  },
+  "risk_factors": {
+    "potential_bottlenecks": [
+      "Heavy reliance on his expertise for model validation could cause delays if he’s unavailable",
+      "Limited early‑morning availability due to family routine"
+    ],
+    "backup_person_needed": {
+      "name": "Maya Patel",
+      "role": "Senior Data Engineer"
+    },
+    "ramp_up_time_weeks": 3,
+    "context_switching_tolerance": 6,
+    "burnout_risk_factors": [
+      "Extended periods of deep focus without breaks",
+      "High‑stakes project deadlines",
+      "Travel combined with tight sprint cycles"
+    ]
+  },
+  "_metadata": {
+    "generated_at": "2025-11-17T15:22:20.821421",
+    "name": "Ryan O'Connor",
+    "role": "Data Scientist",
+    "seniority": "senior",
+    "company": "TechCorp",
+    "model": "gpt-oss:120b",
+    "provider": "ollama"
+  }
+}

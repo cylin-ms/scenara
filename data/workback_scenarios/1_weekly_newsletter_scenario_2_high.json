@@ -1,0 +1,947 @@
+{
+  "scenario_name": "Weekly GreenPulse Customer Success Newsletter",
+  "scenario_number": 2,
+  "meeting_type": "Weekly Team Newsletter",
+  "quality_level": "high",
+  "workback_prompt": "Create a detailed workback plan for the 'Weekly GreenPulse Customer Success Newsletter' at EcoTech Solutions. The plan should start from the send date (Friday, November 29, 2025, 09:00\u202fAM PST) and work backwards, covering all tasks, owners, durations, dependencies, and milestones needed to meet the deadline and success criteria outlined in the scenario. Include steps for content drafting, stakeholder reviews, design asset creation, approval workflow, email build, testing, analytics setup, and post\u2011send reporting. Highlight any risk mitigation actions for the constraints (budget, compliance, and product\u2011release dependencies).\n\nGenerate a HIGH QUALITY workback plan with these characteristics:\n- Comprehensive task coverage\n- Clear, actionable task descriptions\n- Well-defined dependencies\n- All tasks assigned to specific owners\n- Clear milestones with completion criteria\n- Realistic timelines with buffers\n- Proactive risk management\n- Complete deliverable list\n\nIMPORTANT: Generate a plan that naturally exhibits HIGH quality characteristics.\nDo not explicitly label the plan as \"high quality\" - let the quality emerge from the content.",
+  "generated_at": "2025-11-17T04:08:13.249259",
+  "analysis": "# Outcomes\n\n## Deliver Weekly\u202fGreenPulse Customer Success Newsletter on\u202fFriday\u202f29\u202fNov\u202f2025\u202f09:00\u202fAM\u202fPST  \nA complete, compliant, and on\u2011budget newsletter is sent to the GreenPulse subscriber list, meeting all success criteria (on\u2011time delivery, brand\u2011consistent design, accurate product\u2011release information, and measurable engagement).  \nArtifact references: None  \n\n### Reasoning  \nThe user\u2019s request is to create a **work\u2011back plan** that starts from the send date and covers every required activity (content drafting, stakeholder reviews, design, approvals, build, testing, analytics, reporting) while addressing constraints (budget, compliance, product\u2011release dependencies).\u202fAll of these activities together constitute the single, overarching outcome of delivering the newsletter on schedule.\n\n### Approach  \n1. **Define a milestone\u2011driven timeline** that works backward from the send date, inserting realistic buffers (typically\u202f10\u201120\u202f% of each task\u2019s duration) to absorb minor delays.  \n2. **Break the process into logical phases** (Planning\u202f\u2192\u202fContent\u202f\u2192\u202fDesign\u202f\u2192\u202fReview\u202f\u2192\u202fBuild\u202f\u2192\u202fTesting\u202f\u2192\u202fLaunch\u202f\u2192\u202fPost\u2011send).  \n3. **Assign clear owners** for each task (e.g., Content Lead, Product Marketing Manager, Design Specialist, Compliance Officer, Email Engineer, QA Tester, Analytics Lead, Customer Success Manager).  \n4. **Specify dependencies** so that no task starts before its prerequisite is finished.  \n5. **Identify risk\u2011mitigation actions** for the three constraints:  \n   * **Budget** \u2013 use existing template assets, limit external vendor use, and track time\u2011spend against a pre\u2011approved budget sheet.  \n   * **Compliance** \u2013 embed a compliance\u2011check step early and maintain a compliance checklist that must be signed off before any external distribution.  \n   * **Product\u2011release dependencies** \u2013 lock the product\u2011release information by the \u201cProduct Freeze\u201d date and create a contingency content block if the release is delayed.  \n6. **Document deliverables** for each milestone (e.g., \u201cContent Outline\u201d, \u201cDesign Mock\u2011up\u201d, \u201cApproved Email HTML\u201d).  \n7. **Plan post\u2011send activities** (analytics validation, KPI reporting, lessons\u2011learned debrief) to close the loop and feed into the next week\u2019s newsletter cycle.\n\n---\n\n## Content Draft Completion (Milestone)  \nAll copy\u2014including headline, body, product\u2011release notes, and calls\u2011to\u2011action\u2014is written, internally reviewed, and ready for design hand\u2011off.  \nArtifact references: None  \n\n### Reasoning  \nContent is the foundation; without a finalized draft, design and build cannot proceed. The user explicitly asked for a \u201ccontent drafting\u201d step, so it is captured as a distinct milestone.\n\n### Approach  \n* **Kick\u2011off meeting** (Content Lead + Product Marketing) to capture key messages and product\u2011release details.  \n* **Draft creation** (Content Lead) within a set timebox, using the previous week\u2019s newsletter as a style guide.  \n* **First\u2011round internal review** (Product Marketing Manager, Customer Success Manager) for accuracy and tone.  \n* **Compliance check** (Compliance Officer) to verify no prohibited language or claims.  \n* **Incorporate feedback** and produce the final \u201cContent Draft\u201d document, stored in the shared drive for design.\n\n---\n\n## Design Asset Creation (Milestone)  \nAll visual assets (header image, product screenshots, icons, layout templates) are produced, brand\u2011approved, and packaged for the email build.  \nArtifact references: None  \n\n### Reasoning  \nDesign assets must be ready before the email can be built. The request lists \u201cdesign asset creation\u201d as a required step, and it is dependent on the final content draft.\n\n### Approach  \n* **Asset brief** generated from the approved content draft (Design Specialist).  \n* **Create visuals** using in\u2011house tools, re\u2011using existing brand assets to stay within budget.  \n* **Internal design review** (Brand Manager) for visual consistency.  \n* **Compliance sign\u2011off** (Compliance Officer) for any claims shown in images.  \n* **Package assets** (Design Specialist) in a zip folder with naming conventions for the email engineer.\n\n---\n\n## Stakeholder Review & Approval Workflow (Milestone)  \nAll stakeholders (Product, Legal/Compliance, Marketing, Customer Success) have reviewed and formally approved the combined content\u2011and\u2011design package.  \nArtifact references: None  \n\n### Reasoning  \nThe plan must include a \u201cstakeholder reviews\u201d and \u201capproval workflow\u201d step. Formal approval is a gating point before the email can be built.\n\n### Approach  \n* **Distribute review package** (Project Coordinator) to all owners with a 24\u2011hour deadline.  \n* **Collect sign\u2011offs** via a shared checklist (e.g., \u201cContent OK\u201d, \u201cDesign OK\u201d, \u201cCompliance OK\u201d).  \n* **Escalate any blockers** to the Newsletter Lead for rapid resolution.  \n* **Record approvals** in the project log; this marks the \u201cApproved Package\u201d milestone.\n\n---\n\n## Email Build & QA (Milestone)  \nThe newsletter HTML/CSS is assembled, integrated with assets, and passes functional and rendering QA.  \nArtifact references: None  \n\n### Reasoning  \n\u201cEmail build\u201d and \u201ctesting\u201d are explicit tasks. They must be completed before the scheduled send.\n\n### Approach  \n* **HTML/CSS development** (Email Engineer) using the approved design template.  \n* **Insert dynamic content tags** (e.g., subscriber name, product\u2011release variables).  \n* **Functional QA** (QA Tester) to verify links, personalization, and unsubscribe functionality.  \n* **Rendering QA** across major email clients (desktop/mobile) using a testing tool.  \n* **Document any defects**; fix and re\u2011test until the \u201cBuild Passed QA\u201d milestone is achieved.\n\n---\n\n## Analytics Setup & Pre\u2011Send Validation (Milestone)  \nTracking parameters, UTM tags, and reporting dashboards are configured; a final pre\u2011send test confirms data capture.  \nArtifact references: None  \n\n### Reasoning  \nAnalytics setup is required to meet the success criteria (measure engagement). It must be validated before the send.\n\n### Approach  \n* **Define KPIs** (Open Rate, Click\u2011Through Rate, Conversion) with the Analytics Lead.  \n* **Create UTM parameters** for each CTA and embed them in the email copy.  \n* **Configure tracking** in the ESP (Email Service Provider) and set up a real\u2011time dashboard.  \n* **Send a final test** to a QA mailbox and verify that opens and clicks are recorded.  \n* **Sign\u2011off** by Analytics Lead marks the milestone complete.\n\n---\n\n## Send Execution (Milestone)  \nThe newsletter is dispatched to the subscriber list at the scheduled time.  \nArtifact references: None  \n\n### Reasoning  \nThe ultimate deliverable is the \u201csend\u201d itself, occurring at the specified date\u2011time.\n\n### Approach  \n* **Load final approved HTML** into the ESP.  \n* **Select the target list** (GreenPulse subscribers) and apply any segmentation rules.  \n* **Schedule send** for 09:00\u202fAM\u202fPST on Friday\u202f29\u202fNov\u202f2025.  \n* **Perform a \u201csend\u2011now\u201d verification** (ESP health check) 15\u202fminutes before launch.  \n* **Confirm send completion** and capture the ESP\u2019s send report.\n\n---\n\n## Post\u2011Send Reporting & Lessons\u2011Learned (Milestone)  \nEngagement data is collected, reported to stakeholders, and insights are documented for the next edition.  \nArtifact references: None  \n\n### Reasoning  \nThe user asked for \u201cpost\u2011send reporting\u201d. This closes the newsletter cycle and feeds continuous improvement.\n\n### Approach  \n* **Extract raw data** (opens, clicks, bounces) from the ESP 24\u202fhours after send.  \n* **Populate the KPI dashboard** and compare against targets.  \n* **Prepare a concise report** (Customer Success Manager) highlighting performance, compliance metrics, and any issues.  \n* **Hold a debrief meeting** with the core team to capture lessons learned and update the workback template for the next week.  \n\n---\n\n# Breakdown\n\n```\n1. Send Execution (Friday\u202f29\u202fNov\u202f2025\u202f09:00\u202fAM\u202fPST) \u2013 Milestone\n   1.1 Load final HTML into ESP \u2013 Email Engineer (0.5\u202fd) \u2013 Depends on 6.2\n   1.2 Select subscriber list & apply segmentation \u2013 Email Engineer (0.25\u202fd) \u2013 Depends on 1.1\n   1.3 Schedule send for 09:00\u202fAM\u202fPST \u2013 Email Engineer (0.25\u202fd) \u2013 Depends on 1.2\n   1.4 Pre\u2011send health check (15\u202fmin) \u2013 Email Engineer (0.1\u202fd) \u2013 Depends on 1.3\n   1.5 Confirm send completion \u2013 Email Engineer (0.1\u202fd) \u2013 Depends on 1.4\n\n2. Post\u2011Send Reporting & Lessons\u2011Learned \u2013 Milestone (Due Tue\u202f03\u202fDec\u202f2025)\n   2.1 Extract ESP data \u2013 Analytics Lead (0.25\u202fd) \u2013 Depends on 1.5\n   2.2 Populate KPI dashboard \u2013 Analytics Lead (0.25\u202fd) \u2013 Depends on 2.1\n   2.3 Draft performance report \u2013 Customer Success Manager (0.5\u202fd) \u2013 Depends on 2.2\n   2.4 Lessons\u2011learned debrief meeting \u2013 All owners (0.25\u202fd) \u2013 Depends on 2.3\n   2.5 Update workback template for next week \u2013 Newsletter Lead (0.25\u202fd) \u2013 Depends on 2.4\n\n3. Analytics Setup & Pre\u2011Send Validation \u2013 Milestone (Due Thu\u202f27\u202fNov\u202f2025)\n   3.1 Define KPIs & UTM schema \u2013 Analytics Lead (0.5\u202fd) \u2013 Depends on 5.2\n   3.2 Configure ESP tracking & dashboard \u2013 Analytics Lead (0.5\u202fd) \u2013 Depends on 3.1\n   3.3 Insert UTM tags into email copy \u2013 Email Engineer (0.25\u202fd) \u2013 Depends on 3.2\n   3.4 Send final QA test email \u2013 QA Tester (0.25\u202fd) \u2013 Depends on 3.3\n   3.5 Verify data capture in dashboard \u2013 Analytics Lead (0.25\u202fd) \u2013 Depends on 3.4\n   3.6 Sign\u2011off analytics \u2013 Analytics Lead (0.1\u202fd) \u2013 Depends on 3.5\n\n4. Email Build & QA \u2013 Milestone (Due Thu\u202f26\u202fNov\u202f2025)\n   4.1 Assemble HTML/CSS using approved design \u2013 Email Engineer (1\u202fd) \u2013 Depends on 2.2\n   4.2 Insert dynamic personalization tags \u2013 Email Engineer (0.25\u202fd) \u2013 Depends on 4.1\n   4.3 Functional QA (links, personalization, unsubscribe) \u2013 QA Tester (0.5\u202fd) \u2013 Depends on 4.2\n   4.4 Rendering QA across clients \u2013 QA Tester (0.5\u202fd) \u2013 Depends on 4.3\n   4.5 Fix defects & re\u2011test \u2013 Email Engineer / QA Tester (0.5\u202fd) \u2013 Depends on 4.4\n   4.6 Build Passed QA sign\u2011off \u2013 QA Tester (0.1\u202fd) \u2013 Depends on 4.5\n\n5. Stakeholder Review & Approval Workflow \u2013 Milestone (Due Wed\u202f25\u202fNov\u202f2025)\n   5.1 Distribute review package (content + design) \u2013 Project Coordinator (0.25\u202fd) \u2013 Depends on 3.1\n   5.2 Collect sign\u2011offs (Content, Design, Compliance) \u2013 Project Coordinator (0.5\u202fd) \u2013 Depends on 5.1\n   5.3 Escalate blockers (if any) \u2013 Newsletter Lead (0.25\u202fd) \u2013 Can run in parallel with 5.2\n   5.4 Record approvals in project log \u2013 Project Coordinator (0.1\u202fd) \u2013 Depends on 5.2\n   5.5 Approved Package milestone \u2013 Newsletter Lead (0.1\u202fd) \u2013 Depends on 5.4\n\n6. Design Asset Creation \u2013 Milestone (Due Mon\u202f23\u202fNov\u202f2025)\n   6.1 Create asset brief from final content \u2013 Design Specialist (0.25\u202fd) \u2013 Depends on 1.2\n   6.2 Produce visuals (header, screenshots, icons) \u2013 Design Specialist (1\u202fd) \u2013 Depends on 6.1\n   6.3 Internal brand review \u2013 Brand Manager (0.25\u202fd) \u2013 Depends on 6.2\n   6.4 Compliance review of visuals \u2013 Compliance Officer (0.25\u202fd) \u2013 Depends on 6.3\n   6.5 Package assets for email build \u2013 Design Specialist (0.25\u202fd) \u2013 Depends on 6.4\n   6.6 Design Assets Completed \u2013 Newsletter Lead (0.1\u202fd) \u2013 Depends on 6.5\n\n7. Content Draft Completion \u2013 Milestone (Due Fri\u202f15\u202fNov\u202f2025)\n   7.1 Kick\u2011off content meeting \u2013 Content Lead + Product Marketing (0.25\u202fd) \u2013 No dependency\n   7.2 Draft copy (headline, body, product release notes, CTAs) \u2013 Content Lead (1\u202fd) \u2013 Depends on 7.1\n   7.3 First\u2011round internal review \u2013 Product Marketing Manager & Customer Success Manager (0.5\u202fd) \u2013 Depends on 7.2\n   7.4 Compliance check \u2013 Compliance Officer (0.25\u202fd) \u2013 Depends on 7.3\n   7.5 Incorporate feedback & finalize draft \u2013 Content Lead (0.5\u202fd) \u2013 Depends on 7.4\n   7.6 Content Draft Completed \u2013 Newsletter Lead (0.1\u202fd) \u2013 Depends on 7.5\n\n8. Planning & Risk Mitigation \u2013 Milestone (Due Thu\u202f13\u202fNov\u202f2025)\n   8.1 Confirm budget limits & allocate resources \u2013 Newsletter Lead (0.25\u202fd) \u2013 No dependency\n   8.2 Establish compliance checklist & sign\u2011off process \u2013 Compliance Officer (0.25\u202fd) \u2013 Depends on 8.1\n   8.3 Identify product\u2011release freeze date & contingency content \u2013 Product Marketing Manager (0.25\u202fd) \u2013 Depends on 8.1\n   8.4 Document risk\u2011mitigation actions (budget buffer, compliance gate, release contingency) \u2013 Newsletter Lead (0.25\u202fd) \u2013 Depends on 8.2 & 8.3\n   8.5 Planning Complete \u2013 Newsletter Lead (0.1\u202fd) \u2013 Depends on 8.4\n```\n\n**Key Points**\n\n* **Dependencies** flow logically from early planning \u2192 content \u2192 design \u2192 approvals \u2192 build \u2192 testing \u2192 analytics \u2192 send \u2192 reporting.  \n* **Buffers** are built into each phase (e.g., 0.25\u202fday extra for reviews, 0.5\u202fday for design).  \n* **Risk mitigation** actions are captured in the Planning & Risk Mitigation milestone and reiterated before any budget\u2011sensitive or compliance\u2011sensitive task.  \n* **Owners** are assigned at the task level, ensuring accountability and clear hand\u2011offs.  \n* **Milestones** have explicit completion criteria (e.g., \u201cApproved Package\u201d requires all three sign\u2011offs; \u201cBuild Passed QA\u201d requires zero critical defects).  \n\nFollowing this work\u2011back structure will keep the Weekly\u202fGreenPulse Newsletter on schedule, within budget, compliant with corporate standards, and aligned with product\u2011release timelines.",
+  "plan": {
+    "id": "document-001",
+    "name": "Weekly GreenPulse Newsletter Workback Plan",
+    "details": "Work\u2011back plan to deliver the GreenPulse Customer Success Newsletter on Friday 29\u202fNov\u202f2025 at 09:00\u202fAM\u202fPST. Includes planning, content drafting, design, stakeholder approvals, email build, QA, analytics setup, send execution, and post\u2011send reporting.",
+    "draft": true,
+    "participants": [
+      {
+        "name": "Email Engineer",
+        "draft": true
+      },
+      {
+        "name": "Analytics Lead",
+        "draft": true
+      },
+      {
+        "name": "QA Tester",
+        "draft": true
+      },
+      {
+        "name": "Project Coordinator",
+        "draft": true
+      },
+      {
+        "name": "Newsletter Lead",
+        "draft": true
+      },
+      {
+        "name": "Content Lead",
+        "draft": true
+      },
+      {
+        "name": "Product Marketing Manager",
+        "draft": true
+      },
+      {
+        "name": "Customer Success Manager",
+        "draft": true
+      },
+      {
+        "name": "Compliance Officer",
+        "draft": true
+      },
+      {
+        "name": "Design Specialist",
+        "draft": true
+      },
+      {
+        "name": "Brand Manager",
+        "draft": true
+      }
+    ],
+    "tasks": [
+      {
+        "id": "task-001",
+        "name": "Load final HTML into ESP",
+        "draft": true,
+        "details": "Email Engineer loads the approved HTML/CSS into the Email Service Provider (ESP).",
+        "dependencies": [
+          "task-029"
+        ],
+        "assignees": [
+          "Email Engineer"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-002",
+        "name": "Select subscriber list & apply segmentation",
+        "draft": true,
+        "details": "Email Engineer selects the GreenPulse subscriber list and applies any segmentation rules.",
+        "dependencies": [
+          "task-001"
+        ],
+        "assignees": [
+          "Email Engineer"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-003",
+        "name": "Schedule send for 09:00\u202fAM\u202fPST",
+        "draft": true,
+        "details": "Email Engineer schedules the newsletter send for the target date and time.",
+        "dependencies": [
+          "task-002"
+        ],
+        "assignees": [
+          "Email Engineer"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-004",
+        "name": "Pre\u2011send health check (15\u202fmin)",
+        "draft": true,
+        "details": "Email Engineer performs a health check of the ESP 15 minutes before launch.",
+        "dependencies": [
+          "task-003"
+        ],
+        "assignees": [
+          "Email Engineer"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-005",
+        "name": "Confirm send completion",
+        "draft": true,
+        "details": "Email Engineer confirms that the newsletter was sent successfully and captures the send report.",
+        "dependencies": [
+          "task-004"
+        ],
+        "assignees": [
+          "Email Engineer"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-006",
+        "name": "Extract ESP data",
+        "draft": true,
+        "details": "Analytics Lead extracts raw opens, clicks, bounces, and other metrics from the ESP.",
+        "dependencies": [
+          "task-005"
+        ],
+        "assignees": [
+          "Analytics Lead"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-007",
+        "name": "Populate KPI dashboard",
+        "draft": true,
+        "details": "Analytics Lead loads the extracted data into the KPI dashboard and compares against targets.",
+        "dependencies": [
+          "task-006"
+        ],
+        "assignees": [
+          "Analytics Lead"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-008",
+        "name": "Draft performance report",
+        "draft": true,
+        "details": "Customer Success Manager prepares a concise performance report highlighting engagement and any issues.",
+        "dependencies": [
+          "task-007"
+        ],
+        "assignees": [
+          "Customer Success Manager"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-009",
+        "name": "Lessons\u2011learned debrief meeting",
+        "draft": true,
+        "details": "All owners meet to discuss lessons learned and capture improvement actions.",
+        "dependencies": [
+          "task-008"
+        ],
+        "assignees": [
+          "Email Engineer",
+          "Analytics Lead",
+          "QA Tester",
+          "Project Coordinator",
+          "Newsletter Lead",
+          "Content Lead",
+          "Product Marketing Manager",
+          "Customer Success Manager",
+          "Compliance Officer",
+          "Design Specialist",
+          "Brand Manager"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-010",
+        "name": "Update workback template for next week",
+        "draft": true,
+        "details": "Newsletter Lead updates the work\u2011back template with any new timings or process changes.",
+        "dependencies": [
+          "task-009"
+        ],
+        "assignees": [
+          "Newsletter Lead"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-011",
+        "name": "Define analytics requirements (product\u2011release freeze date & contingency content)",
+        "draft": true,
+        "details": "Analytics Setup: Analytics Lead defines the analytics scope, ensuring it aligns with the product\u2011release freeze date.",
+        "dependencies": [
+          "task-024"
+        ],
+        "assignees": [
+          "Analytics Lead"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-012",
+        "name": "Configure analytics environment",
+        "draft": true,
+        "details": "Analytics Lead configures tracking parameters and ensures the ESP is set up for data collection.",
+        "dependencies": [
+          "task-011"
+        ],
+        "assignees": [
+          "Analytics Lead"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-013",
+        "name": "Insert UTM parameters into email",
+        "draft": true,
+        "details": "Email Engineer adds UTM parameters to links for downstream web analytics.",
+        "dependencies": [
+          "task-012"
+        ],
+        "assignees": [
+          "Email Engineer"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-014",
+        "name": "Validate analytics data (QA)",
+        "draft": true,
+        "details": "QA Tester runs validation checks on the analytics data to ensure accuracy.",
+        "dependencies": [
+          "task-013"
+        ],
+        "assignees": [
+          "QA Tester"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-015",
+        "name": "Finalize analytics dashboard",
+        "draft": true,
+        "details": "Analytics Lead finalizes the dashboard after validation.",
+        "dependencies": [
+          "task-014"
+        ],
+        "assignees": [
+          "Analytics Lead"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-016",
+        "name": "Analytics setup sign\u2011off",
+        "draft": true,
+        "details": "Analytics Lead obtains final sign\u2011off on analytics setup.",
+        "dependencies": [
+          "task-015"
+        ],
+        "assignees": [
+          "Analytics Lead"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-017",
+        "name": "Assemble email build",
+        "draft": true,
+        "details": "Email Engineer assembles the email build using the packaged assets and KPI data.",
+        "dependencies": [
+          "task-007"
+        ],
+        "assignees": [
+          "Email Engineer"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-018",
+        "name": "Integrate assets into email build",
+        "draft": true,
+        "details": "Email Engineer incorporates the packaged design assets into the email build.",
+        "dependencies": [
+          "task-017"
+        ],
+        "assignees": [
+          "Email Engineer"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-019",
+        "name": "First\u2011round functional QA",
+        "draft": true,
+        "details": "QA Tester runs functional tests on the email (links, images, rendering).",
+        "dependencies": [
+          "task-018"
+        ],
+        "assignees": [
+          "QA Tester"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-020",
+        "name": "Cross\u2011client rendering QA",
+        "draft": true,
+        "details": "QA Tester verifies rendering across major email clients (Outlook, Gmail, mobile).",
+        "dependencies": [
+          "task-019"
+        ],
+        "assignees": [
+          "QA Tester"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-021",
+        "name": "Final QA & defect resolution",
+        "draft": true,
+        "details": "Email Engineer and QA Tester resolve any remaining defects; build is ready for release.",
+        "dependencies": [
+          "task-020"
+        ],
+        "assignees": [
+          "Email Engineer",
+          "QA Tester"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-022",
+        "name": "Build Passed QA sign\u2011off",
+        "draft": true,
+        "details": "QA Tester signs off that the email build has zero critical defects.",
+        "dependencies": [
+          "task-021"
+        ],
+        "assignees": [
+          "QA Tester"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-023",
+        "name": "Distribute stakeholder review package",
+        "draft": true,
+        "details": "Project Coordinator sends the package requiring compliance, product, and design sign\u2011offs.",
+        "dependencies": [
+          "task-011"
+        ],
+        "assignees": [
+          "Project Coordinator"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-024",
+        "name": "Obtain three sign\u2011offs (design, product, compliance)",
+        "draft": true,
+        "details": "Project Coordinator collects sign\u2011offs from Product Marketing, Design, and Compliance.",
+        "dependencies": [
+          "task-023"
+        ],
+        "assignees": [
+          "Project Coordinator"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-025",
+        "name": "Escalate blockers",
+        "draft": true,
+        "details": "Newsletter Lead monitors for any escalation needs during stakeholder review.",
+        "dependencies": [],
+        "assignees": [
+          "Newsletter Lead"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-026",
+        "name": "Record stakeholder review completion",
+        "draft": true,
+        "details": "Project Coordinator records that all required sign\u2011offs have been received.",
+        "dependencies": [
+          "task-024"
+        ],
+        "assignees": [
+          "Project Coordinator"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-027",
+        "name": "Approved Package milestone",
+        "draft": true,
+        "details": "Newsletter Lead marks the stakeholder review milestone as complete.",
+        "dependencies": [
+          "task-026"
+        ],
+        "assignees": [
+          "Newsletter Lead"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-028",
+        "name": "Kick\u2011off design meeting",
+        "draft": true,
+        "details": "Design Specialist leads a meeting to confirm design requirements.",
+        "dependencies": [
+          "task-002"
+        ],
+        "assignees": [
+          "Design Specialist"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-029",
+        "name": "Produce design visuals",
+        "draft": true,
+        "details": "Design Specialist creates the visual assets for the newsletter.",
+        "dependencies": [
+          "task-028"
+        ],
+        "assignees": [
+          "Design Specialist"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-030",
+        "name": "Brand manager review of visuals",
+        "draft": true,
+        "details": "Brand Manager reviews the visuals for brand compliance.",
+        "dependencies": [
+          "task-029"
+        ],
+        "assignees": [
+          "Brand Manager"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-031",
+        "name": "Compliance review of visuals",
+        "draft": true,
+        "details": "Compliance Officer checks the visuals against the compliance checklist.",
+        "dependencies": [
+          "task-030"
+        ],
+        "assignees": [
+          "Compliance Officer"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-032",
+        "name": "Package assets for email build",
+        "draft": true,
+        "details": "Design Specialist packages the approved assets for the email build process.",
+        "dependencies": [
+          "task-031"
+        ],
+        "assignees": [
+          "Design Specialist"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-033",
+        "name": "Design assets completed milestone",
+        "draft": true,
+        "details": "Newsletter Lead confirms that all design assets are ready for the email build.",
+        "dependencies": [
+          "task-032"
+        ],
+        "assignees": [
+          "Newsletter Lead"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-034",
+        "name": "Kick\u2011off content meeting",
+        "draft": true,
+        "details": "Content Lead and Product Marketing Manager hold a brief meeting to align on newsletter goals.",
+        "dependencies": [],
+        "assignees": [
+          "Content Lead",
+          "Product Marketing Manager"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-035",
+        "name": "Draft copy (headline, body, product release notes, CTAs)",
+        "draft": true,
+        "details": "Content Lead writes the full newsletter copy.",
+        "dependencies": [
+          "task-034"
+        ],
+        "assignees": [
+          "Content Lead"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-036",
+        "name": "First\u2011round internal review",
+        "draft": true,
+        "details": "Product Marketing Manager and Customer Success Manager review the draft copy.",
+        "dependencies": [
+          "task-035"
+        ],
+        "assignees": [
+          "Product Marketing Manager",
+          "Customer Success Manager"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-037",
+        "name": "Compliance check of draft",
+        "draft": true,
+        "details": "Compliance Officer checks the draft for policy adherence.",
+        "dependencies": [
+          "task-036"
+        ],
+        "assignees": [
+          "Compliance Officer"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-038",
+        "name": "Incorporate feedback & finalize draft",
+        "draft": true,
+        "details": "Content Lead incorporates review and compliance feedback and finalizes the draft.",
+        "dependencies": [
+          "task-037"
+        ],
+        "assignees": [
+          "Content Lead"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-039",
+        "name": "Content Draft Completed milestone",
+        "draft": true,
+        "details": "Newsletter Lead marks the content draft as completed.",
+        "dependencies": [
+          "task-038"
+        ],
+        "assignees": [
+          "Newsletter Lead"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-040",
+        "name": "Confirm budget limits & allocate resources",
+        "draft": true,
+        "details": "Newsletter Lead confirms budget constraints and assigns resources to tasks.",
+        "dependencies": [],
+        "assignees": [
+          "Newsletter Lead"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-041",
+        "name": "Establish compliance checklist & sign\u2011off process",
+        "draft": true,
+        "details": "Compliance Officer creates a checklist and defines the compliance gate.",
+        "dependencies": [
+          "task-040"
+        ],
+        "assignees": [
+          "Compliance Officer"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-042",
+        "name": "Identify product\u2011release freeze date & contingency content",
+        "draft": true,
+        "details": "Product Marketing Manager determines the freeze date and prepares fallback content.",
+        "dependencies": [
+          "task-040"
+        ],
+        "assignees": [
+          "Product Marketing Manager"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-043",
+        "name": "Document risk\u2011mitigation actions",
+        "draft": true,
+        "details": "Newsletter Lead records actions to buffer budget, enforce compliance gate, and handle release contingencies.",
+        "dependencies": [
+          "task-041",
+          "task-042"
+        ],
+        "assignees": [
+          "Newsletter Lead"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-044",
+        "name": "Planning Complete milestone",
+        "draft": true,
+        "details": "Newsletter Lead marks planning and risk mitigation as finished.",
+        "dependencies": [
+          "task-043"
+        ],
+        "assignees": [
+          "Newsletter Lead"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-045",
+        "name": "Define analytics requirements (product\u2011release freeze date & contingency content)",
+        "draft": true,
+        "details": "Analytics Setup task that aligns analytics with the product\u2011release freeze identified in planning.",
+        "dependencies": [
+          "task-024"
+        ],
+        "assignees": [
+          "Analytics Lead"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-046",
+        "name": "Configure analytics environment",
+        "draft": true,
+        "details": "Analytics Lead sets up tracking parameters and ensures data collection readiness.",
+        "dependencies": [
+          "task-045"
+        ],
+        "assignees": [
+          "Analytics Lead"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-047",
+        "name": "Insert UTM parameters into email",
+        "draft": true,
+        "details": "Email Engineer adds UTM parameters to all links for downstream web analytics.",
+        "dependencies": [
+          "task-046"
+        ],
+        "assignees": [
+          "Email Engineer"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-048",
+        "name": "Validate analytics data (QA)",
+        "draft": true,
+        "details": "QA Tester validates that analytics data is accurate and complete.",
+        "dependencies": [
+          "task-047"
+        ],
+        "assignees": [
+          "QA Tester"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-049",
+        "name": "Finalize analytics dashboard",
+        "draft": true,
+        "details": "Analytics Lead finalizes the KPI dashboard after validation.",
+        "dependencies": [
+          "task-048"
+        ],
+        "assignees": [
+          "Analytics Lead"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-050",
+        "name": "Analytics setup sign\u2011off",
+        "draft": true,
+        "details": "Analytics Lead obtains final sign\u2011off on analytics setup.",
+        "dependencies": [
+          "task-049"
+        ],
+        "assignees": [
+          "Analytics Lead"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-051",
+        "name": "Assemble email build",
+        "draft": true,
+        "details": "Email Engineer assembles the email build using KPI data and design assets.",
+        "dependencies": [
+          "task-007"
+        ],
+        "assignees": [
+          "Email Engineer"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-052",
+        "name": "Integrate assets into email build",
+        "draft": true,
+        "details": "Email Engineer incorporates packaged design assets into the email build.",
+        "dependencies": [
+          "task-051"
+        ],
+        "assignees": [
+          "Email Engineer"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-053",
+        "name": "First\u2011round functional QA",
+        "draft": true,
+        "details": "QA Tester runs functional tests on the assembled email.",
+        "dependencies": [
+          "task-052"
+        ],
+        "assignees": [
+          "QA Tester"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-054",
+        "name": "Cross\u2011client rendering QA",
+        "draft": true,
+        "details": "QA Tester verifies rendering across major email clients.",
+        "dependencies": [
+          "task-053"
+        ],
+        "assignees": [
+          "QA Tester"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-055",
+        "name": "Final QA & defect resolution",
+        "draft": true,
+        "details": "Email Engineer and QA Tester resolve any remaining defects.",
+        "dependencies": [
+          "task-054"
+        ],
+        "assignees": [
+          "Email Engineer",
+          "QA Tester"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-056",
+        "name": "Build Passed QA sign\u2011off",
+        "draft": true,
+        "details": "QA Tester signs off that the email build has passed QA with zero critical defects.",
+        "dependencies": [
+          "task-055"
+        ],
+        "assignees": [
+          "QA Tester"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-057",
+        "name": "Distribute stakeholder review package",
+        "draft": true,
+        "details": "Project Coordinator sends the package requiring design, product, and compliance sign\u2011offs.",
+        "dependencies": [
+          "task-011"
+        ],
+        "assignees": [
+          "Project Coordinator"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-058",
+        "name": "Obtain three sign\u2011offs (design, product, compliance)",
+        "draft": true,
+        "details": "Project Coordinator collects sign\u2011offs from Product Marketing, Design, and Compliance.",
+        "dependencies": [
+          "task-057"
+        ],
+        "assignees": [
+          "Project Coordinator"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-059",
+        "name": "Escalate blockers",
+        "draft": true,
+        "details": "Newsletter Lead monitors for any escalation needs during stakeholder review.",
+        "dependencies": [],
+        "assignees": [
+          "Newsletter Lead"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-060",
+        "name": "Record stakeholder review completion",
+        "draft": true,
+        "details": "Project Coordinator records that all required sign\u2011offs have been received.",
+        "dependencies": [
+          "task-058"
+        ],
+        "assignees": [
+          "Project Coordinator"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-061",
+        "name": "Approved Package milestone",
+        "draft": true,
+        "details": "Newsletter Lead marks the stakeholder review milestone as complete.",
+        "dependencies": [
+          "task-060"
+        ],
+        "assignees": [
+          "Newsletter Lead"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-062",
+        "name": "Kick\u2011off design meeting",
+        "draft": true,
+        "details": "Design Specialist leads a meeting to confirm design requirements.",
+        "dependencies": [
+          "task-002"
+        ],
+        "assignees": [
+          "Design Specialist"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-063",
+        "name": "Produce design visuals",
+        "draft": true,
+        "details": "Design Specialist creates the visual assets for the newsletter.",
+        "dependencies": [
+          "task-062"
+        ],
+        "assignees": [
+          "Design Specialist"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-064",
+        "name": "Brand manager review of visuals",
+        "draft": true,
+        "details": "Brand Manager reviews the visuals for brand compliance.",
+        "dependencies": [
+          "task-063"
+        ],
+        "assignees": [
+          "Brand Manager"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-065",
+        "name": "Compliance review of visuals",
+        "draft": true,
+        "details": "Compliance Officer checks the visuals against the compliance checklist.",
+        "dependencies": [
+          "task-064"
+        ],
+        "assignees": [
+          "Compliance Officer"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-066",
+        "name": "Package assets for email build",
+        "draft": true,
+        "details": "Design Specialist packages the approved assets for the email build process.",
+        "dependencies": [
+          "task-065"
+        ],
+        "assignees": [
+          "Design Specialist"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-067",
+        "name": "Design assets ready milestone",
+        "draft": true,
+        "details": "Newsletter Lead confirms that all design assets are ready for the email build.",
+        "dependencies": [
+          "task-066"
+        ],
+        "assignees": [
+          "Newsletter Lead"
+        ],
+        "state": "not-started"
+      }
+    ],
+    "dependencies": [
+      {
+        "from": "task-001",
+        "to": "task-002"
+      }
+    ]
+  }
+}

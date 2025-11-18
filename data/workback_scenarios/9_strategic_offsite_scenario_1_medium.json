@@ -1,0 +1,626 @@
+{
+  "scenario_name": "Q4\u202f2025 Strategic Planning Offsite \u2013 NovaHealth Systems",
+  "scenario_number": 1,
+  "meeting_type": "Strategic Planning Offsite",
+  "quality_level": "medium",
+  "workback_prompt": "Generate a detailed work\u2011back plan for NovaHealth Systems' Q4\u202f2025 Strategic Planning Offsite (September\u202f9\u201111, 2025, Aspen). Include all pre\u2011work (market research, financial analysis), facilitator preparation, agenda finalization, logistics (travel, lodging, tech setup), day\u2011by\u2011day session plans, decision\u2011making checkpoints, post\u2011offsite deliverable production, and communication rollout. Align tasks with the constraints (T\u201190 horizon, $120k budget, pre\u2011work due Aug\u202f15, Board approval by Oct\u202f5) and map each deliverable to a responsible owner and due date. Provide the plan in a table format suitable for a project\u2011management tool.\n\nGenerate a MEDIUM QUALITY workback plan with these characteristics:\n- Most major tasks present but some gaps\n- Reasonable task descriptions\n- Some dependencies defined\n- Most tasks have owners\n- Milestones present but may lack detail\n- Generally realistic timelines\n- Some consideration of risks\n- Key deliverables identified\n\nIMPORTANT: Generate a plan that naturally exhibits MEDIUM quality characteristics.\nDo not explicitly label the plan as \"medium quality\" - let the quality emerge from the content.",
+  "generated_at": "2025-11-17T07:31:58.150999",
+  "analysis": "**# Outcomes**\n\n---\n\n## 1. Pre\u2011work Package (Market Research & Financial Analysis)  \n*Deliverable:* Consolidated research report and financial scenario models to be used as input for off\u2011site discussions.  \nArtifact references: *none provided*  \n\n### Reasoning  \nThe off\u2011site cannot progress without a common evidence base. The brief explicitly calls for market research and financial analysis to be completed **by\u202fAug\u202f15** \u2013 a hard deadline that drives the rest of the schedule.  \n\n### Approach  \n1. **Define scope** \u2013 Agree on research questions, geographic focus, and financial assumptions (owner: VP\u202fStrategy, due\u202fJun\u202f15).  \n2. **Assign analysts** \u2013 Market analyst (owner: Market\u202fInsights Lead) and finance analyst (owner: CFO Office) each produce a draft (due\u202fJul\u202f31).  \n3. **Peer review** \u2013 Cross\u2011functional review (Product, Sales, Ops) to validate assumptions (due\u202fAug\u202f7).  \n4. **Integrate & format** \u2013 Compile into a single \u201cPre\u2011work Package\u201d (owner: Strategy PM, due\u202fAug\u202f13).  \n5. **Board pre\u2011review** \u2013 Send to Board liaison for early comment (due\u202fAug\u202f14).  \n\n*Key dependencies:* Scope definition \u2192 analyst work; analyst work \u2192 peer review; peer review \u2192 integration.  \n\n*Risks:* Data gaps (mitigate by early data request), analyst bandwidth (mitigate by backup resources).  \n\n---\n\n## 2. Facilitator & Agenda Preparation  \n*Deliverable:* Finalized 3\u2011day agenda, facilitator guide, and decision\u2011making matrix.  \n\n### Reasoning  \nA clear agenda and prepared facilitator are essential for staying within the **$120\u202fk budget** and meeting the **T\u201190 horizon**. The brief lists \u201cfacilitator preparation\u201d and \u201cagenda finalization\u201d as separate tasks.  \n\n### Approach  \n1. **Select facilitator** \u2013 Internal senior leader or external consultant (owner: HR\u202fLearning Lead, due\u202fJun\u202f20).  \n2. **Facilitator brief** \u2013 Provide pre\u2011work package and desired outcomes (owner: Strategy PM, due\u202fJun\u202f25).  \n3. **Draft agenda** \u2013 Outline session topics, timings, and decision checkpoints (owner: Facilitator, due\u202fJul\u202f10).  \n4. **Stakeholder sign\u2011off** \u2013 Review with senior leadership (owner: COO, due\u202fJul\u202f20).  \n5. **Finalize agenda & guide** \u2013 Incorporate feedback, lock in speakers, and produce facilitator handbook (owner: Strategy PM, due\u202fAug\u202f1).  \n\n*Key dependencies:* Facilitator selection \u2192 brief; brief \u2192 draft agenda; draft agenda \u2192 sign\u2011off.  \n\n*Risks:* Late speaker confirmations (mitigate by early outreach), scope creep (mitigate by strict agenda freeze).  \n\n---\n\n## 3. Logistics Plan (Travel, Lodging, Tech Setup)  \n*Deliverable:* Comprehensive logistics workbook covering transportation, accommodation, venue tech, and on\u2011site support.  \n\n### Reasoning  \nLogistics must be locked well before the **Sept\u202f9\u201111** off\u2011site to stay within budget and avoid last\u2011minute issues. The brief calls for \u201clogistics (travel, lodging, tech setup)\u201d.  \n\n### Approach  \n1. **Venue contract** \u2013 Negotiate Aspen conference center rates, room blocks, and AV packages (owner: Procurement Lead, due\u202fJun\u202f30).  \n2. **Travel policy alignment** \u2013 Confirm travel class limits and per\u2011diem (owner: Finance Ops, due\u202fJun\u202f30).  \n3. **Book travel** \u2013 Issue itineraries for participants (owner: Travel Coordinator, due\u202fJul\u202f15).  \n4. **Lodging assignments** \u2013 Allocate rooms, capture special requests (owner: Travel Coordinator, due\u202fJul\u202f20).  \n5. **Tech checklist** \u2013 Verify Wi\u2011Fi, video\u2011conference gear, recording equipment (owner: IT\u202fOn\u2011site Lead, due\u202fAug\u202f10).  \n6. **On\u2011site support plan** \u2013 Assign on\u2011site staff for registration, catering, and tech troubleshooting (owner: Events Manager, due\u202fAug\u202f20).  \n\n*Key dependencies:* Venue contract \u2192 travel booking; travel booking \u2192 lodging assignments; tech checklist \u2192 on\u2011site support plan.  \n\n*Risks:* Venue over\u2011booking (mitigate by early deposit), travel delays (mitigate by buffer days).  \n\n---\n\n## 4. Day\u2011by\u2011Day Session Plans & Decision\u2011Making Checkpoints  \n*Deliverable:* Detailed session scripts, facilitation cues, and a decision\u2011recording template for each day.  \n\n### Reasoning  \nThe brief explicitly requests \u201cday\u2011by\u2011day session plans\u201d and \u201cdecision\u2011making checkpoints\u201d. These need to be ready **before the off\u2011site** to keep discussions focused and produce actionable outcomes.  \n\n### Approach  \n1. **Map pre\u2011work findings to agenda slots** (owner: Strategy PM, due\u202fAug\u202f5).  \n2. **Develop session scripts** \u2013 Include objectives, activities, time allocations (owner: Facilitator, due\u202fAug\u202f12).  \n3. **Create decision matrix** \u2013 Define criteria, voting mechanisms, and escalation path (owner: COO Office, due\u202fAug\u202f12).  \n4. **Review with senior leadership** \u2013 Validate that all critical decisions are captured (owner: CEO Office, due\u202fAug\u202f18).  \n5. **Finalize and distribute** \u2013 Upload to shared drive, send to participants (owner: Strategy PM, due\u202fAug\u202f22).  \n\n*Key dependencies:* Mapping \u2192 scripts; scripts \u2192 decision matrix; matrix \u2192 leadership review.  \n\n*Risks:* Over\u2011ambitious decision load (mitigate by prioritizing top\u20113 decisions per day).  \n\n---\n\n## 5. Post\u2011Offsite Deliverables (Summary Report, Action Plans, Board Pack)  \n*Deliverable:* Consolidated off\u2011site report, detailed owner\u2011by\u2011owner action plans, and a Board presentation package.  \n\n### Reasoning  \nThe brief calls for \u201cpost\u2011offsite deliverable production\u201d and notes a **Board approval deadline of Oct\u202f5**. Timely delivery of these artifacts is essential for closing the planning cycle.  \n\n### Approach  \n1. **Capture decisions & notes** \u2013 Facilitator and note\u2011takers upload raw materials within 24\u202fh of each day (owner: Facilitator, due\u202fSept\u202f12).  \n2. **Draft summary report** \u2013 Synthesize outcomes, key insights, and next steps (owner: Strategy PM, due\u202fSept\u202f20).  \n3. **Develop action plans** \u2013 Assign owners, milestones, and resource estimates (owner: Functional Leads, due\u202fSept\u202f25).  \n4. **Board pack creation** \u2013 Assemble executive summary, financial implications, and risk register (owner: CFO Office, due\u202fOct\u202f1).  \n5. **Board review & sign\u2011off** \u2013 Circulate to Board liaison, incorporate feedback (owner: CEO Office, due\u202fOct\u202f3).  \n\n*Key dependencies:* Capture \u2192 draft report; draft report \u2192 action plans; action plans \u2192 Board pack.  \n\n*Risks:* Incomplete decision capture (mitigate by assigning dedicated recorder).  \n\n---\n\n## 6. Communication Rollout (Internal & External)  \n*Deliverable:* Communication calendar, messaging templates, and stakeholder briefings.  \n\n### Reasoning  \nA coordinated rollout ensures alignment across the organization and external partners after the off\u2011site. The brief lists \u201ccommunication rollout\u201d as a distinct component.  \n\n### Approach  \n1. **Define audience segments** \u2013 Internal teams, investors, partners, media (owner: Corporate Communications Lead, due\u202fOct\u202f2).  \n2. **Draft key messages** \u2013 Highlight strategic priorities, timeline, and expected impacts (owner: Communications Team, due\u202fOct\u202f4).  \n3. **Create rollout schedule** \u2013 Align with Board approval and start of execution (owner: PMO, due\u202fOct\u202f5).  \n4. **Execute briefings** \u2013 Town\u2011halls, investor calls, press release (owner: Communications Lead, start\u202fOct\u202f6).  \n\n*Key dependencies:* Audience definition \u2192 message drafting; message drafting \u2192 schedule; schedule \u2192 execution.  \n\n*Risks:* Mis\u2011aligned messaging (mitigate by cross\u2011review with Strategy PM).  \n\n---\n\n# Breakdown (Work\u2011Back Structure)\n\n```\n1. Pre\u2011work Package\n   1.1 Define research & financial scope (Jun\u202f15) \u2013 Owner: VP\u202fStrategy\n   1.2 Conduct market analysis (Jul\u202f31) \u2013 Owner: Market\u202fInsights Lead\n   1.3 Build financial scenarios (Jul\u202f31) \u2013 Owner: CFO Office\n   1.4 Peer review of drafts (Aug\u202f7) \u2013 Owner: Cross\u2011functional Review Team\n   1.5 Integrate into final package (Aug\u202f13) \u2013 Owner: Strategy PM\n   1.6 Board pre\u2011review (Aug\u202f14) \u2013 Owner: Board Liaison\n\n2. Facilitator & Agenda Preparation\n   2.1 Select facilitator (Jun\u202f20) \u2013 Owner: HR\u202fLearning Lead\n   2.2 Provide facilitator brief (Jun\u202f25) \u2013 Owner: Strategy PM\n   2.3 Draft agenda (Jul\u202f10) \u2013 Owner: Facilitator\n   2.4 Senior leadership sign\u2011off (Jul\u202f20) \u2013 Owner: COO\n   2.5 Finalize agenda & guide (Aug\u202f1) \u2013 Owner: Strategy PM\n\n3. Logistics Plan\n   3.1 Negotiate venue contract (Jun\u202f30) \u2013 Owner: Procurement Lead\n   3.2 Align travel policy (Jun\u202f30) \u2013 Owner: Finance Ops\n   3.3 Book travel itineraries (Jul\u202f15) \u2013 Owner: Travel Coordinator\n   3.4 Assign lodging (Jul\u202f20) \u2013 Owner: Travel Coordinator\n   3.5 Verify tech requirements (Aug\u202f10) \u2013 Owner: IT\u202fOn\u2011site Lead\n   3.6 Draft on\u2011site support plan (Aug\u202f20) \u2013 Owner: Events Manager\n\n4. Day\u2011by\u2011Day Session Plans\n   4.1 Map pre\u2011work to agenda (Aug\u202f5) \u2013 Owner: Strategy PM\n   4.2 Write session scripts (Aug\u202f12) \u2013 Owner: Facilitator\n   4.3 Create decision matrix (Aug\u202f12) \u2013 Owner: COO Office\n   4.4 Leadership review (Aug\u202f18) \u2013 Owner: CEO Office\n   4.5 Distribute final session plans (Aug\u202f22) \u2013 Owner: Strategy PM\n\n5. Post\u2011Offsite Deliverables\n   5.1 Upload raw notes (Sept\u202f12) \u2013 Owner: Facilitator\n   5.2 Draft summary report (Sept\u202f20) \u2013 Owner: Strategy PM\n   5.3 Build action plans (Sept\u202f25) \u2013 Owner: Functional Leads\n   5.4 Assemble Board pack (Oct\u202f1) \u2013 Owner: CFO Office\n   5.5 Board review & sign\u2011off (Oct\u202f3) \u2013 Owner: CEO Office\n\n6. Communication Rollout\n   6.1 Identify audience segments (Oct\u202f2) \u2013 Owner: Corporate Communications Lead\n   6.2 Draft messaging (Oct\u202f4) \u2013 Owner: Communications Team\n   6.3 Schedule rollout (Oct\u202f5) \u2013 Owner: PMO\n   6.4 Execute briefings (starting Oct\u202f6) \u2013 Owner: Communications Lead\n```\n\n**Notes on Collaboration & Governance**\n\n* **Steering Committee** \u2013 Meets bi\u2011weekly (first on\u202fJun\u202f10) to approve scope, budget, and major milestones. Members: CEO, CFO, VP\u202fStrategy, HR\u202fLearning Lead, Procurement Lead.  \n* **Project Management Office (PMO)** \u2013 Owns the master schedule, tracks dependencies, and raises risk escalations.  \n* **Functional Leads** \u2013 Responsible for content creation (research, finance, action plans) and sign\u2011off on their respective deliverables.  \n* **Risk Register** \u2013 Maintained by the PMO; top risks (data gaps, venue availability, budget overruns) are reviewed at each steering meeting.  \n* **Communication Cadence** \u2013 Weekly status email to all owners; a mid\u2011project checkpoint (Jul\u202f31) to validate that the T\u201190 horizon and budget constraints remain on track.  \n\nThis structure gives you a concrete starting point for populating a project\u2011management tool (e.g., Asana, Smartsheet, MS Project) with tasks, owners, due dates, and dependencies, while also highlighting where collaboration and governance are needed to keep the off\u2011site on schedule and within budget.",
+  "plan": {
+    "id": "document-001",
+    "name": "Off\u2011site Planning Workback Plan",
+    "details": "Workback plan for the strategic off\u2011site including pre\u2011work, facilitator preparation, logistics, session plans, post\u2011offsite deliverables, and communication rollout.",
+    "draft": true,
+    "participants": [
+      {
+        "name": "VP Strategy",
+        "details": "Owner of research scope definition",
+        "draft": true
+      },
+      {
+        "name": "Market Insights Lead",
+        "details": "Owner of market analysis",
+        "draft": true
+      },
+      {
+        "name": "CFO Office",
+        "details": "Owner of financial scenario modeling",
+        "draft": true
+      },
+      {
+        "name": "Cross\u2011functional Review Team",
+        "details": "Owners of peer review",
+        "draft": true
+      },
+      {
+        "name": "Strategy PM",
+        "details": "Project manager for integration, briefings, and final deliverables",
+        "draft": true
+      },
+      {
+        "name": "Board Liaison",
+        "details": "Owner of board pre\u2011review and board pack sign\u2011off",
+        "draft": true
+      },
+      {
+        "name": "HR Learning Lead",
+        "details": "Owner of facilitator selection",
+        "draft": true
+      },
+      {
+        "name": "Facilitator",
+        "details": "External or internal facilitator responsible for agenda drafting and session scripts",
+        "draft": true
+      },
+      {
+        "name": "COO",
+        "details": "Owner of senior leadership agenda sign\u2011off",
+        "draft": true
+      },
+      {
+        "name": "Procurement Lead",
+        "details": "Owner of venue contract negotiation",
+        "draft": true
+      },
+      {
+        "name": "Finance Ops",
+        "details": "Owner of travel policy alignment",
+        "draft": true
+      },
+      {
+        "name": "Travel Coordinator",
+        "details": "Owner of travel booking and lodging assignments",
+        "draft": true
+      },
+      {
+        "name": "IT On\u2011site Lead",
+        "details": "Owner of tech checklist",
+        "draft": true
+      },
+      {
+        "name": "Events Manager",
+        "details": "Owner of on\u2011site support plan",
+        "draft": true
+      },
+      {
+        "name": "COO Office",
+        "details": "Owner of decision matrix creation",
+        "draft": true
+      },
+      {
+        "name": "CEO Office",
+        "details": "Owner of leadership review and board review sign\u2011off",
+        "draft": true
+      },
+      {
+        "name": "Functional Leads",
+        "details": "Owners of action plan development",
+        "draft": true
+      },
+      {
+        "name": "Corporate Communications Lead",
+        "details": "Owner of audience segmentation",
+        "draft": true
+      },
+      {
+        "name": "Communications Team",
+        "details": "Owner of key message drafting",
+        "draft": true
+      },
+      {
+        "name": "PMO",
+        "details": "Owner of rollout schedule and overall project governance",
+        "draft": true
+      }
+    ],
+    "references": [],
+    "deliverables": [
+      {
+        "name": "Pre\u2011work Package",
+        "type": "word",
+        "id": "deliverable-001",
+        "draft": true
+      },
+      {
+        "name": "Finalized 3\u2011day Agenda, Facilitator Guide, Decision\u2011Making Matrix",
+        "type": "word",
+        "id": "deliverable-002",
+        "draft": true
+      },
+      {
+        "name": "Logistics Workbook",
+        "type": "excel",
+        "id": "deliverable-003",
+        "draft": true
+      },
+      {
+        "name": "Day\u2011by\u2011Day Session Scripts & Decision\u2011Recording Template",
+        "type": "word",
+        "id": "deliverable-004",
+        "draft": true
+      },
+      {
+        "name": "Consolidated Off\u2011site Report",
+        "type": "word",
+        "id": "deliverable-005",
+        "draft": true
+      },
+      {
+        "name": "Owner\u2011by\u2011Owner Action Plans",
+        "type": "excel",
+        "id": "deliverable-006",
+        "draft": true
+      },
+      {
+        "name": "Board Presentation Package",
+        "type": "powerpoint",
+        "id": "deliverable-007",
+        "draft": true
+      },
+      {
+        "name": "Communication Calendar, Messaging Templates, Stakeholder Briefings",
+        "type": "word",
+        "id": "deliverable-008",
+        "draft": true
+      }
+    ],
+    "tasks": [
+      {
+        "id": "task-001",
+        "name": "Pre\u2011work Package",
+        "draft": true,
+        "details": "Overall delivery of consolidated research report and financial scenario models.",
+        "dependencies": [
+          "task-001-6"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[word]/deliverable-001"
+        ]
+      },
+      {
+        "id": "task-001-1",
+        "name": "Define research & financial scope",
+        "draft": true,
+        "details": "Agree on research questions, geographic focus, and financial assumptions.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "due-by": "2024-06-15"
+      },
+      {
+        "id": "task-001-2",
+        "name": "Conduct market analysis",
+        "draft": true,
+        "details": "Market analyst produces draft market analysis.",
+        "dependencies": [
+          "task-001-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "due-by": "2024-07-31"
+      },
+      {
+        "id": "task-001-3",
+        "name": "Build financial scenarios",
+        "draft": true,
+        "details": "Finance analyst produces draft financial scenario models.",
+        "dependencies": [
+          "task-001-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "due-by": "2024-07-31"
+      },
+      {
+        "id": "task-001-4",
+        "name": "Peer review of drafts",
+        "draft": true,
+        "details": "Cross\u2011functional review to validate assumptions.",
+        "dependencies": [
+          "task-001-2",
+          "task-001-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "due-by": "2024-08-07"
+      },
+      {
+        "id": "task-001-5",
+        "name": "Integrate into final package",
+        "draft": true,
+        "details": "Compile peer\u2011reviewed drafts into the Pre\u2011work Package.",
+        "dependencies": [
+          "task-001-4"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "due-by": "2024-08-13"
+      },
+      {
+        "id": "task-001-6",
+        "name": "Board pre\u2011review",
+        "draft": true,
+        "details": "Send Pre\u2011work Package to Board liaison for early comment.",
+        "dependencies": [
+          "task-001-5"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "due-by": "2024-08-14"
+      },
+      {
+        "id": "task-002",
+        "name": "Facilitator & Agenda Preparation",
+        "draft": true,
+        "details": "Overall delivery of agenda, facilitator guide, and decision\u2011making matrix.",
+        "dependencies": [
+          "task-002-5"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[word]/deliverable-002"
+        ]
+      },
+      {
+        "id": "task-002-1",
+        "name": "Select facilitator",
+        "draft": true,
+        "details": "Identify internal senior leader or external consultant.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2024-06-20"
+      },
+      {
+        "id": "task-002-2",
+        "name": "Provide facilitator brief",
+        "draft": true,
+        "details": "Deliver pre\u2011work package and desired outcomes to facilitator.",
+        "dependencies": [
+          "task-002-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2024-06-25"
+      },
+      {
+        "id": "task-002-3",
+        "name": "Draft agenda",
+        "draft": true,
+        "details": "Outline session topics, timings, and decision checkpoints.",
+        "dependencies": [
+          "task-002-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2024-07-10"
+      },
+      {
+        "id": "task-002-4",
+        "name": "Senior leadership sign\u2011off",
+        "draft": true,
+        "details": "Review draft agenda with senior leadership.",
+        "dependencies": [
+          "task-002-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2024-07-20"
+      },
+      {
+        "id": "task-002-5",
+        "name": "Finalize agenda & guide",
+        "draft": true,
+        "details": "Incorporate feedback, lock speakers, produce facilitator handbook.",
+        "dependencies": [
+          "task-002-4"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2024-08-01"
+      },
+      {
+        "id": "task-003",
+        "name": "Logistics Plan",
+        "draft": true,
+        "details": "Overall delivery of logistics workbook covering travel, lodging, tech, and on\u2011site support.",
+        "dependencies": [
+          "task-003-6"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[excel]/deliverable-003"
+        ]
+      },
+      {
+        "id": "task-003-1",
+        "name": "Negotiate venue contract",
+        "draft": true,
+        "details": "Secure Aspen conference center rates, room blocks, and AV packages.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2024-06-30"
+      },
+      {
+        "id": "task-003-2",
+        "name": "Align travel policy",
+        "draft": true,
+        "details": "Confirm travel class limits and per\u2011diem.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2024-06-30"
+      },
+      {
+        "id": "task-003-3",
+        "name": "Book travel itineraries",
+        "draft": true,
+        "details": "Issue itineraries for participants.",
+        "dependencies": [
+          "task-003-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2024-07-15"
+      },
+      {
+        "id": "task-003-4",
+        "name": "Assign lodging",
+        "draft": true,
+        "details": "Allocate rooms and capture special requests.",
+        "dependencies": [
+          "task-003-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2024-07-20"
+      },
+      {
+        "id": "task-003-5",
+        "name": "Verify tech requirements",
+        "draft": true,
+        "details": "Check Wi\u2011Fi, video\u2011conference gear, recording equipment.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2024-08-01"
+      },
+      {
+        "id": "task-003-6",
+        "name": "Develop on\u2011site support plan",
+        "draft": true,
+        "details": "Define on\u2011site staffing and support activities.",
+        "dependencies": [
+          "task-003-5"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2024-08-01"
+      },
+      {
+        "id": "task-004",
+        "name": "Day\u2011by\u2011Day Session Plans",
+        "draft": true,
+        "details": "Overall delivery of detailed session scripts and decision\u2011recording template.",
+        "dependencies": [
+          "task-004-5"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[word]/deliverable-004"
+        ]
+      },
+      {
+        "id": "task-004-1",
+        "name": "Develop session outline",
+        "draft": true,
+        "details": "Create high\u2011level day\u2011by\u2011day session structure.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2024-08-07"
+      },
+      {
+        "id": "task-004-2",
+        "name": "Draft session scripts",
+        "draft": true,
+        "details": "Write detailed scripts and facilitation cues.",
+        "dependencies": [
+          "task-004-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2024-08-14"
+      },
+      {
+        "id": "task-004-3",
+        "name": "Create decision\u2011recording template",
+        "draft": true,
+        "details": "Prepare template for capturing decisions during sessions.",
+        "dependencies": [
+          "task-004-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2024-08-21"
+      },
+      {
+        "id": "task-004-4",
+        "name": "Leadership review",
+        "draft": true,
+        "details": "CEO Office reviews session materials.",
+        "dependencies": [
+          "task-004-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2024-08-28"
+      },
+      {
+        "id": "task-004-5",
+        "name": "Finalize session deliverables",
+        "draft": true,
+        "details": "Incorporate feedback and lock final scripts and templates.",
+        "dependencies": [
+          "task-004-4"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2024-09-04"
+      },
+      {
+        "id": "task-005",
+        "name": "Post\u2011Offsite Deliverables",
+        "draft": true,
+        "details": "Overall delivery of report, action plans, and board package.",
+        "dependencies": [
+          "task-005-5"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[word]/deliverable-005",
+          "@deliverable[excel]/deliverable-006",
+          "@deliverable[powerpoint]/deliverable-007"
+        ]
+      },
+      {
+        "id": "task-005-1",
+        "name": "Capture off\u2011site data",
+        "draft": true,
+        "details": "Facilitator records decisions and outcomes during the off\u2011site.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2024-09-11"
+      },
+      {
+        "id": "task-005-2",
+        "name": "Draft consolidated off\u2011site report",
+        "draft": true,
+        "details": "Compile notes and decisions into a final report.",
+        "dependencies": [
+          "task-005-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2024-09-18"
+      },
+      {
+        "id": "task-005-3",
+        "name": "Develop action plans",
+        "draft": true,
+        "details": "Functional leads create detailed owner\u2011by\u2011owner action plans.",
+        "dependencies": [
+          "task-005-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2024-09-25"
+      },
+      {
+        "id": "task-005-4",
+        "name": "Assemble board presentation package",
+        "draft": true,
+        "details": "Prepare slides and supporting materials for board review.",
+        "dependencies": [
+          "task-005-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2024-10-02"
+      },
+      {
+        "id": "task-005-5",
+        "name": "Board review and sign\u2011off",
+        "draft": true,
+        "details": "CEO Office obtains final board approval of the presentation package.",
+        "dependencies": [
+          "task-005-4"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2024-10-09"
+      },
+      {
+        "id": "task-006",
+        "name": "Communication Rollout",
+        "draft": true,
+        "details": "Overall delivery of communication calendar, templates, and briefings.",
+        "dependencies": [
+          "task-006-4"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[word]/deliverable-008"
+        ]
+      },
+      {
+        "id": "task-006-1",
+        "name": "Segment audience",
+        "draft": true,
+        "details": "Identify internal and external stakeholder groups.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2024-10-16"
+      },
+      {
+        "id": "task-006-2",
+        "name": "Draft key messages",
+        "draft": true,
+        "details": "Create messaging templates for each audience segment.",
+        "dependencies": [
+          "task-006-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2024-10-23"
+      },
+      {
+        "id": "task-006-3",
+        "name": "Create rollout schedule",
+        "draft": true,
+        "details": "Develop timeline for communication delivery.",
+        "dependencies": [
+          "task-006-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2024-10-30"
+      },
+      {
+        "id": "task-006-4",
+        "name": "Execute stakeholder briefings",
+        "draft": true,
+        "details": "Deliver communication calendar, templates, and briefings to stakeholders.",
+        "dependencies": [
+          "task-006-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2024-11-06"
+      }
+    ],
+    "history": []
+  }
+}

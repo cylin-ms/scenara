@@ -1,0 +1,158 @@
+{
+  "basic_info": {
+    "full_name": "Alex Nguyen",
+    "age": 38,
+    "location": "Seattle, WA, USA (Pacific Time - PT)",
+    "years_of_experience": 15,
+    "education": [
+      {
+        "degree": "B.S. Computer Science",
+        "institution": "University of Washington",
+        "year": 2008
+      },
+      {
+        "degree": "M.S. Software Engineering",
+        "institution": "Stanford University",
+        "year": 2010
+      }
+    ]
+  },
+  "work_habits": {
+    "preferred_working_hours": "early bird",
+    "core_hours": "08:00-12:00 PT",
+    "peak_productivity_times": "09:00-11:00 PT",
+    "communication_style": {
+      "preference": "asynchronous",
+      "average_response_time_hours": 2
+    },
+    "meeting_preferences": {
+      "max_meetings_per_week": 2,
+      "preferred_format": "video call",
+      "meeting_duration_preference_minutes": 30
+    },
+    "work_environment": "hybrid (3 days in office, 2 days remote)",
+    "focus_time_requirements_hours_per_day": 4,
+    "focus_time_blocks": [
+      "08:00-10:00 PT",
+      "13:00-15:00 PT"
+    ]
+  },
+  "personality": {
+    "mbti": "INTJ",
+    "decision_making_approach": "data‑driven, analytical with stakeholder input",
+    "risk_tolerance": 6,
+    "collaboration_style": "strategic partner; prefers small cross‑functional pods (3‑5 people)",
+    "stress_management_approach": "daily morning run, yoga twice a week, mindfulness app",
+    "conflict_resolution_style": "collaborative, seeks win‑win outcomes"
+  },
+  "skills": {
+    "core_technical_skills": {
+      "Java": 9,
+      "Python": 8,
+      "Go": 7,
+      "AWS Cloud": 9,
+      "Microservices Architecture": 8,
+      "CI/CD (Jenkins, GitHub Actions)": 8,
+      "Distributed Systems": 9,
+      "React": 6,
+      "Kubernetes": 8,
+      "Terraform": 7
+    },
+    "leadership_abilities": 8,
+    "domain_expertise": [
+      "FinTech payments platforms",
+      "Large‑scale e‑commerce systems",
+      "Real‑time data pipelines"
+    ],
+    "learning_agility": 9,
+    "tools_proficiency": [
+      "Git",
+      "Jira",
+      "Confluence",
+      "Docker",
+      "Kubernetes",
+      "Terraform",
+      "Grafana",
+      "Slack"
+    ],
+    "languages_spoken": [
+      "English (native)",
+      "Vietnamese (fluent)",
+      "Spanish (conversational)"
+    ]
+  },
+  "performance": {
+    "task_completion_rate_percent": 92,
+    "quality_score_percent": 95,
+    "estimation_accuracy_percent": 88,
+    "multitasking_ability": 7,
+    "performance_under_pressure": 8
+  },
+  "availability": {
+    "available_hours_per_week": 40,
+    "working_hours": "07:00-16:00 PT (including 1‑hour lunch)",
+    "planned_time_off_days_per_year": 20,
+    "other_commitments": [
+      "Speaker at two industry conferences per year",
+      "Mentor in company’s internal leadership program (4 hrs/month)"
+    ],
+    "travel_flexibility_percent": 25,
+    "travel_notes": "Can travel up to one week per month for client workshops or off‑site team events"
+  },
+  "personal_factors": {
+    "family_status": "Married, two children (ages 5 and 2)",
+    "caregiving_responsibilities": "Evenings and occasional weekends for childcare",
+    "commute_situation": "30‑minute drive to office; remote days reduce commute",
+    "health_considerations": "Generally healthy; occasional lower‑back discomfort mitigated by ergonomic setup and stretching",
+    "career_motivation": "Building scalable systems, mentoring the next generation, and having measurable impact on product revenue"
+  },
+  "project_impact": {
+    "reliability": 9,
+    "innovation_tendency": 7,
+    "documentation_quality": 8,
+    "mentorship_capability": 9,
+    "influence_level": 8
+  },
+  "collaboration": {
+    "meeting_frequency_preference_per_project": "1‑2 scheduled syncs per week + ad‑hoc as needed",
+    "communication_channels_preference": [
+      "Slack (async)",
+      "Email (formal decisions)",
+      "Zoom (video syncs)"
+    ],
+    "feedback_style": "direct but diplomatic; focuses on actionable items",
+    "knowledge_sharing_habits": [
+      "Writes monthly internal blog posts",
+      "Maintains comprehensive Confluence pages",
+      "Runs quarterly brown‑bag tech talks"
+    ],
+    "cross_team_collaboration_rating": 8
+  },
+  "risk_factors": {
+    "potential_bottlenecks": [
+      "Heavy reliance on Alex for architecture decisions can delay delivery if he is overloaded",
+      "Limited bandwidth during simultaneous release cycles"
+    ],
+    "backup_person_needed": "Senior Engineer Maya Patel (already cross‑trained on core services)",
+    "ramp_up_time_new_project_weeks": 3,
+    "context_switching_tolerance": 6,
+    "burnout_risk_factors": [
+      "Multiple concurrent high‑stakes releases",
+      "Extended periods without dedicated focus time"
+    ],
+    "mitigation_strategies": [
+      "Strict enforcement of 4‑hour focus blocks",
+      "Delegating architecture reviews to senior peers",
+      "Quarterly workload health check"
+    ]
+  },
+  "_metadata": {
+    "generated_at": "2025-11-17T15:16:26.357149",
+    "name": "Alex Nguyen",
+    "role": "Senior Software Engineer",
+    "seniority": "senior",
+    "company": "TechCorp",
+    "model": "gpt-oss:120b",
+    "provider": "ollama"
+  }
+}

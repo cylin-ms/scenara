@@ -1,0 +1,61 @@
+{
+  "scenario_name": "Nimbus AI Edge 3.0 \u2013 Global Enterprise Launch (90\u2011Day Workback)",
+  "company_context": "Nimbus Cloud Solutions (NASDAQ: NCS) is a leading provider of AI\u2011powered edge computing platforms for enterprise IoT. The product is **Nimbus AI Edge 3.0**, the next\u2011generation hardware\u2011software appliance that enables real\u2011time inference on\u2011premise with a unified SaaS management layer. Market opportunity: $12B TAM in manufacturing, logistics, and smart\u2011city verticals, with a projected 15% CAGR. Competitive positioning: differentiated by on\u2011device privacy, sub\u201110\u2011ms latency, and a plug\u2011and\u2011play AI marketplace, positioning Nimbus ahead of competitors such as NVIDIA EGX, HPE Edgeline, and Dell Edge Gateways. Launch date: **Monday, 15\u202fMar\u202f2025**. Launch event: hybrid \u201cNimbus AI Edge 3.0 Global Reveal\u201d streamed from the San Francisco HQ auditorium, with live demos, a keynote by CEO Maya Patel, and a press reception at the nearby Palace of Fine Arts. The launch will be supported by a 90\u2011day cross\u2011functional work\u2011back plan involving 16 core team members across Product, Engineering, Marketing, Sales, Legal, Finance, Partner, and Customer Success functions.",
+  "meeting_event_details": "Date: **Monday, 10\u202fJan\u202f2025**\nTime: **09:00 \u2013 12:00\u202fPST** (3\u2011hour duration)\nLocation: **Nimbus HQ \u2013 Boardroom A, 555 Market St, San Francisco, CA** (hybrid link provided for remote participants). Agenda: final review of release candidate, sign\u2011off on legal/compliance, confirmation of partner enablement kits, and approval of the launch day run\u2011of\u2011show.\n",
+  "stakeholders": [
+    "Maya Patel \u2013 Chief Executive Officer (overall launch sponsor, final business approval)",
+    "Liam Chen \u2013 VP of Product Management (product vision, feature prioritization, beta program oversight)",
+    "Aisha Rahman \u2013 Director of Engineering \u2013 Edge Platform (lead of hardware & firmware, RC build schedule)",
+    "Diego Torres \u2013 QA Lead \u2013 Edge Systems (release candidate validation, test automation)",
+    "Priya Singh \u2013 UX Lead \u2013 Nimbus AI Console (user experience sign\u2011off, demo flows)",
+    "Olivia Martinez \u2013 Director of Marketing \u2013 Enterprise Solutions (Go\u2011to\u2011Market strategy, launch communications)",
+    "Ethan Brooks \u2013 Senior Product Marketing Manager (partner & analyst briefings, press kit)",
+    "Ravi Patel \u2013 Global Sales Enablement Manager (sales playbooks, quota planning)",
+    "Sofia Alvarez \u2013 Partner Enablement Lead (OEM & system integrator training, co\u2011sell agreements)",
+    "Natalie Kim \u2013 Senior Legal Counsel \u2013 Technology (IP, export controls, GDPR/CCPA compliance)",
+    "James O'Leary \u2013 Pricing & Finance Analyst (price modeling, discount structures, revenue forecasting)",
+    "Megan Liu \u2013 Compliance Officer \u2013 Data Security (SOC\u202f2, ISO\u202f27001, FedRAMP readiness)",
+    "Carlos Gutierrez \u2013 Customer Success Lead \u2013 Early Adopters (beta onboarding, success metrics)",
+    "Emily Wu \u2013 Beta Program Manager (beta recruitment, feedback loop, RC candidate selection)",
+    "Victor Huang \u2013 Cloud Infrastructure Lead (edge\u2011to\u2011cloud connectivity, capacity planning)",
+    "Tara Singh \u2013 Product Operations Manager (project schedule, risk register, resource allocation)"
+  ],
+  "deliverables": [
+    "Nimbus AI Edge 3.0 Release Candidate\u202fRC\u20111 (hardware build + firmware + Nimbus AI Console v3.0) \u2013 signed off by 31\u202fJan\u202f2025",
+    "Beta Program Report \u2013 aggregated feedback, defect backlog, and go/no\u2011go recommendation \u2013 due 14\u202fFeb\u202f2025",
+    "Launch Playbook \u2013 detailed day\u2011of\u2011event run\u2011sheet, media list, crisis communication plan \u2013 due 28\u202fFeb\u202f2025",
+    "Press Release & Media Kit \u2013 approved by Legal and Marketing \u2013 ready by 05\u202fMar\u202f2025",
+    "Partner Enablement Kit \u2013 co\u2011sell collateral, technical integration guides, joint demo scripts \u2013 ready by 07\u202fMar\u202f2025",
+    "Pricing & Discount Model Document \u2013 tiered enterprise pricing, volume discounts, subscription vs perpetual \u2013 approved by Finance by 04\u202fMar\u202f2025",
+    "Compliance Sign\u2011off Package \u2013 GDPR, CCPA, Export Control, SOC\u202f2 audit evidence \u2013 completed by 06\u202fMar\u202f2025",
+    "Customer Training Curriculum \u2013 on\u2011site labs, recorded webinars, certification exam \u2013 live by launch day",
+    "Post\u2011Launch Monitoring Dashboard \u2013 real\u2011time telemetry on sales, adoption, system health, NPS \u2013 live 15\u202fMar\u202f2025",
+    "Executive Summary Deck \u2013 launch results, KPI snapshot, next\u2011phase roadmap \u2013 delivered 30\u202fdays post\u2011launch"
+  ],
+  "success_criteria": [
+    "Achieve \u2265\u202f100,000 paid enterprise subscriptions within 30\u202fdays of launch (target $12\u202fM ARR)",
+    "Beta program Net Promoter Score (NPS) \u2265\u202f70 and defect leakage \u2264\u202f2% into RC\u20111",
+    "Zero critical compliance findings; all audit sign\u2011offs obtained before launch",
+    "Secure at least 5 strategic OEM/SI partners with co\u2011sell agreements signed before launch",
+    "Earn coverage in top 5 technology media outlets (TechCrunch, Wired, The Verge, Bloomberg Technology, CNBC) with \u2265\u202f10\u202fM total impressions",
+    "Launch event attendance \u2265\u202f2,000 live/virtual participants and \u2265\u202f95% satisfaction rating in post\u2011event survey",
+    "Post\u2011launch system uptime \u2265\u202f99.9% for edge devices during the first 60\u202fdays",
+    "Customer Success churn \u2264\u202f2% in the first 90\u202fdays"
+  ],
+  "constraints": [
+    "Total launch budget capped at **$5\u202fM** (including event, marketing spend, partner incentives, and contingency)",
+    "All hardware components must be sourced from approved Tier\u20111 suppliers; any change requires a 2\u2011week lead time",
+    "Compliance with GDPR, CCPA, and U.S. Export Administration Regulations (EAR) \u2013 must obtain export license for any component shipped to EU/Asia before 12\u202fMar\u202f2025",
+    "Beta program must conclude by **14\u202fFeb\u202f2025** to allow a 4\u2011week RC stabilization window",
+    "Key external dependency: Cloud provider (Azure) scheduled maintenance window 20\u201122\u202fMar\u202f2025 \u2013 must not impact launch day telemetry",
+    "Limited availability of the San Francisco auditorium (must be booked by 31\u202fDec\u202f2024)",
+    "Executive leadership requires weekly status updates and a formal go/no\u2011go checkpoint on **31\u202fJan\u202f2025**"
+  ],
+  "workback_prompt": "Create a detailed 90\u2011day workback plan for the Nimbus AI Edge 3.0 major product launch at Nimbus Cloud Solutions. Include all phases (beta program, release candidate validation, legal/compliance sign\u2011off, pricing, partner enablement, marketing, launch event execution, post\u2011launch monitoring). Identify weekly milestones, owners (using the stakeholder list), required deliverables, risk mitigation steps, and dependencies. Align the plan with the constraints (budget $5M, compliance deadlines, hardware supplier lead times) and success criteria (100k subscriptions, NPS \u2265\u202f70, media coverage, etc.). Provide a Gantt\u2011style timeline and a concise executive summary of critical path items.",
+  "meeting_type": "Major Product Launch",
+  "meeting_type_key": "8_major_product_launch",
+  "scenario_number": 2,
+  "horizon": "T-90",
+  "complexity": "Very High",
+  "generated_at": "2025-11-17T07:06:16.331285"
+}

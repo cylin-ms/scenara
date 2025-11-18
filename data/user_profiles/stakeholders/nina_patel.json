@@ -1,0 +1,156 @@
+{
+  "basic_info": {
+    "full_name": "Nina Patel",
+    "age": 38,
+    "location": "San Francisco, CA, USA",
+    "timezone": "America/Los_Angeles (PST)",
+    "years_experience": 15,
+    "education": [
+      {
+        "degree": "B.S. Computer Science",
+        "institution": "Stanford University",
+        "year": 2007
+      },
+      {
+        "degree": "MBA, Marketing & Strategy",
+        "institution": "Northwestern University – Kellogg School of Management",
+        "year": 2012
+      }
+    ]
+  },
+  "work_habits": {
+    "preferred_working_hours": "Early bird (07:00‑15:00 PST)",
+    "peak_productivity_times": [
+      "08:00‑11:00 PST"
+    ],
+    "communication_style": {
+      "async_preference": true,
+      "expected_response_time_hours": 4,
+      "sync_preference_for_critical": true
+    },
+    "meeting_preferences": {
+      "minimizes_meetings": true,
+      "max_meeting_time_per_week_hours": 2,
+      "prefers_short_standups": true,
+      "video_optional": true
+    },
+    "work_environment": "Hybrid (3 days in office, 2 days remote)",
+    "focus_time_requirements": {
+      "daily_focus_blocks": 4,
+      "block_length_minutes": 120,
+      "do_not_disturb_policy": true
+    }
+  },
+  "personality": {
+    "mbti": "ENTJ",
+    "decision_making_approach": "Data‑driven with stakeholder alignment",
+    "risk_tolerance": 7,
+    "collaboration_style": "Collaborative leader; empowers autonomy while maintaining clear direction",
+    "stress_management_approach": "Morning runs, mindfulness breaks, scheduled personal time",
+    "conflict_resolution_style": "Direct yet diplomatic; focuses on facts and mutually beneficial outcomes"
+  },
+  "skills": {
+    "core_technical_skills": {
+      "product_roadmapping": 9,
+      "data_analysis": 8,
+      "user_experience_research": 7,
+      "api_design_understanding": 8,
+      "agile_methodologies": 9,
+      "machine_learning_concepts": 7
+    },
+    "leadership_abilities": {
+      "vision_setting": 9,
+      "people_development": 8,
+      "strategic_thinking": 9,
+      "stakeholder_management": 8,
+      "change_management": 7
+    },
+    "domain_expertise_areas": [
+      "Enterprise SaaS platforms",
+      "Cloud infrastructure (AWS, GCP)",
+      "AI/ML product integration",
+      "FinTech compliance and security"
+    ],
+    "learning_agility": 9,
+    "tools_proficiency": [
+      "Jira",
+      "Confluence",
+      "Aha!",
+      "Tableau",
+      "Mixpanel",
+      "Figma",
+      "PowerBI",
+      "Slack",
+      "Google Workspace",
+      "Miro"
+    ],
+    "languages_spoken": [
+      "English",
+      "Hindi",
+      "Gujarati"
+    ]
+  },
+  "performance": {
+    "task_completion_rate_percent": 94,
+    "quality_score_percent": 92,
+    "estimation_accuracy_percent": 88,
+    "multitasking_ability": 7,
+    "performance_under_pressure": 8
+  },
+  "availability": {
+    "available_hours_per_week": 45,
+    "timezone_and_working_hours": "PST (07:00‑15:00)",
+    "planned_time_off_days_per_year": 25,
+    "other_commitments": "Mentor in corporate leadership program (≈4 hrs/month)",
+    "travel_flexibility": "Up to 15 % travel (3‑4 weeks/year), prefers flights ≤2 h"
+  },
+  "personal_factors": {
+    "family_status": "Married, two children (ages 6 and 9)",
+    "caregiving_responsibilities": "Evening childcare (≈2 hrs daily)",
+    "commute_situation": "30‑minute drive to office, occasional traffic delays",
+    "health_considerations": "Runs 5 k three times a week; occasional lower‑back strain managed with physio",
+    "career_motivation": "Launch market‑leading products, build high‑performing teams, progress to VP of Product"
+  },
+  "project_impact": {
+    "reliability": 9,
+    "innovation_tendency": 8,
+    "documentation_quality": 9,
+    "mentorship_capability": 8,
+    "influence_level": 9
+  },
+  "collaboration": {
+    "meeting_frequency_preference": "Bi‑weekly deep‑dive with stakeholders; daily 15‑min stand‑ups",
+    "communication_channels_preference": [
+      "Slack (async)",
+      "Email",
+      "Miro",
+      "Zoom (sync when needed)"
+    ],
+    "feedback_style": "Direct, data‑backed, supportive",
+    "knowledge_sharing_habits": "Writes detailed post‑mortems, hosts monthly brown‑bag sessions, maintains an up‑to‑date product wiki",
+    "cross_team_collaboration": 8
+  },
+  "risk_factors": {
+    "potential_bottlenecks": [
+      "Dependency on external data pipelines for analytics",
+      "Limited engineering bandwidth during major release cycles"
+    ],
+    "backup_person_needed": "Associate Product Manager – Priya Singh",
+    "ramp_up_time_weeks": 3,
+    "context_switching_tolerance": 6,
+    "burnout_risk_factors": [
+      "High meeting load during Q4 planning",
+      "Balancing childcare with travel requirements",
+      "Perfectionism on deliverables leading to overtime"
+    ]
+  },
+  "_metadata": {
+    "generated_at": "2025-11-17T15:20:04.034939",
+    "name": "Nina Patel",
+    "role": "Senior Product Manager",
+    "seniority": "senior",
+    "company": "TechCorp",
+    "model": "gpt-oss:120b",
+    "provider": "ollama"
+  }
+}

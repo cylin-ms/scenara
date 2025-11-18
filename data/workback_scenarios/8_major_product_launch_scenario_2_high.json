@@ -1,0 +1,639 @@
+{
+  "scenario_name": "Nimbus AI Edge 3.0 \u2013 Global Enterprise Launch (90\u2011Day Workback)",
+  "scenario_number": 2,
+  "meeting_type": "Major Product Launch",
+  "quality_level": "high",
+  "workback_prompt": "Create a detailed 90\u2011day workback plan for the Nimbus AI Edge 3.0 major product launch at Nimbus Cloud Solutions. Include all phases (beta program, release candidate validation, legal/compliance sign\u2011off, pricing, partner enablement, marketing, launch event execution, post\u2011launch monitoring). Identify weekly milestones, owners (using the stakeholder list), required deliverables, risk mitigation steps, and dependencies. Align the plan with the constraints (budget $5M, compliance deadlines, hardware supplier lead times) and success criteria (100k subscriptions, NPS \u2265\u202f70, media coverage, etc.). Provide a Gantt\u2011style timeline and a concise executive summary of critical path items.\n\nGenerate a HIGH QUALITY workback plan with these characteristics:\n- Comprehensive task coverage\n- Clear, actionable task descriptions\n- Well-defined dependencies\n- All tasks assigned to specific owners\n- Clear milestones with completion criteria\n- Realistic timelines with buffers\n- Proactive risk management\n- Complete deliverable list\n\nIMPORTANT: Generate a plan that naturally exhibits HIGH quality characteristics.\nDo not explicitly label the plan as \"high quality\" - let the quality emerge from the content.",
+  "generated_at": "2025-11-17T07:18:21.027374",
+  "analysis": "# Outcomes\n\n## 1. Consolidated stakeholder matrix with owners and contact details  \nA single source of truth that lists every person or group (product, engineering, legal, finance, partner, marketing, events, ops, etc.) who will own tasks in the 90\u2011day launch.  \nArtifact references: *none provided*  \n\n### Reasoning  \nThe user\u2019s request explicitly calls for \u201cowners (using the stakeholder list)\u201d. Without a clean, verified matrix the team will duplicate effort, miss approvals, and create confusion around accountability. Establishing this matrix first removes ambiguity and enables all downstream planning to be correctly assigned.\n\n### Approach  \n1. **Gather existing lists** \u2013 pull any prior project charters, org charts, or contact lists from internal repositories.  \n2. **Validate with functional leads** \u2013 schedule short 15\u2011minute syncs with each department head (Product, Engineering, Legal, Finance, Partner Management, Marketing, Events, Customer Success, Ops). Ask them to confirm or update the names, roles, and preferred communication channels for launch\u2011related work.  \n3. **Document in a shared table** \u2013 include columns for\u202fName, Role, Department, Primary launch responsibility (e.g., \u201cBeta Program Lead\u201d, \u201cPricing Owner\u201d), Email, Slack handle, and escalation contact.  \n4. **Obtain sign\u2011off** \u2013 circulate the matrix to all listed owners and request a brief \u201cOK\u201d reply; capture approvals in the document\u2019s version history.  \n5. **Publish** \u2013 store the matrix in a centrally accessible location (e.g., shared drive or project space) and link it in all future launch\u2011related communications.\n\n---\n\n## 2. Defined phase scopes, success criteria, and high\u2011level milestones  \nA concise description of each launch phase (Beta, RC validation, Legal/Compliance, Pricing, Partner Enablement, Marketing, Launch Event, Post\u2011Launch Monitoring) together with measurable success criteria (e.g., \u201cBeta \u2265\u202f80\u202f% feature completion\u201d, \u201cNPS\u202f\u2265\u202f70\u201d) and the key milestone dates that will drive the workback schedule.  \n\n### Reasoning  \nThe user asked for \u201call phases \u2026 success criteria \u2026 weekly milestones\u201d. By first crystallising what each phase must deliver and how success will be measured, the team can later break those into granular tasks that are directly traceable to the overarching goals (100k subscriptions, NPS\u202f\u2265\u202f70, media coverage, etc.).  \n\n### Approach  \n1. **Facilitate a phase\u2011definition workshop** \u2013 invite the stakeholder matrix owners to a half\u2011day virtual session. Use a pre\u2011distributed template that asks each owner to state:  \n   * Phase objective  \n   * Core deliverables (documents, builds, approvals)  \n   * Success metrics (quantitative/qualitative)  \n   * External constraints (budget, supplier lead time, compliance deadline)  \n2. **Synthesize outputs** \u2013 compile workshop notes into a master \u201cPhase Scope & Success Criteria\u201d document, aligning each metric with the overall launch success criteria.  \n3. **Identify high\u2011level milestones** \u2013 for each phase, pinpoint the earliest date by which the primary deliverable must be completed to keep the overall 90\u2011day window intact (e.g., \u201cBeta program kickoff \u2013 Day\u202f5\u201d, \u201cRC sign\u2011off \u2013 Day\u202f30\u201d).  \n4. **Validate with leadership** \u2013 circulate the document to the executive sponsor for quick approval; incorporate any strategic adjustments.  \n5. **Lock and share** \u2013 store the final version alongside the stakeholder matrix; reference it in the detailed workback plan.\n\n---\n\n## 3. Detailed task inventory with dependencies and risk tags  \nAn exhaustive, line\u2011item list of every activity required to move each phase from start to finish, each tagged with: owner, estimated effort, predecessor tasks, risk level, and mitigation action.  \n\n### Reasoning  \nThe user explicitly wants \u201ccomprehensive task coverage, clear dependencies, risk mitigation steps\u201d. A well\u2011structured task inventory is the backbone of any Gantt\u2011style schedule and enables realistic timeline building, buffer allocation, and early risk identification.  \n\n### Approach  \n1. **Create a master task spreadsheet** \u2013 columns: Task ID, Description, Phase, Owner (from Outcome\u202f1), Effort (person\u2011days), Predecessor(s), Success Criteria (link to Outcome\u202f2), Risk Rating (Low/Med/High), Mitigation Action, Target Completion Week.  \n2. **Populate by phase** \u2013 using the Phase Scope document, break each high\u2011level deliverable into 3\u20135 concrete actions (e.g., \u201cBeta recruitment email draft\u201d, \u201cHardware sample receipt\u201d, \u201cLegal review of data\u2011processing addendum\u201d).  \n3. **Run a dependency mapping session** \u2013 with the stakeholder owners, walk through the list and confirm logical ordering; capture any \u201cmust\u2011have\u201d predecessor relationships (e.g., \u201cHardware receipt\u201d \u2192 \u201cBeta device provisioning\u201d).  \n4. **Assign risk tags** \u2013 for each task, ask the owner to rate risk based on factors such as supplier lead time, regulatory approval, or resource availability; note a concise mitigation (e.g., \u201cIdentify secondary supplier\u201d, \u201cPrepare fallback legal language\u201d).  \n5. **Review and refine** \u2013 circulate the draft inventory to the entire launch team; incorporate feedback and finalize.  \n6. **Version control** \u2013 keep the spreadsheet in a shared location and log changes; this will be the source file for the Gantt construction.\n\n---\n\n## 4. Draft Gantt\u2011style timeline with buffers and critical\u2011path identification  \nA visual schedule (e.g., in Excel, PowerPoint, or a project\u2011management tool) that maps the task inventory onto a 13\u2011week (90\u2011day) horizon, shows dependencies, highlights the critical path, and embeds buffer weeks for high\u2011risk activities.  \n\n### Reasoning  \nThe user requests a \u201cGantt\u2011style timeline\u201d and a \u201cconcise executive summary of critical path items\u201d. Translating the task list into a timeline is the step where feasibility is tested against the $5\u202fM budget, supplier lead times, and compliance deadlines.  \n\n### Approach  \n1. **Import task inventory** \u2013 load the spreadsheet into a scheduling tool that supports dependency\u2011driven Gantt charts.  \n2. **Set baseline durations** \u2013 apply the estimated effort and add a standard buffer (e.g., 20\u202f% for high\u2011risk tasks, 10\u202f% for medium).  \n3. **Apply constraints** \u2013 lock dates for non\u2011negotiable items (e.g., \u201cCompliance sign\u2011off deadline \u2013 Week\u202f9\u201d, \u201cHardware shipment arrival \u2013 Week\u202f4\u201d).  \n4. **Run critical\u2011path analysis** \u2013 let the tool calculate the longest path of dependent tasks; verify that it aligns with the major phases (Beta \u2192 RC \u2192 Legal \u2192 Pricing \u2192 Launch).  \n5. **Iterate with owners** \u2013 share the draft timeline, gather feedback on feasibility, and adjust durations or dependencies as needed.  \n6. **Finalize visual** \u2013 produce a clean, colour\u2011coded Gantt chart (phases distinguished, critical path highlighted in red, buffers shaded). Export as PDF and embed in the executive summary.\n\n---\n\n## 5. Executive summary document (1\u2011page) highlighting critical path, budget alignment, and success metrics  \n\n### Reasoning  \nExecutive leadership needs a succinct view that confirms the plan fits within the $5\u202fM budget, meets compliance deadlines, and will achieve the target KPIs (100k subscriptions, NPS\u202f\u2265\u202f70, media coverage). The summary also serves as the \u201cquick\u2011read\u201d artifact for sponsors and external partners.  \n\n### Approach  \n1. **Draft a template** \u2013 sections: Launch objective, 90\u2011day timeline snapshot, critical\u2011path milestones, budget overview, risk heat\u2011map, success\u2011criteria checklist.  \n2. **Populate with data** \u2013 pull dates from the Gantt, cost estimates from the budget line items (if already known; otherwise note \u201cto be detailed in Phase\u202f2\u201d), and success metrics from Outcome\u202f2.  \n3. **Add risk highlights** \u2013 list the top three high\u2011risk items and their mitigation actions.  \n4. **Seek sponsor review** \u2013 send the draft to the executive sponsor for a brief endorsement; incorporate any requested emphasis.  \n5. **Publish** \u2013 attach the summary to the final workback plan package and circulate to all stakeholders.\n\n---\n\n## 6. Formal launch workback plan package (document + Gantt + summary) with sign\u2011off  \n\n### Reasoning  \nThe user\u2019s ultimate deliverable is a \u201cHIGH QUALITY workback plan\u201d. Packaging all artifacts together, obtaining formal sign\u2011off, and storing the package in a controlled location ensures the plan is authoritative and ready for execution.  \n\n### Approach  \n1. **Assemble components** \u2013 combine: stakeholder matrix, Phase Scope & Success Criteria, Detailed Task Inventory, Gantt timeline, Executive Summary.  \n2. **Create a table of contents and version log** \u2013 clearly indicate the date, author, and revision number.  \n3. **Define sign\u2011off matrix** \u2013 list required approvers (Product Lead, Legal Lead, Finance CFO, Partner VP, Marketing Director, Operations Lead).  \n4. **Run a final review meeting** \u2013 walk through each section, address open questions, and capture any last\u2011minute changes.  \n5. **Collect signatures** \u2013 use an electronic sign\u2011off tool or email acknowledgment; record the date of approval.  \n6. **Store securely** \u2013 place the final package in the designated project repository (e.g., \u201cLaunchPlans/NimbusAI\u2011Edge\u20113.0\u201d) with appropriate access controls.  \n7. **Communicate launch readiness** \u2013 send a brief \u201cLaunch Plan Approved\u201d announcement to the broader organization, linking to the package.\n\n---\n\n# Breakdown\n\n### Outcome\u202f1 \u2013 Stakeholder matrix\n1.1 Retrieve existing contact lists  \n1.2 Schedule 15\u2011min syncs with each functional lead (parallel)  \n1.3 Draft shared table (Name, Role, Owner\u2011Task, Contact)  \n1.4 Circulate for confirmation \u2192 collect \u201cOK\u201d replies (depends on 1.2)  \n1.5 Publish in shared drive  \n\n### Outcome\u202f2 \u2013 Phase scopes & milestones\n2.1 Prepare workshop agenda & template (depends on 1.5)  \n2.2 Conduct phase\u2011definition workshop (all owners)  \n2.3 Synthesize notes into \u201cPhase Scope & Success Criteria\u201d doc  \n2.4 Identify high\u2011level milestones per phase  \n2.5 Review with executive sponsor (parallel)  \n2.6 Publish final version (depends on 2.5)  \n\n### Outcome\u202f3 \u2013 Detailed task inventory\n3.1 Build master task spreadsheet (template)  \n3.2 Populate tasks per phase using Outcome\u202f2 doc (parallel)  \n3.3 Dependency mapping session with owners (depends on 1.5 & 2.6)  \n3.4 Assign risk ratings & mitigation actions (parallel)  \n3.5 Consolidate, review, and finalize inventory  \n\n### Outcome\u202f4 \u2013 Draft Gantt timeline\n4.1 Import task inventory into scheduling tool  \n4.2 Set baseline durations + buffers (based on risk tags)  \n4.3 Apply fixed constraints (supplier lead times, compliance deadline)  \n4.4 Run critical\u2011path analysis  \n4.5 Review draft Gantt with owners (depends on 3.5)  \n4.6 Refine and export final Gantt chart  \n\n### Outcome\u202f5 \u2013 Executive summary\n5.1 Draft 1\u2011page template (outline)  \n5.2 Populate with timeline snapshots, critical path, budget notes, success metrics (depends on 4.6 & 2.6)  \n5.3 Add top\u20113 risk highlights (from 3.4)  \n5.4 Sponsor review & revision  \n5.5 Finalize and lock  \n\n### Outcome\u202f6 \u2013 Formal workback plan package & sign\u2011off\n6.1 Assemble all artifacts (1\u20115) into single document set  \n6.2 Create TOC, version log, and sign\u2011off matrix  \n6.3 Conduct final review meeting (all owners)  \n6.4 Capture electronic signatures / approvals  \n6.5 Store package in project repository with access controls  \n6.6 Broadcast \u201cLaunch Plan Approved\u201d announcement  \n\n---\n\n**Key dependencies & critical path**  \n- The **Stakeholder matrix (Outcome\u202f1)** must be completed before any phase\u2011definition or task\u2011mapping work can be accurately assigned.  \n- **Phase scopes & milestones (Outcome\u202f2)** feed directly into the **Task inventory (Outcome\u202f3)**; any change here ripples downstream.  \n- The **Task inventory (Outcome\u202f3)** is the prerequisite for building the **Gantt timeline (Outcome\u202f4)**, which in turn supplies the data for the **Executive summary (Outcome\u202f5)**.  \n- The **Executive summary (Outcome\u202f5)** and the **final Gantt (Outcome\u202f4)** are the two critical inputs for the **Formal plan sign\u2011off (Outcome\u202f6)**.  \n\nBy following the structured approach above, the team can collaboratively produce a complete, realistic 90\u2011day workback plan that respects budget, compliance, and supplier constraints while targeting the defined success metrics.",
+  "plan": {
+    "id": "document-001",
+    "name": "90\u2011Day Launch Workback Plan",
+    "details": "",
+    "draft": true,
+    "participants": [
+      {
+        "name": "you",
+        "email": "",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "system",
+        "email": "",
+        "details": "",
+        "draft": true
+      }
+    ],
+    "references": [],
+    "deliverables": [
+      {
+        "id": "deliverable-001",
+        "name": "Stakeholder Matrix",
+        "type": "excel",
+        "draft": true,
+        "history": []
+      },
+      {
+        "id": "deliverable-002",
+        "name": "Phase Scope & Success Criteria Document",
+        "type": "word",
+        "draft": true,
+        "history": []
+      },
+      {
+        "id": "deliverable-003",
+        "name": "Detailed Task Inventory Spreadsheet",
+        "type": "excel",
+        "draft": true,
+        "history": []
+      },
+      {
+        "id": "deliverable-004",
+        "name": "Draft Gantt\u2011Style Timeline",
+        "type": "powerpoint",
+        "draft": true,
+        "history": []
+      },
+      {
+        "id": "deliverable-005",
+        "name": "Executive Summary (1\u2011page)",
+        "type": "word",
+        "draft": true,
+        "history": []
+      },
+      {
+        "id": "deliverable-006",
+        "name": "Formal Launch Workback Plan Package",
+        "type": "folder",
+        "draft": true,
+        "history": []
+      }
+    ],
+    "tasks": [
+      {
+        "id": "task-001",
+        "name": "Retrieve existing contact lists",
+        "details": "Gather prior project charters, org charts, and contact lists from internal repositories.",
+        "draft": true,
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002",
+        "name": "Schedule 15\u2011min syncs with each functional lead",
+        "details": "Arrange short meetings with Product, Engineering, Legal, Finance, Partner Management, Marketing, Events, Customer Success, and Ops leads.",
+        "draft": true,
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003",
+        "name": "Draft shared stakeholder table",
+        "details": "Create a table with columns: Name, Role, Department, Primary launch responsibility, Email, Slack handle, Escalation contact.",
+        "draft": true,
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-004",
+        "name": "Circulate for confirmation and collect \u201cOK\u201d replies",
+        "details": "Send the draft matrix to owners for validation and capture their approvals.",
+        "draft": true,
+        "dependencies": [
+          "task-002"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-005",
+        "name": "Publish stakeholder matrix in shared drive",
+        "details": "Store the finalized matrix in a centrally accessible location and link it for future communications.",
+        "draft": true,
+        "dependencies": [
+          "task-004"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [
+          "@deliverable[excel]/deliverable-001"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-006",
+        "name": "Prepare workshop agenda & template",
+        "details": "Create agenda and template for the phase\u2011definition workshop.",
+        "draft": true,
+        "dependencies": [
+          "task-005"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-007",
+        "name": "Conduct phase\u2011definition workshop",
+        "details": "Half\u2011day virtual session with all stakeholder owners to define phase objectives, deliverables, success metrics, and constraints.",
+        "draft": true,
+        "dependencies": [
+          "task-006"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-008",
+        "name": "Synthesize notes into Phase Scope & Success Criteria document",
+        "details": "Compile workshop outputs into a master document aligning each phase with overall launch success criteria.",
+        "draft": true,
+        "dependencies": [
+          "task-007"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-009",
+        "name": "Identify high\u2011level milestones per phase",
+        "details": "Determine earliest dates for primary deliverables to keep the 90\u2011day window intact.",
+        "draft": true,
+        "dependencies": [
+          "task-008"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-010",
+        "name": "Review Phase Scope document with executive sponsor",
+        "details": "Send the document for quick approval and incorporate any strategic adjustments.",
+        "draft": true,
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-011",
+        "name": "Publish final Phase Scope & Success Criteria version",
+        "details": "Store the approved document alongside the stakeholder matrix.",
+        "draft": true,
+        "dependencies": [
+          "task-010"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [
+          "@deliverable[word]/deliverable-002"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-012",
+        "name": "Build master task spreadsheet template",
+        "details": "Create columns for Task ID, Description, Phase, Owner, Effort, Predecessor(s), Success Criteria, Risk Rating, Mitigation Action, Target Completion Week.",
+        "draft": true,
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-013",
+        "name": "Populate tasks per phase using Phase Scope document",
+        "details": "Break each high\u2011level deliverable into 3\u20135 concrete actions.",
+        "draft": true,
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-014",
+        "name": "Dependency mapping session with owners",
+        "details": "Confirm logical ordering and predecessor relationships for all tasks.",
+        "draft": true,
+        "dependencies": [
+          "task-005",
+          "task-011"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-015",
+        "name": "Assign risk ratings & mitigation actions",
+        "details": "Owners rate each task\u2019s risk (Low/Med/High) and note concise mitigation steps.",
+        "draft": true,
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-016",
+        "name": "Consolidate, review, and finalize task inventory",
+        "details": "Incorporate feedback and lock the master task spreadsheet.",
+        "draft": true,
+        "dependencies": [
+          "task-013",
+          "task-014",
+          "task-015"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [
+          "@deliverable[excel]/deliverable-003"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-017",
+        "name": "Import task inventory into scheduling tool",
+        "details": "Load the finalized spreadsheet into a Gantt\u2011compatible project\u2011management tool.",
+        "draft": true,
+        "dependencies": [
+          "task-016"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-018",
+        "name": "Set baseline durations + buffers",
+        "details": "Apply estimated effort and add buffers (20\u202f% for high\u2011risk, 10\u202f% for medium).",
+        "draft": true,
+        "dependencies": [
+          "task-017"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-019",
+        "name": "Apply fixed constraints (supplier lead times, compliance deadline)",
+        "details": "Lock dates for non\u2011negotiable items in the schedule.",
+        "draft": true,
+        "dependencies": [
+          "task-018"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-020",
+        "name": "Run critical\u2011path analysis",
+        "details": "Calculate the longest dependent task chain and verify alignment with major phases.",
+        "draft": true,
+        "dependencies": [
+          "task-019"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-021",
+        "name": "Review draft Gantt with owners",
+        "details": "Gather input on the preliminary timeline and critical\u2011path results.",
+        "draft": true,
+        "dependencies": [
+          "task-016"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-022",
+        "name": "Refine and export final Gantt chart",
+        "details": "Incorporate review feedback and produce the final visual timeline.",
+        "draft": true,
+        "dependencies": [
+          "task-021"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [
+          "@deliverable[powerpoint]/deliverable-004"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-023",
+        "name": "Draft executive summary template",
+        "details": "Create a one\u2011page layout for the executive summary.",
+        "draft": true,
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-024",
+        "name": "Populate executive summary with timeline snapshots and phase details",
+        "details": "Insert final Gantt visuals, milestone list, and success\u2011metric targets.",
+        "draft": true,
+        "dependencies": [
+          "task-022",
+          "task-011"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-025",
+        "name": "Add top\u20113 risk highlights",
+        "details": "Include the three highest\u2011risk items and their mitigations.",
+        "draft": true,
+        "dependencies": [
+          "task-015"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-026",
+        "name": "Sponsor review & revision of executive summary",
+        "details": "Send the draft summary to the sponsor for feedback and incorporate changes.",
+        "draft": true,
+        "dependencies": [
+          "task-024",
+          "task-025"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-027",
+        "name": "Finalize and lock executive summary",
+        "details": "Complete the one\u2011page summary and lock the document.",
+        "draft": true,
+        "dependencies": [
+          "task-026"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [
+          "@deliverable[word]/deliverable-005"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-028",
+        "name": "Assemble all artifacts into final package",
+        "details": "Gather stakeholder matrix, phase scope doc, task inventory, Gantt chart, and executive summary.",
+        "draft": true,
+        "dependencies": [
+          "task-027"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-029",
+        "name": "Create TOC, versioning, and sign\u2011off pages for final package",
+        "details": "Prepare documentation structure and sign\u2011off sections.",
+        "draft": true,
+        "dependencies": [
+          "task-028"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-030",
+        "name": "Conduct final review meeting with all owners",
+        "details": "Walk through the complete package to obtain final acceptance.",
+        "draft": true,
+        "dependencies": [
+          "task-029"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-031",
+        "name": "Capture signatures and approvals",
+        "details": "Record sign\u2011offs from all responsible parties.",
+        "draft": true,
+        "dependencies": [
+          "task-030"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-032",
+        "name": "Store final plan package in repository",
+        "details": "Save the complete package to the designated location for future reference.",
+        "draft": true,
+        "dependencies": [
+          "task-031"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [
+          "@deliverable[folder]/deliverable-006"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-033",
+        "name": "Broadcast announcement of completed plan",
+        "details": "Send a communication to stakeholders announcing the final plan is stored and ready.",
+        "draft": true,
+        "dependencies": [
+          "task-032"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      }
+    ],
+    "history": []
+  }
+}

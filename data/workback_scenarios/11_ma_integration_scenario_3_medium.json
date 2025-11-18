@@ -1,0 +1,723 @@
+{
+  "scenario_name": "Apex BioPharma \u2013 NeuroGenix Therapeutics Integration (Extreme Complexity)",
+  "scenario_number": 3,
+  "meeting_type": "M&A Integration Planning",
+  "quality_level": "medium",
+  "workback_prompt": "Create a detailed workback plan for the Apex BioPharma \u2013 NeuroGenix Therapeutics integration scenario described above. The plan should cover all workstreams (HR, IT, Finance, Product Development, Sales & Marketing, Operations & Manufacturing, Regulatory Affairs, Legal & Compliance, Change Management, PMO), list day\u20111 priorities, outline 30\u201160\u201190\u2011day milestones, allocate resources (15\u201130 integration team members), identify risks and mitigation actions, define communication cadence (town\u2011halls, newsletters, intranet updates), and include metrics to track progress toward the $120M cost\u2011synergy and $200M revenue\u2011synergy targets.\n\nGenerate a MEDIUM QUALITY workback plan with these characteristics:\n- Most major tasks present but some gaps\n- Reasonable task descriptions\n- Some dependencies defined\n- Most tasks have owners\n- Milestones present but may lack detail\n- Generally realistic timelines\n- Some consideration of risks\n- Key deliverables identified\n\nIMPORTANT: Generate a plan that naturally exhibits MEDIUM quality characteristics.\nDo not explicitly label the plan as \"medium quality\" - let the quality emerge from the content.",
+  "generated_at": "2025-11-17T08:27:51.230943",
+  "analysis": "# Outcomes\n\n## 1. Day\u20111 Integration Priorities Document  \nA concise, cross\u2011functional list of actions that must be completed on the first operating day after the Apex\u202fBioPharma\u2011NeuroGenix closing (e.g., payroll migration, key system access, critical regulatory filings).  \nArtifact references: *none*\n\n### Reasoning  \nThe integration request explicitly calls for \u201cday\u20111 priorities\u201d across all workstreams. Capturing these in a single, owned document gives the integration team a clear launch\u2011pad and aligns leadership on what must be live immediately.\n\n### Approach  \n1. **Kick\u2011off a Day\u20111 Working Group** composed of leads from HR, IT, Finance, Regulatory, Legal, and Operations.  \n2. **Run a rapid \u201cmust\u2011have vs. nice\u2011to\u2011have\u201d workshop** (1\u2011day session) to surface every activity that, if delayed, would halt business or breach compliance.  \n3. **Prioritize by impact (business continuity, compliance, safety) and feasibility (resource availability, system readiness).**  \n4. **Draft the Day\u20111 Priorities Document** \u2013 include owner, target completion time (hour\u2011level), and escalation path.  \n5. **Review & sign\u2011off** by the Integration Steering Committee before the closing date.  \n\n---\n\n## 2. 30\u201160\u201190\u2011Day Milestone Schedule  \nA timeline that maps major integration milestones for each workstream at the 30\u2011, 60\u2011 and 90\u2011day marks (e.g., HR benefits harmonisation, IT platform consolidation, Finance reporting integration, product pipeline alignment).  \nArtifact references: *none*\n\n### Reasoning  \nThe user asked for \u201c30\u201160\u201190\u2011day milestones.\u201d A schedule that groups milestones by these time buckets provides a visible roadmap for the integration team and senior leadership, and it feeds directly into the PMO\u2019s tracking mechanisms.\n\n### Approach  \n1. **Gather workstream leads** (HR, IT, Finance, Product Development, Sales\u202f&\u202fMarketing, Operations\u202f&\u202fManufacturing, Regulatory Affairs, Legal\u202f&\u202fCompliance, Change Management).  \n2. **Each lead proposes a set of \u201ccritical\u2011to\u2011success\u201d milestones** for their area, anchored to the 30\u2011, 60\u2011 and 90\u2011day windows.  \n3. **Consolidate proposals** in a master spreadsheet and flag cross\u2011workstream dependencies (e.g., Finance system go\u2011live depends on IT data\u2011migration).  \n4. **Validate dates** against resource availability (see Outcome\u202f3) and risk mitigation plans (see Outcome\u202f4).  \n5. **Publish the schedule** to the integration intranet and include it in the weekly PMO status deck.  \n\n---\n\n## 3. Integration Team Resource Allocation Plan (15\u201130\u202fMembers)  \nA roster that assigns specific individuals (or functional pods) to each workstream, defines reporting lines, and balances workload across the 15\u201130\u2011person integration team.  \nArtifact references: *none*\n\n### Reasoning  \nThe brief specifies \u201callocate resources (15\u201130 integration team members).\u201d A clear allocation plan prevents overall\u2011resource bottlenecks and makes it easy to track who owns each task in the workback plan.\n\n### Approach  \n1. **Identify talent pool** \u2013 pull candidates from both Apex\u202fBioPharma and NeuroGenix (functional experts, project managers, analysts).  \n2. **Define workstream staffing needs** \u2013 estimate effort (person\u2011days) for Day\u20111, 30\u2011day, 60\u2011day and 90\u2011day activities.  \n3. **Map individuals to workstreams** based on expertise and availability; create \u201clead\u201d and \u201csupport\u201d roles.  \n4. **Establish a reporting matrix** (e.g., each workstream lead reports to the Integration PMO Director; all leads attend the weekly PMO sync).  \n5. **Document the allocation** in a shared resource tracker and update it as people transition back to business\u2011as\u2011usual.  \n\n---\n\n## 4. Risks & Mitigation Register  \nA living document that lists integration\u2011specific risks (e.g., talent attrition, IT data\u2011migration errors, regulatory approval delays), assesses impact/probability, and defines mitigation actions and owners.  \nArtifact references: *none*\n\n### Reasoning  \nThe user asked to \u201cidentify risks and mitigation actions.\u201d A register provides a structured way to surface, assess, and monitor risks throughout the 90\u2011day horizon and beyond.\n\n### Approach  \n1. **Facilitate a risk\u2011identification session** with all workstream leads (use a simple RACI matrix).  \n2. **Score each risk** on a 1\u20115 impact / probability scale; prioritize those above a defined threshold.  \n3. **Assign mitigation owners** and concrete actions (e.g., \u201cduplicate critical data before migration \u2013 IT lead\u201d).  \n4. **Integrate the register** into the PMO\u2019s weekly status reporting and review it at each steering\u2011committee meeting.  \n5. **Update the register** whenever new information emerges (e.g., regulatory feedback).  \n\n---\n\n## 5. Communication Cadence Blueprint  \nA schedule and set of templates for town\u2011halls, newsletters, intranet updates, and leadership briefings that keep employees, partners, and investors informed throughout integration.  \nArtifact references: *none*\n\n### Reasoning  \nEffective communication (\u201ctown\u2011halls, newsletters, intranet updates\u201d) is explicitly required. A blueprint ensures consistency, avoids message fatigue, and aligns with change\u2011management best practices.\n\n### Approach  \n1. **Define audience segments** (all\u2011employees, functional teams, external partners, investors).  \n2. **Select channels** per segment (e.g., town\u2011hall for all\u2011employees, targeted newsletter for sales, intranet dashboard for project status).  \n3. **Set cadence** \u2013 e.g., Town\u2011hall on Day\u202f1, then weekly; newsletter bi\u2011weekly; intranet updates every 3\u202fdays.  \n4. **Create message\u2011ownership matrix** \u2013 e.g., CEO leads Day\u20111 town\u2011hall, HR leads employee\u2011focus newsletters, PMO leads intranet status posts.  \n5. **Develop template library** (slide decks, email copy) and store centrally for rapid reuse.  \n\n---\n\n## 6. Synergy Tracking Dashboard (Cost\u2011$120M, Revenue\u2011$200M)  \nA KPI dashboard that captures progress toward the $120\u202fM cost\u2011synergy and $200\u202fM revenue\u2011synergy targets, broken down by workstream and time horizon.  \nArtifact references: *none*\n\n### Reasoning  \nThe brief calls for \u201cmetrics to track progress toward the $120M cost\u2011synergy and $200M revenue\u2011synergy targets.\u201d A dashboard provides visibility, enables early corrective actions, and satisfies the finance team\u2019s reporting obligations.\n\n### Approach  \n1. **Define leading indicators** for each synergy category (e.g., headcount reduction %, procurement spend consolidation, cross\u2011sell pipeline value).  \n2. **Assign data owners** (Finance for cost, Sales for revenue, Operations for manufacturing efficiencies).  \n3. **Select a reporting tool** (e.g., Power\u202fBI, Tableau) and build a simple visual layout (overall targets, monthly burn\u2011down, workstream contribution).  \n4. **Populate baseline numbers** (pre\u2011integration) and set target dates (e.g., 12\u2011month horizon).  \n5. **Refresh data** on a weekly basis and embed the dashboard in the PMO status pack.  \n\n---\n\n# Breakdown\n\n### 1. Day\u20111 Integration Priorities Document\n1.1 Form Day\u20111 Working Group \u2013 **Owner:** Integration PMO Director  \n1.2 Conduct \u201cmust\u2011have vs. nice\u2011to\u2011have\u201d workshop (1\u202fday) \u2013 **Owner:** HR Lead (facilitation)  \n1.3 Prioritise actions by impact & feasibility \u2013 **Owner:** Finance Lead (impact scoring)  \n1.4 Draft document (owner, deadline, escalation) \u2013 **Owner:** Legal & Compliance Lead  \n1.5 Review & sign\u2011off by Steering Committee \u2013 **Owner:** CEO Office  \n\n### 2. 30\u201160\u201190\u2011Day Milestone Schedule\n2.1 Collect workstream milestone proposals \u2013 **Owner:** Each Workstream Lead  \n2.2 Consolidate into master schedule \u2013 **Owner:** PMO Scheduler (depends on 2.1)  \n2.3 Identify cross\u2011workstream dependencies \u2013 **Owner:** PMO Analyst (parallel with 2.2)  \n2.4 Validate dates vs. resource plan \u2013 **Owner:** Resource Manager (depends on 2.2 & Outcome\u202f3)  \n2.5 Publish schedule to intranet & status decks \u2013 **Owner:** Communications Lead  \n\n### 3. Integration Team Resource Allocation Plan\n3.1 Compile talent pool list \u2013 **Owner:** HR Talent Acquisition Lead  \n3.2 Estimate effort per workstream \u2013 **Owner:** Workstream Leads (parallel)  \n3.3 Map individuals to tasks & define RACI \u2013 **Owner:** Resource Manager (depends on 3.1 & 3.2)  \n3.4 Create reporting matrix \u2013 **Owner:** PMO Director (depends on 3.3)  \n3.5 Load allocation into shared tracker \u2013 **Owner:** PMO Analyst  \n\n### 4. Risks & Mitigation Register\n4.1 Run risk\u2011identification session \u2013 **Owner:** Risk Management Lead (depends on 1.1)  \n4.2 Score and prioritize risks \u2013 **Owner:** Finance Lead (parallel)  \n4.3 Assign mitigation owners & actions \u2013 **Owner:** Each Workstream Lead (depends on 4.2)  \n4.4 Integrate register into weekly PMO report \u2013 **Owner:** PMO Analyst (depends on 4.3)  \n4.5 Establish review cadence at steering meetings \u2013 **Owner:** PMO Director  \n\n### 5. Communication Cadence Blueprint\n5.1 Segment audiences & select channels \u2013 **Owner:** Change Management Lead  \n5.2 Define cadence per channel \u2013 **Owner:** Communications Lead (parallel)  \n5.3 Build message\u2011ownership matrix \u2013 **Owner:** HR Lead (depends on 5.1)  \n5.4 Develop template library \u2013 **Owner:** Communications Designer (depends on 5.3)  \n5.5 Publish blueprint & train owners \u2013 **Owner:** Change Management Lead (depends on 5.4)  \n\n### 6. Synergy Tracking Dashboard\n6.1 Identify KPI set (cost & revenue) \u2013 **Owner:** Finance Lead (depends on Outcome\u202f2)  \n6.2 Assign data owners \u2013 **Owner:** PMO Director (parallel)  \n6.3 Build dashboard prototype \u2013 **Owner:** Business Intelligence Analyst (depends on 6.1)  \n6.4 Populate baseline & targets \u2013 **Owner:** Finance & Sales Leads (depends on 6.3)  \n6.5 Schedule weekly refresh & embed in status pack \u2013 **Owner:** PMO Analyst  \n\n---  \n\n**Collaboration Tips**\n\n* **Weekly Integration Sync:** All workstream leads attend a 60\u2011minute PMO\u2011facilitated call to surface blockers, update milestone status, and review risk register changes.  \n* **Bi\u2011weekly Steering Committee:** Senior executives (CEO, CFO, COO) review the Day\u20111 Priorities, 30\u201160\u201190 schedule, resource plan, and synergy dashboard; decisions are documented and cascaded.  \n* **Shared Collaboration Hub:** Use a central intranet site for all artifacts (documents, trackers, dashboards) with version control and comment capability.  \n* **Cross\u2011Workstream Pairing:** Pair a functional lead with a counterpart from the other company (e.g., Apex HR Lead \u2194 NeuroGenix HR Lead) to ensure knowledge transfer and cultural alignment.  \n* **Escalation Path:** For any issue flagged in the risk register that exceeds \u201chigh\u201d impact, the owner escalates directly to the Integration PMO Director, who then notifies the Steering Committee.  \n\nBy following this structured approach\u2014defining clear outcomes, assigning owners, mapping dependencies, and instituting regular communication\u2014you can build a robust workback plan that drives the integration toward its $120\u202fM cost\u2011synergy and $200\u202fM revenue\u2011synergy goals while managing risk and keeping the organization informed.",
+  "plan": {
+    "id": "document-001",
+    "name": "Apex BioPharma \u2013 NeuroGenix Integration Workback Plan",
+    "details": "Workback plan outlining outcomes, tasks, dependencies, participants, deliverables, and resources for the integration of Apex BioPharma and NeuroGenix.",
+    "draft": true,
+    "participants": [
+      {
+        "name": "Integration PMO Director",
+        "email": "",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "HR Lead",
+        "email": "",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Finance Lead",
+        "email": "",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Legal & Compliance Lead",
+        "email": "",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "CEO Office",
+        "email": "",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "PMO Scheduler",
+        "email": "",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "PMO Analyst",
+        "email": "",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Resource Manager",
+        "email": "",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Communications Lead",
+        "email": "",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "HR Talent Acquisition Lead",
+        "email": "",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Workstream Leads",
+        "email": "",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Risk Management Lead",
+        "email": "",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Change Management Lead",
+        "email": "",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Communications Designer",
+        "email": "",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Business Intelligence Analyst",
+        "email": "",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Sales Lead",
+        "email": "",
+        "details": "",
+        "draft": true
+      }
+    ],
+    "references": [],
+    "deliverables": [
+      {
+        "name": "Day\u20111 Integration Priorities Document",
+        "type": "word",
+        "id": "deliverable-001",
+        "draft": true,
+        "history": []
+      },
+      {
+        "name": "30\u201160\u201190\u2011Day Milestone Schedule",
+        "type": "excel",
+        "id": "deliverable-002",
+        "draft": true,
+        "history": []
+      },
+      {
+        "name": "Integration Team Resource Allocation Plan",
+        "type": "word",
+        "id": "deliverable-003",
+        "draft": true,
+        "history": []
+      },
+      {
+        "name": "Risks & Mitigation Register",
+        "type": "word",
+        "id": "deliverable-004",
+        "draft": true,
+        "history": []
+      },
+      {
+        "name": "Communication Cadence Blueprint",
+        "type": "word",
+        "id": "deliverable-005",
+        "draft": true,
+        "history": []
+      },
+      {
+        "name": "Synergy Tracking Dashboard",
+        "type": "powerbi",
+        "id": "deliverable-006",
+        "draft": true,
+        "history": []
+      }
+    ],
+    "tasks": [
+      {
+        "id": "task-001",
+        "name": "Day\u20111 Integration Priorities Document",
+        "draft": true,
+        "details": "Create a concise, cross\u2011functional list of actions that must be completed on Day\u20111 after closing.",
+        "dependencies": [
+          "task-001-1",
+          "task-001-2",
+          "task-001-3",
+          "task-001-4",
+          "task-001-5"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[word]/deliverable-001"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-001-1",
+        "name": "Form Day\u20111 Working Group",
+        "draft": true,
+        "details": "Owner: Integration PMO Director",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-001-2",
+        "name": "Conduct \u201cmust\u2011have vs. nice\u2011to\u2011have\u201d workshop (1\u202fday)",
+        "draft": true,
+        "details": "Owner: HR Lead (facilitation)",
+        "dependencies": [
+          "task-001-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-001-3",
+        "name": "Prioritise actions by impact & feasibility",
+        "draft": true,
+        "details": "Owner: Finance Lead (impact scoring)",
+        "dependencies": [
+          "task-001-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-001-4",
+        "name": "Draft document (owner, deadline, escalation)",
+        "draft": true,
+        "details": "Owner: Legal & Compliance Lead",
+        "dependencies": [
+          "task-001-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-001-5",
+        "name": "Review & sign\u2011off by Steering Committee",
+        "draft": true,
+        "details": "Owner: CEO Office",
+        "dependencies": [
+          "task-001-4"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002",
+        "name": "30\u201160\u201190\u2011Day Milestone Schedule",
+        "draft": true,
+        "details": "Map major integration milestones for each workstream at 30\u2011, 60\u2011, and 90\u2011day marks.",
+        "dependencies": [
+          "task-002-1",
+          "task-002-2",
+          "task-002-3",
+          "task-002-4",
+          "task-002-5"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[excel]/deliverable-002"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002-1",
+        "name": "Collect workstream milestone proposals",
+        "draft": true,
+        "details": "Owner: Each Workstream Lead",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002-2",
+        "name": "Consolidate into master schedule",
+        "draft": true,
+        "details": "Owner: PMO Scheduler",
+        "dependencies": [
+          "task-002-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002-3",
+        "name": "Identify cross\u2011workstream dependencies",
+        "draft": true,
+        "details": "Owner: PMO Analyst",
+        "dependencies": [
+          "task-002-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002-4",
+        "name": "Validate dates vs. resource plan",
+        "draft": true,
+        "details": "Owner: Resource Manager (depends on Outcome\u202f3)",
+        "dependencies": [
+          "task-002-2",
+          "task-003"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002-5",
+        "name": "Publish schedule to intranet & status decks",
+        "draft": true,
+        "details": "Owner: Communications Lead",
+        "dependencies": [
+          "task-002-4"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003",
+        "name": "Integration Team Resource Allocation Plan",
+        "draft": true,
+        "details": "Roster assigning individuals to each workstream and defining reporting lines.",
+        "dependencies": [
+          "task-003-1",
+          "task-003-2",
+          "task-003-3",
+          "task-003-4",
+          "task-003-5"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[word]/deliverable-003"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003-1",
+        "name": "Compile talent pool list",
+        "draft": true,
+        "details": "Owner: HR Talent Acquisition Lead",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003-2",
+        "name": "Estimate effort per workstream",
+        "draft": true,
+        "details": "Owner: Workstream Leads (parallel)",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003-3",
+        "name": "Map individuals to tasks & define RACI",
+        "draft": true,
+        "details": "Owner: Resource Manager (depends on 3.1 & 3.2)",
+        "dependencies": [
+          "task-003-1",
+          "task-003-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003-4",
+        "name": "Create reporting matrix",
+        "draft": true,
+        "details": "Owner: Resource Manager",
+        "dependencies": [
+          "task-003-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003-5",
+        "name": "Load allocation into shared tracker",
+        "draft": true,
+        "details": "Owner: Resource Manager",
+        "dependencies": [
+          "task-003-4"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-004",
+        "name": "Risks & Mitigation Register",
+        "draft": true,
+        "details": "Document identifying integration risks and mitigation actions.",
+        "dependencies": [
+          "task-004-1",
+          "task-004-2",
+          "task-004-3",
+          "task-004-4",
+          "task-004-5"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[word]/deliverable-004"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-004-1",
+        "name": "Run risk\u2011identification session",
+        "draft": true,
+        "details": "Owner: Risk Management Lead (depends on 1.1)",
+        "dependencies": [
+          "task-001-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-004-2",
+        "name": "Score and prioritize risks",
+        "draft": true,
+        "details": "Owner: Risk Management Lead (parallel)",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-004-3",
+        "name": "Assign mitigation owners & actions",
+        "draft": true,
+        "details": "Owner: Risk Management Lead (depends on 4.2)",
+        "dependencies": [
+          "task-004-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-004-4",
+        "name": "Integrate register into weekly PMO report",
+        "draft": true,
+        "details": "Owner: PMO Analyst",
+        "dependencies": [
+          "task-004-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-004-5",
+        "name": "Establish review cadence",
+        "draft": true,
+        "details": "Owner: PMO Analyst",
+        "dependencies": [
+          "task-004-4"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-005",
+        "name": "Communication Cadence Blueprint",
+        "draft": true,
+        "details": "Define communication cadence, audience segmentation, and templates.",
+        "dependencies": [
+          "task-005-1",
+          "task-005-2",
+          "task-005-3",
+          "task-005-4",
+          "task-005-5"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[word]/deliverable-005"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-005-1",
+        "name": "Segment audiences & select channels",
+        "draft": true,
+        "details": "Owner: Change Management Lead",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-005-2",
+        "name": "Define cadence per channel",
+        "draft": true,
+        "details": "Owner: Communications Lead (parallel)",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-005-3",
+        "name": "Build message\u2011ownership matrix",
+        "draft": true,
+        "details": "Owner: Change Management Lead (depends on 5.1)",
+        "dependencies": [
+          "task-005-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-005-4",
+        "name": "Develop template library",
+        "draft": true,
+        "details": "Owner: Communications Designer (depends on 5.3)",
+        "dependencies": [
+          "task-005-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-005-5",
+        "name": "Publish blueprint & train owners",
+        "draft": true,
+        "details": "Owner: Communications Lead",
+        "dependencies": [
+          "task-005-4"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-006",
+        "name": "Synergy Tracking Dashboard",
+        "draft": true,
+        "details": "Dashboard to track $2B cost savings and $1.5B revenue synergies.",
+        "dependencies": [
+          "task-006-1",
+          "task-006-2",
+          "task-006-3",
+          "task-006-4",
+          "task-006-5"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[powerbi]/deliverable-006"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-006-1",
+        "name": "Identify KPI set",
+        "draft": true,
+        "details": "Owner: Finance Lead (depends on Outcome\u202f2)",
+        "dependencies": [
+          "task-002"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-006-2",
+        "name": "Assign data owners",
+        "draft": true,
+        "details": "Owner: Sales Lead & Finance Lead (parallel)",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-006-3",
+        "name": "Build dashboard prototype",
+        "draft": true,
+        "details": "Owner: Business Intelligence Analyst (depends on 6.1)",
+        "dependencies": [
+          "task-006-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-006-4",
+        "name": "Populate baseline & targets",
+        "draft": true,
+        "details": "Owner: Business Intelligence Analyst",
+        "dependencies": [
+          "task-006-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-006-5",
+        "name": "Schedule weekly refresh",
+        "draft": true,
+        "details": "Owner: Business Intelligence Analyst",
+        "dependencies": [
+          "task-006-4"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      }
+    ],
+    "history": []
+  }
+}

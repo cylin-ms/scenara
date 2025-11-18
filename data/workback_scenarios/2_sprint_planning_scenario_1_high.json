@@ -1,0 +1,494 @@
+{
+  "scenario_name": "Q3 Sprint\u202f5 Planning \u2013 Mobile Payments Checkout Revamp",
+  "scenario_number": 1,
+  "meeting_type": "Sprint Planning Meeting",
+  "quality_level": "high",
+  "workback_prompt": "Create a detailed work\u2011back plan for FinTechCo's Velocity Payments Squad Sprint\u202f5 (2025\u201112\u201102 planning meeting). The plan should break down each deliverable into weekly tasks, assign owners, list required approvals, identify critical path items (API v2 release, design hand\u2011off, PCI compliance review), and include milestones for testing, beta release, and production deployment. Include buffer time for unforeseen blockers and ensure the plan respects the $45k budget and PCI\u202fDSS\u202f4.0 compliance requirements.\n\nGenerate a HIGH QUALITY workback plan with these characteristics:\n- Comprehensive task coverage\n- Clear, actionable task descriptions\n- Well-defined dependencies\n- All tasks assigned to specific owners\n- Clear milestones with completion criteria\n- Realistic timelines with buffers\n- Proactive risk management\n- Complete deliverable list\n\nIMPORTANT: Generate a plan that naturally exhibits HIGH quality characteristics.\nDo not explicitly label the plan as \"high quality\" - let the quality emerge from the content.",
+  "generated_at": "2025-11-17T04:24:32.263496",
+  "analysis": "# Outcomes\n\n## 1. Draft Sprint\u202f5 Work\u2011back Plan\nA detailed, week\u2011by\u2011week breakdown of every Sprint\u202f5 deliverable (API\u202fv2 release, design hand\u2011off, PCI\u202fDSS\u202f4.0 compliance review, testing, beta, production) with owners, approvals, dependencies, buffers, and budget\u2011impact notes.  \nArtifact references: none (plan to be created from the current sprint charter).\n\n### Reasoning\nThe user\u2019s request is for a \u201chigh\u2011quality work\u2011back plan.\u201d The first concrete outcome is a **draft** that captures all required elements (tasks, owners, approvals, critical\u2011path items, milestones, buffers, budget constraints). Producing a draft first allows the squad to validate scope, adjust estimates, and secure early stakeholder buy\u2011in before finalising the plan.\n\n### Approach\n1. **Collect Source Information** \u2013 gather the Sprint\u202f5 backlog, product roadmap, budget spreadsheet, and PCI\u202fDSS\u202f4.0 compliance checklist.  \n2. **Identify Deliverables & Milestones** \u2013 list the four critical\u2011path items (API\u202fv2 release, design hand\u2011off, PCI review, production deployment) and the three milestone groups (testing, beta release, production).  \n3. **Define Weekly Timeboxes** \u2013 map the Sprint (2\u202fweeks) plus a pre\u2011planning buffer week and a post\u2011sprint buffer week (total 4\u202fweeks) to create a realistic timeline.  \n4. **Assign Owners** \u2013 for each task, select a primary owner (e.g., API Lead, UX Designer, Compliance Lead, QA Lead, Release Manager) and note any secondary collaborators.  \n5. **Specify Approvals** \u2013 attach required sign\u2011offs (Product Owner, Security Officer, Finance) to the appropriate tasks.  \n6. **Add Buffers** \u2013 insert a 1\u2011day buffer after each critical\u2011path task and a 2\u2011day overall sprint buffer for unforeseen blockers.  \n7. **Validate Budget** \u2013 total estimated effort (person\u2011days) and compare against the $45\u202fk ceiling; adjust scope or buffer size if needed.  \n8. **Document in a Shared Workspace** \u2013 use a living document (e.g., Confluence page or Google Sheet) so the team can comment and iterate.  \n\n---\n\n## 2. Stakeholder Review & Approval of Draft Plan\nA formal review meeting (or asynchronous sign\u2011off) where Product Owner, Security Officer, Finance Lead, and Squad Lead confirm that the draft meets scope, timeline, budget, and PCI\u202fDSS\u202f4.0 requirements.  \nArtifact references: none.\n\n### Reasoning\nBefore the plan can be executed, all key decision\u2011makers must agree that the proposed tasks, owners, and buffers are realistic and compliant. This outcome captures that essential governance step.\n\n### Approach\n1. **Distribute Draft** \u2013 share the document 48\u202fhours before the review meeting.  \n2. **Collect Feedback** \u2013 use a comment\u2011tracking sheet to capture objections, suggested changes, or risk concerns.  \n3. **Facilitate Review Session** \u2013 run a 60\u2011minute meeting focused on:  \n   * Critical\u2011path feasibility  \n   * Budget alignment  \n   * Compliance sign\u2011off points  \n   * Buffer adequacy  \n4. **Incorporate Adjustments** \u2013 update the draft based on agreed changes.  \n5. **Obtain Formal Sign\u2011off** \u2013 capture electronic approvals (e.g., signed PDF, approved Confluence page).  \n\n---\n\n## 3. Final Sprint\u202f5 Work\u2011back Plan\nThe approved, version\u2011controlled plan ready for execution, containing all tasks, owners, dependencies, milestones, buffers, and a risk\u2011mitigation register.  \nArtifact references: none.\n\n### Reasoning\nThe final plan is the actionable artifact the Velocity Payments Squad will follow during Sprint\u202f5. It consolidates all prior work and serves as the baseline for tracking progress.\n\n### Approach\n1. **Lock Document Version** \u2013 assign a version number (e.g., v1.0) and set read\u2011only permissions for non\u2011editors.  \n2. **Publish to Squad Kanban** \u2013 import tasks into the team\u2019s agile board, preserving owners, estimates, and dependencies.  \n3. **Communicate** \u2013 send a concise announcement summarizing key dates (testing start, beta release, production go\u2011live) and budget constraints.  \n4. **Store for Auditing** \u2013 archive a copy in the compliance repository to satisfy PCI\u202fDSS\u202f4.0 documentation requirements.  \n\n---\n\n## 4. Execution Monitoring Dashboard\nA lightweight dashboard (e.g., spreadsheet or BI widget) that tracks task status, budget burn\u2011rate, and compliance checkpoint completion throughout Sprint\u202f5.  \nArtifact references: none.\n\n### Reasoning\nEven the best\u2011crafted plan needs real\u2011time visibility to catch deviations early. A dashboard provides the squad and stakeholders with a single source of truth for progress, risk, and budget health.\n\n### Approach\n1. **Define Metrics** \u2013 % complete per task, days remaining vs. buffer, actual cost vs. budget, compliance sign\u2011off status.  \n2. **Automate Updates** \u2013 link the dashboard to the agile board or require daily status updates from owners.  \n3. **Set Review Cadence** \u2013 schedule a short stand\u2011up (15\u202fmin) each day to surface any buffer consumption or compliance blockers.  \n4. **Escalation Path** \u2013 document who to notify (e.g., Squad Lead, Security Officer) when a critical\u2011path task slips beyond its buffer.  \n\n---\n\n## 5. Post\u2011Sprint Retrospective & Lessons\u2011Learned Report\nA concise report capturing what worked, what didn\u2019t, and actionable improvements for future sprints, especially around budgeting, buffer sizing, and PCI compliance coordination.  \nArtifact references: none.\n\n### Reasoning\nContinuous improvement is essential for maintaining high\u2011quality delivery. Capturing lessons ensures that buffer sizing, risk identification, and compliance processes evolve over time.\n\n### Approach\n1. **Gather Data** \u2013 pull metrics from the Execution Monitoring Dashboard (actual vs. planned).  \n2. **Facilitate Retrospective** \u2013 use a structured format (Start/Stop/Continue) focusing on:  \n   * Critical\u2011path accuracy  \n   * Budget variance  \n   * Compliance checkpoint efficiency  \n3. **Document Action Items** \u2013 assign owners and due dates for each improvement.  \n4. **Distribute Report** \u2013 share with the squad and relevant governance bodies (e.g., Security Office).  \n\n---\n\n# Breakdown\n\n## 1. Draft Sprint\u202f5 Work\u2011back Plan\n1.1 **Gather Source Artifacts**  \n\u20031.1.1 Pull Sprint\u202f5 backlog from the agile tool.  \n\u20031.1.2 Export the $45\u202fk budget spreadsheet.  \n\u20031.1.3 Retrieve the latest PCI\u202fDSS\u202f4.0 compliance checklist.  \n1.2 **Define Deliverables & Milestones**  \n\u20031.2.1 List critical\u2011path items (API\u202fv2, design hand\u2011off, PCI review).  \n\u20031.2.2 Define milestone set:  \n\u2003\u2003- Testing Completion (criteria: 100\u202f% test cases passed)  \n\u2003\u2003- Beta Release (criteria: stakeholder sign\u2011off on beta build)  \n\u2003\u2003- Production Deployment (criteria: release notes approved, compliance sign\u2011off).  \n1.3 **Create Weekly Timeboxes**  \n\u20031.3.1 Week\u202f\u20111 (Planning & Buffer) \u2013 requirements finalisation, design hand\u2011off prep.  \n\u20031.3.2 Week\u202f0 (Sprint\u202f5 \u2013 Day\u202f1\u201110) \u2013 development, API\u202fv2 integration, internal QA.  \n\u20031.3.3 Week\u202f1 (Testing & Beta) \u2013 system testing, beta release, PCI review.  \n\u20031.3.4 Week\u202f2 (Production & Buffer) \u2013 production deployment, post\u2011deployment monitoring.  \n1.4 **Assign Owners**  \n\u2003- API\u202fv2 Lead \u2192 Backend Engineer A  \n\u2003- Design Hand\u2011off \u2192 UX Lead B  \n\u2003- PCI Review \u2192 Compliance Officer C  \n\u2003- QA \u2192 QA Lead D  \n\u2003- Release Management \u2192 Release Engineer E  \n\u2003- Budget Tracking \u2192 Finance Partner F  \n1.5 **Map Approvals**  \n\u2003- Product Owner (PO) \u2013 approves scope & milestones.  \n\u2003- Security Officer \u2013 approves PCI review outcome.  \n\u2003- Finance Lead \u2013 signs off budget usage.  \n1.6 **Insert Buffers**  \n\u2003- 1\u2011day buffer after API\u202fv2 release.  \n\u2003- 1\u2011day buffer after design hand\u2011off.  \n\u2003- 2\u2011day overall sprint buffer (end of Week\u202f2).  \n1.7 **Budget Validation**  \n\u2003- Convert effort estimates (person\u2011days) to cost using $45\u202fk ceiling.  \n\u2003- Adjust scope or buffer if projected spend > $45\u202fk.  \n1.8 **Document Draft**  \n\u2003- Create shared doc (e.g., Confluence page).  \n\u2003- Include a WBS table, owners column, dependency arrows, and buffer notes.  \n\n## 2. Stakeholder Review & Approval of Draft Plan\n2.1 **Distribute Draft** \u2013 email with link, set 48\u2011hour comment deadline.  \n2.2 **Collect Feedback** \u2013 compile comments in a \u201cFeedback Log\u201d.  \n2.3 **Facilitate Review Meeting** \u2013 agenda: critical\u2011path feasibility, budget, compliance, buffer adequacy.  \n2.4 **Incorporate Adjustments** \u2013 update draft per consensus.  \n2.5 **Obtain Formal Sign\u2011off** \u2013 capture electronic approvals (e.g., signed PDF).  \n\n## 3. Final Sprint\u202f5 Work\u2011back Plan\n3.1 **Lock Version** \u2013 set document to read\u2011only, assign version v1.0.  \n3.2 **Populate Agile Board** \u2013 create tickets for each task, link owners, set due dates matching weekly timeboxes.  \n3.3 **Communicate Launch** \u2013 send squad announcement summarising key dates and budget reminder.  \n3.4 **Archive for Compliance** \u2013 store a copy in the PCI audit repository.  \n\n## 4. Execution Monitoring Dashboard\n4.1 **Define Dashboard Metrics** \u2013 % complete, days left, budget burn, compliance status.  \n4.2 **Build Dashboard** \u2013 use spreadsheet or BI tool; link to agile board for auto\u2011updates.  \n4.3 **Set Daily Review Cadence** \u2013 15\u2011minute stand\u2011up to update status and flag buffer consumption.  \n4.4 **Document Escalation Path** \u2013 who to alert when a critical\u2011path task exceeds its buffer.  \n\n## 5. Post\u2011Sprint Retrospective & Lessons\u2011Learned Report\n5.1 **Collect Metrics** \u2013 export data from dashboard (planned vs. actual).  \n5.2 **Run Retrospective Session** \u2013 use Start/Stop/Continue format; focus on critical\u2011path accuracy, budget variance, PCI workflow.  \n5.3 **Document Action Items** \u2013 assign owners, due dates, and success criteria.  \n5.4 **Distribute Report** \u2013 share with squad, PO, Security Officer, Finance Lead.  \n\n---\n\n### Dependencies & Parallel Work\n- **Design Hand\u2011off** (1.4.2) must finish before **API\u202fv2 integration testing** (1.3.2) can start \u2192 *Depends on: 1.4.2*.  \n- **PCI Review** (1.4.3) can begin once **Testing Completion** (1.2.2\u2011Testing) reaches 80\u202f% \u2192 *Can run in parallel with: final testing*.  \n- **Budget Validation** (1.7) must be completed before **Stakeholder Review** (2) \u2192 *Depends on: 1.7*.  \n- **Execution Dashboard** (4) can be built concurrently with **Final Plan Publication** (3) \u2192 *Can run in parallel with: 3*.  \n\n---\n\n### Risk Management Highlights\n| Risk | Impact | Mitigation |\n|------|--------|------------|\n| API\u202fv2 release slips beyond buffer | Delays beta & production | Add a 1\u2011day contingency buffer; have fallback to previous stable API version. |\n| Design hand\u2011off incomplete | Blocks API integration testing | Early stakeholder sign\u2011off on design mock\u2011ups; allocate a design QA reviewer. |\n| PCI\u202fDSS\u202f4.0 review takes longer than expected | Prevents production go\u2011live | Engage Security Officer at planning stage; schedule a pre\u2011review checkpoint. |\n| Budget overspend (> $45\u202fk) | May require scope reduction | Continuous cost tracking (dashboard metric); re\u2011prioritise low\u2011risk tasks if variance >10\u202f%. |\n| Unforeseen blocker (e.g., third\u2011party outage) | Consumes buffer, pushes milestones | Maintain a 2\u2011day sprint\u2011end buffer; identify alternate service providers early. |\n\nBy following the outlined outcomes and the detailed work\u2011breakdown structure, FinTechCo\u2019s Velocity Payments Squad can construct a robust, compliant, and budget\u2011aware Sprint\u202f5 work\u2011back plan, keep all stakeholders aligned, and mitigate the most critical risks before execution begins.",
+  "plan": {
+    "id": "document-001",
+    "name": "Sprint\u202f5 Work\u2011back Plan",
+    "details": "Work\u2011back plan for Velocity Payments Squad covering draft creation, stakeholder review, finalisation, execution monitoring and post\u2011sprint retrospective.",
+    "draft": true,
+    "participants": [
+      {
+        "name": "Product Owner",
+        "details": "Approves scope & milestones",
+        "draft": true
+      },
+      {
+        "name": "Security Officer",
+        "details": "Approves PCI\u2011DSS\u202f4.0 compliance outcomes",
+        "draft": true
+      },
+      {
+        "name": "Finance Lead",
+        "details": "Signs off budget usage",
+        "draft": true
+      },
+      {
+        "name": "Squad Lead",
+        "details": "Overall responsibility for Sprint\u202f5 delivery",
+        "draft": true
+      },
+      {
+        "name": "Backend Engineer A",
+        "details": "API\u202fv2 Lead",
+        "draft": true
+      },
+      {
+        "name": "UX Lead B",
+        "details": "Design hand\u2011off owner",
+        "draft": true
+      },
+      {
+        "name": "Compliance Officer C",
+        "details": "PCI\u2011DSS\u202f4.0 review owner",
+        "draft": true
+      },
+      {
+        "name": "QA Lead D",
+        "details": "Testing and QA owner",
+        "draft": true
+      },
+      {
+        "name": "Release Engineer E",
+        "details": "Release management owner",
+        "draft": true
+      },
+      {
+        "name": "Finance Partner F",
+        "details": "Budget tracking owner",
+        "draft": true
+      }
+    ],
+    "references": [],
+    "deliverables": [],
+    "tasks": [
+      {
+        "id": "task-001",
+        "name": "Gather Source Artifacts",
+        "draft": true,
+        "details": "Pull Sprint\u202f5 backlog, export budget spreadsheet, retrieve PCI\u2011DSS\u202f4.0 checklist.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002",
+        "name": "Define Deliverables & Milestones",
+        "draft": true,
+        "details": "List critical\u2011path items and define milestone set (Testing Completion, Beta Release, Production Deployment).",
+        "dependencies": [
+          "task-001"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003",
+        "name": "Create Weekly Timeboxes",
+        "draft": true,
+        "details": "Map planning, development, testing, and production weeks with buffers.",
+        "dependencies": [
+          "task-002"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-004",
+        "name": "Assign Owners",
+        "draft": true,
+        "details": "Assign primary owners for API\u202fv2, design hand\u2011off, PCI review, QA, release, and budget tracking.",
+        "dependencies": [
+          "task-003"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Squad Lead"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-005",
+        "name": "Map Approvals",
+        "draft": true,
+        "details": "Identify required sign\u2011offs: Product Owner, Security Officer, Finance Lead.",
+        "dependencies": [
+          "task-004"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Squad Lead"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-006",
+        "name": "Insert Buffers",
+        "draft": true,
+        "details": "Add 1\u2011day buffers after API release and design hand\u2011off, plus a 2\u2011day overall sprint buffer.",
+        "dependencies": [
+          "task-005"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-007",
+        "name": "Budget Validation",
+        "draft": true,
+        "details": "Convert effort estimates to cost, compare against $45\u202fk ceiling, adjust scope or buffers if needed.",
+        "dependencies": [
+          "task-006"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Finance Partner F"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-008",
+        "name": "Document Draft",
+        "draft": true,
+        "details": "Create shared Confluence page with WBS table, owners, dependencies, and buffer notes.",
+        "dependencies": [
+          "task-006"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-009",
+        "name": "Distribute Draft",
+        "draft": true,
+        "details": "Email draft link to stakeholders with 48\u2011hour comment deadline.",
+        "dependencies": [
+          "task-007",
+          "task-008"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-010",
+        "name": "Collect Feedback",
+        "draft": true,
+        "details": "Compile stakeholder comments into a Feedback Log.",
+        "dependencies": [
+          "task-009"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-011",
+        "name": "Facilitate Review Meeting",
+        "draft": true,
+        "details": "Run 60\u2011minute session covering critical\u2011path feasibility, budget, compliance, and buffers.",
+        "dependencies": [
+          "task-010"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Squad Lead"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-012",
+        "name": "Incorporate Adjustments",
+        "draft": true,
+        "details": "Update draft plan based on agreed changes from review meeting.",
+        "dependencies": [
+          "task-011"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-013",
+        "name": "Obtain Formal Sign\u2011off",
+        "draft": true,
+        "details": "Capture electronic approvals (signed PDF or approved Confluence page).",
+        "dependencies": [
+          "task-012"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-014",
+        "name": "Lock Final Version",
+        "draft": true,
+        "details": "Set document to read\u2011only, assign version v1.0.",
+        "dependencies": [
+          "task-013"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Squad Lead"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-015",
+        "name": "Populate Agile Board",
+        "draft": true,
+        "details": "Create tickets for each task, link owners, set due dates matching weekly timeboxes.",
+        "dependencies": [
+          "task-014"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-016",
+        "name": "Communicate Launch",
+        "draft": true,
+        "details": "Send squad announcement summarising key dates and budget reminder.",
+        "dependencies": [
+          "task-015"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Squad Lead"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-017",
+        "name": "Archive for Compliance",
+        "draft": true,
+        "details": "Store a copy of the final plan in the PCI audit repository.",
+        "dependencies": [
+          "task-016"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Compliance Officer C"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-018",
+        "name": "Define Dashboard Metrics",
+        "draft": true,
+        "details": "Identify % complete, days left, budget burn, compliance status metrics.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "QA Lead D"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-019",
+        "name": "Build Dashboard",
+        "draft": true,
+        "details": "Create spreadsheet or BI widget linked to agile board for auto\u2011updates.",
+        "dependencies": [
+          "task-018"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "QA Lead D"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-020",
+        "name": "Set Daily Review Cadence",
+        "draft": true,
+        "details": "Schedule 15\u2011minute stand\u2011up each day to update status and flag buffer consumption.",
+        "dependencies": [
+          "task-019"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Squad Lead"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-021",
+        "name": "Document Escalation Path",
+        "draft": true,
+        "details": "Specify who to alert when a critical\u2011path task exceeds its buffer.",
+        "dependencies": [
+          "task-020"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Squad Lead"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-022",
+        "name": "Collect Retrospective Metrics",
+        "draft": true,
+        "details": "Gather execution data from the monitoring dashboard for analysis.",
+        "dependencies": [
+          "task-021"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "QA Lead D"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-023",
+        "name": "Run Retrospective Session",
+        "draft": true,
+        "details": "Facilitate post\u2011sprint session to discuss outcomes, risks, and lessons learned.",
+        "dependencies": [
+          "task-022"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Squad Lead"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-024",
+        "name": "Document Action Items",
+        "draft": true,
+        "details": "Record improvement actions and owners from the retrospective.",
+        "dependencies": [
+          "task-023"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-025",
+        "name": "Distribute Retrospective Report",
+        "draft": true,
+        "details": "Send the lessons\u2011learned report to stakeholders.",
+        "dependencies": [
+          "task-024"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      }
+    ],
+    "history": []
+  }
+}

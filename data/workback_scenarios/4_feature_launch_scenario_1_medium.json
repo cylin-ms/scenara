@@ -1,0 +1,776 @@
+{
+  "scenario_name": "Nimbus Analytics \u2013 Real\u2011Time Cohort Attribution Dashboard Launch",
+  "scenario_number": 1,
+  "meeting_type": "Product Feature Launch",
+  "quality_level": "medium",
+  "workback_prompt": "Create a detailed workback plan for Nimbus Analytics' Real\u2011Time Cohort Attribution Dashboard launch. The plan should cover a T\u201130 horizon (starting 2025\u201111\u201115) with high complexity, listing all milestones, owners, dependencies, risk mitigation steps, and required resources to deliver the listed deliverables, meet the success criteria, and stay within the constraints.\n\nGenerate a MEDIUM QUALITY workback plan with these characteristics:\n- Most major tasks present but some gaps\n- Reasonable task descriptions\n- Some dependencies defined\n- Most tasks have owners\n- Milestones present but may lack detail\n- Generally realistic timelines\n- Some consideration of risks\n- Key deliverables identified\n\nIMPORTANT: Generate a plan that naturally exhibits MEDIUM quality characteristics.\nDo not explicitly label the plan as \"medium quality\" - let the quality emerge from the content.",
+  "generated_at": "2025-11-17T05:08:27.493227",
+  "analysis": "# Outcomes\n\n## 1. Final Real\u2011Time Cohort Attribution Dashboard (Production Release)  \nA fully functional, performance\u2011tested dashboard deployed to production, meeting the defined success criteria (real\u2011time data latency \u2264\u202f5\u202fseconds, \u2265\u202f99.5\u202f% uptime, and stakeholder\u2011approved visualizations).  \nArtifact references: *none*\n\n### Reasoning  \nThe primary goal of the launch is to deliver the dashboard itself. All other work (data pipelines, UI design, testing, documentation, training, monitoring) ultimately supports this outcome, so it is captured as the top\u2011level outcome.\n\n### Approach  \n1. **Confirm scope & success criteria** with product owner and key stakeholders.  \n2. **Assemble the release bundle** (code, configuration, infrastructure as code).  \n3. **Execute final performance & security validation** against the criteria.  \n4. **Obtain sign\u2011off** from product owner, security, and operations.  \n5. **Deploy to production** using the established CI/CD pipeline.  \n6. **Activate post\u2011launch monitoring** and hand\u2011off to support.\n\nRisk mitigation includes a rollback plan, a \u201cgolden\u201d pre\u2011release environment for final validation, and a contingency window (2\u202fdays) in the launch schedule.\n\n---\n\n## 2. Real\u2011Time Data Ingestion & Cohort Attribution Pipeline  \nA streaming data pipeline that ingests raw events, enriches them, computes cohort attribution in real time, and writes results to the analytics store used by the dashboard.  \nArtifact references: *none*\n\n### Reasoning  \nThe dashboard\u2019s core value\u2014real\u2011time cohort attribution\u2014depends on a reliable streaming pipeline. Without it, the dashboard cannot meet latency or accuracy requirements, making this a distinct outcome.\n\n### Approach  \n1. **Define data schema** and transformation rules with data owners.  \n2. **Select streaming platform** (e.g., managed Kafka, Kinesis) and provision resources.  \n3. **Develop ingestion connectors** and enrichment jobs.  \n4. **Implement cohort attribution logic** (windowed aggregations, attribution rules).  \n5. **Write results to the analytics store** (e.g., columnar DB).  \n6. **Validate data quality and latency** in a staging environment.  \n\nKey mitigation steps: a parallel \u201cbatch fallback\u201d path, automated schema validation, and capacity sizing buffers.\n\n---\n\n## 3. Dashboard UI/UX Design & Front\u2011End Implementation  \nA user\u2011centered interface that visualizes cohort attribution metrics, supports filter/slice actions, and updates in real time.  \nArtifact references: *none*\n\n### Reasoning  \nStakeholders have emphasized usability and visual clarity. Delivering a polished UI is essential for adoption and therefore a separate outcome.\n\n### Approach  \n1. **Conduct rapid stakeholder interviews** to capture key visualizations and interaction needs.  \n2. **Produce wireframes** and obtain quick sign\u2011off.  \n3. **Develop front\u2011end components** using the team\u2019s standard framework.  \n4. **Integrate with the real\u2011time API** and implement auto\u2011refresh logic.  \n5. **Perform usability testing** with a small user group and iterate.  \n\nRisks such as scope creep are mitigated by a fixed set of \u201cmust\u2011have\u201d visualizations and a change\u2011control gate after wireframe approval.\n\n---\n\n## 4. Quality Assurance (Functional, Performance, Security)  \nComprehensive testing artifacts that certify the dashboard and pipeline meet functional correctness, performance targets, and security standards.  \nArtifact references: *none*\n\n### Reasoning  \nGiven the high\u2011complexity nature of the product, formal QA is required to avoid post\u2011launch incidents. This outcome aggregates test planning, execution, and defect resolution.\n\n### Approach  \n1. **Create a test plan** covering unit, integration, end\u2011to\u2011end, load, and security tests.  \n2. **Automate regression suites** and integrate them into CI.  \n3. **Run performance load tests** to verify \u2264\u202f5\u202fsecond latency under peak load.  \n4. **Conduct security scans** (static code analysis, penetration testing).  \n5. **Track defects** in the shared tracker and close them before release.  \n\nMitigation includes a \u201ctest\u2011first\u201d policy for new features and a buffer of 3\u202fdays for defect resolution.\n\n---\n\n## 5. Documentation, Training & Knowledge Transfer  \nAll necessary product documentation, runbooks, and training sessions for end\u2011users and support teams.  \nArtifact references: *none*\n\n### Reasoning  \nSuccessful adoption and sustainable operations depend on clear documentation and trained personnel. This outcome ensures those assets are ready before launch.\n\n### Approach  \n1. **Draft user guide** and API reference based on finalized UI and pipeline.  \n2. **Create operational runbooks** (deployment, rollback, monitoring).  \n3. **Prepare a training deck** and schedule live sessions for analysts and support staff.  \n4. **Publish materials** in the internal knowledge base and collect feedback.  \n\nRisks of incomplete knowledge transfer are mitigated by a \u201csign\u2011off checklist\u201d from the support lead.\n\n---\n\n## 6. Launch Readiness & Go\u2011Live Execution  \nA coordinated go\u2011live event that includes final checklist verification, stakeholder communication, and post\u2011launch support.  \nArtifact references: *none*\n\n### Reasoning  \nEven with all technical pieces ready, the actual launch requires a focused effort to align teams, communicate, and monitor the first production hours. This outcome captures that orchestration.\n\n### Approach  \n1. **Assemble a launch board** (product owner, engineering lead, ops lead, QA lead).  \n2. **Finalize the go\u2011live checklist** (code freeze, environment health, monitoring alerts).  \n3. **Communicate launch schedule** to all stakeholders (email, calendar invites).  \n4. **Execute deployment** during the agreed window, with a live status dashboard.  \n5. **Run the post\u2011launch \u201cstabilization\u201d period** (48\u202fhours) with dedicated support.  \n\nMitigation includes a pre\u2011approved rollback plan and a \u201cgolden ticket\u201d for emergency escalation.\n\n---\n\n# Breakdown\n\n### Timeline Overview (T\u201130 \u2192 Launch Day)\n\n| Day | Date (2025) | Milestone / Major Outcome |\n|-----|-------------|---------------------------|\n| 0   | 2025\u201111\u201115 | Project kickoff (baseline) |\n| 5   | 2025\u201111\u201120 | Data schema & attribution rules finalized |\n| 10  | 2025\u201111\u201125 | UI wireframes approved |\n| 12  | 2025\u201111\u201127 | Streaming platform provisioned |\n| 15  | 2025\u201112\u201101 | First end\u2011to\u2011end pipeline prototype |\n| 18  | 2025\u201112\u201104 | Front\u2011end component skeleton completed |\n| 20  | 2025\u201112\u201106 | Test plan signed off |\n| 22  | 2025\u201112\u201108 | Performance load\u2011test baseline |\n| 24  | 2025\u201112\u201110 | Documentation draft ready |\n| 26  | 2025\u201112\u201112 | User acceptance testing (UAT) start |\n| 28  | 2025\u201112\u201114 | Final QA sign\u2011off |\n| 29  | 2025\u201112\u201115 | Launch readiness review |\n| 30  | 2025\u201112\u201116 | **Production Release (Outcome\u202f1)** |\n\n---\n\n## 1. Final Real\u2011Time Cohort Attribution Dashboard (Production Release)\n\n1.1 Confirm scope & success criteria \u2013 Owner: **Product Owner** \u2013 Depends on: kickoff meeting.  \n1.2 Assemble release bundle \u2013 Owner: **Lead Engineer** \u2013 Depends on: completion of Outcomes\u202f2\u20114.  \n1.3 Final performance & security validation \u2013 Owner: **QA Lead** \u2013 Depends on: 1.2.  \n1.4 Obtain stakeholder sign\u2011off \u2013 Owner: **Product Owner** \u2013 Depends on: 1.3.  \n1.5 Deploy to production \u2013 Owner: **Ops Lead** \u2013 Depends on: 1.4.  \n1.6 Activate post\u2011launch monitoring \u2013 Owner: **Site Reliability Engineer (SRE)** \u2013 Can run in parallel with 1.5 (post\u2011deployment step).\n\n*Risk mitigation*: rollback script prepared (Owner: Lead Engineer), 2\u2011day contingency window built into schedule.\n\n---\n\n## 2. Real\u2011Time Data Ingestion & Cohort Attribution Pipeline\n\n2.1 Define data schema & transformation rules \u2013 Owner: **Data Architect** \u2013 Depends on: kickoff.  \n2.2 Provision streaming platform \u2013 Owner: **Infrastructure Engineer** \u2013 Depends on: 2.1.  \n2.3 Develop ingestion connectors \u2013 Owner: **Backend Engineer A** \u2013 Depends on: 2.2.  \n2.4 Implement enrichment jobs \u2013 Owner: **Backend Engineer B** \u2013 Depends on: 2.3.  \n2.5 Build cohort attribution logic \u2013 Owner: **Data Engineer** \u2013 Depends on: 2.4.  \n2.6 Write results to analytics store \u2013 Owner: **Data Engineer** \u2013 Depends on: 2.5.  \n2.7 Staging validation (data quality, latency) \u2013 Owner: **QA Lead** \u2013 Depends on: 2.6.  \n\n*Risk mitigation*: parallel batch\u2011fallback pipeline (Owner: Backend Engineer A), schema validation tests automated.\n\n---\n\n## 3. Dashboard UI/UX Design & Front\u2011End Implementation\n\n3.1 Stakeholder interview & requirement capture \u2013 Owner: **UX Designer** \u2013 Depends on: kickoff.  \n3.2 Produce wireframes \u2013 Owner: **UX Designer** \u2013 Depends on: 3.1.  \n3.3 Wireframe sign\u2011off \u2013 Owner: **Product Owner** \u2013 Depends on: 3.2.  \n3.4 Develop front\u2011end component library \u2013 Owner: **Frontend Engineer** \u2013 Depends on: 3.3.  \n3.5 Integrate with real\u2011time API \u2013 Owner: **Frontend Engineer** \u2013 Depends on: 2.6 (pipeline output).  \n3.6 Implement auto\u2011refresh & error handling \u2013 Owner: **Frontend Engineer** \u2013 Depends on: 3.5.  \n3.7 Usability testing & iteration \u2013 Owner: **UX Designer** \u2013 Depends on: 3.6.  \n\n*Risk mitigation*: fixed list of \u201cmust\u2011have\u201d visualizations locked at 3.3; any new request goes through change\u2011control.\n\n---\n\n## 4. Quality Assurance (Functional, Performance, Security)\n\n4.1 Draft comprehensive test plan \u2013 Owner: **QA Lead** \u2013 Depends on: outcomes\u202f2 &\u202f3.  \n4.2 Automate unit & integration tests \u2013 Owner: **Backend Engineer A** & **Frontend Engineer** \u2013 Depends on: 4.1.  \n4.3 Set up CI test pipelines \u2013 Owner: **DevOps Engineer** \u2013 Depends on: 4.2.  \n4.4 Execute performance load tests \u2013 Owner: **Performance Engineer** \u2013 Depends on: 2.6 & 3.5.  \n4.5 Conduct security scans \u2013 Owner: **Security Engineer** \u2013 Depends on: 1.2 (code bundle).  \n4.6 Log & triage defects \u2013 Owner: **QA Lead** \u2013 Can run in parallel with 4.4/4.5.  \n4.7 Sign\u2011off for release \u2013 Owner: **QA Lead** \u2013 Depends on: 4.6 (no critical defects).  \n\n*Risk mitigation*: 3\u2011day buffer for defect resolution; \u201cstop\u2011the\u2011release\u201d gate if performance target not met.\n\n---\n\n## 5. Documentation, Training & Knowledge Transfer\n\n5.1 Draft user guide & API reference \u2013 Owner: **Technical Writer** \u2013 Depends on: 3.5 (final UI) & 2.6 (data output).  \n5.2 Create operational runbooks \u2013 Owner: **Ops Lead** \u2013 Depends on: 1.5 (deployment steps).  \n5.3 Prepare training deck \u2013 Owner: **Product Owner** \u2013 Depends on: 5.1.  \n5.4 Schedule & deliver live training sessions \u2013 Owner: **Product Owner** \u2013 Depends on: 5.3.  \n5.5 Publish all materials in Knowledge Base \u2013 Owner: **Technical Writer** \u2013 Depends on: 5.4.  \n\n*Risk mitigation*: sign\u2011off checklist from Support Lead before launch; backup recordings of training.\n\n---\n\n## 6. Launch Readiness & Go\u2011Live Execution\n\n6.1 Assemble launch board (roles: Product Owner, Lead Engineer, Ops Lead, QA Lead, SRE) \u2013 Owner: **Program Manager** \u2013 Depends on: kickoff.  \n6.2 Finalize go\u2011live checklist \u2013 Owner: **Program Manager** \u2013 Depends on: completion of Outcomes\u202f1\u20115.  \n6.3 Communicate launch schedule to all stakeholders \u2013 Owner: **Program Manager** \u2013 Depends on: 6.2.  \n6.4 Execute production deployment \u2013 Owner: **Ops Lead** \u2013 Depends on: 1.4 (sign\u2011off).  \n6.5 Monitor live system (dashboards, alerts) \u2013 Owner: **SRE** \u2013 Can run in parallel with 6.4 (post\u2011deployment).  \n6.6 Conduct 48\u2011hour stabilization \u2013 Owner: **Support Lead** \u2013 Depends on: 6.5.  \n6.7 Post\u2011launch retrospective & lessons\u2011learned capture \u2013 Owner: **Program Manager** \u2013 Depends on: 6.6.  \n\n*Risk mitigation*: pre\u2011approved rollback plan (Owner: Lead Engineer), \u201cgolden\u201d pre\u2011release environment for final validation, escalation contact list distributed in 6.3.",
+  "plan": {
+    "id": "document-001",
+    "name": "Real-Time Cohort Attribution Launch Plan",
+    "details": "",
+    "draft": false,
+    "participants": [
+      {
+        "name": "Product Owner",
+        "details": "",
+        "draft": false
+      },
+      {
+        "name": "Lead Engineer",
+        "details": "",
+        "draft": false
+      },
+      {
+        "name": "QA Lead",
+        "details": "",
+        "draft": false
+      },
+      {
+        "name": "Ops Lead",
+        "details": "",
+        "draft": false
+      },
+      {
+        "name": "Site Reliability Engineer (SRE)",
+        "details": "",
+        "draft": false
+      },
+      {
+        "name": "Data Architect",
+        "details": "",
+        "draft": false
+      },
+      {
+        "name": "Infrastructure Engineer",
+        "details": "",
+        "draft": false
+      },
+      {
+        "name": "Backend Engineer A",
+        "details": "",
+        "draft": false
+      },
+      {
+        "name": "Backend Engineer B",
+        "details": "",
+        "draft": false
+      },
+      {
+        "name": "Data Engineer",
+        "details": "",
+        "draft": false
+      },
+      {
+        "name": "UX Designer",
+        "details": "",
+        "draft": false
+      },
+      {
+        "name": "Frontend Engineer",
+        "details": "",
+        "draft": false
+      },
+      {
+        "name": "Performance Engineer",
+        "details": "",
+        "draft": false
+      },
+      {
+        "name": "Security Engineer",
+        "details": "",
+        "draft": false
+      },
+      {
+        "name": "DevOps Engineer",
+        "details": "",
+        "draft": false
+      },
+      {
+        "name": "Technical Writer",
+        "details": "",
+        "draft": false
+      },
+      {
+        "name": "Program Manager",
+        "details": "",
+        "draft": false
+      },
+      {
+        "name": "Support Lead",
+        "details": "",
+        "draft": false
+      }
+    ],
+    "references": [],
+    "deliverables": [],
+    "tasks": [
+      {
+        "id": "task-001",
+        "name": "Confirm scope & success criteria",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Product Owner"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002",
+        "name": "Assemble release bundle",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-013",
+          "task-020",
+          "task-027"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Lead Engineer"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003",
+        "name": "Final performance & security validation",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-002"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "QA Lead"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-004",
+        "name": "Obtain stakeholder sign\u2011off",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-003"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Product Owner"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-005",
+        "name": "Deploy to production",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-004"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Ops Lead"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-006",
+        "name": "Activate post\u2011launch monitoring",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-005"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Site Reliability Engineer (SRE)"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-007",
+        "name": "Define data schema",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Data Architect"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-008",
+        "name": "Provision streaming platform",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-007"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Infrastructure Engineer"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-009",
+        "name": "Develop ingestion connectors",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-008"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Backend Engineer A"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-010",
+        "name": "Implement enrichment jobs",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-009"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Backend Engineer B"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-011",
+        "name": "Build cohort attribution logic",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-010"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Data Engineer"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-012",
+        "name": "Write results to analytics store",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-011"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Data Engineer"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-013",
+        "name": "Staging validation",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-012"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "QA Lead"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-014",
+        "name": "Stakeholder interview",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "UX Designer"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-015",
+        "name": "Produce wireframes",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-014"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "UX Designer"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-016",
+        "name": "Wireframe sign\u2011off",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-015"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Product Owner"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-017",
+        "name": "Develop front\u2011end component library",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-016"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Frontend Engineer"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-018",
+        "name": "Integrate with real\u2011time API",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-012"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Frontend Engineer"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-019",
+        "name": "Implement auto\u2011refresh & error handling",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-018"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Frontend Engineer"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-020",
+        "name": "Usability testing & iteration",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-019"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "UX Designer"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-021",
+        "name": "Draft comprehensive test plan",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-013",
+          "task-020"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "QA Lead"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-022",
+        "name": "Automate unit & integration tests",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-021"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Backend Engineer A",
+          "Frontend Engineer"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-023",
+        "name": "Set up CI test pipelines",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-022"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "DevOps Engineer"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-024",
+        "name": "Execute performance load tests",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-023",
+          "task-012",
+          "task-018"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Performance Engineer"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-025",
+        "name": "Conduct security scans",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-023",
+          "task-002"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Security Engineer"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-026",
+        "name": "Log & triage defects",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "QA Lead"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-027",
+        "name": "Sign\u2011off for release",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-026"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "QA Lead"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-028",
+        "name": "Draft user guide & API reference",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-018",
+          "task-012"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Technical Writer"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-029",
+        "name": "Create operational runbooks",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-005"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Ops Lead"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-030",
+        "name": "Prepare training deck",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-028"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Product Owner"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-031",
+        "name": "Schedule & deliver live training sessions",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-030"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Product Owner"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-032",
+        "name": "Publish all materials in Knowledge Base",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-031"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Technical Writer"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-033",
+        "name": "Assemble launch board",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Program Manager"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-034",
+        "name": "Finalize go\u2011live checklist",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-006",
+          "task-032",
+          "task-027"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Program Manager"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-035",
+        "name": "Communicate launch schedule",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-034"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Program Manager"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-036",
+        "name": "Execute production deployment",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-004",
+          "task-035"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Ops Lead"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-037",
+        "name": "Monitor live system",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-036"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Site Reliability Engineer (SRE)"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-038",
+        "name": "Conduct 48\u2011hour stabilization",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-037"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Support Lead"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-039",
+        "name": "Post\u2011launch retrospective & lessons\u2011learned capture",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-038"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Program Manager"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      }
+    ],
+    "history": []
+  }
+}

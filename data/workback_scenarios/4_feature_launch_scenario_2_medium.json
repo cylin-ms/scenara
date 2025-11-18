@@ -1,0 +1,879 @@
+{
+  "scenario_name": "DataPulse AI Insights Feature Launch \u2013 Acme Analytics",
+  "scenario_number": 2,
+  "meeting_type": "Product Feature Launch",
+  "quality_level": "medium",
+  "workback_prompt": "Create a detailed workback plan for the **DataPulse AI Insights** feature launch at Acme Analytics. The launch is scheduled for **2025-12-15 10:00\u202fAM\u202fPST** and follows a T\u201130 planning horizon. Include all phases (strategy, development, QA, documentation, marketing, sales enablement, support readiness, launch day execution, post\u2011launch monitoring). Break down tasks by week, assign owners (using the stakeholder list provided), indicate dependencies, critical path items, risk mitigation steps, and required approvals. Provide a Gantt\u2011style timeline, a RACI matrix, and a checklist of go/no\u2011go criteria for the launch day. Use the scenario details above (company context, deliverables, success criteria, constraints) to ensure the plan is realistic and actionable.\n\nGenerate a MEDIUM QUALITY workback plan with these characteristics:\n- Most major tasks present but some gaps\n- Reasonable task descriptions\n- Some dependencies defined\n- Most tasks have owners\n- Milestones present but may lack detail\n- Generally realistic timelines\n- Some consideration of risks\n- Key deliverables identified\n\nIMPORTANT: Generate a plan that naturally exhibits MEDIUM quality characteristics.\nDo not explicitly label the plan as \"medium quality\" - let the quality emerge from the content.",
+  "generated_at": "2025-11-17T05:23:10.144277",
+  "analysis": "## Situation Overview  \n\nAcme Analytics is preparing to launch the **DataPulse\u202fAI\u202fInsights** feature on **15\u202fDec\u202f2025\u202f10:00\u202fAM\u202fPST**.  \nThe launch follows a **T\u201130** planning horizon, meaning all preparatory work must be completed within the 30\u202fdays leading up to the launch date.  \n\nThe effort spans several functional domains:\n\n| Domain | Typical Deliverables | Typical Stakeholders |\n|--------|---------------------|----------------------|\n| **Strategy** | Business case, success metrics, go\u2011to\u2011market (GTM) plan | Product Lead, Marketing Director, Sales Ops |\n| **Development** | Feature code, data pipelines, model integration, CI/CD artefacts | Engineering Manager, Lead Engineer, Data Scientist |\n| **Quality Assurance (QA)** | Test plans, automated & manual test runs, defect triage | QA Lead, Test Engineer |\n| **Documentation** | User guides, API reference, internal runbooks | Technical Writer, Documentation Owner |\n| **Marketing** | Campaign assets, email blasts, webinars, landing page | Marketing Manager, Creative Designer |\n| **Sales Enablement** | Pitch decks, objection\u2011handling docs, training sessions | Sales Enablement Lead, Sales Manager |\n| **Support Readiness** | Support playbook, escalation matrix, knowledge\u2011base articles | Support Lead, Tier\u20112 Engineer |\n| **Launch\u2011Day Execution** | Release checklist, communications, monitoring dashboards | Release Manager, Ops Lead |\n| **Post\u2011Launch Monitoring** | KPI dashboards, incident response, customer feedback loop | Product Analyst, Ops Lead |\n\nA realistic work\u2011back plan must weave these domains together, surface the **critical path**, capture **dependencies**, allocate **owners** (via a RACI matrix), and embed **risk mitigation** and **approval gates**.\n\nBelow is a step\u2011by\u2011step guide for building the required artefacts. Follow the sequence; each step builds on the previous one and can be performed collaboratively across the stakeholder groups.\n\n---\n\n## 1. Establish the Planning Foundations  \n\n### 1.1. Confirm Scope & Success Criteria  \n* **Action**: Convene a short kickoff (30\u202fmin) with the Product Lead, Engineering Manager, and Marketing Director.  \n* **Output**: A concise \u201cLaunch Scope Document\u201d that lists:\n  * Feature components in\u2011scope (e.g., AI model, UI widgets, API endpoints).  \n  * Success metrics (e.g., 5\u202f% adoption in the first month, <\u202f2\u202f% error rate).  \n  * Constraints (e.g., compliance review must be completed by\u202f5\u202fDec).  \n\n### 1.2. Assemble the Stakeholder Roster  \n* **Action**: Pull the stakeholder list from the internal directory and map each person to a functional area.  \n* **Output**: A **Stakeholder Register** (name, role, functional area, contact).  \n\n### 1.3. Define Approval Gates  \n* **Action**: Identify all required sign\u2011offs (e.g., Security Review, Legal, Product Owner).  \n* **Output**: An **Approval Matrix** that lists each gate, the approver, and the due date relative to launch (e.g., \u201cSecurity sign\u2011off \u2013\u202fby\u202f3\u202fDec\u201d).  \n\n---\n\n## 2. Build the High\u2011Level Work\u2011Back Timeline  \n\n### 2.1. Create Phase Buckets  \nBreak the 30\u2011day window into weekly **phase buckets** that align with the functional domains:\n\n| Week | Primary Focus | Typical Outputs |\n|------|---------------|-----------------|\n| **W\u20114 (30\u201124\u202fdays)** | Strategy & Initial Development Sprint | GTM plan, feature backlog, architecture diagram |\n| **W\u20113 (23\u201117\u202fdays)** | Development & Early QA | Code complete, unit test coverage \u2265\u202f80\u202f% |\n| **W\u20112 (16\u201110\u202fdays)** | Documentation, Marketing Prep, Sales Enablement | Draft user guides, campaign assets, training deck |\n| **W\u20111 (9\u20113\u202fdays)** | Final QA, Support Readiness, Approvals | Regression test sign\u2011off, support playbook, all approvals |\n| **Launch Day (0\u202fdays)** | Release Execution & Monitoring | Release checklist executed, live monitoring dashboards |\n| **Post\u2011Launch (1\u20117\u202fdays)** | KPI tracking & Issue resolution | Adoption report, incident triage log |\n\n### 2.2. Populate Weekly Tasks (Medium\u2011Quality Detail)  \nFor each week, list the **major tasks** that should be present. Example for W\u20113:\n\n* **Develop AI model integration** \u2013 Owner: Lead Engineer (R)  \n* **Implement API endpoints** \u2013 Owner: Backend Engineer (R)  \n* **Run unit\u2011test suite** \u2013 Owner: QA Lead (C)  \n* **Conduct security review** \u2013 Owner: Security Engineer (A)  \n\n*(R = Responsible, A = Accountable, C = Consulted, I = Informed \u2013 see RACI matrix below.)*  \n\n### 2.3. Identify Dependencies  \nMark obvious **finish\u2011to\u2011start** links, e.g.:\n\n* **Documentation draft** depends on **Feature code complete**.  \n* **Marketing launch email** depends on **Final UI screenshots** (which depend on **UI development**).  \n\nCapture these in a simple dependency table; later they will feed the Gantt view.\n\n---\n\n## 3. Draft the Gantt\u2011Style Timeline  \n\n### 3.1. Choose a Light\u2011weight Tool  \nA spreadsheet or a shared online Gantt editor (e.g., Google Sheets with conditional formatting) is sufficient for a medium\u2011quality plan.  \n\n### 3.2. Populate Bars  \n* **Rows** = individual tasks (as defined in step\u202f2.2).  \n* **Columns** = calendar days (30\u202fDec\u202f\u2013\u202f15\u202fDec).  \n* **Bar length** = estimated duration.  \n\n### 3.3. Highlight Critical Path  \n* Use a distinct colour (e.g., red) for tasks that, if delayed, push the launch date.  \n* Typical critical\u2011path items: **Feature code complete**, **Security sign\u2011off**, **Final QA sign\u2011off**, **Launch\u2011day checklist**.  \n\n### 3.4. Add Milestones  \nInsert milestone markers for:\n* **GTM plan approved** (Day\u202f\u2011\u202f28)  \n* **Feature freeze** (Day\u202f\u2011\u202f14)  \n* **Go/No\u2011Go decision** (Day\u202f\u2011\u202f2)  \n\n---\n\n## 4. Construct the RACI Matrix  \n\n### 4.1. List All Tasks (Rows)  \nTake the consolidated task list from step\u202f2.2.  \n\n### 4.2. List All Stakeholder Roles (Columns)  \nTypical columns:  \n* **Product Owner**  \n* **Engineering Lead**  \n* **QA Lead**  \n* **Technical Writer**  \n* **Marketing Manager**  \n* **Sales Enablement Lead**  \n* **Support Lead**  \n* **Ops / Release Manager**  \n\n### 4.3. Assign RACI Codes  \nFor each cell, assign **R, A, C, I**.  \n* Ensure **only one \u201cA\u201d** per row.  \n* At least one **R** per row.  \n* Use **C/I** to capture needed consultation or awareness.  \n\n### 4.4. Validate  \nRun a quick peer\u2011review (e.g., a 15\u2011minute sync) to verify no task is left without an accountable owner.\n\n---\n\n## 5. Define Go/No\u2011Go Checklist  \n\nCreate a concise **Launch\u2011Day Readiness Checklist** (\u2248\u202f10\u202fitems). Example categories:\n\n| Category | Item | Success Indicator |\n|----------|------|--------------------|\n| **Technical** | All production builds passed smoke test | Smoke test report signed off |\n| **Security** | Security review sign\u2011off obtained | Approval email from Security Lead |\n| **Compliance** | Data\u2011privacy impact assessment cleared | Documented compliance sign\u2011off |\n| **Support** | Support playbook uploaded to knowledge base | Confirmation from Support Lead |\n| **Marketing** | Launch email scheduled | Email platform confirmation |\n| **Operations** | Monitoring dashboards live | Dashboard URL shared with team |\n| **Stakeholder** | Final launch\u2011day communication sent | Distribution list receipt |\n\nThe checklist should be reviewed **two days before launch** in a \u201cReadiness Review\u201d meeting chaired by the Release Manager.\n\n---\n\n## 6. Risk Identification & Mitigation  \n\n### 6.1. Populate a Simple Risk Register  \n\n| Risk | Likelihood | Impact | Owner | Mitigation |\n|------|------------|--------|-------|------------|\n| Delay in AI model training | Medium | High (pushes code complete) | Data Scientist | Run a parallel \u201cfallback\u201d model with reduced features; allocate buffer of 2\u202fdays in W\u20113 |\n| Security sign\u2011off overdue | Low | High (cannot release) | Security Engineer | Submit early draft for pre\u2011review; schedule a dedicated review slot |\n| Marketing assets not approved | Medium | Medium | Marketing Manager | Use placeholder assets for internal demo; obtain provisional sign\u2011off |\n\n### 6.2. Integrate Mitigations into the Timeline  \nAdd \u201ccontingency buffer\u201d tasks (e.g., \u201cModel fallback validation\u201d) and mark them as **non\u2011critical** but **ready to activate** if the associated risk materializes.\n\n---\n\n## 7. Collaboration & Communication Cadence  \n\n| Meeting | Frequency | Participants | Purpose |\n|---------|-----------|--------------|---------|\n| **Launch Kickoff** | One\u2011off (Day\u202f\u2011\u202f30) | Product, Eng, QA, Marketing, Sales, Support | Align scope & timeline |\n| **Weekly Sync** | Weekly (W\u20114\u202f\u2192\u202fW\u20111) | All functional leads | Status update, raise blockers |\n| **Risk Review** | Bi\u2011weekly (or ad\u2011hoc) | Risk Owner, PM, Eng Lead | Track high\u2011impact risks |\n| **Readiness Review** | Day\u202f\u2011\u202f2 | All owners + Exec sponsor | Final Go/No\u2011Go decision |\n| **Post\u2011Launch Debrief** | Day\u202f+\u202f7 | Product, Ops, Support, Analytics | Capture lessons learned |\n\nUse a shared **project channel** (e.g., Teams/Slack) for quick questions and a **central document repository** (e.g., SharePoint) for all artefacts (timeline, RACI, checklist).\n\n---\n\n## 8. Execution Checklist (Next 48\u202fHours)  \n\n1. **Schedule the Launch Kickoff** (owner: PM).  \n2. **Draft the Launch Scope Document** (owner: Product Lead).  \n3. **Create the Stakeholder Register** (owner: PM).  \n4. **Identify Approval Gates** (owner: Legal/Compliance liaison).  \n5. **Set up the Gantt template** in the chosen tool (owner: PM).  \n\nCompleting these items will give the team a concrete foundation on which to flesh out the detailed weekly tasks, dependencies, and risk mitigations described above.\n\n---\n\n### How to Move Forward  \n\n1. **Assign a \u201cWork\u2011Back Plan Owner\u201d** (typically the Product Manager) to shepherd the creation of the artefacts.  \n2. **Run the Launch Kickoff** to capture scope, success criteria, and confirm stakeholder list.  \n3. **Iteratively populate the weekly task list** in the Gantt, inviting each functional lead to add their domain\u2011specific tasks and owners.  \n4. **Validate dependencies and critical path** with the Engineering and QA leads; adjust dates if needed.  \n5. **Finalize the RACI matrix** and circulate for sign\u2011off.  \n6. **Complete the risk register** and embed mitigation tasks into the timeline.  \n7. **Run the Readiness Review** two days before launch to apply the Go/No\u2011Go checklist.  \n\nBy following this structured, collaborative approach, the team will produce a realistic, medium\u2011quality work\u2011back plan that meets Acme Analytics\u2019 launch objectives while maintaining visibility into risks, approvals, and ownership.",
+  "plan": {
+    "id": "document-001",
+    "name": "DataPulse AI Insights Launch Workback Plan",
+    "details": "Work\u2011back plan for the DataPulse AI Insights feature launch on 15 Dec 2025. Includes planning foundations, high\u2011level timeline, Gantt chart, RACI matrix, Go/No\u2011Go checklist, risk register, communication cadence, and execution checklist for the next 48\u202fhours.",
+    "draft": true,
+    "participants": [
+      {
+        "name": "Product Lead",
+        "email": "productlead@example.com",
+        "draft": true
+      },
+      {
+        "name": "Engineering Manager",
+        "email": "engmanager@example.com",
+        "draft": true
+      },
+      {
+        "name": "Marketing Director",
+        "email": "marketingdir@example.com",
+        "draft": true
+      },
+      {
+        "name": "QA Lead",
+        "email": "qalead@example.com",
+        "draft": true
+      },
+      {
+        "name": "Technical Writer",
+        "email": "techwriter@example.com",
+        "draft": true
+      },
+      {
+        "name": "Marketing Manager",
+        "email": "marketingmgr@example.com",
+        "draft": true
+      },
+      {
+        "name": "Sales Enablement Lead",
+        "email": "salesenable@example.com",
+        "draft": true
+      },
+      {
+        "name": "Support Lead",
+        "email": "supportlead@example.com",
+        "draft": true
+      },
+      {
+        "name": "Release Manager",
+        "email": "releasemgr@example.com",
+        "draft": true
+      },
+      {
+        "name": "Ops Lead",
+        "email": "opslead@example.com",
+        "draft": true
+      },
+      {
+        "name": "Product Analyst",
+        "email": "productanalyst@example.com",
+        "draft": true
+      },
+      {
+        "name": "Security Engineer",
+        "email": "security@example.com",
+        "draft": true
+      },
+      {
+        "name": "Legal Liaison",
+        "email": "legal@example.com",
+        "draft": true
+      },
+      {
+        "name": "Data Scientist",
+        "email": "datasci@example.com",
+        "draft": true
+      }
+    ],
+    "references": [],
+    "deliverables": [
+      {
+        "name": "Launch Scope Document",
+        "type": "word",
+        "id": "doc-001",
+        "draft": true,
+        "history": []
+      },
+      {
+        "name": "Stakeholder Register",
+        "type": "excel",
+        "id": "doc-002",
+        "draft": true,
+        "history": []
+      },
+      {
+        "name": "Approval Matrix",
+        "type": "word",
+        "id": "doc-003",
+        "draft": true,
+        "history": []
+      },
+      {
+        "name": "Gantt Timeline",
+        "type": "excel",
+        "id": "doc-004",
+        "draft": true,
+        "history": []
+      },
+      {
+        "name": "RACI Matrix",
+        "type": "excel",
+        "id": "doc-005",
+        "draft": true,
+        "history": []
+      },
+      {
+        "name": "Go/No\u2011Go Checklist",
+        "type": "word",
+        "id": "doc-006",
+        "draft": true,
+        "history": []
+      },
+      {
+        "name": "Risk Register",
+        "type": "excel",
+        "id": "doc-007",
+        "draft": true,
+        "history": []
+      },
+      {
+        "name": "Execution Checklist",
+        "type": "word",
+        "id": "doc-008",
+        "draft": true,
+        "history": []
+      }
+    ],
+    "tasks": [
+      {
+        "id": "task-001",
+        "name": "Establish the Planning Foundations",
+        "draft": true,
+        "details": "Overall step that groups scope confirmation, stakeholder register creation, and approval gate definition.",
+        "dependencies": [
+          "task-001-1",
+          "task-001-2",
+          "task-001-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-001-1",
+        "name": "Confirm Scope & Success Criteria",
+        "draft": true,
+        "details": "Convene a 30\u2011min kickoff with Product Lead, Engineering Manager, and Marketing Director. Produce a Launch Scope Document.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "productlead@example.com",
+          "engmanager@example.com",
+          "marketingdir@example.com"
+        ],
+        "deliverables": [
+          "@deliverable[word]/doc-001"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-001-2",
+        "name": "Assemble the Stakeholder Roster",
+        "draft": true,
+        "details": "Pull stakeholder list from internal directory and map each person to a functional area. Output Stakeholder Register.",
+        "dependencies": [
+          "task-001-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [
+          "@deliverable[excel]/doc-002"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-001-3",
+        "name": "Define Approval Gates",
+        "draft": true,
+        "details": "Identify required sign\u2011offs (Security, Legal, Product Owner) and create an Approval Matrix with due dates.",
+        "dependencies": [
+          "task-001-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "legal@example.com",
+          "security@example.com",
+          "productlead@example.com"
+        ],
+        "deliverables": [
+          "@deliverable[word]/doc-003"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002",
+        "name": "Build the High\u2011Level Work\u2011Back Timeline",
+        "draft": true,
+        "details": "Create weekly phase buckets, populate medium\u2011quality weekly tasks, and identify finish\u2011to\u2011start dependencies.",
+        "dependencies": [
+          "task-002-1",
+          "task-002-2",
+          "task-002-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002-1",
+        "name": "Create Phase Buckets",
+        "draft": true,
+        "details": "Break the 30\u2011day window into weekly buckets (W\u20114 to Post\u2011Launch) aligning with functional domains.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002-2",
+        "name": "Populate Weekly Tasks (Medium\u2011Quality Detail)",
+        "draft": true,
+        "details": "List major tasks for each week, e.g., develop AI model integration, run unit tests, conduct security review.",
+        "dependencies": [
+          "task-002-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002-3",
+        "name": "Identify Dependencies",
+        "draft": true,
+        "details": "Mark finish\u2011to\u2011start links such as Documentation draft depends on Feature code complete.",
+        "dependencies": [
+          "task-002-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003",
+        "name": "Draft the Gantt\u2011Style Timeline",
+        "draft": true,
+        "details": "Select a tool, populate bars, highlight critical path, and add milestones to produce the Gantt Timeline.",
+        "dependencies": [
+          "task-003-1",
+          "task-003-2",
+          "task-003-3",
+          "task-003-4"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[excel]/doc-004"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003-1",
+        "name": "Choose a Light\u2011weight Tool",
+        "draft": true,
+        "details": "Select a spreadsheet or simple project\u2011management tool for the Gantt chart.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003-2",
+        "name": "Populate Bars",
+        "draft": true,
+        "details": "Enter tasks into the chosen tool, mapping start/end dates for each weekly activity.",
+        "dependencies": [
+          "task-003-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003-3",
+        "name": "Highlight Critical Path",
+        "draft": true,
+        "details": "Visually emphasize tasks on the critical path within the Gantt chart.",
+        "dependencies": [
+          "task-003-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003-4",
+        "name": "Add Milestones",
+        "draft": true,
+        "details": "Insert key milestones such as Phase bucket completions and final release.",
+        "dependencies": [
+          "task-003-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-004",
+        "name": "Construct the RACI Matrix",
+        "draft": true,
+        "details": "Define rows (tasks) and columns (roles), assign RACI codes, and validate the matrix.",
+        "dependencies": [
+          "task-004-1",
+          "task-004-2",
+          "task-004-3",
+          "task-004-4"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[excel]/doc-005"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-004-1",
+        "name": "List All Tasks (Rows)",
+        "draft": true,
+        "details": "Create a row for each task identified in the work\u2011back plan.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-004-2",
+        "name": "List All Stakeholder Roles (Columns)",
+        "draft": true,
+        "details": "Create a column for each stakeholder role (Product Lead, Engineering Manager, etc.).",
+        "dependencies": [
+          "task-004-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-004-3",
+        "name": "Assign RACI Codes",
+        "draft": true,
+        "details": "Populate the matrix with Responsible, Accountable, Consulted, and Informed assignments for each task.",
+        "dependencies": [
+          "task-004-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-004-4",
+        "name": "Validate RACI Matrix",
+        "draft": true,
+        "details": "Review the completed RACI matrix for accuracy and completeness.",
+        "dependencies": [
+          "task-004-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-005",
+        "name": "Define Go/No\u2011Go Checklist",
+        "draft": true,
+        "details": "Create a checklist of technical, security, compliance, support, marketing, operations, and stakeholder items required before launch.",
+        "dependencies": [
+          "task-005-1",
+          "task-005-2",
+          "task-005-3",
+          "task-005-4",
+          "task-005-5",
+          "task-005-6",
+          "task-005-7"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[word]/doc-006"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-005-1",
+        "name": "Technical: All production builds passed smoke test",
+        "draft": true,
+        "details": "Verify that every production build has passed the smoke\u2011test criteria.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "engmanager@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-005-2",
+        "name": "Security: Security review sign\u2011off obtained",
+        "draft": true,
+        "details": "Obtain formal sign\u2011off from the Security Engineer.",
+        "dependencies": [
+          "task-005-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "security@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-005-3",
+        "name": "Compliance: Data\u2011privacy impact assessment cleared",
+        "draft": true,
+        "details": "Complete and approve the data\u2011privacy impact assessment.",
+        "dependencies": [
+          "task-005-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "legal@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-005-4",
+        "name": "Support: Support playbook uploaded",
+        "draft": true,
+        "details": "Upload the final support playbook to the shared repository.",
+        "dependencies": [
+          "task-005-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "supportlead@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-005-5",
+        "name": "Marketing: Launch email scheduled",
+        "draft": true,
+        "details": "Schedule the launch\u2011day marketing email with the Marketing Manager.",
+        "dependencies": [
+          "task-005-4"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "marketingmgr@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-005-6",
+        "name": "Operations: Monitoring dashboards live",
+        "draft": true,
+        "details": "Ensure monitoring dashboards are operational and visible to the Ops team.",
+        "dependencies": [
+          "task-005-5"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "opslead@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-005-7",
+        "name": "Stakeholder: Final launch\u2011day communication sent",
+        "draft": true,
+        "details": "Send the final launch\u2011day communication to all stakeholders.",
+        "dependencies": [
+          "task-005-6"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "productlead@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-006",
+        "name": "Risk Identification & Mitigation",
+        "draft": true,
+        "details": "Create a simple risk register and embed mitigation actions into the timeline.",
+        "dependencies": [
+          "task-006-1",
+          "task-006-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[excel]/doc-007"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-006-1",
+        "name": "Populate a Simple Risk Register",
+        "draft": true,
+        "details": "Document key risks (e.g., delay in code, security review timing) in a Risk Register.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [
+          "@deliverable[excel]/doc-007"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-006-2",
+        "name": "Integrate Mitigations into the Timeline",
+        "draft": true,
+        "details": "Add mitigation activities to the high\u2011level timeline and Gantt chart.",
+        "dependencies": [
+          "task-006-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [
+          "@deliverable[excel]/doc-004"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-007",
+        "name": "Collaboration & Communication Cadence",
+        "draft": true,
+        "details": "Define meeting schedule and communication channels for the launch effort.",
+        "dependencies": [
+          "task-007-1",
+          "task-007-2",
+          "task-007-3",
+          "task-007-4",
+          "task-007-5"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-007-1",
+        "name": "Launch Kickoff",
+        "draft": true,
+        "details": "Hold the initial launch kickoff meeting with all core stakeholders.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "productlead@example.com",
+          "engmanager@example.com",
+          "marketingdir@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-007-2",
+        "name": "Weekly Sync",
+        "draft": true,
+        "details": "Conduct a weekly synchronization meeting with all functional leads.",
+        "dependencies": [
+          "task-007-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-007-3",
+        "name": "Risk Review",
+        "draft": true,
+        "details": "Hold a risk review meeting to assess and update the risk register.",
+        "dependencies": [
+          "task-007-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-007-4",
+        "name": "Readiness Review",
+        "draft": true,
+        "details": "Conduct the readiness review 48\u202fhours before launch to confirm all checklist items.",
+        "dependencies": [
+          "task-007-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [
+          "@deliverable[word]/doc-006"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-007-5",
+        "name": "Post\u2011Launch Debrief",
+        "draft": true,
+        "details": "Hold a debrief meeting after launch to capture lessons learned.",
+        "dependencies": [
+          "task-007-4"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-008",
+        "name": "Execution Checklist (Next 48 Hours)",
+        "draft": true,
+        "details": "High\u2011priority actions to be completed within the next 48\u202fhours.",
+        "dependencies": [
+          "task-008-1",
+          "task-008-2",
+          "task-008-3",
+          "task-008-4",
+          "task-008-5"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[word]/doc-008"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-008-1",
+        "name": "Schedule the Launch Kickoff",
+        "draft": true,
+        "details": "Arrange the launch kickoff meeting with all core participants.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-008-2",
+        "name": "Draft the Launch Scope Document",
+        "draft": true,
+        "details": "Create the Launch Scope Document as defined in task 1.1.",
+        "dependencies": [
+          "task-008-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "productlead@example.com",
+          "engmanager@example.com",
+          "marketingdir@example.com"
+        ],
+        "deliverables": [
+          "@deliverable[word]/doc-001"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-008-3",
+        "name": "Create the Stakeholder Register",
+        "draft": true,
+        "details": "Compile the stakeholder list into the Stakeholder Register.",
+        "dependencies": [
+          "task-008-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [
+          "@deliverable[excel]/doc-002"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-008-4",
+        "name": "Identify Approval Gates",
+        "draft": true,
+        "details": "Define required sign\u2011offs and due dates, producing the Approval Matrix.",
+        "dependencies": [
+          "task-008-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "legal@example.com",
+          "security@example.com",
+          "productlead@example.com"
+        ],
+        "deliverables": [
+          "@deliverable[word]/doc-003"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-008-5",
+        "name": "Set up the Gantt template",
+        "draft": true,
+        "details": "Create a blank Gantt template in the chosen tool to be populated later.",
+        "dependencies": [
+          "task-008-4"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [
+          "@deliverable[excel]/doc-004"
+        ],
+        "references": [],
+        "history": []
+      }
+    ],
+    "history": []
+  }
+}

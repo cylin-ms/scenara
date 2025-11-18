@@ -1,0 +1,470 @@
+{
+  "scenario_name": "Apex BioPharma \u2013 NeuroGenix Therapeutics Integration (Extreme Complexity)",
+  "scenario_number": 3,
+  "meeting_type": "M&A Integration Planning",
+  "quality_level": "high",
+  "workback_prompt": "Create a detailed workback plan for the Apex BioPharma \u2013 NeuroGenix Therapeutics integration scenario described above. The plan should cover all workstreams (HR, IT, Finance, Product Development, Sales & Marketing, Operations & Manufacturing, Regulatory Affairs, Legal & Compliance, Change Management, PMO), list day\u20111 priorities, outline 30\u201160\u201190\u2011day milestones, allocate resources (15\u201130 integration team members), identify risks and mitigation actions, define communication cadence (town\u2011halls, newsletters, intranet updates), and include metrics to track progress toward the $120M cost\u2011synergy and $200M revenue\u2011synergy targets.\n\nGenerate a HIGH QUALITY workback plan with these characteristics:\n- Comprehensive task coverage\n- Clear, actionable task descriptions\n- Well-defined dependencies\n- All tasks assigned to specific owners\n- Clear milestones with completion criteria\n- Realistic timelines with buffers\n- Proactive risk management\n- Complete deliverable list\n\nIMPORTANT: Generate a plan that naturally exhibits HIGH quality characteristics.\nDo not explicitly label the plan as \"high quality\" - let the quality emerge from the content.",
+  "generated_at": "2025-11-17T08:31:33.101608",
+  "analysis": "# Outcomes  \n\n## 1. Integrated Workback Plan Document  \nA single, master\u2011level plan that captures every workstream, day\u20111 priorities, 30\u201160\u201190\u2011day milestones, resource assignments, risk register, communication cadence, and synergy\u2011tracking metrics.  \nArtifact references: *none*  \n\n### Reasoning  \nThe request is for a \u201cdetailed workback plan\u201d that serves as the central reference for all integration activities. Producing a consolidated document first ensures that every subsequent task, owner, and milestone is aligned and visible to the entire integration team.  \n\n### Approach  \n1. **Kick\u2011off Planning Session** \u2013 bring the PMO, integration leads from each workstream, and the senior sponsor together to agree on scope, format, and version\u2011control.  \n2. **Template Definition** \u2013 adopt a standard template (e.g., executive summary, workstream tables, risk register, communication plan, KPI dashboard).  \n3. **Populate Draft** \u2013 each workstream fills in its section (tasks, owners, dependencies, timelines).  \n4. **Review Cycle** \u2013 iterative reviews (PMO \u2192 functional leads \u2192 sponsor) to capture missing items and resolve conflicts.  \n5. **Baseline Approval** \u2013 obtain formal sign\u2011off from the integration steering committee; lock the baseline and store in the shared intranet repository.  \n\n---\n\n## 2. Integration Governance Structure & PMO Charter  \nEstablish a clear decision\u2011making hierarchy, escalation paths, and reporting rhythm that will drive the plan\u2019s execution.  \nArtifact references: *none*  \n\n### Reasoning  \nWith 10 workstreams and 15\u201130 team members, a defined governance model prevents duplicated effort, unclear authority, and bottlenecks. The charter will also formalize the PMO\u2019s authority to allocate resources and enforce timelines.  \n\n### Approach  \n1. **Define Roles** \u2013 Integration Sponsor, Integration Steering Committee, Workstream Leads, PMO Manager, Change Management Lead.  \n2. **Create RACI Matrix** \u2013 map responsibilities for all major deliverables (e.g., \u201cApprove Day\u20111 HR onboarding\u201d = Responsible: HR Lead, Accountable: Integration Sponsor).  \n3. **Set Meeting Cadence** \u2013 weekly workstream syncs, bi\u2011weekly steering committee, monthly executive review.  \n4. **Document Escalation Path** \u2013 specify when issues move from workstream lead \u2192 PMO \u2192 Sponsor.  \n5. **Publish Charter** \u2013 store in the same location as the workback plan; circulate to all integration members.  \n\n---\n\n## 3. Day\u20111 Integration Execution Bundle  \nAll activities that must be completed on the first operational day after the legal close to ensure business continuity.  \nArtifact references: *none*  \n\n### Reasoning  \nDay\u20111 priorities are explicitly requested and are critical to avoid service disruption, retain key talent, and begin synergy capture. Grouping them as a single \u201cbundle\u201d clarifies ownership and enables a coordinated \u201cgo\u2011live\u201d checklist.  \n\n### Approach  \n1. **Identify Day\u20111 Items per Workstream** \u2013 HR (payroll switchover, benefits enrollment), IT (network connectivity, critical system access), Finance (cash\u2011management hand\u2011off), etc.  \n2. **Develop Day\u20111 Checklist** \u2013 include pre\u2011close readiness gates (e.g., \u201cIT firewall rules tested\u201d).  \n3. **Assign Day\u20111 Owners** \u2013 each workstream lead is accountable for completing its checklist items.  \n4. **Conduct Pre\u2011Go\u2011Live Dry\u2011Run** \u2013 simulate the Day\u20111 sequence 48\u202fhours before close.  \n5. **Execute on Close Day** \u2013 follow the checklist, log status in real time, and hold a \u201cDay\u20111 War\u2011Room\u201d for rapid issue resolution.  \n\n---\n\n## 4. 30\u2011Day Milestone Package (Operational Stabilization)  \nDeliverables that prove the integration is stable, early synergies are being realized, and the change\u2011management engine is functional.  \nArtifact references: *none*  \n\n### Reasoning  \nThe first month after Day\u20111 is the window to confirm that core processes are running smoothly, that critical risks are mitigated, and that early cost\u2011synergy levers (e.g., headcount rationalization) are on track.  \n\n### Approach  \n1. **Validate Core Processes** \u2013 HR (new hire onboarding), IT (system performance), Finance (monthly close).  \n2. **Kick\u2011off Synergy Tracking** \u2013 populate the KPI dashboard with actuals vs. targets for cost\u2011synergy categories.  \n3. **Complete First Change\u2011Management Pulse Survey** \u2013 measure employee sentiment and identify gaps.  \n4. **Deliver Interim Progress Report** \u2013 PMO prepares a 30\u2011day status deck for the steering committee.  \n5. **Decision Gate** \u2013 confirm whether any corrective actions are needed before proceeding to 60\u2011day goals.  \n\n---\n\n## 5. 60\u2011Day Milestone Package (Synergy Ramp\u2011Up)  \nTargeted execution of the majority of cost\u2011synergy initiatives and the first set of revenue\u2011synergy pilots.  \nArtifact references: *none*  \n\n### Reasoning  \nBy two months, the integration team should have executed the bulk of \u201cquick\u2011win\u201d cost\u2011saving actions (e.g., procurement consolidation) and launched at least one joint sales/marketing campaign to begin revenue\u2011synergy capture.  \n\n### Approach  \n1. **Finalize Cost\u2011Synergy Actions** \u2013 complete all identified $120\u202fM savings levers (e.g., facilities consolidation, shared services).  \n2. **Launch Revenue\u2011Synergy Pilot** \u2013 joint product\u2011launch in a defined therapeutic area, tracked against the $200\u202fM target.  \n3. **Update KPI Dashboard** \u2013 reflect actual cost reductions and incremental revenue.  \n4. **Mid\u2011Point Governance Review** \u2013 steering committee assesses progress, validates assumptions, and re\u2011prioritizes any lagging items.  \n5. **Communications Burst** \u2013 issue a \u201c60\u2011Day Success\u201d newsletter and host a town\u2011hall to celebrate wins and reinforce next steps.  \n\n---\n\n## 6. 90\u2011Day Milestone Package (Full Integration & Ongoing Governance)  \nCompletion of all major integration deliverables, hand\u2011off of day\u2011to\u2011day operations to the combined organization, and establishment of a sustainable governance model.  \nArtifact references: *none*  \n\n### Reasoning  \nThe 90\u2011day horizon marks the transition from \u201cintegration project\u201d to \u201csteady\u2011state operation.\u201d All high\u2011impact tasks, risk mitigations, and synergy tracking mechanisms must be institutionalized.  \n\n### Approach  \n1. **Close Remaining Workstream Tasks** \u2013 any open items from HR, IT, Operations, etc. are completed or formally transitioned.  \n2. **Institutionalize Synergy Governance** \u2013 create a permanent \u201cSynergy Management Office\u201d with quarterly reporting.  \n3. **Finalize Change\u2011Management Integration** \u2013 embed new processes into standard SOPs, complete final training roll\u2011out.  \n4. **Produce 90\u2011Day Completion Report** \u2013 comprehensive documentation of outcomes, lessons learned, and residual risks.  \n5. **Executive Sign\u2011Off** \u2013 sponsor formally declares the integration \u201ccomplete\u201d and releases the PMO resources.  \n\n---\n\n## 7. Synergy\u2011Tracking Metrics Dashboard  \nA live, visual dashboard that monitors progress toward the $120\u202fM cost\u2011synergy and $200\u202fM revenue\u2011synergy targets, refreshed weekly.  \nArtifact references: *none*  \n\n### Reasoning  \nQuantitative tracking is essential to demonstrate value delivery, trigger corrective actions, and keep leadership confidence. The dashboard becomes the single source of truth for all stakeholders.  \n\n### Approach  \n1. **Define KPI Set** \u2013 cost\u2011synergy categories (headcount, facilities, procurement), revenue\u2011synergy pipelines, schedule variance, risk heat map.  \n2. **Select Data Sources** \u2013 finance system, HRIS, CRM, project\u2011management tool.  \n3. **Build Dashboard Prototype** \u2013 PMO works with analytics lead to create visualizations.  \n4. **Validate with Stakeholders** \u2013 ensure metrics align with sponsor expectations.  \n5. **Deploy & Communicate** \u2013 embed in the intranet, include in weekly status emails.  \n\n---\n\n## 8. Integrated Communication Cadence  \nA structured plan for town\u2011halls, newsletters, intranet updates, and targeted messages that keep all employees informed and engaged throughout the integration.  \nArtifact references: *none*  \n\n### Reasoning  \nConsistent, transparent communication mitigates uncertainty, drives cultural alignment, and supports change\u2011management objectives. The cadence must be defined early and adhered to.  \n\n### Approach  \n1. **Create Communication Calendar** \u2013 schedule weekly newsletters, bi\u2011weekly town\u2011halls, monthly leadership Q&A, ad\u2011hoc alerts for critical milestones.  \n2. **Assign Content Owners** \u2013 Change Management Lead (overall messaging), Workstream Leads (specific updates), HR (people\u2011related news).  \n3. **Develop Templates** \u2013 standard formats for newsletters, slide decks, intranet posts.  \n4. **Feedback Loop** \u2013 embed short surveys after each town\u2011hall to gauge comprehension and sentiment.  \n5. **Governance Review** \u2013 PMO monitors adherence to cadence and escalates any gaps.  \n\n---\n\n# Breakdown  \n\n**1. Integrated Workback Plan Document**  \n&nbsp;&nbsp;1.1. Conduct Planning Kick\u2011off (Owner: PMO Manager) \u2013 2\u202fdays  \n&nbsp;&nbsp;1.2. Draft Template (Owner: Integration Lead) \u2013 3\u202fdays, Depends on 1.1  \n&nbsp;&nbsp;1.3. Workstream Sections Input (Owners: HR Lead, IT Lead, Finance Lead, etc.) \u2013 10\u202fdays, Can run in parallel  \n&nbsp;&nbsp;1.4. Consolidate Draft (Owner: PMO Manager) \u2013 2\u202fdays, Depends on 1.3  \n&nbsp;&nbsp;1.5. Review Cycle (Owner: Steering Committee) \u2013 5\u202fdays, Depends on 1.4  \n&nbsp;&nbsp;1.6. Baseline Sign\u2011off (Owner: Integration Sponsor) \u2013 1\u202fday, Depends on 1.5  \n\n**2. Integration Governance Structure & PMO Charter**  \n&nbsp;&nbsp;2.1. Define Roles & RACI (Owner: PMO Manager) \u2013 4\u202fdays  \n&nbsp;&nbsp;2.2. Draft Charter (Owner: Integration Lead) \u2013 3\u202fdays, Depends on 2.1  \n&nbsp;&nbsp;2.3. Set Meeting Cadence (Owner: PMO Manager) \u2013 2\u202fdays, Can run in parallel with 2.1  \n&nbsp;&nbsp;2.4. Publish & Distribute (Owner: PMO Manager) \u2013 1\u202fday, Depends on 2.2 & 2.3  \n\n**3. Day\u20111 Integration Execution Bundle**  \n&nbsp;&nbsp;3.1. Identify Day\u20111 Items (Owners: All Workstream Leads) \u2013 5\u202fdays  \n&nbsp;&nbsp;3.2. Build Day\u20111 Checklist (Owner: PMO Manager) \u2013 2\u202fdays, Depends on 3.1  \n&nbsp;&nbsp;3.3. Conduct Dry\u2011Run (Owner: Change Management Lead) \u2013 2\u202fdays, Depends on 3.2  \n&nbsp;&nbsp;3.4. Day\u20111 War\u2011Room Setup (Owner: IT Lead) \u2013 1\u202fday, Can run in parallel with 3.3  \n&nbsp;&nbsp;3.5. Execute Day\u20111 (All Day\u20111 Owners) \u2013 1\u202fday (Legal close), Depends on 3.3 & 3.4  \n\n**4. 30\u2011Day Milestone Package**  \n&nbsp;&nbsp;4.1. Validate Core Processes (Owners: HR Lead, IT Lead, Finance Lead) \u2013 7\u202fdays, Starts after 3.5  \n&nbsp;&nbsp;4.2. Populate Synergy KPI Dashboard (Owner: Analytics Lead) \u2013 5\u202fdays, Depends on 4.1  \n&nbsp;&nbsp;4.3. Conduct Pulse Survey (Owner: Change Management Lead) \u2013 3\u202fdays, Parallel to 4.2  \n&nbsp;&nbsp;4.4. Prepare 30\u2011Day Status Deck (Owner: PMO Manager) \u2013 2\u202fdays, Depends on 4.2 & 4.3  \n&nbsp;&nbsp;4.5. Steering Committee Review (Owner: Steering Committee) \u2013 1\u202fday, Depends on 4.4  \n\n**5. 60\u2011Day Milestone Package**  \n&nbsp;&nbsp;5.1. Complete Cost\u2011Synergy Actions (Owners: Finance Lead, Procurement Lead, Ops Lead) \u2013 15\u202fdays, Starts after 4.5  \n&nbsp;&nbsp;5.2. Launch Revenue\u2011Synergy Pilot (Owner: Sales & Marketing Lead) \u2013 10\u202fdays, Can run in parallel with 5.1  \n&nbsp;&nbsp;5.3. Update KPI Dashboard (Owner: Analytics Lead) \u2013 3\u202fdays, Depends on 5.1 & 5.2  \n&nbsp;&nbsp;5.4. Mid\u2011Point Governance Review (Owner: Steering Committee) \u2013 1\u202fday, Depends on 5.3  \n&nbsp;&nbsp;5.5. 60\u2011Day Communications Burst (Owner: Change Management Lead) \u2013 2\u202fdays, Depends on 5.4  \n\n**6. 90\u2011Day Milestone Package**  \n&nbsp;&nbsp;6.1. Close Remaining Workstream Tasks (All Workstream Leads) \u2013 12\u202fdays, Starts after 5.4  \n&nbsp;&nbsp;6.2. Institutionalize Synergy Governance (Owner: Finance Lead) \u2013 5\u202fdays, Depends on 6.1  \n&nbsp;&nbsp;6.3. Complete Change\u2011Management Integration (Owner: Change Management Lead) \u2013 7\u202fdays, Parallel to 6.1  \n&nbsp;&nbsp;6.4. Produce 90\u2011Day Completion Report (Owner: PMO Manager) \u2013 3\u202fdays, Depends on 6.1 & 6.2  \n&nbsp;&nbsp;6.5. Executive Sign\u2011Off (Owner: Integration Sponsor) \u2013 1\u202fday, Depends on 6.4  \n\n**7. Synergy\u2011Tracking Metrics Dashboard**  \n&nbsp;&nbsp;7.1. Define KPI Set (Owner: Finance Lead) \u2013 3\u202fdays, Parallel to 1.1  \n&nbsp;&nbsp;7.2. Identify Data Sources (Owner: IT Lead) \u2013 4\u202fdays, Depends on 7.1  \n&nbsp;&nbsp;7.3. Build Prototype (Owner: Analytics Lead) \u2013 6\u202fdays, Depends on 7.2  \n&nbsp;&nbsp;7.4. Stakeholder Validation (Owner: PMO Manager) \u2013 2\u202fdays, Depends on 7.3  \n&nbsp;&nbsp;7.5. Deploy & Communicate (Owner: Change Management Lead) \u2013 1\u202fday, Depends on 7.4  \n\n**8. Integrated Communication Cadence**  \n&nbsp;&nbsp;8.1. Draft Communication Calendar (Owner: Change Management Lead) \u2013 3\u202fdays, Parallel to 1.1  \n&nbsp;&nbsp;8.2. Assign Content Owners (Owner: Integration Lead) \u2013 2\u202fdays, Depends on 8.1  \n&nbsp;&nbsp;8.3. Develop Templates (Owner: HR Lead) \u2013 4\u202fdays, Parallel to 8.2  \n&nbsp;&nbsp;8.4. Launch First Newsletter (Owner: Change Management Lead) \u2013 Day\u202f7 post\u2011close, Depends on 8.1 & 8.3  \n&nbsp;&nbsp;8.5. Schedule Town\u2011Hall Series (Owner: Integration Sponsor) \u2013 Ongoing, first town\u2011hall at Day\u202f15, Depends on 8.1  \n\n---\n\n### Cross\u2011Cutting Dependencies & Buffers  \n\n| Dependency | Description | Buffer |\n|------------|-------------|--------|\n| **Governance Charter** (2) | Must be approved before any workstream can sign\u2011off Day\u20111 items. | 2\u202fdays after 2.4 |\n| **Day\u20111 Checklist** (3) | All Day\u20111 owners rely on a finalized checklist; any change after the dry\u2011run triggers a schedule shift. | 1\u202fday contingency after 3.3 |\n| **Synergy Dashboard** (7) | KPI data feeds into 30\u2011, 60\u2011, and 90\u2011day status reports; delays affect milestone reporting. | 2\u202fdays after each data\u2011source integration |\n| **Communication Cadence** (8) | Town\u2011halls and newsletters are used to announce milestone completions; missed communications can increase risk perception. | 1\u202fday lead time before each milestone announcement |\n\n---\n\n### Resource Allocation (15\u201130 Integration Team Members)  \n\n| Workstream | Typical Headcount | Key Roles (Owners) |\n|------------|-------------------|--------------------|\n| HR | 2\u20113 | HR Lead, Benefits Specialist, Talent Acquisition Partner |\n| IT | 3\u20114 | IT Lead, Infrastructure Engineer, Application Integration Lead, Security Analyst |\n| Finance | 2\u20113 | Finance Lead, Controller, Analyst |\n| Product Development | 2 | PD Lead, R&D Scientist |\n| Sales & Marketing | 2\u20113 | Sales Lead, Marketing Lead, Channel Manager |\n| Operations & Manufacturing | 3\u20114 | Ops Lead, Manufacturing Engineer, Supply\u2011Chain Manager |\n| Regulatory Affairs | 1\u20112 | Reg Affairs Lead, Compliance Analyst |\n| Legal & Compliance | 1\u20112 | Legal Lead, Contracts Manager |\n| Change Management | 1\u20112 | Change Lead, Communications Specialist |\n| PMO | 1\u20112 | PMO Manager, Scheduler/Planner |\n| **Total** | **15\u201130** | \u2014 |\n\nThe breakdown above distributes tasks across these roles, ensuring each owner has a realistic workload (average 5\u20117 tasks per person over the 90\u2011day horizon).  \n\n---\n\n### Risk Register (High\u2011Level)  \n\n| Risk | Impact | Likelihood | Mitigation |\n|------|--------|------------|------------|\n| Delay in Day\u20111 IT system cut\u2011over | High (operational shutdown) | Medium | Conduct two dry\u2011runs; maintain fallback environment |\n| Under\u2011estimation of headcount reduction effort | High (cost\u2011synergy shortfall) | Medium | Early HR analysis; create contingency budget for temporary contractors |\n| Mis\u2011alignment of revenue\u2011synergy pilot market assumptions | Medium | Medium | Perform rapid market validation; have alternative pilot ready |\n| Communication fatigue leading to disengagement | Medium | High | Use varied formats; embed short pulse surveys to adjust cadence |\n| Governance bottlenecks (approval delays) | High | Low | Pre\u2011approve delegation limits; use \u201cfast\u2011track\u201d for day\u2011critical items |\n\nEach risk will be logged in the PMO\u2019s risk\u2011tracking tool, reviewed weekly, and escalated per the governance charter.  \n\n---\n\n### Metrics to Track Progress Toward Synergy Targets  \n\n| Metric | Target | Current Baseline | Reporting Cadence |\n|--------|--------|------------------|-------------------|\n| Cumulative Cost\u2011Synergy Realized ($M) | $120\u202fM by Day\u202f90 | $0 (pre\u2011close) | Weekly dashboard update |\n| Cumulative Revenue\u2011Synergy Realized ($M) | $200\u202fM by Day\u202f90 | $0 (pre\u2011close) | Weekly dashboard update |\n| % of Day\u20111 Checklist Completed | 100\u202f% | \u2013 | Real\u2011time war\u2011room log |\n| Schedule Variance (Days) | \u2264\u202f+3 days overall | \u2013 | Bi\u2011weekly governance review |\n| Employee Sentiment Score (1\u20115) | \u2265\u202f4.0 by Day\u202f60 | Baseline survey | Monthly pulse survey |\n| Change\u2011Management Adoption Rate (training completion) | 95\u202f% of target audience | \u2013 | Weekly HR report |\n| Risk\u2011Open Items | \u2264\u202f5 high\u2011severity | \u2013 | Weekly risk review |\n\nThese metrics are embedded in the **Synergy\u2011Tracking Metrics Dashboard** (Outcome\u202f7) and feed directly into the 30\u2011, 60\u2011, and 90\u2011day status reports.  \n\n---  \n\n**This workback plan provides a clear, actionable roadmap, assigns owners, defines dependencies, incorporates buffers, and embeds risk\u2011management and communication practices needed to achieve the $120\u202fM cost\u2011synergy and $200\u202fM revenue\u2011synergy objectives for the Apex BioPharma \u2013 NeuroGenix Therapeutics integration.**",
+  "plan": {
+    "id": "document-001",
+    "name": "Apex BioPharma \u2013 NeuroGenix Integration Workback Plan",
+    "details": "90\u2011day integration workback plan for Apex BioPharma and NeuroGenix Therapeutics covering all milestones, tasks, dependencies, risk management and communication to achieve $120\u202fM cost\u2011synergy and $200\u202fM revenue\u2011synergy targets.",
+    "draft": true,
+    "participants": [
+      {
+        "name": "PMO Manager",
+        "email": "pmomanager@example.com",
+        "draft": true
+      },
+      {
+        "name": "Integration Lead",
+        "email": "integrationlead@example.com",
+        "draft": true
+      },
+      {
+        "name": "HR Lead",
+        "email": "hrlead@example.com",
+        "draft": true
+      },
+      {
+        "name": "IT Lead",
+        "email": "itlead@example.com",
+        "draft": true
+      },
+      {
+        "name": "Finance Lead",
+        "email": "financelead@example.com",
+        "draft": true
+      },
+      {
+        "name": "Steering Committee",
+        "email": "steeringcommittee@example.com",
+        "draft": true
+      },
+      {
+        "name": "Integration Sponsor",
+        "email": "integrationsponsor@example.com",
+        "draft": true
+      },
+      {
+        "name": "Change Management Lead",
+        "email": "changemanagementlead@example.com",
+        "draft": true
+      },
+      {
+        "name": "Analytics Lead",
+        "email": "analyticslead@example.com",
+        "draft": true
+      },
+      {
+        "name": "Sales & Marketing Lead",
+        "email": "salesmarketinglead@example.com",
+        "draft": true
+      },
+      {
+        "name": "Procurement Lead",
+        "email": "procurementlead@example.com",
+        "draft": true
+      },
+      {
+        "name": "Ops Lead",
+        "email": "opslead@example.com",
+        "draft": true
+      }
+    ],
+    "references": [],
+    "deliverables": [],
+    "tasks": [
+      {
+        "id": "task-001",
+        "name": "Conduct Planning Kick\u2011off",
+        "details": "Kick\u2011off planning session with PMO, integration leads and senior sponsor to agree on scope, format and version\u2011control.",
+        "state": "not-started",
+        "draft": true,
+        "dependencies": []
+      },
+      {
+        "id": "task-002",
+        "name": "Draft Template",
+        "details": "Create the integration workback template.",
+        "state": "not-started",
+        "draft": true,
+        "dependencies": [
+          "task-001"
+        ]
+      },
+      {
+        "id": "task-003",
+        "name": "Workstream Sections Input",
+        "details": "Gather input from HR, IT, Finance and other workstreams for their sections of the integrated workback plan.",
+        "state": "not-started",
+        "draft": true,
+        "dependencies": []
+      },
+      {
+        "id": "task-004",
+        "name": "Consolidate Draft",
+        "details": "PMO Manager consolidates all workstream inputs into a single draft document.",
+        "state": "not-started",
+        "draft": true,
+        "dependencies": [
+          "task-003"
+        ]
+      },
+      {
+        "id": "task-005",
+        "name": "Review Cycle",
+        "details": "Steering Committee reviews the consolidated draft.",
+        "state": "not-started",
+        "draft": true,
+        "dependencies": [
+          "task-004"
+        ]
+      },
+      {
+        "id": "task-006",
+        "name": "Baseline Sign\u2011off",
+        "details": "Integration Sponsor signs off on the final baseline workback plan.",
+        "state": "not-started",
+        "draft": true,
+        "dependencies": [
+          "task-005"
+        ]
+      },
+      {
+        "id": "task-007",
+        "name": "Define Roles & RACI",
+        "details": "PMO Manager defines roles, responsibilities and RACI matrix for the integration.",
+        "state": "not-started",
+        "draft": true,
+        "dependencies": []
+      },
+      {
+        "id": "task-008",
+        "name": "Draft Charter",
+        "details": "Integration Lead drafts the PMO charter based on defined roles.",
+        "state": "not-started",
+        "draft": true,
+        "dependencies": [
+          "task-007"
+        ]
+      },
+      {
+        "id": "task-009",
+        "name": "Set Meeting Cadence",
+        "details": "PMO Manager establishes meeting cadence for governance.",
+        "state": "not-started",
+        "draft": true,
+        "dependencies": []
+      },
+      {
+        "id": "task-010",
+        "name": "Publish & Distribute Charter",
+        "details": "PMO Manager publishes and distributes the approved charter.",
+        "state": "not-started",
+        "draft": true,
+        "dependencies": [
+          "task-008",
+          "task-009"
+        ]
+      },
+      {
+        "id": "task-011",
+        "name": "Identify Day\u20111 Items",
+        "details": "All workstream leads identify items required for Day\u20111 execution.",
+        "state": "not-started",
+        "draft": true,
+        "dependencies": []
+      },
+      {
+        "id": "task-012",
+        "name": "Build Day\u20111 Checklist",
+        "details": "PMO Manager creates the Day\u20111 checklist based on identified items.",
+        "state": "not-started",
+        "draft": true,
+        "dependencies": [
+          "task-011"
+        ]
+      },
+      {
+        "id": "task-013",
+        "name": "Conduct Dry\u2011Run",
+        "details": "Change Management Lead runs a dry\u2011run of Day\u20111 activities.",
+        "state": "not-started",
+        "draft": true,
+        "dependencies": [
+          "task-012"
+        ]
+      },
+      {
+        "id": "task-014",
+        "name": "Day\u20111 War\u2011Room Setup",
+        "details": "IT Lead sets up the war\u2011room for Day\u20111 execution.",
+        "state": "not-started",
+        "draft": true,
+        "dependencies": []
+      },
+      {
+        "id": "task-015",
+        "name": "Execute Day\u20111",
+        "details": "All owners execute Day\u20111 checklist on legal close.",
+        "state": "not-started",
+        "draft": true,
+        "dependencies": [
+          "task-013",
+          "task-014"
+        ]
+      },
+      {
+        "id": "task-016",
+        "name": "Validate Core Processes",
+        "details": "HR, IT and Finance leads validate core post\u2011close processes.",
+        "state": "not-started",
+        "draft": true,
+        "dependencies": [
+          "task-015"
+        ]
+      },
+      {
+        "id": "task-017",
+        "name": "Populate Synergy KPI Dashboard",
+        "details": "Analytics Lead loads KPI data into the dashboard.",
+        "state": "not-started",
+        "draft": true,
+        "dependencies": [
+          "task-016"
+        ]
+      },
+      {
+        "id": "task-018",
+        "name": "Conduct Pulse Survey",
+        "details": "Change Management Lead runs employee sentiment survey.",
+        "state": "not-started",
+        "draft": true,
+        "dependencies": [
+          "task-016"
+        ]
+      },
+      {
+        "id": "task-019",
+        "name": "Prepare 30\u2011Day Status Deck",
+        "details": "PMO Manager prepares status presentation using KPI and survey results.",
+        "state": "not-started",
+        "draft": true,
+        "dependencies": [
+          "task-017",
+          "task-018"
+        ]
+      },
+      {
+        "id": "task-020",
+        "name": "Steering Committee Review (30\u2011Day)",
+        "details": "Steering Committee reviews the 30\u2011day status deck.",
+        "state": "not-started",
+        "draft": true,
+        "dependencies": [
+          "task-019"
+        ]
+      },
+      {
+        "id": "task-021",
+        "name": "Complete Cost\u2011Synergy Actions",
+        "details": "Finance, Procurement and Ops leads execute cost\u2011synergy initiatives.",
+        "state": "not-started",
+        "draft": true,
+        "dependencies": [
+          "task-020"
+        ]
+      },
+      {
+        "id": "task-022",
+        "name": "Launch Revenue\u2011Synergy Pilot",
+        "details": "Sales & Marketing Lead launches the revenue\u2011synergy pilot.",
+        "state": "not-started",
+        "draft": true,
+        "dependencies": [
+          "task-020"
+        ]
+      },
+      {
+        "id": "task-023",
+        "name": "Update KPI Dashboard (60\u2011Day)",
+        "details": "Analytics Lead updates the synergy dashboard with latest results.",
+        "state": "not-started",
+        "draft": true,
+        "dependencies": [
+          "task-021",
+          "task-022"
+        ]
+      },
+      {
+        "id": "task-024",
+        "name": "Mid\u2011Point Governance Review",
+        "details": "Steering Committee conducts the 60\u2011day governance review.",
+        "state": "not-started",
+        "draft": true,
+        "dependencies": [
+          "task-023"
+        ]
+      },
+      {
+        "id": "task-025",
+        "name": "60\u2011Day Communications Burst",
+        "details": "Change Management Lead executes the communications burst.",
+        "state": "not-started",
+        "draft": true,
+        "dependencies": [
+          "task-024"
+        ]
+      },
+      {
+        "id": "task-026",
+        "name": "Close Remaining Workstream Tasks",
+        "details": "All workstream leads close any outstanding tasks.",
+        "state": "not-started",
+        "draft": true,
+        "dependencies": [
+          "task-024"
+        ]
+      },
+      {
+        "id": "task-027",
+        "name": "Institutionalize Synergy Governance",
+        "details": "Finance Lead establishes ongoing synergy governance structure.",
+        "state": "not-started",
+        "draft": true,
+        "dependencies": [
+          "task-026"
+        ]
+      },
+      {
+        "id": "task-028",
+        "name": "Complete Change\u2011Management Integration",
+        "details": "Change Management Lead finalizes integration of change\u2011management processes.",
+        "state": "not-started",
+        "draft": true,
+        "dependencies": [
+          "task-024"
+        ]
+      },
+      {
+        "id": "task-029",
+        "name": "Produce 90\u2011Day Completion Report",
+        "details": "PMO Manager compiles the final integration report.",
+        "state": "not-started",
+        "draft": true,
+        "dependencies": [
+          "task-026",
+          "task-027"
+        ]
+      },
+      {
+        "id": "task-030",
+        "name": "Executive Sign\u2011Off",
+        "details": "Integration Sponsor signs off on the completed integration.",
+        "state": "not-started",
+        "draft": true,
+        "dependencies": [
+          "task-029"
+        ]
+      },
+      {
+        "id": "task-031",
+        "name": "Define KPI Set",
+        "details": "Finance Lead defines the set of synergy KPIs.",
+        "state": "not-started",
+        "draft": true,
+        "dependencies": []
+      },
+      {
+        "id": "task-032",
+        "name": "Identify Data Sources",
+        "details": "IT Lead identifies systems and data feeds for KPI calculation.",
+        "state": "not-started",
+        "draft": true,
+        "dependencies": [
+          "task-031"
+        ]
+      },
+      {
+        "id": "task-033",
+        "name": "Build Prototype Dashboard",
+        "details": "Analytics Lead builds the dashboard prototype.",
+        "state": "not-started",
+        "draft": true,
+        "dependencies": [
+          "task-032"
+        ]
+      },
+      {
+        "id": "task-034",
+        "name": "Stakeholder Validation",
+        "details": "PMO Manager validates the prototype with stakeholders.",
+        "state": "not-started",
+        "draft": true,
+        "dependencies": [
+          "task-033"
+        ]
+      },
+      {
+        "id": "task-035",
+        "name": "Deploy & Communicate Dashboard",
+        "details": "Change Management Lead deploys the final dashboard and communicates its use.",
+        "state": "not-started",
+        "draft": true,
+        "dependencies": [
+          "task-034"
+        ]
+      },
+      {
+        "id": "task-036",
+        "name": "Draft Communication Calendar",
+        "details": "Change Management Lead drafts the integrated communication calendar.",
+        "state": "not-started",
+        "draft": true,
+        "dependencies": []
+      },
+      {
+        "id": "task-037",
+        "name": "Assign Content Owners",
+        "details": "Integration Lead assigns owners for each communication content type.",
+        "state": "not-started",
+        "draft": true,
+        "dependencies": [
+          "task-036"
+        ]
+      },
+      {
+        "id": "task-038",
+        "name": "Develop Templates",
+        "details": "HR Lead creates communication templates.",
+        "state": "not-started",
+        "draft": true,
+        "dependencies": []
+      },
+      {
+        "id": "task-039",
+        "name": "Launch First Newsletter",
+        "details": "Change Management Lead sends the first post\u2011close newsletter.",
+        "state": "not-started",
+        "draft": true,
+        "dependencies": [
+          "task-036",
+          "task-038"
+        ]
+      },
+      {
+        "id": "task-040",
+        "name": "Schedule Town\u2011Hall Series",
+        "details": "Integration Sponsor schedules the series of town\u2011hall meetings.",
+        "state": "not-started",
+        "draft": true,
+        "dependencies": [
+          "task-036"
+        ]
+      }
+    ],
+    "history": []
+  }
+}

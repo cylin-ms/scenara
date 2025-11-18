@@ -1,0 +1,137 @@
+{
+  "basic_info": {
+    "full_name": "Catherine Lee",
+    "age": 32,
+    "location": "Seattle, WA, USA",
+    "timezone": "America/Los_Angeles (PST/PDT)",
+    "years_experience": 8,
+    "education": [
+      {
+        "degree": "B.S. Computer Science",
+        "institution": "University of Washington",
+        "year_completed": 2014
+      },
+      {
+        "degree": "MBA, Technology Management",
+        "institution": "Seattle University",
+        "year_completed": 2020
+      }
+    ]
+  },
+  "work_habits": {
+    "preferred_working_hours": "07:00-15:00 (PST)",
+    "peak_productivity_times": [
+      "07:30-10:30",
+      "13:00-14:30"
+    ],
+    "communication_style": {
+      "preference": "Async with quick sync check‑ins",
+      "average_response_time_minutes": 30
+    },
+    "meeting_preferences": "Minimizes meetings; prefers 30‑minute stand‑ups and bi‑weekly 1:1s; only essential face‑to‑face when deep‑dive required",
+    "work_environment": "Hybrid (3 days remote, 2 days in office)",
+    "focus_time_requirements": "2 blocks of 90 minutes per day protected for deep work"
+  },
+  "personality": {
+    "mbti": "ESTJ",
+    "decision_making_approach": "Data‑driven, prefers structured analysis before consensus",
+    "risk_tolerance": "Moderate – will pilot new processes on a small scale before full rollout",
+    "collaboration_style": "Task‑oriented, values clear roles and accountability",
+    "stress_management_approach": "Scheduled micro‑breaks, uses Pomodoro technique, practices mindfulness 10 min daily",
+    "conflict_resolution_style": "Direct but diplomatic – addresses issues early with factual evidence"
+  },
+  "skills": {
+    "core_technical_skills": {
+      "SQL": 8,
+      "Python (automation scripts)": 7,
+      "Advanced Excel / Power Query": 9,
+      "Data visualization (Tableau, Power BI)": 7,
+      "Process mapping (Visio, Lucidchart)": 8,
+      "Project management (Agile/Scrum)": 8
+    },
+    "leadership_abilities": 7,
+    "domain_expertise_areas": [
+      "IT service delivery",
+      "Vendor management",
+      "SLA compliance",
+      "Operational KPI design"
+    ],
+    "learning_agility": 8,
+    "tools_proficiency": {
+      "Jira/Confluence": 8,
+      "Asana": 7,
+      "Microsoft Teams": 9,
+      "Slack": 8,
+      "Google Workspace": 9,
+      "ServiceNow": 7
+    },
+    "languages_spoken": [
+      "English (native)",
+      "Mandarin (conversational)"
+    ]
+  },
+  "performance": {
+    "task_completion_rate_percent": 94,
+    "quality_score_percent": 92,
+    "estimation_accuracy_percent": 88,
+    "multitasking_ability": 6,
+    "performance_under_pressure": 8
+  },
+  "availability": {
+    "available_hours_per_week": 38,
+    "timezone_and_working_hours": "PST, typically 07:00‑15:00 with 1‑hour lunch break",
+    "planned_time_off_days_per_year": 20,
+    "other_commitments": [
+      "Quarterly MBA alumni networking events (2‑3 hrs each)",
+      "Volunteer mentor for local coding bootcamp (4 hrs/month)"
+    ],
+    "travel_flexibility": "Up to 25% travel (primarily domestic client site visits, max 3 weeks per quarter)"
+  },
+  "personal_factors": {
+    "family_status": "Married, no children",
+    "caregiving_responsibilities": "None",
+    "commute_situation": "30‑minute drive to office; flexible parking stipend",
+    "health_considerations": "Mild seasonal allergies; generally healthy",
+    "career_motivation": "Aiming for Senior Operations Manager role within 3‑4 years; driven by process optimization and cross‑functional impact"
+  },
+  "project_impact": {
+    "reliability": 9,
+    "innovation_tendency": 6,
+    "documentation_quality": 8,
+    "mentorship_capability": 7,
+    "influence_level": 7
+  },
+  "collaboration": {
+    "meeting_frequency_preference": "1‑2 short syncs per week per project; avoids ad‑hoc long meetings",
+    "communication_channels_preference": [
+      "Microsoft Teams (chat)",
+      "Confluence (docs)",
+      "Email for formal updates"
+    ],
+    "feedback_style": "Direct yet constructive; prefers written feedback for clarity",
+    "knowledge_sharing_habits": "Runs monthly 'Ops Tips' newsletter; maintains shared SOP library",
+    "cross_team_collaboration": 8
+  },
+  "risk_factors": {
+    "potential_bottlenecks": [
+      "Heavy reliance on her for SLA reporting during peak months",
+      "Limited delegation on high‑visibility stakeholder communications"
+    ],
+    "backup_person_needed": "Operations Analyst (e.g., Alex Martinez) trained on reporting dashboards",
+    "ramp_up_time_weeks": 3,
+    "context_switching_tolerance": 5,
+    "burnout_risk_factors": [
+      "High self‑imposed standards leading to overtime during release cycles",
+      "Limited buffer time on schedule for unexpected incidents"
+    ]
+  },
+  "_metadata": {
+    "generated_at": "2025-11-17T15:31:20.471527",
+    "name": "Catherine Lee",
+    "role": "Operations Coordinator",
+    "seniority": "mid",
+    "company": "TechCorp",
+    "model": "gpt-oss:120b",
+    "provider": "ollama"
+  }
+}

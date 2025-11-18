@@ -1,0 +1,59 @@
+{
+  "scenario_name": "Weekly GreenPulse Customer Success Newsletter",
+  "company_context": "EcoTech Solutions is a mid\u2011size SaaS provider for renewable\u2011energy asset management. The GreenPulse Customer Success Team (15 members) sits in the Customer Success department and reports to the Director of Customer Success. The weekly newsletter keeps the CS team, product managers, support, and sales leadership aligned on wins, upcoming releases, and key metrics.",
+  "meeting_event_details": "Monday, November 25, 2025, 09:00 \u2013 09:30\u202fAM PST, virtual meeting on Zoom (Meeting ID: 842 931 274). The meeting is used to confirm the editorial calendar for the upcoming newsletter and to capture any last\u2011minute items.",
+  "stakeholders": [
+    {
+      "name": "Emily Chen",
+      "role": "Customer Success Content Specialist",
+      "responsibility": "Drafts all newsletter copy, assembles graphics, and builds the Google Doc draft."
+    },
+    {
+      "name": "Raj Patel",
+      "role": "Customer Success Manager",
+      "responsibility": "Reviews draft for accuracy, relevance, and tone; provides feedback by Wednesday 10:00\u202fAM PST."
+    },
+    {
+      "name": "Lena Morales",
+      "role": "Director of Customer Success",
+      "responsibility": "Approves final version; gives sign\u2011off no later than Thursday 12:00\u202fPM PST."
+    },
+    {
+      "name": "Mia Torres",
+      "role": "Product Marketing Designer",
+      "responsibility": "Ensures brand\u2011compliant visuals and alt\u2011text; delivers assets by Wednesday 09:00\u202fAM PST."
+    },
+    {
+      "name": "Javier Gomez",
+      "role": "Analytics Engineer",
+      "responsibility": "Sets up UTM parameters and post\u2011send tracking; validates tracking code by Thursday 02:00\u202fPM PST."
+    }
+  ],
+  "deliverables": [
+    "Draft newsletter in Google Docs (Word count \u2264 800, includes sections: Wins & Highlights, Upcoming Feature Releases, Customer Spotlight, Metrics Snapshot).",
+    "Final HTML email built in Mailchimp using the approved EcoTech brand template.",
+    "PDF version for internal archive.",
+    "Analytics tracking sheet with UTM parameters and KPI baseline."
+  ],
+  "success_criteria": [
+    "Newsletter sent to the CS distribution list by Friday, November 29, 2025, 09:00\u202fAM PST.",
+    "Open rate \u2265 45% and click\u2011through rate \u2265 12% measured 48\u202fhours after send.",
+    "Zero GDPR or accessibility compliance issues (all images have alt\u2011text, unsubscribe link present).",
+    "Positive feedback from \u2265 80% of recipients in the post\u2011send survey (rating 4/5 or higher).",
+    "All stakeholder approvals completed on time (no later than Thursday 12:00\u202fPM PST)."
+  ],
+  "constraints": [
+    "Planning horizon is T\u20117: all content must be finalized within 7\u202fdays of the send date.",
+    "No external design spend \u2013 all graphics must be created using internal design assets.",
+    "Must use the approved EcoTech brand template; any deviation requires senior sign\u2011off.",
+    "Dependent on product release schedule \u2013 the Upcoming Feature Releases section can only include features that have been officially announced by the Product team by Wednesday.",
+    "Email size must stay under 100\u202fKB to ensure deliverability."
+  ],
+  "workback_prompt": "Create a detailed workback plan for the 'Weekly GreenPulse Customer Success Newsletter' at EcoTech Solutions. The plan should start from the send date (Friday, November 29, 2025, 09:00\u202fAM PST) and work backwards, covering all tasks, owners, durations, dependencies, and milestones needed to meet the deadline and success criteria outlined in the scenario. Include steps for content drafting, stakeholder reviews, design asset creation, approval workflow, email build, testing, analytics setup, and post\u2011send reporting. Highlight any risk mitigation actions for the constraints (budget, compliance, and product\u2011release dependencies).",
+  "meeting_type": "Weekly Team Newsletter",
+  "meeting_type_key": "1_weekly_newsletter",
+  "scenario_number": 2,
+  "horizon": "T-7",
+  "complexity": "Low",
+  "generated_at": "2025-11-17T03:59:15.820910"
+}

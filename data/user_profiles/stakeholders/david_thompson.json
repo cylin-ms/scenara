@@ -1,0 +1,168 @@
+{
+  "basic_info": {
+    "full_name": "David Thompson",
+    "age": 52,
+    "location": "San Jose, California, USA",
+    "timezone": "America/Los_Angeles (UTC-8)",
+    "years_experience": 28,
+    "education": [
+      {
+        "degree": "Bachelor of Science",
+        "field": "Accounting",
+        "institution": "University of California, Berkeley",
+        "year": 1995
+      },
+      {
+        "degree": "Master of Business Administration",
+        "field": "Finance",
+        "institution": "Stanford Graduate School of Business",
+        "year": 2000
+      },
+      {
+        "degree": "Chartered Financial Analyst (CFA) Charter",
+        "institution": "CFA Institute",
+        "year": 2002
+      }
+    ]
+  },
+  "work_habits": {
+    "preferred_working_hours": "Early bird (07:00‑17:00)",
+    "peak_productivity_times": [
+      "08:00‑11:00",
+      "14:00‑15:30"
+    ],
+    "communication_style": {
+      "async_preference": true,
+      "sync_preference": true,
+      "response_time_expectation": "Within 24 hours for email, within 2 hours for Slack/Teams urgent messages"
+    },
+    "meeting_preferences": {
+      "minimizes_meetings": true,
+      "preferred_meeting_length": "15‑30 minutes",
+      "face_to_face_preference": "Quarterly leadership off‑site; otherwise video conference",
+      "no_meeting_days": [
+        "Friday"
+      ]
+    },
+    "work_environment": "Hybrid (3 days office, 2 days remote)",
+    "focus_time_requirements": {
+      "daily_uninterrupted_hours": 3,
+      "preferred_blocks": [
+        "08:30‑11:30",
+        "13:30‑15:30"
+      ]
+    }
+  },
+  "personality": {
+    "mbti": "ENTJ",
+    "decision_making_approach": "Data‑driven with strategic intuition; prefers consensus on high‑impact decisions but can act unilaterally when needed",
+    "risk_tolerance": "Moderate‑high (willing to invest in growth initiatives with clear ROI metrics)",
+    "collaboration_style": "Directive yet empowering; sets clear objectives and delegates authority",
+    "stress_management_approach": "Scheduled exercise (running 4×/week), mindfulness apps, and strict work‑life boundaries on weekends",
+    "conflict_resolution_style": "Direct but diplomatic; focuses on facts and mutually beneficial outcomes"
+  },
+  "skills": {
+    "core_technical_skills": {
+      "financial_modeling": 9,
+      "data_analytics": 8,
+      "ERP_systems_SAP": 7,
+      "advanced_excel_vba": 8,
+      "forecasting_and_budgeting": 9,
+      "cybersecurity_financial_controls": 6,
+      "M&A_due_diligence": 8
+    },
+    "leadership_abilities": 9,
+    "domain_expertise_areas": [
+      "Enterprise SaaS financial operations",
+      "Revenue recognition (ASC 606)",
+      "Global tax strategy",
+      "Capital allocation for R&D",
+      "Investor relations"
+    ],
+    "learning_agility": 8,
+    "tools_proficiency": [
+      "SAP S/4HANA",
+      "Oracle Hyperion",
+      "Anaplan",
+      "Tableau",
+      "Power BI",
+      "Workday",
+      "Microsoft Teams & Slack"
+    ],
+    "languages_spoken": [
+      "English (native)",
+      "Spanish (conversational)",
+      "Mandarin (basic reading)"
+    ]
+  },
+  "performance": {
+    "task_completion_rate": 95,
+    "quality_score": 93,
+    "estimation_accuracy": 88,
+    "multitasking_ability": 7,
+    "performance_under_pressure": 9
+  },
+  "availability": {
+    "available_hours_per_week": 45,
+    "timezone": "America/Los_Angeles (UTC-8)",
+    "typical_working_hours": "07:00‑17:00 (Pacific)",
+    "planned_time_off_days_per_year": 20,
+    "other_commitments": [
+      "Board member of a local nonprofit (quarterly meetings)",
+      "Mentor for Stanford MBA finance club (monthly)"
+    ],
+    "travel_flexibility": {
+      "percentage_of_time": 30,
+      "typical_travel": "2‑3 weeks per quarter (investor roadshows, global plant visits)"
+    }
+  },
+  "personal_factors": {
+    "family_status": "Married, two children (15 and 13)",
+    "caregiving_responsibilities": "Occasional weekend school events and teenage tutoring; no full‑time caregiving",
+    "commute_situation": "30‑minute drive to TechCorp headquarters; uses hybrid schedule to reduce commuting",
+    "health_considerations": "Mild lower‑back tension; manages with regular physiotherapy and core strengthening",
+    "career_motivation": "Build sustainable growth, leave a legacy of financial excellence, and develop next‑generation finance leaders"
+  },
+  "project_impact": {
+    "reliability": 9,
+    "innovation_tendency": 7,
+    "documentation_quality": 8,
+    "mentorship_capability": 9,
+    "influence_level": 10
+  },
+  "collaboration": {
+    "meeting_frequency_preference": "Bi‑weekly strategic reviews; ad‑hoc syncs only when critical",
+    "communication_channels_preference": [
+      "Email for formal records",
+      "Slack for quick async",
+      "Teams for scheduled video calls"
+    ],
+    "feedback_style": "Direct yet constructive; provides data‑backed observations and actionable next steps",
+    "knowledge_sharing_habits": "Publishes quarterly finance insights on internal portal; hosts monthly ‘Finance Fireside’ webinars",
+    "cross_team_collaboration_rating": 8
+  },
+  "risk_factors": {
+    "potential_bottlenecks": [
+      "Deep‑dive financial analysis can delay decision timelines",
+      "High reliance on a small core finance team for ad‑hoc reporting",
+      "Time‑zone gaps with APAC finance leads during quarterly closes"
+    ],
+    "backup_person_needed": "Deputy CFO – Jane Liu (covers day‑to‑day operations and can step in for board presentations)",
+    "ramp_up_time_weeks": 3,
+    "context_switching_tolerance": 5,
+    "burnout_risk_factors": [
+      "Consecutive weeks of heavy board pack preparation",
+      "Travel spikes during investor roadshow season",
+      "Excessive meeting load on ‘no‑meeting’ days if not enforced"
+    ]
+  },
+  "_metadata": {
+    "generated_at": "2025-11-17T15:07:22.029181",
+    "name": "David Thompson",
+    "role": "CFO",
+    "seniority": "executive",
+    "company": "TechCorp",
+    "model": "gpt-oss:120b",
+    "provider": "ollama"
+  }
+}

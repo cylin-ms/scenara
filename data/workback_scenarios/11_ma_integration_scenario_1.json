@@ -1,0 +1,59 @@
+{
+  "scenario_name": "NovaTech\u2011DataPulse Extreme Integration",
+  "company_context": "Acquirer: NovaTech Solutions (global cloud\u2011infrastructure and platform\u2011as\u2011a\u2011service provider, ~12,000 employees, FY24 revenue $9.8B). Target: DataPulse Analytics (European\u2011based SaaS data\u2011analytics platform, 800 employees, FY24 revenue $250M, HQ in Munich, with additional R&D sites in Dublin and Bangalore). Integration horizon: T\u201190+ (legal close 15\u202fDec\u202f2025, integration kickoff 5\u202fJan\u202f2026). Integration team (20 members):\n- Integration Lead \u2013 Maya Patel (Senior VP, M&A Integration, NovaTech)\n- Finance Lead \u2013 Carlos Mendes (Director, Corporate Finance)\n- HR Lead \u2013 Elena Rossi (Head of Global Talent)\n- IT Lead \u2013 Rajiv Singh (Chief Information Officer, NovaTech)\n- Product Lead \u2013 Sophie Leclerc (VP, Product Management \u2013 Data Services)\n- Sales Lead \u2013 Tom Whitaker (Senior Director, Global Sales Ops)\n- Operations Lead \u2013 Anika Schmidt (Director, Global Operations)\n- Legal Counsel \u2013 Laura Kim (Corporate Counsel, NovaTech)\n- Change Management Lead \u2013 Diego Alvarez (Senior Manager, Change & Communications)\n- Data & Analytics Lead \u2013 Priya Nair (Head of Data Strategy)\n- Security Lead \u2013 Michael O'Connor (CISO)\n- Procurement Lead \u2013 Fatima Al\u2011Saadi (Head of Procurement)\n- Integration PMO \u2013 Jacob Liu (Program Manager, Integration Office)\n- Finance Business Analyst \u2013 Hannah Becker\n- HR Business Analyst \u2013 Omar Haddad\n- IT Architecture Analyst \u2013 Linh Tran\n- Product Marketing Analyst \u2013 Gabriela Torres\n- Sales Enablement Analyst \u2013 Kyle Brooks\n- Operations Process Analyst \u2013 Marta Kowalska\n- Cultural Integration Advisor \u2013 Dr. Sven J\u00e4ger (Organizational Psychologist)\nKey workstreams: HR, IT, Finance, Product, Sales, Operations. Day\u20111 priorities: secure data\u2011center connectivity, employee communication blast, retention of critical talent, alignment of finance reporting, and establishment of integration governance. 100\u2011day plan focus: capture $45M cost synergies, launch joint go\u2011to\u2011market for two flagship analytics solutions, migrate 80% of workloads to NovaTech\u2019s cloud platform, and achieve >90% employee retention.\nCultural considerations: NovaTech\u2019s fast\u2011paced, metrics\u2011driven US/EU hybrid culture vs. DataPulse\u2019s collaborative, research\u2011heavy European mindset; language diversity (German, English, French); differing approaches to decision\u2011making (centralized vs. consensus). Synergy targets: $45M annual cost synergies (headcount rationalization, shared cloud spend, procurement) and $30M incremental revenue by FY27 (cross\u2011sell, new product bundles). Communication strategy: multi\u2011phase internal briefings, town\u2011halls, localized manager\u2011to\u2011team sessions, external press release on 12\u202fJan\u202f2026, analyst briefings, and a dedicated integration portal.",
+  "meeting_event_details": "Integration Kickoff Meeting \u2013 5\u202fJan\u202f2026, 09:00\u201113:00\u202fEST (4\u202fhours). Location: NovaTech Headquarters, 2\u202fnd Floor, Grand Ballroom, New York City, with video\u2011bridge for remote participants (Zoom link: https://nova.tech/kickoff\u20112026). Agenda: governance charter, workstream charter sign\u2011offs, Day\u20111 checklist review, 100\u2011day roadmap presentation, risk & issue register set\u2011up.",
+  "stakeholders": [
+    "Maya Patel \u2013 Senior VP, M&A Integration (Integration Lead)",
+    "Carlos Mendes \u2013 Director, Corporate Finance (Finance Lead)",
+    "Elena Rossi \u2013 Head of Global Talent (HR Lead)",
+    "Rajiv Singh \u2013 CIO, NovaTech (IT Lead)",
+    "Sophie Leclerc \u2013 VP, Product Management \u2013 Data Services (Product Lead)",
+    "Tom Whitaker \u2013 Senior Director, Global Sales Ops (Sales Lead)",
+    "Anika Schmidt \u2013 Director, Global Operations (Operations Lead)",
+    "Laura Kim \u2013 Corporate Counsel (Legal)",
+    "Diego Alvarez \u2013 Senior Manager, Change & Communications (Change Management Lead)",
+    "Priya Nair \u2013 Head of Data Strategy (Data & Analytics Lead)",
+    "Michael O'Connor \u2013 CISO (Security Lead)",
+    "Fatima Al\u2011Saadi \u2013 Head of Procurement (Procurement Lead)",
+    "Jacob Liu \u2013 Program Manager, Integration Office (PMO Lead)",
+    "Dr. Sven J\u00e4ger \u2013 Organizational Psychologist (Cultural Integration Advisor)",
+    "CEO \u2013 Jonathan Reed (NovaTech) \u2013 Executive Sponsor",
+    "CEO \u2013 Katrin Vogel (DataPulse) \u2013 Target Executive Sponsor"
+  ],
+  "deliverables": [
+    "Integration Charter & Governance Model (signed by all workstream leads)",
+    "Day\u20111 Checklist (IT cut\u2011over, HR communications, finance close procedures)",
+    "100\u2011Day Integration Roadmap (detailed milestones, owners, dependencies)",
+    "Synergy Tracking Dashboard (cost & revenue targets, monthly variance)",
+    "Risk & Issue Register (with mitigation plans, risk owners)",
+    "Unified Communication Plan (internal, external, media, analyst briefings)",
+    "Cultural Integration Playbook (workshop materials, onboarding modules)",
+    "IT Migration Plan (application inventory, cut\u2011over schedule, rollback procedures)",
+    "HR Retention & Incentive Plan for key DataPulse talent"
+  ],
+  "success_criteria": [
+    "Integration governance established and operating within 7\u202fdays of kickoff",
+    "Day\u20111 systems (core finance, CRM, cloud platform) operational with <1% downtime",
+    "90%+ of identified critical talent retained through Day\u202f90",
+    "Capture of $20M in cost synergies by Day\u202f100 and $35M by Day\u202f180",
+    "Launch of joint analytics solution bundle by Day\u202f90 with at least 5 pilot customers",
+    "Employee Net Promoter Score (eNPS) \u2265 +30 after 90\u202fdays post\u2011integration",
+    "All regulatory filings completed and approved by 30\u202fNov\u202f2025 (pre\u2011close)",
+    "Integration budget not to exceed $12M (\u00b15%)"
+  ],
+  "constraints": [
+    "Legal close deadline: 15\u202fDec\u202f2025 \u2013 no extensions permitted",
+    "Integration budget cap: $12M (including external consultants)",
+    "Regulatory approvals required in EU (GDPR compliance) and US (Antitrust)",
+    "Overlap of legacy data\u2011center contracts ending 31\u202fMar\u202f2026 \u2013 must migrate before expiry",
+    "Key DataPulse R&D team located in Dublin \u2013 limited travel due to visa restrictions until Feb\u202f2026",
+    "Concurrent product launch for NovaTech\u2019s Edge\u2011Compute platform scheduled for Q1\u202f2026 \u2013 resources shared"
+  ],
+  "workback_prompt": "Using the detailed scenario above (NovaTech\u2011DataPulse Extreme Integration), create a comprehensive work\u2011back plan that outlines all tasks, owners, dependencies, and timelines required to achieve the Day\u20111 priorities and the 100\u2011day integration objectives. Include milestones for each workstream (HR, IT, Finance, Product, Sales, Operations), risk mitigation steps, communication touch\u2011points, and a tracking mechanism for the $45M cost\u2011synergy and $30M revenue\u2011synergy targets. The plan should respect the constraints (budget $12M, legal close 15\u202fDec\u202f2025, regulatory approvals, overlapping contracts) and be presented in a format suitable for the Integration PMO to monitor progress daily.",
+  "meeting_type": "M&A Integration Planning",
+  "meeting_type_key": "11_ma_integration",
+  "scenario_number": 1,
+  "horizon": "T-90+",
+  "complexity": "Extreme",
+  "generated_at": "2025-11-17T10:37:23.038192"
+}

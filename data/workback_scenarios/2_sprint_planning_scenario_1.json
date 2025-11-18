@@ -1,0 +1,48 @@
+{
+  "scenario_name": "Q3 Sprint\u202f5 Planning \u2013 Mobile Payments Checkout Revamp",
+  "company_context": "FinTechCo is a mid\u2011size financial\u2011technology firm (\u2248300 employees) that powers a consumer\u2011facing mobile payments app called\u202fFinPay. The Velocity Payments Squad (10 members) owns the end\u2011to\u2011end checkout experience for iOS, Android and web. The squad follows Scrum with a two\u2011week sprint cadence and a T\u201114 planning horizon. This sprint (Sprint\u202f5 of Q3\u202f2025) focuses on tokenized card storage, Apple\u202fPay integration, and a UI redesign to improve conversion rates.",
+  "meeting_event_details": "Date: 2025\u201112\u201102 (Tuesday)\\nTime: 10:00\u202fAM \u2013 11:30\u202fAM EST (90\u202fminutes)\\nLocation: Zoom (Meeting ID: 842\u202f123\u202f4567, Passcode: sprint5)\\nFacilitator: Grace Liu (Scrum Master)\\nAgenda: Review backlog, commit to sprint goal, identify dependencies/blockers, finalize sprint backlog and capacity.",
+  "stakeholders": [
+    "Aisha Patel \u2013 Product Manager (Sprint Owner, defines acceptance criteria)",
+    "Ravi Kumar \u2013 Lead Backend Engineer (API design & integration)",
+    "Lena Chen \u2013 Frontend Engineer (React Native UI implementation)",
+    "Miguel Torres \u2013 iOS Mobile Engineer (Swift, Apple\u202fPay)",
+    "Sara O'Neill \u2013 Android Mobile Engineer (Kotlin, Google Pay fallback)",
+    "Jenna Lee \u2013 UX/UI Designer (Checkout redesign assets)",
+    "Tom Whitaker \u2013 QA Lead (Test planning & automation)",
+    "Ethan Brooks \u2013 DevOps Engineer (CI/CD pipeline updates)",
+    "Grace Liu \u2013 Scrum Master (Facilitates meeting, removes impediments)",
+    "Mark Daniels \u2013 Finance Director (Budget approval for third\u2011party token service)"
+  ],
+  "deliverables": [
+    "Story\u202f#1243 \u2013 Implement tokenized card storage service (backend + mobile SDK)",
+    "Story\u202f#1247 \u2013 Add Apple\u202fPay support to checkout flow (iOS only)",
+    "Story\u202f#1250 \u2013 Redesign checkout UI (new wireframes, component library updates)",
+    "Story\u202f#1254 \u2013 Create automated regression test suite for payment flow (Cypress + Appium)",
+    "Story\u202f#1258 \u2013 Release candidate build to internal beta testers (via TestFlight & Google Play Internal Test)",
+    "Story\u202f#1262 \u2013 Update public API documentation for token service (Swagger + Confluence)",
+    "Sprint Goal \u2013 Reduce checkout latency by \u226530\u202f% and achieve \u226595\u202f% automated test coverage for new payment paths"
+  ],
+  "success_criteria": [
+    "Average checkout latency measured in production <\u202f1.2\u202fseconds (baseline 1.7\u202fs).",
+    "Automated test coverage for new payment flows \u2265\u202f95\u202f% (unit + integration).",
+    "Zero critical (P1) bugs released to production; max 2 high\u2011severity bugs allowed for remediation within the sprint.",
+    "Beta\u2011tester satisfaction score \u2265\u202f80\u202f% on the new UI (survey of 30 internal users).",
+    "All committed story points delivered within 80\u202f% of the team's velocity (target 48\u202fpts, actual \u2265\u202f38\u202fpts)."
+  ],
+  "constraints": [
+    "Sprint length fixed at 2\u202fweeks (Nov\u202f30\u202f\u2013\u202fDec\u202f13\u202f2025).",
+    "Budget cap of $45,000 for third\u2011party tokenization service and design assets (approved by Finance).",
+    "Dependency on Payments Platform Team to release API v2 (expected 2025\u201112\u201101).",
+    "Design assets must be finalized and handed off by 2025\u201112\u201103 to avoid UI implementation delay.",
+    "Security compliance review (PCI\u202fDSS\u202f4.0) must be completed before production release; pending exception approval from Compliance (expected 2025\u201112\u201107).",
+    "Mobile support must remain compatible with iOS\u202f15+ and Android\u202f9+ devices."
+  ],
+  "workback_prompt": "Create a detailed work\u2011back plan for FinTechCo's Velocity Payments Squad Sprint\u202f5 (2025\u201112\u201102 planning meeting). The plan should break down each deliverable into weekly tasks, assign owners, list required approvals, identify critical path items (API v2 release, design hand\u2011off, PCI compliance review), and include milestones for testing, beta release, and production deployment. Include buffer time for unforeseen blockers and ensure the plan respects the $45k budget and PCI\u202fDSS\u202f4.0 compliance requirements.",
+  "meeting_type": "Sprint Planning Meeting",
+  "meeting_type_key": "2_sprint_planning",
+  "scenario_number": 1,
+  "horizon": "T-14",
+  "complexity": "Medium",
+  "generated_at": "2025-11-17T04:15:39.618486"
+}

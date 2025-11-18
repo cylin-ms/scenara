@@ -1,0 +1,385 @@
+{
+    "sample_id": "777",
+    "sample_domain": "Investment Banking",
+    "sample_prompt": "You are preparing for a strategic meeting with the board of JetBlue. Despite a federal judge's recent blocking of the company's acquisition of Spirit, the board is now looking for a new target. You need to propose some target airlines and put together overview pages on them. In this instance, you will focus on Sun Country, Southwest, and Frontier. Pages for each company should include the following information: Stock price and market cap (as of 5/16/2025); Names of the current CEO, CFO, and chair of the board; Number of aircraft in fleet, broken down by aircraft type (as of Q1 2025 earnings); City of company's headquarters; Names of 1-5 primary/hub airports (as of Q1 2025 earnings); 5 airline-specific performance metrics from FY2024, which must include RASM, CASM, load factor, average stage length, and the average cost of fuel/gallon. If any of the above information is not found, note its lack of availability.",
+    "criteria": [
+        {
+            "criterion 1": {
+                "description": "Correctly identifies Southwest's CEO as Robert Jordan",
+                "sources": "Southwest 10K, page 164",
+                "justification": "\"ROBERT E. JORDAN\nPresident, Chief Executive Officer, & Vice Chairman of the Board of Directors\n(Principal Executive Officer)\"",
+                "weight": "Critical",
+                "dependent_criteria": []
+            }
+        },
+        {
+            "criterion 2": {
+                "description": "Correctly identifies Southwest's Chief Financial Officer as Tom Doxey",
+                "sources": "Southwest 10Q, page 57",
+                "justification": "\"Tom Doxey\nExecutive Vice President & Chief Financial Officer\"",
+                "weight": "Major",
+                "dependent_criteria": []
+            }
+        },
+        {
+            "criterion 3": {
+                "description": "Correctly identifies Southwest's Chair of the Board as Rakesh Gangwal",
+                "sources": "Southwest 10K, page 164",
+                "justification": "\"RAKESH GANGWAL Chair of the Board\"",
+                "weight": "Major",
+                "dependent_criteria": []
+            }
+        },
+        {
+            "criterion 4": {
+                "description": "Correctly identifies Sun Country's Chief Executive Officer as Jude Bricker",
+                "sources": "Sun Country 10K, page 38",
+                "justification": "\"s/ Jude Bricker Chief Executive Officer; Director\"",
+                "weight": "Critical",
+                "dependent_criteria": []
+            }
+        },
+        {
+            "criterion 5": {
+                "description": "Correctly identifies Sun Country's Chief Financial Officer as William Trousdale",
+                "sources": "Sun Country 10Q, page 33",
+                "justification": "\"In April 2025, we announced that William Trousdale was appointed as Interim Chief Financial Officer and Principal Financial and\nAccounting Officer, effective as of April 17, 2025, following the resignation of Dave Davis, our former President and Chief Financial\nOfficer.\"",
+                "weight": "Major",
+                "dependent_criteria": []
+            }
+        },
+        {
+            "criterion 6": {
+                "description": "Correctly identifies Sun Country's Chair of the Board as Jennifer Vogel",
+                "sources": "Sun Country 10K, page 38",
+                "justification": "\"s/ Jennifer Vogel Chair of the Board; Director\"",
+                "weight": "Major",
+                "dependent_criteria": []
+            }
+        },
+        {
+            "criterion 7": {
+                "description": "Correctly identifies Frontier's Chief Executive Officer as Barry Biffle",
+                "sources": "Frontier 10K, page 103",
+                "justification": "\"/s/ Barry L. Biffle Chief Executive Officer and Director\"",
+                "weight": "Critical",
+                "dependent_criteria": []
+            }
+        },
+        {
+            "criterion 8": {
+                "description": "Correctly identifies Frontier's Chief Financial Officer as Mark Mitchell",
+                "sources": "Frontier 10K, page 103",
+                "justification": "\"/s/ Mark C. Mitchell Chief Financial Officer\"",
+                "weight": "Major",
+                "dependent_criteria": []
+            }
+        },
+        {
+            "criterion 9": {
+                "description": "Correctly identifies Frontier's Chair of the Board as William Franke",
+                "sources": "Frontier 10K, page 103",
+                "justification": "\"/s/ William A. Franke Director (Chair of the Board)\"",
+                "weight": "Major",
+                "dependent_criteria": []
+            }
+        },
+        {
+            "criterion 10": {
+                "description": "Correctly identifies Southwest's share price as of 5/16/2025 as $32.67",
+                "sources": "Trading Data",
+                "justification": "Share price in the trading data file is listed as $32.67 in column \"NYSE:LUV-Share Price\" and in the row for 5/16/2025.",
+                "weight": "Major",
+                "dependent_criteria": []
+            }
+        },
+        {
+            "criterion 11": {
+                "description": "Correctly identifies Southwest's market capitalization as of 5/16/2025 as $18.62 billion",
+                "sources": "Trading Data",
+                "justification": "Market capitalization in the trading data file is listed as $18.62B in column \"NYSE:LUV-Market Capitalization\" and in the row for 5/16/2025.",
+                "weight": "Critical",
+                "dependent_criteria": []
+            }
+        },
+        {
+            "criterion 12": {
+                "description": "Correctly identifies Sun Country's market capitalization as of 5/16/2025 as $643.73 million",
+                "sources": "Trading Data",
+                "justification": "Market capitalization in the trading data file is listed as $643.73M in column \"NYSE:SNCY-Market Capitalization\" and in the row for 5/16/2025.",
+                "weight": "Critical",
+                "dependent_criteria": []
+            }
+        },
+        {
+            "criterion 13": {
+                "description": "Correctly identifies Sun Country's share price as of 5/16/2025 as $12.10",
+                "sources": "Trading Data",
+                "justification": "Share price in the trading data file is listed as $12.10 in column \"NYSE:SNCY-Share Price\" and in the row for 5/16/2025.",
+                "weight": "Major",
+                "dependent_criteria": []
+            }
+        },
+        {
+            "criterion 14": {
+                "description": "Correctly identifies Frontier's market capitalization as of 5/16/2025 as $949.78 million",
+                "sources": "Trading Data",
+                "justification": "Market capitalization in the trading data file is listed as $949.78M in column \"NYSE:ULCC-Market Capitalization\" and in the row for 5/16/2025.",
+                "weight": "Critical",
+                "dependent_criteria": []
+            }
+        },
+        {
+            "criterion 15": {
+                "description": "Correctly identifies Frontier's share price as of 5/16/2025 as $4.17",
+                "sources": "Trading Data",
+                "justification": "Share price in the trading data file is listed as $4.17 in column \"NYSE:ULCC-Share Price\" and in the row for 5/16/2025.",
+                "weight": "Major",
+                "dependent_criteria": []
+            }
+        },
+        {
+            "criterion 16": {
+                "description": "Correctly identifies the city of Southwest's headquarters as Dallas",
+                "sources": "Southwest 10Q, page 1",
+                "justification": "\"P.O. Box 36611\nDallas, Texas 75235-1611\n(Address of principal executive offices)\"",
+                "weight": "Major",
+                "dependent_criteria": []
+            }
+        },
+        {
+            "criterion 17": {
+                "description": "Correctly identifies the city of Frontier's headquarters as Denver",
+                "sources": "Frontier 10Q, page 1",
+                "justification": "\"Denver, CO 80239\n(720) 374-4550\n(Address of principal executive offices, including zip code, and Registrant\u2019s telephone number, including area code)\"",
+                "weight": "Major",
+                "dependent_criteria": []
+            }
+        },
+        {
+            "criterion 18": {
+                "description": "Correctly identifies the city of Sun Country's headquarters as Minneapolis",
+                "sources": "Sun Country 10Q, page 1",
+                "justification": "\"2005 Cargo Road\nMinneapolis, Minnesota 55450\n(Address of principal executive offices)\"",
+                "weight": "Major",
+                "dependent_criteria": []
+            }
+        },
+        {
+            "criterion 19": {
+                "description": "Correctly identifies at least one, and no more than 5, of Southwest's primary airports from the following list: Dallas, Houston, Phoenix, Chicago, Atlanta, Denver, Orlando, Burbank, Manchester, Oakland, San Jose, Providence",
+                "sources": "Southwest 10K, page 57;  Southwest 10K, page 5",
+                "justification": "Southwest's investor materials don't explicitly reference \"primary\" or \"hub\" airports (given they are a point-to-point carrier), however, they list airports with maintenance centers (a common indicator of a primary airport) on page 57 of their 10k, stating \"The Company leases the land and/or structures on a long term basis for its aircraft maintenance centers (located at Dallas Love Field, Houston Hobby, Phoenix Sky Harbor, Chicago Midway, Hartsfield-Jackson Atlanta International Airport, Denver International Airport, and Orlando\nInternational Airport) and its main corporate headquarters building, also located near Dallas Love Field.\" \nAdditionally, they specify in page 5 of the 10K some secondary airports that they frequently operate out of, stating \"Southwest's route structure includes service to and from many secondary or downtown airports such as Dallas Love Field, Houston Hobby, Chicago Midway, Baltimore-Washington International, Burbank, Manchester, Oakland, San Jose, and Providence.\" While these don't necessarily indicate primary/hub locations, it's the only other location in the filings that airports are listed.",
+                "weight": "Minor",
+                "dependent_criteria": []
+            }
+        },
+        {
+            "criterion 20": {
+                "description": "Correctly identifies Sun Country's primary airport as Minneapolis",
+                "sources": "Sun Country IP, page 9; Sun Country 10K, page 4; Sun Country 10K, page 14",
+                "justification": "The primary/hub airport clearly displayed on a map in Sun Country's Q1 2025 IP is Minneapolis (MSP), which is where nearly the entirety of Sun Country's network runs in/out of. \nThis is reiterated in the company's 10K as well; on page 4, they state that as \"Minnesota\u2019s hometown airline, a substantial portion of our business is serving markets originating or ending in MSP.\" Further, they state on page 14 that \"We primarily operate out of eight of the 14 gates at Terminal 2 at MSP,\"",
+                "weight": "Minor",
+                "dependent_criteria": []
+            }
+        },
+        {
+            "criterion 21": {
+                "description": "Correctly identifies at least one, and no more than 5, of Frontier's primary airports from the following list: Denver, Orlando, Las Vegas, Atlanta, Philadelphia",
+                "sources": "Frontier 10K, pages 45-46",
+                "justification": "Management commentary in the financial filings explicitly lists these airports as the bulk of Frontier's operations: \"During the year ended December 31, 2024, 23% of our flights had Denver International Airport as either their origin or destination. We primarily operate out of Concourse A at Denver International Airport, including the ground-level boarding facility and accompanying gates. We typically use 14 gates within Concourse A, with access to 9 gates at the ground-level boarding facility and common use access to the remaining gates. We also lease a hangar... consisting of approximately 154,900 square feet, which includes office space and is where we provide certain maintenance on our aircraft. Other airports through which we conduct significant operations include Orlando International Airport (MCO), McCarran International Airport (LAS), Hartsfield-Jackson Atlanta International Airport (ATL) and Philadelphia International Airport (PHL).\"",
+                "weight": "Minor",
+                "dependent_criteria": []
+            }
+        },
+        {
+            "criterion 22": {
+                "description": "Correctly identifies Frontier's FY2024 RASM as 9..47 cents",
+                "sources": "Frontier 10K, page 51",
+                "justification": "RASM (cents) line item for Year Ended December 31, 2024 is 9.47.",
+                "weight": "Major",
+                "dependent_criteria": []
+            }
+        },
+        {
+            "criterion 23": {
+                "description": "Correctly identifies Frontier's FY2024 CASM as 9.32 cents",
+                "sources": "Frontier 10K, page 53",
+                "justification": "CASM line item for Year Ended December 31, 2024 is 9.32 cents.",
+                "weight": "Major",
+                "dependent_criteria": []
+            }
+        },
+        {
+            "criterion 24": {
+                "description": "Correctly identifies Frontier's FY2024 load factor as 76.8%",
+                "sources": "Frontier 10K, page 51",
+                "justification": "Load factor line item for Year Ended December 31, 2024 is 76.8%.",
+                "weight": "Major",
+                "dependent_criteria": []
+            }
+        },
+        {
+            "criterion 25": {
+                "description": "Correctly identifies Frontier's FY2024 average stage length as 894 miles",
+                "sources": "Frontier 10K, page 51",
+                "justification": "Average stage length (miles) line item for Year Ended December 31, 2024 is 894 miles.",
+                "weight": "Major",
+                "dependent_criteria": []
+            }
+        },
+        {
+            "criterion 26": {
+                "description": "Correctly identifies Frontier's FY2024 average cost of fuel per gallon as $2.73",
+                "sources": "Frontier 10K, page 51",
+                "justification": "Fuel cost per gallon ($) line item for Year Ended December 31, 2024 is 2.73.",
+                "weight": "Major",
+                "dependent_criteria": []
+            }
+        },
+        {
+            "criterion 27": {
+                "description": "Correctly identifies Sun Country's FY2024 RASM as 10.87 cents",
+                "sources": "Sun Country 10K, page 16",
+                "justification": "TRASM (cents) line item for Year Ended December 31, 2024 is 10.87 for Scheduled service, 15.51 for charter, and 11.47 for 'total.' It would not be appropriate to answer with only charter (not representative of the business as a whole), but providing the number for either scheduled service or the blended total is defensible.",
+                "weight": "Major",
+                "dependent_criteria": []
+            }
+        },
+        {
+            "criterion 28": {
+                "description": "Correctly identifies Sun Country's FY2024 CASM as 12.01 cents",
+                "sources": "Sun Country 10K, page 16",
+                "justification": "CASM (cents) for the Year Ended December 31, 2024 is listed at 12.01.",
+                "weight": "Major",
+                "dependent_criteria": []
+            }
+        },
+        {
+            "criterion 29": {
+                "description": "Correctly identifies Sun Country's FY2024 load factor as between 84.2% and 86.3%",
+                "sources": "Sun Country 10K, page 16",
+                "justification": "Load factor for the Year Ended December 31, 2024 is listed as 84.2% for Scheduled service and 86.3% for total (cargo and charter included, but are not broken down individually)",
+                "weight": "Major",
+                "dependent_criteria": []
+            }
+        },
+        {
+            "criterion 30": {
+                "description": "Correctly identifies Sun Country's FY2024 average stage length as 1,098 miles",
+                "sources": "Sun Country 10K, page 16",
+                "justification": "Average stage length (miles) for the Year Ended December 31, 2024 is listed as 1,098.",
+                "weight": "Major",
+                "dependent_criteria": []
+            }
+        },
+        {
+            "criterion 31": {
+                "description": "Correctly identifies Sun Country's FY2024 average cost of fuel per gallon as $2.77",
+                "sources": "Sun Country 10K, page 16",
+                "justification": "Fuel Cost per Gallon, Excluding Indirect Fuel Credits line item for Year Ended December 31, 2024 is $2.77.",
+                "weight": "Major",
+                "dependent_criteria": []
+            }
+        },
+        {
+            "criterion 32": {
+                "description": "Correctly identifies Southwest's FY2024 RASM as 15.51 cents",
+                "sources": "Southwest 10K, page 69",
+                "justification": "Operating revenues per ASM (cents) for Year ended December 31, 2024 are shown as 15.51. RASM is widely accepted as being based on operating (rather than passenger) revenues, so this is the metric that should be the figure used. Footnote (g) on the same page explains this, too.",
+                "weight": "Major",
+                "dependent_criteria": []
+            }
+        },
+        {
+            "criterion 33": {
+                "description": "Correctly identifies Southwest's FY2024 CASM as 15.32 cents",
+                "sources": "Southwest 10K, page 69",
+                "justification": "Operating expenses per ASM (cents) for Year ended December 31, 2024 are shown as 15.32.",
+                "weight": "Major",
+                "dependent_criteria": []
+            }
+        },
+        {
+            "criterion 34": {
+                "description": "Correctly identifies Southwest's FY2024 load factor as 80.4%",
+                "sources": "Southwest 10K, page 69",
+                "justification": "Load factor for Year ended December 31, 2024 is shown as 80.4%.",
+                "weight": "Major",
+                "dependent_criteria": []
+            }
+        },
+        {
+            "criterion 35": {
+                "description": "Correctly identifies Southwest's FY2024 average stage length as 763 miles",
+                "sources": "Southwest 10K, page 69",
+                "justification": "Average aircraft stage length (miles) line item for Year Ended December 31, 2024 is 763 miles.",
+                "weight": "Major",
+                "dependent_criteria": []
+            }
+        },
+        {
+            "criterion 36": {
+                "description": "Correctly identifies Southwest's FY2024 average cost of fuel per gallon as between $2.64 and $2.66",
+                "sources": "Southwest 10K, page 69",
+                "justification": "\"Fuel costs per gallon, including fuel tax\" for Year ended December 31, 2024 are shown as $2.64; \"Fuel costs per gallon, including fuel tax (economic)\" are shown as $2.66. \nRange accounts for non-specified use of 'economic' vs. non-economic fuel costs",
+                "weight": "Major",
+                "dependent_criteria": []
+            }
+        },
+        {
+            "criterion 37": {
+                "description": "Correctly identifies the total number of aircraft in Southwest's fleet as of Q1 2025 earnings as 800 aircraft",
+                "sources": "Southwest 10Q, page 44",
+                "justification": "Table on the page shows the total for Number of Aircraft (as of March 31, 2025) as 800.",
+                "weight": "Major",
+                "dependent_criteria": []
+            }
+        },
+        {
+            "criterion 38": {
+                "description": "Correctly identifies that Southwest's fleet is comprised of Boeing 737 aircraft as Q1 2025",
+                "sources": "Southwest 10Q, page 44",
+                "justification": "Table on the page lists all types of aircraft, which includes only 737-700, 737-800, and 737-8 aircraft",
+                "weight": "Minor",
+                "dependent_criteria": []
+            }
+        },
+        {
+            "criterion 39": {
+                "description": "Correctly identifies that the Sun Country fleet is comprised of Boeing 737 aircraft as of Q1 2025",
+                "sources": "Sun Country 10Q, page 10",
+                "justification": "\"As of March 31, 2025, Sun Country's fleet consisted of 66 Boeing 737-NG aircraft, comprised of 61 Boeing 737-800s and five Boeing 737-900ERs.\"",
+                "weight": "Major",
+                "dependent_criteria": []
+            }
+        },
+        {
+            "criterion 40": {
+                "description": "Correctly identifies the total number of aircraft in Sun Country's fleet as of Q1 2025 earnings as 66 aircraft",
+                "sources": "Sun Country 10Q, page 10",
+                "justification": "\"As of March 31, 2025, Sun Country's fleet consisted of 66 Boeing 737-NG aircraft, comprised of 61 Boeing 737-800s and five Boeing 737-900ERs.\"",
+                "weight": "Major",
+                "dependent_criteria": []
+            }
+        },
+        {
+            "criterion 41": {
+                "description": "Correctly identifies the total number of aircraft in Frontier's fleet as of Q1 2025 earnings as 163",
+                "sources": "Frontier 10Q, page 24",
+                "justification": "\"As of March 31, 2025, we operated all of our 163 aircraft under operating leases.\"",
+                "weight": "Major",
+                "dependent_criteria": []
+            }
+        },
+        {
+            "criterion 42": {
+                "description": "States that there is no breakdown of Frontier's fleet as of Q1 2025 available in its 10Q or investor update materials",
+                "sources": "n/a",
+                "justification": "There is no available information on Frontier's fleet as of Q1 2025 in any of the provided files",
+                "weight": "Minor",
+                "dependent_criteria": []
+            }
+        }
+    ]
+}

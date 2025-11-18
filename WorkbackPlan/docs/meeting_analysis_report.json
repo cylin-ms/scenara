@@ -1,0 +1,104 @@
+{
+  "analysis_date": "2025-11-18T13:45:22.165469",
+  "total_meetings": 267,
+  "meetings_last_6_months": 267,
+  "meeting_type_coverage": {
+    "Board Review Meeting": {
+      "count": 0,
+      "has_example": false,
+      "complexity": "high",
+      "lead_time_days": 60
+    },
+    "Quarterly Business Review (QBR)": {
+      "count": 7,
+      "has_example": true,
+      "complexity": "high",
+      "lead_time_days": 45
+    },
+    "Product Launch": {
+      "count": 28,
+      "has_example": true,
+      "complexity": "high",
+      "lead_time_days": 90
+    },
+    "M&A Due Diligence": {
+      "count": 0,
+      "has_example": false,
+      "complexity": "high",
+      "lead_time_days": 120
+    },
+    "Team Offsite Planning": {
+      "count": 0,
+      "has_example": false,
+      "complexity": "medium",
+      "lead_time_days": 30
+    },
+    "Conference/Event Preparation": {
+      "count": 9,
+      "has_example": true,
+      "complexity": "medium",
+      "lead_time_days": 45
+    },
+    "Executive Presentation": {
+      "count": 11,
+      "has_example": true,
+      "complexity": "medium",
+      "lead_time_days": 21
+    },
+    "Project Kickoff": {
+      "count": 6,
+      "has_example": true,
+      "complexity": "medium",
+      "lead_time_days": 14
+    },
+    "Budget Planning": {
+      "count": 10,
+      "has_example": true,
+      "complexity": "medium",
+      "lead_time_days": 30
+    },
+    "Hiring Committee": {
+      "count": 1,
+      "has_example": true,
+      "complexity": "low",
+      "lead_time_days": 7
+    }
+  },
+  "matched_meetings_by_type": {
+    "Quarterly Business Review (QBR)": {
+      "subject": "STCA Monthly Extended PLT + Managers ",
+      "date": "2025-08-01T10:35:00.0000000",
+      "attendee_count": 180
+    },
+    "Product Launch": {
+      "subject": "How-to Navigate M365 Pulse: A 101 Beginner\u2019s Guide",
+      "date": "2025-05-15T07:05:00.0000000",
+      "attendee_count": 374
+    },
+    "Conference/Event Preparation": {
+      "subject": "E+D: FY26 Kickoff",
+      "date": "2025-07-18T01:05:00.0000000",
+      "attendee_count": 404
+    },
+    "Executive Presentation": {
+      "subject": "LIVE! FY26 Employee Town Hall in September",
+      "date": "2025-09-12T00:30:00.0000000",
+      "attendee_count": 364
+    },
+    "Project Kickoff": {
+      "subject": "E+D: FY26 Kickoff",
+      "date": "2025-07-18T01:05:00.0000000",
+      "attendee_count": 404
+    },
+    "Budget Planning": {
+      "subject": "E+D: FY26 Kickoff",
+      "date": "2025-07-18T01:05:00.0000000",
+      "attendee_count": 404
+    },
+    "Hiring Committee": {
+      "subject": "Virtual Interview for Senior Applied Scientist(LLM) (1864549)",
+      "date": "2025-10-24T15:00:00.0000000",
+      "attendee_count": 4
+    }
+  }
+}

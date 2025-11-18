@@ -1,0 +1,54 @@
+{
+  "scenario_name": "Apex Renewable Solutions \u2013 Q2 2025 Quarterly Business Review",
+  "company_context": "Apex Renewable Solutions Inc. (NASDAQ: APRN) is a vertically integrated renewable\u2011energy developer and operator focused on utility\u2011scale solar and wind projects in North America and Europe. The company\u2019s senior leadership team includes a CEO, CFO, COO, Chief Strategy Officer, Chief Technology Officer, and heads of Business Development, Operations, ESG, and Investor Relations. The Board of Directors oversees a $3.2\u202fbn market\u2011cap enterprise with a 2025 revenue target of $1.8\u202fbn.",
+  "meeting_event_details": "Date: Tuesday, 20\u202fJune\u202f2025\nTime: 08:30\u202f\u2013\u202f16:30 (full\u2011day)\nLocation: Apex Headquarters \u2013 Boardroom A, 12th\u202fFloor, Chicago, IL (hybrid option via secure video link for two external directors)\nAgenda Highlights: \n  \u2022 08:30\u201109:00 \u2013 Opening remarks & approvals\n  \u2022 09:00\u201110:30 \u2013 Financial Results Presentation (CFO)\n  \u2022 10:30\u201110:45 \u2013 Break\n  \u2022 10:45\u201112:15 \u2013 Strategy & Market Position (CSO & CMO)\n  \u2022 12:15\u201113:00 \u2013 Lunch (working session)\n  \u2022 13:00\u201114:30 \u2013 Departmental Deep\u2011dives (Operations, Business Development, ESG, Technology)\n  \u2022 14:30\u201114:45 \u2013 Break\n  \u2022 14:45\u201115:45 \u2013 Strategic Decision Workshops (Capital Allocation, Project Go/No\u2011Go, M&A pipeline)\n  \u2022 15:45\u201116:15 \u2013 Risk & Compliance Review (Chief Legal Officer)\n  \u2022 16:15\u201116:30 \u2013 Closing & Action\u2011Item Confirmation",
+  "stakeholders": [
+    "Laura Chen \u2013 Chair, Board of Directors (Independent)",
+    "Michael Alvarez \u2013 CEO, Apex Renewable Solutions",
+    "Sofia Patel \u2013 CFO, Apex Renewable Solutions",
+    "David Kim \u2013 COO, Apex Renewable Solutions",
+    "Ruth Gallagher \u2013 Chief Strategy Officer, Apex Renewable Solutions",
+    "Ethan Brooks \u2013 Chief Technology Officer, Apex Renewable Solutions",
+    "Maria Gomez \u2013 Head of Business Development, Apex Renewable Solutions",
+    "James O'Leary \u2013 Head of Operations, Apex Renewable Solutions",
+    "Aisha Rahman \u2013 Head of ESG & Sustainability, Apex Renewable Solutions",
+    "Thomas Whitaker \u2013 Independent Director, Energy Infrastructure",
+    "Elena Vasilev \u2013 Independent Director, Global Markets",
+    "Robert \u201cBob\u201d Sinclair \u2013 Independent Director, Finance & Risk",
+    "Karen Liu \u2013 Chief Legal Officer, Apex Renewable Solutions",
+    "Victor Alvarez \u2013 Investor Relations Lead (provides Q2 earnings call summary)",
+    "External Auditor \u2013 PwC Representative (pre\u2011read reviewer)"
+  ],
+  "deliverables": [
+    "Board Deck \u2013 Q2 2025 Business Review (PDF, 78 pages) including financial statements, KPI dashboards, market analysis, and strategic initiatives",
+    "Updated 3\u2011Year Strategic Plan (2025\u20112027) with revised capital allocation matrix",
+    "Go/No\u2011Go decision memo for the 250\u202fMW Desert Sun Solar Farm (California) and the 180\u202fMW North Sea Wind Farm (UK)",
+    "Approved Q3 2025 Capital Expenditure budget (USD\u202f150\u202fM cap)",
+    "Risk Register update and mitigation action plan for regulatory changes in EU renewable subsidies",
+    "Board resolution signatures captured electronically",
+    "Action\u2011Item Tracker with owners, due dates, and status (shared via SharePoint)",
+    "Executive Summary for Investor Relations to be released within 48\u202fhours post\u2011meeting"
+  ],
+  "success_criteria": [
+    "All strategic decisions (capital allocation, project go/no\u2011go, M&A pipeline) are formally approved and documented by 16:30\u202fon meeting day",
+    "Board approves the updated 3\u2011Year Strategic Plan with \u2264\u202f2\u202f% variance from the presented version",
+    "Financial results presentation receives a unanimous \u2018No Further Discussion\u2019 vote from the Board",
+    "Action\u2011Item Tracker contains \u2264\u202f5 open items after 48\u202fhours, each assigned to a clear owner with a target completion date",
+    "Meeting stays within the allocated 8\u2011hour window (no overruns beyond 30\u202fminutes)",
+    "All pre\u2011reads are acknowledged as received and reviewed by at least 90\u202f% of Board members prior to the meeting"
+  ],
+  "constraints": [
+    "Capital allocation for Q3 cannot exceed USD\u202f150\u202fM without a supplemental shareholder vote",
+    "EU Renewable Energy Directive compliance deadline (31\u202fJuly\u202f2025) imposes a hard cut\u2011off for the North Sea Wind Farm decision",
+    "Limited availability of the CFO (Sofia Patel) \u2013 all financial data must be finalized and uploaded to the board portal by 5\u202fJune\u202f2025",
+    "Hybrid format requires secure video\u2011conferencing encryption and a backup dial\u2011in line for two external directors",
+    "Pre\u2011read distribution must be completed at least 10\u202fbusiness days before the meeting to satisfy SEC Rule 14a\u201112(b) for material information"
+  ],
+  "workback_prompt": "Create a detailed work\u2011back plan for the Apex Renewable Solutions Q2\u202f2025 Quarterly Business Review. The plan should list all required pre\u2011reads, data collection, slide deck creation, review cycles, approvals, logistics (venue, hybrid tech, catering), stakeholder briefings, and decision\u2011making workshops. Include milestones, owners, start and finish dates, dependencies, and any risk mitigation steps needed to meet the constraints and success criteria outlined in the scenario.",
+  "meeting_type": "Quarterly Business Review",
+  "meeting_type_key": "6_quarterly_business_review",
+  "scenario_number": 1,
+  "horizon": "T-60",
+  "complexity": "Very High",
+  "generated_at": "2025-11-17T06:03:51.547261"
+}

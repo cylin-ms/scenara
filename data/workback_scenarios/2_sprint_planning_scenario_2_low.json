@@ -1,0 +1,358 @@
+{
+  "scenario_name": "CareConnect Squad Sprint 7 Planning (Patient Portal Enhancements)",
+  "scenario_number": 2,
+  "meeting_type": "Sprint Planning Meeting",
+  "quality_level": "low",
+  "workback_prompt": "Create a detailed workback plan for Nimbus Health's CareConnect Squad Sprint 7 (14 Oct \u2013 27 Oct 2025). Include all tasks needed to deliver the sprint goal, assign owners, estimate effort, identify critical path items, and map each deliverable to the success criteria and constraints listed in the scenario. Output the plan as a table with columns: Task, Owner, Estimated Effort (hours), Start Date, End Date, Dependencies, Success Metric Alignment.\n\nGenerate a LOW QUALITY workback plan with these characteristics:\n- Missing key tasks or phases\n- Vague task descriptions\n- Few or no dependencies defined\n- Missing stakeholder assignments\n- No milestones or poorly defined milestones\n- Unrealistic timelines\n- No risk consideration\n- Minimal deliverables identified\n\nIMPORTANT: Generate a plan that naturally exhibits LOW quality characteristics.\nDo not explicitly label the plan as \"low quality\" - let the quality emerge from the content.",
+  "generated_at": "2025-11-17T04:26:38.600774",
+  "analysis": "# Outcomes\n\n## Draft a \u201clow\u2011detail\u201d work\u2011back plan for Sprint\u202f7 (14\u202fOct\u202f\u2013\u202f27\u202fOct\u202f2025)  \nCreate a table that meets the user\u2019s formatting request but intentionally omits many of the elements that would make the plan robust (e.g., missing tasks, vague descriptions, few dependencies, incomplete owner list, unrealistic dates, no risk notes).  \nArtifact references: none (the user supplied only the request).\n\n### Reasoning  \nThe user explicitly asked for a work\u2011back plan that **exhibits low quality**\u2014missing key tasks, vague wording, few dependencies, etc.\u202fOur role is not to generate that plan directly but to advise the user on how to produce it.\u202fTherefore the first outcome is to outline a process that leads to a deliberately low\u2011detail artifact while still satisfying the surface\u2011level format requirements (table columns, date range, etc.).\n\n### Approach  \n1. **Clarify the \u201clow\u2011quality\u201d intent** \u2013 confirm with the squad lead that the purpose is to demonstrate a minimal\u2011detail artifact (e.g., for a teaching exercise or a placeholder).  \n2. **Gather only high\u2011level sprint information** \u2013 capture the sprint dates, the overall sprint goal, and a handful of generic deliverables (e.g., \u201cFeature work\u201d, \u201cBug fixes\u201d).  \n3. **Create a minimal task list** \u2013 list 3\u20115 items that are intentionally broad (e.g., \u201cDo work\u201d, \u201cTest stuff\u201d).  \n4. **Assign owners sparsely** \u2013 provide owners for only a subset of tasks; leave the rest blank or use generic placeholders (\u201cTBD\u201d).  \n5. **Estimate effort loosely** \u2013 use round numbers (e.g., 8\u202fh, 16\u202fh) without justification.  \n6. **Define unrealistic timelines** \u2013 set start/end dates that overlap or ignore the sprint length.  \n7. **Add few or no dependencies** \u2013 include a single \u201cDepends on\u201d entry or leave the column empty.  \n8. **Map each task to a success metric** \u2013 reuse the same metric for all rows (e.g., \u201cMeets sprint goal\u201d) without linking to specific criteria.  \n9. **Populate the table** \u2013 use the column headings the user specified (Task, Owner, Estimated Effort (hours), Start Date, End Date, Dependencies, Success Metric Alignment).  \n10. **Review quickly** \u2013 perform a brief visual check to ensure the table is syntactically correct but do not add missing detail.  \n\n---\n\n## Review & Share the \u201clow\u2011detail\u201d plan with stakeholders  \nEnsure the draft is circulated to the CareConnect Squad and any required reviewers (e.g., product owner, Scrum Master) so they can acknowledge receipt, even if the plan is intentionally sparse.  \n\n### Reasoning  \nEven a low\u2011quality artifact benefits from a quick sign\u2011off to avoid misunderstandings later.\u202fThe user\u2019s scenario mentions \u201cstakeholder assignments\u201d and \u201csuccess criteria\u201d; a minimal review loop satisfies the requirement that the plan be shared without improving its substance.\n\n### Approach  \n1. **Identify a short list of recipients** \u2013 the squad lead, product owner, and Scrum Master.  \n2. **Choose a lightweight communication channel** \u2013 e\u2011mail or a shared document link.  \n3. **Attach the table** and add a brief note explaining that the plan is a placeholder.  \n4. **Request acknowledgment** (\u201cPlease confirm you have received the draft\u201d).  \n5. **Log the acknowledgment** in a simple tracker (e.g., a shared spreadsheet).  \n\n---\n\n## Capture any immediate feedback (optional)  \nIf reviewers raise obvious concerns (e.g., missing critical task), note them but **do not** expand the plan; instead, record the comment for a future, higher\u2011quality iteration.  \n\n### Reasoning  \nThe user\u2019s request does not call for risk management or corrective actions, but documenting feedback preserves a record and demonstrates a minimal level of process hygiene.\n\n### Approach  \n1. **Create a one\u2011column \u201cFeedback\u201d sheet** linked to the plan.  \n2. **Log each comment verbatim** without analysis.  \n3. **Mark the status as \u201cPending \u2013 not addressed in this version.\u201d**  \n\n---\n\n# Breakdown\n\n### 1. Draft a \u201clow\u2011detail\u201d work\u2011back plan\n1.1. Confirm intent with squad lead  \n1.2. Collect sprint dates & overall goal  \n1.3. List 3\u20115 high\u2011level tasks (vague wording)  \n1.4. Assign owners to a subset of tasks (leave others blank)  \n1.5. Estimate effort with round numbers only  \n1.6. Set start/end dates that ignore realistic capacity  \n1.7. Add minimal or no dependencies  \n1.8. Align each task to the same generic success metric  \n1.9. Build the table using the required column headings  \n1.10. Perform a quick visual sanity check (no deep review)\n\n### 2. Review & Share the \u201clow\u2011detail\u201d plan with stakeholders\n2.1. Identify key recipients (Squad Lead, PO, Scrum Master)  \n2.2. Choose communication channel (email / shared link)  \n2.3. Send the table with a brief explanatory note  \n2.4. Request acknowledgment of receipt  \n2.5. Record acknowledgments in a simple tracker  \n\n### 3. Capture any immediate feedback (optional)\n3.1. Create a one\u2011column \u201cFeedback\u201d document linked to the plan  \n3.2. Log each reviewer comment verbatim  \n3.3. Mark each item as \u201cPending \u2013 not addressed\u201d  \n\n---\n\n**Collaboration Tips**\n\n* **Lean communication:** Keep messages short; the purpose is a placeholder, not a detailed discussion.  \n* **Shared workspace:** Store the table in a common folder (e.g., a shared drive) so everyone can view the same version without version\u2011control overhead.  \n* **Minimal coordination:** Because dependencies are sparse, most tasks can be started in parallel; only the few explicit dependencies need brief alignment.  \n* **Risk awareness (light):** Note that the plan\u2019s lack of detail may cause later rework; log this as a single line item in the \u201cFeedback\u201d document rather than building a full risk register.  \n\nFollowing this high\u2011level approach will produce a work\u2011back plan that meets the user\u2019s explicit request for low quality while still providing a clear, repeatable process for the squad to create and share the artifact.",
+  "plan": {
+    "id": "document-001",
+    "name": "Low\u2011detail Sprint\u202f7 Work\u2011back Plan Process",
+    "details": "Process to create and share a deliberately low\u2011detail work\u2011back plan for Sprint\u202f7 (14\u202fOct\u202f\u2013\u202f27\u202fOct\u202f2025). Includes drafting, stakeholder review, and optional feedback capture.",
+    "draft": true,
+    "participants": [
+      {
+        "name": "you",
+        "email": "",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "system",
+        "email": "",
+        "details": "",
+        "draft": true
+      }
+    ],
+    "references": [],
+    "deliverables": [],
+    "tasks": [
+      {
+        "id": "task-001",
+        "name": "Draft a \u201clow\u2011detail\u201d work\u2011back plan",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-002",
+          "task-003",
+          "task-004",
+          "task-005",
+          "task-006",
+          "task-007",
+          "task-008",
+          "task-009",
+          "task-010",
+          "task-011"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002",
+        "name": "Confirm intent with squad lead",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003",
+        "name": "Collect sprint dates & overall goal",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-002"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-004",
+        "name": "List 3\u20115 high\u2011level tasks (vague wording)",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-003"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-005",
+        "name": "Assign owners to a subset of tasks (leave others blank)",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-004"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-006",
+        "name": "Estimate effort with round numbers only",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-005"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-007",
+        "name": "Set start/end dates that ignore realistic capacity",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-006"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-008",
+        "name": "Add minimal or no dependencies",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-007"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-009",
+        "name": "Align each task to the same generic success metric",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-008"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-010",
+        "name": "Build the table using the required column headings",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-009"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-011",
+        "name": "Perform a quick visual sanity check (no deep review)",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-010"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-012",
+        "name": "Review & Share the \u201clow\u2011detail\u201d plan with stakeholders",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-013",
+          "task-014",
+          "task-015",
+          "task-016",
+          "task-017"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-013",
+        "name": "Identify key recipients (Squad Lead, PO, Scrum Master)",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-014",
+        "name": "Choose communication channel (email / shared link)",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-013"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-015",
+        "name": "Send the table with a brief explanatory note",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-014"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-016",
+        "name": "Request acknowledgment of receipt",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-015"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-017",
+        "name": "Record acknowledgments in a simple tracker",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-016"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-018",
+        "name": "Capture any immediate feedback (optional)",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-019",
+          "task-020",
+          "task-021"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-019",
+        "name": "Create a one\u2011column \u201cFeedback\u201d document linked to the plan",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-020",
+        "name": "Log each reviewer comment verbatim",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-019"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-021",
+        "name": "Mark each item as \u201cPending \u2013 not addressed\u201d",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-020"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      }
+    ],
+    "history": []
+  }
+}

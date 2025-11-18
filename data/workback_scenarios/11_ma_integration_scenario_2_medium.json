@@ -1,0 +1,656 @@
+{
+  "scenario_name": "AstraTech\u2011MedPulse Enterprise Integration (Extreme Complexity)",
+  "scenario_number": 2,
+  "meeting_type": "M&A Integration Planning",
+  "quality_level": "medium",
+  "workback_prompt": "Create a detailed, day\u2011by\u2011day workback plan for the AstraTech Solutions \u2013 MedPulse Health integration described above. The plan should cover all key workstreams (HR, IT, Finance, Product, Sales, Operations), map each deliverable to a specific date, assign owners from the stakeholder list, identify dependencies, flag critical path items, and embed the Day\u20111 and 100\u2011day priorities. Include risk mitigation actions, budget checkpoints, and communication milestones. Output the plan in a table format suitable for the Integration Management Office to track progress against the success criteria and constraints.\n\nGenerate a MEDIUM QUALITY workback plan with these characteristics:\n- Most major tasks present but some gaps\n- Reasonable task descriptions\n- Some dependencies defined\n- Most tasks have owners\n- Milestones present but may lack detail\n- Generally realistic timelines\n- Some consideration of risks\n- Key deliverables identified\n\nIMPORTANT: Generate a plan that naturally exhibits MEDIUM quality characteristics.\nDo not explicitly label the plan as \"medium quality\" - let the quality emerge from the content.",
+  "generated_at": "2025-11-17T08:20:49.099441",
+  "analysis": "# Outcomes\n\n## AstraTech\u2011MedPulse Integration Workback Plan  \nA complete day\u2011by\u2011day workback schedule that covers all key workstreams (HR, IT, Finance, Product, Sales, Operations), maps every major deliverable to a calendar date, assigns owners from the stakeholder list, identifies dependencies, flags critical\u2011path items, and embeds the Day\u20111 and 100\u2011day priorities. The plan also includes risk\u2011mitigation actions, budget\u2011review checkpoints, and communication milestones for the Integration Management Office (IMO) to track progress against the success criteria and constraints.  \n\nArtifact references: *(none provided in the context)*  \n\n### Reasoning  \nThe user explicitly asked for a \u201cdetailed, day\u2011by\u2011day workback plan\u201d that spans the entire integration timeline, includes the six workstreams, owners, dependencies, critical\u2011path flags, Day\u20111/100\u2011day priorities, risk mitigations, budget checkpoints, and communication milestones, and must be presented in a table format. All of these requirements map directly to a single, high\u2011level outcome: the integration workback plan. No other deliverables were mentioned, so only this outcome is listed.  \n\n### Approach  \n1. **Define the integration horizon** \u2013 the plan starts from the official integration kickoff (Day\u202f0) and runs through the first 120\u202fcalendar days, which comfortably captures Day\u20111 activities, the 100\u2011day review, and a short buffer for wrap\u2011up.  \n2. **Identify workstream\u2011level major deliverables** \u2013 using typical integration activities for HR, IT, Finance, Product, Sales, and Operations, draft a set of tasks that satisfy the success criteria (e.g., systems go\u2011live, employee onboarding, financial close, product roadmap alignment).  \n3. **Assign owners** \u2013 for each workstream, allocate a generic role that would appear on a stakeholder list (HR Lead, IT Integration Manager, Finance Controller, Product Owner, Sales Enablement Lead, Operations Director). Where a task spans multiple streams, list a primary owner and a supporting owner.  \n4. **Map dates** \u2013 work backwards from the fixed milestones (Day\u20111 go\u2011live, 100\u2011day review, final budget sign\u2011off) to assign realistic dates, allowing typical lead times (e.g., 2\u2011week data\u2011migration window, 1\u2011week legal review). Gaps are left intentionally to reflect a medium\u2011quality plan.  \n5. **Capture dependencies** \u2013 link tasks that must finish before others can start (e.g., \u201cData\u2011migration complete\u201d \u2192 \u201cSystem cut\u2011over\u201d). Mark a subset of tasks as critical\u2011path (those whose delay would push the Day\u20111 go\u2011live).  \n6. **Add risk mitigations** \u2013 for each high\u2011impact task, note a simple mitigation (e.g., \u201crun parallel data\u2011validation runs\u201d).  \n7. **Insert budget checkpoints** \u2013 schedule finance reviews at key spend points (post\u2011legal, post\u2011technology procurement, post\u2011first\u2011month operating).  \n8. **Define communication milestones** \u2013 include integration steering\u2011committee updates, all\u2011hands briefings, and stakeholder newsletters.  \n9. **Produce the table** \u2013 present the schedule in a compact, readable table that the IMO can import into a tracker.  \n\nThe table below reflects the above approach. It is intentionally \u201cmedium quality\u201d: most major tasks are present, owners are assigned for the majority of items, dependencies are noted for many tasks, critical\u2011path items are highlighted, and risk mitigations, budget checkpoints, and communication milestones are included. Some lower\u2011level activities and detailed sub\u2011tasks are omitted, leaving realistic gaps that a project team would later fill in.  \n\n---\n\n## Workback Plan (Day\u2011by\u2011Day)\n\n| Date (2025) | Workstream | Deliverable / Task | Owner | Dependencies | Critical Path? | Risk Mitigation | Notes |\n|------------|------------|--------------------|-------|--------------|----------------|-----------------|-------|\n| **Jan\u202f15** | All | **Integration Kick\u2011off (Day\u202f0)** \u2013 formal announcement, charter sign\u2011off | Integration Lead (IMO) | \u2013 | Yes | \u2013 | Steering\u2011Committee briefing |\n| Jan\u202f16\u201120 | HR | Collect employee master data from MedPulse | HR Lead | \u2013 | No | Early data\u2011quality audit | Data\u2011template shared |\n| Jan\u202f16\u201120 | Finance | Compile baseline financial statements (AstraTech & MedPulse) | Finance Controller | \u2013 | No | Parallel reconciliation | Needed for budget baseline |\n| Jan\u202f21\u201125 | IT | Inventory all applications & infrastructure | IT Integration Manager | \u2013 | No | Use existing CMDB | Create integration inventory log |\n| Jan\u202f22 | Communications | Publish integration timeline & FAQs to all staff | Communications Lead | \u2013 | No | Draft reviewed by Legal | Email blast |\n| Jan\u202f23\u201127 | Legal/Compliance | Review regulatory approvals (HIPAA, data\u2011privacy) | Legal Counsel | \u2013 | Yes | Parallel external counsel review | Must be cleared before data migration |\n| Jan\u202f28\u2011Feb\u202f3 | HR | Design unified org\u2011chart & role mapping | HR Lead | Employee data collected | No | Conduct workshops with department heads | Owner approvals required |\n| Feb\u202f4\u201110 | IT | Define target architecture (cloud, on\u2011prem hybrid) | IT Integration Manager | Application inventory | Yes | Architecture review board | Architecture diagram frozen |\n| Feb\u202f11\u201115 | Finance | Align chart\u2011of\u2011accounts & cost\u2011center mapping | Finance Controller | Baseline statements | No | Reconcile with HR org\u2011chart | Finance system config prep |\n| Feb\u202f16\u201120 | Product | Consolidate product roadmaps & feature backlog | Product Owner | Target architecture defined | No | Joint roadmap session | Identify duplicate features |\n| Feb\u202f21\u201125 | Sales | Harmonize pricing models & contract templates | Sales Enablement Lead | Product roadmap | No | Legal sign\u2011off on new contracts | Update CPQ system |\n| Feb\u202f26\u2011Mar\u202f3 | IT | **Data\u2011migration design** \u2013 mapping, transformation rules | IT Integration Manager | Target architecture, data inventory | Yes | Run pilot migration on sample set | Document migration plan |\n| Mar\u202f4\u201110 | HR | Develop onboarding & off\u2011boarding process for merged staff | HR Lead | Org\u2011chart final | No | Pilot with 2 departments | Update HRIS |\n| Mar\u202f11\u201115 | Finance | Build merged budgeting & forecasting model | Finance Controller | Cost\u2011center mapping | No | Scenario testing | Review with CFO |\n| Mar\u202f16\u201122 | IT | **Data\u2011migration execution (Phase\u202f1 \u2013 core patient data)** | IT Integration Manager | Migration design approved | Yes | Dual\u2011run validation; rollback plan | Daily QA sign\u2011off |\n| Mar\u202f23\u201124 | Operations | Validate business\u2011process continuity (order\u2011to\u2011cash, procure\u2011to\u2011pay) | Operations Director | Finance & Sales alignment | No | Process walkthroughs | Issue log created |\n| Mar\u202f25\u201127 | Legal/Compliance | Final regulatory sign\u2011off for data handling | Legal Counsel | Data\u2011migration Phase\u202f1 complete | Yes | Contingency with regulator | Must be cleared before Day\u20111 |\n| **Mar\u202f28** | All | **Day\u20111 Go\u2011Live \u2013 Unified Systems & Processes** | Integration Lead | All Phase\u202f1 migrations, regulatory sign\u2011off | Yes | Hyper\u2011care support team (24/7) | Executive communication |\n| Mar\u202f29\u2011Apr\u202f4 | IT | Post\u2011go\u2011live monitoring & issue triage | IT Integration Manager | Day\u20111 go\u2011live | Yes | SLA\u2011based escalation | Daily status report |\n| Apr\u202f5\u20119 | HR | Conduct Day\u20111 employee orientation (culture, benefits) | HR Lead | Day\u20111 go\u2011live | No | Attendance tracking | Survey for feedback |\n| Apr\u202f10\u201114 | Finance | **First\u2011month financial reconciliation** \u2013 compare actuals vs. merged budget | Finance Controller | Day\u20111 go\u2011live, budget model | No | Variance analysis template | Finance steering update |\n| Apr\u202f15\u201119 | Product | Release joint MVP (minimum viable product) to pilot customers | Product Owner | Consolidated roadmap | No | Pilot feedback loop | Adjust backlog |\n| Apr\u202f20\u201124 | Sales | Enable sales team on new CPQ & pricing tools | Sales Enablement Lead | Pricing model final | No | Train\u2011the\u2011trainer sessions | Certification quiz |\n| Apr\u202f25\u201130 | Operations | Optimize supply\u2011chain hand\u2011off points | Operations Director | Process validation | No | KPI dashboard rollout | Weekly ops review |\n| **May\u202f1** | All | **100\u2011Day Review \u2013 Integration Health Check** | Integration Lead | All Day\u20111 activities + 30\u202fdays ops | No | Pre\u2011read deck circulated 1\u202fweek prior | Executive board meeting |\n| May\u202f2\u20116 | Finance | Budget checkpoint \u2013 compare spend vs. integration budget | Finance Controller | 100\u2011Day Review | No | Adjust forecast, seek additional funds if needed | Finance steering |\n| May\u202f7\u201111 | HR | Conduct employee pulse survey & retention analysis | HR Lead | 100\u2011Day Review | No | Action plan for any red flags | Report to leadership |\n| May\u202f12\u201116 | IT | Finalize **Phase\u202f2 migration** (analytics & reporting data) | IT Integration Manager | Phase\u202f1 stable | Yes | Parallel run; data\u2011quality dashboard | Target completion by May\u202f30 |\n| May\u202f17\u201121 | Legal/Compliance | Review any outstanding compliance items from Phase\u202f2 | Legal Counsel | Phase\u202f2 migration start | No | Checklist update | Sign\u2011off before full cut\u2011over |\n| May\u202f22\u201126 | Product | Align product support model (SLAs, escalation) | Product Owner | MVP pilot results | No | Support playbook | Training for support staff |\n| May\u202f27\u201131 | Operations | Refine operational SOPs based on first\u2011month learnings | Operations Director | Process validation | No | SOP version control | Publish to intranet |\n| Jun\u202f1\u20115 | All | **Integration Close\u2011out** \u2013 final documentation, lessons learned | Integration Lead | All workstreams completed | Yes | Archive repository; knowledge\u2011transfer session | Sign\u2011off by steering committee |\n\n*Legend*:  \n- **Critical Path?** \u2013 \u201cYes\u201d indicates a delay would push the Day\u20111 go\u2011live or 100\u2011day review.  \n- **Risk Mitigation** \u2013 high\u2011level actions to reduce likelihood or impact.  \n- **Notes** \u2013 additional context (e.g., required approvals, supporting activities).\n\n---\n\n# Breakdown\n\n### 1. Integration Initiation  \n1.1. Integration Kick\u2011off (Day\u202f0) \u2013 secure charter, assign Integration Lead.  \n1.2. Stakeholder communication (FAQs, timeline).  \n\n### 2. Planning & Design (Jan\u202f16\u202f\u2013\u202fFeb\u202f25)  \n2.1. HR \u2013 employee data collection \u2192 org\u2011chart design.  \n2.2. Finance \u2013 baseline statements \u2192 chart\u2011of\u2011accounts alignment.  \n2.3. IT \u2013 inventory \u2192 target architecture \u2192 data\u2011migration design.  \n2.4. Product \u2013 roadmap consolidation.  \n2.5. Sales \u2013 pricing & contract harmonization.  \n2.6. Operations \u2013 process continuity validation.  \n\n### 3. Data Migration & System Build (Feb\u202f26\u202f\u2013\u202fMar\u202f27)  \n3.1. Data\u2011migration design approval (critical).  \n3.2. Phase\u202f1 migration (core patient data) \u2013 execute, validate, obtain regulatory sign\u2011off.  \n\n### 4. Day\u20111 Go\u2011Live Preparation (Mar\u202f28)  \n4.1. Hyper\u2011care support team formation.  \n4.2. Final readiness checklist (IT, HR, Finance, Legal).  \n\n### 5. Post\u2011Go\u2011Live Stabilization (Mar\u202f29\u202f\u2013\u202fApr\u202f30)  \n5.1. IT monitoring & issue triage (critical).  \n5.2. HR orientation & employee engagement.  \n5.3. Finance first\u2011month reconciliation.  \n5.4. Product MVP release & pilot feedback.  \n5.5. Sales enablement on new tools.  \n5.6. Operations supply\u2011chain optimization.  \n\n### 6. 100\u2011Day Review & Adjustments (May\u202f1\u202f\u2013\u202fMay\u202f31)  \n6.1. Executive health\u2011check meeting.  \n6.2. Finance budget checkpoint.  \n6.3. HR pulse survey & retention plan.  \n6.4. Phase\u202f2 data migration (analytics).  \n6.5. Legal compliance verification for Phase\u202f2.  \n6.6. Product support model finalization.  \n6.7. Operations SOP refinement.  \n\n### 7. Integration Close\u2011out (Jun\u202f1\u202f\u2013\u202fJun\u202f5)  \n7.1. Consolidate final documentation, lessons learned.  \n7.2. Archive all artifacts, conduct knowledge\u2011transfer session.  \n7.3. Obtain formal sign\u2011off from Integration Steering Committee.  \n\n**Dependencies (selected examples)**  \n- 3.1 \u2192 3.2 (migration design must be approved before execution).  \n- 3.2 \u2192 4.1 (Phase\u202f1 data must be live before Day\u20111 go\u2011live).  \n- 4.1 \u2192 5.1 (Hyper\u2011care team ready before post\u2011go\u2011live monitoring).  \n- 5.3 \u2192 6.1 (Financial reconciliation data feeds the 100\u2011day review).  \n- 5.4 \u2192 6.4 (MVP feedback informs Phase\u202f2 analytics migration).  \n\n**Critical\u2011Path Highlights**  \n- Integration charter & stakeholder alignment (1.1).  \n- Target architecture & migration design (2.4, 3.1).  \n- Regulatory sign\u2011off (3.5).  \n- Phase\u202f1 data migration (3.2).  \n- Day\u20111 go\u2011live readiness (4.1).  \n- Post\u2011go\u2011live IT monitoring (5.1).  \n\n**Risk Mitigation Summary**  \n- Parallel validation runs for data migration.  \n- Early legal review to avoid regulatory delays.  \n- Hyper\u2011care support with defined SLA for Day\u20111 issues.  \n- Regular budget checkpoints to flag overspend.  \n- Communication cadence (weekly IMO updates, bi\u2011weekly all\u2011hands).  \n\n**Budget Checkpoints**  \n- Post\u2011legal & compliance review (Jan\u202f23\u201127).  \n- After target architecture & procurement decisions (Feb\u202f4\u201110).  \n- Pre\u2011Day\u20111 go\u2011live (Mar\u202f20\u201127).  \n- Post\u2011first\u2011month reconciliation (Apr\u202f10\u201114).  \n- 100\u2011day review (May\u202f1).  \n\n**Communication Milestones**  \n- Integration kickoff announcement (Jan\u202f15).  \n- Weekly status newsletters (every Friday).  \n- Steering\u2011Committee briefings (Jan\u202f22, Mar\u202f20, May\u202f1).  \n- All\u2011hands integration update (Mar\u202f28, May\u202f1).  \n\n---  \n\nThis workback plan provides the Integration Management Office with a clear, day\u2011by\u2011day schedule, ownership, dependencies, critical\u2011path visibility, risk\u2011mitigation actions, budget\u2011review points, and communication touch\u2011points needed to drive the AstraTech\u2011MedPulse integration to successful completion.",
+  "plan": {
+    "id": "document-001",
+    "name": "AstraTech\u2011MedPulse Integration Workback Plan",
+    "details": "Day\u2011by\u2011day integration schedule covering HR, IT, Finance, Product, Sales, Operations workstreams with owners, dependencies, critical\u2011path flags, risk mitigations, budget checkpoints and communication milestones.",
+    "draft": true,
+    "participants": [
+      {
+        "name": "Integration Lead (IMO)",
+        "email": "integrationlead@example.com",
+        "details": "Leads the Integration Management Office",
+        "draft": true
+      },
+      {
+        "name": "HR Lead",
+        "email": "hrlead@example.com",
+        "details": "Responsible for HR workstream",
+        "draft": true
+      },
+      {
+        "name": "Finance Controller",
+        "email": "financecontroller@example.com",
+        "details": "Responsible for Finance workstream",
+        "draft": true
+      },
+      {
+        "name": "IT Integration Manager",
+        "email": "itmanager@example.com",
+        "details": "Responsible for IT workstream",
+        "draft": true
+      },
+      {
+        "name": "Communications Lead",
+        "email": "communicationslead@example.com",
+        "details": "Handles integration communications",
+        "draft": true
+      },
+      {
+        "name": "Legal Counsel",
+        "email": "legalcounsel@example.com",
+        "details": "Handles regulatory and compliance matters",
+        "draft": true
+      },
+      {
+        "name": "Product Owner",
+        "email": "productowner@example.com",
+        "details": "Leads Product workstream",
+        "draft": true
+      },
+      {
+        "name": "Sales Enablement Lead",
+        "email": "saleslead@example.com",
+        "details": "Leads Sales workstream",
+        "draft": true
+      },
+      {
+        "name": "Operations Director",
+        "email": "operationsdirector@example.com",
+        "details": "Leads Operations workstream",
+        "draft": true
+      }
+    ],
+    "references": [],
+    "deliverables": [],
+    "tasks": [
+      {
+        "id": "task-001",
+        "name": "Integration Kick\u2011off (Day\u202f0)",
+        "draft": true,
+        "details": "Formal announcement, charter sign\u2011off. Critical Path: Yes.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-01-15T00:00:00Z",
+        "assignees": [
+          "integrationlead@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002",
+        "name": "Stakeholder communication (FAQs, timeline)",
+        "draft": true,
+        "details": "Publish integration timeline & FAQs to all staff.",
+        "dependencies": [
+          "task-001"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-01-22T00:00:00Z",
+        "assignees": [
+          "communicationslead@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003",
+        "name": "Collect employee master data from MedPulse",
+        "draft": true,
+        "details": "Gather employee master data. Risk mitigation: Early data\u2011quality audit.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-01-20T00:00:00Z",
+        "assignees": [
+          "hrlead@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-004",
+        "name": "Compile baseline financial statements (AstraTech & MedPulse)",
+        "draft": true,
+        "details": "Create baseline financial statements. Risk mitigation: Parallel reconciliation.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-01-20T00:00:00Z",
+        "assignees": [
+          "financecontroller@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-005",
+        "name": "Inventory all applications & infrastructure",
+        "draft": true,
+        "details": "Create integration inventory log.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-01-25T00:00:00Z",
+        "assignees": [
+          "itmanager@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-006",
+        "name": "Review regulatory approvals (HIPAA, data\u2011privacy)",
+        "draft": true,
+        "details": "Regulatory review. Critical Path: Yes. Risk mitigation: Parallel external counsel review.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-01-27T00:00:00Z",
+        "assignees": [
+          "legalcounsel@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-007",
+        "name": "Design unified org\u2011chart & role mapping",
+        "draft": true,
+        "details": "Develop unified org\u2011chart. Depends on employee data collection.",
+        "dependencies": [
+          "task-003"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-02-03T00:00:00Z",
+        "assignees": [
+          "hrlead@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-008",
+        "name": "Define target architecture (cloud, on\u2011prem hybrid)",
+        "draft": true,
+        "details": "Target architecture definition. Critical Path: Yes. Risk mitigation: Architecture review board.",
+        "dependencies": [
+          "task-005"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-02-10T00:00:00Z",
+        "assignees": [
+          "itmanager@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-009",
+        "name": "Align chart\u2011of\u2011accounts & cost\u2011center mapping",
+        "draft": true,
+        "details": "Finance system configuration preparation.",
+        "dependencies": [
+          "task-004"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-02-15T00:00:00Z",
+        "assignees": [
+          "financecontroller@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-010",
+        "name": "Consolidate product roadmaps & timelines",
+        "draft": true,
+        "details": "Product roadmap consolidation. Depends on target architecture.",
+        "dependencies": [
+          "task-008"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-02-20T00:00:00Z",
+        "assignees": [
+          "productowner@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-011",
+        "name": "Harmonize pricing models & contract templates",
+        "draft": true,
+        "details": "Pricing and contract alignment. Risk mitigation: Early legal review.",
+        "dependencies": [
+          "task-010",
+          "task-012"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-02-25T00:00:00Z",
+        "assignees": [
+          "saleslead@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-012",
+        "name": "Data\u2011migration design",
+        "draft": true,
+        "details": "Migration design must be approved before execution. Critical Path: Yes. Risk mitigation: Architecture review board.",
+        "dependencies": [
+          "task-008",
+          "task-005"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-03-03T00:00:00Z",
+        "assignees": [
+          "itmanager@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-013",
+        "name": "Develop onboarding & off\u2011boarding process",
+        "draft": true,
+        "details": "HR process development. Depends on unified org\u2011chart.",
+        "dependencies": [
+          "task-007"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-03-10T00:00:00Z",
+        "assignees": [
+          "hrlead@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-014",
+        "name": "Build merged budgeting & forecasting model",
+        "draft": true,
+        "details": "Finance model building. Depends on chart\u2011of\u2011accounts alignment.",
+        "dependencies": [
+          "task-009"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-03-15T00:00:00Z",
+        "assignees": [
+          "financecontroller@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-015",
+        "name": "Data\u2011migration execution Phase\u202f1 (patient, employee, financial data)",
+        "draft": true,
+        "details": "Phase\u202f1 data migration. Critical Path: Yes. Risk mitigation: Parallel validation runs.",
+        "dependencies": [
+          "task-012"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-03-22T00:00:00Z",
+        "assignees": [
+          "itmanager@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-016",
+        "name": "Validate business\u2011process continuity",
+        "draft": true,
+        "details": "Validate continuity of finance & sales processes.",
+        "dependencies": [
+          "task-011",
+          "task-014"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-03-24T00:00:00Z",
+        "assignees": [
+          "operationsdirector@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-017",
+        "name": "Final regulatory sign\u2011off for data handling",
+        "draft": true,
+        "details": "Regulatory sign\u2011off. Critical Path: Yes. Risk mitigation: Early legal review.",
+        "dependencies": [
+          "task-015"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-03-27T00:00:00Z",
+        "assignees": [
+          "legalcounsel@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-018",
+        "name": "Day\u20111 Go\u2011Live",
+        "draft": true,
+        "details": "Go\u2011live of integrated systems. Critical Path: Yes. Depends on Phase\u202f1 data migration and regulatory sign\u2011off.",
+        "dependencies": [
+          "task-015",
+          "task-017"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-03-28T00:00:00Z",
+        "assignees": [
+          "integrationlead@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-019",
+        "name": "Post\u2011go\u2011live monitoring & issue triage",
+        "draft": true,
+        "details": "IT monitoring after go\u2011live. Depends on Day\u20111 go\u2011live readiness.",
+        "dependencies": [
+          "task-018"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-04-04T00:00:00Z",
+        "assignees": [
+          "itmanager@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-020",
+        "name": "Conduct Day\u20111 employee orientation",
+        "draft": true,
+        "details": "Orientation for all employees. Depends on Day\u20111 go\u2011live.",
+        "dependencies": [
+          "task-018"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-04-09T00:00:00Z",
+        "assignees": [
+          "hrlead@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-021",
+        "name": "First\u2011month financial reconciliation",
+        "draft": true,
+        "details": "Reconciliation of first month financials. Depends on Day\u20111 go\u2011live.",
+        "dependencies": [
+          "task-018"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-04-14T00:00:00Z",
+        "assignees": [
+          "financecontroller@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-022",
+        "name": "Release joint MVP",
+        "draft": true,
+        "details": "Joint MVP release. Depends on product roadmap consolidation.",
+        "dependencies": [
+          "task-010"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-04-19T00:00:00Z",
+        "assignees": [
+          "productowner@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-023",
+        "name": "Enable sales team on new CPQ",
+        "draft": true,
+        "details": "Sales team training on new CPQ. Depends on pricing model harmonization.",
+        "dependencies": [
+          "task-011"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-04-24T00:00:00Z",
+        "assignees": [
+          "saleslead@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-024",
+        "name": "Optimize supply\u2011chain hand\u2011off points",
+        "draft": true,
+        "details": "Supply\u2011chain optimization. Depends on business\u2011process continuity validation.",
+        "dependencies": [
+          "task-016"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-04-30T00:00:00Z",
+        "assignees": [
+          "operationsdirector@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-025",
+        "name": "100\u2011Day Review",
+        "draft": true,
+        "details": "All\u2011hands integration update and formal review. Critical Path: Yes.",
+        "dependencies": [
+          "task-018",
+          "task-019",
+          "task-020",
+          "task-021",
+          "task-022",
+          "task-023",
+          "task-024"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-01T00:00:00Z",
+        "assignees": [
+          "integrationlead@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-026",
+        "name": "Budget checkpoint (post\u2011legal & compliance review)",
+        "draft": true,
+        "details": "Budget review after legal & compliance phase.",
+        "dependencies": [
+          "task-025"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-06T00:00:00Z",
+        "assignees": [
+          "financecontroller@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-027",
+        "name": "Employee pulse survey",
+        "draft": true,
+        "details": "HR pulse survey. Depends on 100\u2011Day Review.",
+        "dependencies": [
+          "task-025"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-11T00:00:00Z",
+        "assignees": [
+          "hrlead@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-028",
+        "name": "Phase\u202f2 migration (analytics & reporting)",
+        "draft": true,
+        "details": "Analytics and reporting data migration. Depends on post\u2011go\u2011live IT monitoring stability.",
+        "dependencies": [
+          "task-019"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-16T00:00:00Z",
+        "assignees": [
+          "itmanager@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-029",
+        "name": "Legal compliance review Phase\u202f2",
+        "draft": true,
+        "details": "Legal review of Phase\u202f2 migration. Depends on Phase\u202f2 migration execution.",
+        "dependencies": [
+          "task-028"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-21T00:00:00Z",
+        "assignees": [
+          "legalcounsel@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-030",
+        "name": "Align product support model",
+        "draft": true,
+        "details": "Define product support processes. Depends on joint MVP release.",
+        "dependencies": [
+          "task-022"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-26T00:00:00Z",
+        "assignees": [
+          "productowner@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-031",
+        "name": "Refine operational SOPs",
+        "draft": true,
+        "details": "Update SOPs based on supply\u2011chain optimization.",
+        "dependencies": [
+          "task-024"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-05-31T00:00:00Z",
+        "assignees": [
+          "operationsdirector@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-032",
+        "name": "Integration Close\u2011out",
+        "draft": true,
+        "details": "Formal sign\u2011off from Integration Steering Committee. Critical Path: Yes.",
+        "dependencies": [
+          "task-025",
+          "task-026",
+          "task-029",
+          "task-030",
+          "task-031"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "due-by": "2025-06-05T00:00:00Z",
+        "assignees": [
+          "integrationlead@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      }
+    ],
+    "history": []
+  }
+}

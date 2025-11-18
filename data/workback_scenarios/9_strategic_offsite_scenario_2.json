@@ -1,0 +1,47 @@
+{
+  "scenario_name": "Apex BioSolutions \u2013 2025 Strategic Planning Offsite",
+  "company_context": "Apex BioSolutions is a fast\u2011growing, publicly\u2011traded biotech company (NASDAQ: APXB) focused on next\u2011generation cell\u2011based immunotherapies for oncology and autoimmune diseases. The firm has $1.2\u202fB in annual revenue, $850\u202fM in cash, and a pipeline that includes two FDA\u2011approved CAR\u2011T products and three candidates in Phase\u202f2. The executive team is preparing the 2025\u20112027 strategic plan to decide on a new CAR\u2011NK platform, allocate a $200\u202fM R&D budget, and set company\u2011wide OKRs aligned with a five\u2011year vision of becoming the market leader in off\u2011the\u2011shelf cell therapies.",
+  "meeting_event_details": "Dates: Thursday\u202fJune\u202f10\u202f2025\u202f\u2013\u202fSaturday\u202fJune\u202f12\u202f2025 (3\u202fdays). Time: 8:30\u202fam\u202f\u2013\u202f5:30\u202fpm each day, with a half\u2011day off on Saturday (8:30\u202fam\u202f\u2013\u202f12:30\u202fpm). Location: The Lodge at Snowy River, 1450 Aspen Road, Aspen, Colorado (full\u2011board resort with conference facilities, high\u2011speed Wi\u2011Fi, and breakout rooms). The agenda includes market trend deep\u2011dives, competitive landscape workshops, visioning sessions, OKR formulation, and decision\u2011making panels.",
+  "stakeholders": [
+    "Dr. Elena Martinez \u2013 Chief Executive Officer (overall sponsor, final decision authority)",
+    "James Liu \u2013 Chief Financial Officer (budget oversight, financial modeling)",
+    "Dr. Priya Nair \u2013 Chief Medical Officer (pipeline and clinical strategy)",
+    "Dr. Victor Chen \u2013 Chief Technology Officer (technology platform evaluation)",
+    "Laura Patel \u2013 Chief Revenue Officer (commercial strategy, market access)",
+    "Megan O'Connor \u2013 Chief Human Resources Officer (talent and organization design)",
+    "Ravi Desai \u2013 Chief Strategy Officer (facilitates internal sessions, owns OKR framework)",
+    "Maya Patel \u2013 Lead Facilitator, Strategic Edge Consulting (external facilitator, neutral process owner)",
+    "External Advisors: Dr. Susan Kline (Regulatory), Mark Reynolds (M&A), and Karen Brooks (Payer & Reimbursement)",
+    "Board Liaison: Thomas Greene \u2013 Corporate Secretary (ensures alignment with board expectations)"
+  ],
+  "deliverables": [
+    "Executive Summary Deck (10\u2011slide) capturing vision, strategic priorities, and OKRs",
+    "Detailed 3\u2011Year Financial Model (2025\u20112027) with scenario analysis for new CAR\u2011NK platform",
+    "Competitive Landscape Matrix (incl. 12 global rivals, SWOT, market share forecasts)",
+    "R&D Portfolio Allocation Plan (budget split, milestones, go/no\u2011go gates)",
+    "Partnership & M&A Playbook (target criteria, deal pipeline, integration roadmap)",
+    "Action\u2011Item Tracker (owner, due date, KPI) for all decisions made",
+    "Board Briefing Package (full report + Q&A FAQ) to be delivered within 5\u202fbusiness days"
+  ],
+  "success_criteria": [
+    "All 5 strategic priorities are defined, ranked, and assigned owners by end of day\u202f2",
+    "Consensus on 2025\u20112026 OKRs achieved with \u226590\u202f% alignment score in post\u2011session survey",
+    "Decision on CAR\u2011NK platform (go/no\u2011go) documented with supporting financial model and risk register",
+    "R&D budget allocation approved and signed off by CFO and CEO before day\u202f3 close",
+    "Post\u2011offsite communication plan executed: executive summary sent to Board within 48\u202fhours, town\u2011hall scheduled within 2\u202fweeks, and action\u2011item tracker shared with all owners within 24\u202fhours"
+  ],
+  "constraints": [
+    "Total offsite budget capped at $150\u202fK (venue, travel, facilitator fees, materials)",
+    "All pre\u2011work (market research, financial analysis, customer insights) must be submitted to the facilitator by May\u202f28\u202f2025",
+    "Key external advisors have limited availability \u2013 must be scheduled for 2\u2011hour slots on June\u202f10 and\u202f11",
+    "Regulatory compliance: any discussion of unpublished data must be marked confidential and stored on encrypted drives",
+    "Travel restrictions: all attendees must have COVID\u201119 vaccination proof and negative test within 72\u202fhours of departure"
+  ],
+  "workback_prompt": "Generate a detailed work\u2011back plan for the Apex BioSolutions 2025 Strategic Planning Offsite (June 10\u201112, 2025, Aspen, CO). Include all pre\u2011work deliverables (market research, financial models, SWOT, customer insights), facilitator preparation, agenda\u2011by\u2011hour, logistics (travel, lodging, tech setup), decision\u2011gate reviews, post\u2011offsite communication (Board brief, town\u2011hall, action\u2011item tracker), and risk mitigation steps. Align tasks with the constraints (budget $150K, pre\u2011work deadline May 28, external advisor availability) and success criteria (priority definition, OKR consensus, CAR\u2011NK decision, budget sign\u2011off, communication rollout). Output a timeline with owners, due dates, dependencies, and required resources.",
+  "meeting_type": "Strategic Planning Offsite",
+  "meeting_type_key": "9_strategic_offsite",
+  "scenario_number": 2,
+  "horizon": "T-90",
+  "complexity": "Very High",
+  "generated_at": "2025-11-17T07:36:30.335588"
+}

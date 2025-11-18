@@ -1,0 +1,1898 @@
+{
+  "scenario_name": "Project Aurora \u2013 AI\u2011Powered Search Optimization Squad Mission",
+  "scenario_number": 3,
+  "meeting_type": "Squad Mission Planning",
+  "quality_level": "high",
+  "workback_prompt": "Generate a detailed 8\u2011week workback plan for the 'Project Aurora \u2013 AI\u2011Powered Search Optimization' squad mission. Include bi\u2011weekly milestones, owners, required inputs/outputs for each milestone, risk mitigation actions, and a timeline view. Align each deliverable and success metric with the mission charter, and reference the constraints (budget, compute quota, legal review, and cross\u2011team dependencies). Use the MMM framework (Mission, Milestone, Metric) to structure the plan and provide a concise executive summary for senior leadership.\n\nGenerate a HIGH QUALITY workback plan with these characteristics:\n- Comprehensive task coverage\n- Clear, actionable task descriptions\n- Well-defined dependencies\n- All tasks assigned to specific owners\n- Clear milestones with completion criteria\n- Realistic timelines with buffers\n- Proactive risk management\n- Complete deliverable list\n\nIMPORTANT: Generate a plan that naturally exhibits HIGH quality characteristics.\nDo not explicitly label the plan as \"high quality\" - let the quality emerge from the content.",
+  "generated_at": "2025-11-17T06:03:18.377543",
+  "analysis": "# Outcomes\n\n## 1. Executive Summary Blueprint  \nA concise, senior\u2011leadership\u2011ready narrative that frames the 8\u2011week workback plan, highlights the mission\u2011critical value of Project Aurora, and maps high\u2011level milestones, owners, and success metrics to the charter.  \nArtifact references: *none*  \n\n### Reasoning  \nThe user\u2019s request explicitly calls for a \u201cconcise executive summary for senior leadership.\u201d Providing a blueprint for this summary ensures the squad can quickly produce a polished front\u2011page document that aligns with the MMM (Mission\u2011Milestone\u2011Metric) structure and the charter constraints.\n\n### Approach  \n1. **Extract mission intent** \u2013 Review the mission charter to capture the core problem (search relevance), the AI\u2011powered solution, and the expected business impact.  \n2. **Summarize milestone cadence** \u2013 List the four bi\u2011weekly milestones (Weeks\u202f1\u20112, 3\u20114, 5\u20116, 7\u20118) with one\u2011sentence purpose statements.  \n3. **Highlight owners & key metrics** \u2013 Pair each milestone with its primary owner(s) and the metric that will be used to judge success (e.g., \u201cRecall@10\u202f\u2265\u202f0.85\u201d).  \n4. **Tie constraints to mitigation** \u2013 Note budget, compute quota, legal review, and cross\u2011team dependencies in a single paragraph, emphasizing how they are addressed.  \n5. **Draft the narrative** \u2013 Write 3\u20114 short paragraphs (mission, approach, timeline, risk posture) in a tone suitable for senior executives.  \n6. **Review loop** \u2013 Circulate the draft to the squad lead and the senior sponsor for feedback; incorporate edits within 1\u202fday.\n\n---\n\n## 2. Mission Definition & Success Metric Alignment  \nA formal, MMM\u2011styled articulation of the mission, its measurable success criteria, and the way each metric maps to the charter\u2019s business outcomes.  \n\n### Reasoning  \nThe plan must be \u201caligned each deliverable and success metric with the mission charter.\u201d Defining the mission and its metrics up\u2011front creates a reference point for every subsequent milestone and risk decision.\n\n### Approach  \n1. **Gather charter artifacts** \u2013 Pull the latest charter version, budget allocation sheet, and legal\u2011review checklist.  \n2. **Identify primary business goal** \u2013 E.g., \u201cIncrease search conversion rate by 12\u202f% within 3\u202fmonths of release.\u201d  \n3. **Derive technical objectives** \u2013 E.g., \u201cReduce average query latency <\u202f200\u202fms; improve relevance score NDCG@10\u202f\u2265\u202f0.9.\u201d  \n4. **Select MMM metrics** \u2013 Choose one **Mission** statement, four **Milestones** (bi\u2011weekly), and a **Metric** per milestone (quantitative, verifiable).  \n5. **Document alignment matrix** \u2013 Table rows = milestones; columns = mission goal, metric, charter clause, owner.  \n6. **Validate with stakeholders** \u2013 Run a 30\u2011minute alignment workshop with product, legal, and finance leads; capture sign\u2011off.\n\n---\n\n## 3. Bi\u2011Weekly Milestone Blueprint (Weeks\u202f1\u20112,\u202f3\u20114,\u202f5\u20116,\u202f7\u20118)  \nA detailed outline of each milestone, including purpose, owners, required inputs, expected outputs, completion criteria, and dependencies.  \n\n### Reasoning  \nThe user explicitly wants \u201cbi\u2011weekly milestones, owners, required inputs/outputs for each milestone, risk mitigation actions, and a timeline view.\u201d Structuring the milestones first provides the scaffolding for the full workback plan.\n\n### Approach  \nFor each of the four two\u2011week windows:  \n\n1. **Define purpose** \u2013 What problem is solved in this window?  \n2. **Assign primary owner(s)** \u2013 Product manager, data scientist lead, infra lead, etc.  \n3. **List required inputs** \u2013 Data sets, compute quota allocation, legal sign\u2011off, cross\u2011team API contracts.  \n4. **Specify outputs** \u2013 Model prototype, evaluation report, integration test suite, deployment script.  \n5. **Set completion criteria** \u2013 Objective, metric threshold, and sign\u2011off checklist.  \n6. **Map dependencies** \u2013 Identify upstream (e.g., data ingestion) and downstream (e.g., UI integration) links.  \n7. **Add risk mitigation** \u2013 For each identified risk (budget overrun, quota exhaustion, legal delay), note a concrete mitigation (contingency budget, quota reservation, early legal review).  \n\nDocument each milestone in a reusable template so the squad can fill in details quickly.\n\n---\n\n## 4. Owner & Role Assignment Matrix  \nA consolidated view that maps every task, milestone, and risk\u2011mitigation activity to a specific individual or role, with contact information and escalation path.  \n\n### Reasoning  \nThe request stresses \u201cAll tasks assigned to specific owners\u201d and \u201cClear milestones with completion criteria.\u201d A matrix prevents ambiguity and supports accountability.\n\n### Approach  \n1. **Catalog roles** \u2013 Squad lead, product owner, data engineer, ML researcher, infra engineer, legal liaison, finance liaison, cross\u2011team partner (e.g., UI squad).  \n2. **List all deliverables** \u2013 From the milestone blueprint plus supporting activities (budget request, quota request, compliance checklist).  \n3. **Assign owners** \u2013 Match each deliverable to the role most responsible; note secondary reviewers.  \n4. **Add escalation contacts** \u2013 For each owner, specify a backup and a senior escalation point.  \n5. **Publish** \u2013 Store the matrix in a shared, read\u2011only location (e.g., Confluence page) and link it from the executive summary.\n\n---\n\n## 5. Constraint\u2011Driven Risk Register & Mitigation Plan  \nA catalog of all constraints (budget, compute quota, legal review, cross\u2011team dependencies) with associated risks, probability/impact assessment, and proactive mitigation actions.  \n\n### Reasoning  \nThe user explicitly wants \u201crisk mitigation actions\u201d and to \u201creference the constraints.\u201d A formal risk register makes those constraints visible and actionable throughout the 8\u2011week timeline.\n\n### Approach  \n1. **Identify constraint categories** \u2013 Financial, technical (compute), compliance (legal), coordination (cross\u2011team).  \n2. **Brainstorm risks** \u2013 E.g., \u201cCompute quota exhausted before model training completes.\u201d  \n3. **Assess each risk** \u2013 Assign probability (Low/Medium/High) and impact (Low/Medium/High).  \n4. **Define mitigation** \u2013 E.g., \u201cReserve 20\u202f% of quota in advance; schedule a quota increase request by Day\u202f3 of Week\u202f1.\u201d  \n5. **Link to milestones** \u2013 Indicate which milestone each mitigation will be executed in.  \n6. **Establish monitoring** \u2013 Weekly risk\u2011status stand\u2011up; update register with actuals.\n\n---\n\n## 6. Timeline View (Gantt\u2011style) with Buffers  \nA visual schedule that plots the four milestones, key tasks, dependencies, and built\u2011in buffers (e.g., 1\u2011day contingency per milestone).  \n\n### Reasoning  \nThe user asks for \u201ca timeline view\u201d and \u201crealistic timelines with buffers.\u201d A high\u2011level visual aids senior leadership and the squad in tracking progress.\n\n### Approach  \n1. **Choose a simple visual tool** \u2013 Spreadsheet, Google Slides, or a lightweight Gantt plugin that the squad already uses.  \n2. **Plot milestones** \u2013 2\u2011week blocks, each with start/end dates (Week\u202f1\u202fMon \u2192 Week\u202f2\u202fFri, etc.).  \n3. **Add critical tasks** \u2013 From the milestone blueprint, place tasks on the timeline respecting dependencies.  \n4. **Insert buffers** \u2013 Allocate a 1\u2011day buffer after each major deliverable and a 2\u2011day overall project buffer at the end of Week\u202f8.  \n5. **Overlay constraints** \u2013 Color\u2011code periods where compute quota is reserved, or legal review windows occur.  \n6. **Review & lock** \u2013 Conduct a quick walkthrough with the squad lead; lock the timeline in the shared repository.\n\n---\n\n## 7. Full Workback Plan Document (Draft)  \nA single, cohesive document that combines the executive summary, mission\u2011metric alignment, milestone blueprint, owner matrix, risk register, and timeline view, ready for senior\u2011leadership review.  \n\n### Reasoning  \nAll individual outcomes feed into the final deliverable the user ultimately needs: a \u201cdetailed 8\u2011week workback plan.\u201d Providing a step\u2011by\u2011step path to assemble that document satisfies the request while adhering to the \u201cadvise, don\u2019t deliver\u201d guideline.\n\n### Approach  \n1. **Create a master outline** \u2013 Sections: Executive Summary, Mission & Metrics, Milestones, Owners, Risks, Timeline, Appendices.  \n2. **Populate sections** \u2013 Insert the artifacts produced in Outcomes\u202f1\u20116.  \n3. **Apply consistent formatting** \u2013 Use headings, tables, and visual elements for readability.  \n4. **Conduct internal review** \u2013 Squad lead, product owner, and legal liaison each provide written comments.  \n5. **Incorporate feedback** \u2013 Revise within 2\u202fdays.  \n6. **Finalize & distribute** \u2013 Export as PDF and share with senior leadership; store the source in the squad\u2019s documentation hub.\n\n---\n\n# Breakdown\n\n### 1. Executive Summary Blueprint\n1.1 Extract mission intent  \n1.2 Summarize milestone cadence  \n1.3 Highlight owners & key metrics  \n1.4 Tie constraints to mitigation  \n1.5 Draft narrative (3\u20114 paragraphs)  \n1.6 Review loop (lead \u2192 sponsor)  \n\n### 2. Mission Definition & Success Metric Alignment\n2.1 Gather charter, budget, legal checklist  \n2.2 Identify primary business goal  \n2.3 Derive technical objectives  \n2.4 Select MMM metrics (1 mission, 4 milestones, 4 metrics)  \n2.5 Document alignment matrix (table)  \n2.6 Validate with stakeholders (30\u2011min workshop)  \n\n### 3. Bi\u2011Weekly Milestone Blueprint\n3.1 For Weeks\u202f1\u20112  \n\u20033.1.1 Define purpose  \n\u20033.1.2 Assign owner(s)  \n\u20033.1.3 List required inputs  \n\u20033.1.4 Specify outputs  \n\u20033.1.5 Set completion criteria  \n\u20033.1.6 Map dependencies  \n\u20033.1.7 Add risk mitigations  \n3.2 Repeat steps 3.1 for Weeks\u202f3\u20114,\u202f5\u20116,\u202f7\u20118  \n3.3 Consolidate all milestones into a single template  \n\n### 4. Owner & Role Assignment Matrix\n4.1 Catalog squad and cross\u2011team roles  \n4.2 List all deliverables (from 3)  \n4.3 Assign primary and secondary owners  \n4.4 Add escalation contacts  \n4.5 Publish matrix in shared space  \n\n### 5. Constraint\u2011Driven Risk Register & Mitigation Plan\n5.1 Identify constraint categories  \n5.2 Brainstorm risks per category  \n5.3 Assess probability & impact  \n5.4 Define mitigation actions (including buffers)  \n5.5 Link mitigations to specific milestones (from 3)  \n5.6 Set up weekly risk\u2011status stand\u2011up  \n\n### 6. Timeline View (Gantt\u2011style) with Buffers\n6.1 Choose visual tool (spreadsheet/Gantt plugin)  \n6.2 Plot milestone blocks (Weeks\u202f1\u20118)  \n6.3 Add critical tasks (from 3) respecting dependencies  \n6.4 Insert 1\u2011day buffers after each deliverable + 2\u2011day project buffer  \n6.5 Color\u2011code constraint windows (budget, quota, legal)  \n6.6 Review with squad lead; lock version  \n\n### 7. Full Workback Plan Document (Draft)\n7.1 Create master outline (sections)  \n7.2 Insert executive summary (Outcome\u202f1)  \n7.3 Insert mission & metric alignment (Outcome\u202f2)  \n7.4 Insert milestone blueprint (Outcome\u202f3)  \n7.5 Insert owner matrix (Outcome\u202f4)  \n7.6 Insert risk register (Outcome\u202f5)  \n7.7 Insert timeline view (Outcome\u202f6)  \n7.8 Apply formatting & visual consistency  \n7.9 Conduct internal review (lead, PO, legal)  \n7.10 Incorporate feedback  \n7.11 Export final PDF & store source  \n\n---\n\n**Key Collaboration Tips**\n\n- **Weekly Sync:** Hold a 30\u2011minute \u201cWorkback Alignment\u201d call each Monday to confirm progress on the current milestone, surface new risks, and adjust buffers if needed.  \n- **Cross\u2011Team Liaisons:** Designate a single point of contact for each external team (e.g., UI, infra, compliance) to streamline dependency negotiations and avoid duplicated requests.  \n- **Documentation Hub:** Use a shared folder with version\u2011controlled documents (e.g., Google Drive or SharePoint). Require that any change to owners, dates, or metrics be logged in the document\u2019s change\u2011log section.  \n- **Risk Review Cadence:** Pair the weekly sync with a 5\u2011minute \u201crisk pulse\u201d where the owner of the highest\u2011impact open risk presents mitigation status.  \n- **Buffer Management:** If a buffer is consumed, trigger a \u201cscope\u2011adjust\u201d discussion within 24\u202fhours to decide whether to re\u2011allocate time from a later buffer or to de\u2011scope a low\u2011priority deliverable.  \n\nFollowing this structured approach will enable the squad to produce a comprehensive, MMM\u2011aligned 8\u2011week workback plan that meets senior\u2011leadership expectations while respecting budget, compute, legal, and cross\u2011team constraints.",
+  "plan": {
+    "id": "document-001",
+    "name": "8\u2011Week Workback Plan",
+    "details": "Generated workback plan with tasks, deliverables, participants, and dependencies for Project Aurora.",
+    "draft": true,
+    "participants": [
+      {
+        "name": "You",
+        "email": "",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "System",
+        "email": "",
+        "details": "",
+        "draft": true
+      }
+    ],
+    "references": [],
+    "deliverables": [
+      {
+        "id": "deliverable-001",
+        "name": "Executive Summary Blueprint",
+        "type": "word",
+        "draft": true,
+        "history": []
+      },
+      {
+        "id": "deliverable-002",
+        "name": "Mission Definition & Success Metric Alignment",
+        "type": "word",
+        "draft": true,
+        "history": []
+      },
+      {
+        "id": "deliverable-003",
+        "name": "Bi\u2011Weekly Milestone Blueprint",
+        "type": "word",
+        "draft": true,
+        "history": []
+      },
+      {
+        "id": "deliverable-004",
+        "name": "Owner & Role Assignment Matrix",
+        "type": "word",
+        "draft": true,
+        "history": []
+      },
+      {
+        "id": "deliverable-005",
+        "name": "Constraint\u2011Driven Risk Register & Mitigation Plan",
+        "type": "word",
+        "draft": true,
+        "history": []
+      },
+      {
+        "id": "deliverable-006",
+        "name": "Timeline View (Gantt\u2011style) with Buffers",
+        "type": "gantt",
+        "draft": true,
+        "history": []
+      },
+      {
+        "id": "deliverable-007",
+        "name": "Full Workback Plan Document (Draft)",
+        "type": "pdf",
+        "draft": true,
+        "history": []
+      }
+    ],
+    "tasks": [
+      {
+        "id": "task-001",
+        "name": "Executive Summary Blueprint",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-001-1",
+          "task-001-2",
+          "task-001-3",
+          "task-001-4",
+          "task-001-5",
+          "task-001-6"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [
+          "@deliverable[word]/deliverable-001"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-001-1",
+        "name": "Extract mission intent",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-001-2",
+        "name": "Summarize milestone cadence",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-001-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-001-3",
+        "name": "Highlight owners & key metrics",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-001-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-001-4",
+        "name": "Tie constraints to mitigation",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-001-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-001-5",
+        "name": "Draft narrative (3\u20114 paragraphs)",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-001-4"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-001-6",
+        "name": "Review loop (lead \u2192 sponsor)",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-001-5"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002",
+        "name": "Mission Definition & Success Metric Alignment",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-002-1",
+          "task-002-2",
+          "task-002-3",
+          "task-002-4",
+          "task-002-5",
+          "task-002-6"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [
+          "@deliverable[word]/deliverable-002"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002-1",
+        "name": "Gather charter, budget, legal checklist",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002-2",
+        "name": "Identify primary business goal",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-002-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002-3",
+        "name": "Derive technical objectives",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-002-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002-4",
+        "name": "Select MMM metrics (1 mission, 4 milestones, 4 metrics)",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-002-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002-5",
+        "name": "Document alignment matrix (table)",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-002-4"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002-6",
+        "name": "Validate with stakeholders (30\u2011min workshop)",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-002-5"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003",
+        "name": "Bi\u2011Weekly Milestone Blueprint",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-003-1",
+          "task-003-2",
+          "task-003-3",
+          "task-003-4"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [
+          "@deliverable[word]/deliverable-003"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003-1",
+        "name": "Weeks\u202f1\u20112 Milestone Blueprint",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-003-1-1",
+          "task-003-1-2",
+          "task-003-1-3",
+          "task-003-1-4",
+          "task-003-1-5",
+          "task-003-1-6",
+          "task-003-1-7"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003-1-1",
+        "name": "Define purpose",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003-1-2",
+        "name": "Assign owner(s)",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-003-1-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003-1-3",
+        "name": "List required inputs",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-003-1-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003-1-4",
+        "name": "Specify outputs",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-003-1-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003-1-5",
+        "name": "Set completion criteria",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-003-1-4"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003-1-6",
+        "name": "Map dependencies",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-003-1-5"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003-1-7",
+        "name": "Add risk mitigations",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-003-1-6"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003-2",
+        "name": "Weeks\u202f3\u20114 Milestone Blueprint",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-003-2-1",
+          "task-003-2-2",
+          "task-003-2-3",
+          "task-003-2-4",
+          "task-003-2-5",
+          "task-003-2-6",
+          "task-003-2-7"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003-2-1",
+        "name": "Define purpose",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003-2-2",
+        "name": "Assign owner(s)",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-003-2-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003-2-3",
+        "name": "List required inputs",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-003-2-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003-2-4",
+        "name": "Specify outputs",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-003-2-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003-2-5",
+        "name": "Set completion criteria",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-003-2-4"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003-2-6",
+        "name": "Map dependencies",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-003-2-5"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003-2-7",
+        "name": "Add risk mitigations",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-003-2-6"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003-3",
+        "name": "Weeks\u202f5\u20116 Milestone Blueprint",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-003-3-1",
+          "task-003-3-2",
+          "task-003-3-3",
+          "task-003-3-4",
+          "task-003-3-5",
+          "task-003-3-6",
+          "task-003-3-7"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003-3-1",
+        "name": "Define purpose",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003-3-2",
+        "name": "Assign owner(s)",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-003-3-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003-3-3",
+        "name": "List required inputs",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-003-3-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003-3-4",
+        "name": "Specify outputs",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-003-3-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003-3-5",
+        "name": "Set completion criteria",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-003-3-4"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003-3-6",
+        "name": "Map dependencies",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-003-3-5"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003-3-7",
+        "name": "Add risk mitigations",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-003-3-6"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003-4",
+        "name": "Weeks\u202f7\u20118 Milestone Blueprint",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-003-4-1",
+          "task-003-4-2",
+          "task-003-4-3",
+          "task-003-4-4",
+          "task-003-4-5",
+          "task-003-4-6",
+          "task-003-4-7"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003-4-1",
+        "name": "Define purpose",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003-4-2",
+        "name": "Assign owner(s)",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-003-4-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003-4-3",
+        "name": "List required inputs",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-003-4-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003-4-4",
+        "name": "Specify outputs",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-003-4-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003-4-5",
+        "name": "Set completion criteria",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-003-4-4"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003-4-6",
+        "name": "Map dependencies",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-003-4-5"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003-4-7",
+        "name": "Add risk mitigations",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-003-4-6"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-004",
+        "name": "Owner & Role Assignment Matrix",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-004-1",
+          "task-004-2",
+          "task-004-3",
+          "task-004-4",
+          "task-004-5"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [
+          "@deliverable[word]/deliverable-004"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-004-1",
+        "name": "Create Owner & Role Assignment Matrix (overall)",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-004-1-1",
+          "task-004-1-2",
+          "task-004-1-3",
+          "task-004-1-4",
+          "task-004-1-5"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-004-1-1",
+        "name": "Create Owner & Role Assignment Matrix",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-004-1-2",
+        "name": "Assign participants to matrix",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-004-1-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-004-1-3",
+        "name": "Define roles and responsibilities",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-004-1-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-004-1-4",
+        "name": "Populate matrix with owners and roles",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-004-1-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-004-1-5",
+        "name": "Validate matrix with stakeholders",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-004-1-4"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-005",
+        "name": "Constraint\u2011Driven Risk Register & Mitigation Plan",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-005-1",
+          "task-005-2",
+          "task-005-3",
+          "task-005-4",
+          "task-005-5",
+          "task-005-6"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [
+          "@deliverable[word]/deliverable-005"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-005-1",
+        "name": "Identify risk categories",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-005-2",
+        "name": "Prioritize risks by impact and likelihood",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-005-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-005-3",
+        "name": "Define mitigation actions for each risk",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-005-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-005-4",
+        "name": "Document risk register in tabular format",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-005-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-005-5",
+        "name": "Establish buffer management process",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-005-4"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-005-6",
+        "name": "Review and approve risk register with leadership",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-005-5"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-006",
+        "name": "Buffer Management Process",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-006-1",
+          "task-006-2",
+          "task-006-3",
+          "task-006-4",
+          "task-006-5"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-006-1",
+        "name": "Define buffer thresholds",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-006-2",
+        "name": "Create buffer monitoring dashboard",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-006-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-006-3",
+        "name": "Implement buffer alerts and escalation paths",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-006-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-006-4",
+        "name": "Train team on buffer usage policies",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-006-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-006-5",
+        "name": "Review buffer effectiveness post\u2011implementation",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-006-4"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-007",
+        "name": "Risk Management and Buffer Process",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-007-1",
+          "task-007-2",
+          "task-007-3",
+          "task-007-4",
+          "task-007-5"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-007-1",
+        "name": "Identify risk categories",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-007-2",
+        "name": "Prioritize risks by impact and likelihood",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-007-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-007-3",
+        "name": "Define mitigation actions for each risk",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-007-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-007-4",
+        "name": "Establish buffer management process",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-007-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-007-5",
+        "name": "Review and approve risk register with leadership",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-007-4"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-008",
+        "name": "Final Deliverables Compilation",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-008-1",
+          "task-008-2",
+          "task-008-3",
+          "task-008-4",
+          "task-008-5",
+          "task-008-6",
+          "task-008-7"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [
+          "@deliverable[docx]Final_Deliverables.docx"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-008-1",
+        "name": "Compile Owner & Role Assignment Matrix",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-008-2",
+        "name": "Compile Risk Register & Mitigation Plan",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-008-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-008-3",
+        "name": "Compile Buffer Management Process Documentation",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-008-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-008-4",
+        "name": "Compile Milestone Plans for Weeks 1\u20118",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-008-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-008-5",
+        "name": "Compile Owner & Role Assignment Matrix",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-008-4"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-008-6",
+        "name": "Compile Risk Register & Mitigation Plan",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-008-5"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-008-7",
+        "name": "Finalize and review all deliverables with stakeholders",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-008-6"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-009",
+        "name": "Project Closure and Handoff",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-009-1",
+          "task-009-2",
+          "task-009-3",
+          "task-009-4",
+          "task-009-5"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-009-1",
+        "name": "Conduct final project review meeting",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-009-2",
+        "name": "Archive all project artifacts",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-009-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-009-3",
+        "name": "Transfer knowledge to operations team",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-009-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-009-4",
+        "name": "Obtain sign\u2011off from stakeholders",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-009-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-009-5",
+        "name": "Close project budget and finalize documentation",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-009-4"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-010",
+        "name": "Final Review and Sign\u2011off",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-010-1",
+          "task-010-2",
+          "task-010-3",
+          "task-010-4",
+          "task-010-5",
+          "task-010-6",
+          "task-010-7"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-010-1",
+        "name": "Review Owner & Role Assignment Matrix",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-010-2",
+        "name": "Review Risk Register & Mitigation Plan",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-010-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-010-3",
+        "name": "Review Buffer Management Process",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-010-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-010-4",
+        "name": "Review Milestone Plans for Weeks 1\u20118",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-010-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-010-5",
+        "name": "Review Owner & Role Assignment Matrix",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-010-4"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-010-6",
+        "name": "Review Risk Register & Mitigation Plan",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-010-5"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-010-7",
+        "name": "Obtain final sign\u2011off from stakeholders",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-010-6"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-011",
+        "name": "Project Completion",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-011-1",
+          "task-011-2",
+          "task-011-3",
+          "task-011-4",
+          "task-011-5",
+          "task-011-6",
+          "task-011-7"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-011-1",
+        "name": "Finalize all project documentation",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-011-2",
+        "name": "Archive project artifacts",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-011-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-011-3",
+        "name": "Conduct final project review meeting",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-011-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-011-4",
+        "name": "Obtain sign\u2011off from stakeholders",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-011-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-011-5",
+        "name": "Close project budget and financials",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-011-4"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-011-6",
+        "name": "Transfer knowledge to operations team",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-011-5"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-011-7",
+        "name": "Celebrate project completion",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-011-6"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      }
+    ]
+  }
+}

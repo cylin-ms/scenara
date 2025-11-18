@@ -1,0 +1,508 @@
+{
+  "scenario_name": "CareConnect Squad Sprint 7 Planning (Patient Portal Enhancements)",
+  "scenario_number": 2,
+  "meeting_type": "Sprint Planning Meeting",
+  "quality_level": "medium",
+  "workback_prompt": "Create a detailed workback plan for Nimbus Health's CareConnect Squad Sprint 7 (14 Oct \u2013 27 Oct 2025). Include all tasks needed to deliver the sprint goal, assign owners, estimate effort, identify critical path items, and map each deliverable to the success criteria and constraints listed in the scenario. Output the plan as a table with columns: Task, Owner, Estimated Effort (hours), Start Date, End Date, Dependencies, Success Metric Alignment.\n\nGenerate a MEDIUM QUALITY workback plan with these characteristics:\n- Most major tasks present but some gaps\n- Reasonable task descriptions\n- Some dependencies defined\n- Most tasks have owners\n- Milestones present but may lack detail\n- Generally realistic timelines\n- Some consideration of risks\n- Key deliverables identified\n\nIMPORTANT: Generate a plan that naturally exhibits MEDIUM quality characteristics.\nDo not explicitly label the plan as \"medium quality\" - let the quality emerge from the content.",
+  "generated_at": "2025-11-17T04:29:18.084280",
+  "analysis": "## Outcomes\n\n### 1.\u202fSprint\u202f7 Workback Plan Delivered  \n**Brief description** \u2013 A complete, date\u2011driven workback plan that lists every major task required to meet the sprint goal, assigns owners, estimates effort, identifies dependencies, and maps each task to the sprint\u2019s success criteria.  \n\n**Artifact references** \u2013 none (plan will be created from the sprint brief).\n\n#### Reasoning  \nThe user explicitly asked for a \u201cdetailed workback plan \u2026 include all tasks needed to deliver the sprint goal, assign owners, estimate effort, identify critical path items, and map each deliverable to the success criteria and constraints.\u201d  This is the primary deliverable the user needs to begin Sprint\u202f7.\n\n#### Approach  \n1. **Gather Sprint Inputs** \u2013 pull the sprint goal, success criteria, and any constraints from the squad\u2019s charter (e.g., capacity limits, compliance rules).  \n2. **Identify Major Deliverables** \u2013 break the sprint goal into functional deliverables (e.g., new patient\u2011onboarding flow, API integration, UI refresh).  \n3. **Derive Tasks** \u2013 for each deliverable, list the typical lifecycle tasks (design, development, testing, documentation, demo).  \n4. **Assign Owners** \u2013 map tasks to the roles that exist in the CareConnect Squad (Product Owner, Scrum Master, Lead Engineer, QA Lead, UX Designer, DevOps).  \n5. **Estimate Effort** \u2013 use the squad\u2019s historical velocity (\u2248\u202f80\u202fh per two\u2011week sprint) to allocate realistic hour estimates, leaving ~\u202f10\u202f% buffer for unknowns.  \n6. **Define Dependencies** \u2013 link tasks that must finish before others can start (e.g., \u201cAPI contract\u201d \u2192 \u201cBackend implementation\u201d).  \n7. **Map to Success Metrics** \u2013 for each task note which success criterion it supports (e.g., \u201cFeature Acceptance Rate\u202f\u2265\u202f90\u202f%\u201d).  \n8. **Review & Iterate** \u2013 circulate the draft with the squad, incorporate feedback, and lock the plan before the sprint kickoff.\n\n---\n\n### 2.\u202fSprint\u202f7 Execution (Run the Plan)  \n**Brief description** \u2013 The squad works through the tasks in the plan, monitors progress, and resolves risks so that the sprint goal is achieved by 27\u202fOct\u202f2025.  \n\n#### Reasoning  \nA workback plan is only valuable if the team follows it.  Execution is the natural next outcome; it also provides a context for collaboration (daily stand\u2011ups, syncs, and risk reviews).\n\n#### Approach  \n1. **Kick\u2011off Meeting (14\u202fOct)** \u2013 review the plan, confirm capacity, and surface any immediate blockers.  \n2. **Daily Stand\u2011ups** \u2013 each member reports progress, updates effort burn\u2011down, and flags new dependencies.  \n3. **Mid\u2011Sprint Review (20\u202fOct)** \u2013 assess critical\u2011path tasks, adjust effort estimates, and re\u2011prioritize low\u2011risk items if capacity is threatened.  \n4. **Risk\u2011Mitigation Sessions** \u2013 dedicated 30\u2011minute slots (e.g., 16\u202fOct, 22\u202fOct) to discuss identified risks (resource conflict, compliance testing).  \n5. **Sprint Demo (26\u202fOct)** \u2013 demonstrate completed deliverables to stakeholders, collect acceptance feedback.  \n6. **Retrospective (27\u202fOct)** \u2013 capture lessons learned, note any gaps in the plan for the next sprint.\n\nCollaboration hinges on clear ownership, transparent progress tracking (e.g., shared board), and timely communication of dependencies.\n\n---\n\n### 3.\u202fSprint Success Validation  \n**Brief description** \u2013 Verify that all success criteria (e.g., feature acceptance rate, defect density, compliance sign\u2011off) are met and document the outcomes.  \n\n#### Reasoning  \nThe user asked to \u201cmap each deliverable to the success criteria and constraints.\u201d  Validation closes the loop, proving that the workback plan achieved its purpose.\n\n#### Approach  \n1. **Collect Metrics** \u2013 pull data from CI/CD dashboards, QA test reports, and stakeholder acceptance forms.  \n2. **Score Alignment** \u2013 for each task, confirm the \u201cSuccess Metric Alignment\u201d column matches the actual outcome.  \n3. **Report Generation** \u2013 produce a concise sprint\u2011summary (one\u2011page) that lists achieved metrics vs. targets.  \n4. **Stakeholder Sign\u2011off** \u2013 obtain written confirmation from the Product Owner and any compliance owners.  \n\n---\n\n## Breakdown (Work\u2011Breakdown Structure)\n\n```\n1. Sprint\u202f7 Workback Plan Delivered\n   1.1 Gather sprint inputs (goal, success criteria, constraints)\n   1.2 Identify major deliverables\n   1.3 Derive detailed tasks per deliverable\n   1.4 Assign owners to each task\n   1.5 Estimate effort (hours)\n   1.6 Define dependencies & critical path\n   1.7 Map tasks to success metrics\n   1.8 Review draft with squad \u2192 incorporate feedback\n   1.9 Publish final plan (table)\n\n2. Sprint\u202f7 Execution\n   2.1 Sprint kickoff (review plan, confirm capacity)\n   2.2 Daily stand\u2011ups (progress, blockers)\n   2.3 Mid\u2011sprint review (adjust estimates, re\u2011prioritize)\n   2.4 Risk\u2011mitigation sessions (identify & act on risks)\n   2.5 Development work (design, code, CI)\n   2.6 QA & compliance testing\n   2.7 Documentation & release notes\n   2.8 Sprint demo to stakeholders\n   2.9 Retrospective & improvement capture\n\n3. Sprint Success Validation\n   3.1 Gather metric data (acceptance, defects, compliance)\n   3.2 Compare against success criteria\n   3.3 Produce sprint\u2011summary report\n   3.4 Obtain stakeholder sign\u2011off\n```\n\n*Dependencies* \u2013 2.1 must finish before any task in 2.5\u20112.8 starts; 1.9 must be completed before 2.1; 2.8 depends on 2.5\u20112.7; 3.1 depends on completion of 2.8.\n\n---\n\n## Medium\u2011Quality Workback Plan (Table)\n\n| Task | Owner | Estimated Effort (hrs) | Start Date | End Date | Dependencies | Success Metric Alignment |\n|------|-------|------------------------|------------|----------|--------------|--------------------------|\n| Sprint Planning & Goal Review | Scrum Master | 4 | 14\u2011Oct | 14\u2011Oct | \u2013 | All success criteria (baseline) |\n| Backlog Refinement (story sizing) | Product Owner | 6 | 14\u2011Oct | 14\u2011Oct | Sprint Planning | Acceptance Rate \u2265\u202f90\u202f% |\n| UX Wireframes for Patient\u2011Onboarding | UX Designer | 12 | 15\u2011Oct | 16\u2011Oct | Backlog Refinement | Usability score \u2265\u202f4/5 |\n| API Contract Definition (FHIR endpoint) | Lead Engineer | 8 | 15\u2011Oct | 16\u2011Oct | Backlog Refinement | Compliance sign\u2011off |\n| Front\u2011end Mockup Review | Product Owner & UX Designer | 4 | 17\u2011Oct | 17\u2011Oct | Wireframes | Stakeholder satisfaction |\n| Backend Development \u2013 API | Lead Engineer | 20 | 17\u2011Oct | 21\u2011Oct | API Contract | Feature Acceptance \u2265\u202f90\u202f% |\n| Front\u2011end Development \u2013 Onboarding UI | Front\u2011end Engineer | 18 | 17\u2011Oct | 22\u2011Oct | Wireframes, API contract | Feature Acceptance \u2265\u202f90\u202f% |\n| Integration Tests (API + UI) | QA Lead | 10 | 22\u2011Oct | 23\u2011Oct | Backend & Front\u2011end dev | Defect density \u2264\u202f0.5 per 100\u202fLOC |\n| Security & Compliance Review | Compliance Analyst | 6 | 22\u2011Oct | 23\u2011Oct | API contract | Compliance sign\u2011off |\n| Documentation & Release Notes | Technical Writer | 6 | 23\u2011Oct | 24\u2011Oct | Integration tests | Documentation completeness \u2265\u202f95\u202f% |\n| Sprint Demo Preparation | Scrum Master | 4 | 24\u2011Oct | 24\u2011Oct | All development & docs | Stakeholder satisfaction |\n| Sprint Demo to Stakeholders | Product Owner | 2 | 26\u2011Oct | 26\u2011Oct | Demo prep | Acceptance Rate \u2265\u202f90\u202f% |\n| Sprint Retrospective | Scrum Master | 3 | 27\u2011Oct | 27\u2011Oct | Demo | Team improvement actions identified |\n| Risk Buffer (unexpected bug fixing) | Lead Engineer / QA Lead | 8 | 22\u2011Oct | 26\u2011Oct | Parallel with integration tests | Defect density \u2264\u202f0.5 per 100\u202fLOC |\n\n**Notes on the plan**\n\n* **Critical path** \u2013 API Contract \u2192 Backend Development \u2192 Front\u2011end Development \u2192 Integration Tests \u2192 Demo. Any slip on the contract pushes the whole sprint forward.  \n* **Milestones** \u2013 Wireframe sign\u2011off (17\u202fOct), API contract sign\u2011off (16\u202fOct), Integration test pass (23\u202fOct), Demo (26\u202fOct).  \n* **Risks captured** \u2013 potential delay in compliance review (mitigated by early hand\u2011off on 22\u202fOct) and unknown integration issues (buffer of 8\u202fh allocated).  \n* **Capacity check** \u2013 Total estimated effort \u2248\u202f115\u202fh. With a typical squad capacity of ~\u202f120\u202fh (6 members \u00d7\u202f20\u202fh per person over two weeks), the plan stays within realistic limits while leaving ~\u202f5\u202fh slack for unforeseen work.  \n\n--- \n\n### How to Begin\n\n1. **Distribute the table** to all squad members today (14\u202fOct) and hold a brief \u201cplan walkthrough\u201d meeting (30\u202fmin) to confirm owners and dates.  \n2. **Create a shared Kanban board** mirroring the tasks, with columns for \u201cTo Do,\u201d \u201cIn Progress,\u201d \u201cBlocked,\u201d and \u201cDone.\u201d Populate the board immediately.  \n3. **Set up a risk\u2011log** (e.g., a simple spreadsheet) where the Compliance Analyst and Lead Engineer can log any emerging issues; review it in the risk\u2011mitigation sessions on 16\u202fOct and 22\u202fOct.  \n4. **Agree on daily stand\u2011up cadence** (15\u2011Oct\u202f\u2192\u202f27\u2011Oct, 15\u202fmin) and ensure each member updates their effort remaining so the burn\u2011down stays visible.  \n\nBy following these initial steps, the CareConnect Squad will have a concrete, collaborative roadmap that aligns work with the sprint\u2019s success criteria while maintaining flexibility to address the inevitable uncertainties of a two\u2011week sprint.",
+  "plan": {
+    "id": "document-001",
+    "name": "Sprint 7 Workback Plan",
+    "details": "Workback plan for CareConnect Squad Sprint 7 covering planning, execution, and validation. Includes tasks for creating the plan, executing the sprint, and validating success criteria.",
+    "draft": true,
+    "participants": [
+      {
+        "name": "Product Owner",
+        "draft": true
+      },
+      {
+        "name": "Scrum Master",
+        "draft": true
+      },
+      {
+        "name": "Lead Engineer",
+        "draft": true
+      },
+      {
+        "name": "QA Lead",
+        "draft": true
+      },
+      {
+        "name": "UX Designer",
+        "draft": true
+      },
+      {
+        "name": "DevOps",
+        "draft": true
+      },
+      {
+        "name": "Compliance Analyst",
+        "draft": true
+      },
+      {
+        "name": "Front-end Engineer",
+        "draft": true
+      },
+      {
+        "name": "Technical Writer",
+        "draft": true
+      }
+    ],
+    "references": [],
+    "deliverables": [
+      {
+        "name": "Sprint Summary Report",
+        "type": "word",
+        "id": "report-001",
+        "draft": true,
+        "history": []
+      }
+    ],
+    "tasks": [
+      {
+        "id": "task-001",
+        "name": "Gather sprint inputs (goal, success criteria, constraints)",
+        "draft": true,
+        "details": "Collect sprint goal, success criteria, and constraints from the squad charter.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Scrum Master"
+        ]
+      },
+      {
+        "id": "task-002",
+        "name": "Identify major deliverables",
+        "draft": true,
+        "details": "Break the sprint goal into functional deliverables.",
+        "dependencies": [
+          "task-001"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Product Owner"
+        ]
+      },
+      {
+        "id": "task-003",
+        "name": "Derive detailed tasks per deliverable",
+        "draft": true,
+        "details": "List lifecycle tasks (design, development, testing, documentation, demo) for each deliverable.",
+        "dependencies": [
+          "task-002"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Lead Engineer"
+        ]
+      },
+      {
+        "id": "task-004",
+        "name": "Assign owners to each task",
+        "draft": true,
+        "details": "Map tasks to squad roles (Product Owner, Scrum Master, Lead Engineer, QA Lead, UX Designer, DevOps).",
+        "dependencies": [
+          "task-003"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Scrum Master"
+        ]
+      },
+      {
+        "id": "task-005",
+        "name": "Estimate effort (hours)",
+        "draft": true,
+        "details": "Allocate realistic hour estimates using squad velocity (~80\u202fh per sprint) with a 10\u202f% buffer.",
+        "dependencies": [
+          "task-004"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Product Owner"
+        ]
+      },
+      {
+        "id": "task-006",
+        "name": "Define dependencies & critical path",
+        "draft": true,
+        "details": "Identify tasks that must finish before others can start; highlight critical path.",
+        "dependencies": [
+          "task-005"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Lead Engineer"
+        ]
+      },
+      {
+        "id": "task-007",
+        "name": "Map tasks to success metrics",
+        "draft": true,
+        "details": "Link each task to a success criterion (e.g., acceptance rate \u2265\u202f90\u202f%).",
+        "dependencies": [
+          "task-006"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Product Owner"
+        ]
+      },
+      {
+        "id": "task-008",
+        "name": "Review draft with squad and incorporate feedback",
+        "draft": true,
+        "details": "Circulate the draft plan, gather input, and iterate.",
+        "dependencies": [
+          "task-007"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Scrum Master"
+        ]
+      },
+      {
+        "id": "task-009",
+        "name": "Publish final plan (table)",
+        "draft": true,
+        "details": "Lock the plan and share the final table with the squad.",
+        "dependencies": [
+          "task-008"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Scrum Master"
+        ]
+      },
+      {
+        "id": "task-010",
+        "name": "Sprint kickoff (review plan, confirm capacity)",
+        "draft": true,
+        "details": "Kick\u2011off meeting on 14\u202fOct to review the plan and confirm capacity.",
+        "dependencies": [
+          "task-009"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Scrum Master"
+        ]
+      },
+      {
+        "id": "task-011",
+        "name": "Daily stand\u2011ups (progress, blockers)",
+        "draft": true,
+        "details": "15\u2011Oct\u202f\u2192\u202f27\u2011Oct, 15\u202fmin each day.",
+        "dependencies": [
+          "task-010"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ]
+      },
+      {
+        "id": "task-012",
+        "name": "Mid\u2011sprint review (adjust estimates, re\u2011prioritize)",
+        "draft": true,
+        "details": "Review on 20\u202fOct to assess critical\u2011path tasks.",
+        "dependencies": [
+          "task-010"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Scrum Master"
+        ]
+      },
+      {
+        "id": "task-013",
+        "name": "Risk\u2011mitigation sessions (identify & act on risks)",
+        "draft": true,
+        "details": "30\u2011minute slots on 16\u202fOct and 22\u202fOct.",
+        "dependencies": [
+          "task-010"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Lead Engineer",
+          "Compliance Analyst"
+        ]
+      },
+      {
+        "id": "task-014",
+        "name": "Sprint Planning & Goal Review",
+        "draft": true,
+        "details": "4\u202fh effort on 14\u202fOct.",
+        "dependencies": [
+          "task-010"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Scrum Master"
+        ]
+      },
+      {
+        "id": "task-015",
+        "name": "Backlog Refinement (story sizing)",
+        "draft": true,
+        "details": "6\u202fh effort on 14\u202fOct, depends on Sprint Planning.",
+        "dependencies": [
+          "task-014"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Product Owner"
+        ]
+      },
+      {
+        "id": "task-016",
+        "name": "UX Wireframes for Patient\u2011Onboarding",
+        "draft": true,
+        "details": "12\u202fh effort, 15\u2011Oct\u202f\u2192\u202f16\u2011Oct.",
+        "dependencies": [
+          "task-015"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "UX Designer"
+        ]
+      },
+      {
+        "id": "task-017",
+        "name": "API Contract Definition (FHIR endpoint)",
+        "draft": true,
+        "details": "8\u202fh effort, 15\u2011Oct\u202f\u2192\u202f16\u2011Oct.",
+        "dependencies": [
+          "task-015"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Lead Engineer"
+        ]
+      },
+      {
+        "id": "task-018",
+        "name": "Front\u2011end Mockup Review",
+        "draft": true,
+        "details": "4\u202fh effort on 17\u202fOct.",
+        "dependencies": [
+          "task-016"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Product Owner",
+          "UX Designer"
+        ]
+      },
+      {
+        "id": "task-019",
+        "name": "Backend Development \u2013 API",
+        "draft": true,
+        "details": "20\u202fh effort, 17\u2011Oct\u202f\u2192\u202f21\u2011Oct.",
+        "dependencies": [
+          "task-017"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Lead Engineer"
+        ]
+      },
+      {
+        "id": "task-020",
+        "name": "Front\u2011end Development \u2013 Onboarding UI",
+        "draft": true,
+        "details": "18\u202fh effort, 17\u2011Oct\u202f\u2192\u202f22\u2011Oct.",
+        "dependencies": [
+          "task-016",
+          "task-017"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Front-end Engineer"
+        ]
+      },
+      {
+        "id": "task-021",
+        "name": "Integration Tests (API + UI)",
+        "draft": true,
+        "details": "10\u202fh effort, 22\u2011Oct\u202f\u2192\u202f23\u2011Oct.",
+        "dependencies": [
+          "task-019",
+          "task-020"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "QA Lead"
+        ]
+      },
+      {
+        "id": "task-022",
+        "name": "Security & Compliance Review",
+        "draft": true,
+        "details": "6\u202fh effort, 22\u2011Oct\u202f\u2192\u202f23\u2011Oct.",
+        "dependencies": [
+          "task-017"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Compliance Analyst"
+        ]
+      },
+      {
+        "id": "task-023",
+        "name": "Documentation & Release Notes",
+        "draft": true,
+        "details": "6\u202fh effort, 23\u2011Oct\u202f\u2192\u202f24\u2011Oct.",
+        "dependencies": [
+          "task-021"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Technical Writer"
+        ]
+      },
+      {
+        "id": "task-024",
+        "name": "Sprint Demo Preparation",
+        "draft": true,
+        "details": "4\u202fh effort on 24\u202fOct.",
+        "dependencies": [
+          "task-023"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Scrum Master"
+        ]
+      },
+      {
+        "id": "task-025",
+        "name": "Sprint Demo to Stakeholders",
+        "draft": true,
+        "details": "2\u202fh effort on 26\u202fOct.",
+        "dependencies": [
+          "task-024"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Product Owner"
+        ]
+      },
+      {
+        "id": "task-026",
+        "name": "Sprint Retrospective",
+        "draft": true,
+        "details": "3\u202fh effort on 27\u202fOct.",
+        "dependencies": [
+          "task-025"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Scrum Master"
+        ]
+      },
+      {
+        "id": "task-027",
+        "name": "Risk Buffer (unexpected bug fixing)",
+        "draft": true,
+        "details": "8\u202fh buffer allocated 22\u2011Oct\u202f\u2192\u202f26\u2011Oct.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Lead Engineer",
+          "QA Lead"
+        ]
+      },
+      {
+        "id": "task-028",
+        "name": "Gather metric data (acceptance, defects, compliance)",
+        "draft": true,
+        "details": "Collect data from CI/CD, QA reports, and stakeholder forms.",
+        "dependencies": [
+          "task-025"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "QA Lead"
+        ]
+      },
+      {
+        "id": "task-029",
+        "name": "Compare against success criteria",
+        "draft": true,
+        "details": "Analyze gathered metrics against predefined success criteria.",
+        "dependencies": [
+          "task-028"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Product Owner"
+        ]
+      },
+      {
+        "id": "task-030",
+        "name": "Produce sprint\u2011summary report",
+        "draft": true,
+        "details": "Create the final summary document.",
+        "dependencies": [
+          "task-029"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Technical Writer"
+        ],
+        "deliverables": [
+          {
+            "name": "Sprint Summary Report",
+            "type": "word",
+            "id": "report-001"
+          }
+        ]
+      },
+      {
+        "id": "task-031",
+        "name": "Obtain stakeholder sign\u2011off",
+        "draft": true,
+        "details": "Secure final approval from stakeholders.",
+        "dependencies": [
+          "task-030"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Product Owner"
+        ]
+      }
+    ],
+    "history": []
+  }
+}

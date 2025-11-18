@@ -1,0 +1,195 @@
+{
+  "basic_info": {
+    "full_name": "Lisa Anderson",
+    "age": 48,
+    "location": "Seattle, WA, USA",
+    "timezone": "America/Los_Angeles (PST)",
+    "years_experience": 25,
+    "education": [
+      {
+        "degree": "Bachelor of Arts",
+        "field": "Psychology",
+        "institution": "University of Washington",
+        "year": 1996
+      },
+      {
+        "degree": "Master of Business Administration",
+        "field": "Human Resources Management",
+        "institution": "Stanford University",
+        "year": 2002
+      }
+    ]
+  },
+  "work_habits": {
+    "preferred_working_hours": "early bird (7:00‑12:00)",
+    "peak_productivity_times": [
+      "7:30‑10:30",
+      "13:30‑15:30"
+    ],
+    "communication_style": {
+      "async_preference": true,
+      "sync_preference_for_urgent": true,
+      "expected_response_time_hours": 2
+    },
+    "meeting_preferences": {
+      "max_meeting_time_per_day_hours": 2,
+      "prefers_face_to_face_for_strategic": true,
+      "meeting_free_focus_blocks_per_day": 2
+    },
+    "work_environment": "hybrid (3 days in office, 2 days remote)",
+    "focus_time_requirements_minutes_per_day": 180
+  },
+  "personality": {
+    "mbti": "ENTJ",
+    "decision_making_approach": "data‑driven with stakeholder input",
+    "risk_tolerance": "moderate",
+    "collaboration_style": "structured, cross‑functional",
+    "stress_management_approach": "daily cardio, mindfulness meditation, scheduled downtime",
+    "conflict_resolution_style": "collaborative problem‑solving"
+  },
+  "skills": {
+    "core_technical_skills": [
+      {
+        "skill": "Workday HRIS",
+        "rating": 9
+      },
+      {
+        "skill": "SAP SuccessFactors",
+        "rating": 7
+      },
+      {
+        "skill": "Data Analytics (SQL, Tableau)",
+        "rating": 7
+      },
+      {
+        "skill": "Compensation Modeling",
+        "rating": 8
+      },
+      {
+        "skill": "Organizational Design",
+        "rating": 9
+      },
+      {
+        "skill": "Change Management",
+        "rating": 8
+      }
+    ],
+    "leadership_abilities": [
+      {
+        "ability": "Visionary Leadership",
+        "rating": 9
+      },
+      {
+        "ability": "Strategic Planning",
+        "rating": 9
+      },
+      {
+        "ability": "People Development",
+        "rating": 8
+      },
+      {
+        "ability": "Influencing & Negotiation",
+        "rating": 8
+      },
+      {
+        "ability": "Emotional Intelligence",
+        "rating": 7
+      }
+    ],
+    "domain_expertise_areas": [
+      "Talent Acquisition",
+      "Employee Relations",
+      "Diversity, Equity & Inclusion (DEI)",
+      "Learning & Development",
+      "Workforce Planning"
+    ],
+    "learning_agility": 9,
+    "tools_proficiency": [
+      "Workday",
+      "SAP SuccessFactors",
+      "Tableau",
+      "PowerBI",
+      "Asana",
+      "Slack",
+      "Microsoft Teams",
+      "Google Workspace"
+    ],
+    "languages_spoken": [
+      "English (native)",
+      "Spanish (conversational)"
+    ]
+  },
+  "performance": {
+    "task_completion_rate_percent": 95,
+    "quality_score_percent": 93,
+    "estimation_accuracy_percent": 88,
+    "multitasking_ability_rating": 8,
+    "performance_under_pressure_rating": 9
+  },
+  "availability": {
+    "available_hours_per_week": 45,
+    "timezone_and_working_hours": "PST (07:00‑18:00)",
+    "planned_time_off_days_per_year": 25,
+    "other_commitments": [
+      "Board member of Seattle TechNonprofit (quarterly meetings)",
+      "Speaker at industry conferences (2 per year)"
+    ],
+    "travel_flexibility": "high (up to 30% of time, domestic and occasional international)"
+  },
+  "personal_factors": {
+    "family_status": "Married, two teenage children (15 & 17)",
+    "caregiving_responsibilities": "Elder parent visits ~1 day per month",
+    "commute_situation": "30‑minute drive to office, occasional car‑share",
+    "health_considerations": "Managed hypertension, regular cardio and yoga",
+    "career_motivation": "Build an inclusive, high‑performing culture and leave a lasting DEI legacy"
+  },
+  "project_impact": {
+    "reliability_rating": 9,
+    "innovation_tendency_rating": 7,
+    "documentation_quality_rating": 8,
+    "mentorship_capability_rating": 9,
+    "influence_level_rating": 10
+  },
+  "collaboration": {
+    "meeting_frequency_preference": {
+      "one_on_one_with_direct_reports": "weekly",
+      "cross_functional_sync": "biweekly",
+      "all‑hands": "quarterly"
+    },
+    "communication_channels_preference": [
+      "Slack (quick async)",
+      "Email (formal)",
+      "Microsoft Teams (video)"
+    ],
+    "feedback_style": "direct but diplomatic",
+    "knowledge_sharing_habits": [
+      "Monthly HR insights newsletter",
+      "Quarterly brown‑bag learning sessions",
+      "Maintains a shared best‑practice repository in Confluence"
+    ],
+    "cross_team_collaboration_rating": 9
+  },
+  "risk_factors": {
+    "potential_bottlenecks": [
+      "Overcommitment to strategic initiatives reducing operational bandwidth",
+      "Limited delegation on day‑to‑day HR operations"
+    ],
+    "backup_person_needed": "Chief HR Officer (CHRO) or Senior Director of HR Operations",
+    "ramp_up_time_for_new_projects_weeks": 4,
+    "context_switching_tolerance_rating": 6,
+    "burnout_risk_factors": [
+      "High meeting load on strategic days",
+      "Travel combined with caregiving duties",
+      "Pressure to meet DEI targets while managing budget constraints"
+    ]
+  },
+  "_metadata": {
+    "generated_at": "2025-11-17T15:11:05.964551",
+    "name": "Lisa Anderson",
+    "role": "VP of Human Resources",
+    "seniority": "senior",
+    "company": "TechCorp",
+    "model": "gpt-oss:120b",
+    "provider": "ollama"
+  }
+}

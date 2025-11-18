@@ -1,0 +1,151 @@
+{
+  "basic_info": {
+    "full_name": "Emily Watson",
+    "age": 48,
+    "location": "San Francisco, CA, USA",
+    "timezone": "America/Los_Angeles (PST/PDT)",
+    "years_experience": 22,
+    "education": [
+      {
+        "degree": "B.S.",
+        "field": "Marketing",
+        "institution": "University of California, Berkeley",
+        "year": 1999
+      },
+      {
+        "degree": "M.B.A.",
+        "field": "Technology Management",
+        "institution": "Stanford Graduate School of Business",
+        "year": 2005
+      }
+    ]
+  },
+  "work_habits": {
+    "preferred_working_hours": "07:00-15:00 (early bird) with flexible start/end up to +/-1 hour",
+    "peak_productivity_times": "08:00-11:00 (deep work) and 13:00-14:30 (strategic planning)",
+    "communication_style": {
+      "async_preference": true,
+      "sync_preference": "brief daily stand‑ups",
+      "expected_response_time": "within 2 hours for urgent, within 24 hours for non‑urgent"
+    },
+    "meeting_preferences": {
+      "meeting_minimizer": true,
+      "preferred_meeting_length": "30‑45 minutes",
+      "face_to_face_preference": "quarterly in‑person offsites; otherwise video",
+      "no_meeting_blocks": "2‑hour focus blocks on Tuesdays and Thursdays"
+    },
+    "work_environment": "Hybrid (3 days in office, 2 days remote)",
+    "focus_time_requirements": "2‑3 uninterrupted blocks of 90 minutes per day, Do‑Not‑Disturb enabled"
+  },
+  "personality": {
+    "mbti": "ENTJ",
+    "decision_making_approach": "Data‑driven with stakeholder alignment; uses rapid prototyping to test hypotheses",
+    "risk_tolerance": 7,
+    "collaboration_style": "Strategic facilitator – sets clear objectives, delegates authority, checks progress",
+    "stress_management_approach": "Morning meditation (15 min) + scheduled micro‑breaks; delegates when bandwidth exceeds 80 %",
+    "conflict_resolution_style": "Direct but diplomatic – addresses issues early, seeks win‑win outcomes"
+  },
+  "skills": {
+    "core_technical_skills": {
+      "SEO/SEM": 9,
+      "Marketing Automation (HubSpot, Marketo)": 9,
+      "Data Analytics (SQL, Tableau, GA4)": 8,
+      "Growth Hacking": 8,
+      "Product Positioning": 9,
+      "AB Testing & CRO": 8,
+      "AI‑driven Campaign Optimization": 7
+    },
+    "leadership_abilities": {
+      "Vision Setting": 9,
+      "Team Development": 8,
+      "Change Management": 8,
+      "Cross‑Functional Influence": 9,
+      "Budget Management": 9,
+      "Public Speaking": 8
+    },
+    "domain_expertise_areas": [
+      "Enterprise SaaS go‑to‑market",
+      "Customer Lifecycle Marketing",
+      "Demand Generation",
+      "Brand Architecture for tech platforms"
+    ],
+    "learning_agility": 9,
+    "tools_proficiency": [
+      "HubSpot, Marketo, Pardot",
+      "Google Analytics 4, Mixpanel",
+      "Tableau, Looker",
+      "Asana, Jira, Confluence",
+      "Slack, Microsoft Teams"
+    ],
+    "languages_spoken": [
+      "English (native)",
+      "Spanish (conversational)"
+    ]
+  },
+  "performance": {
+    "task_completion_rate": 94,
+    "quality_score": 92,
+    "estimation_accuracy": 88,
+    "multitasking_ability": 7,
+    "performance_under_pressure": 9
+  },
+  "availability": {
+    "available_hours_per_week": 45,
+    "timezone_and_working_hours": "PST (07:00‑15:00 core), flexible for cross‑regional syncs",
+    "planned_time_off_days_per_year": 25,
+    "other_commitments": [
+      "Board advisor for a fintech startup (quarterly meetings)",
+      "Guest lecturer at Stanford (2‑3 days per semester)"
+    ],
+    "travel_flexibility": "High – up to 30 % of time, comfortable with domestic and occasional international trips"
+  },
+  "personal_factors": {
+    "family_status": "Married, two teenage children (15 & 17)",
+    "caregiving_responsibilities": "None currently; occasional support for aging parents (once per month)",
+    "commute_situation": "Short 15‑minute drive to office; prefers biking on good weather days",
+    "health_considerations": "Mild lower‑back tension – uses ergonomic workstation and regular stretching",
+    "career_motivation": "Passionate about building data‑driven culture, scaling global brands, and mentoring the next generation of marketers"
+  },
+  "project_impact": {
+    "reliability": 9,
+    "innovation_tendency": 8,
+    "documentation_quality": 7,
+    "mentorship_capability": 8,
+    "influence_level": 9
+  },
+  "collaboration": {
+    "meeting_frequency_preference": "Weekly leadership sync, daily 15‑min stand‑ups, bi‑weekly cross‑team workshops",
+    "communication_channels_preference": [
+      "Slack (async)",
+      "Email (formal decisions)",
+      "Zoom (brief syncs)",
+      "Miro (visual brainstorming)"
+    ],
+    "feedback_style": "Direct but supportive – uses data points, offers actionable next steps",
+    "knowledge_sharing_habits": "Publishes monthly internal newsletters, hosts quarterly lunch‑and‑learns, maintains a shared Confluence hub",
+    "cross_team_collaboration": 9
+  },
+  "risk_factors": {
+    "potential_bottlenecks": [
+      "Heavy reliance on Emily for final strategic sign‑off may delay timelines when she is on travel",
+      "Occasional over‑commitment to mentorship activities reduces bandwidth for urgent campaigns"
+    ],
+    "backup_person_needed": "Senior Director of Marketing – Alex Rivera (covers sign‑off in Emily’s absence)",
+    "ramp_up_time_weeks": 3,
+    "context_switching_tolerance": 6,
+    "burnout_risk_factors": [
+      "High meeting density during product launches",
+      "Travel spikes (Q4) combined with school commitments",
+      "Back‑to‑back strategic planning cycles without sufficient downtime"
+    ]
+  },
+  "_metadata": {
+    "generated_at": "2025-11-17T15:09:32.739049",
+    "name": "Emily Watson",
+    "role": "VP of Marketing",
+    "seniority": "senior",
+    "company": "TechCorp",
+    "model": "gpt-oss:120b",
+    "provider": "ollama"
+  }
+}

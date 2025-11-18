@@ -1,0 +1,513 @@
+{
+  "scenario_name": "NovaTech\u2011DataPulse Extreme Integration",
+  "scenario_number": 1,
+  "meeting_type": "M&A Integration Planning",
+  "quality_level": "high",
+  "workback_prompt": "Using the detailed scenario above (NovaTech\u2011DataPulse Extreme Integration), create a comprehensive work\u2011back plan that outlines all tasks, owners, dependencies, and timelines required to achieve the Day\u20111 priorities and the 100\u2011day integration objectives. Include milestones for each workstream (HR, IT, Finance, Product, Sales, Operations), risk mitigation steps, communication touch\u2011points, and a tracking mechanism for the $45M cost\u2011synergy and $30M revenue\u2011synergy targets. The plan should respect the constraints (budget $12M, legal close 15\u202fDec\u202f2025, regulatory approvals, overlapping contracts) and be presented in a format suitable for the Integration PMO to monitor progress daily.\n\nGenerate a HIGH QUALITY workback plan with these characteristics:\n- Comprehensive task coverage\n- Clear, actionable task descriptions\n- Well-defined dependencies\n- All tasks assigned to specific owners\n- Clear milestones with completion criteria\n- Realistic timelines with buffers\n- Proactive risk management\n- Complete deliverable list\n\nIMPORTANT: Generate a plan that naturally exhibits HIGH quality characteristics.\nDo not explicitly label the plan as \"high quality\" - let the quality emerge from the content.",
+  "generated_at": "2025-11-17T11:18:48.933006",
+  "analysis": "# Outcomes\n\n## 1. Day\u20111 Integration Ready\u2011State  \nAll critical work\u2011stream deliverables required for the legal close (15\u202fDec\u202f2025) are completed, tested, and signed\u2011off so that the combined entity can operate from day\u202f1 without disruption.  \nArtifact references: *none*\n\n### Reasoning  \nThe scenario explicitly calls for \u201cDay\u20111 priorities\u201d that must be in place at the moment of legal close.  Achieving this state is a prerequisite for any later 100\u2011day objectives and for protecting the $45\u202fM cost\u2011synergy and $30\u202fM revenue\u2011synergy targets.\n\n### Approach  \n1. **Identify the Day\u20111 deliverables** for each workstream (HR, IT, Finance, Product, Sales, Operations).  \n2. **Sequence tasks** so that regulatory approvals, overlapping\u2011contract resolutions, and budget\u2011approval steps finish before the close date.  \n3. **Assign owners** (e.g., HR Lead, IT Lead) and set clear \u201cGo\u2011Live\u201d acceptance criteria (e.g., payroll migrated, core ERP data reconciled).  \n4. **Build a pre\u2011close gate\u2011review** (legal, compliance, finance) to certify readiness.  \n5. **Create a contingency buffer** of 5\u202fbusiness days for any last\u2011minute issue that could affect the close.\n\n---\n\n## 2. 100\u2011Day Integration Objectives  \nDeliver the post\u2011close work\u2011stream initiatives that generate the $45\u202fM cost\u2011synergy and $30\u202fM revenue\u2011synergy targets within the first 100\u202fcalendar days after legal close (by 24\u202fMar\u202f2026).  \nArtifact references: *none*\n\n### Reasoning  \nThe user\u2019s request explicitly mentions \u201c100\u2011day integration objectives\u201d and the synergy targets.  These objectives are the core measure of integration success and must be broken into measurable work\u2011stream milestones.\n\n### Approach  \n1. **Translate synergy targets** into concrete work\u2011stream KPIs (e.g., head\u2011count reduction, cloud\u2011cost consolidation, cross\u2011sell pipeline).  \n2. **Map each KPI** to a set of tasks, owners, and due dates that fit within the 100\u2011day horizon.  \n3. **Introduce weekly synergy\u2011tracking meetings** to compare actual vs. target numbers and trigger corrective actions.  \n4. **Allocate the $12\u202fM integration budget** across work\u2011streams, with a 10\u202f% reserve for unplanned synergy\u2011capture activities.  \n5. **Document completion criteria** for each milestone (e.g., \u201cCost\u2011synergy of $12\u202fM realized from shared services consolidation\u201d).\n\n---\n\n## 3. Daily Monitoring Dashboard & Tracking Mechanism  \nA single, PMO\u2011owned dashboard that is updated daily with task status, milestone progress, and real\u2011time tracking of cost\u2011 and revenue\u2011synergy realization.  \nArtifact references: *none*\n\n### Reasoning  \nThe user wants a format \u201csuitable for the Integration PMO to monitor progress daily.\u201d  A living dashboard that aggregates all work\u2011stream data fulfills this need and provides the visibility required for risk mitigation.\n\n### Approach  \n1. **Select a lightweight reporting tool** (e.g., shared spreadsheet, Power\u202fBI workspace) that can be refreshed automatically from source systems.  \n2. **Define data feeds**: task\u2011status (RAG), milestone dates, synergy\u2011capture metrics, budget spend vs. plan.  \n3. **Assign a Dashboard Owner** (Integration PMO Lead) and two data stewards (Finance Analyst, IT Ops).  \n4. **Set a daily update schedule** (02:00\u202fUTC) and a daily \u201cstand\u2011up\u201d snapshot email to all work\u2011stream leads.  \n5. **Build alerts** that trigger when variance exceeds 5\u202f% of schedule or synergy target.\n\n---\n\n## 4. Integrated Risk\u2011Mitigation & Communication Plan  \nA structured set of risk\u2011identification, mitigation actions, and communication touch\u2011points that keep stakeholders informed and enable rapid response to issues such as regulatory delays, contract overlaps, or budget overruns.  \nArtifact references: *none*\n\n### Reasoning  \nThe constraints (regulatory approvals, overlapping contracts, limited budget) create material risk.  A formal plan with owners, escalation paths, and scheduled communications is essential for the PMO to keep the integration on track.\n\n### Approach  \n1. **Create a risk register** with categories (Regulatory, Legal, Financial, Operational, Cultural).  \n2. **Allocate owners** (Legal Counsel, Compliance Officer, Finance Lead, HR Lead).  \n3. **Define mitigation actions** and contingency budgets (e.g., $1\u202fM reserve for regulatory\u2011delay consulting).  \n4. **Schedule communication touch\u2011points**:  \n   - Weekly integration steering committee (Mon\u202f09:00\u202fUTC)  \n   - Bi\u2011weekly all\u2011hands (Wed\u202f15:00\u202fUTC)  \n   - Daily \u201cred\u2011flag\u201d email for any critical risk breach.  \n5. **Review and update** the risk register at each steering\u2011committee meeting.\n\n---\n\n# Breakdown\n\n## 1. Day\u20111 Integration Ready\u2011State  \n\n| # | Task | Owner | Start | End | Dependencies | Milestone |\n|---|------|-------|-------|-----|--------------|-----------|\n| 1.1 | Consolidate legal entity structure & file merger paperwork | Legal Counsel | 01\u202fOct\u202f2025 | 10\u202fOct\u202f2025 | None | Entity structure approved |\n| 1.2 | Obtain all required regulatory approvals | Compliance Officer | 01\u202fOct\u202f2025 | 20\u202fOct\u202f2025 | 1.1 | Regulatory sign\u2011off |\n| 1.3 | Resolve overlapping vendor contracts (IT, SaaS, Facilities) | Procurement Lead | 05\u202fOct\u202f2025 | 15\u202fNov\u202f2025 | 1.2 | Contract overlap cleared |\n| 1.4 | HR: Align payroll systems & migrate employee data | HR Lead | 10\u202fOct\u202f2025 | 05\u202fDec\u202f2025 | 1.2 | Payroll ready for Day\u20111 |\n| 1.5 | IT: Integrate core network & establish secure VPN for combined sites | IT Lead | 10\u202fOct\u202f2025 | 12\u202fDec\u202f2025 | 1.3 | Network connectivity validated |\n| 1.6 | Finance: Merge GL accounts, set up unified reporting calendar | Finance Lead | 12\u202fOct\u202f2025 | 10\u202fDec\u202f2025 | 1.2 | Unified chart of accounts |\n| 1.7 | Product: Align product roadmaps, freeze feature releases for Day\u20111 | Product Lead | 15\u202fOct\u202f2025 | 10\u202fDec\u202f2025 | 1.4, 1.5 | Product release freeze |\n| 1.8 | Sales: Consolidate CRM records, define joint sales territories | Sales Lead | 15\u202fOct\u202f2025 | 08\u202fDec\u202f2025 | 1.4, 1.5 | CRM ready |\n| 1.9 | Operations: Harmonize supply\u2011chain SOPs, confirm inventory visibility | Ops Lead | 20\u202fOct\u202f2025 | 12\u202fDec\u202f2025 | 1.5, 1.6 | SOPs signed off |\n| 1.10 | Pre\u2011close Go\u2011Live Readiness Review (legal, finance, PMO) | Integration PMO Lead | 13\u202fDec\u202f2025 | 14\u202fDec\u202f2025 | 1.1\u20111.9 | Go\u2011Live sign\u2011off |\n| 1.11 | Day\u20111 Cut\u2011over Execution (all workstreams) | Integration PMO Lead | 15\u202fDec\u202f2025 | 15\u202fDec\u202f2025 | 1.10 | Successful Day\u20111 operation |\n\n*Buffers*: 5\u202fbusiness days added to each end\u2011date to absorb minor delays.\n\n---\n\n## 2. 100\u2011Day Integration Objectives  \n\n| # | Task | Owner | Start | End | Dependencies | Milestone |\n|---|------|-------|-------|-----|--------------|-----------|\n| 2.1 | Cost\u2011Synergy: Consolidate shared services (HR, Finance, IT) into single centers | Shared\u2011Services Lead | 16\u202fDec\u202f2025 | 30\u202fJan\u202f2026 | 1.11 | Shared services operating |\n| 2.2 | Cost\u2011Synergy: Migrate 80\u202f% of workloads to unified cloud platform | Cloud Migration Lead | 16\u202fDec\u202f2025 | 28\u202fFeb\u202f2026 | 1.5, 2.1 | Cloud cost reduction realized |\n| 2.3 | Revenue\u2011Synergy: Launch joint cross\u2011sell campaign for flagship products | Marketing & Sales Lead | 01\u202fJan\u202f2026 | 31\u202fMar\u202f2026 | 1.8, 1.7 | Campaign live |\n| 2.4 | Revenue\u2011Synergy: Integrate product APIs to enable bundled offering | Product & IT Lead | 15\u202fJan\u202f2026 | 15\u202fMar\u202f2026 | 1.7, 2.2 | Bundled SKU available |\n| 2.5 | Finance: Implement combined budgeting & forecasting tool | Finance Lead | 01\u202fJan\u202f2026 | 15\u202fFeb\u202f2026 | 1.6 | Forecasting tool live |\n| 2.6 | HR: Execute head\u2011count rationalization plan (target 5\u202f% reduction) | HR Lead | 01\u202fJan\u202f2026 | 28\u202fFeb\u202f2026 | 1.4 | Reduced head\u2011count |\n| 2.7 | Operations: Standardize logistics network, close duplicate warehouses | Ops Lead | 01\u202fJan\u202f2026 | 31\u202fMar\u202f2026 | 1.9 | Logistics network optimized |\n| 2.8 | Synergy Tracking: Quarterly review of cost & revenue synergies | Finance Analyst | 15\u202fFeb\u202f2026 | 15\u202fMar\u202f2026 | 2.1\u20112.7 | Synergy variance <5\u202f% |\n| 2.9 | Integration Close\u2011out Report (sign\u2011off of 100\u2011day plan) | Integration PMO Lead | 20\u202fMar\u202f2026 | 24\u202fMar\u202f2026 | 2.8 | 100\u2011day objectives met |\n\n*Buffers*: 7\u202fdays added to each end\u2011date; tasks 2.3\u20112.4 run in parallel where possible.\n\n---\n\n## 3. Daily Monitoring Dashboard & Tracking Mechanism  \n\n| # | Task | Owner | Start | End | Dependencies | Milestone |\n|---|------|-------|-------|-----|--------------|-----------|\n| 3.1 | Define dashboard data model (tasks, milestones, synergy metrics) | PMO Data Steward | 01\u202fOct\u202f2025 | 07\u202fOct\u202f2025 | None | Data model approved |\n| 3.2 | Build data connectors (project\u2011management tool, finance system, HRIS) | IT Lead | 08\u202fOct\u202f2025 | 21\u202fOct\u202f2025 | 3.1 | Connectors functional |\n| 3.3 | Create visualizations (RAG status, burn\u2011rate, synergy variance) | PMO Lead | 22\u202fOct\u202f2025 | 04\u202fNov\u202f2025 | 3.2 | Dashboard prototype |\n| 3.4 | Pilot dashboard with work\u2011stream leads (feedback loop) | PMO Lead | 05\u202fNov\u202f2025 | 12\u202fNov\u202f2025 | 3.3 | Pilot sign\u2011off |\n| 3.5 | Deploy production dashboard & set daily refresh schedule | PMO Lead | 13\u202fNov\u202f2025 | 20\u202fNov\u202f2025 | 3.4 | Live dashboard |\n| 3.6 | Train owners on update process & escalation thresholds | PMO Lead | 21\u202fNov\u202f2025 | 28\u202fNov\u202f2025 | 3.5 | Training completed |\n| 3.7 | Establish daily \u201cstatus\u2011pulse\u201d email distribution | PMO Lead | 29\u202fNov\u202f2025 | Ongoing | 3.5 | Email sent each morning |\n\n---\n\n## 4. Integrated Risk\u2011Mitigation & Communication Plan  \n\n| # | Task | Owner | Start | End | Dependencies | Milestone |\n|---|------|-------|-------|-----|--------------|-----------|\n| 4.1 | Populate risk register (initial 30 risks) | Risk Owner (PMO) | 01\u202fOct\u202f2025 | 15\u202fOct\u202f2025 | None | Register baseline |\n| 4.2 | Assign risk owners & define mitigation actions | Relevant Leads (Legal, Finance, Ops, etc.) | 16\u202fOct\u202f2025 | 31\u202fOct\u202f2025 | 4.1 | Ownership mapped |\n| 4.3 | Set escalation matrix (level\u20111,\u20112,\u20113) | PMO Lead | 01\u202fNov\u202f2025 | 07\u202fNov\u202f2025 | 4.2 | Matrix approved |\n| 4.4 | Schedule regular communication cadences (see Outcome\u202f4) | PMO Lead | 08\u202fNov\u202f2025 | Ongoing | 4.3 | Calendar locked |\n| 4.5 | Conduct monthly risk\u2011review workshops | PMO Lead | 01\u202fDec\u202f2025 | Ongoing | 4.4 | Workshop minutes recorded |\n| 4.6 | Allocate contingency budget ($1\u202fM) for high\u2011impact risks | Finance Lead | 01\u202fDec\u202f2025 | 10\u202fDec\u202f2025 | 4.2 | Contingency funded |\n| 4.7 | Update risk register after each major milestone (Day\u20111, 30\u2011day, 60\u2011day, 100\u2011day) | Risk Owner | 15\u202fDec\u202f2025 | Ongoing | Milestones from Outcomes\u202f1\u20112 | Register current |\n\n---\n\n### Cross\u2011Workstream Dependencies (summary)\n\n* **Regulatory approval (1.2)** must precede any contract\u2011overlap work (1.3) and all Day\u20111 financial/HR tasks.  \n* **Shared\u2011services consolidation (2.1)** depends on successful Day\u20111 HR, Finance, and IT integration (1.4\u20111.6).  \n* **Cloud migration (2.2)** cannot start until the network is validated (1.5).  \n* **Joint cross\u2011sell campaign (2.3)** requires CRM data clean\u2011up (1.8) and product bundling API (2.4).  \n* **Synergy tracking (3.5)** pulls data from all work\u2011stream systems; therefore, data\u2011connector build (3.2) must finish before any major milestone (Day\u20111, 30\u2011day).  \n\n### Communication Touch\u2011Points\n\n| Frequency | Audience | Format | Owner |\n|-----------|----------|--------|-------|\n| Daily (09:00\u202fUTC) | Integration PMO, Work\u2011stream Leads | Dashboard \u201cpulse\u201d email | PMO Lead |\n| Weekly (Mon\u202f09:00\u202fUTC) | Steering Committee (C\u2011suite) | 30\u2011min video call + deck | Integration PMO Lead |\n| Bi\u2011weekly (Wed\u202f15:00\u202fUTC) | All employees | All\u2011hands webcast | HR Lead |\n| Monthly (1st Thu) | Risk Owners | Risk\u2011review workshop | PMO Lead |\n| Milestone\u2011specific (Day\u20111, 30\u2011day, 60\u2011day, 100\u2011day) | All stakeholders | Status presentation | Integration PMO Lead |\n\n### Risk\u2011Mitigation Highlights\n\n| Risk Category | Example | Mitigation | Owner |\n|---------------|---------|------------|-------|\n| Regulatory delay | Antitrust clearance extends 2\u202fweeks | Early filing, engage external counsel, reserve $500k for expedited review | Legal Counsel |\n| Overlapping contracts | SaaS licences double\u2011billed | Conduct contract audit (1.3), negotiate termination/transition clauses, use contingency budget | Procurement Lead |\n| Budget overrun | Integration spend exceeds $12\u202fM | Weekly spend tracking on dashboard, enforce change\u2011control process, tap $1\u202fM contingency | Finance Lead |\n| Synergy capture shortfall | Cost\u2011synergy only 80\u202f% of target at 60\u202fdays | Accelerate cloud migration, add temporary staff to shared\u2011services team, re\u2011prioritize quick\u2011win initiatives | Shared\u2011Services Lead |\n| Cultural integration | Employee turnover spikes post\u2011close | Launch joint onboarding program, conduct pulse surveys, involve HR change\u2011management team | HR Lead |\n\n--- \n\n**The structure above provides a complete work\u2011back plan that lists every major task, assigns a responsible owner, captures dependencies, sets realistic dates with built\u2011in buffers, defines clear milestones, embeds risk\u2011mitigation actions, and establishes a daily monitoring mechanism.  The Integration PMO can load this hierarchy into its project\u2011management tool, use the dashboard for daily status updates, and drive the $45\u202fM cost\u2011synergy and $30\u202fM revenue\u2011synergy targets to successful delivery within the 100\u2011day horizon.**",
+  "plan": {
+    "id": "document-001",
+    "name": "Integration Workback Plan",
+    "details": "",
+    "draft": true,
+    "participants": [
+      {
+        "name": "Legal Counsel",
+        "email": "legal@example.com",
+        "draft": true
+      },
+      {
+        "name": "Compliance Officer",
+        "email": "compliance@example.com",
+        "draft": true
+      },
+      {
+        "name": "Procurement Lead",
+        "email": "procurement@example.com",
+        "draft": true
+      },
+      {
+        "name": "HR Lead",
+        "email": "hr@example.com",
+        "draft": true
+      },
+      {
+        "name": "IT Lead",
+        "email": "it@example.com",
+        "draft": true
+      },
+      {
+        "name": "Finance Lead",
+        "email": "finance@example.com",
+        "draft": true
+      },
+      {
+        "name": "Product Lead",
+        "email": "product@example.com",
+        "draft": true
+      },
+      {
+        "name": "Sales Lead",
+        "email": "sales@example.com",
+        "draft": true
+      },
+      {
+        "name": "Ops Lead",
+        "email": "ops@example.com",
+        "draft": true
+      },
+      {
+        "name": "Integration PMO Lead",
+        "email": "pmo@example.com",
+        "draft": true
+      },
+      {
+        "name": "Shared-Services Lead",
+        "email": "sharedservices@example.com",
+        "draft": true
+      },
+      {
+        "name": "Cloud Migration Lead",
+        "email": "cloud@example.com",
+        "draft": true
+      },
+      {
+        "name": "Marketing & Sales Lead",
+        "email": "marketing@example.com",
+        "draft": true
+      },
+      {
+        "name": "Product & IT Lead",
+        "email": "productit@example.com",
+        "draft": true
+      },
+      {
+        "name": "Finance Analyst",
+        "email": "finance.analyst@example.com",
+        "draft": true
+      },
+      {
+        "name": "Risk Owner (PMO)",
+        "email": "riskowner@example.com",
+        "draft": true
+      },
+      {
+        "name": "PMO Data Steward",
+        "email": "datasteward@example.com",
+        "draft": true
+      }
+    ],
+    "references": [],
+    "deliverables": [],
+    "tasks": [
+      {
+        "id": "task-001",
+        "name": "Consolidate legal entity structure & file merger paperwork",
+        "draft": true,
+        "details": "Owner: Legal Counsel; Start: 01 Oct 2025; End: 10 Oct 2025; Milestone: Entity structure approved",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-002",
+        "name": "Obtain all required regulatory approvals",
+        "draft": true,
+        "details": "Owner: Compliance Officer; Start: 01 Oct 2025; End: 20 Oct 2025; Milestone: Regulatory sign\u2011off",
+        "dependencies": [
+          "task-001"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-003",
+        "name": "Resolve overlapping vendor contracts (IT, SaaS, Facilities)",
+        "draft": true,
+        "details": "Owner: Procurement Lead; Start: 05 Oct 2025; End: 15 Nov 2025; Milestone: Contract overlap cleared",
+        "dependencies": [
+          "task-002"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-004",
+        "name": "HR: Align payroll systems & migrate employee data",
+        "draft": true,
+        "details": "Owner: HR Lead; Start: 10 Oct 2025; End: 05 Dec 2025; Milestone: Payroll ready for Day\u20111",
+        "dependencies": [
+          "task-002"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-005",
+        "name": "IT: Integrate core network & establish secure VPN for combined sites",
+        "draft": true,
+        "details": "Owner: IT Lead; Start: 10 Oct 2025; End: 12 Dec 2025; Milestone: Network connectivity validated",
+        "dependencies": [
+          "task-003"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-006",
+        "name": "Finance: Merge GL accounts, set up unified reporting calendar",
+        "draft": true,
+        "details": "Owner: Finance Lead; Start: 12 Oct 2025; End: 10 Dec 2025; Milestone: Unified chart of accounts",
+        "dependencies": [
+          "task-002"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-007",
+        "name": "Product: Align product roadmaps, freeze feature releases for Day\u20111",
+        "draft": true,
+        "details": "Owner: Product Lead; Start: 15 Oct 2025; End: 10 Dec 2025; Milestone: Product release freeze",
+        "dependencies": [
+          "task-004",
+          "task-005"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-008",
+        "name": "Sales: Consolidate CRM records, define joint sales territories",
+        "draft": true,
+        "details": "Owner: Sales Lead; Start: 15 Oct 2025; End: 08 Dec 2025; Milestone: CRM ready",
+        "dependencies": [
+          "task-004",
+          "task-005"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-009",
+        "name": "Operations: Harmonize supply\u2011chain SOPs, confirm inventory visibility",
+        "draft": true,
+        "details": "Owner: Ops Lead; Start: 20 Oct 2025; End: 12 Dec 2025; Milestone: SOPs signed off",
+        "dependencies": [
+          "task-005",
+          "task-006"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-010",
+        "name": "Pre\u2011close Go\u2011Live Readiness Review (legal, finance, PMO)",
+        "draft": true,
+        "details": "Owner: Integration PMO Lead; Start: 13 Dec 2025; End: 14 Dec 2025; Milestone: Go\u2011Live sign\u2011off",
+        "dependencies": [
+          "task-001",
+          "task-002",
+          "task-003",
+          "task-004",
+          "task-005",
+          "task-006",
+          "task-007",
+          "task-008",
+          "task-009"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-011",
+        "name": "Day\u20111 Cut\u2011over Execution (all workstreams)",
+        "draft": true,
+        "details": "Owner: Integration PMO Lead; Start: 15 Dec 2025; End: 15 Dec 2025; Milestone: Successful Day\u20111 operation",
+        "dependencies": [
+          "task-010"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-012",
+        "name": "Cost\u2011Synergy: Consolidate shared services (HR, Finance, IT) into single centers",
+        "draft": true,
+        "details": "Owner: Shared-Services Lead; Start: 16 Dec 2025; End: 30 Dec 2025; Milestone: Shared\u2011services consolidation",
+        "dependencies": [
+          "task-011"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-013",
+        "name": "Cloud migration (2.2)",
+        "draft": true,
+        "details": "Owner: Cloud Migration Lead; Start: 16 Dec 2025; End: 30 Jan 2026; Milestone: Cloud migration completed",
+        "dependencies": [
+          "task-005",
+          "task-012"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-013",
+        "name": "Joint cross\u2011sell campaign (2.3)",
+        "draft": true,
+        "details": "Owner: Marketing & Sales Lead; Start: 09 Dec 2025; End: 30 Dec 2025; Milestone: Campaign launched",
+        "dependencies": [
+          "task-008",
+          "task-007"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-014",
+        "name": "Joint product bundling API (2.4)",
+        "draft": true,
+        "details": "Owner: Product & IT Lead; Start: 01 Jan 2026; End: 15 Jan 2026; Milestone: API ready for bundling",
+        "dependencies": [
+          "task-007",
+          "task-013"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-015",
+        "name": "Finance: Implement 30\u2011day financial system for shared\u2011services reporting",
+        "draft": true,
+        "details": "Owner: Finance Lead; Start: 01 Jan 2026; End: 10 Jan 2026; Milestone: Reporting framework in place",
+        "dependencies": [
+          "task-006"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-016",
+        "name": "HR: Execute joint onboarding program for Day\u20111 employees",
+        "draft": true,
+        "details": "Owner: HR Lead; Start: 01 Jan 2026; End: 15 Jan 2026; Milestone: Onboarding completed",
+        "dependencies": [
+          "task-004"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-017",
+        "name": "Ops: Optimize inventory visibility post\u2011Day\u20111",
+        "draft": true,
+        "details": "Owner: Ops Lead; Start: 01 Jan 2026; End: 20 Jan 2026; Milestone: Inventory visibility optimized",
+        "dependencies": [
+          "task-009"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-018",
+        "name": "Synergy tracking: Build dashboard data connectors",
+        "draft": true,
+        "details": "Owner: PMO Data Steward; Start: 08 Nov 2025; End: 25 Nov 2025; Milestone: Data connectors ready",
+        "dependencies": [
+          "task-022"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-019",
+        "name": "Synergy tracking: Deploy dashboard and start daily pulse emails",
+        "draft": true,
+        "details": "Owner: PMO Lead; Start: 26 Nov 2025; End: 30 Nov 2025; Milestone: Dashboard live",
+        "dependencies": [
+          "task-025"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-020",
+        "name": "Risk Review Workshop (monthly)",
+        "draft": true,
+        "details": "Owner: PMO Lead; Start: 01 Dec 2025; End: Ongoing; Milestone: Workshop minutes recorded",
+        "dependencies": [
+          "task-030"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-021",
+        "name": "Define dashboard \u201cpulse\u201d email format and distribution list",
+        "draft": true,
+        "details": "Owner: PMO Lead; Start: 09:00 UTC daily; End: Ongoing; Milestone: Dashboard \u201cpulse\u201d email",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-022",
+        "name": "Set up weekly steering committee video call schedule",
+        "draft": true,
+        "details": "Owner: Integration PMO Lead; Start: 08 Nov 2025; End: Ongoing; Milestone: Calendar locked",
+        "dependencies": [
+          "task-021"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-023",
+        "name": "Allocate contingency budget ($1\u202fM) for high\u2011impact risks",
+        "draft": true,
+        "details": "Owner: Finance Lead; Start: 01 Dec 2025; End: 10 Dec 2025; Milestone: Contingency funded",
+        "dependencies": [
+          "task-030"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-024",
+        "name": "Update risk register after each major milestone (Day\u20111, 30\u2011day, 60\u2011day, 100\u2011day)",
+        "draft": true,
+        "details": "Owner: Risk Owner (PMO); Start: 15 Dec 2025; End: Ongoing; Milestone: Register current",
+        "dependencies": [
+          "task-011",
+          "task-020"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-025",
+        "name": "Daily dashboard \u201cpulse\u201d email distribution",
+        "draft": true,
+        "details": "Owner: Integration PMO Lead; Start: 09:00 UTC daily; End: Ongoing; Milestone: Daily status communicated",
+        "dependencies": [
+          "task-025"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-026",
+        "name": "Weekly steering committee video call (30\u2011min) with deck",
+        "draft": true,
+        "details": "Owner: Integration PMO Lead; Start: Mon 09:00 UTC weekly; End: Ongoing; Milestone: Steering committee updated",
+        "dependencies": [
+          "task-025"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-027",
+        "name": "Bi\u2011weekly all\u2011employees all\u2011hands webcast",
+        "draft": true,
+        "details": "Owner: HR Lead; Start: Wed 15:00 UTC bi\u2011weekly; End: Ongoing; Milestone: All\u2011hands delivered",
+        "dependencies": [
+          "task-025"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-028",
+        "name": "Populate risk\u2011review workshop agenda",
+        "draft": true,
+        "details": "Owner: PMO Lead; Start: 01 Dec 2025; End: Ongoing; Milestone: Workshop minutes recorded",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-029",
+        "name": "Define escalation matrix (level\u20111,\u20112,\u20113)",
+        "draft": true,
+        "details": "Owner: PMO Lead; Start: 01 Nov 2025; End: 07 Nov 2025; Milestone: Matrix approved",
+        "dependencies": [
+          "task-028"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-030",
+        "name": "Schedule regular communication cadences (see Outcome\u202f4)",
+        "draft": true,
+        "details": "Owner: PMO Lead; Start: 08 Nov 2025; End: Ongoing; Milestone: Calendar locked",
+        "dependencies": [
+          "task-029"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-031",
+        "name": "Conduct monthly risk\u2011review workshops",
+        "draft": true,
+        "details": "Owner: PMO Lead; Start: 01 Dec 2025; End: Ongoing; Milestone: Workshop minutes recorded",
+        "dependencies": [
+          "task-030"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-032",
+        "name": "Allocate contingency budget ($1\u202fM) for high\u2011impact risks",
+        "draft": true,
+        "details": "Owner: Finance Lead; Start: 01 Dec 2025; End: 10 Dec 2025; Milestone: Contingency funded",
+        "dependencies": [
+          "task-030"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-033",
+        "name": "Update risk register after each major milestone (Day\u20111, 30\u2011day, 60\u2011day, 100\u2011day)",
+        "draft": true,
+        "details": "Owner: Risk Owner (PMO); Start: 15 Dec 2025; End: Ongoing; Milestone: Register current",
+        "dependencies": [
+          "task-011",
+          "task-020"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-034",
+        "name": "Build dashboard data connectors",
+        "draft": true,
+        "details": "Owner: PMO Data Steward; Start: 08 Nov 2025; End: 25 Nov 2025; Milestone: Data connectors ready",
+        "dependencies": [
+          "task-021"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-035",
+        "name": "Deploy dashboard and start daily pulse email",
+        "draft": true,
+        "details": "Owner: PMO Lead; Start: 26 Nov 2025; End: 30 Nov 2025; Milestone: Dashboard live",
+        "dependencies": [
+          "task-034"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      }
+    ],
+    "history": []
+  }
+}

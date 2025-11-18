@@ -1,0 +1,45 @@
+{
+  "scenario_name": "Nimbus Cloud Solutions \u2013 Enterprise SaaS Division Monthly Business Review (Product)",
+  "company_context": "Nimbus Cloud Solutions (NASDAQ: NCS) is a global provider of enterprise SaaS platforms for data analytics and AI-driven insights. The Enterprise SaaS Division serves Fortune 500 customers across North America, EMEA, and APAC. The Product Management team (30 FTE) reports to the SVP of Product and works cross\u2011functionally with Engineering, Sales, Marketing, and Customer Success. This month the team is launching the next\u2011gen AI Analytics Module (AIM) and addressing rising churn in the SMB segment.",
+  "meeting_event_details": "Date: 2025-12-05 (Tuesday)\\nTime: 10:00\u202fAM \u2013 11:30\u202fAM Pacific Time\\nDuration: 90 minutes\\nLocation: Nimbus HQ \u2013 Boardroom B (San Francisco) with Zoom hybrid link (Meeting ID: 945 672 1234)\\nPlanning Horizon: T\u201130 (workback plan must start 30 days before the meeting)",
+  "stakeholders": [
+    "Laura Chen \u2013 SVP, Product (Owner of agenda & decision authority)",
+    "Mark Patel \u2013 VP, Engineering (Technical feasibility & resource allocation)",
+    "Rita Gomez \u2013 CFO (Budget & financial impact)",
+    "James O'Neil \u2013 CEO (Strategic alignment)",
+    "Sofia Alvarez \u2013 Director, Product Management (Presenter, roadmap owner)",
+    "Ethan Liu \u2013 Head of Data Analytics (Data extraction & dashboard preparation)",
+    "Nina Patel \u2013 VP, Customer Success (Churn insights)",
+    "Carlos Mendes \u2013 VP, Sales (Revenue pipeline)",
+    "Olivia Reed \u2013 Director, Marketing (Go\u2011to\u2011market messaging)"
+  ],
+  "deliverables": [
+    "Updated 12\u2011month product roadmap highlighting AI Analytics Module milestones",
+    "Revised go\u2011to\u2011market launch plan for AIM (incl. pricing, positioning, partner enablement)",
+    "Churn reduction action plan for SMB segment (3 prioritized initiatives with owners & timelines)",
+    "Executive KPI dashboard (ARR, YoY growth, net new logo pipeline, churn %, NPS, feature adoption) refreshed with data as of 2025\u201111\u201130",
+    "Budget request memo for FY26 (additional $2M for AIM development & marketing spend)",
+    "Risk register for AIM launch (technical, compliance, market adoption) with mitigation actions"
+  ],
+  "success_criteria": [
+    "Executive sign\u2011off on the revised product roadmap and FY26 budget within the 90\u2011minute session",
+    "Consensus on at least three concrete SMB churn initiatives with assigned owners",
+    "KPI dashboard accuracy \u2265 95% (validated against source systems)",
+    "Meeting stays on schedule (\u2264 5 minutes overrun)",
+    "All data sources delivered at least 48\u202fhours before the meeting for validation"
+  ],
+  "constraints": [
+    "FY26 product development budget capped at $2M for the AI Analytics Module",
+    "Data extraction from Salesforce, Gainsight, Snowflake, and Amplitude has a 48\u2011hour latency window",
+    "Engineering resources for AIM are 70% allocated to existing Q4 releases \u2013 requires re\u2011prioritization",
+    "All customer\u2011facing features must comply with GDPR and CCPA; compliance review must be completed by 2025\u201111\u201120",
+    "Presentation must be compatible with both in\u2011room AV system and Zoom screen share (no proprietary software)"
+  ],
+  "workback_prompt": "Generate a detailed workback plan for the 'Nimbus Cloud Solutions \u2013 Enterprise SaaS Division Monthly Business Review (Product)' scenario. The plan should start 30 days before the meeting (T\u201130) and list all tasks, owners, start/end dates, dependencies, required data pulls, review checkpoints, and risk mitigation steps needed to deliver the listed deliverables on time, stay within the budget constraints, and meet the success criteria. Include milestones for data validation, roadmap finalization, budget memo approval, and rehearsal of the presentation.",
+  "meeting_type": "Monthly Business Review",
+  "meeting_type_key": "3_monthly_business_review",
+  "scenario_number": 3,
+  "horizon": "T-30",
+  "complexity": "High",
+  "generated_at": "2025-11-17T04:55:13.612697"
+}

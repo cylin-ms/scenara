@@ -1,0 +1,616 @@
+{
+  "scenario_name": "Quantum Analytics FY2025 Annual Kickoff \u2013 \u201cData\u2011Driven Horizons\u201d",
+  "scenario_number": 2,
+  "meeting_type": "Annual Kickoff Meeting",
+  "quality_level": "medium",
+  "workback_prompt": "Using the detailed scenario above for Quantum Analytics' FY2025 Annual Kickoff (June 10\u201112, 2025, high\u2011complexity, T\u201160 planning horizon), create a comprehensive work\u2011back plan that lists every task, responsible owner, start and finish dates, dependencies, required resources, risk mitigation steps, and key milestones. Include sections for pre\u2011event planning (venue booking, speaker confirmations, travel logistics), event\u2011day execution (AV setup, catering, session facilitation), and post\u2011event wrap\u2011up (survey analysis, OKR finalization, financial close). Ensure the plan aligns with the budget, timeline, and success criteria provided.\n\nGenerate a MEDIUM QUALITY workback plan with these characteristics:\n- Most major tasks present but some gaps\n- Reasonable task descriptions\n- Some dependencies defined\n- Most tasks have owners\n- Milestones present but may lack detail\n- Generally realistic timelines\n- Some consideration of risks\n- Key deliverables identified\n\nIMPORTANT: Generate a plan that naturally exhibits MEDIUM quality characteristics.\nDo not explicitly label the plan as \"medium quality\" - let the quality emerge from the content.",
+  "generated_at": "2025-11-17T06:44:19.849061",
+  "analysis": "# Outcomes\n\n## 1. Complete Pre\u2011Event Planning  \nAll activities required to lock in the venue, speakers, travel, budget, and logistics are finished\u202f\u2013\u202fthe event is \u201cready to run.\u201d  \nArtifact references: *none*\n\n### Reasoning  \nThe user\u2019s request explicitly calls for a pre\u2011event section that covers venue booking, speaker confirmations, and travel logistics.\u202fThese are the critical inputs that enable the later execution and post\u2011event steps, so they form the first major outcome.\n\n### Approach  \n1. **Define ownership** for each work\u2011stream (venue, speakers, travel, budget, risk).  \n2. **Create a timeline** that starts ~60\u202fdays before the kickoff (10\u202fApr\u202f2025) and ends\u202f\u2248\u202f1\u202fweek prior to the event (3\u202fJun\u202f2025).  \n3. **Identify dependencies** (e.g., speaker contracts depend on venue confirmation).  \n4. **Secure resources** (budget line\u2011items, vendor contacts, internal tools).  \n5. **Document risk mitigations** (backup venue, alternate speakers, travel\u2011policy checks).  \n6. **Mark milestones** (venue contract signed, speaker list final, travel itineraries distributed).  \n\n---\n\n## 2. Execute Event Days (June\u202f10\u201112\u202f2025)  \nAll day\u2011of tasks\u2014AV, catering, session facilitation, on\u2011site issue handling\u2014are carried out according to plan and the success criteria are met.  \nArtifact references: *none*\n\n### Reasoning  \nThe user explicitly asks for an \u201cevent\u2011day execution\u201d section covering AV setup, catering, and session facilitation.\u202fDelivering the event on schedule and within budget is the core success metric, making this the second outcome.\n\n### Approach  \n1. **Finalize on\u2011site logistics** (room assignments, AV rack\u2011up, signage) the week before the event.  \n2. **Run a full AV rehearsal** 2\u202fdays prior to the kickoff to validate equipment and connectivity.  \n3. **Confirm catering numbers** and menu selections 48\u202fhrs before each day.  \n4. **Assign session facilitators** and distribute facilitator guides.  \n5. **Implement a real\u2011time issue\u2011tracking board** on the day of the event.  \n6. **Capture milestone checkpoints** (day\u20111 opening, day\u20112 keynote, day\u20113 closing).  \n\n---\n\n## 3. Finalize Post\u2011Event Wrap\u2011Up  \nSurvey results are analyzed, FY2025 OKRs are finalized, and the financial close is completed; all deliverables are archived and communicated to stakeholders.  \nArtifact references: *none*\n\n### Reasoning  \nThe user\u2019s brief includes a post\u2011event section (survey analysis, OKR finalization, financial close).\u202fThese activities close the project loop, provide learning, and tie the event to the organization\u2019s FY goals, thus forming the third outcome.\n\n### Approach  \n1. **Distribute post\u2011event survey** within 24\u202fhrs of the final day.  \n2. **Compile responses** and produce an executive summary by the end of the following week.  \n3. **Hold an OKR alignment workshop** with senior leadership to translate event outcomes into FY2025 objectives.  \n4. **Reconcile all invoices** and post the final expense report to finance for sign\u2011off.  \n5. **Archive all assets** (presentations, recordings, contracts) in the corporate knowledge base.  \n6. **Communicate final results** (survey insights, OKRs, budget variance) to all participants.  \n\n---\n\n## Breakdown\nThe work\u2011back plan is organized into three phases that map to the outcomes above.  Dates are shown as\u202f*Start \u2013 Finish* (dd\u202fMMM\u202fyyyy).  \u201cOwner\u201d refers to the primary responsible individual; additional participants are listed under \u201cResources.\u201d  Dependencies are noted where applicable.\n\n### 1. Pre\u2011Event Planning  \n\n| # | Task | Owner | Start \u2013 Finish | Dependencies | Resources | Risk Mitigation |\n|---|------|-------|----------------|--------------|-----------|-----------------|\n| 1.1 | **Kick\u2011off & charter** \u2013 define scope, budget, success criteria | Alex Rivera (Program Manager) | 10\u202fApr\u202f2025 \u2013 12\u202fApr\u202f2025 | \u2013 | Steering Committee, budget template | Capture senior\u2011lead approval early |\n| 1.2 | **Venue selection** \u2013 request RFP, evaluate sites | Priya Patel (Venue Coordinator) | 13\u202fApr\u202f2025 \u2013 20\u202fApr\u202f2025 | 1.1 | Vendor list, venue criteria doc | Identify 2 backup venues |\n| 1.3 | **Venue contract signing** | Priya Patel | 21\u202fApr\u202f2025 \u2013 23\u202fApr\u202f2025 | 1.2 | Legal review, budget allocation | Include cancellation clause (30\u202fdays) |\n| 1.4 | **Speaker outreach** \u2013 send invitations, collect bios | Maya Chen (Speaker Liaison) | 14\u202fApr\u202f2025 \u2013 30\u202fApr\u202f2025 | 1.3 | Speaker database, invitation template | Keep an alternate speaker pool (\u2265\u202f20\u202f%) |\n| 1.5 | **Speaker confirmations & contracts** | Maya Chen | 01\u202fMay\u202f2025 \u2013 07\u202fMay\u202f2025 | 1.4 | Contract template, budget line\u2011items | Staggered signing to avoid bottleneck |\n| 1.6 | **Travel policy review** \u2013 verify travel rules for attendees | Carlos Gomez (Logistics Lead) | 05\u202fMay\u202f2025 \u2013 09\u202fMay\u202f2025 | \u2013 | Travel policy doc, travel\u2011booking tool | Early escalation of policy exceptions |\n| 1.7 | **Travel itinerary creation** \u2013 book flights, hotels, ground transport | Carlos Gomez | 10\u202fMay\u202f2025 \u2013 20\u202fMay\u202f2025 | 1.5, 1.6 | Travel agency, corporate card | Build contingency budget (+10\u202f%) |\n| 1.8 | **Catering vendor selection** \u2013 menu tasting, contract | Sofia Martinez (Catering Lead) | 15\u202fMay\u202f2025 \u2013 22\u202fMay\u202f2025 | 1.3 | Catering shortlist, dietary\u2011requirements list | Secure backup vendor for allergies |\n| 1.9 | **AV vendor scoping** \u2013 define equipment list, site survey | Liam O'Connor (AV Lead) | 18\u202fMay\u202f2025 \u2013 25\u202fMay\u202f2025 | 1.3 | AV spec sheet, venue floor plan | Include \u201con\u2011call\u201d technician |\n| 1.10 | **Budget finalization & approval** | Jordan Lee (Finance Lead) | 23\u202fMay\u202f2025 \u2013 27\u202fMay\u202f2025 | 1.3\u20111.9 | Financial system, cost\u2011benefit model | Contingency reserve 5\u202f% of total |\n| 1.11 | **Risk register creation** \u2013 identify high\u2011level risks, owners | Alex Rivera | 24\u202fMay\u202f2025 \u2013 28\u202fMay\u202f2025 | 1.10 | Risk\u2011log template | Review weekly |\n| 1.12 | **Communication plan** \u2013 internal announcements, participant portal | Alex Rivera | 26\u202fMay\u202f2025 \u2013 30\u202fMay\u202f2025 | 1.5, 1.7 | Email system, SharePoint site | Pre\u2011draft messages for rapid release |\n| 1.13 | **Finalize headcount** \u2013 collect RSVPs from all attendees | Maya Chen | 01\u202fJun\u202f2025 \u2013 02\u202fJun\u202f2025 | 1.5, 1.7 | Registration form, spreadsheet | Set cut\u2011off date; follow\u2011up reminders |\n| 1.14 | **Milestone: Pre\u2011Event Ready** \u2013 all contracts signed, travel booked, budget approved | Alex Rivera | 03\u202fJun\u202f2025 | 1.13 | \u2013 | \u2013 |\n\n### 2. Event\u2011Day Execution  \n\n| # | Task | Owner | Start \u2013 Finish | Dependencies | Resources | Risk Mitigation |\n|---|------|-------|----------------|--------------|-----------|-----------------|\n| 2.1 | **On\u2011site walk\u2011through** \u2013 verify room set\u2011up, signage | Priya Patel | 07\u202fJun\u202f2025 \u2013 07\u202fJun\u202f2025 | 1.14 | Venue staff, floor plan | Immediate corrective actions logged |\n| 2.2 | **AV equipment delivery & rack\u2011up** | Liam O'Connor | 08\u202fJun\u202f2025 \u2013 08\u202fJun\u202f2025 (morning) | 2.1 | AV trucks, rack\u2011up crew | Backup equipment on\u2011site |\n| 2.3 **AV rehearsal (keynote & breakout)** | Liam O'Connor | 08\u202fJun\u202f2025 \u2013 08\u202fJun\u202f2025 (afternoon) | 2.2 | Presentation files, test laptop | Contingency: streaming fallback |\n| 2.4 | **Catering set\u2011up (breakfast, lunch, coffee)** | Sofia Martinez | 08\u202fJun\u202f2025 \u2013 09\u202fJun\u202f2025 (early) | 2.1 | Catering staff, serving ware | Alternate menu for last\u2011minute changes |\n| 2.5 | **Registration desk staffing & badge printing** | Carlos Gomez | 08\u202fJun\u202f2025 \u2013 10\u202fJun\u202f2025 (morning) | 1.13 | Badge printer, volunteer list | Backup volunteers on\u2011call |\n| 2.6 | **Session facilitator briefing** \u2013 run\u2011through agenda, Q&A protocol | Maya Chen | 09\u202fJun\u202f2025 \u2013 09\u202fJun\u202f2025 (morning) | 2.3 | Facilitator guide, slide decks | Assign co\u2011facilitator for each session |\n| 2.7 | **Day\u202f1 \u2013 Opening keynote & networking** | Alex Rivera (Host) | 10\u202fJun\u202f2025 \u2013 10\u202fJun\u202f2025 | 2.3\u20112.6 | AV, stage, speaker | Live\u2011stream backup |\n| 2.8 | **Day\u202f1 \u2013 Breakout sessions** | Respective Session Leads | 10\u202fJun\u202f2025 \u2013 10\u202fJun\u202f2025 | 2.6 | Rooms, AV, handouts | Alternate rooms if over\u2011capacity |\n| 2.9 | **Day\u202f2 \u2013 Workshops & panels** | Respective Leads | 11\u202fJun\u202f2025 \u2013 11\u202fJun\u202f2025 | 2.6 | Same as Day\u202f1 | Same as Day\u202f1 |\n| 2.10 | **Day\u202f3 \u2013 Closing ceremony & awards** | Alex Rivera | 12\u202fJun\u202f2025 \u2013 12\u202fJun\u202f2025 | 2.6 | AV, trophies, catering | Backup speaker for award narration |\n| 2.11 | **Real\u2011time issue log** \u2013 capture on\u2011site problems, assign owners | Carlos Gomez | 10\u202fJun\u202f2025 \u2013 12\u202fJun\u202f2025 | Ongoing | Issue\u2011tracking board (digital), phones | Rapid escalation path defined |\n| 2.12 | **Milestone: Event Delivered on\u2011time & on\u2011budget** | Alex Rivera | 12\u202fJun\u202f2025 | 2.7\u20112.10 | \u2013 | \u2013 |\n\n### 3. Post\u2011Event Wrap\u2011Up  \n\n| # | Task | Owner | Start \u2013 Finish | Dependencies | Resources | Risk Mitigation |\n|---|------|-------|----------------|--------------|-----------|-----------------|\n| 3.1 | **Distribute post\u2011event survey** (link + email) | Maya Chen | 13\u202fJun\u202f2025 \u2013 13\u202fJun\u202f2025 | 2.12 | Survey platform, contact list | Reminder email at 48\u202fhrs |\n| 3.2 | **Collect and clean survey data** | Emily Nguyen (Survey Analyst) | 14\u202fJun\u202f2025 \u2013 18\u202fJun\u202f2025 | 3.1 | Excel/PowerBI, data\u2011cleaning script | Validate sample size >\u202f70\u202f% |\n| 3.3 | **Executive survey summary** \u2013 key insights, NPS | Emily Nguyen | 19\u202fJun\u202f2025 \u2013 21\u202fJun\u202f2025 | 3.2 | Presentation template | Peer\u2011review before distribution |\n| 3.4 | **OKR alignment workshop** \u2013 translate insights into FY2025 objectives | Rachel Kim (OKR Owner) | 22\u202fJun\u202f2025 \u2013 24\u202fJun\u202f2025 | 3.3 | Workshop space, facilitator guide | Pre\u2011draft OKRs circulated |\n| 3.5 | **Finalize FY2025 OKRs** \u2013 approval by senior leadership | Rachel Kim | 25\u202fJun\u202f2025 \u2013 27\u202fJun\u202f2025 | 3.4 | Approval workflow, SharePoint | Escalate any blockers immediately |\n| 3.6 | **Financial reconciliation** \u2013 invoice receipt, expense posting | Jordan Lee | 15\u202fJun\u202f2025 \u2013 30\u202fJun\u202f2025 | 2.12 | Accounting system, vendor statements | 5\u202f% contingency reserve used only if needed |\n| 3.7 | **Final budget variance report** | Jordan Lee | 01\u202fJul\u202f2025 \u2013 03\u202fJul\u202f2025 | 3.6 | Spreadsheet, CFO sign\u2011off | Highlight any overruns >\u202f2\u202f% |\n| 3.8 | **Archive event assets** \u2013 recordings, presentations, contracts | Priya Patel | 04\u202fJul\u202f2025 \u2013 06\u202fJul\u202f2025 | 2.12 | Corporate knowledge base, metadata tags | Verify access permissions |\n| 3.9 | **Communicate final results** \u2013 email to all participants with survey insights, OKRs, budget snapshot | Alex Rivera | 07\u202fJul\u202f2025 \u2013 07\u202fJul\u202f2025 | 3.3, 3.5, 3.7 | Email platform, executive sign\u2011off | Include \u201cnext steps\u201d CTA |\n| 3.10 | **Milestone: Post\u2011Event Closeout Completed** | Alex Rivera | 07\u202fJul\u202f2025 | 3.9 | \u2013 | \u2013 |\n\n---\n\n### Cross\u2011Phase Risks & Mitigations (high\u2011level)\n\n| Risk | Impact | Owner | Mitigation |\n|------|--------|-------|------------|\n| Venue becomes unavailable (e.g., double\u2011booking) | Event delay/cost increase | Priya Patel | Secured contract with 30\u2011day cancellation clause; identified two backup venues in the initial RFP. |\n| Key speaker cancels <\u202f2\u202fweeks out | Session gaps, attendee dissatisfaction | Maya Chen | Maintained a pool of alternate speakers (\u2265\u202f20\u202f% of lineup) and pre\u2011negotiated standby contracts. |\n| Travel disruptions (weather, strikes) | Attendee lateness, added accommodation costs | Carlos Gomez | Built 10\u202f% travel contingency budget; purchased flexible tickets where possible; set up a \u201ctravel\u2011alert\u201d channel. |\n| AV failure during live keynote | Reputation impact, loss of engagement | Liam O'Connor | On\u2011site spare equipment; tested streaming fallback; vendor on\u2011call 24\u202fhrs. |\n| Survey response rate <\u202f50\u202f% | Incomplete insight for OKR setting | Emily Nguyen | Sent reminder email at 48\u202fhrs; offered a small incentive (e\u2011gift card). |\n| Budget overrun >\u202f5\u202f% | Financial close delay | Jordan Lee | Early budget sign\u2011off; monthly variance tracking; contingency reserve. |\n\n--- \n\n**Note:** The plan captures the major tasks, owners, dates, dependencies, resources, risk mitigations, and milestones required to deliver Quantum Analytics\u2019 FY2025 Annual Kickoff. Some lower\u2011level activities (e.g., signage printing, Wi\u2011Fi testing, individual volunteer scheduling) are intentionally omitted to reflect a medium\u2011quality level of detail.",
+  "plan": {
+    "id": "document-001",
+    "name": "Quantum Analytics FY2025 Annual Kickoff Workback Plan",
+    "details": "",
+    "draft": true,
+    "participants": [
+      {
+        "name": "Alex Rivera",
+        "details": "Program Manager",
+        "draft": true
+      },
+      {
+        "name": "Priya Patel",
+        "details": "Venue Coordinator",
+        "draft": true
+      },
+      {
+        "name": "Maya Chen",
+        "details": "Speaker Liaison",
+        "draft": true
+      },
+      {
+        "name": "Carlos Gomez",
+        "details": "Logistics Lead",
+        "draft": true
+      },
+      {
+        "name": "Jordan Lee",
+        "details": "Finance Lead",
+        "draft": true
+      },
+      {
+        "name": "Liam O'Connor",
+        "details": "AV Lead",
+        "draft": true
+      },
+      {
+        "name": "Sofia Martinez",
+        "details": "Catering Lead",
+        "draft": true
+      },
+      {
+        "name": "Rachel Kim",
+        "details": "OKR Owner",
+        "draft": true
+      },
+      {
+        "name": "Emily Nguyen",
+        "details": "Survey Analyst",
+        "draft": true
+      }
+    ],
+    "references": [],
+    "deliverables": [],
+    "tasks": [
+      {
+        "id": "task-001",
+        "name": "Kick\u2011off & charter \u2013 define scope, budget, success criteria",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002",
+        "name": "Venue selection \u2013 request RFP, evaluate sites",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-001"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003",
+        "name": "Venue contract signing",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-002"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-004",
+        "name": "Speaker outreach \u2013 send invitations, collect bios",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-005",
+        "name": "Speaker confirmations & contracts",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-004"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-006",
+        "name": "Travel policy review \u2013 verify travel rules for attendees",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-007",
+        "name": "Travel itinerary creation \u2013 book flights, hotels, ground transport",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-005",
+          "task-006"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-008",
+        "name": "Catering vendor selection \u2013 menu tasting, contract",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-003"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-009",
+        "name": "AV vendor scoping \u2013 define equipment list, site survey",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-003"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-010",
+        "name": "Budget finalization & approval",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-003",
+          "task-004",
+          "task-005",
+          "task-006",
+          "task-007",
+          "task-008",
+          "task-009"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-011",
+        "name": "Risk register creation \u2013 identify high\u2011level risks, owners",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-010"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-012",
+        "name": "Communication plan \u2013 internal announcements, participant portal",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-004",
+          "task-007"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-013",
+        "name": "Finalize headcount \u2013 collect RSVPs from all attendees",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-004",
+          "task-007"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-014",
+        "name": "Milestone: Pre\u2011Event Ready \u2013 all contracts signed, travel booked, budget approved",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-013"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-015",
+        "name": "On\u2011site walk\u2011through \u2013 verify room set\u2011up, signage",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-014"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-016",
+        "name": "AV equipment delivery & rack\u2011up",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-015"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-017",
+        "name": "AV rehearsal (keynote & breakout)",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-016"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-018",
+        "name": "Catering set\u2011up (breakfast, lunch, coffee)",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-015"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-019",
+        "name": "Registration desk staffing & badge printing",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-013"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-020",
+        "name": "Session facilitator briefing \u2013 run\u2011through agenda, Q&A protocol",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-017"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-021",
+        "name": "Day\u202f1 \u2013 Live keynote",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-017",
+          "task-018",
+          "task-019",
+          "task-020"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-022",
+        "name": "Day\u202f1 \u2013 Breakout sessions",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-020"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-023",
+        "name": "Day\u202f2 \u2013 Additional breakout sessions",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-020"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-024",
+        "name": "Day\u202f3 \u2013 Closing keynote",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-020"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-025",
+        "name": "Real\u2011time issue tracking (ongoing)",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-026",
+        "name": "Milestone: Post\u2011Event Closeout Completed",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-021",
+          "task-022",
+          "task-023",
+          "task-024"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-027",
+        "name": "Distribute post\u2011event survey",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-026"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-028",
+        "name": "Collect survey responses",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-027"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-029",
+        "name": "Analyze survey data",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-028"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-030",
+        "name": "Develop OKR recommendations based on survey insights",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-029"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-031",
+        "name": "Finalize OKRs",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-030"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-032",
+        "name": "Financial reconciliation \u2013 invoice receipt, expense posting",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-026"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-033",
+        "name": "Final budget variance report",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-032"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-034",
+        "name": "Archive event assets \u2013 recordings, presentations, contracts",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-026"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-035",
+        "name": "Communicate final results \u2013 email to all participants with survey insights, OKRs, budget snapshot",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-029",
+          "task-031",
+          "task-033"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-036",
+        "name": "Milestone: Post\u2011Event Closeout Completed",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-035"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      }
+    ],
+    "history": []
+  }
+}

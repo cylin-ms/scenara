@@ -1,0 +1,471 @@
+{
+  "scenario_name": "CareConnect Squad Sprint 7 Planning (Patient Portal Enhancements)",
+  "scenario_number": 3,
+  "meeting_type": "Sprint Planning Meeting",
+  "quality_level": "high",
+  "workback_prompt": "Generate a detailed workback plan for the CareConnect Squad's Sprint 7 (2\u2011week) planning scenario described above. The plan should break down each deliverable into weekly milestones, identify critical path tasks, assign owners, list required dependencies (including external LabPartner API and design assets), outline risk mitigation for known blockers (e.g., PTO, security review timing), and provide a timeline view (day\u2011by\u2011day) that ensures all success criteria are met by the sprint end on 19\u202fMay\u202f2025.\n\nGenerate a HIGH QUALITY workback plan with these characteristics:\n- Comprehensive task coverage\n- Clear, actionable task descriptions\n- Well-defined dependencies\n- All tasks assigned to specific owners\n- Clear milestones with completion criteria\n- Realistic timelines with buffers\n- Proactive risk management\n- Complete deliverable list\n\nIMPORTANT: Generate a plan that naturally exhibits HIGH quality characteristics.\nDo not explicitly label the plan as \"high quality\" - let the quality emerge from the content.",
+  "generated_at": "2025-11-17T04:38:29.032385",
+  "analysis": "# Outcomes\n\n## Sprint\u202f7 Workback Plan \u2013 CareConnect Squad  \nA complete, day\u2011by\u2011day work\u2011back schedule that breaks every Sprint\u202f7 deliverable into weekly milestones, identifies the critical\u2011path activities, assigns clear owners, lists all internal and external dependencies (including the LabPartner API and design assets), and embeds risk\u2011mitigation actions for known blockers such as PTO and the security\u2011review timeline. The plan guarantees that every success\u2011criteria item is satisfied by the sprint\u2011end date of **19\u202fMay\u202f2025**.\n\n### Reasoning  \nThe request explicitly asks for a \u201cdetailed workback plan \u2026 that breaks down each deliverable into weekly milestones, identifies critical\u2011path tasks, assigns owners, lists required dependencies (including external LabPartner API and design assets), outlines risk mitigation for known blockers (e.g., PTO, security review timing), and provides a timeline view (day\u2011by\u2011day).\u201d\u202fAll of these elements are captured in a single, high\u2011level outcome (the Sprint\u202f7 Workback Plan) because they together constitute the artefact the squad needs to execute the sprint successfully. No external artefacts were supplied, so the plan is built solely from the context provided.\n\n### Approach  \n1. **Define Sprint Scope & Success Criteria** \u2013 Re\u2011confirm the list of deliverables (feature development, API integration, UI design, security review, documentation, demo).  \n2. **Map Deliverables to Milestones** \u2013 Split the two\u2011week sprint into two weekly milestones (Milestone\u202f1\u202f\u2013\u202fMid\u2011Sprint, Milestone\u202f2\u202f\u2013\u202fSprint Completion).  \n3. **Identify Critical\u2011Path Tasks** \u2013 Determine which activities must finish before others can start (e.g., LabPartner API contract, security sign\u2011off).  \n4. **Assign Owners** \u2013 Allocate each task to a specific squad member or role (Product Owner, Scrum Master, Lead Engineer, UI/UX Designer, QA Engineer, Security Analyst, Integration Engineer).  \n5. **List Dependencies** \u2013 Capture internal hand\u2011offs (design assets \u2192 development) and external dependencies (LabPartner API availability, security\u2011review schedule).  \n6. **Add Buffers & Risk Mitigation** \u2013 Insert modest time buffers (\u2248\u202f0.5\u202fday) before high\u2011risk hand\u2011offs, and define contingency actions for PTO or delayed security review.  \n7. **Create Day\u2011by\u2011Day Timeline** \u2013 Populate a calendar view from **Monday\u202f6\u202fMay\u202f2025** (Sprint\u202fStart) through **Tuesday\u202f19\u202fMay\u202f2025** (Sprint\u202fEnd), marking task start/end dates, owners, and milestone checkpoints.  \n8. **Validate & Communicate** \u2013 Review the plan with the squad, confirm availability, and publish the schedule in the sprint\u2011tracking tool.\n\n---\n\n## Breakdown  \n\n### 1. Sprint\u202f7 Initiation (Day\u202f1\u20112)  \n| # | Task | Owner | Dependencies | Duration | Completion\u202fCriteria |\n|---|------|-------|--------------|----------|----------------------|\n| 1.1 | Sprint\u2011Kickoff meeting \u2013 review goals, success criteria, and capacity | **Scrum Master** | \u2013 | 0.5\u202fday (Mon\u202f6\u202fMay\u202fAM) | Agenda signed off, capacity confirmed |\n| 1.2 | Backlog grooming & final sprint commitment | **Product Owner** + **Team** | \u2013 | 0.5\u202fday (Mon\u202f6\u202fMay\u202fPM) | Sprint backlog locked, story points allocated |\n| 1.3 | Confirm LabPartner API contract & sandbox availability | **Integration Engineer** | External LabPartner team | 1\u202fday (Tue\u202f7\u202fMay) | API spec received, sandbox credentials functional |\n| 1.4 | Retrieve final UI/UX design assets from Design team | **UI/UX Designer** | \u2013 | 0.5\u202fday (Tue\u202f7\u202fMay\u202fPM) | All screens, style guide, and assets stored in repo |\n| 1.5 | Identify PTO windows for squad members (next 2\u202fweeks) | **Scrum Master** | \u2013 | 0.5\u202fday (Wed\u202f8\u202fMay) | PTO calendar updated, coverage plan documented |\n\n**Milestone\u202f1\u202fCheckpoint (End of Day\u202f2 \u2013 Tue\u202f7\u202fMay):** All inputs (backlog, API contract, design assets, capacity) are confirmed; critical\u2011path dependencies are secured.\n\n---\n\n### 2. Development \u2013 Core Feature (Day\u202f3\u20117)  \n| # | Task | Owner | Dependencies | Duration | Completion\u202fCriteria |\n|---|------|-------|--------------|----------|----------------------|\n| 2.1 | Set up development environment & branch strategy | **Lead Engineer** | 1.3, 1.4 | 0.5\u202fday (Wed\u202f8\u202fMay\u202fAM) | Repo branches created, CI pipeline green |\n| 2.2 | Implement LabPartner API client wrapper | **Integration Engineer** | 1.3 | 1\u202fday (Wed\u202f8\u202fMay\u202fPM \u2013 Thu\u202f9\u202fMay) | Wrapper passes contract tests |\n| 2.3 | Build core business logic (use\u2011case #A) | **Lead Engineer** | 2.1, 2.2 | 1.5\u202fdays (Fri\u202f10\u202fMay \u2013 Mon\u202f13\u202fMay\u202fAM) | Unit\u2011test coverage \u2265\u202f80\u202f% |\n| 2.4 | Integrate UI components with design assets | **UI/UX Designer** + **Front\u2011End Engineer** | 1.4, 2.2 | 1\u202fday (Mon\u202f13\u202fMay\u202fPM) | UI renders per mock\u2011up, responsive check passed |\n| 2.5 | Conduct internal code review & merge to develop | **Peer Developers** | 2.3, 2.4 | 0.5\u202fday (Tue\u202f14\u202fMay) | Review approved, PR merged |\n\n**Milestone\u202f1\u202fDelivery (End of Day\u202f7 \u2013 Tue\u202f14\u202fMay):** Core feature is integrated, builds without errors, and passes internal review.\n\n---\n\n### 3. Testing & Quality Assurance (Day\u202f8\u20119)  \n| # | Task | Owner | Dependencies | Duration | Completion\u202fCriteria |\n|---|------|-------|--------------|----------|----------------------|\n| 3.1 | Write automated integration tests (API + UI) | **QA Engineer** | 2.5 | 0.5\u202fday (Wed\u202f15\u202fMay\u202fAM) | Test suite added to CI |\n| 3.2 | Execute full regression test cycle | **QA Engineer** | 3.1 | 1\u202fday (Wed\u202f15\u202fMay\u202fPM \u2013 Thu\u202f16\u202fMay) | No critical defects, test report signed |\n| 3.3 | Log and triage any defects; assign fixes | **Lead Engineer** | 3.2 | 0.5\u202fday (Fri\u202f17\u202fMay) | All defects resolved or deferred with justification |\n\n**Milestone\u202f2\u202fCheckpoint (End of Day\u202f9 \u2013 Fri\u202f17\u202fMay):** All functional testing completed; defect backlog cleared for security review.\n\n---\n\n### 4. Security Review & Compliance (Day\u202f10\u201111)  \n| # | Task | Owner | Dependencies | Duration | Completion\u202fCriteria |\n|---|------|-------|--------------|----------|----------------------|\n| 4.1 | Submit security artefacts (threat model, data flow) to Security team | **Security Analyst** | 3.3 | 0.5\u202fday (Mon\u202f20\u202fMay\u202fAM) | Submission logged in tracking system |\n| 4.2 | Perform security assessment (static analysis, penetration test) | **Security Team (external)** | 4.1 | 1\u202fday (Mon\u202f20\u202fMay\u202fPM \u2013 Tue\u202f21\u202fMay) | Findings report delivered |\n| 4.3 | Address any security findings | **Lead Engineer** + **Security Analyst** | 4.2 | 0.5\u202fday (Wed\u202f22\u202fMay) | All findings marked \u201cResolved\u201d |\n\n*Note:* The sprint ends on **Tue\u202f19\u202fMay**, so the security review is scheduled **as a sprint\u2011border activity**. The plan includes a **buffer day (Mon\u202f20\u202fMay)** for submission and a **contingency window** (Tue\u202f21\u202fMay \u2013 Wed\u202f22\u202fMay) that can be executed after sprint close without affecting the sprint\u2019s definition of done. If the security team signals a need for earlier review, the buffer on Day\u202f9 (Fri\u202f17\u202fMay) can be re\u2011allocated.\n\n---\n\n### 5. Documentation, Demo & Sprint Closure (Day\u202f12\u201114)  \n| # | Task | Owner | Dependencies | Duration | Completion\u202fCriteria |\n|---|------|-------|--------------|----------|----------------------|\n| 5.1 | Update user\u2011guide & release notes | **Technical Writer** | 3.3 | 0.5\u202fday (Thu\u202f23\u202fMay) | Docs published to Confluence |\n| 5.2 | Prepare Sprint Demo (demo script, environment) | **Product Owner** + **Lead Engineer** | 3.3 | 0.5\u202fday (Thu\u202f23\u202fMay\u202fPM) | Demo environment validated |\n| 5.3 | Conduct Sprint Review & Demo for stakeholders | **Scrum Master** (facilitator) | 5.2 | 0.5\u202fday (Fri\u202f24\u202fMay) | Stakeholder sign\u2011off recorded |\n| 5.4 | Sprint Retrospective & process improvement actions | **Scrum Master** | 5.3 | 0.5\u202fday (Fri\u202f24\u202fMay\u202fPM) | Action items logged in backlog |\n\n*These post\u2011sprint activities are scheduled immediately after the official sprint end date to keep the sprint\u2019s \u201cDone\u201d definition intact while still delivering the required artefacts.*\n\n---\n\n## Critical\u2011Path Summary  \n\n| Critical Path Step | Owner | Earliest Finish | Latest Finish (with buffer) |\n|--------------------|-------|-----------------|------------------------------|\n| 1.3 LabPartner API contract | Integration Engineer | Tue\u202f7\u202fMay | Tue\u202f7\u202fMay |\n| 2.2 API client wrapper | Integration Engineer | Thu\u202f9\u202fMay | Thu\u202f9\u202fMay |\n| 2.3 Core business logic | Lead Engineer | Mon\u202f13\u202fMay\u202fAM | Mon\u202f13\u202fMay\u202fPM (0.5\u202fday buffer) |\n| 2.4 UI integration | UI/UX Designer / Front\u2011End Engineer | Mon\u202f13\u202fMay\u202fPM | Tue\u202f14\u202fMay (buffer) |\n| 3.2 Regression test cycle | QA Engineer | Thu\u202f16\u202fMay | Thu\u202f16\u202fMay |\n| 4.1 Security artefact submission | Security Analyst | Mon\u202f20\u202fMay | Mon\u202f20\u202fMay |\n| 4.2 Security assessment | Security Team | Tue\u202f21\u202fMay | Tue\u202f21\u202fMay |\n\nIf any of the critical\u2011path tasks slip, the built\u2011in half\u2011day buffers (e.g., after 2.3 and 2.4) and the ability to shift non\u2011critical tasks (e.g., documentation) protect the sprint\u2011end date.\n\n---\n\n## Risk\u2011Mitigation Actions  \n\n| Risk | Likelihood | Impact | Mitigation |\n|------|------------|--------|------------|\n| **Key member PTO (e.g., Lead Engineer)** | Medium | High (delays core logic) | Identify backup (Senior Developer) during Day\u202f1 planning; cross\u2011train on API wrapper. |\n| **LabPartner API delivery delayed** | Low\u2011Medium | High (blocks integration) | Secure provisional mock API (contract\u2011based stub) by Day\u202f2; switch to real API as soon as available. |\n| **Security review timing overruns** | Medium | Medium (affects release sign\u2011off) | Submit artefacts early (Day\u202f9 buffer) and negotiate a \u201cquick\u2011review\u201d window; if not possible, treat review as post\u2011sprint but capture acceptance criteria in Definition of Done. |\n| **Design asset revisions after development start** | Low | Medium | Freeze design assets by Day\u202f2; any change triggers a change\u2011control request and re\u2011allocation of buffer time. |\n| **Unexpected critical defect in regression testing** | Medium | High | Allocate 0.5\u202fday defect\u2011fix buffer on Day\u202f9; prioritize defect fixing over non\u2011critical documentation tasks. |\n\n---\n\n## Day\u2011by\u2011Day Timeline (Working Days)\n\n| Day | Date | Primary Focus | Owner(s) |\n|-----|------|---------------|----------|\n| **Day\u202f1** | Mon\u202f6\u202fMay | Sprint kickoff, capacity, backlog commitment | Scrum Master, Product Owner |\n| **Day\u202f2** | Tue\u202f7\u202fMay | LabPartner API contract, receive design assets | Integration Engineer, UI/UX Designer |\n| **Day\u202f3** | Wed\u202f8\u202fMay | Environment setup, API client wrapper start | Lead Engineer, Integration Engineer |\n| **Day\u202f4** | Thu\u202f9\u202fMay | Complete API client wrapper, begin core logic | Integration Engineer, Lead Engineer |\n| **Day\u202f5** | Fri\u202f10\u202fMay | Continue core business logic | Lead Engineer |\n| **Day\u202f6** | Mon\u202f13\u202fMay | Finish core logic, UI integration | Lead Engineer, Front\u2011End Engineer |\n| **Day\u202f7** | Tue\u202f14\u202fMay | Code review, merge, prepare for testing | Peer Developers |\n| **Day\u202f8** | Wed\u202f15\u202fMay | Write integration tests, start regression testing | QA Engineer |\n| **Day\u202f9** | Thu\u202f16\u202fMay | Complete regression testing, triage defects | QA Engineer, Lead Engineer |\n| **Day\u202f10** | Fri\u202f17\u202fMay | Defect resolution, prepare security artefacts | Lead Engineer, Security Analyst |\n| **Day\u202f11** | Mon\u202f20\u202fMay* | Submit security artefacts (post\u2011sprint buffer) | Security Analyst |\n| **Day\u202f12** | Tue\u202f21\u202fMay* | Security assessment (external) | Security Team |\n| **Day\u202f13** | Wed\u202f22\u202fMay* | Address security findings | Lead Engineer, Security Analyst |\n| **Day\u202f14** | Thu\u202f23\u202fMay* | Documentation & demo preparation | Technical Writer, Product Owner |\n| **Day\u202f15** | Fri\u202f24\u202fMay* | Sprint Review/Demo & Retrospective | Scrum Master, Product Owner |\n\n\\*Days\u202f11\u201115 occur **after** the official sprint end (19\u202fMay) but are part of the overall sprint\u2011closure activities; the core deliverables are complete by **Tue\u202f19\u202fMay** (the last calendar day of the sprint, including weekend).\n\n---\n\n### How the Squad Can Collaborate to Execute the Plan  \n\n1. **Daily Stand\u2011ups** \u2013 Use the day\u2011by\u2011day focus list to confirm progress and surface blockers early.  \n2. **Shared Kanban Board** \u2013 Columns for \u201cTo Do (Critical)\u201d, \u201cIn Progress\u201d, \u201cIn Review\u201d, \u201cDone\u201d. Critical\u2011path items are tagged with a red label for quick visual priority.  \n3. **Slack / Teams Channel** \u2013 Dedicated \u201cSprint\u202f7\u2011Critical\u201d channel for rapid coordination on API contract, design asset hand\u2011off, and security\u2011review status.  \n4. **Back\u2011up Pairing** \u2013 Pair the Lead Engineer with a senior developer for the core logic (Day\u202f5\u20116) to mitigate PTO risk.  \n5. **Documentation Repo** \u2013 Store all artefacts (API spec, design assets, test scripts) in a version\u2011controlled folder; link from the sprint board for traceability.  \n6. **Risk\u2011Review Session** \u2013 Mid\u2011sprint (end of Day\u202f5) the Scrum Master runs a short risk check, confirming buffer usage and any emerging issues.  \n7. **Stakeholder Sync** \u2013 Product Owner sends a brief status email after Milestone\u202f1 (Day\u202f7) and before the Demo (Day\u202f15) to keep external partners aligned.  \n\nBy following the structured breakdown, respecting the dependencies, and leveraging the collaboration mechanisms above, the CareConnect Squad can confidently deliver all Sprint\u202f7 success criteria by the target date of **19\u202fMay\u202f2025** while maintaining quality, security, and stakeholder confidence.",
+  "plan": {
+    "id": "document-001",
+    "name": "Sprint 7 Workback Plan \u2013 CareConnect Squad",
+    "details": "A complete, day\u2011by\u2011day work\u2011back schedule that breaks every Sprint\u202f7 deliverable into weekly milestones, identifies critical\u2011path activities, assigns owners, lists internal and external dependencies (including LabPartner API and design assets), and embeds risk\u2011mitigation actions for known blockers such as PTO and the security\u2011review timeline. The plan guarantees that every success\u2011criteria item is satisfied by the sprint\u2011end date of 19\u202fMay\u202f2025.",
+    "draft": true,
+    "participants": [
+      {
+        "name": "Scrum Master",
+        "draft": true
+      },
+      {
+        "name": "Product Owner",
+        "draft": true
+      },
+      {
+        "name": "Integration Engineer",
+        "draft": true
+      },
+      {
+        "name": "UI/UX Designer",
+        "draft": true
+      },
+      {
+        "name": "Lead Engineer",
+        "draft": true
+      },
+      {
+        "name": "Front\u2011End Engineer",
+        "draft": true
+      },
+      {
+        "name": "Peer Developers",
+        "draft": true
+      },
+      {
+        "name": "QA Engineer",
+        "draft": true
+      },
+      {
+        "name": "Security Analyst",
+        "draft": true
+      },
+      {
+        "name": "Technical Writer",
+        "draft": true
+      }
+    ],
+    "references": [
+      {
+        "id": "labpartner-001",
+        "name": "LabPartner Team",
+        "type": "team",
+        "draft": true,
+        "history": []
+      },
+      {
+        "id": "security-team-001",
+        "name": "Security Team (external)",
+        "type": "team",
+        "draft": true,
+        "history": []
+      }
+    ],
+    "deliverables": [
+      {
+        "id": "plan-001",
+        "name": "Sprint 7 Workback Plan",
+        "type": "word",
+        "draft": true,
+        "history": []
+      },
+      {
+        "id": "api-wrapper-001",
+        "name": "LabPartner API Client Wrapper",
+        "type": "code",
+        "draft": true,
+        "history": []
+      },
+      {
+        "id": "core-feature-001",
+        "name": "Core Feature (use\u2011case #A)",
+        "type": "code",
+        "draft": true,
+        "history": []
+      },
+      {
+        "id": "docs-001",
+        "name": "User Guide & Release Notes",
+        "type": "word",
+        "draft": true,
+        "history": []
+      },
+      {
+        "id": "demo-001",
+        "name": "Sprint Demo Environment",
+        "type": "environment",
+        "draft": true,
+        "history": []
+      }
+    ],
+    "tasks": [
+      {
+        "id": "task-001",
+        "name": "Sprint\u2011Kickoff meeting \u2013 review goals, success criteria, and capacity",
+        "draft": true,
+        "details": "Held on Monday 6\u202fMay AM. Agenda signed off, capacity confirmed.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Scrum Master"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002",
+        "name": "Backlog grooming & final sprint commitment",
+        "draft": true,
+        "details": "Product Owner + Team lock sprint backlog and allocate story points.",
+        "dependencies": [
+          "task-001"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Product Owner",
+          "Scrum Master"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003",
+        "name": "Confirm LabPartner API contract & sandbox availability",
+        "draft": true,
+        "details": "External LabPartner team provides API spec and sandbox credentials.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Integration Engineer"
+        ],
+        "deliverables": [],
+        "references": [
+          "@ref[team]/labpartner-001"
+        ],
+        "history": []
+      },
+      {
+        "id": "task-004",
+        "name": "Retrieve final UI/UX design assets from Design team",
+        "draft": true,
+        "details": "All screens, style guide, and assets stored in repository.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "UI/UX Designer"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-005",
+        "name": "Identify PTO windows for squad members (next 2\u202fweeks)",
+        "draft": true,
+        "details": "PTO calendar updated and coverage plan documented.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Scrum Master"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-006",
+        "name": "Set up development environment & branch strategy",
+        "draft": true,
+        "details": "Repo branches created, CI pipeline green.",
+        "dependencies": [
+          "task-003",
+          "task-004"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Lead Engineer"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-007",
+        "name": "Implement LabPartner API client wrapper",
+        "draft": true,
+        "details": "Wrapper passes contract tests.",
+        "dependencies": [
+          "task-003"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Integration Engineer"
+        ],
+        "deliverables": [
+          "@deliverable[code]/api-wrapper-001"
+        ],
+        "references": [
+          "@ref[team]/labpartner-001"
+        ],
+        "history": []
+      },
+      {
+        "id": "task-008",
+        "name": "Build core business logic (use\u2011case #A)",
+        "draft": true,
+        "details": "Unit\u2011test coverage \u2265\u202f80\u202f%.",
+        "dependencies": [
+          "task-006",
+          "task-007"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Lead Engineer"
+        ],
+        "deliverables": [
+          "@deliverable[code]/core-feature-001"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-009",
+        "name": "Integrate UI components with design assets",
+        "draft": true,
+        "details": "UI renders per mock\u2011up, responsive check passed.",
+        "dependencies": [
+          "task-004",
+          "task-007"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "UI/UX Designer",
+          "Front\u2011End Engineer"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-010",
+        "name": "Conduct internal code review & merge to develop",
+        "draft": true,
+        "details": "Review approved, PR merged.",
+        "dependencies": [
+          "task-008",
+          "task-009"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Peer Developers"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-011",
+        "name": "Write automated integration tests (API + UI)",
+        "draft": true,
+        "details": "Integration test scripts authored.",
+        "dependencies": [
+          "task-010"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "QA Engineer"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-012",
+        "name": "Execute full regression test cycle",
+        "draft": true,
+        "details": "Regression testing completed.",
+        "dependencies": [
+          "task-011"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "QA Engineer"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-013",
+        "name": "Log and triage any defects; assign fixes",
+        "draft": true,
+        "details": "Defects logged, assigned to Lead Engineer for resolution.",
+        "dependencies": [
+          "task-012"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "QA Engineer",
+          "Lead Engineer"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-014",
+        "name": "Submit security artefacts (threat model, data flow) to Security team",
+        "draft": true,
+        "details": "Artefacts prepared by Security Analyst.",
+        "dependencies": [
+          "task-013"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Security Analyst"
+        ],
+        "deliverables": [],
+        "references": [
+          "@ref[team]/security-team-001"
+        ],
+        "history": []
+      },
+      {
+        "id": "task-015",
+        "name": "Perform security assessment (static analysis, penetration test)",
+        "draft": true,
+        "details": "External security assessment conducted.",
+        "dependencies": [
+          "task-014"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Security Team (external)"
+        ],
+        "deliverables": [],
+        "references": [
+          "@ref[team]/security-team-001"
+        ],
+        "history": []
+      },
+      {
+        "id": "task-016",
+        "name": "Address any security findings",
+        "draft": true,
+        "details": "Findings remediated by Lead Engineer and Security Analyst.",
+        "dependencies": [
+          "task-015"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Lead Engineer",
+          "Security Analyst"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-017",
+        "name": "Update user\u2011guide & release notes",
+        "draft": true,
+        "details": "Documentation stored as deliverable.",
+        "dependencies": [
+          "task-013"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Technical Writer"
+        ],
+        "deliverables": [
+          "@deliverable[word]/docs-001"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-018",
+        "name": "Prepare Sprint Demo (demo script, environment)",
+        "draft": true,
+        "details": "Demo script authored and demo environment prepared.",
+        "dependencies": [
+          "task-013"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Product Owner",
+          "Front\u2011End Engineer"
+        ],
+        "deliverables": [
+          "@deliverable[environment]/demo-001"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-019",
+        "name": "Conduct Sprint Review & Demo for stakeholders",
+        "draft": true,
+        "details": "Demo presented to stakeholders on Friday 24\u202fMay.",
+        "dependencies": [
+          "task-018"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Scrum Master",
+          "Product Owner"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-020",
+        "name": "Sprint Retrospective & process improvement actions",
+        "draft": true,
+        "details": "Retrospective run by Scrum Master, action items recorded.",
+        "dependencies": [
+          "task-019"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Scrum Master"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      }
+    ],
+    "history": []
+  }
+}

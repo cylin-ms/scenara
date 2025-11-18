@@ -1,0 +1,175 @@
+{
+  "basic_info": {
+    "full_name": "Carlos Rivera",
+    "age": 32,
+    "location": "Austin, Texas, USA",
+    "timezone": "America/Chicago (CST)",
+    "years_experience": 8,
+    "education": {
+      "degree": "B.Sc. Interaction Design",
+      "institution": "University of Texas at Austin",
+      "graduation_year": 2015
+    }
+  },
+  "work_habits": {
+    "preferred_working_hours": "07:00-15:00 (CST)",
+    "peak_productivity_times": [
+      "08:00-11:00",
+      "13:00-14:30"
+    ],
+    "communication_style": {
+      "async_preference": true,
+      "sync_preference": false,
+      "average_response_time_minutes": 45
+    },
+    "meeting_preferences": {
+      "minimizes_meetings": true,
+      "prefers_video_when_needed": true,
+      "max_meeting_duration_minutes": 45,
+      "preferred_meeting_days": [
+        "Tuesday",
+        "Thursday"
+      ]
+    },
+    "work_environment": "Hybrid (3 days remote, 2 days office)",
+    "focus_time_requirements_hours_per_day": 4
+  },
+  "personality": {
+    "mbti": "ENFJ-A",
+    "decision_making_approach": "Consensus-driven but can act autonomously when data is clear",
+    "risk_tolerance": "Moderate – willing to prototype bold ideas but avoids high‑impact production risk",
+    "collaboration_style": "Facilitator – encourages input, synthesizes diverse viewpoints",
+    "stress_management_approach": "Scheduled micro‑breaks and short walks; uses Pomodoro technique",
+    "conflict_resolution_style": "Collaborative – seeks win‑win solutions, uses active listening"
+  },
+  "skills": {
+    "core_technical_skills": [
+      {
+        "skill": "User Research & Personas",
+        "rating": 9
+      },
+      {
+        "skill": "Interaction Design",
+        "rating": 8
+      },
+      {
+        "skill": "Information Architecture",
+        "rating": 8
+      },
+      {
+        "skill": "Prototyping (low‑ and high‑fidelity)",
+        "rating": 9
+      },
+      {
+        "skill": "Usability Testing",
+        "rating": 7
+      },
+      {
+        "skill": "Design Systems",
+        "rating": 7
+      }
+    ],
+    "leadership_abilities": 6,
+    "domain_expertise_areas": [
+      "SaaS productivity tools",
+      "Enterprise dashboards",
+      "Mobile-first B2B experiences"
+    ],
+    "learning_agility": 8,
+    "tools_proficiency": [
+      {
+        "tool": "Figma",
+        "rating": 9
+      },
+      {
+        "tool": "Sketch",
+        "rating": 7
+      },
+      {
+        "tool": "Adobe XD",
+        "rating": 6
+      },
+      {
+        "tool": "Miro",
+        "rating": 8
+      },
+      {
+        "tool": "Jira/Confluence",
+        "rating": 8
+      },
+      {
+        "tool": "HTML/CSS basics",
+        "rating": 5
+      }
+    ],
+    "languages_spoken": [
+      "English (native)",
+      "Spanish (fluent)"
+    ]
+  },
+  "performance": {
+    "task_completion_rate_percent": 92,
+    "quality_score_percent": 88,
+    "estimation_accuracy_percent": 81,
+    "multitasking_ability": 5,
+    "performance_under_pressure": 7
+  },
+  "availability": {
+    "available_hours_per_week": 38,
+    "timezone": "America/Chicago (CST)",
+    "working_hours": "07:00-15:00 (CST) Mon‑Fri",
+    "planned_time_off_days_per_year": 20,
+    "other_commitments": [
+      "Weekly UX community meetup (2 hrs)",
+      "Part‑time mentor for a local bootcamp (4 hrs/month)"
+    ],
+    "travel_flexibility": "Medium – can travel up to 3 days per month for user research or stakeholder workshops"
+  },
+  "personal_factors": {
+    "family_status": "Married, one child (3 years old)",
+    "caregiving_responsibilities": "Evenings and weekends for child care; occasional morning school drop‑offs",
+    "commute_situation": "30‑minute drive to office on hybrid days; works from a home office otherwise",
+    "health_considerations": "Mild lower‑back tension; does daily stretching and ergonomic desk setup",
+    "career_motivation": "Eager to lead a design system team, deepen strategic product thinking, and mentor junior designers"
+  },
+  "project_impact": {
+    "reliability": 9,
+    "innovation_tendency": 7,
+    "documentation_quality": 8,
+    "mentorship_capability": 7,
+    "influence_level": 6
+  },
+  "collaboration": {
+    "meeting_frequency_preference": "One 30‑minute sync per project per week; ad‑hoc as needed",
+    "communication_channels_preference": [
+      "Slack (async)",
+      "Figma comments",
+      "Email for formal decisions"
+    ],
+    "feedback_style": "Direct but supportive – provides actionable suggestions and celebrates strengths",
+    "knowledge_sharing_habits": "Writes post‑mortem summaries in Confluence, runs monthly design‑share sessions",
+    "cross_team_collaboration": 8
+  },
+  "risk_factors": {
+    "potential_bottlenecks": [
+      "Heavy reliance on synchronous feedback from product managers (can delay iterations)",
+      "Occasional over‑commitment to mentorship activities, reducing focus time"
+    ],
+    "backup_person_needed": "Senior UI Designer – Maya Patel (focuses on component libraries)",
+    "ramp_up_time_weeks": 2,
+    "context_switching_tolerance": 4,
+    "burnout_risk_factors": [
+      "Long stretches of back‑to‑back user testing sessions",
+      "Balancing child care with early‑morning work blocks"
+    ]
+  },
+  "_metadata": {
+    "generated_at": "2025-11-17T15:20:41.092641",
+    "name": "Carlos Rivera",
+    "role": "UX/UI Designer",
+    "seniority": "mid",
+    "company": "TechCorp",
+    "model": "gpt-oss:120b",
+    "provider": "ollama"
+  }
+}

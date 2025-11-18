@@ -1,0 +1,725 @@
+{
+  "scenario_name": "Q2 2025 Board Quarterly Business Review \u2013 Helios Renewable Energy Inc.",
+  "scenario_number": 2,
+  "meeting_type": "Quarterly Business Review",
+  "quality_level": "medium",
+  "workback_prompt": "Generate a detailed work\u2011back plan for Helios Renewable Energy Inc.'s Q2 2025 Board Quarterly Business Review. Include all preparatory activities (pre\u2011read compilation, data validation, deck creation, logistics, voting procedures, post\u2011meeting follow\u2011up), assign owners, estimate durations, identify dependencies, and map milestones against the constraints (pre\u2011read distribution by 5\u202fJune, confidentiality agreements signed by 3\u202fJune, acquisition decision deadline 30\u202fJune). The plan should ensure the meeting stays within the 4\u2011hour limit, all strategic decisions are voted on, and deliverables are produced on schedule.\n\nGenerate a MEDIUM QUALITY workback plan with these characteristics:\n- Most major tasks present but some gaps\n- Reasonable task descriptions\n- Some dependencies defined\n- Most tasks have owners\n- Milestones present but may lack detail\n- Generally realistic timelines\n- Some consideration of risks\n- Key deliverables identified\n\nIMPORTANT: Generate a plan that naturally exhibits MEDIUM quality characteristics.\nDo not explicitly label the plan as \"medium quality\" - let the quality emerge from the content.",
+  "generated_at": "2025-11-17T06:15:01.410637",
+  "analysis": "# Outcomes\n\n## 1. Confidentiality Agreements Signed\nAll board members and invited executives have signed the required NDAs so that sensitive Q2 data can be shared safely.  \nArtifact references: *none* (internal legal templates)\n\n### Reasoning\nThe constraint \u201cconfidentiality agreements signed by\u202f3\u202fJune\u201d is a hard deadline that precedes any distribution of the pre\u2011read. Without signed NDAs the legal team will block the data\u2011share, so this must be an early, standalone outcome.\n\n### Approach\n1. **Identify signatories** \u2013 pull the current board roster and any external participants.  \n2. **Send NDA package** \u2013 use the standard Helios NDA template, attach a cover note explaining the Q2 review timeline.  \n3. **Track receipt** \u2013 maintain a shared tracker (e.g., a spreadsheet) that records signature dates.  \n4. **Escalate missing signatures** \u2013 send reminder on 2\u202fJune and, if needed, involve the General Counsel to obtain urgent signatures.  \n5. **Confirm completion** \u2013 once all signatures are logged, lock the tracker and notify the data\u2011validation lead that the pre\u2011read can be compiled.\n\n---\n\n## 2. Pre\u2011Read Compilation & Validation\nAssemble all required Q2 data (financials, operational KPIs, market analysis, acquisition update) into a single pre\u2011read package and verify its accuracy.  \nArtifact references: *none*\n\n### Reasoning\nThe board needs a complete, accurate pre\u2011read before the meeting. This outcome feeds directly into the \u201cPre\u2011Read Distribution\u201d milestone (by\u202f5\u202fJune) and supports the deck creation work. Validation reduces the risk of post\u2011meeting corrections.\n\n### Approach\n1. **Data request** \u2013 issue a data\u2011request memo to Finance, Operations, Strategy, and M&A teams (target receipt by 24\u202fMay).  \n2. **Compile draft** \u2013 the Business\u2011Review Lead aggregates the inputs into a structured document (executive summary, detailed sections, annexes).  \n3. **Validation checklist** \u2013 create a checklist covering numbers reconciliation, footnote completeness, and consistency with prior quarter reports.  \n4. **Peer review** \u2013 route the draft to Finance Controller and Strategy Director for sign\u2011off (48\u202fh).  \n5. **Incorporate feedback** \u2013 Business\u2011Review Lead updates the draft and records any open items for the QBR deck.  \n6. **Lock version** \u2013 label the final pre\u2011read \u201cQ2\u20112025 Board Pre\u2011Read v1.0\u201d and store it in the secure board folder.\n\n*Estimated duration*: 10\u202fbusiness days (22\u202fMay\u202f\u2013\u202f4\u202fJune).  \n*Owner*: Business\u2011Review Lead (Sarah Patel).  \n*Dependencies*: Completion of Confidentiality Agreements (Outcome\u202f1).\n\n---\n\n## 3. Pre\u2011Read Distribution\nDeliver the finalized pre\u2011read package to all board participants in accordance with the 5\u202fJune deadline.  \nArtifact references: *none*\n\n### Reasoning\nThe distribution deadline is a hard constraint. It also triggers the timeline for deck finalization and voting preparation. Early distribution gives board members enough time to review material before the 4\u2011hour meeting.\n\n### Approach\n1. **Secure upload** \u2013 place the locked pre\u2011read in the encrypted board portal.  \n2. **Email notification** \u2013 send a distribution email (with access instructions) to all signatories, copying the Board Secretary.  \n3. **Receipt confirmation** \u2013 request read\u2011receipt acknowledgments; log any non\u2011responses.  \n4. **Follow\u2011up** \u2013 on 4\u202fJune, follow up with any missing confirmations to ensure all participants have access before the meeting.  \n\n*Estimated duration*: 1\u202fday (5\u202fJune).  \n*Owner*: Board Secretary (Michael Liu).  \n*Dependencies*: Pre\u2011Read Compilation & Validation (Outcome\u202f2) and Confidentiality Agreements (Outcome\u202f1).\n\n---\n\n## 4. QBR Deck Creation & Approval\nDevelop the 4\u2011hour board presentation (slide deck) that synthesizes the pre\u2011read, highlights key decisions, and embeds voting prompts.  \nArtifact references: *none*\n\n### Reasoning\nThe deck is the primary meeting artifact. It must be ready well before the meeting to allow a quick review by the Chair and the Governance Committee, ensuring the 4\u2011hour timebox can be respected.\n\n### Approach\n1. **Outline** \u2013 the Presentation Lead drafts a slide outline aligned with the pre\u2011read sections (financials, operations, acquisition).  \n2. **Draft slides** \u2013 populate the deck with charts, narratives, and decision points.  \n3. **Embed voting slides** \u2013 create dedicated slides that summarize each decision and list voting options (Approve/Reject/Abstain).  \n4. **Internal review** \u2013 circulate the draft to Finance Controller, Strategy Director, and M&A Lead for technical accuracy (2\u202fdays).  \n5. **Executive sign\u2011off** \u2013 the CEO and CFO provide final approval.  \n6. **Board Chair review** \u2013 the Chair reviews the deck for flow and time allocation (48\u202fh).  \n7. **Finalize** \u2013 incorporate any last\u2011minute edits and lock the file as \u201cQ2\u20112025 Board Deck v1.0\u201d.  \n\n*Estimated duration*: 7\u202fbusiness days (6\u202fJune\u202f\u2013\u202f14\u202fJune).  \n*Owner*: Presentation Lead (Emily Gomez).  \n*Dependencies*: Pre\u2011Read Compilation & Validation (Outcome\u202f2); Pre\u2011Read Distribution (Outcome\u202f3) for reference.\n\n---\n\n## 5. Logistics & Voting Procedure Setup\nArrange the physical/virtual meeting environment, test technology, and configure the electronic voting platform.  \nArtifact references: *none*\n\n### Reasoning\nLogistics must be in place before the meeting date (mid\u2011June) and the voting system must be ready to capture decisions instantly, satisfying the \u201call strategic decisions are voted on\u201d requirement.\n\n### Approach\n1. **Venue booking** \u2013 reserve the Helios Boardroom for 15\u202fJune, 9:00\u201113:00, and secure a backup video\u2011conference link.  \n2. **AV testing** \u2013 schedule a tech rehearsal with IT (30\u202fMay) to verify projector, screen sharing, and audio.  \n3. **Voting platform configuration** \u2013 set up the secure voting tool, preload agenda items, and assign voter IDs.  \n4. **Pre\u2011meeting guide** \u2013 draft a one\u2011page logistics and voting instruction sheet; attach to the pre\u2011read distribution email.  \n5. **Dry run** \u2013 conduct a 30\u2011minute run\u2011through with the Chair and Board Secretary (12\u202fJune) to confirm timing and voting flow.  \n\n*Estimated duration*: 5\u202fbusiness days (28\u202fMay\u202f\u2013\u202f5\u202fJune).  \n*Owner*: Board Operations Manager (Rita Chen).  \n*Dependencies*: Confidentiality Agreements (Outcome\u202f1) and Pre\u2011Read Distribution (Outcome\u202f3) for participant list.\n\n---\n\n## 6. Conduct Board Quarterly Business Review (QBR)\nFacilitate the 4\u2011hour meeting, present the deck, and capture live votes on each strategic decision.  \nArtifact references: *none*\n\n### Reasoning\nThis is the central event. It must stay within the 4\u2011hour limit, include all decision items, and produce a formal record of votes.\n\n### Approach\n1. **Kick\u2011off** \u2013 Board Secretary opens the meeting, confirms quorum, and reviews the agenda.  \n2. **Presentation** \u2013 Presentation Lead (or designated presenter) delivers the deck, adhering to the pre\u2011agreed time allocations.  \n3. **Decision pauses** \u2013 after each decision slide, the Chair calls for discussion (max 5\u202fmin) then initiates the electronic vote.  \n4. **Vote capture** \u2013 voting platform records results; Board Secretary validates the tally in real time.  \n5. **Wrap\u2011up** \u2013 recap action items, confirm next steps, and close the meeting at 13:00.  \n\n*Estimated duration*: 4\u202fhours (15\u202fJune, 9:00\u201113:00).  \n*Owner*: Board Chair (David Morales) (overall responsibility); Presentation Lead (execution).  \n*Dependencies*: All prior outcomes (deck, logistics, voting setup).\n\n---\n\n## 7. Post\u2011Meeting Follow\u2011Up & Deliverables\nFinalize meeting minutes, distribute voting results, and hand off action items to responsible owners before the acquisition decision deadline (30\u202fJune).  \nArtifact references: *none*\n\n### Reasoning\nThe board\u2019s decisions must be documented and communicated promptly. The acquisition decision deadline creates a hard cut\u2011off for any follow\u2011up that impacts that decision.\n\n### Approach\n1. **Minutes drafting** \u2013 Board Secretary prepares concise minutes, embedding vote outcomes and assigned owners for each action item.  \n2. **Legal sign\u2011off** \u2013 send minutes to General Counsel for review (24\u202fhours).  \n3. **Distribution** \u2013 email finalized minutes and a \u201cDecision Summary\u201d to all board members (by 17\u202fJune).  \n4. **Action\u2011item tracker** \u2013 create a shared tracker listing each decision, responsible owner, and due date (aligned with the 30\u202fJune acquisition deadline).  \n5. **Progress check\u2011ins** \u2013 schedule brief status calls (one per major decision) on 22\u202fJune and 27\u202fJune to ensure milestones are on track.  \n6. **Final report** \u2013 compile a \u201cQ2\u20112025 Board Review Outcome Report\u201d that ties the board\u2019s decisions to the upcoming acquisition timeline; deliver to CEO and M&A Lead by 28\u202fJune.  \n\n*Estimated duration*: 8\u202fbusiness days (16\u202fJune\u202f\u2013\u202f28\u202fJune).  \n*Owner*: Board Secretary (Michael Liu).  \n*Dependencies*: Conduct Board QBR (Outcome\u202f6).\n\n---\n\n## 8. Risk Monitoring & Contingency Planning\nIdentify high\u2011level risks (e.g., delayed NDA signing, data quality issues, technology failure) and define mitigation actions.  \nArtifact references: *none*\n\n### Reasoning\nWhile not a deliverable per se, explicit risk monitoring ensures the schedule remains realistic and that any gaps (a characteristic of a medium\u2011quality plan) are flagged early.\n\n### Approach\n1. **Risk register** \u2013 create a simple register listing risk, impact, likelihood, owner, and mitigation.  \n2. **Weekly status meeting** \u2013 hold a 30\u2011minute sync (Friday) with all outcome owners to review progress and flag emerging issues.  \n3. **Escalation path** \u2013 define who to contact (e.g., CEO for acquisition\u2011related delays).  \n4. **Contingency buffers** \u2013 allocate a 0.5\u2011day buffer before the meeting for any last\u2011minute deck tweaks.  \n\n*Estimated duration*: Ongoing throughout the work\u2011back period.  \n*Owner*: Project Lead (Sarah Patel).  \n\n---\n\n# Breakdown\n\n```\n1. Confidentiality Agreements Signed\n   1.1 Identify signatories \u2013 Owner: Legal Ops Lead \u2013 0.5\u202fd\n   1.2 Send NDA package \u2013 Owner: Legal Ops Lead \u2013 0.2\u202fd\n   1.3 Track receipt \u2013 Owner: Legal Ops Lead \u2013 0.3\u202fd (ongoing)\n   1.4 Reminder & escalation \u2013 Owner: Legal Ops Lead \u2013 0.2\u202fd\n   1.5 Confirm completion \u2013 Owner: Legal Ops Lead \u2013 0.1\u202fd\n   Depends on: None\n   Milestone: NDA Signed (3\u202fJune)\n\n2. Pre\u2011Read Compilation & Validation\n   2.1 Issue data\u2011request memo \u2013 Owner: Business\u2011Review Lead \u2013 0.2\u202fd\n   2.2 Receive data from functional teams \u2013 Owner: Functional Leads \u2013 3\u202fd\n   2.3 Assemble draft pre\u2011read \u2013 Owner: Business\u2011Review Lead \u2013 2\u202fd\n   2.4 Validation checklist creation \u2013 Owner: Business\u2011Review Lead \u2013 0.5\u202fd\n   2.5 Peer review & sign\u2011off \u2013 Owner: Finance Controller/Strategy Dir \u2013 2\u202fd\n   2.6 Incorporate feedback \u2013 Owner: Business\u2011Review Lead \u2013 1\u202fd\n   2.7 Lock final version \u2013 Owner: Business\u2011Review Lead \u2013 0.2\u202fd\n   Depends on: 1. Confidentiality Agreements Signed\n   Milestone: Pre\u2011Read Locked (4\u202fJune)\n\n3. Pre\u2011Read Distribution\n   3.1 Upload to secure portal \u2013 Owner: Board Secretary \u2013 0.1\u202fd\n   3.2 Send distribution email \u2013 Owner: Board Secretary \u2013 0.1\u202fd\n   3.3 Log receipt confirmations \u2013 Owner: Board Secretary \u2013 0.3\u202fd\n   3.4 Follow\u2011up non\u2011responders \u2013 Owner: Board Secretary \u2013 0.2\u202fd\n   Depends on: 2. Pre\u2011Read Compilation & Validation\n   Milestone: Pre\u2011Read Sent (5\u202fJune)\n\n4. QBR Deck Creation & Approval\n   4.1 Draft slide outline \u2013 Owner: Presentation Lead \u2013 0.5\u202fd\n   4.2 Populate slides \u2013 Owner: Presentation Lead \u2013 3\u202fd\n   4.3 Add voting slides \u2013 Owner: Presentation Lead \u2013 0.5\u202fd\n   4.4 Internal technical review \u2013 Owner: Finance Controller/Strategy Dir \u2013 2\u202fd\n   4.5 Executive sign\u2011off \u2013 Owner: CEO/CFO \u2013 1\u202fd\n   4.6 Chair review \u2013 Owner: Board Chair \u2013 2\u202fd\n   4.7 Finalize & lock deck \u2013 Owner: Presentation Lead \u2013 0.2\u202fd\n   Depends on: 2. Pre\u2011Read Compilation & Validation, 3. Pre\u2011Read Distribution\n   Milestone: Deck Locked (14\u202fJune)\n\n5. Logistics & Voting Procedure Setup\n   5.1 Reserve venue & virtual link \u2013 Owner: Board Ops Manager \u2013 0.2\u202fd\n   5.2 AV tech rehearsal \u2013 Owner: IT Lead \u2013 0.3\u202fd\n   5.3 Configure voting platform \u2013 Owner: Board Ops Manager \u2013 1\u202fd\n   5.4 Draft logistics & voting guide \u2013 Owner: Board Ops Manager \u2013 0.5\u202fd\n   5.5 Conduct dry run \u2013 Owner: Board Chair & Secretary \u2013 0.5\u202fd\n   Depends on: 1. Confidentiality Agreements Signed, 3. Pre\u2011Read Distribution\n   Milestone: Logistics Ready (5\u202fJune)\n\n6. Conduct Board QBR\n   6.1 Opening & quorum check \u2013 Owner: Board Secretary \u2013 0.1\u202fh\n   6.2 Presentation delivery \u2013 Owner: Presentation Lead \u2013 3\u202fh\n   6.3 Decision discussions & voting \u2013 Owner: Board Chair \u2013 0.8\u202fh\n   6.4 Vote validation \u2013 Owner: Board Secretary \u2013 0.1\u202fh\n   6.5 Closing & recap \u2013 Owner: Board Chair \u2013 0.1\u202fh\n   Depends on: 4. Deck Locked, 5. Logistics Ready\n   Milestone: QBR Held (15\u202fJune, 9:00\u201113:00)\n\n7. Post\u2011Meeting Follow\u2011Up & Deliverables\n   7.1 Draft minutes \u2013 Owner: Board Secretary \u2013 1\u202fd\n   7.2 Legal review \u2013 Owner: General Counsel \u2013 0.5\u202fd\n   7.3 Distribute minutes & decision summary \u2013 Owner: Board Secretary \u2013 0.2\u202fd\n   7.4 Create action\u2011item tracker \u2013 Owner: Board Secretary \u2013 0.3\u202fd\n   7.5 Schedule & hold progress check\u2011ins \u2013 Owner: Board Secretary \u2013 2\u202fd total\n   7.6 Compile final outcome report \u2013 Owner: M&A Lead (with Board Secretary) \u2013 1\u202fd\n   Depends on: 6. Conduct Board QBR\n   Milestone: Follow\u2011Up Complete (28\u202fJune)\n\n8. Risk Monitoring & Contingency Planning (ongoing)\n   8.1 Build risk register \u2013 Owner: Project Lead \u2013 0.5\u202fd\n   8.2 Weekly status sync \u2013 Owner: Project Lead \u2013 0.2\u202fd per week\n   8.3 Escalation protocol \u2013 Owner: Project Lead \u2013 0.2\u202fd\n   8.4 Buffer allocation \u2013 Owner: Project Lead \u2013 0.1\u202fd\n   Depends on: All outcomes (continuous)\n   Milestone: Risks Managed (throughout)\n\n```\n\n**Key Milestones Summary**\n\n| Date (2025) | Milestone |\n|------------|-----------|\n| 3\u202fJune | All Confidentiality Agreements Signed |\n| 4\u202fJune | Pre\u2011Read Locked (final version) |\n| 5\u202fJune | Pre\u2011Read Distributed to Board |\n| 5\u202fJune | Logistics & Voting Setup Completed |\n| 14\u202fJune | QBR Deck Finalized |\n| 15\u202fJune (9:00\u201113:00) | Board Quarterly Business Review Held (4\u202fh) |\n| 17\u202fJune | Minutes & Decision Summary Sent |\n| 28\u202fJune | Post\u2011Meeting Action Items & Outcome Report Delivered (before acquisition decision deadline) |\n| 30\u202fJune | Acquisition Decision Deadline (board decisions from QBR integrated) |\n\nThis work\u2011back plan captures the major activities, assigns owners, estimates realistic durations, defines critical dependencies, and maps each deliverable to the hard constraints while acknowledging a few high\u2011level risks and buffers.",
+  "plan": {
+    "id": "document-001",
+    "name": "Q2 2025 Board Quarterly Business Review Workback Plan",
+    "details": "",
+    "draft": true,
+    "participants": [
+      {
+        "name": "Legal Ops Lead",
+        "draft": true
+      },
+      {
+        "name": "Sarah Patel",
+        "details": "Business\u2011Review Lead / Project Lead",
+        "draft": true
+      },
+      {
+        "name": "Emily Gomez",
+        "details": "Presentation Lead",
+        "draft": true
+      },
+      {
+        "name": "Michael Liu",
+        "details": "Board Secretary",
+        "draft": true
+      },
+      {
+        "name": "Rita Chen",
+        "details": "Board Operations Manager",
+        "draft": true
+      },
+      {
+        "name": "David Morales",
+        "details": "Board Chair",
+        "draft": true
+      },
+      {
+        "name": "Chief Executive Officer",
+        "draft": true
+      },
+      {
+        "name": "Chief Financial Officer",
+        "draft": true
+      },
+      {
+        "name": "Finance Controller",
+        "draft": true
+      },
+      {
+        "name": "Strategy Director",
+        "draft": true
+      },
+      {
+        "name": "M&A Lead",
+        "draft": true
+      },
+      {
+        "name": "General Counsel",
+        "draft": true
+      },
+      {
+        "name": "IT Lead",
+        "draft": true
+      }
+    ],
+    "references": [],
+    "deliverables": [],
+    "tasks": [
+      {
+        "id": "task-001",
+        "name": "Identify signatories",
+        "details": "Identify signatories \u2013 pull the current board roster and any external participants.",
+        "draft": true,
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002",
+        "name": "Send NDA package",
+        "details": "Send NDA package \u2013 use the standard Helios NDA template, attach a cover note explaining the Q2 review timeline.",
+        "draft": true,
+        "dependencies": [
+          "task-001"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003",
+        "name": "Track receipt",
+        "details": "Track receipt \u2013 maintain a shared tracker (e.g., a spreadsheet) that records signature dates.",
+        "draft": true,
+        "dependencies": [
+          "task-002"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-004",
+        "name": "Reminder & escalation",
+        "details": "Reminder & escalation \u2013 send reminder on 2\u202fJune and, if needed, involve the General Counsel to obtain urgent signatures.",
+        "draft": true,
+        "dependencies": [
+          "task-003"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-005",
+        "name": "Confirm completion",
+        "details": "Confirm completion \u2013 once all signatures are logged, lock the tracker and notify the data\u2011validation lead that the pre\u2011read can be compiled.",
+        "draft": true,
+        "dependencies": [
+          "task-004"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-006",
+        "name": "Issue data\u2011request memo",
+        "details": "Issue data\u2011request memo \u2013 issue a data\u2011request memo to Finance, Operations, Strategy, and M&A teams (target receipt by 24\u202fMay).",
+        "draft": true,
+        "dependencies": [
+          "task-005"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-007",
+        "name": "Receive data from functional teams",
+        "details": "Receive data from functional teams \u2013 collect inputs from Finance, Operations, Strategy, and M&A (estimated 3\u202fdays).",
+        "draft": true,
+        "dependencies": [
+          "task-006"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-008",
+        "name": "Assemble draft pre\u2011read",
+        "details": "Assemble draft pre\u2011read \u2013 Business\u2011Review Lead aggregates the inputs into a structured document.",
+        "draft": true,
+        "dependencies": [
+          "task-007"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-009",
+        "name": "Validation checklist creation",
+        "details": "Validation checklist creation \u2013 create a checklist covering numbers reconciliation, footnote completeness, and consistency with prior quarter reports.",
+        "draft": true,
+        "dependencies": [
+          "task-008"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-010",
+        "name": "Peer review & sign\u2011off",
+        "details": "Peer review & sign\u2011off \u2013 route the draft to Finance Controller and Strategy Director for technical review (estimated 2\u202fdays).",
+        "draft": true,
+        "dependencies": [
+          "task-009"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-011",
+        "name": "Incorporate feedback",
+        "details": "Incorporate feedback \u2013 incorporate any comments from the internal technical review.",
+        "draft": true,
+        "dependencies": [
+          "task-010"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-012",
+        "name": "Lock final version",
+        "details": "Lock final version \u2013 lock the final pre\u2011read (Q2\u20112025\u2011PreRead\u2011v1).",
+        "draft": true,
+        "dependencies": [
+          "task-011"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-013",
+        "name": "Upload to secure portal",
+        "details": "Upload to secure portal \u2013 upload the locked pre\u2011read to the board\u2019s secure document portal.",
+        "draft": true,
+        "dependencies": [
+          "task-012"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-014",
+        "name": "Send distribution email",
+        "details": "Send distribution email \u2013 email the pre\u2011read to all board members.",
+        "draft": true,
+        "dependencies": [
+          "task-013"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-015",
+        "name": "Log receipt confirmations",
+        "details": "Log receipt confirmations \u2013 record which board members have confirmed receipt of the pre\u2011read.",
+        "draft": true,
+        "dependencies": [
+          "task-014"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-016",
+        "name": "Follow\u2011up non\u2011responders",
+        "details": "Follow\u2011up non\u2011responders \u2013 send follow\u2011up reminders to any board members who have not yet confirmed receipt.",
+        "draft": true,
+        "dependencies": [
+          "task-015"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-017",
+        "name": "Draft slide outline",
+        "details": "Draft slide outline \u2013 create a slide outline based on the locked pre\u2011read.",
+        "draft": true,
+        "dependencies": [
+          "task-012",
+          "task-016"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-018",
+        "name": "Populate slides",
+        "details": "Populate slides \u2013 develop the deck content (estimated 3\u202fdays).",
+        "draft": true,
+        "dependencies": [
+          "task-017"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-019",
+        "name": "Add voting slides",
+        "details": "Add voting slides \u2013 insert dedicated voting slides into the deck.",
+        "draft": true,
+        "dependencies": [
+          "task-018"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-020",
+        "name": "Internal technical review",
+        "details": "Internal technical review \u2013 Finance Controller and Strategy Director review the deck for technical accuracy.",
+        "draft": true,
+        "dependencies": [
+          "task-019"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-021",
+        "name": "Executive sign\u2011off",
+        "details": "Executive sign\u2011off \u2013 CEO and CFO provide final executive approval.",
+        "draft": true,
+        "dependencies": [
+          "task-020"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-022",
+        "name": "Chair review",
+        "details": "Chair review \u2013 Board Chair reviews the deck and provides final feedback.",
+        "draft": true,
+        "dependencies": [
+          "task-021"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-023",
+        "name": "Finalize & lock deck",
+        "details": "Finalize & lock deck \u2013 lock the finalized deck for distribution.",
+        "draft": true,
+        "dependencies": [
+          "task-022"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-024",
+        "name": "Reserve venue & virtual link",
+        "details": "Reserve venue & virtual link \u2013 reserve venue & virtual link for the QBR.",
+        "draft": true,
+        "dependencies": [
+          "task-005",
+          "task-016"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-025",
+        "name": "AV tech rehearsal",
+        "details": "AV tech rehearsal \u2013 conduct AV tech rehearsal with IT.",
+        "draft": true,
+        "dependencies": [
+          "task-024"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-026",
+        "name": "Configure voting platform",
+        "details": "Configure voting platform \u2013 set up the voting platform for the QBR.",
+        "draft": true,
+        "dependencies": [
+          "task-025"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-027",
+        "name": "Draft logistics & voting guide",
+        "details": "Draft logistics & voting guide \u2013 create a guide for participants covering logistics and voting procedures.",
+        "draft": true,
+        "dependencies": [
+          "task-026"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-028",
+        "name": "Conduct dry run",
+        "details": "Conduct dry run \u2013 Board Chair & Secretary run through the full agenda and voting process.",
+        "draft": true,
+        "dependencies": [
+          "task-027"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-029",
+        "name": "Opening & quorum check",
+        "details": "Opening & quorum check \u2013 Board Secretary conducts opening and quorum verification.",
+        "draft": true,
+        "dependencies": [
+          "task-023",
+          "task-028"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-030",
+        "name": "Presentation delivery",
+        "details": "Presentation delivery \u2013 Presentation Lead delivers the deck (estimated 3\u202fhours).",
+        "draft": true,
+        "dependencies": [
+          "task-029"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-031",
+        "name": "Decision discussions & voting",
+        "details": "Decision discussions & voting \u2013 Board Chair facilitates discussion and voting on decisions.",
+        "draft": true,
+        "dependencies": [
+          "task-030"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-032",
+        "name": "Vote validation",
+        "details": "Vote validation \u2013 Board Secretary validates the recorded votes.",
+        "draft": true,
+        "dependencies": [
+          "task-031"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-033",
+        "name": "Closing & recap",
+        "details": "Closing & recap \u2013 Board Chair closes the meeting and recaps action items.",
+        "draft": true,
+        "dependencies": [
+          "task-032"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-034",
+        "name": "Draft minutes",
+        "details": "Draft minutes \u2013 Board Secretary drafts the meeting minutes.",
+        "draft": true,
+        "dependencies": [
+          "task-033"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-035",
+        "name": "Legal review",
+        "details": "Legal review \u2013 General Counsel reviews the drafted minutes.",
+        "draft": true,
+        "dependencies": [
+          "task-034"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-036",
+        "name": "Distribute minutes & decision summary",
+        "details": "Distribute minutes & decision summary \u2013 Board Secretary sends minutes and decision summary to all participants.",
+        "draft": true,
+        "dependencies": [
+          "task-035"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-037",
+        "name": "Create action\u2011item tracker",
+        "details": "Create action\u2011item tracker \u2013 Board Secretary creates a tracker for post\u2011meeting action items.",
+        "draft": true,
+        "dependencies": [
+          "task-036"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-038",
+        "name": "Schedule & hold progress check\u2011ins",
+        "details": "Schedule & hold progress check\u2011ins \u2013 Board Secretary holds two progress check\u2011ins with owners.",
+        "draft": true,
+        "dependencies": [
+          "task-037"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-039",
+        "name": "Compile final outcome report",
+        "details": "Compile final outcome report \u2013 M&A Lead (with Board Secretary) compiles the final outcome report.",
+        "draft": true,
+        "dependencies": [
+          "task-038"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-040",
+        "name": "Build risk register",
+        "details": "Build risk register \u2013 Project Lead builds a risk register for the program.",
+        "draft": true,
+        "dependencies": [
+          "task-039"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-041",
+        "name": "Weekly status sync",
+        "details": "Weekly status sync \u2013 Project Lead runs a weekly status sync (0.2\u202fd per week).",
+        "draft": true,
+        "dependencies": [
+          "task-040"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-042",
+        "name": "Escalation protocol",
+        "details": "Escalation protocol \u2013 Project Lead defines escalation protocol.",
+        "draft": true,
+        "dependencies": [
+          "task-041"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-043",
+        "name": "Buffer allocation",
+        "details": "Buffer allocation \u2013 Project Lead allocates buffer time for critical activities.",
+        "draft": true,
+        "dependencies": [
+          "task-042"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      }
+    ],
+    "history": []
+  }
+}

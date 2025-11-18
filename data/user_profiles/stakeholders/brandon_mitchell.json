@@ -1,0 +1,141 @@
+{
+  "basic_info": {
+    "full_name": "Brandon Mitchell",
+    "age": 38,
+    "location": "Austin, Texas, USA",
+    "timezone": "Central Time (UTC-6 / UTC-5 DST)",
+    "years_experience": 15,
+    "education": [
+      {
+        "degree": "B.S. Computer Science",
+        "institution": "University of Texas at Austin",
+        "year": 2007
+      },
+      {
+        "degree": "M.S. Information Systems",
+        "institution": "Texas A&M University",
+        "year": 2009
+      },
+      {
+        "certification": "ITIL v4 Foundation",
+        "year": 2015
+      }
+    ]
+  },
+  "work_habits": {
+    "preferred_working_hours": "07:00-16:00 (early bird)",
+    "peak_productivity_times": "08:00-11:00",
+    "communication_style": {
+      "preference": "asynchronous (Teams, email)",
+      "typical_response_time": "within 2 hours",
+      "sync_meetings": "short 15‑min check‑ins when needed"
+    },
+    "meeting_preferences": "limits meetings to ≤2 hours per week; prefers brief stand‑ups and agenda‑driven sessions; virtual preferred, quarterly in‑person",
+    "work_environment": "Hybrid (2 days in office, 3 days remote)",
+    "focus_time_requirements": "3–4 hours of uninterrupted focus daily"
+  },
+  "personality": {
+    "mbti": "ENTJ",
+    "decision_making_approach": "data‑driven with stakeholder input; uses cost‑benefit analysis",
+    "risk_tolerance": 6,
+    "collaboration_style": "structured, delegative; sets clear expectations",
+    "stress_management_approach": "scheduled breaks, 30‑minute daily walk, mindfulness app, regular gym sessions",
+    "conflict_resolution_style": "collaborative problem‑solving; aims for win‑win outcomes"
+  },
+  "skills": {
+    "core_technical_skills": {
+      "AWS Cloud Architecture": 9,
+      "Network Security (Firewalls, IDS/IPS)": 8,
+      "DevOps (Docker, Kubernetes, CI/CD)": 8,
+      "Scripting (Python, PowerShell)": 7,
+      "IT Service Management (ITIL)": 8,
+      "Agile Project Management (Scrum)": 7,
+      "SQL / Data Analytics": 6
+    },
+    "leadership_abilities": {
+      "team_leadership": 8,
+      "strategic_planning": 7,
+      "change_management": 6
+    },
+    "domain_expertise_areas": [
+      "Enterprise infrastructure design",
+      "Cybersecurity compliance (ISO 27001, NIST)",
+      "SaaS integration & migration"
+    ],
+    "learning_agility": 8,
+    "tools_proficiency": [
+      "AWS Console & CLI",
+      "Terraform",
+      "Jira & Confluence",
+      "ServiceNow",
+      "Git / GitHub",
+      "PowerBI"
+    ],
+    "languages_spoken": [
+      "English (native)",
+      "Spanish (conversational)"
+    ]
+  },
+  "performance": {
+    "task_completion_rate": 92,
+    "quality_score": 95,
+    "estimation_accuracy": 88,
+    "multitasking_ability": 7,
+    "performance_under_pressure": 8
+  },
+  "availability": {
+    "available_hours_per_week": 38,
+    "timezone_and_working_hours": "Central (UTC‑6) 07:00‑16:00 (incl. 1 h lunch)",
+    "planned_time_off_days_per_year": 20,
+    "other_commitments": [
+      "1 h weekly volunteer IT mentoring",
+      "2‑3 days/year industry conferences"
+    ],
+    "travel_flexibility": "up to 15 % of time (~6 weeks/year) for client site visits"
+  },
+  "personal_factors": {
+    "family_status": "Married, two children (ages 6 and 9)",
+    "caregiving_responsibilities": "Morning school drop‑offs; occasional evening school events",
+    "commute_situation": "30‑minute drive to office on hybrid days",
+    "health_considerations": "Mild hypertension; monitors via wearable; exercises 3 times/week",
+    "career_motivation": "Aiming for Director of IT Operations; passionate about leading digital transformation initiatives"
+  },
+  "project_impact": {
+    "reliability": 9,
+    "innovation_tendency": 7,
+    "documentation_quality": 8,
+    "mentorship_capability": 8,
+    "influence_level": 7
+  },
+  "collaboration": {
+    "meeting_frequency_preference": "bi‑weekly team sync, daily 15‑min stand‑up, ad‑hoc as needed",
+    "communication_channels_preference": [
+      "Microsoft Teams (chat)",
+      "Email",
+      "Confluence"
+    ],
+    "feedback_style": "direct but constructive",
+    "knowledge_sharing_habits": "writes post‑mortems, runs monthly lunch‑and‑learns, maintains internal wiki",
+    "cross_team_collaboration": 8
+  },
+  "risk_factors": {
+    "potential_bottlenecks": "over‑reliance on his deep AWS expertise; may cause delays if unavailable",
+    "backup_person_needed": "Senior Cloud Engineer – Alex Rivera",
+    "ramp_up_time_for_new_projects_weeks": 2,
+    "context_switching_tolerance": 5,
+    "burnout_risk_factors": [
+      "high workload periods (quarter‑end releases)",
+      "limited personal time during major migrations",
+      "chronic health condition requiring regular monitoring"
+    ]
+  },
+  "_metadata": {
+    "generated_at": "2025-11-17T15:30:46.801579",
+    "name": "Brandon Mitchell",
+    "role": "IT Manager",
+    "seniority": "mid",
+    "company": "TechCorp",
+    "model": "gpt-oss:120b",
+    "provider": "ollama"
+  }
+}

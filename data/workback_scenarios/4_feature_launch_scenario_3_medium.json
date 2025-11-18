@@ -1,0 +1,1107 @@
+{
+  "scenario_name": "DataPulse Real\u2011Time Cohort Insights Feature Launch",
+  "scenario_number": 3,
+  "meeting_type": "Product Feature Launch",
+  "quality_level": "medium",
+  "workback_prompt": "Generate a detailed 30\u2011day workback plan for the launch of DataPulse's Real\u2011Time Cohort Insights feature. Include weekly milestones, task owners, dependencies, critical path items, risk mitigation steps, and a launch\u2011day run\u2011book. Use the scenario information provided: product name, launch date (2026\u201101\u201114 10:00\u202fAM PST), cross\u2011functional team members, deliverables, success criteria, constraints, and launch channels (email series, blog post, in\u2011app banner, webinar, social media).\n\nGenerate a MEDIUM QUALITY workback plan with these characteristics:\n- Most major tasks present but some gaps\n- Reasonable task descriptions\n- Some dependencies defined\n- Most tasks have owners\n- Milestones present but may lack detail\n- Generally realistic timelines\n- Some consideration of risks\n- Key deliverables identified\n\nIMPORTANT: Generate a plan that naturally exhibits MEDIUM quality characteristics.\nDo not explicitly label the plan as \"medium quality\" - let the quality emerge from the content.",
+  "generated_at": "2025-11-17T05:33:56.007406",
+  "analysis": "# Outcomes\n\n## 1. Launch\u2011Day Run\u2011book  \nA step\u2011by\u2011step checklist that the Ops/Release team follows on **2026\u201101\u201114\u202f10:00\u202fAM\u202fPST** to push the Real\u2011Time Cohort Insights feature live, verify health, and activate marketing channels.  \nArtifact references: *(none provided)*  \n\n### Reasoning  \nThe launch date is fixed, so a concrete run\u2011book is essential to coordinate engineering, support, and marketing on the exact minute the feature is released. The user explicitly asked for a launch\u2011day run\u2011book, making this a primary outcome.\n\n### Approach  \n1. **Pre\u2011launch checklist (09:30\u202fAM PST)** \u2013 confirm feature flag status, monitoring dashboards, and support staff on\u2011call.  \n2. **Release execution (10:00\u202fAM PST)** \u2013 flip the feature flag, run post\u2011deployment smoke tests, and capture screenshots for the in\u2011app banner.  \n3. **Health verification (10:15\u201110:45\u202fAM PST)** \u2013 review key metrics (latency, error rate, cohort\u2011generation jobs) against success criteria.  \n4. **Marketing activation (10:45\u202fAM PST)** \u2013 trigger email series, publish blog post, enable in\u2011app banner, schedule social posts, and open webinar registration.  \n5. **Escalation path** \u2013 list contacts (Engineering Lead, Product Manager, Customer Success Lead) and Slack channel for real\u2011time issue handling.  \n6. **Post\u2011launch debrief (02:00\u202fPM PST)** \u2013 gather initial data, note any incidents, and assign follow\u2011up actions.\n\n---\n\n## 2. Weekly Milestones (Weeks\u202f\u20114 \u2192\u202f0)  \nA high\u2011level timeline that marks the completion of major deliverables each week leading up to launch.  \nArtifact references: *(none provided)*  \n\n### Reasoning  \nThe user requested \u201cweekly milestones\u201d for a 30\u2011day work\u2011back schedule. Breaking the work into four weekly checkpoints gives the team clear targets and highlights where dependencies converge.\n\n### Approach  \n| Week (relative to launch) | Milestone | Owner(s) | Key Deliverable |\n|---------------------------|-----------|----------|-----------------|\n| **\u20114** (2025\u201112\u201114) | Feature development freeze & QA start | Engineering Lead, QA Lead | All core code merged; test plan drafted |\n| **\u20113** (2025\u201112\u201121) | Content creation complete | Marketing Manager, Content Writer, Design Lead | Email series, blog draft, banner mock\u2011ups, webinar deck |\n| **\u20112** (2025\u201112\u201128) | Beta release to internal users | Product Manager, Engineering Lead | Feature flag enabled for internal cohort; feedback collected |\n| **\u20111** (2026\u201101\u201104) | Marketing channel prep & monitoring ready | Marketing Manager, Ops Lead | Scheduling of emails/social, monitoring dashboards live |\n| **0** (2026\u201101\u201114) | Launch day | All leads | Run\u2011book executed, feature live, success metrics tracked |\n\n---\n\n## 3. Content Package Delivery  \nProduce and approve all external communications (email series, blog post, in\u2011app banner, webinar, social media assets).  \nArtifact references: *(none provided)*  \n\n### Reasoning  \nLaunch channels are explicitly listed; without the content ready, the launch cannot be announced. This outcome captures the creation, review, and scheduling of each asset.\n\n### Approach  \n1. Draft copy (email, blog, social) \u2013 Content Writer (Week\u20113).  \n2. Design visuals (banner, webinar slides) \u2013 Design Lead (Week\u20113).  \n3. Internal review (Product, Legal, Customer Success) \u2013 Marketing Manager (Week\u20113).  \n4. Final approval and schedule in marketing automation tools \u2013 Marketing Manager (Week\u20112).  \n5. Publish blog and enable in\u2011app banner on launch day \u2013 Ops Lead (Launch\u2011Day).  \n\n---\n\n## 4. Technical Readiness  \nEnsure the feature is stable, observable, and supportable at launch.  \nArtifact references: *(none provided)*  \n\n### Reasoning  \nA real\u2011time analytics feature carries performance and reliability risk. The plan must include feature\u2011flag gating, monitoring, rollback, and support documentation\u2014core technical readiness items.\n\n### Approach  \n1. **Feature flag implementation** \u2013 Engineering Lead (Week\u20114).  \n2. **Load\u2011testing & performance validation** \u2013 QA Lead (Week\u20113).  \n3. **Monitoring & alerting set\u2011up** \u2013 Ops Lead (Week\u20112).  \n4. **Rollback procedure documented** \u2013 Engineering Lead (Week\u20112).  \n5. **Support playbook** \u2013 Customer Success Lead (Week\u20111).  \n\nCritical path: Feature flag \u2192 Load\u2011testing \u2192 Monitoring \u2192 Launch\u2011Day execution.\n\n---\n\n## 5. Marketing Activation & Channel Scheduling  \nConfigure and queue all launch\u2011day communications across the five channels.  \nArtifact references: *(none provided)*  \n\n### Reasoning  \nThe launch channels (email series, blog, in\u2011app banner, webinar, social) must be coordinated to go live at the correct times. This outcome captures the scheduling work and any dependencies on content delivery.\n\n### Approach  \n1. Load email series into ESP, set send times (Launch\u2011Day 10:45\u202fAM PST).  \n2. Queue social posts (Twitter, LinkedIn) for 10:45\u202fAM and follow\u2011up at 2:00\u202fPM.  \n3. Set blog post to \u201cpublish on demand\u201d \u2013 trigger from run\u2011book.  \n4. Enable in\u2011app banner via feature flag toggle \u2013 part of launch checklist.  \n5. Open webinar registration link in email and blog; schedule webinar for 2026\u201101\u201121.  \n\n---\n\n## 6. Risk Mitigation & Contingency Plan  \nIdentify high\u2011impact risks, assign owners, and define mitigation steps.  \nArtifact references: *(none provided)*  \n\n### Reasoning  \nThe user asked for \u201crisk mitigation steps.\u201d Highlighting the top three risks (performance degradation, email deliverability, support overload) and mapping owners creates a safety net.\n\n### Approach  \n| Risk | Impact | Owner | Mitigation |\n|------|--------|-------|------------|\n| Real\u2011time processing latency > 2\u202fs | Missed success criteria | Engineering Lead | Pre\u2011launch load test; auto\u2011scale thresholds set |\n| Email series spam\u2011filtering | Low adoption | Marketing Manager | Use verified sending domain; run test send to internal list |\n| Support tickets spike > 20/hr | Customer dissatisfaction | Customer Success Lead | Draft FAQ; staff extra on\u2011call for first 24\u202fh |\n\nIf any risk materializes on launch day, the run\u2011book includes a \u201cpause\u201d step (re\u2011disable feature flag) and a communication plan (internal alert, status page update).\n\n---\n\n# Breakdown\n\n```\n1. Launch\u2011Day Run\u2011book\n   1.1 Draft pre\u2011launch checklist (Ops Lead) \u2013 Depends on Monitoring ready (4.3)\n   1.2 Define release steps (Engineering Lead) \u2013 Depends on Feature flag (4.1)\n   1.3 Build health\u2011verification script (QA Lead) \u2013 Can run in parallel with 1.2\n   1.4 Write escalation path (Product Manager) \u2013 Can run in parallel\n   1.5 Review & sign\u2011off (All leads) \u2013 Depends on 1.1\u20111.4\n\n2. Weekly Milestones\n   2.1 Week\u20114 milestone (Feature freeze) \u2013 Depends on 4.1\u20114.2\n   2.2 Week\u20113 milestone (Content complete) \u2013 Depends on 3.1\u20113.3\n   2.3 Week\u20112 milestone (Beta release) \u2013 Depends on 4.4, 5.1\n   2.4 Week\u20111 milestone (Channel prep) \u2013 Depends on 3.4, 5.2\u20115.5\n   2.5 Launch\u2011Day milestone \u2013 Depends on all prior outcomes\n\n3. Content Package Delivery\n   3.1 Draft copy (Email, Blog, Social) \u2013 Owner: Content Writer \u2013 Due Week\u20113\n   3.2 Design visuals (Banner, Webinar) \u2013 Owner: Design Lead \u2013 Due Week\u20113\n   3.3 Internal review (Legal, Product) \u2013 Owner: Marketing Manager \u2013 Due Week\u20113\n   3.4 Final approval & scheduling \u2013 Owner: Marketing Manager \u2013 Due Week\u20112\n   3.5 Publish blog & enable banner \u2013 Owner: Ops Lead \u2013 Executed Launch\u2011Day\n\n4. Technical Readiness\n   4.1 Implement feature flag (backend) \u2013 Owner: Engineering Lead \u2013 Due Week\u20114\n   4.2 Write automated unit/integration tests \u2013 Owner: QA Lead \u2013 Due Week\u20114\n   4.3 Load\u2011testing & performance validation \u2013 Owner: QA Lead \u2013 Due Week\u20113\n   4.4 Set up monitoring dashboards (latency, error rate) \u2013 Owner: Ops Lead \u2013 Due Week\u20112\n   4.5 Document rollback procedure \u2013 Owner: Engineering Lead \u2013 Due Week\u20112\n   4.6 Draft support playbook (FAQ, triage) \u2013 Owner: Customer Success Lead \u2013 Due Week\u20111\n\n5. Marketing Activation & Channel Scheduling\n   5.1 Load email series into ESP & schedule send \u2013 Owner: Marketing Manager \u2013 Due Week\u20111\n   5.2 Queue social media posts \u2013 Owner: Social Media Coordinator \u2013 Due Week\u20111\n   5.3 Prepare blog publishing workflow \u2013 Owner: Ops Lead \u2013 Due Week\u20111\n   5.4 Configure in\u2011app banner toggle \u2013 Owner: Engineering Lead \u2013 Executed Launch\u2011Day\n   5.5 Open webinar registration & set date \u2013 Owner: Webinar Producer \u2013 Due Week\u20111\n\n6. Risk Mitigation & Contingency Plan\n   6.1 Identify top\u20113 risks (Product Manager) \u2013 Due Week\u20114\n   6.2 Assign owners & mitigation steps (All leads) \u2013 Due Week\u20114\n   6.3 Build \u201cpause feature\u201d script \u2013 Owner: Engineering Lead \u2013 Depends on 4.1\n   6.4 Draft public status\u2011page template \u2013 Owner: Customer Success Lead \u2013 Due Week\u20112\n   6.5 Conduct risk review meeting (All) \u2013 Due Week\u20111\n```\n\n### Dependencies & Critical Path Highlights\n- **Feature flag (4.1) \u2192 Load\u2011testing (4.3) \u2192 Monitoring (4.4) \u2192 Launch\u2011Day run\u2011book steps (1.2\u20111.4)** forms the core critical path.  \n- **Content final approval (3.4) \u2192 Marketing channel scheduling (5.1\u20115.5)** is another essential chain; any delay here pushes the launch\u2011day activation.  \n- **Support playbook (4.6) \u2192 Risk mitigation (6.3\u20116.5)** must be ready before the final week to ensure on\u2011call staff are prepared.\n\n### Risk Mitigation Integration\n- Each risk owner is listed in **Outcome\u202f6** and is also the primary owner of the dependent technical or marketing task (e.g., Engineering Lead for performance risk, Marketing Manager for email deliverability).  \n- The \u201cpause feature\u201d script (6.3) is referenced in the launch\u2011day run\u2011book (1.2) as the emergency rollback step.  \n\n--- \n\nThis work\u2011back plan gives the cross\u2011functional team a clear set of weekly milestones, owners, and dependencies, while also surfacing the critical path items, risk mitigations, and a concrete launch\u2011day run\u2011book. Gaps such as detailed creative copy approvals or exact social\u2011media posting times are left for the team to flesh out during the weekly execution cycles, reflecting a realistic, medium\u2011quality planning level.",
+  "plan": {
+    "id": "document-001",
+    "name": "Real-Time Cohort Insights Launch Plan",
+    "details": "",
+    "draft": true,
+    "participants": [
+      {
+        "name": "Ops Lead",
+        "email": "opslead@example.com",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Engineering Lead",
+        "email": "engineeringlead@example.com",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "QA Lead",
+        "email": "qalead@example.com",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Product Manager",
+        "email": "productmanager@example.com",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Marketing Manager",
+        "email": "marketingmanager@example.com",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Content Writer",
+        "email": "contentwriter@example.com",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Design Lead",
+        "email": "designlead@example.com",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Social Media Coordinator",
+        "email": "socialmediacoordinator@example.com",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Customer Success Lead",
+        "email": "customersuccesslead@example.com",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Webinar Producer",
+        "email": "webinarproducer@example.com",
+        "details": "",
+        "draft": true
+      }
+    ],
+    "references": [],
+    "deliverables": [],
+    "tasks": [
+      {
+        "id": "task-001",
+        "name": "Implement feature flag",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Engineering Lead"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002",
+        "name": "Write automated unit/integration tests",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "QA Lead"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003",
+        "name": "Load-testing & performance validation",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "QA Lead"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-004",
+        "name": "Set up monitoring dashboards",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Ops Lead"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-005",
+        "name": "Document rollback procedure",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Engineering Lead"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-006",
+        "name": "Draft support playbook",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Customer Success Lead"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-007",
+        "name": "Draft copy (Email, Blog, Social)",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Content Writer"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-008",
+        "name": "Design visuals (Banner, Webinar)",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Design Lead"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-009",
+        "name": "Internal review (Legal, Product)",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-007",
+          "task-008"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Marketing Manager"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-010",
+        "name": "Final approval & scheduling",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-009"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Marketing Manager"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-011",
+        "name": "Publish blog & enable banner",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-010"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Ops Lead"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-012",
+        "name": "Load email series into ESP & schedule send",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-010"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Marketing Manager"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-013",
+        "name": "Queue social media posts",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-010"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Social Media Coordinator"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-014",
+        "name": "Prepare blog publishing workflow",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-010"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Ops Lead"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-015",
+        "name": "Configure in-app banner toggle",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-001"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Engineering Lead"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-016",
+        "name": "Open webinar registration & set date",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-010"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Webinar Producer"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-017",
+        "name": "Identify top-3 risks",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Product Manager"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-018",
+        "name": "Assign owners & mitigation steps",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-017"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Engineering Lead",
+          "Marketing Manager",
+          "Ops Lead",
+          "QA Lead",
+          "Product Manager",
+          "Customer Success Lead"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-019",
+        "name": "Build \u201cpause feature\u201d script",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-001"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Engineering Lead"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-020",
+        "name": "Draft public status-page template",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-004"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Customer Success Lead"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-021",
+        "name": "Conduct risk review meeting",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-018"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Engineering Lead",
+          "Marketing Manager",
+          "Ops Lead",
+          "QA Lead",
+          "Product Manager",
+          "Customer Success Lead"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-022",
+        "name": "Draft pre-launch checklist",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-003"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Ops Lead"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-023",
+        "name": "Define release steps",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-001"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Engineering Lead"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-024",
+        "name": "Build health-verification script",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "QA Lead"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-025",
+        "name": "Write escalation path",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Product Manager"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-026",
+        "name": "Review & sign-off",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-022",
+          "task-023",
+          "task-024",
+          "task-025"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Ops Lead",
+          "Engineering Lead",
+          "QA Lead",
+          "Product Manager",
+          "Marketing Manager",
+          "Customer Success Lead",
+          "Content Writer",
+          "Design Lead",
+          "Social Media Coordinator",
+          "Webinar Producer"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-027",
+        "name": "Week-4 milestone (Feature freeze)",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-001",
+          "task-002"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Engineering Lead",
+          "QA Lead"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-028",
+        "name": "Week-3 milestone (Content complete)",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-007",
+          "task-008",
+          "task-009"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Marketing Manager",
+          "Content Writer",
+          "Design Lead"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-029",
+        "name": "Week-2 milestone (Beta release)",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-004",
+          "task-012"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Ops Lead",
+          "Marketing Manager"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-030",
+        "name": "Week-1 milestone (Channel prep)",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-010",
+          "task-013",
+          "task-014",
+          "task-015",
+          "task-016"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Marketing Manager",
+          "Ops Lead",
+          "Social Media Coordinator",
+          "Engineering Lead",
+          "Webinar Producer"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-031",
+        "name": "Launch-Day milestone",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-027",
+          "task-028",
+          "task-029",
+          "task-030"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Ops Lead",
+          "Engineering Lead",
+          "QA Lead",
+          "Product Manager",
+          "Marketing Manager",
+          "Customer Success Lead",
+          "Content Writer",
+          "Design Lead",
+          "Social Media Coordinator",
+          "Webinar Producer"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-007",
+        "name": "Draft copy (Email, Blog, Social)",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Content Writer"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-008",
+        "name": "Design visuals (Banner, Webinar)",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Design Lead"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-009",
+        "name": "Internal review (Legal, Product)",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-007",
+          "task-008"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Marketing Manager"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-010",
+        "name": "Final approval & scheduling",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-009"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Marketing Manager"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-011",
+        "name": "Publish blog & enable banner",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-010"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Ops Lead"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-012",
+        "name": "Load email series into ESP & schedule send",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-010"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Marketing Manager"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-013",
+        "name": "Queue social media posts",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-010"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Social Media Coordinator"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-014",
+        "name": "Prepare blog publishing workflow",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-010"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Ops Lead"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-015",
+        "name": "Configure in-app banner toggle",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-001"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Engineering Lead"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-016",
+        "name": "Open webinar registration & set date",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-010"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Webinar Producer"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-017",
+        "name": "Identify top-3 risks",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Product Manager"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-018",
+        "name": "Assign owners & mitigation steps",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-017"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Engineering Lead",
+          "Marketing Manager",
+          "Ops Lead",
+          "QA Lead",
+          "Product Manager",
+          "Customer Success Lead"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-019",
+        "name": "Build \u201cpause feature\u201d script",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-001"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Engineering Lead"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-020",
+        "name": "Draft public status-page template",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-004"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Customer Success Lead"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-021",
+        "name": "Conduct risk review meeting",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-018"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Engineering Lead",
+          "Marketing Manager",
+          "Ops Lead",
+          "QA Lead",
+          "Product Manager",
+          "Customer Success Lead"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-022",
+        "name": "Draft pre-launch checklist",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-003"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Ops Lead"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-023",
+        "name": "Define release steps",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-001"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Engineering Lead"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-024",
+        "name": "Build health-verification script",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignee": [
+          "QA Lead"
+        ],
+        "assignees": [
+          "QA Lead"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-025",
+        "name": "Write escalation path",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Product Manager"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-026",
+        "name": "Review & sign-off",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-022",
+          "task-023",
+          "task-024",
+          "task-025"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Ops Lead",
+          "Engineering Lead",
+          "QA Lead",
+          "Product Manager",
+          "Marketing Manager",
+          "Customer Success Lead",
+          "Content Writer",
+          "Design Lead",
+          "Social Media Coordinator",
+          "Webinar Producer"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-027",
+        "name": "Week-4 milestone (Feature freeze)",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-001",
+          "task-002"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Engineering Lead",
+          "QA Lead"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-028",
+        "name": "Week-3 milestone (Content complete)",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-007",
+          "task-008",
+          "task-009"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Marketing Manager",
+          "Content Writer",
+          "Design Lead"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-029",
+        "name": "Week-2 milestone (Beta release)",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-004",
+          "task-012"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Ops Lead",
+          "Marketing Manager"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-030",
+        "name": "Week-1 milestone (Channel prep)",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-010",
+          "task-013",
+          "task-014",
+          "task-015",
+          "task-016"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Marketing Manager",
+          "Ops Lead",
+          "Social Media Coordinator",
+          "Engineering Lead",
+          "Webinar Producer"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-031",
+        "name": "Launch-Day milestone",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-027",
+          "task-028",
+          "task-029",
+          "task-030"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Ops Lead",
+          "Engineering Lead",
+          "QA Lead",
+          "Product Manager",
+          "Marketing Manager",
+          "Customer Success Lead",
+          "Content Writer",
+          "Design Lead",
+          "Social Media Coordinator",
+          "Webinar Producer"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      }
+    ],
+    "history": []
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "basic_info": {
+    "full_name": "Olivia Martinez",
+    "age": 32,
+    "location": "Austin, Texas, USA",
+    "timezone": "Central Standard Time (UTC-6)",
+    "years_experience": 8,
+    "education": {
+      "bachelor": {
+        "degree": "B.S. in Statistics",
+        "institution": "University of Texas at Austin",
+        "year_completed": 2015
+      },
+      "master": {
+        "degree": "M.S. in Data Science",
+        "institution": "Georgia Institute of Technology",
+        "year_completed": 2017
+      }
+    }
+  },
+  "work_habits": {
+    "preferred_working_hours": "08:00-16:00 CST (flexible +/- 1 hour)",
+    "peak_productivity_times": [
+      "09:00-11:30",
+      "13:30-15:00"
+    ],
+    "communication_style": {
+      "preference": "asynchronous with quick sync check‑ins",
+      "average_response_time_minutes": 45
+    },
+    "meeting_preferences": {
+      "frequency": "minimizes meetings; prefers 1‑hour weekly sync with team and ad‑hoc 15‑minute stand‑ups",
+      "format": "video preferred for cross‑functional discussions, otherwise audio"
+    },
+    "work_environment": "Hybrid (3 days remote, 2 days in Austin office)",
+    "focus_time_requirements": "2 blocks of 90 minutes per day protected for deep analysis"
+  },
+  "personality": {
+    "mbti": "INTJ",
+    "decision_making_approach": "data‑driven with structured pros/cons analysis; seeks stakeholder input before finalizing",
+    "risk_tolerance": "moderate – comfortable with calculated risks after validation",
+    "collaboration_style": "independent contributor who actively shares findings; values clear roles",
+    "stress_management_approach": "short mindfulness breaks, prioritization matrix, and scheduled exercise",
+    "conflict_resolution_style": "collaborative – focuses on facts and common goals, avoids personal confrontations"
+  },
+  "skills": {
+    "core_technical_skills": {
+      "SQL": 9,
+      "Python (pandas, scikit‑learn)": 8,
+      "R": 6,
+      "Statistical Modeling": 8,
+      "Data Visualization (Tableau, PowerBI)": 7,
+      "A/B Testing": 8,
+      "Big Data (Spark, Hive)": 5,
+      "Machine Learning (model deployment)": 6
+    },
+    "leadership_abilities": 6,
+    "domain_expertise_areas": [
+      "SaaS product usage analytics",
+      "Customer churn prediction",
+      "Revenue forecasting",
+      "User behavior segmentation"
+    ],
+    "learning_agility": 8,
+    "tools_proficiency": [
+      "Snowflake",
+      "Looker",
+      "Git/GitHub",
+      "Jira",
+      "Confluence",
+      "Slack"
+    ],
+    "languages_spoken": [
+      "English (native)",
+      "Spanish (fluent)"
+    ]
+  },
+  "performance": {
+    "task_completion_rate_percent": 93,
+    "quality_score_percent": 96,
+    "estimation_accuracy_percent": 88,
+    "multitasking_ability": 7,
+    "performance_under_pressure": 8
+  },
+  "availability": {
+    "available_hours_per_week": 38,
+    "timezone_and_working_hours": "CST, typically 08:00‑16:00 with 1 hour lunch break",
+    "planned_time_off_days_per_year": 18,
+    "other_commitments": [
+      "Quarterly professional certification (e.g., Google Data Analytics)",
+      "Monthly community meetup speaking engagement"
+    ],
+    "travel_flexibility": "up to 15% of time (≈1 week per quarter) for onsite workshops or conferences"
+  },
+  "personal_factors": {
+    "family_status": "Married, no children",
+    "caregiving_responsibilities": "None",
+    "commute_situation": "0‑5 miles (bike or walk to office on on‑site days)",
+    "health_considerations": "Mild asthma – prefers indoor air‑quality controls, avoids prolonged exposure to strong scents",
+    "career_motivation": "Desires to become a Senior Data Scientist leading end‑to‑end analytics initiatives and mentor junior analysts"
+  },
+  "project_impact": {
+    "reliability": 9,
+    "innovation_tendency": 6,
+    "documentation_quality": 8,
+    "mentorship_capability": 7,
+    "influence_level": 6
+  },
+  "collaboration": {
+    "meeting_frequency_preference": "1‑2 formal meetings per week; short daily async updates via Slack",
+    "communication_channels_preference": [
+      "Slack (primary)",
+      "Email (secondary)",
+      "Jira comments",
+      "Confluence"
+    ],
+    "feedback_style": "direct but diplomatic – focuses on actionable points",
+    "knowledge_sharing_habits": "writes concise post‑mortems, contributes to internal wiki, runs monthly brown‑bag sessions",
+    "cross_team_collaboration": 7
+  },
+  "risk_factors": {
+    "potential_bottlenecks": [
+      "Heavy reliance on single data pipeline (Snowflake ETL) – if downstream fails, analysis stalls",
+      "Limited capacity for large‑scale ML model deployment"
+    ],
+    "backup_person_needed": "Javier Lopez (Senior Data Analyst, familiar with Olivia's dashboards)",
+    "ramp_up_time_weeks": 3,
+    "context_switching_tolerance": 5,
+    "burnout_risk_factors": [
+      "Extended periods of back‑to‑back deadlines without buffer",
+      "Excessive meeting load beyond preferred limits",
+      "Insufficient protected focus time"
+    ]
+  },
+  "_metadata": {
+    "generated_at": "2025-11-17T15:22:54.770901",
+    "name": "Olivia Martinez",
+    "role": "Data Analyst",
+    "seniority": "mid",
+    "company": "TechCorp",
+    "model": "gpt-oss:120b",
+    "provider": "ollama"
+  }
+}

@@ -1,0 +1,530 @@
+{
+  "scenario_name": "Azure Cognitive Search Relevance Boost Squad Mission (8\u2011week cycle)",
+  "scenario_number": 1,
+  "meeting_type": "Squad Mission Planning",
+  "quality_level": "high",
+  "workback_prompt": "Generate a detailed work\u2011back plan for the 'Azure Cognitive Search Relevance Boost Squad Mission' (8\u2011week cycle) using the MMM framework. Include weekly tasks, owners, dependencies, risk mitigations, and required artifacts for each milestone (Weeks\u202f2,\u202f4,\u202f6,\u202f8). Align the plan with the success criteria, constraints, and the company\u2019s AI\u2011first Azure strategy. Output the plan in a tabular format (Week, Milestone, Deliverable, Owner, Dependencies, Risks, Mitigation).\n\nGenerate a HIGH QUALITY workback plan with these characteristics:\n- Comprehensive task coverage\n- Clear, actionable task descriptions\n- Well-defined dependencies\n- All tasks assigned to specific owners\n- Clear milestones with completion criteria\n- Realistic timelines with buffers\n- Proactive risk management\n- Complete deliverable list\n\nIMPORTANT: Generate a plan that naturally exhibits HIGH quality characteristics.\nDo not explicitly label the plan as \"high quality\" - let the quality emerge from the content.",
+  "generated_at": "2025-11-17T05:42:52.109733",
+  "analysis": "# Outcomes\n\n## 1. Success\u2011criteria & constraint alignment document  \nA concise, shared artifact that captures the mission\u2019s success criteria, the AI\u2011first Azure strategy touch\u2011points, and all hard constraints (budget, compliance, performance SLAs, etc.).  \nArtifact references: *none provided*  \n\n### Reasoning  \nThe work\u2011back plan must be anchored to the same objectives that the squad will be judged against.  Without a single source of truth, owners may prioritize divergent goals, causing re\u2011work later in the cycle.  \n\n### Approach  \n1. **Collect source material** \u2013 pull the mission charter, Azure AI strategy brief, and any compliance or budget guidelines that have already been circulated.  \n2. **Facilitate a short alignment workshop** (2\u202fh) with the Squad Lead, Product Owner, and the Azure Strategy liaison.  \n3. **Synthesize** the inputs into a one\u2011page matrix:  \n   * Success criteria (e.g., \u201c+15\u202f% relevance score on benchmark queries\u201d)  \n   * Constraints (e.g., \u201cmax 20\u202f% increase in query latency\u201d)  \n   * Azure AI\u2011first touch\u2011points (e.g., \u201cuse Azure Cognitive Search built\u2011in BM25 + semantic ranking\u201d)  \n4. **Circulate for sign\u2011off** and store in the squad\u2019s shared repository.  \n\n---\n\n## 2. Milestone & deliverable definition (Weeks\u202f2,\u202f4,\u202f6,\u202f8)  \nA list of concrete milestones, each with a clear completion definition and the primary deliverable(s) that will be produced at that point.  \n\n### Reasoning  \nThe user explicitly asked for milestones at weeks\u202f2,\u202f4,\u202f6,\u202f8.  Defining them first prevents the later \u201cfill\u2011in\u2011the\u2011blank\u201d problem where tasks are created without a clear end\u2011state.  \n\n### Approach  \n1. **Map the mission flow** \u2013 from requirements gathering \u2192 prototype \u2192 evaluation \u2192 production rollout.  \n2. **Overlay the 8\u2011week cadence** and locate natural decision points (e.g., \u201cprototype validation\u201d after week\u202f2).  \n3. **Draft milestone statements** such as:  \n   * *Week\u202f2 \u2013 Prototype ready for internal testing*  \n   * *Week\u202f4 \u2013 Benchmark results and tuning plan approved*  \n   * *Week\u202f6 \u2013 Production\u2011grade relevance model integrated*  \n   * *Week\u202f8 \u2013 Go\u2011live and post\u2011launch monitoring dashboard*  \n4. **Validate** with the Squad Lead and Product Owner to ensure feasibility and alignment with success criteria.  \n\n---\n\n## 3. Owner\u2011assignment matrix  \nA clear mapping of each milestone\u2011level deliverable (and the underlying weekly tasks) to a single accountable owner.  \n\n### Reasoning  \nClear accountability eliminates ambiguity, speeds decision\u2011making, and makes risk\u2011ownership explicit.  \n\n### Approach  \n1. **Identify functional roles** present in the squad (e.g., Squad Lead, Search Engineer, Data Scientist, QA Lead, Program Manager).  \n2. **Match each deliverable** to the role that holds the primary expertise and decision authority.  \n3. **Document** the mapping in a simple table (Deliverable \u2192 Owner).  \n4. **Confirm** the assignments in a brief \u201cowner\u2011kickoff\u201d call to obtain verbal acknowledgment.  \n\n---\n\n## 4. Dependency & risk register (including mitigations)  \nA structured list of all inter\u2011task dependencies, identified risks for each milestone, and concrete mitigation actions.  \n\n### Reasoning  \nDependencies drive the critical path; un\u2011managed risks cause schedule slips.  Capturing them early enables proactive buffer allocation and contingency planning.  \n\n### Approach  \n1. **For each milestone**, list prerequisite outputs (e.g., \u201cdata ingestion pipeline must be stable before relevance tuning\u201d).  \n2. **Identify risk categories** (technical, resource, compliance, integration).  \n3. **Assess probability & impact** (high/medium/low) using a quick matrix.  \n4. **Define mitigations** \u2013 e.g., \u201crun a parallel ingestion test\u201d or \u201creserve a backup engineer\u201d.  \n5. **Log** everything in a shared risk register that can be updated weekly.  \n\n---\n\n## 5. Draft work\u2011back plan table (Week\u2011by\u2011Week)  \nA populated tabular view that follows the required columns (Week, Milestone, Deliverable, Owner, Dependencies, Risks, Mitigation).  \n\n### Reasoning  \nThe user\u2019s deliverable is the table itself; creating a draft version is the final step after the preparatory artifacts are in place.  \n\n### Approach  \n1. **Create a spreadsheet** with the prescribed columns.  \n2. **Populate rows** using the milestone definitions, owner matrix, and dependency/risk data from Outcomes\u202f2\u20114.  \n3. **Add buffers** (e.g., \u201c+1\u202fday for data\u2011quality review\u201d) where high\u2011impact risks exist.  \n4. **Review** the draft with the entire squad in a 30\u2011minute sync to catch missing tasks or unrealistic estimates.  \n5. **Finalize** and export the table in the requested format (e.g., Markdown or CSV).  \n\n---\n\n## 6. Review & sign\u2011off ceremony  \nA formal checkpoint to obtain stakeholder approval on the complete work\u2011back plan before execution begins.  \n\n### Reasoning  \nA sign\u2011off ensures that all parties agree on scope, timelines, and risk ownership, reducing the chance of later scope creep.  \n\n### Approach  \n1. **Prepare a short slide deck** summarizing the six outcomes and the final table.  \n2. **Schedule a 45\u2011minute meeting** with the Squad Lead, Product Owner, Azure Strategy liaison, and any compliance representatives.  \n3. **Collect written approvals** (e.g., via a shared document comment or email).  \n4. **Archive** the approved artifacts in the squad\u2019s version\u2011controlled repository.  \n\n---\n\n# Breakdown\n\n```\n1. Success\u2011criteria & constraint alignment\n   1.1 Gather existing mission charter, Azure AI strategy brief, compliance docs\n   1.2 Run 2\u2011hour alignment workshop (Squad Lead, PO, Azure Strategy liaison)\n   1.3 Draft 1\u2011page matrix (criteria, constraints, AI\u2011first touch\u2011points)\n   1.4 Circulate for sign\u2011off \u2192 store in shared repo\n\n2. Milestone & deliverable definition\n   2.1 Map mission flow (requirements \u2192 prototype \u2192 evaluation \u2192 rollout)\n   2.2 Overlay 8\u2011week cadence, identify natural decision points\n   2.3 Draft milestone statements for weeks 2,4,6,8\n   2.4 Validate with Squad Lead & PO \u2192 adjust as needed\n\n3. Owner\u2011assignment matrix\n   3.1 List squad functional roles (Lead, Search Engineer, Data Scientist, QA Lead, PM)\n   3.2 Map each milestone deliverable to primary owner\n   3.3 Document matrix in simple table\n   3.4 Owner\u2011kickoff call for acknowledgment\n\n4. Dependency & risk register\n   4.1 For each milestone, list prerequisite outputs (dependencies)\n   4.2 Identify risks (technical, resource, compliance, integration)\n   4.3 Rate probability/impact (high/med/low)\n   4.4 Define mitigation actions for each risk\n   4.5 Log in shared risk register (review weekly)\n\n5. Draft work\u2011back plan table\n   5.1 Create spreadsheet with columns: Week, Milestone, Deliverable, Owner, Dependencies, Risks, Mitigation\n   5.2 Populate rows using outcomes 2\u20114\n   5.3 Add schedule buffers where high\u2011impact risks exist\n   5.4 Squad sync to validate completeness & realism\n   5.5 Finalize table, export to requested format\n\n6. Review & sign\u2011off ceremony\n   6.1 Build 5\u2011slide deck summarizing outcomes & final table\n   6.2 Schedule 45\u2011min stakeholder meeting\n   6.3 Capture written approvals (email/comment)\n   6.4 Archive all approved artifacts in version\u2011controlled repo\n```\n\n**Dependencies between outcomes**  \n\n- Outcome\u202f2 depends on completion of Outcome\u202f1 (alignment on criteria & constraints).  \n- Outcome\u202f3 depends on Outcome\u202f2 (milestones must exist before owners can be assigned).  \n- Outcome\u202f4 depends on Outcomes\u202f2\u202f&\u202f3 (dependencies and risks are identified from milestones and owners).  \n- Outcome\u202f5 depends on Outcomes\u202f2\u20114 (the table is assembled from those inputs).  \n- Outcome\u202f6 depends on Outcome\u202f5 (the final plan must be ready for sign\u2011off).  \n\n**Parallel work**  \n\n- Tasks\u202f1.1\u202f&\u202f2.1 can run concurrently (both are discovery activities).  \n- Owner\u2011assignment (3.1\u20113.4) can begin once draft milestones (2.3\u20112.4) are available, even while the risk register (4.1\u20114.5) is still being fleshed out.  \n\n**Key risks & mitigations at the planning level**  \n\n| Risk | Impact | Mitigation |\n|------|--------|------------|\n| Incomplete or outdated source documents | High \u2013 may cause mis\u2011aligned success criteria | Early inventory check (1.1) and request updates from governance owners |\n| Stakeholder availability for workshop | Medium \u2013 delays alignment | Offer multiple time slots and record the session for absent participants |\n| Over\u2011optimistic time estimates for prototype build | High \u2013 could push week\u202f2 milestone | Insert a 1\u2011day buffer in the table (5.3) and define a \u201cminimum viable prototype\u201d scope |\n| Ambiguous ownership leading to decision bottlenecks | Medium | Formal owner\u2011kickoff acknowledgment (3.4) and documented escalation path |\n| Unidentified compliance constraints | High | Involve compliance liaison in alignment workshop (1.2) and capture constraints in the matrix (1.3) |\n\nFollowing this structured approach will give the squad a clear, actionable, and risk\u2011aware work\u2011back plan that satisfies the MMM framework requirements and aligns with the AI\u2011first Azure strategy.",
+  "plan": {
+    "id": "document-001",
+    "name": "Work\u2011back Plan",
+    "details": "Structured work\u2011back plan covering success\u2011criteria alignment, milestone definition, owner assignment, risk register, draft plan table, and sign\u2011off ceremony.",
+    "draft": true,
+    "participants": [
+      {
+        "name": "You",
+        "email": "you@example.com",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "System",
+        "email": "system@example.com",
+        "details": "",
+        "draft": true
+      }
+    ],
+    "references": [],
+    "deliverables": [
+      {
+        "name": "Success\u2011criteria & constraint alignment document",
+        "type": "word",
+        "id": "deliverable-001",
+        "draft": true,
+        "history": []
+      },
+      {
+        "name": "Milestone & deliverable definition",
+        "type": "word",
+        "id": "deliverable-002",
+        "draft": true,
+        "history": []
+      },
+      {
+        "name": "Owner\u2011assignment matrix",
+        "type": "excel",
+        "id": "deliverable-003",
+        "draft": true,
+        "history": []
+      },
+      {
+        "name": "Dependency & risk register",
+        "type": "excel",
+        "id": "deliverable-004",
+        "draft": true,
+        "history": []
+      },
+      {
+        "name": "Draft work\u2011back plan table",
+        "type": "excel",
+        "id": "deliverable-005",
+        "draft": true,
+        "history": []
+      },
+      {
+        "name": "Review & sign\u2011off slide deck",
+        "type": "powerpoint",
+        "id": "deliverable-006",
+        "draft": true,
+        "history": []
+      }
+    ],
+    "tasks": [
+      {
+        "id": "task-001",
+        "name": "Gather existing mission charter, Azure AI strategy brief, compliance docs",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002",
+        "name": "Run 2\u2011hour alignment workshop (Squad Lead, PO, Azure Strategy liaison)",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-001"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003",
+        "name": "Draft 1\u2011page matrix (criteria, constraints, AI\u2011first touch\u2011points)",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-002"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-004",
+        "name": "Circulate for sign\u2011off and store in shared repository",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-003"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [
+          "@deliverable[word]/deliverable-001"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-005",
+        "name": "Map mission flow (requirements \u2192 prototype \u2192 evaluation \u2192 rollout)",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-006",
+        "name": "Overlay 8\u2011week cadence and identify natural decision points",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-005"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-007",
+        "name": "Draft milestone statements for weeks 2, 4, 6, 8",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-006"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-008",
+        "name": "Validate milestones with Squad Lead & PO and adjust as needed",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-007"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [
+          "@deliverable[word]/deliverable-002"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-009",
+        "name": "List squad functional roles (Lead, Search Engineer, Data Scientist, QA Lead, PM)",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-007"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-010",
+        "name": "Map each milestone deliverable to primary owner",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-009"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-011",
+        "name": "Document owner\u2011assignment matrix in simple table",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-010"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [
+          "@deliverable[excel]/deliverable-003"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-012",
+        "name": "Owner\u2011kickoff call for acknowledgment",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-011"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-013",
+        "name": "For each milestone, list prerequisite outputs (dependencies)",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-008",
+          "task-012"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-014",
+        "name": "Identify risks (technical, resource, compliance, integration)",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-013"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-015",
+        "name": "Rate probability/impact (high/med/low)",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-014"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-016",
+        "name": "Define mitigation actions for each risk",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-015"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-017",
+        "name": "Log risk register in shared repository (review weekly)",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-016"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [
+          "@deliverable[excel]/deliverable-004"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-018",
+        "name": "Create spreadsheet with required columns",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-017"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-019",
+        "name": "Populate rows using outcomes 2\u20114",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-018"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-020",
+        "name": "Add schedule buffers where high\u2011impact risks exist",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-019"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-021",
+        "name": "Squad sync to validate completeness & realism",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-020"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-022",
+        "name": "Finalize table and export to requested format",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-021"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [
+          "@deliverable[excel]/deliverable-005"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-023",
+        "name": "Build 5\u2011slide deck summarizing outcomes & final table",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-022"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [
+          "@deliverable[powerpoint]/deliverable-006"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-024",
+        "name": "Schedule 45\u2011minute stakeholder meeting",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-023"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-025",
+        "name": "Capture written approvals (email/comment)",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-024"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-026",
+        "name": "Archive all approved artifacts in version\u2011controlled repository",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-025"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "you"
+        ],
+        "deliverables": [
+          "@deliverable[powerpoint]/deliverable-006"
+        ],
+        "references": [],
+        "history": []
+      }
+    ],
+    "history": []
+  }
+}

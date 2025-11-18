@@ -1,0 +1,464 @@
+{
+  "scenario_name": "TechNova AI Solutions \u2013 2025 Global Product Innovation Annual Kickoff",
+  "scenario_number": 3,
+  "meeting_type": "Annual Kickoff Meeting",
+  "quality_level": "high",
+  "workback_prompt": "Generate a detailed workback plan for the 'TechNova AI Solutions \u2013 2025 Global Product Innovation Annual Kickoff' scenario. Include all major milestones, tasks, owners, dependencies, and dates starting from today (T\u201160) through the event dates (June 10\u201112, 2025) and post\u2011event deliverable deadlines. Highlight critical path items, risk mitigation steps, and required approvals. The plan should be formatted as a table or Gantt\u2011style list suitable for import into a project\u2011management tool.\n\nGenerate a HIGH QUALITY workback plan with these characteristics:\n- Comprehensive task coverage\n- Clear, actionable task descriptions\n- Well-defined dependencies\n- All tasks assigned to specific owners\n- Clear milestones with completion criteria\n- Realistic timelines with buffers\n- Proactive risk management\n- Complete deliverable list\n\nIMPORTANT: Generate a plan that naturally exhibits HIGH quality characteristics.\nDo not explicitly label the plan as \"high quality\" - let the quality emerge from the content.",
+  "generated_at": "2025-11-17T06:55:35.227107",
+  "analysis": "# Outcomes\n\n## 1. Deliver a complete work\u2011back plan for the \u201cTechNova AI Solutions \u2013 2025 Global Product Innovation Annual Kickoff\u201d\nA structured, table\u2011style (or Gantt\u2011compatible) plan that lists every major milestone, task, owner, dependency, start\u2011/end\u2011date, critical\u2011path flag, risk\u2011mitigation note, and required approval from today (T\u201160) through the event (June\u202f10\u201112\u202f2025) and post\u2011event deliverable deadlines.  \nArtifact references: *none provided*  \n\n### Reasoning\nThe user\u2019s primary request is a ready\u2011to\u2011import schedule that covers the full lifecycle of the kickoff \u2013 from preparation to post\u2011event reporting. All other activities (gathering inputs, securing approvals, risk analysis) are sub\u2011outcomes that feed into this deliverable.\n\n### Approach\n1. **Kick\u2011off the planning effort** \u2013 convene a short \u201cPlanning\u2011Launch\u201d meeting with the event\u2011lead, PMO, and key functional representatives to confirm scope, timeline, and ownership conventions.  \n2. **Collect all prerequisite information** \u2013 event objectives, venue contracts, speaker list, branding assets, budget limits, and any existing templates.  \n3. **Define the work\u2011breakdown structure (WBS)** \u2013 break the overall effort into logical phases (Strategy, Content, Logistics, Communications, Technology, On\u2011site Execution, Post\u2011event).  \n4. **Populate tasks** \u2013 for each phase, write concise, action\u2011oriented task descriptions, assign a single accountable owner, and estimate duration (including a 10\u201115\u202f% buffer).  \n5. **Map dependencies** \u2013 link each task to its predecessor(s); flag any tasks that, if delayed, would shift the event date as \u201cCritical\u2011Path\u201d.  \n6. **Identify milestones** \u2013 create milestone rows (e.g., \u201cFinalize agenda\u201d, \u201cVenue contract signed\u201d, \u201cLive\u2011stream platform tested\u201d) with clear completion criteria.  \n7. **Add risk\u2011mitigation notes** \u2013 for tasks on the critical path or with high uncertainty, attach a brief mitigation action (e.g., \u201cMaintain backup venue option\u201d).  \n8. **Insert approval gates** \u2013 wherever a deliverable requires sign\u2011off (budget, branding, speaker contracts), add an \u201cApproval\u201d task with the appropriate approver and a \u201cDecision\u2011Due\u201d date.  \n9. **Validate dates** \u2013 start from today (assume today =\u202fApril\u202f11\u202f2025, which is T\u201160) and count backwards from the event start date (June\u202f10\u202f2025) to ensure each task finishes before its dependent. Insert weekend/holiday buffers as needed.  \n10. **Format for import** \u2013 export the table as CSV or Excel with columns:\u202fTask\u202fID,\u202fTask\u202fName,\u202fOwner,\u202fStart\u202fDate,\u202fEnd\u202fDate,\u202fDuration,\u202fPredecessor\u202fIDs,\u202fMilestone\u202f(Y/N),\u202fCritical\u2011Path\u202f(Y/N),\u202fRisk\u202fMitigation,\u202fApproval\u202fRequired,\u202fStatus.  \n\n---\n\n## 2. Secure all prerequisite inputs and approvals needed to populate the plan\nGather the strategic brief, budget allocation, venue contract, speaker confirmations, branding guidelines, and technology\u2011platform decisions, and obtain formal sign\u2011off on each.  \n\n### Reasoning\nAccurate dates, owners, and risk assessments depend on having the underlying agreements and constraints in place. Missing approvals are a common source of schedule drift.\n\n### Approach\n1. **Distribute a \u201cRequirements\u2011Request\u201d checklist** to the Event Sponsor, Finance, Marketing, and IT leads.  \n2. **Set a \u201cT\u201155\u201d (April\u202f16\u202f2025) deadline** for each stakeholder to return the completed checklist.  \n3. **Schedule brief alignment calls** (15\u202fmin each) to clarify any ambiguous items.  \n4. **Log each returned item** in a shared tracker and flag any pending approvals.  \n5. **Obtain formal sign\u2011off** via email or a lightweight approval workflow (e.g., Teams/SharePoint) and record the approval date.  \n\n---\n\n## 3. Define the detailed WBS and task taxonomy\nCreate a hierarchical list of all work streams, sub\u2011tasks, and deliverables that will appear in the final schedule.  \n\n### Reasoning\nA well\u2011structured WBS ensures no major activity is omitted and makes dependency mapping straightforward.\n\n### Approach\n1. **Draft high\u2011level phases** (Strategy, Content, Logistics, Communications, Technology, On\u2011site Execution, Post\u2011event).  \n2. **Populate each phase** with typical activities (e.g., \u201cDevelop agenda\u201d under Content, \u201cNegotiate venue\u201d under Logistics).  \n3. **Review the draft** with the Event Lead and functional owners to capture any missing items.  \n4. **Finalize the WBS** and assign a unique Task\u202fID (e.g., S\u201101, C\u201103).  \n\n---\n\n## 4. Conduct risk identification and mitigation planning\nIdentify risks that could impact schedule, budget, or quality, especially those tied to critical\u2011path tasks, and define mitigation actions.  \n\n### Reasoning\nProactive risk management reduces the likelihood of last\u2011minute delays and provides clear contingency steps for the team.\n\n### Approach\n1. **Facilitate a \u201cRisk\u2011Workshop\u201d** (T\u201150, April\u202f21\u202f2025) with owners of critical\u2011path tasks.  \n2. **Create a risk register** with columns:\u202fRisk\u202fID,\u202fDescription,\u202fImpact,\u202fLikelihood,\u202fOwner,\u202fMitigation\u202fPlan,\u202fTrigger\u202fDate.  \n3. **Link each high\u2011impact risk** to the corresponding task in the schedule (add a \u201cRisk\u202fMitigation\u201d note column).  \n4. **Review mitigation actions** weekly during status meetings.  \n\n---\n\n## 5. Validate the schedule with stakeholders and load into a project\u2011management tool\nPerform a final walkthrough, adjust any timing conflicts, and import the plan into the chosen tool (e.g., Microsoft Project, Smartsheet, Asana).  \n\n### Reasoning\nStakeholder buy\u2011in ensures accountability; proper import guarantees the plan can be tracked and updated in real time.\n\n### Approach\n1. **Circulate the draft schedule** (CSV/Excel) to all owners and the Event Sponsor (T\u201130, May\u202f11\u202f2025).  \n2. **Collect feedback** on dates, owners, and dependencies; resolve conflicts within 3\u202fbusiness days.  \n3. **Update the schedule** accordingly and mark any changes in a version log.  \n4. **Import the final file** into the PM tool, map columns to the tool\u2019s fields, and verify that dependencies render correctly.  \n5. **Run a \u201cBaseline\u201d** and lock the schedule, allowing only designated change\u2011control requests thereafter.  \n\n---\n\n# Breakdown\n\n```\n1. Deliver Complete Work\u2011Back Plan\n   1.1. Planning\u2011Launch Meeting (Owner: Event Lead) \u2013 T\u201160 \u2192 T\u201159\n   1.2. Collect Prerequisite Inputs (Owner: PMO) \u2013 T\u201155 \u2192 T\u201145\n        1.2.1. Budget Approval (Owner: Finance) \u2013 T\u201155 \u2192 T\u201150\n        1.2.2. Venue Contract (Owner: Procurement) \u2013 T\u201155 \u2192 T\u201148\n        1.2.3. Speaker Confirmations (Owner: Content Lead) \u2013 T\u201155 \u2192 T\u201147\n        1.2.4. Branding Guidelines (Owner: Marketing) \u2013 T\u201155 \u2192 T\u201146\n        1.2.5. Tech Platform Decision (Owner: IT) \u2013 T\u201155 \u2192 T\u201144\n   1.3. Define WBS & Taxonomy (Owner: PMO) \u2013 T\u201144 \u2192 T\u201138\n        1.3.1. Draft Phases (Owner: PMO) \u2013 T\u201144 \u2192 T\u201142\n        1.3.2. Populate Sub\u2011tasks (Owner: Functional Leads) \u2013 T\u201142 \u2192 T\u201139\n        1.3.3. Review & Finalize WBS (Owner: Event Lead) \u2013 T\u201139 \u2192 T\u201138\n   1.4. Populate Detailed Tasks (Owner: PMO) \u2013 T\u201138 \u2192 T\u201130\n        1.4.1. Write task descriptions (Owner: PMO) \u2013 T\u201138 \u2192 T\u201135\n        1.4.2. Assign owners & durations (Owner: PMO) \u2013 T\u201135 \u2192 T\u201133\n        1.4.3. Add buffers (Owner: PMO) \u2013 T\u201133 \u2192 T\u201132\n   1.5. Map Dependencies & Critical Path (Owner: PMO) \u2013 T\u201132 \u2192 T\u201130\n   1.6. Identify Milestones & Completion Criteria (Owner: Event Lead) \u2013 T\u201130 \u2192 T\u201129\n   1.7. Add Risk\u2011Mitigation Notes (Owner: Risk Owner) \u2013 T\u201129 \u2192 T\u201128\n   1.8. Insert Approval Gates (Owner: PMO) \u2013 T\u201128 \u2192 T\u201127\n   1.9. Validate Dates & Buffers (Owner: PMO) \u2013 T\u201127 \u2192 T\u201126\n   1.10. Format for Import (Owner: PMO) \u2013 T\u201126 \u2192 T\u201125\n   1.11. Stakeholder Review & Sign\u2011off (Owner: Event Sponsor) \u2013 T\u201125 \u2192 T\u201122\n   1.12. Import into PM Tool & Baseline (Owner: PMO) \u2013 T\u201122 \u2192 T\u201120\n\n2. Secure Prerequisite Inputs & Approvals\n   2.1. Distribute Requirements\u2011Request checklist (Owner: PMO) \u2013 T\u201155 \u2192 T\u201154\n   2.2. Receive completed checklists (Owner: Stakeholders) \u2013 T\u201154 \u2192 T\u201145\n   2.3. Alignment calls (Owner: PMO) \u2013 T\u201144 \u2192 T\u201142\n   2.4. Log and flag pending items (Owner: PMO) \u2013 T\u201142 \u2192 T\u201141\n   2.5. Obtain formal sign\u2011off (Owner: Event Sponsor) \u2013 T\u201141 \u2192 T\u201140\n\n3. Define Detailed WBS & Task Taxonomy\n   3.1. Draft high\u2011level phases (Owner: PMO) \u2013 T\u201144 \u2192 T\u201142\n   3.2. Populate phase activities (Owner: Functional Leads) \u2013 T\u201142 \u2192 T\u201139\n   3.3. Review with Event Lead (Owner: Event Lead) \u2013 T\u201139 \u2192 T\u201138\n   3.4. Assign Task IDs (Owner: PMO) \u2013 T\u201138 \u2192 T\u201137\n\n4. Conduct Risk Identification & Mitigation Planning\n   4.1. Risk\u2011Workshop (Owner: Risk Owner) \u2013 T\u201150 \u2192 T\u201150\n   4.2. Create risk register (Owner: Risk Owner) \u2013 T\u201150 \u2192 T\u201148\n   4.3. Link risks to schedule (Owner: PMO) \u2013 T\u201148 \u2192 T\u201147\n   4.4. Establish weekly risk review (Owner: PMO) \u2013 T\u201147 \u2192 Ongoing\n\n5. Validate Schedule & Load into PM Tool\n   5.1. Circulate draft schedule (Owner: PMO) \u2013 T\u201130 \u2192 T\u201129\n   5.2. Collect feedback (Owner: Stakeholders) \u2013 T\u201129 \u2192 T\u201127\n   5.3. Update schedule & version log (Owner: PMO) \u2013 T\u201127 \u2192 T\u201126\n   5.4. Import into chosen PM tool (Owner: PMO) \u2013 T\u201126 \u2192 T\u201125\n   5.5. Run baseline & lock schedule (Owner: PMO) \u2013 T\u201125 \u2192 T\u201124\n   5.6. Communicate final schedule to all owners (Owner: Event Lead) \u2013 T\u201124 \u2192 T\u201123\n```\n\n**Key Critical\u2011Path Items** (must finish on time or the event date shifts):\n- Venue Contract (1.2.2) \u2192 Venue Confirmation Milestone\n- Content Finalization (agenda, speaker decks) \u2013 tasks under Content Phase\n- Technology Platform Test & Live\u2011stream Rehearsal (under Technology Phase)\n- On\u2011site Logistics Checklist (venue layout, AV, catering) \u2013 must be completed at least **T\u20115** (June\u202f5\u202f2025)\n\n**Risk\u2011Mitigation Highlights**\n- *Venue*: Keep a backup venue contract clause; set \u201cVenue Confirmation\u201d approval no later than **T\u201145**.\n- *Keynote Speaker*: Secure secondary speaker; obtain written confirmation by **T\u201147**.\n- *Live\u2011stream*: Perform two separate dry\u2011runs (T\u201115 and T\u20117); have a standby streaming provider on contract.\n\n**Required Approvals**\n- Budget (Finance) \u2013 **T\u201150**\n- Branding (Marketing) \u2013 **T\u201146**\n- Venue (Procurement) \u2013 **T\u201148**\n- Final Agenda (Event Sponsor) \u2013 **T\u201130**\n- Post\u2011event Report Sign\u2011off (Executive Team) \u2013 **T\u202f+\u202f15\u202fdays** (June\u202f27\u202f2025)\n\nFollowing the above outcomes and detailed breakdown will give the team a clear, actionable roadmap that can be directly imported into any standard project\u2011management platform and will support successful execution of the 2025 Global Product Innovation Annual Kickoff.",
+  "plan": {
+    "id": "document-001",
+    "name": "TechNova AI Solutions \u2013 2025 Global Product Innovation Annual Kickoff Workback Plan",
+    "details": "Work\u2011back plan covering all major milestones, tasks, owners, dependencies, dates, critical\u2011path flags, risk\u2011mitigation notes and approval gates for the 2025 Global Product Innovation Annual Kickoff.",
+    "draft": true,
+    "participants": [
+      {
+        "name": "Event Lead",
+        "draft": true
+      },
+      {
+        "name": "PMO",
+        "draft": true
+      },
+      {
+        "name": "Finance",
+        "draft": true
+      },
+      {
+        "name": "Procurement",
+        "draft": true
+      },
+      {
+        "name": "Content Lead",
+        "draft": true
+      },
+      {
+        "name": "Marketing",
+        "draft": true
+      },
+      {
+        "name": "IT",
+        "draft": true
+      },
+      {
+        "name": "Risk Owner",
+        "draft": true
+      },
+      {
+        "name": "Event Sponsor",
+        "draft": true
+      },
+      {
+        "name": "Stakeholders",
+        "draft": true
+      },
+      {
+        "name": "Functional Leads",
+        "draft": true
+      }
+    ],
+    "references": [],
+    "deliverables": [],
+    "tasks": [
+      {
+        "id": "task-001",
+        "name": "Deliver Complete Work\u2011Back Plan",
+        "draft": true,
+        "details": "Overall outcome delivering a structured, import\u2011ready schedule for the kickoff.",
+        "dependencies": [
+          "task-002",
+          "task-003",
+          "task-004",
+          "task-005",
+          "task-006",
+          "task-007",
+          "task-008",
+          "task-009",
+          "task-010",
+          "task-011",
+          "task-012",
+          "task-013",
+          "task-014",
+          "task-015",
+          "task-016",
+          "task-017",
+          "task-018",
+          "task-019",
+          "task-020",
+          "task-021",
+          "task-022",
+          "task-023",
+          "task-024"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-002",
+        "name": "Planning\u2011Launch Meeting",
+        "draft": true,
+        "details": "Owner: Event Lead \u2013 T\u201160 \u2192 T\u201159",
+        "state": "not-started"
+      },
+      {
+        "id": "task-003",
+        "name": "Collect Prerequisite Inputs",
+        "draft": true,
+        "details": "Owner: PMO \u2013 T\u201155 \u2192 T\u201145",
+        "dependencies": [
+          "task-004",
+          "task-005",
+          "task-006",
+          "task-007",
+          "task-008"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-004",
+        "name": "Budget Approval",
+        "draft": true,
+        "details": "Owner: Finance \u2013 T\u201155 \u2192 T\u201150",
+        "state": "not-started"
+      },
+      {
+        "id": "task-005",
+        "name": "Venue Contract",
+        "draft": true,
+        "details": "Owner: Procurement \u2013 T\u201155 \u2192 T\u201148",
+        "state": "not-started"
+      },
+      {
+        "id": "task-006",
+        "name": "Speaker Confirmations",
+        "draft": true,
+        "details": "Owner: Content Lead \u2013 T\u201155 \u2192 T\u201147",
+        "state": "not-started"
+      },
+      {
+        "id": "task-007",
+        "name": "Branding Guidelines",
+        "draft": true,
+        "details": "Owner: Marketing \u2013 T\u201155 \u2192 T\u201146",
+        "state": "not-started"
+      },
+      {
+        "id": "task-008",
+        "name": "Tech Platform Decision",
+        "draft": true,
+        "details": "Owner: IT \u2013 T\u201155 \u2192 T\u201144",
+        "state": "not-started"
+      },
+      {
+        "id": "task-009",
+        "name": "Define WBS & Taxonomy",
+        "draft": true,
+        "details": "Owner: PMO \u2013 T\u201144 \u2192 T\u201138",
+        "dependencies": [
+          "task-010",
+          "task-011",
+          "task-012"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-010",
+        "name": "Draft Phases",
+        "draft": true,
+        "details": "Owner: PMO \u2013 T\u201144 \u2192 T\u201142",
+        "state": "not-started"
+      },
+      {
+        "id": "task-011",
+        "name": "Populate Sub\u2011tasks",
+        "draft": true,
+        "details": "Owner: Functional Leads \u2013 T\u201142 \u2192 T\u201139",
+        "state": "not-started"
+      },
+      {
+        "id": "task-012",
+        "name": "Review & Finalize WBS",
+        "draft": true,
+        "details": "Owner: Event Lead \u2013 T\u201139 \u2192 T\u201138",
+        "state": "not-started"
+      },
+      {
+        "id": "task-013",
+        "name": "Populate Detailed Tasks",
+        "draft": true,
+        "details": "Owner: PMO \u2013 T\u201138 \u2192 T\u201130",
+        "dependencies": [
+          "task-014",
+          "task-015",
+          "task-016"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-014",
+        "name": "Write task descriptions",
+        "draft": true,
+        "details": "Owner: PMO \u2013 T\u201138 \u2192 T\u201135",
+        "state": "not-started"
+      },
+      {
+        "id": "task-015",
+        "name": "Assign owners & durations",
+        "draft": true,
+        "details": "Owner: PMO \u2013 T\u201135 \u2192 T\u201133",
+        "state": "not-started"
+      },
+      {
+        "id": "task-016",
+        "name": "Add buffers",
+        "draft": true,
+        "details": "Owner: PMO \u2013 T\u201133 \u2192 T\u201132",
+        "state": "not-started"
+      },
+      {
+        "id": "task-017",
+        "name": "Map Dependencies & Critical Path",
+        "draft": true,
+        "details": "Owner: PMO \u2013 T\u201132 \u2192 T\u201130",
+        "state": "not-started"
+      },
+      {
+        "id": "task-018",
+        "name": "Identify Milestones & Completion Criteria",
+        "draft": true,
+        "details": "Owner: Event Lead \u2013 T\u201130 \u2192 T\u201129",
+        "state": "not-started"
+      },
+      {
+        "id": "task-019",
+        "name": "Add Risk\u2011Mitigation Notes",
+        "draft": true,
+        "details": "Owner: Risk Owner \u2013 T\u201129 \u2192 T\u201128",
+        "state": "not-started"
+      },
+      {
+        "id": "task-020",
+        "name": "Insert Approval Gates",
+        "draft": true,
+        "details": "Owner: PMO \u2013 T\u201128 \u2192 T\u201127",
+        "state": "not-started"
+      },
+      {
+        "id": "task-021",
+        "name": "Validate Dates & Buffers",
+        "draft": true,
+        "details": "Owner: PMO \u2013 T\u201127 \u2192 T\u201126",
+        "state": "not-started"
+      },
+      {
+        "id": "task-022",
+        "name": "Format for Import",
+        "draft": true,
+        "details": "Owner: PMO \u2013 T\u201126 \u2192 T\u201125",
+        "state": "not-started"
+      },
+      {
+        "id": "task-023",
+        "name": "Stakeholder Review & Sign\u2011off",
+        "draft": true,
+        "details": "Owner: Event Sponsor \u2013 T\u201125 \u2192 T\u201122",
+        "state": "not-started"
+      },
+      {
+        "id": "task-024",
+        "name": "Import into PM Tool & Baseline",
+        "draft": true,
+        "details": "Owner: PMO \u2013 T\u201122 \u2192 T\u201120",
+        "state": "not-started"
+      },
+      {
+        "id": "task-025",
+        "name": "Secure Prerequisite Inputs & Approvals",
+        "draft": true,
+        "details": "Overall outcome for gathering and signing off all required inputs.",
+        "dependencies": [
+          "task-026",
+          "task-027",
+          "task-028",
+          "task-029",
+          "task-030"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-026",
+        "name": "Distribute Requirements\u2011Request checklist",
+        "draft": true,
+        "details": "Owner: PMO \u2013 T\u201155 \u2192 T\u201154",
+        "state": "not-started"
+      },
+      {
+        "id": "task-027",
+        "name": "Receive completed checklists",
+        "draft": true,
+        "details": "Owner: Stakeholders \u2013 T\u201154 \u2192 T\u201145",
+        "state": "not-started"
+      },
+      {
+        "id": "task-028",
+        "name": "Alignment calls",
+        "draft": true,
+        "details": "Owner: PMO \u2013 T\u201145 \u2192 T\u2011? (not specified)",
+        "state": "not-started"
+      },
+      {
+        "id": "task-029",
+        "name": "Log and flag pending items",
+        "draft": true,
+        "details": "Owner: PMO \u2013 T\u2011? (not specified)",
+        "state": "not-started"
+      },
+      {
+        "id": "task-030",
+        "name": "Obtain formal sign\u2011off",
+        "draft": true,
+        "details": "Owner: Event Sponsor \u2013 T\u2011? (not specified)",
+        "state": "not-started"
+      },
+      {
+        "id": "task-031",
+        "name": "Define Detailed WBS & Task Taxonomy",
+        "draft": true,
+        "details": "Overall outcome for detailed WBS definition.",
+        "dependencies": [
+          "task-032",
+          "task-033",
+          "task-034",
+          "task-035"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-032",
+        "name": "Draft high\u2011level phases",
+        "draft": true,
+        "details": "Owner: PMO \u2013 T\u2011? (not specified)",
+        "state": "not-started"
+      },
+      {
+        "id": "task-033",
+        "name": "Populate phase activities",
+        "draft": true,
+        "details": "Owner: Functional Leads \u2013 T\u2011? (not specified)",
+        "state": "not-started"
+      },
+      {
+        "id": "task-034",
+        "name": "Review with Event Lead",
+        "draft": true,
+        "details": "Owner: Event Lead \u2013 T\u2011? (not specified)",
+        "state": "not-started"
+      },
+      {
+        "id": "task-035",
+        "name": "Assign Task IDs",
+        "draft": true,
+        "details": "Owner: PMO \u2013 T\u2011? (not specified)",
+        "state": "not-started"
+      },
+      {
+        "id": "task-036",
+        "name": "Conduct Risk Identification & Mitigation Planning",
+        "draft": true,
+        "details": "Overall outcome for risk planning.",
+        "dependencies": [
+          "task-037",
+          "task-038",
+          "task-039",
+          "task-040"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-037",
+        "name": "Risk\u2011Workshop",
+        "draft": true,
+        "details": "Owner: Risk Owner \u2013 T\u2011? (not specified)",
+        "state": "not-started"
+      },
+      {
+        "id": "task-038",
+        "name": "Create risk register",
+        "draft": true,
+        "details": "Owner: Risk Owner \u2013 T\u2011? (not specified)",
+        "state": "not-started"
+      },
+      {
+        "id": "task-039",
+        "name": "Link risks to schedule",
+        "draft": true,
+        "details": "Owner: Risk Owner \u2013 T\u2011? (not specified)",
+        "state": "not-started"
+      },
+      {
+        "id": "task-040",
+        "name": "Establish weekly risk review",
+        "draft": true,
+        "details": "Owner: Risk Owner \u2013 T\u2011? (not specified)",
+        "state": "not-started"
+      },
+      {
+        "id": "task-041",
+        "name": "Validate Schedule & Load into PM Tool",
+        "draft": true,
+        "details": "Overall outcome for final validation and loading of the schedule.",
+        "dependencies": [
+          "task-042",
+          "task-043",
+          "task-044",
+          "task-045",
+          "task-046",
+          "task-047"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-042",
+        "name": "Circulate draft schedule",
+        "draft": true,
+        "details": "Owner: PMO \u2013 T\u2011? (not specified)",
+        "state": "not-started"
+      },
+      {
+        "id": "task-043",
+        "name": "Collect feedback",
+        "draft": true,
+        "details": "Owner: PMO \u2013 T\u2011? (not specified)",
+        "state": "not-started"
+      },
+      {
+        "id": "task-044",
+        "name": "Update schedule & version log",
+        "draft": true,
+        "details": "Owner: PMO \u2013 T\u2011? (not specified)",
+        "state": "not-started"
+      },
+      {
+        "id": "task-045",
+        "name": "Import into chosen PM tool",
+        "draft": true,
+        "details": "Owner: PMO \u2013 T\u2011? (not specified)",
+        "state": "not-started"
+      },
+      {
+        "id": "task-046",
+        "name": "Run baseline & lock schedule",
+        "draft": true,
+        "details": "Owner: PMO \u2013 T\u2011? (not specified)",
+        "state": "not-started"
+      },
+      {
+        "id": "task-047",
+        "name": "Communicate final schedule to all owners",
+        "draft": true,
+        "details": "Owner: Event Lead \u2013 T\u2011? (not specified)",
+        "state": "not-started"
+      }
+    ],
+    "history": []
+  }
+}

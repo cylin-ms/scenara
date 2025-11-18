@@ -1,0 +1,751 @@
+{
+  "scenario_name": "Q4\u202f2025 Strategic Planning Offsite \u2013 NovaHealth Systems",
+  "scenario_number": 1,
+  "meeting_type": "Strategic Planning Offsite",
+  "quality_level": "high",
+  "workback_prompt": "Generate a detailed work\u2011back plan for NovaHealth Systems' Q4\u202f2025 Strategic Planning Offsite (September\u202f9\u201111, 2025, Aspen). Include all pre\u2011work (market research, financial analysis), facilitator preparation, agenda finalization, logistics (travel, lodging, tech setup), day\u2011by\u2011day session plans, decision\u2011making checkpoints, post\u2011offsite deliverable production, and communication rollout. Align tasks with the constraints (T\u201190 horizon, $120k budget, pre\u2011work due Aug\u202f15, Board approval by Oct\u202f5) and map each deliverable to a responsible owner and due date. Provide the plan in a table format suitable for a project\u2011management tool.\n\nGenerate a HIGH QUALITY workback plan with these characteristics:\n- Comprehensive task coverage\n- Clear, actionable task descriptions\n- Well-defined dependencies\n- All tasks assigned to specific owners\n- Clear milestones with completion criteria\n- Realistic timelines with buffers\n- Proactive risk management\n- Complete deliverable list\n\nIMPORTANT: Generate a plan that naturally exhibits HIGH quality characteristics.\nDo not explicitly label the plan as \"high quality\" - let the quality emerge from the content.",
+  "generated_at": "2025-11-17T07:35:59.412140",
+  "analysis": "# Outcomes\n\n## 1.\u202fDefine Scope & Success Criteria for the Q4\u202f2025 Strategic Planning Off\u2011site  \nA concise charter that captures all required deliverables (pre\u2011work, agenda, logistics, day\u2011by\u2011day sessions, decision checkpoints, post\u2011off\u2011site outputs) together with success metrics, budget limits, and timeline constraints.  \nArtifact references: *none*  \n\n### Reasoning  \nBefore any detailed scheduling can occur, the team must agree on **what** must be produced and **how** success will be measured. The user\u2019s request lists many components (market research, financial analysis, facilitator prep, etc.) and hard constraints (T\u201190 horizon, $120\u202fk budget, pre\u2011work due\u202f8\u202fAug, Board sign\u2011off\u202f5\u202fOct). Capturing these in a single, approved scope document prevents scope creep and ensures every subsequent task is aligned to the same objectives.\n\n### Approach  \n1. **Kick\u2011off alignment meeting** (owner: Program Sponsor, due\u202fDay\u202f\u2011\u202fT\u201190\u202f+\u202f2\u202fdays).  \n2. Draft the charter using the user\u2011provided list as a checklist.  \n3. Circulate to all functional leads (Strategy, Finance, Ops, HR, Communications) for review.  \n4. Incorporate feedback and obtain formal sign\u2011off from the Executive Steering Committee (owner: PMO Lead, due\u202fT\u201190\u202f+\u202f5\u202fdays).  \n5. Publish the charter in the shared project repository and communicate the approved scope to the wider team.\n\n---\n\n## 2.\u202fDevelop Detailed Work\u2011Back Schedule (the deliverable the user ultimately needs)  \nA master schedule that maps every task, its owner, due date, dependencies, milestones, buffers, and risk mitigations, formatted for import into a project\u2011management tool (e.g., CSV or Excel).  \nArtifact references: *none*  \n\n### Reasoning  \nThe user explicitly requests a \u201chigh\u2011quality work\u2011back plan \u2026 in a table format suitable for a project\u2011management tool.\u201d This schedule is the **primary outcome** that will be handed off to the PMO for execution. All other outcomes (risk register, communication plan, etc.) feed into or are embedded within this schedule.\n\n### Approach  \n1. **Extract all work\u2011streams** from the charter (pre\u2011work, facilitator prep, agenda finalization, logistics, session design, decision checkpoints, post\u2011off\u2011site deliverables, communications).  \n2. For each work\u2011stream, list **key tasks** (e.g., \u201cCommission market research,\u201d \u201cValidate financial model,\u201d \u201cBook Aspen venue\u201d).  \n3. Assign **owners** (e.g., Head of Strategy, Finance Manager, Events Coordinator, IT Lead, Communications Manager).  \n4. Determine **dependencies** (e.g., venue booking must precede travel arrangements).  \n5. Apply **duration estimates** with a 10\u201115\u202f% buffer for high\u2011uncertainty items (e.g., external vendor lead times).  \n6. Align all dates to the fixed milestones (pre\u2011work due\u202f8\u202fAug, off\u2011site\u202f9\u201111\u202fSep, Board approval\u202f5\u202fOct).  \n7. Populate the schedule in a spreadsheet with columns: Task ID, Task Name, Owner, Start Date, End Date, Duration, Dependencies, Milestone, Completion Criteria, Risk\u202fMitigation.  \n8. Review the draft schedule with the Steering Committee, adjust for resource constraints, and lock the final version (owner: PMO Lead, due\u202fT\u201190\u202f+\u202f12\u202fdays).  \n\n---\n\n## 3.\u202fCreate Risk Register & Mitigation Plan for the Off\u2011site  \nA living document that identifies high\u2011level risks (budget overruns, travel disruptions, data availability, facilitator availability) and defines mitigation actions, owners, and trigger points.  \nArtifact references: *none*  \n\n### Reasoning  \nThe user asked for \u201cproactive risk management.\u201d Embedding risk awareness early prevents schedule slippage and cost overruns, especially given the tight T\u201190 horizon and fixed budget.\n\n### Approach  \n1. Conduct a **risk\u2011identification workshop** with functional leads (owner: PMO Risk Officer, due\u202fT\u201190\u202f+\u202f7\u202fdays).  \n2. Rate each risk on **impact** and **probability** to prioritize.  \n3. Draft mitigation actions (e.g., \u201cNegotiate refundable venue contract,\u201d \u201cSecure backup data sources\u201d).  \n4. Assign **risk owners** and define **monitoring cadence** (weekly risk review meeting).  \n5. Integrate risk\u2011related tasks and buffers into the master schedule (owner: PMO Lead).  \n\n---\n\n## 4.\u202fDesign Communication & Change\u2011Management Rollout  \nA plan that details how progress, decisions, and post\u2011off\u2011site deliverables will be communicated to internal stakeholders, the Board, and external partners.  \nArtifact references: *none*  \n\n### Reasoning  \nClear communication ensures alignment, secures timely approvals (e.g., Board sign\u2011off by 5\u202fOct), and keeps the team motivated throughout the intensive preparation period.\n\n### Approach  \n1. Map **audience segments** (Executive Team, Board, Project Team, Vendors, Employees).  \n2. Define **communication channels** (email briefings, SharePoint updates, status dashboards).  \n3. Schedule **key communications** (e.g., \u201cPre\u2011work kickoff\u201d on T\u201190\u202f+\u202f2\u202fdays, \u201cLogistics confirmation\u201d on T\u201160, \u201cPost\u2011off\u2011site summary\u201d on T\u202f+\u202f5\u202fdays).  \n4. Assign owners for each communication (e.g., Communications Manager for Board brief, Events Coordinator for travel notices).  \n5. Draft templates and obtain approvals.  \n\n---\n\n## 5.\u202fEstablish Governance & Review Cadence  \nA lightweight governance model (Steering Committee meetings, PMO status calls, decision\u2011gate reviews) that provides oversight and ensures adherence to timeline and budget.  \nArtifact references: *none*  \n\n### Reasoning  \nGiven the compressed timeline and multiple owners, regular governance checkpoints are essential to surface issues early and keep the project on track.\n\n### Approach  \n1. Define **gate reviews** (Scope Confirmation \u2013 T\u201190\u202f+\u202f5\u202fdays; Schedule Freeze \u2013 T\u201190\u202f+\u202f12\u202fdays; Logistics Sign\u2011off \u2013 T\u201160; Final Read\u2011out \u2013 T\u202f+\u202f2\u202fdays).  \n2. Set **meeting cadence** (weekly PMO sync, bi\u2011weekly Steering Committee).  \n3. Document **decision\u2011making authority** for each gate (e.g., budget adjustments require CFO sign\u2011off).  \n4. Record outcomes in a central log and update the master schedule accordingly.  \n\n---\n\n# Breakdown\n\n**1. Define Scope & Success Criteria**  \n\u202f\u202f1.1\u202fSchedule kick\u2011off alignment meeting \u2013 Owner: Program Sponsor \u2013 Due\u202fT\u201190\u202f+\u202f2\u202fdays  \n\u202f\u202f1.2\u202fDraft charter (list of deliverables, constraints, success metrics) \u2013 Owner: Strategy Lead \u2013 Due\u202fT\u201190\u202f+\u202f3\u202fdays  \n\u202f\u202f1.3\u202fDistribute draft for review (Finance, Ops, HR, Communications) \u2013 Owner: PMO Coordinator \u2013 Due\u202fT\u201190\u202f+\u202f4\u202fdays  \n\u202f\u202f1.4\u202fIncorporate feedback \u2013 Owner: Strategy Lead \u2013 Due\u202fT\u201190\u202f+\u202f5\u202fdays  \n\u202f\u202f1.5\u202fObtain formal sign\u2011off from Steering Committee \u2013 Owner: PMO Lead \u2013 Due\u202fT\u201190\u202f+\u202f5\u202fdays  \n\u202f\u202f1.6\u202fPublish charter in shared repo \u2013 Owner: PMO Coordinator \u2013 Due\u202fT\u201190\u202f+\u202f5\u202fdays  \n\n**2. Develop Detailed Work\u2011Back Schedule**  \n\u202f\u202f2.1\u202fExtract work\u2011streams from charter \u2013 Owner: PMO Analyst \u2013 Depends on\u202f1.5 \u2013 Due\u202fT\u201190\u202f+\u202f6\u202fdays  \n\u202f\u202f2.2\u202fList key tasks per work\u2011stream \u2013 Owner: PMO Analyst \u2013 Depends on\u202f2.1 \u2013 Due\u202fT\u201190\u202f+\u202f7\u202fdays  \n\u202f\u202f2.3\u202fAssign owners to each task \u2013 Owner: PMO Lead (facilitate) \u2013 Depends on\u202f2.2 \u2013 Due\u202fT\u201190\u202f+\u202f8\u202fdays  \n\u202f\u202f2.4\u202fDetermine dependencies & sequence \u2013 Owner: PMO Analyst \u2013 Depends on\u202f2.3 \u2013 Due\u202fT\u201190\u202f+\u202f9\u202fdays  \n\u202f\u202f2.5\u202fEstimate durations & add buffers \u2013 Owner: PMO Lead \u2013 Depends on\u202f2.4 \u2013 Due\u202fT\u201190\u202f+\u202f10\u202fdays  \n\u202f\u202f2.6\u202fMap tasks to fixed milestones (pre\u2011work, off\u2011site, Board sign\u2011off) \u2013 Owner: PMO Lead \u2013 Depends on\u202f2.5 \u2013 Due\u202fT\u201190\u202f+\u202f11\u202fdays  \n\u202f\u202f2.7\u202fPopulate schedule in spreadsheet (export\u2011ready) \u2013 Owner: PMO Analyst \u2013 Depends on\u202f2.6 \u2013 Due\u202fT\u201190\u202f+\u202f12\u202fdays  \n\u202f\u202f2.8\u202fReview draft schedule with Steering Committee \u2013 Owner: PMO Lead \u2013 Depends on\u202f2.7 \u2013 Due\u202fT\u201190\u202f+\u202f13\u202fdays  \n\u202f\u202f2.9\u202fIncorporate review feedback & lock final schedule \u2013 Owner: PMO Lead \u2013 Depends on\u202f2.8 \u2013 Due\u202fT\u201190\u202f+\u202f14\u202fdays  \n\n**3. Create Risk Register & Mitigation Plan**  \n\u202f\u202f3.1\u202fOrganize risk\u2011identification workshop \u2013 Owner: Risk Officer \u2013 Due\u202fT\u201190\u202f+\u202f6\u202fdays (parallel with\u202f2.1)  \n\u202f\u202f3.2\u202fFacilitate workshop, capture risks \u2013 Owner: Risk Officer \u2013 Due\u202fT\u201190\u202f+\u202f7\u202fdays  \n\u202f\u202f3.3\u202fRate and prioritize risks (impact/probability matrix) \u2013 Owner: Risk Officer \u2013 Due\u202fT\u201190\u202f+\u202f8\u202fdays  \n\u202f\u202f3.4\u202fDraft mitigation actions & assign owners \u2013 Owner: Risk Officer \u2013 Due\u202fT\u201190\u202f+\u202f9\u202fdays  \n\u202f\u202f3.5\u202fIntegrate risk\u2011related tasks/buffers into master schedule \u2013 Owner: PMO Lead \u2013 Depends on\u202f2.5 &\u202f3.4 \u2013 Due\u202fT\u201190\u202f+\u202f10\u202fdays  \n\u202f\u202f3.6\u202fEstablish weekly risk review cadence \u2013 Owner: PMO Lead \u2013 Due\u202fT\u201190\u202f+\u202f11\u202fdays  \n\n**4. Design Communication & Change\u2011Management Rollout**  \n\u202f\u202f4.1\u202fIdentify stakeholder audience groups \u2013 Owner: Communications Manager \u2013 Due\u202fT\u201190\u202f+\u202f6\u202fdays  \n\u202f\u202f4.2\u202fSelect communication channels & cadence \u2013 Owner: Communications Manager \u2013 Due\u202fT\u201190\u202f+\u202f7\u202fdays  \n\u202f\u202f4.3\u202fCreate communication schedule (key dates) \u2013 Owner: Communications Manager \u2013 Depends on\u202f1.5 \u2013 Due\u202fT\u201190\u202f+\u202f8\u202fdays  \n\u202f\u202f4.4\u202fDraft templates (Board brief, status update, travel notice) \u2013 Owner: Communications Manager \u2013 Due\u202fT\u201190\u202f+\u202f9\u202fdays  \n\u202f\u202f4.5\u202fObtain template approvals (Executive sponsor) \u2013 Owner: Communications Manager \u2013 Due\u202fT\u201190\u202f+\u202f10\u202fdays  \n\u202f\u202f4.6\u202fPublish communication plan & assign owners \u2013 Owner: PMO Coordinator \u2013 Due\u202fT\u201190\u202f+\u202f11\u202fdays  \n\n**5. Establish Governance & Review Cadence**  \n\u202f\u202f5.1\u202fDefine gate reviews & decision authority matrix \u2013 Owner: PMO Lead \u2013 Due\u202fT\u201190\u202f+\u202f6\u202fdays  \n\u202f\u202f5.2\u202fSchedule recurring governance meetings (weekly PMO, bi\u2011weekly Steering) \u2013 Owner: PMO Coordinator \u2013 Due\u202fT\u201190\u202f+\u202f7\u202fdays  \n\u202f\u202f5.3\u202fCreate meeting agenda templates & minutes log \u2013 Owner: PMO Analyst \u2013 Due\u202fT\u201190\u202f+\u202f8\u202fdays  \n\u202f\u202f5.4\u202fCommunicate governance framework to all owners \u2013 Owner: PMO Lead \u2013 Due\u202fT\u201190\u202f+\u202f9\u202fdays  \n\n**Cross\u2011Outcome Integration & Finalization**  \n\u202f\u202f6.1\u202fRun a \u201cPlan Freeze\u201d meeting to confirm no open items \u2013 Owner: PMO Lead \u2013 Depends on\u202f2.9,\u202f3.6,\u202f4.6,\u202f5.4 \u2013 Due\u202fT\u201160\u202fdays (30\u202fSept)  \n\u202f\u202f6.2\u202fObtain final budget sign\u2011off (ensure \u2264\u202f$120\u202fk) \u2013 Owner: CFO \u2013 Depends on\u202f6.1 \u2013 Due\u202fT\u201155\u202fdays (5\u202fOct)  \n\u202f\u202f6.3\u202fDistribute final work\u2011back plan to all owners \u2013 Owner: PMO Coordinator \u2013 Due\u202fT\u201155\u202fdays  \n\u202f\u202f6.4\u202fKick\u2011off execution phase (tasks begin) \u2013 Owner: All task owners \u2013 Starts\u202fT\u201155\u202fdays  \n\n**Post\u2011Off\u2011site Deliverables** (tracked within the master schedule)  \n\u202f\u202f7.1\u202fCompile session notes & decisions \u2013 Owner: Designated Scribe \u2013 Due\u202fT\u202f+\u202f2\u202fdays (13\u202fSep)  \n\u202f\u202f7.2\u202fDraft strategic recommendations report \u2013 Owner: Strategy Lead \u2013 Due\u202fT\u202f+\u202f7\u202fdays (18\u202fSep)  \n\u202f\u202f7.3\u202fBoard presentation deck \u2013 Owner: Communications Manager \u2013 Due\u202fT\u202f+\u202f10\u202fdays (21\u202fSep)  \n\u202f\u202f7.4\u202fDistribute final deliverables to Board for approval \u2013 Owner: PMO Lead \u2013 Due\u202fOct\u202f5\u202f(aligns with Board deadline)  \n\n---\n\n### Collaboration Tips\n- **Shared Workspace:** Use a central document repository (e.g., SharePoint) where the charter, schedule, risk register, and communication plan live. Enable version control and comment threads.\n- **RACI Matrix:** Early on, draft a simple RACI (Responsible, Accountable, Consulted, Informed) for each major work\u2011stream. This clarifies ownership and prevents duplicated effort.\n- **Regular Syncs:** Keep the weekly PMO sync short (15\u202fmin) focused on \u201cwhat\u2019s on track, what\u2019s at risk, what decisions are needed.\u201d Use a visual Kanban board to surface blockers.\n- **Buffer Management:** Allocate explicit buffer days in the schedule (e.g., \u201cVendor confirmation \u2013 2\u2011day buffer\u201d). Communicate these buffers to owners so they are not treated as slack.\n- **Escalation Path:** Document a clear escalation route for any issue that threatens the $120\u202fk budget or the Aug\u202f15 pre\u2011work deadline (e.g., immediate notification to Program Sponsor and CFO).\n- **Stakeholder Updates:** Align the communication rollout with governance gates\u2014send a concise status snapshot before each gate review to keep the Steering Committee informed and ready to decide.\n\nBy following the outcomes, reasoning, and detailed breakdown above, NovaHealth Systems can systematically construct the requested work\u2011back plan, ensure every task is owned, timed, and risk\u2011aware, and ultimately deliver a successful Q4\u202f2025 Strategic Planning Off\u2011site within budget and schedule.",
+  "plan": {
+    "id": "document-001",
+    "name": "Q4 2025 Strategic Planning Off\u2011site Work\u2011Back Plan",
+    "details": "Work\u2011back plan for NovaHealth Systems Q4\u202f2025 Strategic Planning Off\u2011site, including scope definition, schedule, risk register, communication plan, governance, and post\u2011off\u2011site deliverables.",
+    "draft": true,
+    "participants": [
+      {
+        "name": "Program Sponsor",
+        "draft": true
+      },
+      {
+        "name": "Strategy Lead",
+        "draft": true
+      },
+      {
+        "name": "PMO Coordinator",
+        "draft": true
+      },
+      {
+        "name": "PMO Lead",
+        "draft": true
+      },
+      {
+        "name": "PMO Analyst",
+        "draft": true
+      },
+      {
+        "name": "Risk Officer",
+        "draft": true
+      },
+      {
+        "name": "Communications Manager",
+        "draft": true
+      },
+      {
+        "name": "CFO",
+        "draft": true
+      },
+      {
+        "name": "Designated Scribe",
+        "draft": true
+      }
+    ],
+    "references": [],
+    "deliverables": [
+      {
+        "id": "deliverable-001",
+        "name": "Charter",
+        "type": "word",
+        "draft": true,
+        "history": []
+      },
+      {
+        "id": "deliverable-002",
+        "name": "Detailed Work\u2011Back Schedule",
+        "type": "excel",
+        "draft": true,
+        "history": []
+      },
+      {
+        "id": "deliverable-003",
+        "name": "Risk Register & Mitigation Plan",
+        "type": "word",
+        "draft": true,
+        "history": []
+      },
+      {
+        "id": "deliverable-004",
+        "name": "Communication & Change\u2011Management Plan",
+        "type": "word",
+        "draft": true,
+        "history": []
+      },
+      {
+        "id": "deliverable-005",
+        "name": "Governance & Review Cadence Framework",
+        "type": "word",
+        "draft": true,
+        "history": []
+      },
+      {
+        "id": "deliverable-006",
+        "name": "Final Work\u2011Back Plan",
+        "type": "excel",
+        "draft": true,
+        "history": []
+      },
+      {
+        "id": "deliverable-007",
+        "name": "Session Notes & Decisions",
+        "type": "word",
+        "draft": true,
+        "history": []
+      },
+      {
+        "id": "deliverable-008",
+        "name": "Strategic Recommendations Report",
+        "type": "word",
+        "draft": true,
+        "history": []
+      },
+      {
+        "id": "deliverable-009",
+        "name": "Board Presentation Deck",
+        "type": "powerpoint",
+        "draft": true,
+        "history": []
+      }
+    ],
+    "tasks": [
+      {
+        "id": "task-001",
+        "name": "Schedule kick\u2011off alignment meeting",
+        "details": "Arrange the initial alignment meeting with the Program Sponsor.",
+        "draft": true,
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002",
+        "name": "Draft charter",
+        "details": "Create the off\u2011site charter document.",
+        "draft": true,
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003",
+        "name": "Distribute draft for review",
+        "details": "Share the draft charter with stakeholders for feedback.",
+        "draft": true,
+        "dependencies": [
+          "task-002"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-004",
+        "name": "Incorporate feedback",
+        "details": "Update the charter based on review comments.",
+        "draft": true,
+        "dependencies": [
+          "task-003"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-005",
+        "name": "Obtain formal sign\u2011off from Steering Committee",
+        "details": "Secure approval of the charter from the Steering Committee.",
+        "draft": true,
+        "dependencies": [
+          "task-004"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[word]/deliverable-001"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-006",
+        "name": "Publish charter in shared repository",
+        "details": "Upload the approved charter to the central SharePoint workspace.",
+        "draft": true,
+        "dependencies": [
+          "task-005"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-007",
+        "name": "Extract work\u2011streams from charter",
+        "details": "Identify major work\u2011streams based on the approved charter.",
+        "draft": true,
+        "dependencies": [
+          "task-005"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-008",
+        "name": "List key tasks per work\u2011stream",
+        "details": "Detail the specific activities required for each work\u2011stream.",
+        "draft": true,
+        "dependencies": [
+          "task-007"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-009",
+        "name": "Assign owners to each task",
+        "details": "Allocate responsible owners for all identified tasks.",
+        "draft": true,
+        "dependencies": [
+          "task-008"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-010",
+        "name": "Determine dependencies & sequence",
+        "details": "Map logical dependencies and ordering of tasks.",
+        "draft": true,
+        "dependencies": [
+          "task-009"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-011",
+        "name": "Estimate durations & add buffers",
+        "details": "Calculate effort estimates and insert buffer days.",
+        "draft": true,
+        "dependencies": [
+          "task-010"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-012",
+        "name": "Map tasks to fixed milestones",
+        "details": "Align each task with key project milestones (e.g., pre\u2011work deadline).",
+        "draft": true,
+        "dependencies": [
+          "task-011"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-013",
+        "name": "Populate schedule in spreadsheet",
+        "details": "Enter all tasks, owners, dates, and buffers into an Excel schedule.",
+        "draft": true,
+        "dependencies": [
+          "task-012"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-014",
+        "name": "Review draft schedule with Steering Committee",
+        "details": "Present the draft schedule for feedback and approval.",
+        "draft": true,
+        "dependencies": [
+          "task-013"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-015",
+        "name": "Incorporate review feedback & lock final schedule",
+        "details": "Finalize the detailed work\u2011back schedule.",
+        "draft": true,
+        "dependencies": [
+          "task-014"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[excel]/deliverable-002"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-016",
+        "name": "Organize risk\u2011identification workshop",
+        "details": "Plan and schedule the risk identification session.",
+        "draft": true,
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-017",
+        "name": "Facilitate workshop, capture risks",
+        "details": "Run the risk\u2011identification workshop and record identified risks.",
+        "draft": true,
+        "dependencies": [
+          "task-016"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-018",
+        "name": "Rate and prioritize risks",
+        "details": "Assess probability and impact of each risk and rank them.",
+        "draft": true,
+        "dependencies": [
+          "task-017"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-019",
+        "name": "Draft mitigation actions & assign owners",
+        "details": "Develop mitigation strategies for prioritized risks and allocate owners.",
+        "draft": true,
+        "dependencies": [
+          "task-018"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[word]/deliverable-003"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-020",
+        "name": "Integrate risk\u2011related tasks/buffers into master schedule",
+        "details": "Add risk mitigation activities and buffer days to the work\u2011back schedule.",
+        "draft": true,
+        "dependencies": [
+          "task-011",
+          "task-019"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-021",
+        "name": "Establish weekly risk review cadence",
+        "details": "Set up a recurring weekly meeting to review risk status.",
+        "draft": true,
+        "dependencies": [
+          "task-020"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-022",
+        "name": "Identify stakeholder audience groups",
+        "details": "Define the groups of stakeholders to be kept informed.",
+        "draft": true,
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-023",
+        "name": "Select communication channels & cadence",
+        "details": "Choose appropriate communication methods and frequency.",
+        "draft": true,
+        "dependencies": [
+          "task-022"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-024",
+        "name": "Create communication schedule (key dates)",
+        "details": "Develop a timeline for stakeholder updates aligned with project milestones.",
+        "draft": true,
+        "dependencies": [
+          "task-005"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-025",
+        "name": "Draft templates",
+        "details": "Prepare standard communication templates (status updates, approvals, etc.).",
+        "draft": true,
+        "dependencies": [
+          "task-024"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-026",
+        "name": "Obtain template approvals",
+        "details": "Secure sign\u2011off on communication templates from relevant leaders.",
+        "draft": true,
+        "dependencies": [
+          "task-025"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-027",
+        "name": "Publish communication plan & assign owners",
+        "details": "Release the finalized communication & change\u2011management plan to the team.",
+        "draft": true,
+        "dependencies": [
+          "task-026"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[word]/deliverable-004"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-028",
+        "name": "Define gate reviews & decision authority matrix",
+        "details": "Create a matrix of gate reviews and clarify decision\u2011making authority.",
+        "draft": true,
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-029",
+        "name": "Schedule recurring governance meetings",
+        "details": "Set up calendar invites for regular governance reviews.",
+        "draft": true,
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-030",
+        "name": "Create meeting agenda templates & minutes log",
+        "details": "Develop standard agenda and minutes documents for governance meetings.",
+        "draft": true,
+        "dependencies": [
+          "task-029"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-031",
+        "name": "Communicate governance framework to all owners",
+        "details": "Distribute the governance & review cadence framework to project owners.",
+        "draft": true,
+        "dependencies": [
+          "task-030"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[word]/deliverable-005"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-032",
+        "name": "Run a \u201cPlan Freeze\u201d meeting",
+        "details": "Hold a meeting to freeze the plan before final approvals.",
+        "draft": true,
+        "dependencies": [
+          "task-015",
+          "task-021",
+          "task-027",
+          "task-031"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-033",
+        "name": "Obtain final budget sign\u2011off",
+        "details": "Secure CFO approval for the $120\u202fk budget.",
+        "draft": true,
+        "dependencies": [
+          "task-032"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-034",
+        "name": "Distribute final work\u2011back plan to all owners",
+        "details": "Send the finalized work\u2011back plan to every task owner.",
+        "draft": true,
+        "dependencies": [
+          "task-033"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[excel]/deliverable-006"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-035",
+        "name": "Kick\u2011off execution phase",
+        "details": "Begin execution of all scheduled tasks.",
+        "draft": true,
+        "dependencies": [
+          "task-034"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-036",
+        "name": "Compile session notes & decisions",
+        "details": "Gather all notes and decisions from the off\u2011site sessions.",
+        "draft": true,
+        "dependencies": [
+          "task-032"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[word]/deliverable-007"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-037",
+        "name": "Draft strategic recommendations report",
+        "details": "Prepare the strategic recommendations based on off\u2011site outcomes.",
+        "draft": true,
+        "dependencies": [
+          "task-036"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[word]/deliverable-008"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-038",
+        "name": "Board presentation deck",
+        "details": "Create the PowerPoint deck for Board review.",
+        "draft": true,
+        "dependencies": [
+          "task-037"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[powerpoint]/deliverable-009"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-039",
+        "name": "Distribute final deliverables to Board for approval",
+        "details": "Send the final report and deck to the Board by the Oct\u202f5 deadline.",
+        "draft": true,
+        "dependencies": [
+          "task-038"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-005",
+        "name": "Obtain formal sign\u2011off from Steering Committee",
+        "details": "Secure approval of the charter from the Steering Committee.",
+        "draft": true,
+        "dependencies": [
+          "task-004"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[word]/deliverable-001"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-015",
+        "name": "Incorporate review feedback & lock final schedule",
+        "details": "Finalize the detailed work\u2011back schedule.",
+        "draft": true,
+        "dependencies": [
+          "task-014"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[excel]/deliverable-002"
+        ],
+        "references": [],
+        "history": []
+      }
+    ],
+    "history": []
+  }
+}

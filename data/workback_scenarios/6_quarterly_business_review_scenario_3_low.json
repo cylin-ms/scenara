@@ -1,0 +1,587 @@
+{
+  "scenario_name": "Helios Energy Solutions Q1\u202f2025 Quarterly Business Review",
+  "scenario_number": 3,
+  "meeting_type": "Quarterly Business Review",
+  "quality_level": "low",
+  "workback_prompt": "Generate a detailed work\u2011back plan for the Helios Energy Solutions Q1\u202f2025 Quarterly Business Review. Include all tasks required to prepare pre\u2011reads (financial deck, market analysis, risk register, ESG report), coordinate department presentations, secure video\u2011link testing, distribute board materials, collect approvals, and capture post\u2011meeting action items. Identify owners, dependencies, critical path milestones, and deadlines that align with the meeting date of May\u202f14\u202f2025 (08:30\u202f\u2013\u202f12:30\u202fET). Account for constraints such as the $150\u202fM capital\u2011allocation cap, regulatory permitting timeline, and the five\u2011day pre\u2011read distribution window.\n\nGenerate a LOW QUALITY workback plan with these characteristics:\n- Missing key tasks or phases\n- Vague task descriptions\n- Few or no dependencies defined\n- Missing stakeholder assignments\n- No milestones or poorly defined milestones\n- Unrealistic timelines\n- No risk consideration\n- Minimal deliverables identified\n\nIMPORTANT: Generate a plan that naturally exhibits LOW quality characteristics.\nDo not explicitly label the plan as \"low quality\" - let the quality emerge from the content.",
+  "generated_at": "2025-11-17T06:21:34.195797",
+  "analysis": "Below is a high\u2011level analysis of what you\u2019ll need to do to get the Helios Energy Solutions Q1\u202f2025 Quarterly Business Review (QBR) ready on time, together with suggestions for how you can break the effort into manageable pieces, align stakeholders, and keep the work on track.\n\n---\n\n## 1.\u202fClarify the end\u2011to\u2011end deliverables  \n\n| Deliverable | What it should contain | Typical owner (suggested) |\n|-------------|-----------------------|---------------------------|\n| **Financial deck** | Income statement, balance sheet, cash\u2011flow forecast, variance analysis vs. Q4\u202f2024 | Finance Lead |\n| **Market analysis** | TAM/SAM/SOM, competitor positioning, demand outlook for Q1\u202f2025 | Strategy/Market Intelligence Lead |\n| **Risk register** | Updated list of project, regulatory, financial, and ESG risks with mitigation status | Risk Management Lead |\n| **ESG report** | ESG metrics, progress against targets, upcoming initiatives | ESG/ sustainability Lead |\n| **Department presentations** | Slides from each functional group (Operations, Engineering, Legal, etc.) that feed into the deck | Department heads |\n| **Video\u2011link test** | Confirmation that the virtual platform works for all remote participants | IT/AV Lead |\n| **Board\u2011material package** | All pre\u2011reads bundled in the format required by the board (PDF, secure portal) | Executive Assistant / Board Liaison |\n| **Approval collection** | Sign\u2011off from CFO, CRO, ESG Officer, and any other required approvers | Project Lead |\n| **Post\u2011meeting action\u2011item log** | List of decisions, owners, and due dates captured after the QBR | PMO / Secretary |\n\n---\n\n## 2.\u202fIdentify the critical timeline constraints  \n\n| Constraint | Impact on schedule |\n|------------|--------------------|\n| **Meeting date** \u2013\u202fMay\u202f14\u202f2025, 08:30\u201112:30\u202fET | All pre\u2011reads must be finalised and distributed **at least five business days** before the meeting (i.e., by **May\u202f7\u202f2025**). |\n| **Capital\u2011allocation cap** \u2013\u202f$150\u202fM | The financial deck must clearly show that proposed allocations stay within the cap; any over\u2011run triggers an additional approval step. |\n| **Regulatory permitting timeline** | Certain risk items (e.g., permitting milestones) may need to be reflected in the risk register; any pending permits that could affect Q1\u202f2025 must be highlighted early. |\n| **Video\u2011link testing** | Must be completed **48\u202fhours** before the meeting to allow time for remediation. |\n| **Approval workflow** | Sequential sign\u2011offs (e.g., CFO \u2192 CRO \u2192 ESG Officer) add **1\u20112\u202fbusiness days** per step; plan buffer accordingly. |\n\n---\n\n## 3.\u202fHigh\u2011level work\u2011back schedule (key milestones)\n\n| Milestone | Target date | Reason |\n|-----------|-------------|--------|\n| **Kick\u2011off & role assignment** | Apr\u202f1\u202f2025 | Gives ~6\u202fweeks to produce all materials. |\n| **First draft of all pre\u2011reads** | Apr\u202f15\u202f2025 | Allows 2\u202fweeks for review and revision. |\n| **Internal review & revisions** | Apr\u202f22\u202f2025 | Consolidates feedback from finance, strategy, risk, ESG, etc. |\n| **Final sign\u2011off & approvals** | May\u202f4\u202f2025 | Provides a 3\u2011day buffer before distribution. |\n| **Board\u2011material distribution** | May\u202f7\u202f2025 | Meets the five\u2011day pre\u2011read window. |\n| **Video\u2011link test** | May\u202f12\u202f2025 | Gives 48\u202fh for any fixes before the meeting. |\n| **QBR meeting** | May\u202f14\u202f2025 | Core event. |\n| **Post\u2011meeting action\u2011item capture** | May\u202f15\u201116\u202f2025 | Ensures decisions are recorded while fresh. |\n\n---\n\n## 4.\u202fSuggested work\u2011breakdown structure (WBS)\n\n```\n1. Initiation\n   1.1. Schedule kick\u2011off meeting\n   1.2. Confirm meeting date, venue, and virtual platform\n   1.3. Assign owners for each deliverable\n2. Data collection & draft creation\n   2.1. Finance team assembles Q1 financials\n   2.2. Strategy team prepares market analysis\n   2.3. Risk team updates risk register (including permitting status)\n   2.4. ESG team compiles ESG metrics\n   2.5. Departments draft their presentation slides\n3. Integration & review\n   3.1. Consolidate all drafts into a single deck\n   3.2. Internal review round (Finance, Strategy, Risk, ESG, Ops)\n   3.3. Revise based on feedback\n4. Approvals\n   4.1. Route deck to CFO for sign\u2011off\n   4.2. Route to CRO for sign\u2011off\n   4.3. Route to ESG Officer for sign\u2011off\n   4.4. Capture final approval signatures\n5. Distribution\n   5.1. Package pre\u2011reads (PDF + secure portal upload)\n   5.2. Email distribution list to board members (by May\u202f7)\n6. Technical readiness\n   6.1. Schedule video\u2011link test with IT/AV\n   6.2. Conduct test and resolve issues\n7. Execution\n   7.1. Host QBR (May\u202f14)\n   7.2. Record meeting (if required)\n8. Follow\u2011up\n   8.1. Draft post\u2011meeting action\u2011item log\n   8.2. Assign owners & due dates for each action\n   8.3. Distribute log to participants\n```\n\n**Dependencies (illustrative):**  \n- 2.1\u20112.5 must finish before 3.1 can start.  \n- 3.3 must complete before 4.1 can begin.  \n- 4.4 must be done before 5.1.  \n- 5.1 must be completed before the five\u2011day distribution deadline (May\u202f7).  \n- 6.2 must be completed at least 48\u202fh before the meeting (May\u202f12).  \n\n---\n\n## 5.\u202fCollaboration & communication tips  \n\n| Activity | Recommended practice |\n|----------|----------------------|\n| **Kick\u2011off** | Use a short video call with a shared agenda; capture decisions in a shared doc. |\n| **Progress tracking** | Maintain a simple Kanban board (e.g., \u201cTo Do\u201d, \u201cIn Progress\u201d, \u201cReview\u201d, \u201cDone\u201d) that all owners can update daily. |\n| **Review cycles** | Schedule 30\u2011minute \u201creview windows\u201d where owners post comments directly on the draft deck (commenting in the document platform). |\n| **Approval workflow** | Use an electronic signature tool or a tracked email chain so you can see who has signed and who is pending. |\n| **Risk visibility** | Even if a formal risk register isn\u2019t required for this QBR, keep a quick \u201crisk\u2011highlight\u201d slide that flags any permitting or capital\u2011allocation concerns. |\n| **Technical rehearsal** | Run the video\u2011link test with a representative sample of remote participants (e.g., one board member, one external advisor). |\n| **Post\u2011meeting follow\u2011up** | Assign a single \u201caction\u2011item owner\u201d (e.g., PMO lead) to consolidate decisions and send a concise summary within 24\u202fh. |\n\n---\n\n## 6.\u202fPotential high\u2011level risks & mitigation ideas  \n\n| Risk | Impact | Simple mitigation |\n|------|--------|--------------------|\n| **Late data from finance** | Delays the entire deck | Request a \u201chard deadline\u201d for raw data at the kick\u2011off; set a backup \u201cestimate\u201d path if data is missing. |\n| **Regulatory permitting updates arrive after the draft** | Risk register may be outdated | Include a \u201cpending items\u201d section that can be updated up to the final sign\u2011off. |\n| **Video\u2011link failure** | Meeting disruption | Perform the test early (48\u202fh before) and have a backup dial\u2011in number ready. |\n| **Approver availability** | Bottleneck in sign\u2011off | Identify alternate approvers in advance; schedule approval windows on calendars. |\n| **Capital\u2011allocation cap breach** | Requires extra board discussion | Build a \u201cscenario\u201d slide that shows impact if allocations exceed $150\u202fM. |\n\n---\n\n## 7.\u202fNext immediate actions (to get started this week)\n\n1. **Send a calendar invite** for the QBR kick\u2011off (target:\u202fApril\u202f1).  \n2. **Create a shared folder** (e.g., on the corporate drive) with sub\u2011folders for each deliverable.  \n3. **Populate a simple task tracker** (e.g., a spreadsheet or lightweight project\u2011management tool) with the WBS items above, assign owners, and set provisional dates.  \n4. **Notify all owners** of the five\u2011day pre\u2011read distribution rule (materials must be out by May\u202f7).  \n5. **Confirm the virtual platform** (e.g., Teams, Zoom) and request IT to block a test slot for May\u202f12.  \n\n---\n\n### How to keep the plan realistic  \n\n- **Add a buffer** of at least 1\u202fbusiness day to each major milestone to absorb minor slips.  \n- **Review the schedule** after the first draft is ready (mid\u2011April) and adjust dates if any critical path tasks are lagging.  \n- **Communicate early** if any constraint (e.g., permitting timeline) threatens to push a deliverable past its deadline.  \n\n---\n\nBy following this structure\u2014clearly defining deliverables, assigning owners, mapping dependencies, and building in buffers\u2014you\u2019ll be positioned to produce a complete, board\u2011ready QBR package well before the May\u202f14 meeting. The same framework can be reused for future quarterly reviews, allowing you to refine the process over time.",
+  "plan": {
+    "id": "document-001",
+    "name": "Helios Energy Solutions Q1 2025 Quarterly Business Review Plan",
+    "details": "Workback plan to prepare the Q1 2025 Quarterly Business Review (QBR) for Helios Energy Solutions, covering deliverables, timeline constraints, milestones, work\u2011breakdown structure, risks and next actions.",
+    "draft": true,
+    "participants": [
+      {
+        "name": "Finance Lead",
+        "draft": true
+      },
+      {
+        "name": "Strategy/Market Intelligence Lead",
+        "draft": true
+      },
+      {
+        "name": "Risk Management Lead",
+        "draft": true
+      },
+      {
+        "name": "ESG / Sustainability Lead",
+        "draft": true
+      },
+      {
+        "name": "Department heads",
+        "draft": true
+      },
+      {
+        "name": "IT / AV Lead",
+        "draft": true
+      },
+      {
+        "name": "Executive Assistant / Board Liaison",
+        "draft": true
+      },
+      {
+        "name": "Project Lead",
+        "draft": true
+      },
+      {
+        "name": "PMO / Secretary",
+        "draft": true
+      },
+      {
+        "name": "CFO",
+        "draft": true
+      },
+      {
+        "name": "CRO",
+        "draft": true
+      },
+      {
+        "name": "ESG Officer",
+        "draft": true
+      },
+      {
+        "name": "you",
+        "draft": true
+      },
+      {
+        "name": "system",
+        "draft": true
+      }
+    ],
+    "references": [],
+    "deliverables": [
+      {
+        "id": "deliverable-001",
+        "name": "Financial deck",
+        "type": "document",
+        "draft": true,
+        "history": []
+      },
+      {
+        "id": "deliverable-002",
+        "name": "Market analysis",
+        "type": "document",
+        "draft": true,
+        "history": []
+      },
+      {
+        "id": "deliverable-003",
+        "name": "Risk register",
+        "type": "document",
+        "draft": true,
+        "history": []
+      },
+      {
+        "id": "deliverable-004",
+        "name": "ESG report",
+        "type": "document",
+        "draft": true,
+        "history": []
+      },
+      {
+        "id": "deliverable-005",
+        "name": "Department presentations",
+        "type": "document",
+        "draft": true,
+        "history": []
+      },
+      {
+        "id": "deliverable-006",
+        "name": "Video\u2011link test",
+        "type": "document",
+        "draft": true,
+        "history": []
+      },
+      {
+        "id": "deliverable-007",
+        "name": "Board\u2011material package",
+        "type": "document",
+        "draft": true,
+        "history": []
+      },
+      {
+        "id": "deliverable-008",
+        "name": "Approval collection",
+        "type": "document",
+        "draft": true,
+        "history": []
+      },
+      {
+        "id": "deliverable-009",
+        "name": "Post\u2011meeting action\u2011item log",
+        "type": "document",
+        "draft": true,
+        "history": []
+      }
+    ],
+    "tasks": [
+      {
+        "id": "task-001",
+        "name": "Schedule kick\u2011off meeting",
+        "draft": true,
+        "details": "Arrange a short video call with agenda and capture decisions in a shared doc.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Project Lead"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002",
+        "name": "Confirm meeting date, venue, and virtual platform",
+        "draft": true,
+        "details": "Lock May\u202f14\u202f2025, 08:30\u201112:30\u202fET and select Teams/Zoom as the virtual platform.",
+        "dependencies": [
+          "task-001"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Project Lead"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003",
+        "name": "Assign owners for each deliverable",
+        "draft": true,
+        "details": "Map each deliverable to the suggested owner (Finance Lead, Strategy Lead, etc.).",
+        "dependencies": [
+          "task-002"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Project Lead"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-004",
+        "name": "Finance team assembles Q1 financials",
+        "draft": true,
+        "details": "Prepare income statement, balance sheet, cash\u2011flow forecast, variance analysis.",
+        "dependencies": [
+          "task-003"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Finance Lead"
+        ],
+        "deliverables": [
+          "@deliverable[document]/deliverable-001"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-005",
+        "name": "Strategy team prepares market analysis",
+        "draft": true,
+        "details": "Create TAM/SAM/SOM, competitor positioning, demand outlook.",
+        "dependencies": [
+          "task-003"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Strategy/Market Intelligence Lead"
+        ],
+        "deliverables": [
+          "@deliverable[document]/deliverable-002"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-006",
+        "name": "Risk team updates risk register (including permitting status)",
+        "draft": true,
+        "details": "Refresh list of project, regulatory, financial, ESG risks with mitigation status.",
+        "dependencies": [
+          "task-003"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Risk Management Lead"
+        ],
+        "deliverables": [
+          "@deliverable[document]/deliverable-003"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-007",
+        "name": "ESG team compiles ESG metrics",
+        "draft": true,
+        "details": "Gather ESG metrics, progress against targets, upcoming initiatives.",
+        "dependencies": [
+          "task-003"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "ESG / Sustainability Lead"
+        ],
+        "deliverables": [
+          "@deliverable[document]/deliverable-004"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-008",
+        "name": "Departments draft their presentation slides",
+        "draft": true,
+        "details": "Each functional group (Ops, Engineering, Legal, etc.) creates slide decks.",
+        "dependencies": [
+          "task-003"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Department heads"
+        ],
+        "deliverables": [
+          "@deliverable[document]/deliverable-005"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-009",
+        "name": "Consolidate all drafts into a single deck",
+        "draft": true,
+        "details": "Combine financial deck, market analysis, risk register, ESG report, and department slides.",
+        "dependencies": [
+          "task-004",
+          "task-005",
+          "task-006",
+          "task-007",
+          "task-008"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Project Lead"
+        ],
+        "deliverables": [
+          "@deliverable[document]/deliverable-001",
+          "@deliverable[document]/deliverable-002",
+          "@deliverable[document]/deliverable-003",
+          "@deliverable[document]/deliverable-004",
+          "@deliverable[document]/deliverable-005"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-010",
+        "name": "Internal review round (Finance, Strategy, Risk, ESG, Ops)",
+        "draft": true,
+        "details": "Stakeholders review the consolidated deck and provide comments.",
+        "dependencies": [
+          "task-009"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Finance Lead",
+          "Strategy/Market Intelligence Lead",
+          "Risk Management Lead",
+          "ESG / Sustainability Lead",
+          "Department heads"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-011",
+        "name": "Revise based on feedback",
+        "draft": true,
+        "details": "Incorporate review comments and update the deck.",
+        "dependencies": [
+          "task-010"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Project Lead"
+        ],
+        "deliverables": [
+          "@deliverable[document]/deliverable-001"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-012",
+        "name": "Route deck to CFO for sign\u2011off",
+        "draft": true,
+        "details": "Send the revised deck to the CFO for approval.",
+        "dependencies": [
+          "task-011"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Project Lead"
+        ],
+        "deliverables": [
+          "@deliverable[document]/deliverable-008"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-013",
+        "name": "Route deck to CRO for sign\u2011off",
+        "draft": true,
+        "details": "After CFO approval, forward to CRO.",
+        "dependencies": [
+          "task-012"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Project Lead"
+        ],
+        "deliverables": [
+          "@deliverable[document]/deliverable-008"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-014",
+        "name": "Route deck to ESG Officer for sign\u2011off",
+        "draft": true,
+        "details": "After CRO approval, forward to ESG Officer.",
+        "dependencies": [
+          "task-013"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Project Lead"
+        ],
+        "deliverables": [
+          "@deliverable[document]/deliverable-008"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-015",
+        "name": "Capture final approval signatures",
+        "draft": true,
+        "details": "Collect signed approvals from CFO, CRO, and ESG Officer.",
+        "dependencies": [
+          "task-014"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Project Lead"
+        ],
+        "deliverables": [
+          "@deliverable[document]/deliverable-008"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-016",
+        "name": "Package pre\u2011reads (PDF + secure portal upload)",
+        "draft": true,
+        "details": "Bundle all deliverables into the board\u2011material package.",
+        "dependencies": [
+          "task-015"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Executive Assistant / Board Liaison"
+        ],
+        "deliverables": [
+          "@deliverable[document]/deliverable-007"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-017",
+        "name": "Email distribution list to board members (by May\u202f7)",
+        "draft": true,
+        "details": "Send the board\u2011material package to all participants.",
+        "dependencies": [
+          "task-016"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Executive Assistant / Board Liaison"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-018",
+        "name": "Schedule video\u2011link test with IT/AV",
+        "draft": true,
+        "details": "Book a test slot with the IT/AV Lead.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "IT / AV Lead"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-019",
+        "name": "Conduct test and resolve issues",
+        "draft": true,
+        "details": "Run the virtual platform test and fix any problems.",
+        "dependencies": [
+          "task-018"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "IT / AV Lead"
+        ],
+        "deliverables": [
+          "@deliverable[document]/deliverable-006"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-020",
+        "name": "Host QBR (May\u202f14)",
+        "draft": true,
+        "details": "Facilitate the Quarterly Business Review meeting.",
+        "dependencies": [
+          "task-019",
+          "task-017"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "Project Lead"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-021",
+        "name": "Record meeting (if required)",
+        "draft": true,
+        "details": "Capture audio/video of the QBR for archival purposes.",
+        "dependencies": [
+          "task-020"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "IT / AV Lead"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-022",
+        "name": "Draft post\u2011meeting action\u2011item log",
+        "draft": true,
+        "details": "Summarize decisions, owners, and due dates.",
+        "dependencies": [
+          "task-021"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "PMO / Secretary"
+        ],
+        "deliverables": [
+          "@deliverable[document]/deliverable-009"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-023",
+        "name": "Assign owners & due dates for each action",
+        "draft": true,
+        "details": "Allocate responsibility for each post\u2011meeting action item.",
+        "dependencies": [
+          "task-022"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "PMO / Secretary"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-024",
+        "name": "Distribute log to participants",
+        "draft": true,
+        "details": "Send the finalized action\u2011item log to all stakeholders.",
+        "dependencies": [
+          "task-023"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "PMO / Secretary"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      }
+    ],
+    "history": []
+  }
+}

@@ -1,0 +1,543 @@
+{
+  "scenario_name": "Q2 2025 Board Quarterly Business Review \u2013 Helios Renewable Energy Inc.",
+  "scenario_number": 2,
+  "meeting_type": "Quarterly Business Review",
+  "quality_level": "high",
+  "workback_prompt": "Generate a detailed work\u2011back plan for Helios Renewable Energy Inc.'s Q2 2025 Board Quarterly Business Review. Include all preparatory activities (pre\u2011read compilation, data validation, deck creation, logistics, voting procedures, post\u2011meeting follow\u2011up), assign owners, estimate durations, identify dependencies, and map milestones against the constraints (pre\u2011read distribution by 5\u202fJune, confidentiality agreements signed by 3\u202fJune, acquisition decision deadline 30\u202fJune). The plan should ensure the meeting stays within the 4\u2011hour limit, all strategic decisions are voted on, and deliverables are produced on schedule.\n\nGenerate a HIGH QUALITY workback plan with these characteristics:\n- Comprehensive task coverage\n- Clear, actionable task descriptions\n- Well-defined dependencies\n- All tasks assigned to specific owners\n- Clear milestones with completion criteria\n- Realistic timelines with buffers\n- Proactive risk management\n- Complete deliverable list\n\nIMPORTANT: Generate a plan that naturally exhibits HIGH quality characteristics.\nDo not explicitly label the plan as \"high quality\" - let the quality emerge from the content.",
+  "generated_at": "2025-11-17T06:18:29.969457",
+  "analysis": "# Outcomes\n\n## Confidentiality Agreements Executed  \nAll required confidentiality agreements are signed and on file, meeting the **3\u202fJune** deadline.  \nArtifact references: *(none)*  \n\n### Reasoning  \nThe board\u2019s access to sensitive strategic and financial data is gated by signed confidentiality agreements. The constraint \u201cconfidentiality agreements signed by\u202f3\u202fJune\u201d makes this a prerequisite for any pre\u2011read distribution or data sharing.\n\n### Approach  \n1. Identify all external board participants and any internal staff requiring NDAs.  \n2. Draft a standard confidentiality agreement (legal team lead).  \n3. Route the agreement for review and approval (legal \u2192 compliance).  \n4. Distribute the agreement to identified participants with clear signing instructions and a 48\u2011hour turnaround target.  \n5. Collect signed copies, verify completeness, and store them in the secure board\u2011document repository.  \n6. Confirm completion with the Board Liaison and log the status as a milestone.\n\n---\n\n## Pre\u2011read Package Completed & Distributed  \nA complete, validated pre\u2011read package (financials, operational metrics, strategic updates) is compiled, quality\u2011checked, and distributed to board members by **5\u202fJune**.  \nArtifact references: *(none)*  \n\n### Reasoning  \nThe board needs time to review material before the meeting. The constraint \u201cpre\u2011read distribution by\u202f5\u202fJune\u201d dictates that compilation, validation, and distribution occur early in the work\u2011back schedule, after confidentiality agreements are in place.\n\n### Approach  \n1. Gather source data from finance, operations, and strategy teams (data owners).  \n2. Perform data validation (Data Analyst) and reconcile any discrepancies.  \n3. Draft narrative sections and assemble supporting exhibits.  \n4. Conduct a peer\u2011review for accuracy and clarity.  \n5. Convert the package to a secure PDF and upload to the board portal.  \n6. Send distribution email with access instructions and a read\u2011acknowledgement request.  \n7. Track receipt confirmations; follow up on any missing acknowledgements before the meeting.\n\n---\n\n## Data Validation & Sign\u2011off  \nAll quantitative inputs (financial statements, KPI dashboards, acquisition model) are validated, reconciled, and signed off by subject\u2011matter owners.  \nArtifact references: *(none)*  \n\n### Reasoning  \nAccurate data underpins the strategic decisions and voting items. Validation must be completed before the pre\u2011read is compiled and before the deck is built, ensuring consistency across all deliverables.\n\n### Approach  \n1. Create a validation checklist covering each data set.  \n2. Assign owners (Finance Lead, Operations Lead, Strategy Lead) to verify their respective data.  \n3. Run cross\u2011checks against prior periods and external benchmarks.  \n4. Document any variances and obtain written sign\u2011off.  \n5. Archive the validated data set for deck creation and voting calculations.\n\n---\n\n## Board Deck Creation & Approval  \nA concise, 4\u2011hour\u2011compatible slide deck that synthesizes the pre\u2011read, highlights key decisions, and includes voting slides is produced, reviewed, and approved.  \nArtifact references: *(none)*  \n\n### Reasoning  \nThe deck is the primary meeting artifact. It must be ready well before the meeting to allow rehearsals and final legal/compliance checks. The acquisition decision deadline (30\u202fJune) requires the deck to contain the final recommendation and voting mechanics.\n\n### Approach  \n1. Outline deck structure aligned with agenda (executive summary, performance review, strategic options, voting items).  \n2. Populate slides using validated data and pre\u2011read narrative.  \n3. Incorporate voting instructions, ballot templates, and decision thresholds.  \n4. Conduct internal reviews (Finance, Legal, Strategy) and incorporate feedback.  \n5. Obtain final sign\u2011off from the CEO and Board Liaison.  \n6. Export the deck in both editable and locked PDF formats for distribution.\n\n---\n\n## Logistics & Meeting Setup  \nVenue (or virtual platform), AV equipment, catering, security, and participant itineraries are arranged and confirmed.  \nArtifact references: *(none)*  \n\n### Reasoning  \nSmooth logistics are essential for staying within the 4\u2011hour limit and for ensuring confidentiality. Logistics must be locked in after the pre\u2011read distribution to confirm attendee list and any special accommodations.\n\n### Approach  \n1. Confirm meeting date (28\u202fJune) and time block (4\u202fhours).  \n2. Reserve boardroom or configure secure virtual meeting space.  \n3. Arrange AV testing, recording permissions, and secure screen\u2011sharing controls.  \n4. Order catering respecting any dietary restrictions.  \n5. Prepare participant itineraries, including pre\u2011read access instructions and voting timelines.  \n6. Communicate logistics pack to all attendees at least one week before the meeting.\n\n---\n\n## Voting Procedures & Ballot Preparation  \nAll voting items are defined, ballot formats are designed, and voting mechanics (electronic or paper) are tested.  \nArtifact references: *(none)*  \n\n### Reasoning  \nThe board must cast votes on strategic decisions, including the acquisition. Proper procedures ensure legality and auditability, and they must be ready before the meeting to avoid time overruns.\n\n### Approach  \n1. List each decision requiring a vote (e.g., acquisition approval, budget re\u2011allocation).  \n2. Draft ballot language in collaboration with Legal.  \n3. Choose voting method (secure electronic poll vs. paper ballot) and configure the system.  \n4. Conduct a dry\u2011run with the Board Liaison and IT Support.  \n5. Include voting instructions in the deck and pre\u2011read.  \n6. Confirm that quorum and voting thresholds are documented.\n\n---\n\n## Board Meeting Execution  \nThe Q2 2025 Board Quarterly Business Review is conducted, staying within the 4\u2011hour limit, with all agenda items presented and votes recorded.  \nArtifact references: *(none)*  \n\n### Reasoning  \nThis is the central event where all preparatory work culminates. Success is measured by adherence to time, completion of all votes, and participant satisfaction.\n\n### Approach  \n1. Run a 15\u2011minute rehearsal with presenters to fine\u2011tune timing.  \n2. Start the meeting on time, follow the approved agenda, and use the prepared deck.  \n3. Facilitate voting at designated points, using the pre\u2011tested ballot system.  \n4. Record minutes in real time (designated minute\u2011taker).  \n5. Capture any action items and decisions for post\u2011meeting follow\u2011up.\n\n---\n\n## Post\u2011meeting Follow\u2011up & Deliverables  \nMeeting minutes, final vote tallies, updated strategic documents, and any required regulatory filings are produced and distributed within the agreed timeline.  \nArtifact references: *(none)*  \n\n### Reasoning  \nBoard decisions must be communicated to stakeholders and, where required, filed with regulators before the acquisition deadline (30\u202fJune). Timely follow\u2011up also closes the loop on action items.\n\n### Approach  \n1. Compile approved minutes and attach the final deck.  \n2. Publish vote results and a summary of decisions.  \n3. Update strategic plans (e.g., acquisition integration roadmap) based on board outcomes.  \n4. Distribute the post\u2011meeting package to board members and relevant executives.  \n5. File any mandatory disclosures (e.g., SEC filings) by the 30\u202fJune deadline.  \n6. Conduct a debrief with the project team to capture lessons learned.\n\n# Breakdown\n\n## 1. Confidentiality Agreements Executed\n1.1 Identify participants \u2013 Owner: **Board Liaison (Jane Doe)** \u2013 Duration: 0.5\u202fday  \n1.2 Draft standard NDA \u2013 Owner: **Legal Counsel (Alex Patel)** \u2013 Duration: 1\u202fday  \n1.3 Legal review & approval \u2013 Owner: **Legal Counsel** \u2013 Duration: 0.5\u202fday (Depends on 1.2)  \n1.4 Distribute NDA with signing instructions \u2013 Owner: **Board Liaison** \u2013 Duration: 0.5\u202fday (Depends on 1.3)  \n1.5 Collect signed copies \u2013 Owner: **Board Liaison** \u2013 Duration: 1\u202fday (Can run in parallel with 1.4)  \n1.6 Verify completeness & store securely \u2013 Owner: **Compliance Officer (Rita Gomez)** \u2013 Duration: 0.5\u202fday (Depends on 1.5)  \n**Milestone:** All NDAs signed and archived \u2013 **Target: 3\u202fJune**  \n\n## 2. Data Validation & Sign\u2011off\n2.1 Create validation checklist \u2013 Owner: **Data Analyst (John Smith)** \u2013 Duration: 0.5\u202fday  \n2.2 Finance data validation \u2013 Owner: **Finance Lead (Maria Lopez)** \u2013 Duration: 1\u202fday (Depends on 2.1)  \n2.3 Operations KPI validation \u2013 Owner: **Operations Lead (Samir Khan)** \u2013 Duration: 1\u202fday (Depends on 2.1)  \n2.4 Strategy model validation (including acquisition model) \u2013 Owner: **Strategy Lead (Elena Wu)** \u2013 Duration: 1\u202fday (Depends on 2.1)  \n2.5 Consolidate validation results & obtain sign\u2011off \u2013 Owner: **Data Analyst** \u2013 Duration: 0.5\u202fday (Depends on 2.2\u20112.4)  \n**Milestone:** Validated data set approved \u2013 **Target: 4\u202fJune**  \n\n## 3. Pre\u2011read Package Completed & Distributed\n3.1 Gather source documents \u2013 Owner: **Board Liaison** \u2013 Duration: 0.5\u202fday (Depends on 2.5)  \n3.2 Draft narrative sections \u2013 Owner: **Strategy Lead** \u2013 Duration: 1\u202fday (Depends on 3.1)  \n3.3 Assemble exhibits & embed validated data \u2013 Owner: **Data Analyst** \u2013 Duration: 0.5\u202fday (Depends on 2.5)  \n3.4 Peer\u2011review for accuracy \u2013 Owner: **Finance Lead** & **Operations Lead** \u2013 Duration: 0.5\u202fday (Parallel)  \n3.5 Incorporate feedback & finalize PDF \u2013 Owner: **Communications Manager (Liu Chen)** \u2013 Duration: 0.5\u202fday (Depends on 3.4)  \n3.6 Upload to secure board portal \u2013 Owner: **IT Support (Nina Rossi)** \u2013 Duration: 0.25\u202fday (Depends on 3.5)  \n3.7 Distribute email with access instructions \u2013 Owner: **Board Liaison** \u2013 Duration: 0.25\u202fday (Depends on 3.6)  \n3.8 Track acknowledgements & follow\u2011up \u2013 Owner: **Board Liaison** \u2013 Duration: 1\u202fday (Can run in parallel after 3.7)  \n**Milestone:** Pre\u2011read sent and receipt confirmed \u2013 **Target: 5\u202fJune**  \n\n## 4. Board Deck Creation & Approval\n4.1 Outline deck structure \u2013 Owner: **Communications Manager** \u2013 Duration: 0.25\u202fday (Depends on 3.5)  \n4.2 Populate slides with data & narrative \u2013 Owner: **Communications Manager** \u2013 Duration: 1\u202fday (Depends on 4.1)  \n4.3 Design voting slides & ballot instructions \u2013 Owner: **Legal Counsel** \u2013 Duration: 0.5\u202fday (Parallel)  \n4.4 Internal review cycles (Finance, Legal, Strategy) \u2013 Owner: **Board Liaison** \u2013 Duration: 1\u202fday (Depends on 4.2 & 4.3)  \n4.5 Incorporate review feedback \u2013 Owner: **Communications Manager** \u2013 Duration: 0.5\u202fday (Depends on 4.4)  \n4.6 Final sign\u2011off (CEO & Board Liaison) \u2013 Owner: **CEO (Michael Reed)** \u2013 Duration: 0.25\u202fday (Depends on 4.5)  \n4.7 Export locked PDF & editable version \u2013 Owner: **IT Support** \u2013 Duration: 0.25\u202fday (Depends on 4.6)  \n**Milestone:** Deck approved and ready for meeting \u2013 **Target: 20\u202fJune**  \n\n## 5. Logistics & Meeting Setup\n5.1 Confirm meeting date & time block \u2013 Owner: **Board Liaison** \u2013 Duration: 0.25\u202fday (Depends on 4.6)  \n5.2 Reserve boardroom / configure virtual platform \u2013 Owner: **Operations Coordinator (Samir Khan)** \u2013 Duration: 0.5\u202fday (Depends on 5.1)  \n5.3 Arrange AV equipment & conduct test run \u2013 Owner: **IT Support** \u2013 Duration: 0.5\u202fday (Depends on 5.2)  \n5.4 Order catering & confirm dietary needs \u2013 Owner: **Operations Coordinator** \u2013 Duration: 0.25\u202fday (Parallel)  \n5.5 Prepare participant itineraries (including voting timeline) \u2013 Owner: **Board Liaison** \u2013 Duration: 0.5\u202fday (Depends on 5.2)  \n5.6 Distribute logistics pack \u2013 Owner: **Board Liaison** \u2013 Duration: 0.25\u202fday (Depends on 5.5)  \n**Milestone:** Logistics locked in \u2013 **Target: 22\u202fJune**  \n\n## 6. Voting Procedures & Ballot Preparation\n6.1 List all voting items \u2013 Owner: **Strategy Lead** \u2013 Duration: 0.25\u202fday (Depends on 4.6)  \n6.2 Draft ballot language \u2013 Owner: **Legal Counsel** \u2013 Duration: 0.5\u202fday (Depends on 6.1)  \n6.3 Select voting method & configure system \u2013 Owner: **IT Support** \u2013 Duration: 0.5\u202fday (Parallel)  \n6.4 Conduct dry\u2011run of voting process \u2013 Owner: **Board Liaison** \u2013 Duration: 0.25\u202fday (Depends on 6.2 & 6.3)  \n6.5 Finalize ballot templates & embed in deck \u2013 Owner: **Communications Manager** \u2013 Duration: 0.25\u202fday (Depends on 6.4)  \n**Milestone:** Voting mechanism ready \u2013 **Target: 25\u202fJune**  \n\n## 7. Board Meeting Execution\n7.1 Presenter rehearsal (timing check) \u2013 Owner: **Board Liaison** \u2013 Duration: 0.5\u202fday (Depends on 4.6 & 5.5)  \n7.2 Conduct Board Meeting (4\u202fhours) \u2013 Owner: **CEO** (facilitator) \u2013 Duration: 4\u202fhours (Scheduled: 28\u202fJune)  \n7.3 Record minutes & capture action items \u2013 Owner: **Minute\u2011taker (Laura Kim)** \u2013 Duration: 0.5\u202fday (During meeting)  \n7.4 Compile vote tallies \u2013 Owner: **IT Support** \u2013 Duration: 0.25\u202fday (Immediately after voting)  \n**Milestone:** Meeting completed, all votes recorded \u2013 **Target: 28\u202fJune**  \n\n## 8. Post\u2011meeting Follow\u2011up & Deliverables\n8.1 Draft meeting minutes & attach final deck \u2013 Owner: **Minute\u2011taker** \u2013 Duration: 0.5\u202fday (Depends on 7.3)  \n8.2 Publish vote results & decision summary \u2013 Owner: **Board Liaison** \u2013 Duration: 0.25\u202fday (Depends on 7.4)  \n8.3 Update strategic documents (e.g., acquisition integration plan) \u2013 Owner: **Strategy Lead** \u2013 Duration: 1\u202fday (Depends on 7.2)  \n8.4 Distribute post\u2011meeting package to board & exec team \u2013 Owner: **Board Liaison** \u2013 Duration: 0.25\u202fday (Depends on 8.1\u20118.3)  \n8.5 File regulatory disclosures (e.g., SEC Form 8\u2011K) \u2013 Owner: **Legal Counsel** \u2013 Duration: 1\u202fday (Must be completed by 30\u202fJune)  \n8.6 Conduct project debrief & capture lessons learned \u2013 Owner: **Project Lead (Jane Doe)** \u2013 Duration: 0.5\u202fday (After 8.5)  \n**Milestone:** All post\u2011meeting deliverables issued and regulatory filings completed \u2013 **Target: 30\u202fJune**  \n\n---\n\n### Dependencies Summary\n- **Confidentiality Agreements** must be completed before any data sharing (2.1\u20112.6).  \n- **Data Validation** (2.x) feeds directly into **Pre\u2011read** (3.x) and **Deck Creation** (4.x).  \n- **Pre\u2011read Distribution** (3.x) must be finished by 5\u202fJune, which sets the latest start for **Deck Creation** (4.x) while still allowing buffer time.  \n- **Deck Approval** (4.6) is a prerequisite for **Logistics** (5.x) and **Voting Preparation** (6.x).  \n- **Voting Procedures** (6.x) and **Logistics** (5.x) must be locked before the **Rehearsal** (7.1).  \n- The **Board Meeting** (7.x) is the central execution point; all prior outcomes must be \u201cDone\u201d before 28\u202fJune.  \n- **Post\u2011meeting Follow\u2011up** (8.x) must meet the acquisition decision deadline of 30\u202fJune, tying back to the voting outcome.  \n\n### Buffers & Risk Management\n- **Buffer days** are built into each major phase (e.g., 0.5\u202fday extra after data validation, 1\u202fday after deck approval) to absorb unexpected delays.  \n- **Risk\u202f1 \u2013 Late NDA signatures:** Mitigated by early distribution and a 48\u2011hour turnaround target; escalation path to senior legal counsel if any signature is overdue.  \n- **Risk\u202f2 \u2013 Data discrepancies:** Mitigated by a formal validation checklist and sign\u2011off; any variance triggers a \u201cdata issue\u201d sub\u2011task with a 1\u2011day resolution window.  \n- **Risk\u202f3 \u2013 Technical failure of voting system:** Mitigated by a dry\u2011run (6.4) and a backup paper ballot prepared in advance.  \n- **Risk\u202f4 \u2013 Overrunning the 4\u2011hour meeting:** Mitigated by rehearsals (7.1) and strict slide\u2011time allocations; a time\u2011keeper will be assigned during the meeting.  \n- **Risk\u202f5 \u2013 Regulatory filing miss:** Mitigated by assigning the filing task early (8.5) and setting a hard internal deadline of 28\u202fJune for final vote tallies.  \n\nBy following this structured work\u2011back schedule, Helios Renewable Energy Inc. can ensure that every prerequisite is satisfied, the board meeting proceeds smoothly within the allotted time, all strategic votes are captured, and post\u2011meeting obligations\u2014including the critical acquisition decision deadline\u2014are met on schedule.",
+  "plan": {
+    "id": "document-001",
+    "name": "Board Meeting Workback Plan",
+    "details": "",
+    "draft": true,
+    "participants": [
+      {
+        "name": "Jane Doe",
+        "details": "Board Liaison / Project Lead",
+        "draft": true
+      },
+      {
+        "name": "Alex Patel",
+        "details": "Legal Counsel",
+        "draft": true
+      },
+      {
+        "name": "Rita Gomez",
+        "details": "Compliance Officer",
+        "draft": true
+      },
+      {
+        "name": "John Smith",
+        "details": "Data Analyst",
+        "draft": true
+      },
+      {
+        "name": "Maria Lopez",
+        "details": "Finance Lead",
+        "draft": true
+      },
+      {
+        "name": "Samir Khan",
+        "details": "Operations Lead / Operations Coordinator",
+        "draft": true
+      },
+      {
+        "name": "Elena Wu",
+        "details": "Strategy Lead",
+        "draft": true
+      },
+      {
+        "name": "Liu Chen",
+        "details": "Communications Manager",
+        "draft": true
+      },
+      {
+        "name": "Nina Rossi",
+        "details": "IT Support",
+        "draft": true
+      },
+      {
+        "name": "Michael Reed",
+        "details": "CEO",
+        "draft": true
+      },
+      {
+        "name": "Laura Kim",
+        "details": "Minute\u2011taker",
+        "draft": true
+      }
+    ],
+    "references": [],
+    "deliverables": [],
+    "tasks": [
+      {
+        "id": "task-001",
+        "name": "Identify participants",
+        "draft": true,
+        "details": "Identify all external board participants and any internal staff requiring NDAs.",
+        "dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-002",
+        "name": "Draft standard NDA",
+        "draft": true,
+        "details": "Draft a standard confidentiality agreement.",
+        "dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-003",
+        "name": "Legal review & approval",
+        "draft": true,
+        "details": "Route the agreement for review and approval (legal \u2192 compliance).",
+        "dependencies": [
+          "task-002"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-004",
+        "name": "Distribute NDA with signing instructions",
+        "draft": true,
+        "details": "Distribute the agreement to identified participants with clear signing instructions and a 48\u2011hour turnaround target.",
+        "dependencies": [
+          "task-003"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-005",
+        "name": "Collect signed copies",
+        "draft": true,
+        "details": "Collect signed copies from participants.",
+        "dependencies": [
+          "task-004"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-006",
+        "name": "Verify completeness & store securely",
+        "draft": true,
+        "details": "Verify completeness of signed NDAs and store them in the secure board\u2011document repository.",
+        "dependencies": [
+          "task-005"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-007",
+        "name": "Create validation checklist",
+        "draft": true,
+        "details": "Create a validation checklist covering each data set.",
+        "dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-008",
+        "name": "Finance data validation",
+        "draft": true,
+        "details": "Validate finance data against the checklist and obtain sign\u2011off.",
+        "dependencies": [
+          "task-007"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-009",
+        "name": "Operations KPI validation",
+        "draft": true,
+        "details": "Validate operations KPI data against the checklist and obtain sign\u2011off.",
+        "dependencies": [
+          "task-007"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-010",
+        "name": "Strategy model validation",
+        "draft": true,
+        "details": "Validate strategy model data against the checklist and obtain sign\u2011off.",
+        "dependencies": [
+          "task-007"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-011",
+        "name": "Consolidate validation results & obtain sign\u2011off",
+        "draft": true,
+        "details": "Consolidate validation results from finance, operations, and strategy and obtain overall sign\u2011off.",
+        "dependencies": [
+          "task-008",
+          "task-009",
+          "task-010"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-012",
+        "name": "Gather source documents",
+        "draft": true,
+        "details": "Gather source documents for the pre\u2011read package.",
+        "dependencies": [
+          "task-011"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-013",
+        "name": "Draft narrative sections",
+        "draft": true,
+        "details": "Draft narrative sections for the pre\u2011read.",
+        "dependencies": [
+          "task-012"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-014",
+        "name": "Assemble exhibits",
+        "draft": true,
+        "details": "Assemble exhibits using validated data.",
+        "dependencies": [
+          "task-011"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-015",
+        "name": "Peer\u2011review pre\u2011read",
+        "draft": true,
+        "details": "Peer\u2011review the pre\u2011read content (Finance Lead and Operations Lead).",
+        "dependencies": [
+          "task-013",
+          "task-014"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-016",
+        "name": "Incorporate feedback",
+        "draft": true,
+        "details": "Incorporate feedback from peer\u2011review into the pre\u2011read.",
+        "dependencies": [
+          "task-015"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-017",
+        "name": "Upload to portal",
+        "draft": true,
+        "details": "Upload the finalized pre\u2011read to the secure portal.",
+        "dependencies": [
+          "task-016"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-018",
+        "name": "Distribute pre\u2011read email",
+        "draft": true,
+        "details": "Send distribution email with link to the pre\u2011read.",
+        "dependencies": [
+          "task-017"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-019",
+        "name": "Track acknowledgements",
+        "draft": true,
+        "details": "Track acknowledgements of pre\u2011read receipt.",
+        "dependencies": [
+          "task-018"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-020",
+        "name": "Outline deck structure",
+        "draft": true,
+        "details": "Outline the deck structure for the board meeting.",
+        "dependencies": [
+          "task-016"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-021",
+        "name": "Populate slides",
+        "draft": true,
+        "details": "Populate deck slides with content.",
+        "dependencies": [
+          "task-020"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-022",
+        "name": "Design voting slides",
+        "draft": true,
+        "details": "Design voting slides and embed ballot templates.",
+        "dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-023",
+        "name": "Internal review cycles",
+        "draft": true,
+        "details": "Conduct internal review cycles (Finance Lead, Operations Lead, Strategy Lead, etc.).",
+        "dependencies": [
+          "task-021",
+          "task-022"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-024",
+        "name": "Incorporate review feedback",
+        "draft": true,
+        "details": "Incorporate feedback from internal review into the deck.",
+        "dependencies": [
+          "task-023"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-025",
+        "name": "Final sign\u2011off",
+        "draft": true,
+        "details": "Obtain final sign\u2011off on the deck.",
+        "dependencies": [
+          "task-024"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-026",
+        "name": "Export locked PDF",
+        "draft": true,
+        "details": "Export the final locked PDF version of the deck.",
+        "dependencies": [
+          "task-025"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-027",
+        "name": "Confirm meeting date",
+        "draft": true,
+        "details": "Confirm meeting date and time (28\u202fJune).",
+        "dependencies": [
+          "task-025"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-028",
+        "name": "Reserve boardroom",
+        "draft": true,
+        "details": "Reserve boardroom and related facilities.",
+        "dependencies": [
+          "task-027"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-029",
+        "name": "Arrange AV equipment",
+        "draft": true,
+        "details": "Arrange AV equipment and test technical setup.",
+        "dependencies": [
+          "task-028"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-030",
+        "name": "Order catering",
+        "draft": true,
+        "details": "Order catering for the meeting.",
+        "dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-031",
+        "name": "Prepare itineraries",
+        "draft": true,
+        "details": "Prepare meeting itineraries for participants.",
+        "dependencies": [
+          "task-028"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-032",
+        "name": "Distribute logistics pack",
+        "draft": true,
+        "details": "Distribute logistics pack to participants.",
+        "dependencies": [
+          "task-031"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-033",
+        "name": "List all voting items",
+        "draft": true,
+        "details": "List all voting items for the board meeting.",
+        "dependencies": [
+          "task-025"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-034",
+        "name": "Draft ballot language",
+        "draft": true,
+        "details": "Draft ballot language for each voting item.",
+        "dependencies": [
+          "task-033"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-035",
+        "name": "Select voting method & configure system",
+        "draft": true,
+        "details": "Select voting method (electronic or paper) and configure the system.",
+        "dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-036",
+        "name": "Conduct dry\u2011run of voting process",
+        "draft": true,
+        "details": "Conduct a dry\u2011run of the voting process.",
+        "dependencies": [
+          "task-034",
+          "task-035"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-037",
+        "name": "Finalize ballot templates & embed in deck",
+        "draft": true,
+        "details": "Finalize ballot templates and embed them in the deck.",
+        "dependencies": [
+          "task-036"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-038",
+        "name": "Presenter rehearsal (timing check)",
+        "draft": true,
+        "details": "Run presenter rehearsal to check slide timing.",
+        "dependencies": [
+          "task-025",
+          "task-031"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-039",
+        "name": "Conduct Board Meeting",
+        "draft": true,
+        "details": "Facilitate the 4\u2011hour board meeting on 28\u202fJune.",
+        "dependencies": [
+          "task-038"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-040",
+        "name": "Record minutes & capture action items",
+        "draft": true,
+        "details": "Record minutes during the meeting and capture action items.",
+        "dependencies": [
+          "task-039"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-041",
+        "name": "Compile vote tallies",
+        "draft": true,
+        "details": "Compile vote tallies immediately after voting.",
+        "dependencies": [
+          "task-039"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-042",
+        "name": "Draft meeting minutes & attach final deck",
+        "draft": true,
+        "details": "Draft meeting minutes and attach the final deck.",
+        "dependencies": [
+          "task-040"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-043",
+        "name": "Publish vote results & decision summary",
+        "draft": true,
+        "details": "Publish vote results and a decision summary.",
+        "dependencies": [
+          "task-041"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-044",
+        "name": "Update strategic documents",
+        "draft": true,
+        "details": "Update strategic documents such as the acquisition integration plan.",
+        "dependencies": [
+          "task-039"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-045",
+        "name": "Distribute post\u2011meeting package",
+        "draft": true,
+        "details": "Distribute the post\u2011meeting package to board and executive team.",
+        "dependencies": [
+          "task-042",
+          "task-043",
+          "task-044"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-046",
+        "name": "File regulatory disclosures",
+        "draft": true,
+        "details": "File regulatory disclosures (e.g., SEC Form 8\u2011K). Must be completed by 30\u202fJune.",
+        "dependencies": [
+          "task-041"
+        ],
+        "state": "not-started"
+      },
+      {
+        "id": "task-047",
+        "name": "Conduct project debrief & capture lessons learned",
+        "draft": true,
+        "details": "Conduct project debrief and capture lessons learned.",
+        "dependencies": [
+          "task-046"
+        ],
+        "state": "not-started"
+      }
+    ],
+    "history": []
+  }
+}

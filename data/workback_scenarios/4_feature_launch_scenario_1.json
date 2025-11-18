@@ -1,0 +1,61 @@
+{
+  "scenario_name": "Nimbus Analytics \u2013 Real\u2011Time Cohort Attribution Dashboard Launch",
+  "company_context": "Nimbus Analytics is a SaaS company (Series B, $120M ARR) that provides advanced analytics for mid\u2011market e\u2011commerce merchants. The new feature, **Real\u2011Time Cohort Attribution Dashboard**, lets product managers view live cohort performance, attribute revenue to marketing channels instantly, and run A/B tests on the fly. Target customers are e\u2011commerce brands with >$5M annual revenue that need faster insight into marketing ROI. Value proposition: \"Turn marketing spend into real\u2011time revenue insights, so you can optimize campaigns before the day ends.\"",
+  "meeting_event_details": "Launch Readiness Review \u2013 2025\u201111\u201117, 09:00\u201110:30\u202fAM PST (90\u202fmin) via Zoom (Meeting ID: 842\u202f123\u202f4567). Follow\u2011up syncs are scheduled weekly on Thursdays at 14:00\u202fUTC until launch. The official public launch is scheduled for **2025\u201112\u201115 at 10:00\u202fAM PST** (Pacific Time), streamed live on the company\u2019s YouTube channel and recorded for on\u2011demand.",
+  "stakeholders": [
+    "Lena Ortiz \u2013 Senior Product Manager (Feature owner, defines scope, success metrics)",
+    "Raj Patel \u2013 Engineering Lead, Backend (Responsible for data pipeline integration, performance testing)",
+    "Mia Chen \u2013 QA Lead (Test plan, regression suite, release gate)",
+    "Sofia Delgado \u2013 Marketing Manager (Go\u2011to\u2011market strategy, content creation, email & social)",
+    "Tom Becker \u2013 Demand Generation Lead (Paid media, webinar promotion, ABM list)",
+    "Jordan Lee \u2013 Sales Enablement Manager (Sales playbook, training, demo scripts)",
+    "Aisha Khan \u2013 Customer Support Manager (Support playbook, tier\u20111 FAQ, escalation matrix)",
+    "Ethan Ross \u2013 Finance Analyst (Launch budget tracking, ROI reporting)",
+    "Nina Patel \u2013 Data Engineering Manager (Upstream data pipeline release, dependency coordination)",
+    "Legal & Compliance \u2013 Carla Mendes (Data privacy review, GDPR/CCPA sign\u2011off)"
+  ],
+  "deliverables": [
+    "Feature Specification Document (v2.3) \u2013 finalized 2025\u201111\u201120",
+    "Technical Architecture Diagram \u2013 2025\u201111\u201122",
+    "API Reference Update (including new cohort endpoints) \u2013 2025\u201112\u201101",
+    "User Guide (PDF & HTML) \u2013 2025\u201112\u201103",
+    "In\u2011App Help Tooltip Content \u2013 2025\u201112\u201104",
+    "Release Notes (internal & external) \u2013 2025\u201112\u201107",
+    "Training Video (5\u202fmin walkthrough) \u2013 2025\u201112\u201105",
+    "Internal Training Deck for Sales & Support \u2013 2025\u201112\u201106",
+    "Sales Playbook (use\u2011cases, objection handling) \u2013 2025\u201112\u201106",
+    "Support Playbook (triage flow, escalation matrix) \u2013 2025\u201112\u201106",
+    "Email Campaign Copy (teaser, launch, follow\u2011up) \u2013 2025\u201112\u201108",
+    "Blog Post (feature announcement) \u2013 2025\u201112\u201109",
+    "In\u2011App Announcement Banner (copy & design) \u2013 2025\u201112\u201110",
+    "Webinar Deck & Registration Page (Live demo) \u2013 2025\u201112\u201111",
+    "Paid Media Assets (LinkedIn, Google Display) \u2013 2025\u201112\u201112",
+    "Performance Load Test Report \u2013 2025\u201112\u201101",
+    "Compliance Sign\u2011off Certificate \u2013 2025\u201112\u201102"
+  ],
+  "success_criteria": [
+    "30\u202f% of existing customers adopt the dashboard within 60\u202fdays of launch",
+    "Feature NPS \u2265\u202f45 (survey sent 30\u202fdays post\u2011launch)",
+    "Generate $500\u202fk incremental ARR in the first 90\u202fdays",
+    "Reduce churn among target segment by 5\u202f% YoY",
+    "Support tickets related to the feature \u2264\u202f2 per 100 active users in the first 30\u202fdays",
+    "System latency \u2264\u202f200\u202fms for real\u2011time cohort queries under peak load",
+    "Achieve 80\u202f% completion rate for sales & support training modules"
+  ],
+  "constraints": [
+    "Total launch budget capped at $150\u202fk (marketing spend, content production, vendor fees)",
+    "Feature depends on upstream data pipeline (Data Lake v3) release \u2013 must be in production by 2025\u201112\u201101",
+    "Performance testing must certify <\u202f200\u202fms latency; any regression triggers a release hold",
+    "Legal compliance review (GDPR/CCPA) must be signed off before any public communication",
+    "Engineering resources limited to 2 full\u2011time devs and 1 QA engineer for the final sprint",
+    "Risk: Potential data latency spikes during high\u2011traffic holiday season (Nov\u2011Dec)",
+    "Risk: Incomplete sales enablement could delay customer demos, impacting adoption"
+  ],
+  "workback_prompt": "Create a detailed workback plan for Nimbus Analytics' Real\u2011Time Cohort Attribution Dashboard launch. The plan should cover a T\u201130 horizon (starting 2025\u201111\u201115) with high complexity, listing all milestones, owners, dependencies, risk mitigation steps, and required resources to deliver the listed deliverables, meet the success criteria, and stay within the constraints.",
+  "meeting_type": "Product Feature Launch",
+  "meeting_type_key": "4_feature_launch",
+  "scenario_number": 1,
+  "horizon": "T-30",
+  "complexity": "High",
+  "generated_at": "2025-11-17T05:02:35.028554"
+}

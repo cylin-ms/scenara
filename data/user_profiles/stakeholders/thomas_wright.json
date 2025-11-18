@@ -1,0 +1,134 @@
+{
+  "basic_info": {
+    "full_name": "Thomas Wright",
+    "age": 32,
+    "location": "Austin, Texas, USA",
+    "timezone": "America/Chicago (UTC-6 / UTC-5 DST)",
+    "years_experience": 8,
+    "education": [
+      {
+        "degree": "B.S. Computer Science",
+        "institution": "University of Texas at Austin",
+        "graduation_year": 2015
+      },
+      {
+        "degree": "M.S. Business Analytics",
+        "institution": "Northwestern University – Kellogg School of Management",
+        "graduation_year": 2017
+      }
+    ]
+  },
+  "work_habits": {
+    "preferred_working_hours": "08:00-16:00 (flexible +/- 1 hour)",
+    "peak_productivity_times": "09:00-11:30",
+    "communication_style": "Async‑first, with quick syncs when needed",
+    "response_time_expectation": "Typically replies within 2 hours during working hours; within 24 hours for non‑urgent async messages",
+    "meeting_preferences": "Minimizes meetings; prefers short stand‑ups (15 min) and agenda‑driven sessions; avoids back‑to‑back meetings longer than 2 hours",
+    "work_environment": "Hybrid – 3 days remote, 2 days in the Austin office",
+    "focus_time_requirements": "Blocks 3–4 hours of uninterrupted focus daily (usually mid‑morning)"
+  },
+  "personality": {
+    "mbti": "INTJ",
+    "decision_making_approach": "Data‑driven, prefers structured analysis before committing; will consult stakeholders for high‑impact choices",
+    "risk_tolerance": 6,
+    "collaboration_style": "Strategic partner – contributes ideas early, then lets experts execute; comfortable delegating routine tasks",
+    "stress_management_approach": "Uses Pomodoro technique and short walks; practices mindfulness meditation 3 times a week",
+    "conflict_resolution_style": "Collaborative – seeks win‑win solutions, backs positions with data, willing to compromise on implementation details"
+  },
+  "skills": {
+    "core_technical_skills": {
+      "SQL": 9,
+      "Python (pandas, NumPy, scikit‑learn)": 8,
+      "Data Modeling (Star/Snowflake schemas)": 8,
+      "ETL/ELT (dbt, Airflow)": 7,
+      "Data Visualization (Tableau, Power BI)": 8,
+      "Cloud Platforms (AWS Redshift, Snowflake)": 7,
+      "Statistical Analysis": 7,
+      "Version Control (Git)": 8,
+      "CI/CD for data pipelines": 6
+    },
+    "leadership_abilities": 6,
+    "domain_expertise_areas": [
+      "E‑commerce analytics",
+      "Customer lifetime value modeling",
+      "Marketing attribution",
+      "Supply‑chain KPI dashboards"
+    ],
+    "learning_agility": 9,
+    "tools_proficiency": {
+      "dbt": 7,
+      "Apache Airflow": 6,
+      "Looker": 7,
+      "Jira/Confluence": 8,
+      "Slack": 9,
+      "Microsoft Teams": 7
+    },
+    "languages_spoken": [
+      "English (native)",
+      "Spanish (conversational)"
+    ]
+  },
+  "performance": {
+    "task_completion_rate": 93,
+    "quality_score": 96,
+    "estimation_accuracy": 88,
+    "multitasking_ability": 7,
+    "performance_under_pressure": 8
+  },
+  "availability": {
+    "available_hours_per_week": 38,
+    "timezone": "America/Chicago",
+    "working_hours": "08:00-17:00 (including 1 hour lunch)",
+    "planned_time_off_days_per_year": 20,
+    "other_commitments": "Weekly 1‑hour virtual meetup for the company’s Data Community of Practice",
+    "travel_flexibility": "Up to 25 % of time (≈1 week per quarter) for on‑site client workshops or conferences"
+  },
+  "personal_factors": {
+    "family_status": "Married, one child (3 years old)",
+    "caregiving_responsibilities": "Primary caregiver for child; occasional school‑pick‑up responsibilities",
+    "commute_situation": "No daily commute on remote days; 25‑minute drive on office days",
+    "health_considerations": "Mild lower‑back soreness; does daily stretching and ergonomic workstation setup",
+    "career_motivation": "Aiming to become a Lead BI Engineer / Architecture owner; motivated by building scalable data products that directly impact revenue"
+  },
+  "project_impact": {
+    "reliability": 9,
+    "innovation_tendency": 7,
+    "documentation_quality": 8,
+    "mentorship_capability": 6,
+    "influence_level": 7
+  },
+  "collaboration": {
+    "meeting_frequency_preference": "Weekly 30‑min team sync, ad‑hoc 15‑min stakeholder check‑ins, quarterly cross‑functional review",
+    "communication_channels_preference": [
+      "Slack (async)",
+      "Confluence (documentation)",
+      "Jira (task tracking)",
+      "Zoom (short syncs)"
+    ],
+    "feedback_style": "Direct but diplomatic – provides data‑backed observations and actionable suggestions",
+    "knowledge_sharing_habits": "Maintains a shared 'BI Patterns' Confluence space; writes post‑mortems for major releases; runs monthly brown‑bag sessions on new modeling techniques",
+    "cross_team_collaboration": 8
+  },
+  "risk_factors": {
+    "potential_bottlenecks": [
+      "Heavy reliance on a single legacy data source for finance reporting",
+      "Limited bandwidth during peak sprint weeks leading to delayed code reviews"
+    ],
+    "backup_person_needed": "Emily Chen (Senior Data Engineer, familiar with Thomas’s dbt models)",
+    "ramp_up_time_weeks": 3,
+    "context_switching_tolerance": 5,
+    "burnout_risk_factors": [
+      "Occasional over‑commitment to simultaneous ad‑hoc analysis requests",
+      "Back‑to‑back release cycles without buffer weeks"
+    ]
+  },
+  "_metadata": {
+    "generated_at": "2025-11-17T15:23:32.729333",
+    "name": "Thomas Wright",
+    "role": "Business Intelligence Engineer",
+    "seniority": "mid",
+    "company": "TechCorp",
+    "model": "gpt-oss:120b",
+    "provider": "ollama"
+  }
+}

@@ -1,0 +1,349 @@
+{
+  "scenario_name": "Q4\u202f2025 Strategic Planning Offsite \u2013 NovaHealth Systems",
+  "scenario_number": 1,
+  "meeting_type": "Strategic Planning Offsite",
+  "quality_level": "low",
+  "workback_prompt": "Generate a detailed work\u2011back plan for NovaHealth Systems' Q4\u202f2025 Strategic Planning Offsite (September\u202f9\u201111, 2025, Aspen). Include all pre\u2011work (market research, financial analysis), facilitator preparation, agenda finalization, logistics (travel, lodging, tech setup), day\u2011by\u2011day session plans, decision\u2011making checkpoints, post\u2011offsite deliverable production, and communication rollout. Align tasks with the constraints (T\u201190 horizon, $120k budget, pre\u2011work due Aug\u202f15, Board approval by Oct\u202f5) and map each deliverable to a responsible owner and due date. Provide the plan in a table format suitable for a project\u2011management tool.\n\nGenerate a LOW QUALITY workback plan with these characteristics:\n- Missing key tasks or phases\n- Vague task descriptions\n- Few or no dependencies defined\n- Missing stakeholder assignments\n- No milestones or poorly defined milestones\n- Unrealistic timelines\n- No risk consideration\n- Minimal deliverables identified\n\nIMPORTANT: Generate a plan that naturally exhibits LOW quality characteristics.\nDo not explicitly label the plan as \"low quality\" - let the quality emerge from the content.",
+  "generated_at": "2025-11-17T07:28:48.304494",
+  "analysis": "**# Outcomes**\n\n## 1. Draft a preliminary work\u2011back schedule for the Q4\u202f2025 Strategic Planning Offsite  \n*Create an initial table that lists the major work\u2011back items (pre\u2011work, facilitator prep, agenda, logistics, day\u2011by\u2011day sessions, decision checkpoints, post\u2011offsite deliverables, communications) together with rough due dates, owners, and budget allocations.*  \nArtifact references: *none provided*\n\n### Reasoning  \nThe user\u2019s request is to produce a work\u2011back plan that will be entered into a project\u2011management tool. The first logical deliverable is a draft schedule that captures the high\u2011level tasks and dates. Even though the user asked for a \u201clow\u2011quality\u201d version, the system guidance requires us to stay at the planning\u2011advice level rather than delivering the final artifact itself.\n\n### Approach  \n1. **Identify the major phases** \u2013 market research, financial analysis, facilitator prep, agenda finalization, logistics, session planning, decision checkpoints, post\u2011offsite production, communication rollout.  \n2. **Assign placeholder owners** \u2013 use generic role titles (e.g., \u201cStrategy Lead,\u201d \u201cFinance Analyst,\u201d \u201cOps Coordinator\u201d) rather than specific names, because the user has not supplied a roster.  \n3. **Set rough target dates** \u2013 work backwards from the offsite dates (Sept\u202f9\u201111) and the hard deadlines (pre\u2011work due Aug\u202f15, Board approval Oct\u202f5) using a simple \u201c\u201130 days, \u201115 days\u201d cadence.  \n4. **Allocate the budget** \u2013 split the $120\u202fk budget into a few broad buckets (venue & travel, facilitator fees, materials) without detailed line items.  \n5. **Capture the information in a simple table** \u2013 columns: *Task / Deliverable*, *Owner (role)*, *Due Date*, *Notes / Budget*. Keep the descriptions brief and the dependencies minimal.\n\n---\n\n## 2. Review & refine the draft schedule with key stakeholders  \n*Circulate the draft schedule to the senior team for quick feedback and make any necessary adjustments.*  \n\n### Reasoning  \nA work\u2011back plan, even a low\u2011detail one, needs at least one round of stakeholder input to ensure that the identified owners and dates are at least plausible. The user\u2019s constraints (T\u201190 horizon, budget, board deadline) make a quick validation step essential.\n\n### Approach  \n1. **Send the draft table** via email to the senior leadership group.  \n2. **Collect comments** in a single reply thread; ask only for \u201cyes/no\u201d on owners and \u201cOK/shift\u201d on dates.  \n3. **Update the table** directly in the email attachment or shared sheet.  \n4. **Lock the revised version** as the baseline for the project\u2011management tool import.\n\n---\n\n## 3. Load the schedule into the project\u2011management tool  \n*Enter the finalized rows into the chosen tool (e.g., Asana, Smartsheet, Monday.com) so the team can track progress.*  \n\n### Reasoning  \nThe user explicitly wants the plan in a format suitable for a project\u2011management tool. Translating the table into tasks within the tool is the final actionable step before execution.\n\n### Approach  \n1. **Create a new project** named \u201cQ4\u202f2025 Strategic Offsite \u2013 Work\u2011back.\u201d  \n2. **Add each row** as a task, using the table columns to fill the task name, assignee (role), due date, and notes.  \n3. **Set minimal dependencies** (e.g., \u201cAgenda finalization\u201d depends on \u201cPre\u2011work completed\u201d). Keep the dependency list short to stay aligned with the low\u2011detail request.  \n4. **Share the project** with the broader team and enable notifications.\n\n---\n\n## 4. Communicate the finalized plan to all participants  \n*Distribute a brief announcement that the work\u2011back schedule is live and where to find it.*  \n\n### Reasoning  \nEven a low\u2011detail plan benefits from a single communication touchpoint that tells participants where to view tasks and who to contact for questions.\n\n### Approach  \n1. Draft a short email (2\u20113 sentences) linking to the project\u2011management board.  \n2. Highlight the two hard deadlines (pre\u2011work Aug\u202f15, Board approval Oct\u202f5).  \n3. Encourage owners to update task status as they progress.\n\n---\n\n# Breakdown\n\n```\n1. Draft preliminary work\u2011back schedule\n   1.1 List major phases (research, finance, facilitator, agenda, logistics, sessions, decisions, post\u2011offsite, communications)\n   1.2 Assign generic role owners\n   1.3 Set rough backward dates (e.g., \u201c\u201130 days\u201d, \u201c\u201115 days\u201d)\n   1.4 Roughly split $120k budget into 3 buckets\n   1.5 Populate simple table (Task, Owner, Due, Notes)\n\n2. Review & refine with stakeholders\n   2.1 Email draft to senior team\n   2.2 Request yes/no on owners, OK/shift on dates\n   2.3 Incorporate feedback into table\n   2.4 Freeze version as baseline\n\n3. Load schedule into PM tool\n   3.1 Create new project \u201cQ4\u202f2025 Strategic Offsite \u2013 Work\u2011back\u201d\n   3.2 Add each table row as a task\n   3.3 Set minimal dependencies (e.g., Agenda \u2192 Pre\u2011work)\n   3.4 Share project with team, enable notifications\n\n4. Communicate finalized plan\n   4.1 Draft brief announcement email\n   4.2 Include link to PM board and key hard dates\n   4.3 Send to all participants\n```\n\n*Dependencies*:  \n- Step\u202f2 depends on completion of Step\u202f1.  \n- Step\u202f3 depends on completion of Step\u202f2.  \n- Step\u202f4 can run in parallel with the early execution of tasks in Step\u202f3 (e.g., logistics can begin while the board is reviewing the schedule).  \n\n*Risks*: Not explicitly detailed per system guidance, but note that minimal owner detail and vague dates may lead to later clarification work.",
+  "plan": {
+    "id": "document-001",
+    "name": "Q4 2025 Strategic Offsite Work\u2011back Plan",
+    "details": "Work\u2011back plan for the Q4\u202f2025 Strategic Planning Offsite covering schedule drafting, stakeholder review, loading into a project\u2011management tool, and communication of the finalized plan.",
+    "draft": true,
+    "participants": [],
+    "references": [],
+    "deliverables": [
+      {
+        "id": "deliverable-001",
+        "name": "Preliminary Work\u2011back Schedule Table",
+        "type": "word",
+        "draft": true,
+        "history": []
+      },
+      {
+        "id": "deliverable-002",
+        "name": "Final Project\u2011Management Board",
+        "type": "word",
+        "draft": true,
+        "history": []
+      },
+      {
+        "id": "deliverable-003",
+        "name": "Announcement Email",
+        "type": "word",
+        "draft": true,
+        "history": []
+      }
+    ],
+    "tasks": [
+      {
+        "id": "task-001-1",
+        "name": "List major phases",
+        "details": "Identify the major phases such as research, finance, facilitator prep, agenda, logistics, sessions, decisions, post\u2011offsite, communications.",
+        "draft": true,
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-001-2",
+        "name": "Assign generic role owners",
+        "details": "Assign placeholder owners using generic role titles (e.g., Strategy Lead, Finance Analyst, Ops Coordinator).",
+        "draft": true,
+        "dependencies": [
+          "task-001-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-001-3",
+        "name": "Set rough backward dates",
+        "details": "Set rough target dates working backwards from the offsite dates (Sept\u202f9\u201111) using simple \u201c\u201130 days\u201d, \u201c\u201115 days\u201d cadence.",
+        "draft": true,
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-001-4",
+        "name": "Roughly split $120k budget into 3 buckets",
+        "details": "Allocate the $120\u202fk budget into broad buckets (venue & travel, facilitator fees, materials).",
+        "draft": true,
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-001-5",
+        "name": "Populate simple table (Task, Owner, Due, Notes)",
+        "details": "Create a simple table with columns: Task/Deliverable, Owner (role), Due Date, Notes/Budget.",
+        "draft": true,
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[word]/deliverable-001"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-001",
+        "name": "Draft preliminary work\u2011back schedule",
+        "details": "Produce the initial work\u2011back schedule table covering major items, owners, dates, and budget allocations.",
+        "draft": true,
+        "dependencies": [
+          "task-001-1",
+          "task-001-2",
+          "task-001-3",
+          "task-001-4",
+          "task-001-5"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[word]/deliverable-001"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002-1",
+        "name": "Email draft to senior team",
+        "details": "Send the draft schedule to the senior leadership group for quick feedback.",
+        "draft": true,
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002-2",
+        "name": "Request yes/no on owners, OK/shift on dates",
+        "details": "Ask stakeholders to confirm owners (yes/no) and dates (OK/shift).",
+        "draft": true,
+        "dependencies": [
+          "task-002-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002-3",
+        "name": "Incorporate feedback into table",
+        "details": "Update the schedule table based on stakeholder comments.",
+        "draft": true,
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002-4",
+        "name": "Freeze version as baseline",
+        "details": "Lock the revised schedule as the baseline for import into the PM tool.",
+        "draft": true,
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002",
+        "name": "Review & refine draft schedule with stakeholders",
+        "details": "Collect stakeholder feedback, adjust the schedule, and finalize the baseline version.",
+        "draft": true,
+        "dependencies": [
+          "task-001",
+          "task-002-1",
+          "task-002-2",
+          "task-002-3",
+          "task-002-4"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[word]/deliverable-001"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003-1",
+        "name": "Create new project \u201cQ4\u202f2025 Strategic Offsite \u2013 Work\u2011back\u201d",
+        "details": "Set up a new project in the chosen PM tool with the appropriate name.",
+        "draft": true,
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003-2",
+        "name": "Add each table row as a task",
+        "details": "Enter each schedule row as an individual task, filling name, assignee, due date, and notes.",
+        "draft": true,
+        "dependencies": [
+          "task-003-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003-3",
+        "name": "Set minimal dependencies (e.g., Agenda \u2192 Pre\u2011work)",
+        "details": "Define simple task dependencies to reflect logical order.",
+        "draft": true,
+        "dependencies": [
+          "task-003-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003-4",
+        "name": "Share project with team, enable notifications",
+        "details": "Give access to the broader team and turn on task notifications.",
+        "draft": true,
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003",
+        "name": "Load schedule into project\u2011management tool",
+        "details": "Import the finalized schedule into the PM tool, set dependencies, and share with the team.",
+        "draft": true,
+        "dependencies": [
+          "task-002",
+          "task-003-1",
+          "task-003-2",
+          "task-003-3",
+          "task-003-4"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[word]/deliverable-002"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-004-1",
+        "name": "Draft brief announcement email",
+        "details": "Write a short 2\u20113 sentence email announcing that the work\u2011back schedule is live.",
+        "draft": true,
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-004-2",
+        "name": "Include link to PM board and key hard dates",
+        "details": "Add the link to the PM board and highlight the pre\u2011work due date (Aug\u202f15) and Board approval deadline (Oct\u202f5).",
+        "draft": true,
+        "dependencies": [
+          "task-004-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-004-3",
+        "name": "Send to all participants",
+        "details": "Distribute the announcement email to all offsite participants.",
+        "draft": true,
+        "dependencies": [
+          "task-004-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[word]/deliverable-003"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-004",
+        "name": "Communicate finalized plan to participants",
+        "details": "Announce that the work\u2011back schedule is live and provide access details.",
+        "draft": true,
+        "dependencies": [
+          "task-004-1",
+          "task-004-2",
+          "task-004-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[word]/deliverable-003"
+        ],
+        "references": [],
+        "history": []
+      }
+    ],
+    "history": []
+  }
+}

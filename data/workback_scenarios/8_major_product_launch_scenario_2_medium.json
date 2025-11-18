@@ -1,0 +1,1651 @@
+{
+  "scenario_name": "Nimbus AI Edge 3.0 \u2013 Global Enterprise Launch (90\u2011Day Workback)",
+  "scenario_number": 2,
+  "meeting_type": "Major Product Launch",
+  "quality_level": "medium",
+  "workback_prompt": "Create a detailed 90\u2011day workback plan for the Nimbus AI Edge 3.0 major product launch at Nimbus Cloud Solutions. Include all phases (beta program, release candidate validation, legal/compliance sign\u2011off, pricing, partner enablement, marketing, launch event execution, post\u2011launch monitoring). Identify weekly milestones, owners (using the stakeholder list), required deliverables, risk mitigation steps, and dependencies. Align the plan with the constraints (budget $5M, compliance deadlines, hardware supplier lead times) and success criteria (100k subscriptions, NPS \u2265\u202f70, media coverage, etc.). Provide a Gantt\u2011style timeline and a concise executive summary of critical path items.\n\nGenerate a MEDIUM QUALITY workback plan with these characteristics:\n- Most major tasks present but some gaps\n- Reasonable task descriptions\n- Some dependencies defined\n- Most tasks have owners\n- Milestones present but may lack detail\n- Generally realistic timelines\n- Some consideration of risks\n- Key deliverables identified\n\nIMPORTANT: Generate a plan that naturally exhibits MEDIUM quality characteristics.\nDo not explicitly label the plan as \"medium quality\" - let the quality emerge from the content.",
+  "generated_at": "2025-11-17T07:15:22.014603",
+  "analysis": "# Outcomes\n\n## 1. Draft a comprehensive 90\u2011day work\u2011back schedule for Nimbus AI Edge\u202f3.0  \nA Gantt\u2011style timeline that lists every weekly milestone, owner, deliverable, risk mitigation step, and dependency across all launch phases (beta, RC validation, legal/compliance, pricing, partner enablement, marketing, launch event, post\u2011launch monitoring).  \nArtifact references: *(none provided)*  \n\n### Reasoning  \nThe user\u2019s primary request is a detailed work\u2011back plan. The first concrete outcome must therefore be the creation of that schedule. All subsequent activities (owner assignment, risk analysis, budget alignment) feed into this schedule, so it is the logical anchor for the effort.\n\n### Approach  \n1. **Collect baseline inputs** \u2013 Gather the stakeholder list, budget ceiling ($5\u202fM), compliance deadlines, hardware supplier lead\u2011time estimates, and success\u2011criteria targets.  \n2. **Define phase windows** \u2013 Break the 90\u2011day horizon into the eight launch phases, allocating an initial number of weeks to each based on typical effort (e.g., Beta\u202f=\u202f3\u202fwks, RC\u202f=\u202f2\u202fwks, Legal\u202f=\u202f2\u202fwks, etc.).  \n3. **Map weekly milestones** \u2013 For each phase, list the key deliverable that must be completed by the end of the week (e.g., \u201cBeta participant sign\u2011off\u201d, \u201cRC performance report\u201d).  \n4. **Assign owners** \u2013 Match each milestone to the appropriate stakeholder group (Product Management, Engineering, Legal, Finance, Partner Ops, Marketing, Events, Customer Success).  \n5. **Identify dependencies** \u2013 Link milestones that cannot start until a predecessor is finished (e.g., \u201cPricing finalization\u201d depends on \u201cRC validation\u201d).  \n6. **Add risk mitigations** \u2013 For every high\u2011impact milestone, note a contingency (e.g., \u201cAlternative hardware supplier\u201d for supplier lead\u2011time risk).  \n7. **Validate against constraints** \u2013 Ensure total spend stays within $5\u202fM, compliance dates are met, and hardware lead times are respected.  \n8. **Render Gantt view** \u2013 Use a spreadsheet or lightweight project\u2011management tool to plot weeks on the X\u2011axis and milestones on the Y\u2011axis, shading critical\u2011path items.  \n9. **Iterate with stakeholders** \u2013 Circulate the draft, collect feedback, and revise until consensus is reached.\n\n---\n\n## 2. Secure stakeholder sign\u2011off on the draft schedule and resource allocation  \nFormal approval from all functional leads that the timeline, owners, budget allocations, and risk\u2011mitigation plans are acceptable.  \nArtifact references: *(none provided)*  \n\n### Reasoning  \nWithout explicit sign\u2011off, the schedule cannot be executed reliably; owners need to commit resources and acknowledge dependencies. This outcome is a required gate before moving to execution.\n\n### Approach  \n1. **Prepare a concise executive summary** \u2013 Highlight critical\u2011path items, budget usage, and success\u2011criteria alignment.  \n2. **Schedule a 60\u2011minute review meeting** \u2013 Invite all stakeholder representatives; share the draft schedule 48\u202fhours in advance.  \n3. **Facilitate discussion** \u2013 Walk through each phase, capture objections, and note any required adjustments (e.g., additional buffer for hardware).  \n4. **Document decisions** \u2013 Update the schedule with agreed changes and record sign\u2011off (email or shared\u2011doc acknowledgment).  \n5. **Distribute final approved version** \u2013 Store in a central repository accessible to the entire launch team.\n\n---\n\n## 3. Execute the beta\u2011program and release\u2011candidate (RC) validation phases  \nComplete beta testing, collect feedback, and certify the RC against performance, security, and compliance baselines.  \nArtifact references: *(none provided)*  \n\n### Reasoning  \nBeta and RC are prerequisite phases; the launch cannot proceed until the product is validated. They also generate key inputs for pricing, legal sign\u2011off, and partner enablement.\n\n### Approach  \n1. **Kick\u2011off beta** \u2013 Send onboarding packets to selected customers, assign a Beta Program Manager, and set weekly status checkpoints.  \n2. **Collect and triage feedback** \u2013 Use a shared issue tracker; prioritize bugs that affect compliance or performance.  \n3. **Prepare RC** \u2013 Incorporate fixes, run internal QA, and produce a \u201cRC Validation Report\u201d.  \n4. **Conduct formal validation** \u2013 Run security scans, performance benchmarks, and compliance checks; involve Legal for early sign\u2011off.  \n5. **Gate to next phase** \u2013 Only after the RC Validation Report is approved does the plan move to legal/compliance sign\u2011off.\n\n---\n\n## 4. Obtain legal and compliance sign\u2011off, finalize pricing, and lock partner enablement content  \nSecure all regulatory approvals, agree on pricing tiers, and deliver partner\u2011ready assets (technical guides, sales kits).  \nArtifact references: *(none provided)*  \n\n### Reasoning  \nThese three activities are tightly coupled: compliance sign\u2011off often influences pricing (e.g., licensing restrictions) and partner enablement (e.g., required certifications). Completing them together reduces rework.\n\n### Approach  \n1. **Legal review** \u2013 Submit the RC package and any data\u2011privacy impact assessments; schedule a compliance checkpoint meeting.  \n2. **Pricing workshop** \u2013 Bring Finance, Product, and Sales Ops together to model pricing scenarios against the 100\u202fk subscription target and NPS goal.  \n3. **Partner enablement creation** \u2013 Draft technical integration guides, sales playbooks, and certification exams; assign Partner Enablement Lead.  \n4. **Sign\u2011off bundle** \u2013 Compile legal approval letters, pricing approval memo, and partner assets; circulate for final stakeholder sign\u2011off.\n\n---\n\n## 5. Launch marketing campaigns, partner\u2011driven demand generation, and the launch event  \nRoll out PR, digital, and partner\u2011led campaigns; execute the physical/virtual launch event; begin subscription intake.  \nArtifact references: *(none provided)*  \n\n### Reasoning  \nMarketing and the launch event are the outward\u2011facing activities that drive the success metrics (subscriptions, media coverage, NPS). They must be synchronized with the product\u2019s ready\u2011state.\n\n### Approach  \n1. **Develop campaign calendar** \u2013 Align email blasts, social posts, and paid media with the \u201cGo\u2011Live\u201d date.  \n2. **Coordinate with partners** \u2013 Provide co\u2011marketing assets, joint webinars, and incentive programs; track partner\u2011generated pipeline.  \n3. **Plan launch event** \u2013 Secure venue/virtual platform, speaker lineup, and media invites; rehearse demos using the RC.  \n4. **Execute go\u2011live** \u2013 Open the subscription portal, monitor real\u2011time uptake, and capture early NPS feedback.  \n\n---\n\n## 6. Implement post\u2011launch monitoring and continuous improvement loop  \nTrack key performance indicators (KPIs), address early issues, and feed insights back into product and partner teams.  \nArtifact references: *(none provided)*  \n\n### Reasoning  \nPost\u2011launch monitoring ensures the success criteria are met and provides data for rapid remediation, protecting NPS and subscription goals.\n\n### Approach  \n1. **Dashboard setup** \u2013 Build real\u2011time views for subscription count, NPS, support tickets, and media mentions.  \n2. **Weekly health reviews** \u2013 Convene a cross\u2011functional ops call to assess KPI trends and prioritize corrective actions.  \n3. **Customer success outreach** \u2013 Engage early adopters for feedback; feed insights to Product for quick patches.  \n4. **Report to leadership** \u2013 Produce a 30\u2011day post\u2011launch performance report summarizing outcomes versus targets.\n\n---\n\n# Breakdown\n\n### 1. Draft a comprehensive 90\u2011day work\u2011back schedule  \n1.1 Gather baseline inputs  \n\u20031.1.1 Retrieve stakeholder list and contact matrix  \n\u20031.1.2 Confirm budget ceiling ($5\u202fM) and hardware lead\u2011time data  \n\u20031.1.3 Document compliance deadlines and success\u2011criteria targets  \n1.2 Define phase windows (beta, RC, legal, pricing, partner, marketing, event, post\u2011launch)  \n1.3 Map weekly milestones per phase  \n1.4 Assign owners to each milestone (Product, Engineering, Legal, Finance, Partner Ops, Marketing, Events, Customer Success)  \n1.5 Identify and record dependencies (e.g., Pricing\u202f\u2192\u202fLegal)  \n1.6 Add risk\u2011mitigation notes for high\u2011impact items (supplier delay, regulatory change)  \n1.7 Validate schedule against budget, compliance dates, hardware lead\u2011times  \n1.8 Render Gantt chart (spreadsheet or lightweight PM tool)  \n1.9 Iterate with stakeholders (collect feedback, revise)  \n\n### 2. Secure stakeholder sign\u2011off  \n2.1 Prepare executive summary (critical path, budget, success metrics)  \n2.2 Distribute draft schedule 48\u202fh before review meeting  \n2.3 Conduct 60\u2011min review meeting (all functional leads)  \n2.4 Capture objections and agreed adjustments  \n2.5 Update schedule with final changes  \n2.6 Record formal sign\u2011off (email thread or signed doc)  \n2.7 Publish approved schedule to shared repository  \n\n### 3. Execute beta\u2011program & RC validation  \n3.1 Beta kick\u2011off  \n\u20033.1.1 Send onboarding packets to beta participants  \n\u20033.1.2 Assign Beta Program Manager (Product)  \n\u20033.1.3 Schedule weekly status calls  \n3.2 Collect & triage beta feedback  \n\u20033.2.1 Log issues in shared tracker  \n\u20033.2.2 Prioritize compliance\u2011related bugs  \n3.3 Build RC (Engineering)  \n\u20033.3.1 Incorporate fixes, run internal QA  \n\u20033.3.2 Produce RC Validation Report (Engineering + QA)  \n3.4 Formal RC validation  \n\u20033.4.1 Execute security scans, performance benchmarks  \n\u20033.4.2 Conduct compliance checklist review (Legal)  \n\u20033.4.3 Obtain RC sign\u2011off (Product & Legal)  \n\n### 4. Legal/compliance sign\u2011off, pricing, partner enablement  \n4.1 Legal review  \n\u20034.1.1 Submit RC package & privacy impact assessment  \n\u20034.1.2 Hold compliance checkpoint meeting  \n\u20034.1.3 Receive written approval (Legal)  \n4.2 Pricing workshop  \n\u20034.2.1 Model pricing tiers (Finance)  \n\u20034.2.2 Align with subscription target (100\u202fk) and NPS goal  \n\u20034.2.3 Approve pricing memo (Finance & Product)  \n4.3 Partner enablement content creation  \n\u20034.3.1 Draft technical integration guide (Engineering)  \n\u20034.3.2 Create sales playbook & certification exam (Partner Ops)  \n\u20034.3.3 Review with partners, incorporate feedback  \n4.4 Consolidated sign\u2011off bundle (Legal, Finance, Partner Ops)  \n\n### 5. Marketing, partner demand generation, launch event  \n5.1 Campaign calendar development (Marketing)  \n\u20035.1.1 Align email, social, paid media to go\u2011live date  \n5.2 Partner co\u2011marketing coordination (Partner Ops)  \n\u20035.2.1 Distribute co\u2011brand assets, schedule joint webinars  \n5.3 Launch event planning (Events)  \n\u20035.3.1 Secure venue/virtual platform, confirm speakers  \n\u20035.3.2 Prepare demo environment (RC)  \n\u20035.3.3 Send media invitations, manage RSVP list  \n5.4 Go\u2011live execution (Product & Sales)  \n\u20035.4.1 Open subscription portal, monitor real\u2011time uptake  \n\u20035.4.2 Capture early NPS responses (Customer Success)  \n\n### 6. Post\u2011launch monitoring & improvement  \n6.1 Dashboard creation (Operations)  \n\u20036.1.1 Track subscriptions, NPS, support tickets, media hits  \n6.2 Weekly health review meetings (Cross\u2011functional)  \n\u20036.2.1 Review KPI trends, prioritize corrective actions  \n6.3 Customer success outreach (Customer Success)  \n\u20036.3.1 Conduct early\u2011adopter interviews, log insights  \n6.4 30\u2011day performance report (Product)  \n\u20036.4.1 Compare actuals to success criteria (100\u202fk subs, NPS\u202f\u2265\u202f70, media coverage)  \n\u20036.4.2 Present findings to leadership  \n\n---\n\n**Collaboration Tips**\n\n* **Regular cadence** \u2013 Establish a weekly \u201cLaunch Sync\u201d (30\u202fmin) where each functional lead reports progress against their milestones and flags new risks.  \n* **Shared workspace** \u2013 Use a single cloud folder for all artifacts (schedule, risk register, sign\u2011off docs) to ensure version control and visibility.  \n* **RACI matrix** \u2013 Early in the process, create a lightweight RACI table for the major milestones to clarify who is Responsible, Accountable, Consulted, and Informed.  \n* **Risk\u2011review loop** \u2013 Add a 15\u2011minute risk\u2011status slot to every weekly sync; this keeps mitigation actions front\u2011and\u2011center and prevents surprises (e.g., hardware supplier delays).  \n* **Executive checkpoint** \u2013 At the end of week\u202f6 (mid\u2011point), hold a brief executive review to confirm that the plan remains on budget and on schedule; adjust scope if needed.  \n\nBy following this structured set of outcomes, approaches, and detailed work\u2011breakdown, the team can systematically construct the 90\u2011day work\u2011back plan, obtain the necessary approvals, and execute a coordinated launch that meets the defined success criteria while respecting budget and compliance constraints.",
+  "plan": {
+    "id": "document-001",
+    "name": "Nimbus AI Edge 3.0 90\u2011day Launch Work\u2011back Plan",
+    "details": "Structured work\u2011back plan to deliver the Nimbus AI Edge 3.0 launch within 90 days, covering schedule drafting, stakeholder sign\u2011off, beta/RC validation, legal/compliance, pricing, partner enablement, marketing, launch event, and post\u2011launch monitoring.",
+    "draft": true,
+    "participants": [
+      {
+        "name": "Product Management",
+        "email": "product@example.com",
+        "draft": true
+      },
+      {
+        "name": "Engineering",
+        "email": "eng@example.com",
+        "draft": true
+      },
+      {
+        "name": "Legal",
+        "email": "legal@example.com",
+        "draft": true
+      },
+      {
+        "name": "Finance",
+        "email": "finance@example.com",
+        "draft": true
+      },
+      {
+        "name": "Partner Ops",
+        "email": "partnerops@example.com",
+        "draft": true
+      },
+      {
+        "name": "Marketing",
+        "email": "marketing@example.com",
+        "draft": true
+      },
+      {
+        "name": "Events",
+        "email": "events@example.com",
+        "draft": true
+      },
+      {
+        "name": "Customer Success",
+        "email": "cs@example.com",
+        "draft": true
+      },
+      {
+        "name": "Operations",
+        "email": "ops@example.com",
+        "draft": true
+      },
+      {
+        "name": "Beta Program Manager",
+        "email": "beta@example.com",
+        "draft": true
+      }
+    ],
+    "references": [],
+    "deliverables": [
+      {
+        "id": "deliverable-001",
+        "name": "90\u2011day Work\u2011back Schedule (Gantt chart)",
+        "type": "excel",
+        "draft": true,
+        "history": []
+      },
+      {
+        "id": "deliverable-002",
+        "name": "Executive Summary",
+        "type": "word",
+        "draft": true,
+        "history": []
+      },
+      {
+        "id": "deliverable-003",
+        "name": "RC Validation Report",
+        "type": "word",
+        "draft": true,
+        "history": []
+      },
+      {
+        "id": "deliverable-004",
+        "name": "Legal Approval Letter",
+        "type": "word",
+        "draft": true,
+        "history": []
+      },
+      {
+        "id": "deliverable-005",
+        "name": "Pricing Memo",
+        "type": "word",
+        "draft": true,
+        "history": []
+      },
+      {
+        "id": "deliverable-006",
+        "name": "Partner Enablement Assets",
+        "type": "word",
+        "draft": true,
+        "history": []
+      },
+      {
+        "id": "deliverable-007",
+        "name": "Campaign Calendar",
+        "type": "excel",
+        "draft": true,
+        "history": []
+      },
+      {
+        "id": "deliverable-008",
+        "name": "Launch Event Plan",
+        "type": "word",
+        "draft": true,
+        "history": []
+      },
+      {
+        "id": "deliverable-009",
+        "name": "Post\u2011Launch Dashboard",
+        "type": "excel",
+        "draft": true,
+        "history": []
+      },
+      {
+        "id": "deliverable-010",
+        "name": "30\u2011Day Performance Report",
+        "type": "word",
+        "draft": true,
+        "history": []
+      }
+    ],
+    "tasks": [
+      {
+        "id": "task-001",
+        "name": "Draft a comprehensive 90\u2011day work\u2011back schedule",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-002",
+          "task-006",
+          "task-007",
+          "task-008",
+          "task-009",
+          "task-010",
+          "task-011",
+          "task-012",
+          "task-013"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "product@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002",
+        "name": "Gather baseline inputs",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-003",
+          "task-004",
+          "task-005"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "product@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003",
+        "name": "Retrieve stakeholder list and contact matrix",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "product@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-004",
+        "name": "Confirm budget ceiling ($5\u202fM) and hardware lead\u2011time data",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "finance@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-005",
+        "name": "Document compliance deadlines and regulatory requirements",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "legal@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-006",
+        "name": "Define phase windows",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "product@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-007",
+        "name": "Map weekly milestones per phase",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "product@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-008",
+        "name": "Assign owners to each milestone",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "product@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-009",
+        "name": "Identify and record dependencies",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "product@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-010",
+        "name": "Add risk\u2011mitigation notes",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "product@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-011",
+        "name": "Validate schedule against constraints",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "product@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-012",
+        "name": "Render Gantt chart",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "product@example.com"
+        ],
+        "deliverables": [
+          "@deliverable-001"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-013",
+        "name": "Iterate with stakeholders",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "product@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-014",
+        "name": "Secure stakeholder sign\u2011off",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-015",
+          "task-016",
+          "task-017",
+          "task-018",
+          "task-019",
+          "task-020",
+          "task-021"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "product@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-015",
+        "name": "Prepare executive summary",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "product@example.com"
+        ],
+        "deliverables": [
+          "@deliverable-002"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-016",
+        "name": "Distribute draft schedule 48\u202fh before review meeting",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "product@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-017",
+        "name": "Conduct 60\u2011min review meeting",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "product@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-018",
+        "name": "Capture objections and agreed adjustments",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "product@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-019",
+        "name": "Update schedule with final changes",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "product@example.com"
+        ],
+        "deliverables": [
+          "@deliverable-001"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-020",
+        "name": "Record formal sign\u2011off",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "product@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-021",
+        "name": "Publish approved schedule",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "product@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-022",
+        "name": "Execute beta\u2011program & RC validation",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-023",
+          "task-027",
+          "task-030",
+          "task-033"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "beta@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-023",
+        "name": "Beta kick\u2011off",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-024",
+          "task-025",
+          "task-026"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "beta@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-024",
+        "name": "Send onboarding packets and beta instructions",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "beta@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-025",
+        "name": "Assign Beta Program Manager",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "beta@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-026",
+        "name": "Schedule weekly status calls",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "beta@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-027",
+        "name": "Collect & triage beta feedback",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-028",
+          "task-029"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "product@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-028",
+        "name": "Log issues in shared tracker",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "product@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-029",
+        "name": "Prioritize compliance\u2011related bugs",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "legal@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-030",
+        "name": "Build RC",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-031",
+          "task-032"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "eng@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-031",
+        "name": "Incorporate fixes and run internal QA",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "eng@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-032",
+        "name": "Produce RC Validation Report",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "eng@example.com"
+        ],
+        "deliverables": [
+          "@deliverable-003"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-033",
+        "name": "Formal RC validation",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-034",
+          "task-035",
+          "task-036"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "eng@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-034",
+        "name": "Execute security scans and performance benchmarks",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "eng@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-035",
+        "name": "Conduct compliance checklist review",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "legal@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-036",
+        "name": "Obtain RC sign\u2011off",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "product@example.com",
+          "legal@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-037",
+        "name": "Legal/compliance sign\u2011off, pricing, partner enablement",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-038",
+          "task-042",
+          "task-046",
+          "task-050"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "product@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-038",
+        "name": "Legal review",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-039",
+          "task-040",
+          "task-041"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "legal@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-039",
+        "name": "Submit RC package & privacy impact assessment",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "legal@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-040",
+        "name": "Hold compliance checkpoint meeting",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "legal@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-041",
+        "name": "Receive written approval",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "legal@example.com"
+        ],
+        "deliverables": [
+          "@deliverable-004"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-042",
+        "name": "Pricing workshop",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-043",
+          "task-044",
+          "task-045"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "finance@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-043",
+        "name": "Model pricing tiers",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "finance@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-044",
+        "name": "Align with subscription target (100k units)",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "finance@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-045",
+        "name": "Approve pricing memo",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "finance@example.com"
+        ],
+        "deliverables": [
+          "@deliverable-005"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-046",
+        "name": "Partner enablement content creation",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-047",
+          "task-048",
+          "task-049"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "partnerops@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-047",
+        "name": "Draft technical integration guide",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "partnerops@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-048",
+        "name": "Create sales playbook & certification exam",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "partnerops@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-049",
+        "name": "Review with partners, incorporate feedback",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "partnerops@example.com"
+        ],
+        "deliverables": [
+          "@deliverable-006"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-050",
+        "name": "Consolidated sign\u2011off bundle",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "product@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-051",
+        "name": "Marketing campaign launch",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-052",
+          "task-053",
+          "task-054"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "marketing@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-052",
+        "name": "Develop creative assets (video, banner, copy)",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "marketing@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-053",
+        "name": "Plan media buying and channel mix",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "marketing@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-054",
+        "name": "Set up tracking and attribution",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "marketing@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-055",
+        "name": "Launch campaign across channels",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "marketing@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-056",
+        "name": "Monitor performance and optimize spend",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "marketing@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-057",
+        "name": "Post\u2011campaign analysis and reporting",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "product@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-058",
+        "name": "Finalize documentation and close project",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "product@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-059",
+        "name": "Project kickoff and stakeholder alignment",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-060",
+          "task-061",
+          "task-062",
+          "task-063",
+          "task-064",
+          "task-065",
+          "task-066",
+          "task-067",
+          "task-068",
+          "task-069",
+          "task-070",
+          "task-071",
+          "task-072",
+          "task-073",
+          "task-074",
+          "task-075",
+          "task-076",
+          "task-077",
+          "task-078",
+          "task-079",
+          "task-080",
+          "task-081",
+          "task-082",
+          "task-083",
+          "task-084",
+          "task-085",
+          "task-086",
+          "task-087",
+          "task-088",
+          "task-089",
+          "task-090",
+          "task-091",
+          "task-092",
+          "task-093",
+          "task-094",
+          "task-095",
+          "task-096",
+          "task-097",
+          "task-098",
+          "task-099",
+          "task-100",
+          "task-101",
+          "task-102",
+          "task-103",
+          "task-104",
+          "task-105",
+          "task-106",
+          "task-107",
+          "task-108",
+          "task-109",
+          "task-110",
+          "task-111",
+          "task-112",
+          "task-113",
+          "task-114",
+          "task-115",
+          "task-116",
+          "task-117",
+          "task-118",
+          "task-119",
+          "task-120",
+          "task-121",
+          "task-122",
+          "task-123",
+          "task-124",
+          "task-125",
+          "task-126",
+          "task-127",
+          "task-128",
+          "task-129",
+          "task-130",
+          "task-131",
+          "task-132",
+          "task-133",
+          "task-134",
+          "task-135",
+          "task-136",
+          "task-137",
+          "task-138",
+          "task-139",
+          "task-140",
+          "task-141",
+          "task-142",
+          "task-143",
+          "task-144",
+          "task-145",
+          "task-146",
+          "task-147",
+          "task-148",
+          "task-149",
+          "task-150",
+          "task-151",
+          "task-152",
+          "task-153",
+          "task-154",
+          "task-155",
+          "task-156",
+          "task-157",
+          "task-158",
+          "task-159",
+          "task-160",
+          "task-161",
+          "task-162",
+          "task-163",
+          "task-164",
+          "task-165",
+          "task-166",
+          "task-167",
+          "task-168",
+          "task-169",
+          "task-170",
+          "task-171",
+          "task-172",
+          "task-173",
+          "task-174",
+          "task-175",
+          "task-176",
+          "task-177",
+          "task-178",
+          "task-179",
+          "task-180",
+          "task-181",
+          "task-182",
+          "task-183",
+          "task-184",
+          "task-185",
+          "task-186",
+          "task-187",
+          "task-188",
+          "task-189",
+          "task-190",
+          "task-191",
+          "task-192",
+          "task-193",
+          "task-194",
+          "task-195",
+          "task-196",
+          "task-197",
+          "task-198",
+          "task-199",
+          "task-200",
+          "task-201",
+          "task-202",
+          "task-203",
+          "task-204",
+          "task-205",
+          "task-206",
+          "task-207",
+          "task-208",
+          "task-209",
+          "task-210",
+          "task-211",
+          "task-212",
+          "task-213",
+          "task-214",
+          "task-215",
+          "task-216",
+          "task-217",
+          "task-218",
+          "task-219",
+          "task-220",
+          "task-221",
+          "task-222",
+          "task-223",
+          "task-224",
+          "task-225",
+          "task-226",
+          "task-227",
+          "task-228",
+          "task-229",
+          "task-230",
+          "task-231",
+          "task-232",
+          "task-233",
+          "task-234",
+          "task-235",
+          "task-236",
+          "task-237",
+          "task-238",
+          "task-239",
+          "task-240",
+          "task-241",
+          "task-242",
+          "task-243",
+          "task-244",
+          "task-245",
+          "task-246",
+          "task-247",
+          "task-248",
+          "task-249",
+          "task-250",
+          "task-251",
+          "task-252",
+          "task-253",
+          "task-254",
+          "task-255",
+          "task-256",
+          "task-257",
+          "task-258",
+          "task-259",
+          "task-260",
+          "task-261",
+          "task-262",
+          "task-263",
+          "task-264",
+          "task-265",
+          "task-266",
+          "task-267",
+          "task-268",
+          "task-269",
+          "task-270",
+          "task-271",
+          "task-272",
+          "task-273",
+          "task-274",
+          "task-275",
+          "task-276",
+          "task-277",
+          "task-278",
+          "task-279",
+          "task-280",
+          "task-281",
+          "task-282",
+          "task-283",
+          "task-284",
+          "task-285",
+          "task-286",
+          "task-287",
+          "task-288",
+          "task-289",
+          "task-290",
+          "task-291",
+          "task-292",
+          "task-293",
+          "task-294",
+          "task-295",
+          "task-296",
+          "task-297",
+          "task-298",
+          "task-299",
+          "task-300",
+          "task-301",
+          "task-302",
+          "task-303",
+          "task-304",
+          "task-305",
+          "task-306",
+          "task-307",
+          "task-308",
+          "task-309",
+          "task-310",
+          "task-311",
+          "task-312",
+          "task-313",
+          "task-314",
+          "task-315",
+          "task-316",
+          "task-317",
+          "task-318",
+          "task-319",
+          "task-320",
+          "task-321",
+          "task-322",
+          "task-323",
+          "task-324",
+          "task-325",
+          "task-326",
+          "task-327",
+          "task-328",
+          "task-329",
+          "task-330",
+          "task-331",
+          "task-332",
+          "task-333",
+          "task-334",
+          "task-335",
+          "task-336",
+          "task-337",
+          "task-338",
+          "task-339",
+          "task-340",
+          "task-341",
+          "task-342",
+          "task-343",
+          "task-344",
+          "task-345",
+          "task-346",
+          "task-347",
+          "task-348",
+          "task-349",
+          "task-350",
+          "task-351",
+          "task-352",
+          "task-353",
+          "task-354",
+          "task-355",
+          "task-356",
+          "task-357",
+          "task-358",
+          "task-359",
+          "task-360",
+          "task-361",
+          "task-362",
+          "task-363",
+          "task-364",
+          "task-365",
+          "task-366",
+          "task-367",
+          "task-368",
+          "task-369",
+          "task-370",
+          "task-371",
+          "task-372",
+          "task-373",
+          "task-374",
+          "task-375",
+          "task-376",
+          "task-377",
+          "task-378",
+          "task-379",
+          "task-380",
+          "task-381",
+          "task-382",
+          "task-383",
+          "task-384",
+          "task-385",
+          "task-386",
+          "task-387",
+          "task-388",
+          "task-389",
+          "task-390",
+          "task-391",
+          "task-392",
+          "task-393",
+          "task-394",
+          "task-395",
+          "task-396",
+          "task-397",
+          "task-398",
+          "task-399",
+          "task-400",
+          "task-401",
+          "task-402",
+          "task-403",
+          "task-404",
+          "task-405",
+          "task-406",
+          "task-407",
+          "task-408",
+          "task-409",
+          "task-410",
+          "task-411",
+          "task-412",
+          "task-413",
+          "task-414",
+          "task-415",
+          "task-416",
+          "task-417",
+          "task-418",
+          "task-419",
+          "task-420",
+          "task-421",
+          "task-422",
+          "task-423",
+          "task-424",
+          "task-425",
+          "task-426",
+          "task-427",
+          "task-428",
+          "task-429",
+          "task-430",
+          "task-431",
+          "task-432",
+          "task-433",
+          "task-434",
+          "task-435",
+          "task-436",
+          "task-437",
+          "task-438",
+          "task-439",
+          "task-440",
+          "task-441",
+          "task-442",
+          "task-443",
+          "task-444",
+          "task-445",
+          "task-446",
+          "task-447",
+          "task-448",
+          "task-449",
+          "task-450",
+          "task-451",
+          "task-452",
+          "task-453",
+          "task-454",
+          "task-455",
+          "task-456",
+          "task-457",
+          "task-458",
+          "task-459",
+          "task-460",
+          "task-461",
+          "task-462",
+          "task-463",
+          "task-464",
+          "task-465",
+          "task-466",
+          "task-467",
+          "task-468",
+          "task-469",
+          "task-470",
+          "task-471",
+          "task-472",
+          "task-473",
+          "task-474",
+          "task-475",
+          "task-476",
+          "task-477",
+          "task-478",
+          "task-479",
+          "task-480",
+          "task-481",
+          "task-482",
+          "task-483",
+          "task-484",
+          "task-485",
+          "task-486",
+          "task-487",
+          "task-488",
+          "task-489",
+          "task-490",
+          "task-491",
+          "task-492",
+          "task-493",
+          "task-494",
+          "task-495",
+          "task-496",
+          "task-497",
+          "task-498",
+          "task-499",
+          "task-500"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "marketing@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-511",
+        "name": "Develop creative assets (video, banner, copy)",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "marketing@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-512",
+        "name": "Plan media buying and channel mix",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "marketing@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-513",
+        "name": "Set up tracking and attribution",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "marketing@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-514",
+        "name": "Launch campaign across channels",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "marketing@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-515",
+        "name": "Monitor performance and optimize spend",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "marketing@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-516",
+        "name": "Post\u2011campaign analysis and reporting",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "product@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-517",
+        "name": "Finalize documentation and close project",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [
+          "product@example.com"
+        ],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      }
+    ]
+  }
+}

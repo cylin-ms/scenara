@@ -1,0 +1,151 @@
+{
+  "basic_info": {
+    "full_name": "Robert Johnson",
+    "age": 48,
+    "location": "San Francisco, CA, USA",
+    "timezone": "America/Los_Angeles (UTC-8)",
+    "years_experience": 25,
+    "education": [
+      {
+        "degree": "B.S. Computer Science",
+        "institution": "Massachusetts Institute of Technology",
+        "year": 1999
+      },
+      {
+        "degree": "M.B.A. (Technology Management)",
+        "institution": "Stanford Graduate School of Business",
+        "year": 2004
+      }
+    ]
+  },
+  "work_habits": {
+    "preferred_working_hours": "Early bird (07:00‑15:00 PST)",
+    "peak_productivity_times": [
+      "08:00‑11:00",
+      "13:00‑14:30"
+    ],
+    "communication_style": {
+      "preference": "Asynchronous with brief synchronous check‑ins",
+      "expected_response_time_hours": 4
+    },
+    "meeting_preferences": {
+      "max_meetings_per_day": 2,
+      "preferred_format": "Hybrid – short agenda, 15‑30 min; face‑to‑face quarterly",
+      "meeting_minimization": true
+    },
+    "work_environment": "Hybrid (3 days in office, 2 days remote)",
+    "focus_time_requirements_hours_per_day": 3.5
+  },
+  "personality": {
+    "mbti": "ENTJ",
+    "decision_making_approach": "Data‑driven with strategic vision; consults key stakeholders before final sign‑off",
+    "risk_tolerance": "Moderate‑high (willing to pilot bold initiatives with controlled pilots)",
+    "collaboration_style": "Directive yet inclusive; sets clear goals and empowers teams",
+    "stress_management_approach": "Morning run, mid‑day meditation, scheduled “no‑meeting” blocks",
+    "conflict_resolution_style": "Collaborative problem‑solving; seeks win‑win outcomes"
+  },
+  "skills": {
+    "core_technical_skills": {
+      "Cloud Architecture (AWS/Azure)": 9,
+      "SaaS Product Operations": 9,
+      "Data Analytics & Business Intelligence": 8,
+      "AI/ML Fundamentals": 7,
+      "Cybersecurity Basics": 6,
+      "Process Automation (RPA)": 7
+    },
+    "leadership_abilities": 9,
+    "domain_expertise_areas": [
+      "Large‑scale cloud service delivery",
+      "Global SaaS scaling & reliability",
+      "M&A integration and operational synergies",
+      "Supply‑chain and logistics optimization"
+    ],
+    "learning_agility": 8,
+    "tools_proficiency": [
+      "Jira",
+      "Confluence",
+      "Tableau",
+      "Power BI",
+      "Snowflake",
+      "Slack",
+      "Microsoft Teams",
+      "Asana",
+      "AWS Management Console",
+      "Azure Portal"
+    ],
+    "languages_spoken": [
+      "English (native)",
+      "Spanish (conversational)"
+    ]
+  },
+  "performance": {
+    "task_completion_rate_percent": 94,
+    "quality_score_percent": 96,
+    "estimation_accuracy_percent": 88,
+    "multitasking_ability": 7,
+    "performance_under_pressure": 9
+  },
+  "availability": {
+    "available_hours_per_week": 45,
+    "timezone_and_working_hours": "PST, 07:00‑15:00 (incl. 1 hr lunch)",
+    "planned_time_off_days_per_year": 20,
+    "other_commitments": [
+      "Board member, Tech for Good nonprofit (quarterly meetings)",
+      "Mentor in corporate leadership program (2 hrs/week)"
+    ],
+    "travel_flexibility": "Up to 30 % of time; comfortable with domestic and international trips"
+  },
+  "personal_factors": {
+    "family_status": "Married, two teenage children (15 & 17)",
+    "caregiving_responsibilities": "None",
+    "commute_situation": "30‑minute drive to TechCorp headquarters",
+    "health_considerations": "Mild hypertension; regular check‑ups, runs 3×/week",
+    "career_motivation": "Passion for scaling operations efficiently, leaving a lasting operational legacy, and mentoring the next generation of leaders"
+  },
+  "project_impact": {
+    "reliability": 9,
+    "innovation_tendency": 7,
+    "documentation_quality": 8,
+    "mentorship_capability": 9,
+    "influence_level": 9
+  },
+  "collaboration": {
+    "meeting_frequency_preference": {
+      "team_sync": "Twice weekly (30 min)",
+      "cross_functional_sync": "Bi‑weekly (45 min)",
+      "executive updates": "Monthly (1 hr)"
+    },
+    "communication_channels_preference": [
+      "Slack (quick questions)",
+      "Email (formal decisions)",
+      "Confluence (documentation)",
+      "Jira (task tracking)"
+    ],
+    "feedback_style": "Direct but supportive; uses data to back observations",
+    "knowledge_sharing_habits": "Weekly office‑hours, quarterly internal blog posts, occasional lunch‑and‑learns",
+    "cross_team_collaboration_score": 8
+  },
+  "risk_factors": {
+    "potential_bottlenecks": [
+      "Overcommitment to multiple strategic initiatives simultaneously",
+      "Decision latency when extensive data validation is required"
+    ],
+    "backup_person_needed": "Deputy VP of Operations – Emily Chen",
+    "ramp_up_time_for_new_projects_weeks": 4,
+    "context_switching_tolerance": 6,
+    "burnout_risk_factors": [
+      "High stakeholder pressure during product launches",
+      "Frequent travel (>20 days/month during peak quarters)",
+      "Limited personal downtime when multiple initiatives converge"
+    ]
+  },
+  "_metadata": {
+    "generated_at": "2025-11-17T15:10:17.544463",
+    "name": "Robert Johnson",
+    "role": "VP of Operations",
+    "seniority": "senior",
+    "company": "TechCorp",
+    "model": "gpt-oss:120b",
+    "provider": "ollama"
+  }
+}

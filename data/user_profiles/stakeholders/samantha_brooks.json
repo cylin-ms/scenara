@@ -1,0 +1,148 @@
+{
+  "basic_info": {
+    "full_name": "Samantha Brooks",
+    "age": 33,
+    "location": {
+      "city": "Austin",
+      "state": "Texas",
+      "country": "USA",
+      "timezone": "America/Chicago"
+    },
+    "years_experience": 8,
+    "education": [
+      {
+        "degree": "Bachelor of Arts",
+        "field": "Communications",
+        "institution": "University of Texas at Austin",
+        "year_completed": 2014
+      },
+      {
+        "degree": "Master of Business Administration",
+        "field": "Marketing",
+        "institution": "Texas A&M University",
+        "year_completed": 2017
+      }
+    ]
+  },
+  "work_habits": {
+    "preferred_working_hours": "08:00-16:00",
+    "peak_productivity_times": "09:00-11:00",
+    "communication_style": {
+      "preference": "Async with occasional sync for brainstorming",
+      "typical_response_time_hours": 2
+    },
+    "meeting_preferences": "Limits meetings to 2-3 per week, prefers 30‑minute stand‑ups and agenda‑driven sessions",
+    "work_environment": "Hybrid (2 days remote, 3 days in office)",
+    "focus_time_requirements_hours_per_day": 3.5
+  },
+  "personality": {
+    "mbti": "ENFJ",
+    "decision_making_approach": "Collaborative data‑driven, but decisive once consensus reached",
+    "risk_tolerance": "Moderate – willing to pilot new formats after small‑scale testing",
+    "collaboration_style": "Inclusive, actively solicits diverse viewpoints",
+    "stress_management_approach": "Pomodoro technique, short walks, mindfulness apps",
+    "conflict_resolution_style": "Win‑win mediation, seeks common ground before escalation"
+  },
+  "skills": {
+    "core_technical_skills": {
+      "SEO": 9,
+      "Content Strategy": 8,
+      "Data Analytics": 7,
+      "Copywriting": 9,
+      "UX Writing": 6,
+      "Marketing Automation": 7
+    },
+    "leadership_abilities": 7,
+    "domain_expertise_areas": [
+      "SaaS B2B technology",
+      "Cloud infrastructure",
+      "Artificial Intelligence products"
+    ],
+    "learning_agility": 8,
+    "tools_proficiency": {
+      "HubSpot": 8,
+      "Google Analytics": 7,
+      "SEMrush": 7,
+      "Adobe Creative Suite": 6,
+      "Asana": 8,
+      "Notion": 7,
+      "Figma": 5
+    },
+    "languages_spoken": [
+      {
+        "language": "English",
+        "proficiency": "Native"
+      },
+      {
+        "language": "Spanish",
+        "proficiency": "Conversational"
+      }
+    ]
+  },
+  "performance": {
+    "task_completion_rate_percent": 92,
+    "quality_score_percent": 95,
+    "estimation_accuracy_percent": 88,
+    "multitasking_ability": 7,
+    "performance_under_pressure": 8
+  },
+  "availability": {
+    "available_hours_per_week": 38,
+    "timezone_and_working_hours": "America/Chicago (08:00‑16:00 CST)",
+    "planned_time_off_days_per_year": 18,
+    "other_commitments": [
+      "Weekly industry webinar (1 hr)",
+      "Quarterly speaking engagement at tech conferences"
+    ],
+    "travel_flexibility": "Up to 20% of time (≈4 weeks/year), primarily domestic"
+  },
+  "personal_factors": {
+    "family_status": "Married, one child (2 years old)",
+    "caregiving_responsibilities": "Primary caregiver mornings and evenings",
+    "commute_situation": "25‑minute drive to TechCorp Austin office",
+    "health_considerations": "Mild seasonal allergies, generally healthy",
+    "career_motivation": "Aspires to lead a global content team and elevate TechCorp’s brand authority"
+  },
+  "project_impact": {
+    "reliability": 9,
+    "innovation_tendency": 7,
+    "documentation_quality": 8,
+    "mentorship_capability": 8,
+    "influence_level": 7
+  },
+  "collaboration": {
+    "meeting_frequency_preference": "1‑2 cross‑functional syncs per week; ad‑hoc as needed",
+    "communication_channels_preference": [
+      "Slack",
+      "Email",
+      "Asana comments",
+      "Zoom (for video brainstorming)"
+    ],
+    "feedback_style": "Direct yet empathetic; balances praise with constructive suggestions",
+    "knowledge_sharing_habits": "Runs weekly internal newsletter, monthly brown‑bag sessions, maintains Notion knowledge base",
+    "cross_team_collaboration": 8
+  },
+  "risk_factors": {
+    "potential_bottlenecks": [
+      "Dependence on senior leadership sign‑off for major content campaigns",
+      "Reduced bandwidth during product launch sprints"
+    ],
+    "backup_person_needed": "Senior Content Strategist (Alex Rivera)",
+    "ramp_up_time_for_new_projects_weeks": 2,
+    "context_switching_tolerance": 6,
+    "burnout_risk_factors": [
+      "High meeting load during quarterly planning",
+      "Tight deadlines on simultaneous product releases",
+      "Need to maintain clear work‑life boundaries with young child"
+    ]
+  },
+  "_metadata": {
+    "generated_at": "2025-11-17T15:28:25.754379",
+    "name": "Samantha Brooks",
+    "role": "Content Marketing Manager",
+    "seniority": "mid",
+    "company": "TechCorp",
+    "model": "gpt-oss:120b",
+    "provider": "ollama"
+  }
+}

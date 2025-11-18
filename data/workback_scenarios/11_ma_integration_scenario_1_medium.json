@@ -1,0 +1,451 @@
+{
+  "scenario_name": "NovaTech\u2011DataPulse Extreme Integration",
+  "scenario_number": 1,
+  "meeting_type": "M&A Integration Planning",
+  "quality_level": "medium",
+  "workback_prompt": "Using the detailed scenario above (NovaTech\u2011DataPulse Extreme Integration), create a comprehensive work\u2011back plan that outlines all tasks, owners, dependencies, and timelines required to achieve the Day\u20111 priorities and the 100\u2011day integration objectives. Include milestones for each workstream (HR, IT, Finance, Product, Sales, Operations), risk mitigation steps, communication touch\u2011points, and a tracking mechanism for the $45M cost\u2011synergy and $30M revenue\u2011synergy targets. The plan should respect the constraints (budget $12M, legal close 15\u202fDec\u202f2025, regulatory approvals, overlapping contracts) and be presented in a format suitable for the Integration PMO to monitor progress daily.\n\nGenerate a MEDIUM QUALITY workback plan with these characteristics:\n- Most major tasks present but some gaps\n- Reasonable task descriptions\n- Some dependencies defined\n- Most tasks have owners\n- Milestones present but may lack detail\n- Generally realistic timelines\n- Some consideration of risks\n- Key deliverables identified\n\nIMPORTANT: Generate a plan that naturally exhibits MEDIUM quality characteristics.\nDo not explicitly label the plan as \"medium quality\" - let the quality emerge from the content.",
+  "generated_at": "2025-11-17T11:15:24.487086",
+  "analysis": "# Outcomes\n\n## 1. Day\u20111 Readiness \u2013 \u201cGo\u2011Live\u201d Milestones  \nAll critical work\u2011stream deliverables that must be in place at legal close (15\u202fDec\u202f2025) are completed, validated, and signed\u2011off.  \nArtifact references: *(none provided)*  \n\n### Reasoning  \nThe user explicitly asked for a work\u2011back plan that \u201cachieves the Day\u20111 priorities.\u201d Those priorities are the foundation for the longer\u2011term 100\u2011day integration, so they constitute a distinct outcome.\n\n### Approach  \n1. **Identify the Day\u20111 checklist** from the integration charter (HR onboarding, IT system cut\u2011over, Finance reporting, Product access, Sales account transition, Operations hand\u2011over).  \n2. **Assign owners** (HR Lead, IT Lead, Finance Lead, Product Lead, Sales Lead, Ops Lead).  \n3. **Map each checklist item to a finish\u2011by date** of 15\u202fDec\u202f2025 and work backwards to set start dates, required approvals, and validation steps.  \n4. **Create a daily status log** that the Integration PMO updates each work\u2011stream lead submits at the end of the day.  \n5. **Validate** on 08\u202fDec\u202f2025 (one week before close) with a \u201cDay\u20111 Readiness Review\u201d meeting; any gaps trigger a remediation sprint.  \n\n---\n\n## 2. 100\u2011Day Integration Execution \u2013 Core Objectives  \nDeliver the 100\u2011day integration targets (cost\u2011synergy $45\u202fM, revenue\u2011synergy $30\u202fM, cultural integration, and operating model harmonisation).  \nArtifact references: *(none provided)*  \n\n### Reasoning  \nThe user requests a plan that \u201coutlines all tasks\u2026 required to achieve the \u2026 100\u2011day integration objectives.\u201d This is the second major outcome that follows Day\u20111 readiness.\n\n### Approach  \n1. **Break the 100\u2011day horizon into three 30\u2011day phases** (Phase\u202f1\u202f=\u202fDays\u202f1\u201130, Phase\u202f2\u202f=\u202fDays\u202f31\u201160, Phase\u202f3\u202f=\u202fDays\u202f61\u201190, with a final 10\u2011day close\u2011out).  \n2. **Allocate work\u2011stream owners** to each phase\u2019s key deliverables (e.g., HR \u2013 talent\u2011retention plan in Phase\u202f1, IT \u2013 system rationalisation in Phase\u202f2, Finance \u2013 cost\u2011synergy tracking in Phase\u202f3).  \n3. **Define phase\u2011gate reviews** on 31\u202fDec\u202f2025, 31\u202fJan\u202f2026, 28\u202fFeb\u202f2026, and a final 100\u2011day close\u2011out on 25\u202fMar\u202f2026.  \n4. **Track synergy capture** through a shared KPI dashboard (see Outcome\u202f3).  \n5. **Adjust resources** after each gate based on variance analysis.  \n\n---\n\n## 3. Synergy Tracking & Realisation Dashboard  \nA live, daily\u2011updated dashboard that measures progress against the $45\u202fM cost\u2011synergy and $30\u202fM revenue\u2011synergy targets.  \nArtifact references: *(none provided)*  \n\n### Reasoning  \nThe user explicitly asked for \u201ca tracking mechanism for the $45M cost\u2011synergy and $30M revenue\u2011synergy targets.\u201d A dedicated outcome ensures the mechanism is built, owned, and maintained.\n\n### Approach  \n1. **Select a PMO\u2011approved reporting tool** (e.g., Power\u202fBI, Tableau).  \n2. **Define data feeds**: Finance ERP for cost\u2011savings, Sales CRM for incremental revenue, HR system for head\u2011count savings.  \n3. **Assign a Data\u2011Integration Owner** (Finance Lead) and a Dashboard Owner (PMO Analyst).  \n4. **Build baseline calculations** (pre\u2011close cost baseline, pre\u2011close revenue baseline).  \n5. **Publish daily snapshots** with variance, trend, and risk flags.  \n6. **Review** at the daily Integration PMO stand\u2011up and at each phase\u2011gate.  \n\n---\n\n## 4. Integrated Communication & Governance Cadence  \nEstablish regular communication touch\u2011points, reporting structures, and decision\u2011making protocols for the integration effort.  \nArtifact references: *(none provided)*  \n\n### Reasoning  \nEffective collaboration across HR, IT, Finance, Product, Sales, and Operations requires a defined governance model. The user asked for \u201ccommunication touch\u2011points\u201d and a plan suitable for daily monitoring.\n\n### Approach  \n1. **Daily Integration PMO Stand\u2011up** (15\u202fmin) \u2013 all work\u2011stream leads report status, blockers, and KPI updates.  \n2. **Weekly Work\u2011Stream Deep\u2011Dive** (1\u202fh) \u2013 each lead presents detailed progress, risk mitigation, and resource needs.  \n3. **Bi\u2011weekly Executive Steering Committee** (2\u202fh) \u2013 senior sponsors review overall integration health, approve budget reallocations, and resolve escalated issues.  \n4. **Ad\u2011hoc Issue\u2011Resolution Calls** \u2013 triggered when a risk exceeds pre\u2011defined thresholds.  \n5. **Document decisions** in a shared \u201cIntegration Decisions Log\u201d accessible to all stakeholders.  \n\n---\n\n## 5. Risk Identification & Mitigation Framework  \nProactively identify, assess, and mitigate risks related to budget ($12\u202fM), legal close, regulatory approvals, overlapping contracts, and resource constraints.  \nArtifact references: *(none provided)*  \n\n### Reasoning  \nThe user highlighted several constraints (budget, legal close, regulatory approvals, overlapping contracts). A dedicated outcome ensures systematic risk handling.\n\n### Approach  \n1. **Create a Risk Register** (owner: Integration PMO).  \n2. **Classify risks** (Strategic, Operational, Financial, Compliance).  \n3. **Assign owners** (e.g., Legal Lead for regulatory risk, Finance Lead for budget overruns).  \n4. **Define mitigation actions** with owners, due dates, and contingency budgets.  \n5. **Review risk status** daily in the PMO stand\u2011up; escalations go to the Executive Steering Committee.  \n6. **Update the register** after each phase\u2011gate.  \n\n---\n\n# Breakdown\n\n### Outcome\u202f1 \u2013 Day\u20111 Readiness  \n\n| # | Task | Owner | Start | End | Dependencies |\n|---|------|-------|-------|-----|--------------|\n| 1.1 | Finalise Day\u20111 checklist (HR, IT, Finance, Product, Sales, Ops) | Integration PMO | 01\u202fOct\u202f2025 | 07\u202fOct\u202f2025 | \u2013 |\n| 1.2 | HR: Complete employee communication & benefits alignment | HR Lead | 08\u202fOct\u202f2025 | 31\u202fOct\u202f2025 | 1.1 |\n| 1.3 | IT: Freeze legacy system changes & prepare cut\u2011over scripts | IT Lead | 08\u202fOct\u202f2025 | 15\u202fNov\u202f2025 | 1.1 |\n| 1.4 | Finance: Align chart of accounts & set up interim reporting | Finance Lead | 08\u202fOct\u202f2025 | 30\u202fNov\u202f2025 | 1.1 |\n| 1.5 | Product: Consolidate product roadmaps & lock\u2011in version releases | Product Lead | 08\u202fOct\u202f2025 | 15\u202fNov\u202f2025 | 1.1 |\n| 1.6 | Sales: Transfer key accounts & update CRM ownership | Sales Lead | 08\u202fOct\u202f2025 | 30\u202fNov\u202f2025 | 1.1 |\n| 1.7 | Ops: Align supply\u2011chain contracts & inventory reconciliation | Ops Lead | 08\u202fOct\u202f2025 | 15\u202fNov\u202f2025 | 1.1 |\n| 1.8 | Legal: Secure regulatory approvals & close overlapping contracts | Legal Lead | 01\u202fOct\u202f2025 | 10\u202fDec\u202f2025 | 1.1 |\n| 1.9 | Conduct Day\u20111 Readiness Review (sign\u2011off) | Integration PMO | 08\u202fDec\u202f2025 | 08\u202fDec\u202f2025 | 1.2\u20111.8 |\n| 1.10 | Execute cut\u2011over on close day (15\u202fDec\u202f2025) | IT Lead (with Ops) | 15\u202fDec\u202f2025 | 15\u202fDec\u202f2025 | 1.9 |\n\n### Outcome\u202f2 \u2013 100\u2011Day Integration Execution  \n\n| # | Task | Owner | Start | End | Dependencies |\n|---|------|-------|-------|-----|--------------|\n| 2.1 | Phase\u202f1 (Days\u202f1\u201130) \u2013 Cost\u2011Synergy Quick Wins (e.g., shared services) | Finance Lead | 16\u202fDec\u202f2025 | 14\u202fJan\u202f2026 | 1.10 |\n| 2.2 | Phase\u202f1 \u2013 Revenue\u2011Synergy Pilot (cross\u2011sell to top 20 accounts) | Sales Lead | 16\u202fDec\u202f2025 | 14\u202fJan\u202f2026 | 1.10 |\n| 2.3 | Phase\u202f2 (Days\u202f31\u201160) \u2013 IT Systems Rationalisation (de\u2011duplicate platforms) | IT Lead | 15\u202fJan\u202f2026 | 13\u202fFeb\u202f2026 | 2.1 |\n| 2.4 | Phase\u202f2 \u2013 HR Talent\u2011Retention Plan rollout (bonus, mobility) | HR Lead | 15\u202fJan\u202f2026 | 13\u202fFeb\u202f2026 | 2.1 |\n| 2.5 | Phase\u202f3 (Days\u202f61\u201190) \u2013 Full Finance Integration (consolidated reporting) | Finance Lead | 14\u202fFeb\u202f2026 | 15\u202fMar\u202f2026 | 2.3 |\n| 2.6 | Phase\u202f3 \u2013 Product Portfolio Alignment (sunset overlapping SKUs) | Product Lead | 14\u202fFeb\u202f2026 | 15\u202fMar\u202f2026 | 2.3 |\n| 2.7 | Phase\u202f3 \u2013 Ops Process Standardisation (shared logistics) | Ops Lead | 14\u202fFeb\u202f2026 | 15\u202fMar\u202f2026 | 2.3 |\n| 2.8 | 100\u2011Day Close\u2011out Review & Final Synergy Reconciliation | Integration PMO | 20\u202fMar\u202f2026 | 25\u202fMar\u202f2026 | 2.5\u20112.7 |\n\n### Outcome\u202f3 \u2013 Synergy Tracking Dashboard  \n\n| # | Task | Owner | Start | End | Dependencies |\n|---|------|-------|-------|-----|--------------|\n| 3.1 | Define KPI taxonomy (cost\u2011saving categories, revenue\u2011growth levers) | Finance Lead | 01\u202fOct\u202f2025 | 07\u202fOct\u202f2025 | \u2013 |\n| 3.2 | Build data extraction pipelines (ERP, CRM, HRIS) | IT Lead | 08\u202fOct\u202f2025 | 31\u202fOct\u202f2025 | 3.1 |\n| 3.3 | Design dashboard visualisation (PMO Analyst) | PMO Analyst | 01\u202fNov\u202f2025 | 15\u202fNov\u202f2025 | 3.2 |\n| 3.4 | Pilot dashboard with Phase\u202f1 data | PMO Analyst | 16\u202fNov\u202f2025 | 30\u202fNov\u202f2025 | 3.3 |\n| 3.5 | Go\u2011live dashboard (daily refresh) | PMO Analyst | 01\u202fDec\u202f2025 | 01\u202fDec\u202f2025 | 3.4 |\n| 3.6 | Ongoing maintenance & variance analysis (daily) | Finance Lead | 02\u202fDec\u202f2025 | 25\u202fMar\u202f2026 | 3.5 |\n\n### Outcome\u202f4 \u2013 Communication & Governance  \n\n| # | Task | Owner | Start | End | Dependencies |\n|---|------|-------|-------|-----|--------------|\n| 4.1 | Draft Integration Governance Charter (roles, meeting cadence) | Integration PMO | 01\u202fOct\u202f2025 | 07\u202fOct\u202f2025 | \u2013 |\n| 4.2 | Set up recurring meeting invites (daily stand\u2011up, weekly deep\u2011dive, bi\u2011weekly exec) | PMO Coordinator | 08\u202fOct\u202f2025 | 08\u202fOct\u202f2025 | 4.1 |\n| 4.3 | Create \u201cIntegration Decisions Log\u201d (SharePoint) | PMO Analyst | 08\u202fOct\u202f2025 | 14\u202fOct\u202f2025 | 4.1 |\n| 4.4 | Conduct first Executive Steering Committee (review Day\u20111 readiness) | CEO / CFO / Integration PMO | 15\u202fOct\u202f2025 | 15\u202fOct\u202f2025 | 1.9 |\n| 4.5 | Ongoing governance \u2013 run daily stand\u2011up, weekly deep\u2011dives, bi\u2011weekly exec | All Work\u2011Stream Leads | 16\u202fOct\u202f2025 | 25\u202fMar\u202f2026 | 4.2 |\n\n### Outcome\u202f5 \u2013 Risk Identification & Mitigation  \n\n| # | Task | Owner | Start | End | Dependencies |\n|---|------|-------|-------|-----|--------------|\n| 5.1 | Populate initial Risk Register (budget, legal close, regulatory, contract overlap) | Integration PMO | 01\u202fOct\u202f2025 | 07\u202fOct\u202f2025 | \u2013 |\n| 5.2 | Assign risk owners & mitigation actions | Relevant Leads (Legal, Finance, Ops, etc.) | 08\u202fOct\u202f2025 | 14\u202fOct\u202f2025 | 5.1 |\n| 5.3 | Embed risk review in daily stand\u2011up (status flag) | PMO Coordinator | 16\u202fOct\u202f2025 | Ongoing | 4.5 |\n| 5.4 | Conduct risk\u2011heat\u2011map workshop (mid\u2011Phase\u202f2) | Integration PMO | 01\u202fFeb\u202f2026 | 07\u202fFeb\u202f2026 | 2.3 |\n| 5.5 | Update risk register after each phase\u2011gate | Integration PMO | 31\u202fDec\u202f2025, 31\u202fJan\u202f2026, 28\u202fFeb\u202f2026, 25\u202fMar\u202f2026 | Ongoing | 2.1\u20112.8 |\n\n---\n\n### Cross\u2011Outcome Dependencies & Milestones  \n\n| Milestone | Date | Dependent Outcomes |\n|-----------|------|--------------------|\n| Day\u20111 Readiness Sign\u2011off | 08\u202fDec\u202f2025 | Outcome\u202f1 |\n| Legal Close (15\u202fDec\u202f2025) | 15\u202fDec\u202f2025 | Outcome\u202f1, Outcome\u202f4 |\n| Phase\u202f1 Gate Review | 31\u202fDec\u202f2025 | Outcome\u202f2 |\n| Phase\u202f2 Gate Review | 31\u202fJan\u202f2026 | Outcome\u202f2 |\n| Phase\u202f3 Gate Review | 28\u202fFeb\u202f2026 | Outcome\u202f2 |\n| 100\u2011Day Close\u2011out | 25\u202fMar\u202f2026 | Outcome\u202f2, Outcome\u202f3 |\n| Synergy Dashboard Go\u2011Live | 01\u202fDec\u202f2025 | Outcome\u202f3 |\n| First Executive Steering Committee | 15\u202fOct\u202f2025 | Outcome\u202f4 |\n| Risk\u2011Heat\u2011Map Workshop | 07\u202fFeb\u202f2026 | Outcome\u202f5 |\n\n---\n\n### Tracking Mechanism (Suggested Format)\n\n| Item | Tool | Owner | Frequency | Key Fields |\n|------|------|-------|-----------|------------|\n| Day\u20111 Checklist Status | Shared Tracker (Excel/Smartsheet) | Integration PMO | Daily | Task, Owner, % Complete, Blockers |\n| 100\u2011Day Phase Gates | Phase\u2011Gate Dashboard (Power\u202fBI) | PMO Analyst | Weekly | Phase, Planned End, Actual End, Variance |\n| Synergy KPI Dashboard | Power\u202fBI | Finance Lead (data) / PMO Analyst (visual) | Daily | Cost\u2011Synergy Realised, Revenue\u2011Synergy Realised, % of Target |\n| Risk Register | SharePoint List | Integration PMO | Daily (review) | Risk ID, Owner, Likelihood, Impact, Mitigation, Status |\n| Communication Log | Teams/SharePoint \u201cDecisions Log\u201d | PMO Analyst | Ongoing | Decision, Date, Owner, Rationale, Follow\u2011up |\n\n*All owners should update their respective artifacts by the end of each workday; the Integration PMO consolidates the inputs for the daily stand\u2011up and the weekly deep\u2011dive.*",
+  "plan": {
+    "id": "document-001",
+    "name": "Integration Workback Plan",
+    "details": "",
+    "draft": true,
+    "participants": [
+      {
+        "name": "Integration PMO",
+        "draft": true
+      },
+      {
+        "name": "HR Lead",
+        "draft": true
+      },
+      {
+        "name": "IT Lead",
+        "draft": true
+      },
+      {
+        "name": "Finance Lead",
+        "draft": true
+      },
+      {
+        "name": "Product Lead",
+        "draft": true
+      },
+      {
+        "name": "Sales Lead",
+        "draft": true
+      },
+      {
+        "name": "Ops Lead",
+        "draft": true
+      },
+      {
+        "name": "Legal Lead",
+        "draft": true
+      },
+      {
+        "name": "PMO Analyst",
+        "draft": true
+      },
+      {
+        "name": "PMO Coordinator",
+        "draft": true
+      },
+      {
+        "name": "CEO",
+        "draft": true
+      },
+      {
+        "name": "CFO",
+        "draft": true
+      }
+    ],
+    "references": [],
+    "deliverables": [],
+    "tasks": [
+      {
+        "id": "task-001",
+        "name": "Finalise Day\u20111 checklist (HR, IT, Finance, Product, Sales, Ops)",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-002",
+        "name": "HR: Complete employee communication & benefits alignment",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-001"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-003",
+        "name": "IT: Freeze legacy system changes & prepare cut\u2011over scripts",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-001"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-004",
+        "name": "Finance: Align chart of accounts & set up interim reporting",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-001"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-005",
+        "name": "Product: Consolidate product roadmaps & lock\u2011in version releases",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-001"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-006",
+        "name": "Sales: Transfer key accounts & update CRM ownership",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-001"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-007",
+        "name": "Ops: Align supply\u2011chain contracts & inventory reconciliation",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-001"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-008",
+        "name": "Legal: Secure regulatory approvals & close overlapping contracts",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-001"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-009",
+        "name": "Conduct Day\u20111 Readiness Review (sign\u2011off)",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-002",
+          "task-003",
+          "task-004",
+          "task-005",
+          "task-006",
+          "task-007",
+          "task-008"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-010",
+        "name": "Execute cut\u2011over on close day (15\u202fDec\u202f2025)",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-009"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-011",
+        "name": "Phase\u202f1 (Days\u202f1\u201130) \u2013 Cost\u2011Synergy Quick Wins",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-010"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-012",
+        "name": "Phase\u202f1 \u2013 Revenue\u2011Synergy Pilot (cross\u2011sell to top 20 accounts)",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-010"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-013",
+        "name": "Phase\u202f2 (Days\u202f31\u201160) \u2013 IT Systems Rationalisation (de\u2011duplicate platforms)",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-011"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-014",
+        "name": "Phase\u202f2 \u2013 HR Talent\u2011Retention Plan rollout (bonus, mobility)",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-011"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-015",
+        "name": "Phase\u202f3 (Days\u202f61\u201190) \u2013 Full Finance Integration (consolidated reporting)",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-013"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-016",
+        "name": "Phase\u202f3 \u2013 Product Portfolio Alignment (sunset overlapping SKUs)",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-013"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-017",
+        "name": "Phase\u202f3 \u2013 Ops Process Standardisation (shared logistics)",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-013"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-018",
+        "name": "100\u2011Day Close\u2011out Review & Final Synergy Reconciliation",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-015",
+          "task-016",
+          "task-017"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-019",
+        "name": "Define KPI taxonomy (cost\u2011saving categories, revenue\u2011growth levers)",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-020",
+        "name": "Build data extraction pipelines (ERP, CRM, HRIS)",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-019"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-021",
+        "name": "Design dashboard visualisation (PMO Analyst)",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-020"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-022",
+        "name": "Pilot dashboard with Phase\u202f1 data",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-021"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-023",
+        "name": "Go\u2011live dashboard (daily refresh)",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-022"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-024",
+        "name": "Ongoing maintenance & variance analysis (daily)",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-023"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-025",
+        "name": "Draft Integration Governance Charter",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-026",
+        "name": "Set up recurring meeting invites",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-025"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-027",
+        "name": "Create \u201cIntegration Decisions Log\u201d",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-025"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-028",
+        "name": "Conduct first Executive Steering Committee",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-009"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-029",
+        "name": "Ongoing governance \u2013 run daily stand\u2011up, weekly deep\u2011dives, bi\u2011weekly exec",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-026"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-030",
+        "name": "Populate initial Risk Register (budget, legal close, regulatory, contract overlap)",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-031",
+        "name": "Assign risk owners & mitigation actions",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-030"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-032",
+        "name": "Embed risk review in daily stand\u2011up (status flag)",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-029"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-033",
+        "name": "Conduct risk\u2011heat\u2011map workshop (mid\u2011Phase\u202f2)",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-013"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-034",
+        "name": "Update risk register after each phase\u2011gate",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-011",
+          "task-012",
+          "task-013",
+          "task-014",
+          "task-015",
+          "task-016",
+          "task-017",
+          "task-018"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      }
+    ],
+    "history": []
+  }
+}

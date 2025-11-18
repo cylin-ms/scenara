@@ -1,0 +1,890 @@
+{
+  "scenario_name": "Nimbus AI Edge 3.0 \u2013 Global Enterprise Launch (90\u2011Day Workback)",
+  "scenario_number": 2,
+  "meeting_type": "Major Product Launch",
+  "quality_level": "low",
+  "workback_prompt": "Create a detailed 90\u2011day workback plan for the Nimbus AI Edge 3.0 major product launch at Nimbus Cloud Solutions. Include all phases (beta program, release candidate validation, legal/compliance sign\u2011off, pricing, partner enablement, marketing, launch event execution, post\u2011launch monitoring). Identify weekly milestones, owners (using the stakeholder list), required deliverables, risk mitigation steps, and dependencies. Align the plan with the constraints (budget $5M, compliance deadlines, hardware supplier lead times) and success criteria (100k subscriptions, NPS \u2265\u202f70, media coverage, etc.). Provide a Gantt\u2011style timeline and a concise executive summary of critical path items.\n\nGenerate a LOW QUALITY workback plan with these characteristics:\n- Missing key tasks or phases\n- Vague task descriptions\n- Few or no dependencies defined\n- Missing stakeholder assignments\n- No milestones or poorly defined milestones\n- Unrealistic timelines\n- No risk consideration\n- Minimal deliverables identified\n\nIMPORTANT: Generate a plan that naturally exhibits LOW quality characteristics.\nDo not explicitly label the plan as \"low quality\" - let the quality emerge from the content.",
+  "generated_at": "2025-11-17T07:09:52.307064",
+  "analysis": "# Outcomes\n\n## 1. Draft a 90\u2011day work\u2011back schedule for the Nimbus AI\u202fEdge\u202f3.0 launch  \nCreate a high\u2011level outline that lists each major phase (beta program, release\u2011candidate validation, legal/compliance sign\u2011off, pricing, partner enablement, marketing, launch\u2011event execution, post\u2011launch monitoring) with approximate week numbers, rough owners, and the key deliverables that will be needed to move the launch forward.  \n\n### Reasoning  \nThe user\u2019s primary goal is a complete 90\u2011day work\u2011back plan. The first logical step is to produce a skeletal schedule that captures all required phases and aligns them with the 13\u2011week window. This outcome directly addresses the request for \u201cweekly milestones, owners, required deliverables, risk mitigation steps, and dependencies,\u201d while giving the user a scaffold they can flesh out.\n\n### Approach  \n1. **Collect stakeholder list** \u2013 gather the names, roles, and contact information of all parties mentioned in the launch charter (product management, engineering, legal, finance, partner\u2011enablement, marketing, events, support).  \n2. **Map phases to weeks** \u2013 assign each major phase to a block of weeks (e.g., Beta\u202fProgram\u202fWeeks\u202f1\u20113, RC\u202fValidation\u202fWeeks\u202f4\u20115, etc.).  \n3. **Identify a primary owner for each phase** \u2013 use the stakeholder list to attach a responsible lead (e.g., Product Manager for Beta, QA Lead for RC, Legal Counsel for compliance).  \n4. **List high\u2011level deliverables** \u2013 for each phase note the most visible output (Beta\u2011program sign\u2011up sheet, RC test report, compliance sign\u2011off memo, pricing matrix, partner enablement deck, marketing launch plan, event run\u2011book, post\u2011launch KPI dashboard).  \n5. **Add rough weekly milestones** \u2013 note one or two checkpoints per week (e.g., \u201cWeek\u202f2\u202f\u2013\u202fBeta participant onboarding complete\u201d).  \n6. **Document obvious dependencies** \u2013 e.g., \u201cRC validation cannot start until Beta feedback is incorporated.\u201d  \n7. **Summarize in a simple table** \u2013 keep the format concise so the user can later enrich it with detail.\n\n---\n\n## 2. Define risk\u2011mitigation considerations for each phase  \nCreate a short list of the most likely risks (budget overruns, supplier lead\u2011time slips, compliance deadline misses, partner\u2011enablement lag) and a corresponding mitigation action (contingency budget, early supplier order, parallel compliance review, enablement sprint).  \n\n### Reasoning  \nThe user explicitly asked for \u201crisk mitigation steps.\u201d Providing a high\u2011level risk register early ensures that the later detailed plan will include realistic buffers and contingency owners.\n\n### Approach  \n1. **Brainstorm top\u2011level risks** \u2013 review the constraints (budget $5\u202fM, hardware supplier lead times, compliance deadlines).  \n2. **Assign a risk owner** \u2013 map each risk to a stakeholder (e.g., Procurement for supplier lead\u2011time).  \n3. **Specify a mitigation** \u2013 keep it actionable (e.g., \u201cPlace provisional order 2\u202fweeks ahead of schedule\u201d).  \n4. **Capture in a 2\u2011column risk\u2011mitigation table** for quick reference.\n\n---\n\n## 3. Produce a concise executive summary highlighting the critical path  \nSummarize the phases that drive the overall timeline, note any \u201cmust\u2011finish\u2011by\u201d dates (e.g., compliance sign\u2011off by week\u202f7, hardware delivery by week\u202f5), and list the success criteria (100\u202fk subscriptions, NPS\u202f\u2265\u202f70, media coverage).  \n\n### Reasoning  \nExecutives need a quick view of what drives the schedule and the key success metrics. This outcome satisfies the request for a \u201cconcise executive summary of critical path items.\u201d\n\n### Approach  \n1. **Identify dependencies that create the longest chain** \u2013 typically Beta \u2192 RC \u2192 Compliance \u2192 Pricing \u2192 Marketing \u2192 Launch.  \n2. **Extract \u201chard\u201d dates** from the draft schedule (e.g., supplier lead\u2011time completion, compliance deadline).  \n3. **Write a 150\u2011word paragraph** that lists: (a) critical\u2011path phases, (b) key dates, (c) success criteria, and (d) budget envelope.\n\n---\n\n## 4. Outline a simple Gantt\u2011style visual template (placeholder)  \nProvide a description of a basic Gantt layout (weeks on the X\u2011axis, phases as horizontal bars) that the user can reproduce in PowerPoint, Excel, or a project\u2011management tool.  \n\n### Reasoning  \nThe user asked for a \u201cGantt\u2011style timeline.\u201d Supplying a template description lets the user create the visual without us delivering a full\u2011fledged chart, which aligns with the higher\u2011level instruction to give guidance rather than a finished artifact.\n\n### Approach  \n1. **Specify axes** \u2013 X\u2011axis = weeks\u202f1\u201113; Y\u2011axis = list of phases.  \n2. **Indicate bar colors** \u2013 e.g., blue for development, orange for compliance, green for marketing.  \n3. **Note where to place milestones** \u2013 small diamonds on the bar at week numbers.  \n4. **Suggest a tool** \u2013 \u201cCreate a stacked bar chart in Excel and hide the gridlines for a clean look.\u201d\n\n---\n\n## 5. Establish a collaborative cadence for plan refinement  \nDefine a recurring meeting rhythm (e.g., weekly 30\u2011minute sync, bi\u2011weekly stakeholder review) and a shared repository (e.g., a cloud\u2011based document folder) where owners can update status, attach deliverables, and flag risks.  \n\n### Reasoning  \nA work\u2011back plan only succeeds with ongoing collaboration. The user\u2019s request for \u201chow people can collaborate\u201d is addressed by setting a clear cadence and shared workspace.\n\n### Approach  \n1. **Choose meeting frequency** \u2013 weekly short stand\u2011ups for tactical updates; bi\u2011weekly longer reviews for milestone sign\u2011off.  \n2. **Assign facilitator** \u2013 Product Manager or Program Lead.  \n3. **Define agenda items** \u2013 status of current week, upcoming dependencies, risk flagging, deliverable readiness.  \n4. **Select a repository** \u2013 a shared folder with sub\u2011folders per phase (Beta, RC, Legal, etc.).  \n5. **Document the cadence in a simple table** (meeting name, frequency, owner, purpose).\n\n---\n\n# Breakdown\n\n### 1. Draft 90\u2011day schedule\n1.1 Gather stakeholder list  \n\u20031.1.1 Request org chart from HR  \n\u20031.1.2 Verify contact details with department leads  \n1.2 Map phases to weeks  \n\u20031.2.1 Allocate Beta\u202fProgram\u202fWeeks\u202f1\u20113  \n\u20031.2.2 Allocate RC\u202fValidation\u202fWeeks\u202f4\u20115  \n\u20031.2.3 Allocate Legal/Compliance\u202fWeeks\u202f6\u20117  \n\u20031.2.4 Allocate Pricing\u202fWeeks\u202f6\u20118 (overlap)  \n\u20031.2.5 Allocate Partner Enablement\u202fWeeks\u202f7\u20119  \n\u20031.2.6 Allocate Marketing\u202fWeeks\u202f8\u201111  \n\u20031.2.7 Allocate Launch Event\u202fWeek\u202f12  \n\u20031.2.8 Allocate Post\u2011Launch Monitoring\u202fWeeks\u202f13\u201114 (extend slightly)  \n1.3 Identify primary owners per phase (Product, QA, Legal, Finance, Partner Ops, Marketing, Events, Support)  \n1.4 List high\u2011level deliverables per phase  \n1.5 Add weekly milestones (e.g., \u201cWeek\u202f2\u202f\u2013\u202fBeta sign\u2011ups finalized\u201d)  \n1.6 Note obvious dependencies (e.g., \u201cRC starts after Beta feedback\u201d)  \n1.7 Compile into a simple table (Phase | Weeks | Owner | Deliverable | Milestone | Dependency)\n\n### 2. Define risk\u2011mitigation considerations\n2.1 List top risks (budget, supplier lead\u2011time, compliance deadline, partner enablement lag, marketing creative approval)  \n2.2 Assign risk owners (Finance, Procurement, Legal, Partner Ops, Marketing)  \n2.3 Draft mitigation actions (contingency fund, early order, parallel review, sprint enablement, early creative lock\u2011in)  \n2.4 Record in a 2\u2011column table (Risk | Mitigation)\n\n### 3. Executive summary of critical path\n3.1 Identify longest dependency chain (Beta \u2192 RC \u2192 Legal \u2192 Pricing \u2192 Marketing \u2192 Launch)  \n3.2 Extract \u201cmust\u2011finish\u2011by\u201d dates (e.g., Legal sign\u2011off by end of Week\u202f7)  \n3.3 Write concise paragraph (\u2248150\u202fwords) covering: critical phases, dates, success criteria, budget constraint  \n\n### 4. Gantt\u2011style visual template description\n4.1 Define X\u2011axis (Weeks\u202f1\u201113) and Y\u2011axis (Phases)  \n4.2 Suggest bar colors per functional area  \n4.3 Indicate placement of milestone markers  \n4.4 Recommend tool (Excel stacked bar, PowerPoint shape) and basic steps to create  \n\n### 5. Collaborative cadence\n5.1 Set weekly 30\u2011minute stand\u2011up (Owner: Program Lead)  \n5.2 Set bi\u2011weekly 60\u2011minute stakeholder review (Owner: Product Manager)  \n5.3 Define agenda items (status, dependencies, risks, deliverables)  \n5.4 Choose shared repository (e.g., Nimbus Cloud Share \u2192 \u201cAI\u202fEdge\u202f3.0 Launch\u201d) with sub\u2011folders per phase  \n5.5 Document cadence table (Meeting | Frequency | Owner | Purpose)  \n\n---  \n\nBy following this structured analysis and the outlined work\u2011breakdown, the team can quickly flesh out a full 90\u2011day work\u2011back plan, populate missing details, and keep collaboration tight throughout the launch lifecycle.",
+  "plan": {
+    "id": "document-001",
+    "name": "Nimbus AI Edge 3.0 90\u2011day Work\u2011back Plan",
+    "details": "",
+    "draft": true,
+    "participants": [
+      {
+        "name": "Program Lead",
+        "email": "",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Product Manager",
+        "email": "",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "QA Lead",
+        "email": "",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Legal Counsel",
+        "email": "",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Finance Lead",
+        "email": "",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Partner Operations Lead",
+        "email": "",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Marketing Lead",
+        "email": "",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Events Lead",
+        "email": "",
+        "details": "",
+        "draft": true
+      },
+      {
+        "name": "Support Lead",
+        "email": "",
+        "details": "",
+        "draft": true
+      }
+    ],
+    "references": [],
+    "deliverables": [],
+    "tasks": [
+      {
+        "id": "task-001",
+        "name": "Draft 90\u2011day schedule",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-002",
+          "task-003",
+          "task-004",
+          "task-005",
+          "task-006",
+          "task-007",
+          "task-008",
+          "task-009",
+          "task-010",
+          "task-011",
+          "task-012",
+          "task-013",
+          "task-014",
+          "task-015",
+          "task-016",
+          "task-017",
+          "task-018"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002",
+        "name": "Gather stakeholder list",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003",
+        "name": "Request org chart from HR",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-002"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-004",
+        "name": "Verify contact details with department leads",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-003"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-005",
+        "name": "Map phases to weeks",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-002"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-006",
+        "name": "Allocate Beta Program Weeks 1\u20113",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-007",
+        "name": "Allocate RC Validation Weeks 4\u20115",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-006"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-008",
+        "name": "Allocate Legal/Compliance Weeks 6\u20117",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-007"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-009",
+        "name": "Allocate Pricing Weeks 6\u20118 (overlap)",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-008"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-010",
+        "name": "Allocate Partner Enablement Weeks 7\u20119",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-009"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-011",
+        "name": "Allocate Marketing Weeks 8\u201111",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-010"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-012",
+        "name": "Allocate Launch Event Week 12",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-011"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-013",
+        "name": "Allocate Post\u2011Launch Monitoring Weeks 13\u201114 (extend slightly)",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-012"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-014",
+        "name": "Identify primary owners per phase",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-005"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-015",
+        "name": "List high\u2011level deliverables per phase",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-014"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-016",
+        "name": "Add weekly milestones",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-015"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-017",
+        "name": "Note obvious dependencies",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-016"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-018",
+        "name": "Compile into a simple table",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-017"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-019",
+        "name": "Define risk\u2011mitigation considerations",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-020",
+          "task-021",
+          "task-022",
+          "task-023"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-020",
+        "name": "List top risks",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-021",
+        "name": "Assign risk owners",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-020"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-022",
+        "name": "Draft mitigation actions",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-021"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-023",
+        "name": "Record in a table",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-022"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-024",
+        "name": "Executive summary of critical path",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-025",
+          "task-026",
+          "task-027"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-025",
+        "name": "Identify longest dependency chain",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-026",
+        "name": "Extract \u201cmust\u2011finish\u2011by\u201d dates",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-025"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-027",
+        "name": "Write concise paragraph",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-026"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-028",
+        "name": "Gantt\u2011style visual template description",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-029",
+          "task-030",
+          "task-031",
+          "task-032"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-029",
+        "name": "Define X\u2011axis and Y\u2011axis",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-030",
+        "name": "Suggest bar colors",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-029"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-031",
+        "name": "Indicate placement of milestone markers",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-030"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-032",
+        "name": "Recommend tool and steps",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-031"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-033",
+        "name": "Collaborative cadence",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-034",
+          "task-035",
+          "task-036",
+          "task-037",
+          "task-038"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-034",
+        "name": "Set weekly 30\u2011minute stand\u2011up",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-035",
+        "name": "Set bi\u2011weekly 60\u2011minute stakeholder review",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-034"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-036",
+        "name": "Define agenda items",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-035"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-037",
+        "name": "Choose shared repository",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-036"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-038",
+        "name": "Document cadence table",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-037"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-024",
+        "name": "Executive summary of critical path",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-025",
+          "task-026",
+          "task-027"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-025",
+        "name": "Identify longest dependency chain",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-026",
+        "name": "Extract \u201cmust\u2011finish\u2011by\u201d dates",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-025"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-027",
+        "name": "Write concise paragraph",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-026"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-028",
+        "name": "Gantt\u2011style visual template description",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-029",
+          "task-030",
+          "task-031",
+          "task-032"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-029",
+        "name": "Define X\u2011axis and Y\u2011axis",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-030",
+        "name": "Suggest bar colors",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-029"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-031",
+        "name": "Indicate placement of milestone markers",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-030"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-032",
+        "name": "Recommend tool and steps",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-031"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-033",
+        "name": "Collaborative cadence",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-034",
+          "task-035",
+          "task-036",
+          "task-037",
+          "task-038"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-034",
+        "name": "Set weekly 30\u2011minute stand\u2011up",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-035",
+        "name": "Set bi\u2011weekly 60\u2011minute stakeholder review",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-034"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-036",
+        "name": "Define agenda items",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-035"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-037",
+        "name": "Choose shared repository",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-036"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-038",
+        "name": "Document cadence table",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-037"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      }
+    ],
+    "history": []
+  }
+}

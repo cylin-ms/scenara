@@ -1,0 +1,52 @@
+{
+  "scenario_name": "Azure Cognitive Search Relevance Boost Squad Mission (8\u2011week cycle)",
+  "company_context": "Microsoft \u2013 Azure Cloud division \u2013 Azure Cognitive Search product team. The squad operates under the MMM (Mission\u2011Milestones\u2011Metrics) framework and reports to the Azure AI & Search Platform group. The squad\u2019s charter is to embed next\u2011gen AI ranking into the Azure Search service to increase enterprise adoption and drive Azure revenue growth.",
+  "meeting_event_details": "Squad Mission Planning Meeting \u2013 2025\u201109\u201102, 10:00\u202fAM\u202fPST (UTC\u201108:00), 90\u202fminutes, Microsoft Teams (meeting link: https://teams.microsoft.com/l/meetup\u2011join/...). Attendees: all squad members and the Azure Search Platform PMO. The meeting will be recorded and minutes posted to the squad\u2019s SharePoint site.",
+  "stakeholders": [
+    "Priya Patel \u2013 Senior Product Manager (DRI \u2013 Directly Responsible Individual)",
+    "Alex Chen \u2013 Engineering Lead (Principal Software Engineer, Search Core)",
+    "Maya Singh \u2013 Data Science Lead (Senior Data Scientist, Ranking Models)",
+    "Luis Gomez \u2013 UX Lead (Principal Designer, Search UI/UX)",
+    "Ravi Kumar \u2013 QA Lead (Senior Test Engineer)",
+    "Jenna Lee \u2013 Program Manager, Azure AI Platform (dependency manager)",
+    "Tom O'Connor \u2013 Finance Business Partner (budget oversight)",
+    "Sofia Alvarez \u2013 Compliance Officer (GDPR & data\u2011privacy)",
+    "Mike Reynolds \u2013 VP, Azure AI & Search (executive sponsor)"
+  ],
+  "deliverables": [
+    "1. Data ingestion pipeline for click\u2011through and relevance feedback (Azure Data Factory + Synapse).",
+    "2. Baseline relevance benchmark suite (NDCG@10, MAP) on the public MS MARCO dataset and internal enterprise logs.",
+    "3. Prototype AI\u2011reranking model (Transformer\u2011based) trained in Azure ML v2, with reproducible notebooks.",
+    "4. API extension \u2013 `/search/v2/rerank` endpoint with Swagger spec and integration tests.",
+    "5. UI mock\u2011ups and interactive prototype for the Azure Portal search results page (Figma files).",
+    "6. Automated test suite (unit, integration, performance) achieving \u226595\u202f% code coverage.",
+    "7. Beta rollout package (Helm chart, deployment scripts) for Azure Marketplace customers.",
+    "8. Final release documentation, migration guide, and internal training deck.",
+    "9. Post\u2011release performance report (metrics vs. baseline, latency, cost analysis)."
+  ],
+  "success_criteria": [
+    "\u2022 \u226515\u202f% lift in NDCG@10 on the enterprise query set versus the current BM25 baseline.",
+    "\u2022 \u226410\u202f% increase in 99th\u2011percentile query latency (target \u2264200\u202fms additional latency).",
+    "\u2022 \u226580\u202f% of beta customers report \u201cImproved relevance\u201d in the post\u2011beta survey (minimum 30 responses).",
+    "\u2022 \u226595\u202f% automated test coverage across new code paths.",
+    "\u2022 Release on schedule (Week\u202f8) within the allocated $250\u202fk budget.",
+    "\u2022 No GDPR compliance violations; all data used is anonymized per policy.",
+    "\u2022 Demonstrated cost\u2011per\u2011query increase \u22645\u202f% relative to baseline."
+  ],
+  "constraints": [
+    "Time: Fixed 8\u2011week window (T\u201142 to T\u201156).",
+    "Budget: $250,000 total (cloud compute, contractor hours, licensing).",
+    "Compute: Limited to 200\u202fGPU\u2011hours per week on Azure ML due to shared quota.",
+    "Dependencies: Must integrate with Azure ML v2 pipeline (release scheduled for T\u201148) and the upcoming Azure Search SDK v3 (target GA at T\u201150).",
+    "Compliance: All training data must be GDPR\u2011scrubbed; privacy review required before model export.",
+    "Resource availability: Two senior engineers (Alex & Priya) will be on the Azure AI Platform migration project during Weeks\u202f5\u20116, reducing capacity.",
+    "External stakeholder sign\u2011off: Beta customers must approve the test plan by Week\u202f3."
+  ],
+  "workback_prompt": "Generate a detailed work\u2011back plan for the 'Azure Cognitive Search Relevance Boost Squad Mission' (8\u2011week cycle) using the MMM framework. Include weekly tasks, owners, dependencies, risk mitigations, and required artifacts for each milestone (Weeks\u202f2,\u202f4,\u202f6,\u202f8). Align the plan with the success criteria, constraints, and the company\u2019s AI\u2011first Azure strategy. Output the plan in a tabular format (Week, Milestone, Deliverable, Owner, Dependencies, Risks, Mitigation).",
+  "meeting_type": "Squad Mission Planning",
+  "meeting_type_key": "5_squad_mission",
+  "scenario_number": 1,
+  "horizon": "T-42 to T-56",
+  "complexity": "Medium-High",
+  "generated_at": "2025-11-17T05:38:16.762390"
+}

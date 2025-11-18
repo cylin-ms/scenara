@@ -1,0 +1,783 @@
+{
+  "scenario_name": "NimbusAI Enterprise 5.0 \u2013 Global AI\u2011Driven Business Intelligence Launch",
+  "scenario_number": 3,
+  "meeting_type": "Major Product Launch",
+  "quality_level": "medium",
+  "workback_prompt": "Create a detailed 90\u2011day workback plan for the NimbusAI Enterprise 5.0 global launch at NimbusTech Solutions. Include all major milestones (beta releases, RC sign\u2011off, legal/compliance approvals, partner enablement, marketing campaign rollout, launch event production, post\u2011launch monitoring), assign owners from the stakeholder list, define weekly deliverables, flag critical path items, and incorporate the budget, resource, and compliance constraints listed. Provide a Gantt\u2011style timeline, a risk\u2011mitigation matrix, and a communication cadence for internal and external audiences.\n\nGenerate a MEDIUM QUALITY workback plan with these characteristics:\n- Most major tasks present but some gaps\n- Reasonable task descriptions\n- Some dependencies defined\n- Most tasks have owners\n- Milestones present but may lack detail\n- Generally realistic timelines\n- Some consideration of risks\n- Key deliverables identified\n\nIMPORTANT: Generate a plan that naturally exhibits MEDIUM quality characteristics.\nDo not explicitly label the plan as \"medium quality\" - let the quality emerge from the content.",
+  "generated_at": "2025-11-17T07:22:57.658295",
+  "analysis": "# Outcomes\n\n## 1. Draft 90\u2011Day Workback Plan for NimbusAI Enterprise\u202f5.0 Global Launch  \nA structured document that lists all major milestones (beta releases, RC sign\u2011off, legal/compliance approvals, partner enablement, marketing rollout, launch\u2011event production, post\u2011launch monitoring), assigns owners from the stakeholder list, defines weekly deliverables, flags critical\u2011path items, and incorporates the stated budget, resource, and compliance constraints.  \nArtifact references: *none provided*\n\n### Reasoning  \nThe user\u2019s primary request is a comprehensive workback plan. Delivering a single, cohesive draft that captures every required element (milestones, owners, weekly tasks, constraints, critical path) is the logical first outcome. All subsequent artifacts (timeline, risk matrix, communication cadence) will draw directly from the information captured in this draft.\n\n### Approach  \n1. **Collect Core Inputs** \u2013 Gather the stakeholder list, budget caps, resource availability (headcount, tooling), and compliance requirements (e.g., GDPR, export controls).  \n2. **Define Milestones** \u2013 List the seven high\u2011level milestones the user mentioned. For each, write a short description and note any regulatory or budget thresholds that affect it.  \n3. **Map Weekly Deliverables** \u2013 Working backwards from the launch date, create a 13\u2011week grid. For each week, assign tasks that feed into the next milestone.  \n4. **Assign Owners** \u2013 Match each task to a stakeholder (product manager, legal lead, partner manager, etc.). Where owners are ambiguous, note \u201cTBD \u2013 confirm with sponsor.\u201d  \n5. **Identify Critical Path** \u2013 Highlight tasks whose delay would push the launch date (e.g., final compliance sign\u2011off, RC build freeze). Use a simple \u201cCritical\u201d flag.  \n6. **Integrate Constraints** \u2013 Annotate tasks that are limited by budget caps or resource constraints, and add \u201cConstraint\u2011Note\u201d fields.  \n7. **Review & Refine** \u2013 Circulate the draft to the core team for validation, capture feedback, and update the document accordingly.  \n\n---\n\n## 2. Develop Gantt\u2011Style Timeline (90\u2011Day View)  \nA visual schedule that aligns weekly deliverables with milestones, shows dependencies, and distinguishes critical\u2011path bars.  \n\n### Reasoning  \nA Gantt chart translates the textual workback plan into a visual format that is easier for executives and cross\u2011functional teams to digest. The user explicitly asked for a \u201cGantt\u2011style timeline,\u201d so delivering this as a separate artifact satisfies that requirement.\n\n### Approach  \n1. **Select a Simple Tool** \u2013 Use a spreadsheet or a lightweight project\u2011management tool that can export a Gantt view (e.g., Excel, Google Sheets, or a free Gantt plugin).  \n2. **Import Tasks** \u2013 Pull the weekly tasks from Outcome\u202f1, preserving their start/end weeks and owner information.  \n3. **Define Dependencies** \u2013 For each task, add predecessor IDs based on the dependency notes captured in the workback plan.  \n4. **Mark Critical Path** \u2013 Apply a distinct color or style to tasks flagged as critical in Outcome\u202f1.  \n5. **Overlay Milestones** \u2013 Add milestone markers on the appropriate dates (e.g., \u201cBeta\u202f1 Release \u2013 Week\u202f4\u201d).  \n6. **Validate Timeline** \u2013 Cross\u2011check that total duration equals 90\u202fdays and that no task extends beyond the launch week.  \n7. **Export & Share** \u2013 Produce a PDF or shared link for inclusion in the final launch package.  \n\n---\n\n## 3. Create Risk\u2011Mitigation Matrix  \nA tabular matrix that lists identified risks (technical, legal, partner\u2011enablement, marketing, operational), assesses probability and impact, assigns owners, and defines mitigation actions and contingency triggers.  \n\n### Reasoning  \nThe user requested a \u201crisk\u2011mitigation matrix.\u201d Risks are an essential part of any launch plan, especially given the compliance and budget constraints mentioned. Providing a matrix that ties directly to the tasks and owners from the workback plan ensures alignment.\n\n### Approach  \n1. **Brainstorm Risks** \u2013 Conduct a short risk\u2011identification session with representatives from product, legal, finance, and partner teams. Use the milestone list as a guide (e.g., \u201cDelay in legal sign\u2011off\u201d).  \n2. **Score Risks** \u2013 Apply a simple 1\u20113 rating for probability (Low\u202f=\u202f1, Medium\u202f=\u202f2, High\u202f=\u202f3) and impact (same scale).  \n3. **Prioritize** \u2013 Calculate a risk exposure score (Probability\u202f\u00d7\u202fImpact) and sort descending.  \n4. **Assign Owners** \u2013 Link each risk to the stakeholder responsible for its mitigation (often the same owner as the related task).  \n5. **Define Mitigations** \u2013 For each risk, write a concrete mitigation step (e.g., \u201cearly compliance review\u201d) and a contingency trigger (e.g., \u201cif sign\u2011off not received by Week\u202f6\u201d).  \n6. **Document in Table** \u2013 Use columns: Risk ID, Description, Probability, Impact, Exposure, Owner, Mitigation, Contingency Trigger, Status.  \n7. **Integrate with Communication Cadence** \u2013 Note when mitigation updates will be communicated (see Outcome\u202f4).  \n\n---\n\n## 4. Establish Communication Cadence (Internal & External)  \nA schedule that specifies what information is shared, to whom, via which channel, and how often throughout the 90\u2011day period.  \n\n### Reasoning  \nEffective communication is critical for a global launch. The user explicitly asked for a \u201ccommunication cadence for internal and external audiences.\u201d This outcome provides a repeatable rhythm that keeps all parties aligned and reduces the chance of missed approvals or partner delays.\n\n### Approach  \n1. **Identify Audiences** \u2013 Internal (executive leadership, product team, legal, partner enablement, marketing, ops) and External (channel partners, key customers, press, regulatory bodies).  \n2. **Map Information Types** \u2013 Status updates, milestone approvals, marketing assets, partner enablement kits, compliance certificates, post\u2011launch performance reports.  \n3. **Select Channels** \u2013 Email briefings, weekly stand\u2011up calls, monthly executive decks, partner portal updates, press release distribution list.  \n4. **Define Frequency** \u2013  \n   * Weekly: Sprint\u2011style status call (internal) + partner\u2011enablement checkpoint (external).  \n   * Bi\u2011weekly: Marketing asset review (internal) + partner\u2011ready\u2011to\u2011sell newsletter (external).  \n   * Monthly: Executive steering\u2011committee briefing (internal) + regulatory compliance status report (external if required).  \n5. **Assign Owners** \u2013 Link each communication to a responsible stakeholder (e.g., Product Manager for weekly status, Legal Lead for compliance reports).  \n6. **Create Calendar Template** \u2013 Populate a shared calendar (e.g., Outlook/Google) with recurring events, include agenda templates and required deliverables.  \n7. **Review & Adjust** \u2013 After the first two weeks, solicit feedback and tweak cadence to avoid overload or gaps.  \n\n---\n\n# Breakdown\n\n## 1. Draft 90\u2011Day Workback Plan\n1.1 **Gather Core Inputs**  \n\u20031.1.1 Retrieve stakeholder list \u2192 Confirm roles.  \n\u20031.1.2 Collect budget details \u2192 Note total spend ceiling.  \n\u20031.1.3 Document resource allocations (headcount, tools).  \n\u20031.1.4 Assemble compliance requirements (e.g., GDPR, export).  \n\n1.2 **Define Milestones**  \n\u20031.2.1 Beta\u202f1 Release (Week\u202f4) \u2013 Owner: Product Lead.  \n\u20031.2.2 Beta\u202f2 Release (Week\u202f6) \u2013 Owner: Engineering Lead.  \n\u20031.2.3 Release Candidate (RC) Sign\u2011off (Week\u202f8) \u2013 Owner: QA Lead.  \n\u20031.2.4 Legal/Compliance Approval (Week\u202f9) \u2013 Owner: Legal Counsel.  \n\u20031.2.5 Partner Enablement Pack Ready (Week\u202f10) \u2013 Owner: Partner Manager.  \n\u20031.2.6 Marketing Campaign Rollout (Week\u202f11\u201112) \u2013 Owner: Marketing Director.  \n\u20031.2.7 Global Launch Event Production (Week\u202f13) \u2013 Owner: Events Lead.  \n\u20031.2.8 Post\u2011Launch Monitoring Setup (Week\u202f13) \u2013 Owner: Ops Lead.  \n\n1.3 **Map Weekly Deliverables** \u2013 Create a 13\u2011row table (Week\u202f1\u201113) and fill tasks per milestone.  \n\n1.4 **Assign Owners** \u2013 Populate \u201cOwner\u201d column for each task; flag \u201cTBD\u201d where unclear.  \n\n1.5 **Identify Critical Path** \u2013 Mark tasks:  \n\u2003- RC Build Freeze (Week\u202f7)  \n\u2003- Legal Sign\u2011off (Week\u202f9)  \n\u2003- Partner Enablement Pack (Week\u202f10)  \n\n1.6 **Integrate Constraints** \u2013 Add notes:  \n\u2003- Budget cap reached by Week\u202f8 \u2192 \u201cFinance Review\u201d.  \n\u2003- Limited QA resources \u2192 \u201cStagger testing\u201d.  \n\n1.7 **Review & Refine** \u2013 Distribute draft \u2192 Collect comments \u2192 Revise.  \n\n## 2. Develop Gantt\u2011Style Timeline\n2.1 **Select Tool** \u2013 Choose Excel with conditional formatting.  \n2.2 **Import Tasks** \u2013 Copy weekly tasks from 1.3 into tool.  \n2.3 **Define Dependencies** \u2013 Add predecessor links (e.g., Beta\u202f2 depends on Beta\u202f1).  \n2.4 **Mark Critical Path** \u2013 Apply red fill to critical tasks.  \n2.5 **Overlay Milestones** \u2013 Insert milestone symbols on appropriate weeks.  \n2.6 **Validate Timeline** \u2013 Ensure no task exceeds Week\u202f13.  \n2.7 **Export & Share** \u2013 Save as PDF; attach to plan package.  \n\n## 3. Create Risk\u2011Mitigation Matrix\n3.1 **Risk Identification Workshop** \u2013 Invite Product, Legal, Finance, Partner, Marketing leads.  \n3.2 **Score Risks** \u2013 Use 1\u20113 scale for probability/impact.  \n3.3 **Prioritize** \u2013 Compute exposure = Prob\u202f\u00d7\u202fImpact; sort descending.  \n3.4 **Assign Owners** \u2013 Align with task owners from Outcome\u202f1.  \n3.5 **Define Mitigations & Triggers** \u2013 Write concise actions and when they activate.  \n3.6 **Document Table** \u2013 Populate columns: ID, Description, Prob, Impact, Exposure, Owner, Mitigation, Trigger, Status.  \n3.7 **Link to Communication Cadence** \u2013 Note update frequency (e.g., weekly risk review).  \n\n## 4. Establish Communication Cadence\n4.1 **Audience Mapping** \u2013 List internal & external groups.  \n4.2 **Information Types Matrix** \u2013 Cross\u2011reference audience vs. info (e.g., Execs\u202f\u2194\u202fStatus Deck).  \n4.3 **Channel Selection** \u2013 Assign channel per matrix entry.  \n4.4 **Frequency Definition** \u2013 Set weekly, bi\u2011weekly, monthly rhythms.  \n4.5 **Owner Assignment** \u2013 Map each cadence item to a stakeholder.  \n4.6 **Calendar Creation** \u2013 Populate shared calendar with recurring events.  \n4.7 **Feedback Loop** \u2013 After 2 weeks, gather cadence effectiveness feedback; adjust as needed.  \n\n---\n\n### Dependencies Across Outcomes\n- **2 \u2192 1**: The Gantt timeline (Outcome\u202f2) depends on the finalized weekly task list from the workback plan (Outcome\u202f1).  \n- **3 \u2192 1**: Risk identification (Outcome\u202f3) uses the milestone and owner data from Outcome\u202f1.  \n- **4 \u2192 1 & 3**: Communication cadence (Outcome\u202f4) references both the task schedule (Outcome\u202f1) and risk updates (Outcome\u202f3).  \n\n### Parallel Work\n- Tasks 2.1\u20112.3 (tool selection & task import) can run in parallel with 3.1\u20113.3 (risk workshop) once the stakeholder list is confirmed.  \n- Communication cadence setup (4.1\u20114.4) can begin while the workback plan is still being refined, as long as audience definitions are stable.  \n\n---\n\n**Next Steps for the Team**  \n1. Convene a short kickoff (30\u202fmin) with the product, legal, finance, partner, and marketing leads to confirm inputs (Outcome\u202f1, step\u202f1.1).  \n2. Assign a \u201cLaunch Planner\u201d role to own the coordination of all four outcomes and maintain the shared repository (e.g., a central drive or Confluence space).  \n3. Set a target date for the first draft of the workback plan (e.g., end of Week\u202f2) to keep the downstream timeline on track.  \n\nBy following this structured approach, the team will produce a coherent 90\u2011day workback plan, visual schedule, risk matrix, and communication rhythm that satisfy the launch objectives while respecting budget, resource, and compliance constraints.",
+  "plan": {
+    "id": "document-001",
+    "name": "NimbusAI Enterprise 5.0 Global Launch \u2013 90\u2011Day Workback Plan",
+    "details": "Execution plan for the NimbusAI Enterprise 5.0 global launch covering the draft workback plan, Gantt timeline, risk\u2011mitigation matrix, and communication cadence.",
+    "draft": true,
+    "participants": [
+      {
+        "name": "Product Lead",
+        "details": "Owner of Beta\u202f1 Release",
+        "draft": true
+      },
+      {
+        "name": "Engineering Lead",
+        "details": "Owner of Beta\u202f2 Release",
+        "draft": true
+      },
+      {
+        "name": "QA Lead",
+        "details": "Owner of RC Sign\u2011off",
+        "draft": true
+      },
+      {
+        "name": "Legal Counsel",
+        "details": "Owner of Legal/Compliance Approval",
+        "draft": true
+      },
+      {
+        "name": "Partner Manager",
+        "details": "Owner of Partner Enablement Pack",
+        "draft": true
+      },
+      {
+        "name": "Marketing Director",
+        "details": "Owner of Marketing Campaign Rollout",
+        "draft": true
+      },
+      {
+        "name": "Events Lead",
+        "details": "Owner of Global Launch Event Production",
+        "draft": true
+      },
+      {
+        "name": "Ops Lead",
+        "details": "Owner of Post\u2011Launch Monitoring Setup",
+        "draft": true
+      },
+      {
+        "name": "Launch Planner",
+        "details": "Coordinates all four outcomes and maintains the shared repository",
+        "draft": true
+      }
+    ],
+    "references": [],
+    "deliverables": [
+      {
+        "id": "deliverable-001",
+        "name": "Draft 90\u2011Day Workback Plan",
+        "type": "document",
+        "draft": true,
+        "history": []
+      },
+      {
+        "id": "deliverable-002",
+        "name": "Gantt\u2011Style Timeline (90\u2011Day View)",
+        "type": "document",
+        "draft": true,
+        "history": []
+      },
+      {
+        "id": "deliverable-003",
+        "name": "Risk\u2011Mitigation Matrix",
+        "type": "document",
+        "draft": true,
+        "history": []
+      },
+      {
+        "id": "deliverable-004",
+        "name": "Communication Cadence (Internal & External)",
+        "type": "document",
+        "draft": true,
+        "history": []
+      }
+    ],
+    "tasks": [
+      {
+        "id": "task-001",
+        "name": "Draft 90\u2011Day Workback Plan",
+        "draft": true,
+        "details": "Create the structured document that lists milestones, owners, weekly deliverables, critical\u2011path items, and constraints.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[document]/deliverable-001"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-001-1",
+        "name": "Gather Core Inputs",
+        "draft": true,
+        "details": "Retrieve stakeholder list, budget details, resource allocations, and compliance requirements.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-001-1-1",
+        "name": "Retrieve stakeholder list \u2192 Confirm roles",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-001-1-2",
+        "name": "Collect budget details \u2192 Note total spend ceiling",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-001-1-3",
+        "name": "Document resource allocations (headcount, tools)",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-001-1-4",
+        "name": "Assemble compliance requirements (e.g., GDPR, export)",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-001-2",
+        "name": "Define Milestones",
+        "draft": true,
+        "details": "List the seven high\u2011level milestones with owners and notes.",
+        "dependencies": [
+          "task-001-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-001-2-1",
+        "name": "Beta\u202f1 Release (Week\u202f4) \u2013 Owner: Product Lead",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-001-2-2",
+        "name": "Beta\u202f2 Release (Week\u202f6) \u2013 Owner: Engineering Lead",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-001-2-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-001-2-3",
+        "name": "Release Candidate (RC) Sign\u2011off (Week\u202f8) \u2013 Owner: QA Lead",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-001-2-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-001-2-4",
+        "name": "Legal/Compliance Approval (Week\u202f9) \u2013 Owner: Legal Counsel",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-001-2-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-001-2-5",
+        "name": "Partner Enablement Pack Ready (Week\u202f10) \u2013 Owner: Partner Manager",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-001-2-4"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-001-2-6",
+        "name": "Marketing Campaign Rollout (Week\u202f11\u201112) \u2013 Owner: Marketing Director",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-001-2-5"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-001-2-7",
+        "name": "Global Launch Event Production (Week\u202f13) \u2013 Owner: Events Lead",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-001-2-6"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-001-2-8",
+        "name": "Post\u2011Launch Monitoring Setup (Week\u202f13) \u2013 Owner: Ops Lead",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-001-2-7"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-001-3",
+        "name": "Map Weekly Deliverables",
+        "draft": true,
+        "details": "Create a week\u2011by\u2011week table of tasks and owners.",
+        "dependencies": [
+          "task-001-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-001-4",
+        "name": "Assign Owners",
+        "draft": true,
+        "details": "Populate the owner column for each weekly deliverable.",
+        "dependencies": [
+          "task-001-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-001-5",
+        "name": "Identify Critical Path",
+        "draft": true,
+        "details": "Mark RC Sign\u2011off, Legal Approval, and Partner Enablement as critical path items.",
+        "dependencies": [
+          "task-001-4"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-001-6",
+        "name": "Integrate Constraints",
+        "draft": true,
+        "details": "Add budget, resource, and compliance constraints to the plan.",
+        "dependencies": [
+          "task-001-5"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-001-7",
+        "name": "Review & Refine",
+        "draft": true,
+        "details": "Circulate the draft for feedback and incorporate revisions.",
+        "dependencies": [
+          "task-001-6"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002",
+        "name": "Develop Gantt\u2011Style Timeline",
+        "draft": true,
+        "details": "Produce a visual 90\u2011day timeline based on the completed workback plan.",
+        "dependencies": [
+          "task-001"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[document]/deliverable-002"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002-1",
+        "name": "Select Tool",
+        "draft": true,
+        "details": "Choose the software (e.g., Excel, PowerPoint) for building the timeline.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002-2",
+        "name": "Import Tasks",
+        "draft": true,
+        "details": "Load the weekly deliverables from the draft plan into the timeline tool.",
+        "dependencies": [
+          "task-002-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002-3",
+        "name": "Define Dependencies",
+        "draft": true,
+        "details": "Map predecessor\u2011successor relationships between tasks.",
+        "dependencies": [
+          "task-002-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002-4",
+        "name": "Mark Critical Path",
+        "draft": true,
+        "details": "Highlight RC Sign\u2011off, Legal Approval, and Partner Enablement as critical.",
+        "dependencies": [
+          "task-002-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002-5",
+        "name": "Overlay Milestones",
+        "draft": true,
+        "details": "Add milestone markers to the Gantt chart.",
+        "dependencies": [
+          "task-002-4"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002-6",
+        "name": "Validate Timeline",
+        "draft": true,
+        "details": "Check for completeness and alignment with the workback plan.",
+        "dependencies": [
+          "task-002-5"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002-7",
+        "name": "Export & Share",
+        "draft": true,
+        "details": "Generate the final Gantt document and distribute to stakeholders.",
+        "dependencies": [
+          "task-002-6"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003",
+        "name": "Create Risk\u2011Mitigation Matrix",
+        "draft": true,
+        "details": "Develop a matrix that identifies risks, scores them, prioritizes, assigns owners, and defines mitigations.",
+        "dependencies": [
+          "task-001"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[document]/deliverable-003"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003-1",
+        "name": "Risk Identification Workshop",
+        "draft": true,
+        "details": "Facilitate a session with stakeholders to surface potential launch risks.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003-2",
+        "name": "Score Risks",
+        "draft": true,
+        "details": "Assign probability and impact scores to each identified risk.",
+        "dependencies": [
+          "task-003-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003-3",
+        "name": "Prioritize",
+        "draft": true,
+        "details": "Rank risks based on their scores to determine mitigation priority.",
+        "dependencies": [
+          "task-003-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003-4",
+        "name": "Assign Owners",
+        "draft": true,
+        "details": "Map each risk to the appropriate functional owner.",
+        "dependencies": [
+          "task-003-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003-5",
+        "name": "Define Mitigations & Triggers",
+        "draft": true,
+        "details": "Specify mitigation actions and the conditions that trigger them.",
+        "dependencies": [
+          "task-003-4"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003-6",
+        "name": "Document Table",
+        "draft": true,
+        "details": "Create the final risk\u2011mitigation matrix document.",
+        "dependencies": [
+          "task-003-5"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[document]/deliverable-003"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003-7",
+        "name": "Link to Communication Cadence",
+        "draft": true,
+        "details": "Ensure the risk matrix is referenced in the communication plan.",
+        "dependencies": [
+          "task-003-6"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-004",
+        "name": "Establish Communication Cadence",
+        "draft": true,
+        "details": "Define audience mapping, channels, frequency, and calendar for internal and external communications.",
+        "dependencies": [
+          "task-001",
+          "task-003"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[document]/deliverable-004"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-004-1",
+        "name": "Audience Mapping",
+        "draft": true,
+        "details": "Identify internal and external stakeholder groups.",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-004-2",
+        "name": "Information Types Matrix",
+        "draft": true,
+        "details": "Map information categories to each audience.",
+        "dependencies": [
+          "task-004-1"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-004-3",
+        "name": "Channel Selection",
+        "draft": true,
+        "details": "Choose communication channels (e.g., email, meetings, dashboards).",
+        "dependencies": [
+          "task-004-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-004-4",
+        "name": "Frequency Definition",
+        "draft": true,
+        "details": "Set cadence (weekly, bi\u2011weekly, ad\u2011hoc) for each communication type.",
+        "dependencies": [
+          "task-004-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-004-5",
+        "name": "Owner Assignment",
+        "draft": true,
+        "details": "Allocate responsibility for each communication piece.",
+        "dependencies": [
+          "task-004-4"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-004-6",
+        "name": "Calendar Creation",
+        "draft": true,
+        "details": "Populate a shared calendar with all communication events.",
+        "dependencies": [
+          "task-004-5"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[document]/deliverable-004"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-004-7",
+        "name": "Feedback Loop",
+        "draft": true,
+        "details": "Gather feedback on the cadence and adjust as needed.",
+        "dependencies": [
+          "task-004-6"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-002",
+        "name": "Develop Gantt\u2011Style Timeline",
+        "draft": true,
+        "details": "Produce a visual 90\u2011day timeline based on the completed workback plan.",
+        "dependencies": [
+          "task-001"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[document]/deliverable-002"
+        ],
+        "references": [],
+        "history": []
+      },
+      {
+        "id": "task-003",
+        "name": "Create Risk\u2011Mitigation Matrix",
+        "draft": true,
+        "details": "Develop a matrix that captures risks, scores, priorities, owners, and mitigation actions.",
+        "dependencies": [
+          "task-001"
+        ],
+        "co-dependencies": [],
+        "state": "not-started",
+        "assignees": [],
+        "deliverables": [
+          "@deliverable[document]/deliverable-003"
+        ],
+        "references": [],
+        "history": []
+      }
+    ],
+    "history": []
+  }
+}

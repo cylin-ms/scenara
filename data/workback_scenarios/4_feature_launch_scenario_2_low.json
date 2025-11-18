@@ -1,0 +1,578 @@
+{
+  "scenario_name": "DataPulse AI Insights Feature Launch \u2013 Acme Analytics",
+  "scenario_number": 2,
+  "meeting_type": "Product Feature Launch",
+  "quality_level": "low",
+  "workback_prompt": "Create a detailed workback plan for the **DataPulse AI Insights** feature launch at Acme Analytics. The launch is scheduled for **2025-12-15 10:00\u202fAM\u202fPST** and follows a T\u201130 planning horizon. Include all phases (strategy, development, QA, documentation, marketing, sales enablement, support readiness, launch day execution, post\u2011launch monitoring). Break down tasks by week, assign owners (using the stakeholder list provided), indicate dependencies, critical path items, risk mitigation steps, and required approvals. Provide a Gantt\u2011style timeline, a RACI matrix, and a checklist of go/no\u2011go criteria for the launch day. Use the scenario details above (company context, deliverables, success criteria, constraints) to ensure the plan is realistic and actionable.\n\nGenerate a LOW QUALITY workback plan with these characteristics:\n- Missing key tasks or phases\n- Vague task descriptions\n- Few or no dependencies defined\n- Missing stakeholder assignments\n- No milestones or poorly defined milestones\n- Unrealistic timelines\n- No risk consideration\n- Minimal deliverables identified\n\nIMPORTANT: Generate a plan that naturally exhibits LOW quality characteristics.\nDo not explicitly label the plan as \"low quality\" - let the quality emerge from the content.",
+  "generated_at": "2025-11-17T05:19:19.633250",
+  "analysis": "# Outcomes\n\n## Draft Workback Plan for DataPulse\u202fAI\u202fInsights Launch  \nA structured, collaborative outline that the product, engineering, QA, documentation, marketing, sales, support, and leadership teams can use to flesh out a complete work\u2011back schedule (including phases, weekly tasks, owners, dependencies, milestones, risk mitigations, approvals, Gantt view, RACI matrix, and go/no\u2011go checklist).  \nArtifact references: *none provided*  \n\n### Reasoning  \nThe user\u2019s request is to produce a detailed launch plan for the **DataPulse\u202fAI\u202fInsights** feature with many specific deliverables (timeline, RACI, checklist, etc.). The higher\u2011level instruction for this conversation is to **advise** on how to break the problem into actionable steps rather than delivering the final plan itself. Therefore the appropriate outcome is a \u201cDraft Workback Plan\u201d that guides the user and their stakeholders through the creation of the full artifact, while respecting the instruction not to generate the plan directly.\n\n### Approach  \n\n1. **Clarify Scope and Success Criteria**  \n   - Review the scenario details (launch date\u202f2025\u201112\u201115\u202f10:00\u202fAM\u202fPST, T\u201130 horizon) and capture any explicit success metrics, constraints, or stakeholder expectations.  \n   - Document these as the \u201cLaunch Success Criteria\u201d section that will later drive go/no\u2011go decisions.\n\n2. **Identify All Required Phases**  \n   - List the high\u2011level phases the user mentioned:  \n     1. Strategy & Planning  \n     2. Development  \n     3. Quality Assurance (QA)  \n     4. Documentation  \n     5. Marketing  \n     6. Sales Enablement  \n     7. Support Readiness  \n     8. Launch\u2011Day Execution  \n     9. Post\u2011Launch Monitoring  \n   - Validate with the product owner that no additional phase (e.g., legal/compliance) is missing.\n\n3. **Gather Stakeholder List**  \n   - Obtain the official stakeholder roster (product manager, engineering lead, QA lead, technical writer, marketing manager, sales ops, support lead, release manager, executive sponsor, etc.).  \n   - Confirm each person\u2019s preferred contact method and decision\u2011making authority.\n\n4. **Define Weekly Cadence and Milestones**  \n   - Working backward from the launch date, create a **week\u2011by\u2011week skeleton** (Week\u202f\u201130 to Week\u202f\u20111).  \n   - For each week, note the primary deliverable or decision point (e.g., \u201cFinalize feature spec\u201d, \u201cComplete core development\u201d, \u201cBeta testing sign\u2011off\u201d).  \n   - Highlight **milestones** that will require formal approvals (e.g., \u201cDevelopment Freeze\u201d, \u201cMarketing Campaign Launch\u201d).\n\n5. **Map Tasks to Phases and Assign Owners**  \n   - Within each phase, break down the work into **discrete tasks** (e.g., \u201cCreate UI mock\u2011ups\u201d, \u201cImplement data ingestion pipeline\u201d, \u201cWrite API docs\u201d).  \n   - Assign a **primary owner** and, where appropriate, a **secondary reviewer**.  \n   - Capture any **RACI roles** (Responsible, Accountable, Consulted, Informed) for each task.\n\n6. **Identify Dependencies and Critical Path**  \n   - For every task, note upstream tasks that must finish first (e.g., \u201cQA test cases\u201d depend on \u201cFeature code complete\u201d).  \n   - Use a simple **dependency matrix** or arrows in a draft Gantt view to visualize the **critical path** (the longest sequence of dependent tasks that determines the overall schedule).\n\n7. **Add Risk Identification and Mitigation**  \n   - Conduct a brief **risk brainstorming session** with each functional lead.  \n   - Record top\u2011level risks (e.g., \u201cData pipeline latency\u201d, \u201cRegulatory review delay\u201d) and assign **mitigation actions** (e.g., \u201cAdd buffer of 2\u202fdays\u201d, \u201cEarly legal review\u201d).  \n   - Link each mitigation to the relevant task or milestone.\n\n8. **Define Approval Gates**  \n   - List all **approval points** (e.g., \u201cFeature Spec sign\u2011off\u201d, \u201cQA Pass\u201d, \u201cMarketing collateral approval\u201d).  \n   - Specify the **approver** (usually the product manager or executive sponsor) and the required **evidence** (demo video, test report, etc.).\n\n9. **Create Gantt\u2011Style Timeline Draft**  \n   - Use a spreadsheet or lightweight project\u2011management tool to plot weeks on the X\u2011axis and tasks/phases on the Y\u2011axis.  \n   - Color\u2011code tasks by status (planned, in\u2011progress, blocked).  \n   - Highlight milestones and critical\u2011path bars.\n\n10. **Develop RACI Matrix**  \n    - Build a table where rows are tasks or deliverables and columns are stakeholders.  \n    - Populate cells with R, A, C, or I.  \n    - Review with the team to resolve any \u201cA\u201d conflicts (multiple owners).\n\n11. **Draft Go/No\u2011Go Checklist**  \n    - Enumerate the **pre\u2011launch criteria** (e.g., \u201cAll critical bugs resolved\u201d, \u201cSupport run\u2011books published\u201d, \u201cMarketing email scheduled\u201d).  \n    - Assign a **gatekeeper** for each checklist item (often the release manager).  \n    - Include a \u201cFinal Release Sign\u2011off\u201d line that aggregates all checklist outcomes.\n\n12. **Review and Iterate**  \n    - Schedule a **work\u2011back planning workshop** (2\u2011hour session) with all leads to walk through the draft.  \n    - Capture feedback, adjust timelines, fill missing tasks, and finalize the plan.  \n    - Distribute the final version for sign\u2011off at least **T\u20115** (five weeks before launch).\n\n13. **Execution and Monitoring**  \n    - As the launch window approaches, hold **weekly stand\u2011ups** to track progress against the plan.  \n    - Use a **dash\u2011board** to surface any tasks slipping past their buffer.  \n    - On launch day, follow the **Launch\u2011Day Execution** checklist; after launch, activate the **Post\u2011Launch Monitoring** routine (metrics collection, incident response).\n\n---\n\n## Breakdown\n\n### 1. Scope Clarification\n1.1 Review launch date & T\u201130 horizon  \n1.2 Document success metrics (adoption rate, SLA, etc.)  \n1.3 Confirm constraints (budget, resources, compliance)\n\n### 2. Phase Definition\n2.1 List high\u2011level phases (Strategy, Development, \u2026)  \n2.2 Validate completeness with product owner\n\n### 3. Stakeholder Confirmation\n3.1 Retrieve official stakeholder roster  \n3.2 Record contact preferences & decision rights  \n3.3 Distribute initial stakeholder list for verification\n\n### 4. Weekly Skeleton & Milestones\n4.1 Create week\u2011by\u2011week grid (Week\u202f\u201130 \u2192 Week\u202f\u20111)  \n4.2 Assign primary deliverable per week  \n4.3 Mark milestone weeks (e.g., Development Freeze, Marketing Launch)\n\n### 5. Task Mapping & Ownership\n5.1 Break each phase into concrete tasks  \n5.2 Assign primary owner & secondary reviewer  \n5.3 Draft RACI entries per task  \n\n### 6. Dependencies & Critical Path\n6.1 Identify upstream/downstream links between tasks  \n6.2 Build simple dependency matrix  \n6.3 Highlight longest dependency chain (critical path)\n\n### 7. Risk & Mitigation Log\n7.1 Conduct risk\u2011identification session per functional lead  \n7.2 Document top\u2011level risks & owners  \n7.3 Attach mitigation steps to relevant tasks/milestones  \n\n### 8. Approval Gates\n8.1 List required approvals (spec sign\u2011off, QA pass, etc.)  \n8.2 Assign approvers & required evidence  \n8.3 Insert gate dates into weekly skeleton  \n\n### 9. Draft Gantt Timeline\n9.1 Populate spreadsheet with weeks vs. tasks  \n9.2 Color\u2011code by status & highlight milestones  \n9.3 Share draft for stakeholder feedback  \n\n### 10. RACI Matrix Construction\n10.1 Create table (tasks \u00d7 stakeholders)  \n10.2 Fill R/A/C/I cells  \n10.3 Review for conflicts & adjust ownership  \n\n### 11. Go/No\u2011Go Checklist\n11.1 Enumerate pre\u2011launch criteria (bugs, docs, support)  \n11.2 Assign gatekeeper per item  \n11.3 Add final sign\u2011off line  \n\n### 12. Review & Iterate Workshop\n12.1 Schedule 2\u2011hour planning workshop (all leads)  \n12.2 Walk through draft plan, capture changes  \n12.3 Finalize and circulate for sign\u2011off (T\u20115)\n\n### 13. Execution & Monitoring\n13.1 Weekly stand\u2011up cadence (progress tracking)  \n13.2 Dashboard setup for slip detection  \n13.3 Launch\u2011Day execution checklist run  \n13.4 Post\u2011launch monitoring (metrics, incident triage)  \n\n---\n\n### Collaboration Tips  \n\n- **Kick\u2011off Alignment**: Begin with a brief cross\u2011functional meeting to ensure every team understands the T\u201130 horizon and the importance of early sign\u2011offs.  \n- **Shared Repository**: Store the evolving work\u2011back plan, risk log, and checklist in a common drive (e.g., Confluence, SharePoint) so all stakeholders have real\u2011time access.  \n- **Regular Syncs**: Institute a cadence (weekly for most teams, daily for the final two weeks) to surface blockers early and adjust dependencies.  \n- **Decision\u2011Making Protocol**: For any \u201cA\u201d (Accountable) conflict in the RACI, follow a predefined escalation path to the product manager or executive sponsor.  \n- **Risk Reviews**: Conduct a lightweight risk review at each milestone gate; update mitigation actions as new information emerges.  \n- **Transparent Approvals**: Use a simple sign\u2011off sheet (digital or paper) that records the approver\u2019s name, date, and any comments; archive these for audit purposes.  \n- **Post\u2011Launch Retrospective**: Schedule a retrospective within two weeks after launch to capture lessons learned and update the template for future releases.\n\nBy following this structured approach, the team can transform the high\u2011level launch intent into a concrete, actionable work\u2011back plan that meets the company\u2019s expectations while providing clear ownership, realistic timelines, and built\u2011in risk controls.",
+  "plan": {
+    "id": "document-001",
+    "name": "Draft Workback Plan for DataPulse AI Insights Launch",
+    "details": "A structured, collaborative outline that the product, engineering, QA, documentation, marketing, sales, support, and leadership teams can use to flesh out a complete work\u2011back schedule (including phases, weekly tasks, owners, dependencies, milestones, risk mitigations, approvals, Gantt view, RACI matrix, and go/no\u2011go checklist).",
+    "draft": true,
+    "participants": [
+      {
+        "name": "Product Manager",
+        "draft": true
+      },
+      {
+        "name": "Engineering Lead",
+        "draft": true
+      },
+      {
+        "name": "QA Lead",
+        "draft": true
+      },
+      {
+        "name": "Technical Writer",
+        "draft": true
+      },
+      {
+        "name": "Marketing Manager",
+        "draft": true
+      },
+      {
+        "name": "Sales Ops",
+        "draft": true
+      },
+      {
+        "name": "Support Lead",
+        "draft": true
+      },
+      {
+        "name": "Release Manager",
+        "draft": true
+      },
+      {
+        "name": "Executive Sponsor",
+        "draft": true
+      }
+    ],
+    "references": [],
+    "deliverables": [],
+    "tasks": [
+      {
+        "id": "task-001-1",
+        "name": "Review launch date & T\u201130 horizon",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-001-2",
+        "name": "Document success metrics (adoption rate, SLA, etc.)",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-001-3",
+        "name": "Confirm constraints (budget, resources, compliance)",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-001",
+        "name": "Scope Clarification",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-001-1",
+          "task-001-2",
+          "task-001-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-002-1",
+        "name": "List high\u2011level phases (Strategy, Development, \u2026)",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-002-2",
+        "name": "Validate completeness with product owner",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-002",
+        "name": "Phase Definition",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-002-1",
+          "task-002-2"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-003-1",
+        "name": "Retrieve official stakeholder roster",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-003-2",
+        "name": "Record contact preferences & decision rights",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-003-3",
+        "name": "Distribute initial stakeholder list for verification",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-003",
+        "name": "Stakeholder Confirmation",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-003-1",
+          "task-003-2",
+          "task-003-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-004-1",
+        "name": "Create week\u2011by\u2011week grid (Week\u202f\u201130 \u2192 Week\u202f\u20111)",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-004-2",
+        "name": "Assign primary deliverable per week",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-004-3",
+        "name": "Mark milestone weeks (e.g., Development Freeze, Marketing Launch)",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-004",
+        "name": "Weekly Skeleton & Milestones",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-004-1",
+          "task-004-2",
+          "task-004-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-005-1",
+        "name": "Break each phase into concrete tasks",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-005-2",
+        "name": "Assign primary owner & secondary reviewer",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-005-3",
+        "name": "Draft RACI entries per task",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-005",
+        "name": "Task Mapping & Ownership",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-005-1",
+          "task-005-2",
+          "task-005-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-006-1",
+        "name": "Identify upstream/downstream links between tasks",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-006-2",
+        "name": "Build simple dependency matrix",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-006-3",
+        "name": "Highlight longest dependency chain (critical path)",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-006",
+        "name": "Dependencies & Critical Path",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-006-1",
+          "task-006-2",
+          "task-006-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-007-1",
+        "name": "Conduct risk\u2011identification session per functional lead",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-007-2",
+        "name": "Document top\u2011level risks & owners",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-007-3",
+        "name": "Attach mitigation steps to relevant tasks/milestones",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-007",
+        "name": "Risk & Mitigation Log",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-007-1",
+          "task-007-2",
+          "task-007-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-008-1",
+        "name": "List required approvals (spec sign\u2011off, QA pass, etc.)",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-008-2",
+        "name": "Assign approvers & required evidence",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-008-3",
+        "name": "Insert gate dates into weekly skeleton",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-008",
+        "name": "Approval Gates",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-008-1",
+          "task-008-2",
+          "task-008-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-009-1",
+        "name": "Populate spreadsheet with weeks vs. tasks",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-009-2",
+        "name": "Color\u2011code by status & highlight milestones",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-009-3",
+        "name": "Share draft for stakeholder feedback",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-009",
+        "name": "Draft Gantt Timeline",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-009-1",
+          "task-009-2",
+          "task-009-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-010-1",
+        "name": "Create table (tasks \u00d7 stakeholders)",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-010-2",
+        "name": "Fill R/A/C/I cells",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-010-3",
+        "name": "Review for conflicts & adjust ownership",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-010",
+        "name": "RACI Matrix Construction",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-010-1",
+          "task-010-2",
+          "task-010-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-011-1",
+        "name": "Enumerate pre\u2011launch criteria (bugs, docs, support)",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-011-2",
+        "name": "Assign gatekeeper per item",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-011-3",
+        "name": "Add final sign\u2011off line",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-011",
+        "name": "Go/No\u2011Go Checklist",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-011-1",
+          "task-011-2",
+          "task-011-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-012-1",
+        "name": "Schedule 2\u2011hour planning workshop (all leads)",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-012-2",
+        "name": "Walk through draft plan, capture changes",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-012-3",
+        "name": "Finalize and circulate for sign\u2011off (T\u20115)",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-012",
+        "name": "Review & Iterate Workshop",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-012-1",
+          "task-012-2",
+          "task-012-3"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-013-1",
+        "name": "Weekly stand\u2011up cadence (progress tracking)",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-013-2",
+        "name": "Dashboard setup for slip detection",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-013-3",
+        "name": "Launch\u2011Day execution checklist run",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-013-4",
+        "name": "Post\u2011launch monitoring (metrics, incident triage)",
+        "draft": true,
+        "details": "",
+        "dependencies": [],
+        "co-dependencies": [],
+        "state": "not-started"
+      },
+      {
+        "id": "task-013",
+        "name": "Execution & Monitoring",
+        "draft": true,
+        "details": "",
+        "dependencies": [
+          "task-013-1",
+          "task-013-2",
+          "task-013-3",
+          "task-013-4"
+        ],
+        "co-dependencies": [],
+        "state": "not-started"
+      }
+    ],
+    "history": []
+  }
+}

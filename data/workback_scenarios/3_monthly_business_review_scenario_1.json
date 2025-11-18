@@ -1,0 +1,44 @@
+{
+  "scenario_name": "Nimbus Cloud Solutions \u2013 FY26 Mid\u2011Market Expansion MBR",
+  "company_context": "Nimbus Cloud Solutions (NASDAQ: NCS) is a global enterprise SaaS provider focused on cloud\u2011based infrastructure management and AI\u2011driven analytics. The presentation is delivered by the Product & Go\u2011to\u2011Market (GTM) team within the Enterprise SaaS Division. The team is organized into Product Management (3 PMs), Marketing (2 MMs), Sales Enablement (2 SEs), and Revenue Operations (1 RevOps analyst). The division targets $1.2B ARR for FY26, with a strategic push into the mid\u2011market segment (companies $50\u2011$500M ARR).",
+  "meeting_event_details": "Date: 2025\u201112\u201104 (Friday)\nTime: 10:00\u202fAM \u2013 11:30\u202fAM Pacific Time (90\u202fmin)\nLocation: Nimbus HQ \u2013 Conference Room Orion (Hybrid \u2013 Zoom link: https://zoom.nimbuscloud.com/MBR\u2011Dec4)\nAgenda: 1) FY25 performance recap, 2) Mid\u2011market opportunity analysis, 3) New AI\u2011Analytics module launch plan, 4) FY26 roadmap & budget request, 5) Q&A & decision items.",
+  "stakeholders": [
+    "Laura Chen \u2013 Chief Executive Officer (CEO) \u2013 overall business direction & final approval",
+    "Mark Patel \u2013 Chief Revenue Officer (CRO) \u2013 revenue targets & sales strategy",
+    "Sofia Ramirez \u2013 Senior Vice President, Sales \u2013 oversees North America & EMEA sales orgs",
+    "Ethan Liu \u2013 Vice President, Product Management \u2013 owns product roadmap & feature prioritization",
+    "Priya Desai \u2013 Vice President, Marketing \u2013 responsible for demand generation & positioning",
+    "James O'Connor \u2013 Chief Financial Officer (CFO) \u2013 budget authority & financial modeling",
+    "Rita Gomez \u2013 Director, Revenue Operations \u2013 data integrity, forecasting, KPI reporting",
+    "Alexei Volkov \u2013 VP, Engineering \u2013 capacity planning & delivery timelines"
+  ],
+  "deliverables": [
+    "Updated FY26 Product Roadmap (incl. AI\u2011Analytics module release schedule)",
+    "Revised Mid\u2011Market Pricing & Packaging model (with tiered ARR targets)",
+    "Go\u2011to\u2011Market Action Plan \u2013 12\u2011month campaign calendar, lead\u2011to\u2011opportunity conversion targets",
+    "ARR Forecast Add\u2011On for Mid\u2011Market (+$120M) with assumptions and sensitivity analysis",
+    "Resource Allocation Matrix \u2013 engineering capacity, sales headcount, marketing spend",
+    "Executive Decision Log \u2013 approved budget increase ($2.0M) and owners for each initiative"
+  ],
+  "success_criteria": [
+    "Executive sign\u2011off on FY26 roadmap and $2M incremental budget by meeting end",
+    "Consensus on three concrete mid\u2011market KPIs: 30% YoY pipeline growth, 15% win\u2011rate lift, churn \u2264 5% for new segment",
+    "All data sources (Salesforce, Gainsight, Tableau, Snowflake) refreshed and validated within 48\u202fh prior to meeting",
+    "Action items assigned with clear owners and due dates (\u2264\u202f2\u202fweeks for first deliverable)",
+    "Post\u2011meeting NPS from attendees \u2265 8/10 indicating clarity and confidence in plan"
+  ],
+  "constraints": [
+    "Total incremental budget cannot exceed $5M for FY26 (company\u2011wide cap)",
+    "Engineering capacity is limited to 80% of current sprint velocity due to legacy platform migration",
+    "Data latency: Salesforce and Gainsight extracts are only available with a 48\u2011hour lag",
+    "Decision must be finalized before the Board of Directors meeting on 2026\u201101\u201115",
+    "Compliance review required for new AI\u2011Analytics data handling (GDPR & CCPA) \u2013 must be completed by 2025\u201112\u201120"
+  ],
+  "workback_prompt": "Generate a detailed work\u2011back plan for the 'Nimbus Cloud Solutions \u2013 FY26 Mid\u2011Market Expansion MBR' scenario. The plan should start from the meeting date (2025\u201112\u201104) and work backwards to today (T\u201130), outlining all tasks, owners, dependencies, durations, and milestones needed to prepare the presentation, validate data, secure approvals, and deliver the listed outputs on time. Include risk mitigation steps for data latency, engineering capacity, and compliance constraints.",
+  "meeting_type": "Monthly Business Review",
+  "meeting_type_key": "3_monthly_business_review",
+  "scenario_number": 1,
+  "horizon": "T-30",
+  "complexity": "High",
+  "generated_at": "2025-11-17T04:38:54.058759"
+}
