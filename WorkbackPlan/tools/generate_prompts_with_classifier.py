@@ -492,6 +492,7 @@ class DevUIPromptGenerator:
 This is a hypothetical high-value scenario designed to explore how BizChat can help with complex meeting preparation.
 
 Scenario: {scenario['title']}
+Timeframe: This meeting is scheduled {scenario['leadTime']} days from now.
 
 {scenario['scenario']}
 
@@ -500,7 +501,7 @@ Scenario: {scenario['title']}
 Meeting Details:
 - Category: {scenario['category']}
 - Complexity: {scenario['complexity'].upper()}
-- Recommended Lead Time: {scenario['leadTime']} days
+- Lead Time Available: {scenario['leadTime']} days until the meeting
 - Expected Attendees: ~{scenario['attendees']} people
 
 Please use your imagination to create a comprehensive workback plan for this scenario:
@@ -650,13 +651,13 @@ Please use your imagination to create a comprehensive workback plan for this sce
 {body_text}
 """
         
-        # Create prompt text with role-specific content (without meeting metadata)
-        prompt_text = f"""I have an upcoming {category.lower()} meeting.
+        # Create prompt text with specific date so BizChat can find the meeting
+        prompt_text = f"""I have an upcoming {category.lower()} meeting on {day_of_week}, {date_str} at {time_str}.
 
 {role_context}
 
 **Your Task:**
-Please access my calendar event to retrieve the complete attendee list, full meeting description, and any linked documents. Then create a comprehensive workback plan that includes:
+Please access my calendar event for {date_str} to retrieve the complete attendee list, full meeting description, and any linked documents. Then create a comprehensive workback plan that includes:
 
 1. **Timeline Planning**: Work backwards from the meeting date to identify all preparation milestones
 2. **Task Breakdown**: Specific actionable tasks with clear owners from the attendee list
