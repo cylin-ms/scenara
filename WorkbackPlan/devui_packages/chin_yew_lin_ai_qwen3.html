@@ -1,0 +1,4334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BizChat DevUI Test Prompts - Chin Yew Lin</title>
+    <style>
+        :root {
+            --primary-color: #0078d4;
+            --secondary-color: #106ebe;
+            --success-color: #107c10;
+            --warning-color: #ffb900;
+            --danger-color: #d13438;
+            --bg-color: #f3f2f1;
+            --card-bg: #ffffff;
+            --text-primary: #323130;
+            --text-secondary: #605e5c;
+            --border-color: #e1dfdd;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 30px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .header h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .header p {
+            opacity: 0.9;
+            font-size: 1.1em;
+        }
+
+        .selection-controls {
+            background: var(--card-bg);
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            border: 1px solid var(--border-color);
+        }
+
+        .selection-controls h2 {
+            color: var(--primary-color);
+            font-size: 1.3em;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .selection-status {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            margin-bottom: 20px;
+            padding: 15px;
+            background: var(--bg-color);
+            border-radius: 6px;
+        }
+
+        .selection-counter {
+            font-size: 2em;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        .selection-counter.goal-met {
+            color: var(--success-color);
+        }
+
+        .selection-label {
+            font-size: 0.9em;
+            color: var(--text-secondary);
+        }
+
+        .selection-buttons {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 12px 20px;
+            border: none;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-size: 1em;
+        }
+
+        .btn-primary {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: var(--secondary-color);
+        }
+
+        .btn-success {
+            background: var(--success-color);
+            color: white;
+        }
+
+        .btn-success:hover {
+            background: #0e6b0e;
+        }
+
+        .btn-secondary {
+            background: var(--text-secondary);
+            color: white;
+        }
+
+        .btn-secondary:hover {
+            background: #484644;
+        }
+
+        .filter-toggle {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            margin-top: 15px;
+        }
+
+        .filter-toggle label {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+            padding: 8px 12px;
+            background: var(--bg-color);
+            border-radius: 6px;
+            transition: background 0.2s;
+        }
+
+        .filter-toggle label:hover {
+            background: #e8e7e5;
+        }
+
+        .filter-toggle input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+            cursor: pointer;
+        }
+
+        .auto-save-indicator {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: rgba(16, 124, 16, 0.9);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-weight: 600;
+            opacity: 0;
+            transition: opacity 0.3s;
+            z-index: 1000;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .auto-save-indicator.show {
+            opacity: 1;
+        }
+
+        .prompt-card {
+            background: var(--card-bg);
+            border-radius: 8px;
+            padding: 0;
+            margin-bottom: 25px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            border: 1px solid var(--border-color);
+            transition: transform 0.2s, box-shadow 0.2s, opacity 0.3s;
+            overflow: hidden;
+        }
+
+        .prompt-card.hidden {
+            display: none;
+        }
+
+        .prompt-card.selected {
+            border-left: 5px solid var(--success-color);
+            box-shadow: 0 2px 12px rgba(16, 124, 16, 0.15);
+        }
+
+        .prompt-card.unselected {
+            opacity: 0.6;
+        }
+
+        .prompt-card.synthetic {
+            border: 2px dashed var(--warning-color);
+            background: linear-gradient(135deg, #fffbf0 0%, var(--card-bg) 100%);
+        }
+
+        .prompt-card.completed {
+            border: 2px solid var(--success-color);
+            background: linear-gradient(135deg, #f0fff0 0%, var(--card-bg) 100%);
+        }
+
+        .completed-badge {
+            display: inline-block;
+            background: var(--success-color);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 0.85em;
+            font-weight: 600;
+            margin-left: 10px;
+        }
+
+        .synthetic-badge {
+            display: inline-block;
+            background: var(--warning-color);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 0.85em;
+            font-weight: 600;
+            margin-left: 10px;
+        }
+
+        .prompt-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+        }
+
+        .prompt-card-header {
+            padding: 20px 25px;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: var(--bg-color);
+            transition: background 0.2s;
+        }
+
+        .prompt-card-header-left {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            flex: 1;
+        }
+
+        .selection-checkbox {
+            width: 24px;
+            height: 24px;
+            cursor: pointer;
+            flex-shrink: 0;
+        }
+
+        .prompt-card-header:hover {
+            background: #e8e7e5;
+        }
+
+        .prompt-card-title {
+            flex: 1;
+        }
+
+        .prompt-card-title h2 {
+            color: var(--primary-color);
+            font-size: 1.6em;
+            margin-bottom: 5px;
+            font-weight: 700;
+        }
+
+        .prompt-card-title .meeting-info {
+            color: var(--text-secondary);
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
+
+        .collapse-icon {
+            font-size: 1.5em;
+            color: var(--primary-color);
+            transition: transform 0.3s;
+            margin-left: 15px;
+        }
+
+        .collapse-icon.collapsed {
+            transform: rotate(-90deg);
+        }
+
+        .prompt-content {
+            padding: 0 25px 25px 25px;
+            display: none;
+        }
+
+        .prompt-content.expanded {
+            display: block;
+        }
+
+        .prompt-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid var(--border-color);
+        }
+
+        .prompt-title {
+            flex: 1;
+        }
+
+        .prompt-title h2 {
+            color: var(--primary-color);
+            font-size: 1.5em;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .prompt-id {
+            background: var(--primary-color);
+            color: white;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 0.9em;
+        }
+
+        .prompt-meta {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .meta-item {
+            background: var(--bg-color);
+            padding: 12px 16px;
+            border-radius: 6px;
+            border-left: 3px solid var(--primary-color);
+        }
+
+        .meta-label {
+            font-weight: 600;
+            color: var(--text-secondary);
+            font-size: 0.85em;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 4px;
+        }
+
+        .meta-value {
+            color: var(--text-primary);
+            font-size: 1em;
+        }
+
+        .prompt-text {
+            background: #fafafa;
+            padding: 20px;
+            border-radius: 6px;
+            border: 1px solid var(--border-color);
+            margin-bottom: 20px;
+            font-family: 'Consolas', 'Monaco', monospace;
+            font-size: 0.95em;
+            line-height: 1.8;
+            white-space: pre-wrap;
+            color: var(--text-primary);
+        }
+
+        .input-section {
+            margin-top: 25px;
+            padding-top: 20px;
+            border-top: 2px solid var(--border-color);
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        .input-group label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+            font-size: 0.95em;
+        }
+
+        .input-group input,
+        .input-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            font-family: inherit;
+            font-size: 0.95em;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+
+        .input-group input:focus,
+        .input-group textarea:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(0, 120, 212, 0.1);
+        }
+
+        .input-group textarea {
+            min-height: 120px;
+            resize: vertical;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .tools-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 12px;
+        }
+
+        .tool-tag {
+            background: var(--primary-color);
+            color: white;
+            padding: 6px 12px;
+            border-radius: 16px;
+            font-size: 0.85em;
+            font-weight: 500;
+        }
+
+        .complexity-badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 0.85em;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .complexity-high {
+            background: var(--danger-color);
+            color: white;
+        }
+
+        .complexity-medium {
+            background: var(--warning-color);
+            color: white;
+        }
+
+        .complexity-low {
+            background: var(--success-color);
+            color: white;
+        }
+
+        .save-button {
+            background: var(--success-color);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 6px;
+            font-size: 1em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s, transform 0.1s;
+            margin-top: 10px;
+        }
+
+        .save-button:hover {
+            background: #0e6b0e;
+            transform: translateY(-1px);
+        }
+
+        .save-button:active {
+            transform: translateY(0);
+        }
+
+        .copy-prompt-button {
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-size: 0.95em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s, transform 0.1s;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin: 15px 0;
+        }
+
+        .copy-prompt-button:hover {
+            background: var(--secondary-color);
+            transform: translateY(-1px);
+        }
+
+        .copy-prompt-button:active {
+            transform: translateY(0);
+        }
+
+        .copy-prompt-button.copied {
+            background: var(--success-color);
+        }
+
+        .statistics-section {
+            background: var(--card-bg);
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            border: 1px solid var(--border-color);
+        }
+
+        .statistics-section h2 {
+            color: var(--primary-color);
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .stat-card {
+            background: var(--bg-color);
+            padding: 15px;
+            border-radius: 6px;
+            border-left: 4px solid var(--primary-color);
+        }
+
+        .stat-label {
+            font-weight: 600;
+            color: var(--text-secondary);
+            font-size: 0.85em;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 6px;
+        }
+
+        .stat-value {
+            color: var(--text-primary);
+            font-size: 1.4em;
+            font-weight: 700;
+        }
+
+        .filter-info {
+            background: #f0f9ff;
+            border-left: 4px solid var(--primary-color);
+            padding: 15px;
+            border-radius: 6px;
+            margin-top: 15px;
+        }
+
+        .filter-info h3 {
+            color: var(--primary-color);
+            font-size: 1.1em;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .filter-info ul {
+            margin: 0;
+            padding-left: 20px;
+            line-height: 1.8;
+        }
+
+        .filter-info li {
+            color: var(--text-primary);
+        }
+
+        .footer {
+            text-align: center;
+            padding: 30px;
+            color: var(--text-secondary);
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.5em;
+            }
+
+            .prompt-meta {
+                grid-template-columns: 1fr;
+            }
+
+            .prompt-header {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎯 BizChat Workback Planning DevUI Test Prompts</h1>
+            <p><strong>User:</strong> Chin Yew Lin | <strong>Generated:</strong> 2025-11-19 00:34:37 | <strong>AI-Classified with Qwen3-Embedding-0.6B</strong></p>
+            <p><strong>Author:</strong> TimeBerry T+P</p>
+            <div style="margin-top: 15px;">
+                <button onclick="expandAll()" style="background: var(--success-color); color: white; border: none; padding: 10px 20px; border-radius: 6px; font-weight: 600; cursor: pointer; margin-right: 10px;">📂 Expand All</button>
+                <button onclick="collapseAll()" style="background: var(--text-secondary); color: white; border: none; padding: 10px 20px; border-radius: 6px; font-weight: 600; cursor: pointer;">📁 Collapse All</button>
+            </div>
+        </div>
+
+        <div class="selection-controls">
+            <h2>📝 Meeting Selection for Testing</h2>
+            <div class="selection-status">
+                <div>
+                    <div class="selection-counter" id="selection-counter">0</div>
+                    <div class="selection-label">Your Meetings Selected / 5 Recommended</div>
+                </div>
+                <div style="flex: 1; padding-left: 20px;">
+                    <p style="margin: 0; color: var(--text-secondary);">🎭 <strong>5 exploration scenarios are pre-selected.</strong> Please select <strong>at least 5 more meetings from your calendar</strong> for testing (you can select more).</p>
+                </div>
+            </div>
+            <div class="selection-buttons">
+                <button class="btn btn-primary" onclick="selectAll()">✅ Select All</button>
+                <button class="btn btn-secondary" onclick="deselectAll()">❌ Deselect All</button>
+                <button class="btn btn-success" onclick="saveAllData()">💾 Save Progress</button>
+                <button class="btn btn-success" onclick="exportAnnotations()">📥 Export Annotations</button>
+                <button class="btn btn-primary" onclick="exportLocalStorage()">💾 Export localStorage (for regeneration)</button>
+            </div>
+            <div class="filter-toggle">
+                <label>
+                    <input type="checkbox" id="filter-unselected" onchange="toggleFilterUnselected()">
+                    <span>Hide Unselected Meetings</span>
+                </label>
+                <label>
+                    <input type="checkbox" id="show-all" onchange="toggleShowAll()">
+                    <span>Show All Meetings (including hidden)</span>
+                </label>
+            </div>
+        </div>
+
+        <div class="auto-save-indicator" id="auto-save-indicator">💾 Auto-saved</div>
+
+        
+        <div class="statistics-section">
+            <h2>📊 Meeting Selection Summary</h2>
+            
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-label">Total Prompts</div>
+                    <div class="stat-value">21</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">👤 As Organizer</div>
+                    <div class="stat-value">4</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">👥 As Participant</div>
+                    <div class="stat-value">17</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Meeting Categories</div>
+                    <div class="stat-value">6</div>
+                </div>
+            </div>
+
+            <h3 style="color: #323130; font-size: 1.1em; margin: 20px 0 10px 0;">📋 By Category</h3>
+            <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-label">Strategic Planning</div>
+                <div class="stat-value">3</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">Product Management</div>
+                <div class="stat-value">5</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">Leadership Communications</div>
+                <div class="stat-value">1</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">Learning & Development</div>
+                <div class="stat-value">5</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">Events & Communications</div>
+                <div class="stat-value">6</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">Talent Acquisition</div>
+                <div class="stat-value">1</div>
+            </div>
+            </div>
+
+            <h3 style="color: #323130; font-size: 1.1em; margin: 20px 0 10px 0;">⚡ By Complexity</h3>
+            <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-label">🔴 High</div>
+                <div class="stat-value">10</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">🟡 Medium</div>
+                <div class="stat-value">10</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">🟢 Low</div>
+                <div class="stat-value">1</div>
+            </div>
+            </div>
+
+            <div class="filter-info">
+                <h3>🎯 Selection Criteria</h3>
+                <ul>
+                    <li><strong>AI Classification:</strong> Qwen3-Embedding-0.6B (100% coverage)</li>
+                    <li><strong>Role Detection:</strong> Prioritized organizer meetings (minimum 4)</li>
+                    <li><strong>Diversity:</strong> Maximum 3 meetings per category</li>
+                    <li><strong>Quality:</strong> Sorted by confidence score and attendee count</li>
+                    <li><strong>Source:</strong> Real calendar data from Chin Yew Lin</li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="prompt-card selected synthetic" data-prompt-id="1" data-selected="true">
+            <div class="prompt-card-header">
+                <div class="prompt-card-header-left">
+                    <input type="checkbox" class="selection-checkbox" 
+                           onchange="handleSelection(1, this.checked)" 
+                           onclick="event.stopPropagation()"
+                           checked>
+                    <div class="prompt-card-title" onclick="togglePrompt(1)">
+                        <h2>👤 Prompt #1: Board of Directors Quarterly Strategy Review<span class="synthetic-badge">🎭 EXPLORATION SCENARIO</span></h2>
+                        <div class="meeting-info">📅 [Synthetic Scenario] Present Q4 performance, annual strategy, and FY26 roadmap to the Board of Directors | Meeting Organizer</div>
+                    </div>
+                </div>
+                <div class="collapse-icon collapsed" id="icon-1" onclick="togglePrompt(1)">▼</div>
+            </div>
+
+            <div class="prompt-content" id="content-1">
+                <div class="prompt-meta">
+                    <div class="meta-item">
+                        <div class="meta-label">Category</div>
+                        <div class="meta-value">Strategic Planning</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Complexity</div>
+                        <div class="meta-value">
+                            <span class="complexity-badge complexity-high">high</span>
+                        </div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Lead Time</div>
+                        <div class="meta-value">60 days</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Your Role</div>
+                        <div class="meta-value">👤 Meeting Organizer</div>
+                    </div>
+                    
+                </div>
+
+                <div class="prompt-text" id="prompt-text-1">**[EXPLORATION SCENARIO - Not from your calendar]**
+
+This is a hypothetical high-value scenario designed to explore how BizChat can help with complex meeting preparation.
+
+Scenario: Board of Directors Quarterly Strategy Review
+
+You are presenting to the Board of Directors covering quarterly results, strategic initiatives, competitive landscape, and next year's investment priorities. This is a high-stakes presentation requiring extensive preparation, data analysis, and stakeholder alignment.
+
+As the organizer and leader of this high-stakes meeting, you are responsible for its success and strategic outcomes.
+
+Meeting Details:
+- Category: Strategic Planning
+- Complexity: HIGH
+- Recommended Lead Time: 60 days
+- Expected Attendees: ~15 people
+
+Please use your imagination to create a comprehensive workback plan for this scenario:
+
+- Define meeting objectives and desired outcomes
+- Identify and invite key stakeholders and decision makers
+- Prepare comprehensive presentation materials and data analysis
+- Coordinate pre-reads and background materials
+- Plan for contingencies and difficult questions
+- Arrange logistics (venue, technology, catering for multi-day events)
+- Schedule preparation sessions with your team
+- Create detailed agenda with time allocations
+
+**Goal**: Experience how BizChat assists with high-stakes, complex meeting preparation. Save the DevUI session link to help us collect data for improving high-value scenarios.</div>
+
+                <button class="copy-prompt-button" onclick="copyPromptText(1)">
+                    <span id="copy-icon-1">📋</span> Copy Sample Prompt
+                </button>
+
+                <div class="meta-item" style="margin-bottom: 15px;">
+                    <div class="meta-label">Expected Tools</div>
+                    <div class="tools-grid">
+                        <span class="tool-tag">graph_calendar_get_events</span>
+                    <span class="tool-tag">graph_get_people</span>
+                    <span class="tool-tag">graph_get_document</span>
+                    <span class="tool-tag">bizchat_search</span>
+                    </div>
+                </div>
+
+                <div class="input-section">
+                    <div class="input-group">
+                        <label>📎 DevUI Link</label>
+                        <input type="url" class="devui-link-input" placeholder="Paste DevUI session link here...">
+                    </div>
+
+                    <div class="input-group">
+                        <label>🆔 Session ID (auto-extracted)</label>
+                        <input type="text" class="session-id-input" placeholder="Session ID will auto-populate...">
+                    </div>
+
+                    <div class="input-group">
+                        <label>📅 Date Captured</label>
+                        <input type="date" class="date-input">
+                    </div>
+
+                    <div class="input-group">
+                        <label>🛠️ Tools Observed</label>
+                        <input type="text" class="tools-input" placeholder="e.g., graph_calendar_get_events, bizchat_search">
+                    </div>
+
+                    <div class="input-group">
+                        <label>💭 Zero-Shot Feedback</label>
+                        <textarea class="zero-shot-feedback" placeholder="How well did BizChat handle this prompt without additional context?"></textarea>
+                    </div>
+
+                    <div class="input-group">
+                        <label>📝 Overall Feedback</label>
+                        <textarea class="overall-feedback" placeholder="General observations, issues, or suggestions..."></textarea>
+                    </div>
+
+                    <div class="input-group">
+                        <label>📌 Notes</label>
+                        <textarea class="notes-input" placeholder="Additional notes or observations..."></textarea>
+                    </div>
+
+                    <button class="save-button" onclick="saveData()">💾 Save Progress</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="prompt-card selected synthetic" data-prompt-id="2" data-selected="true">
+            <div class="prompt-card-header">
+                <div class="prompt-card-header-left">
+                    <input type="checkbox" class="selection-checkbox" 
+                           onchange="handleSelection(2, this.checked)" 
+                           onclick="event.stopPropagation()"
+                           checked>
+                    <div class="prompt-card-title" onclick="togglePrompt(2)">
+                        <h2>👤 Prompt #2: Major Customer Executive Business Review (Fortune 100)<span class="synthetic-badge">🎭 EXPLORATION SCENARIO</span></h2>
+                        <div class="meeting-info">📅 [Synthetic Scenario] Executive business review with a Fortune 100 customer covering partnership value, roadmap, and expansion opportunities | Meeting Organizer</div>
+                    </div>
+                </div>
+                <div class="collapse-icon collapsed" id="icon-2" onclick="togglePrompt(2)">▼</div>
+            </div>
+
+            <div class="prompt-content" id="content-2">
+                <div class="prompt-meta">
+                    <div class="meta-item">
+                        <div class="meta-label">Category</div>
+                        <div class="meta-value">Strategic Planning</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Complexity</div>
+                        <div class="meta-value">
+                            <span class="complexity-badge complexity-high">high</span>
+                        </div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Lead Time</div>
+                        <div class="meta-value">45 days</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Your Role</div>
+                        <div class="meta-value">👤 Meeting Organizer</div>
+                    </div>
+                    
+                </div>
+
+                <div class="prompt-text" id="prompt-text-2">**[EXPLORATION SCENARIO - Not from your calendar]**
+
+This is a hypothetical high-value scenario designed to explore how BizChat can help with complex meeting preparation.
+
+Scenario: Major Customer Executive Business Review (Fortune 100)
+
+Conduct a strategic business review with your largest enterprise customer's C-suite. Need to demonstrate value delivered, address concerns, showcase future capabilities, and identify expansion opportunities worth millions in annual recurring revenue.
+
+As the organizer and leader of this high-stakes meeting, you are responsible for its success and strategic outcomes.
+
+Meeting Details:
+- Category: Strategic Planning
+- Complexity: HIGH
+- Recommended Lead Time: 45 days
+- Expected Attendees: ~20 people
+
+Please use your imagination to create a comprehensive workback plan for this scenario:
+
+- Define meeting objectives and desired outcomes
+- Identify and invite key stakeholders and decision makers
+- Prepare comprehensive presentation materials and data analysis
+- Coordinate pre-reads and background materials
+- Plan for contingencies and difficult questions
+- Arrange logistics (venue, technology, catering for multi-day events)
+- Schedule preparation sessions with your team
+- Create detailed agenda with time allocations
+
+**Goal**: Experience how BizChat assists with high-stakes, complex meeting preparation. Save the DevUI session link to help us collect data for improving high-value scenarios.</div>
+
+                <button class="copy-prompt-button" onclick="copyPromptText(2)">
+                    <span id="copy-icon-2">📋</span> Copy Sample Prompt
+                </button>
+
+                <div class="meta-item" style="margin-bottom: 15px;">
+                    <div class="meta-label">Expected Tools</div>
+                    <div class="tools-grid">
+                        <span class="tool-tag">graph_calendar_get_events</span>
+                    <span class="tool-tag">graph_get_people</span>
+                    <span class="tool-tag">graph_get_document</span>
+                    <span class="tool-tag">bizchat_search</span>
+                    </div>
+                </div>
+
+                <div class="input-section">
+                    <div class="input-group">
+                        <label>📎 DevUI Link</label>
+                        <input type="url" class="devui-link-input" placeholder="Paste DevUI session link here...">
+                    </div>
+
+                    <div class="input-group">
+                        <label>🆔 Session ID (auto-extracted)</label>
+                        <input type="text" class="session-id-input" placeholder="Session ID will auto-populate...">
+                    </div>
+
+                    <div class="input-group">
+                        <label>📅 Date Captured</label>
+                        <input type="date" class="date-input">
+                    </div>
+
+                    <div class="input-group">
+                        <label>🛠️ Tools Observed</label>
+                        <input type="text" class="tools-input" placeholder="e.g., graph_calendar_get_events, bizchat_search">
+                    </div>
+
+                    <div class="input-group">
+                        <label>💭 Zero-Shot Feedback</label>
+                        <textarea class="zero-shot-feedback" placeholder="How well did BizChat handle this prompt without additional context?"></textarea>
+                    </div>
+
+                    <div class="input-group">
+                        <label>📝 Overall Feedback</label>
+                        <textarea class="overall-feedback" placeholder="General observations, issues, or suggestions..."></textarea>
+                    </div>
+
+                    <div class="input-group">
+                        <label>📌 Notes</label>
+                        <textarea class="notes-input" placeholder="Additional notes or observations..."></textarea>
+                    </div>
+
+                    <button class="save-button" onclick="saveData()">💾 Save Progress</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="prompt-card selected synthetic" data-prompt-id="3" data-selected="true">
+            <div class="prompt-card-header">
+                <div class="prompt-card-header-left">
+                    <input type="checkbox" class="selection-checkbox" 
+                           onchange="handleSelection(3, this.checked)" 
+                           onclick="event.stopPropagation()"
+                           checked>
+                    <div class="prompt-card-title" onclick="togglePrompt(3)">
+                        <h2>👤 Prompt #3: Annual Product Strategy Offsite with CVP<span class="synthetic-badge">🎭 EXPLORATION SCENARIO</span></h2>
+                        <div class="meeting-info">📅 [Synthetic Scenario] 3-day offsite to define product vision, strategy, and OKRs for the next fiscal year | Meeting Organizer</div>
+                    </div>
+                </div>
+                <div class="collapse-icon collapsed" id="icon-3" onclick="togglePrompt(3)">▼</div>
+            </div>
+
+            <div class="prompt-content" id="content-3">
+                <div class="prompt-meta">
+                    <div class="meta-item">
+                        <div class="meta-label">Category</div>
+                        <div class="meta-value">Product Management</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Complexity</div>
+                        <div class="meta-value">
+                            <span class="complexity-badge complexity-high">high</span>
+                        </div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Lead Time</div>
+                        <div class="meta-value">90 days</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Your Role</div>
+                        <div class="meta-value">👤 Meeting Organizer</div>
+                    </div>
+                    
+                </div>
+
+                <div class="prompt-text" id="prompt-text-3">**[EXPLORATION SCENARIO - Not from your calendar]**
+
+This is a hypothetical high-value scenario designed to explore how BizChat can help with complex meeting preparation.
+
+Scenario: Annual Product Strategy Offsite with CVP
+
+Lead a 3-day offsite with product leadership and engineering directors to define the annual product strategy, prioritize investments across multiple product lines, set ambitious OKRs, and align on execution plans with CVP approval.
+
+As the organizer and leader of this high-stakes meeting, you are responsible for its success and strategic outcomes.
+
+Meeting Details:
+- Category: Product Management
+- Complexity: HIGH
+- Recommended Lead Time: 90 days
+- Expected Attendees: ~30 people
+
+Please use your imagination to create a comprehensive workback plan for this scenario:
+
+- Define meeting objectives and desired outcomes
+- Identify and invite key stakeholders and decision makers
+- Prepare comprehensive presentation materials and data analysis
+- Coordinate pre-reads and background materials
+- Plan for contingencies and difficult questions
+- Arrange logistics (venue, technology, catering for multi-day events)
+- Schedule preparation sessions with your team
+- Create detailed agenda with time allocations
+
+**Goal**: Experience how BizChat assists with high-stakes, complex meeting preparation. Save the DevUI session link to help us collect data for improving high-value scenarios.</div>
+
+                <button class="copy-prompt-button" onclick="copyPromptText(3)">
+                    <span id="copy-icon-3">📋</span> Copy Sample Prompt
+                </button>
+
+                <div class="meta-item" style="margin-bottom: 15px;">
+                    <div class="meta-label">Expected Tools</div>
+                    <div class="tools-grid">
+                        <span class="tool-tag">graph_calendar_get_events</span>
+                    <span class="tool-tag">graph_get_people</span>
+                    <span class="tool-tag">graph_get_document</span>
+                    <span class="tool-tag">ado_get_work_items</span>
+                    </div>
+                </div>
+
+                <div class="input-section">
+                    <div class="input-group">
+                        <label>📎 DevUI Link</label>
+                        <input type="url" class="devui-link-input" placeholder="Paste DevUI session link here...">
+                    </div>
+
+                    <div class="input-group">
+                        <label>🆔 Session ID (auto-extracted)</label>
+                        <input type="text" class="session-id-input" placeholder="Session ID will auto-populate...">
+                    </div>
+
+                    <div class="input-group">
+                        <label>📅 Date Captured</label>
+                        <input type="date" class="date-input">
+                    </div>
+
+                    <div class="input-group">
+                        <label>🛠️ Tools Observed</label>
+                        <input type="text" class="tools-input" placeholder="e.g., graph_calendar_get_events, bizchat_search">
+                    </div>
+
+                    <div class="input-group">
+                        <label>💭 Zero-Shot Feedback</label>
+                        <textarea class="zero-shot-feedback" placeholder="How well did BizChat handle this prompt without additional context?"></textarea>
+                    </div>
+
+                    <div class="input-group">
+                        <label>📝 Overall Feedback</label>
+                        <textarea class="overall-feedback" placeholder="General observations, issues, or suggestions..."></textarea>
+                    </div>
+
+                    <div class="input-group">
+                        <label>📌 Notes</label>
+                        <textarea class="notes-input" placeholder="Additional notes or observations..."></textarea>
+                    </div>
+
+                    <button class="save-button" onclick="saveData()">💾 Save Progress</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="prompt-card selected synthetic" data-prompt-id="4" data-selected="true">
+            <div class="prompt-card-header">
+                <div class="prompt-card-header-left">
+                    <input type="checkbox" class="selection-checkbox" 
+                           onchange="handleSelection(4, this.checked)" 
+                           onclick="event.stopPropagation()"
+                           checked>
+                    <div class="prompt-card-title" onclick="togglePrompt(4)">
+                        <h2>👤 Prompt #4: Crisis Management: Major Service Outage Communication<span class="synthetic-badge">🎭 EXPLORATION SCENARIO</span></h2>
+                        <div class="meeting-info">📅 [Synthetic Scenario] Coordinate crisis response and executive communications for a major service outage affecting millions of users | Meeting Organizer</div>
+                    </div>
+                </div>
+                <div class="collapse-icon collapsed" id="icon-4" onclick="togglePrompt(4)">▼</div>
+            </div>
+
+            <div class="prompt-content" id="content-4">
+                <div class="prompt-meta">
+                    <div class="meta-item">
+                        <div class="meta-label">Category</div>
+                        <div class="meta-value">Leadership Communications</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Complexity</div>
+                        <div class="meta-value">
+                            <span class="complexity-badge complexity-high">high</span>
+                        </div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Lead Time</div>
+                        <div class="meta-value">7 days</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Your Role</div>
+                        <div class="meta-value">👤 Meeting Organizer</div>
+                    </div>
+                    
+                </div>
+
+                <div class="prompt-text" id="prompt-text-4">**[EXPLORATION SCENARIO - Not from your calendar]**
+
+This is a hypothetical high-value scenario designed to explore how BizChat can help with complex meeting preparation.
+
+Scenario: Crisis Management: Major Service Outage Communication
+
+A critical service outage has impacted millions of customers. You need to coordinate incident response, prepare executive communications, manage customer notifications, and organize war room logistics. Time is critical and stakes are high.
+
+As the organizer and leader of this high-stakes meeting, you are responsible for its success and strategic outcomes.
+
+Meeting Details:
+- Category: Leadership Communications
+- Complexity: HIGH
+- Recommended Lead Time: 7 days
+- Expected Attendees: ~25 people
+
+Please use your imagination to create a comprehensive workback plan for this scenario:
+
+- Define meeting objectives and desired outcomes
+- Identify and invite key stakeholders and decision makers
+- Prepare comprehensive presentation materials and data analysis
+- Coordinate pre-reads and background materials
+- Plan for contingencies and difficult questions
+- Arrange logistics (venue, technology, catering for multi-day events)
+- Schedule preparation sessions with your team
+- Create detailed agenda with time allocations
+
+**Goal**: Experience how BizChat assists with high-stakes, complex meeting preparation. Save the DevUI session link to help us collect data for improving high-value scenarios.</div>
+
+                <button class="copy-prompt-button" onclick="copyPromptText(4)">
+                    <span id="copy-icon-4">📋</span> Copy Sample Prompt
+                </button>
+
+                <div class="meta-item" style="margin-bottom: 15px;">
+                    <div class="meta-label">Expected Tools</div>
+                    <div class="tools-grid">
+                        <span class="tool-tag">graph_calendar_get_events</span>
+                    <span class="tool-tag">graph_get_people</span>
+                    <span class="tool-tag">graph_send_mail</span>
+                    <span class="tool-tag">bizchat_search</span>
+                    </div>
+                </div>
+
+                <div class="input-section">
+                    <div class="input-group">
+                        <label>📎 DevUI Link</label>
+                        <input type="url" class="devui-link-input" placeholder="Paste DevUI session link here...">
+                    </div>
+
+                    <div class="input-group">
+                        <label>🆔 Session ID (auto-extracted)</label>
+                        <input type="text" class="session-id-input" placeholder="Session ID will auto-populate...">
+                    </div>
+
+                    <div class="input-group">
+                        <label>📅 Date Captured</label>
+                        <input type="date" class="date-input">
+                    </div>
+
+                    <div class="input-group">
+                        <label>🛠️ Tools Observed</label>
+                        <input type="text" class="tools-input" placeholder="e.g., graph_calendar_get_events, bizchat_search">
+                    </div>
+
+                    <div class="input-group">
+                        <label>💭 Zero-Shot Feedback</label>
+                        <textarea class="zero-shot-feedback" placeholder="How well did BizChat handle this prompt without additional context?"></textarea>
+                    </div>
+
+                    <div class="input-group">
+                        <label>📝 Overall Feedback</label>
+                        <textarea class="overall-feedback" placeholder="General observations, issues, or suggestions..."></textarea>
+                    </div>
+
+                    <div class="input-group">
+                        <label>📌 Notes</label>
+                        <textarea class="notes-input" placeholder="Additional notes or observations..."></textarea>
+                    </div>
+
+                    <button class="save-button" onclick="saveData()">💾 Save Progress</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="prompt-card selected synthetic" data-prompt-id="5" data-selected="true">
+            <div class="prompt-card-header">
+                <div class="prompt-card-header-left">
+                    <input type="checkbox" class="selection-checkbox" 
+                           onchange="handleSelection(5, this.checked)" 
+                           onclick="event.stopPropagation()"
+                           checked>
+                    <div class="prompt-card-title" onclick="togglePrompt(5)">
+                        <h2>👥 Prompt #5: Company-Wide Product Training Launch (M365 Pulse)<span class="synthetic-badge">🎭 EXPLORATION SCENARIO</span></h2>
+                        <div class="meeting-info">📅 [Synthetic Scenario] Launch enterprise-wide training program on new M365 Pulse features for 374+ participants across global offices | Meeting Participant</div>
+                    </div>
+                </div>
+                <div class="collapse-icon collapsed" id="icon-5" onclick="togglePrompt(5)">▼</div>
+            </div>
+
+            <div class="prompt-content" id="content-5">
+                <div class="prompt-meta">
+                    <div class="meta-item">
+                        <div class="meta-label">Category</div>
+                        <div class="meta-value">Learning & Development</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Complexity</div>
+                        <div class="meta-value">
+                            <span class="complexity-badge complexity-high">high</span>
+                        </div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Lead Time</div>
+                        <div class="meta-value">45 days</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Your Role</div>
+                        <div class="meta-value">👥 Meeting Participant</div>
+                    </div>
+                    
+                </div>
+
+                <div class="prompt-text" id="prompt-text-5">**[EXPLORATION SCENARIO - Not from your calendar]**
+
+This is a hypothetical high-value scenario designed to explore how BizChat can help with complex meeting preparation.
+
+Scenario: Company-Wide Product Training Launch (M365 Pulse)
+
+Participate in planning the launch of a comprehensive training program introducing M365 Pulse to the entire organization. With 374 participants across multiple time zones, this requires coordinating trainers, preparing materials, setting up virtual infrastructure, creating feedback loops, and ensuring maximum adoption of critical productivity tools.
+
+As a key participant in this strategic meeting, you need to be thoroughly prepared to contribute effectively.
+
+Meeting Details:
+- Category: Learning & Development
+- Complexity: HIGH
+- Recommended Lead Time: 45 days
+- Expected Attendees: ~374 people
+
+Please use your imagination to create a comprehensive workback plan for this scenario:
+
+- Review all meeting materials and background documents
+- Prepare your perspective and recommendations
+- Identify questions and concerns to raise
+- Coordinate with your team on unified position
+- Research relevant data and competitive intelligence
+- Prepare to take detailed notes and action items
+- Plan follow-up actions and next steps
+
+**Goal**: Experience how BizChat assists with high-stakes, complex meeting preparation. Save the DevUI session link to help us collect data for improving high-value scenarios.</div>
+
+                <button class="copy-prompt-button" onclick="copyPromptText(5)">
+                    <span id="copy-icon-5">📋</span> Copy Sample Prompt
+                </button>
+
+                <div class="meta-item" style="margin-bottom: 15px;">
+                    <div class="meta-label">Expected Tools</div>
+                    <div class="tools-grid">
+                        <span class="tool-tag">graph_calendar_get_events</span>
+                    <span class="tool-tag">graph_get_people</span>
+                    <span class="tool-tag">graph_send_mail</span>
+                    <span class="tool-tag">graph_get_document</span>
+                    </div>
+                </div>
+
+                <div class="input-section">
+                    <div class="input-group">
+                        <label>📎 DevUI Link</label>
+                        <input type="url" class="devui-link-input" placeholder="Paste DevUI session link here...">
+                    </div>
+
+                    <div class="input-group">
+                        <label>🆔 Session ID (auto-extracted)</label>
+                        <input type="text" class="session-id-input" placeholder="Session ID will auto-populate...">
+                    </div>
+
+                    <div class="input-group">
+                        <label>📅 Date Captured</label>
+                        <input type="date" class="date-input">
+                    </div>
+
+                    <div class="input-group">
+                        <label>🛠️ Tools Observed</label>
+                        <input type="text" class="tools-input" placeholder="e.g., graph_calendar_get_events, bizchat_search">
+                    </div>
+
+                    <div class="input-group">
+                        <label>💭 Zero-Shot Feedback</label>
+                        <textarea class="zero-shot-feedback" placeholder="How well did BizChat handle this prompt without additional context?"></textarea>
+                    </div>
+
+                    <div class="input-group">
+                        <label>📝 Overall Feedback</label>
+                        <textarea class="overall-feedback" placeholder="General observations, issues, or suggestions..."></textarea>
+                    </div>
+
+                    <div class="input-group">
+                        <label>📌 Notes</label>
+                        <textarea class="notes-input" placeholder="Additional notes or observations..."></textarea>
+                    </div>
+
+                    <button class="save-button" onclick="saveData()">💾 Save Progress</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="prompt-card selected completed" data-prompt-id="6" data-selected="true">
+            <div class="prompt-card-header">
+                <div class="prompt-card-header-left">
+                    <input type="checkbox" class="selection-checkbox" 
+                           onchange="handleSelection(6, this.checked)" 
+                           onclick="event.stopPropagation()"
+                           checked>
+                    <div class="prompt-card-title" onclick="togglePrompt(6)">
+                        <h2>👥 Prompt #6: Conference/Event Preparation<span class="completed-badge">✅ Annotated</span></h2>
+                        <div class="meeting-info">📅 STCA Monthly Extended PLT + Managers  (177 attendees) | Meeting Participant</div>
+                    </div>
+                </div>
+                <div class="collapse-icon collapsed" id="icon-6" onclick="togglePrompt(6)">▼</div>
+            </div>
+
+            <div class="prompt-content" id="content-6">
+                <div class="prompt-meta">
+                    <div class="meta-item">
+                        <div class="meta-label">Category</div>
+                        <div class="meta-value">Events & Communications</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Complexity</div>
+                        <div class="meta-value">
+                            <span class="complexity-badge complexity-medium">medium</span>
+                        </div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Lead Time</div>
+                        <div class="meta-value">45 days</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Your Role</div>
+                        <div class="meta-value">👥 Meeting Participant</div>
+                    </div>
+                    
+                    <div class="meta-item">
+                        <div class="meta-label">📅 Meeting Date</div>
+                        <div class="meta-value">May 23, 2025 at 10:35 AM (1h 25m)</div>
+                    </div>
+
+                    <div class="meta-item">
+                        <div class="meta-label">📍 Location</div>
+                        <div class="meta-value">TBD</div>
+                    </div>
+
+                    <div class="meta-item">
+                        <div class="meta-label">👤 Organizer</div>
+                        <div class="meta-value">Effie Liu (efliu@microsoft.com)</div>
+                    </div>
+
+                    <div class="meta-item">
+                        <div class="meta-label">👥 Attendees</div>
+                        <div class="meta-value">177 people</div>
+                    </div>
+                </div>
+
+                <div class="prompt-text" id="prompt-text-6">I have an upcoming conference/event preparation meeting.
+
+As a participant in this meeting, you want to be well-prepared to contribute effectively.
+
+**Your Task:**
+Please access my calendar event to retrieve the complete attendee list, full meeting description, and any linked documents. Then create a comprehensive workback plan that includes:
+
+1. **Timeline Planning**: Work backwards from the meeting date to identify all preparation milestones
+2. **Task Breakdown**: Specific actionable tasks with clear owners from the attendee list
+3. **Dependencies**: Map out task dependencies and critical path
+4. **Stakeholder Coordination**: Identify key decision makers and their roles
+5. **Risk Mitigation**: Plan for potential delays or issues
+
+**Consider:**
+
+- Review the meeting agenda and objectives
+- Prepare any materials or updates you need to present
+- Identify questions or topics you want to raise
+- Review relevant background documents
+- Coordinate with your team on your input
+- Prepare to take notes and action items
+- Use actual attendee names for task assignments
+- Reference the meeting location for logistics planning
+- Check for related emails, documents, or previous meetings
+- Account for review cycles and approval processes
+
+Generate a detailed workback plan that ensures successful meeting preparation.</div>
+
+                <button class="copy-prompt-button" onclick="copyPromptText(6)">
+                    <span id="copy-icon-6">📋</span> Copy Sample Prompt
+                </button>
+
+                <div class="meta-item" style="margin-bottom: 15px;">
+                    <div class="meta-label">Expected Tools</div>
+                    <div class="tools-grid">
+                        <span class="tool-tag">graph_calendar_get_events</span>
+                    <span class="tool-tag">graph_get_people</span>
+                    <span class="tool-tag">graph_send_mail</span>
+                    </div>
+                </div>
+
+                <div class="input-section">
+                    <div class="input-group">
+                        <label>📎 DevUI Link</label>
+                        <input type="url" class="devui-link-input" placeholder="Paste DevUI session link here...">
+                    </div>
+
+                    <div class="input-group">
+                        <label>🆔 Session ID (auto-extracted)</label>
+                        <input type="text" class="session-id-input" placeholder="Session ID will auto-populate...">
+                    </div>
+
+                    <div class="input-group">
+                        <label>📅 Date Captured</label>
+                        <input type="date" class="date-input">
+                    </div>
+
+                    <div class="input-group">
+                        <label>🛠️ Tools Observed</label>
+                        <input type="text" class="tools-input" placeholder="e.g., graph_calendar_get_events, bizchat_search">
+                    </div>
+
+                    <div class="input-group">
+                        <label>💭 Zero-Shot Feedback</label>
+                        <textarea class="zero-shot-feedback" placeholder="How well did BizChat handle this prompt without additional context?"></textarea>
+                    </div>
+
+                    <div class="input-group">
+                        <label>📝 Overall Feedback</label>
+                        <textarea class="overall-feedback" placeholder="General observations, issues, or suggestions..."></textarea>
+                    </div>
+
+                    <div class="input-group">
+                        <label>📌 Notes</label>
+                        <textarea class="notes-input" placeholder="Additional notes or observations..."></textarea>
+                    </div>
+
+                    <button class="save-button" onclick="saveData()">💾 Save Progress</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="prompt-card selected completed" data-prompt-id="7" data-selected="true">
+            <div class="prompt-card-header">
+                <div class="prompt-card-header-left">
+                    <input type="checkbox" class="selection-checkbox" 
+                           onchange="handleSelection(7, this.checked)" 
+                           onclick="event.stopPropagation()"
+                           checked>
+                    <div class="prompt-card-title" onclick="togglePrompt(7)">
+                        <h2>👥 Prompt #7: Conference/Event Preparation<span class="completed-badge">✅ Annotated</span></h2>
+                        <div class="meeting-info">📅 E+D: FY26 Kickoff (404 attendees) | Meeting Participant</div>
+                    </div>
+                </div>
+                <div class="collapse-icon collapsed" id="icon-7" onclick="togglePrompt(7)">▼</div>
+            </div>
+
+            <div class="prompt-content" id="content-7">
+                <div class="prompt-meta">
+                    <div class="meta-item">
+                        <div class="meta-label">Category</div>
+                        <div class="meta-value">Events & Communications</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Complexity</div>
+                        <div class="meta-value">
+                            <span class="complexity-badge complexity-medium">medium</span>
+                        </div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Lead Time</div>
+                        <div class="meta-value">45 days</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Your Role</div>
+                        <div class="meta-value">👥 Meeting Participant</div>
+                    </div>
+                    
+                    <div class="meta-item">
+                        <div class="meta-label">📅 Meeting Date</div>
+                        <div class="meta-value">July 18, 2025 at 01:05 AM (1h 55m)</div>
+                    </div>
+
+                    <div class="meta-item">
+                        <div class="meta-label">📍 Location</div>
+                        <div class="meta-value">TBD</div>
+                    </div>
+
+                    <div class="meta-item">
+                        <div class="meta-label">👤 Organizer</div>
+                        <div class="meta-value">Experiences + Devices Exec Mgmt (exdxmgmt@microsoft.com)</div>
+                    </div>
+
+                    <div class="meta-item">
+                        <div class="meta-label">👥 Attendees</div>
+                        <div class="meta-value">404 people</div>
+                    </div>
+                </div>
+
+                <div class="prompt-text" id="prompt-text-7">I have an upcoming conference/event preparation meeting.
+
+As a participant in this meeting, you want to be well-prepared to contribute effectively.
+
+**Your Task:**
+Please access my calendar event to retrieve the complete attendee list, full meeting description, and any linked documents. Then create a comprehensive workback plan that includes:
+
+1. **Timeline Planning**: Work backwards from the meeting date to identify all preparation milestones
+2. **Task Breakdown**: Specific actionable tasks with clear owners from the attendee list
+3. **Dependencies**: Map out task dependencies and critical path
+4. **Stakeholder Coordination**: Identify key decision makers and their roles
+5. **Risk Mitigation**: Plan for potential delays or issues
+
+**Consider:**
+
+- Review the meeting agenda and objectives
+- Prepare any materials or updates you need to present
+- Identify questions or topics you want to raise
+- Review relevant background documents
+- Coordinate with your team on your input
+- Prepare to take notes and action items
+- Use actual attendee names for task assignments
+- Reference the meeting location for logistics planning
+- Check for related emails, documents, or previous meetings
+- Account for review cycles and approval processes
+
+Generate a detailed workback plan that ensures successful meeting preparation.</div>
+
+                <button class="copy-prompt-button" onclick="copyPromptText(7)">
+                    <span id="copy-icon-7">📋</span> Copy Sample Prompt
+                </button>
+
+                <div class="meta-item" style="margin-bottom: 15px;">
+                    <div class="meta-label">Expected Tools</div>
+                    <div class="tools-grid">
+                        <span class="tool-tag">graph_calendar_get_events</span>
+                    <span class="tool-tag">graph_get_people</span>
+                    <span class="tool-tag">graph_send_mail</span>
+                    </div>
+                </div>
+
+                <div class="input-section">
+                    <div class="input-group">
+                        <label>📎 DevUI Link</label>
+                        <input type="url" class="devui-link-input" placeholder="Paste DevUI session link here...">
+                    </div>
+
+                    <div class="input-group">
+                        <label>🆔 Session ID (auto-extracted)</label>
+                        <input type="text" class="session-id-input" placeholder="Session ID will auto-populate...">
+                    </div>
+
+                    <div class="input-group">
+                        <label>📅 Date Captured</label>
+                        <input type="date" class="date-input">
+                    </div>
+
+                    <div class="input-group">
+                        <label>🛠️ Tools Observed</label>
+                        <input type="text" class="tools-input" placeholder="e.g., graph_calendar_get_events, bizchat_search">
+                    </div>
+
+                    <div class="input-group">
+                        <label>💭 Zero-Shot Feedback</label>
+                        <textarea class="zero-shot-feedback" placeholder="How well did BizChat handle this prompt without additional context?"></textarea>
+                    </div>
+
+                    <div class="input-group">
+                        <label>📝 Overall Feedback</label>
+                        <textarea class="overall-feedback" placeholder="General observations, issues, or suggestions..."></textarea>
+                    </div>
+
+                    <div class="input-group">
+                        <label>📌 Notes</label>
+                        <textarea class="notes-input" placeholder="Additional notes or observations..."></textarea>
+                    </div>
+
+                    <button class="save-button" onclick="saveData()">💾 Save Progress</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="prompt-card selected completed" data-prompt-id="8" data-selected="true">
+            <div class="prompt-card-header">
+                <div class="prompt-card-header-left">
+                    <input type="checkbox" class="selection-checkbox" 
+                           onchange="handleSelection(8, this.checked)" 
+                           onclick="event.stopPropagation()"
+                           checked>
+                    <div class="prompt-card-title" onclick="togglePrompt(8)">
+                        <h2>👥 Prompt #8: Conference/Event Preparation<span class="completed-badge">✅ Annotated</span></h2>
+                        <div class="meeting-info">📅 STCA Monthly Extended PLT + Managers  (177 attendees) | Meeting Participant</div>
+                    </div>
+                </div>
+                <div class="collapse-icon collapsed" id="icon-8" onclick="togglePrompt(8)">▼</div>
+            </div>
+
+            <div class="prompt-content" id="content-8">
+                <div class="prompt-meta">
+                    <div class="meta-item">
+                        <div class="meta-label">Category</div>
+                        <div class="meta-value">Events & Communications</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Complexity</div>
+                        <div class="meta-value">
+                            <span class="complexity-badge complexity-medium">medium</span>
+                        </div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Lead Time</div>
+                        <div class="meta-value">45 days</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Your Role</div>
+                        <div class="meta-value">👥 Meeting Participant</div>
+                    </div>
+                    
+                    <div class="meta-item">
+                        <div class="meta-label">📅 Meeting Date</div>
+                        <div class="meta-value">May 23, 2025 at 10:35 AM (1h 25m)</div>
+                    </div>
+
+                    <div class="meta-item">
+                        <div class="meta-label">📍 Location</div>
+                        <div class="meta-value">TBD</div>
+                    </div>
+
+                    <div class="meta-item">
+                        <div class="meta-label">👤 Organizer</div>
+                        <div class="meta-value">Effie Liu (efliu@microsoft.com)</div>
+                    </div>
+
+                    <div class="meta-item">
+                        <div class="meta-label">👥 Attendees</div>
+                        <div class="meta-value">177 people</div>
+                    </div>
+                </div>
+
+                <div class="prompt-text" id="prompt-text-8">I have an upcoming conference/event preparation meeting.
+
+As a participant in this meeting, you want to be well-prepared to contribute effectively.
+
+**Your Task:**
+Please access my calendar event to retrieve the complete attendee list, full meeting description, and any linked documents. Then create a comprehensive workback plan that includes:
+
+1. **Timeline Planning**: Work backwards from the meeting date to identify all preparation milestones
+2. **Task Breakdown**: Specific actionable tasks with clear owners from the attendee list
+3. **Dependencies**: Map out task dependencies and critical path
+4. **Stakeholder Coordination**: Identify key decision makers and their roles
+5. **Risk Mitigation**: Plan for potential delays or issues
+
+**Consider:**
+
+- Review the meeting agenda and objectives
+- Prepare any materials or updates you need to present
+- Identify questions or topics you want to raise
+- Review relevant background documents
+- Coordinate with your team on your input
+- Prepare to take notes and action items
+- Use actual attendee names for task assignments
+- Reference the meeting location for logistics planning
+- Check for related emails, documents, or previous meetings
+- Account for review cycles and approval processes
+
+Generate a detailed workback plan that ensures successful meeting preparation.</div>
+
+                <button class="copy-prompt-button" onclick="copyPromptText(8)">
+                    <span id="copy-icon-8">📋</span> Copy Sample Prompt
+                </button>
+
+                <div class="meta-item" style="margin-bottom: 15px;">
+                    <div class="meta-label">Expected Tools</div>
+                    <div class="tools-grid">
+                        <span class="tool-tag">graph_calendar_get_events</span>
+                    <span class="tool-tag">graph_get_people</span>
+                    <span class="tool-tag">graph_send_mail</span>
+                    </div>
+                </div>
+
+                <div class="input-section">
+                    <div class="input-group">
+                        <label>📎 DevUI Link</label>
+                        <input type="url" class="devui-link-input" placeholder="Paste DevUI session link here...">
+                    </div>
+
+                    <div class="input-group">
+                        <label>🆔 Session ID (auto-extracted)</label>
+                        <input type="text" class="session-id-input" placeholder="Session ID will auto-populate...">
+                    </div>
+
+                    <div class="input-group">
+                        <label>📅 Date Captured</label>
+                        <input type="date" class="date-input">
+                    </div>
+
+                    <div class="input-group">
+                        <label>🛠️ Tools Observed</label>
+                        <input type="text" class="tools-input" placeholder="e.g., graph_calendar_get_events, bizchat_search">
+                    </div>
+
+                    <div class="input-group">
+                        <label>💭 Zero-Shot Feedback</label>
+                        <textarea class="zero-shot-feedback" placeholder="How well did BizChat handle this prompt without additional context?"></textarea>
+                    </div>
+
+                    <div class="input-group">
+                        <label>📝 Overall Feedback</label>
+                        <textarea class="overall-feedback" placeholder="General observations, issues, or suggestions..."></textarea>
+                    </div>
+
+                    <div class="input-group">
+                        <label>📌 Notes</label>
+                        <textarea class="notes-input" placeholder="Additional notes or observations..."></textarea>
+                    </div>
+
+                    <button class="save-button" onclick="saveData()">💾 Save Progress</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="prompt-card unselected" data-prompt-id="9" data-selected="false">
+            <div class="prompt-card-header">
+                <div class="prompt-card-header-left">
+                    <input type="checkbox" class="selection-checkbox" 
+                           onchange="handleSelection(9, this.checked)" 
+                           onclick="event.stopPropagation()"
+                           >
+                    <div class="prompt-card-title" onclick="togglePrompt(9)">
+                        <h2>👥 Prompt #9: Product Launch</h2>
+                        <div class="meeting-info">📅 How-to Navigate M365 Pulse: A 101 Beginner’s Guide (374 attendees) | Meeting Participant</div>
+                    </div>
+                </div>
+                <div class="collapse-icon collapsed" id="icon-9" onclick="togglePrompt(9)">▼</div>
+            </div>
+
+            <div class="prompt-content" id="content-9">
+                <div class="prompt-meta">
+                    <div class="meta-item">
+                        <div class="meta-label">Category</div>
+                        <div class="meta-value">Product Management</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Complexity</div>
+                        <div class="meta-value">
+                            <span class="complexity-badge complexity-high">high</span>
+                        </div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Lead Time</div>
+                        <div class="meta-value">90 days</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Your Role</div>
+                        <div class="meta-value">👥 Meeting Participant</div>
+                    </div>
+                    
+                    <div class="meta-item">
+                        <div class="meta-label">📅 Meeting Date</div>
+                        <div class="meta-value">May 15, 2025 at 07:05 AM (55m)</div>
+                    </div>
+
+                    <div class="meta-item">
+                        <div class="meta-label">📍 Location</div>
+                        <div class="meta-value">TBD</div>
+                    </div>
+
+                    <div class="meta-item">
+                        <div class="meta-label">👤 Organizer</div>
+                        <div class="meta-value">Mahima Srinivasan (mahima.srinivasan@microsoft.com)</div>
+                    </div>
+
+                    <div class="meta-item">
+                        <div class="meta-label">👥 Attendees</div>
+                        <div class="meta-value">374 people</div>
+                    </div>
+                </div>
+
+                <div class="prompt-text" id="prompt-text-9">I have an upcoming product launch meeting.
+
+As a participant in this meeting, you want to be well-prepared to contribute effectively.
+
+**Your Task:**
+Please access my calendar event to retrieve the complete attendee list, full meeting description, and any linked documents. Then create a comprehensive workback plan that includes:
+
+1. **Timeline Planning**: Work backwards from the meeting date to identify all preparation milestones
+2. **Task Breakdown**: Specific actionable tasks with clear owners from the attendee list
+3. **Dependencies**: Map out task dependencies and critical path
+4. **Stakeholder Coordination**: Identify key decision makers and their roles
+5. **Risk Mitigation**: Plan for potential delays or issues
+
+**Consider:**
+
+- Review the meeting agenda and objectives
+- Prepare any materials or updates you need to present
+- Identify questions or topics you want to raise
+- Review relevant background documents
+- Coordinate with your team on your input
+- Prepare to take notes and action items
+- Use actual attendee names for task assignments
+- Reference the meeting location for logistics planning
+- Check for related emails, documents, or previous meetings
+- Account for review cycles and approval processes
+
+Generate a detailed workback plan that ensures successful meeting preparation.</div>
+
+                <button class="copy-prompt-button" onclick="copyPromptText(9)">
+                    <span id="copy-icon-9">📋</span> Copy Sample Prompt
+                </button>
+
+                <div class="meta-item" style="margin-bottom: 15px;">
+                    <div class="meta-label">Expected Tools</div>
+                    <div class="tools-grid">
+                        <span class="tool-tag">graph_calendar_get_events</span>
+                    <span class="tool-tag">graph_get_people</span>
+                    <span class="tool-tag">graph_get_document</span>
+                    </div>
+                </div>
+
+                <div class="input-section">
+                    <div class="input-group">
+                        <label>📎 DevUI Link</label>
+                        <input type="url" class="devui-link-input" placeholder="Paste DevUI session link here...">
+                    </div>
+
+                    <div class="input-group">
+                        <label>🆔 Session ID (auto-extracted)</label>
+                        <input type="text" class="session-id-input" placeholder="Session ID will auto-populate...">
+                    </div>
+
+                    <div class="input-group">
+                        <label>📅 Date Captured</label>
+                        <input type="date" class="date-input">
+                    </div>
+
+                    <div class="input-group">
+                        <label>🛠️ Tools Observed</label>
+                        <input type="text" class="tools-input" placeholder="e.g., graph_calendar_get_events, bizchat_search">
+                    </div>
+
+                    <div class="input-group">
+                        <label>💭 Zero-Shot Feedback</label>
+                        <textarea class="zero-shot-feedback" placeholder="How well did BizChat handle this prompt without additional context?"></textarea>
+                    </div>
+
+                    <div class="input-group">
+                        <label>📝 Overall Feedback</label>
+                        <textarea class="overall-feedback" placeholder="General observations, issues, or suggestions..."></textarea>
+                    </div>
+
+                    <div class="input-group">
+                        <label>📌 Notes</label>
+                        <textarea class="notes-input" placeholder="Additional notes or observations..."></textarea>
+                    </div>
+
+                    <button class="save-button" onclick="saveData()">💾 Save Progress</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="prompt-card unselected" data-prompt-id="10" data-selected="false">
+            <div class="prompt-card-header">
+                <div class="prompt-card-header-left">
+                    <input type="checkbox" class="selection-checkbox" 
+                           onchange="handleSelection(10, this.checked)" 
+                           onclick="event.stopPropagation()"
+                           >
+                    <div class="prompt-card-title" onclick="togglePrompt(10)">
+                        <h2>👥 Prompt #10: Conference/Event Preparation</h2>
+                        <div class="meeting-info">📅 FY26 STCA Kickoff - Open Day Event (255 attendees) | Meeting Participant</div>
+                    </div>
+                </div>
+                <div class="collapse-icon collapsed" id="icon-10" onclick="togglePrompt(10)">▼</div>
+            </div>
+
+            <div class="prompt-content" id="content-10">
+                <div class="prompt-meta">
+                    <div class="meta-item">
+                        <div class="meta-label">Category</div>
+                        <div class="meta-value">Events & Communications</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Complexity</div>
+                        <div class="meta-value">
+                            <span class="complexity-badge complexity-medium">medium</span>
+                        </div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Lead Time</div>
+                        <div class="meta-value">45 days</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Your Role</div>
+                        <div class="meta-value">👥 Meeting Participant</div>
+                    </div>
+                    
+                    <div class="meta-item">
+                        <div class="meta-label">📅 Meeting Date</div>
+                        <div class="meta-value">September 09, 2025 at 02:30 PM (3h)</div>
+                    </div>
+
+                    <div class="meta-item">
+                        <div class="meta-label">📍 Location</div>
+                        <div class="meta-value">TBD</div>
+                    </div>
+
+                    <div class="meta-item">
+                        <div class="meta-label">👤 Organizer</div>
+                        <div class="meta-value">FY26 STCA Kickoff and STCA 20th Anniversary (stca-kickoff@microsoft.com)</div>
+                    </div>
+
+                    <div class="meta-item">
+                        <div class="meta-label">👥 Attendees</div>
+                        <div class="meta-value">255 people</div>
+                    </div>
+                </div>
+
+                <div class="prompt-text" id="prompt-text-10">I have an upcoming conference/event preparation meeting.
+
+As a participant in this meeting, you want to be well-prepared to contribute effectively.
+
+**Your Task:**
+Please access my calendar event to retrieve the complete attendee list, full meeting description, and any linked documents. Then create a comprehensive workback plan that includes:
+
+1. **Timeline Planning**: Work backwards from the meeting date to identify all preparation milestones
+2. **Task Breakdown**: Specific actionable tasks with clear owners from the attendee list
+3. **Dependencies**: Map out task dependencies and critical path
+4. **Stakeholder Coordination**: Identify key decision makers and their roles
+5. **Risk Mitigation**: Plan for potential delays or issues
+
+**Consider:**
+
+- Review the meeting agenda and objectives
+- Prepare any materials or updates you need to present
+- Identify questions or topics you want to raise
+- Review relevant background documents
+- Coordinate with your team on your input
+- Prepare to take notes and action items
+- Use actual attendee names for task assignments
+- Reference the meeting location for logistics planning
+- Check for related emails, documents, or previous meetings
+- Account for review cycles and approval processes
+
+Generate a detailed workback plan that ensures successful meeting preparation.</div>
+
+                <button class="copy-prompt-button" onclick="copyPromptText(10)">
+                    <span id="copy-icon-10">📋</span> Copy Sample Prompt
+                </button>
+
+                <div class="meta-item" style="margin-bottom: 15px;">
+                    <div class="meta-label">Expected Tools</div>
+                    <div class="tools-grid">
+                        <span class="tool-tag">graph_calendar_get_events</span>
+                    <span class="tool-tag">graph_get_people</span>
+                    <span class="tool-tag">graph_send_mail</span>
+                    </div>
+                </div>
+
+                <div class="input-section">
+                    <div class="input-group">
+                        <label>📎 DevUI Link</label>
+                        <input type="url" class="devui-link-input" placeholder="Paste DevUI session link here...">
+                    </div>
+
+                    <div class="input-group">
+                        <label>🆔 Session ID (auto-extracted)</label>
+                        <input type="text" class="session-id-input" placeholder="Session ID will auto-populate...">
+                    </div>
+
+                    <div class="input-group">
+                        <label>📅 Date Captured</label>
+                        <input type="date" class="date-input">
+                    </div>
+
+                    <div class="input-group">
+                        <label>🛠️ Tools Observed</label>
+                        <input type="text" class="tools-input" placeholder="e.g., graph_calendar_get_events, bizchat_search">
+                    </div>
+
+                    <div class="input-group">
+                        <label>💭 Zero-Shot Feedback</label>
+                        <textarea class="zero-shot-feedback" placeholder="How well did BizChat handle this prompt without additional context?"></textarea>
+                    </div>
+
+                    <div class="input-group">
+                        <label>📝 Overall Feedback</label>
+                        <textarea class="overall-feedback" placeholder="General observations, issues, or suggestions..."></textarea>
+                    </div>
+
+                    <div class="input-group">
+                        <label>📌 Notes</label>
+                        <textarea class="notes-input" placeholder="Additional notes or observations..."></textarea>
+                    </div>
+
+                    <button class="save-button" onclick="saveData()">💾 Save Progress</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="prompt-card unselected" data-prompt-id="11" data-selected="false">
+            <div class="prompt-card-header">
+                <div class="prompt-card-header-left">
+                    <input type="checkbox" class="selection-checkbox" 
+                           onchange="handleSelection(11, this.checked)" 
+                           onclick="event.stopPropagation()"
+                           >
+                    <div class="prompt-card-title" onclick="togglePrompt(11)">
+                        <h2>👥 Prompt #11: Training Workshop</h2>
+                        <div class="meeting-info">📅 Agentic Memory Workshop – Modular, Portable Memory for Human-Agent Interactions (155 attendees) | Meeting Participant</div>
+                    </div>
+                </div>
+                <div class="collapse-icon collapsed" id="icon-11" onclick="togglePrompt(11)">▼</div>
+            </div>
+
+            <div class="prompt-content" id="content-11">
+                <div class="prompt-meta">
+                    <div class="meta-item">
+                        <div class="meta-label">Category</div>
+                        <div class="meta-value">Learning & Development</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Complexity</div>
+                        <div class="meta-value">
+                            <span class="complexity-badge complexity-medium">medium</span>
+                        </div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Lead Time</div>
+                        <div class="meta-value">60 days</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Your Role</div>
+                        <div class="meta-value">👥 Meeting Participant</div>
+                    </div>
+                    
+                    <div class="meta-item">
+                        <div class="meta-label">📅 Meeting Date</div>
+                        <div class="meta-value">October 16, 2025 at 07:00 AM (3h)</div>
+                    </div>
+
+                    <div class="meta-item">
+                        <div class="meta-label">📍 Location</div>
+                        <div class="meta-value">TBD</div>
+                    </div>
+
+                    <div class="meta-item">
+                        <div class="meta-label">👤 Organizer</div>
+                        <div class="meta-value">Doug Burger (HE\/HIM) (dburger@microsoft.com)</div>
+                    </div>
+
+                    <div class="meta-item">
+                        <div class="meta-label">👥 Attendees</div>
+                        <div class="meta-value">155 people</div>
+                    </div>
+                </div>
+
+                <div class="prompt-text" id="prompt-text-11">I have an upcoming training workshop meeting.
+
+As a participant in this meeting, you want to be well-prepared to contribute effectively.
+
+**Your Task:**
+Please access my calendar event to retrieve the complete attendee list, full meeting description, and any linked documents. Then create a comprehensive workback plan that includes:
+
+1. **Timeline Planning**: Work backwards from the meeting date to identify all preparation milestones
+2. **Task Breakdown**: Specific actionable tasks with clear owners from the attendee list
+3. **Dependencies**: Map out task dependencies and critical path
+4. **Stakeholder Coordination**: Identify key decision makers and their roles
+5. **Risk Mitigation**: Plan for potential delays or issues
+
+**Consider:**
+
+- Review the meeting agenda and objectives
+- Prepare any materials or updates you need to present
+- Identify questions or topics you want to raise
+- Review relevant background documents
+- Coordinate with your team on your input
+- Prepare to take notes and action items
+- Use actual attendee names for task assignments
+- Reference the meeting location for logistics planning
+- Check for related emails, documents, or previous meetings
+- Account for review cycles and approval processes
+
+Generate a detailed workback plan that ensures successful meeting preparation.</div>
+
+                <button class="copy-prompt-button" onclick="copyPromptText(11)">
+                    <span id="copy-icon-11">📋</span> Copy Sample Prompt
+                </button>
+
+                <div class="meta-item" style="margin-bottom: 15px;">
+                    <div class="meta-label">Expected Tools</div>
+                    <div class="tools-grid">
+                        <span class="tool-tag">graph_calendar_get_events</span>
+                    <span class="tool-tag">graph_get_people</span>
+                    <span class="tool-tag">graph_send_mail</span>
+                    </div>
+                </div>
+
+                <div class="input-section">
+                    <div class="input-group">
+                        <label>📎 DevUI Link</label>
+                        <input type="url" class="devui-link-input" placeholder="Paste DevUI session link here...">
+                    </div>
+
+                    <div class="input-group">
+                        <label>🆔 Session ID (auto-extracted)</label>
+                        <input type="text" class="session-id-input" placeholder="Session ID will auto-populate...">
+                    </div>
+
+                    <div class="input-group">
+                        <label>📅 Date Captured</label>
+                        <input type="date" class="date-input">
+                    </div>
+
+                    <div class="input-group">
+                        <label>🛠️ Tools Observed</label>
+                        <input type="text" class="tools-input" placeholder="e.g., graph_calendar_get_events, bizchat_search">
+                    </div>
+
+                    <div class="input-group">
+                        <label>💭 Zero-Shot Feedback</label>
+                        <textarea class="zero-shot-feedback" placeholder="How well did BizChat handle this prompt without additional context?"></textarea>
+                    </div>
+
+                    <div class="input-group">
+                        <label>📝 Overall Feedback</label>
+                        <textarea class="overall-feedback" placeholder="General observations, issues, or suggestions..."></textarea>
+                    </div>
+
+                    <div class="input-group">
+                        <label>📌 Notes</label>
+                        <textarea class="notes-input" placeholder="Additional notes or observations..."></textarea>
+                    </div>
+
+                    <button class="save-button" onclick="saveData()">💾 Save Progress</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="prompt-card unselected" data-prompt-id="12" data-selected="false">
+            <div class="prompt-card-header">
+                <div class="prompt-card-header-left">
+                    <input type="checkbox" class="selection-checkbox" 
+                           onchange="handleSelection(12, this.checked)" 
+                           onclick="event.stopPropagation()"
+                           >
+                    <div class="prompt-card-title" onclick="togglePrompt(12)">
+                        <h2>👥 Prompt #12: Product Launch</h2>
+                        <div class="meeting-info">📅 C.AI Organize + Collaborate | Pillar Review (49 attendees) | Meeting Participant</div>
+                    </div>
+                </div>
+                <div class="collapse-icon collapsed" id="icon-12" onclick="togglePrompt(12)">▼</div>
+            </div>
+
+            <div class="prompt-content" id="content-12">
+                <div class="prompt-meta">
+                    <div class="meta-item">
+                        <div class="meta-label">Category</div>
+                        <div class="meta-value">Product Management</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Complexity</div>
+                        <div class="meta-value">
+                            <span class="complexity-badge complexity-high">high</span>
+                        </div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Lead Time</div>
+                        <div class="meta-value">90 days</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Your Role</div>
+                        <div class="meta-value">👥 Meeting Participant</div>
+                    </div>
+                    
+                    <div class="meta-item">
+                        <div class="meta-label">📅 Meeting Date</div>
+                        <div class="meta-value">August 18, 2025 at 11:35 PM (55m)</div>
+                    </div>
+
+                    <div class="meta-item">
+                        <div class="meta-label">📍 Location</div>
+                        <div class="meta-value">TBD</div>
+                    </div>
+
+                    <div class="meta-item">
+                        <div class="meta-label">👤 Organizer</div>
+                        <div class="meta-value">Pratibha Permandla (Pratibha.Permandla@microsoft.com)</div>
+                    </div>
+
+                    <div class="meta-item">
+                        <div class="meta-label">👥 Attendees</div>
+                        <div class="meta-value">49 people</div>
+                    </div>
+                </div>
+
+                <div class="prompt-text" id="prompt-text-12">I have an upcoming product launch meeting.
+
+As a participant in this meeting, you want to be well-prepared to contribute effectively.
+
+**Your Task:**
+Please access my calendar event to retrieve the complete attendee list, full meeting description, and any linked documents. Then create a comprehensive workback plan that includes:
+
+1. **Timeline Planning**: Work backwards from the meeting date to identify all preparation milestones
+2. **Task Breakdown**: Specific actionable tasks with clear owners from the attendee list
+3. **Dependencies**: Map out task dependencies and critical path
+4. **Stakeholder Coordination**: Identify key decision makers and their roles
+5. **Risk Mitigation**: Plan for potential delays or issues
+
+**Consider:**
+
+- Review the meeting agenda and objectives
+- Prepare any materials or updates you need to present
+- Identify questions or topics you want to raise
+- Review relevant background documents
+- Coordinate with your team on your input
+- Prepare to take notes and action items
+- Use actual attendee names for task assignments
+- Reference the meeting location for logistics planning
+- Check for related emails, documents, or previous meetings
+- Account for review cycles and approval processes
+
+Generate a detailed workback plan that ensures successful meeting preparation.</div>
+
+                <button class="copy-prompt-button" onclick="copyPromptText(12)">
+                    <span id="copy-icon-12">📋</span> Copy Sample Prompt
+                </button>
+
+                <div class="meta-item" style="margin-bottom: 15px;">
+                    <div class="meta-label">Expected Tools</div>
+                    <div class="tools-grid">
+                        <span class="tool-tag">graph_calendar_get_events</span>
+                    <span class="tool-tag">graph_get_people</span>
+                    <span class="tool-tag">graph_get_document</span>
+                    </div>
+                </div>
+
+                <div class="input-section">
+                    <div class="input-group">
+                        <label>📎 DevUI Link</label>
+                        <input type="url" class="devui-link-input" placeholder="Paste DevUI session link here...">
+                    </div>
+
+                    <div class="input-group">
+                        <label>🆔 Session ID (auto-extracted)</label>
+                        <input type="text" class="session-id-input" placeholder="Session ID will auto-populate...">
+                    </div>
+
+                    <div class="input-group">
+                        <label>📅 Date Captured</label>
+                        <input type="date" class="date-input">
+                    </div>
+
+                    <div class="input-group">
+                        <label>🛠️ Tools Observed</label>
+                        <input type="text" class="tools-input" placeholder="e.g., graph_calendar_get_events, bizchat_search">
+                    </div>
+
+                    <div class="input-group">
+                        <label>💭 Zero-Shot Feedback</label>
+                        <textarea class="zero-shot-feedback" placeholder="How well did BizChat handle this prompt without additional context?"></textarea>
+                    </div>
+
+                    <div class="input-group">
+                        <label>📝 Overall Feedback</label>
+                        <textarea class="overall-feedback" placeholder="General observations, issues, or suggestions..."></textarea>
+                    </div>
+
+                    <div class="input-group">
+                        <label>📌 Notes</label>
+                        <textarea class="notes-input" placeholder="Additional notes or observations..."></textarea>
+                    </div>
+
+                    <button class="save-button" onclick="saveData()">💾 Save Progress</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="prompt-card unselected" data-prompt-id="13" data-selected="false">
+            <div class="prompt-card-header">
+                <div class="prompt-card-header-left">
+                    <input type="checkbox" class="selection-checkbox" 
+                           onchange="handleSelection(13, this.checked)" 
+                           onclick="event.stopPropagation()"
+                           >
+                    <div class="prompt-card-title" onclick="togglePrompt(13)">
+                        <h2>👥 Prompt #13: Training Workshop</h2>
+                        <div class="meeting-info">📅 AI PM Boot Camp English (Aug) - #1 (24 attendees) | Meeting Participant</div>
+                    </div>
+                </div>
+                <div class="collapse-icon collapsed" id="icon-13" onclick="togglePrompt(13)">▼</div>
+            </div>
+
+            <div class="prompt-content" id="content-13">
+                <div class="prompt-meta">
+                    <div class="meta-item">
+                        <div class="meta-label">Category</div>
+                        <div class="meta-value">Learning & Development</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Complexity</div>
+                        <div class="meta-value">
+                            <span class="complexity-badge complexity-medium">medium</span>
+                        </div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Lead Time</div>
+                        <div class="meta-value">60 days</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Your Role</div>
+                        <div class="meta-value">👥 Meeting Participant</div>
+                    </div>
+                    
+                    <div class="meta-item">
+                        <div class="meta-label">📅 Meeting Date</div>
+                        <div class="meta-value">August 08, 2025 at 09:05 AM (2h 55m)</div>
+                    </div>
+
+                    <div class="meta-item">
+                        <div class="meta-label">📍 Location</div>
+                        <div class="meta-value">TBD</div>
+                    </div>
+
+                    <div class="meta-item">
+                        <div class="meta-label">👤 Organizer</div>
+                        <div class="meta-value">Kathy Liu (kathyl@microsoft.com)</div>
+                    </div>
+
+                    <div class="meta-item">
+                        <div class="meta-label">👥 Attendees</div>
+                        <div class="meta-value">24 people</div>
+                    </div>
+                </div>
+
+                <div class="prompt-text" id="prompt-text-13">I have an upcoming training workshop meeting.
+
+As a participant in this meeting, you want to be well-prepared to contribute effectively.
+
+**Your Task:**
+Please access my calendar event to retrieve the complete attendee list, full meeting description, and any linked documents. Then create a comprehensive workback plan that includes:
+
+1. **Timeline Planning**: Work backwards from the meeting date to identify all preparation milestones
+2. **Task Breakdown**: Specific actionable tasks with clear owners from the attendee list
+3. **Dependencies**: Map out task dependencies and critical path
+4. **Stakeholder Coordination**: Identify key decision makers and their roles
+5. **Risk Mitigation**: Plan for potential delays or issues
+
+**Consider:**
+
+- Review the meeting agenda and objectives
+- Prepare any materials or updates you need to present
+- Identify questions or topics you want to raise
+- Review relevant background documents
+- Coordinate with your team on your input
+- Prepare to take notes and action items
+- Use actual attendee names for task assignments
+- Reference the meeting location for logistics planning
+- Check for related emails, documents, or previous meetings
+- Account for review cycles and approval processes
+
+Generate a detailed workback plan that ensures successful meeting preparation.</div>
+
+                <button class="copy-prompt-button" onclick="copyPromptText(13)">
+                    <span id="copy-icon-13">📋</span> Copy Sample Prompt
+                </button>
+
+                <div class="meta-item" style="margin-bottom: 15px;">
+                    <div class="meta-label">Expected Tools</div>
+                    <div class="tools-grid">
+                        <span class="tool-tag">graph_calendar_get_events</span>
+                    <span class="tool-tag">graph_get_people</span>
+                    <span class="tool-tag">graph_send_mail</span>
+                    </div>
+                </div>
+
+                <div class="input-section">
+                    <div class="input-group">
+                        <label>📎 DevUI Link</label>
+                        <input type="url" class="devui-link-input" placeholder="Paste DevUI session link here...">
+                    </div>
+
+                    <div class="input-group">
+                        <label>🆔 Session ID (auto-extracted)</label>
+                        <input type="text" class="session-id-input" placeholder="Session ID will auto-populate...">
+                    </div>
+
+                    <div class="input-group">
+                        <label>📅 Date Captured</label>
+                        <input type="date" class="date-input">
+                    </div>
+
+                    <div class="input-group">
+                        <label>🛠️ Tools Observed</label>
+                        <input type="text" class="tools-input" placeholder="e.g., graph_calendar_get_events, bizchat_search">
+                    </div>
+
+                    <div class="input-group">
+                        <label>💭 Zero-Shot Feedback</label>
+                        <textarea class="zero-shot-feedback" placeholder="How well did BizChat handle this prompt without additional context?"></textarea>
+                    </div>
+
+                    <div class="input-group">
+                        <label>📝 Overall Feedback</label>
+                        <textarea class="overall-feedback" placeholder="General observations, issues, or suggestions..."></textarea>
+                    </div>
+
+                    <div class="input-group">
+                        <label>📌 Notes</label>
+                        <textarea class="notes-input" placeholder="Additional notes or observations..."></textarea>
+                    </div>
+
+                    <button class="save-button" onclick="saveData()">💾 Save Progress</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="prompt-card unselected" data-prompt-id="14" data-selected="false">
+            <div class="prompt-card-header">
+                <div class="prompt-card-header-left">
+                    <input type="checkbox" class="selection-checkbox" 
+                           onchange="handleSelection(14, this.checked)" 
+                           onclick="event.stopPropagation()"
+                           >
+                    <div class="prompt-card-title" onclick="togglePrompt(14)">
+                        <h2>👥 Prompt #14: Conference/Event Preparation</h2>
+                        <div class="meeting-info">📅 FY26 STCA Kickoff All Hands (24 attendees) | Meeting Participant</div>
+                    </div>
+                </div>
+                <div class="collapse-icon collapsed" id="icon-14" onclick="togglePrompt(14)">▼</div>
+            </div>
+
+            <div class="prompt-content" id="content-14">
+                <div class="prompt-meta">
+                    <div class="meta-item">
+                        <div class="meta-label">Category</div>
+                        <div class="meta-value">Events & Communications</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Complexity</div>
+                        <div class="meta-value">
+                            <span class="complexity-badge complexity-medium">medium</span>
+                        </div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Lead Time</div>
+                        <div class="meta-value">45 days</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Your Role</div>
+                        <div class="meta-value">👥 Meeting Participant</div>
+                    </div>
+                    
+                    <div class="meta-item">
+                        <div class="meta-label">📅 Meeting Date</div>
+                        <div class="meta-value">September 09, 2025 at 09:30 AM (3h)</div>
+                    </div>
+
+                    <div class="meta-item">
+                        <div class="meta-label">📍 Location</div>
+                        <div class="meta-value">TBD</div>
+                    </div>
+
+                    <div class="meta-item">
+                        <div class="meta-label">👤 Organizer</div>
+                        <div class="meta-value">FY26 STCA Kickoff and STCA 20th Anniversary (stca-kickoff@microsoft.com)</div>
+                    </div>
+
+                    <div class="meta-item">
+                        <div class="meta-label">👥 Attendees</div>
+                        <div class="meta-value">24 people</div>
+                    </div>
+                </div>
+
+                <div class="prompt-text" id="prompt-text-14">I have an upcoming conference/event preparation meeting.
+
+As a participant in this meeting, you want to be well-prepared to contribute effectively.
+
+**Your Task:**
+Please access my calendar event to retrieve the complete attendee list, full meeting description, and any linked documents. Then create a comprehensive workback plan that includes:
+
+1. **Timeline Planning**: Work backwards from the meeting date to identify all preparation milestones
+2. **Task Breakdown**: Specific actionable tasks with clear owners from the attendee list
+3. **Dependencies**: Map out task dependencies and critical path
+4. **Stakeholder Coordination**: Identify key decision makers and their roles
+5. **Risk Mitigation**: Plan for potential delays or issues
+
+**Consider:**
+
+- Review the meeting agenda and objectives
+- Prepare any materials or updates you need to present
+- Identify questions or topics you want to raise
+- Review relevant background documents
+- Coordinate with your team on your input
+- Prepare to take notes and action items
+- Use actual attendee names for task assignments
+- Reference the meeting location for logistics planning
+- Check for related emails, documents, or previous meetings
+- Account for review cycles and approval processes
+
+Generate a detailed workback plan that ensures successful meeting preparation.</div>
+
+                <button class="copy-prompt-button" onclick="copyPromptText(14)">
+                    <span id="copy-icon-14">📋</span> Copy Sample Prompt
+                </button>
+
+                <div class="meta-item" style="margin-bottom: 15px;">
+                    <div class="meta-label">Expected Tools</div>
+                    <div class="tools-grid">
+                        <span class="tool-tag">graph_calendar_get_events</span>
+                    <span class="tool-tag">graph_get_people</span>
+                    <span class="tool-tag">graph_send_mail</span>
+                    </div>
+                </div>
+
+                <div class="input-section">
+                    <div class="input-group">
+                        <label>📎 DevUI Link</label>
+                        <input type="url" class="devui-link-input" placeholder="Paste DevUI session link here...">
+                    </div>
+
+                    <div class="input-group">
+                        <label>🆔 Session ID (auto-extracted)</label>
+                        <input type="text" class="session-id-input" placeholder="Session ID will auto-populate...">
+                    </div>
+
+                    <div class="input-group">
+                        <label>📅 Date Captured</label>
+                        <input type="date" class="date-input">
+                    </div>
+
+                    <div class="input-group">
+                        <label>🛠️ Tools Observed</label>
+                        <input type="text" class="tools-input" placeholder="e.g., graph_calendar_get_events, bizchat_search">
+                    </div>
+
+                    <div class="input-group">
+                        <label>💭 Zero-Shot Feedback</label>
+                        <textarea class="zero-shot-feedback" placeholder="How well did BizChat handle this prompt without additional context?"></textarea>
+                    </div>
+
+                    <div class="input-group">
+                        <label>📝 Overall Feedback</label>
+                        <textarea class="overall-feedback" placeholder="General observations, issues, or suggestions..."></textarea>
+                    </div>
+
+                    <div class="input-group">
+                        <label>📌 Notes</label>
+                        <textarea class="notes-input" placeholder="Additional notes or observations..."></textarea>
+                    </div>
+
+                    <button class="save-button" onclick="saveData()">💾 Save Progress</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="prompt-card unselected" data-prompt-id="15" data-selected="false">
+            <div class="prompt-card-header">
+                <div class="prompt-card-header-left">
+                    <input type="checkbox" class="selection-checkbox" 
+                           onchange="handleSelection(15, this.checked)" 
+                           onclick="event.stopPropagation()"
+                           >
+                    <div class="prompt-card-title" onclick="togglePrompt(15)">
+                        <h2>👥 Prompt #15: Training Workshop</h2>
+                        <div class="meeting-info">📅 AI PM Boot Camp #2 (19 attendees) | Meeting Participant</div>
+                    </div>
+                </div>
+                <div class="collapse-icon collapsed" id="icon-15" onclick="togglePrompt(15)">▼</div>
+            </div>
+
+            <div class="prompt-content" id="content-15">
+                <div class="prompt-meta">
+                    <div class="meta-item">
+                        <div class="meta-label">Category</div>
+                        <div class="meta-value">Learning & Development</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Complexity</div>
+                        <div class="meta-value">
+                            <span class="complexity-badge complexity-medium">medium</span>
+                        </div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Lead Time</div>
+                        <div class="meta-value">60 days</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Your Role</div>
+                        <div class="meta-value">👥 Meeting Participant</div>
+                    </div>
+                    
+                    <div class="meta-item">
+                        <div class="meta-label">📅 Meeting Date</div>
+                        <div class="meta-value">July 25, 2025 at 01:05 PM (3h 55m)</div>
+                    </div>
+
+                    <div class="meta-item">
+                        <div class="meta-label">📍 Location</div>
+                        <div class="meta-value">TBD</div>
+                    </div>
+
+                    <div class="meta-item">
+                        <div class="meta-label">👤 Organizer</div>
+                        <div class="meta-value">Kathy Liu (kathyl@microsoft.com)</div>
+                    </div>
+
+                    <div class="meta-item">
+                        <div class="meta-label">👥 Attendees</div>
+                        <div class="meta-value">19 people</div>
+                    </div>
+                </div>
+
+                <div class="prompt-text" id="prompt-text-15">I have an upcoming training workshop meeting.
+
+As a participant in this meeting, you want to be well-prepared to contribute effectively.
+
+**Your Task:**
+Please access my calendar event to retrieve the complete attendee list, full meeting description, and any linked documents. Then create a comprehensive workback plan that includes:
+
+1. **Timeline Planning**: Work backwards from the meeting date to identify all preparation milestones
+2. **Task Breakdown**: Specific actionable tasks with clear owners from the attendee list
+3. **Dependencies**: Map out task dependencies and critical path
+4. **Stakeholder Coordination**: Identify key decision makers and their roles
+5. **Risk Mitigation**: Plan for potential delays or issues
+
+**Consider:**
+
+- Review the meeting agenda and objectives
+- Prepare any materials or updates you need to present
+- Identify questions or topics you want to raise
+- Review relevant background documents
+- Coordinate with your team on your input
+- Prepare to take notes and action items
+- Use actual attendee names for task assignments
+- Reference the meeting location for logistics planning
+- Check for related emails, documents, or previous meetings
+- Account for review cycles and approval processes
+
+Generate a detailed workback plan that ensures successful meeting preparation.</div>
+
+                <button class="copy-prompt-button" onclick="copyPromptText(15)">
+                    <span id="copy-icon-15">📋</span> Copy Sample Prompt
+                </button>
+
+                <div class="meta-item" style="margin-bottom: 15px;">
+                    <div class="meta-label">Expected Tools</div>
+                    <div class="tools-grid">
+                        <span class="tool-tag">graph_calendar_get_events</span>
+                    <span class="tool-tag">graph_get_people</span>
+                    <span class="tool-tag">graph_send_mail</span>
+                    </div>
+                </div>
+
+                <div class="input-section">
+                    <div class="input-group">
+                        <label>📎 DevUI Link</label>
+                        <input type="url" class="devui-link-input" placeholder="Paste DevUI session link here...">
+                    </div>
+
+                    <div class="input-group">
+                        <label>🆔 Session ID (auto-extracted)</label>
+                        <input type="text" class="session-id-input" placeholder="Session ID will auto-populate...">
+                    </div>
+
+                    <div class="input-group">
+                        <label>📅 Date Captured</label>
+                        <input type="date" class="date-input">
+                    </div>
+
+                    <div class="input-group">
+                        <label>🛠️ Tools Observed</label>
+                        <input type="text" class="tools-input" placeholder="e.g., graph_calendar_get_events, bizchat_search">
+                    </div>
+
+                    <div class="input-group">
+                        <label>💭 Zero-Shot Feedback</label>
+                        <textarea class="zero-shot-feedback" placeholder="How well did BizChat handle this prompt without additional context?"></textarea>
+                    </div>
+
+                    <div class="input-group">
+                        <label>📝 Overall Feedback</label>
+                        <textarea class="overall-feedback" placeholder="General observations, issues, or suggestions..."></textarea>
+                    </div>
+
+                    <div class="input-group">
+                        <label>📌 Notes</label>
+                        <textarea class="notes-input" placeholder="Additional notes or observations..."></textarea>
+                    </div>
+
+                    <button class="save-button" onclick="saveData()">💾 Save Progress</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="prompt-card unselected" data-prompt-id="16" data-selected="false">
+            <div class="prompt-card-header">
+                <div class="prompt-card-header-left">
+                    <input type="checkbox" class="selection-checkbox" 
+                           onchange="handleSelection(16, this.checked)" 
+                           onclick="event.stopPropagation()"
+                           >
+                    <div class="prompt-card-title" onclick="togglePrompt(16)">
+                        <h2>👥 Prompt #16: Training Workshop</h2>
+                        <div class="meeting-info">📅 AI PM Boot Camp #1 (17 attendees) | Meeting Participant</div>
+                    </div>
+                </div>
+                <div class="collapse-icon collapsed" id="icon-16" onclick="togglePrompt(16)">▼</div>
+            </div>
+
+            <div class="prompt-content" id="content-16">
+                <div class="prompt-meta">
+                    <div class="meta-item">
+                        <div class="meta-label">Category</div>
+                        <div class="meta-value">Learning & Development</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Complexity</div>
+                        <div class="meta-value">
+                            <span class="complexity-badge complexity-medium">medium</span>
+                        </div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Lead Time</div>
+                        <div class="meta-value">60 days</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Your Role</div>
+                        <div class="meta-value">👥 Meeting Participant</div>
+                    </div>
+                    
+                    <div class="meta-item">
+                        <div class="meta-label">📅 Meeting Date</div>
+                        <div class="meta-value">July 21, 2025 at 02:05 PM (2h 55m)</div>
+                    </div>
+
+                    <div class="meta-item">
+                        <div class="meta-label">📍 Location</div>
+                        <div class="meta-value">TBD</div>
+                    </div>
+
+                    <div class="meta-item">
+                        <div class="meta-label">👤 Organizer</div>
+                        <div class="meta-value">Kathy Liu (kathyl@microsoft.com)</div>
+                    </div>
+
+                    <div class="meta-item">
+                        <div class="meta-label">👥 Attendees</div>
+                        <div class="meta-value">17 people</div>
+                    </div>
+                </div>
+
+                <div class="prompt-text" id="prompt-text-16">I have an upcoming training workshop meeting.
+
+As a participant in this meeting, you want to be well-prepared to contribute effectively.
+
+**Your Task:**
+Please access my calendar event to retrieve the complete attendee list, full meeting description, and any linked documents. Then create a comprehensive workback plan that includes:
+
+1. **Timeline Planning**: Work backwards from the meeting date to identify all preparation milestones
+2. **Task Breakdown**: Specific actionable tasks with clear owners from the attendee list
+3. **Dependencies**: Map out task dependencies and critical path
+4. **Stakeholder Coordination**: Identify key decision makers and their roles
+5. **Risk Mitigation**: Plan for potential delays or issues
+
+**Consider:**
+
+- Review the meeting agenda and objectives
+- Prepare any materials or updates you need to present
+- Identify questions or topics you want to raise
+- Review relevant background documents
+- Coordinate with your team on your input
+- Prepare to take notes and action items
+- Use actual attendee names for task assignments
+- Reference the meeting location for logistics planning
+- Check for related emails, documents, or previous meetings
+- Account for review cycles and approval processes
+
+Generate a detailed workback plan that ensures successful meeting preparation.</div>
+
+                <button class="copy-prompt-button" onclick="copyPromptText(16)">
+                    <span id="copy-icon-16">📋</span> Copy Sample Prompt
+                </button>
+
+                <div class="meta-item" style="margin-bottom: 15px;">
+                    <div class="meta-label">Expected Tools</div>
+                    <div class="tools-grid">
+                        <span class="tool-tag">graph_calendar_get_events</span>
+                    <span class="tool-tag">graph_get_people</span>
+                    <span class="tool-tag">graph_send_mail</span>
+                    </div>
+                </div>
+
+                <div class="input-section">
+                    <div class="input-group">
+                        <label>📎 DevUI Link</label>
+                        <input type="url" class="devui-link-input" placeholder="Paste DevUI session link here...">
+                    </div>
+
+                    <div class="input-group">
+                        <label>🆔 Session ID (auto-extracted)</label>
+                        <input type="text" class="session-id-input" placeholder="Session ID will auto-populate...">
+                    </div>
+
+                    <div class="input-group">
+                        <label>📅 Date Captured</label>
+                        <input type="date" class="date-input">
+                    </div>
+
+                    <div class="input-group">
+                        <label>🛠️ Tools Observed</label>
+                        <input type="text" class="tools-input" placeholder="e.g., graph_calendar_get_events, bizchat_search">
+                    </div>
+
+                    <div class="input-group">
+                        <label>💭 Zero-Shot Feedback</label>
+                        <textarea class="zero-shot-feedback" placeholder="How well did BizChat handle this prompt without additional context?"></textarea>
+                    </div>
+
+                    <div class="input-group">
+                        <label>📝 Overall Feedback</label>
+                        <textarea class="overall-feedback" placeholder="General observations, issues, or suggestions..."></textarea>
+                    </div>
+
+                    <div class="input-group">
+                        <label>📌 Notes</label>
+                        <textarea class="notes-input" placeholder="Additional notes or observations..."></textarea>
+                    </div>
+
+                    <button class="save-button" onclick="saveData()">💾 Save Progress</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="prompt-card unselected" data-prompt-id="17" data-selected="false">
+            <div class="prompt-card-header">
+                <div class="prompt-card-header-left">
+                    <input type="checkbox" class="selection-checkbox" 
+                           onchange="handleSelection(17, this.checked)" 
+                           onclick="event.stopPropagation()"
+                           >
+                    <div class="prompt-card-title" onclick="togglePrompt(17)">
+                        <h2>👥 Prompt #17: Quarterly Business Review (QBR)</h2>
+                        <div class="meeting-info">📅 Bing Experiences Team Meeting - Quarterly STCA (16 attendees) | Meeting Participant</div>
+                    </div>
+                </div>
+                <div class="collapse-icon collapsed" id="icon-17" onclick="togglePrompt(17)">▼</div>
+            </div>
+
+            <div class="prompt-content" id="content-17">
+                <div class="prompt-meta">
+                    <div class="meta-item">
+                        <div class="meta-label">Category</div>
+                        <div class="meta-value">Strategic Planning</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Complexity</div>
+                        <div class="meta-value">
+                            <span class="complexity-badge complexity-high">high</span>
+                        </div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Lead Time</div>
+                        <div class="meta-value">45 days</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Your Role</div>
+                        <div class="meta-value">👥 Meeting Participant</div>
+                    </div>
+                    
+                    <div class="meta-item">
+                        <div class="meta-label">📅 Meeting Date</div>
+                        <div class="meta-value">May 23, 2025 at 07:15 AM (1h 15m)</div>
+                    </div>
+
+                    <div class="meta-item">
+                        <div class="meta-label">📍 Location</div>
+                        <div class="meta-value">TBD</div>
+                    </div>
+
+                    <div class="meta-item">
+                        <div class="meta-label">👤 Organizer</div>
+                        <div class="meta-value">Elbio Abib (Elbio.Abib@microsoft.com)</div>
+                    </div>
+
+                    <div class="meta-item">
+                        <div class="meta-label">👥 Attendees</div>
+                        <div class="meta-value">16 people</div>
+                    </div>
+                </div>
+
+                <div class="prompt-text" id="prompt-text-17">I have an upcoming quarterly business review (qbr) meeting.
+
+As a participant in this meeting, you want to be well-prepared to contribute effectively.
+
+**Your Task:**
+Please access my calendar event to retrieve the complete attendee list, full meeting description, and any linked documents. Then create a comprehensive workback plan that includes:
+
+1. **Timeline Planning**: Work backwards from the meeting date to identify all preparation milestones
+2. **Task Breakdown**: Specific actionable tasks with clear owners from the attendee list
+3. **Dependencies**: Map out task dependencies and critical path
+4. **Stakeholder Coordination**: Identify key decision makers and their roles
+5. **Risk Mitigation**: Plan for potential delays or issues
+
+**Consider:**
+
+- Review the meeting agenda and objectives
+- Prepare any materials or updates you need to present
+- Identify questions or topics you want to raise
+- Review relevant background documents
+- Coordinate with your team on your input
+- Prepare to take notes and action items
+- Use actual attendee names for task assignments
+- Reference the meeting location for logistics planning
+- Check for related emails, documents, or previous meetings
+- Account for review cycles and approval processes
+
+Generate a detailed workback plan that ensures successful meeting preparation.</div>
+
+                <button class="copy-prompt-button" onclick="copyPromptText(17)">
+                    <span id="copy-icon-17">📋</span> Copy Sample Prompt
+                </button>
+
+                <div class="meta-item" style="margin-bottom: 15px;">
+                    <div class="meta-label">Expected Tools</div>
+                    <div class="tools-grid">
+                        <span class="tool-tag">graph_calendar_get_events</span>
+                    <span class="tool-tag">graph_get_people</span>
+                    <span class="tool-tag">graph_get_manager</span>
+                    </div>
+                </div>
+
+                <div class="input-section">
+                    <div class="input-group">
+                        <label>📎 DevUI Link</label>
+                        <input type="url" class="devui-link-input" placeholder="Paste DevUI session link here...">
+                    </div>
+
+                    <div class="input-group">
+                        <label>🆔 Session ID (auto-extracted)</label>
+                        <input type="text" class="session-id-input" placeholder="Session ID will auto-populate...">
+                    </div>
+
+                    <div class="input-group">
+                        <label>📅 Date Captured</label>
+                        <input type="date" class="date-input">
+                    </div>
+
+                    <div class="input-group">
+                        <label>🛠️ Tools Observed</label>
+                        <input type="text" class="tools-input" placeholder="e.g., graph_calendar_get_events, bizchat_search">
+                    </div>
+
+                    <div class="input-group">
+                        <label>💭 Zero-Shot Feedback</label>
+                        <textarea class="zero-shot-feedback" placeholder="How well did BizChat handle this prompt without additional context?"></textarea>
+                    </div>
+
+                    <div class="input-group">
+                        <label>📝 Overall Feedback</label>
+                        <textarea class="overall-feedback" placeholder="General observations, issues, or suggestions..."></textarea>
+                    </div>
+
+                    <div class="input-group">
+                        <label>📌 Notes</label>
+                        <textarea class="notes-input" placeholder="Additional notes or observations..."></textarea>
+                    </div>
+
+                    <button class="save-button" onclick="saveData()">💾 Save Progress</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="prompt-card unselected" data-prompt-id="18" data-selected="false">
+            <div class="prompt-card-header">
+                <div class="prompt-card-header-left">
+                    <input type="checkbox" class="selection-checkbox" 
+                           onchange="handleSelection(18, this.checked)" 
+                           onclick="event.stopPropagation()"
+                           >
+                    <div class="prompt-card-title" onclick="togglePrompt(18)">
+                        <h2>👥 Prompt #18: Product Launch</h2>
+                        <div class="meeting-info">📅 Organize & Collaborate Golden Prompt DS status (15 attendees) | Meeting Participant</div>
+                    </div>
+                </div>
+                <div class="collapse-icon collapsed" id="icon-18" onclick="togglePrompt(18)">▼</div>
+            </div>
+
+            <div class="prompt-content" id="content-18">
+                <div class="prompt-meta">
+                    <div class="meta-item">
+                        <div class="meta-label">Category</div>
+                        <div class="meta-value">Product Management</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Complexity</div>
+                        <div class="meta-value">
+                            <span class="complexity-badge complexity-high">high</span>
+                        </div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Lead Time</div>
+                        <div class="meta-value">90 days</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Your Role</div>
+                        <div class="meta-value">👥 Meeting Participant</div>
+                    </div>
+                    
+                    <div class="meta-item">
+                        <div class="meta-label">📅 Meeting Date</div>
+                        <div class="meta-value">October 10, 2025 at 12:05 PM (55m)</div>
+                    </div>
+
+                    <div class="meta-item">
+                        <div class="meta-label">📍 Location</div>
+                        <div class="meta-value">TBD</div>
+                    </div>
+
+                    <div class="meta-item">
+                        <div class="meta-label">👤 Organizer</div>
+                        <div class="meta-value">Balaji Shyamkumar (bshyamkumar@microsoft.com)</div>
+                    </div>
+
+                    <div class="meta-item">
+                        <div class="meta-label">👥 Attendees</div>
+                        <div class="meta-value">15 people</div>
+                    </div>
+                </div>
+
+                <div class="prompt-text" id="prompt-text-18">I have an upcoming product launch meeting.
+
+As a participant in this meeting, you want to be well-prepared to contribute effectively.
+
+**Your Task:**
+Please access my calendar event to retrieve the complete attendee list, full meeting description, and any linked documents. Then create a comprehensive workback plan that includes:
+
+1. **Timeline Planning**: Work backwards from the meeting date to identify all preparation milestones
+2. **Task Breakdown**: Specific actionable tasks with clear owners from the attendee list
+3. **Dependencies**: Map out task dependencies and critical path
+4. **Stakeholder Coordination**: Identify key decision makers and their roles
+5. **Risk Mitigation**: Plan for potential delays or issues
+
+**Consider:**
+
+- Review the meeting agenda and objectives
+- Prepare any materials or updates you need to present
+- Identify questions or topics you want to raise
+- Review relevant background documents
+- Coordinate with your team on your input
+- Prepare to take notes and action items
+- Use actual attendee names for task assignments
+- Reference the meeting location for logistics planning
+- Check for related emails, documents, or previous meetings
+- Account for review cycles and approval processes
+
+Generate a detailed workback plan that ensures successful meeting preparation.</div>
+
+                <button class="copy-prompt-button" onclick="copyPromptText(18)">
+                    <span id="copy-icon-18">📋</span> Copy Sample Prompt
+                </button>
+
+                <div class="meta-item" style="margin-bottom: 15px;">
+                    <div class="meta-label">Expected Tools</div>
+                    <div class="tools-grid">
+                        <span class="tool-tag">graph_calendar_get_events</span>
+                    <span class="tool-tag">graph_get_people</span>
+                    <span class="tool-tag">graph_get_document</span>
+                    </div>
+                </div>
+
+                <div class="input-section">
+                    <div class="input-group">
+                        <label>📎 DevUI Link</label>
+                        <input type="url" class="devui-link-input" placeholder="Paste DevUI session link here...">
+                    </div>
+
+                    <div class="input-group">
+                        <label>🆔 Session ID (auto-extracted)</label>
+                        <input type="text" class="session-id-input" placeholder="Session ID will auto-populate...">
+                    </div>
+
+                    <div class="input-group">
+                        <label>📅 Date Captured</label>
+                        <input type="date" class="date-input">
+                    </div>
+
+                    <div class="input-group">
+                        <label>🛠️ Tools Observed</label>
+                        <input type="text" class="tools-input" placeholder="e.g., graph_calendar_get_events, bizchat_search">
+                    </div>
+
+                    <div class="input-group">
+                        <label>💭 Zero-Shot Feedback</label>
+                        <textarea class="zero-shot-feedback" placeholder="How well did BizChat handle this prompt without additional context?"></textarea>
+                    </div>
+
+                    <div class="input-group">
+                        <label>📝 Overall Feedback</label>
+                        <textarea class="overall-feedback" placeholder="General observations, issues, or suggestions..."></textarea>
+                    </div>
+
+                    <div class="input-group">
+                        <label>📌 Notes</label>
+                        <textarea class="notes-input" placeholder="Additional notes or observations..."></textarea>
+                    </div>
+
+                    <button class="save-button" onclick="saveData()">💾 Save Progress</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="prompt-card unselected" data-prompt-id="19" data-selected="false">
+            <div class="prompt-card-header">
+                <div class="prompt-card-header-left">
+                    <input type="checkbox" class="selection-checkbox" 
+                           onchange="handleSelection(19, this.checked)" 
+                           onclick="event.stopPropagation()"
+                           >
+                    <div class="prompt-card-title" onclick="togglePrompt(19)">
+                        <h2>👥 Prompt #19: Product Launch</h2>
+                        <div class="meeting-info">📅 Organize & Collaborate Golden Prompt DS status (15 attendees) | Meeting Participant</div>
+                    </div>
+                </div>
+                <div class="collapse-icon collapsed" id="icon-19" onclick="togglePrompt(19)">▼</div>
+            </div>
+
+            <div class="prompt-content" id="content-19">
+                <div class="prompt-meta">
+                    <div class="meta-item">
+                        <div class="meta-label">Category</div>
+                        <div class="meta-value">Product Management</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Complexity</div>
+                        <div class="meta-value">
+                            <span class="complexity-badge complexity-high">high</span>
+                        </div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Lead Time</div>
+                        <div class="meta-value">90 days</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Your Role</div>
+                        <div class="meta-value">👥 Meeting Participant</div>
+                    </div>
+                    
+                    <div class="meta-item">
+                        <div class="meta-label">📅 Meeting Date</div>
+                        <div class="meta-value">October 17, 2025 at 12:05 PM (55m)</div>
+                    </div>
+
+                    <div class="meta-item">
+                        <div class="meta-label">📍 Location</div>
+                        <div class="meta-value">TBD</div>
+                    </div>
+
+                    <div class="meta-item">
+                        <div class="meta-label">👤 Organizer</div>
+                        <div class="meta-value">Balaji Shyamkumar (bshyamkumar@microsoft.com)</div>
+                    </div>
+
+                    <div class="meta-item">
+                        <div class="meta-label">👥 Attendees</div>
+                        <div class="meta-value">15 people</div>
+                    </div>
+                </div>
+
+                <div class="prompt-text" id="prompt-text-19">I have an upcoming product launch meeting.
+
+As a participant in this meeting, you want to be well-prepared to contribute effectively.
+
+**Your Task:**
+Please access my calendar event to retrieve the complete attendee list, full meeting description, and any linked documents. Then create a comprehensive workback plan that includes:
+
+1. **Timeline Planning**: Work backwards from the meeting date to identify all preparation milestones
+2. **Task Breakdown**: Specific actionable tasks with clear owners from the attendee list
+3. **Dependencies**: Map out task dependencies and critical path
+4. **Stakeholder Coordination**: Identify key decision makers and their roles
+5. **Risk Mitigation**: Plan for potential delays or issues
+
+**Consider:**
+
+- Review the meeting agenda and objectives
+- Prepare any materials or updates you need to present
+- Identify questions or topics you want to raise
+- Review relevant background documents
+- Coordinate with your team on your input
+- Prepare to take notes and action items
+- Use actual attendee names for task assignments
+- Reference the meeting location for logistics planning
+- Check for related emails, documents, or previous meetings
+- Account for review cycles and approval processes
+
+Generate a detailed workback plan that ensures successful meeting preparation.</div>
+
+                <button class="copy-prompt-button" onclick="copyPromptText(19)">
+                    <span id="copy-icon-19">📋</span> Copy Sample Prompt
+                </button>
+
+                <div class="meta-item" style="margin-bottom: 15px;">
+                    <div class="meta-label">Expected Tools</div>
+                    <div class="tools-grid">
+                        <span class="tool-tag">graph_calendar_get_events</span>
+                    <span class="tool-tag">graph_get_people</span>
+                    <span class="tool-tag">graph_get_document</span>
+                    </div>
+                </div>
+
+                <div class="input-section">
+                    <div class="input-group">
+                        <label>📎 DevUI Link</label>
+                        <input type="url" class="devui-link-input" placeholder="Paste DevUI session link here...">
+                    </div>
+
+                    <div class="input-group">
+                        <label>🆔 Session ID (auto-extracted)</label>
+                        <input type="text" class="session-id-input" placeholder="Session ID will auto-populate...">
+                    </div>
+
+                    <div class="input-group">
+                        <label>📅 Date Captured</label>
+                        <input type="date" class="date-input">
+                    </div>
+
+                    <div class="input-group">
+                        <label>🛠️ Tools Observed</label>
+                        <input type="text" class="tools-input" placeholder="e.g., graph_calendar_get_events, bizchat_search">
+                    </div>
+
+                    <div class="input-group">
+                        <label>💭 Zero-Shot Feedback</label>
+                        <textarea class="zero-shot-feedback" placeholder="How well did BizChat handle this prompt without additional context?"></textarea>
+                    </div>
+
+                    <div class="input-group">
+                        <label>📝 Overall Feedback</label>
+                        <textarea class="overall-feedback" placeholder="General observations, issues, or suggestions..."></textarea>
+                    </div>
+
+                    <div class="input-group">
+                        <label>📌 Notes</label>
+                        <textarea class="notes-input" placeholder="Additional notes or observations..."></textarea>
+                    </div>
+
+                    <button class="save-button" onclick="saveData()">💾 Save Progress</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="prompt-card unselected" data-prompt-id="20" data-selected="false">
+            <div class="prompt-card-header">
+                <div class="prompt-card-header-left">
+                    <input type="checkbox" class="selection-checkbox" 
+                           onchange="handleSelection(20, this.checked)" 
+                           onclick="event.stopPropagation()"
+                           >
+                    <div class="prompt-card-title" onclick="togglePrompt(20)">
+                        <h2>👥 Prompt #20: Conference/Event Preparation</h2>
+                        <div class="meeting-info">📅 Kickoff for the speakers for AI Boot Camp (for PMs) (13 attendees) | Meeting Participant</div>
+                    </div>
+                </div>
+                <div class="collapse-icon collapsed" id="icon-20" onclick="togglePrompt(20)">▼</div>
+            </div>
+
+            <div class="prompt-content" id="content-20">
+                <div class="prompt-meta">
+                    <div class="meta-item">
+                        <div class="meta-label">Category</div>
+                        <div class="meta-value">Events & Communications</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Complexity</div>
+                        <div class="meta-value">
+                            <span class="complexity-badge complexity-medium">medium</span>
+                        </div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Lead Time</div>
+                        <div class="meta-value">45 days</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Your Role</div>
+                        <div class="meta-value">👥 Meeting Participant</div>
+                    </div>
+                    
+                    <div class="meta-item">
+                        <div class="meta-label">📅 Meeting Date</div>
+                        <div class="meta-value">July 15, 2025 at 04:05 PM (55m)</div>
+                    </div>
+
+                    <div class="meta-item">
+                        <div class="meta-label">📍 Location</div>
+                        <div class="meta-value">TBD</div>
+                    </div>
+
+                    <div class="meta-item">
+                        <div class="meta-label">👤 Organizer</div>
+                        <div class="meta-value">Kathy Liu (kathyl@microsoft.com)</div>
+                    </div>
+
+                    <div class="meta-item">
+                        <div class="meta-label">👥 Attendees</div>
+                        <div class="meta-value">13 people</div>
+                    </div>
+                </div>
+
+                <div class="prompt-text" id="prompt-text-20">I have an upcoming conference/event preparation meeting.
+
+As a participant in this meeting, you want to be well-prepared to contribute effectively.
+
+**Your Task:**
+Please access my calendar event to retrieve the complete attendee list, full meeting description, and any linked documents. Then create a comprehensive workback plan that includes:
+
+1. **Timeline Planning**: Work backwards from the meeting date to identify all preparation milestones
+2. **Task Breakdown**: Specific actionable tasks with clear owners from the attendee list
+3. **Dependencies**: Map out task dependencies and critical path
+4. **Stakeholder Coordination**: Identify key decision makers and their roles
+5. **Risk Mitigation**: Plan for potential delays or issues
+
+**Consider:**
+
+- Review the meeting agenda and objectives
+- Prepare any materials or updates you need to present
+- Identify questions or topics you want to raise
+- Review relevant background documents
+- Coordinate with your team on your input
+- Prepare to take notes and action items
+- Use actual attendee names for task assignments
+- Reference the meeting location for logistics planning
+- Check for related emails, documents, or previous meetings
+- Account for review cycles and approval processes
+
+Generate a detailed workback plan that ensures successful meeting preparation.</div>
+
+                <button class="copy-prompt-button" onclick="copyPromptText(20)">
+                    <span id="copy-icon-20">📋</span> Copy Sample Prompt
+                </button>
+
+                <div class="meta-item" style="margin-bottom: 15px;">
+                    <div class="meta-label">Expected Tools</div>
+                    <div class="tools-grid">
+                        <span class="tool-tag">graph_calendar_get_events</span>
+                    <span class="tool-tag">graph_get_people</span>
+                    <span class="tool-tag">graph_send_mail</span>
+                    </div>
+                </div>
+
+                <div class="input-section">
+                    <div class="input-group">
+                        <label>📎 DevUI Link</label>
+                        <input type="url" class="devui-link-input" placeholder="Paste DevUI session link here...">
+                    </div>
+
+                    <div class="input-group">
+                        <label>🆔 Session ID (auto-extracted)</label>
+                        <input type="text" class="session-id-input" placeholder="Session ID will auto-populate...">
+                    </div>
+
+                    <div class="input-group">
+                        <label>📅 Date Captured</label>
+                        <input type="date" class="date-input">
+                    </div>
+
+                    <div class="input-group">
+                        <label>🛠️ Tools Observed</label>
+                        <input type="text" class="tools-input" placeholder="e.g., graph_calendar_get_events, bizchat_search">
+                    </div>
+
+                    <div class="input-group">
+                        <label>💭 Zero-Shot Feedback</label>
+                        <textarea class="zero-shot-feedback" placeholder="How well did BizChat handle this prompt without additional context?"></textarea>
+                    </div>
+
+                    <div class="input-group">
+                        <label>📝 Overall Feedback</label>
+                        <textarea class="overall-feedback" placeholder="General observations, issues, or suggestions..."></textarea>
+                    </div>
+
+                    <div class="input-group">
+                        <label>📌 Notes</label>
+                        <textarea class="notes-input" placeholder="Additional notes or observations..."></textarea>
+                    </div>
+
+                    <button class="save-button" onclick="saveData()">💾 Save Progress</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="prompt-card unselected" data-prompt-id="21" data-selected="false">
+            <div class="prompt-card-header">
+                <div class="prompt-card-header-left">
+                    <input type="checkbox" class="selection-checkbox" 
+                           onchange="handleSelection(21, this.checked)" 
+                           onclick="event.stopPropagation()"
+                           >
+                    <div class="prompt-card-title" onclick="togglePrompt(21)">
+                        <h2>👥 Prompt #21: Hiring Committee</h2>
+                        <div class="meeting-info">📅 Virtual Interview for Senior Applied Scientist(LLM) (1864549) (4 attendees) | Meeting Participant</div>
+                    </div>
+                </div>
+                <div class="collapse-icon collapsed" id="icon-21" onclick="togglePrompt(21)">▼</div>
+            </div>
+
+            <div class="prompt-content" id="content-21">
+                <div class="prompt-meta">
+                    <div class="meta-item">
+                        <div class="meta-label">Category</div>
+                        <div class="meta-value">Talent Acquisition</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Complexity</div>
+                        <div class="meta-value">
+                            <span class="complexity-badge complexity-low">low</span>
+                        </div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Lead Time</div>
+                        <div class="meta-value">7 days</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Your Role</div>
+                        <div class="meta-value">👥 Meeting Participant</div>
+                    </div>
+                    
+                    <div class="meta-item">
+                        <div class="meta-label">📅 Meeting Date</div>
+                        <div class="meta-value">October 24, 2025 at 03:00 PM (1h)</div>
+                    </div>
+
+                    <div class="meta-item">
+                        <div class="meta-label">📍 Location</div>
+                        <div class="meta-value">TBD</div>
+                    </div>
+
+                    <div class="meta-item">
+                        <div class="meta-label">👤 Organizer</div>
+                        <div class="meta-value">Microsoft Recruit (gtadmin7@microsoft.com)</div>
+                    </div>
+
+                    <div class="meta-item">
+                        <div class="meta-label">👥 Attendees</div>
+                        <div class="meta-value">4 people</div>
+                    </div>
+                </div>
+
+                <div class="prompt-text" id="prompt-text-21">I have an upcoming hiring committee meeting.
+
+As a participant in this meeting, you want to be well-prepared to contribute effectively.
+
+**Your Task:**
+Please access my calendar event to retrieve the complete attendee list, full meeting description, and any linked documents. Then create a comprehensive workback plan that includes:
+
+1. **Timeline Planning**: Work backwards from the meeting date to identify all preparation milestones
+2. **Task Breakdown**: Specific actionable tasks with clear owners from the attendee list
+3. **Dependencies**: Map out task dependencies and critical path
+4. **Stakeholder Coordination**: Identify key decision makers and their roles
+5. **Risk Mitigation**: Plan for potential delays or issues
+
+**Consider:**
+
+- Review the meeting agenda and objectives
+- Prepare any materials or updates you need to present
+- Identify questions or topics you want to raise
+- Review relevant background documents
+- Coordinate with your team on your input
+- Prepare to take notes and action items
+- Use actual attendee names for task assignments
+- Reference the meeting location for logistics planning
+- Check for related emails, documents, or previous meetings
+- Account for review cycles and approval processes
+
+Generate a detailed workback plan that ensures successful meeting preparation.</div>
+
+                <button class="copy-prompt-button" onclick="copyPromptText(21)">
+                    <span id="copy-icon-21">📋</span> Copy Sample Prompt
+                </button>
+
+                <div class="meta-item" style="margin-bottom: 15px;">
+                    <div class="meta-label">Expected Tools</div>
+                    <div class="tools-grid">
+                        <span class="tool-tag">graph_calendar_get_events</span>
+                    <span class="tool-tag">graph_get_people</span>
+                    <span class="tool-tag">graph_send_mail</span>
+                    </div>
+                </div>
+
+                <div class="input-section">
+                    <div class="input-group">
+                        <label>📎 DevUI Link</label>
+                        <input type="url" class="devui-link-input" placeholder="Paste DevUI session link here...">
+                    </div>
+
+                    <div class="input-group">
+                        <label>🆔 Session ID (auto-extracted)</label>
+                        <input type="text" class="session-id-input" placeholder="Session ID will auto-populate...">
+                    </div>
+
+                    <div class="input-group">
+                        <label>📅 Date Captured</label>
+                        <input type="date" class="date-input">
+                    </div>
+
+                    <div class="input-group">
+                        <label>🛠️ Tools Observed</label>
+                        <input type="text" class="tools-input" placeholder="e.g., graph_calendar_get_events, bizchat_search">
+                    </div>
+
+                    <div class="input-group">
+                        <label>💭 Zero-Shot Feedback</label>
+                        <textarea class="zero-shot-feedback" placeholder="How well did BizChat handle this prompt without additional context?"></textarea>
+                    </div>
+
+                    <div class="input-group">
+                        <label>📝 Overall Feedback</label>
+                        <textarea class="overall-feedback" placeholder="General observations, issues, or suggestions..."></textarea>
+                    </div>
+
+                    <div class="input-group">
+                        <label>📌 Notes</label>
+                        <textarea class="notes-input" placeholder="Additional notes or observations..."></textarea>
+                    </div>
+
+                    <button class="save-button" onclick="saveData()">💾 Save Progress</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="footer">
+            <p>📊 Total Prompts: 21 | Generated with AI Classification (Qwen3-Embedding-0.6B)</p>
+            <p>TimeBerry T+P © 2025 | BizChat Workback Planning DevUI Testing</p>
+        </div>
+    </div>
+
+    <script>
+        // Initial annotation data from previous testing session
+        const INITIAL_ANNOTATIONS = {
+  "1": {
+    "selected": false,
+    "devuiLink": "",
+    "sessionId": "",
+    "dateCaptured": "",
+    "toolsObserved": "",
+    "zeroShotFeedback": "",
+    "overallFeedback": "",
+    "notes": ""
+  },
+  "2": {
+    "selected": false,
+    "devuiLink": "",
+    "sessionId": "",
+    "dateCaptured": "",
+    "toolsObserved": "",
+    "zeroShotFeedback": "",
+    "overallFeedback": "",
+    "notes": ""
+  },
+  "3": {
+    "selected": false,
+    "devuiLink": "",
+    "sessionId": "",
+    "dateCaptured": "",
+    "toolsObserved": "",
+    "zeroShotFeedback": "",
+    "overallFeedback": "",
+    "notes": ""
+  },
+  "4": {
+    "selected": false,
+    "devuiLink": "",
+    "sessionId": "",
+    "dateCaptured": "",
+    "toolsObserved": "",
+    "zeroShotFeedback": "",
+    "overallFeedback": "",
+    "notes": ""
+  },
+  "5": {
+    "selected": false,
+    "devuiLink": "",
+    "sessionId": "",
+    "dateCaptured": "",
+    "toolsObserved": "",
+    "zeroShotFeedback": "",
+    "overallFeedback": "",
+    "notes": ""
+  },
+  "6": {
+    "selected": true,
+    "devuiLink": "https://aka.ms/copilotdevui?sharedSessionId=d76506a5-b389-44f3-bca7-c1b1bc22d3e3&entryPoint=shareCommand",
+    "sessionId": "d76506a5-b389-44f3-bca7-c1b1bc22d3e3",
+    "dateCaptured": "2025-11-18T08:35",
+    "toolsObserved": "",
+    "zeroShotFeedback": "",
+    "overallFeedback": "",
+    "notes": ""
+  },
+  "7": {
+    "selected": true,
+    "devuiLink": "https://aka.ms/copilotdevui?sharedSessionId=02bc2968-b642-4fc8-97fa-7b1249f2a4ce&entryPoint=shareCommand",
+    "sessionId": "02bc2968-b642-4fc8-97fa-7b1249f2a4ce",
+    "dateCaptured": "2025-11-18T08:00",
+    "toolsObserved": "",
+    "zeroShotFeedback": "",
+    "overallFeedback": "",
+    "notes": ""
+  },
+  "8": {
+    "selected": true,
+    "devuiLink": "https://aka.ms/copilotdevui?sharedSessionId=d76506a5-b389-44f3-bca7-c1b1bc22d3e3&entryPoint=shareCommand",
+    "sessionId": "d76506a5-b389-44f3-bca7-c1b1bc22d3e3",
+    "dateCaptured": "2025-11-18T08:35",
+    "toolsObserved": "",
+    "zeroShotFeedback": "",
+    "overallFeedback": "",
+    "notes": ""
+  },
+  "9": {
+    "selected": false,
+    "devuiLink": "",
+    "sessionId": "",
+    "dateCaptured": "",
+    "toolsObserved": "",
+    "zeroShotFeedback": "",
+    "overallFeedback": "",
+    "notes": ""
+  },
+  "10": {
+    "selected": false,
+    "devuiLink": "",
+    "sessionId": "",
+    "dateCaptured": "",
+    "toolsObserved": "",
+    "zeroShotFeedback": "",
+    "overallFeedback": "",
+    "notes": ""
+  },
+  "11": {
+    "selected": false,
+    "devuiLink": "",
+    "sessionId": "",
+    "dateCaptured": "",
+    "toolsObserved": "",
+    "zeroShotFeedback": "",
+    "overallFeedback": "",
+    "notes": ""
+  },
+  "12": {
+    "selected": false,
+    "devuiLink": "",
+    "sessionId": "",
+    "dateCaptured": "",
+    "toolsObserved": "",
+    "zeroShotFeedback": "",
+    "overallFeedback": "",
+    "notes": ""
+  },
+  "13": {
+    "selected": false,
+    "devuiLink": "",
+    "sessionId": "",
+    "dateCaptured": "",
+    "toolsObserved": "",
+    "zeroShotFeedback": "",
+    "overallFeedback": "",
+    "notes": ""
+  },
+  "14": {
+    "selected": false,
+    "devuiLink": "",
+    "sessionId": "",
+    "dateCaptured": "",
+    "toolsObserved": "",
+    "zeroShotFeedback": "",
+    "overallFeedback": "",
+    "notes": ""
+  },
+  "15": {
+    "selected": false,
+    "devuiLink": "",
+    "sessionId": "",
+    "dateCaptured": "",
+    "toolsObserved": "",
+    "zeroShotFeedback": "",
+    "overallFeedback": "",
+    "notes": ""
+  },
+  "16": {
+    "selected": false,
+    "devuiLink": "",
+    "sessionId": "",
+    "dateCaptured": "",
+    "toolsObserved": "",
+    "zeroShotFeedback": "",
+    "overallFeedback": "",
+    "notes": ""
+  },
+  "17": {
+    "selected": false,
+    "devuiLink": "",
+    "sessionId": "",
+    "dateCaptured": "",
+    "toolsObserved": "",
+    "zeroShotFeedback": "",
+    "overallFeedback": "",
+    "notes": ""
+  },
+  "18": {
+    "selected": false,
+    "devuiLink": "",
+    "sessionId": "",
+    "dateCaptured": "",
+    "toolsObserved": "",
+    "zeroShotFeedback": "",
+    "overallFeedback": "",
+    "notes": ""
+  },
+  "19": {
+    "selected": false,
+    "devuiLink": "",
+    "sessionId": "",
+    "dateCaptured": "",
+    "toolsObserved": "",
+    "zeroShotFeedback": "",
+    "overallFeedback": "",
+    "notes": ""
+  },
+  "20": {
+    "selected": false,
+    "devuiLink": "",
+    "sessionId": "",
+    "dateCaptured": "",
+    "toolsObserved": "",
+    "zeroShotFeedback": "",
+    "overallFeedback": "",
+    "notes": ""
+  },
+  "21": {
+    "selected": false,
+    "devuiLink": "",
+    "sessionId": "",
+    "dateCaptured": "",
+    "toolsObserved": "",
+    "zeroShotFeedback": "",
+    "overallFeedback": "",
+    "notes": ""
+  },
+  "22": {
+    "selected": false,
+    "devuiLink": "",
+    "sessionId": "",
+    "dateCaptured": "",
+    "toolsObserved": "",
+    "zeroShotFeedback": "",
+    "overallFeedback": "",
+    "notes": ""
+  },
+  "23": {
+    "selected": false,
+    "devuiLink": "",
+    "sessionId": "",
+    "dateCaptured": "",
+    "toolsObserved": "",
+    "zeroShotFeedback": "",
+    "overallFeedback": "",
+    "notes": ""
+  },
+  "24": {
+    "selected": false,
+    "devuiLink": "",
+    "sessionId": "",
+    "dateCaptured": "",
+    "toolsObserved": "",
+    "zeroShotFeedback": "",
+    "overallFeedback": "",
+    "notes": ""
+  },
+  "25": {
+    "selected": false,
+    "devuiLink": "",
+    "sessionId": "",
+    "dateCaptured": "",
+    "toolsObserved": "",
+    "zeroShotFeedback": "",
+    "overallFeedback": "",
+    "notes": ""
+  }
+};
+        
+        // Collapse/Expand functionality
+        function togglePrompt(promptId) {
+            const content = document.getElementById('content-' + promptId);
+            const icon = document.getElementById('icon-' + promptId);
+            const wasCollapsed = !content.classList.contains('expanded');
+            
+            content.classList.toggle('expanded');
+            icon.classList.toggle('collapsed');
+            
+            // Load saved data into fields when expanding for the first time
+            if (wasCollapsed) {
+                loadFieldData(promptId);
+            }
+        }
+        
+        // Load field data for a specific prompt
+        function loadFieldData(id) {
+            const data = JSON.parse(localStorage.getItem('devui_test_data') || '{}');
+            if (data[id]) {
+                console.log('Loading data for prompt', id, ':', data[id]);
+                const card = document.querySelector(`[data-prompt-id="${id}"]`);
+                if (!card) return;
+                
+                const inputMap = {
+                    'devuiLink': '.devui-link-input',
+                    'sessionId': '.session-id-input',
+                    'dateCaptured': '.date-input',
+                    'toolsObserved': '.tools-input',
+                    'zeroShotFeedback': '.zero-shot-feedback',
+                    'overallFeedback': '.overall-feedback',
+                    'notes': '.notes-input'
+                };
+                
+                Object.keys(inputMap).forEach(field => {
+                    const input = card.querySelector(inputMap[field]);
+                    if (input && data[id][field]) {
+                        input.value = data[id][field];
+                        console.log('  Set', field, 'to:', data[id][field].substring(0, 30) + '...');
+                    } else if (!input) {
+                        console.log('  Input not found for', field);
+                    }
+                });
+            }
+        }
+
+        // Expand all prompts
+        function expandAll() {
+            document.querySelectorAll('.prompt-content').forEach(content => {
+                content.classList.add('expanded');
+            });
+            document.querySelectorAll('.collapse-icon').forEach(icon => {
+                icon.classList.remove('collapsed');
+            });
+        }
+
+        // Collapse all prompts
+        function collapseAll() {
+            document.querySelectorAll('.prompt-content').forEach(content => {
+                content.classList.remove('expanded');
+            });
+            document.querySelectorAll('.collapse-icon').forEach(icon => {
+                icon.classList.add('collapsed');
+            });
+        }
+
+        // Auto-extract Session ID from DevUI link
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('.devui-link-input').forEach(input => {
+                input.addEventListener('input', function(e) {
+                    const url = e.target.value;
+                    const content = e.target.closest('.prompt-content');
+                    const sessionIdInput = content.querySelector('.session-id-input');
+                    
+                    // Try different parameter names
+                    const params = new URLSearchParams(url.split('?')[1] || '');
+                    const sessionId = params.get('sharedSessionId') || 
+                                    params.get('sessionId') || 
+                                    params.get('sid') || 
+                                    params.get('session') || '';
+                    
+                    if (sessionId && sessionIdInput) {
+                        sessionIdInput.value = sessionId;
+                        console.log('Auto-extracted Session ID:', sessionId);
+                    }
+                });
+            });
+        });
+
+        // Save data to localStorage
+        function saveData() {
+            const data = {};
+            const now = new Date().toISOString().split('T')[0]; // Today's date in YYYY-MM-DD format
+            
+            document.querySelectorAll('.prompt-card').forEach(card => {
+                const id = card.dataset.promptId;
+                const dateInput = card.querySelector('.date-input');
+                
+                // Auto-set date to today if empty and there's data to save
+                const hasData = card.querySelector('.devui-link-input')?.value || 
+                               card.querySelector('.toolsObserved')?.value ||
+                               card.querySelector('.zero-shot-feedback')?.value ||
+                               card.querySelector('.overall-feedback')?.value ||
+                               card.querySelector('.notes-input')?.value;
+                               
+                if (hasData && dateInput && !dateInput.value) {
+                    dateInput.value = now;
+                }
+                
+                data[id] = {
+                    devuiLink: card.querySelector('.devui-link-input')?.value || '',
+                    sessionId: card.querySelector('.session-id-input')?.value || '',
+                    dateCaptured: card.querySelector('.date-input')?.value || '',
+                    toolsObserved: card.querySelector('.tools-input')?.value || '',
+                    zeroShotFeedback: card.querySelector('.zero-shot-feedback')?.value || '',
+                    overallFeedback: card.querySelector('.overall-feedback')?.value || '',
+                    notes: card.querySelector('.notes-input')?.value || ''
+                };
+            });
+            
+            localStorage.setItem('devui_test_data', JSON.stringify(data));
+            alert('✅ Data saved successfully!');
+        }
+
+        // Load data from localStorage
+        function loadData() {
+            const data = JSON.parse(localStorage.getItem('devui_test_data') || '{}');
+            document.querySelectorAll('.prompt-card').forEach(card => {
+                const id = card.dataset.promptId;
+                if (data[id]) {
+                    const fields = ['devuiLink', 'sessionId', 'dateCaptured', 'toolsObserved', 
+                                  'zeroShotFeedback', 'overallFeedback', 'notes'];
+                    fields.forEach(field => {
+                        const inputMap = {
+                            'devuiLink': '.devui-link-input',
+                            'sessionId': '.session-id-input',
+                            'dateCaptured': '.date-input',
+                            'toolsObserved': '.tools-input',
+                            'zeroShotFeedback': '.zero-shot-feedback',
+                            'overallFeedback': '.overall-feedback',
+                            'notes': '.notes-input'
+                        };
+                        const input = card.querySelector(inputMap[field]);
+                        if (input && data[id][field]) {
+                            input.value = data[id][field];
+                        }
+                    });
+                }
+            });
+        }
+
+        // Load on page load
+        window.addEventListener('load', loadData);
+
+        // ===== SELECTION MANAGEMENT =====
+        let autoSaveTimer = null;
+
+        function updateSelectionCounter() {
+            // Count only non-synthetic (real meeting) selections
+            const selectedCards = document.querySelectorAll('.prompt-card[data-selected="true"]');
+            let realMeetingCount = 0;
+            selectedCards.forEach(card => {
+                if (!card.classList.contains('synthetic')) {
+                    realMeetingCount++;
+                }
+            });
+            
+            const counter = document.getElementById('selection-counter');
+            counter.textContent = realMeetingCount;
+            
+            // Visual feedback for goal (5 real meetings)
+            if (realMeetingCount >= 5) {
+                counter.classList.add('goal-met');
+            } else {
+                counter.classList.remove('goal-met');
+            }
+        }
+
+        function handleSelection(promptId, isSelected) {
+            const card = document.querySelector(`.prompt-card[data-prompt-id="${promptId}"]`);
+            card.dataset.selected = isSelected;
+            
+            if (isSelected) {
+                card.classList.add('selected');
+                card.classList.remove('unselected');
+            } else {
+                card.classList.remove('selected');
+                card.classList.add('unselected');
+            }
+            
+            updateSelectionCounter();
+            applyFilters();
+            triggerAutoSave();
+        }
+
+        function selectAll() {
+            document.querySelectorAll('.selection-checkbox').forEach(cb => {
+                cb.checked = true;
+                const promptId = cb.closest('.prompt-card').dataset.promptId;
+                handleSelection(promptId, true);
+            });
+        }
+
+        function deselectAll() {
+            document.querySelectorAll('.selection-checkbox').forEach(cb => {
+                cb.checked = false;
+                const promptId = cb.closest('.prompt-card').dataset.promptId;
+                handleSelection(promptId, false);
+            });
+        }
+
+        function toggleFilterUnselected() {
+            applyFilters();
+        }
+
+        function toggleShowAll() {
+            applyFilters();
+        }
+
+        function applyFilters() {
+            const filterUnselected = document.getElementById('filter-unselected').checked;
+            const showAll = document.getElementById('show-all').checked;
+            
+            document.querySelectorAll('.prompt-card').forEach(card => {
+                const isSelected = card.dataset.selected === 'true';
+                
+                if (showAll) {
+                    // Show all cards
+                    card.classList.remove('hidden');
+                } else if (filterUnselected && !isSelected) {
+                    // Hide unselected cards if filter is on
+                    card.classList.add('hidden');
+                } else {
+                    card.classList.remove('hidden');
+                }
+            });
+        }
+
+        // ===== AUTO-SAVE FUNCTIONALITY =====
+        function triggerAutoSave() {
+            clearTimeout(autoSaveTimer);
+            autoSaveTimer = setTimeout(() => {
+                saveAllData(true); // true = silent auto-save
+            }, 30000); // 30 seconds
+        }
+
+        function showAutoSaveIndicator() {
+            const indicator = document.getElementById('auto-save-indicator');
+            indicator.classList.add('show');
+            setTimeout(() => {
+                indicator.classList.remove('show');
+            }, 2000);
+        }
+
+        function saveAllData(isAutoSave = false) {
+            const data = {};
+            document.querySelectorAll('.prompt-card').forEach(card => {
+                const id = card.dataset.promptId;
+                const isSelected = card.dataset.selected === 'true';
+                const isSynthetic = card.classList.contains('synthetic');
+                
+                data[id] = {
+                    selected: isSelected,
+                    devuiLink: card.querySelector('.devui-link-input')?.value || '',
+                    sessionId: card.querySelector('.session-id-input')?.value || '',
+                    dateCaptured: card.querySelector('.date-input')?.value || '',
+                    toolsObserved: card.querySelector('.tools-input')?.value || '',
+                    zeroShotFeedback: card.querySelector('.zero-shot-feedback')?.value || '',
+                    overallFeedback: card.querySelector('.overall-feedback')?.value || '',
+                    notes: card.querySelector('.notes-input')?.value || ''
+                };
+                
+                // Update completed styling dynamically
+                const hasAnnotation = data[id].devuiLink || data[id].sessionId || 
+                                     data[id].toolsObserved || data[id].zeroShotFeedback || 
+                                     data[id].overallFeedback || data[id].notes;
+                
+                if (hasAnnotation && !isSynthetic) {
+                    card.classList.add('completed');
+                    // Add completed badge if not already present
+                    const title = card.querySelector('.prompt-card-title h2');
+                    if (title && !title.querySelector('.completed-badge')) {
+                        const badge = document.createElement('span');
+                        badge.className = 'completed-badge';
+                        badge.textContent = '✅ Annotated';
+                        title.appendChild(badge);
+                    }
+                } else {
+                    card.classList.remove('completed');
+                    // Remove badge if present
+                    const badge = card.querySelector('.completed-badge');
+                    if (badge) {
+                        badge.remove();
+                    }
+                }
+            });
+            
+            localStorage.setItem('devui_test_data', JSON.stringify(data));
+            
+            if (isAutoSave) {
+                showAutoSaveIndicator();
+            } else {
+                alert('✅ Data saved successfully!');
+            }
+        }
+
+        function loadAllData() {
+            // Check if localStorage is empty (first load)
+            let data = JSON.parse(localStorage.getItem('devui_test_data') || '{}');
+            
+            // If empty and we have initial data, use it
+            if (Object.keys(data).length === 0 && typeof INITIAL_ANNOTATIONS !== 'undefined') {
+                console.log('📥 Loading initial annotation data...');
+                data = INITIAL_ANNOTATIONS;
+                localStorage.setItem('devui_test_data', JSON.stringify(data));
+                console.log('✅ Loaded ' + Object.keys(data).filter(k => data[k].devuiLink).length + ' existing annotations');
+            }
+            
+            document.querySelectorAll('.prompt-card').forEach(card => {
+                const id = card.dataset.promptId;
+                const checkbox = card.querySelector('.selection-checkbox');
+                const isSynthetic = card.classList.contains('synthetic');
+                
+                // Check if meeting has any annotation data
+                const hasAnnotation = data[id] && (
+                    data[id].devuiLink || 
+                    data[id].sessionId || 
+                    data[id].toolsObserved || 
+                    data[id].zeroShotFeedback || 
+                    data[id].overallFeedback || 
+                    data[id].notes
+                );
+                
+                // Add 'completed' class and badge for annotated meetings
+                if (hasAnnotation && !isSynthetic) {
+                    card.classList.add('completed');
+                    // Add completed badge if not already present
+                    const title = card.querySelector('.prompt-card-title h2');
+                    if (title && !title.querySelector('.completed-badge')) {
+                        const badge = document.createElement('span');
+                        badge.className = 'completed-badge';
+                        badge.textContent = '✅ Annotated';
+                        title.appendChild(badge);
+                    }
+                }
+                
+                // Pre-select synthetic prompts OR meetings with annotations
+                if (isSynthetic || hasAnnotation) {
+                    if (checkbox) {
+                        checkbox.checked = true;
+                        handleSelection(id, true);
+                    }
+                } else if (data[id]) {
+                    // Load saved selection state for non-synthetic, non-annotated meetings
+                    if (checkbox) {
+                        checkbox.checked = data[id].selected || false;
+                        handleSelection(id, checkbox.checked);
+                    }
+                }
+                
+                // Load form fields from localStorage
+                if (data[id]) {
+                    console.log('Loading data for prompt', id, ':', data[id]);
+                }
+            });
+            updateSelectionCounter();
+        }
+
+        // ===== EXPORT FUNCTIONALITY =====
+        function exportLocalStorage() {
+            // Export raw localStorage for prompt regeneration
+            const data = localStorage.getItem('devui_test_data');
+            if (!data) {
+                alert('⚠️ No saved data found in localStorage');
+                return;
+            }
+            
+            const blob = new Blob([data], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'annotated_data.json';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+            
+            alert('✅ Exported localStorage data!\n\nUse this file with check_annotated_meetings.py to preserve your annotated meetings when regenerating prompts.');
+        }
+
+        function exportAnnotations() {
+            const exportData = {
+                metadata: {
+                    user: 'Chin Yew Lin',
+                    exportDate: new Date().toISOString(),
+                    totalPrompts: document.querySelectorAll('.prompt-card').length,
+                    selectedPrompts: document.querySelectorAll('.prompt-card[data-selected="true"]').length
+                },
+                annotations: []
+            };
+            
+            document.querySelectorAll('.prompt-card[data-selected="true"]').forEach(card => {
+                const id = card.dataset.promptId;
+                const title = card.querySelector('.prompt-card-title h2').textContent;
+                const category = card.querySelector('.meta-value').textContent;
+                
+                exportData.annotations.push({
+                    id: id,
+                    title: title,
+                    category: category,
+                    selected: true,
+                    devuiLink: card.querySelector('.devui-link-input')?.value || '',
+                    sessionId: card.querySelector('.session-id-input')?.value || '',
+                    dateCaptured: card.querySelector('.date-input')?.value || '',
+                    toolsObserved: card.querySelector('.tools-input')?.value || '',
+                    zeroShotFeedback: card.querySelector('.zero-shot-feedback')?.value || '',
+                    overallFeedback: card.querySelector('.overall-feedback')?.value || '',
+                    notes: card.querySelector('.notes-input')?.value || ''
+                });
+            });
+            
+            // Create and download JSON file
+            const blob = new Blob([JSON.stringify(exportData, null, 2)], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `bizchat_annotations_${new Date().toISOString().split('T')[0]}.json`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+            
+            alert(`✅ Exported ${exportData.annotations.length} selected annotations!`);
+        }
+
+        // ===== COPY PROMPT FUNCTIONALITY =====
+        function copyPromptText(promptId) {
+            const promptText = document.getElementById(`prompt-text-${promptId}`);
+            const copyButton = event.target.closest('.copy-prompt-button');
+            const copyIcon = document.getElementById(`copy-icon-${promptId}`);
+            
+            // Get the text content (strip HTML)
+            let text = promptText.innerText || promptText.textContent;
+            
+            // Remove synthetic scenario header if present
+            text = text.replace(/\*\*\[EXPLORATION SCENARIO - Not from your calendar\]\*\*\s*/gi, '');
+            text = text.trim();
+            
+            // Copy to clipboard
+            navigator.clipboard.writeText(text).then(() => {
+                // Visual feedback
+                copyButton.classList.add('copied');
+                copyIcon.textContent = '✅';
+                
+                // Reset after 2 seconds
+                setTimeout(() => {
+                    copyButton.classList.remove('copied');
+                    copyIcon.textContent = '📋';
+                }, 2000);
+            }).catch(err => {
+                console.error('Failed to copy:', err);
+                alert('Failed to copy prompt text');
+            });
+        }
+
+        // Monitor input changes for auto-save
+        document.addEventListener('input', (e) => {
+            if (e.target.matches('input, textarea')) {
+                triggerAutoSave();
+            }
+        });
+
+        // Initialize on load
+        window.addEventListener('load', () => {
+            loadAllData();
+            updateSelectionCounter();
+        });
+    </script>
+</body>
+</html>

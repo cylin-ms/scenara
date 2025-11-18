@@ -1,0 +1,220 @@
+[
+  {
+    "id": 1,
+    "title": "Quarterly Business Review (QBR)",
+    "category": "Strategic Planning",
+    "complexity": "high",
+    "leadTime": 45,
+    "realMeeting": "STCA Monthly Extended PLT + Managers  (180 attendees)",
+    "prompt": "I have an upcoming Quarterly Business Review titled \"STCA Monthly Extended PLT + Managers \" scheduled for August 01, 2025. This is a high-complexity meeting with 180 attendees that typically requires 45 days of preparation time.\n\nCan you help me create a detailed workback plan that includes:\n1. All key milestones leading up to the meeting\n2. Specific tasks with owners and deadlines\n3. Dependencies between tasks\n4. Critical path activities\n5. Risk mitigation strategies\n\nPlease consider:\n- The meeting requires coordination across multiple teams\n- There are likely dependencies on deliverables and approvals\n- We need to ensure adequate time for review cycles\n- Executive-level stakeholders will be involved\n\nGenerate a comprehensive workback plan that ensures successful meeting preparation.",
+    "expectedTools": [
+      "graph_calendar_get_events",
+      "graph_get_people",
+      "graph_get_manager",
+      "bizchat_context",
+      "bizchat_recommendations",
+      "substrate_meeting_prep"
+    ],
+    "status": "not-started",
+    "devuiLink": "",
+    "sessionId": "",
+    "dateCaptured": "",
+    "toolsObserved": "",
+    "notes": ""
+  },
+  {
+    "id": 2,
+    "title": "Product Launch",
+    "category": "Product Management",
+    "complexity": "high",
+    "leadTime": 90,
+    "realMeeting": "How-to Navigate M365 Pulse: A 101 Beginner\u2019s Guide (374 attendees)",
+    "prompt": "I have an upcoming product launch event titled \"How-to Navigate M365 Pulse: A 101 Beginner\u2019s Guide\" scheduled for May 15, 2025. This is a high-complexity meeting with 374 attendees that typically requires 90 days of preparation time.\n\nCan you help me create a detailed workback plan that includes:\n1. All key milestones leading up to the launch\n2. Specific tasks with owners and deadlines\n3. Dependencies between tasks\n4. Critical path activities\n5. Risk mitigation strategies\n\nPlease consider:\n- The launch requires coordination across multiple teams (product, marketing, support)\n- There are likely dependencies on deliverables and approvals\n- We need to ensure adequate time for review cycles and testing\n- Executive-level stakeholders will be involved\n- Customer communications need to be coordinated\n\nGenerate a comprehensive workback plan that ensures successful product launch.",
+    "expectedTools": [
+      "graph_calendar_get_events",
+      "graph_get_people",
+      "graph_get_document",
+      "bizchat_search_documents",
+      "ado_get_work_items"
+    ],
+    "status": "not-started",
+    "devuiLink": "",
+    "sessionId": "",
+    "dateCaptured": "",
+    "toolsObserved": "",
+    "notes": ""
+  },
+  {
+    "id": 3,
+    "title": "Conference/Event Preparation",
+    "category": "Events & Communications",
+    "complexity": "medium",
+    "leadTime": 45,
+    "realMeeting": "E+D: FY26 Kickoff (404 attendees)",
+    "prompt": "I have an upcoming conference event titled \"E+D: FY26 Kickoff\" scheduled for July 18, 2025. This is a medium-complexity event with 404 attendees that typically requires 45 days of preparation time.\n\nCan you help me create a detailed workback plan that includes:\n1. All key milestones leading up to the conference\n2. Specific tasks with owners and deadlines\n3. Dependencies between tasks\n4. Critical path activities\n5. Risk mitigation strategies\n\nPlease consider:\n- The event requires venue booking, speaker coordination, and materials preparation\n- There are dependencies on speaker confirmations, presentation materials, and event logistics\n- We need to coordinate communications, registration, and attendee engagement\n- Audio-visual and technical requirements need to be planned\n- Post-event follow-up activities should be included\n\nGenerate a comprehensive workback plan that ensures successful conference execution.",
+    "expectedTools": [
+      "graph_calendar_get_events",
+      "graph_get_people",
+      "graph_send_mail",
+      "bizchat_search"
+    ],
+    "status": "not-started",
+    "devuiLink": "",
+    "sessionId": "",
+    "dateCaptured": "",
+    "toolsObserved": "",
+    "notes": ""
+  },
+  {
+    "id": 4,
+    "title": "Executive Presentation",
+    "category": "Leadership Communications",
+    "complexity": "medium",
+    "leadTime": 21,
+    "realMeeting": "LIVE! FY26 Employee Town Hall in September (364 attendees)",
+    "prompt": "I have an upcoming executive presentation titled \"LIVE! FY26 Employee Town Hall in September\" scheduled for September 12, 2025. This presentation will cover strategic updates and requires high-quality materials and thorough preparation.\n\nCan you help me create a detailed workback plan that includes:\n1. All key milestones leading up to the presentation\n2. Specific tasks with owners and deadlines\n3. Dependencies between tasks (data collection, slide creation, reviews)\n4. Critical path activities\n5. Risk mitigation strategies\n\nPlease consider:\n- The presentation requires data analysis, slide deck creation, and multiple review cycles\n- Key stakeholders need to review and approve content\n- Supporting materials and appendix sections need to be prepared\n- Rehearsal and Q&A preparation are critical\n- Backup plans for technical issues should be considered\n\nGenerate a comprehensive workback plan that ensures a successful executive presentation.",
+    "expectedTools": [
+      "graph_calendar_get_events",
+      "graph_get_document",
+      "bizchat_search",
+      "graph_get_people"
+    ],
+    "status": "not-started",
+    "devuiLink": "",
+    "sessionId": "",
+    "dateCaptured": "",
+    "toolsObserved": "",
+    "notes": ""
+  },
+  {
+    "id": 5,
+    "title": "Budget Planning",
+    "category": "Financial Planning",
+    "complexity": "medium",
+    "leadTime": 30,
+    "realMeeting": "E+D: FY26 Kickoff (404 attendees)",
+    "prompt": "I have an upcoming budget planning meeting titled \"E+D: FY26 Kickoff\" scheduled for July 18, 2025. This meeting will finalize budget allocations with 404 stakeholders across multiple teams.\n\nCan you help me create a detailed workback plan that includes:\n1. All key milestones leading up to the budget approval\n2. Specific tasks with owners and deadlines\n3. Dependencies between tasks (data collection, analysis, reviews, approvals)\n4. Critical path activities\n5. Risk mitigation strategies\n\nPlease consider:\n- Budget data needs to be collected from multiple departments\n- Financial analysis and variance reporting are required\n- Multiple review and approval cycles with finance and leadership\n- Budget justifications and business cases need to be prepared\n- Historical data analysis and forecasting are needed\n\nGenerate a comprehensive workback plan that ensures successful budget planning and approval.",
+    "expectedTools": [
+      "graph_calendar_get_events",
+      "graph_get_document",
+      "bizchat_search_documents",
+      "graph_get_people"
+    ],
+    "status": "not-started",
+    "devuiLink": "",
+    "sessionId": "",
+    "dateCaptured": "",
+    "toolsObserved": "",
+    "notes": ""
+  },
+  {
+    "id": 6,
+    "title": "Project Kickoff",
+    "category": "Project Management",
+    "complexity": "medium",
+    "leadTime": 14,
+    "realMeeting": "E+D: FY26 Kickoff (404 attendees)",
+    "prompt": "I have an upcoming project kickoff meeting titled \"E+D: FY26 Kickoff\" scheduled for July 18, 2025. This is a medium-complexity meeting with 404 attendees that typically requires 14 days of preparation time.\n\nCan you help me create a detailed workback plan that includes:\n1. All key milestones leading up to the kickoff\n2. Specific tasks with owners and deadlines\n3. Dependencies between tasks\n4. Critical path activities\n5. Risk mitigation strategies\n\nPlease consider:\n- The kickoff requires project charter, scope definition, and team alignment\n- Role assignments and responsibilities need to be clarified\n- Project timeline and milestones need to be established\n- Communication plan and collaboration tools need to be set up\n- Success metrics and KPIs should be defined\n\nGenerate a comprehensive workback plan that ensures successful project kickoff.",
+    "expectedTools": [
+      "graph_calendar_get_events",
+      "graph_get_people",
+      "ado_get_work_items",
+      "bizchat_search"
+    ],
+    "status": "not-started",
+    "devuiLink": "",
+    "sessionId": "",
+    "dateCaptured": "",
+    "toolsObserved": "",
+    "notes": ""
+  },
+  {
+    "id": 7,
+    "title": "Workshop/Training",
+    "category": "Research & Innovation",
+    "complexity": "medium",
+    "leadTime": 60,
+    "realMeeting": "Agentic Memory Workshop \u2013 Modular, Portable Memory for Human-Agent Interactions (155 attendees)",
+    "prompt": "I have an upcoming workshop titled \"Agentic Memory Workshop \u2013 Modular, Portable Memory for Human-Agent Interactions\" scheduled for October 16, 2025. This is a medium-complexity technical workshop that requires 60 days of preparation time.\n\nCan you help me create a detailed workback plan that includes:\n1. All key milestones leading up to the workshop\n2. Specific tasks with owners and deadlines\n3. Dependencies between tasks\n4. Critical path activities\n5. Risk mitigation strategies\n\nPlease consider:\n- Identify and invite key speakers from research community (internal researchers, academic partners, industry experts)\n- Determine workshop topics and session themes\n- Speaker outreach and confirmation (at least 45 days before event)\n- Abstract and presentation material submission deadlines\n- Technical content review and feedback cycles\n- Research presentations and demonstration materials development\n- Participant invitation list and registration management\n- Pre-reading materials preparation\n- Interactive sessions and hands-on exercises preparation\n- Technical setup for demos and live sessions\n- Workshop agenda finalization and time allocation\n- Post-workshop documentation and follow-up action items\n\nGenerate a comprehensive workback plan that ensures a successful technical workshop with the right speakers and compelling topics.",
+    "expectedTools": [
+      "graph_calendar_get_events",
+      "graph_get_people",
+      "graph_get_manager",
+      "graph_get_document",
+      "bizchat_search_documents",
+      "bizchat_search",
+      "graph_send_mail",
+      "loki_get_person_recap"
+    ],
+    "status": "not-started",
+    "devuiLink": "",
+    "sessionId": "",
+    "dateCaptured": "",
+    "toolsObserved": "",
+    "notes": ""
+  },
+  {
+    "id": 8,
+    "title": "Board/Strategic Review",
+    "category": "Executive Governance",
+    "complexity": "high",
+    "leadTime": 60,
+    "realMeeting": "No matching meeting found - Using synthetic example",
+    "prompt": "I have an upcoming board/strategic review meeting titled \"Board/Strategic Review\" scheduled for the scheduled date. This is a high-stakes meeting requiring executive preparation.\n\nCan you help me create a detailed workback plan that includes:\n1. All key milestones leading up to the meeting\n2. Specific tasks with owners and deadlines\n3. Dependencies between tasks (financials, legal review, presentations)\n4. Critical path activities\n5. Risk mitigation strategies\n\nPlease consider:\n- The meeting requires materials including financial statements, strategic updates, and risk assessments\n- There are strict dependencies on finance close, legal review, and executive approval cycles\n- Materials typically need 2 weeks for review before the meeting\n- Multiple stakeholders need to contribute (CFO, CLO, business unit leaders)\n- Materials must meet regulatory compliance requirements\n\nGenerate a comprehensive workback plan that ensures successful meeting preparation.",
+    "expectedTools": [
+      "graph_calendar_get_events",
+      "graph_get_people",
+      "graph_get_document",
+      "bizchat_context",
+      "graph_get_manager"
+    ],
+    "status": "not-started",
+    "devuiLink": "",
+    "sessionId": "",
+    "dateCaptured": "",
+    "toolsObserved": "",
+    "notes": ""
+  },
+  {
+    "id": 9,
+    "title": "Team Offsite",
+    "category": "Team Development",
+    "complexity": "medium",
+    "leadTime": 30,
+    "realMeeting": "No matching meeting found - Using synthetic example",
+    "prompt": "I have an upcoming team offsite titled \"Team Offsite\" scheduled for the scheduled date. This will be a multi-day offsite focused on strategic planning and team building.\n\nCan you help me create a detailed workback plan that includes:\n1. All key milestones leading up to the offsite\n2. Specific tasks with owners and deadlines\n3. Dependencies between tasks (venue, agenda, materials, logistics)\n4. Critical path activities\n5. Risk mitigation strategies\n\nPlease consider:\n- The offsite requires venue booking, travel arrangements, and accommodation\n- Agenda development with strategic planning sessions and team activities\n- Pre-read materials and prep work for participants\n- Facilitator coordination and activity planning\n- Post-offsite action items and follow-up planning\n\nGenerate a comprehensive workback plan that ensures a successful team offsite.",
+    "expectedTools": [
+      "graph_calendar_get_events",
+      "graph_get_people",
+      "graph_send_mail",
+      "bizchat_search_documents"
+    ],
+    "status": "not-started",
+    "devuiLink": "",
+    "sessionId": "",
+    "dateCaptured": "",
+    "toolsObserved": "",
+    "notes": ""
+  },
+  {
+    "id": 10,
+    "title": "Hiring/Interview",
+    "category": "Talent Acquisition",
+    "complexity": "low",
+    "leadTime": 7,
+    "realMeeting": "Virtual Interview for Senior Applied Scientist(LLM) (1864549) (4 attendees)",
+    "prompt": "I have an upcoming interview titled \"Virtual Interview for Senior Applied Scientist(LLM) (1864549)\" scheduled for October 24, 2025. This requires 7 days of preparation time.\n\nCan you help me create a detailed workback plan that includes:\n1. All key milestones leading up to the interview\n2. Specific tasks with owners and deadlines\n3. Dependencies between tasks\n4. Critical path activities\n5. Risk mitigation strategies\n\nPlease consider:\n- Interview panel needs to review candidate resume and materials\n- Interview questions and evaluation criteria need to be prepared\n- Technical assessment or case study should be ready\n- Interview schedule and logistics need to be coordinated\n- Debrief session and feedback collection process should be planned\n\nGenerate a comprehensive workback plan that ensures successful candidate evaluation.",
+    "expectedTools": [
+      "graph_calendar_get_events",
+      "graph_get_people",
+      "graph_send_mail",
+      "bizchat_search_documents"
+    ],
+    "status": "not-started",
+    "devuiLink": "",
+    "sessionId": "",
+    "dateCaptured": "",
+    "toolsObserved": "",
+    "notes": ""
+  }
+]
